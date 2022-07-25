@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Zuglenkung" nsURI="http://www.plan-pro.org/modell/Zuglenkung/1.9.0.2"
+    nsPrefix="nsZuglenkung">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EDataType" name="Annaeherungsgeschwindigkeit_Type"
+      instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TAnnaeherungsgeschwindigkeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TGeschwindigkeit"/>
+      <details key="pattern" value="[4-9][0-9]|1[0-5][0-9]|160"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Annaeherungsgeschwindigkeit_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCAnnaeherungsgeschwindigkeit"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Annaeherungsgeschwindigkeit_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Anzahl_Wiederhol_ZL_Anstoesse_Type"
+      instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TAnzahl_Wiederhol_ZL_Anstoesse"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+      <details key="pattern" value="[1-9]|10"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Anzahl_Wiederhol_ZL_Anstoesse_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCAnzahl_Wiederhol_ZL_Anstoesse"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Anzahl_Wiederhol_ZL_Anstoesse_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Deadlockpruefung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDeadlockpruefung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DWeg_Prio_Type" instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TDWeg_Prio"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+      <details key="pattern" value="[0-4]"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DWeg_Prio_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDWeg_Prio"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//DWeg_Prio_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Einstellkontrollzeit_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TEinstellkontrollzeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TSekunde"/>
+      <details key="pattern" value="[1-9][0-9]{0,1}|1[0-9]{2}|200"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Einstellkontrollzeit_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCEinstellkontrollzeit"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Einstellkontrollzeit_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMLenkziffernstellen">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMLenkziffernstellen"/>
+    </eAnnotations>
+    <eLiterals name="ENUMLenkziffernstellen_0" literal="0"/>
+    <eLiterals name="ENUMLenkziffernstellen_1" value="1" literal="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMLenkziffernstellenObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMLenkziffernstellen:Object"/>
+      <details key="baseType" value="ENUMLenkziffernstellen"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMZNStellen">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMZN_Stellen"/>
+    </eAnnotations>
+    <eLiterals name="ENUMZN_Stellen_5" literal="5"/>
+    <eLiterals name="ENUMZN_Stellen_6" value="1" literal="6"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMZNStellenObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMZN_Stellen:Object"/>
+      <details key="baseType" value="ENUMZN_Stellen"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FUEM_Auswertung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCFUEM_Auswertung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GK_Type" instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TGK"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TGeschwindigkeit"/>
+      <details key="pattern" value="[4-9][0-9]|1[0-5][0-9]|160"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GK_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGK"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//GK_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GKZSS_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGKZSS"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Lenkabbruchzeit_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TLenkabbruchzeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TSekunde"/>
+      <details key="pattern" value="0|[1-9][0-9]{0,2}|1[01][0-9]{2}|1200"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Lenkabbruchzeit_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCLenkabbruchzeit"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Lenkabbruchzeit_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Lenkziffernstellen_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCLenkziffernstellen"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMLenkziffernstellenObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Personal_Reaktionszeit_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TPersonal_Reaktionszeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TSekunde"/>
+      <details key="pattern" value="1[5-9]|[23][0-9]|4[0-5]"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Personal_Reaktionszeit_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCPersonal_Reaktionszeit"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Personal_Reaktionszeit_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Sichtzeit_Vorsignal_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TSichtzeit_Vorsignal"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TSekunde"/>
+      <details key="pattern" value="0|1[0-9]|20"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sichtzeit_Vorsignal_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSichtzeit_Vorsignal"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Sichtzeit_Vorsignal_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Signalgruppe_Bezeichner_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TSignalgruppe_Bezeichner"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TZeichenkette"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signalgruppe_Bezeichner_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSignalgruppe_Bezeichner"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Signalgruppe_Bezeichner_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Tv_GK_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TTv_GK"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TSekunde"/>
+      <details key="pattern" value="0|[1-9][0-9]{0,1}|[1-2][0-9]{2}|300"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Tv_GK_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCTv_GK"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Tv_GK_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Vmax_Annaeherung_Type" instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TVmax_Annaeherung"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TGeschwindigkeit"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Vmax_Annaeherung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCVmax_Annaeherung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Vmax_Annaeherung_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Anlage zur automatischen Einstellung von Fahrstraßen aufgrund von Zuglaufinformationen. Die Zuglenkung ist eine Anlage, die der Unterstützung des Betriebsablaufes dient. Aufgabe der Zuglenkung ist es, auf der Basis von Zuglaufinformationen und zugbezogenen Vorgaben für die Benutzung von Strecken- und Bahnhofsgleisen ohne unmittelbare Mitwirkung des Bedieners Stellkommandos an das zuständige Stellwerk auszugeben, ihre Ausführung zu überwachen und sich aus Meldungen des Stellwerkes ergebenden Handlungsbedarf an den Bediener weiterzugeben. Zuglaufinformationen erhält die Zuglenkung von der Zuglaufverfolgung (ZLV), die vorgesehene Benutzung der Strecken- und Bahnhofsgleise sowie Wartebedingungen einschließlich besonderer Bedingungen für die Regelung der Reihenfolge der Züge aus einem sogenannten Lenkplan, der in Form einer Gleisbenutzungstabelle (GBT) darstellbar ist. Alle Signale und Fahrstraßen, die mit der Zuglenkung behandelt werden, werden in dem Objekt Zuglenkung_Element aufgenommen und bekommen dort zusätzliche Eigenschaften für die Nutzung in der ZL. Angaben zur Verwendung der Signale und zugehörigen Gleisabschnitte für die Lenkplanerstellung erfolgen in der Gleisbenutzungstabelle. DB-Regelwerk 819.0732 Gleisbenutzungstabelle Weitere Angaben finden sich im Lastenheft, das dem LST-Fachplaner nicht zur Verfügung steht."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CZL"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDESTWZentraleinheit" eType="ecore:EClass Verweise.ecore#//ID_ESTW_Zentraleinheit_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die ESTW-Zentraleinheit, zu der diese ZL geplant wurde. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_ESTW_Zentraleinheit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDZN" eType="ecore:EClass Verweise.ecore#//ID_ZN_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die ZN, die zu dieser ZL gehört. ZL und ZN müssen planerisch eine Einheit bilden, da die ZN-Anzeigefelder immer definierte Einschaltpunkte für die ZL sind. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_ZN"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zLAllg" lowerBound="1"
+        eType="#//ZL_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ZL_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zLZN" lowerBound="1" eType="#//ZL_ZN_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ZL_ZN"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CZL_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="anzahlWiederholZLAnstoesse"
+        eType="#//Anzahl_Wiederhol_ZL_Anstoesse_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Anzahl erneuter Stellversuche nach negativer Stw-Quittung im Warteintervall von Standard 3-5 s nach positiver Stellbarkeitsprüfung der ZL. DB-Regelwerk 819.0732 5 (2) "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>1&lt;/ppi:ProposedValue>&#xD;&#xA;                     &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [1..10] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Anzahl_Wiederhol_ZL_Anstoesse"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="deadlockpruefung" eType="#//Deadlockpruefung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="In der Zuglenkung ist eine Deadlockprüfung (DLP) zu projektieren. Die Angabe, welche Gleisabschnitte in die Prüfung einzubeziehen sind, erfolgt über ein gesondertes Objekt. Die Objekt-Instanzen, die in die DLP einbezogen werden müssen, werden mit den Objekten ZL DLP Fstr und ZL DLP Abschnitt festgelegt. DB-Regelwerk TM 2011-024 I.NVT3 (Fa. Thales) "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Deadlockpruefung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="einstellkontrollzeit" eType="#//Einstellkontrollzeit_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Prüfung auf Fahrtstellung Signal nach Anstoß innerhalb einer Zeit, bei Nicht-Fahrtstellung Lenkabbruch, Angabe in Sekunden, Standard 120 s. Der gewählte Wert muss größer sein als die Summe aus Anstoßverzögerung und Fahrstraßenbildungszeit. DB-Regelwerk 819.0732 5 (5) "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>120&lt;/ppi:ProposedValue>&#xD;&#xA;                     &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [1..200] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Einstellkontrollzeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lenkabbruchzeit" eType="#//Lenkabbruchzeit_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zeit bis zum Lenkabbruch, wenn die zyklische Stellbarkeitsprüfung der ZL bis dahin negativ war. Der Standard-Wert beträgt 600 s. Die Angabe in den Tools muss in Minuten erfolgen. DB-Regelwerk 819.0732 5 (5) "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>600&lt;/ppi:ProposedValue>&#xD;&#xA;                     &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [0..1200] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Lenkabbruchzeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="personalReaktionszeit"
+        eType="#//Personal_Reaktionszeit_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Personalreaktionszeit, Angabe in Sekunden. Der Standardwert auf Hauptbahnen beträgt 45 Sekunden, der Standardwert auf Nebenbahnen 15 Sekunden. Abweichungen sind möglich, bedürfen jedoch der betrieblichen Bestätigung."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>45&lt;/ppi:ProposedValue>&#xD;&#xA;                     &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [15..45] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Personal_Reaktionszeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL_DLP_Abschnitt" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Sammlung der Gleisabschnitte, die in ZL DLP Fstr eingebunden werden und für die eine Prüfung auf Deadlock erfolgen muss. DB-Regelwerk TM 2011-024 I.NVT 3 "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CZL_DLP_Abschnitt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDGleisAbschnitt" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Gleis_Abschnitt_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe, welcher Freimeldeabschnitt geprüft werden muss."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Gleis_Abschnitt"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDZLDLPFstr" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_ZL_DLP_Fstr_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe der ZL DLP Fstr, für welche die Gleisabschnitte UND-verknüpft werden müssen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_ZL_DLP_Fstr"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL_DLP_Fstr" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Zuordnung von ZL-DLP-Abschnitten zur ZL-Fahrstraße. DB-Regelwerk TM 2011-024 I.NVT 3 "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CZL_DLP_Fstr"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDZLFstr" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_ZL_Fstr_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe der ZL_Fstr, für welche die DLP erfolgen soll. Die Angabe, zu welcher Betriebsstelle die ZL_Fstr gehört, ist über die Zuordnung der Fstr_Zug_Rangier zur Örtlichkeit indirekt möglich. Mehrere Instanzen mit der gleichen ZL_Fstr müssen dann für die eigentliche systematische Prüfung in der DLP ODER-verknüpft werden. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_ZL_Fstr"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL_Fstr" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Objekt zur Aufnahme verschiedener Anstosspunkte (mittels ZL Fstr Anstoss) abhängig von den zugehörigen Vorsignalen und den Geschwindigkeitsklassen für die ZL. Über den Verweis zur Fstr Zug Rangier ist die Verbindung zur Fstr des ESTW hergestellt. Für eine Fstr des ESTW kann es mehrere ZL_Fstr geben, umgekehrt gilt dies nicht. DB-Regelwerk 819.0732 6 (1)b In der Tabelle der Zuglenkanstöße entspricht eine Zeile einer ZL-Fahrstraße. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CZL_Fstr"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrZugRangier" eType="ecore:EClass Verweise.ecore#//ID_Fstr_Zug_Rangier_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verlinkung, zu welcher Fahrstraße die ZL-Fahrstraße gehört. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fstr_Zug_Rangier"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDZL" lowerBound="1" eType="ecore:EClass Verweise.ecore#//ID_ZL_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die zugehörige ZL, dessen Bestandteil die ZL-Fahrstraße ist. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_ZL"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDZLFstr" eType="ecore:EClass Verweise.ecore#//ID_ZL_Fstr_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf eine ZL_Fstr, die als Alternative für die ursprünglich vorgesehene ZL_Fstr verwendet werden kann (in Tabelle ZL „D-Weg_Prio“). "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_ZL_Fstr"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zLFstrAllg" lowerBound="1"
+        eType="#//ZL_Fstr_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ZL_Fstr_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL_Fstr_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CZL_Fstr_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="annaeherungsgeschwindigkeit"
+        eType="#//Annaeherungsgeschwindigkeit_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geschwindigkeit, die der Berechnung des Anstoßzeitpunktes einer Fahrstraße zugrunde liegt. Die genaue Verwendung des Begriffes ist momentan in der Abstimmung mit den Experten der ZL, da dort in den verschiedenen Bauformen unterschiedliche Philosophien umgesetzt wurden und die Lastenheft-Vorgabe nicht eindeutig ist. DB-Regelwerk Ermittlung gemäß 819.0732 15"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [40..160] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Annaeherungsgeschwindigkeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dWegPrio" eType="#//DWeg_Prio_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="D-Weg-Priorität für die vorgesehene ZL-Fahrstraße, wenn diese aus betrieblichen Gründen gefordert wird. Es ist ein Zahlenwert von 0..4 einzutragen."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>[0..4]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="DWeg_Prio"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fUEMAuswertung" eType="#//FUEM_Auswertung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Auswertung der FUEM bei der Einstellung der ZL-Fahrstraße. Die FÜM-Auswertung (blinkend) ist notwendig, wenn bei der vorhergehenden Fstr. ein BÜ enthalten ist, der zum Zeitpunkt des Fstr.-Anstoßes noch nicht geschlossen ist. DB-Regelwerk 819.0732 8 (3) "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="FUEM_Auswertung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sichtzeitVorsignal" lowerBound="1"
+        eType="#//Sichtzeit_Vorsignal_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe der Sichtzeit auf das Vorsignal in Sekunden, Standard 15 Sekunden. Der Wert kann projektabhängig verändert werden. Für ZL-Fahrstraßen, die kein Vorsignal haben (LZB-Blockkennzeichen) ist der Wert „0“ anzugeben. DB-Regelwerk 819.0732 5 (2) 819.0732 11 (3) "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>15&lt;/ppi:ProposedValue>&#xD;&#xA;                     &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>0,[10..20] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Sichtzeit_Vorsignal"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL_Fstr_Anstoss" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Mit ZL_Fstr_Anstoss wird für eine Fahrstrasse der Zuglenkung der Anstosspunkt gebildet. Die für diese ZL-Fahrstraße relevante(n) Geschwindigkeitsklasse(n) (GK) wird/werden über die entsprechende Attributgruppe zugeordnet. DB-Regelwerk 819.0732 11 In der Tabelle der Zuglenkanstöße findet sich die Angabe in der Spalte \&quot;EP-MO\&quot;."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CZL_Fstr_Anstoss"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDEinschaltpunkt" eType="ecore:EClass Verweise.ecore#//ID_Einschaltpunkt_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf ein Schaltmittel, welches als Anstoß für die ZL-Fahrstraße ausgewertet wird. Der Standort bzw. die Stationierung geht in die Berechnung einer Verzögerungszeit ein. Das Attribut ist optional, da nicht für jede ZL-Fahrstraße ein Schaltmittel ausgewählt werden kann (z. B. an Stellbereichsgrenzen). In dem Fall ist ein ZN_Anzeigefeld als Anstoßkriterium festzulegen. Einer von beiden Verweisen (ID_Einschaltpunkt oder ID ZN Anzeigefeld Anstoss) muss immer gefüllt sein."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Einschaltpunkt"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDVorsignal" eType="ecore:EClass Verweise.ecore#//ID_Signal_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Standort der Vorsignalisierung des zu lenkenden Hauptsignals. Die Angabe ist notwendig für die Ermittlung des Sichtpunkts bei vorgegebener Sichtzeit. Es wird aus dem Objekt der Standort (km, Stationierung) benötigt. Der Verweis kann entfallen, wenn der Zug erst am zu lenkenden Hauptsignal startet oder das Startsignal ein LZB-Blockkennzeichen ist."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Vorsignal"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDZLFstr" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_ZL_Fstr_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verlinkung, zu welcher ZL_Fstr dieser Anstoß gehört. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_ZL_Fstr"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDZNAnzeigefeldAnstoss"
+        eType="ecore:EClass Verweise.ecore#//ID_ZN_Anzeigefeld_Anstoss_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf das ZN Anzeigefeld, aus dem der Anstoß der ZL ausgelöst wird. Das Attribut ist optional, falls für einen ZL-Anstoß kein geeignetes ZN-Anzeigefeld zur Verfügung steht. In dem Fall ist ein Schaltmittel als Anstoßkriterium festzulegen. Einer von beiden Verweisen (ID Einschaltpunkt oder ID_ZN_Anzeigefeld_Anstoss) muss immer gefüllt sein."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_ZN_Anzeigefeld_Anstoss"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zLFstrAnstossAllg" lowerBound="1"
+        eType="#//ZL_Fstr_Anstoss_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ZL_Fstr_Anstoss_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zLFstrAnstossGK" upperBound="-1"
+        eType="#//ZL_Fstr_Anstoss_GK_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ZL_Fstr_Anstoss_GK"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL_Fstr_Anstoss_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CZL_Fstr_Anstoss_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gKZSS" eType="#//GKZSS_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Der Anstoß aus einem Zugbeeinflussungssystem (ETCS, LZB) ist möglich. DB-Regelwerk 819.0732 13 "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GKZSS"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="vmaxAnnaeherung" eType="#//Vmax_Annaeherung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zulässige Höchstgeschwindigkeit zwischen Vorsignal und berechnetem Einschaltpunkt."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Vmax_Annaeherung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zLFstrZuschlag" eType="#//ZL_Fstr_Zuschlag_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zeitzuschlag für die Berechnung des Anstoßpunktes der ZL. Es kann sich die Notwendigkeit ergeben, eine Zeitspanne auf die bisher errechneten Zeiten (Sichtzeit Vorsignal, Fahrstraßenbildungszeit ...) aufzuschlagen, damit der ZL-Anstoß früher erfolgt, als nach der allgemeinen Berechnungsregel vorgesehen. In einem Bearbeitungsvermerk ist dafür eine Begründung anzugeben. Falls kein Zeitzuschlag erforderlich wird, ist das Attribut nicht zu befüllen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ZL_Fstr_Zuschlag"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL_Fstr_Anstoss_GK_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CZL_Fstr_Anstoss_GK"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gK" lowerBound="1" eType="#//GK_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geschwindigkeitsklasse, für die die in Tv GK angegebene Geschwindigkeit gilt. Für jede Geschwindigkeitsklasse (GK) ist eine Instanz der Attributgruppe ZL_Fstr_Anstoss_GK anzulegen. Bei der Festlegung von Geschwindigkeitsklassen sind herstellerspezifische Unterschiede zu beachten. DB-Regelwerk 819.0732 14 "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [40..160] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GK"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tvGK" lowerBound="1" eType="#//Tv_GK_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verzögerungszeit für den ZL-Anstoß. Ist keine tv erforderlich, ist \&quot;0\&quot; anzugeben. DB-Regelwerk 819.0732 8 (3) 819.0732 11 "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [0..300] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Tv_GK"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ZL_Fstr_Zuschlag_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TZL_Fstr_Zuschlag"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TSekunde"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL_Fstr_Zuschlag_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCZL_Fstr_Zuschlag"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ZL_Fstr_Zuschlag_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL_Signalgruppe" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Gruppe von Signalen (Haupt-, Sperrsignale), die von der Zug- bzw. Rangierlenkung für die Vorzugregelung benötigt wird. DB-Regelwerk 819.0732 A06 Im PT1 erfolgt die Angabe in einer gesonderten Tabelle, für die es im Regelwerk z. Zt. keine Vorgabe gibt."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CZL_Signalgruppe"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDZL" lowerBound="1" eType="ecore:EClass Verweise.ecore#//ID_ZL_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die zugehörige ZL, der die Signalgruppe zugeordnet ist. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_ZL"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zLSignalgruppeAllg" lowerBound="1"
+        eType="#//ZL_Signalgruppe_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ZL_Signalgruppe_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL_Signalgruppe_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CZL_Signalgruppe_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalgruppeBezeichner"
+        eType="#//Signalgruppe_Bezeichner_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichner der Signalgruppe für ZL und GBT. Die Bezeichnung ist mit dem Besteller abzustimmen."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signalgruppe_Bezeichner"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL_Signalgruppe_Zuordnung" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Zuordnung von Signalen zur ZL Signalgruppe. DB-Regelwerk 819.0732 A06 Im PT1 erfolgt die Angabe in einer gesonderten Tabelle, für die es im Regelwerk z. Zt. keine Vorgabe gibt."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CZL_Signalgruppe_Zuordnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSignal" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Signal_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf ein Signal, das der ZL_Signalgruppe zugeordnet wird."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Signal"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDZLSignalgruppe" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_ZL_Signalgruppe_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die ZL_Signalgruppe, zu der das zugeordnete Signal gehört."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_ZL_Signalgruppe"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZL_ZN_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CZL_ZN"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lenkziffernstellen" eType="#//Lenkziffernstellen_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Stellen der Lenkziffern. Die Angabe ist notwendig, wenn die ZN bereits vorhanden ist und nicht neu geplant wird. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>0&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Lenkziffernstellen"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zNStellen" eType="#//ZN_Stellen_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Stellen der ZN. Die Angabe ist notwendig, wenn die ZN bereits vorhanden ist und nicht neu geplant wird. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht zu finden. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>5&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ZN_Stellen"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ZN_Stellen_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCZN_Stellen"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMZNStellenObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,1515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Signale" nsURI="http://www.plan-pro.org/modell/Signale/1.9.0.2"
+    nsPrefix="nsSignale">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Anschaltdauer_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCAnschaltdauer"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMAnschaltdauerObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Auto_Einstellung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCAuto_Einstellung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMAutoEinstellungObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Befestigung_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBefestigung_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMBefestigungArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Beleuchtet_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBeleuchtet"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMBeleuchtetObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Besetzte_Ausfahrt_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBesetzte_Ausfahrt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DA_Manuell_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDA_Manuell"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Dunkelschaltung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDunkelschaltung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Durchfahrt_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDurchfahrt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMDurchfahrtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMAnschaltdauer">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMAnschaltdauer"/>
+    </eAnnotations>
+    <eLiterals name="ENUMAnschaltdauer_G" literal="G"/>
+    <eLiterals name="ENUMAnschaltdauer_T" value="1" literal="T"/>
+    <eLiterals name="ENUMAnschaltdauer_Z" value="2" literal="Z"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMAnschaltdauerObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMAnschaltdauer:Object"/>
+      <details key="baseType" value="ENUMAnschaltdauer"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMAutoEinstellung">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMAuto_Einstellung"/>
+    </eAnnotations>
+    <eLiterals name="ENUMAuto_Einstellung_SB" literal="SB"/>
+    <eLiterals name="ENUMAuto_Einstellung_sonstige" value="1" literal="sonstige"/>
+    <eLiterals name="ENUMAuto_Einstellung_ZL" value="2" literal="ZL"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMAutoEinstellungObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMAuto_Einstellung:Object"/>
+      <details key="baseType" value="ENUMAuto_Einstellung"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMBefestigungArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBefestigung_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMBefestigung_Art_Fundament" literal="Fundament"/>
+    <eLiterals name="ENUMBefestigung_Art_Pfosten" value="1" literal="Pfosten"/>
+    <eLiterals name="ENUMBefestigung_Art_Schienenfuss" value="2" literal="Schienenfuss"/>
+    <eLiterals name="ENUMBefestigung_Art_Mast" value="3" literal="Mast"/>
+    <eLiterals name="ENUMBefestigung_Art_Rahmen" value="4" literal="Rahmen"/>
+    <eLiterals name="ENUMBefestigung_Art_Signal_Anordnung_Arbeitsbuehne" value="5"
+        literal="Signal_Anordnung_Arbeitsbuehne"/>
+    <eLiterals name="ENUMBefestigung_Art_Signal_Anordnung_Mast" value="6" literal="Signal_Anordnung_Mast"/>
+    <eLiterals name="ENUMBefestigung_Art_Signal_Anordnung_Sonstige" value="7" literal="Signal_Anordnung_Sonstige"/>
+    <eLiterals name="ENUMBefestigung_Art_Signalausleger" value="8" literal="Signalausleger"/>
+    <eLiterals name="ENUMBefestigung_Art_Signalbruecke" value="9" literal="Signalbruecke"/>
+    <eLiterals name="ENUMBefestigung_Art_sonstige" value="10" literal="sonstige"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMBefestigungArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBefestigung_Art:Object"/>
+      <details key="baseType" value="ENUMBefestigung_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMBeleuchtet">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBeleuchtet"/>
+    </eAnnotations>
+    <eLiterals name="ENUMBeleuchtet_angestrahlt" literal="angestrahlt"/>
+    <eLiterals name="ENUMBeleuchtet_innenbeleuchtet" value="1" literal="innenbeleuchtet"/>
+    <eLiterals name="ENUMBeleuchtet_nein" value="2" literal="nein"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMBeleuchtetObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBeleuchtet:Object"/>
+      <details key="baseType" value="ENUMBeleuchtet"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMDurchfahrt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMDurchfahrt"/>
+    </eAnnotations>
+    <eLiterals name="ENUMDurchfahrt_erlaubt" literal="erlaubt"/>
+    <eLiterals name="ENUMDurchfahrt_nur_mit_Sh1" value="1" literal="nur_mit_Sh1"/>
+    <eLiterals name="ENUMDurchfahrt_verboten" value="2" literal="verboten"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMDurchfahrtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMDurchfahrt:Object"/>
+      <details key="baseType" value="ENUMDurchfahrt"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMFiktivesSignalFunktion">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMFiktives_Signal_Funktion"/>
+    </eAnnotations>
+    <eLiterals name="ENUMFiktives_Signal_Funktion_FAP_Start" literal="FAP_Start"/>
+    <eLiterals name="ENUMFiktives_Signal_Funktion_FAP_Ziel" value="1" literal="FAP_Ziel"/>
+    <eLiterals name="ENUMFiktives_Signal_Funktion_Rangier_Start_Ziel_ohne_Signal"
+        value="2" literal="Rangier_Start_Ziel_ohne_Signal"/>
+    <eLiterals name="ENUMFiktives_Signal_Funktion_sonstige" value="3" literal="sonstige"/>
+    <eLiterals name="ENUMFiktives_Signal_Funktion_Zug_Start_Awanst" value="4" literal="Zug_Start_Awanst"/>
+    <eLiterals name="ENUMFiktives_Signal_Funktion_Zug_Start_Mittelweiche" value="5"
+        literal="Zug_Start_Mittelweiche"/>
+    <eLiterals name="ENUMFiktives_Signal_Funktion_Zug_Start_ohne_Signal" value="6"
+        literal="Zug_Start_ohne_Signal"/>
+    <eLiterals name="ENUMFiktives_Signal_Funktion_Zug_Ziel_Awanst" value="7" literal="Zug_Ziel_Awanst"/>
+    <eLiterals name="ENUMFiktives_Signal_Funktion_Zug_Ziel_ohne_Signal" value="8"
+        literal="Zug_Ziel_ohne_Signal"/>
+    <eLiterals name="ENUMFiktives_Signal_Funktion_Zug_Ziel_Strecke" value="9" literal="Zug_Ziel_Strecke"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMFiktivesSignalFunktionObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMFiktives_Signal_Funktion:Object"/>
+      <details key="baseType" value="ENUMFiktives_Signal_Funktion"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMGeltungsbereich">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMGeltungsbereich"/>
+    </eAnnotations>
+    <eLiterals name="ENUMGeltungsbereich_DS" literal="DS"/>
+    <eLiterals name="ENUMGeltungsbereich_DV" value="1" literal="DV"/>
+    <eLiterals name="ENUMGeltungsbereich_S_Bahn_B" value="2" literal="S-Bahn B"/>
+    <eLiterals name="ENUMGeltungsbereich_S_Bahn_HH" value="3" literal="S-Bahn HH"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMGeltungsbereichObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMGeltungsbereich:Object"/>
+      <details key="baseType" value="ENUMGeltungsbereich"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMRahmenArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMRahmen_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMRahmen_Art_Bezeichnungsschild" literal="Bezeichnungsschild"/>
+    <eLiterals name="ENUMRahmen_Art_Blechtafel" value="1" literal="Blechtafel"/>
+    <eLiterals name="ENUMRahmen_Art_Keramikkoerper" value="2" literal="Keramikkoerper"/>
+    <eLiterals name="ENUMRahmen_Art_Schirm" value="3" literal="Schirm"/>
+    <eLiterals name="ENUMRahmen_Art_Zusatzanzeiger" value="4" literal="Zusatzanzeiger"/>
+    <eLiterals name="ENUMRahmen_Art_sonstige" value="5" literal="sonstige"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMRahmenArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMRahmen_Art:Object"/>
+      <details key="baseType" value="ENUMRahmen_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMSignalArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSignal_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMSignal_Art_andere" literal="andere"/>
+    <eLiterals name="ENUMSignal_Art_Hauptsignal" value="1" literal="Hauptsignal"/>
+    <eLiterals name="ENUMSignal_Art_Hauptsperrsignal" value="2" literal="Hauptsperrsignal"/>
+    <eLiterals name="ENUMSignal_Art_Mehrabschnittssignal" value="3" literal="Mehrabschnittssignal"/>
+    <eLiterals name="ENUMSignal_Art_Mehrabschnittssperrsignal" value="4" literal="Mehrabschnittssperrsignal"/>
+    <eLiterals name="ENUMSignal_Art_Sperrsignal" value="5" literal="Sperrsignal"/>
+    <eLiterals name="ENUMSignal_Art_Vorsignal" value="6" literal="Vorsignal"/>
+    <eLiterals name="ENUMSignal_Art_Vorsignalwiederholer" value="7" literal="Vorsignalwiederholer"/>
+    <eLiterals name="ENUMSignal_Art_Zugdeckungssignal" value="8" literal="Zugdeckungssignal"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMSignalArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSignal_Art:Object"/>
+      <details key="baseType" value="ENUMSignal_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMSignalBefestigungsart">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSignal_Befestigungsart"/>
+    </eAnnotations>
+    <eLiterals name="ENUMSignal_Befestigungsart_Bahnsteig" literal="Bahnsteig"/>
+    <eLiterals name="ENUMSignal_Befestigungsart_Fundament" value="1" literal="Fundament"/>
+    <eLiterals name="ENUMSignal_Befestigungsart_Konstruktionsteil" value="2" literal="Konstruktionsteil"/>
+    <eLiterals name="ENUMSignal_Befestigungsart_OL_Kettenwerk" value="3" literal="OL_Kettenwerk"/>
+    <eLiterals name="ENUMSignal_Befestigungsart_OL_Mast" value="4" literal="OL_Mast"/>
+    <eLiterals name="ENUMSignal_Befestigungsart_Prellbock" value="5" literal="Prellbock"/>
+    <eLiterals name="ENUMSignal_Befestigungsart_Signalausleger" value="6" literal="Signalausleger"/>
+    <eLiterals name="ENUMSignal_Befestigungsart_Signalbruecke" value="7" literal="Signalbruecke"/>
+    <eLiterals name="ENUMSignal_Befestigungsart_Sonderkonstruktion" value="8" literal="Sonderkonstruktion"/>
+    <eLiterals name="ENUMSignal_Befestigungsart_Dach" value="9" literal="Dach"/>
+    <eLiterals name="ENUMSignal_Befestigungsart_Mast" value="10" literal="Mast"/>
+    <eLiterals name="ENUMSignal_Befestigungsart_Pfahl" value="11" literal="Pfahl"/>
+    <eLiterals name="ENUMSignal_Befestigungsart_Wand" value="12" literal="Wand"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMSignalBefestigungsartObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSignal_Befestigungsart:Object"/>
+      <details key="baseType" value="ENUMSignal_Befestigungsart"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMSignalFunktion">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSignal_Funktion"/>
+    </eAnnotations>
+    <eLiterals name="ENUMSignal_Funktion_Alleinstehendes_Zusatzsignal" literal="Alleinstehendes_Zusatzsignal"/>
+    <eLiterals name="ENUMSignal_Funktion_andere" value="1" literal="andere"/>
+    <eLiterals name="ENUMSignal_Funktion_Ausfahr_Signal" value="2" literal="Ausfahr_Signal"/>
+    <eLiterals name="ENUMSignal_Funktion_BUE_Ueberwachungssignal" value="3" literal="BUE_Ueberwachungssignal"/>
+    <eLiterals name="ENUMSignal_Funktion_Vorsignal_Vorsignalwiederholer" value="4"
+        literal="Vorsignal_Vorsignalwiederholer"/>
+    <eLiterals name="ENUMSignal_Funktion_Zug_Ziel_Signal" value="5" literal="Zug_Ziel_Signal"/>
+    <eLiterals name="ENUMSignal_Funktion_Ausfahr_Zwischen_Signal" value="6" literal="Ausfahr_Zwischen_Signal"/>
+    <eLiterals name="ENUMSignal_Funktion_Block_Signal" value="7" literal="Block_Signal"/>
+    <eLiterals name="ENUMSignal_Funktion_Deckungs_Signal" value="8" literal="Deckungs_Signal"/>
+    <eLiterals name="ENUMSignal_Funktion_Einfahr_Ausfahr_Signal" value="9" literal="Einfahr_Ausfahr_Signal"/>
+    <eLiterals name="ENUMSignal_Funktion_Einfahr_Block_Signal" value="10" literal="Einfahr_Block_Signal"/>
+    <eLiterals name="ENUMSignal_Funktion_Einfahr_Signal" value="11" literal="Einfahr_Signal"/>
+    <eLiterals name="ENUMSignal_Funktion_Gruppenausfahr_Gruppenzwischen_Signal" value="12"
+        literal="Gruppenausfahr_Gruppenzwischen_Signal"/>
+    <eLiterals name="ENUMSignal_Funktion_Gruppenausfahr_Signal" value="13" literal="Gruppenausfahr_Signal"/>
+    <eLiterals name="ENUMSignal_Funktion_Gruppenzwischen_Signal" value="14" literal="Gruppenzwischen_Signal"/>
+    <eLiterals name="ENUMSignal_Funktion_Nachrueck_Signal" value="15" literal="Nachrueck_Signal"/>
+    <eLiterals name="ENUMSignal_Funktion_Zugdeckungs_Signal" value="16" literal="Zugdeckungs_Signal"/>
+    <eLiterals name="ENUMSignal_Funktion_Zwischen_Signal" value="17" literal="Zwischen_Signal"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMSignalFunktionObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSignal_Funktion:Object"/>
+      <details key="baseType" value="ENUMSignal_Funktion"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMSignalsystem">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSignalsystem"/>
+    </eAnnotations>
+    <eLiterals name="ENUMSignalsystem_Hl" literal="Hl"/>
+    <eLiterals name="ENUMSignalsystem_HV" value="1" literal="HV"/>
+    <eLiterals name="ENUMSignalsystem_Ks" value="2" literal="Ks"/>
+    <eLiterals name="ENUMSignalsystem_sonstige" value="3" literal="sonstige"/>
+    <eLiterals name="ENUMSignalsystem_SV" value="4" literal="SV"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMSignalsystemObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSignalsystem:Object"/>
+      <details key="baseType" value="ENUMSignalsystem"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMSonstigeZulaessigeAnordnung">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSonstige_Zulaessige_Anordnung"/>
+    </eAnnotations>
+    <eLiterals name="ENUMSonstige_Zulaessige_Anordnung_Anordnung_des_Signals_rechts_am_Gleis"
+        literal="Anordnung_des_Signals_rechts_am_Gleis"/>
+    <eLiterals name="ENUMSonstige_Zulaessige_Anordnung_Anordnung_des_Signals_rechts_am_Gleis_ohne_Schachbretttafel"
+        value="1" literal="Anordnung_des_Signals_rechts_am_Gleis_ohne_Schachbretttafel"/>
+    <eLiterals name="ENUMSonstige_Zulaessige_Anordnung_Nichtgeltung_fuer_Fahrten_auf_dem_Gegengleis"
+        value="2" literal="Nichtgeltung_fuer_Fahrten_auf_dem_Gegengleis"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMSonstigeZulaessigeAnordnungObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSonstige_Zulaessige_Anordnung:Object"/>
+      <details key="baseType" value="ENUMSonstige_Zulaessige_Anordnung"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMStreuscheibeArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMStreuscheibe_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMStreuscheibe_Art_LED" literal="LED"/>
+    <eLiterals name="ENUMStreuscheibe_Art_sonstige" value="1" literal="sonstige"/>
+    <eLiterals name="ENUMStreuscheibe_Art_HRL" value="2" literal="HRL"/>
+    <eLiterals name="ENUMStreuscheibe_Art_HG" value="3" literal="HG"/>
+    <eLiterals name="ENUMStreuscheibe_Art_HN" value="4" literal="HN"/>
+    <eLiterals name="ENUMStreuscheibe_Art_ORL" value="5" literal="ORL"/>
+    <eLiterals name="ENUMStreuscheibe_Art_VRL" value="6" literal="VRL"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMStreuscheibeArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMStreuscheibe_Art:Object"/>
+      <details key="baseType" value="ENUMStreuscheibe_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMStreuscheibeBetriebsstellung">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="HGx_gw=Ergänzung gewendete Streuscheiben (Information zunehmend von SBI gefordert)"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMStreuscheibe_Betriebsstellung"/>
+    </eAnnotations>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_HG1" literal="HG1"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_HG1_gw" value="1" literal="HG1_gw"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_HG2" value="2" literal="HG2"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_HG2_gw" value="3" literal="HG2_gw"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_HG3" value="4" literal="HG3"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_HG3_gw" value="5" literal="HG3_gw"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_HG4" value="6" literal="HG4"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_HG4_gw" value="7" literal="HG4_gw"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_HL" value="8" literal="HL"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_HR" value="9" literal="HR"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_OL" value="10" literal="OL"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_OR" value="11" literal="OR"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_sonstige" value="12" literal="sonstige"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_VL" value="13" literal="VL"/>
+    <eLiterals name="ENUMStreuscheibe_Betriebsstellung_VR" value="14" literal="VR"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMStreuscheibeBetriebsstellungObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMStreuscheibe_Betriebsstellung:Object"/>
+      <details key="baseType" value="ENUMStreuscheibe_Betriebsstellung"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMTunnelsignal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMTunnelsignal"/>
+    </eAnnotations>
+    <eLiterals name="ENUMTunnelsignal_nein" literal="nein"/>
+    <eLiterals name="ENUMTunnelsignal_ohne_Dauernachtschaltung" value="1" literal="ohne_Dauernachtschaltung"/>
+    <eLiterals name="ENUMTunnelsignal_mit_Dauernachtschaltung" value="2" literal="mit_Dauernachtschaltung"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMTunnelsignalObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMTunnelsignal:Object"/>
+      <details key="baseType" value="ENUMTunnelsignal"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fiktives_Signal_Funktion_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCFiktives_Signal_Funktion"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMFiktivesSignalFunktionObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Gegengleis_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGegengleis"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Geltungsbereich_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGeltungsbereich"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMGeltungsbereichObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Geschaltet_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGeschaltet"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Hoehe_Fundamentoberkante_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="THoehe_Fundamentoberkante"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TMeter"/>
+      <details key="pattern" value="(-?((1\.(250|2[0-4][0-9]|[01][0-9]{2}))|(0\.([1-9][0-9]{2}|0[0-9][1-9]|0[1-9]0))))|0\.000"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hoehe_Fundamentoberkante_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCHoehe_Fundamentoberkante"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Hoehe_Fundamentoberkante_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Obere_Lichtpunkthoehe_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TObere_Lichtpunkthoehe"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TMeter"/>
+      <details key="pattern" value="0\.(22[5-9]|2[3-9][0-9]|[3-9][0-9]{2})|([1-9]|1[0-4])\.[0-9]{3}|15.000"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Obere_Lichtpunkthoehe_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCObere_Lichtpunkthoehe"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Obere_Lichtpunkthoehe_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="PZB_Schutzstrecke_Soll_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TPZB_Schutzstrecke_Soll"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TMeter"/>
+      <details key="pattern" value="2[1-9][0-9]|[34][0-9]{2}|5[0-4][0-9]|550"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PZB_Schutzstrecke_Soll_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCPZB_Schutzstrecke_Soll"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//PZB_Schutzstrecke_Soll_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rahmen_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCRahmen_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMRahmenArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rangierstrasse_Restaufloesung_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCRangierstrasse_Restaufloesung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Richtpunkt_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TRichtpunkt"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TText"/>
+      <details key="pattern" value=".{1,16}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Richtpunkt_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCRichtpunkt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Richtpunkt_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Richtpunktentfernung_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TRichtpunktentfernung"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TMeter"/>
+      <details key="pattern" value="[1-9][0-9]{0,1}|[1-4][0-9]{2}|500"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Richtpunktentfernung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCRichtpunktentfernung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Richtpunktentfernung_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal" eSuperTypes="Basisobjekte.ecore#//Punkt_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Technische, punktförmig verortete Einrichtung der Eisenbahninfrastruktur, die als Teil der Außenanlage einer Außenelement-Ansteuerung mit statischen oder dynamischen Signalbildern Anweisungen zur Fahrweise oder andere Verhaltensvorschriften an den Triebfahrzeugführer übermittelt oder als Teil der Innenanlage einer Außenelement-Ansteuerung mittels eines Bedienpunkts zur Behandlung von Fahrwegen als Start- oder Zielsignal dient. Steht ein Signal an einer Grenze zweier Bereiche, so ist es dem Bereich zuzuordnen, dem der vom Signal gedeckte Gleisabschnitt angehört. Das Objekt Signal beinhaltet zentrale Eigenschaften, die bei Signalen der Außenanlage in Signal-Befestigungen bzgl. der Konstruktion und in Signal-Rahmen bzgl. der zugeordneten Signalbegriffe ergänzt werden. Je nach Ausführung eines Signals der Außenanlage können dafür mehrere Signal-Befestigungen erforderlich sein (z.B. \u0027Fundament\u0027 und \u0027Signalanordnung\u0027), dafür mehrere Signal-Rahmen erforderlich sein (z.B. \u0027Schirm\u0027, 2x\u0027Zusatzanzeiger\u0027 und \u0027Bezeichnungsschild\u0027) und / oder zeitgleich mehrere Signalbegriffe angezeigt werden, die zu diesem Zeitpunkt für ein Gleis - meist nur in einer Fahrtrichtung - an einem Punkt gültig sind und deren logische Überlagerung zur Handlungsanweisung für den Triebfahrzeugführer wird. Signalbilder, die zwar einem gemeinsamen Punkt zugeordnet sind, aber keiner gemeinsamen logischen Interpretation bedürfen, werden unterschiedlichen Signalen zugeordnet. Kann ein Signal mehrere Signalbilder anzeigen, so werden diese in Gruppen (analog zur Konstruktion) zusammengefasst, jede dieser Gruppen bildet einen Signal-Rahmen. Zur ausführliche Beschreibung der Modellierung eines Signals s. Modellierung Signal. Besonderheiten zur Verortung von Signalen sind unter Punkt Objekt beschrieben. DB-Regelwerk 301, 819.02, Planungsdaten: Sicherungstechnischer Lageplan, statische Eigenschaften: Signaltabelle 1, dynamische Eigenschaften: Signaltabelle 2, vereinzelt sind einzelne Angaben auch anderen Fundorten zugeordnet, dies ist den jeweiligen Einzelbeiträgen zu entnehmen. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" eType="ecore:EClass BasisTypen.ecore#//Bezeichnung_Element_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pZBSchutzstreckeSoll" eType="#//PZB_Schutzstrecke_Soll_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Solllänge der PZB-Schutzstrecke eines Signals. Liegen mehrere Schutzstrecken vor (unterschiedliche Durchrutschwege), so wird hier die Solllänge zum maßgebenden PZB-Gefahrpunkt eingetragen. Maßgebend ist der PZB-Gefahrpunkt, der für die Positionierung des Signals ausschlaggebend ist. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                        &lt;ppi:WorkflowInformation>&#xD;&#xA;                           &lt;ppi:Patternbeschreibung> [210..550] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                        &lt;/ppi:WorkflowInformation>&#xD;&#xA;                     "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="PZB_Schutzstrecke_Soll"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalFstr" eType="#//Signal_Fstr_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signal_Fstr"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalFstrAusInselgleis"
+        eType="#//Signal_Fstr_Aus_Inselgleis_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signal_Fstr_Aus_Inselgleis"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalFstrS" eType="#//Signal_Fstr_S_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signal_Fstr_S"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalFiktiv" eType="#//Signal_Fiktiv_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signal_Fiktiv"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalReal" eType="#//Signal_Real_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signal_Real"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSignal_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMSignalArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Befestigung" eSuperTypes="Basisobjekte.ecore#//Punkt_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Konstruktionselement, das der baulichen Aufnahme eines oder mehrerer Signalrahmen dient. Die konkreten konstruktiven Merkmale sind in einer (oder im Bedarfsfall mehreren) Regelzeichnung(en) enthalten, auf die jeweils ein GUID-Verweis zeigt. Bei Sonderkonstruktionen wird die Regelzeichnung durch die zugehörigen Zulassungsdokumente ersetzt. Diese sind als Anhang mittels eines Bearbeitungsvermerks beizufügen. Signalbefestigungen können auch weitere Signalbefestigungen aufnehmen (z.B. trägt ein Signalausleger eine Arbeitsbühne). Einer Signalbefestigung ist mindestens ein Objekt Signal Rahmen oder Signal Befestigung zugeordnet. Ausführliche Beschreibung s. Modellierung Signal. DB-Regelwerk Regelzeichnungen "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal_Befestigung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDRegelzeichnung" upperBound="-1"
+        eType="ecore:EClass Verweise.ecore#//ID_Regelzeichnung_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf ein Objekt Regelzeichnung. Für Signale werden in der Regel die Regelzeichnungen der Gruppe S800x,yy verwendet, die die grundsätzliche Anordnung am Gleis beschreiben. Die angegebene Regelzeichnung wird mittels Parametern (z. B.: \&quot;Bild\&quot;) weiter spezifiziert. Der Verweis kann mehrfach verwendet werden, wenn die Zuordnung mehrerer Regelzeichnungen explizit erforderlich ist. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Regelzeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDRegelzeichnungVsigTafel"
+        eType="ecore:EClass Verweise.ecore#//ID_Regelzeichnung_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die Regelzeichnung für die Vorsignaltafel."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Regelzeichnung_Vsig_Tafel"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSignalBefestigung" eType="ecore:EClass Verweise.ecore#//ID_Signal_Befestigung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf ein zugehöriges Objekt Signal Befestigung. Zur Anwendung siehe Modellierung Signal. DB-Regelwerk Im bisherigen PT1 keine eindeutige Darstellung, oft aus den Einträgen in der Signaltabelle1, Zeilen 4-6, 10, 13 und 24-28 zu erkennen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Signal_Befestigung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalBefestigungAllg"
+        lowerBound="1" eType="#//Signal_Befestigung_Allg_AttributeGroup" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signal_Befestigung_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Befestigung_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal_Befestigung_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="befestigungArt" lowerBound="1"
+        eType="#//Befestigung_Art_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Beschreibung der Signalbefestigung, um auch ohne Regelzeichnung die grundsätzliche Art erkennen zu können. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Im bisherigen PT1 keine eindeutige Darstellung, in der Regel aus den Einträgen in der Signaltabelle 1 zu erkennen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Befestigung_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hoeheFundamentoberkante"
+        eType="#//Hoehe_Fundamentoberkante_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Tatsächliche Höhe der Fundamentoberkante in Bezug zur Schienenoberkante (SO). Die Höhe der Fundamentoberkante ist die Differenz der absoluten Höhen von der Schienenoberkante der nichtüberhöhten Schiene an dem Punkt, der von der Senkrechten auf die Gleisachse durch den Fundamentmittelpunkt bestimmt wird und der Fundamentoberkante (ohne Signalaufbau). Bei positiven Werten befindet sich die Fundamentoberkante unterhalb der Schienenoberkante (Standardanordnung). Übliche Werte sind 100 mm und 700 mm. Das Attribut ist für Fundamente immer anzugeben, für andere Befestigungstypen ist es gegenstandslos. Die hier angegebene Höhe kann von der der Regelzeichnung abweichen, in diesem Fall gilt die Regelzeichnung nur für die anderen konstruktiven Merkmale. Die Angabe erfolgt im Modell in Meter mit drei Nachkommastellen. DB-Regelwerk Im bisherigen PT1 keine eindeutige Darstellung, in der Regel aus den Einträgen in der Signaltabelle1, Zeilen 4-6 zu erkennen."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>[-1.250..1.250], 3 Nachkommastellen&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Hoehe_Fundamentoberkante"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="obereLichtpunkthoehe" eType="#//Obere_Lichtpunkthoehe_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezugshöhe des maßgebenden Lichtpunktes über Schienenoberkante (SO). DB-Regelwerk Planungsdaten: Signaltabelle 1, Zeile 3; wird jedoch im Modell in Meter (mit drei Nachkommastellen) angegeben. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [0.225..15.000], immer drei Stellen nach dem Dezimaltrennzeichen &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Obere_Lichtpunkthoehe"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Befestigungsart_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSignal_Befestigungsart"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMSignalBefestigungsartObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Fank_Zuordnung" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Abbildung des Fahrtankünders (Weißes Dreieck) sowie Zuordnung der Startsignale, für die eine Fahrtankündigung erfolgen soll. Ein physischer Fahrtankünder (Anzeiger) wird als Signal abgebildet, wobei hierbei nur die Attributgruppen Bezeichnung sowie Signal_Real zu nutzen sind (nicht: Signal_Real_Aktiv, da kein Anschluss mittels ID_Stellelement an ein Stellwerk). Erfolgt die Fahrtankündigung ausschließlich auf mobilen Endgeräten, so entfällt das Anlegen des Signals für den Fahrtankünder. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal_Fank_Zuordnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSignalFank" upperBound="-1"
+        eType="ecore:EClass Verweise.ecore#//ID_Signal_Fank_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den oder die Fahrtankünder (\&quot;Weißes Dreieck\&quot;), durch die eine Fahrtstellung der unter ID_Signal_Start angegebenen Startsignale angekündigt werden soll. Der Verweis entfällt, wenn die Anzeige ausschließlich auf mobilen Endgeräten erfolgt."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Signal_Fank"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSignalStart" lowerBound="1"
+        upperBound="-1" eType="ecore:EClass Verweise.ecore#//ID_Signal_Start_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf das Startsignal bzw. die Startsignale, deren Fahrtstellung angekündigt werden soll."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Signal_Start"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Fiktiv_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal_Fiktiv"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="autoEinstellung" eType="#//Auto_Einstellung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zusätzliche Angabe zu Aktiven Signalen, die sich selbsttätig stellen können. Dabei wird unterschieden zwischen Signalen mit Signalselbststellbetrieb (Sb) und in der Zuglenkung (ZL). DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung, mittelbar aus Angaben in der Zugstraßentabelle zu erkennen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Auto_Einstellung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fiktivesSignalFunktion"
+        lowerBound="1" upperBound="-1" eType="#//Fiktives_Signal_Funktion_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Funktion (Verwendungsmöglichkeit) eines fiktiven Signals. Sollen an einem Punkt mehrere Funktionen realisiert werden, so muss für jede Funktion je ein fiktives Signal an diesem Punkt vorgesehen werden. DB-Regelwerk Fiktive Signale sind als Start- oder Zielpunkte in den Zug- oder Rangierstraßentabellen erkennbar. Ihre Funktion ist nicht unmittelbar dargestellt, sie ergibt sich aus der Verwendung."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fiktives_Signal_Funktion"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Fstr_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal_Fstr"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="besetzteAusfahrt" eType="#//Besetzte_Ausfahrt_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe, ob für das Startsignal im Stumpfgleis eine Besetzte Ausfahrt geplant ist (true) oder nicht (false). Im Planungs- bzw. Projektierungsfall \&quot;Besetzte Ausfahrt\&quot; müssen die an das Stumpfgleis anschließenden Weichen oder Kreuzungen nicht freigemeldet sein, wenn sie durch die zuletzt in das Stumpfgleis eingestellte Fahrstraße kontinuierlich besetzt wurden und besetzt geblieben sind. DB Regelwerk Lastenheft ESTW F1, Abschnitt 4.3.3"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Besetzte_Ausfahrt"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dAManuell" eType="#//DA_Manuell_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Gibt an, ob eine manuelle Durchrutschwegauflösung möglich ist. Die manuelle Durchrutschwegauflösung ist als Möglichkeit zur Regelbedienung zu planen. Sie ist nicht mit der Hilfsauflösung zu verwechseln, die als Grundfunktion keiner Planung bedarf. Im herkömmlichen PT1 Inhalt der Durchrutschwegtabelle, gilt jedoch immer für alle Durchrutschwege eines Signals einheitlich. Wertzuordnung: true - manuelle Durchrutschwegauflösung ist möglich, false - manuelle Durchrutschwegauflösung ist nicht möglich. DB-Regelwerk Durchrutschwegtabelle, Spalte 15 "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="DA_Manuell"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="durchfahrt" eType="#//Durchfahrt_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Gibt an, ob und wie Weiterfahren ohne Halt über das Zielsignal eines Fahrweges hinaus gestattet sind. Ist die Durchfahrt mittels überstellten Zugstraßen verboten, mittels einzeln angewählter Zugstraßen auf dieses Signal und von diesem Signal aber zu gestatten, so ist der Wert \&quot;erlaubt\&quot; zu verwenden. In diesem Fall wird allerdings kein Objekt Fstr Aneinander über dieses Signal angelegt. Ist betrieblich die Weiterfahrt einer Zugfahrt als Rangierfahrt zu gestatten (diese Änderung der Ril 408 ist noch nicht Bestandteil des Lastenheftes ESTW), so ist der Wert \&quot;nur_mit_Sh1\&quot; zu verwenden. Technisch schließt eine Zugfahrt mit Durchrutschweg D0 an, das Signal zeigt Hp0 und Sh1. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. Die Symbolik im Sicherungstechnischen Lageplan gemäße 819.9002 (11) ist für diesen Sachverhalt nicht ausreichend. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>erlaubt&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Durchfahrt"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDRaZielErlaubnisabhaengig"
+        eType="ecore:EClass Verweise.ecore#//ID_Block_Element_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Eine Rangierstraße mit diesem Zielsignal ist nur einstellbar, wenn die Erlaubnis des Streckenblocks in Richtung Strecke zeigt. Abhängigkeit einer auf ein Signal zuführenden Rangierstraße von der Stellung der Erlaubnis einer Block Anlage. Das Attribut wird nur dann befüllt, wenn eine Abhängigkeit besteht. DB-Regelwerk Planungsdaten: Rangierstraßentabelle, Spalte 7"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_RaZiel_Erlaubnisabhaengig"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rangierstrasseRestaufloesung"
+        eType="#//Rangierstrasse_Restaufloesung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Auflösung einer nicht angefahrenen Rangierstraße bei einer wendenden Rangierfahrt über mehrere Rangierstraßen. Es handelt sich hierbei um den durch die Planung festzulegenden Fall 2 der Rangierstraßenrestauflösung (RRAU) des Lastenheftes für das Elektronische Stellwerk, Teilheft F1. Die Fälle 1 RRAU und 3 RRAU gemäß Lastenheft sind Grundfunktion eines ESTW und bedürfen keiner Planung. Der Eintrag im Attribut Rangierstrasse_Restauflösung hat auf diese beiden Fälle keine Auswirkung. Das Attribut wird in den Signalen gefüllt, an dem nicht angefahrene, aufzulösende Rangierstraßen beginnen. Wertzuordnung: true – Rangierstraßenrestauflösung erlaubt, false – Rangierstraßenrestauflösung verboten. DB-Regelwerk Planungsdaten: Rangierstraßentabelle, Spalte 12 "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Rangierstrasse_Restaufloesung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Fstr_Aus_Inselgleis_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal_Fstr_Aus_Inselgleis"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDRaFahrtGleichzeitigVerbot"
+        upperBound="-1" eType="ecore:EClass Verweise.ecore#//ID_Signal_Gleisbezechnung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die Gleis_Bezeichnung des Inselgleises, von dem aus eine gleichzeitige Rangierfahrt aus dem Inselgleis untersagt ist. Das Attribut ist für beide Signale erforderlich, die das Inselgleis begrenzen. Bei Inselgleisen mit mehreren Signalen (z. B. bei Kurz-Lang-Einfahrten) sind alle relevanten Gleisbezeichnungen anzugeben. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_RaFahrt_Gleichzeitig_Verbot"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDZgFahrtGleichzeitigVerbot"
+        upperBound="-1" eType="ecore:EClass Verweise.ecore#//ID_Signal_Gleisbezechnung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die Gleis_Bezeichnung des Inselgleises, von dem aus eine gleichzeitige Zugfahrt aus dem Inselgleis untersagt ist. Das Attribut ist für beide Signale erforderlich, die das Inselgleis begrenzen. Bei Inselgleisen mit mehreren Signalen (z. B. bei Kurz-Lang-Einfahrten) sind alle relevanten Gleisbezeichnungen anzugeben. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_ZgFahrt_Gleichzeitig_Verbot"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Fstr_S_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal_Fstr_S"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gegengleis" eType="#//Gegengleis_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Signal steht am Gegengleis. Das Gleis, das auf zweigleisiger, freier Strecke entgegen der gewöhnlichen Fahrtrichtung befahren wird (bei den EdB das linke Gleis), wird als Gegengleis bezeichnet. Das Attribut wird nur für (reale und fiktive) Signale an den Streckengleisen mit der Betriebsform \&quot;zweigleisiger Betrieb\&quot; ausgefüllt. Erfüllt ein Ausfahrziel die Bedingung Gegengleis = true, ist für die Zulassung einer Zugfahrt auf dieses Gleis ein Gegengleisanzeiger erforderlich. Im Beispiel sind die (realen) Signale 13 und AA sowie die fiktiven Signale HIDOG und DOHIG Signale, die am Gegengleis stehen. Media:Signale am Gegengleis.svg Wertzuordnung: true - Signal steht an einem Gegengleis, false - Signal steht nicht an einem Gegengleis. Hinweis: Dieses Attribut darf nicht verwechselt werden mit dem Attribut Wirkrichtung, das sich auf die topologische Richtung des Gleises bezieht. DB-Regelwerk Planungsdaten: Sicherungstechnischer Lageplan / BÜ-Lageplan "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Gegengleis"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnrueckverschluss" upperBound="-1"
+        eType="ecore:EClass Verweise.ecore#//ID_Schaltmittel_Zuordnung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf alle Gleisschaltmittel, bei dessen Befahrung der Anrückverschluss wirkt. Der Anrückverschluss eines Signals wird benötigt zur Stellbarkeit und Löschung eines Ersatzsignals, zur Verhinderung der Fahrstraßenhilfsauflösung, wenn sich ein Zug diesem Signal nähert. Das Gleisschaltmittel ist in der Regel ein Freimeldeabschnitt. Das Signal ist in der Regel ein Einfahrsignal. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anrueckverschluss"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDZweitesHaltfallkriterium"
+        eType="ecore:EClass Verweise.ecore#//ID_Zweites_Haltfallkriterium_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf ein Gleisschaltmittel, dessen Befahrung als zweites Haltfallkriterium dient."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Zweites_Haltfallkriterium"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Funktion_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSignal_Funktion"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMSignalFunktionObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Rahmen" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Fiktive Signale haben keinen Signalrahmen, da sie keinen Signalbegriff zeigen können. Ein oder mehrere Signalrahmen bilden ein Signal. Die Gruppierung von Signalbegriffen innerhalb eines Signals zu Signalrahmen wird anhand der konstruktiven Gestaltung vorgenommen, z.B. werden alle Signalbegriffe des Hauptsignalschirms oder alle Signalbegriffe eines Zusatzanzeigers jeweils zu einem Signalrahmen zusammengefasst. Kann die Anzahl oder Art der Signalbegriffe eines Signalrahmens in Abhängigkeit vom betrieblichen Zustand geändert werden, so wird dieser als schaltbar bezeichnet, andernfalls als fest. Im LST-Datenmodell ist diese Eigenschaft als Attribut zu den Signalbegriffen definiert; ein Signalrahmen ist danach genau dann schaltbar, wenn mindestens eines der enthaltenen Signalbegriffe schaltbar ist. Typische schaltbare Signalrahmen sind der Signalschirm eines Mehrabschnittssignals, das Lichtsignal eines Zusatzanzeigers und das Form- oder Lichtsignal eines Weichensignals. Typische feste Signalrahmen sind das Mastschild eines Hauptsignals, das Formsignal eines Zusatzanzeigers und die Haltetafel. Über den Signalrahmen erfolgt, sofern dies geplant ist, die Zuordnung von Signalbegriffen eines nachgeordneten Signals zu einem anderen Signal ohne Bezug zur Fahrstraße, siehe dazu ID Signal Nachordnung Ausführliche Beschreibung s. Modellierung Signal. DB-Regelwerk Planungsdaten: im bisherigen PT1 ohne eindeutige Darstellung. In der Regel aus den Angaben in der Signaltabelle 1 zu erkennen. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal_Rahmen"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSignal" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Signal_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf das zugehörige Objekt Signal."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Signal"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSignalBefestigung" eType="ecore:EClass Verweise.ecore#//ID_Signal_Befestigung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf ein zugehöriges Objekt Signal Befestigung. Zur Anwendung siehe Modellierung Signal. DB-Regelwerk Im bisherigen PT1 keine eindeutige Darstellung, oft aus den Einträgen in der Signaltabelle1, Zeilen 4-6, 10, 13 und 24-28 zu erkennen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Signal_Befestigung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSignalNachordnung" eType="ecore:EClass Verweise.ecore#//ID_Signal_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung von nachgeordneten Signalen. Die Zuordnung von Signalbegriffen eines nachgeordneten Signals zu einem anderen Signal ohne Bezug zur Fahrstraße, wie bei Signalfahrtanzeigern, Signalhaltmeldern, Zugabfertigungssignalen Zp 9/10, erfolgt über ID_Signal_Nachordnung. Signalbegriffe nachgeordneter Signale, die dabei n (n\u0026gt;1) Signalen zugeordnet sind, erhalten n logische Signalrahmen mit den jeweils zutreffenden (ggf. identischen) Signalbegriffen, die je nach Hersteller mit n physischen Signalanzeigern (Signal_Befestigungen) oder gemeinsam in einem physischen Signalanzeiger realisiert werden. Zur ausführlichen Beschreibung der Modellierung eines Signals s. Modellierung Signal. DB-Regelwerk Sicherungstechnischer Lageplan, BÜ-Lageplan; oft als Bestandteil der Bezeichnung des Signals "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Signal_Nachordnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rahmenArt" lowerBound="1"
+        eType="#//Rahmen_Art_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Beschreibung des Signalrahmens, um auch ohne Regelzeichnung die grundsätzliche Art erkennen zu können. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Im bisherigen PT 1 keine eindeutige Darstellung, in der Regel aus den Einträgen in der Signaltabelle1 zu erkennen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Rahmen_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Real_Aktiv_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal_Real_Aktiv"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="autoEinstellung" eType="#//Auto_Einstellung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zusätzliche Angabe zu Aktiven Signalen, die sich selbsttätig stellen können. Dabei wird unterschieden zwischen Signalen mit Signalselbststellbetrieb (Sb) und in der Zuglenkung (ZL). DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung, mittelbar aus Angaben in der Zugstraßentabelle zu erkennen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Auto_Einstellung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDStellelement" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Stellelement_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf das Objekt Stellelement zur Zusammenfassung von Eigenschaften der Objekte BUE Schnittstelle, PZB Element, Schluesselsperre, Signal, W Kr Gsp Element. Das Stellelement enthält Informationen über den energetischen und logischen Anschluss der Objekte. Für das PZB Element ist der Verweis nur zu füllen, wenn das PZB_Element eine GÜ ist. DB-Regelwerk Bisher ohne eindeutige Darstellung "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Stellelement"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalFunktion" lowerBound="1"
+        eType="#//Signal_Funktion_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe der betrieblichen Funktion eines Aktiven Signals für Zugfahrten. Aktive Signale sind Signale, an denen mindestens ein Signalbegriff schaltbar ist. Hauptsignale und Mehrabschnittssignale werden dabei detailliert in Einfahr-, Ausfahr-, Zwischen-, Nachrück-, Block-, Deckungs-, Zugdeckungs- oder Gruppensignale bzw. Kombinationen aus diesen betrieblichen Funktionen unterteilt. Von den anderen aktiven Signalen wird nur noch das Zugzielsignal (z.B. hohes Sperrsignal als Zielsignal bei Zugfahrten) mit einem eigenen Attribut hervorgehoben, alle weiteren Aktiven Signale werden unter \&quot;andere\&quot; zusammengefasst. DB-Regelwerk 301, 819.20, Planungsdaten: im bisherigen PT 1 nur bei Signalen im Geltungsbereich der Ril 819.20, Tabelle für Signalabstände und Schutzstrecken, sonst ohne eindeutige Darstellung. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:PlanningStage>EP&lt;/ppi:PlanningStage>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signal_Funktion"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalsichtErreichbar"
+        eType="#//Signalsicht_Erreichbar_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Tatsächlich erreichbare Signalsicht innerhalb der Sollsignalsicht. Die Signalsicht beschreibt die Entfernung, ab der ein Aktives Signal eindeutig erkennbar sein soll (Sollsignalsicht) bzw. muss (Mindestsignalsicht), so dass vom Triebfahrzeugführer grundsätzliche Handlungsweisen daraus ableitbar sind. Die erreichbare Signalsicht darf unter bestimmten Voraussetzungen kleiner als die Sollsignalsicht, jedoch nur mit besonderen Maßnahmen kleiner als die Mindestsignalsicht sein. Die Signalsicht ist an das gesamte Signal gekoppelt, das bedeutet jedoch nicht, dass jeder Signalbegriff von Beginn der Signalsicht an vollständig gelesen werden muss - die Festlegungen dafür finden sich in den zugehörigen detaillierten Regelzeichnungen oder anderen Zulassungsdokumenten. DB-Regelwerk 819.02, 819.03, Planungsdaten: im bisherigen PT1 ohne eindeutige Darstellung, ergänzt die Einträge in Zeile 7 der Signaltabelle 1 um den Wert der am konkreten Ort erreichbaren Signalsicht "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [1..500] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signalsicht_Erreichbar"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalsichtMindest" eType="#//Signalsicht_Mindest_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Mindestsignalsicht gemäß örtlich zugelassener Geschwindigkeit vor dem Signal nach 6,75 s-Regel. Die Signalsicht beschreibt die Entfernung, ab der ein Aktives Signal eindeutig erkennbar sein soll (Sollsignalsicht) bzw. muss (Mindestsignalsicht), so dass vom Triebfahrzeugführer grundsätzliche Handlungsweisen daraus ableitbar sind. Die erreichbare Signalsicht darf nur mit zusätzlichen Maßnahmen kleiner als die Mindestsignalsicht sein. Die Signalsicht ist an das gesamte Signal gekoppelt, das bedeutet jedoch nicht, dass jeder Signalbegriff von Beginn der Signalsicht an vollständig gelesen werden muss - die Festlegungen dafür finden sich in den zugehörigen detaillierten Regelzeichnungen oder anderen Zulassungsdokumenten. DB-Regelwerk 819.02, 819.03, Planungsdaten: entspricht dem zweiten (eingeklammerten) Eintrag in Zeile 7 der Signaltabelle 1. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [1..300] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signalsicht_Mindest"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalsichtSoll" eType="#//Signalsicht_Soll_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Sollsignalsicht gemäß örtlich zugelassener Geschwindigkeit vor dem Signal. Die Signalsicht beschreibt die Entfernung, ab der ein Aktives Signal eindeutig erkennbar sein soll (Sollsignalsicht) bzw. muss (Mindestsignalsicht), so dass vom Triebfahrzeugführer grundsätzliche Handlungsweisen daraus ableitbar sind. Die erreichbare Signalsicht darf unter bestimmten Voraussetzungen kleiner als die Sollsignalsicht sein. Die Signalsicht ist an das gesamte Signal gekoppelt, das bedeutet jedoch nicht, dass jeder Signalbegriff von Beginn der Signalsicht an vollständig gelesen werden muss - die Festlegungen dafür finden sich in den zugehörigen detaillierten Regelzeichnungen oder anderen Zulassungsdokumenten. DB-Regelwerk 819.02, 819.03, Planungsdaten: entspricht dem ersten Eintrag in Zeile 7 der Signaltabelle 1. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:PlanningStage>EP&lt;/ppi:PlanningStage>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [1..500] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signalsicht_Soll"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sonstigeZulaessigeAnordnung"
+        eType="#//Sonstige_Zulaessige_Anordnung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Anordnung von Aktiven Signalen bei mehreren parallelen Strecken oder beim Zusammenlauf von Strecken. DB-Regelwerk 819.0202 A03, Planungsdaten: Signaltabelle 1, Zeile 2. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Sonstige_Zulaessige_Anordnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tunnelsignal" eType="#//Tunnelsignal_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Enthält zusätzliche Angaben zu Aktiven Signalen mit schaltbaren Signalbegriffen bezüglich der Nachtschaltung. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Tunnelsignal"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Real_Aktiv_Schirm_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal_Real_Aktiv_Schirm"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dunkelschaltung" eType="#//Dunkelschaltung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zusatzangabe, ob ein Schirm-Signal dunkel geschaltet werden kann. Die Dunkelschaltung ist z. B. bei Strecken mit LZB-geführten Zugfahrten und bei Schnittstellen zu SIL 2 - ESTW relevant. Die Angabe ist bei Haupt- und Vorsignalen erforderlich, nicht jedoch für Sperrsignale. Wertzuordnung: true - Signal muss dunkel geschaltet werden können, false - Signal muss nicht dunkel geschaltet werden können. DB-Regelwerk Planungsdaten: Signaltabelle 1, Zeile 40"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Dunkelschaltung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="richtpunkt" eType="#//Richtpunkt_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Punkt, auf den das Signal in besonderen Fällen ausgerichtet werden soll. Im Allgemeinen werden Signale auf einen Punkt ausgerichtet, der sich in der Richtpunktentfernung vor dem Signal in dem Gleis befindet, dem das Signal zugeordnet ist. In diesem Fall wird das Attribut nicht befüllt. In besonderen Fällen (z.B. Gleisverzeigungen oder extreme Kurvenlagen im Annäherungsbereich zum Signal) kann es jedoch erforderlich sein, explizit einen Richtpunkt außerhalb dieses Gleises festzulegen. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>[1..16]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Richtpunkt"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="richtpunktentfernung" lowerBound="1"
+        eType="#//Richtpunktentfernung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Entfernung des Ausrichtpunktes eines Schirm-Signals. Beschreibt den Schnittpunkt der Sichtachse der Signaloptiken mit dem Gleis, dem das Signal zugeordnet ist, die Angabe erfolgt in Meter. In der Regel werden dafür 500 m für Haupt- und Mehrabschnittssignale und 300 m für Vorsignale und Vorsignalwiederholer verwendet. Entsprechend der Funktion des Signals und den örtlichen Bedingungen können jedoch auch andere Werte verwendet werden. DB-Regelwerk Planungsdaten: Signaltabelle 1, Zeile 8 "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [1..500] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Richtpunktentfernung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalArt" lowerBound="1"
+        eType="#//Signal_Art_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Ausbildung des Signalschirms eines Schirm-Signals im Sicherungstechnischen Lageplan und in der Außenanlage. Dieses Attribut ermöglicht bei allen Schirmsignalen (s. Modellierung Signal), die grundsätzliche Art des Signals zu erkennen, ohne die zugehörige Regelzeichnung zu lesen. Eine Ausnahme bildet der ENUM-Wert \&quot;andere\&quot;, hier muss die Art des Signals aus der Regelzeichnung entnommen werden. Dieser Wert wird bei allen realen Signalen verwendet, die keine Schirmsignale sind. Unter Mehrabschnittssignal wird dabei jegliche Kombination eines Hauptsignal- mit einem Vorsignalbegriff verstanden, unabhängig von der konkreten technischen Ausführung. So werden auch Signale des H/V-Signalsystems, die am Mast des Hauptsignals ein Vorsignal tragen, als Mehrabschnittssignale bezeichnet. Die Einfügung der Silbe -sperr- bei Haupt- und Mehrabschnittssignalen bedeutet, dass an diesen Signalen zusätzlich ein Rangierfahrtsignal angebracht ist. Dabei ist es irrelevant, ob dies in einem eigenen Bauteil am Signal erfolgt oder ob die Optiken im Signalschirm des Haupt- oder Mehrabschnittssignalen untergebracht sind. DB-Regelwerk Planungsdaten: Sicherungstechnischer Lageplan "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signal_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalsystem" lowerBound="1"
+        eType="#//Signalsystem_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zugehörigkeit eines Schirm-Signals zu einem der Signalsysteme. Dieses Attribut wird nur bei Haupt-, Vor- und Mehrabschnittssignalen sowie BÜ-Signalen belegt. DB-Regelwerk 301.0101-04, 301.0201, Planungsdaten: Sicherungstechnischer Lageplan, mittelbar aus den Angaben in den Signaltabellen 1 und 2 zu erkennen. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:PlanningStage>EP&lt;/ppi:PlanningStage>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signalsystem"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="streuscheibeArt" eType="#//Streuscheibe_Art_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art und Bezeichnung der Streuscheibe eines Schirm-Signals, die der Signalsichtbestimmung zugrunde liegt. DB-Regelwerk Planungsdaten: Signaltabelle 1, Zeile 9 (erster Eintrag) "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Streuscheibe_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="streuscheibeBetriebsstellung"
+        eType="#//Streuscheibe_Betriebsstellung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung der Stellung der Streuscheibe eines Schirm-Signals, die der Signalsichtbestimmung zugrunde liegt. Bei der Betriebsstellung \&quot;...gw\&quot; ist die jeweilige Streuscheibe gewendet. DB-Regelwerk Planungsdaten: Signaltabelle 1, Zeile 9 (zweiter Eintrag) "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Streuscheibe_Betriebsstellung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Real_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal_Real"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="geltungsbereich" eType="#//Geltungsbereich_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geltungsbereich, dem das Signal zugeordnet wird (DS/DV). Die Angabe wird zunächst nur zur Unterscheidung Sh 1/Ra 12 vorgesehen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Geltungsbereich"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalBefestigungsart"
+        lowerBound="1" eType="#//Signal_Befestigungsart_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Grundsätzliche Art der Befestigung eines Signals. Einzelne Elemente des Signals (z. B. ein zum Hauptsignal gehörendes, nicht am Hauptsignalmast angebrachtes Zusatzsignal) können von der grundsätzlichen Befestigungsart abweichen, die exakte Konstruktion des Gesamtsignals ist im Modell in den Instanzen des Objekts Signal Befestigung dargestellt. DB-Regelwerk Signaltabelle 1, Zeile 12 "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signal_Befestigungsart"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalRealAktiv" eType="#//Signal_Real_Aktiv_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signal_Real_Aktiv"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalRealAktivSchirm"
+        eType="#//Signal_Real_Aktiv_Schirm_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signal_Real_Aktiv_Schirm"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Signalbegriff" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Stellt eine Information optisch dar, die das Signal dem Triebfahrzeugführer übermitteln soll. Signalbegriffe werden im Signalbuch (Ril 301) durch eine Kurzbezeichnung (z. B. \&quot;Zs 1\&quot;) und / oder durch eine Langbezeichnung (z. B. \&quot;Ersatzsignal\&quot;) beschrieben. Diese und weitere feste Eigenschaften wie der Wertevorrat der anzeigbaren Symbole eines Signalbegriffs sind im Objekt Signalbegriff definiert, das mittels des Attributes Signalbegriff ID eingebunden wird. Anschaltdauer, Beleuchtung und Schaltbarkeit sind nicht fest, sondern wählbar an den Signalbegriff nach Signalbuch gekoppelt und so Eigenschaft des Objekts Signal_Signalbegriff. Ein Signal_Signalbegriff befindet sich immer in einem Signal Rahmen. Ausführliche Beschreibung s. Modellierung Signal DB-Regelwerk Ril 301, Planungsdaten: Sicherungstechnischer Lageplan, statische Eigenschaften: Signaltabelle 1, dynamische Eigenschaften: Signaltabelle 2. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal_Signalbegriff"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSignalRahmen" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Signal_Rahmen_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den den Signalbegriff beinhaltenden Signal Rahmen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Signal_Rahmen"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalSignalbegriffAllg"
+        eType="#//Signal_Signalbegriff_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signal_Signalbegriff_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="signalbegriffID" lowerBound="1"
+        eType="ecore:EClass Signalbegriffe_Struktur.ecore#//Signalbegriff_ID_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Identifikator des einzubindenden Signalbegriffs. Der Wert für dieses Attribut ist aus einer vorgegebenen Liste (Objektnamen aus TCSignalbegriff) auswählbar. Die Verknüpfung unterscheidet sich von den sonst im Modell üblichen GUID-Verweisen, daher wurde bei der Bildung des Attributnamens auch von der Form \&quot;ID_...\&quot; abgewichen. DB-Regelwerk Signaltabelle 1, ist aus den Einträgen in Zeilen 14-27 zu erkennen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Signalbegriff_ID"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signal_Signalbegriff_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSignal_Signalbegriff_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="anschaltdauer" eType="#//Anschaltdauer_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Anschaltdauer des Signalbegriffes. Eingetragen wird bei Ersatzsignal als Standardwert \&quot;Z\&quot; (zeitgesteuert - einheitlich 90 s); bei technisch abhängigen Signalbegriffen (z. B. Fahrtbegriffen) ein \&quot;T\&quot; sowie für Grundstellungsbegriffe ein \&quot;G\&quot;. Es ist dabei unerheblich, wodurch die Abschaltung erzielt wird, z.B. sind auch mechanische Vorgänge möglich. Deswegen ist die Ausrichtung des Signalbegriffs mit zu betrachten, so leuchtet zwar ein Weichenlagemelder (z. B. Wn 1) ständig, der Signalbegriff ist aber nur angeschaltet, wenn er in der Richtung des Weichenanfangs zeigt. Weichenlagemelder haben deshalb die Anschaltdauer \&quot;T\&quot;. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>T&lt;/ppi:ProposedValue>&#xD;&#xA;                     &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Anschaltdauer"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="beleuchtet" eType="#//Beleuchtet_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Gibt an, ob ein beleuchtbarer Signalbegriff beleuchtet wird. Als \&quot;Beleuchtet\&quot; gilt, wenn zur besseren Erkennbarkeit eines Signalbegriffs eine zusätzliche, signaltechnisch nicht überwachte Lichtquelle angebracht ist. Das Attribut ist dann und nur dann erforderlich, wenn das Attribut \&quot;Beleuchtbar\&quot; im zugehörigen Signalbegriff den Wert \&quot;true\&quot; hat. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>nein&lt;/ppi:ProposedValue>&#xD;&#xA;                     &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Beleuchtet"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="geschaltet" eType="#//Geschaltet_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Gibt an, ob ein schaltbarer Signalbegriff durch eine Außenelement-Ansteuerung den betrieblichen Erfordernissen am Signal aktiv angepasst werden kann. Das Attribut ist dann und nur dann erforderlich, wenn das Attribut \&quot;Schaltbar\&quot; im zugehörigen Signalbegriff den Wert \&quot;true\&quot; hat. Wertzuordnung: true - Signalbegriff ist (schaltbar und) geschaltet, false - Signalbegriff ist (schaltbar, aber) nicht geschaltet. Beispiel: Zs 3 ist grundsätzlich schaltbar (Schaltbar == \&quot;true\&quot;). Bei Ausführung aus Lichtsignal ist Geschaltet == \&quot;true\&quot;, bei Ausführung als Blechtafel ist Geschaltet == \&quot;false\&quot;. DB-Regelwerk Im bisherigen PT 1 ohne eindeutige Darstellung, oft aus dem Symbol des Signals im Sicherungstechnischen Lageplan / BÜ-Lageplan zu erkennen."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Geschaltet"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zs2Ueberwacht" eType="#//Zs2_Ueberwacht_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe, ob die Anschaltung von Zs 2 zu überwachen ist (true) oder nicht (false). Die Angabe erfolgt nur für den Signalbegriff Zs 2."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Zs2_Ueberwacht"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Signalsicht_Erreichbar_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TSignalsicht_Erreichbar"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TMeter"/>
+      <details key="pattern" value="[1-9][0-9]{0,1}|[1-4][0-9]{2}|500"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signalsicht_Erreichbar_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSignalsicht_Erreichbar"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Signalsicht_Erreichbar_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Signalsicht_Mindest_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TSignalsicht_Mindest"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TMeter"/>
+      <details key="pattern" value="[1-9][0-9]{0,1}|[1-2][0-9]{2}|300"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signalsicht_Mindest_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSignalsicht_Mindest"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Signalsicht_Mindest_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Signalsicht_Soll_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TSignalsicht_Soll"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TMeter"/>
+      <details key="pattern" value="[1-9][0-9]{0,1}|[1-4][0-9]{2}|500"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signalsicht_Soll_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSignalsicht_Soll"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Signalsicht_Soll_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Signalsystem_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSignalsystem"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMSignalsystemObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sonstige_Zulaessige_Anordnung_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSonstige_Zulaessige_Anordnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMSonstigeZulaessigeAnordnungObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Streuscheibe_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCStreuscheibe_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMStreuscheibeArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Streuscheibe_Betriebsstellung_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCStreuscheibe_Betriebsstellung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMStreuscheibeBetriebsstellungObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Tunnelsignal_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCTunnelsignal"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMTunnelsignalObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Zs2_Ueberwacht_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCZs2_Ueberwacht"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

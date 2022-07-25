@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="org.eclipse.set.model.model1902.feature">
+      <category name="org.eclipse.set.model.category"/>
+   </feature>
+   <feature id="org.eclipse.set.model.model1902.feature.source">
+      <category name="org.eclipse.set.model.category"/>
+   </feature>
+   <category-def name="org.eclipse.set.model.category" label="PlanPro Modelle">
+      <description>
+         Kategorie enthält die Features für die jeweiligen Modellversionen.
+      </description>
+   </category-def>
+</site>

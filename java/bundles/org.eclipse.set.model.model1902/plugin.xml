@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/PlanPro/1.9.0.2"
+            class="org.eclipse.set.model.model1902.PlanPro.PlanProPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="planpro"
+            class="org.eclipse.set.model.model1902.PlanPro.util.PlanProResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Basisobjekte/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Basisobjekte.BasisobjektePackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="basisobjekte"
+            class="org.eclipse.set.model.model1902.Basisobjekte.util.BasisobjekteResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2"
+            class="org.eclipse.set.model.model1902.BasisTypen.BasisTypenPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="basistypen"
+            class="org.eclipse.set.model.model1902.BasisTypen.util.BasisTypenResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Verweise/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Verweise.VerweisePackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="verweise"
+            class="org.eclipse.set.model.model1902.Verweise.util.VerweiseResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Ansteuerung_Element/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Ansteuerung_Element.Ansteuerung_ElementPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="ansteuerung_element"
+            class="org.eclipse.set.model.model1902.Ansteuerung_Element.util.Ansteuerung_ElementResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Bahnsteig/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Bahnsteig.BahnsteigPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="bahnsteig"
+            class="org.eclipse.set.model.model1902.Bahnsteig.util.BahnsteigResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Balisentechnik_ETCS/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Balisentechnik_ETCS.Balisentechnik_ETCSPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="balisentechnik_etcs"
+            class="org.eclipse.set.model.model1902.Balisentechnik_ETCS.util.Balisentechnik_ETCSResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Bedienung/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Bedienung.BedienungPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="bedienung"
+            class="org.eclipse.set.model.model1902.Bedienung.util.BedienungResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Block/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Block.BlockPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="block"
+            class="org.eclipse.set.model.model1902.Block.util.BlockResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Bahnuebergang/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Bahnuebergang.BahnuebergangPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="bahnuebergang"
+            class="org.eclipse.set.model.model1902.Bahnuebergang.util.BahnuebergangResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Flankenschutz/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Flankenschutz.FlankenschutzPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="flankenschutz"
+            class="org.eclipse.set.model.model1902.Flankenschutz.util.FlankenschutzResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Ortung/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Ortung.OrtungPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="ortung"
+            class="org.eclipse.set.model.model1902.Ortung.util.OrtungResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Fahrstrasse/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Fahrstrasse.FahrstrassePackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="fahrstrasse"
+            class="org.eclipse.set.model.model1902.Fahrstrasse.util.FahrstrasseResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Geodaten/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Geodaten.GeodatenPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="geodaten"
+            class="org.eclipse.set.model.model1902.Geodaten.util.GeodatenResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Gleis/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Gleis.GleisPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="gleis"
+            class="org.eclipse.set.model.model1902.Gleis.util.GleisResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Medien_und_Trassen/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Medien_und_Trassen.Medien_und_TrassenPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="medien_und_trassen"
+            class="org.eclipse.set.model.model1902.Medien_und_Trassen.util.Medien_und_TrassenResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Nahbedienbereich/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Nahbedienbereich.NahbedienbereichPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="nahbedienbereich"
+            class="org.eclipse.set.model.model1902.Nahbedienbereich.util.NahbedienbereichResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/PZB/1.9.0.2"
+            class="org.eclipse.set.model.model1902.PZB.PZBPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="pzb"
+            class="org.eclipse.set.model.model1902.PZB.util.PZBResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Regelzeichnung/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Regelzeichnung.RegelzeichnungPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="regelzeichnung"
+            class="org.eclipse.set.model.model1902.Regelzeichnung.util.RegelzeichnungResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Schluesselabhaengigkeiten/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Schluesselabhaengigkeiten.SchluesselabhaengigkeitenPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="schluesselabhaengigkeiten"
+            class="org.eclipse.set.model.model1902.Schluesselabhaengigkeiten.util.SchluesselabhaengigkeitenResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Signale/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Signale.SignalePackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="signale"
+            class="org.eclipse.set.model.model1902.Signale.util.SignaleResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Signalbegriffe_Ril_301 -->
+      <package
+            uri="http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.9.0"
+            class="org.eclipse.set.model.model1902.Signalbegriffe_Ril_301.Signalbegriffe_Ril_301Package"
+            genModel="model/Signalbegriffe_Ril_301.genmodel"/>
+   </extension>
+
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated Signalbegriffe_Ril_301 -->
+      <parser
+            type="signalbegriffe_ril_301"
+            class="org.eclipse.set.model.model1902.Signalbegriffe_Ril_301.util.Signalbegriffe_Ril_301ResourceFactoryImpl"/>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1"
+            class="org.eclipse.set.model.model1902.Signalbegriffe_Struktur.Signalbegriffe_StrukturPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="signalbegriffe_struktur"
+            class="org.eclipse.set.model.model1902.Signalbegriffe_Struktur.util.Signalbegriffe_StrukturResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Weichen_und_Gleissperren/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Weichen_und_Gleissperren.Weichen_und_GleissperrenPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="weichen_und_gleissperren"
+            class="org.eclipse.set.model.model1902.Weichen_und_Gleissperren.util.Weichen_und_GleissperrenResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Zuglenkung/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Zuglenkung.ZuglenkungPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="zuglenkung"
+            class="org.eclipse.set.model.model1902.Zuglenkung.util.ZuglenkungResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Zugnummernmeldeanlage/1.9.0.2"
+            class="org.eclipse.set.model.model1902.Zugnummernmeldeanlage.ZugnummernmeldeanlagePackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="zugnummernmeldeanlage"
+            class="org.eclipse.set.model.model1902.Zugnummernmeldeanlage.util.ZugnummernmeldeanlageResourceFactoryImpl"/>
+   </extension>
+</plugin>

@@ -1,0 +1,1443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Fahrstrasse" nsURI="http://www.plan-pro.org/modell/Fahrstrasse/1.9.0.2"
+    nsPrefix="nsFahrstrasse">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Aufloesung_Ssp_Zielgeis_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCAufloesung_Ssp_Zielgeis"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMAufloesungSspZielgleisObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Aufloesung_Verzoegerung_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TAufloesung_Verzoegerung"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TSekunde"/>
+      <details key="pattern" value="0|[1-9][0-9]{0,1}|1[0-1][0-9]|120"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Aufloesung_Verzoegerung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCAufloesung_Verzoegerung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Aufloesung_Verzoegerung_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Automatische_Einstellung_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCAutomatische_Einstellung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMAutomatischeEinstellungObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bezeichnung_Fstr_DWeg_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBezeichnung_Fstr_DWeg"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TZeichenkette"/>
+      <details key="pattern" value="[a-zA-Z0-9_]{1,3}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bezeichnung_Fstr_DWeg_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBezeichnung_Fstr_DWeg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bezeichnung_Fstr_DWeg_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bezeichnung_Markanter_Punkt_Type"
+      instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBezeichnung_Markanter_Punkt"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TText"/>
+      <details key="pattern" value=".{1,30}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bezeichnung_Markanter_Punkt_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBezeichnung_Markanter_Punkt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bezeichnung_Markanter_Punkt_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DWeg_Reihenfolge_Type" instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TDWeg_Reihenfolge"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+      <details key="pattern" value="[1-9]|1[0-5]"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DWeg_Reihenfolge_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDWeg_Reihenfolge"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//DWeg_Reihenfolge_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DWeg_V_Aufwertung_Verzicht_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDWeg_V_Aufwertung_Verzicht"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DWeg_V_Type" instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TDWeg_V"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+      <details key="pattern" value="20|30|40|60|100|160"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DWeg_V_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDWeg_V"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//DWeg_V_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DWeg_Vorzug_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDWeg_Vorzug"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Element_Verschluss_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCElement_Verschluss"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMAufloesungSspZielgleis">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMAufloesung_Ssp_Zielgleis"/>
+    </eAnnotations>
+    <eLiterals name="ENUMAufloesung_Ssp_Zielgleis_besetzt" literal="besetzt"/>
+    <eLiterals name="ENUMAufloesung_Ssp_Zielgleis_frei" value="1" literal="frei"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMAufloesungSspZielgleisObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMAufloesung_Ssp_Zielgleis:Object"/>
+      <details key="baseType" value="ENUMAufloesung_Ssp_Zielgleis"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMAutomatischeEinstellung">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMAutomatische_Einstellung"/>
+    </eAnnotations>
+    <eLiterals name="ENUMAutomatische_Einstellung_SB" literal="SB"/>
+    <eLiterals name="ENUMAutomatische_Einstellung_ZL" value="1" literal="ZL"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMAutomatischeEinstellungObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMAutomatische_Einstellung:Object"/>
+      <details key="baseType" value="ENUMAutomatische_Einstellung"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMFstrArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMFstr_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMFstr_Art_RR" literal="RR"/>
+    <eLiterals name="ENUMFstr_Art_ZZ" value="1" literal="ZZ"/>
+    <eLiterals name="ENUMFstr_Art_RU" value="2" literal="RU"/>
+    <eLiterals name="ENUMFstr_Art_ZH" value="3" literal="ZH"/>
+    <eLiterals name="ENUMFstr_Art_ZM" value="4" literal="ZM"/>
+    <eLiterals name="ENUMFstr_Art_ZR" value="5" literal="ZR"/>
+    <eLiterals name="ENUMFstr_Art_ZU" value="6" literal="ZU"/>
+    <eLiterals name="ENUMFstr_Art_ZUH" value="7" literal="ZUH"/>
+    <eLiterals name="ENUMFstr_Art_ZUM" value="8" literal="ZUM"/>
+    <eLiterals name="ENUMFstr_Art_RT" value="9" literal="RT"/>
+    <eLiterals name="ENUMFstr_Art_ZT" value="10" literal="ZT"/>
+    <eLiterals name="ENUMFstr_Art_RTU" value="11" literal="RTU"/>
+    <eLiterals name="ENUMFstr_Art_ZTU" value="12" literal="ZTU"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMFstrArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMFstr_Art:Object"/>
+      <details key="baseType" value="ENUMFstr_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMRangierGegenfahrtausschluss">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMRangier_Gegenfahrtausschluss"/>
+    </eAnnotations>
+    <eLiterals name="ENUMRangier_Gegenfahrtausschluss_Inselgleis_frei" literal="Inselgleis_frei"/>
+    <eLiterals name="ENUMRangier_Gegenfahrtausschluss_ja" value="1" literal="ja"/>
+    <eLiterals name="ENUMRangier_Gegenfahrtausschluss_nein" value="2" literal="nein"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMRangierGegenfahrtausschlussObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMRangier_Gegenfahrtausschluss:Object"/>
+      <details key="baseType" value="ENUMRangier_Gegenfahrtausschluss"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="F_Bedienung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCF_Bedienung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Abhaengigkeit" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Zuordnung aller für einen Fstr Fahrweg zu sichernden und nicht durch die Topologie auffindbaren Objekte. Nicht durch die Topologie findbar sind insbesondere: Schluesselsperre, Zustimmungsschalter/-taster. Spezialfall: Für eine Rangierstraße kann richtungsabhängig geplant werden, dass eine Schlüsselsperre im Zielgleis nicht überwacht wird. In dem (sehr seltenen) Fall müssen für eine Zug- und eine Rangierstraße mit identischem Fahrweg zwei Instanzen Fstr Fahrweg angelegt werden. DB-Regelwerk Schlüsselsperre: Zugstraßentabelle, Spalte 5: \&quot;Ssp in der Fahrstraße verschlossen und überwacht\&quot;; Rangierstraßentabelle, Spalte 15: \&quot;Ssp in der Rangierstraße verschlossen und überwacht\&quot;. Zustimmungsschalter/-taster: Bemerkung/Fußnote. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Abhaengigkeit"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrFahrweg" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Fstr_Fahrweg_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung des abhängigen Elements zu Fstr Fahrweg. DB-Regelwerk Zugstraßentabelle, Zeile "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fstr_Fahrweg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrAbhaengigkeitSsp" eType="#//Fstr_Abhaengigkeit_Ssp_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_Abhaengigkeit_Ssp"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBedienAnzeigeElement"
+        eType="ecore:EClass Verweise.ecore#//ID_Bedien_Anzeige_Element_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bedien_Anzeige_Element, das wirksam sein muss, damit die Fstr gesichert ist. DB-Regelwerk Mittelweichenteilfahrstraßentabelle: Bemerkung oder Fußnote. Schalter/Taster: Zugstraßentabelle: Bemerkung oder Fußnote; Rangierstraßentabelle: Bemerkung oder Fußnote; Mittelweichenteilfahrstraßentabelle: Bemerkung oder Fußnote. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Bedien_Anzeige_Element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Abhaengigkeit_Ssp_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Abhaengigkeit_Ssp"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aufloesungSspZielgeis"
+        eType="#//Aufloesung_Ssp_Zielgeis_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Kriterium für die Auflösung von überwachten Schlüsselsperren im Zielgleis von Rangierstraßen. DB-Regelwerk Lastenheft ESTW F1, Abschnitt 6.5 (Rangierstraßenauflösung)"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>besetzt&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Aufloesung_Ssp_Zielgeis"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSchluesselsperre" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Schluesselsperre_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Schlüsselsperre, die überwacht sein muss, damit die Fstr gesichert ist. DB-Regelwerk Zugstraßentabelle, Spalte 5: \&quot;Ssp in der Fahrstraße verschlossen und überwacht\&quot;; Rangierstraßentabelle, Spalte 15: \&quot;Ssp in der Rangierstraße verschlossen und überwacht\&quot;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Schluesselsperre"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Aneinander" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Aneinandergereihte Zug- oder Rangierstraße. Die Reihenfolge der aneinandergereihten Fahrstraßen wird nicht mit abgespeichert, da diese aus Start und Ziel erkennbar ist. Durch die Auswahl der letzten Fahrstraße (bei Zugstraßen) wird der Durchrutschweg festgelegt. Sollen für die aneinandergereihte Zugstraße mehrere Durchrutschwege möglich sein, so sind entsprechend viele aneinandergereihte Zugstraßen zu planen (Ausnahmefall). Für die erste bis vorletzte Fahrstraße muss jeweils ein Durchrutschweg gewählt werden, dessen Weg Bestandteil der folgenden Fahrstraße ist; sollten hiervon mehrere existieren, wird der mit den geringsten betrieblichen Einschränkungen (i. d. R. der längste) verwendet. DB-Regelwerk Aneinandergereihte Zugstraßentabelle Aneinandergereihte Rangierstraßentabelle "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:Patternbeschreibung>[3..20]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Aneinander"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrAneinanderBedienstring"
+        eType="#//Fstr_Aneinander_Bedienstring_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bedienstring der aneinandergereihten Zug- oder Rangierstraße. Der Bedienstring ergibt sich in der Regel aus dem Start und dem Ziel der aneinandergereihten Fahrstraße, kann aber auch davon abweichen. DB-Regelwerk Aneinandergereihte Zugstraßen-/Rangierstraßentabelle, Spalten 1 und 2"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                        &lt;ppi:WorkflowInformation>&#xD;&#xA;                           &lt;ppi:Patternbeschreibung>[3..20]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                        &lt;/ppi:WorkflowInformation>&#xD;&#xA;                     "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_Aneinander_Bedienstring"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Fstr_Aneinander_Bedienstring_Type"
+      instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TFstr_Aneinander_Bedienstring"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TText"/>
+      <details key="pattern" value=".{3,20}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Aneinander_Bedienstring_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCFstr_Aneinander_Bedienstring"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Fstr_Aneinander_Bedienstring_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Aneinander_Zuordnung" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Zuordnung der aneinandergereihten Zug- oder Rangierstraße zu den Fahrstraßen Fstr Zug Rangier (\&quot;Elementarfahrstraßen\&quot;), aus denen sie besteht. DB-Regelwerk Tabelle der aneinandergereihten Zugstraßen Tabelle der aneinandergereihten Rangierstraßen "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Aneinander_Zuordnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrAneinander" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Fstr_Aneinander_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zeiger auf Fstr Aneinander des Zuordnungsobjekts Fstr Aneinander Zuordnung. DB-Regelwerk Zusammengesetzte Zugstraßentabelle: Eintragungen einer Zeile"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fstr_Aneinander"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrZugRangier" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Fstr_Zug_Rangier_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zeiger auf die jeweilige Fahrstraße des Zuordnungsobjekts Fstr Aneinander Zuordnung. DB-Regelwerk Zusammengesetzte Zugstraßentabelle: Eintragungen einer Zeile "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fstr_Zug_Rangier"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCFstr_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMFstrArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Fstr_Bedienstring_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TFstr_Bedienstring"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TText"/>
+      <details key="pattern" value=".{3,26}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Bedienstring_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCFstr_Bedienstring"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Fstr_Bedienstring_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Fstr_Bildezeit_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TFstr_Bildezeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TSekunde"/>
+      <details key="pattern" value="0|[1-9][0-9]{0,1}|[1-8][0-9]{2}|900"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Bildezeit_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCFstr_Bildezeit"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Fstr_Bildezeit_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_DWeg" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Durchrutschweg oder Gefahrpunktabstand. Die Ausdehnung des Durchrutschwegs bzw. Gefahrpunktabstands wird mit dem Bereich Objekt Fstr Fahrweg festgelegt. Ein Durchrutschweg kann von mehreren Fahrstraßen genutzt werden. Ist die Attributgruppe Fstr_DWeg_Spezifisch nicht gefüllt, so handelt es sich um einen Gefahrpunktabstand. Ein Durchrutschweg der Länge Null wird ebenfalls als Instanz von Fstr_DWeg abgebildet. In dem Fall wird mit Fstr Fahrweg ein Bereichsobjekt der Länge Null mit Start und Ziel am Zielsignal der Fahrstraße verwendet. Derartige Durchrutschwege sind zu planen: am realen Zielsignal, hinter denen ein (Wahl-)Durchrutschweg der Länge Null vorgesehen ist, am fiktiven Zielsignal bei Stumpfgleiseinfahrt, am Zugdeckungssignal. Siehe hierzu auch Aufloesung Verzoegerung. DB-Regelwerk Durchrutschwegtabelle (eine Zeile)"/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_DWeg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" eType="#//Fstr_DWeg_Bezeichnung_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrDWegAllg" lowerBound="1"
+        eType="#//Fstr_DWeg_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_DWeg_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrDWegSpezifisch" eType="#//Fstr_DWeg_Spezifisch_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_DWeg_Spezifisch"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFMAAnlageFreimeldung"
+        upperBound="-1" eType="ecore:EClass Verweise.ecore#//ID_FMA_Anlage_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Freimeldeabschnitt(e) des Durchrutschwegs bzw. Gefahrpunktabstands, der/die freigeprüft wird/werden. Es werden alle zu berücksichtigenden Freimeldeabschnitte angegeben. Die Notwendigkeit, insbesondere den letzten freizuprüfenden Abschnitt zu definieren, ergibt sich aus der Tatsache, dass das Ende des Durchrutschweges (Markanter Punkt) bzw. der Gefahrpunkt nicht unbedingt deckungsgleich mit einer Gleisfreimeldegrenze sein muss. Die Angabe ist optional, da ein Durchrutschweg auch keinen Freimeldeabsschnitt haben kann (z. B. bei sehr kurzen Durchrutschwegen bis einschließlich \&quot;Null\&quot;) und der Gefahrpunktabstand bei Freimeldung mit Achszählern heute in der Regel zusammen mit dem Blockabschnitt freigemeldet wird. Nur bei separater Freimeldung des Gefahrpunktabstands ist die Angabe erforderlich. DB-Regelwerk Durchrutschwegtabelle, Spalte 13: \&quot;technisch freizuprüfende Freimeldeabschnitte\&quot;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_FMA_Anlage_Freimeldung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrFahrweg" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Fstr_Fahrweg_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung von Fstr Fahrweg zur Angabe der Lage des DWegs. DB-Regelwerk Durchrutschwegtabelle, Spalten \&quot;von Signal\&quot; und \&quot;bis\&quot;  "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fstr_Fahrweg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDPZBGefahrpunkt" eType="ecore:EClass Verweise.ecore#//ID_Markanter_Punkt_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf ein Objekt Markanter Punkt, das den PZB-Gefahrpunkt hinter dem Signal, zu dem der Durchrutschweg gehört, repräsentiert. Der Durchrutschweg hat keinen PZB-Gefahrpunkt am fiktiven Zielsignal bei Stumpfgleiseinfahrt und am Zugdeckungssignal. PZB-Gefahrpunkt kann sein: ein Grenzzeichen, die Zugspitze/der Zugschluss eines am gewöhnlichen Halteplatz stehenden Zuges, eine Rangierhalttafel sowie ein ortsfestes Rangier- und Schutzhaltsignal in Gegenrichtung, eine durch Schutzsignal zu schützende Gefahrstelle, ein Bahnsteigende oder der Zugschluss einer Bedienfahrt in einer Awanst. Der PZB-Gefahrpunkt ist vom Gefahrpunkt für Hauptsignale nach Ril 819.02 zu unterscheiden, was sich schon aus den abweichenden Auflistungen ergibt. Der PZB-Gefahrpunkt dient zur Bemessung der Ausrüstung der Signale mit Anlagen der PZB. Während der Gefahrpunkt auch betriebliche Aufgaben hat und sowohl vom örtlichen als auch vom fahrenden Personal jederzeit erkennbar sein muss, stellt der PZB-Gefahrpunkt die rein technische Sicht auf einen möglichen Konfliktpunkt eines mittels PZB zwangsgebremsten Zuges mit einem anderen Zug dar. Zur Ermittlung dieses Konfliktpunktes werden die Maßnahmen der Fahrwegsicherung - z. B. Flankenschutz - mitbetrachtet. Konfliktpunkte mit Rangierfahrten werden nur in wenigen Fällen (besonderes Gefahrenpotential) berücksichtigt. DB-Regelwerk 819.1310 6 Gleismagnettabelle, Zeile 15 "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_PZB_Gefahrpunkt"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_DWeg_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_DWeg_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="laengeSoll" lowerBound="1"
+        eType="#//Laenge_Soll_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Solllänge des DWeges. Bei Stumpfgleiseinfahrten beträgt die Solllänge = 0. Bei DWegen \u0026gt; 0 und \u0026lt; 50 m ist die Solllänge = 50 m. Die Verkürzung ist explizit zu begründen. Eine Neuplanung ist allerdings nicht mehr erlaubt und kann deshalb nur in alten Planungen auftauchen. DB-Regelwerk Durchrutschwegtabelle, Spalte 7: \&quot;Länge Soll\&quot;"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>[0..300]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Laenge_Soll"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="massgebendeNeigung" lowerBound="1"
+        eType="#//Massgebende_Neigung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Maßgebende Neigung des DWeges in Promille. Die Neigung ist für die Berechnung der Soll-Länge des DWeges relevant. DB-Regelwerk Durchrutschwegtabelle, Spalte 8: \&quot;maßgebende Neigung\&quot;"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>[-80.00..80.00]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Massgebende_Neigung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_DWeg_Bezeichnung_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_DWeg_Bezeichnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnungFstrDWeg" lowerBound="1"
+        eType="#//Bezeichnung_Fstr_DWeg_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung des Durchrutschwegs. Der erste Durchrutschweg hinter jedem Zugziel wird mit \&quot;D1\&quot; bezeichnet, alle weiteren Durchrutschwege erhalten eine fortlaufende Nummerierung (D2, D3, ...). Von der Bezeichnung unabhängig ist der Vorzugs-DWeg. H-Fahrstraßen werden über Fahrstraßen mit D-Wegen abgebildet, deren Bezeichnung um den Zusatz „H“ erweitert wird (z. B. D1H). DB-Regelwerk Durchrutschwegtabelle, Spalte 3: \&quot;Bezeichnung\&quot;"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>  [1..3] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung_Fstr_DWeg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_DWeg_Spezifisch_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_DWeg_Spezifisch"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aufloesungVerzoegerung"
+        eType="#//Aufloesung_Verzoegerung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verzögerungszeit der Durchrutschwegauflösung bei zeitgesteuerter Auflösung. Befüllung bei Durchrutschwegen der Länge \&quot;Null\&quot;: Ziel ist ein Zugdeckungssignal: Kennlichtverzögerungszeit, In allen anderen Fällen: 0 (Null). DB-Regelwerk Durchrutschwegtabelle, Spalte 17: \&quot;verzögert\&quot;"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [0..120] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Aufloesung_Verzoegerung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dWegReihenfolge" eType="#//DWeg_Reihenfolge_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Reihenfolge des Erscheinens von DWegen auf der Bedienoberfläche. Die Angabe wird ausschließlich im Untergewerk \&quot;Bedienung Fdl\&quot; benötigt und ist für das Untergewerk \&quot;ESTW\&quot; nicht relevant. Die Auflistung von D-Wegen in der D-Weg-Tabelle erfolgt rein auf Basis alphanumerischer Sortierung. DB-Regelwerk Durchrutschwegtabelle: Reihenfolge des Eintrags von Durchrutschwegen eines Signals"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [1..15] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="DWeg_Reihenfolge"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dWegV" eType="#//DWeg_V_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geschwindigkeitseinschränkung, die sich allein aufgrund der Länge des DWeges ergibt. Die tatsächlich gefahrene Geschwindigkeit kann aus anderen Gründen (Weichen, Gleislage etc.) geringer sein. Die Geschwindigkeitsrestriktion gilt nur für signalgeführte Züge, bei ETCS L2oS erfolgt keine Angabe. DB-Regelwerk Durchrutschwegtabelle, Spalte 4: \&quot;[Geschwindigkeit] möglich\&quot; (außer v max)"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [20|30|40|60|100|160]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="DWeg_V"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dWegVAufwertungVerzicht"
+        eType="#//DWeg_V_Aufwertung_Verzicht_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bei Überstellung des DWeges durch die anschließende Fahrstraße wird auf eine Aufwertung der Geschwindigkeitseinschränkung aufgrund des DWeges verzichtet. In der Regel führt die Überstellung eines DWeges zum Wegfall der durch den DWeg verursachten Geschwindigkeitsrestriktion. War die DWeg-Geschwindigkeit maßgebend, so kann die erste Fahrstraße mit einer entsprechend höheren Geschwindigkeit signalisiert werden (Geschwindigkeitsaufwertung). In Ausnahmefällen soll die Aufwertung nicht stattfinden, insbesondere dann, wenn die folgende Fahrstraße kürzer ist, als der aufgewertete DWeg. Damit wird auf die \&quot;Aufwertung verzichtet\&quot;. Das Attribut ist nur bei folgenden DWegen sinnvoll füllbar: am Beginn des DWeges beginnt eine Zugstraße UND es handelt sich um einen verkürzten DWeg, aufgrund dessen die Einfahrgeschwindigkeit vermindert wird. DB-Regelwerk Durchrutschwegtabelle, Spalte 14: \&quot;zulässige D-Weg Expansion\&quot;, allerdings in negierter Bedeutung zum jetzigen Attribut"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="DWeg_V_Aufwertung_Verzicht"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFMAAnlageZielgleis" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_FMA_Anlage_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Freimeldeabschnitt, bei dessen Belegung die zeitgesteuerte Durchrutschwegauflösung beginnt. DB-Regelwerk Durchrutschwegtabelle, Spalte 16: \&quot;Zielgleisabschnitt\&quot;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_FMA_Anlage_Zielgleis"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_DWeg_W_Kr" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Zuordnung von Weichen und Kreuzungen zum in Fstr DWeg geplanten Durchrutschweg. Eine Zuordnung von Weichen und Kreuzungen über den zugrunde liegenden Fstr Fahrweg ist nicht möglich, da das Ende des Durchrutschweges in einer Weiche liegen kann, deren Sicherung explizit geplant werden muss. Außerdem muss für Weichen im Durchrutschweg angegeben werden, ob sie verschlossen werden und ob sie Flankenschutz anfordern sollen. Eine Angabe der Lage der Weiche ist nicht notwendig, da sich diese über Fstr Fahrweg (Bereich Objekt) ergibt. Obwohl die Spaltenüberschrift in der Durchrutschwegtabelle auch von Gleissperren spricht, werden Gleissperren nicht vorgesehen. DB-Regelwerk Durchrutschwegtabelle, Spalten 9 - 12: \&quot;Weichen, Kreuzungen, Gleissperren\&quot;"/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_DWeg_W_Kr"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elementVerschluss" lowerBound="1"
+        eType="#//Element_Verschluss_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verschluss der Weiche im Durchrutschweg. Stumpf berutschte, auffahrbare Weichen im Durchrutschweg können unverschlossen bleiben.\n\nDas Attribut ist herstellerneutralitätskritisch.\n \nDB-Regelwerk Durchrutschwegtabelle, Spalten 9 - 12: \&quot;Weichen, Kreuzungen, Gleissperren\&quot;\n"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Element_Verschluss"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrDWeg" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Fstr_DWeg_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung von Weichen und Kreuzungen zum DWeg. DB-Regelwerk Durchrutschwegtabelle (gleiche Zeile) "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fstr_DWeg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDWKrGspElement" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_W_Kr_Gsp_Element_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung von Weichen und Kreuzungen zum DWeg. DB-Regelwerk Durchrutschwegtabelle, Spalten 9 - 12: \&quot;Weichen, Kreuzungen, Gleissperren - verschließen/nicht verschließen\&quot; "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_W_Kr_Gsp_Element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_DWeg_W_Kr_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_DWeg_W_Kr_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrDWegWKr" lowerBound="1"
+        eType="#//Fstr_DWeg_W_Kr_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verschluss der Weiche im Durchrutschweg. Stumpf berutschte, auffahrbare Weichen im Durchrutschweg können unverschlossen bleiben. Das Attribut ist herstellerneutralitätskritisch. DB-Regelwerk Durchrutschwegtabelle, Spalten 9 - 12: \&quot;Weichen, Kreuzungen, Gleissperren\&quot;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_DWeg_W_Kr"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_DWeg_W_Kr_Allg_child_AttributeGroup"
+      eSuperTypes="#//Fstr_DWeg_W_Kr_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_DWeg_W_Kr_Allg_child"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_DWeg_W_Kr_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCFstr_DWeg_W_Kr"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Fahrweg" eSuperTypes="Basisobjekte.ecore#//Bereich_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Unverzweigter Bereich auf dem Gleisnetz, der als Grundlage für den befahrenen Teil bzw. den Durchrutschweg einer Fahrstraße dient. Der Start befindet sich immer an einem Signal, das Ziel beim befahrenen Teil an einem Signal, beim Durchrutschweg (bzw. Gefahrpunktabstand) an einem markanten Punkt. Für Zug- und Rangierstraßen mit gleichem Fahrweg kann die gleiche Instanz von Fstr_Fahrweg verwendet werden; Ausnahmen siehe Fstr Abhaengigkeit. Hinweis zur Modellierung beim Durchrutschweg, wenn der Markante Punkt eine Weichenspitze ist: Läuft ein Durchrutschweg spitz auf eine Weiche zu und die Spitze dieser Weiche ist das Ende des Durchrutschwegs, dann endet das Bereichsobjekt Fstr_Fahrweg am Ende der Kante vor der Spitze der Weiche, ist der markante Punkt das Punktobjekt W_Kr_Gsp_Komponente, was auf anschließenden Kanten verweist. Damit liegen das Ende des Bereichsobjekts und der markante Punkt auf verschiedenen Kanten (jeweils mit Abstand 0 zum Knoten), dennoch beschreiben sie geografisch den gleichen Punkt. DB-Regelwerk Im heutigen Planungswerk findet sich der Weg nur implizit durch die Angabe für den befahrenen Teil von Start, Ziel und Entscheidungsweichen in der Zug- bzw. Rangierstraßentabelle, für den Durchrutschweg und Gefahrpunktabstand von Start und Ziel und allen Weichen in der Durchrutschweg- bzw. Gefahrpunkttabelle. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Fahrweg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrVHg" eType="#//Fstr_V_Hg_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Geschwindigkeit, die bei Zugstraßen mit diesem befahrenen Teil ohne Einschränkung durch Zs 3 gefahren würde (Geschwindigkeit der Strecke). Das Attribut ist nur sinnvoll füllbar, wenn auf dem zugehörigen Fahrweg eine Zugstraße existiert, deren Befahrung mit Fahrtstellung eines Hauptsignals zugelassen wird. Es ist also nicht sinnvoll füllbar bei Instanzen von Fstr_Fahrweg, die nur von Rangierstraßen, Gefahrpunktabständen, Durchrutschwegen oder Hilfszugstraßen verwendet werden. Siehe auch Bildung der Signalbegriffe."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_V_Hg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDStart" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Signal_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Startpunkt von Fstr Fahrweg. Das Signal muss ein Haupt-, Sperrsignal oder ein Bedienpunkt sein. DB-Regelwerk Zugstraßentabelle: erster Bestandteil der Bezeichnung der Fstr; Durchrutschwegtabelle, Spalte 1: \&quot;von Signal\&quot;. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Start"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDZiel" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Ziel_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zielpunkt von Fstr Fahrweg. Der Zielpunkt besteht beim befahrenen Teil aus einem Signal mit der Ausprägung Hauptsignal, Sperrsignal oder Bedienpunkt, beim Durchrutschweg aus einem markanten Punkt. DB-Regelwerk Befahrener Teil: In der Fahrstraßentabelle genanntes Ziel der Fahrstraße; Durchrutschweg: Durchrutschwegtabelle, Spalte 2 \&quot;bis\&quot;. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Ziel"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Mittel_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Mittel"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrMittelVAufwertung"
+        lowerBound="1" eType="#//Fstr_Mittel_V_Aufwertung_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Die Aufwertung des Signals aus einer Einschränkung aufgrund von Mittelweichen ist möglich. Ist eine Mittelweiche für eine Geschwindigkeitseinschränkung verantwortlich, so fällt nach Freifahren dieser die Restriktion weg und das Signalbild kann aufgewertet werden. DB-Regelwerk Mittelweichenteilfahrstraßentabelle, Spalte 6 \&quot;Geschwindigkeit - Aufwertung\&quot;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_Mittel_V_Aufwertung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Mittel_V_Aufwertung_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCFstr_Mittel_V_Aufwertung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Nichthaltfall" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Nichthaltfallabschnitt (auch: Haltfallverhinderungsabschnitt). Im Gegensatz zur bisherigen Praxis der LST-Planung, den Haltfallabschnitt zu planen, werden im Datenmodell nur die Nichthaltfallabschnitte für jede Zugstraße geplant. In der Regel ist es einer, selten mehrere. DB-Regelwerk Haltfallabschnitt bisher: Zugstraßentabelle, Spalte 6: Signalhaltfall"/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Nichthaltfall"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFMAAnlage" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_FMA_Anlage_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Freimeldeabschnitt, der als Nichthaltfallabschnitt genutzt wird. DB-Regelwerk Wurde bisher nicht angegeben, stattdessen: Zugstraßentabelle, Spalte 6: Signalhaltfall."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_FMA_Anlage"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrFahrweg" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Fstr_Fahrweg_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung des Nichthaltfallabschnitts zu Fstr Fahrweg. DB-Regelwerk Wurde bisher nicht angegeben, stattdessen: Zugstraßentabelle, Spalte 6: Signalhaltfall "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fstr_Fahrweg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Rangier_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Rangier"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="automatischeEinstellung"
+        eType="#//Automatische_Einstellung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Möglichkeit des Fahrstraßenanstoßes über die manuelle Bedienung hinaus. Die Angabe für eine Zugstraße gilt auch für eventuell zugehörige (davorliegende) Mittelweichenteilfahrstraßen. DB-Regelwerk Zugstraßentabelle, Spalte 9 \&quot;Selbststellbetrieb/Zuglenkung\&quot; "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Automatische_Einstellung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFMAAnlageRangierFrei"
+        upperBound="-1" eType="ecore:EClass Verweise.ecore#//ID_FMA_Anlage_Rangier_Frei_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den/die Freimeldeabschnitt(e), für die eine positive Gleisfreimeldung vor Sh 1/Ra 12-Stellung für die Rangierstraße notwendig ist. DB-Regelwerk Rangierstraßentabelle, Spalte 10 \&quot;Punktförmige Gleisfreimeldeprüfung erforderlich\&quot; und Spalte 13 \&quot;Verzicht auf Zielgleisfreiprüfung\&quot;"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>nein&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_FMA_Anlage_Rangier_Frei"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rangierGegenfahrtausschluss"
+        eType="#//Rangier_Gegenfahrtausschluss_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Gegenfahrtausschluss von Rangierstraßen in ein Inselgleis. Die Funktion entspricht Lastenheft ESTW R2.2.14. ja: Gegenfahrtausschluss besteht (Standardfunktion); Inselgleis_frei: Gegenfahrtausschluss besteht, wenn die Gegenrangierfahrt das Inselgleis noch nicht belegt hat;&#xA;nein: Gegenfahrtausschluss besteht nicht. Gibt es keine Gegenrangierstraße (das Ziel der Rangierstraße liegt nicht in einem Inselgleis), ist das Attribut nicht sinnvoll füllbar und somit im XML-Export nicht enthalten. DB-Regelwerk Rangierstraßentabelle, Spalte 9 \&quot;Ausschluss von Gegenfahrten\&quot;"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>ja&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Rangier_Gegenfahrtausschluss"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Rangier_Fla_Zuordnung" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Zuordnung von zu gewährleistenden Flankenschutzmaßnahmen zur Rangierstraße. Nur in Ausnahmefällen wird Flankenschutz für Rangierstraßen realisiert. Dann kann für jede Weiche einzeln bestimmt werden, ob sie Flankenschutz bekommt."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Rangier_Fla_Zuordnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFlaSchutz" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Fla_Schutz_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf das Fahrwegelement, für das Flankenschutz angefordert werden soll, wenn es durch die angegebene Rangierstraße beansprucht wird."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fla_Schutz"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrRangier" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Fstr_Zug_Rangier_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die Rangierstraße, für die das unter ID Fla Schutz angegebene Fahrwegelement Flankenschutz anfordern soll. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fstr_Rangier"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Fstr_Reihenfolge_Type" instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TFstr_Reihenfolge"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+      <details key="pattern" value="[0-9]|[12][0-9]|30"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Reihenfolge_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCFstr_Reihenfolge"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Fstr_Reihenfolge_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Signalisierung" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Je Fahrstraße zu zeigende Signalisierung, die sich nicht eindeutig aus den Stellwerksfunktionen ergibt. Siehe auch Bildung der Signalbegriffe. DB-Regelwerk Signaltabelle 2, jedoch sind hier alle Signalisierungen angegeben."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Signalisierung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrZugRangier" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Fstr_Zug_Rangier_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung des Signalbildes zur jeweiligen Fahrstraße. DB-Regelwerk Signaltabelle 2, Spalte 1: \&quot;Signalisierungsabschnitt/Zugstraße\&quot; "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fstr_Zug_Rangier"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSignalSignalbegriff"
+        lowerBound="1" eType="ecore:EClass Verweise.ecore#//ID_Signal_Signalbegriff_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung des Signalbegriffs zur jeweiligen Fahrstraße, u. U. in Abhängigkeit von ID Signal Signalbegriff Ziel. DB-Regelwerk Signaltabelle 2: Eintrag der jeweiligen Signalbegriffe"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Signal_Signalbegriff"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSignalSignalbegriffZiel"
+        eType="ecore:EClass Verweise.ecore#//ID_Signal_Signalbegriff_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Optionale Bedingung für die Anzeige von Fstr_Signalisierung_Besonders.ID Signal Signalbegriff. Das Zielsignal ist meist das Signal am Fahrstraßenziel, kann aber auch davor (z. B. gestufte Geschwindigkeitssignalisierung) oder dahinter (z. B. nach dem Ende des Weichenbereiches bei Ausfahrten) liegen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Signal_Signalbegriff_Ziel"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Umfahrpunkt" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Bezeichner des Umfahrpunkts durch eine Weiche oder einen Gleisabschnitt. Der Bezeichner dient nur dazu, den Umfahrweg zu benennen, nicht dazu, den Fahrweg zu beschreiben; die Beschreibung erfolgt in Fstr Fahrweg (Bereich Objekt). Die Festlegung des Umfahrpunkts gilt je Fahrweg und damit für alle Zug- und Rangierstraßen, die diesen Fahrweg nutzen. Das Objekt ist Bestandteil des Untergewerks \&quot;Bedienung Fdl\&quot;. DB-Regelwerk Bestandteil des Bezeichners der Umfahrstraße in der Zug-/Rangierstraßentabelle, Spalte 1 \&quot;Start/Ziel\&quot;"/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Umfahrpunkt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrFahrweg" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Fstr_Fahrweg_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung des Fahrwegs zum Umfahrpunkt. DB-Regelwerk Zugstraßentabelle, Bezeichnung der Fstr (inkl. Umfahrpunkt) "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fstr_Fahrweg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDUmfahrpunkt" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Umfahrpunkt_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf das Element (Gleisabschnitt oder Weiche), das für den Umfahrpunkt namensgebend ist. DB-Regelwerk Zugstraßentabelle, Bezeichnung des Umfahrpunktes in der Fahrstraßenbezeichnung"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Umfahrpunkt"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Fstr_V_Hg_Type" instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TFstr_V_Hg"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TGeschwindigkeit"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_V_Hg_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCFstr_V_Hg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Fstr_V_Hg_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Fstr_V_Type" instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TFstr_V"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TGeschwindigkeit"/>
+      <details key="pattern" value="20|30|40|50|60|70|80|90|100|110|120|130|140|150"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_V_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCFstr_V"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Fstr_V_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Vsigabstand_Verkuerzt_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCFstr_Vsigabstand_Verkuerzt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Zug_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Zug"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="automatischeEinstellung"
+        eType="#//Automatische_Einstellung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Möglichkeit des Fahrstraßenanstoßes über die manuelle Bedienung hinaus. Die Angabe für eine Zugstraße gilt auch für eventuell zugehörige (davorliegende) Mittelweichenteilfahrstraßen. DB-Regelwerk Zugstraßentabelle, Spalte 9 \&quot;Selbststellbetrieb/Zuglenkung\&quot; "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>keine&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Automatische_Einstellung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrVsigabstandVerkuerzt"
+        lowerBound="1" eType="#//Fstr_Vsigabstand_Verkuerzt_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Der Abstand vom Start zum Ziel der Fahrstraße ist kürzer als der zulässige Vorsignalabstand. DB-Regelwerk Ein expliziter Vermerk dazu kann als Fußnote in der Signaltabelle 2 oder Beschreibung im Erläuterungsbericht erscheinen. Ansonsten ist ein Zusatzlicht am Startsignal und die Geschwindigkeitseinschränkung bei Fahrt auf Halt oder eine eingeschränkte Geschwindigkeit ein Indiz."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_Vsigabstand_Verkuerzt"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrZugDWeg" eType="#//Fstr_Zug_DWeg_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_Zug_DWeg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEEinschaltung" upperBound="-1"
+        eType="ecore:EClass Verweise.ecore#//ID_BUE_Einschaltung_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="BÜ im Durchrutschweg, der im Sicherheitsabstand liegt und daher für die Fahrstraße zu sichern ist oder BÜ auf der freien Strecke, dessen Sicherung durch die Ausfahrzugstraße angestoßen werden muss. DB-Regelwerk Zugstraßentabelle: Fußnote. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_BUE_Einschaltung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSignalGruppenausfahrt"
+        eType="ecore:EClass Verweise.ecore#//ID_Signal_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf das Gruppenausfahr- oder -zwischensignal einer Fahrstraße. Ist das Attribut gefüllt, handelt es sich um eine Fahrstraße mit Gruppensignal. Start der Fahrstraße und damit Beginn des Bereichsobjektes Fstr Fahrweg für den befahrenen Teil ist nicht das Gruppensignal, sondern das Signal am tatsächlichen Beginn der Fahrstraße (meist Sperrsignal). DB-Regelwerk Sicherungstechnischer Lageplan: Darstellung des Gruppensignals nach dem Fahrstraßenstart; Zugstraßentabelle, Spalte 1 \&quot;Start/Ziel\&quot;: Besondere Bezeichnung des Signals. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Signal_Gruppenausfahrt"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Zug_DWeg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Zug_DWeg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dWegVorzug" lowerBound="1"
+        eType="#//DWeg_Vorzug_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Vorzugs-Durchrutschweg. Der DWeg ist der Standard-Durchrutschweg, der verwendet wird, wenn in der Bedienung kein spezieller DWeg ausgewählt wird. DB-Regelwerk Durchrutschwegtabelle: Je Signal als erster eingetragener DWeg."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="DWeg_Vorzug"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrDWeg" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Fstr_DWeg_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung des DWeges zur Zugstraße. DB-Regelwerk Zugstraßentabelle: Nennung des D-Weges im Namen der Fahrstraße "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fstr_DWeg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Zug_Rangier" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Zug- oder Rangierstraße. Jeder Zugstraße ist ein Durchrutschweg (modelliert in Fstr DWeg) zugeordnet. Gibt es Fahrstraßen mit mehreren Durchrutschwegen, so werden dafür mehrere Zugstraßen angelegt, die auf dem gleichen befahrenen Teil (modelliert in Fstr Fahrweg) basieren. Mit dem Datenmodell werden auch Zentralblockfahrstraßen geplant. Der hiermit verknüpfte Gefahrpunktabstand wird in Fstr DWeg abgebildet. Eine Zentralblockfahrstraße (Fstr_Art==ZB) über die ESTW-Zentraleinheit-Grenze wird in zwei Teilblockfahrstraßen (Fstr_Art==ZB) im Bereich der jeweiligen ESTW-Zentraleinheit geplant. Dabei kann ein befahrener Teil der Länge Null entstehen, wenn die zweite Teilblockfahrstraße nur aus dem Durchrutschweg besteht. Zielsignal der ersten ist Startsignal der zweiten Teilblockfahrstraße. Fahrstraßen über eine ESTW-Zentraleinheit-Grenze (FAP) werden als zwei Teilfahrstraßen (Fstr_Art==ZT/ZTU/RT/RTU) geplant. Kann die erste Teilfahrstraße mit mehreren weiteren Teilfahrstraßen fortgesetzt werden, so muss für jede geplante Kombination eine eigene Instanz der ersten Teilfahrstraße angelegt werden (analog der Zuordnung mehrerer Durchrutschwege). Die Verknüpfung zur zweiten Teilfahrstraße geschieht über Fstr_Zug_Rangier.ID Fstr Folgeabhaengigkeit. Eine Mittelweichenteilfahrstraße besitzt keinen Durchrutschweg. Eine explizite Verknüpfung von Mittelweichenteilfahrstraßen untereinander und mit der Zugstraße erfolgt nicht, da sich diese über die Topologie und insbesondere über Start und Ziel ergeben. Eine Rangierstraße besitzt ebenfalls keinen Durchrutschweg. Die speziellen Attribute von Zug-/Rangier-/Mittelweichenteilfahrstraße werden in eigenen Attributgruppen gespeichert, die sich gegenseitig ausschließen. Gruppenausfahrten werden als Zugstraßen ohne besondere Eigenschaft abgebildet. Das Gruppenausfahrsignal wird unter ID Signal Gruppenausfahrt explizit angegeben, die Gruppenausfahrstraße ist somit eindeutig erkennbar. DB-Regelwerk Zugstraßentabelle (eine Zeile), Rangierstraßentabelle (eine Zeile), Mittelweichenteilfahrstraßentabelle (eine Zeile). "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Zug_Rangier"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrZugRangierAllg" lowerBound="1"
+        eType="#//Fstr_Zug_Rangier_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_Zug_Rangier_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrAusschlussBesonders"
+        upperBound="-1" eType="ecore:EClass Verweise.ecore#//ID_Fstr_Ausschluss_Besonders_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Besonderer Fahrstraßenausschluss, der in Sonderfällen geplant werden muss, z. B. Rangierstraße mit paralleler Gruppenausfahrt. Der Ausschluss von Durchfahrten ist hier nicht anzugeben (siehe Signal)."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fstr_Ausschluss_Besonders"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrFahrweg" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Fstr_Fahrweg_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung des Fahrwegs zur Fahrstraße als befahrener Teil. DB-Regelwerk Zugstraßentabelle, Bezeichnung der Fstr (Start und Ziel) "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Fstr_Fahrweg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrMittel" eType="#//Fstr_Mittel_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_Mittel"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrRangier" eType="#//Fstr_Rangier_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_Rangier"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrZug" eType="#//Fstr_Zug_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_Zug"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fstr_Zug_Rangier_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CFstr_Zug_Rangier_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fBedienung" eType="#//F_Bedienung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Während das Gleis vor dem Startsignal mit Fahrleitung ausgerüstet ist, ist der befahrene Teil der Fahrstraße nicht oder nur teilweise damit ausgerüstet. Der Durchrutschweg bleibt in der Regel unberücksichtigt. Die Angabe erfolgt nur, sofern eine F-Bedienung erforderlich ist (true). Bei Rangierstraßen kann auf das Setzen des Attributs verzichtet werden, wenn das Ziel der üblicherweise durchgeführten Rangierfahrten noch im mit Fahrleitung ausgerüsteten Bereich liegt. DB-Regelwerk Zugstraßentabelle, Spalte 7 \&quot;Zugstraße in nichtüberspannte Bereiche\&quot;"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="F_Bedienung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrArt" lowerBound="1"
+        eType="#//Fstr_Art_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art der Fahrstraße. RR – RangierRegel-, RT - RangierTeil-, RTU - RangierTeilUmfahr-, RU – RangierUmfahr-, ZH – ZugHilfs-, ZM – ZugMittelweichenteil-, ZR – ZugRegel-, ZU – ZugUmfahr-, ZUH – ZugUmfahrhilfs-, ZUM – ZugUmfahrMittelweichenteil-, ZB – ZugZentralblock-, ZT - ZugTeil-, ZTU - ZugTeilUmfahr-. ZB: Anwendung im Zentralblock oder an Schnittstellen zu anderen Stellwerkstechniken bei Mehrabschnittssignalisierung, Signalabhängigkeiten von Fahrwegelementen auf der freien Strecke oder bei Bedienung einer Awanst. DB-Regelwerk Zug-/Rangierstraßentabelle, Spalte 2 \&quot;Art\&quot;"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:ProposedValue>ZR&lt;/ppi:ProposedValue>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrBedienstring" eType="#//Fstr_Bedienstring_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bedienstring der Fahrstraße. Der Bedienstring wird automatisch aus Start, Ziel und ggf. Umfahrpunkt(en) gefüllt, kann aber bei Besonderheiten auch abweichend geplant werden. Das Attribut ist Bestandteil des Untergewerks \&quot;Bedienung Fdl\&quot;. DB-Regelwerk Zug-/Rangierstraßentabelle, Spalte 1 \&quot;Start/Ziel\&quot;"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>[3..26] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_Bedienstring"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrBildezeit" eType="#//Fstr_Bildezeit_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Für die ZL notwendige Fahrstraßenbildezeit. Das Attribut ist Bestandteil des Untergewerks \&quot;Zuglenkung\&quot;. DB-Regelwerk ZL-Planung"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [0..900] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_Bildezeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrReihenfolge" lowerBound="1"
+        eType="#//Fstr_Reihenfolge_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Nummerierung des Umfahrwegs, wenn mehrere Fahrstraßen mit gleichem Start- und Zielpunkt existieren. Beim Regelweg wird das Attribut mit \&quot;0\&quot; befüllt. Das Datum wird zur Kennzeichnung des Fahrwegs in der Fahrstraßenbezeichnung genutzt und für die Reihenfolge des Erscheinens von Fahrstraßen in der Tabelle. Es kann auch für die Reihenfolge im Bedienmenü genutzt werden. DB-Regelwerk Die Reihenfolge wurde bisher geplant durch die Reihenfolge des Erscheinens in der Zug-/Rangierstraßentabelle (implizit) oder die Bezeichnung der Fahrstraßenart (z. B. U1, U2, ...) oder eine Beschreibung im Erläuterungsbericht."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>[0..30]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_Reihenfolge"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fstrV" eType="#//Fstr_V_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Ausnahmsweise geplante Geschwindigkeit der Fahrstraße am Start, die sich nicht aus den Elementen der Fahrstraße ergibt. In der Regel wird die Geschwindigkeit aus den Daten der Fahrstraße errechnet und deshalb hier nicht angegeben. Im Ausnahmefall (z. B. bei Resi) kann der Planer eine geringere Geschwindigkeit vorgeben. Ausgeschlossen von diesem Ausnahmefall ist eine geringere Geschwindigkeitssignalisierung aufgrund eines verkürzten Bremswegs oder nicht vorhandener Kennzahlen am Zs 3-Anzeiger. Dies wird in Fstr Signalisierung geplant. Siehe auch Bildung der Signalbegriffe. DB-Regelwerk Signaltabelle 2, hier wird jedoch schon das Ergebnis als Zs 3 am Startsignal gespeichert."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>[20|30|40|50|60|70|80|90|100|110|120|130|140|150]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Fstr_V"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Laenge_Soll_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TLaenge_Soll"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TMeter"/>
+      <details key="pattern" value="0|[1-9][0-9]{0,1}|[1-2][0-9]{2}|300"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Laenge_Soll_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCLaenge_Soll"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Laenge_Soll_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Markanter_Punkt" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Punkt in der Örtlichkeit, der eindeutig aufzufinden und beschreibbar ist. Hauptsächlicher Anwendungsfall ist die Definition des Gefahrpunktes oder des Endes eines Durchrutschweges. Auch der PZB-Gefahrpunkt wird damit verortet. Die eindeutige Auffindbarkeit dient der Freimeldung durch Hinsehen in der Rückfallebene. Wegen schlechter Erkennbarkeit soll eine Gleisfreimeldegrenze nur ausnahmsweise als markanter Punkt genutzt werden, wenn sich in vertretbarer Entfernung kein anderer Punkt finden lässt. Antennen von Zugbeeinflussungen (z. B. PZB-Gleismagnet) gelten nicht als markanter Punkt. Das Ende des Durchrutschweges muss nicht mit einer Freimeldegrenze zusammenfallen. Ein weiterer Anwendungsfall ist die Verortung von Freimeldegrenzen als Hilfestellung für deren Montage. Markante Punkte sind: Signal (insbesondere Haupt- und Sperrsignal, Grenzzeichen, Schutzhaltsignal), Weichenspitze (W Kr Gsp Komponente), Gleissperre (W Kr Gsp Komponente), Kante des Gefahrraums an BÜ (Sonstiger Punkt), Besondere Objekte, z. B. an Deckungsstellen (derzeit noch nicht modelliert), Gleisfreimeldegrenze (nur ausnahmsweise), Beginn eines Bahnsteigs (Sonstiger Punkt), Zugschluss bzw. -spitze (Sonstiger Punkt), Sonstige Punkte (Sonstiger Punkt). DB-Regelwerk Ende Durchrutschweg: Durchrutschwegtabelle, Spalte 2: \&quot;bis\&quot;; Gefahrpunkt: Gefahrpunkttabelle, Spalte 2: \&quot;maßgebender Gefahrpunkt\&quot;; Verortung Gleisfreimeldegrenze: Bemaßungsangabe im sicherungstechnischen Lageplan und Achszählpunkttabelle, Spalte 17: \&quot;Bezugspunkt\&quot;. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CMarkanter_Punkt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" lowerBound="1"
+        eType="#//Markanter_Punkt_Bezeichnung_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDDWegErlaubnisabhaengig"
+        eType="ecore:EClass Verweise.ecore#//ID_Block_Element_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Abhängigkeit aller DWege - mit diesem Markanten Punkt als Ziel - von der Stellung der Erlaubnis der Block Anlage, an dessen Ende sich das verlinkte Block Element befindet. Der DWeg ist nur einstellbar, wenn die Erlaubnis vom Block Element Richtung Strecke zeigt. DB-Regelwerk Streckenblocktabelle, Spalte 11: \&quot;D-Weg erlaubnisabhängig\&quot;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_DWeg_Erlaubnisabhaengig"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDMarkanteStelle" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Markante_Stelle_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Punkt Objekt, das als Markanter Punkt dient. DB-Regelwerk siehe Markanter Punkt"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Markante_Stelle"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Markanter_Punkt_Bezeichnung_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CMarkanter_Punkt_Bezeichnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnungMarkanterPunkt"
+        lowerBound="1" eType="#//Bezeichnung_Markanter_Punkt_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung des markanten Punktes. Die Bezeichnung ergibt sich ganz oder teilweise aus dem verlinkten Objekt (in der Regel Bezeichnung Tabelle), kann aber vom Planer geändert werden. Als Abkürzung für das Grenzzeichen wird einheitlich \&quot;Gz\&quot; verwendet. DB-Regelwerk Durchrutschwegtabelle, Spalte 2: \&quot;Durchrutschweg - bis\&quot;"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [1..30] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung_Markanter_Punkt"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Massgebende_Neigung_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TMassgebende_Neigung"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+      <details key="pattern" value="-([1-9]|[1-7][0-9]|80)\.[0-9]{2}|-0\.[1-9][0-9]|-0\.0[1-9]|[0-9]\.[0-9]{2}|[1-7][0-9]\.[0-9]{2}|80\.00"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Massgebende_Neigung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCMassgebende_Neigung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Massgebende_Neigung_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rangier_Gegenfahrtausschluss_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCRangier_Gegenfahrtausschluss"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMRangierGegenfahrtausschlussObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sonstiger_Punkt" eSuperTypes="Basisobjekte.ecore#//Punkt_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Nicht durch ein anderes Punkt Objekt festgelegter Markanter Punkt. Das Objekt Sonstiger_Punkt wird durch den LST-Planer angelegt, wenn kein bereits existierendes Punkt Objekt für die Beschreibung des Markanten Punktes zur Verfügung steht. Insbesondere handelt es sich dabei um: Beginn eines Bahnsteigs, Kante eines Gefahrraums am BÜ, Zugschluss bzw. -spitze, Beginn des zu deckenden Bereichs einer Deckungsstelle (z. B. bewegliche Brücke), sonstige Punkte (z. B. Merkpfahl, Laternenmast). DB-Regelwerk Siehe Markanter Punkt."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSonstiger_Punkt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBeginnBereich" eType="ecore:EClass Verweise.ecore#//ID_Beginn_Bereich_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zeiger auf das Bereich Objekt Bahnsteig Kante, BUE Gleisbezogener Gefahrraum oder ZUB Streckeneigenschaft, dessen Beginn bzw. Ende das Punkt Objekt Sonstiger Punkt abbildet. DB-Regelwerk Durchrutschwegtabelle, Spalte 2: \&quot;Durchrutschweg - bis\&quot;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Beginn_Bereich"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

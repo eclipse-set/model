@@ -1,0 +1,14 @@
+target "org.eclipse.set.model.releng.target"
+
+with source
+
+location "https://download.eclipse.org/releases/2022-06/" {
+	org.eclipse.jdt.feature.group
+	org.eclipse.emf.ecore.feature.group
+	org.eclipse.emf.sdk.feature.group
+	org.eclipse.e4.rcp.feature.group
+	org.eclipse.platform.sdk
+	org.eclipse.net4j.util.feature.group
+	org.eclipse.equinox.sdk.feature.group
+	org.eclipse.rcp.sdk.id
+}

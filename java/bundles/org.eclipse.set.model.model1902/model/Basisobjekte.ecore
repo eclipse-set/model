@@ -1,0 +1,1475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Basisobjekte" nsURI="http://www.plan-pro.org/modell/Basisobjekte/1.9.0.2"
+    nsPrefix="nsBasisobjekte">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Für Fragen zum Schema wenden Sie sich bitte an Herrn :&#xA;&#xA;Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EDataType" name="Abstand_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TAbstand"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TMeter"/>
+      <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Abstand_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCAbstand"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Abstand_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Anhang" eSuperTypes="#//Ur_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Ermöglicht die Aufnahme von Anhangsdokumenten in das Modell. Das Objekt Anhang erlaubt es, im PlanPro Datenmodell Informationen aus bestehenden Dateien vorzuhalten, die nicht durch ein eigenes Objekt im Modell abgebildet sind. Diese Informationen entsprechen den im bisherigen papiergebundenen Prozess beigefügten Anlagen, eben den Anhängen. Die erlaubten Typen von Anhängen sind im Attribut „Anhang Art“ definiert. Der Dateiname der Ursprungsdatei wird im Attribut „Dateiname“ ohne die Endung abgelegt. Die erlaubte Endung wird im Attribut „Dateityp“ definiert. Der eigentliche Inhalt der Ursprungsdatei wird im Attribut „Daten“ als base64-codierte Binärdaten abgelegt. Ein Anhang wird im Datenmodell auf zwei Arten verwendet. Zum einen kann ein Anhang über das Objekt Bearbeitungsvermerk mit jedem Objekt oder Attribut verbunden werden. Dies ist in der Beschreibung des Objekts Bearbeitungsvermerk näher erläutert. Spezielle Anhänge, die direkt in einem Objekt bei der Planung enthalten sein müssen, z.B. INA-Berechnung, werden direkt durch Attribute im jeweiligen Objekt definiert und so ohne den Umweg des Bearbeitungsvermerkes eingebunden."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CAnhang"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="anhangAllg" lowerBound="1"
+        eType="#//Anhang_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Anhang_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Anhang_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CAnhang_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="anhangArt" lowerBound="1"
+        eType="#//Anhang_Art_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Beinhaltet die Information über den fachlichen Inhalt des Anhangs. Bei Auswahl von \&quot;sonstige\&quot; ist der Anhang im dazugehörigen Bearbeitungsvermerk zu erläutern. Ggf. ist ein weiterer Bearbeitungsvermerk zur Kommentierung anzufügen. Das LST-Datenmodell enthält sowohl fachliche Anhänge (zu LST-Fachdaten) sowie Anhänge des Objektmanagements. Zu den Anhängen des Objektmanagements für eine Einzelplanung gehören: Abnahmeniederschrift Anhänge zu einem LST Zustand Information BAST Bestätigung der Gleichstellung Bestätigung der Qualitätsprüfung Bestätigung der Übernahme Erläuterungsbericht Bestätigung der Freigabe des Bvb Bestätigung der Genehmigung des AG/Bh/Bhv besondere Materialisierung (v. a. projektbezogene Wiederverwendung von LST-Reststoffen) Planverzeichnis Planprüfberichtbericht sonstige VzG "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Anhang_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dateiname" lowerBound="1"
+        eType="#//Dateiname_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Ursprünglicher Name der angehängten Datei ohne Dateiformat bzw. -typ."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Dateiname"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dateityp" lowerBound="1"
+        eType="#//Dateityp_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Format des Anhangs. Nur die im ENUM dargestellten Dateiarten können einer Planung angehangen werden. Andere Dateiarten sind aus Gründen der Nachprüfbarkeit und der Transparenz nicht zulässig. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Dateityp"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="daten" eType="#//Daten_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Im base64-Format codierter Inhalt der Ursprungsdatei des Anhangs."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Daten"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Anhang_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCAnhang_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMAnhangArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Basis_Objekt" abstract="true" eSuperTypes="#//Ur_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Allen Modell-Objekten zugrundeliegendes Objekt, welches gemeinsame Eigenschaften definiert. In den Basisobjekten werden grundsätzliche Eigenschaften definiert, die allen Objekten gemein sind. Alle im Datenmodell definierten LST-Objekte erben diese Eigenschaften unmittelbar, wie z.B. die Regelzeichnung, oder mittelbar, z.B. über das Punkt Objekt."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBasis_Objekt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="basisObjektAllg" lowerBound="1"
+        eType="#//Basis_Objekt_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Basis_Objekt_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBearbeitungsvermerk"
+        upperBound="-1" eType="ecore:EClass Verweise.ecore#//ID_Bearbeitungsvermerk_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweist auf einen oder mehrere Bearbeitungsvermerke. Ein Anhang wird über einen Bearbeitungsvermerk zugeordnet. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Bearbeitungsvermerk"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="objektreferenzen" eType="#//Objektreferenzen_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Objektreferenzen"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Basis_Objekt_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBasis_Objekt_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bestandsschutz" eType="#//Bestandsschutz_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Für das betroffene Objekt wurde Bestandsschutz festgelegt (true). Die Angabe entfällt, wenn kein Bestandsschutz vorhanden ist."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bestandsschutz"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="objektzustandBesonders"
+        eType="#//Objektzustand_Besonders_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Besonderer Zustand eines Objekts im Planungsbereich. Ist dieses Attribut nicht vorhanden, so ist das LST-Objekt „in Betrieb“. Die verwendeten ENUM-Werte haben folgende Bedeutung: abgedeckt: Objekt, das im Knoten-Kanten-Modell verortet bleibt, technisch weiterhin in Betrieb bleibt, jedoch seine betriebliche Funktion zeitweilig nicht mehr erfüllt (anderweitig außer_Betrieb gesetzt, z. B. abgedeckte Signale [außer_Betrieb mit besonderer Maßnahme] oder Signale am Baugleis [außer_Betrieb ohne besondere Maßnahme]). ausser_Betrieb: Objekt, das im Knoten-Kanten-Modell verortet bleibt, aber seine betriebliche Funktion zeitweilig nicht mehr erfüllt und auch technisch außer Betrieb gesetzt ist. ausser_Betrieb_vorbereitend: Objekt, das im Knoten-Kanten-Modell erstmalig neu verortet wird, aber seine betriebliche Funktion zeitweilig noch nicht erfüllt und auch technisch noch nicht in Betrieb gesetzt ist, jedoch zu einem späteren Zeitpunkt (z. B. nachfolgender Bauzustand) in Betrieb gesetzt werden soll. sonstige: Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Bisher keine eindeutige Abbildung, besonderer Objektzustand meist Fußnoteneintrag in Planungsunterlagen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Objektzustand_Besonders"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="datumRegelwerk" eType="#//Datum_Regelwerk_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Datum des letzten Planungsstandes eines Objekts, Hinweis auf den Regelwerksstand zum Planungszeitpunkt. Ergänzende Beschreibung zum Umgang im PlanPro-Planungsprozess Anhand des Regelwerksstandes lassen sich die jeweils gültigen Stände der verwendeten Regelwerke herleiten (wichtig für Bestandsschutz). Abweichungen werden auf Objektebene (Basis Objekt) über das Attribut ID Anhang Regelwerk Besonders beigefügt. Im Rahmen der Erstellung einer Planung_Einzel werden alle neuen und geänderten Objekte standardmäßig mit dem zentral einzugebenden Wert des Attributs „Datum Regelwerksstand“ der Planung_Einzel befüllt. Durch die Befüllung dürfen bereits vorhandene Angaben „ID_Anhang_Regelwerk_Besonders“ nicht überschrieben werden. Bei Abweichungen kann der LST-Fachplaner objekt- oder objektgruppenbezogen „ID_Anhang_Regelwerk_Besonders“ füllen. DB-Regelwerk Bisher ohne eindeutige Abbildung im Schriftfeld gemäß Ril 819.0103. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Datum_Regelwerk"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangRegelwerkBesonders"
+        eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Für das Objekt abweichend geltendes Regelwerk. Verweis auf einen Anhang, aus dem der besondere Regelwerksstand eines LST-Objektes hervorgeht. Dieser gilt abweichend von dem für die Planung_Einzel festgelegten Datum Regelwerksstand. Ergänzende Beschreibung zum Umgang im PlanPro-Planungsprozess Im Schriftfeld gemäß Ril 819.0103 dient Feld 30 \&quot;Zusätzliche Vermerke\&quot; üblicherweise zur Angabe von Regelwerksabweichungen. DB-Regelwerk Bisher eine eindeutige Abbildung als Schriftfeldeintrag gemäß Ril 819.0103. Meist Angabe im Erläuterungsbericht. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang_Regelwerk_Besonders"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bearbeitungsvermerk" eSuperTypes="#//Ur_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Anhang in Form von Datei oder Text zu einem Objekt oder Attribut. Jeder zugelassene Projektbeteiligte kann zu einem Objekt oder Attribut einen Bearbeitungsvermerk anfügen, sofern er die entsprechend notwendige Berechtigung besitzt. Dies gilt für fachliche wie organisatorische Objekte und Attribute. Für ENUM-Attribute ist bei Auswahl des Werts \&quot;sonstige\&quot; zwingend ein Bearbeitungsvermerk anzufügen. Eine Dokumentenbeigabe ist dabei optional. Zu einem Objekt oder Attribut können mehrere Bearbeitungsvermerke erstellt werden. Der Bearbeitungsvermerk enthält vorläufig eine GUID zur Identifikation des Bearbeiters sowie eine GUID für die Signatur. Im Attribut „Bearbeitungsvermerk Rolle“ kann die fachliche Rolle des Bearbeiters abgelegt werden. Kommentare des Bearbeiters werden als Freitext im Attribut „Kommentar“ hinterlegt. Der Bearbeitungsvermerk kann einen Anhang aufnehmen. Um mehrere Anhänge zu einem Objekt zuzuordnen, müssen mehrere Bearbeitungsvermerke erstellt werden."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBearbeitungsvermerk"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bearbeitungsvermerkAllg"
+        lowerBound="1" eType="#//Bearbeitungsvermerk_Allg_AttributeGroup" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bearbeitungsvermerk_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhang" upperBound="-1"
+        eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den durch diesen Bearbeitungsvermerk referenzierten Anhang."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bearbeitungsvermerk_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBearbeitungsvermerk_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bearbeitungsvermerkKennung"
+        eType="#//Bearbeitungsvermerk_Kennung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Kennzeichnung, dass der Bearbeitungsvermerk für den Bestand (Bestandsdaten, Bestandspläne) relevant ist und deswegen über das Planungsprojekt hinweg abzuspeichern ist. Heute: Angaben im Erläuterungsbericht. Ergänzende Beschreibung zum Umgang im PlanPro-Planungsprozess Alle bestandsrelevanten Bearbeitungsvermerke sollten vor Erstellung der Bestandsdaten nochmal durch den LST-Fachplaner geprüft werden, da diese sich durch Einzelplanungen erübrigt haben könnten. Nicht bestandsrelevante Bearbeitungsvermerke werden automatisch bei Erstellung der Bestandsdaten im Planungswerkzeug gelöscht. DB-Regelwerk Bisher ohne eindeutige Darstellung."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bearbeitungsvermerk_Kennung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bearbeitungsvermerkRolle"
+        lowerBound="1" eType="#//Bearbeitungsvermerk_Rolle_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Fachliche Rolle des Bearbeiters, der den Bearbeitungsvermerk verfasst hat. In der ersten Umsetzungsstufe PlanPro ist dabei nur die Rolle \&quot;LST_Fachplaner\&quot; (Ingenieurbüro) vorgesehen. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bearbeitungsvermerk_Rolle"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bestandsrelevanz" eType="#//Bestandsrelevanz_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Relevanz eines Bearbeitungsvermerks für die Übernahme in den Bestand (Bestandsdaten bzw. Bestandspläne).\n\nnein - Nur gültig innerhalb einer Planungsgruppe. Der BV ist vor Erstellen der Bestandsdaten einer Planungsgruppe zu löschen.\n\nBestandsdaten - Gültig innerhalb eines Planungsprojekts bis vor Erstellen einer Bestandsdokumentation, d. h. der BV kann in den Bestandsdaten enthalten bleiben, ist jedoch vor Erstellen einer Bestandsdokumentation zu löschen.\n\nBestandsdokumentation - Gültig innerhalb eines Planungsprojekts bis vor Erstellen der letzten Bestandsdokumentation, d. h. der BV kann über mehrere Planungsgruppen hinaus enthalten bleiben, ist jedoch vor Projektabschluss zu löschen.\n\ndauerhaft - Gültig über das Gesamtprojekt hinaus auch nach Erstellen der letzten Bestandsdokumentation.\nDer BV ist dauerhaft relevant und kann erst mit einem neuen Planungsprojekt  geändert/gelöscht werden."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bestandsrelevanz"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kommentar" lowerBound="1"
+        eType="#//Kommentar_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Kommentare des Bearbeiters als Freitext."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Kommentar"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kurztext" eType="#//Kurztext_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Kurzform des Kommentars des Bearbeitungsvermerks für Anzeige bzw. Druck in den Ausgabeformaten."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>[1..100]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Kurztext"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zeitBearbeitungsvermerk"
+        lowerBound="1" eType="#//Zeit_Bearbeitungsvermerk_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zeitpunkt, zu dem der Bearbeitungsvermerk geändert wurde."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Zeit_Bearbeitungsvermerk"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bearbeitungsvermerk_Kennung_Type"
+      instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBearbeitungsvermerk_Kennung"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TZeichenkette"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bearbeitungsvermerk_Kennung_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBearbeitungsvermerk_Kennung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bearbeitungsvermerk_Kennung_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bearbeitungsvermerk_Rolle_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBearbeitungsvermerk_Rolle"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMRolleObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Begrenzung_A_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBegrenzung_A"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TMeter"/>
+      <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Begrenzung_A_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBegrenzung_A"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Begrenzung_A_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Begrenzung_B_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBegrenzung_B"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TMeter"/>
+      <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Begrenzung_B_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBegrenzung_B"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Begrenzung_B_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bereich_Objekt" abstract="true" eSuperTypes="#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Objekt, das einen Bereich über eine oder mehrere Gleiskanten ganz oder teilweise umfasst. Ein Bereich Objekt repräsentiert einen Bereich der Topologie, der sowohl zusammenhängend als auch nicht zusammenhängend sein kann. Ein Bereich Objekt wird über ein oder mehrere Teilbereiche (Bereich_Objekt_Teilbereich) beschrieben, die jeweils einen Abschnitt auf einer topologischen Kante darstellen. Ein Teilbereich definiert sich über die Referenz auf eine TOP Kante sowie den Abstand der beiden Teilbereichsgrenzen A und B zum Anfang der TOP Kante. Das Bereich Objekt kann in drei Arten eingeteilt werden: unverzweigt (z. B. Bahnsteig Kante, Fstr Fahrweg, BUE Gleisbezogener Gefahrraum) verzweigt (z. B. Gleis Schaltgruppe) verteilt (z. B. Gleis Baubereich) Unverzweigte und verzweigte Bereichsobjekte sind immer zusammenhängend. Verteilte Bereichsobjekte können in ihren Teilen verzweigt oder unverzweigt sein; hier gibt es keine Notwendigkeit der Unterscheidung. Zusätzlich kann ein Bereich Objekt gerichtet sein. Dies wird durch die Ausrichtung der Teilbereiche in Bezug auf die jeweilige TOP Kante erreicht. Die Konsistenz der Richtung des Bereich Objekt wird nicht durch das Modell sichergestellt. Die Teilbereiche müssen überschneidungsfrei definiert sein. Es ist möglich Teilbereiche der Länge 0 anzugeben. Ist es für ein Objekt notwendig, direkt auf eine Bereichsgrenze zu verweisen, dann muss dieses Problem im jeweiligen Arbeitspaket gelöst werden, in dem in diesem Arbeitspaket ein eigenes Punktobjekt erzeugt wird. Der Teilbereich endet dann unmittelbar vor dem TOP_Knoten. Speziell bei Weichenanfängen auf die Weichenspitze gesehen endet der Teilbereich am TOP Anschluss A = Spitze oder TOP Anschluss B = Spitze. Die Weiche selbst ist nicht Bestandteil des Bereichsobjektes. In den Bereichsobjekten sind Objekte zusammengefasst, die eine Quer- und/oder Längsausdehnung haben können."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBereich_Objekt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bereichObjektTeilbereich"
+        lowerBound="1" upperBound="-1" eType="#//Bereich_Objekt_Teilbereich_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bereich_Objekt_Teilbereich"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bereich_Objekt_Teilbereich_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBereich_Objekt_Teilbereich"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="begrenzungA" lowerBound="1"
+        eType="#//Begrenzung_A_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Abstand der Begrenzung A zum Anfang der TOP Kante. Die Begrenzung A darf nicht weiter als die Begrenzung B vom Anfang der TOP Kante entfernt sein. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [0.000..99999.999]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Begrenzung_A"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="begrenzungB" lowerBound="1"
+        eType="#//Begrenzung_B_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Abstand der Begrenzung B zum Anfang der TOP Kante. Die Begrenzung B ist gleich weit oder weiter als die Begrenzung A vom Anfang der TOP Kante entfernt. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung> [0.000..99999.999]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Begrenzung_B"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDTOPKante" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_TOP_Kante_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis, auf welche TOP Kante sich der Teilbereich bezieht. DB-Regelwerk Darstellung im sicherungstechnischen Lageplan "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_TOP_Kante"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="richtungsbezug" eType="#//Richtungsbezug_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Richtung des Teilbereichs bezogen auf die Topologierichtung der über ID TOP Kante referenzierten Topologiekante. Zur vererbungsspezifischen Befüllung siehe Modellierung Basisobjekte."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Richtungsbezug"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Beschreibung_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBeschreibung"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Beschreibung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBeschreibung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Beschreibung_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bestandsrelevanz_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBestandsrelevanz"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMBestandsrelevanzObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bestandsschutz_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBestandsschutz"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Dateiname_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDateiname"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType BasisTypen.ecore#//Dateiname_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Dateityp_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDateityp"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMDateitypObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Daten_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDaten"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Base64Binary"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Datum_Regelwerk_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDatum_Regelwerk"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DB_GDI_Referenz_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TDB_GDI_Referenz"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TText"/>
+      <details key="pattern" value=".{1,20}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DB_GDI_Referenz_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDB_GDI_Referenz"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//DB_GDI_Referenz_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMAnhangArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMAnhang_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMAnhang_Art_Abnahmeniederschrift" literal="Abnahmeniederschrift"/>
+    <eLiterals name="ENUMAnhang_Art_Anbindung_IB2" value="1" literal="Anbindung_IB2"/>
+    <eLiterals name="ENUMAnhang_Art_Anbindung_IB3" value="2" literal="Anbindung_IB3"/>
+    <eLiterals name="ENUMAnhang_Art_BAST" value="3" literal="BAST"/>
+    <eLiterals name="ENUMAnhang_Art_BELU" value="4" literal="BELU"/>
+    <eLiterals name="ENUMAnhang_Art_Benutzeroberflaeche" value="5" literal="Benutzeroberflaeche"/>
+    <eLiterals name="ENUMAnhang_Art_Bestaetig_Gleichstellung" value="6" literal="Bestaetig_Gleichstellung"/>
+    <eLiterals name="ENUMAnhang_Art_Bestaetig_Qualitaetspruefung" value="7" literal="Bestaetig_Qualitaetspruefung"/>
+    <eLiterals name="ENUMAnhang_Art_Bestaetig_Uebernahme" value="8" literal="Bestaetig_Uebernahme"/>
+    <eLiterals name="ENUMAnhang_Art_Freigabe_Bvb" value="9" literal="Freigabe_Bvb"/>
+    <eLiterals name="ENUMAnhang_Art_Genehmigung_AG_Bh_Bhv" value="10" literal="Genehmigung_AG_Bh_Bhv"/>
+    <eLiterals name="ENUMAnhang_Art_Material_Besonders" value="11" literal="Material_Besonders"/>
+    <eLiterals name="ENUMAnhang_Art_Uebertragungswegeplan" value="12" literal="Uebertragungswegeplan"/>
+    <eLiterals name="ENUMAnhang_Art_DWS" value="13" literal="DWS"/>
+    <eLiterals name="ENUMAnhang_Art_Erlaeuterungsbericht" value="14" literal="Erlaeuterungsbericht"/>
+    <eLiterals name="ENUMAnhang_Art_Planverzeichnis" value="15" literal="Planverzeichnis"/>
+    <eLiterals name="ENUMAnhang_Art_Pruefbericht" value="16" literal="Pruefbericht"/>
+    <eLiterals name="ENUMAnhang_Art_Regelwerksstand_Besonders" value="17" literal="Regelwerksstand_Besonders"/>
+    <eLiterals name="ENUMAnhang_Art_VzG" value="18" literal="VzG"/>
+    <eLiterals name="ENUMAnhang_Art_ZN_Raumplan_Bedienraum" value="19" literal="ZN_Raumplan_Bedienraum"/>
+    <eLiterals name="ENUMAnhang_Art_ZN_Raumplan_Rechnerraum" value="20" literal="ZN_Raumplan_Rechnerraum"/>
+    <eLiterals name="ENUMAnhang_Art_GEO" value="21" literal="GEO"/>
+    <eLiterals name="ENUMAnhang_Art_INA" value="22" literal="INA"/>
+    <eLiterals name="ENUMAnhang_Art_Moebelaufstellplan_Aufriss" value="23" literal="Moebelaufstellplan_Aufriss"/>
+    <eLiterals name="ENUMAnhang_Art_Moebelaufstellplan_Grundriss" value="24" literal="Moebelaufstellplan_Grundriss"/>
+    <eLiterals name="ENUMAnhang_Art_Monitoraufteilung" value="25" literal="Monitoraufteilung"/>
+    <eLiterals name="ENUMAnhang_Art_Raumplan_Bedienraeume" value="26" literal="Raumplan_Bedienraeume"/>
+    <eLiterals name="ENUMAnhang_Art_Raumplan_Rechnerraeume" value="27" literal="Raumplan_Rechnerraeume"/>
+    <eLiterals name="ENUMAnhang_Art_Richtungssinn" value="28" literal="Richtungssinn"/>
+    <eLiterals name="ENUMAnhang_Art_sonstige" value="29" literal="sonstige"/>
+    <eLiterals name="ENUMAnhang_Art_Steuerbezirksuebersicht" value="30" literal="Steuerbezirksuebersicht"/>
+    <eLiterals name="ENUMAnhang_Art_UiG" value="31" literal="UiG"/>
+    <eLiterals name="ENUMAnhang_Art_Vorgabe" value="32" literal="Vorgabe"/>
+    <eLiterals name="ENUMAnhang_Art_Vorgabe_GBT" value="33" literal="Vorgabe_GBT"/>
+    <eLiterals name="ENUMAnhang_Art_ZiE" value="34" literal="ZiE"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMAnhangArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMAnhang_Art:Object"/>
+      <details key="baseType" value="ENUMAnhang_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMBestandsrelevanz">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBestandsrelevanz"/>
+    </eAnnotations>
+    <eLiterals name="ENUMBestandsrelevanz_Bestandsdaten" literal="Bestandsdaten"/>
+    <eLiterals name="ENUMBestandsrelevanz_Bestandsdokumentation" value="1" literal="Bestandsdokumentation"/>
+    <eLiterals name="ENUMBestandsrelevanz_dauerhaft" value="2" literal="dauerhaft"/>
+    <eLiterals name="ENUMBestandsrelevanz_nein" value="3" literal="nein"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMBestandsrelevanzObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBestandsrelevanz:Object"/>
+      <details key="baseType" value="ENUMBestandsrelevanz"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMDateityp">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMDateityp"/>
+    </eAnnotations>
+    <eLiterals name="ENUMDateityp_jpg" literal="jpg"/>
+    <eLiterals name="ENUMDateityp_mpeg" value="1" literal="mpeg"/>
+    <eLiterals name="ENUMDateityp_pdf" value="2" literal="pdf"/>
+    <eLiterals name="ENUMDateityp_png" value="3" literal="png"/>
+    <eLiterals name="ENUMDateityp_tif" value="4" literal="tif"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMDateitypObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMDateityp:Object"/>
+      <details key="baseType" value="ENUMDateityp"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMLSTObjektArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMLST_Objekt_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMLST_Objekt_Art_Anhang" literal="Anhang"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Aussenelementansteuerung" value="1" literal="Aussenelementansteuerung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bahnsteig_Anlage" value="2" literal="Bahnsteig_Anlage"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bahnsteig_Dach" value="3" literal="Bahnsteig_Dach"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bahnsteig_Kante" value="4" literal="Bahnsteig_Kante"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bahnsteig_Zugang" value="5" literal="Bahnsteig_Zugang"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Balise" value="6" literal="Balise"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bearbeitungsvermerk" value="7" literal="Bearbeitungsvermerk"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bedien_Anrueckabschnitt" value="8" literal="Bedien_Anrueckabschnitt"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bedien_Anzeige_Element" value="9" literal="Bedien_Anzeige_Element"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bedien_Bezirk" value="10" literal="Bedien_Bezirk"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bedien_Einrichtung_Oertlich" value="11" literal="Bedien_Einrichtung_Oertlich"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bedien_GBT" value="12" literal="Bedien_GBT"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bedien_Oberflaeche" value="13" literal="Bedien_Oberflaeche"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bedien_Oberflaeche_Bild" value="14" literal="Bedien_Oberflaeche_Bild"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bedien_Oertlichkeit" value="15" literal="Bedien_Oertlichkeit"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bedien_Platz" value="16" literal="Bedien_Platz"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bedien_Standort" value="17" literal="Bedien_Standort"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bedien_Zentrale" value="18" literal="Bedien_Zentrale"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Bereichsgrenze" value="19" literal="Bereichsgrenze"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Binaerdatei" value="20" literal="Binaerdatei"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Block_Anlage" value="21" literal="Block_Anlage"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Block_Element" value="22" literal="Block_Element"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Block_Strecke" value="23" literal="Block_Strecke"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Anlage" value="24" literal="BUE_Anlage"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Anlage_Strasse" value="25" literal="BUE_Anlage_Strasse"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Anlage_V" value="26" literal="BUE_Anlage_V"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Ausschaltung" value="27" literal="BUE_Ausschaltung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Bedien_Anzeige_Element" value="28" literal="BUE_Bedien_Anzeige_Element"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Deckendes_Signal_Zuordnung" value="29"
+        literal="BUE_Deckendes_Signal_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Einschaltung" value="30" literal="BUE_Einschaltung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Einschaltung_Zuordnung" value="31" literal="BUE_Einschaltung_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Gefahrraum_Eckpunkt" value="32" literal="BUE_Gefahrraum_Eckpunkt"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Gleisbezogener_Gefahrraum" value="33"
+        literal="BUE_Gleisbezogener_Gefahrraum"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Kante" value="34" literal="BUE_Kante"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Kreuzungsplan" value="35" literal="BUE_Kreuzungsplan"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Schnittstelle" value="36" literal="BUE_Schnittstelle"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_Spezifisches_Signal" value="37" literal="BUE_Spezifisches_Signal"/>
+    <eLiterals name="ENUMLST_Objekt_Art_BUE_WS_Fstr_Zuordnung" value="38" literal="BUE_WS_Fstr_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Datenpunkt" value="39" literal="Datenpunkt"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Datenpunkt_Link" value="40" literal="Datenpunkt_Link"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ESTW_Zentraleinheit" value="41" literal="ESTW_Zentraleinheit"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ETCS_Kante" value="42" literal="ETCS_Kante"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ETCS_Knoten" value="43" literal="ETCS_Knoten"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ETCS_Signal" value="44" literal="ETCS_Signal"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ETCS_W_Kr" value="45" literal="ETCS_W_Kr"/>
+    <eLiterals name="ENUMLST_Objekt_Art_EV_Modul" value="46" literal="EV_Modul"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fachtelegramm" value="47" literal="Fachtelegramm"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fla_Freimelde_Zuordnung" value="48" literal="Fla_Freimelde_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fla_Schutz" value="49" literal="Fla_Schutz"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fla_Zwieschutz" value="50" literal="Fla_Zwieschutz"/>
+    <eLiterals name="ENUMLST_Objekt_Art_FMA_Anlage" value="51" literal="FMA_Anlage"/>
+    <eLiterals name="ENUMLST_Objekt_Art_FMA_Element" value="52" literal="FMA_Element"/>
+    <eLiterals name="ENUMLST_Objekt_Art_FMA_Komponente" value="53" literal="FMA_Komponente"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fstr_Abhaengigkeit" value="54" literal="Fstr_Abhaengigkeit"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fstr_Aneinander" value="55" literal="Fstr_Aneinander"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fstr_Aneinander_Zuordnung" value="56" literal="Fstr_Aneinander_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fstr_DWeg" value="57" literal="Fstr_DWeg"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fstr_DWeg_W_Kr" value="58" literal="Fstr_DWeg_W_Kr"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fstr_Fahrweg" value="59" literal="Fstr_Fahrweg"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fstr_Nichthaltfall" value="60" literal="Fstr_Nichthaltfall"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fstr_Rangier_Fla_Zuordnung" value="61" literal="Fstr_Rangier_Fla_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fstr_Signalisierung" value="62" literal="Fstr_Signalisierung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fstr_Umfahrpunkt" value="63" literal="Fstr_Umfahrpunkt"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Fstr_Zug_Rangier" value="64" literal="Fstr_Zug_Rangier"/>
+    <eLiterals name="ENUMLST_Objekt_Art_FT_Anschaltbedingung" value="65" literal="FT_Anschaltbedingung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_FT_Fahrweg_Teil" value="66" literal="FT_Fahrweg_Teil"/>
+    <eLiterals name="ENUMLST_Objekt_Art_GEO_Kante" value="67" literal="GEO_Kante"/>
+    <eLiterals name="ENUMLST_Objekt_Art_GEO_Knoten" value="68" literal="GEO_Knoten"/>
+    <eLiterals name="ENUMLST_Objekt_Art_GEO_Punkt" value="69" literal="GEO_Punkt"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Geschwindigkeitsprofil" value="70" literal="Geschwindigkeitsprofil"/>
+    <eLiterals name="ENUMLST_Objekt_Art_GFR_Anlage" value="71" literal="GFR_Anlage"/>
+    <eLiterals name="ENUMLST_Objekt_Art_GFR_Element" value="72" literal="GFR_Element"/>
+    <eLiterals name="ENUMLST_Objekt_Art_GFR_Tripelspiegel" value="73" literal="GFR_Tripelspiegel"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Gleis_Abschluss" value="74" literal="Gleis_Abschluss"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Gleis_Abschnitt" value="75" literal="Gleis_Abschnitt"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Gleis_Art" value="76" literal="Gleis_Art"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Gleis_Baubereich" value="77" literal="Gleis_Baubereich"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Gleis_Bezeichnung" value="78" literal="Gleis_Bezeichnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Gleis_Fahrbahn" value="79" literal="Gleis_Fahrbahn"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Gleis_Lichtraum" value="80" literal="Gleis_Lichtraum"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Gleis_Schaltgruppe" value="81" literal="Gleis_Schaltgruppe"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Hoehenpunkt" value="82" literal="Hoehenpunkt"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Kabel" value="83" literal="Kabel"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Kabel_Verteilpunkt" value="84" literal="Kabel_Verteilpunkt"/>
+    <eLiterals name="ENUMLST_Objekt_Art_LEU_Anlage" value="85" literal="LEU_Anlage"/>
+    <eLiterals name="ENUMLST_Objekt_Art_LEU_Modul" value="86" literal="LEU_Modul"/>
+    <eLiterals name="ENUMLST_Objekt_Art_LEU_Schaltkasten" value="87" literal="LEU_Schaltkasten"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Luft_Telegramm" value="88" literal="Luft_Telegramm"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Markanter_Punkt" value="89" literal="Markanter_Punkt"/>
+    <eLiterals name="ENUMLST_Objekt_Art_NB" value="90" literal="NB"/>
+    <eLiterals name="ENUMLST_Objekt_Art_NB_Bedien_Anzeige_Element" value="91" literal="NB_Bedien_Anzeige_Element"/>
+    <eLiterals name="ENUMLST_Objekt_Art_NB_Zone" value="92" literal="NB_Zone"/>
+    <eLiterals name="ENUMLST_Objekt_Art_NB_Zone_Element" value="93" literal="NB_Zone_Element"/>
+    <eLiterals name="ENUMLST_Objekt_Art_NB_Zone_Grenze" value="94" literal="NB_Zone_Grenze"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Oertlichkeit" value="95" literal="Oertlichkeit"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Prog_Datei_Gruppe" value="96" literal="Prog_Datei_Gruppe"/>
+    <eLiterals name="ENUMLST_Objekt_Art_PZB_Element" value="97" literal="PZB_Element"/>
+    <eLiterals name="ENUMLST_Objekt_Art_PZB_Element_Zuordnung" value="98" literal="PZB_Element_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_PZB_Zuordnung_Signal" value="99" literal="PZB_Zuordnung_Signal"/>
+    <eLiterals name="ENUMLST_Objekt_Art_RBC" value="100" literal="RBC"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Regelzeichnung" value="101" literal="Regelzeichnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Regelzeichnung_Parameter" value="102" literal="Regelzeichnung_Parameter"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Schaltmittel_Fstr_Zuordnung" value="103" literal="Schaltmittel_Fstr_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Schaltmittel_Zuordnung" value="104" literal="Schaltmittel_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Schloss" value="105" literal="Schloss"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Schlosskombination" value="106" literal="Schlosskombination"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Schluessel" value="107" literal="Schluessel"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Schluesselsperre" value="108" literal="Schluesselsperre"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Schrankenantrieb" value="109" literal="Schrankenantrieb"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Signal" value="110" literal="Signal"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Signal_Befestigung" value="111" literal="Signal_Befestigung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Signal_Rahmen" value="112" literal="Signal_Rahmen"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Signal_Signalbegriff" value="113" literal="Signal_Signalbegriff"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Sonstiger_Punkt" value="114" literal="Sonstiger_Punkt"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Stell_Bereich" value="115" literal="Stell_Bereich"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Stellelement" value="116" literal="Stellelement"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Strecke" value="117" literal="Strecke"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Strecke_Punkt" value="118" literal="Strecke_Punkt"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Technik_Standort" value="119" literal="Technik_Standort"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Technischer_Bereich" value="120" literal="Technischer_Bereich"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Technischer_Punkt" value="121" literal="Technischer_Punkt"/>
+    <eLiterals name="ENUMLST_Objekt_Art_TOP_Kante" value="122" literal="TOP_Kante"/>
+    <eLiterals name="ENUMLST_Objekt_Art_TOP_Knoten" value="123" literal="TOP_Knoten"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Ueberhoehung" value="124" literal="Ueberhoehung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Uebertragungsweg" value="125" literal="Uebertragungsweg"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Unterbringung" value="126" literal="Unterbringung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Verkehrszeichen" value="127" literal="Verkehrszeichen"/>
+    <eLiterals name="ENUMLST_Objekt_Art_W_Kr_Anlage" value="128" literal="W_Kr_Anlage"/>
+    <eLiterals name="ENUMLST_Objekt_Art_W_Kr_Gsp_Element" value="129" literal="W_Kr_Gsp_Element"/>
+    <eLiterals name="ENUMLST_Objekt_Art_W_Kr_Gsp_Komponente" value="130" literal="W_Kr_Gsp_Komponente"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Weichenlaufkette" value="131" literal="Weichenlaufkette"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Weichenlaufkette_Zuordnung" value="132" literal="Weichenlaufkette_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZL" value="133" literal="ZL"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZL_DLP_Abschnitt" value="134" literal="ZL_DLP_Abschnitt"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZL_DLP_Fstr" value="135" literal="ZL_DLP_Fstr"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZL_Fstr" value="136" literal="ZL_Fstr"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZL_Fstr_Anstoss" value="137" literal="ZL_Fstr_Anstoss"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZL_Signalgruppe" value="138" literal="ZL_Signalgruppe"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZL_Signalgruppe_Zuordnung" value="139" literal="ZL_Signalgruppe_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZLV_Bus" value="140" literal="ZLV_Bus"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZLV_Bus_US_Zuordnung" value="141" literal="ZLV_Bus_US_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZN" value="142" literal="ZN"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZN_Akustik" value="143" literal="ZN_Akustik"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZN_Anzeigefeld" value="144" literal="ZN_Anzeigefeld"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZN_Fortschalt_Kriterium" value="145" literal="ZN_Fortschalt_Kriterium"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZN_Telegramm_84_Zuordnung" value="146" literal="ZN_Telegramm_84_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZN_Telegramm_85_Zuordnung" value="147" literal="ZN_Telegramm_85_Zuordnung"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZN_Unterstation" value="148" literal="ZN_Unterstation"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZN_ZBS" value="149" literal="ZN_ZBS"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZUB_Bereichsgrenze" value="150" literal="ZUB_Bereichsgrenze"/>
+    <eLiterals name="ENUMLST_Objekt_Art_ZUB_Streckeneigenschaft" value="151" literal="ZUB_Streckeneigenschaft"/>
+    <eLiterals name="ENUMLST_Objekt_Art_Zugeinwirkung" value="152" literal="Zugeinwirkung"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMLSTObjektArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMLST_Objekt_Art:Object"/>
+      <details key="baseType" value="ENUMLST_Objekt_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMObjektzustandBesonders">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMObjektzustand_Besonders"/>
+    </eAnnotations>
+    <eLiterals name="ENUMObjektzustand_Besonders_abgedeckt" literal="abgedeckt"/>
+    <eLiterals name="ENUMObjektzustand_Besonders_ausser_Betrieb" value="1" literal="ausser_Betrieb"/>
+    <eLiterals name="ENUMObjektzustand_Besonders_ausser_Betrieb_vorbereitend" value="2"
+        literal="ausser_Betrieb_vorbereitend"/>
+    <eLiterals name="ENUMObjektzustand_Besonders_sonstige" value="3" literal="sonstige"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMObjektzustandBesondersObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMObjektzustand_Besonders:Object"/>
+      <details key="baseType" value="ENUMObjektzustand_Besonders"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMRolle">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMRolle"/>
+    </eAnnotations>
+    <eLiterals name="ENUMRolle_GIS_Daten" literal="GIS_Daten"/>
+    <eLiterals name="ENUMRolle_LST_Fachplaner" value="1" literal="LST_Fachplaner"/>
+    <eLiterals name="ENUMRolle_sonstige" value="2" literal="sonstige"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMRolleObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMRolle:Object"/>
+      <details key="baseType" value="ENUMRolle"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Identitaet_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TIdentitaet"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TGUID"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Identitaet_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCIdentitaet"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Identitaet_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Kommentar_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TKommentar"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TFreiText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Kommentar_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCKommentar"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Kommentar_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Kurztext_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TKurztext"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TText"/>
+      <details key="pattern" value=".{1,100}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Kurztext_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCKurztext"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Kurztext_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Lieferobjekt" eSuperTypes="#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Von der SBI geliefertes Objekt. Hier werden alle relevanten Daten des gelieferten Teils der LST-Anlage eingetragen. Das Lieferobjekt muss einen Bezug zu einem bestehenden bzw. geplanten LST-Objekt haben, das es näher beschreibt."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CLieferobjekt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="beschreibung" lowerBound="1"
+        eType="#//Beschreibung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verbale Beschreibung des LO. \r\nDie Angabe soll als Beschreibung des Technischen Platzes in SAP R/3 Netz übernommen werden. \rDie Bereitstellung der Bildungsvorschrift erfolgt gesondert."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Beschreibung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDLOEinbau" lowerBound="1"
+        upperBound="-1" eType="ecore:EClass Verweise.ecore#//ID_LO_Einbau_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf ein geplantes oder existierendes Objekt bzw. mehrere Objekte, zu dem bzw. denen das LO logisch gehört. LO können auch hierarchisch gegliedert sein.\r\nFür Ersatzteile ist der Ort der Lagerung anzugeben, d.h. in der Regel die Unterbringung direkt.\r\nDer Verweis ist prinzipiell auf alle Objekttypen möglich einschließlich des LO selbst für eine rekursive Darstellung der herstellerspezifischen Anlagenstruktur."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_LO_Einbau"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lOErsatz" lowerBound="1"
+        eType="#//LO_Ersatz_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe, ob es sich um eine Ersatzteil (true) oder ein eingebautes und genutztes Teil handelt (false)."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="LO_Ersatz"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lOMaterial" lowerBound="1"
+        eType="#//LO_Material_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="LO_Material"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="LO_Ausgabestand_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TLO_Ausgabestand"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LO_Ausgabestand_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCLO_Ausgabestand"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//LO_Ausgabestand_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LO_Datum_Herstellung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCLO_Datum_Herstellung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="LO_DB_Freigabe_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TLO_DB_Freigabe"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LO_DB_Freigabe_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCLO_DB_Freigabe"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//LO_DB_Freigabe_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="LO_EMA_Nr_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TLO_EMA_Nr"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LO_EMA_Nr_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCLO_EMA_Nr"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//LO_EMA_Nr_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LO_Ersatz_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCLO_Ersatz"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="LO_Firmensachnummer_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TLO_Firmensachnummer"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LO_Firmensachnummer_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCLO_Firmensachnummer"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//LO_Firmensachnummer_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LO_Material_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CLO_Material"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lOAusgabestand" lowerBound="1"
+        eType="#//LO_Ausgabestand_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Ausgabe- bzw. Gerätestand."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="LO_Ausgabestand"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lODatumHerstellung" lowerBound="1"
+        eType="#//LO_Datum_Herstellung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Produktionszeitpunkt des LO."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="LO_Datum_Herstellung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lODBFreigabe" lowerBound="1"
+        eType="#//LO_DB_Freigabe_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art der von der DB Netz AG erteilten Freigabe (Erprobung oder Serienfreigabe)."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="LO_DB_Freigabe"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lOEMANr" lowerBound="1"
+        eType="#//LO_EMA_Nr_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="EMA-Nummer der DB (zur Nachbestellbarkeit des Ersatzeils über die DB-internen Beschaffungswege).\nFür LO ohne EMA-Nummer ist \&quot;ohne EMA-Nummer\&quot; anzugeben."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="LO_EMA_Nr"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lOFirmensachnummer" lowerBound="1"
+        eType="#//LO_Firmensachnummer_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Firmensachnummer."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="LO_Firmensachnummer"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lOSeriennummer" lowerBound="1"
+        eType="#//LO_Seriennummer_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Seriennummer des Bauteils. Falls keine existiert, ist \&quot;ohne Seriennummer\&quot; einzutragen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="LO_Seriennummer"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="LO_Seriennummer_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TLO_Seriennummer"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LO_Seriennummer_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCLO_Seriennummer"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//LO_Seriennummer_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LST_Objekt_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCLST_Objekt_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMLSTObjektArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Objektreferenzen_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CObjektreferenzen"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dBGDIReferenz" eType="#//DB_GDI_Referenz_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="IPID-Kennung des Objektes im DB-GIS Systems. Das Attribut ist optional. Die Kennung ist eindeutig einem konkreten Objekt im DB-GDI zugeordnet. Das Attribut ist dann zu befüllen, wenn Daten über Objekte aus dem DB-GIS verarbeitet werden."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>[1..20]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="DB_GDI_Referenz"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="technischerPlatz" eType="#//Technischer_Platz_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung des zugehörigen Technischen Platzes im SAP-System. Das Attribut ist optional und enthält die Bezeichnung des zugehörigen technischen Platzes im SAP-System. Die Kennung ist eindeutig einem konkreten Objekt im SAP zugeordnet. Mehrere PlanPro-Objekte können auf den gleichen technischen Platz verweisen. Das Attribut ist dann zu befüllen, wenn Daten über Objekte aus einem Fremdsystem der DB AG mit Verweis auf einen Technischen Platz verarbeitet werden oder im Rahmen der Bestandserstellung die technischen Plätze zugewiesen werden. Es ist noch gesondert festzulegen, für welche PlanPro-Objekte technische Plätze zugewiesen werden."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>[30], nur Großbuchstaben, die Zahlen 0-9 und Bindestrich&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Technischer_Platz"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Objektzustand_Besonders_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCObjektzustand_Besonders"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMObjektzustandBesondersObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Proxy_Objekt" eSuperTypes="#//Ur_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Hilfsobjekt zur Sättigung von Verweisen an der äußeren Grenze des Betrachtungsbereichs einer Einzelplanung. Die Validierung einer XML-Datei ist nur gesamthaft möglich. Somit müssen Planungs- und Betrachtungsbereich gleichermaßen valide sein. An der äußeren Grenze des Betrachtungsbereichs sind jedoch u. U. nicht mehr alle Zielobjekte von Verweisen vorhanden, da der Betrachtungsbereich nicht beliebig ausgeweitet werden kann und soll. Unter der Maßgabe einer validen XML besteht jedoch ein Zwang zur Sättigung von Verweisen. Das Proxy_Objekt schafft diesbezüglich eine Lösung für alle Objekte des LST-Datenmodells. In den Bestandsdaten der LST-Datenbank dürfen keine Proxyobjekte vorhanden sein. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CProxy_Objekt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lSTObjektArt" lowerBound="1"
+        eType="#//LST_Objekt_Art_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art des Objekts, das durch das Proxyobjekt vertreten wird. Mit Ausnahme von Ur Objekt, Basis Objekt, Bereich Objekt, Punkt Objekt und dem Proxy Objekt selbst können alle Objekte des LST-Datenmodells ausgewählt werden."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="LST_Objekt_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Punkt_Objekt" abstract="true" eSuperTypes="#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Objekt der Außenanlage, das bezogen auf seine Funktion keine Ausdehnung entlang der Gleise aufweist. Punktförmige Objekte sind diejenigen real vorhandenen Objekte, die mindestens einer TOP Kante mit je genau einem Punkt zugeordnet werden können. Durch die Verwendung der TOP Kante und des Abstands zum Knoten A der TOP Kante kann die physische Lage eines punktförmigen Objektes eindeutig beschrieben werden. Beispiele für punktförmige Objekte sind Signal, Signal Befestigung und W Kr Gsp Komponente. Durch die mögliche Mehrfacheinbindung der Attributgruppe Punkt Objekt TOP Kante ist es möglich, Punktobjekte mehreren TOP-Kanten zuzuordnen, z.B: Grenzzeichen (Zuordnung zu zwei TOP_Kanten), Signal zwischen Weichenanfang und Herzstückspitze (Zuordnung zu zwei TOP_Kanten), Kreuzung als Kreuzungseite - Weichenkomponente (Zuordnung zu zwei sich schneidende oder am gleichen TOP-Knoten endende TOP-Kanten), Weichensignal (Zuordnung zu zwei (W), drei (EKW) oder vier (DKW) TOP_Kanten). Die Verortung des Punktobjekts erfolgt über die Angabe einer TOP Kante und des Abstands zum Knoten A der Kante. Zusätzlich kann für ein Punkt_Objekt eine Strecke und ein Streckenkilometer angegeben werden. Diese km-Angabe ist dabei nur nachrichtlich zu verstehen. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CPunkt_Objekt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="punktObjektStrecke" upperBound="-1"
+        eType="#//Punkt_Objekt_Strecke_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Attributgruppe zur Zuordnung eines Objektes zu einer Strecke. Zur vererbungsspezifischen Befüllung der Attributgruppe siehe Modellierung Basisobjekte."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Punkt_Objekt_Strecke"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="punktObjektTOPKante" lowerBound="1"
+        upperBound="-1" eType="#//Punkt_Objekt_TOP_Kante_AttributeGroup" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Attributgruppe zur Verortung eines Objektes an der Topologie. Die vererbungsspezifische Befüllung der zugehörigen Attribute wird auf der Seite Modellierung Basisobjekte beschrieben. Durch die mögliche Mehrfacheinbindung der Attributgruppe ist es möglich, ein Objekt (z. B. Grenzzeichen) mehreren topologischen Kanten zuzuordnen. DB-Regelwerk Darstellung im sicherungstechnischen Lageplan"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Punkt_Objekt_TOP_Kante"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Punkt_Objekt_Strecke_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CPunkt_Objekt_Strecke"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDStrecke" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Strecke_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung eines Punktobjektes zu einer Streckennummer."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Strecke"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="streckeKm" lowerBound="1"
+        eType="#//Strecke_Km_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Kilometer des Punktobjekts an der Strecke."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Strecke_Km"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Punkt_Objekt_TOP_Kante_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CPunkt_Objekt_TOP_Kante"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="abstand" lowerBound="1"
+        eType="#//Abstand_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Abstand des Objekts vom Knoten A bezogen auf TOP_Kante in Metern. DB-Regelwerk Darstellung im sicherungstechnischen Lageplan"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                  &lt;ppi:WorkflowInformation>&#xD;&#xA;                     &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                     &lt;ppi:Patternbeschreibung>[0.000..99999.999]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                  &lt;/ppi:WorkflowInformation>&#xD;&#xA;               "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Abstand"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDTOPKante" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_TOP_Kante_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis, an welcher Kante das Objekt verortet ist. Eine n-fache Einbindung der Attributgruppe erfolgt zum Verweis, an welcher Kante das Objekt noch verortet sein kann (sogenanntes Doppelpunkt-Objekt). Notwendig z. B. für: Grenzzeichen, W_Kr_Gsp_Komponente, Signale im Zungenbereich von Weichen. DB-Regelwerk Darstellung im sicherungstechnischen Lageplan "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_TOP_Kante"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="wirkrichtung" eType="#//Wirkrichtung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="(Fahrt-)Richtung, in die ein verortetes Objekt wirkt. Die Angabe \&quot;in\&quot;, \&quot;gegen\&quot; bzw. \&quot;beide\&quot; bezieht sich auf die Topologierichtung der TOP Kante. Weitere Erläuterungen zu den verwendeten Richtungsbegriffen siehe Modellierung Richtung. Zur vererbungsspezifischen Befüllung siehe Modellierung Basisobjekte. DB-Regelwerk Darstellung im sicherungstechnischen Lageplan"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wirkrichtung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="seitlicheLage" eType="#//Seitliche_Lage_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe, ob sich das Punkt Objekt bezogen auf die Topologierichtung links oder rechts von der TOP Kante bzw. Gleisachse befindet. Das Attribut wird verwendet, wenn keine Vorgabe des Abstands von der Gleisachse notwendig ist (z. B. bei Anbringung an der linken oder rechten Fahrschiene) und soll als Alternative zum seitlichen Abstand verwendet werden. Es kann die Werte links, rechts annehmen. Zur vererbungsspezifischen Befüllung siehe Modellierung Basisobjekte."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Seitliche_Lage"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="seitlicherAbstand" eType="#//Seitlicher_Abstand_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Gibt den orthogonalen seitlichen Abstand eines Elementes zur Gleisachse bezogen auf die Topologierichtung A - B der TOP Kante an: Anordnung des Elementes in Topologierichtung rechts: seitlicher Abstand ist ein positiver Wert. Anordnung des Elementes in Topologierichtung links: seitlicher Abstand ist ein negativer Wert. Die Wirkrichtung des verorteten Elements bleibt bei der Ermittlung des seitlichen Abstands unberücksichtigt. Weitere Erläuterungen zu den verwendeten Richtungsbegriffen siehe Modellierung Richtung. Im Datenmodell wird (teilweise abweichend von der bisherigen Praxis) der seitliche Abstand immer als Abstand Achse zu Achse (z. B. Gleisachse zu Achse des Signalfundaments bzw. Signalmastes) verstanden. Zur vererbungsspezifischen Befüllung siehe Modellierung Basisobjekte. Besonderheiten: Für Elemente, die an einer Fahrschiene angebracht sind (z.B. Entgleissungsschuhe, PZB-Magnete) ist das Attribut Seitliche Lage zu verwenden Für Elemente, die in der Gleismitte angeordnet werden sollen (z. B. Gleis Abschluss) bzw. die keinen realen Abstand haben (z. B. NB_Zone_Grenze), ist der Wert 0.000 zu verwenden. Fiktive Signale erhalten keinen seitlichen Abstand. Punkt_Objekte, die mehreren TOP_Kanten zugeordnet sind, erhalten nur zur nächstliegenden TOP_Kante einen seitlichen Abstand, wenn alle zugeordneten TOP_Kanten auf der selben Seite liegen (z. B. Weichensignal) bzw. nur zu der jeweils rechts und links nächstliegenden TOP_Kante einen seitlichen Abstand, wenn das Punkt_Objekt zwischen den zugeordneten TOP-Kanten liegt (z. B. Grenzzeichen). DB-Regelwerk Darstellung im sicherungstechnischen Lageplan"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xD;&#xA;                     &lt;ppi:WorkflowInformation>&#xD;&#xA;                        &lt;ppi:Patternbeschreibung>[-99999.999 bis -0.800, 0.000, 0.800 bis 99999.999]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                     &lt;/ppi:WorkflowInformation>&#xD;&#xA;                  "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Seitlicher_Abstand"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Richtungsbezug_Type" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TRichtungsbezug"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TWirkrichtung"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Richtungsbezug_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCRichtungsbezug"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Richtungsbezug_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Seitliche_Lage_Type" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TSeitliche_Lage"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TLinksRechts"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Seitliche_Lage_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSeitliche_Lage"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Seitliche_Lage_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Seitlicher_Abstand_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TSeitlicher_Abstand"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TMeter"/>
+      <details key="pattern" value="(-?[1-9][0-9]{0,4}\.[0-9]{3})|(-?0\.[89][0-9]{2})|0.000"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Seitlicher_Abstand_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSeitlicher_Abstand"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Seitlicher_Abstand_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Strecke_Km_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TStrecke_Km"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TKilometrierung"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Strecke_Km_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCStrecke_Km"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Strecke_Km_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Technischer_Platz_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TTechnischer_Platz"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2#TText"/>
+      <details key="pattern" value="[A-Z0-9\-]{30}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Technischer_Platz_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCTechnischer_Platz"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Technischer_Platz_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ur_Objekt" abstract="true">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Allen Objekten zugrundeliegender Objekttyp, durch die jede Instanz eines Objektes einen eindeutigen Identifikator in Form einer GUID erhält."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xD;&#xA;            &lt;ppi:WorkflowInformation>&#xD;&#xA;               &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;            &lt;/ppi:WorkflowInformation>&#xD;&#xA;         "/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CUr_Objekt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="identitaet" lowerBound="1"
+        eType="#//Identitaet_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Eindeutige Identifizierung des Objektes mit Hilfe der GUID. Bei Verlinkungen auf ein Objekt wird eine entsprechende Referenz angegeben. Verlinkungsattribute setzen sich aus dem Präfix „ID_“ und in der Regel dem entsprechenden Objektnamen zusammen („ID_[Objekt]“). Die Eindeutigkeit der Verlinkung ergibt sich aus der Spezifikation der GUID, siehe hierfür RFC 4122: http://tools.ietf.org/html/rfc4122. Zu weiteren Vorgaben und Empfehlungen für die GUID-Erzeugung siehe Goldene Regeln Schnittstelle. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Identitaet"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Wirkrichtung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCWirkrichtung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType BasisTypen.ecore#//Wirkrichtung_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Zeit_Bearbeitungsvermerk_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCZeit_Bearbeitungsvermerk"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//DateTime"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>
