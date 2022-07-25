@@ -24,7 +24,7 @@
 				<configuration>
 					<showWarnings>true</showWarnings>
 					<showDeprecation>true</showDeprecation>
-					<useProjectSettings>false</useProjectSettings>
+					<useProjectSettings>true</useProjectSettings>
 					<compilerVersion>17</compilerVersion>
 					<release>17</release>
 				</configuration>
