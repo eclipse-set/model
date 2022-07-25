@@ -1,0 +1,1809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.9.0.2"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2"
+           targetNamespace="http://www.plan-pro.org/modell/Verweise/1.9.0.2">
+	  <xs:annotation>
+		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+
+Weitere Informationen zur Lizenz finden Sie auf
+http://www.dbnetze.com/planpro
+
+Inhalt der Datei:
+XML Schema für PlanPro Schnittstelle.
+
+Für Fragen zum Schema wenden Sie sich bitte an Herrn :
+
+Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)
+
+--------------------------------------------------------------------------------
+
+This Document is licensed under the open source license RailPL V1.0.
+
+More information about the license can be found on
+http://www.dbnetze.com/planpro
+
+Contents of the file:
+XML Schema for PlanPro interface.</xs:documentation>
+	  </xs:annotation>
+	  <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2"
+              schemaLocation="BasisTypen.xsd"/>
+	  <xs:complexType name="TCID_Anhang_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Anhang"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_BUE_Einschaltung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="BUE_Einschaltung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_LEU_Anlage_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="LEU_Anlage"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_RBC">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="RBC|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Block_Element">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Block_Element|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_W_Kr_Gsp_Element">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="W_Kr_Gsp_Element|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_FMA_Element">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="FMA_Element|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Aussenelementansteuerung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Aussenelementansteuerung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Ueberhoehung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Ueberhoehung"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Anforderung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Block_Element|Fstr_Fahrweg|BUE_Einschaltung|BUE_Ausschaltung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_GEO_Punkt_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="GEO_Punkt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_W_Kr_Gsp_Komponente">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="W_Kr_Gsp_Komponente|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Information_Primaer">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Aussenelementansteuerung|ESTW_Zentraleinheit|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Fla_Schutz">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Fla_Schutz|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Bedien_Anzeige_Element">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Bedien_Anzeige_Element|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ZL">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ZL|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ZN_Anzeigefeld_Anstoss">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ZN_Anzeigefeld|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_BUE_WS_Fstr_Zuordnung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="BUE_WS_Fstr_Zuordnung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Umfahrpunkt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="W_Kr_Gsp_Element|Gleis_Abschnitt|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Zweites_Haltfallkriterium">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Schaltmittel_Zuordnung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_NB_Element">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Signal|W_Kr_Gsp_Komponente|Schluesselsperre|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Fstr_Zug_Rangier">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Fstr_Zug_Rangier|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Element">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="W_Kr_Gsp_Element|Gleis_Abschnitt|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_LEU_Schaltkasten_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="LEU_Schaltkasten"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Basis_Objekt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Basis_Objekt|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_W_Kr_Anlage">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="W_Kr_Anlage|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Bedien_Standort">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Bedien_Standort|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Geraet_Programmiert">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Balise|LEU_Modul"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_GEO_Knoten">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="GEO_Knoten"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ZN_Fortschalt_Kriterium">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ZN_Fortschalt_Kriterium|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Technischer_Punkt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Technischer_Punkt|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_BUE_Schnittstelle">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="BUE_Schnittstelle|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Schaltmittel_Zuordnung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Schaltmittel_Zuordnung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Schluessel">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Schluessel|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Grenzzeichen">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Signal"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Weichenlaufkette">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Weichenlaufkette|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Schlosskombination">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Schlosskombination|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Oertlichkeit_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Oertlichkeit|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Signal_Start">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Signal"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Bedien_Zentrale">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Bedien_Zentrale|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_GFR_Anlage_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="GFR_Anlage"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Anschluss_Element">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Aussenelementansteuerung|Bedien_Standort|ESTW_Zentraleinheit|FMA_Komponente|Kabel_Verteilpunkt|Stellelement|Technik_Standort|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Ausgabe_Fachdaten_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Ausgabe_Fachdaten"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ZL_Fstr">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ZL_Fstr|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_FT_Anschaltbedingung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="FT_Anschaltbedingung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Balise_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Balise"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Block_Strecke">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Block_Strecke|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Fstr_Aneinander">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Fstr_Aneinander|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_TOP_Knoten">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="TOP_Knoten|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ETCS_Knoten">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ETCS_Knoten|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Bedien_Bezirk">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Bedien_Bezirk|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Bedien_Oberflaeche">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Bedien_Oberflaeche|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_PZB_Element_Zuordnung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="PZB_Element_Zuordnung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Uebertragungsweg_Nach">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Aussenelementansteuerung|Bedien_Bezirk|Bedien_Zentrale|ESTW_Zentraleinheit|Stellelement|ZN_ZBS|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Signal">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Signal|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Quellelement">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Aussenelementansteuerung|BUE_Anlage|EV_Modul|ESTW_Zentraleinheit|PZB_Element|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Handschalt_Wirkfunktion">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="BUE_Anlage|BUE_Einschaltung|BUE_Ausschaltung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Stellwerk">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="ESTW_Zentraleinheit|Aussenelementansteuerung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_FMA_Anlage">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="FMA_Anlage|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Element_Grenze">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Signal|Datenpunkt|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_PZB_Element_Bezugspunkt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Signal|W_Kr_Gsp_Element|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ETCS_Knoten_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ETCS_Knoten"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Signal_Befestigung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Signal_Befestigung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_GEO_Punkt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="GEO_Punkt|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Oertlichkeit">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Oertlichkeit"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Balise">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Balise|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Signal_Gleisbezechnung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Gleis_Bezeichnung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_FMA_Anlage_Rangier_Frei">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="FMA_Anlage|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_DP_Bezugspunkt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="BUE_Anlage|ZUB_Streckeneigenschaft|Signal|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Fstr_Ausschluss_Besonders">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Fstr_Zug_Rangier|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Strecke_Punkt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Strecke_Punkt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_NB_Zone">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="NB_Zone|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ZN_ZBS">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ZN_ZBS|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Anforderer_Element">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="W_Kr_Gsp_Element|NB_Zone_Grenze|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Ziel">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Signal|Markanter_Punkt|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ZN">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ZN|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Uebertragungsweg_Von">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Aussenelementansteuerung|Bedien_Bezirk|Bedien_Zentrale|ESTW_Zentraleinheit|Stellelement|ZN_ZBS|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_LEU_Anlage">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="LEU_Anlage|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Beginn_Bereich">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Bahnsteig_Kante|BUE_Gleisbezogener_Gefahrraum|ZUB_Streckeneigenschaft|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Hoehenpunkt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Hoehenpunkt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_TOP_Kante_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="TOP_Kante"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_NB">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="NB|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_BUE_Bedien_Anzeige_Element">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="BUE_Bedien_Anzeige_Element|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Bahnsteig_Kante_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Bahnsteig_Kante"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Block_Anlage">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Block_Anlage|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Fachtelegramm">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Fachtelegramm|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Stellelement">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Stellelement|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Planungsgrundlage">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Ur_Objekt|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_LO_Einbau">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Basis_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_FT_Fahrweg_Teil">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="FT_Fahrweg_Teil|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Strecke">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Strecke"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Fstr_DWeg">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Fstr_DWeg|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_BUE_Gleisbezogener_Gefahrraum">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="BUE_Gleisbezogener_Gefahrraum|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Energie_Eingang">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Aussenelementansteuerung|BUE_Anlage|EV_Modul|ESTW_Zentraleinheit|PZB_Element|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Schluesselsperre">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Schluesselsperre|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Gleis_Abschnitt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Gleis_Abschnitt|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Schalter">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="FMA_Anlage|FMA_Komponente|Zugeinwirkung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Information_Eingang">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Aussenelementansteuerung|BUE_Anlage|LEU_Anlage|LEU_Modul|PZB_Element|Signal|W_Kr_Anlage|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ZLV_Bus">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ZLV_Bus|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Bahnsteig_Kante">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Bahnsteig_Kante|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Unterbringung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Unterbringung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Planung_Einzel">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Planung_Einzel|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Unterbringung_Technik">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Technik_Standort|Unterbringung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Gleis_Bezeichnung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Gleis_Bezeichnung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ZL_Signalgruppe">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ZL_Signalgruppe|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Energie_Primaer">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Aussenelementansteuerung|ESTW_Zentraleinheit|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Regelzeichnung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Regelzeichnung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_FMA_Komponente">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="FMA_Komponente|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Trasse_Knoten">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Trasse_Knoten"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_PZB_Element_Mitnutzung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="PZB_Element"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Element_Unterbringung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="LEU_Schaltkasten|Unterbringung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Fstr_Fahrweg">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Fstr_Fahrweg|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Verknuepftes_Element">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Signal|W_Kr_Gsp_Element|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Signal_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Signal"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_BUE_Anlage">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="BUE_Anlage|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_GEO_Art">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="TOP_Kante|Strecke|Proxy_Objekt|Trasse_Kante"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Bedien_Einrichtung_Oertlich">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Bedien_Einrichtung_Oertlich|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Ur_Objekt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Ur_Objekt|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Signal_Signalbegriff">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Signal_Signalbegriff|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_PlanPro_Schnittstelle">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="PlanPro_Schnittstelle|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_PZB_Element">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="PZB_Element|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Einschaltpunkt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Schaltmittel_Zuordnung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Fortschaltung_Start">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="FMA_Anlage|Signal|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_LEU_Bezugspunkt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Signal|W_Kr_Gsp_Element"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Sonderanlage">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="W_Kr_Gsp_Element"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Anhang">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Anhang|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ZN_Unterstation">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ZN_Unterstation|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_BUE_Anlage_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="BUE_Anlage"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Signal_Fank">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Signal"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_TOP_Kante">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="TOP_Kante|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Datenpunkt_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Datenpunkt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Signal_Rahmen">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Signal_Rahmen|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ESTW_Zentraleinheit">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ESTW_Zentraleinheit|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Unterbringung_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Unterbringung"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Bahnsteig_Anlage">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Bahnsteig_Anlage|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Bearbeitungsvermerk">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Bearbeitungsvermerk|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ZL_DLP_Fstr">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ZL_DLP_Fstr|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Trasse_Kante">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Trasse_Kante"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Datenpunkt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Datenpunkt|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_EV_Modul">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="EV_Modul|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_ZN_Anzeigefeld">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="ZN_Anzeigefeld|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Binaerdatei_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Binaerdatei"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Markanter_Punkt">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Markanter_Punkt|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_W_Kr_Anlage_ohne_Proxy">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="W_Kr_Anlage"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Markante_Stelle">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited"
+                          fixed="Datenpunkt|Signal|W_Kr_Gsp_Komponente|Sonstiger_Punkt|FMA_Komponente|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Zugeinwirkung">
+		    <xs:complexContent>
+			      <xs:restriction base="nsBasisTypen:TCZeiger">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" fixed="Zugeinwirkung|Proxy_Objekt"
+                          type="nsBasisTypen:TObjektname"/>
+			      </xs:restriction>
+		    </xs:complexContent>
+	  </xs:complexType>
+</xs:schema>

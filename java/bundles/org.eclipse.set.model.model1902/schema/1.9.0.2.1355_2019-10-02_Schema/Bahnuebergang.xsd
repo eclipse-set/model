@@ -1,0 +1,2755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:nsBahnuebergang="http://www.plan-pro.org/modell/Bahnuebergang/1.9.0.2"
+           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.9.0.2"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2"
+           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.9.0.2"
+           targetNamespace="http://www.plan-pro.org/modell/Bahnuebergang/1.9.0.2">
+	  <xs:annotation>
+		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+
+Weitere Informationen zur Lizenz finden Sie auf
+http://www.dbnetze.com/planpro
+
+Inhalt der Datei:
+XML Schema für PlanPro Schnittstelle.
+
+Für Fragen zum Schema wenden Sie sich bitte an Herrn :
+
+Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)
+
+--------------------------------------------------------------------------------
+
+This Document is licensed under the open source license RailPL V1.0.
+
+More information about the license can be found on
+http://www.dbnetze.com/planpro
+
+Contents of the file:
+XML Schema for PlanPro interface.</xs:documentation>
+	  </xs:annotation>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.9.0.2"
+              schemaLocation="Verweise.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2"
+              schemaLocation="BasisTypen.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.9.0.2"
+              schemaLocation="Basisobjekte.xsd"/>
+	  <xs:complexType name="TCBezeichnung_GFR_Element">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TBezeichnung_GFR_Element" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMMontage_Ausgleichsgewichte">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="beidseitig"/>
+			      <xs:enumeration value="einseitig"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCRaeumstrecke_DBK">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TRaeumstrecke_DBK" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TLieferlaenge">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="1[0-9]|20|[1-9]"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CBUE_Einschaltung_Zuordnung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Logisches Objekt zur Zuordnung zwischen BUE Einschaltung und zugehörigem BUE Gleisbezogener Gefahrraum. Im Regelfall wirkt eine BUE_Einschaltung direkt auf einen gleisbezogenen Gefahrraum; das Zuordnungsobjekt wäre nicht erforderlich. Liegt jedoch zwischen BUE_Einschaltung und dem BÜ eine Weichenverbindung, wird eine Zuordnung der BUE_Einschaltung auf mehrere gleisbezogene Gefahrräume notwendig. Diese Verbindung stellt das Zuordnungsobjekt her. Zur Vereinheitlichung wurde auf eine Choice zwischen direktem Verweis von BUE_Einschaltung auf BUE_Gleisbezogener_Gefahrraum und den Verweisen durch das Zuordnungsobjekt verzichtet. DB-Regelwerk Dieser Anwendungsfall ist im Regelwerk der DB AG nicht explizit beschrieben. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_BUE_Einschaltung" type="nsVerweise:TCID_BUE_Einschaltung"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf denjenigen Einschaltpunkt, der die Einschaltung des betreffenden BUE Gleisbezogener Gefahrraum bewirkt. DB-Regelwerk Einschaltstreckenberechnung </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_BUE_Gleisbez_Gefahrraum"
+                           type="nsVerweise:TCID_BUE_Gleisbezogener_Gefahrraum"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den zugehörigen Gefahrraum, auf den sich die BUE_Einschaltung - gleisbezogen - bezieht. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TSperrstrecke_Fussgaenger">
+		    <xs:restriction base="nsBasisTypen:TMeter"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TEinschaltverz_Gewaehlt">
+		    <xs:restriction base="nsBasisTypen:TSekunde">
+			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TSicherheitsabstand">
+		    <xs:restriction base="nsBasisTypen:TMeter"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBlitzpfeil">
+		    <xs:restriction base="xs:boolean"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TSchutzbuegel">
+		    <xs:restriction base="xs:boolean"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMKlassifizierung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Bundestrasse_ausserorts"/>
+			      <xs:enumeration value="Bundestrasse_innerorts"/>
+			      <xs:enumeration value="Fussweg"/>
+			      <xs:enumeration value="Fussweg_Radweg"/>
+			      <xs:enumeration value="Gemeindestrasse_ausserorts"/>
+			      <xs:enumeration value="Gemeindestrasse_innerorts"/>
+			      <xs:enumeration value="Kreisstrasse_ausserorts"/>
+			      <xs:enumeration value="Kreisstrasse_innerorts"/>
+			      <xs:enumeration value="Landstrasse_ausserorts"/>
+			      <xs:enumeration value="Landstrasse_innerorts"/>
+			      <xs:enumeration value="Privatstrasse"/>
+			      <xs:enumeration value="Privatweg"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="Weg_Forst_Land"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCKlassifizierung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMKlassifizierung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TKontrastblende">
+		    <xs:restriction base="xs:boolean"/>
+	  </xs:simpleType>
+	  <xs:complexType name="TCPixel_Koordinate_X">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TPixel_Koordinate_X" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Anlage_Strasse_Allg">
+		    <xs:sequence>
+			      <xs:element name="Baulast" type="nsBahnuebergang:TCBaulast" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Straßenbaulastträger, z. B. Gemeinde G-Dorf.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Fahrbahn_Befestigung" type="nsBahnuebergang:TCFahrbahn_Befestigung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der Fahrbahnbefestigung, z. B. Asphalt, Kleinpflaster, unbefestigt.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Fahrbahn_Befestigung_Gleis"
+                     type="nsBahnuebergang:TCFahrbahn_Befestigung_Gleis"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der Fahrbahnbefestigung im Gleisbereich, z. B. Asphalt, STRAIL, Bodan.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Fahrbahn_Breite" type="nsBahnuebergang:TCFahrbahn_Breite" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Breite der Fahrbahn im BÜ- und Räumbereich (sog. 27-m-Bereich) in m.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Klassifizierung" type="nsBahnuebergang:TCKlassifizierung" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Klassifizierung der kreuzenden Straße.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Kreuzungswinkel" type="nsBahnuebergang:TCKreuzungswinkel" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Winkel zwischen Gleis und kreuzender Straße bzw. kreuzendem Weg in Grad, gemessen im I. ODER III. Quadranten.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TPegel">
+		    <xs:restriction base="xs:integer"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CGFR_Element_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="Bezeichnung_GFR_Element" type="nsBahnuebergang:TCBezeichnung_GFR_Element"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung des GFR-Elements (Detektors).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCLieferlaenge">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TLieferlaenge" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCRaeumstrecke_DSK_Strich">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TRaeumstrecke_DSK_Strich" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Anlage_V">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angaben zu gleis- und straßenseitigen Mindest- und Höchstgeschwindigkeiten für die Einschaltstreckenberechnung.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="BUE_Anlage_V_Allg" type="nsBahnuebergang:CBUE_Anlage_V_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_BUE_Anlage" type="nsVerweise:TCID_BUE_Anlage_ohne_Proxy" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die zugehörige BÜ-Anlage</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCRaeumstrecke_DCK">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TRaeumstrecke_DCK" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TTragkopf_Verstellbar">
+		    <xs:restriction base="xs:boolean"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBUE_Neigung">
+		    <xs:restriction base="xs:decimal"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CVerkehrszeichen_Allg">
+		    <xs:sequence>
+			      <xs:element name="Abstand_Gehweg_Fahrbahn" type="nsBahnuebergang:TCAbstand_Gehweg_Fahrbahn"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Abstand von der Mitte des Verkehrszeichens zur nächstgelegenen Gehweg- bzw. Fahrbahnkante.Der seitlicher Abstand zur Gleisachse ist über die Eigenschaft \"Punkt_Objekt\" abgebildet.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Ausrichtung" type="nsBahnuebergang:TCAusrichtung" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Generelle Ausrichtung des Verkehrszeichens in Bezug auf die Topologierichtung der TOP_Kante, an der das Verkehrszeichen verortet ist.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Ausrichtung_Winkel" type="nsBahnuebergang:TCAusrichtung_Winkel"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ausrichtungswinkel des Verkehrszeichens in Bezug auf die Tangente am Verortungspunkt auf der topologischen Kante. Ein direkter Bezug zur Straßenachse ist nicht möglich, da der Straßenverlauf zunächst nur als Bild eingebunden wird.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[-90..90]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TMontagehoehe">
+		    <xs:restriction base="nsBasisTypen:TMeter"/>
+	  </xs:simpleType>
+	  <xs:complexType name="TCZeitueberschreitungsmeldung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TZeitueberschreitungsmeldung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCV_Max_Strasse">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TV_Max_Strasse" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TTeilsperrstrecke">
+		    <xs:restriction base="nsBasisTypen:TMeter"/>
+	  </xs:simpleType>
+	  <xs:complexType name="TCBUE_Neigung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TBUE_Neigung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TRaeumstrecke_DBK">
+		    <xs:restriction base="nsBasisTypen:TMeter"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CBUE_Anlage_Allg">
+		    <xs:sequence>
+			      <xs:element name="BUE_Bauart" type="nsBahnuebergang:TCBUE_Bauart" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der Bauart des Bahnübergang (BÜ). Folgende Unterscheidungen werden vorgenommen: BÜ: BÜ nach Ril 815 mit oder ohne technische Sicherung; Bau-BÜ: zeitlich begrenzte Anordnung eines BÜ, meist zur Anbindung eines Baufeldes in Insellage; Resi: Übergang für die Sicherung von Bahnsteigzugängen für Reisende (Reisendensicherung), die höhengleich über das Gleis führen; im Zusammenhang mit der signaltechnischen Ausrüstung des Gleises, an dem die Resi angeordnet wird, gelten besondere Anforderungen. Nach EBO gelten Resi nicht als Bahnübergang, werden in PlanPro aber abweichend von der EBO als Bahnübergang modelliert. DB-Regelwerk Für BÜ und Resi gelten unterschiedliche Vorschriften zur Auslegung und Berechnung. BÜ: Ril 815 Resi: Ril 413 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>Bue</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="BUE_Buestra" type="nsBahnuebergang:TCBUE_Buestra" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für die BÜ-Anlage besteht eine Abhängigkeit zur Lichtzeichenanlage einer benachbarten Straßenkreuzung/-einmündung. Das Attribut wird nur befüllt, wenn eine Abhängigkeit zu einer Lichtzeichenanlage besteht. DB-Regelwerk 815.0051 \"Richtlinien über Abhängigkeiten zwischen der technischen Sicherung von Bahnübergängen und der Verkehrsregelung an benachbarten Straßenkreuzungen und -einmündungen (BÜSTRA)\" </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="BUE_Mit_GFR" type="nsBahnuebergang:TCBUE_Mit_GFR" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Der Bahnübergang wird mit einer technischen Gefahrraumfreimeldeanlage (GFR) überwacht. Die GFR findet nur bei BÜ mit Vollschrankenabschuss (HH oder V) Anwendung. Planungsattribute zur GFR werden zu einem späteren Zeitpunkt in das Modell aufgenommen. Das Attribut wird nur befüllt, wenn eine GFR vorhanden ist. DB-Regelwerk 819.1210 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="BUE_Sicherungsart" type="nsBahnuebergang:TCBUE_Sicherungsart"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bauart der Bahnübergangs(BÜ)-Sicherung. A: Anrufschranke; F: abgesetzter Fuß-/Radweg mit eigener Halbschranke; Lf: Geschwindigkeitsreduzierung im BÜ-Bereich mittels Lf-Signalen; Lz: Lichtzeichen; H: Halbschranken; HH: zwei Halbschranken, die gemeinsam die gesamte Straßenbreite sichern; P: Pfeiftafel; Ue: Übersicht (Ermittlung durch Sichtdreieck); V: Vollschranke; bei abgesetzten Fuß-/Radwegen sichert die Vollschranke auch diese. Schlüsselabhängig sind z. B. Bau-BÜ. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk 815.0010 4 (7) Tabelle 1 in Verbindung mit 815.0031 oder 815.0032 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="BUE_Strasse" type="nsBahnuebergang:TCBUE_Strasse" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe des Namens der kreuzenden Straße bzw. des kreuzenden Weges. Zulässig ist auch eine prägnante Bezeichnung des Bahnübergangs anhand der Örtlichkeit oder Umgebung, in der dieser sich befindet. DB-Regelwerk \"Kennwort\" in der Einschaltstreckenberechnung </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="BUE_Technik" type="nsBahnuebergang:TCBUE_Technik" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bauart der technischen BÜ-Sicherung. Ist der BÜ nichttechnisch gesichert, ist \"keine\" anzugeben. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Die Festlegung neu zu errichtender BÜ-Technik erfolgt projektbezogen durch Vorgabe des Bestellers. Allgemeine Angaben finden sich in der Ril 819.1203 2 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCGitterbehang">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TV_Min_Fussweg">
+		    <xs:restriction base="xs:decimal">
+			      <xs:pattern value="0\.[5-9]|1\.[0-5]"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCEinschaltverz_Errechnet">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TEinschaltverz_Errechnet" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCGFR_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMGFR_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TBUE_Nachlaufzeit">
+		    <xs:restriction base="nsBasisTypen:TSekunde">
+			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CBUE_Kreuzungsplan">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verortungspunkte des für die BÜ-Planung verwendeten bautechnischen BÜ-Kreuzungsplans. Sofern der Anhang nicht als GeoTiff vorliegt, sind mindestens 2 Verortungspunkte anzugeben.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="BUE_Kreuzungsplan_Koordinaten"
+                           type="nsBahnuebergang:CBUE_Kreuzungsplan_Koordinaten"
+                           minOccurs="0"
+                           maxOccurs="unbounded"/>
+					          <xs:element name="ID_Anhang_Kreuzungsplan" type="nsVerweise:TCID_Anhang_ohne_Proxy"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den einzubindenden bautechnischen BÜ-Kreuzungsplan als Bild.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCGleis_Am_Bue">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TGleis_Am_Bue" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TV_Min_Schiene">
+		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CVz_Sperrstrecke">
+		    <xs:sequence>
+			      <xs:element name="Vz_Sperrstrecke_Vorgeschaltet"
+                     type="nsBahnuebergang:CVz_Sperrstrecke_Vorgeschaltet"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zusätzliche Angaben zu Räumstrecken bei vorgeschalteten Lichtzeichen gemäß Ril 815.0033A01.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:choice minOccurs="1" maxOccurs="1">
+				        <xs:element name="Sperrstrecke" type="nsBahnuebergang:TCSperrstrecke" minOccurs="1"
+                        maxOccurs="1">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Sperrstrecke als Abstand Lz/Andreaskreuz - gegenüberliegende Gefahrraumgrenze (d). Die Angabe ist nur bei unbeschrankten Bahnübergängen erforderlich.</xs:documentation>
+               </xs:annotation>
+				        </xs:element>
+				        <xs:element name="Sperrstrecke_Fussgaenger"
+                        type="nsBahnuebergang:TCSperrstrecke_Fussgaenger"
+                        minOccurs="1"
+                        maxOccurs="1">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Sperrstrecke als Abstand Lz/Andreaskreuz - gegenüberliegende Schranke (dF). Die Angabe ist nur bei beschrankten Bahnübergängen erforderlich.</xs:documentation>
+               </xs:annotation>
+				        </xs:element>
+				        <xs:element name="Vz_Sperrstrecke_Schranke"
+                        type="nsBahnuebergang:CVz_Sperrstrecke_Schranke"
+                        minOccurs="1"
+                        maxOccurs="1">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angaben zur Sperrstrecke bei BÜ der Art LzH bzw. LzHH.</xs:documentation>
+               </xs:annotation>
+				        </xs:element>
+			      </xs:choice>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Bedien_Anz_Element_Allg">
+		    <xs:sequence>
+			      <xs:element name="BUE_Handschalteinrichtung"
+                     type="nsBahnuebergang:TCBUE_Handschalteinrichtung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Handschalteinrichtungen des technisch gesicherten BÜ, die direkt auf die BÜ-Ein-/Ausschaltung wirken. AT: Ausschalttaste; ET: Einschalttaste; HAT: Hilfsausschalttaste; HET: Hilfseinschalttaste; RS: Rangierschalter; RT_ein_aus: 1. Tastendruck=EIN, 2. Tastendruck=AUS; RT_ein_RT_aus: jeweils ein Taster für EIN und AUS; UT: Unwirksamkeitstaste. AT, ET, HET und UT können gleisbezogen angeordnet werden; HAT, RS und RT (beide Ausführungen) wirken auf die gesamte BÜ-Anlage. DB-Regelwerk 819.1204 8 TM 2012.001 I.NVT 3 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ID_Bedien_Anzeige_Element" type="nsVerweise:TCID_Bedien_Anzeige_Element"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Bedien Anzeige Element, welches die Zuordnung zur Bedien Einrichtung Oertlich und damit zur physischen Unterbringung der Tasten herstellt. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ID_Handschalt_Wirkfunktion"
+                     type="nsVerweise:TCID_Handschalt_Wirkfunktion"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die zugehörige BUE Anlage (bei BÜ-bezogenen Funktionen) bzw. auf die zugehörige BUE Einschaltung / BUE Ausschaltung (bei gleisbezogenen Funktionen). </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TEinschaltverz_Errechnet">
+		    <xs:restriction base="nsBasisTypen:TSekunde">
+			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCKurzzugschaltung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBUE_Nachlaufzeit">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TBUE_Nachlaufzeit" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TBezeichnung_GFR_Tripelspiegel">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="[1-9]"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMHp_Ersatzstecker">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">\"sonstige\"==nur BÜ-Ersatzstecker sollen abgebildet werden; \"Abhaengigkeit_aufgehoben\"==Ersatzstecker an der Hp-Schnittstelle im Stellwerk hebt die Hp-Abhängigkeit auf, sodass eine Fahrstraße über den BÜ eingestellt werden kann, ohne dass der BÜ dabei berücksichtigt wird</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Abhaengigkeit_aufgehoben"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMOptik_Symbol">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Fussgaenger"/>
+			      <xs:enumeration value="Fussgaenger_Radfahrer"/>
+			      <xs:enumeration value="Pfeil_links"/>
+			      <xs:enumeration value="Pfeil_rechts"/>
+			      <xs:enumeration value="Radfahrer"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMFuss_Radweg_Seite">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="beidseitig"/>
+			      <xs:enumeration value="Quadrant_1_2"/>
+			      <xs:enumeration value="Quadrant_3_4"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CGFR_Element">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Detektor der GFR-Anlage (z. B. Radar). Elemente für eine Kamera-Überwachung sind  Bestandteil TK-Ausrüstung und werden daher nicht abgebildet.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsBahnuebergang:CGFR_Element_Bezeichnung"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_GFR_Anlage" type="nsVerweise:TCID_GFR_Anlage_ohne_Proxy" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die zugehörige GFR_Anlage.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Unterbringung" type="nsVerweise:TCID_Unterbringung_ohne_Proxy"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf eine Unterbringung zur Angabe von Position und Befestigungsart des Detektors der GFR-Anlage.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:choice minOccurs="1" maxOccurs="1">
+						            <xs:element name="BUE_Neigung" type="nsBahnuebergang:TCBUE_Neigung" minOccurs="0"
+                              maxOccurs="1">
+							              <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Neigung des BÜ in Bezug auf die Waagerechte in der Achse Detektor - gegenüberliegender Eckpunkt des Gefahrraums.</xs:documentation>
+                     </xs:annotation>
+						            </xs:element>
+						            <xs:element name="GFR_Neigung" type="nsBahnuebergang:TCGFR_Neigung" minOccurs="0"
+                              maxOccurs="1">
+							              <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Neigung des GFR-Elements (Detektors) bezogen auf die Senkrechte in Grad.</xs:documentation>
+                     </xs:annotation>
+						            </xs:element>
+					          </xs:choice>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TSperrlaenge">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="1[0-9]|20|[1-9]"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCBUE_Technik">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMBUE_Technik" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTeilsperrstrecke">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TTeilsperrstrecke" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CGFR_Tripelspiegel_Allg">
+		    <xs:sequence>
+			      <xs:element name="Montagehoehe" type="nsBahnuebergang:TCMontagehoehe" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Höhe, in der der Tripelspiegel angebracht ist (Rücklaufdatum PT 2).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Pegel" type="nsBahnuebergang:TCPegel" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Rücklaufdatum (PT 2)</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Winkel_Alpha" type="nsBahnuebergang:TCWinkel_Alpha" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Winkel des Tripelspiegels ausgehend von der Linie GFR-Anlage - Tripelspiegel 1. Die Zählung erfolgt entgegen des Uhrzeigersinns.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TPixel_Koordinate_X">
+		    <xs:restriction base="xs:integer"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TKreuzungswinkel">
+		    <xs:restriction base="xs:integer"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CBUE_Anlage_V_Allg">
+		    <xs:sequence>
+			      <xs:element name="V_Max_Schiene" type="nsBahnuebergang:TCV_Max_Schiene" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zulässige gleisbezogene Geschwindkeit im im Bereich der Einschaltstrecke bzw. im BÜ-Bereich (vE).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="V_Max_Strasse" type="nsBahnuebergang:TCV_Max_Strasse" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zulässige Geschwindkeit auf der den BÜ kreuzenden Straße (vST).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="V_Min_Fussweg" type="nsBahnuebergang:TCV_Min_Fussweg" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Minimale Räumgeschwindigkeit von Fußgängern auf dem den BÜ kreuzenden Weg in m/s (vF). Zulässig sind 1,0 bis 1,5 m/s bzw. 0,5 oder 0,8 m/s bei technischer Reisendensicherung.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[0.5..1.5]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="V_Min_Schiene" type="nsBahnuebergang:TCV_Min_Schiene" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Geschwindkeit des langsamsten Regelzugs im Bereich der Einschaltstrecke bzw. im BÜ-Bereich (vEL).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="V_Min_Strasse" type="nsBahnuebergang:TCV_Min_Strasse" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Minimale Räumgeschwindigkeit von Fahrzeugen auf der den BÜ kreuzenden Straße (vST). Zulässig sind 5 oder 10 km/h.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[5, 10]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMBUE_Funktionsueberwachung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Fü"/>
+			      <xs:enumeration value="Hp"/>
+			      <xs:enumeration value="Üs"/>
+			      <xs:enumeration value="ÜsOE"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CGFR_Tripelspiegel_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="Bezeichnung_GFR_Tripelspiegel"
+                     type="nsBahnuebergang:TCBezeichnung_GFR_Tripelspiegel"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung des Tripelspiegels.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..9]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TRaeumstrecke_DCK">
+		    <xs:restriction base="nsBasisTypen:TMeter"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMBaumprofil">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Rechteck"/>
+			      <xs:enumeration value="rund"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCMontage_Ausgleichsgewichte">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMMontage_Ausgleichsgewichte" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTragkopf_Verstellbar">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TTragkopf_Verstellbar" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMFue_Schaltfall">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="12"/>
+			      <xs:enumeration value="2"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TRaeumstrecke_DAB">
+		    <xs:restriction base="nsBasisTypen:TMeter"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMRichtungspfeil">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="linksweisend"/>
+			      <xs:enumeration value="rechtsweisend"/>
+			      <xs:enumeration value="Richtung_Gefahrenstelle_links"/>
+			      <xs:enumeration value="Richtung_Gefahrenstelle_rechts"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCWinkel_Alpha">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TWinkel_Alpha" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCKontrastblende">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TKontrastblende" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFuss_Radweg_Seite">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMFuss_Radweg_Seite" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TGleis_Am_Bue">
+		    <xs:restriction base="nsBasisTypen:TZeichenkette">
+			      <xs:pattern value="[a-z]"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCBezeichnung_GFR_Tripelspiegel">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TBezeichnung_GFR_Tripelspiegel" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TTeilvorgabezeit">
+		    <xs:restriction base="xs:integer"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TRaeumstrecke_DSK_Strich">
+		    <xs:restriction base="nsBasisTypen:TMeter"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TZusatzschild">
+		    <xs:restriction base="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CBUE_Anlage_Fuss_Rad">
+		    <xs:sequence>
+			      <xs:element name="Fuss_Radweg_Art" type="nsBahnuebergang:TCFuss_Radweg_Art" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art zu berücksichtigender Fuß- und Radwege.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Fuss_Radweg_Seite" type="nsBahnuebergang:TCFuss_Radweg_Seite"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Seite, auf der sich der Fuß- bzw. Radweg befindet.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TBezeichnung_BUE_GFR_Eckpunkt">
+		    <xs:restriction base="nsBasisTypen:TZeichenkette"/>
+	  </xs:simpleType>
+	  <xs:complexType name="TCGFR_Neigung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TGFR_Neigung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TSignalverz_Errechnet">
+		    <xs:restriction base="nsBasisTypen:TSekunde">
+			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCBezeichnung_BUE_GFR_Eckpunkt">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TBezeichnung_BUE_GFR_Eckpunkt" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCKreuzungswinkel">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TKreuzungswinkel" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TSperrstrecke">
+		    <xs:restriction base="nsBasisTypen:TMeter"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CBUE_Schnittstelle_Allg">
+		    <xs:sequence>
+			      <xs:element name="BUE_Nachlaufzeit" type="nsBahnuebergang:TCBUE_Nachlaufzeit" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Nachlaufzeit des BÜ. Eine Nachlaufzeit wird vorgesehen, um an mehrgleisigen BÜ nach der Ausschaltung des BÜ eine Mindestöffnungszeit für den kreuzenden Straßenverkehr einzuhalten, bevor der BÜ erneut wieder eingeschaltet wird. Die Nachlaufzeit wirkt unmittelbar bei manueller Einschaltung durch den Fahrdienstleiter oder fahrstraßenbewirkter Einschaltung. DB-Regelwerk Einschaltstreckenberechnung </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma </ppi:Patternbeschreibung>
+                     <ppi:Patternbeschreibung_Abweichend> [0.00..99999.99] zwei Stellen nach dem Komma </ppi:Patternbeschreibung_Abweichend>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="BUE_Vorlaufzeit" type="nsBahnuebergang:TCBUE_Vorlaufzeit" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vorlaufzeit des BÜ. Eine Vorlaufzeit wird vorgesehen, um an mehrgleisigen BÜ nach der Ausschaltung des BÜ eine Mindestöffnungszeit für den kreuzenden Straßenverkehr einzuhalten, bevor der BÜ erneut wieder eingeschaltet wird. Sie wird bei zugbewirkter Einschaltung vorgesehen und durch die Vorverlegung des Einschaltkontaktes erzwungen. Die sich daraus ergebene Verzögerungszeit wird als \"Vorlaufzeit\" bezeichnet. Damit verbunden ist der Nachteil, dass der BÜ zu früh eingeschaltet wird, wenn keine Zugbegegnung stattfindet. DB-Regelwerk Einschaltstreckenberechnung </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma </ppi:Patternbeschreibung>
+                     <ppi:Patternbeschreibung_Abweichend> [0.00..99999.99] zwei Stellen nach dem Komma </ppi:Patternbeschreibung_Abweichend>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Hp_Ersatzstecker" type="nsBahnuebergang:TCHp_Ersatzstecker" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Stecker, der die Betriebsart des zugehörigen Stellteils bestimmt. Bei vorbereiteten BÜ-Abhängigkeiten im Stellwerk, ohne dass die Außenanlage des BÜ vorhanden ist, kann mittels Ersatzstecker für das Stellwerk die Abhängigkeit zum BÜ aufgehoben werden. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Die Anwendung ist mit allen Beteiligten projektbezogen abzustimmen.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>Abhaengigkeit_aufgehoben</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="LFUE_Impuls" type="nsBahnuebergang:TCLFUE_Impuls" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art des Impulses bei vorhandener Ladefernüberwachung. In Abhängigkeit vom Hersteller der BÜSA und vom Stellwerkstyp kann eine Ladefernüberwachung der BÜ-Batterie über die Hp- oder Fü-Schnittstelle erfolgen. Das Attribut ist anzulegen, wenn die BÜSA die technische Möglichkeit bietet. DB-Regelwerk Das Regelwerk der DB AG enthält keine entsprechende Vorgabe. Ob eine Ladefernüberwachung möglich ist, geht aus den Projektierungsrichtlinien der BÜ-Hersteller hervor.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TBUE_Vorlaufzeit">
+		    <xs:restriction base="nsBasisTypen:TSekunde">
+			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCV_Min_Fussweg">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TV_Min_Fussweg" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZusatzschild">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TZusatzschild" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TBUE_Sicherungszeit">
+		    <xs:restriction base="xs:integer"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TVorgeschaltet">
+		    <xs:restriction base="xs:boolean"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMBUE_Handschalteinrichtung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="AT"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="ET"/>
+			      <xs:enumeration value="HAT"/>
+			      <xs:enumeration value="HET"/>
+			      <xs:enumeration value="RS"/>
+			      <xs:enumeration value="RT_ein_aus"/>
+			      <xs:enumeration value="RT_ein_RT_aus"/>
+			      <xs:enumeration value="UT"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCMontagehoehe">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TMontagehoehe" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBUE_Mit_GFR">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CSchrankenantrieb">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Abbildung von Schrankenantrieben für Bahnübergänge.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsBahnuebergang:CSchrankenantrieb_Bezeichnung"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_BUE_Anlage" type="nsVerweise:TCID_BUE_Anlage_ohne_Proxy" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die BÜ-Anlage, zu der der Schrankenantrieb gehört.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="SA_Schrankenbaum" type="nsBahnuebergang:CSA_Schrankenbaum" minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="Schrankenantrieb_Allg" type="nsBahnuebergang:CSchrankenantrieb_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Ausschaltung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Logisches Objekt, das alle Informationen zur Ausschaltung eines Bahnübergangs enthält. Über den Verweis auf BUE Gleisbezogener Gefahrraum findet eine Verortung am zugehörigen Gleis statt, für das der Ausschaltkontakt angeordnet wird. Der Ausschaltkontakt selbst ist über das Objekt Schaltmittel Zuordnung abgebildet. Für die BUE_Ausschaltung ist, in Fahrtrichtung Ausschaltkontakt weg vom BÜ gesehen, die RÜCKGELEGENE Grenze von BUE Gleisbezogener Gefahrraum für die Verortung maßgebend. Die Gefahrraum-Grenze liegt damit in Fahrtrichtung VOR dem Ausschaltkontakt. DB-Regelwerk 815.0032 4 (3) Die Planung der Ausschaltung erfolgt entsprechend der Projektierungshinweise der konkreten BÜ-Technik. Seitens der Ril 815 gibt es dazu keine konkreten Vorgaben. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_BUE_Gleisbez_Gefahrraum"
+                           type="nsVerweise:TCID_BUE_Gleisbezogener_Gefahrraum"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den zugehörigen Gefahrraum, auf den sich die Ausschaltung – gleisbezogen - bezieht. Ist bei der Planung von technisch gesicherten BÜ zu befüllen. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBUE_Bauart">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMBUE_Bauart" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Einschaltung_Hp">
+		    <xs:sequence>
+			      <xs:element name="Einschaltverz_Errechnet" type="nsBahnuebergang:TCEinschaltverz_Errechnet"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Errechnete Einschaltverzögerungszeit aus der Einschaltstreckenberechnung. Die Einschaltverzögerungszeit (Angabe in vollen Sekunden) dient der Optimierung der zugbewirkten Einschaltung. Zur Auswertung werden Gleisfreimeldeabschnitte verwendet, wobei der Beginn der Besetzung den Einschaltimpuls bewirkt. Da der Beginn eines Gleisfreimeldeabschnitte selten am Ort des optimalen, errechneten Einschaltpunktes des BÜ liegt, wird eine Verzögerungszeit vorgesehen, die zunächst vergehen muss, bis der Einschaltimpuls nach Befahren der Gleisfreimeldeabschnittsgrenze vom ESTW an den BÜ weitergegeben wird. DB-Regelwerk Einschaltstreckenberechnung Datenblatt für die Abhängigkeiten BÜ - Stw </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>0</ppi:ProposedValue>
+                     <ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma</ppi:Patternbeschreibung>
+                     <ppi:Patternbeschreibung_Abweichend>[0.00..99999.99] zwei Stellen nach dem Komma</ppi:Patternbeschreibung_Abweichend>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Einschaltverz_Gewaehlt" type="nsBahnuebergang:TCEinschaltverz_Gewaehlt"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Auf der Grundlage der errechneten Einschaltverzögerung (siehe dazu Definition unter Einschaltverz Errechnet) wird in Abhängigkeit des ESTW-Herstellers eine firmenspezifische Einschaltverzögerungszeit ausgerechnet. Das gegenwärtig gültige \"Datenblatt für die Abhängigkeiten BÜ - Stw\" sieht eine firmenspezifisch errechnete Einschaltverzögerung (Spalte \"Faktor beim ESTW\") mit Hilfe eines \"ESTW-Faktors\" vor. Auf diese Berechnung wird im Modell verzichtet. DB-Regelwerk Einschaltstreckenberechnung Datenblatt für die Abhängigkeiten BÜ - Stw </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>0</ppi:ProposedValue>
+                     <ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma</ppi:Patternbeschreibung>
+                     <ppi:Patternbeschreibung_Abweichend>[0.00..99999.99] zwei Stellen nach dem Komma</ppi:Patternbeschreibung_Abweichend>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Kurzzugschaltung" type="nsBahnuebergang:TCKurzzugschaltung" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Eine Kurzzugschaltung ist zu berücksichtigen. Dies wäre der Fall, wenn sich der Bahnübergang in einem Bahnhofsgleis befindet und nach Einfahrt des Zuges durch diesen nicht mehr besetzt ist. DB-Regelwerk Datenblatt für die Abhängigkeiten BÜ - Stw </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Signalverz_Errechnet" type="nsBahnuebergang:TCSignalverz_Errechnet"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Errechnete Signalverzögerungszeit aus der Einschaltstreckenberechnung. Bei abhängigen Signalen vor BÜ mit Halbschranken wird die Signalfahrtstellung so lange verzögert, dass am Signal anfahrende Züge den vom BÜ abfließenden Straßenverkehr nicht mehr gefährden können. In den Planungsdaten wird dieser Wert je Signal festgelegt. DB-Regelwerk Einschaltstreckenberechnung Datenblatt für die Abhängigkeiten BÜ - Stw </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>0</ppi:ProposedValue>
+                     <ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma</ppi:Patternbeschreibung>
+                     <ppi:Patternbeschreibung_Abweichend>[0.00..99999.99] zwei Stellen nach dem Komma</ppi:Patternbeschreibung_Abweichend>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Signalverz_Gewaehlt" type="nsBahnuebergang:TCSignalverz_Gewaehlt"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Firmenspezifische Signalverzögerungszeit, die auf Basis der errechneten Signalverzögerungszeit (Definition siehe Signalverz Errechnet) in Abhängigkeit des ESTW-Herstellers errechnet wird. Das gegenwärtig gültige \"Datenblatt für die Abhängigkeiten BÜ - Stw\" sieht eine firmenspezifisch errechnete Signalverzögerungszeit (Spalte \"Faktor beim ESTW\") mit Hilfe eines \"ESTW-Faktors\" vor. Auf diese Berechnung wird im Modell verzichtet. DB-Regelwerk Datenblatt für die Abhängigkeiten BÜ - Stw </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>0</ppi:ProposedValue>
+                     <ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma</ppi:Patternbeschreibung>
+                     <ppi:Patternbeschreibung_Abweichend>[0.00..99999.99] zwei Stellen nach dem Komma</ppi:Patternbeschreibung_Abweichend>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Teilvorgabezeit" type="nsBahnuebergang:TCTeilvorgabezeit" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe des Wertes tvg1 aus der Einschaltstreckenberechnung in ganzzahligen Sekunden.
+Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit, Schrankenschließzeit, Maßgebender Räumzeit, Bedienzeit/GFR-Freigabezeit und Teilzeitkonstante bei vorgeschalteten Lichtzeichen.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CVz_Sperrstrecke_Schranke">
+		    <xs:sequence>
+			      <xs:element name="Raeumstrecke" type="nsBahnuebergang:TCRaeumstrecke" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Räumstrecke als Abstand Schranke - gegenüberliegende Gefahrraumgrenze (d2). </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Teilsperrstrecke" type="nsBahnuebergang:TCTeilsperrstrecke" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Teilsperrstrecke als Abstand Lz - Schranke (d1). </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCSicherheitsabstand">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TSicherheitsabstand" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CVerkehrszeichen_Lz">
+		    <xs:sequence>
+			      <xs:element name="Akustik_Fussgaenger" type="nsBahnuebergang:TCAkustik_Fussgaenger"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Das Lichtzeichen ist mit einer Fußgänger-Akustik auszurüsten (true). Das Attribut entfällt, sofern keine Akustik benötigt wird.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Kontrastblende" type="nsBahnuebergang:TCKontrastblende" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für das Lichtzeichen ist eine Kontrastblende vorzusehen (true). Das Attribut entfällt, wenn keine Kontrastblende benötigt wird.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>true</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Optik_Durchmesser" type="nsBahnuebergang:TCOptik_Durchmesser"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Durchmesser der Signalgeberoptik in mm. Der Standardwert sind 200 mm.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[200,300]</ppi:Patternbeschreibung>
+                     <ppi:ProposedValue>200</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Optik_Symbolmaske" type="nsBahnuebergang:TCOptik_Symbolmaske"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Die Signalgeberoptiken sind mit einer Symbolmaske auszurüsten (true). Das Attribut entfällt, sofern keine Symbolmaske benötigt wird.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Schaltgruppe" type="nsBahnuebergang:TCSchaltgruppe" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bei BUESTRA und vorgeschalteten Lz: Zuordnung des Lz zu einer Schaltgruppe.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..10]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Tragkopf_Verstellbar" type="nsBahnuebergang:TCTragkopf_Verstellbar"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Der Tragkopf des Lichtzeichens ist verstellbar (true). Das Attribut entfällt, wenn der Tragkopf nicht verstellbar ist (Standard).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Vorgeschaltet" type="nsBahnuebergang:TCVorgeschaltet" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bei dem Lichtzeichen handelt es sich um ein vorgeschaltetes Lichtzeichen (true). Das Attribut entfällt, sofern das Lichtzeichen nicht vorgeschaltet ist.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TAkustik_Fussgaenger">
+		    <xs:restriction base="xs:boolean"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CGFR_Anlage">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gerfahrraumfreimeldeanlage. Folgende Rahmenbedingungen sind für den Einsatz einer GFR zu beachten: max. Höhe der Bodenwellen des BÜ: 15 cm; max. Neigung des BÜ: 2°.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="GFR_Anlage_Allg" type="nsBahnuebergang:CGFR_Anlage_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_BUE_Anlage" type="nsVerweise:TCID_BUE_Anlage_ohne_Proxy" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die zugehörige BÜ-Anlage.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TMontage_Besonders">
+		    <xs:restriction base="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:complexType name="TCSignalverz_Gewaehlt">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TSignalverz_Gewaehlt" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCErsatzstecker_Gleisbezogen">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Spezifisches_Signal">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Zuordnung von Signalen, die ausschließlich im Zusammenhang mit einem Bahnübergang (BÜ) angeordnet werden. Dazu gehören zum Beispiel Pfeiftafeln, Lf-Signale mit und ohne Zusatz \"BÜ\" oder Überwachungssignale für BÜ, Merktafeln oder Merkpfähle u.a. Die Anwendung von Pfeiftafeln und Lf-Signalen erfolgt zumeist bei nichttechnisch gesicherten BÜ; die Anwendung der Überwachungssignale bei Bahnübergängen der Funktionsüberwachung \"ÜS\". Für die vorgenannten Fälle ist der Verweis auf BUE Anlage zu befüllen. Wird zum Beispiel ein Merkpfahl zur Kennzeichnung eines Einschaltpunktes (Anwendung in besonderen Planungsfällen) vorgesehen, ist der Verweis auf BUE Einschaltung zu befüllen. Für die Bezeichnung von BÜ-spezifischen Signalen, insbesondere Überwachungssignale, sind Ausführungen auf der Seite Bezeichnung Signal vorhanden. DB-Regelwerk Formblatt zur Ermittlung der Sichtflächen für nichttechnisch gesicherte BÜ 819.1204 9 für ÜS SPU 24 für Merktafel /-pfahl BÜ-Kabellage- und -übersichtsplan </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Signal" type="nsVerweise:TCID_Signal" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Signal, welches im Zusammenhang mit dem BÜ angeordnet wird. Es ist zu unterscheiden, ob das Signal zur BUE Anlage (z. B. ÜS, Pfeiftafel) oder zur BUE Einschaltung (z. B. Merktafel) gehört.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:choice minOccurs="1" maxOccurs="1">
+						            <xs:element name="ID_BUE_Anlage" type="nsVerweise:TCID_BUE_Anlage" minOccurs="1"
+                              maxOccurs="1">
+							              <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die BUE Anlage, für die das Signal angeordnet wird. </xs:documentation>
+                     </xs:annotation>
+						            </xs:element>
+						            <xs:element name="ID_BUE_Einschaltung" type="nsVerweise:TCID_BUE_Einschaltung"
+                              minOccurs="1"
+                              maxOccurs="1">
+							              <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die BUE_Einschaltung, an der das Signal angeordnet wird (z.B. Tafel für die Markierung des Einschaltkontaktes). DB-Regelwerk SPU (Sammlung der Planunterlagen) 24 </xs:documentation>
+                     </xs:annotation>
+						            </xs:element>
+					          </xs:choice>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Bedien_Anzeige_Element">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Definition der logischen Bedienfunktionen, die über Taster auf den BÜ einwirken. Es dient der Zuordnung der ausgewählten Bedienfunktionen zum BÜ bzw. zu den Ein-/Ausschaltungen des zugehörigen Gleises. Die Zuordnung zur physischen Unterbringung erfolgt über den Verweis auf Bedien Anzeige Element. DB-Regelwerk 819.1204 8 TM 2012 - 001 I.NVT 3 </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="BUE_Bedien_Anz_Element_Allg"
+                           type="nsBahnuebergang:CBUE_Bedien_Anz_Element_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Gefahrraum_Eckpunkt">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Eckpunkt des BÜ-Gefahrraums.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsBahnuebergang:CBUE_Gefahrraum_Eckpunkt_Bezeichnung"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_BUE_Anlage" type="nsVerweise:TCID_BUE_Anlage_ohne_Proxy" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die zugehörige BÜ-Anlage</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CVerkehrszeichen">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Abbildung von Lichtzeichen und Andreaskreuzen im Rahmen der BÜ-Planung. Die Attributgruppe Verkehrszeichen_Lz entfällt bei nichttechnisch gesicherten BÜ oder beschrankten BÜ mit Läutewerk. Die Attributgruppe Verkehrszeichen_Andreaskreuz entfällt bei vorgeschalteten Lichtzeichen. Mehrere Andreaskreuze bei einmündenden Straßen sind möglich (i. d. R. max 3). Die Attributgruppe Vz_Sperrstrecke entfällt bei vorgeschalteten Lichtzeichen</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsBahnuebergang:CVerkehrszeichen_Bezeichnung"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_BUE_Anlage" type="nsVerweise:TCID_BUE_Anlage_ohne_Proxy" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die BÜ-Anlage, zu der das Verkehrszeichen gehört.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Unterbringung" type="nsVerweise:TCID_Unterbringung_ohne_Proxy"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf eine Unterbringung zur Verortung des Verkehrszeichens</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Verkehrszeichen_Allg" type="nsBahnuebergang:CVerkehrszeichen_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="Verkehrszeichen_Andreaskreuz"
+                           type="nsBahnuebergang:CVerkehrszeichen_Andreaskreuz"
+                           minOccurs="0"
+                           maxOccurs="5"/>
+					          <xs:element name="Verkehrszeichen_Lz" type="nsBahnuebergang:CVerkehrszeichen_Lz"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="Vz_Sperrstrecke" type="nsBahnuebergang:CVz_Sperrstrecke" minOccurs="0"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCAkustik_Fussgaenger">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TAkustik_Fussgaenger" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMLagerung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="beidseitig"/>
+			      <xs:enumeration value="einseitig"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCFahrbahn_Befestigung_Gleis">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TFahrbahn_Befestigung_Gleis" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCHp_Ersatzstecker">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMHp_Ersatzstecker" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCV_Min_Schiene">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TV_Min_Schiene" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Gefahrraum_Eckpunkt_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="Bezeichnung_BUE_GFR_Eckpunkt"
+                     type="nsBahnuebergang:TCBezeichnung_BUE_GFR_Eckpunkt"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung des BÜ-Gefahrraum-Eckpunkts.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TBaulast">
+		    <xs:restriction base="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CGFR_Tripelspiegel">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ortungshilfe für GFR-Anlagen der Firma Honeywell.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsBahnuebergang:CGFR_Tripelspiegel_Bezeichnung"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="GFR_Tripelspiegel_Allg" type="nsBahnuebergang:CGFR_Tripelspiegel_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_GFR_Anlage" type="nsVerweise:TCID_GFR_Anlage_ohne_Proxy" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die zugehörige GFR-Anlage.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TBezeichnung_Verkehrszeichen">
+		    <xs:restriction base="nsBasisTypen:TZeichenkette"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TPixel_Koordinate_Y">
+		    <xs:restriction base="xs:integer"/>
+	  </xs:simpleType>
+	  <xs:complexType name="TCBez_Schrankenantrieb">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TBez_Schrankenantrieb" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TOptik_Durchmesser">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="200|300"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCSchutzbuegel">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TSchutzbuegel" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TGFR_Typ">
+		    <xs:restriction base="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CBUE_Abhaengigkeit_Fue">
+		    <xs:sequence>
+			      <xs:element name="Auto_Het" type="nsBahnuebergang:TCAuto_Het" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für fernüberwachte Bahnübergänge (FÜ-BÜ) ist die Auto-Het-Funktion (automatische Einschaltung mit Befahren der Ausschaltkontakte) zu realisieren. Ausschlüsse gemäß Ril 819.1204 (4) sind zu beachten. DB-Regelwerk Ril 819.1204 (4) TM 2012-001 I.NVT 3 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Fue_Schaltfall" type="nsBahnuebergang:TCFue_Schaltfall" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Im Stellwerk zu realisierende Schaltung bei Fü-Anlagen:\n2: Wirksamschaltung der Einschaltpunkte;\n12: Art der BÜ-Einschaltung in Abhängigkeit eines Signals in der Einschaltstrecke.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Stoerhalt_Haltfall" type="nsBahnuebergang:TCStoerhalt_Haltfall"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Haltfall des vor einem FÜ-BÜ liegenden Signals, wenn dieser gestört ist. Ist ein Abschnitt der freien Strecke in die Zuglenkung einbezogen und befinden sich in diesem Streckenabschnitt BÜ mit der Funktionsüberwachung FÜ, dann ist bei Bedienung des ESTW aus der Betriebszentrale die Störhaltabhängigkeit zu planen. Damit wird verhindert, dass die Zuglenkung auch bei gestörtem BÜ Fahrstraßen in Richtung Strecke mit gestörtem BÜ einstellt. DB-Regelwerk TM 2010 - 120 I.NVT3 (Fa. Siemens) Datenblatt für die Abhängigkeiten BÜ - Stw Weiterhin existiert ein Lastenheft für die technisch-funktionale Störhaltfunktionalität, das dem LST-Fachplaner nicht zur Verfügung steht.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>true</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Stoerhalt_Merkhinweis" type="nsBahnuebergang:TCStoerhalt_Merkhinweis"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ein Merkhinweis ist zu setzen. Der Merkhinweis wird gesetzt, wenn die Verbindung zwischen Betriebszentrale (BZ) und derjenigen ESTW-Unterzentrale (UZ) getrennt ist, in der der entsprechende Bahnübergang fernüberwacht wird. DB-Regelwerk TM 2010 - 120 I.NVT3 (Fa. Siemens) Datenblatt für die Abhängigkeiten BÜ - Stw Weiterhin existiert ein Lastenheft für die technisch-funktionale Störhaltfunktionalität, das dem LST-Fachplaner nicht zur Verfügung steht.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>true</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Zeitueberschreitungsmeldung"
+                     type="nsBahnuebergang:TCZeitueberschreitungsmeldung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der gewählten Zeit für die Zeitüberschreitungsmeldung aus der Einschaltstreckenberechnung. DB-Regelwerk Einschaltstreckenberechnung </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>0</ppi:ProposedValue>
+                     <ppi:Patternbeschreibung>[1..n] ganzzahlig </ppi:Patternbeschreibung>
+                     <ppi:Patternbeschreibung_Abweichend>[1..99999] ganzzahlig</ppi:Patternbeschreibung_Abweichend>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMBUE_Technik">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Anrufschranke"/>
+			      <xs:enumeration value="BUEP_93"/>
+			      <xs:enumeration value="BUES_72D"/>
+			      <xs:enumeration value="BUES_72Z"/>
+			      <xs:enumeration value="BUES2000"/>
+			      <xs:enumeration value="EBUET_80"/>
+			      <xs:enumeration value="EBUET_80_VB"/>
+			      <xs:enumeration value="FUE_58"/>
+			      <xs:enumeration value="FUE_60"/>
+			      <xs:enumeration value="HL_64_B"/>
+			      <xs:enumeration value="HL_64_C"/>
+			      <xs:enumeration value="HS_64_B"/>
+			      <xs:enumeration value="HS_64_C"/>
+			      <xs:enumeration value="keine"/>
+			      <xs:enumeration value="LO1"/>
+			      <xs:enumeration value="LO1_57"/>
+			      <xs:enumeration value="NE_BUE_90"/>
+			      <xs:enumeration value="RBUET"/>
+			      <xs:enumeration value="SIMIS_LC"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CSA_Schrankenbaum">
+		    <xs:sequence>
+			      <xs:element name="Ausrichtung" type="nsBahnuebergang:TCAusrichtung" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Generelle Ausrichtung des Schrankenbaums in Bezug auf die Topologierichtung der TOP_Kante, an der der Schrankenantrieb verortet ist.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Ausrichtung_Winkel" type="nsBahnuebergang:TCAusrichtung_Winkel"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ausrichtungswinkel des Schrankenbaums in Bezug auf die Tangente am Verortungspunkt auf der topologischen Kante. Ein direkter Bezug zur Straßenachse ist nicht möglich, da der Straßenverlauf zunächst nur als Bild eingebunden wird.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[-90..90]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Baumprofil" type="nsBahnuebergang:TCBaumprofil" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art des Baumprofils, z. B. Rundprofil oder Rechteckprofil.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Gitterbehang" type="nsBahnuebergang:TCGitterbehang" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ein Gitterbehang ist vorhanden (true) oder nicht vorhanden (false).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Lagerung_Art" type="nsBahnuebergang:TCLagerung_Art" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, in welcher Art der Schrankenbaum gelagert ist.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Lieferlaenge" type="nsBahnuebergang:TCLieferlaenge" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Lieferlänge des Schrankenbaums.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Montage_Ausgleichsgewichte"
+                     type="nsBahnuebergang:TCMontage_Ausgleichsgewichte"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob und in welcher Ausführung Ausgleichsgewichte montiert werden sollen.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Sperrlaenge" type="nsBahnuebergang:TCSperrlaenge" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Sperrlänge des Schrankenbaums.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TRaeumstrecke">
+		    <xs:restriction base="nsBasisTypen:TMeter"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CBUE_Kante">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gleisbezogene Abbildung der BÜ-Kante zur Berechnung des Sicherheitsabstands bei Hp-gedeckten Bahnübergängen.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_BUE_Anlage" type="nsVerweise:TCID_BUE_Anlage_ohne_Proxy" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die zugehörige BÜ-Anlage.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CSchrankenantrieb_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="Bez_Schrankenantrieb" type="nsBahnuebergang:TCBez_Schrankenantrieb"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung des Schrankenantriebs, z. B. A1.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[2..3]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCLagerung_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMLagerung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSignalverz_Errechnet">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TSignalverz_Errechnet" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSperrstrecke">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TSperrstrecke" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Schnittstelle">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Schnittstelle zwischen dem Planer des ESTW und dem Planer der technischen Sicherung des Bahnübergangs. Im ESTW wird eine technische Schnittstelle für Hp-Abhängigkeiten zwischen ESTW und BÜ und/oder Fernüberwachung (FÜ) durch den özF vorgesehen. Bau-BÜ, die über eine Schlüsselsperre gesichert werden, sowie nichttechnisch gesicherte BÜ erhalten keine BUE_Schnittstelle. DB-Regelwerk Die betreffenden Angaben finden sich im \"Datenblatt für die Abhängigkeiten BÜ - Stw\".</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="BUE_Abhaengigkeit_Fue" type="nsBahnuebergang:CBUE_Abhaengigkeit_Fue"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="BUE_Schnittstelle_Allg" type="nsBahnuebergang:CBUE_Schnittstelle_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_Stellelement" type="nsVerweise:TCID_Stellelement" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Objekt Stellelement zur Zusammenfassung von Eigenschaften der Objekte BUE Schnittstelle, PZB Element, Schluesselsperre, Signal, W Kr Gsp Element. Das Stellelement enthält Informationen über den energetischen und logischen Anschluss der Objekte. Für das PZB Element ist der Verweis nur zu füllen, wenn das PZB_Element eine GÜ ist. DB-Regelwerk Bisher ohne eindeutige Darstellung </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Deckendes_Signal_Zuordnung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Das Zuordnungsobjekt BUE_Deckendes_Signal bildet die diesbezügliche Angabe in der Signaltabelle 1 sowie in der Einschaltstreckenberechnung ab. Die Angaben in der Signaltabelle 1 sowie in der Einschaltstreckenberechnung beziehen sich auf das deckende Signal (Haupt-/LS-Signal) und nicht auf die den BÜ-Schließvorgang anstoßende Fahrstraße. DB-Regelwerk Signaltabelle 1, Zeile 33 und 34 Einschaltstreckenberechnung </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_BUE_Einschaltung" type="nsVerweise:TCID_BUE_Einschaltung"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die zu dem deckenden Signal zugehörige Einschaltung. DB-Regelwerk Signaltabelle 1 </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Signal" type="nsVerweise:TCID_Signal" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung zu dem Signal, welches den BÜ deckt (deckendes Haupt-/ LS-Signal).</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Sicherheitsabstand" type="nsBahnuebergang:TCSicherheitsabstand"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Abstand vom deckenden Signal zur BÜ-Kante. Im Gegensatz zum BÜ-Gefahrraum werden abgesetzte Fuß- und Radwege dabei berücksichtigt.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCAusrichtung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TAusrichtung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Gleisbezogener_Gefahrraum">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bereichsobjekt, das den Gefahrraum eines BÜ für ein Gleis abbildet. Die Grenzen des Bereichsobjektes liegen jeweils auf dem Schnittpunkt zwischen Gefahrraumkante und zugehörigem Gleis. Die zugehörigen Ein- und Ausschaltelemente verweisen auf die jeweilige Grenze des Bereichsobjektes. Für jedes Gleis am BÜ ist ein solches Objekt vorzusehen. Somit hat ein BÜ bzw. eine BUE Anlage immer genauso viele Instanzen von BUE_Gleisbezogener_Gefahrraum wie BÜ-Gleise. Zu einem späteren Zeitpunkt werden ggf. weitere, Gefahrraum-spezifische Angaben ergänzt. DB-Regelwerk 819.1210 7 (1)-(3) </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBereich_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Ersatzstecker_Gleisbezogen"
+                           type="nsBahnuebergang:TCErsatzstecker_Gleisbezogen"
+                           minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ein Sensor- bzw. EGL-Ersatzstecker ist vorzusehen, der die Gleisschaltmittel zur Einschaltung des BÜ für dieses BÜ-Gleis außer Betrieb setzt und damit eine Einschaltung des BÜ verhindert (z. B. für Baugleis). Das Attribut kann nur den Wert \"true\" annehmen.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Gleis_Am_Bue" type="nsBahnuebergang:TCGleis_Am_Bue" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung des BÜ-Gleises. Die Bezeichnung wird in alphabetisch aufsteigender Reihenfolge vergeben, beginnend bei \"a\". Bei mehrgleisigen Strecken über einen BÜ wird das in aufsteigender km-Richtung rechts liegende Gleis mit \"a\" bezeichnet; das daneben liegende (Gegen)Gleis mit \"b\" usw. Diese \"Kennung\" ist Bestandteil der Bezeichnung der Anrueckmelder und Einschaltkontakte (sofern vorhanden) sowie der Ausschaltkontakte des BÜ. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht eindeutig beschrieben. Es geht aus dem Eingabeblättern der Einschaltstreckenberechnung hervor.</xs:documentation>
+                     <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                        <ppi:WorkflowInformation>
+                           <ppi:ProposedValue>a</ppi:ProposedValue>
+                           <ppi:Patternbeschreibung>[1] Kleinbuchstabe </ppi:Patternbeschreibung>
+                           <ppi:Patternbeschreibung_Abweichend> [1] Kleinbuchstabe ohne Umlaute</ppi:Patternbeschreibung_Abweichend>
+                        </ppi:WorkflowInformation>
+                     </xs:appinfo>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_BUE_Anlage" type="nsVerweise:TCID_BUE_Anlage" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die BUE Anlage, zu der der Gefahrraum zugehörig ist. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCMontage_Besonders">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TMontage_Besonders" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CSchrankenantrieb_Allg">
+		    <xs:sequence>
+			      <xs:element name="Abstand_Gehweg_Fahrbahn" type="nsBahnuebergang:TCAbstand_Gehweg_Fahrbahn"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Abstand von der Mitte des Schrankenantriebs zur nächstgelegenen Gehweg- bzw. Fahrbahnkante. Der seitlicher Abstand zur Gleisachse ist über die Eigenschaft \"Punkt_Objekt\" abgebildet.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Hersteller" type="nsBahnuebergang:TCHersteller" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Unternehmen, das die Funktionsfähigkeit der Anlage verantwortlich hergestellt hat oder Hersteller des jeweiligen Elements. Diese Eigenschaft ist kein Datum einer Planung, sondern dient im Rücklauf der Planung dazu den Hersteller im Bestand zu erfassen. Es ist die zum Zeitpunkt der Inbetriebnahme gültige Firmierung zu verwenden. DB-Regelwerk Beschreibung im Erläuterungsbericht</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Schaltgruppe" type="nsBahnuebergang:TCSchaltgruppe" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung des Schrankenantriebs zu einer Schaltgruppe.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..10]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TFahrbahn_Befestigung_Gleis">
+		    <xs:restriction base="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TSignalverz_Gewaehlt">
+		    <xs:restriction base="nsBasisTypen:TSekunde">
+			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCEinschaltverz_Gewaehlt">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TEinschaltverz_Gewaehlt" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBUE_Handschalteinrichtung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMBUE_Handschalteinrichtung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBUE_Strasse">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TBUE_Strasse" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCPixel_Koordinate_Y">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TPixel_Koordinate_Y" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TAbstand_Gehweg_Fahrbahn">
+		    <xs:restriction base="nsBasisTypen:TMeter"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TAusrichtung_Winkel">
+		    <xs:restriction base="xs:decimal">
+			      <xs:pattern value="-?([1-8]?[0-9]|90)"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCRaeumstrecke_DAB">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TRaeumstrecke_DAB" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CSchaltmittel_Fstr_Zuordnung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verknüpft bei einem Bahnübergang mit der Funktionsüberwachung Fü die möglichen Fahrstraßen mit den Elementen für die Wirksamschaltung.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_BUE_WS_Fstr_Zuordnung" type="nsVerweise:TCID_BUE_WS_Fstr_Zuordnung"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ordnet eine zulässige Kombination von Fahrstraße und BÜ-Einschaltung für die Wirksamkeitsschaltung der Einschaltstelle zu. Falls Einschaltstellen von BÜ nur dann wirksam sein sollen, wenn bestimmte Fahrstraßen eingestellt sind, so werden in einem ersten Schritt Zuordnungsobjekte zwischen der Funktion Einschaltung eines BÜ und allen auf diesen BÜ zulaufenden Fahrstraßen gebildet. ID_BUE_WS_Fstr_Zuordnung verweist auf dieses Zuordnungsobjekt.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Schaltmittel_Zuordnung" type="nsVerweise:TCID_Schaltmittel_Zuordnung"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ordnet einer vom Befahren eines bestimmten Punktes abhängigen Funktion ein Schaltmittel zu. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TBez_Schrankenantrieb">
+		    <xs:restriction base="nsBasisTypen:TZeichenkette">
+			      <xs:pattern value=".{2,3}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCOptik_Symbolmaske">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMOptik_Symbol" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCV_Min_Strasse">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TV_Min_Strasse" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCGFR_Typ">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TGFR_Typ" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCAbstand_Gehweg_Fahrbahn">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TAbstand_Gehweg_Fahrbahn" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSchaltgruppe">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TSchaltgruppe" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TFahrbahn_Befestigung">
+		    <xs:restriction base="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TFahrbahn_Breite">
+		    <xs:restriction base="nsBasisTypen:TMeter"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMBUE_Sicherungsart">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="A_und_Lf"/>
+			      <xs:enumeration value="A_und_Sprechverbindung"/>
+			      <xs:enumeration value="Lz"/>
+			      <xs:enumeration value="LzH"/>
+			      <xs:enumeration value="LzH_2F"/>
+			      <xs:enumeration value="LzH_F"/>
+			      <xs:enumeration value="LzHH"/>
+			      <xs:enumeration value="LzV"/>
+			      <xs:enumeration value="P"/>
+			      <xs:enumeration value="P_und_Lf"/>
+			      <xs:enumeration value="schluesselabhaengig"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="Ue"/>
+			      <xs:enumeration value="Ue_und_P"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCTeilvorgabezeit">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TTeilvorgabezeit" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBUE_Vorlaufzeit">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TBUE_Vorlaufzeit" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBezeichnung_Verkehrszeichen">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TBezeichnung_Verkehrszeichen" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSperrstrecke_Fussgaenger">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TSperrstrecke_Fussgaenger" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Kreuzungsplan_Koordinaten">
+		    <xs:sequence>
+			      <xs:element name="ID_GEO_Punkt" type="nsVerweise:TCID_GEO_Punkt_ohne_Proxy" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf einen GEO_Punkt zur geografischen Verortung des Bildpunktes.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Pixel_Koordinate_X" type="nsBahnuebergang:TCPixel_Koordinate_X"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">X-Wert der Raster-Koordinate zur Positionierung des bautechnischen Kreuzungsplans, der der BÜ-Planung zugrunde liegt.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Pixel_Koordinate_Y" type="nsBahnuebergang:TCPixel_Koordinate_Y"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Y-Wert der Raster-Koordinate zur Positionierung des bautechnischen Kreuzungsplans, der der BÜ-Planung zugrunde liegt.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CVz_Sperrstrecke_Vorgeschaltet">
+		    <xs:sequence>
+			      <xs:element name="Beeinflussung_Strassenverkehr"
+                     type="nsBahnuebergang:TCBeeinflussung_Strassenverkehr"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Nur bei BUESTRA: Beeinflussung des Straßenverkehrs (Parameter tK1 gemäß Ril 815.0051).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Raeumstrecke_DAB" type="nsBahnuebergang:TCRaeumstrecke_DAB" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Räumstrecke dAB gemäß Ril 815.0033A01 (vorgeschaltete Lichtzeichen).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Raeumstrecke_DBK" type="nsBahnuebergang:TCRaeumstrecke_DBK" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Räumstrecke dBK gemäß Ril 815.0033A01 (vorgeschaltete Lichtzeichen).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Raeumstrecke_DCK" type="nsBahnuebergang:TCRaeumstrecke_DCK" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Räumstrecke dCK gemäß Ril 815.0033A01 (vorgeschaltete Lichtzeichen).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Raeumstrecke_DSK_Strich" type="nsBahnuebergang:TCRaeumstrecke_DSK_Strich"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Räumstrecke dSK\u0027 gemäß Ril 815.0033A01 (vorgeschaltete Lichtzeichen).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCStoerhalt_Haltfall">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBeeinflussung_Strassenverkehr">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TBeeinflussung_Strassenverkehr" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMBUE_Bauart">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Bau_Bue"/>
+			      <xs:enumeration value="Bue"/>
+			      <xs:enumeration value="ntg_Reisendenuebergang"/>
+			      <xs:enumeration value="Resi"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCBaulast">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TBaulast" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFahrbahn_Breite">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TFahrbahn_Breite" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TSchaltgruppe">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="[1-9]|10"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CGFR_Anlage_Allg">
+		    <xs:sequence>
+			      <xs:element name="BUE_Sicherungszeit" type="nsBahnuebergang:TCBUE_Sicherungszeit"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gesamtzeit in s von der Einschaltung des BÜ bis zum Abschluss des Schrankenschließvorgangs gemäß 819.1210, Seite 21.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="GFR_Art" type="nsBahnuebergang:TCGFR_Art" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der Gefahrraumfreimeldung (automatisch, Kameraüberwachung etc.).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="GFR_Typ" type="nsBahnuebergang:TCGFR_Typ" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Herstellerspezifischer Typ der GFR, z. B. YD136A2.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Hersteller" type="nsBahnuebergang:TCHersteller" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Unternehmen, das die Funktionsfähigkeit der Anlage verantwortlich hergestellt hat oder Hersteller des jeweiligen Elements. Diese Eigenschaft ist kein Datum einer Planung, sondern dient im Rücklauf der Planung dazu den Hersteller im Bestand zu erfassen. Es ist die zum Zeitpunkt der Inbetriebnahme gültige Firmierung zu verwenden. DB-Regelwerk Beschreibung im Erläuterungsbericht</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Anlage_Strasse">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Straßenbezogene Angaben zur BUE_Anlage, die im Wesentlichen im Rahmen der bautechnischen Planung benötigt werden. Die Themen Längsneigung und Ausrundungshalbmesser werden aufgrund der Vielzahl notwendiger Angaben nicht im Modell abgebildet (separate Betrachtung erforderlich).</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="BUE_Anlage_Fuss_Rad" type="nsBahnuebergang:CBUE_Anlage_Fuss_Rad"
+                           minOccurs="0"
+                           maxOccurs="unbounded"/>
+					          <xs:element name="BUE_Anlage_Strasse_Allg" type="nsBahnuebergang:CBUE_Anlage_Strasse_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_BUE_Anlage" type="nsVerweise:TCID_BUE_Anlage_ohne_Proxy" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die zugehörige BÜ-Anlage</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCRaeumstrecke">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TRaeumstrecke" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCOptik_Durchmesser">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TOptik_Durchmesser" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CVerkehrszeichen_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="Bezeichnung_Verkehrszeichen"
+                     type="nsBahnuebergang:TCBezeichnung_Verkehrszeichen"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung des Verkehrszeichens, z. B. S1, Lz1. Die Angabe entfällt bei alleinstehenden Andreaskreuzen.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TBeeinflussung_Strassenverkehr">
+		    <xs:restriction base="nsBasisTypen:TSekunde"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CBUE_Anlage">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschreibung der baulichen Anlage des Bahnübergangs (BÜ) einschließlich der technischen Sicherung, sofern vorhanden. Zurzeit beschränken sich die Angaben auf den im Lageplan darzustellenden Teil des BÜ. Zu einem späteren Zeitpunkt werden die spezifischen BÜ-Sicherungsanlagen wie Lichtzeichen, Andreaskreuze, Schrankenantriebe, Belag im BÜ-Bereich etc. in das Modell aufgenommen. Gleiches gilt für die Einschaltstreckenberechnung sowie die Beeinflussungsberechnung. Das Objekt wird auf den Kreuzungspunkt (in der Mitte der kreuzenden Straße) verortet; damit ergibt sich die sogenannte BÜ-Mitte gemäß Einschaltstreckenberechnung. DB-Regelwerk Für die Planung von Bahnübergängen gelten folgende Regelwerke: 815 819.12xx Die konkreten Bezüge zum Regelwerk werden in den einzelnen Attributen angegeben. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsBasisTypen:CBezeichnung_Element" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="BUE_Anlage_Allg" type="nsBahnuebergang:CBUE_Anlage_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_BUE_Schnittstelle" type="nsVerweise:TCID_BUE_Schnittstelle"
+                           minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Schnittstelle zwischen BÜ und ESTW, die für diese BÜ-Anlage erforderlich ist. Der Verweis wird nur für technisch gesicherte Bahnübergänge mit Abhängigkeit zu einem Stellwerk befültt (Hp, Fü sowie Kombinationen aus beiden).</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMLFUE_Impuls">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="1_zu_40"/>
+			      <xs:enumeration value="Dauerimpuls"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CBUE_WS_Fstr_Zuordnung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung zwischen BUE-Einschaltung und zugehörigen Fahrstraßen, für die die Wirksamkeitskontakte wirken sollen.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_BUE_Einschaltung" type="nsVerweise:TCID_BUE_Einschaltung"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf denjenigen Einschaltpunkt, für den die Wirksamschaltung vorgesehen wird. DB-Regelwerk Einschaltstreckenberechnung </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Fstr_Zug_Rangier" type="nsVerweise:TCID_Fstr_Zug_Rangier"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zeiger auf die Fahrstraße, für die die Einschaltung des BÜ abhängig geschaltet wird. DB-Regelwerk Datenblatt für die Abhängigkeiten BÜ - Stw </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBUE_Buestra">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TGFR_Neigung">
+		    <xs:restriction base="xs:decimal"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TZeitueberschreitungsmeldung">
+		    <xs:restriction base="nsBasisTypen:TSekunde">
+			      <xs:pattern value="[1-9][0-9]{0,4}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCBlitzpfeil">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TBlitzpfeil" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFuss_Radweg_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMFuss_Radweg_Art" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CVerkehrszeichen_Andreaskreuz">
+		    <xs:sequence>
+			      <xs:element name="Blitzpfeil" type="nsBahnuebergang:TCBlitzpfeil" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Auf dem Andreaskreuz ist ein Blitzfeil anzuordnen (true). Das Attribut entfällt, sofern kein Blitzfeil benötigt wird.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Montage_Besonders" type="nsBahnuebergang:TCMontage_Besonders"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angaben zur besonderen Montage, z. B. für horizontale Befestigung am Peitschenmastausleger.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Richtungspfeil" type="nsBahnuebergang:TCRichtungspfeil" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zusätzlich zum Andreaskreuz ist ein Richtungspfeil als Schild vorzusehen (true). Das Attribut entfällt, sofern kein Richtungspfeil benötigt wird.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Schutzbuegel" type="nsBahnuebergang:TCSchutzbuegel" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Das Andreaskreuz ist mit einem Schutzbügel auszurüsten (true). Das Attribut entfällt, sofern kein Schutzbügel benötigt wird.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Zusatzschild" type="nsBahnuebergang:TCZusatzschild" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zusatzschild zum Andreaskreuz, z. B. \"Privatweg\" oder \"Übergang nur für Berechtigte\".</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCPegel">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TPegel" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCHersteller">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:THersteller" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCRichtungspfeil">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMRichtungspfeil" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCStoerhalt_Merkhinweis">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBUE_Einschaltung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Logisches Objekt, das alle Informationen zur Einschaltung eines Bahnübergangs (BÜ) enthält. Über den Verweis auf BUE Gleisbezogener Gefahrraum findet eine Verortung am zugehörigen Gleis statt, für das der Einschaltkontakt angeordnet wird. Der Einschaltkontakt selbst ist über das Objekt Schaltmittel Zuordnung abgebildet. Für die BUE Einschaltung ist die in Fahrtrichtung von Anrückmelder / Einschaltkontakt in Richtung BÜ die VOR der BÜ-Mitte liegende Grenze von BUE Gleisbezogener Gefahrraum maßgebend, auf dem das Objekt verortet wird. Die Gefahrraum-Grenze liegt damit in Fahrtrichtung HINTER dem Anrückmelder / Einschaltkontakt. Bei Ausbildung des Einschaltpunktes als Doppelschleife gelten hinsichtlich des maßgebenden Einschaltpunktes gemäß Einschaltstreckenberechnung folgende Unterschiede: Hersteller PintschBamag: maßgebend ist die Mitte der in Fahrtrichtung BÜ liegenden ERSTEN Schleife Hersteller Scheidt\u0026amp;Bachmann: maßgebend ist die Mitte der in Fahrtrichtung BÜ liegenden ZWEITE Schleife DB-Regelwerk 815.0033 in Verbindung mit Einschaltstreckenberechnung Die Angaben zur BÜ-Einschaltung beschränken sich gegenwärtig auf die Planungswerte mit Auswirkungen auf das Stellwerk.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="BUE_Einschaltung_Hp" type="nsBahnuebergang:CBUE_Einschaltung_Hp"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="BUE_Funktionsueberwachung"
+                           type="nsBahnuebergang:TCBUE_Funktionsueberwachung"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der Funktionsüberwachung, die der Ermittlung der Einschaltung zugrunde liegt. Es wird zwischen folgenden Funktionsüberwachungen unterschieden: Hp: Der BÜ ist durch Hauptsignal(e) gedeckt. Die Fahrtstellung erfolgt erst, wenn der BÜ geschlossen ist. Fü: Der BÜ wird zugbewirkt eingeschaltet, die Überwachung erfolgt durch einen Fahrdienstleiter im Stellwerk. Dieser kann im Störungsfall eingreifen. Üs: Der BÜ wird zugbewirkt eingeschaltet und vom Triebfahrzeugführer überwacht. Der Zustand des BÜ wird diesem durch Überwachungssignale angezeigt. Es gibt keine Verbindung zum Stellwerk. Kombinationen der Funtkionsüberwachungen sind möglich. Die ENUM-Werte \"Fue\", \"Ues\" und \"UesOE\" sollen künftig entfernt und daher nicht mehr verwendet werden. DB-Regelwerk 815.0032 1 (1) und (2) 819.1203 3 </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFahrbahn_Befestigung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TFahrbahn_Befestigung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBaumprofil">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMBaumprofil" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMGFR_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="automatisch"/>
+			      <xs:enumeration value="mit_Bediener"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TV_Max_Schiene">
+		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TV_Max_Strasse">
+		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
+	  </xs:simpleType>
+	  <xs:complexType name="TCSperrlaenge">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TSperrlaenge" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBUE_Sicherungsart">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMBUE_Sicherungsart" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TV_Min_Strasse">
+		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit">
+			      <xs:pattern value="5|10"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMFuss_Radweg_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Fuss_Radweg_abgesetzt"/>
+			      <xs:enumeration value="Fuss_Radweg_parallel"/>
+			      <xs:enumeration value="Fussweg_abgesetzt"/>
+			      <xs:enumeration value="Fussweg_parallel"/>
+			      <xs:enumeration value="Radweg_abgesetzt"/>
+			      <xs:enumeration value="Radweg_parallel"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCAusrichtung_Winkel">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TAusrichtung_Winkel" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TWinkel_Alpha">
+		    <xs:restriction base="xs:integer"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBUE_Strasse">
+		    <xs:list itemType="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:complexType name="TCLFUE_Impuls">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMLFUE_Impuls" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TBezeichnung_GFR_Element">
+		    <xs:restriction base="nsBasisTypen:TZeichenkette"/>
+	  </xs:simpleType>
+	  <xs:complexType name="TCVorgeschaltet">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TVorgeschaltet" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCAuto_Het">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFue_Schaltfall">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMFue_Schaltfall" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBUE_Funktionsueberwachung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:ENUMBUE_Funktionsueberwachung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCV_Max_Schiene">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TV_Max_Schiene" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBUE_Sicherungszeit">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBahnuebergang:TBUE_Sicherungszeit" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+</xs:schema>

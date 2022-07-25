@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:nsSignale="http://www.plan-pro.org/modell/Signale/1.9.0.2"
+           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.9.0.2"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2"
+           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.9.0.2"
+           xmlns:nsSignalbegriffe_Struktur="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1"
+           targetNamespace="http://www.plan-pro.org/modell/Signale/1.9.0.2">
+	  <xs:annotation>
+		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+
+Weitere Informationen zur Lizenz finden Sie auf
+http://www.dbnetze.com/planpro
+
+Inhalt der Datei:
+XML Schema für PlanPro Schnittstelle.
+
+Für Fragen zum Schema wenden Sie sich bitte an Herrn :
+
+Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)
+
+--------------------------------------------------------------------------------
+
+This Document is licensed under the open source license RailPL V1.0.
+
+More information about the license can be found on
+http://www.dbnetze.com/planpro
+
+Contents of the file:
+XML Schema for PlanPro interface.</xs:documentation>
+	  </xs:annotation>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1"
+              schemaLocation="Signalbegriffe_Struktur.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.9.0.2"
+              schemaLocation="Verweise.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2"
+              schemaLocation="BasisTypen.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.9.0.2"
+              schemaLocation="Basisobjekte.xsd"/>
+	  <xs:complexType name="CSignal_Signalbegriff">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Stellt eine Information optisch dar, die das Signal dem Triebfahrzeugführer übermitteln soll. Signalbegriffe werden im Signalbuch (Ril 301) durch eine Kurzbezeichnung (z. B. \"Zs 1\") und / oder durch eine Langbezeichnung (z. B. \"Ersatzsignal\") beschrieben. Diese und weitere feste Eigenschaften wie der Wertevorrat der anzeigbaren Symbole eines Signalbegriffs sind im Objekt Signalbegriff definiert, das mittels des Attributes Signalbegriff ID eingebunden wird. Anschaltdauer, Beleuchtung und Schaltbarkeit sind nicht fest, sondern wählbar an den Signalbegriff nach Signalbuch gekoppelt und so Eigenschaft des Objekts Signal_Signalbegriff. Ein Signal_Signalbegriff befindet sich immer in einem Signal Rahmen. Ausführliche Beschreibung s. Modellierung Signal DB-Regelwerk Ril 301, Planungsdaten: Sicherungstechnischer Lageplan, statische Eigenschaften: Signaltabelle 1, dynamische Eigenschaften: Signaltabelle 2. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Signal_Rahmen" type="nsVerweise:TCID_Signal_Rahmen" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den den Signalbegriff beinhaltenden Signal Rahmen. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Signal_Signalbegriff_Allg" type="nsSignale:CSignal_Signalbegriff_Allg"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="Signalbegriff_ID" type="nsSignalbegriffe_Struktur:TCSignalbegriff_ID"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Identifikator des einzubindenden Signalbegriffs. Der Wert für dieses Attribut ist aus einer vorgegebenen Liste (Objektnamen aus TCSignalbegriff) auswählbar. Die Verknüpfung unterscheidet sich von den sonst im Modell üblichen GUID-Verweisen, daher wurde bei der Bildung des Attributnamens auch von der Form \"ID_...\" abgewichen. DB-Regelwerk Signaltabelle 1, ist aus den Einträgen in Zeilen 14-27 zu erkennen. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CSignal_Befestigung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Konstruktionselement, das der baulichen Aufnahme eines oder mehrerer Signalrahmen dient. Die konkreten konstruktiven Merkmale sind in einer (oder im Bedarfsfall mehreren) Regelzeichnung(en) enthalten, auf die jeweils ein GUID-Verweis zeigt. Bei Sonderkonstruktionen wird die Regelzeichnung durch die zugehörigen Zulassungsdokumente ersetzt. Diese sind als Anhang mittels eines Bearbeitungsvermerks beizufügen. Signalbefestigungen können auch weitere Signalbefestigungen aufnehmen (z.B. trägt ein Signalausleger eine Arbeitsbühne). Einer Signalbefestigung ist mindestens ein Objekt Signal Rahmen oder Signal Befestigung zugeordnet. Ausführliche Beschreibung s. Modellierung Signal. DB-Regelwerk Regelzeichnungen </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Regelzeichnung" type="nsVerweise:TCID_Regelzeichnung" minOccurs="0"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein Objekt Regelzeichnung. Für Signale werden in der Regel die Regelzeichnungen der Gruppe S800x,yy verwendet, die die grundsätzliche Anordnung am Gleis beschreiben. Die angegebene Regelzeichnung wird mittels Parametern (z. B.: \"Bild\") weiter spezifiziert. Der Verweis kann mehrfach verwendet werden, wenn die Zuordnung mehrerer Regelzeichnungen explizit erforderlich ist. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Regelzeichnung_Vsig_Tafel" type="nsVerweise:TCID_Regelzeichnung"
+                           minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Regelzeichnung für die Vorsignaltafel.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Signal_Befestigung" type="nsVerweise:TCID_Signal_Befestigung"
+                           minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein zugehöriges Objekt Signal Befestigung. Zur Anwendung siehe Modellierung Signal. DB-Regelwerk Im bisherigen PT1 keine eindeutige Darstellung, oft aus den Einträgen in der Signaltabelle1, Zeilen 4-6, 10, 13 und 24-28 zu erkennen. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Signal_Befestigung_Allg" type="nsSignale:CSignal_Befestigung_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMSonstige_Zulaessige_Anordnung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Anordnung_des_Signals_rechts_am_Gleis"/>
+			      <xs:enumeration value="Anordnung_des_Signals_rechts_am_Gleis_ohne_Schachbretttafel"/>
+			      <xs:enumeration value="Nichtgeltung_fuer_Fahrten_auf_dem_Gegengleis"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCObere_Lichtpunkthoehe">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:TObere_Lichtpunkthoehe" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMFiktives_Signal_Funktion">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="FAP_Start"/>
+			      <xs:enumeration value="FAP_Ziel"/>
+			      <xs:enumeration value="Rangier_Start_Ziel_ohne_Signal"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="Zug_Start_Awanst"/>
+			      <xs:enumeration value="Zug_Start_Mittelweiche"/>
+			      <xs:enumeration value="Zug_Start_ohne_Signal"/>
+			      <xs:enumeration value="Zug_Ziel_Awanst"/>
+			      <xs:enumeration value="Zug_Ziel_ohne_Signal"/>
+			      <xs:enumeration value="Zug_Ziel_Strecke"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TRichtpunkt">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,16}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMSignal_Funktion">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Alleinstehendes_Zusatzsignal"/>
+			      <xs:enumeration value="andere"/>
+			      <xs:enumeration value="Ausfahr_Signal"/>
+			      <xs:enumeration value="BUE_Ueberwachungssignal"/>
+			      <xs:enumeration value="Vorsignal_Vorsignalwiederholer"/>
+			      <xs:enumeration value="Zug_Ziel_Signal"/>
+			      <xs:enumeration value="Ausfahr_Zwischen_Signal"/>
+			      <xs:enumeration value="Block_Signal"/>
+			      <xs:enumeration value="Deckungs_Signal"/>
+			      <xs:enumeration value="Einfahr_Ausfahr_Signal"/>
+			      <xs:enumeration value="Einfahr_Block_Signal"/>
+			      <xs:enumeration value="Einfahr_Signal"/>
+			      <xs:enumeration value="Gruppenausfahr_Gruppenzwischen_Signal"/>
+			      <xs:enumeration value="Gruppenausfahr_Signal"/>
+			      <xs:enumeration value="Gruppenzwischen_Signal"/>
+			      <xs:enumeration value="Nachrueck_Signal"/>
+			      <xs:enumeration value="Zugdeckungs_Signal"/>
+			      <xs:enumeration value="Zwischen_Signal"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CSignal_Fstr_Aus_Inselgleis">
+		    <xs:sequence>
+			      <xs:element name="ID_RaFahrt_Gleichzeitig_Verbot"
+                     type="nsVerweise:TCID_Signal_Gleisbezechnung"
+                     minOccurs="0"
+                     maxOccurs="unbounded">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Gleis_Bezeichnung des Inselgleises, von dem aus eine gleichzeitige Rangierfahrt aus dem Inselgleis untersagt ist. Das Attribut ist für beide Signale erforderlich, die das Inselgleis begrenzen. Bei Inselgleisen mit mehreren Signalen (z. B. bei Kurz-Lang-Einfahrten) sind alle relevanten Gleisbezeichnungen anzugeben. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ID_ZgFahrt_Gleichzeitig_Verbot"
+                     type="nsVerweise:TCID_Signal_Gleisbezechnung"
+                     minOccurs="0"
+                     maxOccurs="unbounded">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Gleis_Bezeichnung des Inselgleises, von dem aus eine gleichzeitige Zugfahrt aus dem Inselgleis untersagt ist. Das Attribut ist für beide Signale erforderlich, die das Inselgleis begrenzen. Bei Inselgleisen mit mehreren Signalen (z. B. bei Kurz-Lang-Einfahrten) sind alle relevanten Gleisbezeichnungen anzugeben. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCDunkelschaltung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCGeschaltet">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCHoehe_Fundamentoberkante">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:THoehe_Fundamentoberkante" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TRichtpunktentfernung">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="[1-9][0-9]{0,1}|[1-4][0-9]{2}|500"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCZs2_Ueberwacht">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCStreuscheibe_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMStreuscheibe_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSignalsicht_Soll">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:TSignalsicht_Soll" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTunnelsignal">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMTunnelsignal" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TObere_Lichtpunkthoehe">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="0\.(22[5-9]|2[3-9][0-9]|[3-9][0-9]{2})|([1-9]|1[0-4])\.[0-9]{3}|15.000"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CSignal_Befestigung_Allg">
+		    <xs:sequence>
+			      <xs:element name="Befestigung_Art" type="nsSignale:TCBefestigung_Art" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschreibung der Signalbefestigung, um auch ohne Regelzeichnung die grundsätzliche Art erkennen zu können. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Im bisherigen PT1 keine eindeutige Darstellung, in der Regel aus den Einträgen in der Signaltabelle 1 zu erkennen. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Hoehe_Fundamentoberkante" type="nsSignale:TCHoehe_Fundamentoberkante"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Tatsächliche Höhe der Fundamentoberkante in Bezug zur Schienenoberkante (SO). Die Höhe der Fundamentoberkante ist die Differenz der absoluten Höhen von der Schienenoberkante der nichtüberhöhten Schiene an dem Punkt, der von der Senkrechten auf die Gleisachse durch den Fundamentmittelpunkt bestimmt wird und der Fundamentoberkante (ohne Signalaufbau). Bei positiven Werten befindet sich die Fundamentoberkante unterhalb der Schienenoberkante (Standardanordnung). Übliche Werte sind 100 mm und 700 mm. Das Attribut ist für Fundamente immer anzugeben, für andere Befestigungstypen ist es gegenstandslos. Die hier angegebene Höhe kann von der der Regelzeichnung abweichen, in diesem Fall gilt die Regelzeichnung nur für die anderen konstruktiven Merkmale. Die Angabe erfolgt im Modell in Meter mit drei Nachkommastellen. DB-Regelwerk Im bisherigen PT1 keine eindeutige Darstellung, in der Regel aus den Einträgen in der Signaltabelle1, Zeilen 4-6 zu erkennen.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[-1.250..1.250], 3 Nachkommastellen</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Obere_Lichtpunkthoehe" type="nsSignale:TCObere_Lichtpunkthoehe"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezugshöhe des maßgebenden Lichtpunktes über Schienenoberkante (SO). DB-Regelwerk Planungsdaten: Signaltabelle 1, Zeile 3; wird jedoch im Modell in Meter (mit drei Nachkommastellen) angegeben. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [0.225..15.000], immer drei Stellen nach dem Dezimaltrennzeichen </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCGegengleis">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CSignal_Real">
+		    <xs:sequence>
+			      <xs:element name="Geltungsbereich" type="nsSignale:TCGeltungsbereich" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Geltungsbereich, dem das Signal zugeordnet wird (DS/DV). Die Angabe wird zunächst nur zur Unterscheidung Sh 1/Ra 12 vorgesehen.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Signal_Befestigungsart" type="nsSignale:TCSignal_Befestigungsart"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Grundsätzliche Art der Befestigung eines Signals. Einzelne Elemente des Signals (z. B. ein zum Hauptsignal gehörendes, nicht am Hauptsignalmast angebrachtes Zusatzsignal) können von der grundsätzlichen Befestigungsart abweichen, die exakte Konstruktion des Gesamtsignals ist im Modell in den Instanzen des Objekts Signal Befestigung dargestellt. DB-Regelwerk Signaltabelle 1, Zeile 12 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Signal_Real_Aktiv" type="nsSignale:CSignal_Real_Aktiv" minOccurs="0"
+                     maxOccurs="1"/>
+			      <xs:element name="Signal_Real_Aktiv_Schirm" type="nsSignale:CSignal_Real_Aktiv_Schirm"
+                     minOccurs="0"
+                     maxOccurs="1"/>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCDurchfahrt">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMDurchfahrt" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSignalsystem">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMSignalsystem" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TSignalsicht_Soll">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="[1-9][0-9]{0,1}|[1-4][0-9]{2}|500"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCSignal_Befestigungsart">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMSignal_Befestigungsart" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFiktives_Signal_Funktion">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMFiktives_Signal_Funktion" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCAnschaltdauer">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMAnschaltdauer" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CSignal_Real_Aktiv_Schirm">
+		    <xs:sequence>
+			      <xs:element name="Dunkelschaltung" type="nsSignale:TCDunkelschaltung" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zusatzangabe, ob ein Schirm-Signal dunkel geschaltet werden kann. Die Dunkelschaltung ist z. B. bei Strecken mit LZB-geführten Zugfahrten und bei Schnittstellen zu SIL 2 - ESTW relevant. Die Angabe ist bei Haupt- und Vorsignalen erforderlich, nicht jedoch für Sperrsignale. Wertzuordnung: true - Signal muss dunkel geschaltet werden können, false - Signal muss nicht dunkel geschaltet werden können. DB-Regelwerk Planungsdaten: Signaltabelle 1, Zeile 40</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Richtpunkt" type="nsSignale:TCRichtpunkt" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Punkt, auf den das Signal in besonderen Fällen ausgerichtet werden soll. Im Allgemeinen werden Signale auf einen Punkt ausgerichtet, der sich in der Richtpunktentfernung vor dem Signal in dem Gleis befindet, dem das Signal zugeordnet ist. In diesem Fall wird das Attribut nicht befüllt. In besonderen Fällen (z.B. Gleisverzeigungen oder extreme Kurvenlagen im Annäherungsbereich zum Signal) kann es jedoch erforderlich sein, explizit einen Richtpunkt außerhalb dieses Gleises festzulegen. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Richtpunktentfernung" type="nsSignale:TCRichtpunktentfernung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Entfernung des Ausrichtpunktes eines Schirm-Signals. Beschreibt den Schnittpunkt der Sichtachse der Signaloptiken mit dem Gleis, dem das Signal zugeordnet ist, die Angabe erfolgt in Meter. In der Regel werden dafür 500 m für Haupt- und Mehrabschnittssignale und 300 m für Vorsignale und Vorsignalwiederholer verwendet. Entsprechend der Funktion des Signals und den örtlichen Bedingungen können jedoch auch andere Werte verwendet werden. DB-Regelwerk Planungsdaten: Signaltabelle 1, Zeile 8 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..500] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Signal_Art" type="nsSignale:TCSignal_Art" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ausbildung des Signalschirms eines Schirm-Signals im Sicherungstechnischen Lageplan und in der Außenanlage. Dieses Attribut ermöglicht bei allen Schirmsignalen (s. Modellierung Signal), die grundsätzliche Art des Signals zu erkennen, ohne die zugehörige Regelzeichnung zu lesen. Eine Ausnahme bildet der ENUM-Wert \"andere\", hier muss die Art des Signals aus der Regelzeichnung entnommen werden. Dieser Wert wird bei allen realen Signalen verwendet, die keine Schirmsignale sind. Unter Mehrabschnittssignal wird dabei jegliche Kombination eines Hauptsignal- mit einem Vorsignalbegriff verstanden, unabhängig von der konkreten technischen Ausführung. So werden auch Signale des H/V-Signalsystems, die am Mast des Hauptsignals ein Vorsignal tragen, als Mehrabschnittssignale bezeichnet. Die Einfügung der Silbe -sperr- bei Haupt- und Mehrabschnittssignalen bedeutet, dass an diesen Signalen zusätzlich ein Rangierfahrtsignal angebracht ist. Dabei ist es irrelevant, ob dies in einem eigenen Bauteil am Signal erfolgt oder ob die Optiken im Signalschirm des Haupt- oder Mehrabschnittssignalen untergebracht sind. DB-Regelwerk Planungsdaten: Sicherungstechnischer Lageplan </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Signalsystem" type="nsSignale:TCSignalsystem" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zugehörigkeit eines Schirm-Signals zu einem der Signalsysteme. Dieses Attribut wird nur bei Haupt-, Vor- und Mehrabschnittssignalen sowie BÜ-Signalen belegt. DB-Regelwerk 301.0101-04, 301.0201, Planungsdaten: Sicherungstechnischer Lageplan, mittelbar aus den Angaben in den Signaltabellen 1 und 2 zu erkennen. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:PlanningStage>EP</ppi:PlanningStage>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Streuscheibe_Art" type="nsSignale:TCStreuscheibe_Art" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art und Bezeichnung der Streuscheibe eines Schirm-Signals, die der Signalsichtbestimmung zugrunde liegt. DB-Regelwerk Planungsdaten: Signaltabelle 1, Zeile 9 (erster Eintrag) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Streuscheibe_Betriebsstellung"
+                     type="nsSignale:TCStreuscheibe_Betriebsstellung"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung der Stellung der Streuscheibe eines Schirm-Signals, die der Signalsichtbestimmung zugrunde liegt. Bei der Betriebsstellung \"...gw\" ist die jeweilige Streuscheibe gewendet. DB-Regelwerk Planungsdaten: Signaltabelle 1, Zeile 9 (zweiter Eintrag) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCGeltungsbereich">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMGeltungsbereich" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMAuto_Einstellung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="SB"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="ZL"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCRangierstrasse_Restaufloesung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMSignal_Befestigungsart">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Bahnsteig"/>
+			      <xs:enumeration value="Fundament"/>
+			      <xs:enumeration value="Konstruktionsteil"/>
+			      <xs:enumeration value="OL_Kettenwerk"/>
+			      <xs:enumeration value="OL_Mast"/>
+			      <xs:enumeration value="Prellbock"/>
+			      <xs:enumeration value="Signalausleger"/>
+			      <xs:enumeration value="Signalbruecke"/>
+			      <xs:enumeration value="Sonderkonstruktion"/>
+			      <xs:enumeration value="Dach"/>
+			      <xs:enumeration value="Mast"/>
+			      <xs:enumeration value="Pfahl"/>
+			      <xs:enumeration value="Wand"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCSignal_Funktion">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMSignal_Funktion" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSignal_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMSignal_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMBefestigung_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Fundament"/>
+			      <xs:enumeration value="Pfosten"/>
+			      <xs:enumeration value="Schienenfuss"/>
+			      <xs:enumeration value="Mast"/>
+			      <xs:enumeration value="Rahmen"/>
+			      <xs:enumeration value="Signal_Anordnung_Arbeitsbuehne"/>
+			      <xs:enumeration value="Signal_Anordnung_Mast"/>
+			      <xs:enumeration value="Signal_Anordnung_Sonstige"/>
+			      <xs:enumeration value="Signalausleger"/>
+			      <xs:enumeration value="Signalbruecke"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCAuto_Einstellung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMAuto_Einstellung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="THoehe_Fundamentoberkante">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="(-?((1\.(250|2[0-4][0-9]|[01][0-9]{2}))|(0\.([1-9][0-9]{2}|0[0-9][1-9]|0[1-9]0))))|0\.000"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMRahmen_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Bezeichnungsschild"/>
+			      <xs:enumeration value="Blechtafel"/>
+			      <xs:enumeration value="Keramikkoerper"/>
+			      <xs:enumeration value="Schirm"/>
+			      <xs:enumeration value="Zusatzanzeiger"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CSignal_Fstr_S">
+		    <xs:sequence>
+			      <xs:element name="Gegengleis" type="nsSignale:TCGegengleis" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Signal steht am Gegengleis. Das Gleis, das auf zweigleisiger, freier Strecke entgegen der gewöhnlichen Fahrtrichtung befahren wird (bei den EdB das linke Gleis), wird als Gegengleis bezeichnet. Das Attribut wird nur für (reale und fiktive) Signale an den Streckengleisen mit der Betriebsform \"zweigleisiger Betrieb\" ausgefüllt. Erfüllt ein Ausfahrziel die Bedingung Gegengleis = true, ist für die Zulassung einer Zugfahrt auf dieses Gleis ein Gegengleisanzeiger erforderlich. Im Beispiel sind die (realen) Signale 13 und AA sowie die fiktiven Signale HIDOG und DOHIG Signale, die am Gegengleis stehen. Media:Signale am Gegengleis.svg Wertzuordnung: true - Signal steht an einem Gegengleis, false - Signal steht nicht an einem Gegengleis. Hinweis: Dieses Attribut darf nicht verwechselt werden mit dem Attribut Wirkrichtung, das sich auf die topologische Richtung des Gleises bezieht. DB-Regelwerk Planungsdaten: Sicherungstechnischer Lageplan / BÜ-Lageplan </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ID_Anrueckverschluss" type="nsVerweise:TCID_Schaltmittel_Zuordnung"
+                     minOccurs="0"
+                     maxOccurs="unbounded">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf alle Gleisschaltmittel, bei dessen Befahrung der Anrückverschluss wirkt. Der Anrückverschluss eines Signals wird benötigt zur Stellbarkeit und Löschung eines Ersatzsignals, zur Verhinderung der Fahrstraßenhilfsauflösung, wenn sich ein Zug diesem Signal nähert. Das Gleisschaltmittel ist in der Regel ein Freimeldeabschnitt. Das Signal ist in der Regel ein Einfahrsignal. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ID_Zweites_Haltfallkriterium"
+                     type="nsVerweise:TCID_Zweites_Haltfallkriterium"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein Gleisschaltmittel, dessen Befahrung als zweites Haltfallkriterium dient.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMSignalsystem">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Hl"/>
+			      <xs:enumeration value="HV"/>
+			      <xs:enumeration value="Ks"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="SV"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMGeltungsbereich">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="DS"/>
+			      <xs:enumeration value="DV"/>
+			      <xs:enumeration value="S-Bahn B"/>
+			      <xs:enumeration value="S-Bahn HH"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCPZB_Schutzstrecke_Soll">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:TPZB_Schutzstrecke_Soll" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBeleuchtet">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMBeleuchtet" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CSignal_Fstr">
+		    <xs:sequence>
+			      <xs:element name="Besetzte_Ausfahrt" type="nsSignale:TCBesetzte_Ausfahrt" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob für das Startsignal im Stumpfgleis eine Besetzte Ausfahrt geplant ist (true) oder nicht (false). Im Planungs- bzw. Projektierungsfall \"Besetzte Ausfahrt\" müssen die an das Stumpfgleis anschließenden Weichen oder Kreuzungen nicht freigemeldet sein, wenn sie durch die zuletzt in das Stumpfgleis eingestellte Fahrstraße kontinuierlich besetzt wurden und besetzt geblieben sind. DB Regelwerk Lastenheft ESTW F1, Abschnitt 4.3.3</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="DA_Manuell" type="nsSignale:TCDA_Manuell" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gibt an, ob eine manuelle Durchrutschwegauflösung möglich ist. Die manuelle Durchrutschwegauflösung ist als Möglichkeit zur Regelbedienung zu planen. Sie ist nicht mit der Hilfsauflösung zu verwechseln, die als Grundfunktion keiner Planung bedarf. Im herkömmlichen PT1 Inhalt der Durchrutschwegtabelle, gilt jedoch immer für alle Durchrutschwege eines Signals einheitlich. Wertzuordnung: true - manuelle Durchrutschwegauflösung ist möglich, false - manuelle Durchrutschwegauflösung ist nicht möglich. DB-Regelwerk Durchrutschwegtabelle, Spalte 15 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Durchfahrt" type="nsSignale:TCDurchfahrt" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gibt an, ob und wie Weiterfahren ohne Halt über das Zielsignal eines Fahrweges hinaus gestattet sind. Ist die Durchfahrt mittels überstellten Zugstraßen verboten, mittels einzeln angewählter Zugstraßen auf dieses Signal und von diesem Signal aber zu gestatten, so ist der Wert \"erlaubt\" zu verwenden. In diesem Fall wird allerdings kein Objekt Fstr Aneinander über dieses Signal angelegt. Ist betrieblich die Weiterfahrt einer Zugfahrt als Rangierfahrt zu gestatten (diese Änderung der Ril 408 ist noch nicht Bestandteil des Lastenheftes ESTW), so ist der Wert \"nur_mit_Sh1\" zu verwenden. Technisch schließt eine Zugfahrt mit Durchrutschweg D0 an, das Signal zeigt Hp0 und Sh1. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. Die Symbolik im Sicherungstechnischen Lageplan gemäße 819.9002 (11) ist für diesen Sachverhalt nicht ausreichend. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>erlaubt</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ID_RaZiel_Erlaubnisabhaengig" type="nsVerweise:TCID_Block_Element"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Eine Rangierstraße mit diesem Zielsignal ist nur einstellbar, wenn die Erlaubnis des Streckenblocks in Richtung Strecke zeigt. Abhängigkeit einer auf ein Signal zuführenden Rangierstraße von der Stellung der Erlaubnis einer Block Anlage. Das Attribut wird nur dann befüllt, wenn eine Abhängigkeit besteht. DB-Regelwerk Planungsdaten: Rangierstraßentabelle, Spalte 7</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Rangierstrasse_Restaufloesung"
+                     type="nsSignale:TCRangierstrasse_Restaufloesung"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Auflösung einer nicht angefahrenen Rangierstraße bei einer wendenden Rangierfahrt über mehrere Rangierstraßen. Es handelt sich hierbei um den durch die Planung festzulegenden Fall 2 der Rangierstraßenrestauflösung (RRAU) des Lastenheftes für das Elektronische Stellwerk, Teilheft F1. Die Fälle 1 RRAU und 3 RRAU gemäß Lastenheft sind Grundfunktion eines ESTW und bedürfen keiner Planung. Der Eintrag im Attribut Rangierstrasse_Restauflösung hat auf diese beiden Fälle keine Auswirkung. Das Attribut wird in den Signalen gefüllt, an dem nicht angefahrene, aufzulösende Rangierstraßen beginnen. Wertzuordnung: true – Rangierstraßenrestauflösung erlaubt, false – Rangierstraßenrestauflösung verboten. DB-Regelwerk Planungsdaten: Rangierstraßentabelle, Spalte 12 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCRahmen_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMRahmen_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CSignal_Rahmen">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Fiktive Signale haben keinen Signalrahmen, da sie keinen Signalbegriff zeigen können. Ein oder mehrere Signalrahmen bilden ein Signal. Die Gruppierung von Signalbegriffen innerhalb eines Signals zu Signalrahmen wird anhand der konstruktiven Gestaltung vorgenommen, z.B. werden alle Signalbegriffe des Hauptsignalschirms oder alle Signalbegriffe eines Zusatzanzeigers jeweils zu einem Signalrahmen zusammengefasst. Kann die Anzahl oder Art der Signalbegriffe eines Signalrahmens in Abhängigkeit vom betrieblichen Zustand geändert werden, so wird dieser als schaltbar bezeichnet, andernfalls als fest. Im LST-Datenmodell ist diese Eigenschaft als Attribut zu den Signalbegriffen definiert; ein Signalrahmen ist danach genau dann schaltbar, wenn mindestens eines der enthaltenen Signalbegriffe schaltbar ist. Typische schaltbare Signalrahmen sind der Signalschirm eines Mehrabschnittssignals, das Lichtsignal eines Zusatzanzeigers und das Form- oder Lichtsignal eines Weichensignals. Typische feste Signalrahmen sind das Mastschild eines Hauptsignals, das Formsignal eines Zusatzanzeigers und die Haltetafel. Über den Signalrahmen erfolgt, sofern dies geplant ist, die Zuordnung von Signalbegriffen eines nachgeordneten Signals zu einem anderen Signal ohne Bezug zur Fahrstraße, siehe dazu ID Signal Nachordnung Ausführliche Beschreibung s. Modellierung Signal. DB-Regelwerk Planungsdaten: im bisherigen PT1 ohne eindeutige Darstellung. In der Regel aus den Angaben in der Signaltabelle 1 zu erkennen. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Signal" type="nsVerweise:TCID_Signal" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das zugehörige Objekt Signal.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Signal_Befestigung" type="nsVerweise:TCID_Signal_Befestigung"
+                           minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein zugehöriges Objekt Signal Befestigung. Zur Anwendung siehe Modellierung Signal. DB-Regelwerk Im bisherigen PT1 keine eindeutige Darstellung, oft aus den Einträgen in der Signaltabelle1, Zeilen 4-6, 10, 13 und 24-28 zu erkennen. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Signal_Nachordnung" type="nsVerweise:TCID_Signal" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung von nachgeordneten Signalen. Die Zuordnung von Signalbegriffen eines nachgeordneten Signals zu einem anderen Signal ohne Bezug zur Fahrstraße, wie bei Signalfahrtanzeigern, Signalhaltmeldern, Zugabfertigungssignalen Zp 9/10, erfolgt über ID_Signal_Nachordnung. Signalbegriffe nachgeordneter Signale, die dabei n (n\u0026gt;1) Signalen zugeordnet sind, erhalten n logische Signalrahmen mit den jeweils zutreffenden (ggf. identischen) Signalbegriffen, die je nach Hersteller mit n physischen Signalanzeigern (Signal_Befestigungen) oder gemeinsam in einem physischen Signalanzeiger realisiert werden. Zur ausführlichen Beschreibung der Modellierung eines Signals s. Modellierung Signal. DB-Regelwerk Sicherungstechnischer Lageplan, BÜ-Lageplan; oft als Bestandteil der Bezeichnung des Signals </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Rahmen_Art" type="nsSignale:TCRahmen_Art" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschreibung des Signalrahmens, um auch ohne Regelzeichnung die grundsätzliche Art erkennen zu können. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Im bisherigen PT 1 keine eindeutige Darstellung, in der Regel aus den Einträgen in der Signaltabelle1 zu erkennen. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CSignal_Signalbegriff_Allg">
+		    <xs:sequence>
+			      <xs:element name="Anschaltdauer" type="nsSignale:TCAnschaltdauer" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anschaltdauer des Signalbegriffes. Eingetragen wird bei Ersatzsignal als Standardwert \"Z\" (zeitgesteuert - einheitlich 90 s); bei technisch abhängigen Signalbegriffen (z. B. Fahrtbegriffen) ein \"T\" sowie für Grundstellungsbegriffe ein \"G\". Es ist dabei unerheblich, wodurch die Abschaltung erzielt wird, z.B. sind auch mechanische Vorgänge möglich. Deswegen ist die Ausrichtung des Signalbegriffs mit zu betrachten, so leuchtet zwar ein Weichenlagemelder (z. B. Wn 1) ständig, der Signalbegriff ist aber nur angeschaltet, wenn er in der Richtung des Weichenanfangs zeigt. Weichenlagemelder haben deshalb die Anschaltdauer \"T\". DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>T</ppi:ProposedValue>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Beleuchtet" type="nsSignale:TCBeleuchtet" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gibt an, ob ein beleuchtbarer Signalbegriff beleuchtet wird. Als \"Beleuchtet\" gilt, wenn zur besseren Erkennbarkeit eines Signalbegriffs eine zusätzliche, signaltechnisch nicht überwachte Lichtquelle angebracht ist. Das Attribut ist dann und nur dann erforderlich, wenn das Attribut \"Beleuchtbar\" im zugehörigen Signalbegriff den Wert \"true\" hat. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>nein</ppi:ProposedValue>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Geschaltet" type="nsSignale:TCGeschaltet" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gibt an, ob ein schaltbarer Signalbegriff durch eine Außenelement-Ansteuerung den betrieblichen Erfordernissen am Signal aktiv angepasst werden kann. Das Attribut ist dann und nur dann erforderlich, wenn das Attribut \"Schaltbar\" im zugehörigen Signalbegriff den Wert \"true\" hat. Wertzuordnung: true - Signalbegriff ist (schaltbar und) geschaltet, false - Signalbegriff ist (schaltbar, aber) nicht geschaltet. Beispiel: Zs 3 ist grundsätzlich schaltbar (Schaltbar == \"true\"). Bei Ausführung aus Lichtsignal ist Geschaltet == \"true\", bei Ausführung als Blechtafel ist Geschaltet == \"false\". DB-Regelwerk Im bisherigen PT 1 ohne eindeutige Darstellung, oft aus dem Symbol des Signals im Sicherungstechnischen Lageplan / BÜ-Lageplan zu erkennen.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Zs2_Ueberwacht" type="nsSignale:TCZs2_Ueberwacht" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob die Anschaltung von Zs 2 zu überwachen ist (true) oder nicht (false). Die Angabe erfolgt nur für den Signalbegriff Zs 2.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>true</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMBeleuchtet">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="angestrahlt"/>
+			      <xs:enumeration value="innenbeleuchtet"/>
+			      <xs:enumeration value="nein"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCStreuscheibe_Betriebsstellung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMStreuscheibe_Betriebsstellung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBesetzte_Ausfahrt">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TSignalsicht_Mindest">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="[1-9][0-9]{0,1}|[1-2][0-9]{2}|300"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCSonstige_Zulaessige_Anordnung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMSonstige_Zulaessige_Anordnung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TPZB_Schutzstrecke_Soll">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="2[1-9][0-9]|[34][0-9]{2}|5[0-4][0-9]|550"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCRichtpunktentfernung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:TRichtpunktentfernung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSignalsicht_Mindest">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:TSignalsicht_Mindest" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBefestigung_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:ENUMBefestigung_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCRichtpunkt">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:TRichtpunkt" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CSignal_Real_Aktiv">
+		    <xs:sequence>
+			      <xs:element name="Auto_Einstellung" type="nsSignale:TCAuto_Einstellung" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zusätzliche Angabe zu Aktiven Signalen, die sich selbsttätig stellen können. Dabei wird unterschieden zwischen Signalen mit Signalselbststellbetrieb (Sb) und in der Zuglenkung (ZL). DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung, mittelbar aus Angaben in der Zugstraßentabelle zu erkennen. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ID_Stellelement" type="nsVerweise:TCID_Stellelement" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Objekt Stellelement zur Zusammenfassung von Eigenschaften der Objekte BUE Schnittstelle, PZB Element, Schluesselsperre, Signal, W Kr Gsp Element. Das Stellelement enthält Informationen über den energetischen und logischen Anschluss der Objekte. Für das PZB Element ist der Verweis nur zu füllen, wenn das PZB_Element eine GÜ ist. DB-Regelwerk Bisher ohne eindeutige Darstellung </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Signal_Funktion" type="nsSignale:TCSignal_Funktion" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der betrieblichen Funktion eines Aktiven Signals für Zugfahrten. Aktive Signale sind Signale, an denen mindestens ein Signalbegriff schaltbar ist. Hauptsignale und Mehrabschnittssignale werden dabei detailliert in Einfahr-, Ausfahr-, Zwischen-, Nachrück-, Block-, Deckungs-, Zugdeckungs- oder Gruppensignale bzw. Kombinationen aus diesen betrieblichen Funktionen unterteilt. Von den anderen aktiven Signalen wird nur noch das Zugzielsignal (z.B. hohes Sperrsignal als Zielsignal bei Zugfahrten) mit einem eigenen Attribut hervorgehoben, alle weiteren Aktiven Signale werden unter \"andere\" zusammengefasst. DB-Regelwerk 301, 819.20, Planungsdaten: im bisherigen PT 1 nur bei Signalen im Geltungsbereich der Ril 819.20, Tabelle für Signalabstände und Schutzstrecken, sonst ohne eindeutige Darstellung. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:PlanningStage>EP</ppi:PlanningStage>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Signalsicht_Erreichbar" type="nsSignale:TCSignalsicht_Erreichbar"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Tatsächlich erreichbare Signalsicht innerhalb der Sollsignalsicht. Die Signalsicht beschreibt die Entfernung, ab der ein Aktives Signal eindeutig erkennbar sein soll (Sollsignalsicht) bzw. muss (Mindestsignalsicht), so dass vom Triebfahrzeugführer grundsätzliche Handlungsweisen daraus ableitbar sind. Die erreichbare Signalsicht darf unter bestimmten Voraussetzungen kleiner als die Sollsignalsicht, jedoch nur mit besonderen Maßnahmen kleiner als die Mindestsignalsicht sein. Die Signalsicht ist an das gesamte Signal gekoppelt, das bedeutet jedoch nicht, dass jeder Signalbegriff von Beginn der Signalsicht an vollständig gelesen werden muss - die Festlegungen dafür finden sich in den zugehörigen detaillierten Regelzeichnungen oder anderen Zulassungsdokumenten. DB-Regelwerk 819.02, 819.03, Planungsdaten: im bisherigen PT1 ohne eindeutige Darstellung, ergänzt die Einträge in Zeile 7 der Signaltabelle 1 um den Wert der am konkreten Ort erreichbaren Signalsicht </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..500] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Signalsicht_Mindest" type="nsSignale:TCSignalsicht_Mindest" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Mindestsignalsicht gemäß örtlich zugelassener Geschwindigkeit vor dem Signal nach 6,75 s-Regel. Die Signalsicht beschreibt die Entfernung, ab der ein Aktives Signal eindeutig erkennbar sein soll (Sollsignalsicht) bzw. muss (Mindestsignalsicht), so dass vom Triebfahrzeugführer grundsätzliche Handlungsweisen daraus ableitbar sind. Die erreichbare Signalsicht darf nur mit zusätzlichen Maßnahmen kleiner als die Mindestsignalsicht sein. Die Signalsicht ist an das gesamte Signal gekoppelt, das bedeutet jedoch nicht, dass jeder Signalbegriff von Beginn der Signalsicht an vollständig gelesen werden muss - die Festlegungen dafür finden sich in den zugehörigen detaillierten Regelzeichnungen oder anderen Zulassungsdokumenten. DB-Regelwerk 819.02, 819.03, Planungsdaten: entspricht dem zweiten (eingeklammerten) Eintrag in Zeile 7 der Signaltabelle 1. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..300] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Signalsicht_Soll" type="nsSignale:TCSignalsicht_Soll" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Sollsignalsicht gemäß örtlich zugelassener Geschwindigkeit vor dem Signal. Die Signalsicht beschreibt die Entfernung, ab der ein Aktives Signal eindeutig erkennbar sein soll (Sollsignalsicht) bzw. muss (Mindestsignalsicht), so dass vom Triebfahrzeugführer grundsätzliche Handlungsweisen daraus ableitbar sind. Die erreichbare Signalsicht darf unter bestimmten Voraussetzungen kleiner als die Sollsignalsicht sein. Die Signalsicht ist an das gesamte Signal gekoppelt, das bedeutet jedoch nicht, dass jeder Signalbegriff von Beginn der Signalsicht an vollständig gelesen werden muss - die Festlegungen dafür finden sich in den zugehörigen detaillierten Regelzeichnungen oder anderen Zulassungsdokumenten. DB-Regelwerk 819.02, 819.03, Planungsdaten: entspricht dem ersten Eintrag in Zeile 7 der Signaltabelle 1. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:PlanningStage>EP</ppi:PlanningStage>
+                     <ppi:Patternbeschreibung> [1..500] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Sonstige_Zulaessige_Anordnung"
+                     type="nsSignale:TCSonstige_Zulaessige_Anordnung"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anordnung von Aktiven Signalen bei mehreren parallelen Strecken oder beim Zusammenlauf von Strecken. DB-Regelwerk 819.0202 A03, Planungsdaten: Signaltabelle 1, Zeile 2. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Tunnelsignal" type="nsSignale:TCTunnelsignal" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Enthält zusätzliche Angaben zu Aktiven Signalen mit schaltbaren Signalbegriffen bezüglich der Nachtschaltung. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CSignal_Fank_Zuordnung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Abbildung des Fahrtankünders (Weißes Dreieck) sowie Zuordnung der Startsignale, für die eine Fahrtankündigung erfolgen soll. Ein physischer Fahrtankünder (Anzeiger) wird als Signal abgebildet, wobei hierbei nur die Attributgruppen Bezeichnung sowie Signal_Real zu nutzen sind (nicht: Signal_Real_Aktiv, da kein Anschluss mittels ID_Stellelement an ein Stellwerk). Erfolgt die Fahrtankündigung ausschließlich auf mobilen Endgeräten, so entfällt das Anlegen des Signals für den Fahrtankünder. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Signal_Fank" type="nsVerweise:TCID_Signal_Fank" minOccurs="0"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den oder die Fahrtankünder (\"Weißes Dreieck\"), durch die eine Fahrtstellung der unter ID_Signal_Start angegebenen Startsignale angekündigt werden soll. Der Verweis entfällt, wenn die Anzeige ausschließlich auf mobilen Endgeräten erfolgt.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Signal_Start" type="nsVerweise:TCID_Signal_Start" minOccurs="1"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Startsignal bzw. die Startsignale, deren Fahrtstellung angekündigt werden soll.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSignalsicht_Erreichbar">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsSignale:TSignalsicht_Erreichbar" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CSignal_Fiktiv">
+		    <xs:sequence>
+			      <xs:element name="Auto_Einstellung" type="nsSignale:TCAuto_Einstellung" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zusätzliche Angabe zu Aktiven Signalen, die sich selbsttätig stellen können. Dabei wird unterschieden zwischen Signalen mit Signalselbststellbetrieb (Sb) und in der Zuglenkung (ZL). DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung, mittelbar aus Angaben in der Zugstraßentabelle zu erkennen. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Fiktives_Signal_Funktion" type="nsSignale:TCFiktives_Signal_Funktion"
+                     minOccurs="1"
+                     maxOccurs="unbounded">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Funktion (Verwendungsmöglichkeit) eines fiktiven Signals. Sollen an einem Punkt mehrere Funktionen realisiert werden, so muss für jede Funktion je ein fiktives Signal an diesem Punkt vorgesehen werden. DB-Regelwerk Fiktive Signale sind als Start- oder Zielpunkte in den Zug- oder Rangierstraßentabellen erkennbar. Ihre Funktion ist nicht unmittelbar dargestellt, sie ergibt sich aus der Verwendung.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMStreuscheibe_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="LED"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="HRL"/>
+			      <xs:enumeration value="HG"/>
+			      <xs:enumeration value="HN"/>
+			      <xs:enumeration value="ORL"/>
+			      <xs:enumeration value="VRL"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMSignal_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="andere"/>
+			      <xs:enumeration value="Hauptsignal"/>
+			      <xs:enumeration value="Hauptsperrsignal"/>
+			      <xs:enumeration value="Mehrabschnittssignal"/>
+			      <xs:enumeration value="Mehrabschnittssperrsignal"/>
+			      <xs:enumeration value="Sperrsignal"/>
+			      <xs:enumeration value="Vorsignal"/>
+			      <xs:enumeration value="Vorsignalwiederholer"/>
+			      <xs:enumeration value="Zugdeckungssignal"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMTunnelsignal">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="nein"/>
+			      <xs:enumeration value="ohne_Dauernachtschaltung"/>
+			      <xs:enumeration value="mit_Dauernachtschaltung"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMDurchfahrt">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="erlaubt"/>
+			      <xs:enumeration value="nur_mit_Sh1"/>
+			      <xs:enumeration value="verboten"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMStreuscheibe_Betriebsstellung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">HGx_gw=Ergänzung gewendete Streuscheiben (Information zunehmend von SBI gefordert)</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="HG1"/>
+			      <xs:enumeration value="HG1_gw"/>
+			      <xs:enumeration value="HG2"/>
+			      <xs:enumeration value="HG2_gw"/>
+			      <xs:enumeration value="HG3"/>
+			      <xs:enumeration value="HG3_gw"/>
+			      <xs:enumeration value="HG4"/>
+			      <xs:enumeration value="HG4_gw"/>
+			      <xs:enumeration value="HL"/>
+			      <xs:enumeration value="HR"/>
+			      <xs:enumeration value="OL"/>
+			      <xs:enumeration value="OR"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="VL"/>
+			      <xs:enumeration value="VR"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMAnschaltdauer">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="G"/>
+			      <xs:enumeration value="T"/>
+			      <xs:enumeration value="Z"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCDA_Manuell">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TSignalsicht_Erreichbar">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="[1-9][0-9]{0,1}|[1-4][0-9]{2}|500"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CSignal">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Technische, punktförmig verortete Einrichtung der Eisenbahninfrastruktur, die als Teil der Außenanlage einer Außenelement-Ansteuerung mit statischen oder dynamischen Signalbildern Anweisungen zur Fahrweise oder andere Verhaltensvorschriften an den Triebfahrzeugführer übermittelt oder als Teil der Innenanlage einer Außenelement-Ansteuerung mittels eines Bedienpunkts zur Behandlung von Fahrwegen als Start- oder Zielsignal dient. Steht ein Signal an einer Grenze zweier Bereiche, so ist es dem Bereich zuzuordnen, dem der vom Signal gedeckte Gleisabschnitt angehört. Das Objekt Signal beinhaltet zentrale Eigenschaften, die bei Signalen der Außenanlage in Signal-Befestigungen bzgl. der Konstruktion und in Signal-Rahmen bzgl. der zugeordneten Signalbegriffe ergänzt werden. Je nach Ausführung eines Signals der Außenanlage können dafür mehrere Signal-Befestigungen erforderlich sein (z.B. \u0027Fundament\u0027 und \u0027Signalanordnung\u0027), dafür mehrere Signal-Rahmen erforderlich sein (z.B. \u0027Schirm\u0027, 2x\u0027Zusatzanzeiger\u0027 und \u0027Bezeichnungsschild\u0027) und / oder zeitgleich mehrere Signalbegriffe angezeigt werden, die zu diesem Zeitpunkt für ein Gleis - meist nur in einer Fahrtrichtung - an einem Punkt gültig sind und deren logische Überlagerung zur Handlungsanweisung für den Triebfahrzeugführer wird. Signalbilder, die zwar einem gemeinsamen Punkt zugeordnet sind, aber keiner gemeinsamen logischen Interpretation bedürfen, werden unterschiedlichen Signalen zugeordnet. Kann ein Signal mehrere Signalbilder anzeigen, so werden diese in Gruppen (analog zur Konstruktion) zusammengefasst, jede dieser Gruppen bildet einen Signal-Rahmen. Zur ausführliche Beschreibung der Modellierung eines Signals s. Modellierung Signal. Besonderheiten zur Verortung von Signalen sind unter Punkt Objekt beschrieben. DB-Regelwerk 301, 819.02, Planungsdaten: Sicherungstechnischer Lageplan, statische Eigenschaften: Signaltabelle 1, dynamische Eigenschaften: Signaltabelle 2, vereinzelt sind einzelne Angaben auch anderen Fundorten zugeordnet, dies ist den jeweiligen Einzelbeiträgen zu entnehmen. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsBasisTypen:CBezeichnung_Element" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="PZB_Schutzstrecke_Soll" type="nsSignale:TCPZB_Schutzstrecke_Soll"
+                           minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Solllänge der PZB-Schutzstrecke eines Signals. Liegen mehrere Schutzstrecken vor (unterschiedliche Durchrutschwege), so wird hier die Solllänge zum maßgebenden PZB-Gefahrpunkt eingetragen. Maßgebend ist der PZB-Gefahrpunkt, der für die Positionierung des Signals ausschlaggebend ist. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung.</xs:documentation>
+                     <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                        <ppi:WorkflowInformation>
+                           <ppi:Patternbeschreibung> [210..550] </ppi:Patternbeschreibung>
+                        </ppi:WorkflowInformation>
+                     </xs:appinfo>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Signal_Fstr" type="nsSignale:CSignal_Fstr" minOccurs="0" maxOccurs="1"/>
+					          <xs:element name="Signal_Fstr_Aus_Inselgleis" type="nsSignale:CSignal_Fstr_Aus_Inselgleis"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="Signal_Fstr_S" type="nsSignale:CSignal_Fstr_S" minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:choice minOccurs="1" maxOccurs="1">
+						            <xs:element name="Signal_Fiktiv" type="nsSignale:CSignal_Fiktiv" minOccurs="1"
+                              maxOccurs="1"/>
+						            <xs:element name="Signal_Real" type="nsSignale:CSignal_Real" minOccurs="1" maxOccurs="1"/>
+					          </xs:choice>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+</xs:schema>

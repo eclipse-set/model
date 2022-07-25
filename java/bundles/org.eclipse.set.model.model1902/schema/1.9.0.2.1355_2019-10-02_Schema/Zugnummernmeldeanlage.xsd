@@ -1,0 +1,1578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:nsZugnummernmeldeanlage="http://www.plan-pro.org/modell/Zugnummernmeldeanlage/1.9.0.2"
+           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.9.0.2"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2"
+           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.9.0.2"
+           targetNamespace="http://www.plan-pro.org/modell/Zugnummernmeldeanlage/1.9.0.2">
+	  <xs:annotation>
+		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+
+Weitere Informationen zur Lizenz finden Sie auf
+http://www.dbnetze.com/planpro
+
+Inhalt der Datei:
+XML Schema für PlanPro Schnittstelle.
+
+Für Fragen zum Schema wenden Sie sich bitte an Herrn :
+
+Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)
+
+--------------------------------------------------------------------------------
+
+This Document is licensed under the open source license RailPL V1.0.
+
+More information about the license can be found on
+http://www.dbnetze.com/planpro
+
+Contents of the file:
+XML Schema for PlanPro interface.</xs:documentation>
+	  </xs:annotation>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.9.0.2"
+              schemaLocation="Verweise.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2"
+              schemaLocation="BasisTypen.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.9.0.2"
+              schemaLocation="Basisobjekte.xsd"/>
+	  <xs:complexType name="TCHOA">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:integer" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCEinfahrdruck_Gegengleis">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TWirkrichtung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMZN_Anzeigefeld_Loeschkriterium">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="automatisch_nach_30_s"/>
+			      <xs:enumeration value="Fahrstrasse_aufgeloest"/>
+			      <xs:enumeration value="Fortschaltung_beim_Nachbarn"/>
+			      <xs:enumeration value="haendisch"/>
+			      <xs:enumeration value="Rueckblock_eingegangen"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCBf_Nr">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:TBf_Nr" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTelegramm_85_Fuer_Alle_Fstr">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBf_Nr_ZN_A">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:integer" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSichtbarkeit_Anzeigefeld">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCAusfahrdruck_Gegengleis">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TWirkrichtung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZLV_Bus_US_Zuordnung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung von ZLV-Bussen zur ZN Unterstation und Angabe durchzureichender Telegramme. Logisches Objekt, falls eine ZN Unterstation an mehrere ZLV-Busse angebunden wird. DB-Regelwerk 819.0731 5 (4) ff Die Darstellung der Angaben erfolgt im ZLV-Bus-Übersichtsplan nach 819.0731 A01 </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_ZLV_Bus" type="nsVerweise:TCID_ZLV_Bus" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ID des ZLV-Busses, an den die Unterstation angebunden wird. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZN_Unterstation" type="nsVerweise:TCID_ZN_Unterstation" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ID der ZLV-Bus-Unterstation, die an den ZLV-Bus angeschlossen wird. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ZLV_Bus_US_Zuordnung_Telegramm"
+                           type="nsZugnummernmeldeanlage:CZLV_Bus_US_Zuordnung_Telegramm"
+                           minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Darstellung von durchzureichenden Telegrammen gemäß Tabelle 2 in der Ril 819.0731 A02. Die Attributgruppe dient der Zuordnung zur Quell-Unterstation, von der ZN-Anzeigefelder und/oder Telegramme durchgereicht werden. Firmenspezifische Telegrammarten werden nicht durchgereicht. DB-Regelwerk 819.0731 A02. Die Darstellung im PT1 erfolgt, wenn überhaupt, im Erläuterungsbericht. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ZLV_Bus_Zuordnung_Allg"
+                           type="nsZugnummernmeldeanlage:CZLV_Bus_Zuordnung_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTelegrammwiederholung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZN_Fortschalt_Kriterium">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt, welches die funktionellen ZN-Fortschaltkriterien beschreibt. Die Attributgruppe ZN_Fortschalt_Krit_Druck wird nur angelegt, wenn aus dem Fortschaltkriterium ein Druck erzeugt wird. DB-Regelwerk 819.0731 6 (16) und (17) </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_ZN" type="nsVerweise:TCID_ZN" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ZN, zu der das Fortschaltkriterium gehört. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZN_Fortschalt_Krit_Start" type="nsVerweise:TCID_ZN_Anzeigefeld"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das ZN Anzeigefeld in der Bedienoberfläche, von dem aus die Zugnummer fortgeschaltet wird. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZN_Fortschalt_Krit_Ziel" type="nsVerweise:TCID_ZN_Anzeigefeld"
+                           minOccurs="0"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das ZN Anzeigefeld in der Bedienoberfläche, in das die Zugnummer fortgeschaltet wird. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ZN_Fortschalt_Krit_Druck"
+                           type="nsZugnummernmeldeanlage:CZN_Fortschalt_Krit_Druck"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="ZN_Fortschalt_Krit_Schalt"
+                           type="nsZugnummernmeldeanlage:CZN_Fortschalt_Krit_Schalt"
+                           minOccurs="0"
+                           maxOccurs="unbounded"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZBS_Adresse">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:TZBS_Adresse" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMBf_Kennung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="0"/>
+			      <xs:enumeration value="1"/>
+			      <xs:enumeration value="2"/>
+			      <xs:enumeration value="3"/>
+			      <xs:enumeration value="4"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CZN_Akustik_Anzeigefeld">
+		    <xs:sequence>
+			      <xs:choice minOccurs="1" maxOccurs="1">
+				        <xs:element name="Akustikdauer_Anb_Ann"
+                        type="nsZugnummernmeldeanlage:TCAkustikdauer_Anb_Ann"
+                        minOccurs="1"
+                        maxOccurs="1">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Dauer der akustischen Meldung im Anbiete-/Annahmefeld Eine akustische Meldung im Anbiete-/Annahmefeld (mit Anzeige der Zugnummer) ist Standard und daher nicht gesondert zu planen. Es kann nur zwischen der Akustikdauer von 5s oder bis zur Annahme des Zuges unterschieden werden. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es ist nur im Lastenheft zu finden, das dem LST-Fachplaner nicht zur Verfügung steht.</xs:documentation>
+               </xs:annotation>
+				        </xs:element>
+				        <xs:element name="Akustikdauer_Sonst" type="nsZugnummernmeldeanlage:TCAkustikdauer_Sonst"
+                        minOccurs="1"
+                        maxOccurs="1">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Dauer einer akustischen Meldung im ZN Anzeigefeld. Herstellerspezifisch ist es möglich, jedes ZN Anzeigefeld, welches nicht Anbiet-/Annahme- oder Voranzeigefeld ist, mit einer akustischen Meldung bei Befüllung mit einer Zugnummer zu belegen. Dieses Attribut wird nur befüllt, wenn die ZN-Anlage dieses herstellerseitig zulässt. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es bedarf der Abstimmung zwischen LST-Fachplaner und dem Hersteller. </xs:documentation>
+               </xs:annotation>
+				        </xs:element>
+				        <xs:element name="Akustikdauer_Voranz" type="nsZugnummernmeldeanlage:TCAkustikdauer_Voranz"
+                        minOccurs="1"
+                        maxOccurs="1">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Dauer einer akustischen Meldung im Voranzeigefeld. Es ist anzugeben, ob bei Befüllen der Voranzeige durch eine Zugnummer eine akustische Meldung erfolgt. Bei den Bauarten der Hersteller Siemens und Thales muss die Angabe für alle Voranzeigefelder einheitlich sein, da eine Unterscheidung je Voranzeigefeld systembedingt z. Zt. nicht realisiert ist. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es bedarf der Abstimmung zwischen LST-Fachplaner und Hersteller.</xs:documentation>
+               </xs:annotation>
+				        </xs:element>
+			      </xs:choice>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCKoppelunterstation">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTelegramm_84_Fuer_Alle_Fstr">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZN_Unterstation_Allg">
+		    <xs:sequence>
+			      <xs:element name="Bf_Kennung" type="nsZugnummernmeldeanlage:TCBf_Kennung" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der Bahnhofskennung. In BZ-Bereichen kann die Vergabe von gleichen Bahnhofsadressen nicht ausgeschlossen werden. Es sind daher Bereiche mit eindeutiger Bahnhofsadresse festzulegen und zur Unterscheidung von Nachbarbereichen mit einer Bahnhofskennung zu markieren. Die Fehlnummernbereiche werden automatisch in Abhängigkeit der Bahnhofskennung gebildet (siehe Ril 819.0731A03 (3)). Dies gilt für alle Bauarten der ZN. DB-Regelwerk 819.0731A03 (3) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [0..4] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Koppelunterstation" type="nsZugnummernmeldeanlage:TCKoppelunterstation"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob es sich um eine Koppelunterstation handelt. Bei einer Koppelunterstation treffen ein oder mehrere ZLV-Bus-Leitungen sowie eine ZBS zusammen. Eine Koppelunterstation hat somit immer eine Anbindung an die Betriebszentrale (BZ). Eine Unterstation hat eine oder mehrere Anbindung(en) an einen ZLV-Bus. DB-Regelwerk Für das Planungsdatum gibt es im Regelwerk der DB AG keine konkrete Vorgabe. Die Art der Unterstation ergibt sich aus dem ZLV-Bus-Konzept, welches die DB AG erstellt. 819.0731 5 (17). Koppelunterstationen erhalten eine ZBS-Anbindung. 819.0731 8 (1), 819.0731 8 (2), 819.0731 9 (7), 819.0731 A05. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ZBS_Adresse" type="nsZugnummernmeldeanlage:TCZBS_Adresse" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der ZBS-Adresse (KUs-Kennung) für die Koppelunterstation. Bei einer MUs (Mehrfachunterstation) bzw. Us (Unterstation) wird das Attribut nicht gefüllt. Die Angabe erfolgt hexadezimal. DB-Regelwerk 819.0731 5 (16) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [A0..FF] hexadezimal, ohne AA und BB </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ZBS_Anbindung" type="nsZugnummernmeldeanlage:TCZBS_Anbindung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Die Unterstation erhält eine ZBS-Anbindung. DB-Regelwerk 819.0731 8 (1) 819.0731 8 (2) 819.0731 9 (7) 819.0731A05 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ZN_Unterstation_Bf_Nr"
+                     type="nsZugnummernmeldeanlage:CZN_Unterstation_Bf_Nr"
+                     minOccurs="1"
+                     maxOccurs="unbounded"/>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCReaktivierungsfunktion">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZN_Anzeigefeld_Loeschkriterium">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:ENUMZN_Anzeigefeld_Loeschkriterium"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTelegramm_03">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZLV_Bus_Allg">
+		    <xs:sequence>
+			      <xs:element name="Unterstation_Max" type="nsZugnummernmeldeanlage:TCUnterstation_Max"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anzahl der maximal auf einen ZLV-Bus anschließbaren Unterstationen. Die Anzahl hängt von der Länge, der Qualität und des Umfangs der Telegramme ab. Nach Ril sind in der Regel maximal 10 Unterstationen pro ZLV-Bus zu planen. DB-Regelwerk 819.0731 5 (12) 819.0731 5 (13) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..40] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ZLV_Bus_Nr" type="nsZugnummernmeldeanlage:TCZLV_Bus_Nr" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Nummer des ZLV-Busses. Jeder ZLV-Bus hat eine ihn identifizierende Nummer, die zentral festgelegt wird. Zukünftig wird die Nummer vierstellig angegeben; die ersten beiden Ziffern geben die Region an. Damit ist jeder ZLV-Bus bereits anhand seiner Nummer eindeutig in der Region identifizierbar. Bei BZ-übergreifenden ZLV-Bussen wird der BZ-Code nach Ril 100.0001A01 der ZLV-Bus-Nummer vorangestellt, getrennt durch einen Schrägstrich. Der BZ-Code wird aus dem Verweis auf die Bedien Zentrale generiert. DB-Regelwerk 100.0001A01 819.0731 5 (14) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..255] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ZN_Modem" type="nsZugnummernmeldeanlage:TCZN_Modem" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Modem, welches die Verbindung zwischen ZN Unterstation und ZLV-Bus für die Datenkommunikation herstellt. Je ZLV-Bus ist nur eine Modembauart zulässig. Für Neuanlagen ist das Modem der Bauart LOGEM 1200 MD oder LineRunner SCADA NG zu verwenden. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk 819.0731A04 1 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CZN_Unterstation_Bf_Nr">
+		    <xs:sequence>
+			      <xs:element name="Bf_Nr" type="nsZugnummernmeldeanlage:TCBf_Nr" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der Bahnhofsadresse zur eindeutigen Identifikation einer Betriebsstelle. Zur eindeutigen Identifikation einer Betriebsstelle auf dem ZLV-Bus ist eine Bahnhofsadresse festzulegen. Die Bahnhofsadresse muss im Bereich der angrenzenden ZLV-Busse eindeutig sein. Bei der Verwendung von Bahnhosadressen in Bereichen mit (Koppel-/Mehrfach-)Unterstation (siehe ZN Unterstation Art) sind besondere Randbedingungen zu beachten. DB-Regelwerk 819.0731 5 (3) 819.0731 5 (4) Bei Bereichen mit (K/M)-Unterstationen: 819.0731 5 (5) - (7) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[01..99]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ID_Oertlichkeit" type="nsVerweise:TCID_Oertlichkeit_Proxy" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Örtlichkeit, die einer Bahnhofsnummer zugeordnet ist, welche zusätzlich von der ZN_Unterstation verwaltet wird. Es ist der Wert \"Oertlichkeit_Abkuerzung\" zu verwenden. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Prioritaet" type="nsZugnummernmeldeanlage:TCPrioritaet" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der maßgebenden Bahnhofsnummer der ZN Unterstation Das Attribut wird nur für diejenige Bahnhofsnummer mit \"1\" befüllt, welche für die Kommunikation der ZN_Unterstation mit dem ZLV Bus maßgebend ist. In allen übrigen Fällen wird das Attribut nicht befüllt. DB-Regelwerk Das Planungsdatum hat keine Entsprechung im Regelwerk. Es findet zeichnerisch Anwendung auf dem ZLV-Bus-Übersichtsplan einzelner Regionen.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCZN_Modem">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:ENUMZN_Modem" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CTelegramm_84_Alle_Fstr">
+		    <xs:sequence>
+			      <xs:element name="ID_ZLV_Bus" type="nsVerweise:TCID_ZLV_Bus" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Der Verweis wird gefüllt, wenn das Telegramm 84 durchzureichen ist. Verweis auf den ZLV-Bus, auf den das Telegramm durchgereicht wird. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Telegramm_84_Fuer_Alle_Fstr"
+                     type="nsZugnummernmeldeanlage:TCTelegramm_84_Fuer_Alle_Fstr"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Telegramm 84 (Fahrstraße aufgelöst). Die Angabe von Telegrammen ist für die Durchreichfunktion erforderlich. Eine Aufstellung aller verfügbaren Telegramme steht dem LST-Fachplaner nicht zur Verfügung. Es bedarf der Vorgabe des Betreibers, welche Telegramme von wo nach wo durchgereicht werden sollen. Herstellerspezifisch ist anzugeben, ob dieses Telegramm für einzelne Fahrstraßen oder für alle Fahrstraßen gesendet werden soll. Zudem sind herstellerspezifischen Abhängigkeiten beim Senden von Telegramm 84 und 85 zu beachten. Kann die ZN das Telegramm 84 nur für alle oder keine Fahrstraßen senden, ist dieser Boolean auszuwählen. DB-Regelwerk 819.0731A02 1 (5) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCAnschlussnummer">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:TAnschlussnummer" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCDurchfahrdruck">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TWirkrichtung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMFunktionalitaet_Anzeigefeld">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Anbiete_Annahmefeld"/>
+			      <xs:enumeration value="Meldeort"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="Spiegelfeld"/>
+			      <xs:enumeration value="Stapelfeld"/>
+			      <xs:enumeration value="Voranzeigefeld"/>
+			      <xs:enumeration value="Wandelfeld"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMZN_Schaltkriterium">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="kein"/>
+			      <xs:enumeration value="Signalhaltfall_Hauptsignal"/>
+			      <xs:enumeration value="Signalhaltfall_Rangiersignal"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="Gleis_belegen"/>
+			      <xs:enumeration value="Gleis_belegen_und_davor_freifahren"/>
+			      <xs:enumeration value="Gleis_freifahren"/>
+			      <xs:enumeration value="manuell"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCZBS_Anbindung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZN_Unterstation">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verbindung zwischen ZN und ZLV Bus und/oder ZN ZBS. Über Modems wird die ZN an einen oder mehrere ZLV-Busse und ggf. an eine ZBS (Verbindung zu einer Bedien Zentrale) angebunden. Die Attributgruppe ZN_Unterstation_Bf_Nr kann mehrfach eingebunden werden. Damit werden alle Betriebsstellen, die ZN-seitig über diese Unterstation verwaltet bzw \"angesprochen\" werden, beschrieben. Der ZN-seitigen Bahnhofsnummer wird eine Örtlichkeit (Ril-100-Bezeichner der zugewiesenen Betriebsstelle) und ggf. eine Priorität zugeordnet. Letztere wird nur für diejenige Bahnhosnummer angegeben, die für die Kommunikation der ZN_Unterstation mit dem ZLV-Bus maßgebend ist. In allen anderen Fällen wird das Attribut nicht befüllt. Die Darstellung erfolgt auf dem ZLV-Bus-Übersichtsplan als tabellarischer Block mit den Zeilen \u0026lt;Bf-Nr\u0026gt; \u0026lt;Oertlichkeit_Abkuerzung\u0026gt; in dem Symbol für die ZN_Unterstation. Die Bahnhofsnummer mit Priorität wird direkt neben dem ZLV-Bus-Anschluss angeordnet. DB-Regelwerk 819.0731 5 Die Darstellung der Angaben erfolgt im ZLV-Bus-Übersichtsplan nach 819.0731 A01 </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_GEO_Punkt" type="nsVerweise:TCID_GEO_Punkt" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Positionierung der ZN-Unterstation(en) auf dem ZLV-Bus-Übersichtsplan. Gegenwärtig ist noch in Klärung, ob der Verweis auf Strecke Punkt oder dieser Verweis die bessere Lösung darstellt. DB-Regelwerk Darstellung auf dem ZLV-Bus-Übersichtsplan. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Strecke_Punkt" type="nsVerweise:TCID_Strecke_Punkt" minOccurs="0"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf einen Streckenpunkt zur geordneten Darstellung der ZN-Unterstationen auf dem ZLV-Bus-Übersichtsplan. Gegenwärtig ist noch in Klärung, ob der Verweis auf GEO Punkt oder dieser Verweis die bessere Lösung darstellt. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZN_ZBS" type="nsVerweise:TCID_ZN_ZBS" minOccurs="0" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ID der zugehörigen ZLV-Bus-Sammelleitung (ZBS), sofern diese vorhanden ist. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ZN_Unterstation_Allg"
+                           type="nsZugnummernmeldeanlage:CZN_Unterstation_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZN_Anlagentyp">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:ENUMZN_Anlagentyp" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCVormeldestart">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TWirkrichtung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZugvorbereitungsmeldung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TZBS_Adresse">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value="[A-F][0-9]|[C-F][A-F]|[AB][C-F]|AB|BA"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCTelegramm_30">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZN_ZBS_Allg">
+		    <xs:sequence>
+			      <xs:element name="IP_Adresse" type="nsZugnummernmeldeanlage:TCIP_Adresse" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">IP_Adresse des COM-Servers gemäß Ril 819.0705. Der Planungsfall tritt ein, wenn eine ZBS-Verbindung zwischen ZN Unterstation und BZ zu planen ist. DB-Regelwerk 819.0731A05 819.0705 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [7..15] gebildet aus vier maximal dreistelligen Zahlen, getrennt durch Punkte </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ZBS_Schnittstelle" type="nsZugnummernmeldeanlage:TCZBS_Schnittstelle"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Modem, welches die Verbindung zwischen ZN Unterstation und ZBS für die Datenkommunikation herstellt. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk 819.0731A04 2 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TUnterstation_Nr">
+		    <xs:restriction base="nsBasisTypen:TZeichenkette">
+			      <xs:pattern value="[1-9]|[1-3][0-9]{0,1}|40"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CZN">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zugnummernmeldeanlage. Wird die ZN-Anlage zusammen mit dem ESTW geplant, gibt es keinen Verweis auf die Anhänge, da die ZN bereits in der ESTW-Konfiguration berücksichtigt ist. Wird die ZN nachgerüstet, sind die Verweise auf ESTW_Zentraleinheit und Anhänge vorhanden. Kann eine ESTW-Bauform keine ZN berücksichtigen, dann gibt es keinen Verweis auf ESTW_Zentraleinheit. DB-Regelwerk 819.0731 </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Anhang_ZN_Plan_Bedienraum" type="nsVerweise:TCID_Anhang" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ID des Raumplans Bedienraum, der als Anhang im Format PDF beigefügt wird. Bei Planung einer ZN-Einwahlstelle bzw. einer ZN in der Nachbarbetriebsstelle ist die Anordnung von Möbeln mit Unterbringung der ZN-Komponenten für den Bedienraum des Stw in einem Plan darzustellen. Dieser wird als PDF beigefügt. Wird die ZN zusammen mit dem zugehörigen ESTW geplant, gibt es keinen Anhang. DB-Regelwerk 819.0731 12 </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Anhang_ZN_Plan_Rechnerraum" type="nsVerweise:TCID_Anhang"
+                           minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ID des Raumplans Rechnerraum, der als Anhang im Format PDF beigefügt wird. Bei Planung einer ZN-Einwahlstelle bzw. einer ZN in der Nachbarbetriebsstelle ist die Anordnung von ZN-Komponenten im Rechnerraum des Stw in einem Plan darzustellen. Dieser wird als PDF beigefügt. Wird die ZN zusammen mit dem zugehörigen ESTW geplant, gibt es keinen Anhang. DB-Regelwerk 819.0731 12 </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Oertlichkeit" type="nsVerweise:TCID_Oertlichkeit" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Örtlichkeit, die für die ZN-Anlage namensgebend ist. Es ist der Wert „Oertlichkeit_Langname“ zu verwenden. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Stellwerk" type="nsVerweise:TCID_Stellwerk" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ESTW-Zentraleinheit oder ein Relaisstellwerk, zu der diese ZN oder für die eine ZN-Einwahlstelle geplant wurde. Der Verweis ist optional, da im Plaungswerkzeug ZN/ZL keine Befüllung aller für die ESTW-ZE vorgesehenen Attribute möglich ist.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Unterbringung" type="nsVerweise:TCID_Unterbringung" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den physischen Ort der Unterbringung von Aussenelementansteuerung, Bedien Einrichtung Oertlich, Bedien Platz, ESTW Zentraleinheit, PZB Element, Schlosskombination, Schluesselsperre und ZN. Für das PZB Element wird der Verweis nur für eine GÜ gefüllt - mit der Bedeutung: GÜ-Schaltkasten. Für die ZN ist der Verweis optional, da im Planungswerkzeug ZN/ZL keine Befüllung aller der für die Unterbringung notwendigen Attribute möglich ist. DB-Regelwerk Darstellung des Gebäudes, der Bediensäule bzw. des Schaltkastens im sicherungstechnischen Lageplan nach Ril 819.9002 oder Beschreibung im Erläuterungsbericht.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZN_Unterstation" type="nsVerweise:TCID_ZN_Unterstation" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ID der zugehörigen ZLV-Bus-Unterstation. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ZN_Allg" type="nsZugnummernmeldeanlage:CZN_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCAkustikdauer_Anb_Ann">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:ENUMAkustik_Anb_Ann" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTelegramm_02">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTelegramm_04">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TZN_A_Bezeichner">
+		    <xs:restriction base="xs:integer"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CZN_Fortschalt_Krit_Schalt">
+		    <xs:sequence>
+			      <xs:element name="Besonderes_Schaltkriterium"
+                     type="nsZugnummernmeldeanlage:TCBesonderes_Schaltkriterium"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe von besonderen Fortschaltkriterien für die Zugnummernfortschaltung als Kommentar. Die Angabe kann auch in Verbindung mit dem Attribut ZN Schaltkriterium erfolgen; z. B. \"positive Stellbarkeitsprüfung Signal xy\". DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es bedarf dazu der Abstimmung zwischen LST-Fachplaner und Betreiber.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ID_Fortschaltung_Start" type="nsVerweise:TCID_Fortschaltung_Start"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Startelement, von dem fortgeschaltet wird. Aus Start und Ziel lässt sich eine Fortschaltrichtung ableiten. DB-Regelwerk 819.0731 6 (15) 819.0731 6 (16) 819.0731 6 (17) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Telegrammwiederholung"
+                     type="nsZugnummernmeldeanlage:TCTelegrammwiederholung"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bei Fortschaltung wird die Sendung des Telegramms wiederholt. Falls keine Telegrammwiederholung erfolgt, wird das Attribut nicht befüllt. DB-Regelwerk 819.0731 6 (21) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ZN_Schaltkriterium" type="nsZugnummernmeldeanlage:TCZN_Schaltkriterium"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kriterium zur Fortschaltung der Zugnummer. Die Angabe eines ZN-Fortschaltkriteriums erfolgt, sofern es nicht Funktionalität der Anlage ist (ENUM-Wert „kein“). Firmenspezifische Besonderheiten nach Ril 819.0731A03 sind zu beachten. Das Kriterium \"Signalhaltfall\" beinhaltet neben Haltstellung von Hauptsignalen auch das Erlöschen von Kennlicht, Sh1, Ersatz- bzw. Vorsichtssignalen. Diese sind im ESTW Stellwerksfunktionalität und werden nicht explizit geplant. Das Kriterium der Haltstellung von virtuellen Signalen (Anwendung bei ETCS) wird zu einem späteren Zeitpunkt im Modell berücksichtigt. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Ril 819.0731A03 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCBesonderes_Schaltkriterium">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:TBesonderes_Schaltkriterium"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCAusfahrdruck">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TWirkrichtung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCIP_Adresse">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:TIP_Adresse" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZLV_Bus_Nr">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:TZLV_Bus_Nr" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCVerzoegerung_Manuell_Loeschung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:TVerzoegerung_Manuell_Loeschung"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZN_Fortschalt_Krit_Druck">
+		    <xs:sequence>
+			      <xs:element name="Ausfahrdruck" type="nsZugnummernmeldeanlage:TCAusfahrdruck" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Druck nach Ausfahrt eines Zuges. Im ZN Anzeigefeld wird ein Druck nach Ausfahrt des Zuges generiert. Die Ausgabe erfolgt auf einem ZN-Drucker oder in ein Doku-System. Das DB-Regelwerk enthält keine konkreten Planungsvorgaben. Es bedarf der Abstimmung zwischen LST-Fachplaner und späterem Betreiber. DB-Regelwerk Allgemein gehaltene Aussagen zu den Drucken finden sich in 819.0731 2 (3) 819.0731 6 (12) 819.0731 6 (18) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Ausfahrdruck_Gegengleis"
+                     type="nsZugnummernmeldeanlage:TCAusfahrdruck_Gegengleis"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Druck nach Ausfahrt des Zuges ins Gegengleis. Im ZN Anzeigefeld wird ein Druck nach Ausfahrt des Zuges ins Gegengleis generiert. Die Ausgabe erfolgt auf einem ZN-Drucker oder in ein Doku-System. Das DB-Regelwerk enthält keine konkreten Planungsvorgaben. Es bedarf der Abstimmung zwischen LST-Fachplaner und späterem Betreiber. DB-Regelwerk Allgemein gehaltene Aussagen zu den Drucken finden sich in 819.0731 2 (3) 819.0731 6 (12) 819.0731 6 (18) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Durchfahrdruck" type="nsZugnummernmeldeanlage:TCDurchfahrdruck"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Druck nach Durchfahrt des Zuges. Im ZN Anzeigefeld wird ein Druck nach Durchfahrt des Zuges (z. B. nach Passieren eines Bahnhofsteils) generiert. Die Ausgabe erfolgt auf einem ZN-Drucker oder in ein Doku-System. Das DB-Regelwerk enthält keine konkreten Planungsvorgaben. Es bedarf der Abstimmung zwischen LST-Fachplaner und späterem Betreiber. DB-Regelwerk Allgemein gehaltene Aussagen zu den Drucken finden sich in 819.0731 2 (3) 819.0731 6 (12) 819.0731 6 (18) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Einfahrdruck" type="nsZugnummernmeldeanlage:TCEinfahrdruck" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Druck nach Einfahrt des Zuges. Im ZN Anzeigefeld wird ein Druck nach Einfahrt des Zuges in den Bahnhof generiert. Die Ausgabe erfolgt auf einem ZN-Drucker oder in ein Doku-System. Das DB-Regelwerk enthält keine konkreten Planungsvorgaben. Es bedarf der Abstimmung zwischen LST-Fachplaner und späterem Betreiber. DB-Regelwerk Allgemein gehaltene Aussagen zu den Drucken finden sich in 819.0731 2 (3) 819.0731 6 (12) 819.0731 6 (18) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Einfahrdruck_Gegengleis"
+                     type="nsZugnummernmeldeanlage:TCEinfahrdruck_Gegengleis"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Druck nach Einfahrt des Zuges aus dem Gegengleis. Im ZN Anzeigefeld wird ein Druck nach Einfahrt des Zuges aus dem Gegengleis in den Bahnhof generiert. Die Ausgabe erfolgt auf einem ZN-Drucker oder in ein Doku-System. Das DB-Regelwerk enthält keine konkreten Planungsvorgaben. Es bedarf der Abstimmung zwischen LST-Fachplaner und späterem Betreiber. DB-Regelwerk Allgemein gehaltene Aussagen zu den Drucken finden sich in 819.0731 2 (3) 819.0731 6 (12) 819.0731 6 (18) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Meldedruck" type="nsZugnummernmeldeanlage:TCMeldedruck" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Druck nach Fortschaltung der Zugnummer. Im ZN Anzeigefeld wird ein Druck nach Fortschaltung der Zugnummer generiert. Die Ausgabe erfolgt auf einem ZN-Drucker oder in ein Doku-System. Das DB-Regelwerk enthält keine konkreten Planungsvorgaben. Es bedarf der Abstimmung zwischen LST-Fachplaner und späterem Betreiber. DB-Regelwerk Allgemein gehaltene Aussagen zu den Drucken finden sich in 819.0731 2 (3) 819.0731 6 (12) 819.0731 6 (18) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCMeldedruck">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TWirkrichtung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZN_Feld_Ohne_Anzeige">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCUnterstation_Nr">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:TUnterstation_Nr" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCEinwahlstelle">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCPrioritaet">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:TPrioritaet" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCAkustikdauer_Voranz">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:ENUMAkustik_Sonst" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZN_Allg">
+		    <xs:sequence>
+			      <xs:element name="Einwahlstelle" type="nsZugnummernmeldeanlage:TCEinwahlstelle"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anlage zur Einwahl von Zugnummern. Eine ZN-Einwahlstelle wird im Allgemeinen an benachbarten Stellwerken zu neu errichteten ESTW vorgesehen, sofern diese noch nicht mit einer ZN-Anlage ausgerüstet sind. Hinsichtlich der eigentlichen Planungsdaten einer Einwahlstelle gibt es keine Unterschiede zur Planung einer \"normalen\" ZN-Anlage. Bei der Planung der Einwahlstelle werden die Anhänge für die Einräumung von Rechner- und Bedienraum beigefügt. In der Regel hat die Einwahlstelle keine Anschaltung an die Stellwerkstechnik. Eine Einwahlstelle der Bauform ZNP801 unterscheidet dieses Merkmal hinsichtlich der Anbindung nicht. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es bedarf der umfangreichen Abstimmungen zwischen LST-Fachplaner und Betreiber.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Reaktivierungsfunktion"
+                     type="nsZugnummernmeldeanlage:TCReaktivierungsfunktion"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Im Fall der Störung eines ZLV-Busses sendet die ZN-Anlage ein Reaktivierungstelegramm. In Abhängigkeit zum Hersteller muss die Reaktivierungsfunktion geplant werden. DB-Regelwerk 819.0731 5 (19) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ZN_Anlagentyp" type="nsZugnummernmeldeanlage:TCZN_Anlagentyp"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Herstellerspezifischer Typ der ZN-Anlage. Aufgrund firmenspezifischer Projektierungsunterschiede muss der Hersteller vor Beginn der Planung bekannt sein. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Aufgrund firmenspezifischer Projektierungsunterschiede muss der Hersteller vor Beginn der Planung bekannt sein. Siehe dazu Ril 819.0731 A0x. Die Anlagentypen ZNL_800, ZNS_800 und ZNS_801 sind für Neuanlagen nicht mehr zu verwenden.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCZBS_Schnittstelle">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:ENUMZBS_Schnittstelle" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZN_Telegramm_85_Zuordnung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Logisches Objekt, welches die Verbindung zwischen ZN und ggf. der einzelnen Fahrstraße herstellt, für die das Telegramm 85 gesendet werden soll. Herstellerbezogen kann die Sendung des Telegramms 85 für jede einzelne Fahrstraße oder nur für alle Fahrstraßen programmiert werden. DB-Regelwerk 819.0731A02 1 (5) </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_ZN" type="nsVerweise:TCID_ZN" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ZN, von der das Telegramm 85 generiert und auf den ZLV-Bus gesandt wird. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:choice minOccurs="1" maxOccurs="1">
+						            <xs:element name="Telegramm_85_Alle_Fstr"
+                              type="nsZugnummernmeldeanlage:CTelegramm_85_Alle_Fstr"
+                              minOccurs="1"
+                              maxOccurs="1"/>
+						            <xs:element name="Telegramm_85_Einzelne_Fstr"
+                              type="nsZugnummernmeldeanlage:CTelegramm_85_Einzelne_Fstr"
+                              minOccurs="1"
+                              maxOccurs="1"/>
+					          </xs:choice>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CTelegramm_84_Einzelne_Fstr">
+		    <xs:sequence>
+			      <xs:element name="ID_Fstr_Zug_Rangier" type="nsVerweise:TCID_Fstr_Zug_Rangier"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die betreffende Fahrstraße, für die das Telegramm 84 von der ZN gesendet wird. DB-Regelwerk 819.0731 1 sowie detaillierte Abstimmungen mit dem Betreiber </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ID_ZLV_Bus" type="nsVerweise:TCID_ZLV_Bus" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Der Verweis wird gefüllt, wenn das Telegramm 84 durchzureichen ist. Verweis auf den ZLV-Bus, auf den das Telegramm durchgereicht wird. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CZN_Telegramm_84_Zuordnung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Logisches Objekt, welches die Verbindung zwischen ZN und ggf. der einzelnen Fahrstraße herstellt, für die das Telegramm 84 gesendet werden soll. Herstellerbezogen kann die Sendung des Telegramms 84 für jede einzelne Fahrstraße oder nur für alle Fahrstraßen programmiert werden. DB-Regelwerk 819.0731A02 1 (5) </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_ZN" type="nsVerweise:TCID_ZN" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ZN, von der das Telegramm 84 generiert und auf den ZLV-Bus gesandt wird. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:choice minOccurs="1" maxOccurs="1">
+						            <xs:element name="Telegramm_84_Alle_Fstr"
+                              type="nsZugnummernmeldeanlage:CTelegramm_84_Alle_Fstr"
+                              minOccurs="1"
+                              maxOccurs="1"/>
+						            <xs:element name="Telegramm_84_Einzelne_Fstr"
+                              type="nsZugnummernmeldeanlage:CTelegramm_84_Einzelne_Fstr"
+                              minOccurs="1"
+                              maxOccurs="1"/>
+						            <xs:element name="Telegramm_84_Verzicht"
+                              type="nsZugnummernmeldeanlage:TCTelegramm_84_Verzicht"
+                              minOccurs="1"
+                              maxOccurs="1">
+							              <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verzicht auf Sendung des Telegramms 84. Bei Bedienung der HaGT wird das Telegramm unabhängig von der Projektierung des Verzichts gesendet.</xs:documentation>
+                        <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                           <ppi:WorkflowInformation>
+                              <ppi:ProposedValue>false</ppi:ProposedValue>
+                           </ppi:WorkflowInformation>
+                        </xs:appinfo>
+                     </xs:annotation>
+						            </xs:element>
+					          </xs:choice>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZN_Anzeigefeld">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt, welches die Funktionalitäten der ZN auf der Bedienoberfläche abbildet. Für jedes Gleis, in denen die ZN-Anlage Zugnummern verwalten und/oder anzeigen soll, ist mindestens ein ZN-Anzeigefeld zu definieren. Hinsichtlich der Besonderheiten bei der Bezeichnug wird auf die Ausführungen auf der Seite Bezeichnung ZN-Anzeigefeld verwiesen. DB-Regelwerk 819.0731 6 (1) bis (15) sowie (19) ff </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Gleis_Abschnitt" type="nsVerweise:TCID_Gleis_Abschnitt" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den zugehörigen Gleisabschnitt, in dem das ZN-Anzeigefeld auf der Bedienoberfläche angeordnet wird. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZLV_Bus" type="nsVerweise:TCID_ZLV_Bus" minOccurs="0"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den oder die ZLV_Bus(se), auf den/die das Anzeigefeld durchgereicht wird. Der Verweis wird nur im Falle einer Durchreichung gefüllt. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZN" type="nsVerweise:TCID_ZN" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ZN, zu der das ZN-Anzeigefeld gehört. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZN_Anzeigefeld" type="nsVerweise:TCID_ZN_Anzeigefeld" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein zugehöriges ZN-Anzeigefeld, z. B. bei der Anordnung von Voranzeige- oder Anbiete-/Annahmefeldern. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ZN_Anzeigefeld_Allg" type="nsZugnummernmeldeanlage:CZN_Anzeigefeld_Allg"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="ZN_Anzeigefeld_Bezeichnung"
+                           type="nsZugnummernmeldeanlage:CZN_Anzeigefeld_Bezeichnung"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TZN_A_Bedienbezeichner_Frei">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{4,7}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TZLV_Bus_Nr">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="[1-9][0-9]?|1[0-9]{2}|2[0-4][0-9]|25[0-5]"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TAnschlussnummer">
+		    <xs:restriction base="xs:integer"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CZLV_Bus_Zuordnung_Allg">
+		    <xs:sequence>
+			      <xs:element name="Anschlussnummer" type="nsZugnummernmeldeanlage:TCAnschlussnummer"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anschlussnummer der (K/M)Unterstation auf dem ZLV-Bus. Jede Unterstation einer Kus hat für jeden angeschlossenen ZLV-Bus eine eigene und einmalige Anschlussnummer. Das Attribut wird nur gefüllt, wenn die Unterstation an mehr als einem ZLV-Bus angeschlossen wird. DB-Regelwerk Allgemeine Angaben finden sich in Ril 819.0731 5 (12).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Unterstation_Nr" type="nsZugnummernmeldeanlage:TCUnterstation_Nr"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der Unterstationsnummer auf diesem ZLV-Bus. Es wird empfohlen, auf einem ZLV-Bus nur gerade Nummern im Bereich 02..20 oder ungerade Nummern im Bereich 01..19 zu verwenden. DB-Regelwerk 819.0731 5 (12)</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..40] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCUnterstation_Max">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:TUnterstation_Max" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TBf_Nr">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="0[1-9]|[1-9][0-9]"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCEinfahrdruck">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TWirkrichtung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZLV_Bus">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuglaufverfolgungsbus. Verbindung zwischen den ZN-Unterstationen zum Transport der Zugnummernmeldetelegramme. ZLV-Busse können BZ-übergreifend geplant werden. In diesem Fall gelten für die Vergabe der ZLV Bus Nr besondere Bedingungen. DB-Regelwerk 819.0731 8 (2) Die Darstellung der Angaben erfolgt im ZLV-Bus-Übersichtsplan nach 819.0731 A01 </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ZLV_Bus_Allg" type="nsZugnummernmeldeanlage:CZLV_Bus_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TVerzoegerung_Manuell_Loeschung">
+		    <xs:restriction base="nsBasisTypen:TSekunde"/>
+	  </xs:simpleType>
+	  <xs:complexType name="TCTelegramm_10">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZN_Anzeigefeld_Allg">
+		    <xs:sequence>
+			      <xs:element name="Bedienbarkeit_Anzeigefeld"
+                     type="nsZugnummernmeldeanlage:TCBedienbarkeit_Anzeigefeld"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Das Anzeigefeld ist auf der Bedienoberfläche bedienbar. DB-Regelwerk 819.0731 6 (20) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>true</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Bf_Nr_ANB" type="nsZugnummernmeldeanlage:TCBf_Nr_ANB" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bahnhofsnummer aus der ZN-Anlage des Nachbarn. Die Angabe wird nur für die ZN-Anzeigefelder mit der Funktionalität ANB/ANN benötigt.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Bf_Nr_ZN_A" type="nsZugnummernmeldeanlage:TCBf_Nr_ZN_A" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bahnhofsnummer, in deren Bereich das ZN-Anzeigefeld angeordnet wird. Es kann dieselbe Bahnhofsnummer sein wie die der gesamten ZN-Anlage, muss es aber nicht. Es ist möglich, dass für jede Betriebsstelle im Erfassungsbereich der ZN-Anlage je eine Bahnhofsnummer geplant werden kann.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Funktionalitaet_Anzeigefeld"
+                     type="nsZugnummernmeldeanlage:TCFunktionalitaet_Anzeigefeld"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der Funktionalität des Anzeigefeldes, aus dem der Buchstabe in der Anzeigefeldbezeichnung abgeleitet wird. Anbiete_Annahmefeld: A, Meldeort: M, Spiegelfeld: S Stapelfeld: N, Voranzeigefeld: V, Wandelfeld: W. Die Anzeigefelder sind auf dem ZN-Übersichtsplan darzustellen. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk 819.0731 6 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="HOA" type="nsZugnummernmeldeanlage:TCHOA" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der in dem betreffenden ZN Anzeigefeld auszuwertenden HOA (Heißläufer-Ortungs-Anlage). Im Datenmodell wird nicht die Anlage selber berücksichtigt, sondern nur deren Auswertung im ZN Anzeigefeld. Es wird auf dem ZN-Übersichtsplan an dem betreffenden ZN Anzeigefeld die Nummer der auszuwertenden HOA mit dem Zusatz „Nur zur Information“ vermerkt. DB-Regelwerk 819.0731 8 (4) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Sichtbarkeit_Anzeigefeld"
+                     type="nsZugnummernmeldeanlage:TCSichtbarkeit_Anzeigefeld"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Das ZN Anzeigefeld ist auf der Bedienoberfläche sichtbar. DB-Regelwerk 819.0731 6 (19) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>true</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Verzoegerung_Manuell_Loeschung"
+                     type="nsZugnummernmeldeanlage:TCVerzoegerung_Manuell_Loeschung"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verzögerungszeit, bis die Löschung der Zugnummer erfolgt. Die Angabe ist bei manueller Zugnummernlöschung notwendig. Standard lt. LH sind ca. 5 min. DB-Regelwerk Das Planungsdatum ist nur im Lastenheft zu finden, das dem LST-Fachplaner nicht zur Verfügung steht. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>300</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Vormeldestart" type="nsZugnummernmeldeanlage:TCVormeldestart"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob aus diesem ZN Anzeigefeld eine Vormeldung generiert wird Sofern aus dem ZN_Anzeigefeld eine Vormeldung generiert wird, ist die entsprechende Richtung anzugeben. Wird keine Vormelduing generiert, erfolgt in dem Attribut keine Angabe. DB-Regelwerk In der Ril 819.0731 sind zur Vormeldung keine Aussagen getroffen. Bisher erfolgen die notwendigen Angaben regionalbereichsspezifisch als Symbol und/oder Text mit/ohne Beschreibung konkreter Vormeldebedingungen.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ZN_Anzeigefeld_Loeschkriterium"
+                     type="nsZugnummernmeldeanlage:TCZN_Anzeigefeld_Loeschkriterium"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe des Kriteriums, mit dem die Zugnummer aus dem ZN Anzeigefeld gelöscht wird. Das Kriterium wird vorrangig für ZN-Anzeigefelder an der Grenze der eigenen zur benachbarten ZN-Anlage angegeben. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk 819.0731 7 (4) enthält nur eine allgemeine Aussage. Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es bedarf der Abstimmung zwischen LST-Fachplaner und Betreiber.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ZN_Feld_Ohne_Anzeige"
+                     type="nsZugnummernmeldeanlage:TCZN_Feld_Ohne_Anzeige"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Im ZN Anzeigefeld erfolgt keine Anzeige einer Zugnummer. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es findet sich im Lastenheft, das dem LST-Fachplaner nicht zur Verfügung steht.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Zugvorbereitungsmeldung"
+                     type="nsZugnummernmeldeanlage:TCZugvorbereitungsmeldung"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">In diesem ZN-Anzeigefeld ist eine Zugvorbereitungsmeldung im ZN-Übersichtsplan zu kennzeichnen; die ZN-Anlage enthält keine ZFM-Funktionalität. Im Regelwerk wird dieses Planungsdatum historisch bedingt als \"Zugfertigmeldung\" bezeichnet. DB-Regelwerk 819.0731 6 (23) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMAkustik_Sonst">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="5_s"/>
+			      <xs:enumeration value="keine"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CZN_Akustik">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Akustisches Signal bei Befüllung eines ZN-Anzeigefeldes mit einer Zugnummer Bei der Planung der ZN-Akustik sind herstellerspezifische Besonderheiten zu beachten. Akustiken im Anbiete-/Annahmefeld sind Standard und nicht gesondert zu planen. Das Objekt bzw. die Attributgruppe wird bei Anbiete/Annahme- sowie Voranzeigefeldern IMMER angelegt, um die Dauer der Akustik festzulegen. Für die weiteren ZN-Anzeigefelder wird das Objekt nur dann angelegt, wenn das betreffene ZN Anzeigefeld mit einer Akustik ausgestatteet wird. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht vorhanden. Es findet sich im Lastenheft sowie in den firmenspezifischen Projektierungsunterlagen, die dem LST-Fachplaner nicht zur Verfügung stehen.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ZN_Akustik_Anzeigefeld"
+                           type="nsZugnummernmeldeanlage:CZN_Akustik_Anzeigefeld"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:choice minOccurs="1" maxOccurs="1">
+						            <xs:element name="ID_ZN" type="nsVerweise:TCID_ZN" minOccurs="1" maxOccurs="1">
+							              <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ZN, für die eine Akustik geplant wird, sofern keine ZN-Anzeigefeld-spezifische Planung möglich ist (herstellerabhängig). </xs:documentation>
+                     </xs:annotation>
+						            </xs:element>
+						            <xs:element name="ID_ZN_Anzeigefeld" type="nsVerweise:TCID_ZN_Anzeigefeld" minOccurs="1"
+                              maxOccurs="1">
+							              <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das ZN-Anzeigefeld, für das eine Akustik geplant wird (herstellerabhängig). </xs:documentation>
+                     </xs:annotation>
+						            </xs:element>
+					          </xs:choice>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TUnterstation_Max">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="[1-9]|[1-3][0-9]|40"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCTelegramm_21">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMZN_Anlagentyp">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="ZN_B950"/>
+			      <xs:enumeration value="ZN_SuB"/>
+			      <xs:enumeration value="ZNE_L2000"/>
+			      <xs:enumeration value="ZNL_2000"/>
+			      <xs:enumeration value="ZNL_800"/>
+			      <xs:enumeration value="ZNP_801"/>
+			      <xs:enumeration value="ZNS_801"/>
+			      <xs:enumeration value="ZNS_901"/>
+			      <xs:enumeration value="ZNS_901R"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CTelegramm_85_Einzelne_Fstr">
+		    <xs:sequence>
+			      <xs:element name="ID_Fstr_Zug_Rangier" type="nsVerweise:TCID_Fstr_Zug_Rangier"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die betreffende Fahrstraße, für die das Telegramm 85 von der ZN gesendet wird. DB-Regelwerk 819.0731 1 sowie detaillierte Abstimmungen mit dem Betreiber </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ID_ZLV_Bus" type="nsVerweise:TCID_ZLV_Bus" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Der Verweis wird gefüllt, wenn das Telegramm 85 durchzureichen ist. Verweis auf den ZLV-Bus, auf den das Telegramm durchgereicht wird. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CTelegramm_85_Alle_Fstr">
+		    <xs:sequence>
+			      <xs:element name="ID_ZLV_Bus" type="nsVerweise:TCID_ZLV_Bus" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Der Verweis wird gefüllt, wenn das Telegramm 85 durchzureichen ist. Verweis auf den ZLV-Bus, auf den das Telegramm durchgereicht wird. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Telegramm_85_Fuer_Alle_Fstr"
+                     type="nsZugnummernmeldeanlage:TCTelegramm_85_Fuer_Alle_Fstr"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Telegramm 85 (Fahrstraße eingestellt). Die Angabe von Telegrammen ist für die Durchreichfunktion erforderlich. Eine Aufstellung aller verfügbaren Telegramme steht dem LST-Fachplaner nicht zur Verfügung. Es bedarf der Vorgabe des Betreibers, welche Telegramme von wo nach wo durchgereicht werden sollen. Herstellerspezifisch ist anzugeben, ob das Telegramm für einzelne oder für alle Fahrstraßen gesendet werden soll. Zudem sind herstellerspezifische Abhängigkeiten beim Senden von Telegramm 84 und 85 zu beachten. Kann die ZN das Telegramm 85 nur für alle oder keine Fahrstraßen senden, ist dieser Boolean auszuwählen. DB-Regelwerk 819.0731A02 1 (5) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCZN_Schaltkriterium">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:ENUMZN_Schaltkriterium" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZLV_Bus_US_Zuordnung_Telegramm">
+		    <xs:sequence>
+			      <xs:element name="Telegramm_02" type="nsZugnummernmeldeanlage:TCTelegramm_02" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Telegramm 02 (ZN/FN Meldung ohne erfolgte Überschreibung, jedoch auch bei Überspeicherung) ist durchzureichen. Die Angabe von Telegrammen ist für die Durchreichfunktion erforderlich. Eine Aufstellung aller verfügbaren Telegramme steht dem LST-Fachplaner nicht zur Verfügung. Es bedarf der Vorgabe des Betreibers, welche Telegramme von wo nach wo durchgereicht werden sollen. DB-Regelwerk 819.0731A02 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Telegramm_03" type="nsZugnummernmeldeanlage:TCTelegramm_03" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Telegramm 03 (Erste FN-Meldung) ist durchzureichen. Die Angabe von Telegrammen ist für die Durchreichfunktion erforderlich. Eine Aufstellung aller verfügbaren Telegramme steht dem LST-Fachplaner nicht zur Verfügung. Es bedarf der Vorgabe des Betreibers, welche Telegramme von wo nach wo durchgereicht werden sollen. DB-Regelwerk 819.0731A02 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Telegramm_04" type="nsZugnummernmeldeanlage:TCTelegramm_04" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Telegramm 04 (ZN/FN mit erfolgter Überschreibung von ZN/FN). Die Angabe von Telegrammen ist für die Durchreichfunktion erforderlich. Eine Aufstellung aller verfügbaren Telegramme steht dem LST-Fachplaner nicht zur Verfügung. Es bedarf der Vorgabe des Betreibers, welche Telegramme von wo nach wo durchgereicht werden sollen. DB-Regelwerk 819.0731A02 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Telegramm_10" type="nsZugnummernmeldeanlage:TCTelegramm_10" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Telegramm 10 (Einwahl von ZN und Verfügbarkeitshinweisen und Wiederkehr von Verfügbarkeitshinweisen). Die Angabe von Telegrammen ist für die Durchreichfunktion erforderlich. Eine Aufstellung aller verfügbaren Telegramme steht dem LST-Fachplaner nicht zur Verfügung. Es bedarf der Vorgabe des Betreibers, welche Telegramme von wo nach wo durchgereicht werden sollen. DB-Regelwerk 819.0731A02 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Telegramm_21" type="nsZugnummernmeldeanlage:TCTelegramm_21" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Telegramm 21 (Löschen von ZN/FN). Die Angabe von Telegrammen ist für die Durchreichfunktion erforderlich. Eine Aufstellung aller verfügbaren Telegramme steht dem LST-Fachplaner nicht zur Verfügung. Es bedarf der Vorgabe des Betreibers, welche Telegramme von wo nach wo durchgereicht werden sollen. Bei ZN-Anlagen der Bauformen Thales (einschließlich Bauformen Alcatel SEL) und Bombardier wird das Telegramm 21 unabhängig von einer Filterung IMMER durchgereicht. DB-Regelwerk 819.0731A02 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Telegramm_30" type="nsZugnummernmeldeanlage:TCTelegramm_30" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Telegramm 30 (Ersetzen von ZN/FN). Die Angabe von Telegrammen ist für die Durchreichfunktion erforderlich. Eine Aufstellung aller verfügbaren Telegramme steht dem LST-Fachplaner nicht zur Verfügung. Es bedarf der Vorgabe des Betreibers, welche Telegramme von wo nach wo durchgereicht werden sollen. Bei ZN-Anlagen der Bauformen Thales (einschließlich Bauformen Alcatel SEL) und Bombardier wird das Telegramm 30 unabhängig von einer Filterung IMMER durchgereicht. DB-Regelwerk 819.0731A02 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TBesonderes_Schaltkriterium">
+		    <xs:restriction base="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:complexType name="TCBedienbarkeit_Anzeigefeld">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTelegramm_84_Verzicht">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZN_Anzeigefeld_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="ZN_A_Bedienbezeichner_Frei"
+                     type="nsZugnummernmeldeanlage:TCZN_A_Bedienbezeichner_Frei"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe des ESTW-Bedienbezeichners als Texteingabe, Im Regelfall entspricht der Bedienbezeichner des ZN_Anzeigefeldes dem des zugehörigen Gleisfreimeldeabschnitts, in dem das ZN_Anzeigefeld angeordnet wird. Falls abweichend vom Regelfall nicht die Bezeichnung des Gleisfreimeldeabschnitts angewendet werden kann oder wird, ist eine Bezeichnung als Freitext festzulegen. DB-Regelwerk 819.0731</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[4..7]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ZN_A_Bezeichner" type="nsZugnummernmeldeanlage:TCZN_A_Bezeichner"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der Anzeigefeldbezeichnung als numerischer Wert. Als Bezeichnung ist eine ZN-Gleisnummer festzulegen, die für den Bereich der ZN-Anlage eindeutig sein muss. Die Bezeichnung (ZN-Gleisnummer) sollte aus der Gleisbezeichnung des ESTW hergeleitet werden. Spiegelfelder werden wie das gespiegelte Anzeigefeld bezeichnet. Anbiete-/Annahme sowie Voranzeigefelder erhalten eine Bezeichnung, die eine Zuordnung zum ZN Anzeigefeld im zugehörigen Gleisabschnitt erkennen lässt. Das Attribut dient der eindeutigen Erkennung des ZN-Anzeigefeldes auf dem ZLV-Bus und wird daher auch „ZLV-Bus-Bezeichner“ genannt. DB-Regelwerk 819.0731 6 (14) </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCBf_Nr_ANB">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:integer" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMAkustik_Anb_Ann">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="5_s"/>
+			      <xs:enumeration value="bis_Ankunft_Zug"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TPrioritaet">
+		    <xs:restriction base="xs:integer"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CZN_ZBS">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Abbildung der Parameter für die Anbindung einer ZN an die BZ. Der Verweis auf ID ESTW Zentraleinheit beschreibt den Ort der räumlichen Unterbringung der Koppelunterstation. Bei der Bearbeitung im Planungstool kann es notwendig sein, bereits bei Bearbeitung im Dialogfeld ZN-ZBS den Verweis auf die ESTW_Zentraleinheit zu befüllen. DB-Regelwerk 819.0731 6 (16) Die Darstellung der Angaben erfolgt im ZLV-Bus-Übersichtsplan nach 819.0731 A01 </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_ESTW_Zentraleinheit" type="nsVerweise:TCID_ESTW_Zentraleinheit"
+                           minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den Ort der räumlichen Unterbringung der Koppelunterstation </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ZN_ZBS_Allg" type="nsZugnummernmeldeanlage:CZN_ZBS_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFunktionalitaet_Anzeigefeld">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:ENUMFunktionalitaet_Anzeigefeld"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMZN_Modem">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="LOGEM_1200_MD"/>
+			      <xs:enumeration value="NOKIA_1200_SE"/>
+			      <xs:enumeration value="SCADA_NG"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TIP_Adresse">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value="([0-9]{1,3}\.){3}[0-9]{1,3}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCBf_Kennung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:ENUMBf_Kennung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMZBS_Schnittstelle">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Comserver"/>
+			      <xs:enumeration value="LOGEM_LGM_28_8_D1"/>
+			      <xs:enumeration value="NOKIA_ECM_FAST_14400"/>
+			      <xs:enumeration value="NOKIA_ECM_FAST_19200"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCZN_A_Bedienbezeichner_Frei">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:TZN_A_Bedienbezeichner_Frei"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZN_A_Bezeichner">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:TZN_A_Bezeichner" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCAkustikdauer_Sonst">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZugnummernmeldeanlage:ENUMAkustik_Sonst" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+</xs:schema>

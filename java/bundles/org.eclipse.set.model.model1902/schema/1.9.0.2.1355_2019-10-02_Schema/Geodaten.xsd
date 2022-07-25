@@ -1,0 +1,1559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:nsGeodaten="http://www.plan-pro.org/modell/Geodaten/1.9.0.2"
+           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.9.0.2"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2"
+           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.9.0.2"
+           targetNamespace="http://www.plan-pro.org/modell/Geodaten/1.9.0.2">
+	  <xs:annotation>
+		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+
+Weitere Informationen zur Lizenz finden Sie auf
+http://www.dbnetze.com/planpro
+
+Inhalt der Datei:
+XML Schema für PlanPro Schnittstelle.
+
+Für Fragen zum Schema wenden Sie sich bitte an Herrn :
+
+Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)
+
+--------------------------------------------------------------------------------
+
+This Document is licensed under the open source license RailPL V1.0.
+
+More information about the license can be found on
+http://www.dbnetze.com/planpro
+
+Contents of the file:
+XML Schema for PlanPro interface.</xs:documentation>
+	  </xs:annotation>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.9.0.2"
+              schemaLocation="Verweise.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2"
+              schemaLocation="BasisTypen.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.9.0.2"
+              schemaLocation="Basisobjekte.xsd"/>
+	  <xs:complexType name="TCGK_X">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TGK_X" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CStrecke_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="Bezeichnung_Strecke" type="nsGeodaten:TCBezeichnung_Strecke"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Streckenbezeichnung der DB AG. Streckenbezeichnungen sind i. d. R vierstellig. Ist aber z. B. der Verlauf der beiden Gleise einer zweigleisigen Strecke so unterschiedlich, dass eine getrennte Kilometrierung notwendig ist, wird der vierstelligen Bezeichnung noch eine Kennung (-1) angehängt. Beispiel: Stecke 6240 ist zweigleisig. Bedingt durch einen anderen Verlauf der linken und rechten Gleislage, bekommt z. B. das linke Gleis eine andere Kilometrierung. Strecke 6240 (Rechts); Strecke 6240-1 (Links). DB-Regelwerk 885.6002A03</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>  [4..6]; Die ersten vier Zeichen sind verpflichtend und bestehen aus Ziffern [0..9]. Zur zusätzlichen Kennung bei stark auseinander triftenden Kilometierungsachsen einer zweigleisigen Strecke wird ein [-] als fünftes Zeichen und ein alphanumerisches Zeichen [A..Z|a..z|0..9] als sechstes Zeichen verwendet. </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCTP_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:ENUMTP_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMUeberhoehungslinie_Form">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="gleichbleibend"/>
+			      <xs:enumeration value="Rampe_Bloss"/>
+			      <xs:enumeration value="Rampe_gerade"/>
+			      <xs:enumeration value="Rampe_S"/>
+			      <xs:enumeration value="Schere_Bloss"/>
+			      <xs:enumeration value="Schere_S"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CGEO_Kante">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kante des topografischen Knoten-Kanten-Modells. Die GEO_Kante ist vom GEO_Knoten A zum GEO_Knoten B gerichtet (GEO Richtungswinkel) und muss immer an zwei GEO_Knoten enden. Die Länge einer GEO_Kante zwischen den GEO_Knoten A und B entspricht der realen Gleislänge zwischen diesen Knoten und wird im Attribut GEO Laenge gespeichert. Mit Bezug auf die Regeln zu den Gleisnetzdaten (GND) ist die Länge einer GEO_Kante stets kleiner 10 km. Eine GEO_Kante besitzt eine geometrische Form, die durch GEO Form beschrieben wird. GEO_Kanten werden für die Abbildung der Gleislinie und der Kilometrierungslinie verwendet. Eine Unterscheidung dieser Anwendung erfolgt durch den Verweis ID GEO Art. Der GEO_Radius (GEO Radius A und GEO Radius B) ist negativ, wenn die GEO_Kante vom GEO_Knoten_A in einem Linksbogen führt und ist positiv, wenn diese in einen Rechtsbogen führt. Die beiden Radien sind jeweils der Radius an der A- bzw. B-Seite der GEO_Kante. Bei einem Kreisbogen wird nur der GEO Radius A angegeben. Für eine Gerade wird dieser Radius mit 0.000 definiert. Ein Algorithmus zur Darstellung eines Punktes auf einem Übergangsbogen kann der folgenden Literaturquelle entnommen werden: Media:Literatur Uebergangsbogen.pdf. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="GEO_Kante_Allg" type="nsGeodaten:CGEO_Kante_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_GEO_Art" type="nsVerweise:TCID_GEO_Art" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Durch den Verweis auf eine TOP_Kante wird die GEO_Kante als Gleislinie, beim Verweis auf eine Strecke als Kilometrierungslinie und beim Verweis auf eine Trasse_Kante als Kabel- bzw. Medientrassenlinie definiert. Der Startpunkt einer TOP-Kante ist über die Verweise auf einen TOP-Knoten A und anschließend auf einen GEO-Knoten A oder GEO-Knoten B identifizierbar. Wenn der Verweis auf GEO-Knoten A fällt, liegt der Verlauf der GEO-Kante in Richtung der TOP-Kante, andernfalls in Gegenrichtung. Weitere GEO-Kanten werden mit End- und Anfangs-Knoten verbunden, bis auf den End-Knoten einer GEO-Kante wiederum von einem TOP-Knoten B verwiesen wird. DIe Verfahrensweise ist bei Trassen-Kanten analog.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_GEO_Knoten_A" type="nsVerweise:TCID_GEO_Knoten" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den GEO Knoten am Anfang der GEO Kante. Durch die Angabe des Anfangs- sowie des Endknotens wird die Richtung der GEO Kante definiert.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_GEO_Knoten_B" type="nsVerweise:TCID_GEO_Knoten" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den GEO Knoten am Ende der GEO Kante. Durch die Angabe des Anfangs- sowie des Endknotens wird die Richtung der GEO Kante definiert.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TGK_Y">
+		    <xs:restriction base="xs:decimal">
+			      <xs:pattern value="((0|(-?[1-9][0-9]{0,}))\.[0-9]{5})|(-0\.([1-9][0-9]{4}|[0-9][1-9][0-9]{3}|[0-9]{2}[1-9][0-9]{2}|[0-9]{3}[1-9][0-9]|[0-9]{4}[1-9]))"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCGEO_KoordinatenSystem_Sonstige">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TGEO_KoordinatenSystem_Sonstige" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCGK_Y">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TGK_Y" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CTOP_Kante">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kante des topologischen Knoten-Kanten-Modells zur Darstellung der Gleislinien. Die TOP_Kante ist vom Knoten A zum Knoten B gerichtet und muss immer an zwei TOP Knoten enden. Eine TOP_Kante kann mehrere topographische Kanten (GEO_Kanten) beinhalten, die über GEO Knoten fortlaufend miteinander verbunden sind. Ein TOP Knoten ist immer auch ein GEO Knoten. Die Länge einer TOP Kante zwischen den Knoten A und B entspricht der Summe der GEO_Kanten zwischen A und B (reale Gleislänge) und wird auf Millimetergenauigkeit gerundet. Die maximale Länge einer TOP_Kante ist im Modell auf 99999,999 m (\u0026lt;100 km) begrenzt. Um ein eindeutiges Routing im topologischen Modell zu ermöglichen, sind die Anschlussarten der Kante an den beiden Knoten A und B anzugeben (siehe Attribute TOP_Anschluss_A bzw. TOP_Anschluss_B). Hierbei ist zu beachten, dass ein Routing über die Verbindung Anschluss Links - Rechts ausgeschlossen ist. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_TOP_Knoten_A" type="nsVerweise:TCID_TOP_Knoten" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den TOP Knoten am Anfang der Kante. Beginn der laufenden Länge, d. h. laufende Länge == 0.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_TOP_Knoten_B" type="nsVerweise:TCID_TOP_Knoten" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den TOP Knoten am Ende der Kante. Ende der laufenden Länge, d. h. laufende Länge = TOP Laenge.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="TOP_Kante_Allg" type="nsGeodaten:CTOP_Kante_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TWirkrichtung">
+		    <xs:restriction base="nsBasisTypen:TWirkrichtung"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TGEO_Radius_B">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="0\.00000|(-?[1-9][0-9]{1,4}\.[0-9]{5})"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCKnotenname">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TKnotenname" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TGeschwindigkeit">
+		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CTechnischer_Bereich">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschreibung sonstiger bereichsförmiger Objekte im Datenmodell. Diese werde durch Fremdsysteme bereitgestellt oder während einer Planung manuell ergänzt. Sie dienen nur zur Information für planerische Entscheidungen.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBereich_Objekt">
+				        <xs:sequence>
+					          <xs:element name="TB_Art" type="nsGeodaten:TCTB_Art" minOccurs="0" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art des technischen Bereichs. Anhand der in der Planung entstehenden Erfahrungen wird die ENUM-Liste erweitert. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="TB_Beschreibung" type="nsGeodaten:TCTB_Beschreibung" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verbale Beschreibung oder Bezeichnung des technischen Bereichs.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CTechnischer_Punkt">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschreibung sonstiger punktförmiger Objekte im Datenmodell. Diese werde durch Fremdsysteme bereitgestellt oder während einer Planung manuell ergänzt. Sie dienen nur zur Information für planerische Entscheidungen.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="TP_Art" type="nsGeodaten:TCTP_Art" minOccurs="0" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art des technischen Punktes. Anhand der in der Planung entstehenden Erfahrungen wird die ENUM-Liste erweitert.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="TP_Beschreibung" type="nsGeodaten:TCTP_Beschreibung" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verbale Beschreibung oder Bezeichnung des technischen Punktes.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMTP_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Gebaeude"/>
+			      <xs:enumeration value="Mast"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCUeberhoehung_Datum">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:date" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTB_Beschreibung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TTB_Beschreibung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CGEO_Punkt_Allg">
+		    <xs:sequence>
+			      <xs:element name="GK_X" type="nsGeodaten:TCGK_X" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ost-Wert, Rechtswert oder Latitude des definierten Koordinatensystems.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="GK_Y" type="nsGeodaten:TCGK_Y" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Nord-Wert, Hochwert oder Longitude des definierten Koordinatensystems.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="GK_Z" type="nsGeodaten:TCGK_Z" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Höhen-Wert oder Altitude des definierten Koordinatensystems. Aktuell steht die z-Koordinate dem System nicht zur Verfügung. Die z-Koordinate für den GEO_Punkt könnte durch Interpolation vorhandener Höhenpunkte Links und Rechts generiert werden. Wenn zu einem späteren Zeitpunkt die z-Koordinaten mitgeliefert werden, könnten die Höhenpunkte durch die z-Koordinaten ersetzt werden.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Plan_Quelle" type="nsGeodaten:TCPlan_Quelle" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Quelle der Geo-Kante, des Geo-Knotens, des Höhenpunkts, der Höhenlinie, der Überhöhung bzw. der Überhöhungslinie. Bei Auswahl von „sonstige“ ist zwingend ein Bearbeitungsvermerk anzugeben. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>GND</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:choice minOccurs="1" maxOccurs="1">
+				        <xs:element name="GEO_KoordinatenSystem_LSys"
+                        type="nsGeodaten:TCGEO_KoordinatenSystem_LSys"
+                        minOccurs="1"
+                        maxOccurs="1">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der topographischen Koordinaten des Geo-Punkts in LSys-Koordinaten. Die Darstellung von topographischen Koordinaten erfolgt fürGeo-Punkte in der Regel in LSys-Koordinaten. Neben den eigentlichen Koordinaten (x, y, z) wird auch das konkrete Koordinatensystem in der Bezeichnung dargestellt. Bei übergreifenden Koordinaten in Grenzbereichen, die nicht mit LSys darstellbar sind, ist das Koordinatensystem sonstige zu verwenden. Folgende Wertigkeiten (3 Zeichen) liefert das Attribut LSys(s. a. Spezifikation Gleisnetzdaten der DB): 1. Zeichen: C Meridianstreifen 6° östliche Länge; D Meridianstreifen 9° östliche Länge; E Meridianstreifen 12° östliche Länge; F Meridianstreifen 15° östliche Länge. 2. Zeichen: A System RD/83 - Bessel-Ellipsoid, Datumspunkt Rauenberg (westliche Bundesländer, Sachsen); B System PD/83 - Bessel-Ellipsoid, Datumspunkt Potsdam (Thüringen); C System 42/83 - Krassowski-Ellipsoid, Datumspunkt Pulkowo (Brandenburg, Mecklenburg, Sachsen-Anhalt); R DB-Referenzsystem (Kartesische Koordinaten); S System Soldner - Netz 88, Datumspunkt Müggelberg (Berlin). 3. Zeichen: 0 DB-GIS Bezugsystem; A..9 Sonstige kartesische Koordinaten. </xs:documentation>
+                  <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                     <ppi:WorkflowInformation>
+                        <ppi:Patternbeschreibung> [3]; Eine Zeichenkette mit 3 Zeichen, wobei das erste Zeichen ein Buchstabe [C..F], das zweite Zeichen ein Buchstabe [A..C|R|S] und das dritte Zeichen eine Ziffer [0..9] oder ein Buchstabe [A..Z] sein muss. </ppi:Patternbeschreibung>
+                     </ppi:WorkflowInformation>
+                  </xs:appinfo>
+               </xs:annotation>
+				        </xs:element>
+				        <xs:element name="GEO_KoordinatenSystem_Sonstige"
+                        type="nsGeodaten:TCGEO_KoordinatenSystem_Sonstige"
+                        minOccurs="1"
+                        maxOccurs="1">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Sonstiges Geo-Koordinatensystem. Das Attribut ist nur dann zu verwenden, wenn das verwendete Koordinatensystem für den GEO Punkt nicht den LSys-Koordinaten entspricht.</xs:documentation>
+               </xs:annotation>
+				        </xs:element>
+			      </xs:choice>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TGK_Z">
+		    <xs:restriction base="xs:decimal">
+			      <xs:pattern value="((0|(-?[1-9][0-9]{0,}))\.[0-9]{5})|(-0\.([1-9][0-9]{4}|[0-9][1-9][0-9]{3}|[0-9]{2}[1-9][0-9]{2}|[0-9]{3}[1-9][0-9]|[0-9]{4}[1-9]))"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCHoehenlinie_Form">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:ENUMHoehenlinie_Form" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TTP_Beschreibung">
+		    <xs:restriction base="nsBasisTypen:TFreiText"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CUeberhoehungslinie">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Überhöhungsverlauf zwischen zwei Überhöhungspunkten.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Ueberhoehung_A" type="nsVerweise:TCID_Ueberhoehung" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Ueberhoehung am Anfang der Ueberhoehungslinie. Durch die Angabe des Anfangs- sowie des Endpunkts wird die Richtung der Ueberhoehungslinie definiert.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Ueberhoehung_B" type="nsVerweise:TCID_Ueberhoehung" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Ueberhoehung am Ende der Ueberhoehungslinie. Durch die Angabe des Anfangs- sowie des Endpunkts wird die Richtung der Ueberhoehungslinie definiert.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Ueberhoehungslinie_Allg" type="nsGeodaten:CUeberhoehungslinie_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCV_Profil_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:ENUMV_Profil_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TGEO_KoordinatenSystem_Sonstige">
+		    <xs:restriction base="nsBasisTypen:TZeichenkette"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TKnotenname">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,20}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="THoehenpunkt_Hoehe">
+		    <xs:restriction base="xs:decimal">
+			      <xs:pattern value="-100\.000|-([1-9][0-9]{0,1}\.[0-9]{3})|(-0\.[1-9][0-9]{2}|-0\.0[1-9][0-9]|-0\.0[0-9][1-9])|((0|[1-9][0-9]{0,2}|[1-2][0-9]{3})\.[0-9]{3})|3000\.000"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCHoehenlinie_Laenge">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:THoehenlinie_Laenge" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CGEO_Punkt">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Topographischer Punkt im Koordinatensystem zur eindeutige Zuordnung im realen Gelände. Alle Objekte, die einen entsprechenden Bezug erfordern, werden über andere Objekte (z.B Verortung an der Topologie) oder auch direkt auf dieses Objekt abgebildet.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="GEO_Punkt_Allg" type="nsGeodaten:CGEO_Punkt_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_GEO_Knoten" type="nsVerweise:TCID_GEO_Knoten" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">ID des GEO_Knoten, auf den dieser GEO Punkt verweist. Einem GEO Knoten können über diesen Verweis mehrere GEO_Punkte zugewiesen werden. Das ist erforderlich, wenn ein GEO_Knoten in unterschiedlichen Koordinatensystemen zugeordnet ist. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCOertlichkeit_Gueltig_Ab">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:date" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CStrecke">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Topologische Darstellung der Kilometrierungsachse. Die topologische Kilometrierungsachse wird durch fortlaufende Aneinanderreihung von GEO-Kanten gebildet, die mittels ID GEO Art auf diese Strecke verweisen. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBereich_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsGeodaten:CStrecke_Bezeichnung" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TBezeichnung_Strecke">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value="[0-9]{4}(\-[a-zA-Z0-9])?"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCGEO_Richtungswinkel">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TGEO_Richtungswinkel" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCGK_Z">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TGK_Z" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TUeberhoehungslinie_Laenge">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TGEO_Laenge">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="-?(0|[1-9][0-9]{0,3})\.[0-9]{5}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TNeigung">
+		    <xs:restriction base="xs:decimal">
+			      <xs:pattern value="-100\.000|-([1-9][0-9]{0,1}\.[0-9]{3})|(-0\.[1-9][0-9]{2}|-0\.0[1-9][0-9]|-0\.0[0-9][1-9])|((0|[1-9][0-9]{0,1})\.[0-9]{3})|100\.000"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TOertlichkeit_Abkuerzung">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value="[A-Z]{2,5}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TGEO_PAD">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,20}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TGK_X">
+		    <xs:restriction base="xs:decimal">
+			      <xs:pattern value="((0|(-?[1-9][0-9]{0,}))\.[0-9]{5})|(-0\.([1-9][0-9]{4}|[0-9][1-9][0-9]{3}|[0-9]{2}[1-9][0-9]{2}|[0-9]{3}[1-9][0-9]|[0-9]{4}[1-9]))"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="COertlichkeit">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bahnanlagen und Betriebsstellen des Netzes. Die Örtlichkeit muss eine gültige Bezeichnung nach Ril 100 beinhalten und kann mittels ID Strecke Punkt mehreren Strecken mit Bezugskilometer zugeordnet sein. DB-Regelwerk Richtlinie 100.0001 Abschnitt 1 (1) </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsGeodaten:COertlichkeit_Bezeichnung" minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_Oertlichkeit" type="nsVerweise:TCID_Oertlichkeit" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis zur (betrieblichen) Zuordnung von Bahnhofsteilen zu Bahnhöfen und von Betriebsstellen untereinander. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Strecke_Punkt" type="nsVerweise:TCID_Strecke_Punkt" minOccurs="0"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf einen Streckenpunkt zur Lokalisierung der Örtlichkeiten im Netz. Die Information wird für die Erstellung der Ausgabeformate benötigt. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Oertlichkeit_Allg" type="nsGeodaten:COertlichkeit_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMHSystem">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="DHHN_12"/>
+			      <xs:enumeration value="DHHN_85"/>
+			      <xs:enumeration value="DHHN_92"/>
+			      <xs:enumeration value="HN_56"/>
+			      <xs:enumeration value="HN_76"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCGEO_KoordinatenSystem_LSys">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TGEO_KoordinatenSystem_LSys" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBezeichnung_Strecke">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TBezeichnung_Strecke" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CGEO_Kante_Allg">
+		    <xs:sequence>
+			      <xs:element name="GEO_Form" type="nsGeodaten:TCGEO_Form" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschreibung der geometrischen Form der Gleis-Kante. In Abhängigkeit von der Geo_Form werden die Attribute GEO Radius A und GEO Radius B mit entsprechenden Werten befüllt oder bleiben LEER. Beispiel: GEO_Form: Gerade GEO_Radius_A = LEER GEO_Radius_B = LEER GEO_Form: BOGEN GEO_Radius_A = Radius GEO_Radius_B = LEER </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="GEO_Laenge" type="nsGeodaten:TCGEO_Laenge" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Länge der GEO Kante. Die Länge wird aus den DB-GIS-Daten oder einem Trassierungsentwurf mit der dort vorhandenen Genauigkeit entnommen.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>+/-[0.00000..9999.99999]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="GEO_Radius_A" type="nsGeodaten:TCGEO_Radius_A" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zugehörige Parameter für die GEO_Form Gerade: kein zusätzlicher Parameter erforderlich oder 0.00000 angeben; Bogen: GEO_Radius_A enthält den Radius (Anfangsradius = Endradius) in [m]; Richtgerade Knick am Ende: GEO_Radius_A enthält den Brechungswinkel am Ende in [gon]; Alle anderen Kanten: GEO_Radius_A enthält den Anfangsradius in [m]. In Abhängigkeit der Bogenrichtung am GEO_Knoten_A wird der Radius bei einem Linksbogen negativ und bei einem Rechtsbogen positiv angegeben. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[-99999.99999..-10.00000|0.00000|10.00000..99999.99999]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="GEO_Radius_B" type="nsGeodaten:TCGEO_Radius_B" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zugehörige Parameter für die GEO_Form Gerade: kein zusätzlicher Parameter; Bogen: kein zusätzlicher Parameter; Richtgerade Knick am Ende: kein zusätzlicher Parameter; Alle anderen Kanten: GEO_Bogen_B enthält den Endradius in [m]. In Abhängigkeit der Bogenrichtung am GEO_Knoten_A wird der Radius bei einem Linksbogen negativ und bei einem Rechtsbogen positiv angegeben. Die Bogenrichtung ist immer identisch zum GEO_Radius_A. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[-99999.99999..-10.00000|0.00000|10.00000..99999.99999]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="GEO_Richtungswinkel" type="nsGeodaten:TCGEO_Richtungswinkel"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Parameter für eine GEO Kante, der dem Bezugswinkel (Tangente) am Anfang einer GEO_Kante dsarstellt. Das Attribut GEO_Richtungswinkel enthält den Richtungswinkel der Geo-Kante am Anfang in [gon]. Es gilt nachfolgende Zuordnung der Richtung: Nord = 0,0 gon Ost = 100,0 gon Süd = 200,0 gon West = 300,0 gon originale negative Werte werden durch Addition von 400.0 gon normalisiert. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[0.00000...399.99999]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Plan_Quelle" type="nsGeodaten:TCPlan_Quelle" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Quelle der Geo-Kante, des Geo-Knotens, des Höhenpunkts, der Höhenlinie, der Überhöhung bzw. der Überhöhungslinie. Bei Auswahl von „sonstige“ ist zwingend ein Bearbeitungsvermerk anzugeben. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>GND</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CUeberhoehung_Allg">
+		    <xs:sequence>
+			      <xs:element name="GEO_PAD" type="nsGeodaten:TCGEO_PAD" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus dem DB-GIS für jeden Vermessungspunkt bereitgestellt. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB Netz AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten händisch (z.B. von Ivl-Plänen nachgezeichnet) erstellt wurden, wird das Attribut nicht befüllt. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Plan_Quelle" type="nsGeodaten:TCPlan_Quelle" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Quelle der Geo-Kante, des Geo-Knotens, des Höhenpunkts, der Höhenlinie, der Überhöhung bzw. der Überhöhungslinie. Bei Auswahl von „sonstige“ ist zwingend ein Bearbeitungsvermerk anzugeben. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Ueberhoehung_Datum" type="nsGeodaten:TCUeberhoehung_Datum" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Aufnahmedatum der Koordinaten der Überhöhung. GND: Punktdatum; Ivl und Ivmg: Datum der letzten Bearbeitung; Kopie: Datum aus kopierter Höhe; Neutrassierung: Freigabedatum; sonstige: Datum der letzten Bearbeitung. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Ueberhoehung_Hoehe" type="nsGeodaten:TCUeberhoehung_Hoehe" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Höhendifferenz in Querrichtung eines Gleises zwischen beiden Schienen. Genauigkeit: Tausendstel m = 1 mm.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[0.000..0.200]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCUeberhoehungslinie_Laenge">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TUeberhoehungslinie_Laenge" minOccurs="1"
+                           maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMHoehenlinie_Form">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">spa/WS 31.07.2018</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Gerade"/>
+			      <xs:enumeration value="Parabel"/>
+			      <xs:enumeration value="Weichenabzweig"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCGEO_Laenge">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TGEO_Laenge" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCOertlichkeit_Gueltig_Bis">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:date" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CHoehenpunkt">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Örtliche Höhe des Bezugspunkts gemäß des Höhensystems. Liegt der Höhenpunkt innerhalb des zugehörigen Gleises, wird dieser mit einem Seitlichen Abstand im Punkt_Objekt von 0.000 angegeben und gibt die Höhe des Gleises in Meter gemäß Höhensystem an. Wird eine seitlicher Abstand ungleich 0.000 angegeben, so handelt es sich um einen sonstigen Höhenpunkt, der nicht die Höhenlage des Gleises angibt. Ein Höhenpunkt, der unmittelbar auf einem Anfang oder Ende eines Weichenschenkels liegt (TOP_Kante, mit Anschluss_A oder Anschluss_B als Links oder Rechts) ist auf die TOP_Kante der Spitze dieser Weiche zu verorten.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Hoehenpunkt_Allg" type="nsGeodaten:CHoehenpunkt_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TTB_Beschreibung">
+		    <xs:restriction base="nsBasisTypen:TFreiText"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMTB_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Bruecke"/>
+			      <xs:enumeration value="Durchlass"/>
+			      <xs:enumeration value="Schutzwand_links"/>
+			      <xs:enumeration value="Schutzwand_rechts"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="Tunnel"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCNeigung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TNeigung" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCHoehenpunkt_Hoehe">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:THoehenpunkt_Hoehe" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCHSystem">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:ENUMHSystem" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCGeschwindigkeit">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TGeschwindigkeit" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TOertlichkeit_Langname">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,40}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TGEO_KoordinatenSystem_LSys">
+		    <xs:restriction base="nsBasisTypen:TZeichenkette">
+			      <xs:pattern value="[C-F][A-C|R|S][0-9A-Z]"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CUeberhoehungslinie_Allg">
+		    <xs:sequence>
+			      <xs:element name="Plan_Quelle" type="nsGeodaten:TCPlan_Quelle" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Quelle der Geo-Kante, des Geo-Knotens, des Höhenpunkts, der Höhenlinie, der Überhöhung bzw. der Überhöhungslinie. Bei Auswahl von „sonstige“ ist zwingend ein Bearbeitungsvermerk anzugeben. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>GND</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Ueberhoehungslinie_Form" type="nsGeodaten:TCUeberhoehungslinie_Form"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Form der Ueberhoehungslinie, z. B. gleichbleibend oder gerade Rampe. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Ueberhoehungslinie_Laenge" type="nsGeodaten:TCUeberhoehungslinie_Laenge"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Länge der Ueberhoehungslinie. Genauigkeit: Tausendstel m = 1 mm.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[0.000..99999.999]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCOertlichkeit_Abkuerzung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TOertlichkeit_Abkuerzung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCOertlichkeit_Kurzname">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TOertlichkeit_Kurzname" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TGEO_Richtungswinkel">
+		    <xs:restriction base="xs:decimal">
+			      <xs:pattern value="(0|[1-9][0-9]{0,1}|[1-3][0-9]{2})\.[0-9]{5}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TUeberhoehung_Hoehe">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="0\.[01][0-9][0-9]|0\.200"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMOertlichkeit_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Abzw"/>
+			      <xs:enumeration value="Abzw Anst"/>
+			      <xs:enumeration value="Abzw Awanst"/>
+			      <xs:enumeration value="Anst Bk"/>
+			      <xs:enumeration value="Awanst Bk"/>
+			      <xs:enumeration value="Bf Abzw"/>
+			      <xs:enumeration value="Bft Abzw"/>
+			      <xs:enumeration value="BSO"/>
+			      <xs:enumeration value="Gp"/>
+			      <xs:enumeration value="Hp Abzw"/>
+			      <xs:enumeration value="Hp Abzw Anst"/>
+			      <xs:enumeration value="Hp Abzw Awanst"/>
+			      <xs:enumeration value="Hp Anst"/>
+			      <xs:enumeration value="Hp Anst Bk"/>
+			      <xs:enumeration value="Hp Awanst"/>
+			      <xs:enumeration value="Hp Awanst Bk"/>
+			      <xs:enumeration value="Hp Bft"/>
+			      <xs:enumeration value="Hp Bk"/>
+			      <xs:enumeration value="Hp Dkst"/>
+			      <xs:enumeration value="Hp Üst"/>
+			      <xs:enumeration value="Hp Üst Anst"/>
+			      <xs:enumeration value="Hp Üst Awanst"/>
+			      <xs:enumeration value="LGr"/>
+			      <xs:enumeration value="NE-Abzw"/>
+			      <xs:enumeration value="NE-Anst"/>
+			      <xs:enumeration value="NE-Awanst"/>
+			      <xs:enumeration value="NE-Bf"/>
+			      <xs:enumeration value="NE-Bft"/>
+			      <xs:enumeration value="NE-Bft Abzw"/>
+			      <xs:enumeration value="NE-Bk"/>
+			      <xs:enumeration value="NE-Gp"/>
+			      <xs:enumeration value="NE-Hp"/>
+			      <xs:enumeration value="NE-Hp Abzw"/>
+			      <xs:enumeration value="NE-Hp Anst"/>
+			      <xs:enumeration value="NE-Hp Awanst"/>
+			      <xs:enumeration value="NE-Hp Bk"/>
+			      <xs:enumeration value="NE-LGr"/>
+			      <xs:enumeration value="NE-RBGr"/>
+			      <xs:enumeration value="NE-Üst"/>
+			      <xs:enumeration value="PDGr"/>
+			      <xs:enumeration value="RBGr"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="Üst"/>
+			      <xs:enumeration value="Üst Anst"/>
+			      <xs:enumeration value="Üst Awanst"/>
+			      <xs:enumeration value="vp-Abzw"/>
+			      <xs:enumeration value="vp-Anst"/>
+			      <xs:enumeration value="vp-Awanst"/>
+			      <xs:enumeration value="vp-Bf"/>
+			      <xs:enumeration value="vp-Bft"/>
+			      <xs:enumeration value="vp-Bk"/>
+			      <xs:enumeration value="vp-Hp"/>
+			      <xs:enumeration value="vp-Hp Abzw"/>
+			      <xs:enumeration value="vp-Hp Anst"/>
+			      <xs:enumeration value="vp-Hp Anst Bk"/>
+			      <xs:enumeration value="vp-Hp Awanst"/>
+			      <xs:enumeration value="vp-LGr"/>
+			      <xs:enumeration value="vp-RBGr"/>
+			      <xs:enumeration value="Anst"/>
+			      <xs:enumeration value="Awanst"/>
+			      <xs:enumeration value="Bf"/>
+			      <xs:enumeration value="Bft"/>
+			      <xs:enumeration value="Bk"/>
+			      <xs:enumeration value="BZ"/>
+			      <xs:enumeration value="Dkst"/>
+			      <xs:enumeration value="Hp"/>
+			      <xs:enumeration value="Sbk"/>
+			      <xs:enumeration value="Strw"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCPlan_Quelle">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:ENUMPlan_Quelle" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TTOP_Laenge">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMPlan_Quelle">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Ersatztrassierung"/>
+			      <xs:enumeration value="GIS"/>
+			      <xs:enumeration value="GND"/>
+			      <xs:enumeration value="Ivl"/>
+			      <xs:enumeration value="Ivmg"/>
+			      <xs:enumeration value="Kopie"/>
+			      <xs:enumeration value="Neutrassierung"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="GND_autokorr"/>
+			      <xs:enumeration value="GND_mankorr"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="COertlichkeit_Allg">
+		    <xs:sequence>
+			      <xs:element name="Oertlichkeit_Art" type="nsGeodaten:TCOertlichkeit_Art" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der Örtlichkeit. Die Befüllungen sind der ENUM-Liste von Bahnanlagen und Betriebsstellen des Netzes, weiterer Örtlichkeiten mit Fahrplanzeiten sowie sonstiger Punkte zu entnehmen und müssen in der Regel mit der Angabe in der Ril 100 übereinstimmen. Ab der Version 1.8.0 wird die Schreibweise der ENUM-Werte identisch zur Ril 100 übernommen, indem Umlaute und Leezeichen verwendet werden. Die im Glossar mit (E) gekennzeichneten Werte entfallen zukünftig und sollen daher nicht mehr für Neuanwendungen genutzt werden. DB-Regelwerk Die verwendeten Codierungen sind im Anhang 1 Abschnitt 3 der Richtlinie 100.0001 zusammengestellt und in ihrer Bedeutung erklärt. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Oertlichkeit_Gueltig_Ab" type="nsGeodaten:TCOertlichkeit_Gueltig_Ab"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gültig ab ist eine Angabe zum ersten Gültigkeitstag der Abkürzung oder eine andere Angabe gemäß Regelwerk. DB-Regelwerk Die Angaben zur Gültigkeit sind in Richtlinie 100.0001 Abschnitt 4 (2) geregelt.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Oertlichkeit_Gueltig_Bis" type="nsGeodaten:TCOertlichkeit_Gueltig_Bis"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gültig bis ist eine Angabe zum letzten Gültigkeitstag der Abkürzung oder eine andere Angabe gemäß Regelwerk. DB-Regelwerk Die Angaben zur Gültigkeit sind in Richtlinie 100.0001 Abschnitt 4 (2) geregelt.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CGEO_Knoten">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Knoten des topografischen Knoten-Kanten-Modells. Die Anzahl der anschließenden topografischen Kanten (Gleislinie oder Kilometrierungslinie) ist je nach Art des GEO Knoten bzw. Art des zugehörigen TOP Knoten unterschiedlich: Für die Gleislinie gilt: Eine GEO-Kante: Der GEO_Knoten ist gleichzeitig auch ein TOP Knoten, an dem die Topografie und Topologie endet (z. B. Gleisende, Betrachtungsende oder Digitalisierungsende). Zwei GEO-Kanten: Der GEO_Knoten verweist nicht auf einen TOP Knoten: Änderung der Geometrie des Gleises oder Vermessungspunkt. Drei GEO-Kanten: Der GEO_Knoten ist gleichzeitig auch ein Knoten, an dem eine Verzweigung der Gleis- oder Kilometrierungslinie vorhanden ist. Über einen Verweis von GEO Punkt zu GEO_Knoten werden die realen Koordinaten (ggf. auch von mehreren Koordinatensystemen) dieses Knotens zugeordnet. Weitere Fälle mit 0..1 anschließenden GEO-Kanten treten an GEO_Knoten auf, an deren Stelle sich auch ein TOP Knoten der Art Verbindungsknoten befindet (siehe Beschreibung Verbindungsknoten). </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="GEO_PAD" type="nsGeodaten:TCGEO_PAD" minOccurs="0" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus dem DB-GIS für jeden Vermessungspunkt bereitgestellt. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB Netz AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten händisch (z.B. von Ivl-Plänen nachgezeichnet) erstellt wurden, wird das Attribut nicht befüllt. </xs:documentation>
+                     <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                        <ppi:WorkflowInformation>
+                           <ppi:Patternbeschreibung>[1..20</ppi:Patternbeschreibung>
+                        </ppi:WorkflowInformation>
+                     </xs:appinfo>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTOP_Anschluss_A">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:ENUMTOP_Anschluss" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCGEO_Radius_B">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TGEO_Radius_B" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCGEO_PAD">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TGEO_PAD" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CUeberhoehung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Örtlicher Höhenunterschied beider Schienen eines Gleises in Querrichtung. Die Überhöhung ist eine Querneigung eines Gleises in einem Bogen an einem Punkt im Gleis. Durch die seitliche Lage (als Attribut des Punkt_Objektes - links oder rechts) wird die höhere Seite der beiden Schienen beschrieben. Ein Höhenpunkt, der unmittelbar auf einem Anfang oder Ende eines Weichenschenkels liegt (TOP_Kante, mit Anschluss_A oder Anschluss_B als Links oder Rechts) ist auf die TOP_Kante der Spitze dieser Weiche zu verorten.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Ueberhoehung_Allg" type="nsGeodaten:CUeberhoehung_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCUeberhoehung_Hoehe">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TUeberhoehung_Hoehe" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCUeberhoehungslinie_Form">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:ENUMUeberhoehungslinie_Form" minOccurs="1"
+                           maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMTOP_Anschluss">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Ende"/>
+			      <xs:enumeration value="Ende_Bestdig"/>
+			      <xs:enumeration value="Links"/>
+			      <xs:enumeration value="Rechts"/>
+			      <xs:enumeration value="Schnitt"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="Spitze"/>
+			      <xs:enumeration value="Verbindung"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCGEO_Radius_A">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TGEO_Radius_A" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CGeschwindigkeitsprofil">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zulässige Geschwindigkeit der Strecke, bei ETCS auch außerhalb der durchgehenden Hauptgleise. Das Geschwindigkeitsprofil wird zusammengesetzt aus Bereichen mit konstanten Geschwindigkeiten. Es kann in unterschiedlichen Arten (z. B. NeiTec, ETCS) ausgeprägt sein. Für jede Art wird ein separates Geschwindigkeitsprofil angelegt. \"Geschwindigkeitsband\" ist ein Synonym für Geschwindigkeitsprofil. Unabhängig vom Geschwindigkeitsprofil können in Elementen (Weiche, Gleisabschnitt) eigene Geschwindigkeiten hinterlegt sein. Je nach Anwendung wird über die Gültigkeit der in den Elementen hinterlegten Geschwindigkeit oder der des Geschwindigkeitsprofils entschieden.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBereich_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Geschwindigkeitsprofil_Allg"
+                           type="nsGeodaten:CGeschwindigkeitsprofil_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTOP_Laenge">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TTOP_Laenge" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CHoehenlinie_Allg">
+		    <xs:sequence>
+			      <xs:element name="Hoehenlinie_Form" type="nsGeodaten:TCHoehenlinie_Form" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Form der Hoehenlinie, z. B. Gerade.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Hoehenlinie_Laenge" type="nsGeodaten:TCHoehenlinie_Laenge" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Länge der Hoehenlinie. Genauigkeit: Tausendstel m = 1 mm.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[0.000..99999.999]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Plan_Quelle" type="nsGeodaten:TCPlan_Quelle" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Quelle der Geo-Kante, des Geo-Knotens, des Höhenpunkts, der Höhenlinie, der Überhöhung bzw. der Überhöhungslinie. Bei Auswahl von „sonstige“ ist zwingend ein Bearbeitungsvermerk anzugeben. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>GND</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="THoehenlinie_Laenge">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TStrecke_Meter">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="-?(0|[1-9][0-9]{0,5})\.[0-9]{3}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCHoehenpunkt_Datum">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:date" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CTOP_Kante_Allg">
+		    <xs:sequence>
+			      <xs:element name="TOP_Anschluss_A" type="nsGeodaten:TCTOP_Anschluss_A" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art des Anschlusses am Ende A der TOP_Kante. Eine TOP_Kante muss sowohl am Ende A als auch am Ende B auf einem TOP_Knoten verweisen. In der Regel schließen an einen TOP_Knoten weitere TOP_Kanten an. Wenn an einem TOP_Knoten nur eine TOP_Kante anschließt, endet an diesem Knoten die Topologie des Gleisnetzes. Nachfolgende Arten des Endes einer Topologie sind vorgesehen: Ende - reales Ende einer Gleislinie (z.B. Prellbock, Fähranleger, ...). Ende_Bestdig - temporäres Ende einer Gleislinie, die real weiterführt, aber deren Weiterführung noch nicht im Modell hinterlegt ist. Schnitt - Anschlusspunkt einer Neutrassierung an einen vorhandenen Bestand der Gleislinie. Im Bestand muss dieser Knoten nur ein GEO Punkt sein. Nach dem Einbinden der Neutrassierung in die Bestandsgleislage entfällt dieser TOP_Knoten durch eine neue durchlaufende TOP_Kante. Hinweis für die Fahrwegfindung (Routing): Endet ein Routing auf LINKS oder RECHTS, darf nur ein Fahrweg (Routing) vom gleichen Knoten über die SPITZE gesucht werden. Endet ein Routing auf SPITZE, findet eine Fahrwegverzweigung statt, d.h. vom gleichen Knoten werden zwei getrennte Fahrwege (Routings) über LINKS und RECHTS gesucht. Bei einer Kante mit dem Anschluss VERBINDUNG ist die nachfolgende Infrastruktur aufgrund des Zuschnitts des Planungsbereichs nicht verfügbar. Folgende Werte-Kombinationen entstehen daher für TOP_Knoten.Art Besonders (E) und TOP_Kante.TOP_Anschluss_A bzw. ..._B: Art des TOP_Knoten TOP_Knoten.Art Besonders TOP_Kante.TOP_Anschluss_... Verbindungsknoten Verbindung (E) Verbindung Weichenknoten - Links, Rechts, Spitze Infrastrukturende (Gleisabschluss) - Ende Digitalisierungsende Ende_Bestdig (E) Ende_Bestdig </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="TOP_Anschluss_B" type="nsGeodaten:TCTOP_Anschluss_B" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art des Anschlusses am Ende B der TOP_Kante. Eine TOP_Kante muss sowohl am Ende A als auch am Ende B auf einem TOP_Knoten verweisen. In der Regel schließen an einen TOP_Knoten weitere TOP_Kanten an. Wenn an einem TOP_Knoten nur eine TOP_Kante anschließt, endet an diesem Knoten die Topologie des Gleisnetzes. Nachfolgende Arten des Endes einer Topologie sind vorgesehen: Ende - reales Ende einer Gleislinie (z.B. Prellbock, Fähranleger, ...). Ende_Bestdig - temporäres Ende einer Gleislinie, die real weiterführt, aber deren Weiterführung noch nicht im Modell hinterlegt ist. Schnitt - Anschlusspunkt einer Neutrassierung an einen vorhandenen Bestand der Gleislinie. Im Bestand muss dieser Knoten nur ein GEO Punkt sein. Nach dem Einbinden der Neutrassierung in die Bestandsgleislage entfällt dieser TOP_Knoten durch eine neue durchlaufende TOP_Kante. Hinweis für die Fahrwegfindung (Routing): Endet ein Routing auf LINKS oder RECHTS, darf nur ein Fahrweg (Routing) vom gleichen Knoten über die SPITZE gesucht werden. Endet ein Routing auf SPITZE, findet eine Fahrwegverzweigung statt, d.h. vom gleichen Knoten werden zwei getrennte Fahrwege (Routings) über LINKS und RECHTS gesucht. Bei einer Kante mit dem Anschluss VERBINDUNG ist die nachfolgende Infrastruktur aufgrund des Zuschnitts des Planungsbereichs nicht verfügbar. Folgende Werte-Kombinationen entstehen daher für TOP_Knoten.Art Besonders (E) und TOP_Kante.TOP_Anschluss_A bzw. ..._B: Art des TOP_Knoten TOP_Knoten.Art Besonders TOP_Kante.TOP_Anschluss_... Verbindungsknoten Verbindung (E) Verbindung Weichenknoten - Links, Rechts, Spitze Infrastrukturende (Gleisabschluss) - Ende Digitalisierungsende Ende_Bestdig (E) Ende_Bestdig </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="TOP_Laenge" type="nsGeodaten:TCTOP_Laenge" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Länge der TOP-Kante. Genauigkeit: Tausendstel m = 1 mm.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [0.000..99999.999]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CHoehenpunkt_Allg">
+		    <xs:sequence>
+			      <xs:element name="GEO_PAD" type="nsGeodaten:TCGEO_PAD" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus dem DB-GIS für jeden Vermessungspunkt bereitgestellt. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB Netz AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten händisch (z.B. von Ivl-Plänen nachgezeichnet) erstellt wurden, wird das Attribut nicht befüllt. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [7..11] Alphanumerische Zeichenkette, die ersten vier Zeichen sind Ziffern [0..9], die 5. und 6. Stelle sind Großbuchstaben [A..Z] und die letzten fünf Zeichen sind Zahlen [1 .. 99999] ohne führende Nullen. </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Hoehenpunkt_Datum" type="nsGeodaten:TCHoehenpunkt_Datum" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Aufnahmedatum der Höhenwerte des Hoehenpunktes. GND: Punktdatum; Ivl und Ivmg: Datum der letzten Bearbeitung; Kopie: Datum aus kopierter Höhe; Neutrassierung: Freigabedatum; sonstige: Datum der letzten Bearbeitung. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Hoehenpunkt_Hoehe" type="nsGeodaten:TCHoehenpunkt_Hoehe" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der Höhe bezogen auf das Höhensystem in Meter. Genauigkeit: Tausendstel m = 1 mm.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[-100.000..3000.000]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="HSystem" type="nsGeodaten:TCHSystem" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, auf welchem Höhensystem die Angabe der Höhe beruht. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Neigung" type="nsGeodaten:TCNeigung" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Neigung des Gleises bzw. der Hoehenlinie am Ort des Hoehenpunkts. Die Angabe ist nur bei geradem Neigungsverlauf sinnvoll.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[-100.000..100.000]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Plan_Quelle" type="nsGeodaten:TCPlan_Quelle" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Quelle der Geo-Kante, des Geo-Knotens, des Höhenpunkts, der Höhenlinie, der Überhöhung bzw. der Überhöhungslinie. Bei Auswahl von „sonstige“ ist zwingend ein Bearbeitungsvermerk anzugeben. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>GND</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCOertlichkeit_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:ENUMOertlichkeit_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CHoehenlinie">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Höhenverlauf zwischen zwei Höhenpunkten.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Hoehenlinie_Allg" type="nsGeodaten:CHoehenlinie_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_Hoehenpunkt_A" type="nsVerweise:TCID_Hoehenpunkt" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den Hoehenpunkt am Anfang der Hoehenlinie. Durch die Angabe des Anfangs- sowie des Endpunkts wird die Richtung der Hoehenlinie definiert.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Hoehenpunkt_B" type="nsVerweise:TCID_Hoehenpunkt" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den Hoehenpunkt am Ende der Hoehenlinie. Durch die Angabe des Anfangs- sowie des Endpunkts wird die Richtung der Hoehenlinie definiert.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CGeschwindigkeitsprofil_Allg">
+		    <xs:sequence>
+			      <xs:element name="Geschwindigkeit" type="nsGeodaten:TCGeschwindigkeit" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zulässige Geschwindigkeit nach jeweiligem Geschwindigkeitsprofil. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="V_Profil_Art" type="nsGeodaten:TCV_Profil_Art" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art des Geschwindigkeitsprofils.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Wirkrichtung" type="nsGeodaten:TCWirkrichtung" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">(Fahrt-)Richtung, in die ein verortetes Objekt wirkt. Die Angabe \"in\", \"gegen\" bzw. \"beide\" bezieht sich auf die Topologierichtung der TOP Kante. Weitere Erläuterungen zu den verwendeten Richtungsbegriffen siehe Modellierung Richtung. Zur vererbungsspezifischen Befüllung siehe Modellierung Basisobjekte. DB-Regelwerk Darstellung im sicherungstechnischen Lageplan</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMV_Profil_Art">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">ES: Erhöhte Seitenbeschleunigung</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="anzeigegeführt"/>
+			      <xs:enumeration value="signalgeführt"/>
+			      <xs:enumeration value="signalgeführt ES"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="windabhängig"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CTOP_Knoten">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Knoten des topologischen Knoten-Kanten-Modells. Der TOP_Knoten verweist auf einen GEO_Knoten. Die Anzahl der an den TOP_Knoten anschließenden topologischen Kanten ist je nach Art des TOP_Knoten unterschiedlich und muss mit der Anzahl der an den zugehörigen GEO Knoten anschließenden GEO_Kanten übereinstimmen: eine TOP-Kante: Gleisende, Digitalisierungsende, Betrachtungsende; drei TOP-Kanten: verzweigendes Fahrwegelement (siehe Modellierung Weichen). Weitere Fälle mit 0..2 anschließenden TOP-Kanten treten am Verbindungsknoten auf (siehe entsprechende Beschreibung). (E) Das die Attributgruppe Art Besonders zum Entfall vorgesehen ist, wird nach der Version 1.8.0 auch die Attributgruppe TOP_Knoten_Allg aufgelöst. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_GEO_Knoten" type="nsVerweise:TCID_GEO_Knoten" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ein TOP_Knoten fällt immer mit einem GEO_Knoten der Gleislinie zusammen. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Knotenname" type="nsGeodaten:TCKnotenname" minOccurs="0" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung für den Knoten. Die Bezeichnung wird aus dem DB-GIS System übernommen um die Referenz sicherzustellen. Bei Neutrassierung kann diese Bezeichnung leer bleiben. </xs:documentation>
+                     <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                        <ppi:WorkflowInformation>
+                           <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>
+                        </ppi:WorkflowInformation>
+                     </xs:appinfo>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTP_Beschreibung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TTP_Beschreibung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTB_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:ENUMTB_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCOertlichkeit_Langname">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TOertlichkeit_Langname" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCStrecke_Meter">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TStrecke_Meter" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMGEO_Form">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Bloss_einfach_geschwungen"/>
+			      <xs:enumeration value="Km_Sprung"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="Blosskurve"/>
+			      <xs:enumeration value="Bogen"/>
+			      <xs:enumeration value="Gerade"/>
+			      <xs:enumeration value="Klothoide"/>
+			      <xs:enumeration value="Uebergangsbogen_S_Form"/>
+			      <xs:enumeration value="Richtgerade_Knick_am_Ende_200_gon"/>
+			      <xs:enumeration value="S_Form_einfach_geschwungen"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TOertlichkeit_Kurzname">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,16}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TGEO_Radius_A">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="0\.00000|(-?[1-9][0-9]{1,4}\.[0-9]{5})"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="COertlichkeit_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="Oertlichkeit_Abkuerzung" type="nsGeodaten:TCOertlichkeit_Abkuerzung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">2- bis 5-stellige Abkürzung der Örtlichkeit gemäß Ril 100.0001. Beispiel P-Hausen: PPHN.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [2..5] Im Regelfall sollen nur 4 Zeichen genutzt werden. Es sind nur Großbuchstaben, Zahlen und Leerzeichen zulässig. Umlaute, führende Zahlen sowie führende Leerzeichen sind nicht zulässig. Die Aufeinanderfolge von 3 oder 4 gleichen Buchstaben ist unzulässig. Für die Kennzeichnung des Ortes stehen maximal 3 Zeichen zur Verfügung. Das 1. Zeichen ist das Gebietskennzeichen. Die 2.-4. Zeichen bilden die Ortsabkürzung. Das 5. Zeichen ist ein Unterscheidungszeichen innerhalb des Ortes. Nicht belegte Zeichen (3. und 4. Zeichen) werden durch Leerzeichen aufgefüllt. Abkürzungen für Selbstblocksignale werden aus dem Gebietskennzeichen und der Nummer des Sbk gebildet. *Die Nummer ist rechtsbündig zu schreiben (auffüllen mit Leerzeichen). Bei gleichen Nummern in einem Gebiet können vor oder nach der Nummer beliebige Unterscheidungszeichen eingefügt werden. Bei der Überarbeitung der Modellierung und der künftigen Patternbeschreibung ist die Technische Mitteilung TM 2011-264 I.NVT 3, gültig ab 05.08.2011 (siehe oben) zu beachten. Leerzeichen werden künftig durch \"X\" ersetzt. Die neue Abkürzung mit der ersetzten Form muss jedoch im Datenbüro beantragt werden. </ppi:Patternbeschreibung>
+                     <ppi:Patternbeschreibung_Abweichend>[2..5] Großbuchstaben ohne Umlaute</ppi:Patternbeschreibung_Abweichend>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Oertlichkeit_Kurzname" type="nsGeodaten:TCOertlichkeit_Kurzname"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">16-stelliger Name der Örtlichkeit. Der Kurzname wird der Ril 100 entnommen und muss in der Schreibweise mit dieser übereinstimmen. DB-Regelwerk Die Bildung des Kurznamens ist in Richtlinie 100.0001 Abschnitt 3 (6) beschrieben.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Oertlichkeit_Langname" type="nsGeodaten:TCOertlichkeit_Langname"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">40-stelliger Name der Örtlichkeit Der Langname einer Örtlichkeit wird i. d. R nur dann abweichend zum Kurznamen gebildet, wenn die 16 Zeichen des Kurznamens nicht ausreichend sind. Anderenfalls sind Kurzname und Langname identisch. DB-Regelwerk Die Bildung des Langnamens ist in Richtlinie 100.0001 Abschnitt 3 (6) beschrieben.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..40] darf sich innerhalb eines Datenbestandes nicht wiederholen beinhaltet rechtsbündig einzutragende Ergänzungen zur Unterscheidung gleichnamiger Örtlichkeiten muss mit Orts- bzw. Ortsteilnamen beginnen </ppi:Patternbeschreibung>
+                     <ppi:Patternbeschreibung_Abweichend>[1..40]</ppi:Patternbeschreibung_Abweichend>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CStrecke_Punkt">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Topologischer Punkt auf der zugehörigen Streckenlinie mit dem Wert der Streckenkilometrierung in Meterschreibweise. Der Streckenpunkt kann auf einen GEO Knoten verweisen, der über einen (oder mehrere) GEO_Punkte geografisch referenziert wird. Ohne diesen Verweis wird der Streckenpunkt nur auf eine Strecke mit Streckenkilometer referenziert. Die GEO Knoten sind über GEO_Kanten untereinander verbunden und beschreiben in ihrer Gesamtheit eine Streckenlinie. Jede Strecke hat mindestens zwei Streckenpunkte als Anfang und Ende der Strecke. Der GEO Knoten am Anfang bzw. am Ende einer Streckenlinie hat nur eine GEO Kante, ansonsten sind es zwei. An einem Kilometersprung werden zwei Streckenpunkte (ggf. mit identischen GEO-Koordinaten) gebildet. Die Länge der verbindende GEO_Kante (- oder +) beinhaltet den Wert des Kilometersprunges. Eine Überlänge ist negativ, eine Fehllänge ist positiv.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_GEO_Knoten" type="nsVerweise:TCID_GEO_Knoten" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">ID des GEO_Knoten, auf den der Strecke_Punkt verweist. Der Verweis ist nur zu befüllen, wenn auch eine Streckenlinie mit GEO-Daten vorhanden ist. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Strecke" type="nsVerweise:TCID_Strecke" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung eines Streckenpunktes zu einer Streckennummer.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Strecke_Meter" type="nsGeodaten:TCStrecke_Meter" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kilometer an einem Knoten der Streckenlinie in Meterschreibweise. Dieses Attribut ist für jeden Streckenpunkt zu befüllen. Im Datenmodell sind die Werte als TMeter mit 3 Nachkommastellen abgespeichert (Genauigkeit für Darstellung in CAD-Systemen: Tausendstel m = 1 mm).</xs:documentation>
+                     <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                        <ppi:WorkflowInformation>
+                           <ppi:Patternbeschreibung>[-999999.999..0.000..999999.999]</ppi:Patternbeschreibung>
+                        </ppi:WorkflowInformation>
+                     </xs:appinfo>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCGEO_Form">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:ENUMGEO_Form" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTOP_Anschluss_B">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:ENUMTOP_Anschluss" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCWirkrichtung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsGeodaten:TWirkrichtung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+</xs:schema>

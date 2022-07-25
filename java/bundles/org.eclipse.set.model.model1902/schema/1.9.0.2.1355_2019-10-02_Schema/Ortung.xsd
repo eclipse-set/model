@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:nsOrtung="http://www.plan-pro.org/modell/Ortung/1.9.0.2"
+           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.9.0.2"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2"
+           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.9.0.2"
+           targetNamespace="http://www.plan-pro.org/modell/Ortung/1.9.0.2">
+	  <xs:annotation>
+		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+
+Weitere Informationen zur Lizenz finden Sie auf
+http://www.dbnetze.com/planpro
+
+Inhalt der Datei:
+XML Schema für PlanPro Schnittstelle.
+
+Für Fragen zum Schema wenden Sie sich bitte an Herrn :
+
+Reiner Brödel (reiner.broedel@deutschebahn.com, +49 30 297-57123)
+
+--------------------------------------------------------------------------------
+
+This Document is licensed under the open source license RailPL V1.0.
+
+More information about the license can be found on
+http://www.dbnetze.com/planpro
+
+Contents of the file:
+XML Schema for PlanPro interface.</xs:documentation>
+	  </xs:annotation>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.9.0.2"
+              schemaLocation="Verweise.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.9.0.2"
+              schemaLocation="BasisTypen.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.9.0.2"
+              schemaLocation="Basisobjekte.xsd"/>
+	  <xs:complexType name="CFMA_Anlage_Kaskade">
+		    <xs:sequence>
+			      <xs:element name="FMA_Kaskade_Bezeichnung" type="nsOrtung:TCFMA_Kaskade_Bezeichnung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ergänzt bei technisch notwendiger Unterteilung eines Gleisabschnitts in mehr als einen Freimeldeabschnitt die Bezeichnung. Die Ergänzung (i. d. R. .1, .2, .3, …; aber auch a, b, c, … oder I, II, III, … ist möglich) wird der Bezeichnung des zugeordneten Objekts Gleis Abschnitt nachgestellt. DB-Regelwerk Planungsdaten: Sicherungstechnischer Lageplan, Gleisfreimeldeplan, Freimeldetabelle, Spalte 1. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[a-z]|[A-Z]|[I-XII]| [.1-.9]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Kaskade_Einzelauswertung"
+                     type="nsOrtung:TCFMA_Kaskade_Einzelauswertung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Legt fest, ob bei Kaskadierung mehrerer Freimeldeabschnitte zu einem Gleisabschnitt zusätzlich zur Gesamtauswertung des Gleisabschnitts eine Einzelauswertung der einzelnen Freimeldeabschnitte vorgesehen ist. Dies ist u.A. sinnvoll, wenn ein Gleisabschnitt bei unterschiedlichen Fahrtrichtungen zwar in unterschiedlicher Länge benötigt wird, jedoch in beiden Richtungen eine gemeinsame Grenze möglich ist. Wertzuordnung: true - Einzelauswertung vorgesehen, false - Einzelauswertung nicht vorgesehen. DB-Regelwerk Attribut ist im bisherigen PT1 ohne eindeutige Darstellung. Die Angabe kann mittelbar den Einträgen in der Freimeldetabelle entnommen werden (eine zusätzliche Zeile für den gesamten Gleisabschnitt zusätzlich zu den Zeilen für jeden Teil-Freimeldeabschnitt. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CFMA_Anlage_Uebertragung_FMinfo">
+		    <xs:sequence>
+			      <xs:element name="ID_Uebertragung_FMinfo" type="nsVerweise:TCID_Aussenelementansteuerung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf eine benachbarte Aussenelementansteuerung, mit der die Freimeldeinformation dieser FMA Anlage ausgetauscht wird. Voraussetzung für die Verwendung dieses Zeigers ist, dass die Freimeldeinformation in zwei Außenelementansteuerungen verwertet wird, die unterschiedlichen Unterbringungen zugeordnet sind, weshalb eine Datenübertragung erfolgen muss. Der Zeiger wird ergänzt mit den Attributen Uebertragung FMinfo Richtung und Uebertragung FMinfo Typ. DB-Regelwerk Attribut ist im bisherigen PT 1 ohne eindeutige Darstellung. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Uebertragung_FMinfo_Richtung"
+                     type="nsOrtung:TCUebertragung_FMinfo_Richtung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschreibung der Richtung des Informationsflusses mit einer benachbarten Außenelementansteuerung. Ist nur in Verbindung mit ID Uebertragung FMinfo erforderlich. Wertzuordnung: gehend: Freimeldeabschnitt übergibt Information an andere Außenelementansteuerung, kommend: Freimeldeabschnitt erhält Information von anderer Außenelementansteuerung. DB-Regelwerk Ist im bisherigen PT1 ohne eindeutige Darstellung. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Uebertragung_FMinfo_Typ" type="nsOrtung:TCUebertragung_FMinfo_Typ"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnet das technische System der Informationsübertragung. Ist nur in Verbindung mit ID Uebertragung FMinfo erforderlich. Beispiele: EF 180, FMX 2, Simis DTS, TF 460, Vital 21. DB-Regelwerk Ist im bisherigen PT 1 ohne eindeutige Darstellung.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCFMA_Anschluss_Bezeichnung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TFMA_Anschluss_Bezeichnung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMBezeichnung_Kennbuchstabe">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="G"/>
+			      <xs:enumeration value="B"/>
+			      <xs:enumeration value="W"/>
+			      <xs:enumeration value="K"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CFMA_Komponente">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Freimeldeabschnittsgrenze (Isolierstoß, elektrischer Stoß, Achszählpunkt). Die FMA_Komponente wird dem Punkt im Gleis zugeordnet, bis zu dem die Erkennung einer Belegung gemäß Anwendungsrichtlinien als gesichert gilt. Die zu den zugehörigen Gleisabschnitten gehörenden Bereichsobjekte Gleis Abschnitt müssen deshalb exakt an diesem Punktobjekt enden. Zur Ermittlung der seitlichen Lage einer FMA_Komponente siehe Modellierung Gleisfreimeldung. Eine FMA_Komponente kann nur an einer Seite mindestens einen Freimeldeabschnitt oder beidseitig jeweils mindestens einen Freimeldeabschnitt begrenzen. Bei überlappenden Freimeldeabschnittsgrenzen (z.B. am Übergang von FTGS- zu Achszähl- Gleisfreimeldeanlagen) ist jede Freimeldeabschnittsgrenze für sich als FMA_Komponente zu erfassen. Direkt auf Höhe, rechts und/oder links der Freimeldeabschnittsgrenze können sich technische Anlagen für die Gleisfreimeldung befinden, siehe dazu FMA Element. Das Befahren einer FMA_Komponente kann auch weitere Schaltvorgänge auslösen, siehe dazu Schaltmittel Zuordnung. DB-Regelwerk Typspezifische Planungshinweise und Technische Mitteilungen; Planungsdaten: Sicherungstechnischer Lageplan, BÜ-Lageplan; Achszählübersichtsplan; Freimeldetabelle; Achszähltabelle. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsBasisTypen:CBezeichnung_Element" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Bezugspunkt" type="nsVerweise:TCID_Markanter_Punkt" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Punkt Objekt, dass für die Positionierung der Freimeldeabschnittsgrenze (FMA_Komponente) bzw. der Zugeinwirkung maßgebend ist. Für alle Arten von Freimeldeabschnittsgrenzen bzw. Zugeinwirkungen anzugeben, für die ein Bezugspunkt existiert, zu dem ein vorgeschriebener Abstand erforderlich ist. Typische Bezugspunkte sind Signal, Weichen-Komponente und Gleissperren-Komponente. DB-Regelwerk bei Achszählpunkten: Achszähltabelle, Spalte 17; bei anderen Freimeldeabschnittsgrenzen und Zugeinwirkungen: häufig aus einer Abstandsangabe im Sicherungstechnischen Lageplan / BÜ-Lageplan erkennbar. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_FMAgrenze" type="nsVerweise:TCID_FMA_Anlage" minOccurs="1"
+                           maxOccurs="4">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf einen Freimeldeabschnitt, der durch diese Freimeldeabschnittsgrenze begrenzt wird. Der Verweis kann mehrfach verwendet werden, wenn mehrere Freimeldeabschnitte durch eine Freimeldeabschnittsgrenze begrenzt werden. DB-Regelwerk Planungsdaten: Angabe nur bei Achszählern üblich, dort in der Achszähltabelle. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:choice minOccurs="1" maxOccurs="1">
+						            <xs:element name="FMA_Komponente_Achszaehlpunkt"
+                              type="nsOrtung:CFMA_Komponente_Achszaehlpunkt"
+                              minOccurs="1"
+                              maxOccurs="1"/>
+						            <xs:element name="FMA_Komponente_Art" type="nsOrtung:TCFMA_Komponente_Art" minOccurs="1"
+                              maxOccurs="1">
+							              <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der Freimeldeabschnittsgrenze. Dieses Attribut wird mit Ausnahme der Achszähltechnik für alle Arten von Gleisfreimeldungen eingetragen. Je nach Art der Freimeldeanlage und örtlicher Lage ist die Angabe dieses Attributs ausreichend oder es müssen zur weiteren Detaillierung Objekte FMA Element hinzugefügt werden. Grundsätzlich sind alle FMA_Komponenten zentrale Anlagenteile. Inwieweit sie beidseitig genutzt werden, ergibt sich aus der Art und Lage der angrenzenden FMA_Anlagen. Das Attribut wird im bisherigen PT 1 im Gleisisolierplan (oder bei einfachen Verhältnissen im Signallageplan) dargestellt. DB-Regelwerk Planungsdaten: Sicherungstechnischer Lageplan, BÜ-Lageplan, Gleisfreimeldeplan. </xs:documentation>
+                     </xs:annotation>
+						            </xs:element>
+					          </xs:choice>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFMA_Laenge_Beeinflusst">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TFMA_Laenge_Beeinflusst" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CFMA_Anlage_Allg">
+		    <xs:sequence>
+			      <xs:element name="FMA_Art" type="nsOrtung:TCFMA_Art" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der Gleisfreimeldeanlage. DB-Regelwerk Im bisherigen PT1 ist dies nur mittelbar durch die vorgenommenen Eintragungen in den jeweiligen Bereichen der Freimeldetabelle erkennbar. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Hilffreimeldung" type="nsOrtung:TCFMA_Hilffreimeldung" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gibt an, ob eine Hilfsfreimeldung eingerichtet ist. Wertzuordnung: true - Hilfsfreimeldung eingerichtet, false - Hilfsfreimeldung nicht eingerichtet. DB-Regelwerk Planungsdaten: Freimeldetabelle, Spalte 18 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Isolierung" type="nsOrtung:TCFMA_Isolierung" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der Isolierung bei Gleisstromkreisen.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Typ" type="nsOrtung:TCFMA_Typ" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vollständige Bezeichnung des technischen Typs der Gleisfreimeldeanlage. Beispiele: AZ SM[E], FTG S 917 W, GF 100 zu WM 74. DB-Regelwerk Planungsdaten: Freimeldetabelle, Spalte 3, 7 oder 12 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CFMA_Anlage">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Technische Anlage, die einen Gleisabschnitt auf Freisein von Schienenfahrzeugen überwacht; entspricht im gewöhnlichen Sprachgebrauch dem Freimeldeabschnitt. Eine FMA_Anlage wird alleinstehend zur Fahrwegfreiprüfung bzw. zur Freiprüfung des Flankenschutzraumes genutzt sowie in Auswertung der Reihenfolge von Belegung und Wieder-Frei-Werden zur Erfassung einer Fahrt und damit zur Auflösung von Teilfahrstraßen. Auch andere Schaltvorgänge können durch eine FMA_Anlage ausgelöst werden. Die FMA_Anlage hat mindestens eine Außenanlage (z. B. Drosselspule, Achszählpunkt) und beansprucht Anteile an einer Gleisfreimelde-Innenanlage (z. B. Motorrelaisgruppe, Achszählrechner). DB-Regelwerk Typspezifische Planungshinweise und Technische Mitteilungen; Planungsdaten: Sicherungstechnischer Lageplan, BÜ-Lageplan; Gleisfreimeldepläne (Achszählübersichtsplan, Gleisisolierplan); Freimeldetabelle. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsOrtung:CFMA_Anlage_Bezeichnung" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="FMA_Anlage_Allg" type="nsOrtung:CFMA_Anlage_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="FMA_Anlage_Elektr_Merkmale" type="nsOrtung:CFMA_Anlage_Elektr_Merkmale"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="FMA_Anlage_Kaskade" type="nsOrtung:CFMA_Anlage_Kaskade" minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="FMA_Anlage_Uebertragung_FMinfo"
+                           type="nsOrtung:CFMA_Anlage_Uebertragung_FMinfo"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_Gleis_Abschnitt" type="nsVerweise:TCID_Gleis_Abschnitt" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gleis_Abschnitt, der auf Freisein von Schienenfahrzeugen überwacht wird. DB-Regelwerk Sicherungstechnischer Lageplan, BÜ-Lageplan </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Gleisfreimelde_Innenanlage"
+                           type="nsVerweise:TCID_Aussenelementansteuerung"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf eine Aussenelementansteuerung, die die logische Aufbereitung der Daten der FMA Anlage (primär zur Information frei/belegt) übernimmt. Im Fall, dass der Achszählrechner direkt einem ESTW-A zugeordnet ist, wird auf eine Aussenelementansteuerung der Art \"ESTW_A\" verwiesen. Sofern ein separat stehender Achszählrechner vorgesehen ist, erfolgt der Verweis auf eine Aussenelementansteuerung der Art \"Gleisfreimelde_Innennanlage\". Die Unterbringung dieser Außenelementansteuerung muss nicht zwingend identisch mit der Unterbringung der Außenelementansteuerung sein, die die Ergebnisse der Gleisfreimelde-Innenanlage verwertet. Bei Achszählanlagen gilt speziell: Zusätzlich muss auch noch die Außenelementansteuerung bekannt sein, an die die zugehörigen Achszähler angeschlossen sind, siehe dazu die Attribute des Objekts FMA Komponente. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CFMA_Element">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ergänzung einer FMA Komponente bei Gleisstromkreisen um die Bauelemente zur Ein- und Ausspeisung. FMA_Elemente werden rechts und/oder links der FMA_Komponente direkt den angrenzenden FMA_Anlagen zugewiesen. Das Objekt ist bei Achszählpunkten nicht erforderlich. DB-Regelwerk Typspezifische Planungshinweise und Technische Mitteilungen; Planungsdaten: Sicherungstechnischer Lageplan, BÜ-Lageplan, Gleisisolierplan, Freimeldetabelle. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="FMA_Element_Allg" type="nsOrtung:CFMA_Element_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="FMA_Element_Anschluss" type="nsOrtung:CFMA_Element_Anschluss"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_FMA_Anlage" type="nsVerweise:TCID_FMA_Anlage" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die zugehörige Freimeldeabschnitts-Anlage (FMA_Anlage). Einer FMA_Anlage können maximal vier Freimeldeabschnittelemente, davon genau eine Einspeisung und maximal drei Ausspeisungen zugeordnet werden. DB-Regelwerk Sicherungstechnischer Lageplan, BÜ-Lageplan, Gleisfreimeldeplan. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CFMA_Komponente_Achszaehlpunkt">
+		    <xs:sequence>
+			      <xs:element name="FMA_Komponente_Schienenprofil"
+                     type="nsOrtung:TCFMA_Komponente_Schienenprofil"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Hinsichtlich der Befestigung zu berücksichtigendes Schienenprofil. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. Das Attribut soll künftig entfallen und daher nicht mehr verwendet werden.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Komponente_Stromversorgung"
+                     type="nsOrtung:TCFMA_Komponente_Stromversorgung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kennzeichnet den Weg der Stromversorgung im Vergleich mit dem Weg der Informationsübertragung. Die Angabe ist nur bei Achszählpunkten erforderlich. Wertezuordnung: true - entspricht dem Eintrag \"fern\" im bisherigen PT 1 (Stromversorgung in separaten Adern), hierbei müssen ID Energie und ID Information auf unterschiedliche Außenelementansteuerungen verweisen, false - entspricht den Einträgen \"eigen\" und \"fremd\" im bisherigen PT 1 (Stromversorgung und Informationsübertragung über die selben Adern), die weitere Unterscheidung zwischen \"eigen\" und \"fremd\" geht aus dem Vergleich von ID Energie und ID Information hervor. DB-Regelwerk Achszähltabelle, Spalte 3 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>true</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Komponente_Typ" type="nsOrtung:TCFMA_Komponente_Typ" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Technische Typbezeichnung. Ist nur bei Achszählpunkten erforderlich. Beispiele: RSR 122, ZP 30H, ZP 43. DB-Regelwerk Achszähltabelle, Spalte 2</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..16] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ID_Energie" type="nsVerweise:TCID_Aussenelementansteuerung" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Aussenelementansteuerung, von der die Energieversorgung des Stellelements oder der FMA Komponente erfolgt. Objekte, die Stellelemente\" href=\"//Stellelement\"\u003eStellelemente sind, enthalten keine eigenen Attribute ID_Energie und ID Information, sondern verweisen auf das Objekt Stellelement, das diese Attribute enthält. Nicht-Stellelemente (z. B. der Achszählpunkt als FMA Komponente) hingegen müssen diese Attribute selbst enthalten. DB-Regelwerk bei Achszählpunkten: Achszählpunkttabelle, Spalte 4 (und redundant dazu: Freimeldetabelle, Spalte 4); bei anderen Typen von Freimeldeanlagen: im bisherigen PT1 ohne eindeutige Darstellung, in der Regel mittelbar aus dem Sicherungstechnischen Lageplan/BÜ-Lageplan ermittelbar. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ID_Information" type="nsVerweise:TCID_Aussenelementansteuerung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Aussenelementansteuerung, von der die Informationsversorgung des Stellelements bzw. die Informationsverarbeitung der FMA Komponente erfolgt. Objekte, die Stellelemente\" href=\"//Stellelement\"\u003eStellelemente sind, enthalten keine eigenen Attribute ID Energie und ID_Information, sondern verweisen auf das Objekt Stellelement, das diese Attribute enthält. Nicht-Stellelemente (z.B. der Achszählpunkt als FMA Komponente) hingegen müssen diese Attribute selbst enthalten. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMFMA_Komponente_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Isolierstoss_zweischienig"/>
+			      <xs:enumeration value="Isolierstoss_einschienig"/>
+			      <xs:enumeration value="elektrischer_Trennstoss"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCFMA_Isolierung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:ENUMIsolierung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFMA_Komponente_Schienenprofil">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:ENUMSchienenprofil" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMFMA_Element_Seilanzahl">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="1"/>
+			      <xs:enumeration value="2"/>
+			      <xs:enumeration value="4"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCFMA_Komponente_Typ">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TFMA_Komponente_Typ" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TFMA_Laenge_E3">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="[1-9][0-9]{0,2}|1[0-4][0-9]{2}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CSchaltmittel_Zuordnung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnungsobjekt für die punktuelle Auslösung von Schaltvorgängen. Beispiel: BÜSA, Rangier- und Ablaufanlagen. Schaltmittel sind oftmals separate Zugeinwirkungen (z. B. Radsensoren), es können aber auch Freimeldeabschnitte (FMA_Anlagen) oder Achszählpunkte (FMA_Komponenten) für den Zweck eines Schaltmittels mitverwendet werden (Doppelausnutzung). Ein Schaltmittel wiederum kann für unterschiedliche Funktionen vorgesehen sein. Das Zuordnungsobjekt Schaltmittel erfasst jeweils eine konkrete Anforderung (Verweis, der auf das anfordernde Objekt gerichtet ist, z.B. Bahnübergang EIN, Bahnübergang AUS, Fahrstraße verschließen und ordnet diese Funktion dann einer konkreten Anlage (Zugeinwirkung, Freimeldeabschnitt oder Achszählpunkt) sowie eine Beschriftung dieser Anlage im sicherungstechnischen Lageplan zu. Die Funktion \"Fahrstraße verschließen (ID_Anforderung = Fstr_Fahrweg)\" ist vorgesehen für den Anrückverschluss von Zugstraßen. Weitere Anwendungen sind aktuell nicht im Modell verankert. Der Verweis auf die Anforderung ist nicht erforderlich, wenn sich die Zuordnung eindeutig aus der Topologie ergibt (Beispiel: separates Schaltmittel für die Funktion \"Zweites Haltfallkriterium\"). In diesem Fall wird nur der Verweis auf die Anlage sowie die Beschriftung im Lageplan angegeben. DB-Regelwerk Typspezifische Planungshinweise und Technische Mitteilungen; Planungsdaten: Sicherungstechnischer Lageplan, BÜ-Lageplan, Gleisfreimeldeplan. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Anforderung" type="nsVerweise:TCID_Anforderung" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweist auf das Objekt, das eine Schaltanforderung stellt. Die Schaltanforderung erfolgt unabhängig von der konkreten Realisierung, diese Zuordnung wird über ID Schalter vorgenommen. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung, mittelbar aus Einträgen im Sicherungstechnischen Lageplan / BÜ-Lageplan zu erkennen. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Schalter" type="nsVerweise:TCID_Schalter" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Objekt, das eine Schaltanforderung bedient. Die Zuordnung des Schalters (Freimeldeabschnitt, Achszählpunkt oder Zugeinwirkung) erfolgt unabhängig von der konkreten Anforderung, diese Zuordnung wird über ID Anforderung vorgenommen. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung, mittelbar aus Einträgen im Sicherungstechnischen Lageplan / BÜ-Lageplan zu erkennen. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Schaltmittel_Funktion" type="nsOrtung:TCSchaltmittel_Funktion"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Funktion des Schaltmittels. Beispiele (und Erläuterung dazu): ARM (Anrückmeldung für BÜSA), Ein_BUE (Einschaltung von BÜSA), ZL_Anstoß (Zuglenk-Anstoß), Haltfall (zweites Haltfall-Kriterium bei Signalen). Zur Auswertung muss die Funktion noch mit dem unter ID Anforderung angegebenen Objekt vervollständigt werden. DB-Regelwerk Sicherungstechnischer Lageplan, BÜ-Lageplan</xs:documentation>
+                     <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                        <ppi:WorkflowInformation>
+                           <ppi:Patternbeschreibung> [1..16] </ppi:Patternbeschreibung>
+                        </ppi:WorkflowInformation>
+                     </xs:appinfo>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSchaltmittel_Funktion">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:ENUMSchaltmittel_Funktion" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMSchienenprofil">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="R65"/>
+			      <xs:enumeration value="S49"/>
+			      <xs:enumeration value="S54"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="UIC60"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CFMA_Element_Allg">
+		    <xs:sequence>
+			      <xs:element name="FMA_Element_Art" type="nsOrtung:TCFMA_Element_Art" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art, mit der die Ein- bzw. Ausspeisung in den Freimeldeabschnitt vorgenommen wird. Hinweis: Beim Wert \"S_Verbinder\" handelt es sich streng genommen nur um einen halben S-Verbinder, die jeweils andere Hälfte ist dem angrenzenden Freimeldeabschnitt zugeordnet. Bei der Ermittlung der Anzahl der S-Verbinder in einem Pool muss also die Anzahl der Instanzen FMA_Element mit FMA_Element_Art==S_Verbinder halbiert werden. DB-Regelwerk Bei allen Typen von FMA_Elementen: Sicherungstechnischer Lageplan, BÜ-Lageplan; Gleisfreimeldeplan. Bei FTGS: zusätzlich in der Freimeldetabelle, Spalte 17 links, dabei wird die Zuordnung (z.B. links/rechts) uneinheitlich gehandhabt. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Element_Seilanzahl" type="nsOrtung:TCFMA_Element_Seilanzahl"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anzahl der Seile der Schienenverbinder entsprechend der Anwendungsrichtlinien. Die zugehörigen Baulängen ergeben sich aus den Anwendungsrichtlinien und dem Typ der angrenzenden FMA Anlage und werden nicht separat angegeben. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk bei FTGS: Freimeldetabelle, Spalte 17 rechts; bei anderen Arten von Gleisstromkreisen: Gleisfreimeldeplan. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1|2|4] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Element_Seiltyp" type="nsOrtung:TCFMA_Element_Seiltyp" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Querschnitt und Material der Seile der Schienenverbinder entsprechend den Anwendungsrichtlinien. Die Angabe erfolgt in mm². Beispiele: 120 Cu, 240 Al. DB-Regelwerk bei FTGS: Freimeldetabelle, Spalte 17 rechts; bei anderen Arten von Gleisstromkreisen: Gleisfreimeldeplan. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [2..6] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CZugeinwirkung_Allg">
+		    <xs:sequence>
+			      <xs:element name="Zugeinwirkung_Art" type="nsOrtung:TCZugeinwirkung_Art" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art einer Zugeinwirkung. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Planungsdaten: Lageplan, Kreuzungsplan, Gleisfreimeldeplan. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Zugeinwirkung_Typ" type="nsOrtung:TCZugeinwirkung_Typ" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vollständige Bezeichnung des technischen Typs der Zugeinwirkung. DB-Regelwerk Planungsdaten: Im bisherigen PT1 nicht angegeben. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMFMA_Element_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Anschlussseile"/>
+			      <xs:enumeration value="Drosselspule"/>
+			      <xs:enumeration value="S_Verbinder"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="Endverbinder"/>
+			      <xs:enumeration value="Endverbinder_modifiziert"/>
+			      <xs:enumeration value="Kurzschlussverbinder"/>
+			      <xs:enumeration value="Ueberlagerungsverbinder"/>
+			      <xs:enumeration value="Potentialausgleichsverbinder"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCBezeichnung_Kennbuchstabe">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:ENUMBezeichnung_Kennbuchstabe" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFMA_Element_Seiltyp">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TFMA_Element_Seiltyp" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TFMA_Laenge_Beeinflusst">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="[1-9][0-9]{0,2}|1[0-4][0-9]{2}|1500"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMFMA_Anschluss_Speiserichtung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Einspeisung"/>
+			      <xs:enumeration value="Ausspeisung"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCFMA_Laenge_E1">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TFMA_Laenge_E1" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBettungswiderstand">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TBettungswiderstand" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TUebertragung_FMinfo_Typ">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,16}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCFMA_Laenge_E2">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TFMA_Laenge_E2" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CFMA_Anlage_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="Bezeichnung_Kennbuchstabe" type="nsOrtung:TCBezeichnung_Kennbuchstabe"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bestandteil der vollständigen Bezeichnung einer FMA Anlage. Die Bezeichnung eines Freimeldeabschnittes besteht aus Kennzahl, Kennbuchstaben und Örtlichem Elementbezeichner des Gleisabschnitts. Kennzahl und Bezeichnung des Gleisabschnitts können über ID Gleis Abschnitt ermittelt werden, die Attribute der Gruppe \"Bezeichnung\" werden für FMA_Anlagen nicht befüllt. Die Herleitung des Kennbuchstabens aus Attributen des Gleises und des Gleisabschnitts ist schwierig und in einigen Fällen unsicher, daher erfolgt im Unterschied zu anderen Objekten eine direkte Abspeicherung als Ergänzung innerhalb der Attributgruppe \"Bezeichnung\". Ein Beispiel ist unter Modellierung Gleisfreimeldung zu finden. DB-Regelwerk Planungsdaten: Freimeldetabelle, Spalte 1 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TZugeinwirkung_Typ">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,16}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCFMA_Anschluss_Speiserichtung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:ENUMFMA_Anschluss_Speiserichtung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TFMA_Laenge_S">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="[1-9][0-9]{0,2}|1[0-4][0-9]{2}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCFMA_Komponente_Stromversorgung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFMA_Element_Seilanzahl">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:ENUMFMA_Element_Seilanzahl" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CFMA_Anlage_Elektr_Merkmale">
+		    <xs:sequence>
+			      <xs:element name="Bettungswiderstand" type="nsOrtung:TCBettungswiderstand" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Spezifischer elektrischer Bettungswiderstand eines Gleisabschnitts (in Ohm/km), wenn dieser als Gleisstromkreis ausgebildet ist. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [0.00..5.00], 2 Nachkommastellen </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Laenge" type="nsOrtung:TCFMA_Laenge" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Elektrische Länge des Freimeldeabschnitts. Berechneter Wert entsprechend den Planungsrichtlinien und den örtlichen Gegebenheiten. Die Berechnung wird, sofern sie nicht trivial ist, als Dokument an das Attribut angehangen (s. dazu: BasisAttribut). DB-Regelwerk Freimeldetabelle, bei NF-Gleisstromkreisen: Spalte 9; bei FTGS: Angabe ist nicht enthalten, wird allerdings häufig in einer zusätzlichen Spalte im Bereich FTGS eingetragen. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..1500] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Laenge_Beeinflusst" type="nsOrtung:TCFMA_Laenge_Beeinflusst"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beeinflusste Länge des Freimeldeabschnitts. Ein Eintrag ist nur bei NF-Gleisstromkreisen erforderlich. Die Ermittlung erfolgt entsprechend den Anwendungsrichtlinien und den örtlichen Gegebenheiten. Die Berechnung wird als Dokument an das Attribut angehangen (s. dazu: BasisAttribut). DB-Regelwerk Freimeldetabelle, Spalte 10</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..1500] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Laenge_E1" type="nsOrtung:TCFMA_Laenge_E1" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Elektrische Länge des Teilabschnitts E1. Ist nur bei FTGS erforderlich. Ermittlung entsprechend Anwendungsrichtlinie. Angabe des Attributs erfolgt nur, wenn mindestens zwei Teillängen existieren, sonst ist die Angabe des Attributs FMA Laenge hinreichend. DB-Regelwerk Freimeldetabelle, Spalte 14</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..1499] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Laenge_E2" type="nsOrtung:TCFMA_Laenge_E2" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Elektrische Länge des Teilabschnitts E2. Ist nur bei FTGS erforderlich. Ermittlung entsprechend Anwendungsrichtlinie. Angabe des Attributs erfolgt nur, wenn mindestens drei Teillängen existieren. DB-Regelwerk Freimeldetabelle, Spalte 15</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..1499] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Laenge_E3" type="nsOrtung:TCFMA_Laenge_E3" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Elektrische Länge des Teilabschnitts E3. Ist nur bei FTGS erforderlich. Ermittlung entsprechend Anwendungsrichtlinie. Angabe des Attributs erfolgt nur, wenn vier Teillängen existieren. DB-Regelwerk Freimeldetabelle, Spalte 16</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..1499] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Laenge_S" type="nsOrtung:TCFMA_Laenge_S" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Elektrische Länge des Teilabschnitts S. Ist nur bei FTGS erforderlich. Ermittlung entsprechend Anwendungsrichtlinie. Angabe des Attributs erfolgt nur, wenn mindestens zwei Teillängen existieren, sonst ist die Angabe des Attributs FMA Laenge hinreichend. DB-Regelwerk Freimeldetabelle, Spalte 13</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..1499] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCFMA_Typ">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TFMA_Typ" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFMA_Kaskade_Bezeichnung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TFMA_Kaskade_Bezeichnung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZugeinwirkung_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:ENUMZugeinwirkung_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMSchaltmittel_Funktion">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="ARM"/>
+			      <xs:enumeration value="Awanst"/>
+			      <xs:enumeration value="Ein_BUE"/>
+			      <xs:enumeration value="Haltfall"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="ZL_Anstoss"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCFMA_Laenge">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TFMA_Laenge" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFMA_Laenge_E3">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TFMA_Laenge_E3" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFMA_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:ENUMFMA_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TFMA_Element_Seiltyp">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{2,6}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCFMA_Hilffreimeldung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFMA_Kaskade_Einzelauswertung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TFMA_Kaskade_Bezeichnung">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value="[a-z]|[A-Z]|(I)|(II)|(III)|(IV)|(V)|(VI)|(VII)|(VIII)|(IX)|(X)|(XI)|(XII)|(\.[1-9])"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMFMA_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="NF_Gleisstromkreis"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="TF_Gleisstromkreis"/>
+			      <xs:enumeration value="FTGS"/>
+			      <xs:enumeration value="Achszaehlanlage"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCZugeinwirkung_Typ">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TZugeinwirkung_Typ" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TFMA_Komponente_Typ">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,16}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TFMA_Laenge_E2">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="[1-9][0-9]{0,2}|1[0-4][0-9]{2}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCFMA_Element_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:ENUMFMA_Element_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFMA_Komponente_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:ENUMFMA_Komponente_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMZugeinwirkung_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Doppel_Schleife"/>
+			      <xs:enumeration value="Doppel_Sensor"/>
+			      <xs:enumeration value="Dreifach_Schleife"/>
+			      <xs:enumeration value="Einfach_Schleife"/>
+			      <xs:enumeration value="Einfach_Sensor"/>
+			      <xs:enumeration value="Isolierte_Schiene_alleinstehend"/>
+			      <xs:enumeration value="Isolierte_Schiene_FMA_Anlage_mitbenutzt"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TFMA_Anschluss_Bezeichnung">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{2,8}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCUebertragung_FMinfo_Richtung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:ENUMUebertragung_FMinfo_Richtung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CFMA_Element_Anschluss">
+		    <xs:sequence>
+			      <xs:element name="FMA_Anschluss_Bezeichnung" type="nsOrtung:TCFMA_Anschluss_Bezeichnung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung des Anschlusses einer Ein- / Ausspeisung.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[2..8]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FMA_Anschluss_Speiserichtung"
+                     type="nsOrtung:TCFMA_Anschluss_Speiserichtung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bestimmt die Speiserichtung bei Gleisstromkreisen. DB-Regelwerk Sicherungstechnischer Lageplan, BÜ-Lageplan; Gleisfreimeldeplan. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:simpleType name="TFMA_Typ">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,16}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCFMA_Laenge_S">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TFMA_Laenge_S" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZugeinwirkung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Technische Anlage, die durch die punktuelle Einwirkung eines Zuges einen Schaltvorgang auslösen kann. Bei BÜSA werden Ein- und Ausschaltpunkte sowie Kontakte für die Wirksamkeitsschaltung in Abhängigkeit vom Hersteller auf verschiedene Art ausgebildet: Die Hersteller Scheidt\u0026amp;Bachmann sowie PintschBamag verwenden als Zugeinwirkung Fahrzeugsensoren in Form von 8-förmig verlegten Schleifen im Gleis. Einschaltpunkte und Kontakte für die Wirksamkeitsschaltung werden im Regelfall aus zwei Schleifen, Ausschaltpunkte aus einer Schleife gebildet. Nur im Ausnahmefall werden beim Hersteller PintschBamag Einschaltpunkte mit drei Schleifen errichtet. Der Hersteller Siemens AG verwendet dagegen Achszählern vergleichbare sogenannte Doppelsensoren. Für das Modell werden, unabhängig von der herstellerspezifischen Ausbildung, Ein-und Ausschaltpunkte sowie Kontakte der Wirksamkeitsschaltung grundsätzlich als EINE Zugeinwirkung betrachtet. DB-Regelwerk Typspezifische Planungshinweise und Technische Mitteilungen; Planungsdaten: Sicherungstechnischer Lageplan, BÜ-Lageplan, Gleisfreimeldeplan. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsBasisTypen:CBezeichnung_Element" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Bezugspunkt" type="nsVerweise:TCID_Markanter_Punkt" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Punkt Objekt, dass für die Positionierung der Freimeldeabschnittsgrenze (FMA_Komponente) bzw. der Zugeinwirkung maßgebend ist. Für alle Arten von Freimeldeabschnittsgrenzen bzw. Zugeinwirkungen anzugeben, für die ein Bezugspunkt existiert, zu dem ein vorgeschriebener Abstand erforderlich ist. Typische Bezugspunkte sind Signal, Weichen-Komponente und Gleissperren-Komponente. DB-Regelwerk bei Achszählpunkten: Achszähltabelle, Spalte 17; bei anderen Freimeldeabschnittsgrenzen und Zugeinwirkungen: häufig aus einer Abstandsangabe im Sicherungstechnischen Lageplan / BÜ-Lageplan erkennbar. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Zugeinwirkung_Allg" type="nsOrtung:CZugeinwirkung_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="ENUMIsolierung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="einschienig_L"/>
+			      <xs:enumeration value="einschienig_R"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="zweischienig"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="TCUebertragung_FMinfo_Typ">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsOrtung:TUebertragung_FMinfo_Typ" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:simpleType name="TFMA_Laenge_E1">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="[1-9][0-9]{0,2}|1[0-4][0-9]{2}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TFMA_Laenge">
+		    <xs:restriction base="nsBasisTypen:TMeter">
+			      <xs:pattern value="[1-9][0-9]{0,2}|1[0-4][0-9]{2}|1500"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMUebertragung_FMinfo_Richtung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="gehend"/>
+			      <xs:enumeration value="kommend"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBettungswiderstand">
+		    <xs:restriction base="xs:decimal">
+			      <xs:pattern value="([0-4]\.[0-9]{2})|(5\.00)"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.1"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.1 http://maven.apache.org/xsd/maven-4.0.1.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.eclipse.set</groupId>
+	<artifactId>org.eclipse.set.model.releng.multimod</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<parent>
+		<relativePath>java/bundles/org.eclipse.set.model.releng.parent/pom.xml</relativePath>
+		<groupId>org.eclipse.set</groupId>
+		<artifactId>org.eclipse.set.model.releng.parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<modules>
+		<module>java/bundles/org.eclipse.set.model.releng.target</module>
+		<module>java/bundles/org.eclipse.set.model.releng.repository</module>
+		<module>java/bundles/org.eclipse.set.model.modelservice</module>
+
+		<!-- PlanPro Model 1.9.0.2 -->
+		<module>java/bundles/org.eclipse.set.model.model1902.edit</module>
+		<module>java/bundles/org.eclipse.set.model.model1902.editor</module>
+		<module>java/bundles/org.eclipse.set.model.model1902.feature</module>
+		<module>java/bundles/org.eclipse.set.model.model1902</module>
+	</modules>
+</project>
