@@ -8,8 +8,11 @@
  */
 package org.eclipse.set.model.model1902.PlanPro.util;
 
-import org.eclipse.emf.common.util.URI;
+import java.util.function.Function;
 
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.xmi.XMLHelper;
+import org.eclipse.emf.ecore.xmi.XMLSave;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
 
 /**
@@ -17,13 +20,16 @@ import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
  * The <b>Resource </b> associated with the package.
  * <!-- end-user-doc -->
  * @see org.eclipse.set.model.model1902.PlanPro.util.PlanProResourceFactoryImpl
- * @generated
+ * @generated NOT
  */
 public class PlanProResourceImpl extends XMLResourceImpl {
+
+	private Function<XMLHelper, XMLSave> xmlSaveCreator;
+
 	/**
 	 * Creates an instance of the resource.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
 	 * @param uri the URI of the new resource.
 	 * @generated
 	 */
@@ -31,4 +37,28 @@ public class PlanProResourceImpl extends XMLResourceImpl {
 		super(uri);
 	}
 
-} //PlanProResourceImpl
+	/**
+	 * @return the xmlSave creator
+	 */
+	public Function<XMLHelper, XMLSave> getXmlSaveCreator() {
+		return xmlSaveCreator;
+	}
+
+	/**
+	 * @param xmlSaveCreator
+	 *            the xmlSave supplier to set
+	 */
+	public void setXmlSaveCreator(
+			final Function<XMLHelper, XMLSave> xmlSaveCreator) {
+		this.xmlSaveCreator = xmlSaveCreator;
+	}
+
+	@Override
+	protected XMLSave createXMLSave() {
+		if (xmlSaveCreator != null) {
+			return xmlSaveCreator.apply(createXMLHelper());
+		}
+		return super.createXMLSave();
+	}
+
+} // PlanProResourceImpl

@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.eclipse.set.model.model1902;singleton:=true
 Automatic-Module-Name: org.eclipse.set.model.model1902
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.1.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Export-Package: org.eclipse.set.model.model1902.Ansteuerung_Element,
  org.eclipse.set.model.model1902.Ansteuerung_Element.impl,
@@ -89,8 +89,6 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.set.model.model1902;visibility:=reexport
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .,
- stylesheet/,
- lib/,
  schema/
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
