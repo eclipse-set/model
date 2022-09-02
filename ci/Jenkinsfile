@@ -1,0 +1,82 @@
+pipeline {
+  agent {
+    kubernetes {
+      label 'set-model-agent-pod'
+      yaml """
+apiVersion: v1
+kind: Pod
+spec:
+  containers:
+  - name: maven
+    image: maven:3.8.6-eclipse-temurin-17-alpine
+    command:
+    - cat
+    tty: true
+    env:
+    - name: "MAVEN_OPTS"
+      value: "-Duser.home=/home/jenkins --add-opens java.base/java.lang=ALL-UNNAMED"
+    volumeMounts:
+    - name: settings-xml
+      mountPath: /home/jenkins/.m2/settings.xml
+      subPath: settings.xml
+      readOnly: true
+    - name: m2-repo
+      mountPath: /home/jenkins/.m2/repository    
+    resources:
+      limits:
+        memory: "2Gi"
+        cpu: "1"
+      requests:
+        memory: "2Gi"
+        cpu: "1"
+  - name: jnlp
+    volumeMounts:
+    - name: volume-known-hosts
+      mountPath: /home/jenkins/.ssh        
+  volumes:
+  - name: settings-xml
+    secret:
+      secretName: m2-secret-dir
+      items:
+      - key: settings.xml
+        path: settings.xml
+  - name: m2-repo
+    emptyDir: {} 
+  - name: volume-known-hosts
+    configMap:
+      name: known-hosts           
+"""
+    }
+  }
+
+  options {
+    timeout(time: 20, unit: 'MINUTES')
+    buildDiscarder(logRotator(numToKeepStr: '10'))
+  }
+
+  stages {
+    stage('Build') {
+      steps {
+        container('maven') {
+          sh "mvn -U -B clean integration-test"
+        }
+      }
+    }
+
+    stage('Deploy Snapshot')
+    {
+      when {
+        branch 'main'
+      }
+      steps {
+        container('jnlp') {
+          sshagent (['projects-storage.eclipse.org-bot-ssh']) {
+            sh 'ssh -o BatchMode=yes genie.set@projects-storage.eclipse.org rm -rf /home/data/httpd/download.eclipse.org/set/snapshots/model'
+            sh 'ssh -o BatchMode=yes genie.set@projects-storage.eclipse.org mkdir -p /home/data/httpd/download.eclipse.org/set/snapshots/model'
+            sh 'scp -o BatchMode=yes -r java/bundles/org.eclipse.set.model.releng.repository/target/repository/* genie.set@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/set/snapshots/model'
+          }
+        }
+      }
+    }
+  }
+}
