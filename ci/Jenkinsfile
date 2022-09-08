@@ -23,8 +23,12 @@ pipeline {
     stage('Deploy')
     {
       when {
-        branch 'main'
+        anyOf {
+          buildingTag()
+          branch 'main'
+        }
       }
+
       steps {
         deployP2Site name: 'model', path: 'java/bundles/org.eclipse.set.model.releng.repository/target/repository' 
       }
