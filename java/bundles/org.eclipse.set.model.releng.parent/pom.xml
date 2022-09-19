@@ -82,32 +82,25 @@
 				</configuration>
 			</plugin>
 
-			<!-- Erzeuge ein Source-Plugin zu jedem eclipse-plugin/bundle -->
+			
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-source-plugin</artifactId>
 				<version>${tycho-version}</version>
 				<executions>
+					<!-- Erzeuge ein Source-Plugin zu jedem eclipse-plugin/bundle -->
 					<execution>
 						<id>plugin-source</id>
 						<goals>
 							<goal>plugin-source</goal>
 						</goals>
 					</execution>
-				</executions>
-			</plugin>
-
-			<!-- Erzeuge ein source-Feature für die Source-Bundles -->
-			<plugin>
-				<groupId>org.eclipse.tycho.extras</groupId>
-				<artifactId>tycho-source-feature-plugin</artifactId>
-				<version>${tycho-extras-version}</version>
-				<executions>
+					<!-- Erzeuge ein source-Feature für die Source-Bundles -->
 					<execution>
-						<id>source-feature</id>
+						<id>feature-source</id>
 						<phase>package</phase>
 						<goals>
-							<goal>source-feature</goal>
+							<goal>feature-source</goal>
 						</goals>
 					</execution>
 				</executions>
