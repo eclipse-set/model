@@ -1,7 +1,6 @@
 pipeline {
   agent {
     kubernetes {
-      label 'set-model-agent-pod'
       yamlFile 'ci/kubernetes.yaml'
     }
   }
@@ -15,7 +14,15 @@ pipeline {
     stage('Build') {
       steps {
         container('maven') {
-          mvn goal: 'clean integration-test'
+          mvn goal: 'clean integration-test', dependencies: 'dependencies/maven.deps'
+        }
+      }
+    }
+
+    stage('Process Licenses') {
+      steps {
+        container('maven') {
+          collectDependencies()
         }
       }
     }
