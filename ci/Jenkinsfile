@@ -27,17 +27,27 @@ pipeline {
       }
     }
 
+    stage('Remove Old Snapshot') {
+      when {
+        branch 'main'
+      }
+      steps {
+        removeOldSnapshot repo: 'model'
+      }
+    }
+
     stage('Deploy')
     {
       when {
         anyOf {
           buildingTag()
           branch 'main'
+          branch pattern: "feature/\\w+", comparator: "REGEXP"
         }
       }
 
       steps {
-        deployP2Site name: 'model', path: 'java/bundles/org.eclipse.set.model.releng.repository/target/repository' 
+        deployP2Site name: 'model/${BRANCH_NAME}', path: 'java/bundles/org.eclipse.set.model.releng.repository/target/repository' 
       }
     }
   }
