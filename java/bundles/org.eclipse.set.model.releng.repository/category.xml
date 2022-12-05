@@ -6,9 +6,9 @@
    <feature id="org.eclipse.set.model.model1902.feature.source">
       <category name="org.eclipse.set.model.category"/>
    </feature>
-   <category-def name="org.eclipse.set.model.category" label="PlanPro Modelle">
+   <category-def name="org.eclipse.set.model.category" label="Eclipse Signalling Engineering Toolbox Model">
       <description>
-         Kategorie enthält die Features für die jeweiligen Modellversionen.
+         Category containing the relevant data model.
       </description>
    </category-def>
 </site>

@@ -1,48 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature
-      id="org.eclipse.set.model.model1902.feature"
-      label="PlanPro Model 1.9.0.2 Feature"
-      version="1.1.0.qualifier"
-      provider-name="Scheidt &amp; Bachmann System Technik GmbH">
+<feature id="org.eclipse.set.model.model1902.feature" label="Eclipse Signalling Engineering Toolbox PlanPro Model 1.9.0.2 Feature" version="1.1.0.qualifier" provider-name="Scheidt &amp; Bachmann System Technik GmbH">
 
-   <description url="http://www.example.com/description">
-      [Enter Feature Description here.]
-   </description>
+      <description>
+      This feature contains the EMF model for the Eclipse Signalling Engineering Toolbox relating to the PlanPro data model 1.9.0.2.
+      </description>
 
-   <copyright url="http://www.example.com/copyright">
-      [Enter Copyright Description here.]
-   </copyright>
+      <copyright>
+      Copyright (c) 2022 DB Netz AG and others.
 
-   <license url="http://www.example.com/license">
-      [Enter License Description here.]
-   </license>
+All rights reserved. This program and the accompanying materials
+are made available under the terms of the Eclipse Public License v2.0
+which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v20.html
+      </copyright>
 
-   <plugin
-         id="org.eclipse.set.model.model1902"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+      <plugin id="org.eclipse.set.model.model1902" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
 
-   <plugin
-         id="org.eclipse.set.model.model1902.edit"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+      <plugin id="org.eclipse.set.model.model1902.edit" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
 
-   <plugin
-         id="org.eclipse.set.model.model1902.editor"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+      <plugin id="org.eclipse.set.model.model1902.editor" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
 
-   <plugin
-         id="org.eclipse.set.model.modelservice"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+      <plugin id="org.eclipse.set.model.modelservice" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
 
 </feature>
