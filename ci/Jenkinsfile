@@ -31,35 +31,35 @@ pipeline {
       when {
         branch 'main'
       }
+
       steps {
         removeOldSnapshot repo: 'model'
       }
     }
 
-    stage('Deploy')
-    {
+    stage('Deploy') {
       when {
         anyOf {
           buildingTag()
           branch 'main'
-          branch pattern: "feature/\\w+", comparator: "REGEXP"
+          branch pattern: 'feature/\\w+', comparator: 'REGEXP'
         }
       }
 
       steps {
-        deployP2Site name: 'model/${BRANCH_NAME}', path: 'java/bundles/org.eclipse.set.model.releng.repository/target/repository' 
+        deployP2Site name: "model/${BRANCH_NAME}", path: 'java/bundles/org.eclipse.set.model.releng.repository/target/repository'
       }
     }
   }
-  
+
   post {
     always {
       // Publish JUnit test result
       junit testResults: 'java/bundles/*/target/surefire-reports/*.xml', allowEmptyResults: true
-      recordIssues aggregatingResults: true, 
-        enabledForFailure: true, 
+      recordIssues aggregatingResults: true,
+        enabledForFailure: true,
         tools: [
-          checkStyle(), 
+          checkStyle(),
           mavenConsole()],
         qualityGates: [[threshold: 1, type: 'TOTAL', unstable: true]]
     }
