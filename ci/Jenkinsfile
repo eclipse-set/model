@@ -14,7 +14,7 @@ pipeline {
     stage('Build') {
       steps {
         container('maven') {
-          mvn goal: 'clean integration-test', dependencies: 'dependencies/maven.deps'
+          mvn goal: 'clean verify -P sign', dependencies: 'dependencies/maven.deps'
         }
       }
     }
