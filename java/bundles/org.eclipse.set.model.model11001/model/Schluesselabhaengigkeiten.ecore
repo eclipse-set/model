@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Schluesselabhaengigkeiten" nsURI="http://www.plan-pro.org/modell/Schluesselabhaengigkeiten/1.10.0.1"
+    nsPrefix="nsSchluesselabhaengigkeiten">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedienung_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBedienung_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMBedienungArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Beschreibung_Sonderanlage_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBeschreibung_Sonderanlage"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="pattern" value=".{1,50}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Beschreibung_Sonderanlage_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBeschreibung_Sonderanlage"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Beschreibung_Sonderanlage_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bezeichnung_Schloss_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBezeichnung_Schloss"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="pattern" value=".{1,20}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bezeichnung_Schloss_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBezeichnung_Schloss"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bezeichnung_Schloss_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bezeichnung_Schluessel_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBezeichnung_Schluessel"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="pattern" value=".{1,20}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bezeichnung_Schluessel_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBezeichnung_Schluessel"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bezeichnung_Schluessel_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bezeichnung_Sk_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBezeichnung_Sk"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bezeichnung_Sk_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBezeichnung_Sk"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bezeichnung_Sk_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Lage_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBUE_Lage"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMBUELageObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMBedienungArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBedienung_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMBedienung_Art_aussen" literal="aussen"/>
+    <eLiterals name="ENUMBedienung_Art_aussen_Awanst" value="1" literal="aussen_Awanst"/>
+    <eLiterals name="ENUMBedienung_Art_innen" value="2" literal="innen"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMBedienungArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBedienung_Art:Object"/>
+      <details key="baseType" value="ENUMBedienung_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMBUELage">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBUE_Lage"/>
+    </eAnnotations>
+    <eLiterals name="ENUMBUE_Lage_geoeffnet" literal="geoeffnet"/>
+    <eLiterals name="ENUMBUE_Lage_geschlossen" value="1" literal="geschlossen"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMBUELageObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBUE_Lage:Object"/>
+      <details key="baseType" value="ENUMBUE_Lage"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMGspLage">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMGsp_Lage"/>
+    </eAnnotations>
+    <eLiterals name="ENUMGsp_Lage_abgelegt" literal="abgelegt"/>
+    <eLiterals name="ENUMGsp_Lage_aufgelegt" value="1" literal="aufgelegt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMGspLageObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMGsp_Lage:Object"/>
+      <details key="baseType" value="ENUMGsp_Lage"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMSchlossArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSchloss_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMSchloss_Art_HV_73" literal="HV_73"/>
+    <eLiterals name="ENUMSchloss_Art_Prueferschieber_abschliessbar" value="1" literal="Prueferschieber_abschliessbar"/>
+    <eLiterals name="ENUMSchloss_Art_Riegelhandschloss" value="2" literal="Riegelhandschloss"/>
+    <eLiterals name="ENUMSchloss_Art_sonstige" value="3" literal="sonstige"/>
+    <eLiterals name="ENUMSchloss_Art_Weichenschloss" value="4" literal="Weichenschloss"/>
+    <eLiterals name="ENUMSchloss_Art_Zungensperre" value="5" literal="Zungensperre"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMSchlossArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSchloss_Art:Object"/>
+      <details key="baseType" value="ENUMSchloss_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMSchluesselBartform">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSchluessel_Bartform"/>
+    </eAnnotations>
+    <eLiterals name="ENUMSchluessel_Bartform_a" literal="a"/>
+    <eLiterals name="ENUMSchluessel_Bartform_b" value="1" literal="b"/>
+    <eLiterals name="ENUMSchluessel_Bartform_c" value="2" literal="c"/>
+    <eLiterals name="ENUMSchluessel_Bartform_d" value="3" literal="d"/>
+    <eLiterals name="ENUMSchluessel_Bartform_e" value="4" literal="e"/>
+    <eLiterals name="ENUMSchluessel_Bartform_f" value="5" literal="f"/>
+    <eLiterals name="ENUMSchluessel_Bartform_g" value="6" literal="g"/>
+    <eLiterals name="ENUMSchluessel_Bartform_h" value="7" literal="h"/>
+    <eLiterals name="ENUMSchluessel_Bartform_i" value="8" literal="i"/>
+    <eLiterals name="ENUMSchluessel_Bartform_k" value="9" literal="k"/>
+    <eLiterals name="ENUMSchluessel_Bartform_l" value="10" literal="l"/>
+    <eLiterals name="ENUMSchluessel_Bartform_m" value="11" literal="m"/>
+    <eLiterals name="ENUMSchluessel_Bartform_n" value="12" literal="n"/>
+    <eLiterals name="ENUMSchluessel_Bartform_o" value="13" literal="o"/>
+    <eLiterals name="ENUMSchluessel_Bartform_p" value="14" literal="p"/>
+    <eLiterals name="ENUMSchluessel_Bartform_q" value="15" literal="q"/>
+    <eLiterals name="ENUMSchluessel_Bartform_r" value="16" literal="r"/>
+    <eLiterals name="ENUMSchluessel_Bartform_s" value="17" literal="s"/>
+    <eLiterals name="ENUMSchluessel_Bartform_t" value="18" literal="t"/>
+    <eLiterals name="ENUMSchluessel_Bartform_u" value="19" literal="u"/>
+    <eLiterals name="ENUMSchluessel_Bartform_v" value="20" literal="v"/>
+    <eLiterals name="ENUMSchluessel_Bartform_w" value="21" literal="w"/>
+    <eLiterals name="ENUMSchluessel_Bartform_x" value="22" literal="x"/>
+    <eLiterals name="ENUMSchluessel_Bartform_z" value="23" literal="z"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMSchluesselBartformObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSchluessel_Bartform:Object"/>
+      <details key="baseType" value="ENUMSchluessel_Bartform"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMSchluesselGruppe">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSchluessel_Gruppe"/>
+    </eAnnotations>
+    <eLiterals name="ENUMSchluessel_Gruppe_0" literal="0"/>
+    <eLiterals name="ENUMSchluessel_Gruppe_1" value="1" literal="1"/>
+    <eLiterals name="ENUMSchluessel_Gruppe_2" value="2" literal="2"/>
+    <eLiterals name="ENUMSchluessel_Gruppe_3" value="3" literal="3"/>
+    <eLiterals name="ENUMSchluessel_Gruppe_4" value="4" literal="4"/>
+    <eLiterals name="ENUMSchluessel_Gruppe_5" value="5" literal="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMSchluesselGruppeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSchluessel_Gruppe:Object"/>
+      <details key="baseType" value="ENUMSchluessel_Gruppe"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMSonderanlageLage">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSonderanlage_Lage"/>
+    </eAnnotations>
+    <eLiterals name="ENUMSonderanlage_Lage_befahrbar" literal="befahrbar"/>
+    <eLiterals name="ENUMSonderanlage_Lage_nicht_befahrbar" value="1" literal="nicht befahrbar"/>
+    <eLiterals name="ENUMSonderanlage_Lage_sonstige" value="2" literal="sonstige"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMSonderanlageLageObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSonderanlage_Lage:Object"/>
+      <details key="baseType" value="ENUMSonderanlage_Lage"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMVerschlussOrt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMVerschluss_Ort"/>
+    </eAnnotations>
+    <eLiterals name="ENUMVerschluss_Ort_Herzstück" literal="Herzstück"/>
+    <eLiterals name="ENUMVerschluss_Ort_Mitte" value="1" literal="Mitte"/>
+    <eLiterals name="ENUMVerschluss_Ort_sonstige" value="2" literal="sonstige"/>
+    <eLiterals name="ENUMVerschluss_Ort_Spitze" value="3" literal="Spitze"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMVerschlussOrtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMVerschluss_Ort:Object"/>
+      <details key="baseType" value="ENUMVerschluss_Ort"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Gsp_Lage_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGsp_Lage"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMGspLageObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hauptschloss_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCHauptschloss"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schloss" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Mechanisches Bauelement, das durch das Ein- oder Ausschließen eines Schlüssels einen Riegel aus- oder einfahren lässt bzw. einen elektrischen Kontakt schließt oder öffnet. Je nach verschlossenem Element wird die entsprechende Attributgruppe ausgewählt: Bahnübergang, Gleissperre, Schlosskombination, Sonderanlage (z. B. bewegliche Brücke), Schlüsselsperre, Weiche. DB-Regelwerk Auf dem Lageplan werden nach 819.9002 3 dargestellt: Schlösser durch ein Symbol (z. B. Schlüsselsperre) oder zusätzliche Angaben zu anderen Symbolen (z. B. Weiche); Abhängigkeiten durch eine Zeichnung mit wiederholter Darstellung der Schlossstellungen als gefülltes oder leeres Schlüsselloch. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchloss"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" lowerBound="1"
+        eType="#//Schloss_Bezeichnung_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSchluessel" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Schluessel_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den zum Schloss gehörigen Schlüssel. DB-Regelwerk Lageplan, Logische Darstellung der Schlüsselabhängigkeit"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Schluessel"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schluesselInGrdstEingeschl"
+        lowerBound="1" eType="#//Schluessel_In_Grdst_Eingeschl_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Schlüssel ist in Grundstellung eingeschlossen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Schluessel_In_Grdst_Eingeschl"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schlossBUE" eType="#//Schloss_BUE_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Schloss_BUE"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schlossGsp" eType="#//Schloss_Gsp_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Schloss_Gsp"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schlossSk" eType="#//Schloss_Sk_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Schloss_Sk"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schlossSonderanlage" eType="#//Schloss_Sonderanlage_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Schloss_Sonderanlage"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schlossSsp" eType="#//Schloss_Ssp_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Schloss_Ssp"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schlossW" eType="#//Schloss_W_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Schloss_W"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="technischBerechtigter"
+        eType="#//Technisch_Berechtigter_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Aufbewahrung des Schlüssels beim Technisch Berechtigten (true). Der Wert \&quot;false\&quot; wird nicht verwendet."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                             &#xA;  &lt;ppi:WorkflowInformation>&#xA;                                  &#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xA;                               &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                          &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Technisch_Berechtigter"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schloss_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSchloss_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMSchlossArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schloss_Bezeichnung_AttributeGroup"
+      eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchloss_Bezeichnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnungSchloss" lowerBound="1"
+        eType="#//Bezeichnung_Schloss_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung des Schlosses, die sich im Regelfall aus dem zu verschließenden Element ergibt, ggf. zuzüglich dessen Lage. Bei einer Schlüsselsperre/Schlosskombination entspricht die Bezeichnung der Bezeichnung der Schlüsselsperre/ Schlosskombination."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation>&#xA;                               &#xA;    &lt;ppi:Patternbeschreibung>[1..20]&lt;/ppi:Patternbeschreibung>&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                       &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung_Schloss"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schloss_BUE_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchloss_BUE"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bUELage" lowerBound="1"
+        eType="#//BUE_Lage_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Lage, in der die BUE Anlage verschlossen wird. DB-Regelwerk Die Abhängigkeiten werden heute durch eine Zeichnung im Lageplan nach 819.9002 3 dargestellt."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="BUE_Lage"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEAnlage" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_BUE_Anlage_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die BUE Anlage, die mit dem Schloss verschlossen wird. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_BUE_Anlage"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schloss_Gsp_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchloss_Gsp"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gspLage" lowerBound="1"
+        eType="#//Gsp_Lage_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Lage, in der die Gleissperre verschlossen wird. DB-Regelwerk Die Abhängigkeiten werden heute durch eine Zeichnung im Lageplan nach 819.9002 3 dargestellt. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Gsp_Lage"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDGspElement" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_W_Kr_Gsp_Element_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die Gleissperre, die mit dem Schloss verschlossen wird. DB-Regelwerk Lageplan, Logische Darstellung der Schlüsselabhängigkeit "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Gsp_Element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schloss_Sk_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchloss_Sk"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hauptschloss" lowerBound="1"
+        eType="#//Hauptschloss_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Schloss ist das Hauptschloss der Schlosskombination."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Hauptschloss"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSchlosskombination" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Schlosskombination_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die Schlosskombination, zu der das Schloss gehört."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Schlosskombination"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schloss_Sonderanlage_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchloss_Sonderanlage"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sonderanlageLage" lowerBound="1"
+        eType="#//Sonderanlage_Lage_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Lage, in der die Sonderanlage verschlossen wird. DB-Regelwerk Die Abhängigkeiten werden heute durch eine Zeichnung im Lageplan nach 819.9002 3 dargestellt."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>befahrbar&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Sonderanlage_Lage"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="beschreibungSonderanlage"
+        eType="#//Beschreibung_Sonderanlage_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Beschreibung der Sonderanlage, sofern es sich nicht um ein besonderes Fahrwegelement handelt, das über ID_Sonderanlage angegeben werden kann."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                       &#xA;  &lt;ppi:WorkflowInformation>&#xA;                            &#xA;    &lt;ppi:Patternbeschreibung>[1..50]&lt;/ppi:Patternbeschreibung>&#xA;                         &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                    &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Beschreibung_Sonderanlage"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSonderanlage" eType="ecore:EClass Verweise.ecore#//ID_Sonderanlage_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die Sonderanlage im Sinne eines besonderen Fahrwegelements (z. B. bewegliche Brücke)."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Sonderanlage"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schloss_Ssp_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchloss_Ssp"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDSchluesselsperre" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Schluesselsperre_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die Schlüsselsperre, in der sich das Schloss befindet."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Schluesselsperre"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schloss_W_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchloss_W"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDWKrElement" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_W_Kr_Gsp_Element_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf das Weichen- oder Kreuzungselement, das mit dem Schloss verschlossen wird. DB-Regelwerk Lageplan, Logische Darstellung der Schlüsselabhängigkeit"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_W_Kr_Element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schlossArt" lowerBound="1"
+        eType="#//Schloss_Art_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bauart des an der Weiche vorgesehenen Schlosses. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>Riegelhandschloss&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Schloss_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="verschlussOrt" lowerBound="1"
+        eType="#//Verschluss_Ort_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verschlussort für das unter ID_W_Kr_Element angegebene Weichen- bzw. Kreuzungselement. Die Angabe \&quot;Herzstück\&quot; ist nur bei Weichen mit beweglichen Herzstückspitzen sinnvoll."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Verschluss_Ort"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="wAnbaulage" lowerBound="1"
+        eType="#//W_Anbaulage_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe, ob das Schloss an der linken oder rechten Seite der Weiche angebaut ist."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="W_Anbaulage"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="wLage" lowerBound="1" eType="#//W_Lage_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Lage, in der die Weiche durch das Schloss gesichert wird. DB-Regelwerk Die Abhängigkeiten werden heute durch eine Zeichnung im Lageplan nach 819.9002 3 dargestellt. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="W_Lage"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schlosskombination" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Mechanische Einrichtung zur Freigabe mehrerer (abhängiger) Schlüssel durch einen (Haupt-) Schlüssel. Der Hauptschlüssel wird so lange festgehalten, wie mindestens ein Riegel der abhängigen Schlösser ausgefahren ist. In der Regel besteht die Grundstellung darin, dass der Hauptschlüssel entfernt und die abhängigen Schlüssel eingeschlossen sind. DB-Regelwerk Darstellung durch Zeichnung im Lageplan. Eine aktuelle Ril dazu existiert nicht, es werden alte Zeichnungsstandards verwendet."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchlosskombination"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" lowerBound="1"
+        eType="#//Schlosskombination_Bezeichnung_AttributeGroup" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDUnterbringung" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Unterbringung_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den physischen Ort der Unterbringung von Aussenelementansteuerung, Bedien Einrichtung Oertlich, Bedien Platz, ESTW Zentraleinheit, PZB Element, Schlosskombination, Schluesselsperre und ZN. Für das PZB Element wird der Verweis nur für eine GÜ gefüllt - mit der Bedeutung: GÜ-Schaltkasten. Für die ZN ist der Verweis optional, da im Planungswerkzeug ZN/ZL keine Befüllung aller der für die Unterbringung notwendigen Attribute möglich ist. DB-Regelwerk Darstellung des Gebäudes, der Bediensäule bzw. des Schaltkastens im sicherungstechnischen Lageplan nach Ril 819.9002 oder Beschreibung im Erläuterungsbericht."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Unterbringung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schlosskombination_Bezeichnung_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchlosskombination_Bezeichnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnungSk" lowerBound="1"
+        eType="#//Bezeichnung_Sk_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung der Schlosskombination. Zukünftige Regel zur Bezeichnung einer Schlosskombination: \&quot;Sk\&quot; + Kurz- oder Langbezeichnung des zum Hauptschlüssel gehörenden, korrespondierenden Schlosses. Bei mehreren Hauptschlüsseln ist das Schloss mit der niedrigeren Bezeichnung maßgebend."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung_Sk"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schluessel" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Sicherungstechnisches Element zur Herstellung von Schlüsselabhängigkeiten über Schlösser an Elementen. Der Schlüssel im sicherungstechnischen Sinn ist ein repräsentativer und innerhalb einer Örtlichkeit einmaliger Gegenstand. Durch den Besitz des Schlüssels kann sicher und eindeutig auf einen bestimmten Anlagenzustand geschlossen werden. Somit können durch Verknüpfung mit weiteren Fahrwegelementen oder einer informationsverarbeitenden Einheit sichere Abhängigkeiten geschaffen werden. In der Regel gibt es örtlich immer zwei gleich schließende Schlösser, selten mehr. Wird eine Schlüsselsperre nur als Schalter benutzt (z. B. um Fahrstraßen zu sperren), gibt es zu einem Schlüssel nur ein Schloss. Um die örtliche Einmaligkeit herzustellen, darf eine Schlüsselform nur einmal innerhalb einer Betriebsstelle oder besser noch eines Streckenabschnitts verwendet werden. Dazu sind 24 verschiedene Schlüsselbartformen vorhanden, die mit sechs Schlüsselgruppen kombiniert werden können. Nicht jede Bartform wird mit jeder Gruppe kombiniert. So stehen insgesamt 92 verschiedene Schlüsselformen zur Verfügung. DB-Regelwerk Die Planung der Schlüsselformen ist bisher nicht Bestandteil des PT1. Für die Formen existieren Regelzeichnungen."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchluessel"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" eType="#//Schluessel_Bezeichnung_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schluesselAllg" eType="#//Schluessel_Allg_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Schluessel_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schluessel_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchluessel_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schluesselBartform" eType="#//Schluessel_Bartform_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bartform des Schlüssels. DB-Regelwerk Bisher keine Darstellung"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Schluessel_Bartform"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schluesselGruppe" lowerBound="1"
+        eType="#//Schluessel_Gruppe_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Gruppe des Schlüssels. DB-Regelwerk Bisher keine Darstellung"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Schluessel_Gruppe"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schluessel_Bartform_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSchluessel_Bartform"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMSchluesselBartformObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schluessel_Bezeichnung_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchluessel_Bezeichnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnungSchluessel"
+        lowerBound="1" eType="#//Bezeichnung_Schluessel_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Auf dem Schluessel angebrachte Bezeichnung."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..20]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung_Schluessel"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schluessel_Gruppe_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSchluessel_Gruppe"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMSchluesselGruppeObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schluessel_In_Grdst_Eingeschl_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSchluessel_In_Grdst_Eingeschl"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schluesselsperre" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Elektromechanisches Bauelement, das die Anwesenheit eines Schlüssels prüft, ihn festhält und eine Abhängigkeit zur Stellwerkslogik besitzt. Schlüsselsperren dienen der Festhaltung bzw. Freigabe von Schlüsseln, mit denen in der Regel weitere Elemente bedienbar gemacht werden. In Einzelfällen dienen Schlüsselsperren nur als Schlüsselschalter. Die Darstellung im Lageplan erfolgt am Ort der Bedienung (z. B. Stellwerk, sonstiges Gebäude), der durch die Unterbringung beschrieben wird. Eine Darstellung am oder auf dem Gleis erfolgt nicht! DB-Regelwerk Darstellung durch Zeichnung im Lageplan nach 819.9002 2."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CSchluesselsperre"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienungArt" lowerBound="1"
+        eType="#//Bedienung_Art_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Unterscheidung nach Innen- und Außenschlüsselsperre. Alt: Traditionell wird unterschieden zwischen einer Schlüsselsperre als Teil der Bedieneinrichtung im Stellwerk (Innenschlüsselsperre) und einer solchen in der Nähe des zu bedienenden Elements in den Außenanlagen (Außenschlüsselsperre). Mit zunehmender Zentralisierung und Entfall örtlich besetzter Stellwerke verliert diese Unterscheidung ihre Bedeutung. Neu (ESTW-Technik): Als Innenschlüsselsperre werden die nur für das LST-Personal zugänglichen Schlüsselsperren in der Außenelementansteuerung bezeichnet, die z. B. zum Sperren von Fahrstraßen genutzt werden. Alle für das Betriebspersonal (insbesondere Rangierpersonal) zugänglichen Schlüsselsperren sind Außenschlüsselsperren, unabhängig von der Art der Unterbringung. DB-Regelwerk Darstellung durch Zeichnung im Lageplan nach 819.9002 2."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation>&#xA;                               &#xA;    &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                       &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedienung_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" lowerBound="1"
+        eType="ecore:EClass BasisTypen.ecore#//Bezeichnung_Element_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDStellelement" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Stellelement_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf das Objekt Stellelement zur Zusammenfassung von Eigenschaften der Objekte BUE Schnittstelle, PZB Element, Schluesselsperre, Signal, W Kr Gsp Element. Das Stellelement enthält Informationen über den energetischen und logischen Anschluss der Objekte. Für das PZB Element ist der Verweis nur zu füllen, wenn das PZB_Element eine GÜ ist. DB-Regelwerk Bisher ohne eindeutige Darstellung "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Stellelement"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDUnterbringung" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Unterbringung_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den physischen Ort der Unterbringung von Aussenelementansteuerung, Bedien Einrichtung Oertlich, Bedien Platz, ESTW Zentraleinheit, PZB Element, Schlosskombination, Schluesselsperre und ZN. Für das PZB Element wird der Verweis nur für eine GÜ gefüllt - mit der Bedeutung: GÜ-Schaltkasten. Für die ZN ist der Verweis optional, da im Planungswerkzeug ZN/ZL keine Befüllung aller der für die Unterbringung notwendigen Attribute möglich ist. DB-Regelwerk Darstellung des Gebäudes, der Bediensäule bzw. des Schaltkastens im sicherungstechnischen Lageplan nach Ril 819.9002 oder Beschreibung im Erläuterungsbericht."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Unterbringung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sonderanlage_Lage_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSonderanlage_Lage"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMSonderanlageLageObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Technisch_Berechtigter_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCTechnisch_Berechtigter"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Verschluss_Ort_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCVerschluss_Ort"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMVerschlussOrtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="W_Anbaulage_Type" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TW_Anbaulage"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="W_Anbaulage_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCW_Anbaulage"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//W_Anbaulage_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="W_Lage_Type" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TW_Lage"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="W_Lage_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCW_Lage"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//W_Lage_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,2186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Geodaten" nsURI="http://www.plan-pro.org/modell/Geodaten/1.10.0.1"
+    nsPrefix="nsGeodaten">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EDataType" name="Anzeigegefuehrt_ES_Kategorie_Type"
+      instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TAnzeigegefuehrt_ES_Kategorie"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Anzeigegefuehrt_ES_Kategorie_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCAnzeigegefuehrt_ES_Kategorie"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Anzeigegefuehrt_ES_Kategorie_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bezeichnung_Strecke_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBezeichnung_Strecke"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="pattern" value="[0-9]{4}(\-[a-zA-Z0-9])?"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bezeichnung_Strecke_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBezeichnung_Strecke"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bezeichnung_Strecke_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bremsweg_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBremsweg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType BasisTypen.ecore#//Bremsweg_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Enumeration1" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="Enumeration1"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#string"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMGEOForm">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMGEO_Form"/>
+    </eAnnotations>
+    <eLiterals name="ENUMGEO_Form_Bogen" literal="Bogen"/>
+    <eLiterals name="ENUMGEO_Form_Blosskurve" value="1" literal="Blosskurve"/>
+    <eLiterals name="ENUMGEO_Form_Bloss_einfach_geschwungen" value="2" literal="Bloss_einfach_geschwungen"/>
+    <eLiterals name="ENUMGEO_Form_Gerade" value="3" literal="Gerade"/>
+    <eLiterals name="ENUMGEO_Form_Klothoide" value="4" literal="Klothoide"/>
+    <eLiterals name="ENUMGEO_Form_Km_Sprung" value="5" literal="Km_Sprung"/>
+    <eLiterals name="ENUMGEO_Form_Polylinie" value="6" literal="Polylinie"/>
+    <eLiterals name="ENUMGEO_Form_Richtgerade_Knick_am_Ende_200_gon" value="7" literal="Richtgerade_Knick_am_Ende_200_gon"/>
+    <eLiterals name="ENUMGEO_Form_sonstige" value="8" literal="sonstige"/>
+    <eLiterals name="ENUMGEO_Form_S_Form_einfach_geschwungen" value="9" literal="S_Form_einfach_geschwungen"/>
+    <eLiterals name="ENUMGEO_Form_Uebergangsbogen_S_Form" value="10" literal="Uebergangsbogen_S_Form"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMGEOFormObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMGEO_Form:Object"/>
+      <details key="baseType" value="ENUMGEO_Form"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMGEOKoordinatensystem">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMGEO_Koordinatensystem"/>
+    </eAnnotations>
+    <eLiterals name="ENUMGEO_Koordinatensystem_CR0" literal="CR0"/>
+    <eLiterals name="ENUMGEO_Koordinatensystem_DR0" value="1" literal="DR0"/>
+    <eLiterals name="ENUMGEO_Koordinatensystem_ER0" value="2" literal="ER0"/>
+    <eLiterals name="ENUMGEO_Koordinatensystem_FR0" value="3" literal="FR0"/>
+    <eLiterals name="ENUMGEO_Koordinatensystem_sonstige" value="4" literal="sonstige"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMGEOKoordinatensystemObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMGEO_Koordinatensystem:Object"/>
+      <details key="baseType" value="ENUMGEO_Koordinatensystem"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMHoehenlinieForm">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="spa/WS 31.07.2018"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMHoehenlinie_Form"/>
+    </eAnnotations>
+    <eLiterals name="ENUMHoehenlinie_Form_Gerade" literal="Gerade"/>
+    <eLiterals name="ENUMHoehenlinie_Form_Parabel" value="1" literal="Parabel"/>
+    <eLiterals name="ENUMHoehenlinie_Form_Weichenabzweig" value="2" literal="Weichenabzweig"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMHoehenlinieFormObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMHoehenlinie_Form:Object"/>
+      <details key="baseType" value="ENUMHoehenlinie_Form"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMHSystem">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMHSystem"/>
+    </eAnnotations>
+    <eLiterals name="ENUMHSystem_DBRH_2003" literal="DBRH_2003"/>
+    <eLiterals name="ENUMHSystem_DBRH_2016" value="1" literal="DBRH_2016"/>
+    <eLiterals name="ENUMHSystem_DHHN_12" value="2" literal="DHHN_12"/>
+    <eLiterals name="ENUMHSystem_DHHN_2016" value="3" literal="DHHN_2016"/>
+    <eLiterals name="ENUMHSystem_DHHN_85" value="4" literal="DHHN_85"/>
+    <eLiterals name="ENUMHSystem_DHHN_92" value="5" literal="DHHN_92"/>
+    <eLiterals name="ENUMHSystem_HN_56" value="6" literal="HN_56"/>
+    <eLiterals name="ENUMHSystem_HN_76" value="7" literal="HN_76"/>
+    <eLiterals name="ENUMHSystem_sonstige" value="8" literal="sonstige"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMHSystemObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMHSystem:Object"/>
+      <details key="baseType" value="ENUMHSystem"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMOertlichkeitArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMOertlichkeit_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMOertlichkeit_Art_Abzw" literal="Abzw"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Abzw_Anst" value="1" literal="Abzw Anst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Abzw_Awanst" value="2" literal="Abzw Awanst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Anst" value="3" literal="Anst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Anst_Bk" value="4" literal="Anst Bk"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Awanst" value="5" literal="Awanst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Awanst_Bk" value="6" literal="Awanst Bk"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Bf" value="7" literal="Bf"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Bf_Abzw" value="8" literal="Bf Abzw"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Bft" value="9" literal="Bft"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Bft_Abzw" value="10" literal="Bft Abzw"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Bk" value="11" literal="Bk"/>
+    <eLiterals name="ENUMOertlichkeit_Art_BSO" value="12" literal="BSO"/>
+    <eLiterals name="ENUMOertlichkeit_Art_BZ" value="13" literal="BZ"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Dkst" value="14" literal="Dkst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Gp" value="15" literal="Gp"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp" value="16" literal="Hp"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp_Abzw" value="17" literal="Hp Abzw"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp_Abzw_Anst" value="18" literal="Hp Abzw Anst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp_Abzw_Awanst" value="19" literal="Hp Abzw Awanst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp_Anst" value="20" literal="Hp Anst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp_Anst_Bk" value="21" literal="Hp Anst Bk"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp_Awanst" value="22" literal="Hp Awanst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp_Awanst_Bk" value="23" literal="Hp Awanst Bk"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp_Bft" value="24" literal="Hp Bft"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp_Bk" value="25" literal="Hp Bk"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp_Dkst" value="26" literal="Hp Dkst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp_Ust" value="27" literal="Hp Üst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp_Ust_Anst" value="28" literal="Hp Üst Anst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Hp_Ust_Awanst" value="29" literal="Hp Üst Awanst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_LGr" value="30" literal="LGr"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Abzw" value="31" literal="NE-Abzw"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Anst" value="32" literal="NE-Anst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Awanst" value="33" literal="NE-Awanst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Bf" value="34" literal="NE-Bf"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Bft" value="35" literal="NE-Bft"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Bft_Abzw" value="36" literal="NE-Bft Abzw"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Bk" value="37" literal="NE-Bk"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Gp" value="38" literal="NE-Gp"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Hp" value="39" literal="NE-Hp"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Hp_Abzw" value="40" literal="NE-Hp Abzw"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Hp_Anst" value="41" literal="NE-Hp Anst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Hp_Awanst" value="42" literal="NE-Hp Awanst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Hp_Bk" value="43" literal="NE-Hp Bk"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_LGr" value="44" literal="NE-LGr"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_RBGr" value="45" literal="NE-RBGr"/>
+    <eLiterals name="ENUMOertlichkeit_Art_NE_Ust" value="46" literal="NE-Üst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_PDGr" value="47" literal="PDGr"/>
+    <eLiterals name="ENUMOertlichkeit_Art_RBGr" value="48" literal="RBGr"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Sbk" value="49" literal="Sbk"/>
+    <eLiterals name="ENUMOertlichkeit_Art_sonstige" value="50" literal="sonstige"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Strw" value="51" literal="Strw"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Ust" value="52" literal="Üst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Ust_Anst" value="53" literal="Üst Anst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_Ust_Awanst" value="54" literal="Üst Awanst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_vp_Abzw" value="55" literal="vp-Abzw"/>
+    <eLiterals name="ENUMOertlichkeit_Art_vp_Anst" value="56" literal="vp-Anst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_vp_Awanst" value="57" literal="vp-Awanst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_vp_Bf" value="58" literal="vp-Bf"/>
+    <eLiterals name="ENUMOertlichkeit_Art_vp_Bft" value="59" literal="vp-Bft"/>
+    <eLiterals name="ENUMOertlichkeit_Art_vp_Bk" value="60" literal="vp-Bk"/>
+    <eLiterals name="ENUMOertlichkeit_Art_vp_Hp" value="61" literal="vp-Hp"/>
+    <eLiterals name="ENUMOertlichkeit_Art_vp_Hp_Abzw" value="62" literal="vp-Hp Abzw"/>
+    <eLiterals name="ENUMOertlichkeit_Art_vp_Hp_Anst" value="63" literal="vp-Hp Anst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_vp_Hp_Anst_Bk" value="64" literal="vp-Hp Anst Bk"/>
+    <eLiterals name="ENUMOertlichkeit_Art_vp_Hp_Awanst" value="65" literal="vp-Hp Awanst"/>
+    <eLiterals name="ENUMOertlichkeit_Art_vp_LGr" value="66" literal="vp-LGr"/>
+    <eLiterals name="ENUMOertlichkeit_Art_vp_RBGr" value="67" literal="vp-RBGr"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMOertlichkeitArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMOertlichkeit_Art:Object"/>
+      <details key="baseType" value="ENUMOertlichkeit_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMPlanQuelle">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMPlan_Quelle"/>
+    </eAnnotations>
+    <eLiterals name="ENUMPlan_Quelle_Ersatztrassierung" literal="Ersatztrassierung"/>
+    <eLiterals name="ENUMPlan_Quelle_GIS" value="1" literal="GIS"/>
+    <eLiterals name="ENUMPlan_Quelle_GND" value="2" literal="GND"/>
+    <eLiterals name="ENUMPlan_Quelle_GND_autokorr" value="3" literal="GND_autokorr"/>
+    <eLiterals name="ENUMPlan_Quelle_GND_mankorr" value="4" literal="GND_mankorr"/>
+    <eLiterals name="ENUMPlan_Quelle_Ivl" value="5" literal="Ivl"/>
+    <eLiterals name="ENUMPlan_Quelle_Ivmg" value="6" literal="Ivmg"/>
+    <eLiterals name="ENUMPlan_Quelle_Kopie" value="7" literal="Kopie"/>
+    <eLiterals name="ENUMPlan_Quelle_Neutrassierung" value="8" literal="Neutrassierung"/>
+    <eLiterals name="ENUMPlan_Quelle_Planung" value="9" literal="Planung"/>
+    <eLiterals name="ENUMPlan_Quelle_PT_2" value="10" literal="PT 2"/>
+    <eLiterals name="ENUMPlan_Quelle_sonstige" value="11" literal="sonstige"/>
+    <eLiterals name="ENUMPlan_Quelle_Vermessung" value="12" literal="Vermessung"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMPlanQuelleObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMPlan_Quelle:Object"/>
+      <details key="baseType" value="ENUMPlan_Quelle"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMStreckeRichtung">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMStrecke_Richtung"/>
+    </eAnnotations>
+    <eLiterals name="ENUMStrecke_Richtung_a" literal="a"/>
+    <eLiterals name="ENUMStrecke_Richtung_b" value="1" literal="b"/>
+    <eLiterals name="ENUMStrecke_Richtung_sonstige" value="2" literal="sonstige"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMStreckeRichtungObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMStrecke_Richtung:Object"/>
+      <details key="baseType" value="ENUMStrecke_Richtung"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMTBArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMTB_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMTB_Art_Bahnsteig_ungenutzt" literal="Bahnsteig_ungenutzt"/>
+    <eLiterals name="ENUMTB_Art_Personenunterfuehrung" value="1" literal="Personenunterfuehrung"/>
+    <eLiterals name="ENUMTB_Art_Bahnsteigabsenkung" value="2" literal="Bahnsteigabsenkung"/>
+    <eLiterals name="ENUMTB_Art_Durchlass" value="3" literal="Durchlass"/>
+    <eLiterals name="ENUMTB_Art_Eisenbahnkreuzungsbauwerk_oben" value="4" literal="Eisenbahnkreuzungsbauwerk_oben"/>
+    <eLiterals name="ENUMTB_Art_Eisenbahnkreuzungsbauwerk_unten" value="5" literal="Eisenbahnkreuzungsbauwerk_unten"/>
+    <eLiterals name="ENUMTB_Art_Eisenbahnueberfuehrung" value="6" literal="Eisenbahnueberfuehrung"/>
+    <eLiterals name="ENUMTB_Art_Schutzwand_links" value="7" literal="Schutzwand_links"/>
+    <eLiterals name="ENUMTB_Art_Schutzwand_rechts" value="8" literal="Schutzwand_rechts"/>
+    <eLiterals name="ENUMTB_Art_sonstige" value="9" literal="sonstige"/>
+    <eLiterals name="ENUMTB_Art_Tunnel" value="10" literal="Tunnel"/>
+    <eLiterals name="ENUMTB_Art_Ueberfuehrung_ueber_Eisenbahn" value="11" literal="Ueberfuehrung_ueber_Eisenbahn"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMTBArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMTB_Art:Object"/>
+      <details key="baseType" value="ENUMTB_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMTOPAnschluss">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMTOP_Anschluss"/>
+    </eAnnotations>
+    <eLiterals name="ENUMTOP_Anschluss_Ende" literal="Ende"/>
+    <eLiterals name="ENUMTOP_Anschluss_Ende_Bestdig" value="1" literal="Ende_Bestdig"/>
+    <eLiterals name="ENUMTOP_Anschluss_Links" value="2" literal="Links"/>
+    <eLiterals name="ENUMTOP_Anschluss_Meridiansprung" value="3" literal="Meridiansprung"/>
+    <eLiterals name="ENUMTOP_Anschluss_RB_Grenze" value="4" literal="RB_Grenze"/>
+    <eLiterals name="ENUMTOP_Anschluss_Rechts" value="5" literal="Rechts"/>
+    <eLiterals name="ENUMTOP_Anschluss_Schnitt" value="6" literal="Schnitt"/>
+    <eLiterals name="ENUMTOP_Anschluss_sonstige" value="7" literal="sonstige"/>
+    <eLiterals name="ENUMTOP_Anschluss_Spitze" value="8" literal="Spitze"/>
+    <eLiterals name="ENUMTOP_Anschluss_Streckenwechsel" value="9" literal="Streckenwechsel"/>
+    <eLiterals name="ENUMTOP_Anschluss_Verbindung" value="10" literal="Verbindung"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMTOPAnschlussObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMTOP_Anschluss:Object"/>
+      <details key="baseType" value="ENUMTOP_Anschluss"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMTPArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMTP_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMTP_Art_Bahnsteigmonitor" literal="Bahnsteigmonitor"/>
+    <eLiterals name="ENUMTP_Art_FBOA" value="1" literal="FBOA"/>
+    <eLiterals name="ENUMTP_Art_Bahnsteigspiegel" value="2" literal="Bahnsteigspiegel"/>
+    <eLiterals name="ENUMTP_Art_Gebaeude" value="3" literal="Gebaeude"/>
+    <eLiterals name="ENUMTP_Art_HOA" value="4" literal="HOA"/>
+    <eLiterals name="ENUMTP_Art_sonstige" value="5" literal="sonstige"/>
+    <eLiterals name="ENUMTP_Art_Mast" value="6" literal="Mast"/>
+    <eLiterals name="ENUMTP_Art_Zughaltesensor" value="7" literal="Zughaltesensor"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMTPArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMTP_Art:Object"/>
+      <details key="baseType" value="ENUMTP_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMUeberhoehungslinieForm">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMUeberhoehungslinie_Form"/>
+    </eAnnotations>
+    <eLiterals name="ENUMUeberhoehungslinie_Form_gleichbleibend" literal="gleichbleibend"/>
+    <eLiterals name="ENUMUeberhoehungslinie_Form_Rampe_Bloss" value="1" literal="Rampe_Bloss"/>
+    <eLiterals name="ENUMUeberhoehungslinie_Form_Rampe_gerade" value="2" literal="Rampe_gerade"/>
+    <eLiterals name="ENUMUeberhoehungslinie_Form_Rampe_S" value="3" literal="Rampe_S"/>
+    <eLiterals name="ENUMUeberhoehungslinie_Form_Schere_Bloss" value="4" literal="Schere_Bloss"/>
+    <eLiterals name="ENUMUeberhoehungslinie_Form_Schere_S" value="5" literal="Schere_S"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMUeberhoehungslinieFormObject"
+      instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMUeberhoehungslinie_Form:Object"/>
+      <details key="baseType" value="ENUMUeberhoehungslinie_Form"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMVProfilArt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="ES: Erhöhte Seitenbeschleunigung"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMV_Profil_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMV_Profil_Art_anzeigegeführt" literal="anzeigegeführt"/>
+    <eLiterals name="ENUMV_Profil_Art_anzeigegeführt_ES" value="1" literal="anzeigegeführt ES"/>
+    <eLiterals name="ENUMV_Profil_Art_signalgeführt" value="2" literal="signalgeführt"/>
+    <eLiterals name="ENUMV_Profil_Art_signalgeführt_ES" value="3" literal="signalgeführt ES"/>
+    <eLiterals name="ENUMV_Profil_Art_sonstige" value="4" literal="sonstige"/>
+    <eLiterals name="ENUMV_Profil_Art_windabhängig" value="5" literal="windabhängig"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMVProfilArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMV_Profil_Art:Object"/>
+      <details key="baseType" value="ENUMV_Profil_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GEO_Form_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGEO_Form"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMGEOFormObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GEO_KAD_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TGEO_KAD"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GEO_KAD_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGEO_KAD"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//GEO_KAD_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GEO_Kante" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Kante des topografischen Knoten-Kanten-Modells. Die GEO_Kante ist vom GEO_Knoten A zum GEO_Knoten B gerichtet (GEO Richtungswinkel) und muss immer an zwei GEO_Knoten enden. Die Länge einer GEO_Kante zwischen den GEO_Knoten A und B entspricht der realen Gleislänge zwischen diesen Knoten und wird im Attribut GEO Laenge gespeichert. Mit Bezug auf die Regeln zu den Gleisnetzdaten (GND) ist die Länge einer GEO_Kante stets kleiner 10 km. Eine GEO_Kante besitzt eine geometrische Form, die durch GEO Form beschrieben wird. GEO_Kanten werden für die Abbildung der Gleislinie und der Kilometrierungslinie verwendet. Eine Unterscheidung dieser Anwendung erfolgt durch den Verweis ID GEO Art. Der GEO_Radius (GEO Radius A und GEO Radius B) ist negativ, wenn die GEO_Kante vom GEO_Knoten_A in einem Linksbogen führt und ist positiv, wenn diese in einen Rechtsbogen führt. Die beiden Radien sind jeweils der Radius an der A- bzw. B-Seite der GEO_Kante. Bei einem Kreisbogen wird nur der GEO Radius A angegeben. Für eine Gerade wird dieser Radius mit 0.000 definiert. Ein Algorithmus zur Darstellung eines Punktes auf einem Übergangsbogen kann der folgenden Literaturquelle entnommen werden: Media:Literatur Uebergangsbogen.pdf. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CGEO_Kante"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gEOKanteAllg" lowerBound="1"
+        eType="#//GEO_Kante_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GEO_Kante_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDGEOArt" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_GEO_Art_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Durch den Verweis auf eine TOP_Kante wird die GEO_Kante als Gleislinie, beim Verweis auf eine Strecke als Kilometrierungslinie und beim Verweis auf eine Trasse_Kante als Kabel- bzw. Medientrassenlinie definiert. Der Startpunkt einer TOP-Kante ist über die Verweise auf einen TOP-Knoten A und anschließend auf einen GEO-Knoten A oder GEO-Knoten B identifizierbar. Wenn der Verweis auf GEO-Knoten A fällt, liegt der Verlauf der GEO-Kante in Richtung der TOP-Kante, andernfalls in Gegenrichtung. Weitere GEO-Kanten werden mit End- und Anfangs-Knoten verbunden, bis auf den End-Knoten einer GEO-Kante wiederum von einem TOP-Knoten B verwiesen wird. DIe Verfahrensweise ist bei Trassen-Kanten analog."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_GEO_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDGEOKnotenA" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_GEO_Knoten_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den GEO Knoten am Anfang der GEO Kante. Durch die Angabe des Anfangs- sowie des Endknotens wird die Richtung der GEO Kante definiert."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_GEO_Knoten_A"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDGEOKnotenB" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_GEO_Knoten_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den GEO Knoten am Ende der GEO Kante. Durch die Angabe des Anfangs- sowie des Endknotens wird die Richtung der GEO Kante definiert."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_GEO_Knoten_B"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GEO_Kante_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CGEO_Kante_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gEOForm" lowerBound="1"
+        eType="#//GEO_Form_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Beschreibung der geometrischen Form der Gleis-Kante. In Abhängigkeit von der Geo_Form werden die Attribute GEO Radius A und GEO Radius B mit entsprechenden Werten befüllt oder bleiben LEER. Beispiel: GEO_Form: Gerade GEO_Radius_A = LEER GEO_Radius_B = LEER GEO_Form: BOGEN GEO_Radius_A = Radius GEO_Radius_B = LEER "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GEO_Form"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gEOKAD" eType="#//GEO_KAD_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung der topografischen Kantenadresse. Aktuell ist eine Verwendung bei der Übernahme von Trassierungsdaten (ASCIBAHN) vorgesehen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GEO_KAD"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gEOLaenge" lowerBound="1"
+        eType="#//GEO_Laenge_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Länge der GEO Kante. Die Länge wird aus den DB-GIS-Daten oder einem Trassierungsentwurf mit der dort vorhandenen Genauigkeit entnommen."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>+/-[0.00000..9999.99999]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GEO_Laenge"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gEORadiusA" eType="#//GEO_Radius_A_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zugehörige Parameter für die GEO_Form Gerade: kein zusätzlicher Parameter erforderlich oder 0.00000 angeben; Bogen: GEO_Radius_A enthält den Radius (Anfangsradius = Endradius) in [m]; Richtgerade Knick am Ende: GEO_Radius_A enthält den Brechungswinkel am Ende in [gon]; Alle anderen Kanten: GEO_Radius_A enthält den Anfangsradius in [m]. In Abhängigkeit der Bogenrichtung am GEO_Knoten_A wird der Radius bei einem Linksbogen negativ und bei einem Rechtsbogen positiv angegeben. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[-99999.99999..-10.00000|0.00000|10.00000..99999.99999]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GEO_Radius_A"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gEORadiusB" eType="#//GEO_Radius_B_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zugehörige Parameter für die GEO_Form Gerade: kein zusätzlicher Parameter; Bogen: kein zusätzlicher Parameter; Richtgerade Knick am Ende: kein zusätzlicher Parameter; Alle anderen Kanten: GEO_Bogen_B enthält den Endradius in [m]. In Abhängigkeit der Bogenrichtung am GEO_Knoten_A wird der Radius bei einem Linksbogen negativ und bei einem Rechtsbogen positiv angegeben. Die Bogenrichtung ist immer identisch zum GEO_Radius_A. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[-99999.99999..-10.00000|0.00000|10.00000..99999.99999]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GEO_Radius_B"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gEORichtungswinkel" eType="#//GEO_Richtungswinkel_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Parameter für eine GEO Kante, der den Bezugswinkel (Tangente) am Anfang einer GEO_Kante darstellt. Das Attribut GEO_Richtungswinkel enthält den Richtungswinkel der Geo-Kante am Anfang in [gon]. Es gilt nachfolgende Zuordnung der Richtung: Nord = 0,0 gon Ost = 100,0 gon Süd = 200,0 gon West = 300,0 gon originale negative Werte werden durch Addition von 400.0 gon normalisiert. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[0.00000...399.99999]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GEO_Richtungswinkel"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="planQuelle" lowerBound="1"
+        eType="#//Plan_Quelle_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Quelle der Geo-Kante, des Geo-Knotens, des Höhenpunkts, der Höhenlinie, der Überhöhung bzw. der Überhöhungslinie. Bei Auswahl von „sonstige“ ist zwingend ein Bearbeitungsvermerk anzugeben. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>GND&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Plan_Quelle"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GEO_Knoten" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Knoten des topografischen Knoten-Kanten-Modells. Die Anzahl der anschließenden topografischen Kanten (Gleislinie oder Kilometrierungslinie) ist je nach Art des GEO Knoten bzw. Art des zugehörigen TOP Knoten unterschiedlich: Für die Gleislinie gilt: Eine GEO-Kante: Der GEO_Knoten ist gleichzeitig auch ein TOP Knoten, an dem die Topografie und Topologie endet (z. B. Gleisende, Betrachtungsende oder Digitalisierungsende). Zwei GEO-Kanten: Der GEO_Knoten verweist nicht auf einen TOP Knoten: Änderung der Geometrie des Gleises oder Vermessungspunkt. Drei GEO-Kanten: Der GEO_Knoten ist gleichzeitig auch ein Knoten, an dem eine Verzweigung der Gleis- oder Kilometrierungslinie vorhanden ist. Über einen Verweis von GEO Punkt zu GEO_Knoten werden die realen Koordinaten (ggf. auch von mehreren Koordinatensystemen) dieses Knotens zugeordnet. Weitere Fälle mit 0..1 anschließenden GEO-Kanten treten an GEO_Knoten auf, an deren Stelle sich auch ein TOP Knoten der Art Verbindungsknoten befindet (siehe Beschreibung Verbindungsknoten). "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CGEO_Knoten"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gEOPAD" eType="#//GEO_PAD_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus dem DB-GIS für jeden Vermessungspunkt bereitgestellt. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB Netz AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten händisch (z.B. von Ivl-Plänen nachgezeichnet) erstellt wurden, wird das Attribut nicht befüllt. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation>&#xA;                               &#xA;    &lt;ppi:Patternbeschreibung>[1..20&lt;/ppi:Patternbeschreibung>&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                       &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GEO_PAD"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GEO_Koordinatensystem_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGEO_Koordinatensystem"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMGEOKoordinatensystemObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GEO_Laenge_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TGEO_Laenge"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="pattern" value="-?(0|[1-9][0-9]{0,3})\.[0-9]{5}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GEO_Laenge_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGEO_Laenge"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//GEO_Laenge_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GEO_PAD_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TGEO_PAD"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="pattern" value=".{1,20}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GEO_PAD_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGEO_PAD"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//GEO_PAD_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GEO_Punkt" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Topographischer Punkt im Koordinatensystem zur eindeutige Zuordnung im realen Gelände. Alle Objekte, die einen entsprechenden Bezug erfordern, werden über andere Objekte (z.B Verortung an der Topologie) oder auch direkt auf dieses Objekt abgebildet."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CGEO_Punkt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gEOPunktAllg" lowerBound="1"
+        eType="#//GEO_Punkt_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GEO_Punkt_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDGEOKante" eType="ecore:EClass Verweise.ecore#//ID_GEO_Kante_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf eine GEO_Kante, wenn der GEO_Punkt als Stützpunkt einer Polylinie fungiert. Eine Polylinie kann durch bis zu 999&#xA;GEO_Punkte beschrieben werden. Es ist jedoch auch zulässig, eine virtuelle Polylinie ohne GEO_Punkte&#xA;darzustellen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_GEO_Kante"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDGEOKnoten" eType="ecore:EClass Verweise.ecore#//ID_GEO_Knoten_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="ID des GEO_Knoten, auf den dieser GEO Punkt verweist. Einem GEO Knoten können über diesen Verweis mehrere GEO_Punkte zugewiesen werden. Das ist erforderlich, wenn ein GEO_Knoten in unterschiedlichen Koordinatensystemen zugeordnet ist. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_GEO_Knoten"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GEO_Punkt_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CGEO_Punkt_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gEOKoordinatensystem" lowerBound="1"
+        eType="#//GEO_Koordinatensystem_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe der topographischen Koordinaten des Geo-Punkts, in der Regel in LSys-Koordinaten. Neben den eigentlichen Koordinaten (x, y, z) wird auch das konkrete Koordinatensystem in der Bezeichnung dargestellt. Bei übergreifenden Koordinaten in Grenzbereichen, die nicht mit LSys darstellbar sind, ist der Wert \&quot;sonstige\&quot; zu verwenden und das Koordinatensystem mittels Bearbeitungsvermerk anzugeben. Folgende Wertigkeiten (3 Zeichen) liefert das Attribut LSys (s. a. Spezifikation Gleisnetzdaten der DB): 1. Zeichen: C Meridianstreifen 6° östliche Länge; D Meridianstreifen 9° östliche Länge; E Meridianstreifen 12° östliche Länge; F Meridianstreifen 15° östliche Länge. 2. Zeichen: A System RD/83 - Bessel-Ellipsoid, Datumspunkt Rauenberg (westliche Bundesländer, Sachsen); B System PD/83 - Bessel-Ellipsoid, Datumspunkt Potsdam (Thüringen); C System 42/83 - Krassowski-Ellipsoid, Datumspunkt Pulkowo (Brandenburg, Mecklenburg, Sachsen-Anhalt); R DB-Referenzsystem (Kartesische Koordinaten); S System Soldner - Netz 88, Datumspunkt Müggelberg (Berlin). 3. Zeichen: 0 DB-GIS Bezugsystem; A..9 Sonstige kartesische Koordinaten."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GEO_Koordinatensystem"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gKX" lowerBound="1" eType="#//GK_X_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Ost-Wert, Rechtswert oder Latitude des definierten Koordinatensystems."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GK_X"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gKY" lowerBound="1" eType="#//GK_Y_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Nord-Wert, Hochwert oder Longitude des definierten Koordinatensystems."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GK_Y"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gKZ" eType="#//GK_Z_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Höhen-Wert oder Altitude des definierten Koordinatensystems. Aktuell steht die z-Koordinate dem System nicht zur Verfügung. Die z-Koordinate für den GEO_Punkt könnte durch Interpolation vorhandener Höhenpunkte Links und Rechts generiert werden. Wenn zu einem späteren Zeitpunkt die z-Koordinaten mitgeliefert werden, könnten die Höhenpunkte durch die z-Koordinaten ersetzt werden."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GK_Z"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="planQuelle" lowerBound="1"
+        eType="#//Plan_Quelle_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Quelle der Geo-Kante, des Geo-Knotens, des Höhenpunkts, der Höhenlinie, der Überhöhung bzw. der Überhöhungslinie. Bei Auswahl von „sonstige“ ist zwingend ein Bearbeitungsvermerk anzugeben. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>GND&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Plan_Quelle"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GEO_Radius_A_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TGEO_Radius_A"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="pattern" value="0\.00000|(-?[1-9][0-9]{1,4}\.[0-9]{5})"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GEO_Radius_A_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGEO_Radius_A"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//GEO_Radius_A_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GEO_Radius_B_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TGEO_Radius_B"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="pattern" value="0\.00000|(-?[1-9][0-9]{1,4}\.[0-9]{5})"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GEO_Radius_B_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGEO_Radius_B"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//GEO_Radius_B_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GEO_Richtungswinkel_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TGEO_Richtungswinkel"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+      <details key="pattern" value="(0|[1-9][0-9]{0,1}|[1-3][0-9]{2})\.[0-9]{5}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GEO_Richtungswinkel_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGEO_Richtungswinkel"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//GEO_Richtungswinkel_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Geschwindigkeit_Type" instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TGeschwindigkeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Geschwindigkeit_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGeschwindigkeit"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Geschwindigkeit_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Geschwindigkeitsprofil" eSuperTypes="Basisobjekte.ecore#//Bereich_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Zulässige Geschwindigkeit der Strecke, bei ETCS auch außerhalb der durchgehenden Hauptgleise. Das Geschwindigkeitsprofil wird zusammengesetzt aus Bereichen mit konstanten Geschwindigkeiten. Es kann in unterschiedlichen Arten (z. B. NeiTec, ETCS) ausgeprägt sein. Für jede Art wird ein separates Geschwindigkeitsprofil angelegt. \&quot;Geschwindigkeitsband\&quot; ist ein Synonym für Geschwindigkeitsprofil. Unabhängig vom Geschwindigkeitsprofil können in Elementen (Weiche, Gleisabschnitt) eigene Geschwindigkeiten hinterlegt sein. Je nach Anwendung wird über die Gültigkeit der in den Elementen hinterlegten Geschwindigkeit oder der des Geschwindigkeitsprofils entschieden."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CGeschwindigkeitsprofil"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="geschwindigkeitsprofilAllg"
+        lowerBound="1" eType="#//Geschwindigkeitsprofil_Allg_AttributeGroup" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Geschwindigkeitsprofil_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Geschwindigkeitsprofil_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CGeschwindigkeitsprofil_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="anzeigegefuehrtESKategorie"
+        eType="#//Anzeigegefuehrt_ES_Kategorie_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Kategorie für Geschwindigkeitsprofile der Art \&quot;anzeigefeführt ES\&quot;, z. B. Gültigkeit für Reise- oder Güterzüge."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Anzeigegefuehrt_ES_Kategorie"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="geschwindigkeit" lowerBound="1"
+        eType="#//Geschwindigkeit_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zulässige Geschwindigkeit nach jeweiligem Geschwindigkeitsprofil. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Geschwindigkeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="vProfilArt" lowerBound="1"
+        eType="#//V_Profil_Art_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art des Geschwindigkeitsprofils."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="V_Profil_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GK_X_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TGK_X"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+      <details key="pattern" value="((0|(-?[1-9][0-9]{0,}))\.[0-9]{5})|(-0\.([1-9][0-9]{4}|[0-9][1-9][0-9]{3}|[0-9]{2}[1-9][0-9]{2}|[0-9]{3}[1-9][0-9]|[0-9]{4}[1-9]))"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GK_X_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGK_X"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//GK_X_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GK_Y_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TGK_Y"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+      <details key="pattern" value="((0|(-?[1-9][0-9]{0,}))\.[0-9]{5})|(-0\.([1-9][0-9]{4}|[0-9][1-9][0-9]{3}|[0-9]{2}[1-9][0-9]{2}|[0-9]{3}[1-9][0-9]|[0-9]{4}[1-9]))"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GK_Y_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGK_Y"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//GK_Y_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="GK_Z_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TGK_Z"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+      <details key="pattern" value="((0|(-?[1-9][0-9]{0,}))\.[0-9]{5})|(-0\.([1-9][0-9]{4}|[0-9][1-9][0-9]{3}|[0-9]{2}[1-9][0-9]{2}|[0-9]{3}[1-9][0-9]|[0-9]{4}[1-9]))"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GK_Z_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCGK_Z"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//GK_Z_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hoehenlinie" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Höhenverlauf zwischen zwei Höhenpunkten."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CHoehenlinie"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hoehenlinieAllg" lowerBound="1"
+        eType="#//Hoehenlinie_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Hoehenlinie_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDHoehenpunktA" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Hoehenpunkt_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den Hoehenpunkt am Anfang der Hoehenlinie. Durch die Angabe des Anfangs- sowie des Endpunkts wird die Richtung der Hoehenlinie definiert."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Hoehenpunkt_A"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDHoehenpunktB" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Hoehenpunkt_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den Hoehenpunkt am Ende der Hoehenlinie. Durch die Angabe des Anfangs- sowie des Endpunkts wird die Richtung der Hoehenlinie definiert."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Hoehenpunkt_B"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hoehenlinie_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CHoehenlinie_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hoehenlinieForm" lowerBound="1"
+        eType="#//Hoehenlinie_Form_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Form der Hoehenlinie, z. B. Gerade."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Hoehenlinie_Form"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hoehenlinieLaenge" lowerBound="1"
+        eType="#//Hoehenlinie_Laenge_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Länge der Hoehenlinie. Genauigkeit: Tausendstel m = 1 mm."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[0.000..99999.999]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Hoehenlinie_Laenge"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="planQuelle" lowerBound="1"
+        eType="#//Plan_Quelle_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Quelle der Geo-Kante, des Geo-Knotens, des Höhenpunkts, der Höhenlinie, der Überhöhung bzw. der Überhöhungslinie. Bei Auswahl von „sonstige“ ist zwingend ein Bearbeitungsvermerk anzugeben. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>GND&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Plan_Quelle"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hoehenlinie_Form_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCHoehenlinie_Form"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMHoehenlinieFormObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Hoehenlinie_Laenge_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="THoehenlinie_Laenge"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hoehenlinie_Laenge_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCHoehenlinie_Laenge"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Hoehenlinie_Laenge_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hoehenpunkt" eSuperTypes="Basisobjekte.ecore#//Punkt_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Örtliche Höhe des Bezugspunkts in Metern gemäß Höhensystem. Liegt der Höhenpunkt innerhalb des zugehörigen Gleises, entfällt die Angabe eines seitlichen Abstands bzw. einer seitlichen Lage. Wird ein seitlicher Abstand ungleich 0.000 angegeben, so handelt es sich um einen sonstigen Höhenpunkt, der nicht die Höhenlage des Gleises angibt. Ein Höhenpunkt, der unmittelbar auf einem Anfang oder Ende eines Weichenschenkels liegt (TOP_Kante, mit Anschluss_A oder Anschluss_B als Links oder Rechts) ist auf die TOP_Kante der Spitze dieser Weiche zu verorten."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CHoehenpunkt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hoehenpunktAllg" lowerBound="1"
+        eType="#//Hoehenpunkt_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Hoehenpunkt_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hoehenpunkt_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CHoehenpunkt_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gEOPAD" eType="#//GEO_PAD_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus dem DB-GIS für jeden Vermessungspunkt bereitgestellt. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB Netz AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten händisch (z.B. von Ivl-Plänen nachgezeichnet) erstellt wurden, wird das Attribut nicht befüllt. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung> [7..11] Alphanumerische Zeichenkette, die ersten vier Zeichen sind Ziffern [0..9], die 5. und 6. Stelle sind Großbuchstaben [A..Z] und die letzten fünf Zeichen sind Zahlen [1 .. 99999] ohne führende Nullen. &lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GEO_PAD"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hoehenpunktDatum" eType="#//Hoehenpunkt_Datum_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Aufnahmedatum der Höhenwerte des Hoehenpunktes. GND: Punktdatum; Ivl und Ivmg: Datum der letzten Bearbeitung; Kopie: Datum aus kopierter Höhe; Neutrassierung: Freigabedatum; sonstige: Datum der letzten Bearbeitung.&#xA;Die Information wird zukünftig über das Attribut Datum_Regelwerk abgebildet. Das Attribut soll daher langfristig entfallen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Hoehenpunkt_Datum"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hoehenpunktHoehe" lowerBound="1"
+        eType="#//Hoehenpunkt_Hoehe_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe der Höhe bezogen auf das Höhensystem in Meter. Genauigkeit: Tausendstel m = 1 mm."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[-100.000..3000.000]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Hoehenpunkt_Hoehe"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hSystem" eType="#//HSystem_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe, auf welchem Höhensystem die Angabe der Höhe beruht. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="HSystem"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="neigung" eType="#//Neigung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Neigung des Gleises bzw. der Hoehenlinie am Ort des Hoehenpunkts. Die Art der Neigung (Steigung/Gefälle) muss durch Auswertung der Wirkrichtung ermittelt werden. Die Angabe ist nur bei Vorhandensein einer Höhenlinie sinnvoll."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[0.000..100.000]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Neigung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="planQuelle" eType="#//Plan_Quelle_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Quelle der Geo-Kante, des Geo-Knotens, des Höhenpunkts, der Höhenlinie, der Überhöhung bzw. der Überhöhungslinie. Bei Auswahl von „sonstige“ ist zwingend ein Bearbeitungsvermerk anzugeben. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>GND&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Plan_Quelle"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hoehenpunkt_Datum_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCHoehenpunkt_Datum"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Hoehenpunkt_Hoehe_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="THoehenpunkt_Hoehe"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+      <details key="pattern" value="-100\.000|-([1-9][0-9]{0,1}\.[0-9]{3})|(-0\.[1-9][0-9]{2}|-0\.0[1-9][0-9]|-0\.0[0-9][1-9])|((0|[1-9][0-9]{0,2}|[1-2][0-9]{3})\.[0-9]{3})|3000\.000"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hoehenpunkt_Hoehe_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCHoehenpunkt_Hoehe"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Hoehenpunkt_Hoehe_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="HSystem_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCHSystem"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMHSystemObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Kantenname_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TKantenname"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Kantenname_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCKantenname"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Kantenname_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Knotenname_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TKnotenname"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="pattern" value=".{1,20}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Knotenname_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCKnotenname"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Knotenname_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Neigung_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TNeigung"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+      <details key="pattern" value="0\.000|([1-9][0-9]{0,1}\.[0-9]{3})|(0\.[1-9][0-9]{2}|0\.0[1-9][0-9]|0\.0[0-9][1-9])|((0|[1-9][0-9]{0,1})\.[0-9]{3})|100\.000"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Neigung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCNeigung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Neigung_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Oertlichkeit" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Bahnanlagen und Betriebsstellen des Netzes. Die Örtlichkeit muss eine gültige Bezeichnung nach Ril 100 beinhalten und kann mittels ID Strecke Punkt mehreren Strecken mit Bezugskilometer zugeordnet sein. DB-Regelwerk Richtlinie 100.0001 Abschnitt 1 (1) "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="COertlichkeit"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" lowerBound="1"
+        eType="#//Oertlichkeit_Bezeichnung_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDOertlichkeit" eType="ecore:EClass Verweise.ecore#//ID_Oertlichkeit_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis zur (betrieblichen) Zuordnung von Bahnhofsteilen zu Bahnhöfen und von Betriebsstellen untereinander. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Oertlichkeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDOertlichkeitAwanstBedient"
+        eType="ecore:EClass Verweise.ecore#//ID_Oertlichkeit_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bei Awanst: Angabe der Örtlichkeit, von der die Awanst bedient wird."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Oertlichkeit_Awanst_Bedient"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDStreckePunkt" upperBound="-1"
+        eType="ecore:EClass Verweise.ecore#//ID_Strecke_Punkt_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf einen bzw. mehrere Streckenpunkt(e) zur Lokalisierung der Örtlichkeit im Netz. Die Information wird für die Erstellung der Ausgabeformate benötigt."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Strecke_Punkt"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="oertlichkeitAllg" lowerBound="1"
+        eType="#//Oertlichkeit_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Oertlichkeit_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Oertlichkeit_Abkuerzung_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TOertlichkeit_Abkuerzung"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="pattern" value="[A-Z][A-Z0-9%20]{1,4}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Oertlichkeit_Abkuerzung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCOertlichkeit_Abkuerzung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Oertlichkeit_Abkuerzung_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Oertlichkeit_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="COertlichkeit_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="oertlichkeitArt" lowerBound="1"
+        eType="#//Oertlichkeit_Art_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art der Örtlichkeit. Die Befüllungen sind der ENUM-Liste von Bahnanlagen und Betriebsstellen des Netzes, weiterer Örtlichkeiten mit Fahrplanzeiten sowie sonstiger Punkte zu entnehmen und müssen in der Regel mit der Angabe in der Ril 100 übereinstimmen. Ab der Version 1.8.0 wird die Schreibweise der ENUM-Werte identisch zur Ril 100 übernommen, indem Umlaute und Leezeichen verwendet werden. Die im Glossar mit (E) gekennzeichneten Werte entfallen zukünftig und sollen daher nicht mehr für Neuanwendungen genutzt werden. DB-Regelwerk Die verwendeten Codierungen sind im Anhang 1 Abschnitt 3 der Richtlinie 100.0001 zusammengestellt und in ihrer Bedeutung erklärt. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Oertlichkeit_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="oertlichkeitGueltigAb"
+        eType="#//Oertlichkeit_Gueltig_Ab_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Gültig ab ist eine Angabe zum ersten Gültigkeitstag der Abkürzung oder eine andere Angabe gemäß Regelwerk. DB-Regelwerk Die Angaben zur Gültigkeit sind in Richtlinie 100.0001 Abschnitt 4 (2) geregelt."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Oertlichkeit_Gueltig_Ab"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="oertlichkeitGueltigBis"
+        eType="#//Oertlichkeit_Gueltig_Bis_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Gültig bis ist eine Angabe zum letzten Gültigkeitstag der Abkürzung oder eine andere Angabe gemäß Regelwerk. DB-Regelwerk Die Angaben zur Gültigkeit sind in Richtlinie 100.0001 Abschnitt 4 (2) geregelt."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Oertlichkeit_Gueltig_Bis"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Oertlichkeit_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCOertlichkeit_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMOertlichkeitArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Oertlichkeit_Bezeichnung_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="COertlichkeit_Bezeichnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="oertlichkeitAbkuerzung"
+        lowerBound="1" eType="#//Oertlichkeit_Abkuerzung_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="2- bis 5-stellige Abkürzung der Örtlichkeit gemäß Ril 100.0001. Beispiel P-Hausen: PPHN."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung> [2..5] Großbuchstaben, Zahlen und Leerzeichen ohne Umlaute, führende Zahlen sowie führende Leerzeichen&lt;/ppi:Patternbeschreibung>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[2..5] Großbuchstaben ohne Umlaute&lt;/ppi:Patternbeschreibung_Abweichend>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Oertlichkeit_Abkuerzung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="oertlichkeitKurzname" eType="#//Oertlichkeit_Kurzname_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="16-stelliger Name der Örtlichkeit. Der Kurzname wird der Ril 100 entnommen und muss in der Schreibweise mit dieser übereinstimmen. DB-Regelwerk Die Bildung des Kurznamens ist in Richtlinie 100.0001 Abschnitt 3 (6) beschrieben."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..16]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Oertlichkeit_Kurzname"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="oertlichkeitLangname" lowerBound="1"
+        eType="#//Oertlichkeit_Langname_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="40-stelliger Name der Örtlichkeit Der Langname einer Örtlichkeit wird i. d. R nur dann abweichend zum Kurznamen gebildet, wenn die 16 Zeichen des Kurznamens nicht ausreichend sind. Anderenfalls sind Kurzname und Langname identisch. DB-Regelwerk Die Bildung des Langnamens ist in Richtlinie 100.0001 Abschnitt 3 (6) beschrieben."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..40] darf sich innerhalb eines Datenbestandes nicht wiederholen beinhaltet rechtsbündig einzutragende Ergänzungen zur Unterscheidung gleichnamiger Örtlichkeiten muss mit Orts- bzw. Ortsteilnamen beginnen &lt;/ppi:Patternbeschreibung>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[1..40]&lt;/ppi:Patternbeschreibung_Abweichend>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Oertlichkeit_Langname"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Oertlichkeit_Gueltig_Ab_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCOertlichkeit_Gueltig_Ab"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Oertlichkeit_Gueltig_Bis_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCOertlichkeit_Gueltig_Bis"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Oertlichkeit_Kurzname_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TOertlichkeit_Kurzname"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="pattern" value=".{1,16}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Oertlichkeit_Kurzname_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCOertlichkeit_Kurzname"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Oertlichkeit_Kurzname_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Oertlichkeit_Langname_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TOertlichkeit_Langname"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="pattern" value=".{1,40}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Oertlichkeit_Langname_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCOertlichkeit_Langname"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Oertlichkeit_Langname_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Plan_Quelle_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCPlan_Quelle"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMPlanQuelleObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Strecke" eSuperTypes="Basisobjekte.ecore#//Bereich_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Topologische Darstellung der Kilometrierungsachse. Die topologische Kilometrierungsachse wird durch fortlaufende Aneinanderreihung von GEO-Kanten gebildet, die mittels ID GEO Art auf diese Strecke verweisen. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CStrecke"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" lowerBound="1"
+        eType="#//Strecke_Bezeichnung_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Strecke_Bezeichnung_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CStrecke_Bezeichnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnungStrecke" lowerBound="1"
+        eType="#//Bezeichnung_Strecke_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Streckenbezeichnung der DB AG. Streckenbezeichnungen sind i. d. R vierstellig. Ist aber z. B. der Verlauf der beiden Gleise einer zweigleisigen Strecke so unterschiedlich, dass eine getrennte Kilometrierung notwendig ist, wird der vierstelligen Bezeichnung noch eine Kennung (-1) angehängt. Beispiel: Stecke 6240 ist zweigleisig. Bedingt durch einen anderen Verlauf der linken und rechten Gleislage, bekommt z. B. das linke Gleis eine andere Kilometrierung. Strecke 6240 (Rechts); Strecke 6240-1 (Links). DB-Regelwerk 885.6002A03"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>  [4..6]; Die ersten vier Zeichen sind verpflichtend und bestehen aus Ziffern [0..9]. Zur zusätzlichen Kennung bei stark auseinander triftenden Kilometierungsachsen einer zweigleisigen Strecke wird ein [-] als fünftes Zeichen und ein alphanumerisches Zeichen [A..Z|a..z|0..9] als sechstes Zeichen verwendet. &lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung_Strecke"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Strecke_Bremsweg" eSuperTypes="Basisobjekte.ecore#//Bereich_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Bremswegabstand der Strecke als Eingangsgröße für die LST-Planung. Die Vorgabe erfolgt in der BAst."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CStrecke_Bremsweg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bremsweg" lowerBound="1"
+        eType="#//Bremsweg_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bremsweg als Grundlage für die Dimesionierung der zugehörigen Strecke. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation>&#xA;                               &#xA;    &lt;ppi:ProposedValue>1000&lt;/ppi:ProposedValue>&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                       &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bremsweg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="streckeRichtung" lowerBound="1"
+        eType="#//Strecke_Richtung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Richtung der Strecke, für die der Bremsweg vorgegeben ist. Die Richtung wird topologisch über das Attribut Richtungsbezug (Bereich_Objekt) abgetragen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Strecke_Richtung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Strecke_Meter_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TStrecke_Meter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="pattern" value="-?(0|[1-9][0-9]{0,5})\.[0-9]{3}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Strecke_Meter_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCStrecke_Meter"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Strecke_Meter_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Strecke_Punkt" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Topologischer Punkt auf der zugehörigen Streckenlinie mit dem Wert der Streckenkilometrierung in Meterschreibweise. Der Streckenpunkt kann auf einen GEO Knoten verweisen, der über einen (oder mehrere) GEO_Punkte geografisch referenziert wird. Ohne diesen Verweis wird der Streckenpunkt nur auf eine Strecke mit Streckenkilometer referenziert. Die GEO Knoten sind über GEO_Kanten untereinander verbunden und beschreiben in ihrer Gesamtheit eine Streckenlinie. Jede Strecke hat mindestens zwei Streckenpunkte als Anfang und Ende der Strecke. Der GEO Knoten am Anfang bzw. am Ende einer Streckenlinie hat nur eine GEO Kante, ansonsten sind es zwei. An einem Kilometersprung werden zwei Streckenpunkte (ggf. mit identischen GEO-Koordinaten) gebildet. Die Länge der verbindende GEO_Kante (- oder +) beinhaltet den Wert des Kilometersprunges. Eine Überlänge ist negativ, eine Fehllänge ist positiv."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CStrecke_Punkt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDGEOKnoten" eType="ecore:EClass Verweise.ecore#//ID_GEO_Knoten_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="ID des GEO_Knoten, auf den der Strecke_Punkt verweist. Der Verweis ist nur zu befüllen, wenn auch eine Streckenlinie mit GEO-Daten vorhanden ist. Für jeden GEO_Knoten der Streckenachse wird dabei ein Strecke_Punkt erstellt."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_GEO_Knoten"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDStrecke" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Strecke_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung eines Streckenpunktes zu einer Streckennummer."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Strecke"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="streckeMeter" lowerBound="1"
+        eType="#//Strecke_Meter_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Kilometer an einem Knoten der Streckenlinie in Meterschreibweise. Dieses Attribut ist für jeden Streckenpunkt zu befüllen. Im Datenmodell sind die Werte als TMeter mit 3 Nachkommastellen abgespeichert (Genauigkeit für Darstellung in CAD-Systemen: Tausendstel m = 1 mm)."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation>&#xA;                               &#xA;    &lt;ppi:Patternbeschreibung>[-999999.999..0.000..999999.999]&lt;/ppi:Patternbeschreibung>&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                       &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Strecke_Meter"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Strecke_Richtung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCStrecke_Richtung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMStreckeRichtungObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TB_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCTB_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMTBArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="TB_Beschreibung_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TTB_Beschreibung"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TB_Beschreibung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCTB_Beschreibung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//TB_Beschreibung_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Technischer_Bereich" eSuperTypes="Basisobjekte.ecore#//Bereich_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Beschreibung sonstiger bereichsförmiger Objekte im Datenmodell. Diese werde durch Fremdsysteme bereitgestellt oder während einer Planung manuell ergänzt. Sie dienen nur zur Information für planerische Entscheidungen."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW|ETCS|Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CTechnischer_Bereich"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tBArt" eType="#//TB_Art_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art des technischen Bereichs. Anhand der in der Planung entstehenden Erfahrungen wird die ENUM-Liste erweitert. &#xA;Schutzwand: bauliches Element in unmittelbarer Nähe des Gleises, das bei der Platzierung von Elementen zu berücksichtigen ist (z. B. Stützmauer, Schallschutzwand)."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TB_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tBBeschreibung" lowerBound="1"
+        eType="#//TB_Beschreibung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verbale Beschreibung oder Bezeichnung des technischen Bereichs."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TB_Beschreibung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Technischer_Punkt" eSuperTypes="Basisobjekte.ecore#//Punkt_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Beschreibung sonstiger punktförmiger Objekte im Datenmodell. Diese werde durch Fremdsysteme bereitgestellt oder während einer Planung manuell ergänzt. Sie dienen nur zur Information für planerische Entscheidungen."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW|ETCS|Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CTechnischer_Punkt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tPArt" eType="#//TP_Art_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art des technischen Punktes. Anhand der in der Planung entstehenden Erfahrungen wird die ENUM-Liste erweitert."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TP_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tPBeschreibung" lowerBound="1"
+        eType="#//TP_Beschreibung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verbale Beschreibung oder Bezeichnung des technischen Punktes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TP_Beschreibung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TOP_Anschluss_A_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCTOP_Anschluss_A"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMTOPAnschlussObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TOP_Anschluss_B_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCTOP_Anschluss_B"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMTOPAnschlussObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TOP_Kante" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Kante des topologischen Knoten-Kanten-Modells zur Darstellung der Gleislinien. Die TOP_Kante ist vom Knoten A zum Knoten B gerichtet und muss immer an zwei TOP Knoten enden. Eine TOP_Kante kann mehrere topographische Kanten (GEO_Kanten) beinhalten, die über GEO Knoten fortlaufend miteinander verbunden sind. Ein TOP Knoten ist immer auch ein GEO Knoten. Die Länge einer TOP Kante zwischen den Knoten A und B entspricht der Summe der GEO_Kanten zwischen A und B (reale Gleislänge) und wird auf Millimetergenauigkeit gerundet. Die maximale Länge einer TOP_Kante ist im Modell auf 99999,999 m (\u0026lt;100 km) begrenzt. Um ein eindeutiges Routing im topologischen Modell zu ermöglichen, sind die Anschlussarten der Kante an den beiden Knoten A und B anzugeben (siehe Attribute TOP_Anschluss_A bzw. TOP_Anschluss_B). Hierbei ist zu beachten, dass ein Routing über die Verbindung Anschluss Links - Rechts ausgeschlossen ist. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CTOP_Kante"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDTOPKnotenA" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_TOP_Knoten_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den TOP Knoten am Anfang der Kante. Beginn der laufenden Länge, d. h. laufende Länge == 0."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_TOP_Knoten_A"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDTOPKnotenB" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_TOP_Knoten_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den TOP Knoten am Ende der Kante. Ende der laufenden Länge, d. h. laufende Länge = TOP Laenge."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_TOP_Knoten_B"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tOPKanteAllg" lowerBound="1"
+        eType="#//TOP_Kante_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TOP_Kante_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TOP_Kante_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CTOP_Kante_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kantenname" eType="#//Kantenname_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung für die Kante. Die Bezeichnung wird beispielsweise bei Neutrassierungen (ASCIBAHN) übernommen um eine Verknüpfung der gelieferten Trassierungsdaten mit den an den LST-Fachplaner übegebenen PlanPro-Geodaten sicherzustellen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Kantenname"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tOPAnschlussA" lowerBound="1"
+        eType="#//TOP_Anschluss_A_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art des Anschlusses am Ende A der TOP_Kante. Eine TOP_Kante muss sowohl am Ende A als auch am Ende B auf einem TOP_Knoten verweisen. In der Regel schließen an einen TOP_Knoten weitere TOP_Kanten an. Wenn an einem TOP_Knoten nur eine TOP_Kante anschließt, endet an diesem Knoten die Topologie des Gleisnetzes. Nachfolgende Arten des Endes einer Topologie sind vorgesehen: Ende - reales Ende einer Gleislinie (z.B. Prellbock, Fähranleger, ...). Ende_Bestdig - temporäres Ende einer Gleislinie, die real weiterführt, aber deren Weiterführung noch nicht im Modell hinterlegt ist. Schnitt - Anschlusspunkt einer Neutrassierung an einen vorhandenen Bestand der Gleislinie. Im Bestand muss dieser Knoten nur ein GEO Punkt sein. Nach dem Einbinden der Neutrassierung in die Bestandsgleislage entfällt dieser TOP_Knoten durch eine neue durchlaufende TOP_Kante. Hinweis für die Fahrwegfindung (Routing): Endet ein Routing auf LINKS oder RECHTS, darf nur ein Fahrweg (Routing) vom gleichen Knoten über die SPITZE gesucht werden. Endet ein Routing auf SPITZE, findet eine Fahrwegverzweigung statt, d.h. vom gleichen Knoten werden zwei getrennte Fahrwege (Routings) über LINKS und RECHTS gesucht. Bei einer Kante mit dem Anschluss VERBINDUNG ist die nachfolgende Infrastruktur aufgrund des Zuschnitts des Planungsbereichs nicht verfügbar. Folgende Werte-Kombinationen entstehen daher für TOP_Knoten.Art Besonders (E) und TOP_Kante.TOP_Anschluss_A bzw. ..._B: Art des TOP_Knoten TOP_Knoten.Art Besonders TOP_Kante.TOP_Anschluss_... Verbindungsknoten Verbindung (E) Verbindung Weichenknoten - Links, Rechts, Spitze Infrastrukturende (Gleisabschluss) - Ende Digitalisierungsende Ende_Bestdig (E) Ende_Bestdig "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TOP_Anschluss_A"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tOPAnschlussB" lowerBound="1"
+        eType="#//TOP_Anschluss_B_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art des Anschlusses am Ende B der TOP_Kante. Eine TOP_Kante muss sowohl am Ende A als auch am Ende B auf einem TOP_Knoten verweisen. In der Regel schließen an einen TOP_Knoten weitere TOP_Kanten an. Wenn an einem TOP_Knoten nur eine TOP_Kante anschließt, endet an diesem Knoten die Topologie des Gleisnetzes. Nachfolgende Arten des Endes einer Topologie sind vorgesehen: Ende - reales Ende einer Gleislinie (z.B. Prellbock, Fähranleger, ...). Ende_Bestdig - temporäres Ende einer Gleislinie, die real weiterführt, aber deren Weiterführung noch nicht im Modell hinterlegt ist. Schnitt - Anschlusspunkt einer Neutrassierung an einen vorhandenen Bestand der Gleislinie. Im Bestand muss dieser Knoten nur ein GEO Punkt sein. Nach dem Einbinden der Neutrassierung in die Bestandsgleislage entfällt dieser TOP_Knoten durch eine neue durchlaufende TOP_Kante. Hinweis für die Fahrwegfindung (Routing): Endet ein Routing auf LINKS oder RECHTS, darf nur ein Fahrweg (Routing) vom gleichen Knoten über die SPITZE gesucht werden. Endet ein Routing auf SPITZE, findet eine Fahrwegverzweigung statt, d.h. vom gleichen Knoten werden zwei getrennte Fahrwege (Routings) über LINKS und RECHTS gesucht. Bei einer Kante mit dem Anschluss VERBINDUNG ist die nachfolgende Infrastruktur aufgrund des Zuschnitts des Planungsbereichs nicht verfügbar. Folgende Werte-Kombinationen entstehen daher für TOP_Knoten.Art Besonders (E) und TOP_Kante.TOP_Anschluss_A bzw. ..._B: Art des TOP_Knoten TOP_Knoten.Art Besonders TOP_Kante.TOP_Anschluss_... Verbindungsknoten Verbindung (E) Verbindung Weichenknoten - Links, Rechts, Spitze Infrastrukturende (Gleisabschluss) - Ende Digitalisierungsende Ende_Bestdig (E) Ende_Bestdig "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TOP_Anschluss_B"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tOPLaenge" lowerBound="1"
+        eType="#//TOP_Laenge_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Länge der TOP-Kante. Genauigkeit: Tausendstel m = 1 mm."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung> [0.000..99999.999]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="TOP_Laenge"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TOP_Knoten" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Knoten des topologischen Knoten-Kanten-Modells. Der TOP_Knoten verweist auf einen GEO_Knoten. Die Anzahl der an den TOP_Knoten anschließenden topologischen Kanten ist je nach Art des TOP_Knoten unterschiedlich und muss mit der Anzahl der an den zugehörigen GEO Knoten anschließenden GEO_Kanten übereinstimmen: eine TOP-Kante: Gleisende, Digitalisierungsende, Betrachtungsende; drei TOP-Kanten: verzweigendes Fahrwegelement (siehe Modellierung Weichen). Weitere Fälle mit 0..2 anschließenden TOP-Kanten treten am Verbindungsknoten auf (siehe entsprechende Beschreibung). Im Fall eines Meridiansprungs werden zwei TOP_Knoten angelegt, die mit einer TOP_Kante der Länge Null verbunden werden. an die beiden TOP_Knoten schließen also genau zwei TOP_Kanten an."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CTOP_Knoten"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDGEOKnoten" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_GEO_Knoten_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Ein TOP_Knoten fällt immer mit einem GEO_Knoten der Gleislinie zusammen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_GEO_Knoten"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="knotenname" eType="#//Knotenname_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung für den Knoten. Die Bezeichnung wird aus dem DB-GIS System übernommen um die Referenz sicherzustellen. Bei Neutrassierung kann diese Bezeichnung leer bleiben. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation>&#xA;                               &#xA;    &lt;ppi:Patternbeschreibung>[1..20]&lt;/ppi:Patternbeschreibung>&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                       &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Knotenname"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="TOP_Laenge_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TTOP_Laenge"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TOP_Laenge_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCTOP_Laenge"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//TOP_Laenge_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TP_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCTP_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMTPArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="TP_Beschreibung_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TTP_Beschreibung"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TP_Beschreibung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCTP_Beschreibung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//TP_Beschreibung_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Trasse_Kante_child_AttributeGroup" eSuperTypes="Medien_und_Trassen.ecore#//Trasse_Kante">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CTrasse_Kante_child"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ueberhoehung" eSuperTypes="Basisobjekte.ecore#//Punkt_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Örtlicher Höhenunterschied beider Schienen eines Gleises in Querrichtung. Die Überhöhung ist eine Querneigung eines Gleises in einem Bogen an einem Punkt im Gleis. Es wird immer die bogenäußere Schiene überhöht. Ein Höhenpunkt, der unmittelbar auf einem Anfang oder Ende eines Weichenschenkels liegt (TOP_Kante, mit Anschluss_A oder Anschluss_B als Links oder Rechts) ist auf die TOP_Kante der Spitze dieser Weiche zu verorten."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CUeberhoehung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ueberhoehungAllg" lowerBound="1"
+        eType="#//Ueberhoehung_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Ueberhoehung_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ueberhoehung_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CUeberhoehung_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gEOPAD" eType="#//GEO_PAD_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus dem DB-GIS für jeden Vermessungspunkt bereitgestellt. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB Netz AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten händisch (z.B. von Ivl-Plänen nachgezeichnet) erstellt wurden, wird das Attribut nicht befüllt. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..20]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="GEO_PAD"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="planQuelle" eType="#//Plan_Quelle_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Quelle der Geo-Kante, des Geo-Knotens, des Höhenpunkts, der Höhenlinie, der Überhöhung bzw. der Überhöhungslinie. Bei Auswahl von „sonstige“ ist zwingend ein Bearbeitungsvermerk anzugeben. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Plan_Quelle"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ueberhoehungDatum" eType="#//Ueberhoehung_Datum_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Aufnahmedatum der Koordinaten der Überhöhung. GND: Punktdatum; Ivl und Ivmg: Datum der letzten Bearbeitung; Kopie: Datum aus kopierter Höhe; Neutrassierung: Freigabedatum; sonstige: Datum der letzten Bearbeitung.  Die Information wird zukünftig über das Attribut Datum_Regelwerk abgebildet. Das Attribut soll daher langfristig entfallen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Ueberhoehung_Datum"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ueberhoehungHoehe" lowerBound="1"
+        eType="#//Ueberhoehung_Hoehe_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Höhendifferenz in Querrichtung eines Gleises zwischen beiden Schienen. Genauigkeit: Tausendstel m = 1 mm."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[-0.200..0.200]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Ueberhoehung_Hoehe"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ueberhoehung_Datum_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCUeberhoehung_Datum"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Ueberhoehung_Hoehe_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TUeberhoehung_Hoehe"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="pattern" value="-?(0\.[01][0-9][0-9]|0\.200)"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ueberhoehung_Hoehe_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCUeberhoehung_Hoehe"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Ueberhoehung_Hoehe_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ueberhoehungslinie" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Überhöhungsverlauf zwischen zwei Überhöhungspunkten."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Geo&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CUeberhoehungslinie"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDUeberhoehungA" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Ueberhoehung_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die Ueberhoehung am Anfang der Ueberhoehungslinie. Durch die Angabe des Anfangs- sowie des Endpunkts wird die Richtung der Ueberhoehungslinie definiert."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Ueberhoehung_A"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDUeberhoehungB" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Ueberhoehung_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die Ueberhoehung am Ende der Ueberhoehungslinie. Durch die Angabe des Anfangs- sowie des Endpunkts wird die Richtung der Ueberhoehungslinie definiert."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Ueberhoehung_B"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ueberhoehungslinieAllg"
+        lowerBound="1" eType="#//Ueberhoehungslinie_Allg_AttributeGroup" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Ueberhoehungslinie_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ueberhoehungslinie_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CUeberhoehungslinie_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="planQuelle" lowerBound="1"
+        eType="#//Plan_Quelle_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Quelle der Geo-Kante, des Geo-Knotens, des Höhenpunkts, der Höhenlinie, der Überhöhung bzw. der Überhöhungslinie. Bei Auswahl von „sonstige“ ist zwingend ein Bearbeitungsvermerk anzugeben. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>GND&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Plan_Quelle"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ueberhoehungslinieForm"
+        lowerBound="1" eType="#//Ueberhoehungslinie_Form_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Form der Ueberhoehungslinie, z. B. gleichbleibend oder gerade Rampe. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Ueberhoehungslinie_Form"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ueberhoehungslinieLaenge"
+        lowerBound="1" eType="#//Ueberhoehungslinie_Laenge_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Länge der Ueberhoehungslinie. Genauigkeit: Tausendstel m = 1 mm."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[0.000..99999.999]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Ueberhoehungslinie_Laenge"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ueberhoehungslinie_Form_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCUeberhoehungslinie_Form"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMUeberhoehungslinieFormObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Ueberhoehungslinie_Laenge_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TUeberhoehungslinie_Laenge"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ueberhoehungslinie_Laenge_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCUeberhoehungslinie_Laenge"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Ueberhoehungslinie_Laenge_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="V_Profil_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCV_Profil_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMVProfilArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

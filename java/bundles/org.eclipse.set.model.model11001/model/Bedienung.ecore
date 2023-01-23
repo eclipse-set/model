@@ -1,0 +1,2047 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Bedienung" nsURI="http://www.plan-pro.org/modell/Bedienung/1.10.0.1"
+    nsPrefix="nsBedienung">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="documentation" value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="A_Wert_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCA_Wert"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMAWertObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Anbindung_IB2_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCAnbindung_IB2"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Anbindung_IB3_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCAnbindung_IB3"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="B_Wert_Type" instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TB_Wert"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+      <details key="pattern" value="[1-9]|1[0-6]"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="B_Wert_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCB_Wert"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//B_Wert_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Anrueckabschnitt" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Darstellung der Anrückmeldung Auf der Bedienoberfläche wird bei in den Steuerbereich einfahrenden Zügen die Zugnummer oder, wenn diese nicht vorhanden ist, der vom anrückenden Zug belegte Gleisabschnitt angezeigt. Die Anrückmeldung wird aus der ZL generiert. Es wird festgelegt, in der Nähe welchen Gleisabschnittes auf der Bedienoberfläche die Zugnummer bzw. der Gleisabschnitt angezeigt werden soll. Der Gleisabschnitt kann außerhalb des Planungsbereiches liegen. Es muss nicht der direkte Nachbarabschnitt sein, denn z.B. bei Strecken mit hoher Geschwindigkeit wird als Anrückabschnitt auch ein weiter entfernter Gleisabschnitt des Nachbarstellwerks genommen. DB-Regelwerk 819.0603 A2, Tabelle 3, Seite 208 "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Bedienung Fdl ESTW-ZE&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Anrueckabschnitt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDGleisAbschnittPosition"
+        lowerBound="1" eType="ecore:EClass Verweise.ecore#//ID_Gleis_Abschnitt_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe des Gleisabschnitts, in dessen Nähe auf der Bedienoberfläche die Anzeige des darzustellenden Gleisabschnitts (Anrückabschnitt) positioniert werden soll. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Gleis_Abschnitt_Position"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" eType="#//Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDGleisAbschnittDarstellen"
+        eType="ecore:EClass Verweise.ecore#//ID_Gleis_Abschnitt_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Gleisabschnitt, dessen Belegung auf der Bedien Oberflaeche als Anrückabschnitt dargestellt werden soll. Liegt dieser außerhalb des Planungsbereichs, wird statt des Verweises das Attribut Bez Bed Anrueckabschnitt gefüllt."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Gleis_Abschnitt_Darstellen"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Anrueckabschnitt_Bezeichnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezBedAnrueckabschnitt"
+        lowerBound="1" eType="#//Bez_Bed_Anrueckabschnitt_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung des Bedien-Anrückabschnitts. Wenn ein Bedien_Anrueckabschnitt nicht verlinkt werden kann (beispielsweise weil er außerhalb des zu bearbeitenden Planungsdatensatzes liegt), wird als Ersatz die Bezeichnung des Gleisabschnitts gefüllt, dessen Belegung als Anrückmeldung in der Bedienoberfläche gespiegelt werden soll."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bez_Bed_Anrueckabschnitt"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Anzeige_Element" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Zuordnung von Stellelementen zu einer örtlichen Bedieneinrichtung und Abbildung von Meldern, Tasten und Schaltern einer örtlichen Bedieneinrichtung."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Anzeige_Element"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienAnzeigeElementAllg"
+        lowerBound="1" eType="#//Bedien_Anzeige_Element_Allg_AttributeGroup" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedien_Anzeige_Element_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" eType="#//Bedien_Anzeige_Element_Bezeichnung_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBedienEinrichtungOertlich"
+        lowerBound="1" eType="ecore:EClass Verweise.ecore#//ID_Bedien_Einrichtung_Oertlich_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Mit diesem Verweis erfolgt die Verbindung eines Objekts zu seiner örtlichen Bedieneinrichtung."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Bedien_Einrichtung_Oertlich"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDVerknuepftesElement"
+        eType="ecore:EClass Verweise.ecore#//ID_Verknuepftes_Element_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf ein Signal oder W Kr Gsp Element, für das eine Abhängigkeit zu einem Schalter, Melder oder einer Taste besteht. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Verknuepftes_Element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Anzeige_Element_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Anzeige_Element_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="melder" eType="#//Melder_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art des Melders für eine örtliche Bedieneinrichtung. Anwendungsbeispiele: Melder an Abfertigungssäulen, Zustimmungseinrichtungen für den Zugleitbetrieb, Bedieneinrichtungen von (temporär) örtlich bedienten stellwerksgesteuerten Stellelementen. Für Bedieneinrichtungen von Nahstellbereichen und Bahnübergängen werden die Melder im Objekt BUE Bedien Anzeige Element bzw. NB Bedien Anzeige Element geplant. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Melder"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schalter" eType="#//Schalter_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art des Schalters für eine örtliche Bedieneinrichtung. Anwendungsbeispiele: Schalter an Abfertigungssäulen, Zustimmungseinrichtungen für den Zugleitbetrieb, Bedieneinrichtungen von (temporär) örtlich bedienten stellwerksgesteuerten Stellelementen. Für Bedieneinrichtungen von Nahstellbereichen und Bahnübergängen werden die Schalter im Objekt BUE Bedien Anzeige Element bzw. NB Bedien Anzeige Element geplant. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Schalter"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="taste" eType="#//Taste_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art der Taste für eine örtliche Bedieneinrichtung, außer solchen mit BÜ- und NB-Funktionen. Für Bedieneinrichtungen von Bahnübergängen und Nahstellbereichen werden die Tasten im Objekt BUE Bedien Anzeige Element bzw. NB Bedien Anzeige Element geplant. Anwendungsbeispiele: Tasten an Abfertigungssäulen, Zustimmungseinrichtungen für den Zugleitbetrieb, Bedieneinrichtungen von (temporär) örtlich bedienten stellwerksgesteuerten Stellelementen. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Taste"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Anzeige_Element_Bezeichnung_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Anzeige_Element_Bezeichnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezBedAnzeigeElement" lowerBound="1"
+        eType="#//Bez_Bed_Anzeige_Element_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Beschriftung des Melders, der Taste oder des Schalters auf der Bedien Einrichtung Oertlich (Bezeichnungsschild)."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bez_Bed_Anzeige_Element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Bezirk" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Bedienung von mehreren ESTW-Zentraleinheiten. Das Objekt Bedien_Bezirk ermöglicht den Anschluss mehrerer ESTW-Zentraleinheiten an einen Bedien_Bezirk z. B. in einer Bedien_Zentrale. Für einen Bedien_Bezirk gibt es zwei Modellierungen / Ausprägungen. 1.) Reell in einer Bedien_Zentrale, Regio-BZ oder sonstigem Technikstandort errichteter Bedien_Bezirk mit angeschalteten ESTW_Zentraleinheiten (mindestens einer) ==\u0026gt; zentraler Bedien_Bezirk 2.) Geplante, auf die Streckeninfrastruktur bezogene, logische Zusammenfassung von betrieblich und geographisch zusammenhängenden Strecken. ==\u0026gt; virtueller Bedien_Bezirk Beispiele: Siehe auch Anlage Media:Bedien Bezirk Typ.pdf 1.) Zentraler Bedien_Bezirk Das Konzept der zentralen Betriebsführung sieht vor, die Bedienung hochwertiger Strecken von ESTW, durch Bedien_Zentralen (Betriebszentralen) zu bündeln. Besonderheit dabei ist, dass in den Bedien_Zentralen selbst keine ESTW_Zentraleinheiten aus Verfügbarkeitsgründen aufgebaut werden dürfen. Das heißt, in den Betriebszentralen sind keine ESTW_Zentraleinheiten sondern nur Bedien_Plätze und Bedien_Bezirke errichtet. Diese Bedien_Bezirke, die die Bedienung hochwertiger Strecken bündeln, sind „zentrale Bedien_Bezirke“. Die Einschränkung, ESTW_Zentraleinheiten nicht im selben Gebäude wie ESTW_Bedien_Bezirke aufzubauen, gilt nicht für eine Regio-BZ oder sonstige Technikstandorte. Auch im Regionalnetz werden ESTW_Zentraleinheiten errichtet. Bisher sind diese örtlich besetzt. Unter anderem ist geplant bzw. in Realisierung, die Gebäude in denen bereits eine Regio-ESTW_Zentraleinheit errichtet ist, eine weitere Regio-ESTW_Zentraleinheit einzubauen. Um auch hier Redundanzen und Synergien nutzen zu können, ist geplant auch hier einen Bedien_Bezirk über die ESTW_Zentraleinheiten zu installieren. Der entscheidende Unterschied zur Bedienzentrale ist hier, dass Bedien_Bezirk und ESTW_Zentraleinheit in einem Gebäude untergebracht sind. Da Strecken sowohl das Regionalnetz und das Fern- und Ballungsnetz durchlaufen können, müssen die Kennzahlenplanungen ebenfalls Netzartübergreifend sein. Siehe auch Attribut „Kennzahl“. 2.) Virtueller Bedienbezirk Als Zweites ist die Option des virtuellen Bedien_Bezirks zu modellieren. Da ein Bedien_Bezirk ja nicht von Heute auf Morgen in ESTW-Technik da steht, müssen Übergangsregelungen geschaffen werden. Auch wenn Stellwerke in einem Bedien_Bezirk (noch) nicht in ESTW-Technik realisiert sind oder die Zuordnung zum Regionalnetz oder Fern- und Ballungsnetz noch offen ist gilt: Die Stw sind einem Bedien_Bezirk zuzuordnen um jegliche spätere Realisierungsform zu ermöglichen und so auch die Kennzahlenvergabe sicher zu gestalten. Siehe auch Attribut „Kennzahl“. Am Beispiel der Bedien_Bezirke 08 und 11 in der BZ Hannover sieht man, dass auch Stellwerke, die (noch) nicht an einen Bedien_Bezirk angebunden sind, eine Zuordnung erfahren müssen. Alle Stellwerke (HORX, HK, Sarstedt und Barnten) liegen in einem betrieblich zusammenhängenden Bezirk. Nämlich auf den Nord-Süd Strecken von Hannover Richtung Göttingen. Die Stellwerke HK, Sarstedt und Barnten sogar auf derselben Strecke 1732. Aktuell sind die Stellwerke Sarstedt und Barnten noch nicht an einen Bedien_Bezirk angebunden. In den Planungen und betrieblichen Vorgaben des Regionalbereichs aber für eine Zuordnung zum Bedien_Bezirk 11 vorgesehen. Daher muss schon jetzt der Bedienbezirk den Stw zugeordnet werden können, auch wenn sie ggf. trotz ESTW-Aufbau, örtlich besetzt werden. Durch die Darstellung in dem Verweis „zentral“ oder „virtuell“ lässt sich die aktuelle und geplante Anbindung darstellen. Im Verständnis der Betriebszentralen entspricht das Objekt Bedien_Bezirk dem Steuerbezirk. Das Objekt kann im LST-Datenmodell jedoch auch als virtueller Bedien_Bezirk vorkommen. Jeder ESTW-Zentraleinheit wird auch ein Bedien_Bezirk zugeordnet. In der Regel der, der in der Kennzahlenplanung vorgesehen ist. Also auch dann, wenn physisch kein Bedienbezirk (Steuerbezirk) oder eine vergleichbare Einheit vorhanden ist (z. B. Regionale Bedienzentrale mit nur einer ESTW-Zentraleinheit), aber bestimmte Eigenschaften mehrerer gemeinsam gesteuerter ESTW-Zentraleinheiten übergreifend geplant werden müssen (z.B. Richtungssinn und Kennzahlen). Gemäß Richtlinie 819.0603 müssen Kennzahlen und Betriebsstellenbezeichner im Steuerbezirk und an seinen Grenzen eindeutig (einmalig) sein. Diese Regel kann nicht über das Modell abgebildet werden, sondern muss in der Plausibilitäts- und Zulässigkeitsprüfung (PlaZ) abgefangen werden. Die Vorgabe für den Richtungssinn bezieht sich immer auf einen kompletten Steuerbezirk. Sie ist jedoch als Eigenschaft der Bedienoberfläche modelliert. Gegebenenfalls müssen hier Zulässigkeitsprüfungen ablaufen. Im Bedienbezirk werden außerdem die Angaben für die Datenkommunikation mit den zugeordneten ESTW-Zentraleinheiten geplant. Die Werte A, B und C werden nach Ril 819.0705A01 von der DB Netz festgelegt. Der Ansprechpartner findet sich in der Ril. Alle weiteren Werte lassen sich anhand dieser Unterlage bestimmen. Siehe Anlage Media:ipadr namensv ib1.pdf DB-Regelwerk 819.0603 819.0705A01 "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Bedienung Fdl BZ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Bezirk"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienBezirkAdressformel"
+        lowerBound="1" eType="#//Bedien_Bezirk_Adressformel_AttributeGroup" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedien_Bezirk_Adressformel"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienBezirkAllg" lowerBound="1"
+        eType="#//Bedien_Bezirk_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedien_Bezirk_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienBezirkAnhaenge" lowerBound="1"
+        eType="#//Bedien_Bezirk_Anhaenge_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedien_Bezirk_Anhaenge"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBedienZentrale" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Bedien_Zentrale_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis vom Bedienbezirk auf die Bedienzentrale. Der Verweis ist auch für virtuelle Bedienbezirke zu füllen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Bedien_Zentrale"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Bezirk_Adressformel_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Bezirk_Adressformel"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aWert" lowerBound="1" eType="#//A_Wert_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der A-Wert wird gemäß 819.0705 Abschnitt 6 (9) und (10) gebildet."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="A_Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bWert" lowerBound="1" eType="#//B_Wert_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der B-Wert wird gemäß 819.0705 Abschnitt 6 (9) und (10) gebildet. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..16] &lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="B_Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cWert" lowerBound="1" eType="#//C_Wert_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der C-Wert wird gemäß 819.0705 Abschnitt 6 (8) gebildet. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="C_Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dDWert" lowerBound="1"
+        eType="#//DD_Wert_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der DD-Wert wird gemäß 819.0705 Abschnitt 6 (11) gebildet. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..10] &lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="DD_Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="xWert" lowerBound="1" eType="#//X_Wert_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der X-Wert wird gemäß 819.0705 Abschnitt 6 (5) und (7) gebildet. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="X_Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="yWert" lowerBound="1" eType="#//Y_Wert_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der Y-Wert wird gemäß 819.0705 Abschnitt 6 (5) und (7) gebildet. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..15] &lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Y_Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="yYWert" lowerBound="1"
+        eType="#//YY_Wert_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der YY-Wert wird gemäß 819.0705 Abschnitt 6 (8) gebildet. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..15] &lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="YY_Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Bezirk_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Bezirk_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="anbindungIB2" eType="#//Anbindung_IB2_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verbindung IB 1 zu IB 2. Angabe, ob der jeweilige Bedien Bezirk (Steuerbezirk) eine Anbindung zum Integritätsbereich 2 (IB II) hat (true) oder nicht (false). Die Planungsdaten für die IB I-IB II-Kopplung werden über ID Anhang Anbindung IB2 im PDF-Format als Anhang beigegeben."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xA;                         &#xA;    &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Anbindung_IB2"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="anbindungIB3" eType="#//Anbindung_IB3_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verbindung IB 1 zu IB 3. Angabe, ob der jeweilige Bedien Bezirk (Steuerbezirk) eine Anbindung zum Integritätsbereich 3 (IB III) hat (true) oder nicht (false). Die Planungsdaten für die IB III-Anbindung werden über ID Anhang Anbindung IB3 im PDF-Format als Anhang beigegeben."/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Anbindung_IB3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hersteller" eType="#//Hersteller_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Unternehmen, das die Funktionsfähigkeit der Anlage verantwortlich hergestellt hat oder Hersteller des jeweiligen Elements. Diese Eigenschaft ist kein Datum einer Planung, sondern dient im Rücklauf der Planung dazu den Hersteller im Bestand zu erfassen. Es ist die zum Zeitpunkt der Inbetriebnahme gültige Firmierung zu verwenden. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:PlanningStage>PT2&lt;/ppi:PlanningStage>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Hersteller"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schrankreihe" eType="#//Schrankreihe_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Ordnungskriterium eines Bedien_Bezirkes im Rechnerraum. Das Attribut kann, in Abhängigkeit von den örtlichen Gepflogenheiten, aus mehreren alphanumerischen und Sonderzeichen bestehen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Schrankreihe"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="steuerbezirksname" eType="#//Steuerbezirksname_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe des regional übliche Namen des Bedienbezirks (Steuerbezirks) in der BZ-Planung (AP PT 1 BZ). Beispiele sind: \&quot;Rechter Rhein\&quot;, \&quot;Allgäu/Fichtelgebirge\&quot;, etc."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Steuerbezirksname"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="steuerbezirksnummer" eType="#//Steuerbezirksnummer_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Ordnungskriterium des Bedien-Bezirks in den Planunterlagen. Die Steuerbezirksnummer besteht in der Regel aus einem numerischen Zeichen, ggf. aus einer Ganzzahl. Da regional Abweichungen möglich sind, wurde der Basistyp offen gehalten."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Steuerbezirksnummer"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Bezirk_Anhaenge_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Bezirk_Anhaenge"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangAnbindungIB2" eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Plan zur Kabel-/Trassen-/Datenanbindung. Pläne können z. B. zur Darstellung der Kabelverbindungen vom IB 1 zum IB 2 angefügt werden. Die Unterlagen sind in den Standorten unterschiedlich oder gar nicht vorhanden und werden ggf. als Anlage der AP PT 1 beigefügt. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang_Anbindung_IB2"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangAnbindungIB3" eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Plan zur Kabel-/Trassen-/Datenanbindung. Pläne können z. B. zur Darstellung der Kabelverbindungen vom IB 1 zum IB 3 angefügt werden. Die Unterlagen sind in den Standorten unterschiedlich oder gar nicht vorhanden und werden ggf. als Anlage der AP PT 1 beigefügt. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang_Anbindung_IB3"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangSteuerbezUebersicht"
+        eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="In diesen Anhang wird die Steuerbezirksübersicht gemäß 819.0603 als PDF eingebettet. Beispiel: Media:Steuerbezirksuebersicht.pdf DB-Regelwerk 819.0603 "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang_Steuerbez_Uebersicht"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Einricht_Bauart_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBedien_Einricht_Bauart"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMBedienEinrichtBauartObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bedien_Einricht_Oertl_Bez_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBedien_Einricht_Oertl_Bez"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Einricht_Oertl_Bez_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBedien_Einricht_Oertl_Bez"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bedien_Einricht_Oertl_Bez_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Einricht_Oertlich_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Einricht_Oertlich_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienEinrichtBauart" lowerBound="1"
+        eType="#//Bedien_Einricht_Bauart_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bauart der Bedieneinrichtung. Je nach Art und Anzahl der bedienbaren Elemente werden die erforderlichen Bedieneinrichtungen ausgebildet. Für Nahbedienungen gilt außerdem: NB_Art W: Bedienpult oder Bediensäule; NB_Art R: Bedientablett, Stelltisch- oder -pult. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedien_Einricht_Bauart"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hupeAnschaltzeit" eType="#//Hupe_Anschaltzeit_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe der Hupdauer in Sekunden. Das Attribut wird nur gefüllt, wenn es sich um eine Bedieneinrichtung für die Nahbedienung handelt. Wird auf die Hupe einer NB-Bedieneinrichtung verzichtet, ist eine Anschaltdauer von Null Sekunden zu planen. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es findet sich im zugehörigen Lastenheft sowie in firmenspezifischen Projektierungsunterlagen, die jedoch dem LST-Fachplaner nicht zur Verfügung stehen. "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[0..65535]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Hupe_Anschaltzeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Einrichtung_Oertlich" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Abbildung einer örtlichen Bedieneinrichtung (Stelltafel, Bedienpult etc.) als physisches Element der Außenanlage. Bedienbare Elemente, die nicht von einer ESTW-Bedienoberfläche bedient werden, sind durch eine entsprechende Bedieneinrichtung umstellbar. Weiterhin sind in der Bedieneinrichtung Tasten für die Kommunikation zwischen özF und Bediener untergebracht. Im Objekt Bedien_Einrichtung_Oertlich wird die physische Ausbildung der Bedieneinrichtung abgebildet. Die dazugehörigen Melder, Schalter und Taster sind im Objekt Bedien Anzeige Element modelliert. Die logischen Funktionen einer Bedieneinrichtung für Nahstellbereiche und Bahnübergänge befinden sich in den Objekten „BUE Bedien Anzeige Element“ oder „NB Bedien Anzeige Element“. Die Bedien_Einrichtung_Oertlich kommt zur Anwendung bei: Nahstellbereichen, Bahnübergängen (HET, UT, etc.), Schlüsselschaltern- und Tastern (Zustimmung, Gleisfreimeldung, Zugschlussmeldung, etc.), ZP 10/9-Bediensäulen, örtlicher Abgabe von Zugschlussmeldungen und Bedieneinrichtungen an Schnittstellen zum Zugleitbetrieb. Bedieneinrichtungen von elektrisch ortsgestellten Weichen (EOW) werden mit diesem Objekt nicht modelliert."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Einrichtung_Oertlich"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienEinrichtOertlichAllg"
+        lowerBound="1" eType="#//Bedien_Einricht_Oertlich_Allg_AttributeGroup" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedien_Einricht_Oertlich_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" eType="#//Bedien_Einrichtung_Oertlich_Bezeichnung_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangBenutzeroberflaeche"
+        eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Anhang zur Darstellung der Benutzeroberflaeche der Bedieneinrichtung. Beispielsweise kann eine Skizze für eine Gleisbilddarstellung oder die Anordnung der Schalter und Tasten beigefügt werden. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang_Benutzeroberflaeche"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAussenelementansteuerung"
+        eType="ecore:EClass Verweise.ecore#//ID_Aussenelementansteuerung_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die Außenelementansteuerung, von der die örtliche Bedieneinrichtung angesteuert wird. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Aussenelementansteuerung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDUnterbringung" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Unterbringung_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den physischen Ort der Unterbringung von Aussenelementansteuerung, Bedien Einrichtung Oertlich, Bedien Platz, ESTW Zentraleinheit, PZB Element, Schlosskombination, Schluesselsperre und ZN. Für das PZB Element wird der Verweis nur für eine GÜ gefüllt - mit der Bedeutung: GÜ-Schaltkasten. Für die ZN ist der Verweis optional, da im Planungswerkzeug ZN/ZL keine Befüllung aller der für die Unterbringung notwendigen Attribute möglich ist. DB-Regelwerk Darstellung des Gebäudes, der Bediensäule bzw. des Schaltkastens im sicherungstechnischen Lageplan nach Ril 819.9002 oder Beschreibung im Erläuterungsbericht."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Unterbringung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Einrichtung_Oertlich_Bezeichnung_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Einrichtung_Oertlich_Bezeichnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienEinrichtOertlBez"
+        lowerBound="1" eType="#//Bedien_Einricht_Oertl_Bez_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung der örtlichen Bedieneinrichtung. Örtliche Bedieneinrichtungen haben in der Regel keine eigene Bezeichnung in der Außenanlage. Das Attribut wird daher nur gefüllt, wenn davon abweichend die Bedieneinrichtung eine Bezeichnung erhalten soll. Die Bezeichnung der jeweils zu bedienenden Elemente für die Beschriftung auf der örtlichen Bedieneinrichtung ist den Elementen oder dem Anhang Benutzeroberfläche zu entnehmen."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedien_Einricht_Oertl_Bez"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_GBT" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Planung aller Parameter, die für die Darstellung der Gleisbenutzungstabelle (GBT) auf dem Bedienplatz für den Nutzer erforderlich sind."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Bedienung Fdl ESTW-ZE&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_GBT"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienGBTAllg" lowerBound="1"
+        eType="#//Bedien_GBT_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedien_GBT_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangVorgabeGBT" eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Anhang mit Parametern für die Anzahl und Anordnung der Zuglenkbetriebsstellen in der Gleisbenutzungstabelle (GBT). Die konkreten Inhalte werden derzeit abgestimmt. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang_Vorgabe_GBT"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBedienBezirk" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Bedien_Bezirk_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Die Eigenschaften der Gleisbelegungstabelle als Element der Bedienoberfläche werden derzeit noch modelliert. Deshalb erfolgt eine Beschreibung aller damit zusammenhängender Eigenschaften und Verweise erst nach Abschluss dieser Konsolidierungsphase. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Bedien_Bezirk"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_GBT_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_GBT_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rueckschauzeit" eType="#//Rueckschauzeit_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe der Zeit, in der die GBT für Fahrplanzeiten der Vergangenheit gesehen und editiert werden kann."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Rueckschauzeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="vorschauzeit" eType="#//Vorschauzeit_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Angabe der Zeit, in der die GBT für Fahrplanzeiten der Zukunft gesehen und editiert werden kann."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Vorschauzeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Oberflaeche" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Topologisches Abbild der für die Bedienung und Anzeige eines ESTW relevanten sicherungstechnischen Anlagen. Dies wird in Form von Meldebildern mit unterschiedlicher Informationstiefe dargestellt. Darüber hinaus gibt es weitere zum Bedienplatzsystem gehörende Meldebilder. Folgende Meldebildtypen stehen an einem Bedienplatzsystem (BPS) zur Verfügung: Bereichsübersicht (Berü), Bereichsübergreifende Berü, Lupe, Gleisbenutzungstabelle (GBT), Kommunikationsanzeige (KA), KA-Bild 1 (PSI-Spiegel), KA-Bild 2 (ESTW-Störungsmeldungen), Betriebsstatus (Rechnerstörungen), Sammelmelderbild (SM-Bild), Dokumentation (Doku), Integrierte Bedienerführung. An anderen Bedienplatzsystemen können andere Meldebildtypen möglich sein. Die Eigenschaften eines Bildes sind unter dem Objekt Bedien Oberflaeche Bild zusammengefasst. Mehrere Bilder verweisen auf das Objekt Bedien_Oberflaeche. Die Möglichkeiten der Aufschaltung der jeweiligen Bedienoberflächen auf den Bedienplätzen sind implizite Stellwerksfunktion. Die dazu notwendigen Berechtigungen sind Betriebsdaten der Instandhaltung. Diese Parameter werden im PT I nicht geplant und im Datenmodell nicht abgebildet. Sondern von der örtlichen Instandhaltung in die Systeme eingegeben. Die Bildbezeichnung des jeweiligen Oberflächenbildes nach der signifikanten (also der bedeutenstenten) Betriebsstelle entsprechend Richtlinie 819.0603 in der Form \&quot;(Bildart)_(Ril 100 Abk)\&quot; wird über die Attribute Oberflaeche Bildart und ID Oertlichkeit gebildet. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Bedienung Fdl ESTW-ZE&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Oberflaeche"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienOberflaecheAnhaenge"
+        lowerBound="1" eType="#//Bedien_Oberflaeche_Anhaenge_AttributeGroup" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedien_Oberflaeche_Anhaenge"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBedienBezirk" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Bedien_Bezirk_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf einen Bedien_Bezirk zur Zuordnung der Bedienoberflächen eines Steuerbereiches und der für Ihre Darstellung notwendigen Parameter. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Bedien_Bezirk"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Oberflaeche_Anhaenge_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Oberflaeche_Anhaenge"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangMonitoraufteilung"
+        eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Anhang mit der vom Nutzer gewünschten groben Aufteilung der Infrastruktur (z. B. Stellelemente) auf die jeweils anzuzeigenden Bildinhalte der Bedienoberfläche des IB I als Realisierungsvorgabe im Rahmen der AP PT 1 BZ, sofern keine Funktionale und Betriebliche Prüfung (BEST) stattfindet. Eine Monitoraufteilung im Sinne einer Benutzung der Monitore für bestimmte Segmente des Standardbedienplatzes (IB I, IB II, IB III, TK), also die Anordnung der Monitore selbst am Bedienplatz, ist hier nicht gemeint. Diese wird im Attribut ID Anhang Moebelaufstellplan Aufriss verwaltet. Beispiel: Media:Monitoraufteilung.pdf. Wird eine Funktionale und Betriebliche Prüfung durchgeführt (BEST), werden die Vorgaben über ID Anhang Vorgabe BELU übergeben."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang_Monitoraufteilung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangRichtungssinn"
+        eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Anhang zur Erläuterung des Richtungssinns. Der Richtungssinn ist eine Realisierungsvorgabe der AP PT 1 BZ und wird vom Nutzer vorgegeben. Er muss unter Beachtung der Richtlinie 819.0603 innerhalb des Steuerbezirkes und an den Grenzen einschließlich aller dargestellten abzweigenden Strecken eindeutig sein. Die Vorgaben für den Richtungssinn beziehen sich zumindest immer auf einen kompletten Steuerbezirk. Eine Angabe für den gesamten Bereich einer Betriebszentrale ist ebenfalls möglich (BZ Hannover). Somit können einzelne ESTW-Zentraleinheiten bei Bedarf ohne Änderung des Richtungssinnes in einen anderen Bedienbezirk (Steuerbezirk) umgesetzt werden. Die Vorgabe für den Richtungssinn ist jedoch als Eigenschaft der Bedienoberfläche modelliert. Gegebenenfalls müssen hier Zulässigkeitsprüfungen ablaufen. Beispiele: UZ Elsterwerda und UZ Dresden-Neustadt Media:Richtungssinn.pdf, BZ Hannover Media:Richtungssinn BZ Hannover.pdf. DB Regelwerk Richtlinie 819.0603 "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang_Richtungssinn"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangVorgabeBELU" eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="In diesem Anhang werden die Realisierungsvorgaben für die Bedienoberflächen in Form von Bildern der jeweiligen Bereichsübersichten und Lupen im PDF-Format geliefert. Diese Realisierungsvorgaben werden in BEST erzeugt, wenn das ESTW einer Funktionalen und Betrieblichen Prüfung unterzogen wurde. Wenn keine Funktionale und Betriebliche Prüfung (BEST) erstellt wurde, werden diese Bilder auch vom Auftragnehmer auf Grundlage von ID Anhang Monitoraufteilung erstellt und dem Auftraggeber zur Prüfung übergeben. In der Regel werden diese Bilder dann vom zuständigen Leiter Fahrdienst geprüft und frei gegeben. Beispiel: Media:BELUVorgabe.pdf. DB-Regelwerk Wenn keine Funktionale und Betriebliche Prüfung stattfindet, werden die Realisierungsvorgaben im Rahmen des PT 1 BZ übergeben (Monitoraufteilung). "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang_Vorgabe_BELU"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Oberflaeche_Bild" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Zusammenfassung der Eigenschaften, die sich jeweils nur auf ein Bild der Bedienoberfläche beziehen. Eigenschaften, die alle Bilder betreffen, sind unter Bedien Oberflaeche eingebunden."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Bedienung Fdl ESTW-ZE&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Oberflaeche_Bild"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienOberflaecheBildAllg"
+        lowerBound="1" eType="#//Bedien_Oberflaeche_Bild_Allg_AttributeGroup" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedien_Oberflaeche_Bild_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBedienOberflaeche" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Bedien_Oberflaeche_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung eines Bildes zur zugehörigen Bedienoberfläche. Die verschiedenen Bedienoberflächenbilder werden zu einem sogenannten \&quot;Aufschaltbereich\&quot; zusammengefasst. Dieser kann dann auf verschiedenen Bedienplätze aufgeschaltet werden. Die Aufschaltung ist Stellwerksfunktion und wird im LST-Datenmodell nicht abgebildet. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Bedien_Oberflaeche"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDOertlichkeit" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Oertlichkeit_Proxy_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis zur Ermittlung der Ril 100-Abkürzung für die Bildbezeichnung nach der signifikanten Betriebsstelle des jeweiligen Bildes. Signifikant deshalb, weil von einer ESTW Zentraleinheit, die einer Ril 100 zugeordnet ist, mehrere Aussenelementansteuerungen bedient werden können, die ggf. weitere Ril 100-Bezeichnungen haben. Siehe Beispiel Media:Lupen HBS1.pdf Über die Lupe \&quot;L_HBS1\&quot;, die zur ESTW-Zentraleinheit \&quot;ESTW Braunschweig HBS\&quot; gehört, werden Aussenelementansteuerungen in den Bereichen der Örtlichkeiten \&quot;HSMK\&quot; und \&quot;HBUH\&quot; mit bedient. Die Lupe trägt aber die Bezeichnung der signifikanten ESTW-Zentraleinheit ESTW Braunschweig. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Oertlichkeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Oberflaeche_Bild_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Oberflaeche_Bild_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="oberflaecheBildart" eType="#//Oberflaeche_Bildart_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bildart Berü oder Lupe. Mit dem Attribut Bildart wird zwischen Berü und Lupe unterschieden. Eine Beschreibung des Zuständigkeitsbereiches der einzelnen Bilder erfolgt im Rahmen eines anderen Attributs."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Oberflaeche_Bildart"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="oberflaecheZustaendigkeit"
+        eType="#//Oberflaeche_Zustaendigkeit_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verbale Beschreibung, welche zu steuernden Anteile des ESTW auf diesem Oberflächenbild dargestellt werden sollen. Beispiel aus herkömmlicher Planung (Für das Beispiel dieses Attributes ist nur die zweite Spalte der Tabelle relevant, die erste Spalte wird neu durch die Attribute Bildart und Bildbezeichnung ersetzt.): Media:Zustaendigkeit.pdf."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Oberflaeche_Zustaendigkeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Oertlichkeit" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Zuordnung einer Oertlichkeit zum Bedien Bezirk, aus dem sie bedient wird. Dabei werden in diesem Zuordnungsobjekt die vorhandenen Angaben aus dem Objekt Örtlichkeit der jeweiligen Betriebsstelle um weitere Angaben wie beispielsweise die ESTW-Kennzahl oder den Betriebsstellenbezeichner (Streckenziel) planerisch angereichert. Gemäß Richtlinie 819.0603 müssen die ESTW-Kennzahlen und Betriebsstellenbezeichner im Steuerbezirk und an seinen Grenzen eindeutig (einmalig) sein. Diese Regel kann nicht über das Modell abgebildet werden, sondern muss in der Plausibilitäts- und Zulässigkeitsprüfung (PlaZ) abgefangen werden. Siehe Beispiel Media:Lupen HBS1.pdf \&quot;Bf Braunschweig Hbf (HBS) 30\&quot;: Betriebsstellenbezeichner ==\u0026gt; \&quot;Bf Braunschweig Hbf\&quot;, Oertlichkeit ==\u0026gt; \&quot;HBS\&quot;, Kennzahl ==\u0026gt; \&quot;30\&quot;. DB-Regelwerk 819.0603 "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Bedienung Fdl BZ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Oertlichkeit"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienOertlichkeitKennzahlen"
+        lowerBound="1" eType="#//Bedien_Oertlichkeit_Kennzahlen_AttributeGroup" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedien_Oertlichkeit_Kennzahlen"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBedienBezirk" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Bedien_Bezirk_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Mit diesem Verweis werden alle aus einem Bedienbezirk steuerbaren Örtlichkeiten diesem planerisch zugeordnet. Heute erfolgt dies implizit über die Kennzahlentabelle, Steuerbezirksgrafiken oder die Beschreibung im Erläuterungsbericht. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Bedien_Bezirk"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDOertlichkeit" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Oertlichkeit_Proxy_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis zur Ermittlung der Ril 100-Abkürzung für die jeweils im Bedienbezirk bedienten Betriebsstellen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Oertlichkeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Oertlichkeit_Kennzahlen_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Oertlichkeit_Kennzahlen"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="betriebsstellenbezeichner"
+        lowerBound="1" eType="#//Betriebsstellenbezeichner_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung der Betriebsstellenbezeichner und somit der Ausfahrziele, die vom Nutzer vorzugeben ist. Da eine ESTW Zentraleinheit mehrere Örtlichkeiten bedienen kann (siehe Kennzahl), ist es möglich, dass eine Kennzahl unterschiedliche Betriebsstellen als Ausfahrziele anfahren kann. Daher muss hier der Betriebsstellenbezeichner extra erfasst werden. DB-Regelwerk 819.0603 Anhang 3 "/>
+      </eAnnotations>
+      <eAnnotations>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung> [2] Die Bezeichner für die Ausfahrziele (Betriebsstellenbezeichner) bestehen in der Regel aus den ersten beiden Buchstaben des Namens der nächsten Betriebsstelle. Sie sind so zu wählen, dass sie im Steuerbezirk einer BZ eindeutig sind. Dazu kann es notwendig sein, dass für den 2. Buchstaben ein anderer gewählt werden muss. Diese Vorgabe ist im PT 1 BZ niedergelegt und somit Planungsdatum des LST-Datenmodells. Auf der Bedienoberfläche werden duch den Hersteller entsprechend des gültigen Regelwerks folgende Ergänzungen vorgenommen: Eine Ziffer ist nur bei parallel geführten Gleisen/Strecken zwischen benachbarten Betriebsstellen (Bf, Abzw, Awanst) zu vergeben. Bei parallel geführten Strecken mit 3 Gleisen sind nur dann alle Gleise mittels Ziffern zu nummerieren, wenn die signaltechnische Ausrüstung aller Gleise gleich ist und alle Gleise gleichberechtigt betrieblich genutzt werden können. Bei parallel geführten Strecken mit mehr als 3 Gleisen sind alle Gleise mittels Ziffern zu bezeichnen. Bei 2 x zweigleisiger Streckenführung kann zusätzlich zur Nummerierung eine Gegengleiskennung mit „G“ sinnvoll sein. Bei 2 x zweigleisiger Streckenführung mit spezifischerNutzung, wie z.B. durch Fernbahn bzw. S-Bahn, kann es sinnvoll sein, die Ausfahrzielbezeichnungen für eine oder beide Strecken an Stelle der fortlaufenden Ziffer mit einem Buchstaben, wie z.B. „F“ bzw. „S“, zu bezeichnen. Diese Ergänzungen sind nicht Bestandteile des LST-Datenmodells.&lt;/ppi:Patternbeschreibung>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[2] zwei Groß oder Kleinbuchstaben ohne Umlaute&lt;/ppi:Patternbeschreibung_Abweichend>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Betriebsstellenbezeichner"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kennzahl" lowerBound="1"
+        eType="#//Kennzahl_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Eindeutige Kennzahl der Sicherungstechnik bzw. operativen Leittechnik innerhalb eines Bedienbezirks für eine Betriebsstelle. Die ESTW-Kennzahl kennzeichnet eine Betriebsstelle oder einen Betriebsstellenteil. Sie darf nicht mit der Bahnhofsnummer der Zugnummernmeldeanlage (Ril 819.0731) verwechselt werden. Die Kennzahl wird im Elementnamen verwendet. Zuteilung Eine Betriebsstelle kann mehrere Kennzahlen erhalten; vor allem dann, wenn es sich um eine Betriebsstelle mit vielen Elementen handelt. Durch den LST-Planer werden die Gebiete der Kennzahlen sinnvoll aufgeteilt. Eine weitere Möglichkeit besteht darin, dass in einem Gebäude zwei ESTW-Zentraleinheiten untergebracht sind (Beispiel: Hannover Hbf mit den ESTW-Zentraleinheiten „HH Kennzahl 06“ und „HHZX Kennzahl 30“). Eine Kennzahl kann aber auch mehrere Betriebsstellen beinhalten, insbesondere bei Betriebsstellen mit wenigen Elementen. Dies kommt zur Anwendung, wenn eine ESTW-Zentraleinheit zwei Überleitstellen steuert (Beispiel: ESTW-Zentraleinheit Giften HGIF Kennzahl 71 mit „Üst Giften HGIF“ und „Üst Ritterkamp HRIT“. In Stellbereichen von Bedienbezirken werden für Betriebsstellen (z. B. Bahnhöfe, Abzweigstellen, Anschlussstellen) Kennzahlen von 01 bis 99 vergeben. Diese Kennzahl muss im Bedienbezirk eindeutig sein. Eindeutigkeit der Kennzahlen bei angrenzenden Bedienbezirken entlang einer Strecke Innerhalb eines Bedienbezirks und für benachbarte Betriebsstellen eines angrenzenden Bedienbezirks entlang einer Strecke darf eine Kennzahl nur einmal verwendet werden. Beispiel: Media:Bedien Oertlichkeit Kennzahl 131121.pdf Für alle im jeweiligen Bereich befindlichen Stellelemente der Betriebsstellen und Strecken wird die Kennzahl Bestandteil der ausführlichen Elementbezeichnung. Hierdurch erübrigt sich in einem größeren Bereich der Infrastruktur die Mitführung eines Ortsbezeichners. Zentrale Vergabe von Kennzahlen auch ohne Anbindung an Bedien_Zentralen Unabnhängig ob eine ESTW-Zentraleinheit aus einer Bedien_Zentrale gesteuert wird oder nur örtlich eingerichtet ist, soll die Kennzahlenvergabe zentral im Sinne einer möglichen Konzentration von ESTW-Zentraleinheiten in Bedienbezirken geplant und vergeben werden. DB-Regelwerk Kennzahltabelle oder Kennzahelnübersichtsplan im PT 1, 819.0603 2, 819.9001 1 (5). "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Kennzahl"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Platz" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Örtliche Anordnung der Bedien- und Meldeeinrichtungen zur betrieblichen Nutzung eines elektronischen Stellwerks. Der Bedien_Platz kann sowohl an einem Bedien_Bezirk wie auch an einer ESTW_Zentraleinheit angeschaltet sein. Der Aufstellungsort muss aber nicht zwingend der Anschalteort sein. Der Bedien_Platz kann auch als abgesetzter Bedien_Platz an abweichenden Orten untergebracht sein. Z.B. wenn im Modulgebäude der ESTW_Zentraleinheit nicht ausreichend Platz ist und der Bedien_Platz im benachbartem alten Stellwerksgebäude untergebracht werden soll. Um dem Lieferanten die allgemeine Ausprägung des Bedien_Platzes im PT 1 zu beschreiben, ist noch der Hinweis zu erbringen, ob es sich um einen Not-Bedien_Platz oder einen Standard-Bedien_Platz handelt. Da es verschiedne Kombinationen und mehere Instanzen von Bedien_Platz geben kann, hier noch mal Beispielhafte Varianten: ESTW_Zentraleinheit mit Anbindung an einen Bedien_Bezirk mit örtlichem Notbedienplatz im Modulgebäude und Standardbedienplätzen in der Bedien_Zentrale (z.B. ESTW Orxhausen/Siemens) ESTW_Zentraleinheit mit abgesetzten Standardbedienplätzen und mit örtlichem Notbedienplatz im Modulgebäude (z.B. ESTW Kreiensen/Bombardier) ESTW_Zentraleinheit mit Anbindung an einen Bedien_Bezirk mit abgesetztem Notbedienplatz im Altstellwerk und Standardbedienplätzen in der Bedien_Zentrale (z.B. ESTW Oldenburg Nord/Siemens) Aus diesem Zusammenhang entstehen vier Typen von Bedienplätzen. Standard-Bedienplatz-System (Standard_BPS) Standard-Bedienplatz-System abgesetzt (Standard_BPS_Abgesetzt) Not-Bedienplatz Not-BPS-System (Not_BPS) Not-Bedienplatz Not-BPS-System abgesetzt (Not_BPS_Abgesetzt) Im PT 1 BZ werden für den Bedienplatz die Aufstellung im Raum, die Ausstattung und Ausrüstung sowie die Versorgung mit elektrischer Energie und Daten geplant. Siehe Beispiel der BZ Hannover: Plan der Bedienebene: Media:Plan Bedieneben BZH.pdf, Schematischer Plan der Strom- und Datenversorgung am Bedienplatz: Media:Plan Stromversorgung BPL BZH.pdf. "/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Bedienung Fdl ESTW-ZE|Bedienung Fdl BZ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Platz"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienPlatzAllg" lowerBound="1"
+        eType="#//Bedien_Platz_Allg_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedien_Platz_Allg"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangMoebelplanAufriss"
+        eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Anhang im PDF-Format, der den horizontalen Aufbau der Bedienmöbel einer Bedienzentrale beschreibt. Der Ein- und Ausbau der Ausrüstung erfolgt in der üblichen Rot/Gelb-Darstellung. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang_Moebelplan_Aufriss"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangMoebelplanGrundriss"
+        eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Anhang im PDF-Format, der die Aufstellfläche und die Anschlüsse für elektrische Energie und Daten der Bedienplätze einer Bedienzentrale beschreibt. Der Ein- und Ausbau von Bedienplätzen und Anschlüssen erfolgt in der üblichen Rot/Gelb-Darstellung."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang_Moebelplan_Grundriss"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDUnterbringung" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Unterbringung_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf den physischen Ort der Unterbringung von Aussenelementansteuerung, Bedien Einrichtung Oertlich, Bedien Platz, ESTW Zentraleinheit, PZB Element, Schlosskombination, Schluesselsperre und ZN. Für das PZB Element wird der Verweis nur für eine GÜ gefüllt - mit der Bedeutung: GÜ-Schaltkasten. Für die ZN ist der Verweis optional, da im Planungswerkzeug ZN/ZL keine Befüllung aller der für die Unterbringung notwendigen Attribute möglich ist. DB-Regelwerk Darstellung des Gebäudes, der Bediensäule bzw. des Schaltkastens im sicherungstechnischen Lageplan nach Ril 819.9002 oder Beschreibung im Erläuterungsbericht."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Unterbringung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBedienBezirk" eType="ecore:EClass Verweise.ecore#//ID_Bedien_Bezirk_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf einen Bedien_Bezirk zur Zuordnung der Bedienplätze eines Steuerbereiches und der für Ihre Darstellung notwendigen Parameter (z.Zt. noch über PDF-Anhänge). "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Bedien_Bezirk"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDESTWZentraleinheit" eType="ecore:EClass Verweise.ecore#//ID_ESTW_Zentraleinheit_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung des Bedienplatzes zu einer ESTW_Zentraleinheit, wenn der Bedienplatz nicht an einen Bedien_Bezirk, sondern direkt an die ESTW_Zentraleinheit angeschaltet ist (z. B. Notbedienplatz). "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_ESTW_Zentraleinheit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Platz_Allg_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Platz_Allg"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienPlatzArt" lowerBound="1"
+        eType="#//Bedien_Platz_Art_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Ausprägung des Bedienplatzes. Da es verschiedne Kombinationen und mehere Instanzen von Bedien_Platz geben kann, sind nachfolgend beispielhafte Varianten aufgeführt: ESTW Zentraleinheit mit Anbindung an einen Bedien Bezirk, örtlichem Notbedienplatz im Modulgebäude und Standardbedienplätzen in der Bedien Zentrale (z.B. ESTW Orxhausen/Siemens); ESTW_Zentraleinheit mit abgesetzten Standardbedienplätzen und örtlichem Notbedienplatz im Modulgebäude (z.B. ESTW Kreiensen/Bombardier); ESTW_Zentraleinheit mit Anbindung an einen Bedien_Bezirk mit abgesetztem Notbedienplatz im Altstellwerk und Standardbedienplätzen in der Bedien_Zentrale (z.B. ESTW Oldenburg Nord/Siemens). Aus diesem Zusammenhang entstehen vier Arten von Bedienplätzen. Standard-Bedienplatz-System (Standard_BPS); Standard-Bedienplatz-System abgesetzt (Standard_BPS_abgesetzt); Not-Bedienplatz-System (Not_BPS); Not-Bedienplatz-System abgesetzt (Not_BPS_Abgesetzt). "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedien_Platz_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienplatzbezeichnung"
+        eType="#//Bedienplatzbezeichnung_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung des Bedienplatzes. Regional abhängig sind Folgen von alphanumerischen- und Sonderzeichen gebräuchlich. Gemeint ist die ortsübliche Bezeichnung eines Arbeittsplatzes z.B. in einer Bedieninsel. Siehe Beispiel der BZ Hannover: Plan der Bedienebene: Media:Plan Bedieneben BZH.pdf, Raster X22. Dort befindet sich der Bedienplatz „82“ mit der Bezeichnung „özF Celle Süd“. Daraus ergibt sich: Bedienplatzbezeichnung: özF Celle Süd Bedienplatznummer: 82 Mögliche weitere Bezeichnungen wären z.B. Bedienplatzbezeichnung özF Celle (Süd) Bedienplatznummer: HC_2 oder HC_S Nicht gemeint ist diese technische Bezeichnung des Systemherstellers, z.B. die fortlaufende Nummer eines Standardbedienplatzes in einem Steuerbezirk, die nicht aus dem PT1 kommt sondern im PT2 von der SBI geliefert wird. Siehe Media:Bedienplatzbezeichnung Nummer.pdf. Hier wird der im Siemens-Bedien_Bezirk angeschaltete Bedienplatz wie folgt erfasst: Bedienplatzbezeichnung: BPS0112 (nämlich der erste Bedienplatz im Bedienbezirk 12) Bedienplatznummer: 1 (nämlich in der Schrankbezeichnung erfasst!) "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedienplatzbezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienplatznummer" eType="#//Bedienplatznummer_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Nummer oder Kurzbezeichnung des Bedienplatzes. Regional abhängig sind Folgen von alphanumerischen- und Sonderzeichen gebräuchlich. Gemeint ist die Nummer oder Kurzbezeichnung eines Arbeittsplatzes z.B. in einer Bedieninsel. Siehe Beispiel der BZ Hannover: Plan der Bedienebene: Media:Plan Bedieneben BZH.pdf, Raster X22. Dort befindet sich der Bedienplatz „82“mit der Bezeichnung „özF Celle Süd“. Daraus ergibt sich: Bedienplatzbezeichnung: özF Celle Süd Bedienplatznummer: 82 Mögliche weitere Bezeichnungen wären z.B. Bedienplatzbezeichnung özF Celle (Süd) Bedienplatznummer: HC_2 oder HC_S Nicht gemeint ist diese technische Bezeichnung des Systemherstellers, z.B. die fortlaufende Nummer eines Standardbedienplatzes in einem Steuerbezirk, die nicht aus dem PT1 kommt sondern im PT2 von der SBI geliefert wird. Siehe Media:Bedienplatzbezeichnung Nummer.pdf. Hier wird der im Siemens-Bedien_Bezirk angeschaltete Bedienplatz wie folgt erfasst: Bedienplatzbezeichnung: BPS0112 (nämlich der erste Bedienplatz im Bedienbezirk 12) Bedienplatznummer: 1 (nämlich in der Schrankbezeichnung erfasst!) "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedienplatznummer"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bedienraumnummer" eType="#//Bedienraumnummer_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Nummer oder Bezeichnung des Raumes, in dem der Bedienplatz untergebracht ist. Regional abhängig sind Folgen von alphanumerischen- und Sonderzeichen gebräuchlich."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bedienraumnummer"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Platz_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBedien_Platz_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMBedienPlatzArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Standort" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Bei DSTW: Standort, von dem die Bedienung der DSTW erfolgt. Von einem Bedienstandort können mehrere Technikstandorte bedient werden."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Bedienung Fdl BZ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Standort"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" lowerBound="1"
+        eType="#//Bedien_Standort_Bezeichnung_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bSOIPAdressblock" eType="#//BSO_IP_Adressblock_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="BSO_IP_Adressblock"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDUnterbringung" lowerBound="1"
+        eType="ecore:EClass Verweise.ecore#//ID_Unterbringung_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis auf die Unterbringung (Gebäude), in der der Bedien-Standort untergebracht ist."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Unterbringung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Standort_Bezeichnung_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Standort_Bezeichnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnungBSO" lowerBound="1"
+        eType="#//Bezeichnung_BSO_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung des Bedien-Standorts."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung_BSO"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Zentrale" eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation" value="Betriebsleitstelle eines EIU, aus der die Leit- und Sicherungstechnik von zentral gesteuerten ESTW planmäßig bedient wird. Die Betriebsleitstelle kann eine Betriebszentrale (BZ) der DB Netz oder auch eine zentrale Bedienstelle der Regionalnetze sein. Da die Bedien_Zentrale nicht notwendigerweise in der Nähe von Gleisen liegt, wird kein unmittelbarer Bezug zu einer Strecke hergestellt. Eine Örtlichkeit wird jedoch nach Ril 100 für den Standort festgelegt. In der Bedien_Zentrale sind die spezifischen Anhänge dargestellt. Weitere Pläne aus dem PT I BZ, wie beispielsweise Belegungspläne für Bodentanks, Kabelübersichtspläne, Verteilerbelegungspläne, Schrankpläne, Höheneinheiten und Patchfeldbelegungen in den Schränken für die BZ, werden als allgemeiner Anhang für die vererbten Eigenschaften aus dem Basisobjekt (Attribut Anhang) im Objekt Bedien_Zentrale angehängt."/>
+    </eAnnotations>
+    <eAnnotations>
+      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>Bedienung Fdl BZ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+    </eAnnotations>
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Zentrale"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangPlanBedienraum"
+        eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Raumplan der Bedienräume als PDF-Anhang. Der Anhang beschreibt die Anordnung aller Bedienmöbel einer Bedienzentrale in den Bedienräumen zueinander sowie deren Anschlüsse für elektrische Energie, Potentialausgleich und Daten. Der Ein- und Ausbau von Bedienplätzen erfolgt in der üblichen Rot/Gelb-Darstellung. Beispiel: Media:Plan Bedieneben BZH.pdf "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang_Plan_Bedienraum"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangPlanRechnerraum"
+        eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass" containment="true"
+        resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Raumplan der Rechnerräume als PDF-Anhang. Der Anhang beschreibt die Anordnung aller Rechnerschränke einer Bedienzentrale in den Rechnerräumen zueinander sowie deren Anschlüsse für elektrische Energie, Potentialausgleich und Daten. Der Ein- und Ausbau von Rechnerschränken erfolgt in der üblichen Rot/Gelb-Darstellung. Beispiel: Media:Plan Keller BZH.pdf"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Anhang_Plan_Rechnerraum"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDStrecke" eType="ecore:EClass Verweise.ecore#//ID_Strecke_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Zuordnung einer Bedienzentrale zu einer Streckennummer. Bedienzentralen (Betriebszentralen) der DB Netz AG werden willkürlich einer Strecke zugeordnet, um den Anforderungen der Richtlinie 100 minimal zu genügen. Diese Zuordnung ist auf die „Hülle“ der Zentrale bezogen, nicht auf die aus ihr gesteuerte Infrastruktur. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Strecke"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" eType="#//Bedien_Zentrale_Bezeichnung_AttributeGroup"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bezeichnung"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDOertlichkeit" eType="ecore:EClass Verweise.ecore#//ID_Oertlichkeit_Proxy_TypeClass"
+        containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Verweis zur Ermittlung des Ril 100-Bezeichners bei Bedienzentralen ohne abweichenden Namen. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ID_Oertlichkeit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedien_Zentrale_Bezeichnung_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBedien_Zentrale_Bezeichnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bezBedZentrale" lowerBound="1"
+        eType="#//Bez_Bed_Zentrale_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Bezeichnung einer Betriebszentrale, die nicht gemäß Richtlinie 100 bezeichnet ist (z. B. eine regionale Bedienzentrale) und deren Name somit nicht über den Verweis auf eine Örtlichkeit ermittelt werden kann. Derzeit wird noch geprüft, ob auch regionale Bedienzentralen gemäß Ril 100 bezeichnet werden müssen. Entsprechend kann dieses Attribut ggf. entfallen oder als \&quot;nicht Pflicht\&quot; anderweitig verwendet werden."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Bez_Bed_Zentrale"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bedienplatzbezeichnung_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBedienplatzbezeichnung"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedienplatzbezeichnung_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBedienplatzbezeichnung"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bedienplatzbezeichnung_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bedienplatznummer_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBedienplatznummer"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedienplatznummer_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBedienplatznummer"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bedienplatznummer_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bedienraumnummer_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBedienraumnummer"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bedienraumnummer_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBedienraumnummer"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bedienraumnummer_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Betriebsstellenbezeichner_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBetriebsstellenbezeichner"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette"/>
+      <details key="pattern" value="[a-zA-Z]{2}"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Betriebsstellenbezeichner_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBetriebsstellenbezeichner"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Betriebsstellenbezeichner_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bez_Bed_Anrueckabschnitt_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBez_Bed_Anrueckabschnitt"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bez_Bed_Anrueckabschnitt_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBez_Bed_Anrueckabschnitt"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bez_Bed_Anrueckabschnitt_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bez_Bed_Anzeige_Element_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBez_Bed_Anzeige_Element"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bez_Bed_Anzeige_Element_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBez_Bed_Anzeige_Element"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bez_Bed_Anzeige_Element_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bez_Bed_Zentrale_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBez_Bed_Zentrale"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bez_Bed_Zentrale_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBez_Bed_Zentrale"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bez_Bed_Zentrale_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Bezeichnung_BSO_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TBezeichnung_BSO"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bezeichnung_BSO_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBezeichnung_BSO"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Bezeichnung_BSO_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BSO_IP_AB_Teilsystem_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBSO_IP_AB_Teilsystem"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bSOTeilsystemArt" lowerBound="1"
+        eType="#//BSO_Teilsystem_Art_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Art des BSO-Teilsystems (integriertes Bediensystem (iBS) oder Transfernetz Bedienung)."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="BSO_Teilsystem_Art"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iPAdressblockBlau" lowerBound="1"
+        eType="#//IP_Adressblock_Blau_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Für das Teilsystem reservierter Adressblock im blauen Weg des bbIP-Netzes. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="IP_Adressblock_Blau"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iPAdressblockGrau" lowerBound="1"
+        eType="#//IP_Adressblock_Grau_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Für das Teilsystem reservierter Adressblock im grauen Weg des bbIP-Netzes. "/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="IP_Adressblock_Grau"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BSO_IP_Adressblock_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="CBSO_IP_Adressblock"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bSOIPABTeilsystem" upperBound="-1"
+        eType="#//BSO_IP_AB_Teilsystem_AttributeGroup" containment="true" resolveProxies="false">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="BSO_IP_AB_Teilsystem"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iPAdressblockBlauV4" lowerBound="1"
+        eType="#//IP_Adressblock_Blau_V4_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Reservierter IPv4-Adressblock für den blauen Weg des bbIP-Netzes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="IP_Adressblock_Blau_V4"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iPAdressblockBlauV6" lowerBound="1"
+        eType="#//IP_Adressblock_Blau_V6_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Reservierter IPv6-Adressblock für den blauen Weg des bbIP-Netzes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="IP_Adressblock_Blau_V6"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iPAdressblockGrauV4" lowerBound="1"
+        eType="#//IP_Adressblock_Grau_V4_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Reservierter IPv4-Adressblock für den grauen Weg des bbIP-Netzes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="IP_Adressblock_Grau_V4"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iPAdressblockGrauV6" lowerBound="1"
+        eType="#//IP_Adressblock_Grau_V6_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Reservierter IPv6-Adressblock für den grauen Weg des bbIP-Netzes."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="IP_Adressblock_Grau_V6"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="regionalbereich" lowerBound="1"
+        eType="#//Regionalbereich_TypeClass" containment="true" resolveProxies="false">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="Regionalbereich, dem der Bedien-Standort zugewiesen ist."/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Regionalbereich"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BSO_Teilsystem_Art_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCBSO_Teilsystem_Art"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMBSOTeilsystemArtObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="C_Wert_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCC_Wert"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMCWertObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="DD_Wert_Type" instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TDD_Wert"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+      <details key="pattern" value="[1-9]|10"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DD_Wert_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCDD_Wert"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//DD_Wert_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMAWert">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMA_Wert"/>
+    </eAnnotations>
+    <eLiterals name="ENUMA_Wert_16" literal="16"/>
+    <eLiterals name="ENUMA_Wert_32" value="1" literal="32"/>
+    <eLiterals name="ENUMA_Wert_48" value="2" literal="48"/>
+    <eLiterals name="ENUMA_Wert_64" value="3" literal="64"/>
+    <eLiterals name="ENUMA_Wert_80" value="4" literal="80"/>
+    <eLiterals name="ENUMA_Wert_96" value="5" literal="96"/>
+    <eLiterals name="ENUMA_Wert_112" value="6" literal="112"/>
+    <eLiterals name="ENUMA_Wert_128" value="7" literal="128"/>
+    <eLiterals name="ENUMA_Wert_144" value="8" literal="144"/>
+    <eLiterals name="ENUMA_Wert_160" value="9" literal="160"/>
+    <eLiterals name="ENUMA_Wert_176" value="10" literal="176"/>
+    <eLiterals name="ENUMA_Wert_192" value="11" literal="192"/>
+    <eLiterals name="ENUMA_Wert_208" value="12" literal="208"/>
+    <eLiterals name="ENUMA_Wert_224" value="13" literal="224"/>
+    <eLiterals name="ENUMA_Wert_240" value="14" literal="240"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMAWertObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMA_Wert:Object"/>
+      <details key="baseType" value="ENUMA_Wert"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMBedienEinrichtBauart">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBedien_Einricht_Bauart"/>
+    </eAnnotations>
+    <eLiterals name="ENUMBedien_Einricht_Bauart_Bedienpult" literal="Bedienpult"/>
+    <eLiterals name="ENUMBedien_Einricht_Bauart_Bediensaeule" value="1" literal="Bediensaeule"/>
+    <eLiterals name="ENUMBedien_Einricht_Bauart_Bedientablett" value="2" literal="Bedientablett"/>
+    <eLiterals name="ENUMBedien_Einricht_Bauart_Bedientafel" value="3" literal="Bedientafel"/>
+    <eLiterals name="ENUMBedien_Einricht_Bauart_sonstige" value="4" literal="sonstige"/>
+    <eLiterals name="ENUMBedien_Einricht_Bauart_Stellpult" value="5" literal="Stellpult"/>
+    <eLiterals name="ENUMBedien_Einricht_Bauart_Stelltisch" value="6" literal="Stelltisch"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMBedienEinrichtBauartObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBedien_Einricht_Bauart:Object"/>
+      <details key="baseType" value="ENUMBedien_Einricht_Bauart"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMBedienPlatzArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBedien_Platz_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMBedien_Platz_Art_Not_BPS" literal="Not_BPS"/>
+    <eLiterals name="ENUMBedien_Platz_Art_Not_BPS_abgesetzt" value="1" literal="Not_BPS_abgesetzt"/>
+    <eLiterals name="ENUMBedien_Platz_Art_sonstige" value="2" literal="sonstige"/>
+    <eLiterals name="ENUMBedien_Platz_Art_Standard_BPS" value="3" literal="Standard_BPS"/>
+    <eLiterals name="ENUMBedien_Platz_Art_Standard_BPS_abgesetzt" value="4" literal="Standard_BPS_abgesetzt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMBedienPlatzArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBedien_Platz_Art:Object"/>
+      <details key="baseType" value="ENUMBedien_Platz_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMBSOTeilsystemArt">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBSO_Teilsystem_Art"/>
+    </eAnnotations>
+    <eLiterals name="ENUMBSO_Teilsystem_Art_iBS" literal="iBS"/>
+    <eLiterals name="ENUMBSO_Teilsystem_Art_Transfernetz_Bedienung" value="1" literal="Transfernetz Bedienung"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMBSOTeilsystemArtObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMBSO_Teilsystem_Art:Object"/>
+      <details key="baseType" value="ENUMBSO_Teilsystem_Art"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMCWert">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMC_Wert"/>
+    </eAnnotations>
+    <eLiterals name="ENUMC_Wert_0" literal="0"/>
+    <eLiterals name="ENUMC_Wert_64" value="1" literal="64"/>
+    <eLiterals name="ENUMC_Wert_128" value="2" literal="128"/>
+    <eLiterals name="ENUMC_Wert_192" value="3" literal="192"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMCWertObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMC_Wert:Object"/>
+      <details key="baseType" value="ENUMC_Wert"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMMelder">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMMelder"/>
+    </eAnnotations>
+    <eLiterals name="ENUMMelder_Anforderungsempfang" literal="Anforderungsempfang"/>
+    <eLiterals name="ENUMMelder_Anzeige_Betriebszustand" value="1" literal="Anzeige_Betriebszustand"/>
+    <eLiterals name="ENUMMelder_Leuchtmelder_ZP_10" value="2" literal="Leuchtmelder_ZP_10"/>
+    <eLiterals name="ENUMMelder_Leuchtmelder_ZP_9" value="3" literal="Leuchtmelder_ZP_9"/>
+    <eLiterals name="ENUMMelder_Signalanforderung_empfangen" value="4" literal="Signalanforderung_empfangen"/>
+    <eLiterals name="ENUMMelder_Signalfahrtmelder" value="5" literal="Signalfahrtmelder"/>
+    <eLiterals name="ENUMMelder_Signalhaltmelder" value="6" literal="Signalhaltmelder"/>
+    <eLiterals name="ENUMMelder_sonstige" value="7" literal="sonstige"/>
+    <eLiterals name="ENUMMelder_Sperrmelder" value="8" literal="Sperrmelder"/>
+    <eLiterals name="ENUMMelder_Vorbereitungsmeldung" value="9" literal="Vorbereitungsmeldung"/>
+    <eLiterals name="ENUMMelder_Weichenmelder" value="10" literal="Weichenmelder"/>
+    <eLiterals name="ENUMMelder_Zielmelder" value="11" literal="Zielmelder"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMMelderObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMMelder:Object"/>
+      <details key="baseType" value="ENUMMelder"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMOberflaecheBildart">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMOberflaeche_Bildart"/>
+    </eAnnotations>
+    <eLiterals name="ENUMOberflaeche_Bildart_BERUE" literal="BERUE"/>
+    <eLiterals name="ENUMOberflaeche_Bildart_Lupe" value="1" literal="Lupe"/>
+    <eLiterals name="ENUMOberflaeche_Bildart_sonstige" value="2" literal="sonstige"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMOberflaecheBildartObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMOberflaeche_Bildart:Object"/>
+      <details key="baseType" value="ENUMOberflaeche_Bildart"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMSchalter">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSchalter"/>
+    </eAnnotations>
+    <eLiterals name="ENUMSchalter_Gefahrschalter" literal="Gefahrschalter"/>
+    <eLiterals name="ENUMSchalter_Nothaltschalter" value="1" literal="Nothaltschalter"/>
+    <eLiterals name="ENUMSchalter_Schalter_ein_aus" value="2" literal="Schalter_ein_aus"/>
+    <eLiterals name="ENUMSchalter_Schluesselschalter_DB_21" value="3" literal="Schluesselschalter_DB_21"/>
+    <eLiterals name="ENUMSchalter_Schluesselschalter_Vierkant" value="4" literal="Schluesselschalter_Vierkant"/>
+    <eLiterals name="ENUMSchalter_sonstige" value="5" literal="sonstige"/>
+    <eLiterals name="ENUMSchalter_Vorbereitungsmeldung" value="6" literal="Vorbereitungsmeldung"/>
+    <eLiterals name="ENUMSchalter_Zustimmungstaste" value="7" literal="Zustimmungstaste"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMSchalterObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSchalter:Object"/>
+      <details key="baseType" value="ENUMSchalter"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMTaste">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMTaste"/>
+    </eAnnotations>
+    <eLiterals name="ENUMTaste_Ausfahrgruppentaste_ZP_9_10" literal="Ausfahrgruppentaste_ZP_9_10"/>
+    <eLiterals name="ENUMTaste_Bedientaste_ZP_10" value="1" literal="Bedientaste_ZP_10"/>
+    <eLiterals name="ENUMTaste_Bedientaste_ZP_9" value="2" literal="Bedientaste_ZP_9"/>
+    <eLiterals name="ENUMTaste_Fahrstrassenanforderung" value="3" literal="Fahrstrassenanforderung"/>
+    <eLiterals name="ENUMTaste_Fahrstrassenzustimmung" value="4" literal="Fahrstrassenzustimmung"/>
+    <eLiterals name="ENUMTaste_Freimeldetaste" value="5" literal="Freimeldetaste"/>
+    <eLiterals name="ENUMTaste_Gruppentaste" value="6" literal="Gruppentaste"/>
+    <eLiterals name="ENUMTaste_Hilfstaste" value="7" literal="Hilfstaste"/>
+    <eLiterals name="ENUMTaste_Loeschtaste" value="8" literal="Loeschtaste"/>
+    <eLiterals name="ENUMTaste_Rueckgabetaste" value="9" literal="Rueckgabetaste"/>
+    <eLiterals name="ENUMTaste_Schluesseltaste_DB_21" value="10" literal="Schluesseltaste_DB_21"/>
+    <eLiterals name="ENUMTaste_Schluesseltaste_Streckenschluessel" value="11" literal="Schluesseltaste_Streckenschluessel"/>
+    <eLiterals name="ENUMTaste_Schluesseltaste_Vierkant" value="12" literal="Schluesseltaste_Vierkant"/>
+    <eLiterals name="ENUMTaste_Signalanforderung" value="13" literal="Signalanforderung"/>
+    <eLiterals name="ENUMTaste_sonstige" value="14" literal="sonstige"/>
+    <eLiterals name="ENUMTaste_Umstelltaste" value="15" literal="Umstelltaste"/>
+    <eLiterals name="ENUMTaste_Weichenauffahrtaste" value="16" literal="Weichenauffahrtaste"/>
+    <eLiterals name="ENUMTaste_Zieltaste" value="17" literal="Zieltaste"/>
+    <eLiterals name="ENUMTaste_Zugfertigmeldetaste" value="18" literal="Zugfertigmeldetaste"/>
+    <eLiterals name="ENUMTaste_Zugschlussmeldung" value="19" literal="Zugschlussmeldung"/>
+    <eLiterals name="ENUMTaste_Zustimmungsanforderung" value="20" literal="Zustimmungsanforderung"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMTasteObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMTaste:Object"/>
+      <details key="baseType" value="ENUMTaste"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMXWert">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMX_Wert"/>
+    </eAnnotations>
+    <eLiterals name="ENUMX_Wert_0" literal="0"/>
+    <eLiterals name="ENUMX_Wert_1" value="1" literal="1"/>
+    <eLiterals name="ENUMX_Wert_5" value="2" literal="5"/>
+    <eLiterals name="ENUMX_Wert_8" value="3" literal="8"/>
+    <eLiterals name="ENUMX_Wert_11" value="4" literal="11"/>
+    <eLiterals name="ENUMX_Wert_12" value="5" literal="12"/>
+    <eLiterals name="ENUMX_Wert_13" value="6" literal="13"/>
+    <eLiterals name="ENUMX_Wert_15" value="7" literal="15"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMXWertObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMX_Wert:Object"/>
+      <details key="baseType" value="ENUMX_Wert"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hersteller_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCHersteller"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType BasisTypen.ecore#//Hersteller_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Hupe_Anschaltzeit_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="THupe_Anschaltzeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
+      <details key="pattern" value="0|[1-9][0-9]{0,3}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5]"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hupe_Anschaltzeit_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCHupe_Anschaltzeit"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Hupe_Anschaltzeit_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="IP_Adressblock_Blau_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TIP_Adressblock_Blau"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IP_Adressblock_Blau_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCIP_Adressblock_Blau"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//IP_Adressblock_Blau_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="IP_Adressblock_Blau_V4_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TIP_Adressblock_Blau_V4"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IP_Adressblock_Blau_V4_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCIP_Adressblock_Blau_V4"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//IP_Adressblock_Blau_V4_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="IP_Adressblock_Blau_V6_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TIP_Adressblock_Blau_V6"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IP_Adressblock_Blau_V6_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCIP_Adressblock_Blau_V6"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//IP_Adressblock_Blau_V6_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="IP_Adressblock_Grau_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TIP_Adressblock_Grau"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IP_Adressblock_Grau_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCIP_Adressblock_Grau"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//IP_Adressblock_Grau_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="IP_Adressblock_Grau_V4_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TIP_Adressblock_Grau_V4"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IP_Adressblock_Grau_V4_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCIP_Adressblock_Grau_V4"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//IP_Adressblock_Grau_V4_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="IP_Adressblock_Grau_V6_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TIP_Adressblock_Grau_V6"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IP_Adressblock_Grau_V6_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCIP_Adressblock_Grau_V6"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//IP_Adressblock_Grau_V6_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Kennzahl_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCKennzahl"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType BasisTypen.ecore#//Kennzahl_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Melder_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCMelder"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMMelderObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Oberflaeche_Bildart_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCOberflaeche_Bildart"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMOberflaecheBildartObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Oberflaeche_Zustaendigkeit_Type"
+      instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TOberflaeche_Zustaendigkeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Oberflaeche_Zustaendigkeit_TypeClass"
+      eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCOberflaeche_Zustaendigkeit"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Oberflaeche_Zustaendigkeit_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Regionalbereich_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCRegionalbereich"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType BasisTypen.ecore#//Regionalbereich_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Rueckschauzeit_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TRueckschauzeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rueckschauzeit_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCRueckschauzeit"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Rueckschauzeit_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schalter_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSchalter"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMSchalterObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Schrankreihe_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TSchrankreihe"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schrankreihe_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSchrankreihe"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Schrankreihe_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Steuerbezirksname_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TSteuerbezirksname"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Steuerbezirksname_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSteuerbezirksname"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Steuerbezirksname_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Steuerbezirksnummer_Type" instanceClassName="java.lang.String">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TSteuerbezirksnummer"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Steuerbezirksnummer_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCSteuerbezirksnummer"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Steuerbezirksnummer_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Taste_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCTaste"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMTasteObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Vorschauzeit_Type" instanceClassName="java.math.BigDecimal">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TVorschauzeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Vorschauzeit_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCVorschauzeit"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Vorschauzeit_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="X_Wert_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCX_Wert"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//ENUMXWertObject"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Y_Wert_Type" instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TY_Wert"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+      <details key="pattern" value="[1-9]|1[0-5]"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Y_Wert_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCY_Wert"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Y_Wert_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="YY_Wert_Type" instanceClassName="java.math.BigInteger">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TYY_Wert"/>
+      <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+      <details key="pattern" value="[1-9]|1[0-5]"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="YY_Wert_TypeClass" eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="TCYY_Wert"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//YY_Wert_Type"
+        unsettable="true">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="Wert"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>
