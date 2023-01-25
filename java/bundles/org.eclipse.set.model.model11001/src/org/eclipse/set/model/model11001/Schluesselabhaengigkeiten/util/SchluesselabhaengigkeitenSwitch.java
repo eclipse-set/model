@@ -152,8 +152,6 @@ public class SchluesselabhaengigkeitenSwitch<T> extends Switch<T> {
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_BEZEICHNUNG_ATTRIBUTE_GROUP: {
 				Schloss_Bezeichnung_AttributeGroup schloss_Bezeichnung_AttributeGroup = (Schloss_Bezeichnung_AttributeGroup)theEObject;
 				T result = caseSchloss_Bezeichnung_AttributeGroup(schloss_Bezeichnung_AttributeGroup);
-				if (result == null) result = caseBasis_Objekt(schloss_Bezeichnung_AttributeGroup);
-				if (result == null) result = caseUr_Objekt(schloss_Bezeichnung_AttributeGroup);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}

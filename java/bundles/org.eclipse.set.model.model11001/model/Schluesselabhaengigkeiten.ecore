@@ -384,8 +384,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Schloss_Bezeichnung_AttributeGroup"
-      eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="Schloss_Bezeichnung_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CSchloss_Bezeichnung"/>
       <details key="kind" value="elementOnly"/>
@@ -396,7 +395,7 @@
         <details key="documentation" value="Bezeichnung des Schlosses, die sich im Regelfall aus dem zu verschließenden Element ergibt, ggf. zuzüglich dessen Lage. Bei einer Schlüsselsperre/Schlosskombination entspricht die Bezeichnung der Bezeichnung der Schlüsselsperre/ Schlosskombination."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation>&#xA;                               &#xA;    &lt;ppi:Patternbeschreibung>[1..20]&lt;/ppi:Patternbeschreibung>&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                       &#xA;"/>
+        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..20]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>

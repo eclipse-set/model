@@ -644,58 +644,13 @@ public interface SchluesselabhaengigkeitenPackage extends EPackage {
 	int SCHLOSS_BEZEICHNUNG_ATTRIBUTE_GROUP = 10;
 
 	/**
-	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHLOSS_BEZEICHNUNG_ATTRIBUTE_GROUP__IDENTITAET = BasisobjektePackage.BASIS_OBJEKT__IDENTITAET;
-
-	/**
-	 * The feature id for the '<em><b>Basis Objekt Allg</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHLOSS_BEZEICHNUNG_ATTRIBUTE_GROUP__BASIS_OBJEKT_ALLG = BasisobjektePackage.BASIS_OBJEKT__BASIS_OBJEKT_ALLG;
-
-	/**
-	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHLOSS_BEZEICHNUNG_ATTRIBUTE_GROUP__ID_BEARBEITUNGSVERMERK = BasisobjektePackage.BASIS_OBJEKT__ID_BEARBEITUNGSVERMERK;
-
-	/**
-	 * The feature id for the '<em><b>ID Oertlichkeit Ausgabe</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHLOSS_BEZEICHNUNG_ATTRIBUTE_GROUP__ID_OERTLICHKEIT_AUSGABE = BasisobjektePackage.BASIS_OBJEKT__ID_OERTLICHKEIT_AUSGABE;
-
-	/**
-	 * The feature id for the '<em><b>Objektreferenzen</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCHLOSS_BEZEICHNUNG_ATTRIBUTE_GROUP__OBJEKTREFERENZEN = BasisobjektePackage.BASIS_OBJEKT__OBJEKTREFERENZEN;
-
-	/**
 	 * The feature id for the '<em><b>Bezeichnung Schloss</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SCHLOSS_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_SCHLOSS = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 0;
+	int SCHLOSS_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_SCHLOSS = 0;
 
 	/**
 	 * The number of structural features of the '<em>Schloss Bezeichnung Attribute Group</em>' class.
@@ -704,7 +659,7 @@ public interface SchluesselabhaengigkeitenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SCHLOSS_BEZEICHNUNG_ATTRIBUTE_GROUP_FEATURE_COUNT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 1;
+	int SCHLOSS_BEZEICHNUNG_ATTRIBUTE_GROUP_FEATURE_COUNT = 1;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.model11001.Schluesselabhaengigkeiten.impl.Schloss_BUE_AttributeGroupImpl <em>Schloss BUE Attribute Group</em>}' class.

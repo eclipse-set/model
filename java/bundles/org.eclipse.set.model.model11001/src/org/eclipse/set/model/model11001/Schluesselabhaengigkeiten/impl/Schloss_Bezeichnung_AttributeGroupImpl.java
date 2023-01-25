@@ -16,8 +16,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
-import org.eclipse.set.model.model11001.Basisobjekte.impl.Basis_ObjektImpl;
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.set.model.model11001.Schluesselabhaengigkeiten.Bezeichnung_Schloss_TypeClass;
 import org.eclipse.set.model.model11001.Schluesselabhaengigkeiten.Schloss_Bezeichnung_AttributeGroup;
@@ -36,7 +35,7 @@ import org.eclipse.set.model.model11001.Schluesselabhaengigkeiten.Schluesselabha
  *
  * @generated
  */
-public class Schloss_Bezeichnung_AttributeGroupImpl extends Basis_ObjektImpl implements Schloss_Bezeichnung_AttributeGroup {
+public class Schloss_Bezeichnung_AttributeGroupImpl extends EObjectImpl implements Schloss_Bezeichnung_AttributeGroup {
 	/**
 	 * The cached value of the '{@link #getBezeichnungSchloss() <em>Bezeichnung Schloss</em>}' containment reference.
 	 * <!-- begin-user-doc -->
