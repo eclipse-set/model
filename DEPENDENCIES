@@ -4,9 +4,9 @@ maven/mavencentral/org.eclipse.set/org.eclipse.set.model.model11001.feature/2.0.
 maven/mavencentral/org.eclipse.set/org.eclipse.set.model.model11001/2.0.0-SNAPSHOT, EPL-2.0, approved, technology.set
 maven/mavencentral/org.eclipse.set/org.eclipse.set.model.modelservice/2.0.0-SNAPSHOT, EPL-2.0, approved, technology.set
 maven/mavencentral/org.osgi/org.osgi.service.prefs/1.1.2, Apache-2.0, approved, #2451
-maven/mavencentral/org.osgi/org.osgi.util.function/1.2.0, Apache-2.0, approved, clearlydefined
+maven/mavencentral/org.osgi/org.osgi.util.function/1.2.0, Apache-2.0, approved, #6908
 maven/mavencentral/org.osgi/org.osgi.util.promise/1.2.0, Apache-2.0, approved, clearlydefined
-maven/mavencentral/org.osgi/osgi.annotation/8.0.1, Apache-2.0, approved, clearlydefined
+maven/mavencentral/org.osgi/osgi.annotation/8.0.1, Apache-2.0, approved, #6909
 p2/orbit/p2.eclipse.plugin/com.ibm.icu/67.1.0.v20200706-1749, ICU AND Unicode-TOU AND BSD-3-Clause AND BSD-2-Clause AND LicenseRef-ipadic-license AND LicenseRef-Public-Domain, approved, CQ22320
 p2/orbit/p2.eclipse.plugin/com.sun.jna.platform/5.8.0.v20210406-1004, Apache-2.0 OR LGPL-2.1-or-later, approved, CQ23218
 p2/orbit/p2.eclipse.plugin/com.sun.jna/5.8.0.v20210503-0343, Apache-2.0 OR LGPL-2.1-or-later, approved, CQ23217
