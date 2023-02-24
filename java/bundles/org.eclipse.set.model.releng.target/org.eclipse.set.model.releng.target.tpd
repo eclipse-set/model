@@ -2,7 +2,7 @@ target "org.eclipse.set.model.releng.target"
 
 with source
 
-location "https://download.eclipse.org/releases/2022-06/" {
+location "https://download.eclipse.org/releases/2022-12/" {
 	org.eclipse.jdt.feature.group
 	org.eclipse.emf.ecore.feature.group
 	org.eclipse.emf.sdk.feature.group
@@ -11,4 +11,5 @@ location "https://download.eclipse.org/releases/2022-06/" {
 	org.eclipse.net4j.util.feature.group
 	org.eclipse.equinox.sdk.feature.group
 	org.eclipse.rcp.sdk.id
+	org.apache.commons.io
 }

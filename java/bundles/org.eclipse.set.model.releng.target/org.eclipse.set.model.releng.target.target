@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl -->
-<target name="org.eclipse.set.model.releng.target" sequenceNumber="1658744358">
+<target name="org.eclipse.set.model.releng.target" sequenceNumber="1676560184">
   <locations>
     <location includeMode="slicer" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
-      <unit id="org.eclipse.jdt.feature.group" version="3.18.1200.v20220607-0700"/>
-      <unit id="org.eclipse.emf.ecore.feature.group" version="2.28.0.v20220426-0617"/>
-      <unit id="org.eclipse.emf.sdk.feature.group" version="2.30.0.v20220516-1117"/>
-      <unit id="org.eclipse.e4.rcp.feature.group" version="4.24.0.v20220530-1036"/>
-      <unit id="org.eclipse.platform.sdk" version="4.24.0.I20220607-0700"/>
-      <unit id="org.eclipse.net4j.util.feature.group" version="4.18.0.v20220608-1505"/>
-      <unit id="org.eclipse.equinox.sdk.feature.group" version="3.23.400.v20220516-2155"/>
-      <unit id="org.eclipse.rcp.sdk.id" version="4.24.0.I20220607-0700"/>
-      <repository location="https://download.eclipse.org/releases/2022-06/"/>
+      <unit id="org.eclipse.jdt.feature.group" version="3.18.1400.v20221123-1800"/>
+      <unit id="org.eclipse.emf.ecore.feature.group" version="2.30.0.v20221121-1400"/>
+      <unit id="org.eclipse.emf.sdk.feature.group" version="2.32.0.v20221121-1400"/>
+      <unit id="org.eclipse.e4.rcp.feature.group" version="4.26.0.v20221123-2302"/>
+      <unit id="org.eclipse.platform.sdk" version="4.26.0.I20221123-1800"/>
+      <unit id="org.eclipse.net4j.util.feature.group" version="4.20.0.v20221123-1721"/>
+      <unit id="org.eclipse.equinox.sdk.feature.group" version="3.23.600.v20221116-1440"/>
+      <unit id="org.eclipse.rcp.sdk.id" version="4.26.0.I20221123-1800"/>
+      <unit id="org.apache.commons.io" version="2.8.0.v20210415-0900"/>
+      <repository location="https://download.eclipse.org/releases/2022-12/"/>
     </location>
   </locations>
 </target>
