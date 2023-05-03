@@ -15,6 +15,7 @@ pipeline {
       steps {
         container('maven') {
           mvn goal: 'clean verify -P sign', dependencies: 'dependencies/maven.deps'
+          archiveArtifacts 'java/bundles/org.eclipse.set.model.releng.repository/target/*.zip'
         }
       }
     }
