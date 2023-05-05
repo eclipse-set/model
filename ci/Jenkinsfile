@@ -28,16 +28,6 @@ pipeline {
       }
     }
 
-    stage('Remove Old Snapshot') {
-      when {
-        branch 'main'
-      }
-
-      steps {
-        removeOldSnapshot repo: 'model'
-      }
-    }
-
     stage('Deploy') {
       when {
         anyOf {
