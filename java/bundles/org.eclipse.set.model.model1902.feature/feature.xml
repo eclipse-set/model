@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="org.eclipse.set.model.model1902.feature" label="Eclipse Signalling Engineering Toolbox PlanPro Model 1.9.0.2 Feature" version="1.1.0.qualifier" provider-name="Scheidt &amp; Bachmann System Technik GmbH">
+<feature id="org.eclipse.set.model.model1902.feature" label="Eclipse Signalling Engineering Toolbox PlanPro Model 1.9.0.2 Feature" version="1.1.0" provider-name="Scheidt &amp; Bachmann System Technik GmbH">
 
       <description>
       This feature contains the EMF model for the Eclipse Signalling Engineering Toolbox relating to the PlanPro data model 1.9.0.2.
