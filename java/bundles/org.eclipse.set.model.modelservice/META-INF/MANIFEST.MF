@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Eclipse Signalling Engineering Toolbox Modelservice
 Bundle-SymbolicName: org.eclipse.set.model.modelservice;singleton:=true
-Bundle-Version: 2.0.0.qualifier
+Bundle-Version: 2.0.0
 Automatic-Module-Name: org.eclipse.set.model.modelservice
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-Vendor: Eclipse Signalling Engineering Toolbox 

@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.set.model.model11001.feature"
       label="Eclipse Signalling Engineering Toolbox PlanPro Model 1.10.0.1 Feature"
-      version="2.0.0.qualifier"
+      version="2.0.0"
       provider-name="Eclipse Signalling Engineering Toolbox">
 
    <description>
