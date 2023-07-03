@@ -391,4 +391,18 @@
             class="org.eclipse.set.model.model11001.Signalbegriffe_Ril_301.util.Signalbegriffe_Ril_301ResourceFactoryImpl"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Layoutinformationen/1.10.0.1"
+            class="org.eclipse.set.model.model11001.Layoutinformationen.LayoutinformationenPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="layoutinformationen"
+            class="org.eclipse.set.model.model11001.Layoutinformationen.util.LayoutinformationenResourceFactoryImpl"/>
+   </extension>
+
 </plugin>

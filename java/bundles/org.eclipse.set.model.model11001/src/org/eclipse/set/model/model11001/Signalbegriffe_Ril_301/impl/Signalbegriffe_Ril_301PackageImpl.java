@@ -82,6 +82,10 @@ import org.eclipse.set.model.model11001.Gleis.GleisPackage;
 
 import org.eclipse.set.model.model11001.Gleis.impl.GleisPackageImpl;
 
+import org.eclipse.set.model.model11001.Layoutinformationen.LayoutinformationenPackage;
+
+import org.eclipse.set.model.model11001.Layoutinformationen.impl.LayoutinformationenPackageImpl;
+
 import org.eclipse.set.model.model11001.Medien_und_Trassen.Medien_und_TrassenPackage;
 
 import org.eclipse.set.model.model11001.Medien_und_Trassen.impl.Medien_und_TrassenPackageImpl;
@@ -1692,6 +1696,8 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 		ZuglenkungPackageImpl theZuglenkungPackage = (ZuglenkungPackageImpl)(registeredPackage instanceof ZuglenkungPackageImpl ? registeredPackage : ZuglenkungPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ZugnummernmeldeanlagePackage.eNS_URI);
 		ZugnummernmeldeanlagePackageImpl theZugnummernmeldeanlagePackage = (ZugnummernmeldeanlagePackageImpl)(registeredPackage instanceof ZugnummernmeldeanlagePackageImpl ? registeredPackage : ZugnummernmeldeanlagePackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(LayoutinformationenPackage.eNS_URI);
+		LayoutinformationenPackageImpl theLayoutinformationenPackage = (LayoutinformationenPackageImpl)(registeredPackage instanceof LayoutinformationenPackageImpl ? registeredPackage : LayoutinformationenPackage.eINSTANCE);
 
 		// Load packages
 		theSignalbegriffe_Ril_301Package.loadPackage();
@@ -1723,6 +1729,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 		theSignalbegriffe_StrukturPackage.createPackageContents();
 		theZuglenkungPackage.createPackageContents();
 		theZugnummernmeldeanlagePackage.createPackageContents();
+		theLayoutinformationenPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theBasisobjektePackage.initializePackageContents();
@@ -1748,6 +1755,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 		theSignalbegriffe_StrukturPackage.initializePackageContents();
 		theZuglenkungPackage.initializePackageContents();
 		theZugnummernmeldeanlagePackage.initializePackageContents();
+		theLayoutinformationenPackage.initializePackageContents();
 
 		// Fix loaded packages
 		theSignalbegriffe_Ril_301Package.fixPackageContents();

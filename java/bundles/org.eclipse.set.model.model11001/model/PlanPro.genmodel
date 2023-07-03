@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<genmodel:GenModel xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:xmi="http://www.omg.org/XMI" complianceLevel="17.0" copyrightFields="false" copyrightText="Copyright (c) 2023 DB Netz AG and others.&#10;&#10;All rights reserved. This program and the accompanying materials&#10;are made available under the terms of the Eclipse Public License v2.0&#10;which accompanies this distribution, and is available at&#10;http://www.eclipse.org/legal/epl-v20.html&#10;" editDirectory="/home/jenkins/workspace/PlanPro_ModelGenerator_main/java/modelGenerator/out/org.eclipse.set.model.model11001.edit/./src/." editorDirectory="/home/jenkins/workspace/PlanPro_ModelGenerator_main/java/modelGenerator/out/org.eclipse.set.model.model11001.editor/./src/." importerID="org.eclipse.xsd.ecore.importer" modelDirectory="/home/jenkins/workspace/PlanPro_ModelGenerator_main/java/modelGenerator/out/org.eclipse.set.model.model11001/./src/." modelName="PlanPro" modelPluginID="org.eclipse.set.model.model11001" suppressGenModelAnnotations="false" testsDirectory="false" xmi:version="2.0">
+<genmodel:GenModel xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:xmi="http://www.omg.org/XMI" complianceLevel="17.0" copyrightFields="false" copyrightText="Copyright (c) 2023 DB Netz AG and others.&#10;&#10;All rights reserved. This program and the accompanying materials&#10;are made available under the terms of the Eclipse Public License v2.0&#10;which accompanies this distribution, and is available at&#10;http://www.eclipse.org/legal/epl-v20.html&#10;" editDirectory="/home/jenkins/newCtl/workspace/enerator_dev_truong_PLANPRO-5476/java/modelGenerator/out/org.eclipse.set.model.model11001.edit/./src/." editorDirectory="/home/jenkins/newCtl/workspace/enerator_dev_truong_PLANPRO-5476/java/modelGenerator/out/org.eclipse.set.model.model11001.editor/./src/." importerID="org.eclipse.xsd.ecore.importer" modelDirectory="/home/jenkins/newCtl/workspace/enerator_dev_truong_PLANPRO-5476/java/modelGenerator/out/org.eclipse.set.model.model11001/./src/." modelName="PlanPro" modelPluginID="org.eclipse.set.model.model11001" suppressGenModelAnnotations="false" testsDirectory="false" xmi:version="2.0">
       
     <foreignModel>../../annotated/PlanPro.xsd</foreignModel>
       
     <foreignModel>../../annotated/Signalbegriffe_Ril_301.xsd</foreignModel>
+      
+    <foreignModel>../../annotated/Layoutinformationen.xsd</foreignModel>
       
     <genPackages basePackage="org.eclipse.set.model.model11001" disposableProviderFactory="true" ecorePackage="PlanPro.ecore#/" literalsInterface="false" loadInitialization="true" prefix="PlanPro" resource="XML">
             
@@ -16650,6 +16652,304 @@
         <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Zs8A"/>
             
         <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Zs9"/>
+          
+    </genPackages>
+      
+    <genPackages basePackage="org.eclipse.set.model.model11001" disposableProviderFactory="true" ecorePackage="Layoutinformationen.ecore#/" prefix="Layoutinformationen" resource="XML">
+            
+        <genEnums ecoreEnum="Layoutinformationen.ecore#//ENUMFuellung" typeSafeEnumCompatible="false">
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMFuellung/ENUMFuellung_doppelte_Schraffur"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMFuellung/ENUMFuellung_einfache_Schraffur"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMFuellung/ENUMFuellung_einfache_Schraffur_gestrichelt"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMFuellung/ENUMFuellung_sonstige"/>
+                
+        </genEnums>
+            
+        <genEnums ecoreEnum="Layoutinformationen.ecore#//ENUMLageplanArt" typeSafeEnumCompatible="false">
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_BU_Kreuzungsplan_LST"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_BU_Sicherungstechn__Lage__und_Kabelübersichtsplan"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_Gleisfreimeldeplan_für_Gleisstromkreise"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_Kabellageplan"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_Kabelübersichtsplan"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_Sicherungstechnischer_Lageplan"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_Sicherungstechnischer_Ubersichtsplan"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_sonstige"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_Stammkabelübersichtsplan"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_ZLV_Bus_Ubersichtsplan"/>
+                
+        </genEnums>
+            
+        <genEnums ecoreEnum="Layoutinformationen.ecore#//ENUMLinieArt" typeSafeEnumCompatible="false">
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieArt/ENUMLinie_Art_Punktlinie"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieArt/ENUMLinie_Art_Strich_Dreipunktlinie"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieArt/ENUMLinie_Art_Strich_Punktlinie"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieArt/ENUMLinie_Art_Strich_Strichlinie"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieArt/ENUMLinie_Art_Strich_Zweipunktlinie"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieArt/ENUMLinie_Art_Strich_Zweistrichlinie"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieArt/ENUMLinie_Art_Strichlinie"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieArt/ENUMLinie_Art_Strichlinie_lang"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieArt/ENUMLinie_Art_Volllinie"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieArt/ENUMLinie_Art_Zweistrich_Dreipunktlinie"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieArt/ENUMLinie_Art_Zweistrich_Punktlinie"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieArt/ENUMLinie_Art_Zweistrich_Zweipunktlinie"/>
+                
+        </genEnums>
+            
+        <genEnums ecoreEnum="Layoutinformationen.ecore#//ENUMLinieSubart" typeSafeEnumCompatible="false">
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieSubart/ENUMLinie_Subart_breit"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieSubart/ENUMLinie_Subart_extrabreit"/>
+                  
+            <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLinieSubart/ENUMLinie_Subart_schmal"/>
+                
+        </genEnums>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Bez_Lageplan_Blattschnitt_Type"/>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Bezeichnung_Lageplan_Type"/>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Darstellung_GEO_Punkt_Type"/>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Darstellung_Polygonzug_Type"/>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Darstellung_Richtungswinkel_Type"/>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//ENUMFuellungObject"/>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//ENUMLageplanArtObject"/>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//ENUMLinieArtObject"/>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//ENUMLinieSubartObject"/>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Linie_Farbwert_Type"/>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Polygonzug_Ausrichtung_Type"/>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Polygonzug_Blattschnitt_Type"/>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Referenz_LST_Zustand_Type"/>
+            
+        <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Referenz_Objekt_Darstellung_Type"/>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Bez_Lageplan_Blattschnitt_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Bez_Lageplan_Blattschnitt_TypeClass/wert"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Bezeichnung_Lageplan_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Bezeichnung_Lageplan_TypeClass/wert"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Darstellung_GEO_Punkt_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Darstellung_GEO_Punkt_TypeClass/wert"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Darstellung_Polygonzug_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Darstellung_Polygonzug_TypeClass/wert"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Darstellung_Richtungswinkel_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Darstellung_Richtungswinkel_TypeClass/wert"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//DocumentRoot">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//DocumentRoot/mixed" notify="false" property="None"/>
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//DocumentRoot/xMLNSPrefixMap" notify="false" property="None"/>
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//DocumentRoot/xSISchemaLocation" notify="false" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//DocumentRoot/planProLayoutinfo" property="None"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Element_Position">
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Position/elementPositionAllg" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Position/iDLageplanZustand" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Position/referenzObjektDarstellung" property="None"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Element_Position_Allg_AttributeGroup">
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Position_Allg_AttributeGroup/darstellungRichtungswinkel" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Position_Allg_AttributeGroup/darstellungGEOPunkt" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Position_Allg_AttributeGroup/darstellungPolygonzug" property="None"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Element_Stil">
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Stil/elementStilAllg" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Stil/iDLageplanZustand" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Stil/referenzObjektDarstellung" property="None"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Element_Stil_Allg_AttributeGroup">
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Stil_Allg_AttributeGroup/fuellung" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Stil_Allg_AttributeGroup/linieArt" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Stil_Allg_AttributeGroup/linieFarbwert" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Stil_Allg_AttributeGroup/linieSubart" property="None"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Fuellung_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Fuellung_TypeClass/wert"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Lageplan">
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Lageplan/bezeichnung" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Lageplan/iDLageplanBlattschnitt" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Lageplan/lageplanArt" property="None"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Lageplan_Art_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Lageplan_Art_TypeClass/wert"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Lageplan_Bezeichnung_AttributeGroup">
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Lageplan_Bezeichnung_AttributeGroup/bezeichnungLageplan" property="None"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Lageplan_Blattschnitt">
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Lageplan_Blattschnitt/bezeichnung" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Lageplan_Blattschnitt/polygonzugAusrichtung" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Lageplan_Blattschnitt/polygonzugBlattschnitt" property="None"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Lageplan_Blattschnitt_Bezeichnung_AttributeGroup">
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Lageplan_Blattschnitt_Bezeichnung_AttributeGroup/bezLageplanBlattschnitt" property="None"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Lageplan_Zustand">
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Lageplan_Zustand/iDLageplan" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Lageplan_Zustand/referenzLSTZustand" property="None"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Linie_Art_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Linie_Art_TypeClass/wert"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Linie_Farbwert_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Linie_Farbwert_TypeClass/wert"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Linie_Subart_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Linie_Subart_TypeClass/wert"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//PlanPro_Layoutinfo">
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//PlanPro_Layoutinfo/elementPosition" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//PlanPro_Layoutinfo/elementStil" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//PlanPro_Layoutinfo/lageplan" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//PlanPro_Layoutinfo/lageplanBlattschnitt" property="None"/>
+                  
+            <genFeatures children="true" createChild="true" ecoreFeature="ecore:EReference Layoutinformationen.ecore#//PlanPro_Layoutinfo/lageplanZustand" property="None"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Polygonzug_Ausrichtung_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Polygonzug_Ausrichtung_TypeClass/wert"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Polygonzug_Blattschnitt_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Polygonzug_Blattschnitt_TypeClass/wert"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Referenz_LST_Zustand_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Referenz_LST_Zustand_TypeClass/wert"/>
+                
+        </genClasses>
+            
+        <genClasses ecoreClass="Layoutinformationen.ecore#//Referenz_Objekt_Darstellung_TypeClass">
+                  
+            <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Referenz_Objekt_Darstellung_TypeClass/wert"/>
+                
+        </genClasses>
           
     </genPackages>
     
