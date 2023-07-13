@@ -741,4 +741,32 @@
       </editor>
    </extension>
 
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated PlanPro -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.eclipse.set.model.model11001.Layoutinformationen.presentation.LayoutinformationenModelWizardID"
+            name="%_UI_LayoutinformationenModelWizard_label"
+            class="org.eclipse.set.model.model11001.Layoutinformationen.presentation.LayoutinformationenModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/LayoutinformationenModelFile.gif">
+         <description>%_UI_LayoutinformationenModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated PlanPro -->
+      <editor
+            id="org.eclipse.set.model.model11001.Layoutinformationen.presentation.LayoutinformationenEditorID"
+            name="%_UI_LayoutinformationenEditor_label"
+            icon="icons/full/obj16/LayoutinformationenModelFile.gif"
+            extensions="layoutinformationen"
+            class="org.eclipse.set.model.model11001.Layoutinformationen.presentation.LayoutinformationenEditor"
+            contributorClass="org.eclipse.set.model.model11001.Layoutinformationen.presentation.LayoutinformationenActionBarContributor">
+      </editor>
+   </extension>
+
 </plugin>

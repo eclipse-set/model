@@ -86,6 +86,10 @@ import org.eclipse.set.model.model11001.Gleis.GleisPackage;
 
 import org.eclipse.set.model.model11001.Gleis.impl.GleisPackageImpl;
 
+import org.eclipse.set.model.model11001.Layoutinformationen.LayoutinformationenPackage;
+
+import org.eclipse.set.model.model11001.Layoutinformationen.impl.LayoutinformationenPackageImpl;
+
 import org.eclipse.set.model.model11001.Medien_und_Trassen.Medien_und_TrassenPackage;
 
 import org.eclipse.set.model.model11001.Medien_und_Trassen.impl.Medien_und_TrassenPackageImpl;
@@ -3819,6 +3823,8 @@ public class Balisentechnik_ETCSPackageImpl extends EPackageImpl implements Bali
 		ZugnummernmeldeanlagePackageImpl theZugnummernmeldeanlagePackage = (ZugnummernmeldeanlagePackageImpl)(registeredPackage instanceof ZugnummernmeldeanlagePackageImpl ? registeredPackage : ZugnummernmeldeanlagePackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI);
 		Signalbegriffe_Ril_301PackageImpl theSignalbegriffe_Ril_301Package = (Signalbegriffe_Ril_301PackageImpl)(registeredPackage instanceof Signalbegriffe_Ril_301PackageImpl ? registeredPackage : Signalbegriffe_Ril_301Package.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(LayoutinformationenPackage.eNS_URI);
+		LayoutinformationenPackageImpl theLayoutinformationenPackage = (LayoutinformationenPackageImpl)(registeredPackage instanceof LayoutinformationenPackageImpl ? registeredPackage : LayoutinformationenPackage.eINSTANCE);
 
 		// Load packages
 		theBalisentechnik_ETCSPackage.loadPackage();
@@ -3850,6 +3856,7 @@ public class Balisentechnik_ETCSPackageImpl extends EPackageImpl implements Bali
 		theSignalbegriffe_StrukturPackage.createPackageContents();
 		theZuglenkungPackage.createPackageContents();
 		theZugnummernmeldeanlagePackage.createPackageContents();
+		theLayoutinformationenPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theBasisobjektePackage.initializePackageContents();
@@ -3875,6 +3882,7 @@ public class Balisentechnik_ETCSPackageImpl extends EPackageImpl implements Bali
 		theSignalbegriffe_StrukturPackage.initializePackageContents();
 		theZuglenkungPackage.initializePackageContents();
 		theZugnummernmeldeanlagePackage.initializePackageContents();
+		theLayoutinformationenPackage.initializePackageContents();
 
 		// Fix loaded packages
 		theBalisentechnik_ETCSPackage.fixPackageContents();

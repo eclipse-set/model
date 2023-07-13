@@ -190,6 +190,8 @@ import org.eclipse.set.model.model11001.Geodaten.provider.GeodatenItemProviderAd
 
 import org.eclipse.set.model.model11001.Gleis.provider.GleisItemProviderAdapterFactory;
 
+import org.eclipse.set.model.model11001.Layoutinformationen.provider.LayoutinformationenItemProviderAdapterFactory;
+
 import org.eclipse.set.model.model11001.Medien_und_Trassen.provider.Medien_und_TrassenItemProviderAdapterFactory;
 
 import org.eclipse.set.model.model11001.Nahbedienung.provider.NahbedienungItemProviderAdapterFactory;
@@ -798,6 +800,7 @@ public class ZugnummernmeldeanlageEditor
 		adapterFactory.addAdapterFactory(new ZuglenkungItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ZugnummernmeldeanlageItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Signalbegriffe_Ril_301ItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new LayoutinformationenItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.
