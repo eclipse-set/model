@@ -15,13 +15,11 @@
 
 	<modules>
 		<module>java/bundles/org.eclipse.set.model.releng.target</module>
-		<module>java/bundles/org.eclipse.set.model.releng.repository</module>
 		<module>java/bundles/org.eclipse.set.model.modelservice</module>
 
 		<!-- PlanPro Model 1.10.0.1 -->
 		<module>java/bundles/org.eclipse.set.model.model11001.edit</module>
 		<module>java/bundles/org.eclipse.set.model.model11001.editor</module>
-		<module>java/bundles/org.eclipse.set.model.model11001.feature</module>
 		<module>java/bundles/org.eclipse.set.model.model11001</module>
 	</modules>
 	<version>2.1.0-SNAPSHOT</version>
