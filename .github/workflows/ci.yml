@@ -31,6 +31,6 @@ jobs:
 
     - name: Publish
       run: mvn -T 1.5C -B deploy
-      if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/release/'
+      if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/release/')
       env:
         GITHUB_TOKEN: ${{ github.token }}
