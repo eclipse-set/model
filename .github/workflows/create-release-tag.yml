@@ -1,11 +1,16 @@
 name: Create Release Tag
-    
+run-name: Create Release Tag ${{ inputs.version }} ${{ inputs.citag }}
+
 on:
   workflow_dispatch:
     inputs:
       version:
         description: 'Release version. Format: <major>.<minor>.<patch>(.<tag>)'
         required: true
+      citag:
+        description: 'Optional tag to identify runs via the API. Displayed in run name.'
+        required: false
+        default: ''
 
 jobs:
   release-tag:
