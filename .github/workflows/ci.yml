@@ -30,7 +30,7 @@ jobs:
       run: mvn -T 1.5C -B clean verify
 
     - name: Publish
-      run: mvn -T 1.5C -B deploy
+      run: mvn -T 1.5C -B deploy -DaltDeploymentRepository=github-set::https://maven.pkg.github.com/${{ github.repository }}
       if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/release/')
       env:
         GITHUB_TOKEN: ${{ github.token }}
