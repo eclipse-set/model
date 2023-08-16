@@ -4,14 +4,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.eclipse.set</groupId>
-	<artifactId>org.eclipse.set.model.model11001.edit</artifactId>
+	<artifactId>org.eclipse.set.model.model11001.editor</artifactId>
 	<packaging>eclipse-plugin</packaging>
 
 	<parent>
-		<relativePath>../org.eclipse.set.model.releng.parent</relativePath>
+		<relativePath>../..</relativePath>
 		<groupId>org.eclipse.set</groupId>
 		<artifactId>org.eclipse.set.model.releng.parent</artifactId>
-		<version>1.0.0</version>
+		<version>2.1.0-SNAPSHOT</version>
 	</parent>
 	<version>2.1.0-SNAPSHOT</version>
 </project>
