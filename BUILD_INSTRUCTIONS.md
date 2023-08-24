@@ -1,4 +1,4 @@
-# Build instructions
+# Build instructions  
 
 As the requirements for local development and production deployments are different, this document contains two sets of instructions.
 First, instructions on how to work on the component locally using the Eclipse IDE (e.g. for development) and secondly instructions on how to do a full production build locally via Maven are provided. 
