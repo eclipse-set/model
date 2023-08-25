@@ -34,3 +34,11 @@ jobs:
       if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/release/') || startsWith(github.ref, 'refs/tags/')
       env:
         GITHUB_TOKEN: ${{ github.token }}
+
+    - name: Trigger Toolboxmodel
+      if: github.ref == 'refs/heads/main'
+      uses: peter-evans/repository-dispatch@26b39ed245ab8f31526069329e112ab2fb224588 # v2.1.1
+      with:
+        token: ${{ secrets.PAT }}
+        repository: eclipse-set/toolboxmodel
+        event-type: trigger-build
