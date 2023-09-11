@@ -41,4 +41,4 @@ jobs:
       with:
         token: ${{ secrets.GH_BOT_TOKEN  }}
         repository: eclipse-set/toolboxmodel
-        event-type: trigger-build
+        event-type: "Rebuild with model update ${{ github.run_number }}"
