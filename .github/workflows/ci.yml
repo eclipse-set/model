@@ -36,7 +36,7 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
 
     - name: Trigger Toolboxmodel
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/main' && github.repository_owner == 'eclipse-set'
       uses: peter-evans/repository-dispatch@bf47d102fdb849e755b0b0023ea3e81a44b6f570 # v2.1.2
       with:
         token: ${{ secrets.GH_BOT_TOKEN  }}
