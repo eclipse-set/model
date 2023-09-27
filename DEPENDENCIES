@@ -5,8 +5,8 @@ maven/mavencentral/org.apache.felix/org.apache.felix.scr/2.2.4, Apache-2.0 AND B
 maven/mavencentral/org.bouncycastle/bcpg-jdk18on/1.72, Apache-2.0, approved, #4295
 maven/mavencentral/org.bouncycastle/bcprov-jdk18on/1.72, MIT AND CC0-1.0, approved, #3538
 maven/mavencentral/org.codehaus.mojo/animal-sniffer-annotations/1.9, MIT, approved, clearlydefined
-maven/mavencentral/org.eclipse.set/org.eclipse.set.model.model11001.edit/2.1.0-SNAPSHOT, EPL-2.0, approved, technology.set
-maven/mavencentral/org.eclipse.set/org.eclipse.set.model.model11001/2.1.0-SNAPSHOT, EPL-2.0, approved, technology.set
+maven/mavencentral/org.eclipse.set/org.eclipse.set.model.model11001.edit/2.2.0-SNAPSHOT, EPL-2.0, approved, technology.set
+maven/mavencentral/org.eclipse.set/org.eclipse.set.model.model11001/2.2.0-SNAPSHOT, EPL-2.0, approved, technology.set
 maven/mavencentral/org.osgi/org.osgi.namespace.extender/1.0.1, Apache-2.0, approved, clearlydefined
 maven/mavencentral/org.osgi/org.osgi.namespace.implementation/1.0.0, Apache-2.0, approved, clearlydefined
 maven/mavencentral/org.osgi/org.osgi.service.component/1.5.0, Apache-2.0, approved, #5389
