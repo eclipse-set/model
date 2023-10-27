@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.eclipse.set.model.model11001.editor;singleton:=true
 Automatic-Module-Name: org.eclipse.set.model.model11001.editor
-Bundle-Version: 2.1.0.qualifier
+Bundle-Version: 2.1.0
 Bundle-ClassPath: .
 Bundle-Activator: org.eclipse.set.model.model11001.PlanPro.presentation.PlanProEditorPlugin$Implementation
 Bundle-Vendor: %providerName
