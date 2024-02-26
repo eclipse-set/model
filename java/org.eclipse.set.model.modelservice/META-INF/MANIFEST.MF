@@ -4,7 +4,7 @@ Bundle-Name: Eclipse Signalling Engineering Toolbox Modelservice
 Bundle-SymbolicName: org.eclipse.set.model.modelservice;singleton:=true
 Bundle-Version: 2.3.0.qualifier
 Automatic-Module-Name: org.eclipse.set.model.modelservice
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Bundle-Vendor: Eclipse Signalling Engineering Toolbox 
 Export-Package: org.eclipse.set.model.modelservice
 Import-Package: org.eclipse.emf.common.util,
