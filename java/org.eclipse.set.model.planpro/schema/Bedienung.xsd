@@ -1,0 +1,1806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:nsBedienung="http://www.plan-pro.org/modell/Bedienung/1.10.0.1"
+           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1"
+           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.1"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsBedienung"
+           ecore:package="org.eclipse.set.model.planpro.Bedienung"
+           targetNamespace="http://www.plan-pro.org/modell/Bedienung/1.10.0.1">
+   <xs:annotation>
+      <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+
+Weitere Informationen zur Lizenz finden Sie auf
+http://www.dbnetze.com/planpro
+
+Inhalt der Datei:
+XML Schema für PlanPro Schnittstelle.
+
+Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+
+--------------------------------------------------------------------------------
+
+This Document is licensed under the open source license RailPL V1.0.
+
+More information about the license can be found on
+http://www.dbnetze.com/planpro
+
+Contents of the file:
+XML Schema for PlanPro interface.</xs:documentation>
+   </xs:annotation>
+   <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.10.0.1"
+              schemaLocation="Verweise.xsd"/>
+   <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1"
+              schemaLocation="BasisTypen.xsd"/>
+   <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1"
+              schemaLocation="Basisobjekte.xsd"/>
+   <xs:complexType ecore:name="Anbindung_IB2_TypeClass" name="TCAnbindung_IB2">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="xs:boolean"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="IP_Adressblock_Blau_Type" name="TIP_Adressblock_Blau">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Bedien_GBT_Allg_AttributeGroup" name="CBedien_GBT_Allg">
+      <xs:sequence>
+         <xs:element name="Rueckschauzeit"
+                     type="nsBedienung:TCRueckschauzeit"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der Zeit, in der die GBT für Fahrplanzeiten der Vergangenheit gesehen und editiert werden kann.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Vorschauzeit"
+                     type="nsBedienung:TCVorschauzeit"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der Zeit, in der die GBT für Fahrplanzeiten der Zukunft gesehen und editiert werden kann.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Bedienraumnummer_Type" name="TBedienraumnummer">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Betriebsstellenbezeichner_TypeClass"
+                   name="TCBetriebsstellenbezeichner">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TBetriebsstellenbezeichner"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="BSO_IP_Adressblock_AttributeGroup"
+                   name="CBSO_IP_Adressblock">
+      <xs:sequence>
+         <xs:element name="BSO_IP_AB_Teilsystem"
+                     type="nsBedienung:CBSO_IP_AB_Teilsystem"
+                     minOccurs="0"
+                     maxOccurs="unbounded"/>
+         <xs:element name="IP_Adressblock_Blau_V4"
+                     type="nsBedienung:TCIP_Adressblock_Blau_V4"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Reservierter IPv4-Adressblock für den blauen Weg des bbIP-Netzes.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IP_Adressblock_Blau_V6"
+                     type="nsBedienung:TCIP_Adressblock_Blau_V6"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Reservierter IPv6-Adressblock für den blauen Weg des bbIP-Netzes.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IP_Adressblock_Grau_V4"
+                     type="nsBedienung:TCIP_Adressblock_Grau_V4"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Reservierter IPv4-Adressblock für den grauen Weg des bbIP-Netzes.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IP_Adressblock_Grau_V6"
+                     type="nsBedienung:TCIP_Adressblock_Grau_V6"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Reservierter IPv6-Adressblock für den grauen Weg des bbIP-Netzes.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Regionalbereich"
+                     type="nsBedienung:TCRegionalbereich"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Regionalbereich, dem der Bedien-Standort zugewiesen ist.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Steuerbezirksnummer_Type" name="TSteuerbezirksnummer">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Anbindung_IB3_TypeClass" name="TCAnbindung_IB3">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="xs:boolean"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="IP_Adressblock_Grau_V4_Type" name="TIP_Adressblock_Grau_V4">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Bedien_Platz_Allg_AttributeGroup" name="CBedien_Platz_Allg">
+      <xs:sequence>
+         <xs:element name="Bedien_Platz_Art"
+                     type="nsBedienung:TCBedien_Platz_Art"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ausprägung des Bedienplatzes. Da es verschiedne Kombinationen und mehere Instanzen von Bedien_Platz geben kann, sind nachfolgend beispielhafte Varianten aufgeführt: ESTW Zentraleinheit mit Anbindung an einen Bedien Bezirk, örtlichem Notbedienplatz im Modulgebäude und Standardbedienplätzen in der Bedien Zentrale (z.B. ESTW Orxhausen/Siemens); ESTW_Zentraleinheit mit abgesetzten Standardbedienplätzen und örtlichem Notbedienplatz im Modulgebäude (z.B. ESTW Kreiensen/Bombardier); ESTW_Zentraleinheit mit Anbindung an einen Bedien_Bezirk mit abgesetztem Notbedienplatz im Altstellwerk und Standardbedienplätzen in der Bedien_Zentrale (z.B. ESTW Oldenburg Nord/Siemens). Aus diesem Zusammenhang entstehen vier Arten von Bedienplätzen. Standard-Bedienplatz-System (Standard_BPS); Standard-Bedienplatz-System abgesetzt (Standard_BPS_abgesetzt); Not-Bedienplatz-System (Not_BPS); Not-Bedienplatz-System abgesetzt (Not_BPS_Abgesetzt). </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Bedienplatzbezeichnung"
+                     type="nsBedienung:TCBedienplatzbezeichnung"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung des Bedienplatzes. Regional abhängig sind Folgen von alphanumerischen- und Sonderzeichen gebräuchlich. Gemeint ist die ortsübliche Bezeichnung eines Arbeittsplatzes z.B. in einer Bedieninsel. Siehe Beispiel der BZ Hannover: Plan der Bedienebene: Media:Plan Bedieneben BZH.pdf, Raster X22. Dort befindet sich der Bedienplatz „82“ mit der Bezeichnung „özF Celle Süd“. Daraus ergibt sich: Bedienplatzbezeichnung: özF Celle Süd Bedienplatznummer: 82 Mögliche weitere Bezeichnungen wären z.B. Bedienplatzbezeichnung özF Celle (Süd) Bedienplatznummer: HC_2 oder HC_S Nicht gemeint ist diese technische Bezeichnung des Systemherstellers, z.B. die fortlaufende Nummer eines Standardbedienplatzes in einem Steuerbezirk, die nicht aus dem PT1 kommt sondern im PT2 von der SBI geliefert wird. Siehe Media:Bedienplatzbezeichnung Nummer.pdf. Hier wird der im Siemens-Bedien_Bezirk angeschaltete Bedienplatz wie folgt erfasst: Bedienplatzbezeichnung: BPS0112 (nämlich der erste Bedienplatz im Bedienbezirk 12) Bedienplatznummer: 1 (nämlich in der Schrankbezeichnung erfasst!) </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Bedienplatznummer"
+                     type="nsBedienung:TCBedienplatznummer"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Nummer oder Kurzbezeichnung des Bedienplatzes. Regional abhängig sind Folgen von alphanumerischen- und Sonderzeichen gebräuchlich. Gemeint ist die Nummer oder Kurzbezeichnung eines Arbeittsplatzes z.B. in einer Bedieninsel. Siehe Beispiel der BZ Hannover: Plan der Bedienebene: Media:Plan Bedieneben BZH.pdf, Raster X22. Dort befindet sich der Bedienplatz „82“mit der Bezeichnung „özF Celle Süd“. Daraus ergibt sich: Bedienplatzbezeichnung: özF Celle Süd Bedienplatznummer: 82 Mögliche weitere Bezeichnungen wären z.B. Bedienplatzbezeichnung özF Celle (Süd) Bedienplatznummer: HC_2 oder HC_S Nicht gemeint ist diese technische Bezeichnung des Systemherstellers, z.B. die fortlaufende Nummer eines Standardbedienplatzes in einem Steuerbezirk, die nicht aus dem PT1 kommt sondern im PT2 von der SBI geliefert wird. Siehe Media:Bedienplatzbezeichnung Nummer.pdf. Hier wird der im Siemens-Bedien_Bezirk angeschaltete Bedienplatz wie folgt erfasst: Bedienplatzbezeichnung: BPS0112 (nämlich der erste Bedienplatz im Bedienbezirk 12) Bedienplatznummer: 1 (nämlich in der Schrankbezeichnung erfasst!) </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Bedienraumnummer"
+                     type="nsBedienung:TCBedienraumnummer"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Nummer oder Bezeichnung des Raumes, in dem der Bedienplatz untergebracht ist. Regional abhängig sind Folgen von alphanumerischen- und Sonderzeichen gebräuchlich.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Standort_Bezeichnung_AttributeGroup"
+                   name="CBedien_Standort_Bezeichnung">
+      <xs:sequence>
+         <xs:element name="Bezeichnung_BSO"
+                     type="nsBedienung:TCBezeichnung_BSO"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung des Bedien-Standorts.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="IP_Adressblock_Blau_V6_TypeClass"
+                   name="TCIP_Adressblock_Blau_V6">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TIP_Adressblock_Blau_V6"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedienplatzbezeichnung_TypeClass"
+                   name="TCBedienplatzbezeichnung">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TBedienplatzbezeichnung"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bez_Bed_Anzeige_Element_TypeClass"
+                   name="TCBez_Bed_Anzeige_Element">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TBez_Bed_Anzeige_Element"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Steuerbezirksname_TypeClass" name="TCSteuerbezirksname">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TSteuerbezirksname"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Platz" name="CBedien_Platz">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Örtliche Anordnung der Bedien- und Meldeeinrichtungen zur betrieblichen Nutzung eines elektronischen Stellwerks. Der Bedien_Platz kann sowohl an einem Bedien_Bezirk wie auch an einer ESTW_Zentraleinheit angeschaltet sein. Der Aufstellungsort muss aber nicht zwingend der Anschalteort sein. Der Bedien_Platz kann auch als abgesetzter Bedien_Platz an abweichenden Orten untergebracht sein. Z.B. wenn im Modulgebäude der ESTW_Zentraleinheit nicht ausreichend Platz ist und der Bedien_Platz im benachbartem alten Stellwerksgebäude untergebracht werden soll. Um dem Lieferanten die allgemeine Ausprägung des Bedien_Platzes im PT 1 zu beschreiben, ist noch der Hinweis zu erbringen, ob es sich um einen Not-Bedien_Platz oder einen Standard-Bedien_Platz handelt. Da es verschiedne Kombinationen und mehere Instanzen von Bedien_Platz geben kann, hier noch mal Beispielhafte Varianten: ESTW_Zentraleinheit mit Anbindung an einen Bedien_Bezirk mit örtlichem Notbedienplatz im Modulgebäude und Standardbedienplätzen in der Bedien_Zentrale (z.B. ESTW Orxhausen/Siemens) ESTW_Zentraleinheit mit abgesetzten Standardbedienplätzen und mit örtlichem Notbedienplatz im Modulgebäude (z.B. ESTW Kreiensen/Bombardier) ESTW_Zentraleinheit mit Anbindung an einen Bedien_Bezirk mit abgesetztem Notbedienplatz im Altstellwerk und Standardbedienplätzen in der Bedien_Zentrale (z.B. ESTW Oldenburg Nord/Siemens) Aus diesem Zusammenhang entstehen vier Typen von Bedienplätzen. Standard-Bedienplatz-System (Standard_BPS) Standard-Bedienplatz-System abgesetzt (Standard_BPS_Abgesetzt) Not-Bedienplatz Not-BPS-System (Not_BPS) Not-Bedienplatz Not-BPS-System abgesetzt (Not_BPS_Abgesetzt) Im PT 1 BZ werden für den Bedienplatz die Aufstellung im Raum, die Ausstattung und Ausrüstung sowie die Versorgung mit elektrischer Energie und Daten geplant. Siehe Beispiel der BZ Hannover: Plan der Bedienebene: Media:Plan Bedieneben BZH.pdf, Schematischer Plan der Strom- und Datenversorgung am Bedienplatz: Media:Plan Stromversorgung BPL BZH.pdf. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>Bedienung Fdl ESTW-ZE|Bedienung Fdl BZ</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="Bedien_Platz_Allg"
+                           type="nsBedienung:CBedien_Platz_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="ID_Anhang_Moebelplan_Aufriss"
+                           type="nsVerweise:TCID_Anhang"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anhang im PDF-Format, der den horizontalen Aufbau der Bedienmöbel einer Bedienzentrale beschreibt. Der Ein- und Ausbau der Ausrüstung erfolgt in der üblichen Rot/Gelb-Darstellung. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Anhang_Moebelplan_Grundriss"
+                           type="nsVerweise:TCID_Anhang"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anhang im PDF-Format, der die Aufstellfläche und die Anschlüsse für elektrische Energie und Daten der Bedienplätze einer Bedienzentrale beschreibt. Der Ein- und Ausbau von Bedienplätzen und Anschlüssen erfolgt in der üblichen Rot/Gelb-Darstellung.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Unterbringung"
+                           type="nsVerweise:TCID_Unterbringung"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den physischen Ort der Unterbringung von Aussenelementansteuerung, Bedien Einrichtung Oertlich, Bedien Platz, ESTW Zentraleinheit, PZB Element, Schlosskombination, Schluesselsperre und ZN. Für das PZB Element wird der Verweis nur für eine GÜ gefüllt - mit der Bedeutung: GÜ-Schaltkasten. Für die ZN ist der Verweis optional, da im Planungswerkzeug ZN/ZL keine Befüllung aller der für die Unterbringung notwendigen Attribute möglich ist. DB-Regelwerk Darstellung des Gebäudes, der Bediensäule bzw. des Schaltkastens im sicherungstechnischen Lageplan nach Ril 819.9002 oder Beschreibung im Erläuterungsbericht.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:choice minOccurs="1" maxOccurs="1">
+                  <xs:element name="ID_Bedien_Bezirk"
+                              type="nsVerweise:TCID_Bedien_Bezirk"
+                              minOccurs="1"
+                              maxOccurs="1">
+                     <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf einen Bedien_Bezirk zur Zuordnung der Bedienplätze eines Steuerbereiches und der für Ihre Darstellung notwendigen Parameter (z.Zt. noch über PDF-Anhänge). </xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="ID_ESTW_Zentraleinheit"
+                              type="nsVerweise:TCID_ESTW_Zentraleinheit"
+                              minOccurs="1"
+                              maxOccurs="1">
+                     <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung des Bedienplatzes zu einer ESTW_Zentraleinheit, wenn der Bedienplatz nicht an einen Bedien_Bezirk, sondern direkt an die ESTW_Zentraleinheit angeschaltet ist (z. B. Notbedienplatz). </xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:choice>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="B_Wert_TypeClass" name="TCB_Wert">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TB_Wert"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType name="ENUMSchalter">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMSchalter_Gefahrschalter" value="Gefahrschalter"/>
+         <xs:enumeration ecore:name="ENUMSchalter_Nothaltschalter" value="Nothaltschalter"/>
+         <xs:enumeration ecore:name="ENUMSchalter_Schalter_ein_aus" value="Schalter_ein_aus"/>
+         <xs:enumeration ecore:name="ENUMSchalter_Schluesselschalter_DB_21"
+                         value="Schluesselschalter_DB_21"/>
+         <xs:enumeration ecore:name="ENUMSchalter_Schluesselschalter_Vierkant"
+                         value="Schluesselschalter_Vierkant"/>
+         <xs:enumeration ecore:name="ENUMSchalter_sonstige" value="sonstige"/>
+         <xs:enumeration ecore:name="ENUMSchalter_Vorbereitungsmeldung"
+                         value="Vorbereitungsmeldung"/>
+         <xs:enumeration ecore:name="ENUMSchalter_Zustimmungstaste" value="Zustimmungstaste"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType ecore:name="Bez_Bed_Anzeige_Element_Type"
+                  name="TBez_Bed_Anzeige_Element">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="IP_Adressblock_Grau_V6_TypeClass"
+                   name="TCIP_Adressblock_Grau_V6">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TIP_Adressblock_Grau_V6"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="IP_Adressblock_Grau_V4_TypeClass"
+                   name="TCIP_Adressblock_Grau_V4">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TIP_Adressblock_Grau_V4"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Anrueckabschnitt" name="CBedien_Anrueckabschnitt">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Darstellung der Anrückmeldung Auf der Bedienoberfläche wird bei in den Steuerbereich einfahrenden Zügen die Zugnummer oder, wenn diese nicht vorhanden ist, der vom anrückenden Zug belegte Gleisabschnitt angezeigt. Die Anrückmeldung wird aus der ZL generiert. Es wird festgelegt, in der Nähe welchen Gleisabschnittes auf der Bedienoberfläche die Zugnummer bzw. der Gleisabschnitt angezeigt werden soll. Der Gleisabschnitt kann außerhalb des Planungsbereiches liegen. Es muss nicht der direkte Nachbarabschnitt sein, denn z.B. bei Strecken mit hoher Geschwindigkeit wird als Anrückabschnitt auch ein weiter entfernter Gleisabschnitt des Nachbarstellwerks genommen. DB-Regelwerk 819.0603 A2, Tabelle 3, Seite 208 </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>Bedienung Fdl ESTW-ZE</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="ID_Gleis_Abschnitt_Position"
+                           type="nsVerweise:TCID_Gleis_Abschnitt"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe des Gleisabschnitts, in dessen Nähe auf der Bedienoberfläche die Anzeige des darzustellenden Gleisabschnitts (Anrückabschnitt) positioniert werden soll. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:choice minOccurs="1" maxOccurs="1">
+                  <xs:element name="Bezeichnung"
+                              type="nsBedienung:CBedien_Anrueckabschnitt_Bezeichnung"
+                              minOccurs="1"
+                              maxOccurs="1">
+                     <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen </xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="ID_Gleis_Abschnitt_Darstellen"
+                              type="nsVerweise:TCID_Gleis_Abschnitt"
+                              minOccurs="1"
+                              maxOccurs="1">
+                     <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gleisabschnitt, dessen Belegung auf der Bedien Oberflaeche als Anrückabschnitt dargestellt werden soll. Liegt dieser außerhalb des Planungsbereichs, wird statt des Verweises das Attribut Bez Bed Anrueckabschnitt gefüllt.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:choice>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="C_Wert_TypeClass" name="TCC_Wert">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:ENUMC_Wert"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Anzeige_Element_Bezeichnung_AttributeGroup"
+                   name="CBedien_Anzeige_Element_Bezeichnung">
+      <xs:sequence>
+         <xs:element name="Bez_Bed_Anzeige_Element"
+                     type="nsBedienung:TCBez_Bed_Anzeige_Element"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschriftung des Melders, der Taste oder des Schalters auf der Bedien Einrichtung Oertlich (Bezeichnungsschild).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Platz_Art_TypeClass" name="TCBedien_Platz_Art">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:ENUMBedien_Platz_Art"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Schrankreihe_TypeClass" name="TCSchrankreihe">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TSchrankreihe"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Oberflaeche_Zustaendigkeit_TypeClass"
+                   name="TCOberflaeche_Zustaendigkeit">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TOberflaeche_Zustaendigkeit"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="YY_Wert_Type" name="TYY_Wert">
+      <xs:restriction base="xs:integer">
+         <xs:pattern value="[1-9]|1[0-5]"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType ecore:name="Y_Wert_Type" name="TY_Wert">
+      <xs:restriction base="xs:integer">
+         <xs:pattern value="[1-9]|1[0-5]"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Bedien_Einricht_Oertlich_Allg_AttributeGroup"
+                   name="CBedien_Einricht_Oertlich_Allg">
+      <xs:sequence>
+         <xs:element name="Bedien_Einricht_Bauart"
+                     type="nsBedienung:TCBedien_Einricht_Bauart"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bauart der Bedieneinrichtung. Je nach Art und Anzahl der bedienbaren Elemente werden die erforderlichen Bedieneinrichtungen ausgebildet. Für Nahbedienungen gilt außerdem: NB_Art W: Bedienpult oder Bediensäule; NB_Art R: Bedientablett, Stelltisch- oder -pult. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Hupe_Anschaltzeit"
+                     type="nsBedienung:TCHupe_Anschaltzeit"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der Hupdauer in Sekunden. Das Attribut wird nur gefüllt, wenn es sich um eine Bedieneinrichtung für die Nahbedienung handelt. Wird auf die Hupe einer NB-Bedieneinrichtung verzichtet, ist eine Anschaltdauer von Null Sekunden zu planen. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es findet sich im zugehörigen Lastenheft sowie in firmenspezifischen Projektierungsunterlagen, die jedoch dem LST-Fachplaner nicht zur Verfügung stehen. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[0..65535]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Schalter_TypeClass" name="TCSchalter">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:ENUMSchalter"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Oberflaeche_Anhaenge_AttributeGroup"
+                   name="CBedien_Oberflaeche_Anhaenge">
+      <xs:sequence>
+         <xs:element name="ID_Anhang_Monitoraufteilung"
+                     type="nsVerweise:TCID_Anhang"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anhang mit der vom Nutzer gewünschten groben Aufteilung der Infrastruktur (z. B. Stellelemente) auf die jeweils anzuzeigenden Bildinhalte der Bedienoberfläche des IB I als Realisierungsvorgabe im Rahmen der AP PT 1 BZ, sofern keine Funktionale und Betriebliche Prüfung (BEST) stattfindet. Eine Monitoraufteilung im Sinne einer Benutzung der Monitore für bestimmte Segmente des Standardbedienplatzes (IB I, IB II, IB III, TK), also die Anordnung der Monitore selbst am Bedienplatz, ist hier nicht gemeint. Diese wird im Attribut ID Anhang Moebelaufstellplan Aufriss verwaltet. Beispiel: Media:Monitoraufteilung.pdf. Wird eine Funktionale und Betriebliche Prüfung durchgeführt (BEST), werden die Vorgaben über ID Anhang Vorgabe BELU übergeben.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ID_Anhang_Richtungssinn"
+                     type="nsVerweise:TCID_Anhang"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anhang zur Erläuterung des Richtungssinns. Der Richtungssinn ist eine Realisierungsvorgabe der AP PT 1 BZ und wird vom Nutzer vorgegeben. Er muss unter Beachtung der Richtlinie 819.0603 innerhalb des Steuerbezirkes und an den Grenzen einschließlich aller dargestellten abzweigenden Strecken eindeutig sein. Die Vorgaben für den Richtungssinn beziehen sich zumindest immer auf einen kompletten Steuerbezirk. Eine Angabe für den gesamten Bereich einer Betriebszentrale ist ebenfalls möglich (BZ Hannover). Somit können einzelne ESTW-Zentraleinheiten bei Bedarf ohne Änderung des Richtungssinnes in einen anderen Bedienbezirk (Steuerbezirk) umgesetzt werden. Die Vorgabe für den Richtungssinn ist jedoch als Eigenschaft der Bedienoberfläche modelliert. Gegebenenfalls müssen hier Zulässigkeitsprüfungen ablaufen. Beispiele: UZ Elsterwerda und UZ Dresden-Neustadt Media:Richtungssinn.pdf, BZ Hannover Media:Richtungssinn BZ Hannover.pdf. DB Regelwerk Richtlinie 819.0603 </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ID_Anhang_Vorgabe_BELU"
+                     type="nsVerweise:TCID_Anhang"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">In diesem Anhang werden die Realisierungsvorgaben für die Bedienoberflächen in Form von Bildern der jeweiligen Bereichsübersichten und Lupen im PDF-Format geliefert. Diese Realisierungsvorgaben werden in BEST erzeugt, wenn das ESTW einer Funktionalen und Betrieblichen Prüfung unterzogen wurde. Wenn keine Funktionale und Betriebliche Prüfung (BEST) erstellt wurde, werden diese Bilder auch vom Auftragnehmer auf Grundlage von ID Anhang Monitoraufteilung erstellt und dem Auftraggeber zur Prüfung übergeben. In der Regel werden diese Bilder dann vom zuständigen Leiter Fahrdienst geprüft und frei gegeben. Beispiel: Media:BELUVorgabe.pdf. DB-Regelwerk Wenn keine Funktionale und Betriebliche Prüfung stattfindet, werden die Realisierungsvorgaben im Rahmen des PT 1 BZ übergeben (Monitoraufteilung). </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Bedienplatznummer_Type" name="TBedienplatznummer">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Bedien_Einricht_Bauart_TypeClass"
+                   name="TCBedien_Einricht_Bauart">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:ENUMBedien_Einricht_Bauart"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="A_Wert_TypeClass" name="TCA_Wert">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:ENUMA_Wert"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="IP_Adressblock_Grau_TypeClass" name="TCIP_Adressblock_Grau">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TIP_Adressblock_Grau"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Bezeichnung_BSO_Type" name="TBezeichnung_BSO">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:simpleType name="ENUMA_Wert">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMA_Wert_16" value="16"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_32" value="32"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_48" value="48"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_64" value="64"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_80" value="80"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_96" value="96"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_112" value="112"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_128" value="128"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_144" value="144"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_160" value="160"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_176" value="176"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_192" value="192"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_208" value="208"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_224" value="224"/>
+         <xs:enumeration ecore:name="ENUMA_Wert_240" value="240"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Bedien_Oertlichkeit" name="CBedien_Oertlichkeit">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung einer Oertlichkeit zum Bedien Bezirk, aus dem sie bedient wird. Dabei werden in diesem Zuordnungsobjekt die vorhandenen Angaben aus dem Objekt Örtlichkeit der jeweiligen Betriebsstelle um weitere Angaben wie beispielsweise die ESTW-Kennzahl oder den Betriebsstellenbezeichner (Streckenziel) planerisch angereichert. Gemäß Richtlinie 819.0603 müssen die ESTW-Kennzahlen und Betriebsstellenbezeichner im Steuerbezirk und an seinen Grenzen eindeutig (einmalig) sein. Diese Regel kann nicht über das Modell abgebildet werden, sondern muss in der Plausibilitäts- und Zulässigkeitsprüfung (PlaZ) abgefangen werden. Siehe Beispiel Media:Lupen HBS1.pdf \"Bf Braunschweig Hbf (HBS) 30\": Betriebsstellenbezeichner ==\u0026gt; \"Bf Braunschweig Hbf\", Oertlichkeit ==\u0026gt; \"HBS\", Kennzahl ==\u0026gt; \"30\". DB-Regelwerk 819.0603 </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>Bedienung Fdl BZ</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="Bedien_Oertlichkeit_Kennzahlen"
+                           type="nsBedienung:CBedien_Oertlichkeit_Kennzahlen"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="ID_Bedien_Bezirk"
+                           type="nsVerweise:TCID_Bedien_Bezirk"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Mit diesem Verweis werden alle aus einem Bedienbezirk steuerbaren Örtlichkeiten diesem planerisch zugeordnet. Heute erfolgt dies implizit über die Kennzahlentabelle, Steuerbezirksgrafiken oder die Beschreibung im Erläuterungsbericht. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Oertlichkeit"
+                           type="nsVerweise:TCID_Oertlichkeit_Proxy"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis zur Ermittlung der Ril 100-Abkürzung für die jeweils im Bedienbezirk bedienten Betriebsstellen. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Regionalbereich_TypeClass" name="TCRegionalbereich">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBasisTypen:TRegionalbereich"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="DD_Wert_Type" name="TDD_Wert">
+      <xs:restriction base="xs:integer">
+         <xs:pattern value="[1-9]|10"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ENUMOberflaeche_Bildart">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMOberflaeche_Bildart_BERUE" value="BERUE"/>
+         <xs:enumeration ecore:name="ENUMOberflaeche_Bildart_Lupe" value="Lupe"/>
+         <xs:enumeration ecore:name="ENUMOberflaeche_Bildart_sonstige" value="sonstige"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType ecore:name="B_Wert_Type" name="TB_Wert">
+      <xs:restriction base="xs:integer">
+         <xs:pattern value="[1-9]|1[0-6]"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="IP_Adressblock_Blau_TypeClass" name="TCIP_Adressblock_Blau">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TIP_Adressblock_Blau"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Kennzahl_TypeClass" name="TCKennzahl">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBasisTypen:TKennzahl"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Hupe_Anschaltzeit_TypeClass" name="TCHupe_Anschaltzeit">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:THupe_Anschaltzeit"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Steuerbezirksname_Type" name="TSteuerbezirksname">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Bedien_Einricht_Oertl_Bez_TypeClass"
+                   name="TCBedien_Einricht_Oertl_Bez">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TBedien_Einricht_Oertl_Bez"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Taste_TypeClass" name="TCTaste">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:ENUMTaste"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="BSO_IP_AB_Teilsystem_AttributeGroup"
+                   name="CBSO_IP_AB_Teilsystem">
+      <xs:sequence>
+         <xs:element name="BSO_Teilsystem_Art"
+                     type="nsBedienung:TCBSO_Teilsystem_Art"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art des BSO-Teilsystems (integriertes Bediensystem (iBS) oder Transfernetz Bedienung).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IP_Adressblock_Blau"
+                     type="nsBedienung:TCIP_Adressblock_Blau"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für das Teilsystem reservierter Adressblock im blauen Weg des bbIP-Netzes. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="IP_Adressblock_Grau"
+                     type="nsBedienung:TCIP_Adressblock_Grau"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für das Teilsystem reservierter Adressblock im grauen Weg des bbIP-Netzes. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Einrichtung_Oertlich_Bezeichnung_AttributeGroup"
+                   name="CBedien_Einrichtung_Oertlich_Bezeichnung">
+      <xs:sequence>
+         <xs:element name="Bedien_Einricht_Oertl_Bez"
+                     type="nsBedienung:TCBedien_Einricht_Oertl_Bez"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung der örtlichen Bedieneinrichtung. Örtliche Bedieneinrichtungen haben in der Regel keine eigene Bezeichnung in der Außenanlage. Das Attribut wird daher nur gefüllt, wenn davon abweichend die Bedieneinrichtung eine Bezeichnung erhalten soll. Die Bezeichnung der jeweils zu bedienenden Elemente für die Beschriftung auf der örtlichen Bedieneinrichtung ist den Elementen oder dem Anhang Benutzeroberfläche zu entnehmen.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bez_Bed_Zentrale_TypeClass" name="TCBez_Bed_Zentrale">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TBez_Bed_Zentrale"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bezeichnung_BSO_TypeClass" name="TCBezeichnung_BSO">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TBezeichnung_BSO"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType name="ENUMBSO_Teilsystem_Art">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMBSO_Teilsystem_Art_iBS" value="iBS"/>
+         <xs:enumeration ecore:name="ENUMBSO_Teilsystem_Art_Transfernetz_Bedienung"
+                         value="Transfernetz Bedienung"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Bedien_Oberflaeche_Bild_Allg_AttributeGroup"
+                   name="CBedien_Oberflaeche_Bild_Allg">
+      <xs:sequence>
+         <xs:element name="Oberflaeche_Bildart"
+                     type="nsBedienung:TCOberflaeche_Bildart"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bildart Berü oder Lupe. Mit dem Attribut Bildart wird zwischen Berü und Lupe unterschieden. Eine Beschreibung des Zuständigkeitsbereiches der einzelnen Bilder erfolgt im Rahmen eines anderen Attributs.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Oberflaeche_Zustaendigkeit"
+                     type="nsBedienung:TCOberflaeche_Zustaendigkeit"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verbale Beschreibung, welche zu steuernden Anteile des ESTW auf diesem Oberflächenbild dargestellt werden sollen. Beispiel aus herkömmlicher Planung (Für das Beispiel dieses Attributes ist nur die zweite Spalte der Tabelle relevant, die erste Spalte wird neu durch die Attribute Bildart und Bildbezeichnung ersetzt.): Media:Zustaendigkeit.pdf.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Melder_TypeClass" name="TCMelder">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:ENUMMelder"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Zentrale_Bezeichnung_AttributeGroup"
+                   name="CBedien_Zentrale_Bezeichnung">
+      <xs:sequence>
+         <xs:element name="Bez_Bed_Zentrale"
+                     type="nsBedienung:TCBez_Bed_Zentrale"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung einer Betriebszentrale, die nicht gemäß Richtlinie 100 bezeichnet ist (z. B. eine regionale Bedienzentrale) und deren Name somit nicht über den Verweis auf eine Örtlichkeit ermittelt werden kann. Derzeit wird noch geprüft, ob auch regionale Bedienzentralen gemäß Ril 100 bezeichnet werden müssen. Entsprechend kann dieses Attribut ggf. entfallen oder als \"nicht Pflicht\" anderweitig verwendet werden.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Bezirk_Adressformel_AttributeGroup"
+                   name="CBedien_Bezirk_Adressformel">
+      <xs:sequence>
+         <xs:element name="A_Wert"
+                     type="nsBedienung:TCA_Wert"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der A-Wert wird gemäß 819.0705 Abschnitt 6 (9) und (10) gebildet.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="B_Wert"
+                     type="nsBedienung:TCB_Wert"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der B-Wert wird gemäß 819.0705 Abschnitt 6 (9) und (10) gebildet. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..16] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="C_Wert"
+                     type="nsBedienung:TCC_Wert"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der C-Wert wird gemäß 819.0705 Abschnitt 6 (8) gebildet. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="DD_Wert"
+                     type="nsBedienung:TCDD_Wert"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der DD-Wert wird gemäß 819.0705 Abschnitt 6 (11) gebildet. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..10] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="X_Wert"
+                     type="nsBedienung:TCX_Wert"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der X-Wert wird gemäß 819.0705 Abschnitt 6 (5) und (7) gebildet. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Y_Wert"
+                     type="nsBedienung:TCY_Wert"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der Y-Wert wird gemäß 819.0705 Abschnitt 6 (5) und (7) gebildet. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..15] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="YY_Wert"
+                     type="nsBedienung:TCYY_Wert"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vorgabewert für Rechneradressen gemäß Adressformel für die Kommunikation zwischen Bedien Bezirk (Steuerbezirk) und ESTW Zentraleinheit (Unterzentrale). DB-Regelwerk Der YY-Wert wird gemäß 819.0705 Abschnitt 6 (8) gebildet. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..15] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Hersteller_TypeClass" name="TCHersteller">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBasisTypen:THersteller"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType name="ENUMBedien_Einricht_Bauart">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMBedien_Einricht_Bauart_Bedienpult" value="Bedienpult"/>
+         <xs:enumeration ecore:name="ENUMBedien_Einricht_Bauart_Bediensaeule"
+                         value="Bediensaeule"/>
+         <xs:enumeration ecore:name="ENUMBedien_Einricht_Bauart_Bedientablett"
+                         value="Bedientablett"/>
+         <xs:enumeration ecore:name="ENUMBedien_Einricht_Bauart_Bedientafel" value="Bedientafel"/>
+         <xs:enumeration ecore:name="ENUMBedien_Einricht_Bauart_sonstige" value="sonstige"/>
+         <xs:enumeration ecore:name="ENUMBedien_Einricht_Bauart_Stellpult" value="Stellpult"/>
+         <xs:enumeration ecore:name="ENUMBedien_Einricht_Bauart_Stelltisch" value="Stelltisch"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType ecore:name="Oberflaeche_Zustaendigkeit_Type"
+                  name="TOberflaeche_Zustaendigkeit">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Bedien_Anzeige_Element_Allg_AttributeGroup"
+                   name="CBedien_Anzeige_Element_Allg">
+      <xs:sequence>
+         <xs:choice minOccurs="1" maxOccurs="1">
+            <xs:element name="Melder"
+                        type="nsBedienung:TCMelder"
+                        minOccurs="0"
+                        maxOccurs="1">
+               <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art des Melders für eine örtliche Bedieneinrichtung. Anwendungsbeispiele: Melder an Abfertigungssäulen, Zustimmungseinrichtungen für den Zugleitbetrieb, Bedieneinrichtungen von (temporär) örtlich bedienten stellwerksgesteuerten Stellelementen. Für Bedieneinrichtungen von Nahstellbereichen und Bahnübergängen werden die Melder im Objekt BUE Bedien Anzeige Element bzw. NB Bedien Anzeige Element geplant. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. </xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="Schalter"
+                        type="nsBedienung:TCSchalter"
+                        minOccurs="0"
+                        maxOccurs="1">
+               <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art des Schalters für eine örtliche Bedieneinrichtung. Anwendungsbeispiele: Schalter an Abfertigungssäulen, Zustimmungseinrichtungen für den Zugleitbetrieb, Bedieneinrichtungen von (temporär) örtlich bedienten stellwerksgesteuerten Stellelementen. Für Bedieneinrichtungen von Nahstellbereichen und Bahnübergängen werden die Schalter im Objekt BUE Bedien Anzeige Element bzw. NB Bedien Anzeige Element geplant. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. </xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="Taste"
+                        type="nsBedienung:TCTaste"
+                        minOccurs="0"
+                        maxOccurs="1">
+               <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der Taste für eine örtliche Bedieneinrichtung, außer solchen mit BÜ- und NB-Funktionen. Für Bedieneinrichtungen von Bahnübergängen und Nahstellbereichen werden die Tasten im Objekt BUE Bedien Anzeige Element bzw. NB Bedien Anzeige Element geplant. Anwendungsbeispiele: Tasten an Abfertigungssäulen, Zustimmungseinrichtungen für den Zugleitbetrieb, Bedieneinrichtungen von (temporär) örtlich bedienten stellwerksgesteuerten Stellelementen. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. </xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:choice>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Anzeige_Element" name="CBedien_Anzeige_Element">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung von Stellelementen zu einer örtlichen Bedieneinrichtung und Abbildung von Meldern, Tasten und Schaltern einer örtlichen Bedieneinrichtung.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>BÜ|ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="Bedien_Anzeige_Element_Allg"
+                           type="nsBedienung:CBedien_Anzeige_Element_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="Bezeichnung"
+                           type="nsBedienung:CBedien_Anzeige_Element_Bezeichnung"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Bedien_Einrichtung_Oertlich"
+                           type="nsVerweise:TCID_Bedien_Einrichtung_Oertlich"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Mit diesem Verweis erfolgt die Verbindung eines Objekts zu seiner örtlichen Bedieneinrichtung.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Verknuepftes_Element"
+                           type="nsVerweise:TCID_Verknuepftes_Element"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein Signal oder W Kr Gsp Element, für das eine Abhängigkeit zu einem Schalter, Melder oder einer Taste besteht. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Rueckschauzeit_TypeClass" name="TCRueckschauzeit">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TRueckschauzeit"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="IP_Adressblock_Grau_Type" name="TIP_Adressblock_Grau">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Bedien_Bezirk_Anhaenge_AttributeGroup"
+                   name="CBedien_Bezirk_Anhaenge">
+      <xs:sequence>
+         <xs:element name="ID_Anhang_Anbindung_IB2"
+                     type="nsVerweise:TCID_Anhang"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Plan zur Kabel-/Trassen-/Datenanbindung. Pläne können z. B. zur Darstellung der Kabelverbindungen vom IB 1 zum IB 2 angefügt werden. Die Unterlagen sind in den Standorten unterschiedlich oder gar nicht vorhanden und werden ggf. als Anlage der AP PT 1 beigefügt. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ID_Anhang_Anbindung_IB3"
+                     type="nsVerweise:TCID_Anhang"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Plan zur Kabel-/Trassen-/Datenanbindung. Pläne können z. B. zur Darstellung der Kabelverbindungen vom IB 1 zum IB 3 angefügt werden. Die Unterlagen sind in den Standorten unterschiedlich oder gar nicht vorhanden und werden ggf. als Anlage der AP PT 1 beigefügt. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ID_Anhang_Steuerbez_Uebersicht"
+                     type="nsVerweise:TCID_Anhang"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">In diesen Anhang wird die Steuerbezirksübersicht gemäß 819.0603 als PDF eingebettet. Beispiel: Media:Steuerbezirksuebersicht.pdf DB-Regelwerk 819.0603 </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Bezirk_Allg_AttributeGroup"
+                   name="CBedien_Bezirk_Allg">
+      <xs:sequence>
+         <xs:element name="Anbindung_IB2"
+                     type="nsBedienung:TCAnbindung_IB2"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verbindung IB 1 zu IB 2. Angabe, ob der jeweilige Bedien Bezirk (Steuerbezirk) eine Anbindung zum Integritätsbereich 2 (IB II) hat (true) oder nicht (false). Die Planungsdaten für die IB I-IB II-Kopplung werden über ID Anhang Anbindung IB2 im PDF-Format als Anhang beigegeben.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Anbindung_IB3"
+                     type="nsBedienung:TCAnbindung_IB3"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verbindung IB 1 zu IB 3. Angabe, ob der jeweilige Bedien Bezirk (Steuerbezirk) eine Anbindung zum Integritätsbereich 3 (IB III) hat (true) oder nicht (false). Die Planungsdaten für die IB III-Anbindung werden über ID Anhang Anbindung IB3 im PDF-Format als Anhang beigegeben.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Hersteller"
+                     type="nsBedienung:TCHersteller"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Unternehmen, das die Funktionsfähigkeit der Anlage verantwortlich hergestellt hat oder Hersteller des jeweiligen Elements. Diese Eigenschaft ist kein Datum einer Planung, sondern dient im Rücklauf der Planung dazu den Hersteller im Bestand zu erfassen. Es ist die zum Zeitpunkt der Inbetriebnahme gültige Firmierung zu verwenden. DB-Regelwerk Beschreibung im Erläuterungsbericht</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:PlanningStage>PT2</ppi:PlanningStage>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Schrankreihe"
+                     type="nsBedienung:TCSchrankreihe"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ordnungskriterium eines Bedien_Bezirkes im Rechnerraum. Das Attribut kann, in Abhängigkeit von den örtlichen Gepflogenheiten, aus mehreren alphanumerischen und Sonderzeichen bestehen.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Steuerbezirksname"
+                     type="nsBedienung:TCSteuerbezirksname"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe des regional übliche Namen des Bedienbezirks (Steuerbezirks) in der BZ-Planung (AP PT 1 BZ). Beispiele sind: \"Rechter Rhein\", \"Allgäu/Fichtelgebirge\", etc.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Steuerbezirksnummer"
+                     type="nsBedienung:TCSteuerbezirksnummer"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ordnungskriterium des Bedien-Bezirks in den Planunterlagen. Die Steuerbezirksnummer besteht in der Regel aus einem numerischen Zeichen, ggf. aus einer Ganzzahl. Da regional Abweichungen möglich sind, wurde der Basistyp offen gehalten.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_GBT" name="CBedien_GBT">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Planung aller Parameter, die für die Darstellung der Gleisbenutzungstabelle (GBT) auf dem Bedienplatz für den Nutzer erforderlich sind.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>Bedienung Fdl ESTW-ZE</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="Bedien_GBT_Allg"
+                           type="nsBedienung:CBedien_GBT_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="ID_Anhang_Vorgabe_GBT"
+                           type="nsVerweise:TCID_Anhang"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anhang mit Parametern für die Anzahl und Anordnung der Zuglenkbetriebsstellen in der Gleisbenutzungstabelle (GBT). Die konkreten Inhalte werden derzeit abgestimmt. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Bedien_Bezirk"
+                           type="nsVerweise:TCID_Bedien_Bezirk"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Die Eigenschaften der Gleisbelegungstabelle als Element der Bedienoberfläche werden derzeit noch modelliert. Deshalb erfolgt eine Beschreibung aller damit zusammenhängender Eigenschaften und Verweise erst nach Abschluss dieser Konsolidierungsphase. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="YY_Wert_TypeClass" name="TCYY_Wert">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TYY_Wert"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Standort" name="CBedien_Standort">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bei DSTW: Standort, von dem die Bedienung der DSTW erfolgt. Von einem Bedienstandort können mehrere Technikstandorte bedient werden.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>Bedienung Fdl BZ</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="Bezeichnung"
+                           type="nsBedienung:CBedien_Standort_Bezeichnung"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="BSO_IP_Adressblock"
+                           type="nsBedienung:CBSO_IP_Adressblock"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+               <xs:element name="ID_Unterbringung"
+                           type="nsVerweise:TCID_Unterbringung"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Unterbringung (Gebäude), in der der Bedien-Standort untergebracht ist.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Oberflaeche" name="CBedien_Oberflaeche">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Topologisches Abbild der für die Bedienung und Anzeige eines ESTW relevanten sicherungstechnischen Anlagen. Dies wird in Form von Meldebildern mit unterschiedlicher Informationstiefe dargestellt. Darüber hinaus gibt es weitere zum Bedienplatzsystem gehörende Meldebilder. Folgende Meldebildtypen stehen an einem Bedienplatzsystem (BPS) zur Verfügung: Bereichsübersicht (Berü), Bereichsübergreifende Berü, Lupe, Gleisbenutzungstabelle (GBT), Kommunikationsanzeige (KA), KA-Bild 1 (PSI-Spiegel), KA-Bild 2 (ESTW-Störungsmeldungen), Betriebsstatus (Rechnerstörungen), Sammelmelderbild (SM-Bild), Dokumentation (Doku), Integrierte Bedienerführung. An anderen Bedienplatzsystemen können andere Meldebildtypen möglich sein. Die Eigenschaften eines Bildes sind unter dem Objekt Bedien Oberflaeche Bild zusammengefasst. Mehrere Bilder verweisen auf das Objekt Bedien_Oberflaeche. Die Möglichkeiten der Aufschaltung der jeweiligen Bedienoberflächen auf den Bedienplätzen sind implizite Stellwerksfunktion. Die dazu notwendigen Berechtigungen sind Betriebsdaten der Instandhaltung. Diese Parameter werden im PT I nicht geplant und im Datenmodell nicht abgebildet. Sondern von der örtlichen Instandhaltung in die Systeme eingegeben. Die Bildbezeichnung des jeweiligen Oberflächenbildes nach der signifikanten (also der bedeutenstenten) Betriebsstelle entsprechend Richtlinie 819.0603 in der Form \"(Bildart)_(Ril 100 Abk)\" wird über die Attribute Oberflaeche Bildart und ID Oertlichkeit gebildet. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>Bedienung Fdl ESTW-ZE</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="Bedien_Oberflaeche_Anhaenge"
+                           type="nsBedienung:CBedien_Oberflaeche_Anhaenge"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="ID_Bedien_Bezirk"
+                           type="nsVerweise:TCID_Bedien_Bezirk"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf einen Bedien_Bezirk zur Zuordnung der Bedienoberflächen eines Steuerbereiches und der für Ihre Darstellung notwendigen Parameter. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedienplatznummer_TypeClass" name="TCBedienplatznummer">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TBedienplatznummer"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Einrichtung_Oertlich"
+                   name="CBedien_Einrichtung_Oertlich">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Abbildung einer örtlichen Bedieneinrichtung (Stelltafel, Bedienpult etc.) als physisches Element der Außenanlage. Bedienbare Elemente, die nicht von einer ESTW-Bedienoberfläche bedient werden, sind durch eine entsprechende Bedieneinrichtung umstellbar. Weiterhin sind in der Bedieneinrichtung Tasten für die Kommunikation zwischen özF und Bediener untergebracht. Im Objekt Bedien_Einrichtung_Oertlich wird die physische Ausbildung der Bedieneinrichtung abgebildet. Die dazugehörigen Melder, Schalter und Taster sind im Objekt Bedien Anzeige Element modelliert. Die logischen Funktionen einer Bedieneinrichtung für Nahstellbereiche und Bahnübergänge befinden sich in den Objekten „BUE Bedien Anzeige Element“ oder „NB Bedien Anzeige Element“. Die Bedien_Einrichtung_Oertlich kommt zur Anwendung bei: Nahstellbereichen, Bahnübergängen (HET, UT, etc.), Schlüsselschaltern- und Tastern (Zustimmung, Gleisfreimeldung, Zugschlussmeldung, etc.), ZP 10/9-Bediensäulen, örtlicher Abgabe von Zugschlussmeldungen und Bedieneinrichtungen an Schnittstellen zum Zugleitbetrieb. Bedieneinrichtungen von elektrisch ortsgestellten Weichen (EOW) werden mit diesem Objekt nicht modelliert.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>BÜ|ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="Bedien_Einricht_Oertlich_Allg"
+                           type="nsBedienung:CBedien_Einricht_Oertlich_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="Bezeichnung"
+                           type="nsBedienung:CBedien_Einrichtung_Oertlich_Bezeichnung"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Anhang_Benutzeroberflaeche"
+                           type="nsVerweise:TCID_Anhang"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anhang zur Darstellung der Benutzeroberflaeche der Bedieneinrichtung. Beispielsweise kann eine Skizze für eine Gleisbilddarstellung oder die Anordnung der Schalter und Tasten beigefügt werden. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Aussenelementansteuerung"
+                           type="nsVerweise:TCID_Aussenelementansteuerung"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Außenelementansteuerung, von der die örtliche Bedieneinrichtung angesteuert wird. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Unterbringung"
+                           type="nsVerweise:TCID_Unterbringung"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den physischen Ort der Unterbringung von Aussenelementansteuerung, Bedien Einrichtung Oertlich, Bedien Platz, ESTW Zentraleinheit, PZB Element, Schlosskombination, Schluesselsperre und ZN. Für das PZB Element wird der Verweis nur für eine GÜ gefüllt - mit der Bedeutung: GÜ-Schaltkasten. Für die ZN ist der Verweis optional, da im Planungswerkzeug ZN/ZL keine Befüllung aller der für die Unterbringung notwendigen Attribute möglich ist. DB-Regelwerk Darstellung des Gebäudes, der Bediensäule bzw. des Schaltkastens im sicherungstechnischen Lageplan nach Ril 819.9002 oder Beschreibung im Erläuterungsbericht.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="DD_Wert_TypeClass" name="TCDD_Wert">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TDD_Wert"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Bedien_Einricht_Oertl_Bez_Type"
+                  name="TBedien_Einricht_Oertl_Bez">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="X_Wert_TypeClass" name="TCX_Wert">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:ENUMX_Wert"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bez_Bed_Anrueckabschnitt_TypeClass"
+                   name="TCBez_Bed_Anrueckabschnitt">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TBez_Bed_Anrueckabschnitt"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="IP_Adressblock_Grau_V6_Type" name="TIP_Adressblock_Grau_V6">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:simpleType ecore:name="Bez_Bed_Zentrale_Type" name="TBez_Bed_Zentrale">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:simpleType name="ENUMX_Wert">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMX_Wert_0" value="0"/>
+         <xs:enumeration ecore:name="ENUMX_Wert_1" value="1"/>
+         <xs:enumeration ecore:name="ENUMX_Wert_5" value="5"/>
+         <xs:enumeration ecore:name="ENUMX_Wert_8" value="8"/>
+         <xs:enumeration ecore:name="ENUMX_Wert_11" value="11"/>
+         <xs:enumeration ecore:name="ENUMX_Wert_12" value="12"/>
+         <xs:enumeration ecore:name="ENUMX_Wert_13" value="13"/>
+         <xs:enumeration ecore:name="ENUMX_Wert_15" value="15"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType ecore:name="Vorschauzeit_Type" name="TVorschauzeit">
+      <xs:restriction base="nsBasisTypen:TSekunde"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Vorschauzeit_TypeClass" name="TCVorschauzeit">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TVorschauzeit"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Bez_Bed_Anrueckabschnitt_Type"
+                  name="TBez_Bed_Anrueckabschnitt">
+      <xs:restriction base="nsBasisTypen:TZeichenkette"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Oberflaeche_Bildart_TypeClass" name="TCOberflaeche_Bildart">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:ENUMOberflaeche_Bildart"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Schrankreihe_Type" name="TSchrankreihe">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Bedien_Bezirk" name="CBedien_Bezirk">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bedienung von mehreren ESTW-Zentraleinheiten. Das Objekt Bedien_Bezirk ermöglicht den Anschluss mehrerer ESTW-Zentraleinheiten an einen Bedien_Bezirk z. B. in einer Bedien_Zentrale. Für einen Bedien_Bezirk gibt es zwei Modellierungen / Ausprägungen. 1.) Reell in einer Bedien_Zentrale, Regio-BZ oder sonstigem Technikstandort errichteter Bedien_Bezirk mit angeschalteten ESTW_Zentraleinheiten (mindestens einer) ==\u0026gt; zentraler Bedien_Bezirk 2.) Geplante, auf die Streckeninfrastruktur bezogene, logische Zusammenfassung von betrieblich und geographisch zusammenhängenden Strecken. ==\u0026gt; virtueller Bedien_Bezirk Beispiele: Siehe auch Anlage Media:Bedien Bezirk Typ.pdf 1.) Zentraler Bedien_Bezirk Das Konzept der zentralen Betriebsführung sieht vor, die Bedienung hochwertiger Strecken von ESTW, durch Bedien_Zentralen (Betriebszentralen) zu bündeln. Besonderheit dabei ist, dass in den Bedien_Zentralen selbst keine ESTW_Zentraleinheiten aus Verfügbarkeitsgründen aufgebaut werden dürfen. Das heißt, in den Betriebszentralen sind keine ESTW_Zentraleinheiten sondern nur Bedien_Plätze und Bedien_Bezirke errichtet. Diese Bedien_Bezirke, die die Bedienung hochwertiger Strecken bündeln, sind „zentrale Bedien_Bezirke“. Die Einschränkung, ESTW_Zentraleinheiten nicht im selben Gebäude wie ESTW_Bedien_Bezirke aufzubauen, gilt nicht für eine Regio-BZ oder sonstige Technikstandorte. Auch im Regionalnetz werden ESTW_Zentraleinheiten errichtet. Bisher sind diese örtlich besetzt. Unter anderem ist geplant bzw. in Realisierung, die Gebäude in denen bereits eine Regio-ESTW_Zentraleinheit errichtet ist, eine weitere Regio-ESTW_Zentraleinheit einzubauen. Um auch hier Redundanzen und Synergien nutzen zu können, ist geplant auch hier einen Bedien_Bezirk über die ESTW_Zentraleinheiten zu installieren. Der entscheidende Unterschied zur Bedienzentrale ist hier, dass Bedien_Bezirk und ESTW_Zentraleinheit in einem Gebäude untergebracht sind. Da Strecken sowohl das Regionalnetz und das Fern- und Ballungsnetz durchlaufen können, müssen die Kennzahlenplanungen ebenfalls Netzartübergreifend sein. Siehe auch Attribut „Kennzahl“. 2.) Virtueller Bedienbezirk Als Zweites ist die Option des virtuellen Bedien_Bezirks zu modellieren. Da ein Bedien_Bezirk ja nicht von Heute auf Morgen in ESTW-Technik da steht, müssen Übergangsregelungen geschaffen werden. Auch wenn Stellwerke in einem Bedien_Bezirk (noch) nicht in ESTW-Technik realisiert sind oder die Zuordnung zum Regionalnetz oder Fern- und Ballungsnetz noch offen ist gilt: Die Stw sind einem Bedien_Bezirk zuzuordnen um jegliche spätere Realisierungsform zu ermöglichen und so auch die Kennzahlenvergabe sicher zu gestalten. Siehe auch Attribut „Kennzahl“. Am Beispiel der Bedien_Bezirke 08 und 11 in der BZ Hannover sieht man, dass auch Stellwerke, die (noch) nicht an einen Bedien_Bezirk angebunden sind, eine Zuordnung erfahren müssen. Alle Stellwerke (HORX, HK, Sarstedt und Barnten) liegen in einem betrieblich zusammenhängenden Bezirk. Nämlich auf den Nord-Süd Strecken von Hannover Richtung Göttingen. Die Stellwerke HK, Sarstedt und Barnten sogar auf derselben Strecke 1732. Aktuell sind die Stellwerke Sarstedt und Barnten noch nicht an einen Bedien_Bezirk angebunden. In den Planungen und betrieblichen Vorgaben des Regionalbereichs aber für eine Zuordnung zum Bedien_Bezirk 11 vorgesehen. Daher muss schon jetzt der Bedienbezirk den Stw zugeordnet werden können, auch wenn sie ggf. trotz ESTW-Aufbau, örtlich besetzt werden. Durch die Darstellung in dem Verweis „zentral“ oder „virtuell“ lässt sich die aktuelle und geplante Anbindung darstellen. Im Verständnis der Betriebszentralen entspricht das Objekt Bedien_Bezirk dem Steuerbezirk. Das Objekt kann im LST-Datenmodell jedoch auch als virtueller Bedien_Bezirk vorkommen. Jeder ESTW-Zentraleinheit wird auch ein Bedien_Bezirk zugeordnet. In der Regel der, der in der Kennzahlenplanung vorgesehen ist. Also auch dann, wenn physisch kein Bedienbezirk (Steuerbezirk) oder eine vergleichbare Einheit vorhanden ist (z. B. Regionale Bedienzentrale mit nur einer ESTW-Zentraleinheit), aber bestimmte Eigenschaften mehrerer gemeinsam gesteuerter ESTW-Zentraleinheiten übergreifend geplant werden müssen (z.B. Richtungssinn und Kennzahlen). Gemäß Richtlinie 819.0603 müssen Kennzahlen und Betriebsstellenbezeichner im Steuerbezirk und an seinen Grenzen eindeutig (einmalig) sein. Diese Regel kann nicht über das Modell abgebildet werden, sondern muss in der Plausibilitäts- und Zulässigkeitsprüfung (PlaZ) abgefangen werden. Die Vorgabe für den Richtungssinn bezieht sich immer auf einen kompletten Steuerbezirk. Sie ist jedoch als Eigenschaft der Bedienoberfläche modelliert. Gegebenenfalls müssen hier Zulässigkeitsprüfungen ablaufen. Im Bedienbezirk werden außerdem die Angaben für die Datenkommunikation mit den zugeordneten ESTW-Zentraleinheiten geplant. Die Werte A, B und C werden nach Ril 819.0705A01 von der DB Netz festgelegt. Der Ansprechpartner findet sich in der Ril. Alle weiteren Werte lassen sich anhand dieser Unterlage bestimmen. Siehe Anlage Media:ipadr namensv ib1.pdf DB-Regelwerk 819.0603 819.0705A01 </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>Bedienung Fdl BZ</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="Bedien_Bezirk_Adressformel"
+                           type="nsBedienung:CBedien_Bezirk_Adressformel"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="Bedien_Bezirk_Allg"
+                           type="nsBedienung:CBedien_Bezirk_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="Bedien_Bezirk_Anhaenge"
+                           type="nsBedienung:CBedien_Bezirk_Anhaenge"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="ID_Bedien_Zentrale"
+                           type="nsVerweise:TCID_Bedien_Zentrale"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis vom Bedienbezirk auf die Bedienzentrale. Der Verweis ist auch für virtuelle Bedienbezirke zu füllen.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType name="ENUMMelder">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMMelder_Anforderungsempfang" value="Anforderungsempfang"/>
+         <xs:enumeration ecore:name="ENUMMelder_Anzeige_Betriebszustand"
+                         value="Anzeige_Betriebszustand"/>
+         <xs:enumeration ecore:name="ENUMMelder_Leuchtmelder_ZP_10" value="Leuchtmelder_ZP_10"/>
+         <xs:enumeration ecore:name="ENUMMelder_Leuchtmelder_ZP_9" value="Leuchtmelder_ZP_9"/>
+         <xs:enumeration ecore:name="ENUMMelder_Signalanforderung_empfangen"
+                         value="Signalanforderung_empfangen"/>
+         <xs:enumeration ecore:name="ENUMMelder_Signalfahrtmelder" value="Signalfahrtmelder"/>
+         <xs:enumeration ecore:name="ENUMMelder_Signalhaltmelder" value="Signalhaltmelder"/>
+         <xs:enumeration ecore:name="ENUMMelder_sonstige" value="sonstige"/>
+         <xs:enumeration ecore:name="ENUMMelder_Sperrmelder" value="Sperrmelder"/>
+         <xs:enumeration ecore:name="ENUMMelder_Vorbereitungsmeldung"
+                         value="Vorbereitungsmeldung"/>
+         <xs:enumeration ecore:name="ENUMMelder_Weichenmelder" value="Weichenmelder"/>
+         <xs:enumeration ecore:name="ENUMMelder_Zielmelder" value="Zielmelder"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Steuerbezirksnummer_TypeClass" name="TCSteuerbezirksnummer">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TSteuerbezirksnummer"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Hupe_Anschaltzeit_Type" name="THupe_Anschaltzeit">
+      <xs:restriction base="nsBasisTypen:TSekunde">
+         <xs:pattern value="0|[1-9][0-9]{0,3}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5]"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroup"
+                   name="CBedien_Anrueckabschnitt_Bezeichnung">
+      <xs:sequence>
+         <xs:element name="Bez_Bed_Anrueckabschnitt"
+                     type="nsBedienung:TCBez_Bed_Anrueckabschnitt"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung des Bedien-Anrückabschnitts. Wenn ein Bedien_Anrueckabschnitt nicht verlinkt werden kann (beispielsweise weil er außerhalb des zu bearbeitenden Planungsdatensatzes liegt), wird als Ersatz die Bezeichnung des Gleisabschnitts gefüllt, dessen Belegung als Anrückmeldung in der Bedienoberfläche gespiegelt werden soll.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Oberflaeche_Bild" name="CBedien_Oberflaeche_Bild">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zusammenfassung der Eigenschaften, die sich jeweils nur auf ein Bild der Bedienoberfläche beziehen. Eigenschaften, die alle Bilder betreffen, sind unter Bedien Oberflaeche eingebunden.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>Bedienung Fdl ESTW-ZE</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="Bedien_Oberflaeche_Bild_Allg"
+                           type="nsBedienung:CBedien_Oberflaeche_Bild_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="ID_Bedien_Oberflaeche"
+                           type="nsVerweise:TCID_Bedien_Oberflaeche"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung eines Bildes zur zugehörigen Bedienoberfläche. Die verschiedenen Bedienoberflächenbilder werden zu einem sogenannten \"Aufschaltbereich\" zusammengefasst. Dieser kann dann auf verschiedenen Bedienplätze aufgeschaltet werden. Die Aufschaltung ist Stellwerksfunktion und wird im LST-Datenmodell nicht abgebildet. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Oertlichkeit"
+                           type="nsVerweise:TCID_Oertlichkeit_Proxy"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis zur Ermittlung der Ril 100-Abkürzung für die Bildbezeichnung nach der signifikanten Betriebsstelle des jeweiligen Bildes. Signifikant deshalb, weil von einer ESTW Zentraleinheit, die einer Ril 100 zugeordnet ist, mehrere Aussenelementansteuerungen bedient werden können, die ggf. weitere Ril 100-Bezeichnungen haben. Siehe Beispiel Media:Lupen HBS1.pdf Über die Lupe \"L_HBS1\", die zur ESTW-Zentraleinheit \"ESTW Braunschweig HBS\" gehört, werden Aussenelementansteuerungen in den Bereichen der Örtlichkeiten \"HSMK\" und \"HBUH\" mit bedient. Die Lupe trägt aber die Bezeichnung der signifikanten ESTW-Zentraleinheit ESTW Braunschweig. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Bedien_Zentrale" name="CBedien_Zentrale">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Betriebsleitstelle eines EIU, aus der die Leit- und Sicherungstechnik von zentral gesteuerten ESTW planmäßig bedient wird. Die Betriebsleitstelle kann eine Betriebszentrale (BZ) der DB Netz oder auch eine zentrale Bedienstelle der Regionalnetze sein. Da die Bedien_Zentrale nicht notwendigerweise in der Nähe von Gleisen liegt, wird kein unmittelbarer Bezug zu einer Strecke hergestellt. Eine Örtlichkeit wird jedoch nach Ril 100 für den Standort festgelegt. In der Bedien_Zentrale sind die spezifischen Anhänge dargestellt. Weitere Pläne aus dem PT I BZ, wie beispielsweise Belegungspläne für Bodentanks, Kabelübersichtspläne, Verteilerbelegungspläne, Schrankpläne, Höheneinheiten und Patchfeldbelegungen in den Schränken für die BZ, werden als allgemeiner Anhang für die vererbten Eigenschaften aus dem Basisobjekt (Attribut Anhang) im Objekt Bedien_Zentrale angehängt.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>Bedienung Fdl BZ</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="ID_Anhang_Plan_Bedienraum"
+                           type="nsVerweise:TCID_Anhang"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Raumplan der Bedienräume als PDF-Anhang. Der Anhang beschreibt die Anordnung aller Bedienmöbel einer Bedienzentrale in den Bedienräumen zueinander sowie deren Anschlüsse für elektrische Energie, Potentialausgleich und Daten. Der Ein- und Ausbau von Bedienplätzen erfolgt in der üblichen Rot/Gelb-Darstellung. Beispiel: Media:Plan Bedieneben BZH.pdf </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Anhang_Plan_Rechnerraum"
+                           type="nsVerweise:TCID_Anhang"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Raumplan der Rechnerräume als PDF-Anhang. Der Anhang beschreibt die Anordnung aller Rechnerschränke einer Bedienzentrale in den Rechnerräumen zueinander sowie deren Anschlüsse für elektrische Energie, Potentialausgleich und Daten. Der Ein- und Ausbau von Rechnerschränken erfolgt in der üblichen Rot/Gelb-Darstellung. Beispiel: Media:Plan Keller BZH.pdf</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Strecke"
+                           type="nsVerweise:TCID_Strecke"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung einer Bedienzentrale zu einer Streckennummer. Bedienzentralen (Betriebszentralen) der DB Netz AG werden willkürlich einer Strecke zugeordnet, um den Anforderungen der Richtlinie 100 minimal zu genügen. Diese Zuordnung ist auf die „Hülle“ der Zentrale bezogen, nicht auf die aus ihr gesteuerte Infrastruktur. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:choice minOccurs="1" maxOccurs="1">
+                  <xs:element name="Bezeichnung"
+                              type="nsBedienung:CBedien_Zentrale_Bezeichnung"
+                              minOccurs="1"
+                              maxOccurs="1">
+                     <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen </xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="ID_Oertlichkeit"
+                              type="nsVerweise:TCID_Oertlichkeit_Proxy"
+                              minOccurs="1"
+                              maxOccurs="1">
+                     <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis zur Ermittlung des Ril 100-Bezeichners bei Bedienzentralen ohne abweichenden Namen. </xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+               </xs:choice>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Y_Wert_TypeClass" name="TCY_Wert">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TY_Wert"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Rueckschauzeit_Type" name="TRueckschauzeit">
+      <xs:restriction base="nsBasisTypen:TSekunde"/>
+   </xs:simpleType>
+   <xs:simpleType ecore:name="Bedienplatzbezeichnung_Type" name="TBedienplatzbezeichnung">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:simpleType name="ENUMBedien_Platz_Art">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMBedien_Platz_Art_Not_BPS" value="Not_BPS"/>
+         <xs:enumeration ecore:name="ENUMBedien_Platz_Art_Not_BPS_abgesetzt"
+                         value="Not_BPS_abgesetzt"/>
+         <xs:enumeration ecore:name="ENUMBedien_Platz_Art_sonstige" value="sonstige"/>
+         <xs:enumeration ecore:name="ENUMBedien_Platz_Art_Standard_BPS" value="Standard_BPS"/>
+         <xs:enumeration ecore:name="ENUMBedien_Platz_Art_Standard_BPS_abgesetzt"
+                         value="Standard_BPS_abgesetzt"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ENUMC_Wert">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMC_Wert_0" value="0"/>
+         <xs:enumeration ecore:name="ENUMC_Wert_64" value="64"/>
+         <xs:enumeration ecore:name="ENUMC_Wert_128" value="128"/>
+         <xs:enumeration ecore:name="ENUMC_Wert_192" value="192"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Bedienraumnummer_TypeClass" name="TCBedienraumnummer">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TBedienraumnummer"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="IP_Adressblock_Blau_V4_Type" name="TIP_Adressblock_Blau_V4">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="IP_Adressblock_Blau_V4_TypeClass"
+                   name="TCIP_Adressblock_Blau_V4">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:TIP_Adressblock_Blau_V4"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="BSO_Teilsystem_Art_TypeClass" name="TCBSO_Teilsystem_Art">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsBedienung:ENUMBSO_Teilsystem_Art"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="IP_Adressblock_Blau_V6_Type" name="TIP_Adressblock_Blau_V6">
+      <xs:restriction base="nsBasisTypen:TText"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Bedien_Oertlichkeit_Kennzahlen_AttributeGroup"
+                   name="CBedien_Oertlichkeit_Kennzahlen">
+      <xs:sequence>
+         <xs:element name="Betriebsstellenbezeichner"
+                     type="nsBedienung:TCBetriebsstellenbezeichner"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung der Betriebsstellenbezeichner und somit der Ausfahrziele, die vom Nutzer vorzugeben ist. Da eine ESTW Zentraleinheit mehrere Örtlichkeiten bedienen kann (siehe Kennzahl), ist es möglich, dass eine Kennzahl unterschiedliche Betriebsstellen als Ausfahrziele anfahren kann. Daher muss hier der Betriebsstellenbezeichner extra erfasst werden. DB-Regelwerk 819.0603 Anhang 3 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [2] Die Bezeichner für die Ausfahrziele (Betriebsstellenbezeichner) bestehen in der Regel aus den ersten beiden Buchstaben des Namens der nächsten Betriebsstelle. Sie sind so zu wählen, dass sie im Steuerbezirk einer BZ eindeutig sind. Dazu kann es notwendig sein, dass für den 2. Buchstaben ein anderer gewählt werden muss. Diese Vorgabe ist im PT 1 BZ niedergelegt und somit Planungsdatum des LST-Datenmodells. Auf der Bedienoberfläche werden duch den Hersteller entsprechend des gültigen Regelwerks folgende Ergänzungen vorgenommen: Eine Ziffer ist nur bei parallel geführten Gleisen/Strecken zwischen benachbarten Betriebsstellen (Bf, Abzw, Awanst) zu vergeben. Bei parallel geführten Strecken mit 3 Gleisen sind nur dann alle Gleise mittels Ziffern zu nummerieren, wenn die signaltechnische Ausrüstung aller Gleise gleich ist und alle Gleise gleichberechtigt betrieblich genutzt werden können. Bei parallel geführten Strecken mit mehr als 3 Gleisen sind alle Gleise mittels Ziffern zu bezeichnen. Bei 2 x zweigleisiger Streckenführung kann zusätzlich zur Nummerierung eine Gegengleiskennung mit „G“ sinnvoll sein. Bei 2 x zweigleisiger Streckenführung mit spezifischerNutzung, wie z.B. durch Fernbahn bzw. S-Bahn, kann es sinnvoll sein, die Ausfahrzielbezeichnungen für eine oder beide Strecken an Stelle der fortlaufenden Ziffer mit einem Buchstaben, wie z.B. „F“ bzw. „S“, zu bezeichnen. Diese Ergänzungen sind nicht Bestandteile des LST-Datenmodells.</ppi:Patternbeschreibung>
+                     <ppi:Patternbeschreibung_Abweichend>[2] zwei Groß oder Kleinbuchstaben ohne Umlaute</ppi:Patternbeschreibung_Abweichend>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Kennzahl"
+                     type="nsBedienung:TCKennzahl"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Eindeutige Kennzahl der Sicherungstechnik bzw. operativen Leittechnik innerhalb eines Bedienbezirks für eine Betriebsstelle. Die ESTW-Kennzahl kennzeichnet eine Betriebsstelle oder einen Betriebsstellenteil. Sie darf nicht mit der Bahnhofsnummer der Zugnummernmeldeanlage (Ril 819.0731) verwechselt werden. Die Kennzahl wird im Elementnamen verwendet. Zuteilung Eine Betriebsstelle kann mehrere Kennzahlen erhalten; vor allem dann, wenn es sich um eine Betriebsstelle mit vielen Elementen handelt. Durch den LST-Planer werden die Gebiete der Kennzahlen sinnvoll aufgeteilt. Eine weitere Möglichkeit besteht darin, dass in einem Gebäude zwei ESTW-Zentraleinheiten untergebracht sind (Beispiel: Hannover Hbf mit den ESTW-Zentraleinheiten „HH Kennzahl 06“ und „HHZX Kennzahl 30“). Eine Kennzahl kann aber auch mehrere Betriebsstellen beinhalten, insbesondere bei Betriebsstellen mit wenigen Elementen. Dies kommt zur Anwendung, wenn eine ESTW-Zentraleinheit zwei Überleitstellen steuert (Beispiel: ESTW-Zentraleinheit Giften HGIF Kennzahl 71 mit „Üst Giften HGIF“ und „Üst Ritterkamp HRIT“. In Stellbereichen von Bedienbezirken werden für Betriebsstellen (z. B. Bahnhöfe, Abzweigstellen, Anschlussstellen) Kennzahlen von 01 bis 99 vergeben. Diese Kennzahl muss im Bedienbezirk eindeutig sein. Eindeutigkeit der Kennzahlen bei angrenzenden Bedienbezirken entlang einer Strecke Innerhalb eines Bedienbezirks und für benachbarte Betriebsstellen eines angrenzenden Bedienbezirks entlang einer Strecke darf eine Kennzahl nur einmal verwendet werden. Beispiel: Media:Bedien Oertlichkeit Kennzahl 131121.pdf Für alle im jeweiligen Bereich befindlichen Stellelemente der Betriebsstellen und Strecken wird die Kennzahl Bestandteil der ausführlichen Elementbezeichnung. Hierdurch erübrigt sich in einem größeren Bereich der Infrastruktur die Mitführung eines Ortsbezeichners. Zentrale Vergabe von Kennzahlen auch ohne Anbindung an Bedien_Zentralen Unabnhängig ob eine ESTW-Zentraleinheit aus einer Bedien_Zentrale gesteuert wird oder nur örtlich eingerichtet ist, soll die Kennzahlenvergabe zentral im Sinne einer möglichen Konzentration von ESTW-Zentraleinheiten in Bedienbezirken geplant und vergeben werden. DB-Regelwerk Kennzahltabelle oder Kennzahelnübersichtsplan im PT 1, 819.0603 2, 819.9001 1 (5). </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Betriebsstellenbezeichner_Type"
+                  name="TBetriebsstellenbezeichner">
+      <xs:restriction base="nsBasisTypen:TZeichenkette">
+         <xs:pattern value="[a-zA-Z]{2}"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ENUMTaste">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMTaste_Ausfahrgruppentaste_ZP_9_10"
+                         value="Ausfahrgruppentaste_ZP_9_10"/>
+         <xs:enumeration ecore:name="ENUMTaste_Bedientaste_ZP_10" value="Bedientaste_ZP_10"/>
+         <xs:enumeration ecore:name="ENUMTaste_Bedientaste_ZP_9" value="Bedientaste_ZP_9"/>
+         <xs:enumeration ecore:name="ENUMTaste_Fahrstrassenanforderung"
+                         value="Fahrstrassenanforderung"/>
+         <xs:enumeration ecore:name="ENUMTaste_Fahrstrassenzustimmung"
+                         value="Fahrstrassenzustimmung"/>
+         <xs:enumeration ecore:name="ENUMTaste_Freimeldetaste" value="Freimeldetaste"/>
+         <xs:enumeration ecore:name="ENUMTaste_Gruppentaste" value="Gruppentaste"/>
+         <xs:enumeration ecore:name="ENUMTaste_Hilfstaste" value="Hilfstaste"/>
+         <xs:enumeration ecore:name="ENUMTaste_Loeschtaste" value="Loeschtaste"/>
+         <xs:enumeration ecore:name="ENUMTaste_Rueckgabetaste" value="Rueckgabetaste"/>
+         <xs:enumeration ecore:name="ENUMTaste_Schluesseltaste_DB_21"
+                         value="Schluesseltaste_DB_21"/>
+         <xs:enumeration ecore:name="ENUMTaste_Schluesseltaste_Streckenschluessel"
+                         value="Schluesseltaste_Streckenschluessel"/>
+         <xs:enumeration ecore:name="ENUMTaste_Schluesseltaste_Vierkant"
+                         value="Schluesseltaste_Vierkant"/>
+         <xs:enumeration ecore:name="ENUMTaste_Signalanforderung" value="Signalanforderung"/>
+         <xs:enumeration ecore:name="ENUMTaste_sonstige" value="sonstige"/>
+         <xs:enumeration ecore:name="ENUMTaste_Umstelltaste" value="Umstelltaste"/>
+         <xs:enumeration ecore:name="ENUMTaste_Weichenauffahrtaste" value="Weichenauffahrtaste"/>
+         <xs:enumeration ecore:name="ENUMTaste_Zieltaste" value="Zieltaste"/>
+         <xs:enumeration ecore:name="ENUMTaste_Zugfertigmeldetaste" value="Zugfertigmeldetaste"/>
+         <xs:enumeration ecore:name="ENUMTaste_Zugschlussmeldung" value="Zugschlussmeldung"/>
+         <xs:enumeration ecore:name="ENUMTaste_Zustimmungsanforderung"
+                         value="Zustimmungsanforderung"/>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:nsWeichen_und_Gleissperren="http://www.plan-pro.org/modell/Weichen_und_Gleissperren/1.10.0.1"
+           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1"
+           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.1"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsWeichen_und_Gleissperren"
+           ecore:package="org.eclipse.set.model.planpro.Weichen_und_Gleissperren"
+           targetNamespace="http://www.plan-pro.org/modell/Weichen_und_Gleissperren/1.10.0.1">
+   <xs:annotation>
+      <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+
+Weitere Informationen zur Lizenz finden Sie auf
+http://www.dbnetze.com/planpro
+
+Inhalt der Datei:
+XML Schema für PlanPro Schnittstelle.
+
+Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+
+--------------------------------------------------------------------------------
+
+This Document is licensed under the open source license RailPL V1.0.
+
+More information about the license can be found on
+http://www.dbnetze.com/planpro
+
+Contents of the file:
+XML Schema for PlanPro interface.</xs:documentation>
+   </xs:annotation>
+   <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.10.0.1"
+              schemaLocation="Verweise.xsd"/>
+   <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1"
+              schemaLocation="BasisTypen.xsd"/>
+   <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1"
+              schemaLocation="Basisobjekte.xsd"/>
+   <xs:simpleType name="ENUMElektrischer_Antrieb_Lage">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMElektrischer_Antrieb_Lage_links" value="links"/>
+         <xs:enumeration ecore:name="ENUMElektrischer_Antrieb_Lage_mittig" value="mittig"/>
+         <xs:enumeration ecore:name="ENUMElektrischer_Antrieb_Lage_rechts" value="rechts"/>
+         <xs:enumeration ecore:name="ENUMElektrischer_Antrieb_Lage_sonstige" value="sonstige"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType ecore:name="Kreuzungsgleis_Type" name="TKreuzungsgleis">
+      <xs:restriction base="nsBasisTypen:TLinksRechts"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Elektrischer_Antrieb_Anzahl_TypeClass"
+                   name="TCElektrischer_Antrieb_Anzahl">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:TElektrischer_Antrieb_Anzahl"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Weiche_Vorzugslage_Type" name="TWeiche_Vorzugslage">
+      <xs:restriction base="nsBasisTypen:TLinksRechts"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Kreuzungsgleis_TypeClass" name="TCKreuzungsgleis">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:TKreuzungsgleis"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Geschwindigkeit_R_TypeClass" name="TCGeschwindigkeit_R">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:TGeschwindigkeit_R"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Isolierfall_TypeClass" name="TCIsolierfall">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:TIsolierfall"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Weichenlaufkette_Zuordnung"
+                   name="CWeichenlaufkette_Zuordnung">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Logisches Objekt für die Zuordnung zwischen Weichenlaufketten und Signalen. Das Objekt ist in der Realität des Stellwerkes nicht vorhanden. Die Weichenlaufkette_Zuordnung hat keine Attributgruppe \"..._Allgemeine_Merkmale\".</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="ID_Signal"
+                           type="nsVerweise:TCID_Signal"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Signal, dem die Weichenlaufkette zugeordnet wird.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Weichenlaufkette"
+                           type="nsVerweise:TCID_Weichenlaufkette"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Weichenlaufkette, die dem Signal zugeordnet wird. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="W_Kr_Gsp_Element" name="CW_Kr_Gsp_Element">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Einzeln stellbarer Teil einer Weichenanlage oder einer Gleissperre, der höchstens zwei Stellungen (Fahrrichtung rechts oder links bzw. Entgleisungsschuh aufgelegt oder abgelegt) annehmen kann. Weichenanlagen bekommen 1 bzw. 2 Weichenelemente zugeordnet. Jedes Weichenelement besteht aus mindestens einer (ggf. mehreren) Komponenten (Zungenpaare), die die technische Sicht darstellen. Eine Kreuzung hat zwei Weichenelemente (A- und B-Seite). Im Fall beweglicher doppelter Herzstückspitzen hat die Kreuzung auch zwei Endlagen. Eine starre Kreuzung hat keine Regelzeichnung, da diese keinen Antrieb besitzt. Gleissperren haben kein Objekt im Sinn einer Anlage. Die Attributgruppen GZ_Freimeldung_R bzw. GZ_Freimeldung_L werden nur angegeben, wenn der rechte bzw. linke Schenkel einer Weiche nicht grenzzeichenfrei freigemeldet ist. Wenn das Element weder für eine Weiche oder Gleissperre genutzt wird (z.B. Verrrieglung einer beweglichen Brücke oder eines Tors), werden die Attributgruppen Gleissperre_Element und Weiche_Element nicht verwendet (optionale Choice). Siehe auch Modellierung Weichen. DB-Regelwerk Weichen werden gemäß Richtlinie 800.0120 gebaut. Für die Anordnung der Bauteile (einschließlich Antriebe) an einer Weiche und der Gleissperren existieren Regelzeichnungen der Gruppe S 73xx. Für die Planung von Weichen ist das Regelwerk 819.0401 zu beachten.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="Bezeichnung"
+                           type="nsBasisTypen:CBezeichnung_Element"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Regelzeichnung"
+                           type="nsVerweise:TCID_Regelzeichnung"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein Objekt Regelzeichnung, sofern bei einer Weiche (z. B. DKW) oder Gleissperre (z. B. gekuppelte Gleissperre) mehrere Komponenten in einer Regelzeichnung zusammengefasst sind. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Stellelement"
+                           type="nsVerweise:TCID_Stellelement"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Objekt Stellelement zur Zusammenfassung von Eigenschaften der Objekte BUE Schnittstelle, PZB Element, Schluesselsperre, Signal, W Kr Gsp Element. Das Stellelement enthält Informationen über den energetischen und logischen Anschluss der Objekte. Für das PZB Element ist der Verweis nur zu füllen, wenn das PZB_Element eine GÜ ist. DB-Regelwerk Bisher ohne eindeutige Darstellung </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_W_Kr_Anlage"
+                           type="nsVerweise:TCID_W_Kr_Anlage"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die W_Kr_Anlage, deren Bestandteil das W_Kr_Gsp_Element ist. Der Verweis wird nur für Weichen und Keuzungen verwendet. Er darf nicht bei Gleissperren verwendet werden.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Weichenlaufkette"
+                           type="nsVerweise:TCID_Weichenlaufkette"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Weichenlaufkette, in der das Weichenelement enthalten ist. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="W_Kr_Gsp_Element_Allg"
+                           type="nsWeichen_und_Gleissperren:CW_Kr_Gsp_Element_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:choice minOccurs="1" maxOccurs="1">
+                  <xs:element name="Gleissperre_Element"
+                              type="nsWeichen_und_Gleissperren:CGleissperre_Element"
+                              minOccurs="0"
+                              maxOccurs="1"/>
+                  <xs:element name="Weiche_Element"
+                              type="nsWeichen_und_Gleissperren:CWeiche_Element"
+                              minOccurs="0"
+                              maxOccurs="1"/>
+               </xs:choice>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="W_Kr_Anlage" name="CW_Kr_Anlage">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bauliche Gesamtheit des Objektes Weiche oder Kreuzung einschließlich der für seine Funktion unmittelbar und in der Nähe vorhandenen Stell-, Steuer- und Überwachungseinrichtungen. Typische Grundformen der Weichenanlagen sind: einfache Weiche (EW), einfache Kreuzungsweiche (EKW), doppelte Kreuzungsweiche (DKW), starre Kreuzung (KR) und Flachkreuzungen mit doppelten Herzstücken und beweglichen Spitzen (KR). Grundlage der Bezeichnungen ist die Ril 800.0120 in Verbindung mit den zugehörigen Anlagen. Weichenanlagen werden unterteilt in die einzelnen Elemente (Weichenelement). Die Elemente besitzen eine oder mehrere Komponenten (Weichenkomponente). Diese Objekte beschreiben in Verbindung mit Regelzeichnungen weitere Eigenschaften (z.B. Antriebe und Endlagenprüfer) der Weichenanlage. Siehe auch Modellierung Weichen. DB-Regelwerk Ril 800.0120 </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="ID_Anhang_DWS"
+                           type="nsVerweise:TCID_Anhang"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die zugehörige Digitale Weichenskizze, die als Dateianhang mittels des Objektes Anhang eingebunden wird. DB-Regelwerk Die Digitale Weichenskizze wird für alle neu zu beschaffenden Weichen nach Ril 823.0700 erstellt. Sie enthält alle konstruktiven Daten der zu beschaffenden Weiche. Die relevanten Daten für die signaltechnischen Planungen werden künftig der DWS entnommen bzw. mit dieser Datei abgeglichen. Die für die LST-Planung relevanten Daten werden in entsprechende Attribute der allgemeinen Merkmale eingetragen. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Signal"
+                           type="nsVerweise:TCID_Signal"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein Signal, welches den Zustand der W_Kr_Anlage signalisiert (z. B. Rückfallweichensignal).</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="W_Kr_Anlage_Allg"
+                           type="nsWeichen_und_Gleissperren:CW_Kr_Anlage_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Stammgleis_Type" name="TStammgleis">
+      <xs:restriction base="nsBasisTypen:TLinksRechts"/>
+   </xs:simpleType>
+   <xs:simpleType name="ENUMGleis_Abschluss_Art">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMGleis_Abschluss_Art_Bremsprellbock"
+                         value="Bremsprellbock"/>
+         <xs:enumeration ecore:name="ENUMGleis_Abschluss_Art_Drehscheibe" value="Drehscheibe"/>
+         <xs:enumeration ecore:name="ENUMGleis_Abschluss_Art_Faehranleger" value="Faehranleger"/>
+         <xs:enumeration ecore:name="ENUMGleis_Abschluss_Art_Festprellbock"
+                         value="Festprellbock"/>
+         <xs:enumeration ecore:name="ENUMGleis_Abschluss_Art_Infrastrukturgrenze"
+                         value="Infrastrukturgrenze"/>
+         <xs:enumeration ecore:name="ENUMGleis_Abschluss_Art_Kopframpe" value="Kopframpe"/>
+         <xs:enumeration ecore:name="ENUMGleis_Abschluss_Art_Schiebebuehne"
+                         value="Schiebebuehne"/>
+         <xs:enumeration ecore:name="ENUMGleis_Abschluss_Art_Schwellenkreuz"
+                         value="Schwellenkreuz"/>
+         <xs:enumeration ecore:name="ENUMGleis_Abschluss_Art_sonstige" value="sonstige"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Gleissperre_Vorzugslage_TypeClass"
+                   name="TCGleissperre_Vorzugslage">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:ENUMGleissperre_Vorzugslage"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Gleissperre_Element_AttributeGroup"
+                   name="CGleissperre_Element">
+      <xs:sequence>
+         <xs:element name="Gleissperre_Betriebsart"
+                     type="nsWeichen_und_Gleissperren:TCGleissperre_Betriebsart"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Neben dem Normalbetrieb (Element ist stellbar) kann das Element durch den Betriebsartenstecker in einer definierten Lage festgelegt werden.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>Betrieb</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Gleissperre_Vorzugslage"
+                     type="nsWeichen_und_Gleissperren:TCGleissperre_Vorzugslage"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vorzugslage der Gleissperre (Grundstellung). Dieses Attribut enthält den Eintrag abgelegt oder aufgelegt. Mit dem Attribut Vorzugslage Automatik kann festgelegt werden, dass diese Vorzugslage automatisch hergestellt wird. In großen Rangierbahnhöfen wird u. U. auf die Festlegung einer Vorzugslage verzichtet.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Zungenpruefkontakt_Anzahl_TypeClass"
+                   name="TCZungenpruefkontakt_Anzahl">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:TZungenpruefkontakt_Anzahl"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Herzstueck_Antriebe_TypeClass" name="TCHerzstueck_Antriebe">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:THerzstueck_Antriebe"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Weichensignal_TypeClass" name="TCWeichensignal">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:ENUMWeichensignal"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Auffahrortung_TypeClass" name="TCAuffahrortung">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="xs:boolean"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType name="ENUMGleissperre_Vorzugslage">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMGleissperre_Vorzugslage_abgelegt" value="abgelegt"/>
+         <xs:enumeration ecore:name="ENUMGleissperre_Vorzugslage_aufgelegt" value="aufgelegt"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ENUMW_Kr_Art">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMW_Kr_Art_ABW" value="ABW"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Art_DKW" value="DKW"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Art_DW" value="DW"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Art_EKW" value="EKW"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Art_EW" value="EW"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Art_Flachkreuzung" value="Flachkreuzung"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Art_IBW" value="IBW"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Art_Klothoidenweiche" value="Klothoidenweiche"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Art_Korbbogenweiche" value="Korbbogenweiche"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Art_Kr" value="Kr"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Art_sonstige" value="sonstige"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Weiche_Betriebsart_TypeClass" name="TCWeiche_Betriebsart">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:ENUMWeiche_Betriebsart"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Geschwindigkeit_L_Type" name="TGeschwindigkeit_L">
+      <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Auswurfrichtung_TypeClass" name="TCAuswurfrichtung">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:CAuswurfrichtung"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="W_Kr_Gsp_Stellart_TypeClass" name="TCW_Kr_Gsp_Stellart">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:ENUMW_Kr_Gsp_Stellart"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Zungenpruefkontakt_Anzahl_Type"
+                  name="TZungenpruefkontakt_Anzahl">
+      <xs:restriction base="xs:integer">
+         <xs:pattern value="[0-9]|1[0-5]"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="GZ_Freimeldung_R_AttributeGroup" name="CGZ_Freimeldung_R">
+      <xs:sequence>
+         <xs:element name="Element_Lage"
+                     type="nsWeichen_und_Gleissperren:TCElement_Lage"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe bei nicht grenzzeichenfreier Freimeldung eines Weichenschenkels, in welcher Lage das angrenzende Fahrwegelement (Gleis oder Weiche) zur Freiprüfung herangezogen wird. Wenn die Grenzzeichenfreiheit durch die Freiprüfung eines angrenzenden Fahrwegelementes erkannt wird, das ein Gleisabschnitt ist, wird Abschnitt, eine Weiche ist, die unabhängig von ihrer Lage herangezogen wird, wird Weiche, eine Weiche ist, die nur in Linkslage herangezogen wird, wird WeicheL, eine Weiche ist, die nur in Rechtslage herangezogen wird, wird WeicheR als ENUM-Wert verwendet.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ID_Element"
+                     type="nsVerweise:TCID_Element"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das angrenzende W_Kr_Gsp_Element bzw. den angrenzenden Gleis_Abschnitt, das/der zum Prüfen der Grenzzeichenfreiheit des rechten bzw. linken Weichenschenkels herangezogen wird.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Entgleisungsschuh_AttributeGroup" name="CEntgleisungsschuh">
+      <xs:sequence>
+         <xs:element name="Auswurfrichtung"
+                     type="nsWeichen_und_Gleissperren:TCAuswurfrichtung"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Entgleisungsrichtung eines Fahrzeugs, das über den Entgleisungsschuh fährt. Die Entgleisungsrichtung ist in Bewegungsrichtung des Fahrzeuges auf den Entgleisungsschuhs zu sehen und ist nicht auf die Wirkrichtung der topologischen Kante bezogen. Da das zugehörige Objekt (W_Kr_Gsp_Komponente) als Punktobjekt auf eine Fahrschiene des Gleises (Topologiekante) verortet ist, kann daraus ebenfalls die Auswurfrichtung ermittelt werden. Achtung: Die Angabe ist redundant zu den Angaben im Punktobjekt bezüglich der Attribute Seitliche Lage und Wirkrichtung und soll daher zukünftig entfallen.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Gleissperrensignal"
+                     type="nsWeichen_und_Gleissperren:TCGleissperrensignal"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob und in welcher Ausprägung ein Gleissperrensignal vorzusehen ist.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>reflektierend_beidseitig</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Schutzschiene"
+                     type="nsWeichen_und_Gleissperren:TCSchutzschiene"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für die Gleissperre ist eine Schutzschiene vorgesehen.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Kreuzung_AttributeGroup" name="CKreuzung">
+      <xs:sequence>
+         <xs:element name="Elektrischer_Antrieb_Anzahl"
+                     type="nsWeichen_und_Gleissperren:TCElektrischer_Antrieb_Anzahl"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anzahl der für die W Kr Gsp Komponente vorgesehenen elektrischen Antriebe. Die Anordnung der Weichenantriebe erfolgt nach der angegebenen Regelzeichnung. Mechanische Weichenantriebe sind durch die Stellart bestimmt. Die Anzahl der elektrischen Antribe wäre dann 0! Mechanische Prüfer und Riegel werden durch die entsprechende Regelzeichnung zugeordnet. Für eine Kreuzung ist die Anzahl der elektrischen Antrieb mit 0 anzugeben. Bei einer Flachkreuzung, die aus 2 Kreuzungsseiten besteht, werden die Antriebe den jeweiligen Kreuzungsseiten A und B beiden zugeordnet, die jeweils 0 oder 1 Antrieb haben können. Die Lage der Antriebe ergibt sich aus der Regelzeichnung. Für eine EKW werden die Antriebe ebenfalls für die beiden Kreuzungsseiten A und B getrennt (0 oder 1) angegeben. Die konkrete Lage der Antriebe ergibt sich aus der Regelzeichnung. Für eine DKW werden die Antriebe für die Seiten AB und CD getrennt angegeben. Da im allgemeinen die Zungenpaare (W_Kr_Gsp_Komponente) einer Kreuzungsseite gemeinsam angetrieben werden, ist es bedeutungslos, ob der zugehörige Antrieb an dem Zungenpaar A oder B bzw. C oder D angeordnet wird. Die konkrete Lage der Antrieb ergibt sich aus der Regelzeichnung. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>0</ppi:ProposedValue>
+                     <ppi:Patternbeschreibung>[0..15]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Elektrischer_Antrieb_Lage"
+                     type="nsWeichen_und_Gleissperren:TCElektrischer_Antrieb_Lage"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Lage des Antriebs vom Kreuzungsmittelpunkt aus gesehen.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Geschwindigkeit_L"
+                     type="nsWeichen_und_Gleissperren:TCGeschwindigkeit_L"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zulässige Geschwindigkeit über den linken Weichenschenkel. Die Geschwindigkeit kann geringer sein als die aus der Weichengeometrie abgeleitete. Die Angabe erfolgt in km/h.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Geschwindigkeit_R"
+                     type="nsWeichen_und_Gleissperren:TCGeschwindigkeit_R"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zulässige Geschwindigkeit über den rechten Weichenschenkel. Die Geschwindigkeit kann geringer sein als die aus der Weichengeometrie abgeleitete. Die Angabe erfolgt in km/h.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Schutzschiene_TypeClass" name="TCSchutzschiene">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="xs:boolean"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType name="ENUMWeichensignal">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMWeichensignal_innenbeleuchtet" value="innenbeleuchtet"/>
+         <xs:enumeration ecore:name="ENUMWeichensignal_reflektierend" value="reflektierend"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="W_Kr_Gsp_Element_Allg_AttributeGroup"
+                   name="CW_Kr_Gsp_Element_Allg">
+      <xs:sequence>
+         <xs:element name="Kr_KrW_Seitenzuordnung"
+                     type="nsWeichen_und_Gleissperren:TCKr_KrW_Seitenzuordnung"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bei unsymmetrischen Kreuzungen (Kr) und Kreuzungsweichen (KrW): Zuordnung der Seite Links/Rechts gemäß Ril 800.0120. Die Angabe wird nachfolgend für das korrekte Zeichnen der Weichendreiecke in maßstäblichen Lageplänen benötigt.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Vorzugslage_Automatik"
+                     type="nsWeichen_und_Gleissperren:TCVorzugslage_Automatik"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Automatischer Rücklauf des Elements (Weiche oder Gleissperre) in seine Vorzugslage, sobald die Beanspruchung durch eine Fahrstraße endet. Zusätzlich muss auch das Attribut Weiche Vorzugslage oder Gleissperre Vorzugslage angegeben werden.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>true</ppi:ProposedValue>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                     <ppi:ExampleValue>links</ppi:ExampleValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="W_Kr_Gsp_Stellart"
+                     type="nsWeichen_und_Gleissperren:TCW_Kr_Gsp_Stellart"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art, wie das W Kr Gsp Element zu stellen ist. Der ENUM-Wert \"nicht_stellbar\" wird für die Abbildung der Kreuzung verwendet. Für stillgelegte Weichen gemäß Iow wird die befahrbare Weichenlage angegeben. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>elektrisch_ferngestellt</ppi:ProposedValue>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Zungenpaar_AttributeGroup" name="CZungenpaar">
+      <xs:sequence>
+         <xs:element name="Elektrischer_Antrieb_Anzahl"
+                     type="nsWeichen_und_Gleissperren:TCElektrischer_Antrieb_Anzahl"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anzahl der für die W Kr Gsp Komponente vorgesehenen elektrischen Antriebe. Die Anordnung der Weichenantriebe erfolgt nach der angegebenen Regelzeichnung. Mechanische Weichenantriebe sind durch die Stellart bestimmt. Die Anzahl der elektrischen Antribe wäre dann 0! Mechanische Prüfer und Riegel werden durch die entsprechende Regelzeichnung zugeordnet. Für eine Kreuzung ist die Anzahl der elektrischen Antrieb mit 0 anzugeben. Bei einer Flachkreuzung, die aus 2 Kreuzungsseiten besteht, werden die Antriebe den jeweiligen Kreuzungsseiten A und B beiden zugeordnet, die jeweils 0 oder 1 Antrieb haben können. Die Lage der Antriebe ergibt sich aus der Regelzeichnung. Für eine EKW werden die Antriebe ebenfalls für die beiden Kreuzungsseiten A und B getrennt (0 oder 1) angegeben. Die konkrete Lage der Antriebe ergibt sich aus der Regelzeichnung. Für eine DKW werden die Antriebe für die Seiten AB und CD getrennt angegeben. Da im allgemeinen die Zungenpaare (W_Kr_Gsp_Komponente) einer Kreuzungsseite gemeinsam angetrieben werden, ist es bedeutungslos, ob der zugehörige Antrieb an dem Zungenpaar A oder B bzw. C oder D angeordnet wird. Die konkrete Lage der Antrieb ergibt sich aus der Regelzeichnung. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>1</ppi:ProposedValue>
+                     <ppi:Patternbeschreibung> [0..15] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Elektrischer_Antrieb_Lage"
+                     type="nsWeichen_und_Gleissperren:TCElektrischer_Antrieb_Lage"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Lage des Antriebs von der Weichenspitze aus gesehen.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Geschwindigkeit_L"
+                     type="nsWeichen_und_Gleissperren:TCGeschwindigkeit_L"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zulässige Geschwindigkeit über den linken Weichenschenkel. Die Geschwindigkeit kann geringer sein als die aus der Weichengeometrie abgeleitete. Die Angabe erfolgt in km/h.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:PlanningStage>PT1:MUSS</ppi:PlanningStage>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Geschwindigkeit_R"
+                     type="nsWeichen_und_Gleissperren:TCGeschwindigkeit_R"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zulässige Geschwindigkeit über den rechten Weichenschenkel. Die Geschwindigkeit kann geringer sein als die aus der Weichengeometrie abgeleitete. Die Angabe erfolgt in km/h.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:PlanningStage>PT1:MUSS</ppi:PlanningStage>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Herzstueck_Antriebe"
+                     type="nsWeichen_und_Gleissperren:TCHerzstueck_Antriebe"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anzahl der Antriebe am Herzstück einer Weiche. Das Attribut entfällt, wenn keine bewegliche Herzstückspitze vorhanden ist.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..15]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Kreuzungsgleis"
+                     type="nsWeichen_und_Gleissperren:TCKreuzungsgleis"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Lage der TOP Kante, die bei EKW und DKW vom zugehörigen Zungenpaar in Richtung des Kreuzungsmittelpunktes führt. Das Attribut muss bei EKW und DKW angegeben werden, um eine lagerichtige Zuordnung der Kanteneigenschaften in dem Ausgabetabellen sicherzustellen. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Stammgleis"
+                     type="nsWeichen_und_Gleissperren:TCStammgleis"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Lage der TOP Kante, die das Stammgleis repräsentiert (Blickrichtung von der Weichenspitze zum Weichenstumpf bzw. Kreuzungsmittelpunkt).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Weichensignal"
+                     type="nsWeichen_und_Gleissperren:TCWeichensignal"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Existenz eines (Weichen)-Signals, was konstruktiv (mechanisch) mit der Weichenkomponente verbunden ist. Der Begriff, der am Weichensignal anzeigbar ist, wird nicht modelliert. Die konstruktive Ausbildung des Weichensignals wird dem ENUM entnommen. Bei EKW und DKW wird für alle Weichenkomponenten das Attribut gefüllt, auch wenn die Lage der Zungenpaare in einem Anzeiger abgebildet werden. Kreuzungen und Kreuzungen mit beweglichen Doppelherzstückspitzen (auch Flachkreuzungen genannt) haben grundsätzlich kein Weichensignal. Wenn die Weichenanlage ein gesondertes (Weichen)-Signal besitzt (z. B. Weichenlagemelder mit Lichtpunkten oder Rückfallweichensignale), wird ein eigenes Signal modelliert. Die Weichenanlage bzw. das Weichenelement hat dann einen Elementbezug zum entsprechenden Signal. Als Punkt Objekt wird das Signal gesondert verortet. Achtung: Weichensignale mit Lichtpunkten sind nur in EOW-Bereichen zulässig. Für diese Signale existieren keine Regelzeichnungen! DB-Regelwerk Regelzeichnungen </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>reflektierend</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Zungenpruefkontakt_Anzahl"
+                     type="nsWeichen_und_Gleissperren:TCZungenpruefkontakt_Anzahl"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anzahl der für diese Komponente vorgesehenen elektrischen Zungenprüfkontakte (Zprk). Ein Zungenprüfer innerhalb eines Weichenantriebes wird nicht berücksichtigt. Die Anordnung der Zungenprüfkontakte erfolgt nach der angegebenen Regelzeichnung. Mechanische Weichenantriebe sind durch die Stellart bestimmt. Mechanische Prüfer und Riegel werden durch die entsprechende Regelzeichnung zugeordnet.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [0..15] </ppi:Patternbeschreibung>
+                     <ppi:ProposedValue>0</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Vorzugslage_Automatik_TypeClass"
+                   name="TCVorzugslage_Automatik">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="xs:boolean"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="W_Kr_Art_TypeClass" name="TCW_Kr_Art">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:ENUMW_Kr_Art"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType name="ENUMW_Kr_Gsp_Stellart">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMW_Kr_Gsp_Stellart_elektrisch_ferngestellt"
+                         value="elektrisch_ferngestellt"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Gsp_Stellart_elektrisch_ortsgestellt"
+                         value="elektrisch_ortsgestellt"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Gsp_Stellart_mechanisch_ferngestellt"
+                         value="mechanisch_ferngestellt"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Gsp_Stellart_mechanisch_ortsgestellt"
+                         value="mechanisch_ortsgestellt"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Gsp_Stellart_nicht_stellbar"
+                         value="nicht_stellbar"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Gsp_Stellart_Rueckfallweiche"
+                         value="Rueckfallweiche"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Gsp_Stellart_sonstige" value="sonstige"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Gsp_Stellart_stillgelegt_links"
+                         value="stillgelegt_links"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Gsp_Stellart_stillgelegt_rechts"
+                         value="stillgelegt_rechts"/>
+         <xs:enumeration ecore:name="ENUMW_Kr_Gsp_Stellart_unbestimmt" value="unbestimmt"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType ecore:name="Geschwindigkeit_R_Type" name="TGeschwindigkeit_R">
+      <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Weiche_Element_AttributeGroup" name="CWeiche_Element">
+      <xs:sequence>
+         <xs:element name="Auffahrortung"
+                     type="nsWeichen_und_Gleissperren:TCAuffahrortung"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für das technisch nicht auffahrbare Weichenelement sind spezielle Sensoren zur Auffahrortung anzubringen. Ist diese Funktionalität erforderlich ist, wird das Attribut auf true gesetzt. Ansonsten entfällt es. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>true</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="GZ_Freimeldung_L"
+                     type="nsWeichen_und_Gleissperren:CGZ_Freimeldung_L"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob die Freimeldung im linken Weichenschenkel grenzzeichenfrei realisiert ist (true) oder nicht (false).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="GZ_Freimeldung_R"
+                     type="nsWeichen_und_Gleissperren:CGZ_Freimeldung_R"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob die Freimeldung im rechten Weichenschenkel grenzzeichenfrei realisiert ist (true) oder nicht (false).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ID_Grenzzeichen"
+                     type="nsVerweise:TCID_Grenzzeichen"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein Signal, was das zugehörige Grenzzeichen dieser Weiche ist.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ID_Signal"
+                     type="nsVerweise:TCID_Signal"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein Signal, welches den Zustand des W_Kr_Gsp_Element signalisiert (z. B. Weichenlagemelder).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Weiche_Betriebsart"
+                     type="nsWeichen_und_Gleissperren:TCWeiche_Betriebsart"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Neben dem Normalbetrieb (Element ist stellbar) kann das Element durch den Betriebsartenstecker in einer definierten Lage festgelegt werden.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>Betrieb</ppi:ProposedValue>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="Weiche_Vorzugslage"
+                     type="nsWeichen_und_Gleissperren:TCWeiche_Vorzugslage"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vorzugslage des Weichenelements. Sofern die Angabe erforderlich ist, enthält dieses Attribut den Eintrag links oder rechts bezüglich der Fahrtrichtung mit Blick von der Weichenspitze. Ist dieses Attribut nicht angegeben, so ist auch keine Vorzugslage vorhanden. Das Attribut Vorzugslage Automatik darf dann nicht befüllt sein. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                     <ppi:ExampleValue>links</ppi:ExampleValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Elektrischer_Antrieb_Anzahl_Type"
+                  name="TElektrischer_Antrieb_Anzahl">
+      <xs:restriction base="xs:integer">
+         <xs:pattern value="[0-9]|1[0-5]"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Element_Lage_TypeClass" name="TCElement_Lage">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:ENUMElement_Lage"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Weiche_Vorzugslage_TypeClass" name="TCWeiche_Vorzugslage">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:TWeiche_Vorzugslage"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Elektrischer_Antrieb_Lage_TypeClass"
+                   name="TCElektrischer_Antrieb_Lage">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:ENUMElektrischer_Antrieb_Lage"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="W_Kr_Gsp_Komponente" name="CW_Kr_Gsp_Komponente">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Einzelner Teil der Weichenanlage (Zungenpaar) oder konstruktiver Mittelpunkt einer Kreuzung in Form von 2 Kreuzungsseiten. Mit Hilfe der W_Kr_Gsp_Komponente als punktförmiges Objekt wird die Verknüpfung mit dem Knoten im Topologischen Modell hergestellt. Als Zuordnungspunkte für die Topologie und die Topographie werden Weichenknoten definiert. Die Verortung der Weichenkomponente ist in für die typischen Anwendungsfälle in der Modellierung Weichen dargestellt. Bei einfachen Weichen entspricht der Weichenknoten dem Weichenanfang. Bei EKW und DKW entspricht der Weichenknoten dem Anfang der entsprechenden Zungenpaare (auch hier einheitlich als Weichenanfang bezeichnet). Bei einer Kreuzung wird der Mittelpunkt der Kreuzung als Weichenknoten verwendet. Beide Kreuzungsseiten werden jeweils auf die beiden sich kreuzenden TOP-Kanten verortet. Der Mittelpunkt einer Kreuzung ist kein TOP-Knoten und kein GEO-Knoten. Bei Gleissperren wird die Lage des Entgleisungsschuhs verortet. Über die Seitliche Lage im Punkt Objekt wird die Schiene bestimmt, an der der Entgleisungsschuh angebracht ist. Die seitliche Lage wird im Bezug auf die Richtung der TOP_Kante angegeben und stellt nicht die Entgleisungsrichtung dar! Wenn die Weichenkomponente mit einem nicht mechanisch mit der Weiche verbundenen (Weichen-)Signal (z. B. Rückfallweichensignal, Weichenlagemelder) ausgerüstet werden soll, erfolgt die Modellierung dieses Signals als ein gesondertes Objekt Signal. Auf dieses Signal wird von W Kr Anlage (wenn die Anlage ein Signal hat) bzw. W Kr Gsp Element (wenn mehrere Elemete vorhanden sind und diese unterschiedliche Signale haben) verwiesen. Der Weichelagemelder einer DKW wird von den beiden W_Kr_Gsp_Element gesteuert, aber in einem Signal angezeigt. Er wird deshalb nur als ein Signal in der Weichenanlage modelliert. Ein mit der Weichenkomponente mechanisch verbundenes Weichensignal wird gemäß Regelzeichnung errichtet, wenn das Attribut Weichensignal gesetzt ist. Es wird dann kein gesondertes Signal modelliert. Siehe auch Modellierung Weichen. Die im Glossar mit (E) gekennzeichneten Attribute Radius_L und Radius_R sollen nicht mehr befüllt werden, da ein künftiger Entfall vorgesehen ist.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+            <xs:sequence>
+               <xs:element name="Austausch_Antriebe"
+                           type="nsWeichen_und_Gleissperren:TCAustausch_Antriebe"
+                           minOccurs="0"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob die vorhandenen Antriebe ausgetauscht werden soll (true). Der Wert \"false\" wird nicht verwendet.</xs:documentation>
+                     <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                        <ppi:WorkflowInformation>
+                           <ppi:ProposedValue>true</ppi:ProposedValue>
+                        </ppi:WorkflowInformation>
+                     </xs:appinfo>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_Regelzeichnung"
+                           type="nsVerweise:TCID_Regelzeichnung"
+                           minOccurs="0"
+                           maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein Objekt Regelzeichnung. Für Weichen, Kreuzungen und Gleissperren werden die Regelzeichnungen der Gruppe S73xx.yy verwendet. Die Regelzeichnung wird für die W_Kr_Gsp_Komponente angegeben und enthält u. a. auch die Anordnung der Antriebe und Endlagenprüfer. Die Lage ist durch unterschiedliche Bilder in der Regelzeichnung spezifiziert, so dass auch das Bild mit angegeben werden muss. Nur dann, wenn in einer Regelzeichnung mehrere Komponenten zusammengefasst sind (z. B. bei der DKW und der gekuppelten Gleissperre), wird der Eintrag bei W Kr Gsp Element vorgenommen. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="ID_W_Kr_Gsp_Element"
+                           type="nsVerweise:TCID_W_Kr_Gsp_Element"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das zugehörige Weichen-, Kreuzungs- oder Gleissperrenelement. </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:choice minOccurs="1" maxOccurs="1">
+                  <xs:element name="Besonderes_Fahrwegelement"
+                              type="nsWeichen_und_Gleissperren:TCBesonderes_Fahrwegelement"
+                              minOccurs="1"
+                              maxOccurs="1">
+                     <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Abbildung besonderer Fahrwegelemente wie Wehrkammtertor, bewegliche Brücke oder abklappbarer Prellbock.</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="Entgleisungsschuh"
+                              type="nsWeichen_und_Gleissperren:CEntgleisungsschuh"
+                              minOccurs="1"
+                              maxOccurs="1"/>
+                  <xs:element name="Kreuzung"
+                              type="nsWeichen_und_Gleissperren:CKreuzung"
+                              minOccurs="1"
+                              maxOccurs="1">
+                     <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Fahrwegelement, an dem sich zwei Gleise höhengleich kreuzen, ohne dass ein Übergang zwischen den Gleisen möglich ist. Einfache Kreuzungen sind in der Regel nicht stellbar. Kreuzungen, die einen besonders spitzen Winkel haben (Kreuzungen mit beweglichen Doppelherzstückspitzen, auch Flachkreuzung genannt) sind stellbar und besitzen mindestens einen, vorzugsweise zwei gleichlaufende Antriebe</xs:documentation>
+                     </xs:annotation>
+                  </xs:element>
+                  <xs:element name="Zungenpaar"
+                              type="nsWeichen_und_Gleissperren:CZungenpaar"
+                              minOccurs="1"
+                              maxOccurs="1"/>
+               </xs:choice>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="W_Kr_Grundform_TypeClass" name="TCW_Kr_Grundform">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:TW_Kr_Grundform"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType name="ENUMBesonderes_Fahrwegelement">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMBesonderes_Fahrwegelement_abklappbarer_Prellbock"
+                         value="abklappbarer Prellbock"/>
+         <xs:enumeration ecore:name="ENUMBesonderes_Fahrwegelement_bewegliche_Brücke"
+                         value="bewegliche Brücke"/>
+         <xs:enumeration ecore:name="ENUMBesonderes_Fahrwegelement_sonstige" value="sonstige"/>
+         <xs:enumeration ecore:name="ENUMBesonderes_Fahrwegelement_Wehrkammertor"
+                         value="Wehrkammertor"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Kr_KrW_Seitenzuordnung_TypeClass"
+                   name="TCKr_KrW_Seitenzuordnung">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:TKr_KrW_Seitenzuordnung"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType name="ENUMGleissperre_Betriebsart">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMGleissperre_Betriebsart_abgelegt" value="abgelegt"/>
+         <xs:enumeration ecore:name="ENUMGleissperre_Betriebsart_aufgelegt" value="aufgelegt"/>
+         <xs:enumeration ecore:name="ENUMGleissperre_Betriebsart_Betrieb" value="Betrieb"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType ecore:name="W_Kr_Grundform_Type" name="TW_Kr_Grundform">
+      <xs:restriction base="nsBasisTypen:TText">
+         <xs:pattern value=".{1,50}"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ENUMGleissperrensignal">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMGleissperrensignal_innenbeleuchtet_beidseitig"
+                         value="innenbeleuchtet_beidseitig"/>
+         <xs:enumeration ecore:name="ENUMGleissperrensignal_innenbeleuchtet_einseitig"
+                         value="innenbeleuchtet_einseitig"/>
+         <xs:enumeration ecore:name="ENUMGleissperrensignal_reflektierend_beidseitig"
+                         value="reflektierend_beidseitig"/>
+         <xs:enumeration ecore:name="ENUMGleissperrensignal_reflektierend_einseitig"
+                         value="reflektierend_einseitig"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Besonderes_Fahrwegelement_TypeClass"
+                   name="TCBesonderes_Fahrwegelement">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:ENUMBesonderes_Fahrwegelement"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Weichenlaufkette" name="CWeichenlaufkette">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Logisches Objekt von mehreren durch Antriebe stellbaren Fahrwegelementen (Weichen, Gleissperren, sonstigen stellbaren Elementen), deren Umlauf automatisch bei einer entsprechenden Anforderung (z.B. Fahrstraße) erfolgt. Diese stellbaren Elemente können nur dann automatisch gestellt werden, wenn sie auch einer Weichenlaufkette (WLK) zugeordnet sind. Jedes stellbare Element wird genau einer WLK zugeordnet. Durch Sperren der WLK kann dieser automatische Umlauf verhindert werden. Innerhalb von Weichenlaufketten sind dabei folgende Elemente zulässig: Weichen, Gleissperren und Sonderelemente, die automatisch umlaufen sollen. Für die Bedienung von Ersatzaufträgen des Typs 2 (EE2, VE2, LE2) an Hauptsignalen müssen eine oder mehrere Weichenlaufketten gesperrt werden. Zur Reduzierung betrieblicher Behinderungen werden oftmals mehrere Weichenlaufketten in einer Betriebsstelle eingerichtet. DB-Regelwerk Die Bezeichnung der Weichenlaufkette wird gemäß Ril 819.0603 in der Form LKn (n = laufende Nummer) gebildet und in der Attributgruppe Bezeichnung abgebildet.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+            <xs:sequence>
+               <xs:element name="Bezeichnung"
+                           type="nsBasisTypen:CBezeichnung_Element"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen </xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType name="ENUMElement_Lage">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMElement_Lage_Abschnitt" value="Abschnitt"/>
+         <xs:enumeration ecore:name="ENUMElement_Lage_Weiche" value="Weiche"/>
+         <xs:enumeration ecore:name="ENUMElement_Lage_WeicheL" value="WeicheL"/>
+         <xs:enumeration ecore:name="ENUMElement_Lage_WeicheR" value="WeicheR"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType ecore:name="Isolierfall_Type" name="TIsolierfall">
+      <xs:restriction base="nsBasisTypen:TText">
+         <xs:pattern value=".{1,20}"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="ENUMWeiche_Betriebsart">
+      <xs:restriction base="xs:string">
+         <xs:enumeration ecore:name="ENUMWeiche_Betriebsart_Betrieb" value="Betrieb"/>
+         <xs:enumeration ecore:name="ENUMWeiche_Betriebsart_links" value="links"/>
+         <xs:enumeration ecore:name="ENUMWeiche_Betriebsart_rechts" value="rechts"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType ecore:name="Herzstueck_Antriebe_Type" name="THerzstueck_Antriebe">
+      <xs:restriction base="xs:integer">
+         <xs:pattern value="[1-9]|1[0-5]"/>
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType ecore:name="GZ_Freimeldung_L_AttributeGroup" name="CGZ_Freimeldung_L">
+      <xs:sequence>
+         <xs:element name="Element_Lage"
+                     type="nsWeichen_und_Gleissperren:TCElement_Lage"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe bei nicht grenzzeichenfreier Freimeldung eines Weichenschenkels, in welcher Lage das angrenzende Fahrwegelement (Gleis oder Weiche) zur Freiprüfung herangezogen wird. Wenn die Grenzzeichenfreiheit durch die Freiprüfung eines angrenzenden Fahrwegelementes erkannt wird, das ein Gleisabschnitt ist, wird Abschnitt, eine Weiche ist, die unabhängig von ihrer Lage herangezogen wird, wird Weiche, eine Weiche ist, die nur in Linkslage herangezogen wird, wird WeicheL, eine Weiche ist, die nur in Rechtslage herangezogen wird, wird WeicheR als ENUM-Wert verwendet.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ID_Element"
+                     type="nsVerweise:TCID_Element"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das angrenzende W_Kr_Gsp_Element bzw. den angrenzenden Gleis_Abschnitt, das/der zum Prüfen der Grenzzeichenfreiheit des rechten bzw. linken Weichenschenkels herangezogen wird.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Gleis_Abschluss_Art_TypeClass" name="TCGleis_Abschluss_Art">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:ENUMGleis_Abschluss_Art"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Stammgleis_TypeClass" name="TCStammgleis">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:TStammgleis"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType ecore:name="Kr_KrW_Seitenzuordnung_Type" name="TKr_KrW_Seitenzuordnung">
+      <xs:restriction base="nsBasisTypen:TLinksRechts"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="W_Kr_Anlage_Allg_AttributeGroup" name="CW_Kr_Anlage_Allg">
+      <xs:sequence>
+         <xs:element name="Isolierfall"
+                     type="nsWeichen_und_Gleissperren:TCIsolierfall"
+                     minOccurs="0"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der Isolierung der Weiche. Es wird bei der Verwendung von Gleisstromkreisen zur Freimeldung die Bezeichnung des Isolierfalls gemäß dem Katalog der Weichenisolierung angegeben.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..20] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="W_Kr_Art"
+                     type="nsWeichen_und_Gleissperren:TCW_Kr_Art"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschreibt die W Kr Anlage bezüglich ihrer konstruktiven Art. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="W_Kr_Grundform"
+                     type="nsWeichen_und_Gleissperren:TCW_Kr_Grundform"
+                     minOccurs="1"
+                     maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der vollständigen Weichengrundform gemäß Ril. 800.0120. Die Schreibweise erfolgt grundsätzlich mit Leerzeichen! Beispiele: EW 60 - 1200 - 1:18,5 - fb; Kr 54 - 1:18,5; DKW 49 - 190 - 1:9. DB-Regerwerk Ril. 800.0120 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:PlanningStage>EP</ppi:PlanningStage>
+                     <ppi:Patternbeschreibung>[1..50]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType ecore:name="Gleissperre_Betriebsart_TypeClass"
+                   name="TCGleissperre_Betriebsart">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:ENUMGleissperre_Betriebsart"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Gleis_Abschluss" name="CGleis_Abschluss">
+      <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ständig vorhandenes Ende eines betrieblich nutzbaren Gleises (z. B. Prellbock oder Schwellenkreuz). Der Gleisabschluss ist ein Punkt Objekt. Die TOP Kante kann hinter dem Gleisabschluss bis zum baulichen Ende des Gleises weitergeführt sein. Er wird auf den Punkt verortet, der die Grenze der möglichen Fahrzeugbewegung darstellt. Da das bauliche Ende konstruktiv hinter diesem Punkt liegt, fällt der Gleisabschluss in der Regel nicht mit einem TOP Knoten zusammen. Der Gleisabschluss ist vom klappbaren Prellbock (und anderen beweglichen Elementen) zu unterscheiden. Diese besonderen beweglichen Fahrwegelemente sind als Gleissperre mit einem ergänzenden Bearbeitungsvermerk zu planen. Der Gleisabschluss ist in der Regel auch Grenze eines Gleisabschnittes. Die Wirkrichtung entspricht der Richtung der möglichen Fahrzeugbewegung auf den Gleisabschluss. Der Gleisabschluss ist mittig angeordnet, sodass die Angabe des seitlichen Abstands bzw. der seitlichen Lage entfällt.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:complexContent>
+         <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+            <xs:sequence>
+               <xs:element name="Gleis_Abschluss_Art"
+                           type="nsWeichen_und_Gleissperren:TCGleis_Abschluss_Art"
+                           minOccurs="1"
+                           maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Technische Ausbildung des Gleisabschlusses. Falls als ENUM-Wert \"sonstige\" angegeben wird, ist der Gleisabschluss mittels eines Bearbeitungsvermerks gesondert zu erläutern. Ein abklappbarer Prellbock ist ein bewegliches Fahwegelement und wird hier nicht modelliert. Das den Gleisabschluss kennzeichnende Signal wird als solches gesondert modelliert. </xs:documentation>
+                     <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                        <ppi:WorkflowInformation>
+                           <ppi:ProposedValue>Bremsprellbock</ppi:ProposedValue>
+                           <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                        </ppi:WorkflowInformation>
+                     </xs:appinfo>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Geschwindigkeit_L_TypeClass" name="TCGeschwindigkeit_L">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:TGeschwindigkeit_L"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType ecore:name="Gleissperrensignal_TypeClass" name="TCGleissperrensignal">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="nsWeichen_und_Gleissperren:ENUMGleissperrensignal"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:simpleType name="CAuswurfrichtung">
+      <xs:restriction base="nsBasisTypen:TLinksRechts"/>
+   </xs:simpleType>
+   <xs:complexType ecore:name="Austausch_Antriebe_TypeClass" name="TCAustausch_Antriebe">
+      <xs:complexContent>
+         <xs:extension base="nsBasisTypen:CBasisAttribut">
+            <xs:sequence>
+               <xs:element name="Wert"
+                           type="xs:boolean"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+</xs:schema>

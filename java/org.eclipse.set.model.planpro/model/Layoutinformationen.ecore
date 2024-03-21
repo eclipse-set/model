@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ecore:EPackage xmlns:xmi="http://www.omg.org/XMI"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+                xmi:version="2.0"
+                name="Layoutinformationen"
+                nsURI="http://www.plan-pro.org/modell/Layoutinformationen/1.10.0.1"
+                nsPrefix="nsLayoutinformationen">
+   <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation"
+               value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+   </eAnnotations>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Bez_Lageplan_Blattschnitt_Type"
+                 instanceClassName="java.math.BigInteger">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TBez_Lageplan_Blattschnitt"/>
+         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Bez_Lageplan_Blattschnitt_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCBez_Lageplan_Blattschnitt"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Bez_Lageplan_Blattschnitt_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Bezeichnung_Lageplan_Type"
+                 instanceClassName="java.lang.String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TBezeichnung_Lageplan"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Bezeichnung_Lageplan_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCBezeichnung_Lageplan"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Bezeichnung_Lageplan_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Darstellung_GEO_Punkt_Type"
+                 instanceClassName="java.lang.String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TDarstellung_GEO_Punkt"/>
+         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#string"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Darstellung_GEO_Punkt_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCDarstellung_GEO_Punkt"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Darstellung_GEO_Punkt_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Darstellung_Polygonzug_Type"
+                 instanceClassName="java.lang.String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TDarstellung_Polygonzug"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Darstellung_Polygonzug_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCDarstellung_Polygonzug"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Darstellung_Polygonzug_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Darstellung_Richtungswinkel_Type"
+                 instanceClassName="java.math.BigDecimal">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TDarstellung_Richtungswinkel"/>
+         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Darstellung_Richtungswinkel_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCDarstellung_Richtungswinkel"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Darstellung_Richtungswinkel_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass" name="DocumentRoot">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value=""/>
+         <details key="kind" value="mixed"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="mixed"
+                           unique="false"
+                           upperBound="-1"
+                           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="elementWildcard"/>
+            <details key="name" value=":mixed"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="xMLNSPrefixMap"
+                           upperBound="-1"
+                           eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"
+                           transient="true"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="attribute"/>
+            <details key="name" value="xmlns:prefix"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="xSISchemaLocation"
+                           upperBound="-1"
+                           eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"
+                           transient="true"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="attribute"/>
+            <details key="name" value="xsi:schemaLocation"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="planProLayoutinfo"
+                           upperBound="-2"
+                           eType="#//PlanPro_Layoutinfo"
+                           volatile="true"
+                           transient="true"
+                           derived="true"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Oberstes Objekt der Layout-XML. Bei jeder Erzeugung einer XML-Ausgabe für eine Planung muss eine neue GUID (Identitaet) erzeugt werden."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="PlanPro_Layoutinfo"/>
+            <details key="namespace" value="##targetNamespace"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Element_Position"
+                 eSuperTypes="Basisobjekte.ecore#//Ur_Objekt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+         <details key="documentation"
+                  value="Objekt zur Angabe von Positionsinformationen für ein LST-Objekt bezogen auf einen Lageplan."/>
+      </eAnnotations>
+      <eAnnotations>
+         <details key="appinfo"
+                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CElement_Position"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="elementPositionAllg"
+                           lowerBound="1"
+                           eType="#//Element_Position_Allg_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Element_Position_Allg"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDLageplanZustand"
+                           lowerBound="1"
+                           upperBound="2"
+                           eType="ecore:EClass Verweise.ecore#//ID_Lageplan_Zustand_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf den Lageplan-Zustand, für den die Layoutinformation definiert wird."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Lageplan_Zustand"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="referenzObjektDarstellung"
+                           lowerBound="1"
+                           eType="#//Referenz_Objekt_Darstellung_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="GUID des Fachobjekts, für dessen Darstellung die Layoutinformationen gegeben werden."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Referenz_Objekt_Darstellung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass" name="Element_Position_Allg_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CElement_Position_Allg"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="darstellungRichtungswinkel"
+                           eType="#//Darstellung_Richtungswinkel_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Richtungswinkel für die Darstellung in [gon]. Es gilt nachfolgende Zuordnung der Richtung: Nord = 0,0 gon Ost = 100,0 gon Süd = 200,0 gon West = 300,0 gon. Originale negative Werte werden durch Addition von 400.0 gon normalisiert."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Darstellung_Richtungswinkel"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="darstellungGEOPunkt"
+                           upperBound="-1"
+                           eType="ecore:EClass Geodaten.ecore#//GEO_Punkt"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf einen GEO_Punkt zur Angabe der Position, an der das Symbol für das Fachobjekt im referenzierten Lageplan dargestellt werden soll."/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                       &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                            &#xA;    &lt;ppi:ProposedValue&gt;GEO_Punkt&lt;/ppi:ProposedValue&gt;&#xA;                         &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                    &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Darstellung_GEO_Punkt"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="darstellungPolygonzug"
+                           eType="#//Darstellung_Polygonzug_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Polygonzug zur Darstellung des Fachobjekts unter Nutzung des GML-Standards. Die Information wird nur gegeben, wenn kein Standard-Symbol zur Anwendung kommt und sich die Darstellung nicht einfach algorithmisch herleiten lässt (z. B. Grenzlinie NB_Zone)."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Darstellung_Polygonzug"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Element_Stil"
+                 eSuperTypes="Basisobjekte.ecore#//Ur_Objekt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+         <details key="documentation"
+                  value="Objekt zur Angabe von Darstellungsvorgaben (z. B. Linienart) für ein LST-Objekt bezogen auf einen Lageplan."/>
+      </eAnnotations>
+      <eAnnotations>
+         <details key="appinfo"
+                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CElement_Stil"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="elementStilAllg"
+                           lowerBound="1"
+                           eType="#//Element_Stil_Allg_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Element_Stil_Allg"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDLageplanZustand"
+                           lowerBound="1"
+                           upperBound="2"
+                           eType="ecore:EClass Verweise.ecore#//ID_Lageplan_Zustand_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf den Lageplan-Zustand, für den die Layoutinformation definiert wird."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Lageplan_Zustand"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="referenzObjektDarstellung"
+                           lowerBound="1"
+                           eType="#//Referenz_Objekt_Darstellung_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="GUID des Fachobjekts, für dessen Darstellung die Layoutinformationen gegeben werden."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Referenz_Objekt_Darstellung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass" name="Element_Stil_Allg_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CElement_Stil_Allg"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="fuellung"
+                           eType="#//Fuellung_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Füllung der mittels Darstellung_Polygonzug beschriebenen Fläche. Ist keine Füllung vorgesehen, entfällt das Attribut."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Fuellung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="linieArt"
+                           eType="#//Linie_Art_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Art bzw. Ausführungform der Linie gemäß DIN EN ISO 128-2."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Linie_Art"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="linieFarbwert"
+                           eType="#//Linie_Farbwert_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="RGB-Kodierung (hexadezimal) für den Farbton, in dem die Linie dargestellt werden soll."/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[6], hexadezimal&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Linie_Farbwert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="linieSubart"
+                           eType="#//Linie_Subart_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Subart bzw. Breite der Linie gemäß DIN EN ISO 128-2."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Linie_Subart"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EEnum" name="ENUMFuellung">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMFuellung"/>
+      </eAnnotations>
+      <eLiterals name="ENUMFuellung_doppelte_Schraffur" literal="doppelte Schraffur"/>
+      <eLiterals name="ENUMFuellung_einfache_Schraffur"
+                 value="1"
+                 literal="einfache Schraffur"/>
+      <eLiterals name="ENUMFuellung_einfache_Schraffur_gestrichelt"
+                 value="2"
+                 literal="einfache Schraffur gestrichelt"/>
+      <eLiterals name="ENUMFuellung_sonstige" value="3" literal="sonstige"/>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="ENUMFuellungObject"
+                 instanceClassName="org.eclipse.emf.common.util.Enumerator">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMFuellung:Object"/>
+         <details key="baseType" value="ENUMFuellung"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EEnum" name="ENUMLageplanArt">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMLageplan_Art"/>
+      </eAnnotations>
+      <eLiterals name="ENUMLageplan_Art_BU_Kreuzungsplan_LST"
+                 literal="BÜ Kreuzungsplan LST"/>
+      <eLiterals name="ENUMLageplan_Art_BU_Sicherungstechn__Lage__und_Kabelübersichtsplan"
+                 value="1"
+                 literal="BÜ Sicherungstechn. Lage- und Kabelübersichtsplan"/>
+      <eLiterals name="ENUMLageplan_Art_Gleisfreimeldeplan_für_Gleisstromkreise"
+                 value="2"
+                 literal="Gleisfreimeldeplan für Gleisstromkreise"/>
+      <eLiterals name="ENUMLageplan_Art_Kabellageplan"
+                 value="3"
+                 literal="Kabellageplan"/>
+      <eLiterals name="ENUMLageplan_Art_Kabelübersichtsplan"
+                 value="4"
+                 literal="Kabelübersichtsplan"/>
+      <eLiterals name="ENUMLageplan_Art_Sicherungstechnischer_Lageplan"
+                 value="5"
+                 literal="Sicherungstechnischer Lageplan"/>
+      <eLiterals name="ENUMLageplan_Art_Sicherungstechnischer_Ubersichtsplan"
+                 value="6"
+                 literal="Sicherungstechnischer Übersichtsplan"/>
+      <eLiterals name="ENUMLageplan_Art_sonstige" value="7" literal="sonstige"/>
+      <eLiterals name="ENUMLageplan_Art_Stammkabelübersichtsplan"
+                 value="8"
+                 literal="Stammkabelübersichtsplan"/>
+      <eLiterals name="ENUMLageplan_Art_ZLV_Bus_Ubersichtsplan"
+                 value="9"
+                 literal="ZLV-Bus-Übersichtsplan"/>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="ENUMLageplanArtObject"
+                 instanceClassName="org.eclipse.emf.common.util.Enumerator">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMLageplan_Art:Object"/>
+         <details key="baseType" value="ENUMLageplan_Art"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EEnum" name="ENUMLinieArt">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMLinie_Art"/>
+      </eAnnotations>
+      <eLiterals name="ENUMLinie_Art_Punktlinie" literal="Punktlinie"/>
+      <eLiterals name="ENUMLinie_Art_Strich_Dreipunktlinie"
+                 value="1"
+                 literal="Strich-Dreipunktlinie"/>
+      <eLiterals name="ENUMLinie_Art_Strich_Punktlinie"
+                 value="2"
+                 literal="Strich-Punktlinie"/>
+      <eLiterals name="ENUMLinie_Art_Strich_Strichlinie"
+                 value="3"
+                 literal="Strich-Strichlinie"/>
+      <eLiterals name="ENUMLinie_Art_Strich_Zweipunktlinie"
+                 value="4"
+                 literal="Strich-Zweipunktlinie"/>
+      <eLiterals name="ENUMLinie_Art_Strich_Zweistrichlinie"
+                 value="5"
+                 literal="Strich-Zweistrichlinie"/>
+      <eLiterals name="ENUMLinie_Art_Strichlinie" value="6" literal="Strichlinie"/>
+      <eLiterals name="ENUMLinie_Art_Strichlinie_lang"
+                 value="7"
+                 literal="Strichlinie lang"/>
+      <eLiterals name="ENUMLinie_Art_Volllinie" value="8" literal="Volllinie"/>
+      <eLiterals name="ENUMLinie_Art_Zweistrich_Dreipunktlinie"
+                 value="9"
+                 literal="Zweistrich-Dreipunktlinie"/>
+      <eLiterals name="ENUMLinie_Art_Zweistrich_Punktlinie"
+                 value="10"
+                 literal="Zweistrich-Punktlinie"/>
+      <eLiterals name="ENUMLinie_Art_Zweistrich_Zweipunktlinie"
+                 value="11"
+                 literal="Zweistrich-Zweipunktlinie"/>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="ENUMLinieArtObject"
+                 instanceClassName="org.eclipse.emf.common.util.Enumerator">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMLinie_Art:Object"/>
+         <details key="baseType" value="ENUMLinie_Art"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EEnum" name="ENUMLinieSubart">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMLinie_Subart"/>
+      </eAnnotations>
+      <eLiterals name="ENUMLinie_Subart_breit" literal="breit"/>
+      <eLiterals name="ENUMLinie_Subart_extrabreit" value="1" literal="extrabreit"/>
+      <eLiterals name="ENUMLinie_Subart_schmal" value="2" literal="schmal"/>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="ENUMLinieSubartObject"
+                 instanceClassName="org.eclipse.emf.common.util.Enumerator">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMLinie_Subart:Object"/>
+         <details key="baseType" value="ENUMLinie_Subart"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Fuellung_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCFuellung"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//ENUMFuellungObject"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Lageplan"
+                 eSuperTypes="Basisobjekte.ecore#//Ur_Objekt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+         <details key="documentation"
+                  value="Plan, der maßstäblich oder unmaßstäblich die Lage von LST-Objekten zeigt. Beispiel: Sicherungstechnischer Lageplan. Bei Planungen wird für Start- und Zielzustand je eine Instanz von Lageplan erzeugt. Zu einem Lageplan ist mindestens ein Blattschnitt zu definieren."/>
+      </eAnnotations>
+      <eAnnotations>
+         <details key="appinfo"
+                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CLageplan"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="bezeichnung"
+                           eType="#//Lageplan_Bezeichnung_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Bezeichnung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDLageplanBlattschnitt"
+                           lowerBound="1"
+                           upperBound="-1"
+                           eType="ecore:EClass Verweise.ecore#//ID_Lageplan_Blattschnitt_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf den zum Lageplan gehörenden Blattschnitt."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Lageplan_Blattschnitt"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="lageplanArt"
+                           lowerBound="1"
+                           eType="#//Lageplan_Art_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Art des Ausgabeformats (Plan), dem die Layoutinformationen zugeordnet werden. Beispiel: Sicherungstechnischer Lageplan."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Lageplan_Art"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Lageplan_Art_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCLageplan_Art"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//ENUMLageplanArtObject"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass" name="Lageplan_Bezeichnung_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CLageplan_Bezeichnung"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="bezeichnungLageplan"
+                           lowerBound="1"
+                           eType="#//Bezeichnung_Lageplan_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Bezeichnung des Lageplans, sofern eine Differenzierung über Stellbereiche nicht möglich bzw. ausreichend ist."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Bezeichnung_Lageplan"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Lageplan_Blattschnitt"
+                 eSuperTypes="Basisobjekte.ecore#//Ur_Objekt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+         <details key="documentation"
+                  value="Teil des Lageplans, der auf einem Blatt dargestellt wird."/>
+      </eAnnotations>
+      <eAnnotations>
+         <details key="appinfo"
+                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CLageplan_Blattschnitt"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="bezeichnung"
+                           lowerBound="1"
+                           eType="#//Lageplan_Blattschnitt_Bezeichnung_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Bezeichnung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="polygonzugAusrichtung"
+                           lowerBound="1"
+                           eType="#//Polygonzug_Ausrichtung_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Polygonzug zur Ausrichtung des Blattschnitts unter Nutzung des GML-Standards. Es sind nur zwei Stützpunkte anzugeben. Die damit beschriebene Linie dient der Ausrichtung des Blattschnitts an der waagerechten Blattkante. Die Reihenfolge der Stützpunkte bestimmt die Richtung der Darstellung."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Polygonzug_Ausrichtung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="polygonzugBlattschnitt"
+                           lowerBound="1"
+                           eType="#//Polygonzug_Blattschnitt_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Polygonzug zur Beschreibung des Blattschnitts unter Nutzung des GML-Standards."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Polygonzug_Blattschnitt"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Lageplan_Blattschnitt_Bezeichnung_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CLageplan_Blattschnitt_Bezeichnung"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="bezLageplanBlattschnitt"
+                           lowerBound="1"
+                           eType="#//Bez_Lageplan_Blattschnitt_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation" value="Numerierung des Blattschnitts."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Bez_Lageplan_Blattschnitt"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Lageplan_Zustand"
+                 eSuperTypes="Basisobjekte.ecore#//Ur_Objekt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+         <details key="documentation"
+                  value="Objekt zur Abbildung der zustandsbezogenen Layoutinformationen zu einem Lageplan."/>
+      </eAnnotations>
+      <eAnnotations>
+         <details key="appinfo"
+                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CLageplan_Zustand"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDLageplan"
+                           lowerBound="1"
+                           eType="ecore:EClass Verweise.ecore#//ID_Lageplan_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf den Lageplan, zu dem der Lageplan-Zustand definiert wird."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Lageplan"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="referenzLSTZustand"
+                           lowerBound="1"
+                           upperBound="-1"
+                           eType="#//Referenz_LST_Zustand_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="GUID des LST-Zustand, der für die Erstellung des Lageplans ausgewertet wird. Werden LST-Zustände einer Planung referenziert, müssen Sie einheitlich entweder den Start- oder den Zielzustand beschreiben. Eine Mischung von Start- und Zielzuständen ist nicht zulässig."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Referenz_LST_Zustand"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Linie_Art_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCLinie_Art"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//ENUMLinieArtObject"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Linie_Farbwert_Type"
+                 instanceClassName="java.lang.String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TLinie_Farbwert"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+         <details key="pattern" value="[a-fA-F0-9]{6}"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Linie_Farbwert_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCLinie_Farbwert"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Linie_Farbwert_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Linie_Subart_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCLinie_Subart"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//ENUMLinieSubartObject"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="PlanPro_Layoutinfo"
+                 eSuperTypes="Basisobjekte.ecore#//Ur_Objekt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+         <details key="documentation"
+                  value="Oberstes Objekt der Layout-XML. Bei jeder Erzeugung einer XML-Ausgabe für eine Planung muss eine neue GUID (Identitaet) erzeugt werden."/>
+      </eAnnotations>
+      <eAnnotations>
+         <details key="appinfo"
+                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CPlanPro_Layoutinfo"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="elementPosition"
+                           upperBound="-1"
+                           eType="#//Element_Position"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Objekt zur Angabe von Positionsinformationen für ein LST-Objekt bezogen auf einen Lageplan."/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                               &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                       &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Element_Position"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="elementStil"
+                           upperBound="-1"
+                           eType="#//Element_Stil"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Objekt zur Angabe von Darstellungsvorgaben (z. B. Linienart) für ein LST-Objekt bezogen auf einen Lageplan."/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                               &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                       &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Element_Stil"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="lageplan"
+                           upperBound="-1"
+                           eType="#//Lageplan"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Plan, der maßstäblich oder unmaßstäblich die Lage von LST-Objekten zeigt. Beispiel: Sicherungstechnischer Lageplan. Bei Planungen wird für Start- und Zielzustand je eine Instanz von Lageplan erzeugt. Zu einem Lageplan ist mindestens ein Blattschnitt zu definieren."/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                               &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                       &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Lageplan"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="lageplanBlattschnitt"
+                           upperBound="-1"
+                           eType="#//Lageplan_Blattschnitt"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Teil des Lageplans, der auf einem Blatt dargestellt wird."/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                               &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                       &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Lageplan_Blattschnitt"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="lageplanZustand"
+                           upperBound="-1"
+                           eType="#//Lageplan_Zustand"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Objekt zur Abbildung der zustandsbezogenen Layoutinformationen zu einem Lageplan."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Lageplan_Zustand"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Polygonzug_Ausrichtung_Type"
+                 instanceClassName="java.lang.String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TPolygonzug_Ausrichtung"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Polygonzug_Ausrichtung_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCPolygonzug_Ausrichtung"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Polygonzug_Ausrichtung_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Polygonzug_Blattschnitt_Type"
+                 instanceClassName="java.lang.String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TPolygonzug_Blattschnitt"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Polygonzug_Blattschnitt_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCPolygonzug_Blattschnitt"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Polygonzug_Blattschnitt_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Referenz_LST_Zustand_Type"
+                 instanceClassName="java.lang.String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TReferenz_LST_Zustand"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGUID"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Referenz_LST_Zustand_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCReferenz_LST_Zustand"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Referenz_LST_Zustand_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Referenz_Objekt_Darstellung_Type"
+                 instanceClassName="java.lang.String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TReferenz_Objekt_Darstellung"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGUID"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Referenz_Objekt_Darstellung_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCReferenz_Objekt_Darstellung"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Referenz_Objekt_Darstellung_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+</ecore:EPackage>
