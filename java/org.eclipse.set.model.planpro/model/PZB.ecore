@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ecore:EPackage xmlns:xmi="http://www.omg.org/XMI"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+                xmi:version="2.0"
+                name="PZB"
+                nsURI="http://www.plan-pro.org/modell/PZB/1.10.0.1"
+                nsPrefix="nsPZB">
+   <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation"
+               value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+   </eAnnotations>
+   <eClassifiers xsi:type="ecore:EEnum" name="ENUMGUEAnordnung">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMGUE_Anordnung"/>
+      </eAnnotations>
+      <eLiterals name="ENUMGUE_Anordnung_1_EA" literal="1_EA"/>
+      <eLiterals name="ENUMGUE_Anordnung_2_AE" value="1" literal="2_AE"/>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="ENUMGUEAnordnungObject"
+                 instanceClassName="org.eclipse.emf.common.util.Enumerator">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMGUE_Anordnung:Object"/>
+         <details key="baseType" value="ENUMGUE_Anordnung"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EEnum" name="ENUMGUEBauart">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMGUE_Bauart"/>
+      </eAnnotations>
+      <eLiterals name="ENUMGUE_Bauart_GPE_90R" literal="GPE_90R"/>
+      <eLiterals name="ENUMGUE_Bauart_GUE_60" value="1" literal="GUE_60"/>
+      <eLiterals name="ENUMGUE_Bauart_PZ_80" value="2" literal="PZ_80"/>
+      <eLiterals name="ENUMGUE_Bauart_sonstige" value="3" literal="sonstige"/>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="ENUMGUEBauartObject"
+                 instanceClassName="org.eclipse.emf.common.util.Enumerator">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMGUE_Bauart:Object"/>
+         <details key="baseType" value="ENUMGUE_Bauart"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EEnum" name="ENUMGUEEnergieversorgung">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMGUE_Energieversorgung"/>
+      </eAnnotations>
+      <eLiterals name="ENUMGUE_Energieversorgung_Solar" literal="Solar"/>
+      <eLiterals name="ENUMGUE_Energieversorgung_sonstige"
+                 value="1"
+                 literal="sonstige"/>
+      <eLiterals name="ENUMGUE_Energieversorgung_Stellwerk"
+                 value="2"
+                 literal="Stellwerk"/>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="ENUMGUEEnergieversorgungObject"
+                 instanceClassName="org.eclipse.emf.common.util.Enumerator">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMGUE_Energieversorgung:Object"/>
+         <details key="baseType" value="ENUMGUE_Energieversorgung"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EEnum" name="ENUMMessfehler">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMMessfehler"/>
+      </eAnnotations>
+      <eLiterals name="ENUMMessfehler_2_bis_3" literal="2_bis_3"/>
+      <eLiterals name="ENUMMessfehler_3_bis_5" value="1" literal="3_bis_5"/>
+      <eLiterals name="ENUMMessfehler_5_bis_7" value="2" literal="5_bis_7"/>
+      <eLiterals name="ENUMMessfehler_kleiner_4" value="3" literal="kleiner_4"/>
+      <eLiterals name="ENUMMessfehler_kleiner_5" value="4" literal="kleiner_5"/>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="ENUMMessfehlerObject"
+                 instanceClassName="org.eclipse.emf.common.util.Enumerator">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMMessfehler:Object"/>
+         <details key="baseType" value="ENUMMessfehler"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EEnum" name="ENUMPZBArt">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMPZB_Art"/>
+      </eAnnotations>
+      <eLiterals name="ENUMPZB_Art_1000_2000_Hz" literal="1000_2000_Hz"/>
+      <eLiterals name="ENUMPZB_Art_1000_Hz" value="1" literal="1000_Hz"/>
+      <eLiterals name="ENUMPZB_Art_2000_Hz" value="2" literal="2000_Hz"/>
+      <eLiterals name="ENUMPZB_Art_500_Hz" value="3" literal="500_Hz"/>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="ENUMPZBArtObject"
+                 instanceClassName="org.eclipse.emf.common.util.Enumerator">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMPZB_Art:Object"/>
+         <details key="baseType" value="ENUMPZB_Art"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EEnum" name="ENUMWirksamkeit">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMWirksamkeit"/>
+      </eAnnotations>
+      <eLiterals name="ENUMWirksamkeit_schaltbar_von_Signal"
+                 literal="schaltbar_von_Signal"/>
+      <eLiterals name="ENUMWirksamkeit_sonstige" value="1" literal="sonstige"/>
+      <eLiterals name="ENUMWirksamkeit_staendig_wirksam"
+                 value="2"
+                 literal="staendig_wirksam"/>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EEnum" name="ENUMWirksamkeitFstr">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMWirksamkeit_Fstr"/>
+      </eAnnotations>
+      <eLiterals name="ENUMWirksamkeit_Fstr_sonstige" literal="sonstige"/>
+      <eLiterals name="ENUMWirksamkeit_Fstr_staendig_wirksam_wenn_Fahrstrasse_eingestellt"
+                 value="1"
+                 literal="staendig_wirksam_wenn_Fahrstrasse_eingestellt"/>
+      <eLiterals name="ENUMWirksamkeit_Fstr_unwirksam_wenn_Fahrstrasse_eingestellt"
+                 value="2"
+                 literal="unwirksam_wenn_Fahrstrasse_eingestellt"/>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="ENUMWirksamkeitFstrObject"
+                 instanceClassName="org.eclipse.emf.common.util.Enumerator">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMWirksamkeit_Fstr:Object"/>
+         <details key="baseType" value="ENUMWirksamkeit_Fstr"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="ENUMWirksamkeitObject"
+                 instanceClassName="org.eclipse.emf.common.util.Enumerator">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="ENUMWirksamkeit:Object"/>
+         <details key="baseType" value="ENUMWirksamkeit"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="GUE_Abstand_Abweichend_Type"
+                 instanceClassName="java.math.BigDecimal">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TGUE_Abstand_Abweichend"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="GUE_Abstand_Abweichend_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCGUE_Abstand_Abweichend"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//GUE_Abstand_Abweichend_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="GUE_Anordnung_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCGUE_Anordnung"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//ENUMGUEAnordnungObject"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="GUE_Bauart_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCGUE_Bauart"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//ENUMGUEBauartObject"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="GUE_Energieversorgung_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCGUE_Energieversorgung"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//ENUMGUEEnergieversorgungObject"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="GUE_Messstrecke_Type"
+                 instanceClassName="java.math.BigDecimal">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TGUE_Messstrecke"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+         <details key="pattern"
+                  value="5\.[89][0-9]|([6-9]|[1-6][0-9]|7[0-4])\.[0-9]{2}|75\.00"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="GUE_Messstrecke_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCGUE_Messstrecke"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//GUE_Messstrecke_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass" name="INA_Gefahrstelle_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CINA_Gefahrstelle"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDMarkanterPunkt"
+                           lowerBound="1"
+                           eType="ecore:EClass Verweise.ecore#//ID_Markanter_Punkt_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf einen Markanten Punkt zur Angabe einer Gefahrstelle für die INA-Berechnung. Die Unterscheidung in  maßgebende und schützenswertere Gefahrstelle erfolgt über das Attribut Prioritaet_Gefahrstelle. DB-Regelwerk 819.1311V00"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Markanter_Punkt"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="prioritaetGefahrstelle"
+                           lowerBound="1"
+                           eType="#//Prioritaet_Gefahrstelle_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Priorität der Gefahrstelle für die INA-Berechnung. Die maßgebende Gefahrstelle wird durch den Wert 1 gekennzeichnet, schützenswertere Gefahrstellen erhalten entsprechend höhere Werte."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Prioritaet_Gefahrstelle"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Messfehler_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCMessfehler"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//ENUMMessfehlerObject"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Prioritaet_Gefahrstelle_Type"
+                 instanceClassName="java.math.BigInteger">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TPrioritaet_Gefahrstelle"/>
+         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Prioritaet_Gefahrstelle_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCPrioritaet_Gefahrstelle"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Prioritaet_Gefahrstelle_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Pruefgeschwindigkeit_Type"
+                 instanceClassName="java.math.BigInteger">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TPruefgeschwindigkeit"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"/>
+         <details key="pattern" value="[1-9][0-9]|1[0-4][0-9]|150"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Pruefgeschwindigkeit_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCPruefgeschwindigkeit"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Pruefgeschwindigkeit_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Pruefzeit_Type"
+                 instanceClassName="java.math.BigDecimal">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TPruefzeit"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
+         <details key="pattern" value="(0|[1-9][0-9]{0,1})\.[0-9]{2}"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Pruefzeit_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCPruefzeit"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Pruefzeit_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="PZB_Abstand_GM_Type"
+                 instanceClassName="java.math.BigDecimal">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TPZB_Abstand_GM"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+         <details key="pattern" value="\-[1-6]|[0-9]|[1-9][0-9]|[12][0-9]{2}|300"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="PZB_Abstand_GM_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCPZB_Abstand_GM"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//PZB_Abstand_GM_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="PZB_Art_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCPZB_Art"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//ENUMPZBArtObject"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="PZB_Element"
+                 eSuperTypes="Basisobjekte.ecore#//Punkt_Objekt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+         <details key="documentation"
+                  value="(Bau)Art, Umfang und Funktionen der punktförmigen Zugbeeinflussung. Unter dem PZB_Element werden sowohl einzelne Gleismagneten als auch die Geschwindigkeitsüberwachungseinrichtungen (GÜ - in der Literatur auch als Geschwindigkeitsprüfeinrichtungen - GPE bezeichnet) sowie dazugehörige Eigenschaften und Parameter zusammenfassend dargestellt. DB-Regelwerk 819.1310 8 für Gleismagnete 819.1310 9 für GÜ In der Gleismagenttabelle finden sich die Angaben in den Zeilen 16 und 17 sowie 33 bis 35 für GÜ und 29 bis 32 für Gleismagnete."/>
+      </eAnnotations>
+      <eAnnotations>
+         <details key="appinfo"
+                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CPZB_Element"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDPZBElementZuordnung"
+                           lowerBound="1"
+                           eType="ecore:EClass Verweise.ecore#//ID_PZB_Element_Zuordnung_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf das Objekt PZB_Element_Zuordnung zur Angabe des Bezugspunkts bzw. der Bezugspunkte und ggf. bestehender Fahrstraßen-Abhängigkeiten."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_PZB_Element_Zuordnung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="pZBArt"
+                           lowerBound="1"
+                           eType="#//PZB_Art_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation" value="Art des PZB-Elementes."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="PZB_Art"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDStellelement"
+                           eType="ecore:EClass Verweise.ecore#//ID_Stellelement_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf das Objekt Stellelement zur Zusammenfassung von Eigenschaften der Objekte BUE Schnittstelle, PZB Element, Schluesselsperre, Signal, W Kr Gsp Element. Das Stellelement enthält Informationen über den energetischen und logischen Anschluss der Objekte. Für das PZB Element ist der Verweis nicht zu füllen, wenn damit eine GÜ oder ein ständig wirksamer Gleismagnet abgebildet wird. DB-Regelwerk Bisher ohne eindeutige Darstellung "/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Stellelement"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDUnterbringung"
+                           eType="ecore:EClass Verweise.ecore#//ID_Unterbringung_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf den physischen Ort der Unterbringung von Aussenelementansteuerung, Bedien Einrichtung Oertlich, Bedien Platz, ESTW Zentraleinheit, PZB Element, Schlosskombination, Schluesselsperre und ZN. Für das PZB Element wird der Verweis nur für eine GÜ gefüllt - mit der Bedeutung: GÜ-Schaltkasten. Für die ZN ist der Verweis optional, da im Planungswerkzeug ZN/ZL keine Befüllung aller der für die Unterbringung notwendigen Attribute möglich ist. DB-Regelwerk Darstellung des Gebäudes, der Bediensäule bzw. des Schaltkastens im sicherungstechnischen Lageplan nach Ril 819.9002 oder Beschreibung im Erläuterungsbericht."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Unterbringung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="pZBElementGM"
+                           eType="#//PZB_Element_GM_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="PZB_Element_GM"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="pZBElementGUE"
+                           eType="#//PZB_Element_GUE_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="PZB_Element_GUE"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass" name="PZB_Element_GM_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CPZB_Element_GM"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="pZBAbstandGM"
+                           eType="#//PZB_Abstand_GM_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Abstand des PZB-Magneten zum Signal, für den eine INA-Berechnung durchgeführt wurde. Der aktuelle Abstand wird über die Verortung der beiden Punktobjekte ermittelt."/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[-6..300]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="PZB_Abstand_GM"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="pZBINA"
+                           lowerBound="1"
+                           eType="#//PZB_INA_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Der PZB-Magnet deckt gemäß Wirkbereichsbogen Bereiche ab (\&#34;true\&#34;). Liegt ein Bahnsteig zwischen den PZB-Magneten von Vor- und nachfolgendem Hauptsignal, wird eine INA-Berechnung durchgeführt. Das Ergebnis wird in einem Wirkbereichsbogen dokumentiert. Daraus geht die Relevanz des PZB-Magneten für die Überwachung gegen Halt anfahrender Züge hervor: Z. B. \&#34;Der GM 1000 Hz deckt bei bei einer Beschleunigung von 0,3 m/s² die Bereiche von ... bis ... m ab.\&#34; oder \&#34;Der GM 2000 Hz deckt keine Bereiche ab\&#34;. "/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;false&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="PZB_INA"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass" name="PZB_Element_GUE_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CPZB_Element_GUE"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="gUEAbstandAbweichend"
+                           eType="#//GUE_Abstand_Abweichend_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Angabe des von der Regelanordnung abweichenden Abstandes einer GÜ zum Signal. Das Attribut wird nur befüllt, wenn der Abstand der GUE zum Signal gemäß Ril 819.1310 Anhang 01 aus baulichen Gründen nicht realisiert werden kann. Es ist dann der Abstand zwischen GUE und Signal anzugeben. Dann sind die Toleranzen gemäß Ril 819.1310 Abschnitt 9, Absatz (4) einzuhalten. DB-Regelwerk 819.1310A01 in Verbindung mit 819.1310 9 (4) "/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="GUE_Abstand_Abweichend"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="gUEAnordnung"
+                           lowerBound="1"
+                           eType="#//GUE_Anordnung_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Angabe des Anordnungsfalles des Prüf- und der Prüfmagneten einer GÜ. Fall 1 (EA): in Fahrtrichtung zuerst Einschaltmagnet (GSE), dann Wirkmagnet, dann Ausschaltmagnet (GSA). Fall 2 (AE): in Fahrtrichtung zuerst Ausschaltmagnet (GSA) dann Einschaltmagnet (GSE), dann Wirkmagnet. Nach Ril 819.1310 ist im Regelfall die Variante gemäß Fall 1 anzuwenden. DB-Regelwerk 819.1310 9 819.1310A01 "/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;1_EA&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="GUE_Anordnung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="gUEBauart"
+                           lowerBound="1"
+                           eType="#//GUE_Bauart_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Bauart der GÜ, von der weitere Planungsparameter wie Messfehler oder Pruefzeit abhängen. DB-Regelwerk Ril 819.1310A01"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="GUE_Bauart"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="gUEEnergieversorgung"
+                           lowerBound="1"
+                           eType="#//GUE_Energieversorgung_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Angabe, wie die Energieversorgung der GÜ erfolgt. Bei GÜ, die zur Überwachung restriktiver Geschwindigkeiten an Signalen bzw. für Weichen geplant werden, erfolgt die Stromversorgung im Regelfall aus dem zugehörigen Stellwerk. Bei Lf-Signalen der freien Strecke, die einer GÜ-Sicherung bedürfen, ist im Regelfall die Solarspeisung vorzusehen, da sich keine geeignete Stromversorgung in der Nähe befindet. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es ergibt sich aus dem konkreten Anwendungsfall."/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;Stellwerk&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="GUE_Energieversorgung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="gUEMessstrecke"
+                           lowerBound="1"
+                           eType="#//GUE_Messstrecke_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Angabe über die Länge der Messstrecke der GÜ in [m]. Aus Sicht des LST-Planers ist die Messstrecke das maßgebende Planungskriterium, die aufgrund der örtlichen Verhältnisse (z. B. Weichenlage, Schweißstelle, andere sicherungstechnischen Elemente) festzulegen ist. Daraus ergibt sich die dann zu realisierende Bauform der GÜ. DB-Regelwerk 819.1310A01 7 819.1310A01 8 "/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt; [5.80..75.00] &lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="GUE_Messstrecke"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDPZBElementMitnutzung"
+                           eType="ecore:EClass Verweise.ecore#//ID_PZB_Element_Mitnutzung_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Mit Ausnahme von GÜ bei Lf-Signalisierung werden bei der Anordnung von GÜ unmittelbar am Signal (meist im Zusammenhang mit geschwindigkeitsmindernden Zusatzanzeigern) der Wirkmagnet der GÜ und der PZB-Magnet des Signals zu einem PZB-Magneten zusammengefasst. DB-Regelwerk Der Sachverhalt ist in der Ril 819.1310 zwar nicht eindeutig beschrieben, geht jedoch aus den Tabelleneinträgen im Anhang 01 hervor."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_PZB_Element_Mitnutzung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="messfehler"
+                           eType="#//Messfehler_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Messfehlerbereich der GÜ in Abhängigkeit von der Bauart DB-Regelwerk Ril 819.1310A01"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Messfehler"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="pruefgeschwindigkeit"
+                           lowerBound="1"
+                           eType="#//Pruefgeschwindigkeit_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Angabe der an der GÜ eingestellten Überwachungsgeschwindigkeit in [km/h]. Bis auf die Überwachungsgeschwindigkeiten 95 und 105 erhalten die GÜ eine Wirkmagnet mit 2000 Hz; für GÜ 95 und 105 einen Wirkmagneten mit 1000 Hz. Eine explizite Angabe der Wirkfrequenz bei der GÜ ist daher nicht vorgesehen. DB-Regelwerk 819.1310A01 3 819.1310A01 5 819.1310A01 6 "/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt; [10..150] &lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Pruefgeschwindigkeit"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="pruefzeit"
+                           eType="#//Pruefzeit_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Prüfzeit der GÜ in Abhängigkeit von der Bauart. DB-Regelwerk Ril 819.1310A01"/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[0.00..99.99]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Pruefzeit"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="PZB_Element_Zuordnung"
+                 eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+         <details key="documentation"
+                  value="Zuordnung von PZB Element zu einem Signal, einer Fahrstraße oder auch anderen Objekten, die im Bezug zum PZB_Element stehen. Der Verweis von einem PZB Element über das Zuordnungsobjekt auf ein Signal ist dabei immer gefüllt. Die Verknüpfung mit einer Fahrstraße (nur Zugstraßen sind relevant) oder weiteren Objekten (INA-Berechnungsrelevante Objekte) ist fallbezogen notwendig. Beispiele für die Zuordnung sind unter ID Fstr Zug Rangier zu finden. DB-Regelwerk Eintrag in der Gleismagnettabelle; die Zuordnung zu einzelnen Fahrstraßen wird heute über Fußnoten gelöst."/>
+      </eAnnotations>
+      <eAnnotations>
+         <details key="appinfo"
+                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CPZB_Element_Zuordnung"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="pZBElementZuordnungBP"
+                           lowerBound="1"
+                           upperBound="-1"
+                           eType="#//PZB_Element_Zuordnung_BP_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="PZB_Element_Zuordnung_BP"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="pZBElementZuordnungFstr"
+                           upperBound="-1"
+                           eType="#//PZB_Element_Zuordnung_Fstr_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="PZB_Element_Zuordnung_Fstr"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass" name="PZB_Element_Zuordnung_BP_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CPZB_Element_Zuordnung_BP"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDPZBElementBezugspunkt"
+                           lowerBound="1"
+                           eType="ecore:EClass Verweise.ecore#//ID_PZB_Element_Bezugspunkt_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf das Signal bzw. die Weiche, in dessen Abhängigkeit das PZB Element angeordnet werden muss. Während bei PZB-Element-GM im Regelfall das Signal anzugeben ist, können PZB-Element-GUE auch in Abhängigkeit einer Weiche angeordnet werden (z.B. Spätablenkung). DB-Regelwerk Gleismagnettabelle 1 "/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_PZB_Element_Bezugspunkt"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iNAGefahrstelle"
+                           upperBound="-1"
+                           eType="#//INA_Gefahrstelle_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="INA_Gefahrstelle"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="pZBElementZuordnungINA"
+                           eType="#//PZB_Element_Zuordnung_INA_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="PZB_Element_Zuordnung_INA"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="wirksamkeit"
+                           lowerBound="1"
+                           eType="#//Wirksamkeit_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Angabe, ob der Gleismagnet/ die GÜ schaltbar ist oder nicht bzw. wie die Anschaltung erfolgt. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Gleismagnettabelle"/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;schaltbar_von_Signal&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wirksamkeit"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="PZB_Element_Zuordnung_Fstr_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CPZB_Element_Zuordnung_Fstr"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDFstrZugRangier"
+                           lowerBound="1"
+                           eType="ecore:EClass Verweise.ecore#//ID_Fstr_Zug_Rangier_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verlinkung, zu welcher Fahrstraße der PZB-Gleismagnet gehört (wird nur angegeben, wenn Ziel der Fahrstraße nicht identisch mit zugeordneten Signal ist oder Umfahrwege existieren). Dabei ist festgelegt, dass der Fahrweg der Fahrstraße über den PZB-Gleismagneten führt. Gleismagnete ohne Zuordnung zu einem Signal oder einer Fahrstraße sind ständig wirksam. Zur Verdeutlichung dienen die folgenden Beispiele: Media:Skizze PZB.pdf, Media:Tabellen PZB.pdf. In den Beipielen ist das PZB Element ein Gleismagnet 500 Hz; diese Verfahrensweise kann analog auch für alle anderen PZB_Elemente, z.B. GÜ, angewandt werden. DB-Regelwerk Gleismagnettabelle 1 mittels Fußnote "/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Fstr_Zug_Rangier"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="wirksamkeitFstr"
+                           lowerBound="1"
+                           eType="#//Wirksamkeit_Fstr_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Angabe, ob der Gleismagnet/ die GÜ bei Einstellung der referenzierten Fahrstraße wirksam ist oder nicht. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Gleismagnettabelle"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wirksamkeit_Fstr"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass" name="PZB_Element_Zuordnung_INA_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CPZB_Element_Zuordnung_INA"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDAnhangINA"
+                           lowerBound="1"
+                           upperBound="-1"
+                           eType="ecore:EClass Verweise.ecore#//ID_Anhang_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf die zugehörigen Dokumente zur INA-Berechnung. Dazu gehören Erhebungsbogen, Wirkbereichsbogen und ggf. die Berechnungsblätter selbst. Diese werden für jedes Signal gesondert erstellt. DB-Regelwerk 819.1310A02 "/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Anhang_INA"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDBahnsteigKante"
+                           lowerBound="1"
+                           eType="ecore:EClass Verweise.ecore#//ID_Bahnsteig_Kante_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="ID der zugehörigen Bahnsteigkante bezogen auf ein Signal mit INA-Berechnung. Der Fall, dass zwei separate Bahnsteige zwischen Vor- und Hauptsignal angeordnet sind, wird nicht angenommen. Aus der bisherigen Praxis sind keine solchen Fälle bekannt. DB-Regelwerk 819.1310A02 2 (1) "/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Bahnsteig_Kante"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="PZB_INA_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCPZB_INA"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="PZB_Zuordnung_Signal"
+                 eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+         <details key="documentation"
+                  value="Das Objekt dient der Zuordnung der Signale (Vorsignal, Vorsignalwiederholer, H-Tafel) zum maßgebenden Gleismagneten (GM) 2000 Hz des Hauptsignals. Die Unterscheidung zwischen den verschiedenen Signalen wird über die GUID des Signals hergestellt. Der angegebene Abstand bezieht sich beim Vorsignal auf den Abstand des GM 1000 Hz, bei Vorsignalwiederholer und H-Tafel auf den Abstand des Signals zum maßgebenden GM 2000 Hz des Hauptsignals. Es werden in der Regel bis zu vier H-Tafeln pro Hauptsignal geplant. DB-Regelwerk Gleismagnettabelle, Zeilen 19 sowie 21 bis 25 "/>
+      </eAnnotations>
+      <eAnnotations>
+         <details key="appinfo"
+                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CPZB_Zuordnung_Signal"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDPZBElementZuordnung"
+                           lowerBound="1"
+                           eType="ecore:EClass Verweise.ecore#//ID_PZB_Element_Zuordnung_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf das Objekt PZB_Element_Zuordnung, zur Angabe des zugehörigen Signals. "/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_PZB_Element_Zuordnung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDSignal"
+                           lowerBound="1"
+                           eType="ecore:EClass Verweise.ecore#//ID_Signal_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="ID des zugeordneten Signals (Vorsignal, Vorsignalwiederholer, H-Tafel), welches im Rahmen der INA-Berechnung dem Hauptsignal zugeordet wird und damit mit diesem im festen Zusammenhang steht."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Signal"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Wirksamkeit_Fstr_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCWirksamkeit_Fstr"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//ENUMWirksamkeitFstrObject"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Wirksamkeit_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCWirksamkeit"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//ENUMWirksamkeitObject"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+</ecore:EPackage>
