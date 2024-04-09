@@ -1,4 +1,4 @@
-# This workflow will build a the model and publish it to GitHub Packages
+# This workflow will build the model and publish it to GitHub Packages
 
 name: Build model
 
@@ -18,9 +18,11 @@ jobs:
     
     - name: Build
       run: mvn -T 1.5C -B clean verify
+      working-directory: java
 
     - name: Publish
       run: mvn -T 1.5C -B deploy -DaltDeploymentRepository=set-github::https://maven.pkg.github.com/${{ github.repository }}
+      working-directory: java
       if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/release/') || startsWith(github.ref, 'refs/tags/')
       env:
         GITHUB_TOKEN: ${{ github.token }}

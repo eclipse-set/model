@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
-    modelDirectory="/home/jenkins/workspace/PlanPro_ModelGenerator_main/java/modelGenerator/out/org.eclipse.set.model.model11001/./src/."
-    editDirectory="/home/jenkins/workspace/PlanPro_ModelGenerator_main/java/modelGenerator/out/org.eclipse.set.model.model11001.edit/./src/."
-    editorDirectory="/home/jenkins/workspace/PlanPro_ModelGenerator_main/java/modelGenerator/out/org.eclipse.set.model.model11001.editor/./src/."
-    modelPluginID="org.eclipse.set.model.model11001" modelName="Signalbegriffe_Ril_301"
-    importerID="org.eclipse.emf.importer.ecore" complianceLevel="17.0" copyrightFields="false">
-  <foreignModel>Signalbegriffe_Ril_301.ecore</foreignModel>
-</genmodel:GenModel>

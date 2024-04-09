@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ecore:EPackage xmlns:xmi="http://www.omg.org/XMI"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+                xmi:version="2.0"
+                name="ATO"
+                nsURI="http://www.plan-pro.org/modell/ATO/1.10.0.1"
+                nsPrefix="nsATO">
+   <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+      <details key="documentation"
+               value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+   </eAnnotations>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Abstand_ATO_Halt_Vor_EoA_Type"
+                 instanceClassName="java.math.BigDecimal">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TAbstand_ATO_Halt_Vor_EoA"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Abstand_ATO_Halt_Vor_EoA_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCAbstand_ATO_Halt_Vor_EoA"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Abstand_ATO_Halt_Vor_EoA_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="ATO_Segment_Profile"
+                 eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+         <details key="documentation"
+                  value="Infrastrukturabschnitte mit definiertem Beginn und Ende sowie zugehörigen Infrastrukturangaben bzw. Eigenschaften für den atomatischen Bahnbetrieb (ATO). Die Definition der Richtung wird aus der zugehörigen ETCS-Kante übernommen."/>
+      </eAnnotations>
+      <eAnnotations>
+         <details key="appinfo"
+                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ATO&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CATO_Segment_Profile"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="abstandATOHaltVorEoA"
+                           lowerBound="1"
+                           eType="#//Abstand_ATO_Halt_Vor_EoA_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Distanz vor dem eigentlichen Punkt der End of Authority (EoA) der relevanten ETCS MA, auf die ATO-OB den automatisch geführten Zug hin bremst. Der Parameter entspricht dem ATO-Parameter „D_EoA_Offset“ und beträgt in der Regel 5 m. Abweichende Angaben sind durch die betriebliche Infrastrukturplanung in der BAst vorzugeben."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Abstand_ATO_Halt_Vor_EoA"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="bezeichnung"
+                           lowerBound="1"
+                           eType="#//ATO_Segment_Profile_Bezeichnung_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Bezeichnung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDATOTSInstanz"
+                           lowerBound="1"
+                           eType="ecore:EClass Verweise.ecore#//ID_ATO_TS_Instanz_ohne_Proxy_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf die ATO-TS-Instanz, von der dieses Segment Profile verwaltet wird."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_ATO_TS_Instanz"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDATOTSInstanzNachbar"
+                           eType="ecore:EClass Verweise.ecore#//ID_ATO_TS_Instanz_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf die benachbarte ATO-TS-Instanz, der dieses Segment Profile bekannt ist."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_ATO_TS_Instanz_Nachbar"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDETCSKante"
+                           lowerBound="1"
+                           eType="ecore:EClass Verweise.ecore#//ID_ETCS_Kante_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf die ETCS-Kante, deren Bezeichnung als Bezeichnung des Segment Profiles verwendet wird."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_ETCS_Kante"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDOertlichkeit"
+                           upperBound="-1"
+                           eType="ecore:EClass Verweise.ecore#//ID_Oertlichkeit_Proxy_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Betriebsstelle(n) (Örtlichkeiten), denen das Segment Profil zugeordnet ist. Aus der Zuordnung lässt sich der Zuständigkeitsbereich einer ATO-TS-Instanz ableiten."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Oertlichkeit"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="ATO_Segment_Profile_Bezeichnung_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CATO_Segment_Profile_Bezeichnung"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="nIDSP"
+                           lowerBound="1"
+                           eType="#//NID_SP_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Bezeichnung des Segment Profiles, die sich in der Regel aus der Bezeichnung der referenzierten ETCS-Gleiskante ergibt. Zur Herstellung der Eineindeutigkeit können weitere Bezeichnungsbestandteile ergänzt werden."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="NID_SP"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="ATO_Timing_Point"
+                 eSuperTypes="Basisobjekte.ecore#//Punkt_Objekt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+         <details key="documentation"
+                  value="Definierter Punkt in den Infrastrukturdaten für ATO (Segment Profile), an dem betriebliche Vorgaben definiert werden können. Diese betrieblichen Vorgaben werden entweder direkt aus dem Fahrplan abgeleitet oder durch dispositive Handlungen definiert, z. B. Betriebshalte oder Verkehrshalte einfügen oder auslassen, Beschleunigen oder Verlangsamung der Fahrt (frühere/spätere Zeit für die Erreichung des Timing Points) und über das Journey Profile an ATO-OB kommandiert. &#xA;Darüber hinaus kann an einem Timing Point die geplante betriebliche Fahrplanlage eines Zuges mit der tatsächlichen betrieblichen Lage des Zuges verglichen werden.&#xA;Die Position des TP im Segment Profile muss über die Topologie ermittelt werden. Der TP besitzt keine Wirkrichtung."/>
+      </eAnnotations>
+      <eAnnotations>
+         <details key="appinfo"
+                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ATO&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CATO_Timing_Point"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="aTOTimingPointAllg"
+                           lowerBound="1"
+                           eType="#//ATO_Timing_Point_Allg_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ATO_Timing_Point_Allg"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="bezeichnung"
+                           lowerBound="1"
+                           eType="#//ATO_Timing_Point_Bezeichnung_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Bezeichnung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDSignal"
+                           eType="ecore:EClass Verweise.ecore#//ID_Signal_ohne_Proxy_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf das Signal, zu dem der Timing Point gehört. Timing Points an weiteren Infrastrukturelementen oder -punkten (z.B. Fahrzeitmesspunkte in der Mitte von Betriebsstellen) können projektspezifisch durch die betriebliche Infrastrukturplanung in der BAst ATO vorgegeben werden."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Signal"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass" name="ATO_Timing_Point_Allg_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CATO_Timing_Point_Allg"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="erreichungstoleranz"
+                           lowerBound="1"
+                           eType="#//Erreichungstoleranz_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Kodierung des Haltefensters am Haltplatz bei manueller Fahrt. Der Parameter entspricht dem ATO-Parameter \&#34;Q_STP_Reached\&#34; gemäß Subset 126, Version 0.0.17 vom 05.08.2020."/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[0..31]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Erreichungstoleranz"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="haltetoleranz"
+                           lowerBound="1"
+                           eType="#//Haltetoleranz_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Kodierung des Haltefensters am Halteplatz bei automatischer Fahrt (Q_Stop_Location Tolerance)."/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[0..31]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Haltetoleranz"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="nIDTP"
+                           lowerBound="1"
+                           eType="#//NID_TP_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Innerhalb eines Landes (NID-C-Bereich) einmalige Adresse des Timing Points."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="NID_TP"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="ATO_Timing_Point_Bezeichnung_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CATO_Timing_Point_Bezeichnung"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="bezeichnungATOTP"
+                           lowerBound="1"
+                           eType="#//Bezeichnung_ATO_TP_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Fachliche Bezeichnung des Timing Points (Parameter „X_TEXT“ aus dem Block „Timing Point Name“, siehe Subset 126)."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Bezeichnung_ATO_TP"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="ATO_TS_Instanz"
+                 eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+         <details key="documentation"
+                  value="Zentrale Komponente für einen ATO-Infrastrukturbereich, die für die gesamten ATO-relevanten Infrastrukturdaten, insbesondere Segment Profiles und deren Verteilung an die ATO-Fahrzeugkomponenten (ATO-OB), verantwortlich ist."/>
+      </eAnnotations>
+      <eAnnotations>
+         <details key="appinfo"
+                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ATO&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CATO_TS_Instanz"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="aTOTSInstanzAdresse"
+                           lowerBound="1"
+                           eType="#//ATO_TS_Instanz_Adresse_AttributeGroup"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ATO_TS_Instanz_Adresse"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="iDUnterbringung"
+                           eType="ecore:EClass Verweise.ecore#//ID_Unterbringung_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Verweis auf die Unterbringung, in der die ATO-TS-Instanz untergebracht ist. Über die Unterbringung wird auch die Position abgebildet. Die Angabe entfällt bei einer cloud-basierten Realisierung."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="ID_Unterbringung"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass" name="ATO_TS_Instanz_Adresse_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="CATO_TS_Instanz_Adresse"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="nIDATOTS"
+                           lowerBound="1"
+                           eType="#//NID_ATOTS_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Kennung der ATO-TS-Instanz als Bestandteil der ATO-Kennung (ATO-ID) gemäß Subset 126, Version 0.0.17 vom 05.08.2020.&#xA;Die Kennung wird zentral zugeteilt und verwaltet."/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="NID_ATOTS"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference"
+                           name="nIDCATOTS"
+                           lowerBound="1"
+                           eType="#//NID_C_ATOTS_TypeClass"
+                           containment="true"
+                           resolveProxies="false">
+         <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+            <details key="documentation"
+                     value="Gebietskennung als Bestandteil der ATO-Kennung (ATO-ID) gemäß Subset 126, Version 0.0.17 vom 05.08.2020.&#xA;Die Gebietskennung NID_C_ATOTS für ATO-TS- Instanzen wird aus der ETCS-Gebietskennung (NID_C) des entsprechenden Bereichs übernommen."/>
+         </eAnnotations>
+         <eAnnotations>
+            <details key="appinfo"
+                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[0..1023]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+         </eAnnotations>
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="NID_C_ATOTS"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Bezeichnung_ATO_TP_Type"
+                 instanceClassName="java.lang.String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TBezeichnung_ATO_TP"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Bezeichnung_ATO_TP_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCBezeichnung_ATO_TP"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Bezeichnung_ATO_TP_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Erreichungstoleranz_Type"
+                 instanceClassName="java.math.BigInteger">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TErreichungstoleranz"/>
+         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+         <details key="pattern" value="[0-9]|[12][0-9]|30|31"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Erreichungstoleranz_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCErreichungstoleranz"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Erreichungstoleranz_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="Haltetoleranz_Type"
+                 instanceClassName="java.math.BigInteger">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="THaltetoleranz"/>
+         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+         <details key="pattern" value="[0-9]|[12][0-9]|30|31"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Haltetoleranz_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCHaltetoleranz"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//Haltetoleranz_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="NID_ATOTS_Type"
+                 instanceClassName="java.math.BigInteger">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TNID_ATOTS"/>
+         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="NID_ATOTS_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCNID_ATOTS"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//NID_ATOTS_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="NID_C_ATOTS_Type"
+                 instanceClassName="java.math.BigInteger">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TNID_C_ATOTS"/>
+         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+         <details key="pattern"
+                  value="102[0-3]|10[0-1][0-9]|[1-9][0-9]{2}|0|[1-9][0-9]{0,1}"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="NID_C_ATOTS_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCNID_C_ATOTS"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//NID_C_ATOTS_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="NID_SP_Type"
+                 instanceClassName="java.lang.String">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TNID_SP"/>
+         <details key="baseType"
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="NID_SP_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCNID_SP"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//NID_SP_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EDataType"
+                 name="NID_TP_Type"
+                 instanceClassName="java.math.BigInteger">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TNID_TP"/>
+         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+      </eAnnotations>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="NID_TP_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name" value="TCNID_TP"/>
+         <details key="kind" value="elementOnly"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute"
+                           name="wert"
+                           lowerBound="1"
+                           eType="#//NID_TP_Type"
+                           unsettable="true">
+         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+            <details key="kind" value="element"/>
+            <details key="name" value="Wert"/>
+         </eAnnotations>
+      </eStructuralFeatures>
+   </eClassifiers>
+</ecore:EPackage>
