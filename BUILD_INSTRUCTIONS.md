@@ -5,9 +5,9 @@ First, instructions on how to work on the component locally using the Eclipse ID
 
 ## Prerequisites
 
-- A Java Development Kit 17 (or higher)
-- Maven (3.9+) 
-- Eclipse IDE (2022-06+)
+- A Java Development Kit 21
+- Maven (3.9.6) 
+- Eclipse IDE (2023-12)
 
 # Development
 
@@ -24,6 +24,4 @@ As the model itself does not produce executable content, there is nothing to run
 
 This is the recommended way if you want a production-style build. This is also what we have implemented on the Jenkins instance. 
 
-1. Build via maven: `mvn clean verify`
-
-The p2 site for the model is now located in `java\bundles\org.eclipse.set.model.releng.repository\target\repository`. 
+1. Build via maven: `mvn clean verify` and deploy `mvn deploy`
