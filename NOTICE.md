@@ -3,10 +3,10 @@
 This content is produced and maintained by the Eclipse Signalling Engineering Toolbox project.
 
 * Downloads: https://download.eclipse.org/set/
-* GitLab development server: https://gitlab.eclipse.org/eclipse/set/
-* Issue tracker: https://gitlab.eclipse.org/eclipse/set/set/-/issues
+* Github development server: https://github.com/eclipse-set/
+* Issue tracker: https://github.com/eclipse-set/set/issues
 * Developers mailing list: https://accounts.eclipse.org/mailing-list/set-dev
-* Jenkins build server: https://ci.eclipse.org/set/
+* Github Actions server: https://github.com/eclipse-set/set/actions
 * Project home: https://projects.eclipse.org/projects/technology.set
 
 ## Trademarks
@@ -31,11 +31,10 @@ SPDX-License-Identifier: EPL-2.0
 
 The project maintains the following source code repositories:
 
-* https://gitlab.eclipse.org/eclipse/set/browser
-* https://gitlab.eclipse.org/eclipse/set/set
-* https://gitlab.eclipse.org/eclipse/set/model
-* https://gitlab.eclipse.org/eclipse/set/toolbox-model
-* https://gitlab.eclipse.org/eclipse/set/build
+* https://github.com/eclipse-set/browser
+* https://github.com/eclipse-set/set
+* https://github.com/eclipse-set/model
+* https://github.com/eclipse-set/build
 
 ## Third-party Content
 
