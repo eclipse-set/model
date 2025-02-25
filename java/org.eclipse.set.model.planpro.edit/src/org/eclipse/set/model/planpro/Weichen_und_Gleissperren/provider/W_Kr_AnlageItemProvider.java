@@ -147,8 +147,10 @@ public class W_Kr_AnlageItemProvider extends Basis_ObjektItemProvider {
 			case Weichen_und_GleissperrenPackage.WKR_ANLAGE__WKR_ANLAGE_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

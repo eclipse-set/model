@@ -136,8 +136,10 @@ public class FT_ESG_Subtyp_TypeClassItemProvider extends BasisAttribut_Attribute
 			case Balisentechnik_ETCSPackage.FT_ESG_SUBTYP_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

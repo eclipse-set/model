@@ -154,8 +154,10 @@ public class DP_Typ_GSonst_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.DP_TYP_GSONST_ATTRIBUTE_GROUP__DP_TYP_SONST:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

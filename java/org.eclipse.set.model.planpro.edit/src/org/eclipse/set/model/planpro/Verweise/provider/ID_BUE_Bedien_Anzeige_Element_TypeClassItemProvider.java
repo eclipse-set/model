@@ -159,8 +159,10 @@ public class ID_BUE_Bedien_Anzeige_Element_TypeClassItemProvider extends Zeiger_
 			case VerweisePackage.ID_BUE_BEDIEN_ANZEIGE_ELEMENT_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

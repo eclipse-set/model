@@ -139,8 +139,10 @@ public class Auswurfrichtung_TypeClassItemProvider extends BasisAttribut_Attribu
 			case Weichen_und_GleissperrenPackage.AUSWURFRICHTUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

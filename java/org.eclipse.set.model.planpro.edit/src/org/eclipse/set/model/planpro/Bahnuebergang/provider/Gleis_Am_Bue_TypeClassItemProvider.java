@@ -136,8 +136,10 @@ public class Gleis_Am_Bue_TypeClassItemProvider extends BasisAttribut_AttributeG
 			case BahnuebergangPackage.GLEIS_AM_BUE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

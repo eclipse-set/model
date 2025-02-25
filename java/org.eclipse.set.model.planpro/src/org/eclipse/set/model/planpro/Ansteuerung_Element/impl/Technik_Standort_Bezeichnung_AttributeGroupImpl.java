@@ -120,8 +120,9 @@ public class Technik_Standort_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case Ansteuerung_ElementPackage.TECHNIK_STANDORT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_TSO:
 				return basicSetBezeichnungTSO(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class Technik_Standort_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case Ansteuerung_ElementPackage.TECHNIK_STANDORT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_TSO:
 				return getBezeichnungTSO();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class Technik_Standort_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 			case Ansteuerung_ElementPackage.TECHNIK_STANDORT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_TSO:
 				setBezeichnungTSO((Bezeichnung_TSO_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class Technik_Standort_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 			case Ansteuerung_ElementPackage.TECHNIK_STANDORT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_TSO:
 				setBezeichnungTSO((Bezeichnung_TSO_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class Technik_Standort_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case Ansteuerung_ElementPackage.TECHNIK_STANDORT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_TSO:
 				return bezeichnungTSO != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Technik_Standort_Bezeichnung_AttributeGroupImpl

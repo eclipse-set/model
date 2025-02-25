@@ -149,8 +149,10 @@ public class Block_AnlageItemProvider extends Basis_ObjektItemProvider {
 			case BlockPackage.BLOCK_ANLAGE__ID_GLEIS_BEZEICHNUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

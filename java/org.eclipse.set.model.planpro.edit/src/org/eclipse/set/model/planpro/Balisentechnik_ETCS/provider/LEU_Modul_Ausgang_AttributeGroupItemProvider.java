@@ -158,8 +158,10 @@ public class LEU_Modul_Ausgang_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.LEU_MODUL_AUSGANG_ATTRIBUTE_GROUP__PORT_NR_AUSG_PHYSISCH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

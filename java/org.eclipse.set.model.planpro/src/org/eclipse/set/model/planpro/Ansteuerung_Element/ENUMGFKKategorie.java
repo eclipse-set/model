@@ -158,8 +158,8 @@ public enum ENUMGFKKategorie implements Enumerator {
 			case ENUMGFK_KATEGORIE_GROSS_VALUE: return ENUMGFK_KATEGORIE_GROSS;
 			case ENUMGFK_KATEGORIE_KLEIN_VALUE: return ENUMGFK_KATEGORIE_KLEIN;
 			case ENUMGFK_KATEGORIE_MITTEL_VALUE: return ENUMGFK_KATEGORIE_MITTEL;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

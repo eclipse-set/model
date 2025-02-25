@@ -139,8 +139,10 @@ public class ZBS_La_Bereich_Geschwindigkeit_TypeClassItemProvider extends BasisA
 			case Balisentechnik_ETCSPackage.ZBS_LA_BEREICH_GESCHWINDIGKEIT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

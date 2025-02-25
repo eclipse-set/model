@@ -134,8 +134,10 @@ public class Ident_Rolle_TypeClassItemProvider extends BasisAttribut_AttributeGr
 			case PlanProPackage.IDENT_ROLLE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

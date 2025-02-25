@@ -215,8 +215,9 @@ public class LageplanImpl extends Ur_ObjektImpl implements Lageplan {
 				return ((InternalEList<?>)getIDLageplanBlattschnitt()).basicRemove(otherEnd, msgs);
 			case LayoutinformationenPackage.LAGEPLAN__LAGEPLAN_ART:
 				return basicSetLageplanArt(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -233,8 +234,9 @@ public class LageplanImpl extends Ur_ObjektImpl implements Lageplan {
 				return getIDLageplanBlattschnitt();
 			case LayoutinformationenPackage.LAGEPLAN__LAGEPLAN_ART:
 				return getLageplanArt();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -256,8 +258,10 @@ public class LageplanImpl extends Ur_ObjektImpl implements Lageplan {
 			case LayoutinformationenPackage.LAGEPLAN__LAGEPLAN_ART:
 				setLageplanArt((Lageplan_Art_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -277,8 +281,10 @@ public class LageplanImpl extends Ur_ObjektImpl implements Lageplan {
 			case LayoutinformationenPackage.LAGEPLAN__LAGEPLAN_ART:
 				setLageplanArt((Lageplan_Art_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -295,8 +301,9 @@ public class LageplanImpl extends Ur_ObjektImpl implements Lageplan {
 				return iDLageplanBlattschnitt != null && !iDLageplanBlattschnitt.isEmpty();
 			case LayoutinformationenPackage.LAGEPLAN__LAGEPLAN_ART:
 				return lageplanArt != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //LageplanImpl

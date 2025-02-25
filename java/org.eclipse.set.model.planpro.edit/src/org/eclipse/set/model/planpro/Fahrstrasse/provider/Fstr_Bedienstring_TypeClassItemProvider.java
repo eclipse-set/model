@@ -136,8 +136,10 @@ public class Fstr_Bedienstring_TypeClassItemProvider extends BasisAttribut_Attri
 			case FahrstrassePackage.FSTR_BEDIENSTRING_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

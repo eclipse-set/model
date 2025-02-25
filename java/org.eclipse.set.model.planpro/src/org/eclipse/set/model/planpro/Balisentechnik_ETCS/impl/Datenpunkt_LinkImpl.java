@@ -509,8 +509,9 @@ public class Datenpunkt_LinkImpl extends Basis_ObjektImpl implements Datenpunkt_
 				return basicSetAnwendungGNT(null, msgs);
 			case Balisentechnik_ETCSPackage.DATENPUNKT_LINK__ZBS_MERKMALE:
 				return basicSetZBSMerkmale(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -537,8 +538,9 @@ public class Datenpunkt_LinkImpl extends Basis_ObjektImpl implements Datenpunkt_
 				return getAnwendungGNT();
 			case Balisentechnik_ETCSPackage.DATENPUNKT_LINK__ZBS_MERKMALE:
 				return getZBSMerkmale();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -575,8 +577,10 @@ public class Datenpunkt_LinkImpl extends Basis_ObjektImpl implements Datenpunkt_
 			case Balisentechnik_ETCSPackage.DATENPUNKT_LINK__ZBS_MERKMALE:
 				setZBSMerkmale((ZBS_Merkmale_AttributeGroup)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -611,8 +615,10 @@ public class Datenpunkt_LinkImpl extends Basis_ObjektImpl implements Datenpunkt_
 			case Balisentechnik_ETCSPackage.DATENPUNKT_LINK__ZBS_MERKMALE:
 				setZBSMerkmale((ZBS_Merkmale_AttributeGroup)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -639,8 +645,9 @@ public class Datenpunkt_LinkImpl extends Basis_ObjektImpl implements Datenpunkt_
 				return anwendungGNT != null;
 			case Balisentechnik_ETCSPackage.DATENPUNKT_LINK__ZBS_MERKMALE:
 				return zBSMerkmale != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Datenpunkt_LinkImpl

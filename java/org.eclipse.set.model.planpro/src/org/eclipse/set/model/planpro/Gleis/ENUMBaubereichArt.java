@@ -181,8 +181,8 @@ public enum ENUMBaubereichArt implements Enumerator {
 			case ENUM_BAUBEREICH_ART_BAUGLEIS_VALUE: return ENUM_BAUBEREICH_ART_BAUGLEIS;
 			case ENUM_BAUBEREICH_ART_GESPERRT_VALUE: return ENUM_BAUBEREICH_ART_GESPERRT;
 			case ENUM_BAUBEREICH_ART_SONSTIGE_VALUE: return ENUM_BAUBEREICH_ART_SONSTIGE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

@@ -238,8 +238,9 @@ public class Entgleisungsschuh_AttributeGroupImpl extends EObjectImpl implements
 				return basicSetGleissperrensignal(null, msgs);
 			case Weichen_und_GleissperrenPackage.ENTGLEISUNGSSCHUH_ATTRIBUTE_GROUP__SCHUTZSCHIENE:
 				return basicSetSchutzschiene(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class Entgleisungsschuh_AttributeGroupImpl extends EObjectImpl implements
 				return getGleissperrensignal();
 			case Weichen_und_GleissperrenPackage.ENTGLEISUNGSSCHUH_ATTRIBUTE_GROUP__SCHUTZSCHIENE:
 				return getSchutzschiene();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class Entgleisungsschuh_AttributeGroupImpl extends EObjectImpl implements
 			case Weichen_und_GleissperrenPackage.ENTGLEISUNGSSCHUH_ATTRIBUTE_GROUP__SCHUTZSCHIENE:
 				setSchutzschiene((Schutzschiene_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class Entgleisungsschuh_AttributeGroupImpl extends EObjectImpl implements
 			case Weichen_und_GleissperrenPackage.ENTGLEISUNGSSCHUH_ATTRIBUTE_GROUP__SCHUTZSCHIENE:
 				setSchutzschiene((Schutzschiene_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class Entgleisungsschuh_AttributeGroupImpl extends EObjectImpl implements
 				return gleissperrensignal != null;
 			case Weichen_und_GleissperrenPackage.ENTGLEISUNGSSCHUH_ATTRIBUTE_GROUP__SCHUTZSCHIENE:
 				return schutzschiene != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Entgleisungsschuh_AttributeGroupImpl

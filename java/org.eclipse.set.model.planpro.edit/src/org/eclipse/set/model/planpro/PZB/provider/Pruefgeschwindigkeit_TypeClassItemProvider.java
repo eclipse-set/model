@@ -139,8 +139,10 @@ public class Pruefgeschwindigkeit_TypeClassItemProvider extends BasisAttribut_At
 			case PZBPackage.PRUEFGESCHWINDIGKEIT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

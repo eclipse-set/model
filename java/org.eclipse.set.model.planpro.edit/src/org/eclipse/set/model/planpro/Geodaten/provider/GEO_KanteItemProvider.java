@@ -149,8 +149,10 @@ public class GEO_KanteItemProvider extends Basis_ObjektItemProvider {
 			case GeodatenPackage.GEO_KANTE__IDGEO_KNOTEN_B:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

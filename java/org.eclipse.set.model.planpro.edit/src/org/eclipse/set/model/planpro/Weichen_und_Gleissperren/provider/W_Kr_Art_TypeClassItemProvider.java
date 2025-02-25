@@ -138,8 +138,10 @@ public class W_Kr_Art_TypeClassItemProvider extends BasisAttribut_AttributeGroup
 			case Weichen_und_GleissperrenPackage.WKR_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

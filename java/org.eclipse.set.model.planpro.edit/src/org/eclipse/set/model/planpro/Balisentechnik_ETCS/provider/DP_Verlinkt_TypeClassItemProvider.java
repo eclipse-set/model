@@ -137,8 +137,10 @@ public class DP_Verlinkt_TypeClassItemProvider extends BasisAttribut_AttributeGr
 			case Balisentechnik_ETCSPackage.DP_VERLINKT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

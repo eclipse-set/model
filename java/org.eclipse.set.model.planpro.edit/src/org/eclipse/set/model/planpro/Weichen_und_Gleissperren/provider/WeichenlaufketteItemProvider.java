@@ -142,8 +142,10 @@ public class WeichenlaufketteItemProvider extends Basis_ObjektItemProvider {
 			case Weichen_und_GleissperrenPackage.WEICHENLAUFKETTE__BEZEICHNUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -153,8 +153,10 @@ public class Bedien_PlatzItemProvider extends Basis_ObjektItemProvider {
 			case BedienungPackage.BEDIEN_PLATZ__IDESTW_ZENTRALEINHEIT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

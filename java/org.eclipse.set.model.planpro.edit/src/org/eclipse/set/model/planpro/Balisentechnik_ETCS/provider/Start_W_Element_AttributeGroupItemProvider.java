@@ -156,8 +156,10 @@ public class Start_W_Element_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.START_WELEMENT_ATTRIBUTE_GROUP__WANSCHLUSS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -150,8 +150,10 @@ public class Fachdaten_AttributeGroupItemProvider
 			case PlanProPackage.FACHDATEN_ATTRIBUTE_GROUP__AUSGABE_FACHDATEN:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -144,8 +144,10 @@ public class ZL_Signalgruppe_ZuordnungItemProvider extends Basis_ObjektItemProvi
 			case ZuglenkungPackage.ZL_SIGNALGRUPPE_ZUORDNUNG__IDZL_SIGNALGRUPPE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

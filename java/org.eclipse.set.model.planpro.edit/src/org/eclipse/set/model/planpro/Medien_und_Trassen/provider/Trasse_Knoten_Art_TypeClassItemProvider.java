@@ -138,8 +138,10 @@ public class Trasse_Knoten_Art_TypeClassItemProvider extends BasisAttribut_Attri
 			case Medien_und_TrassenPackage.TRASSE_KNOTEN_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

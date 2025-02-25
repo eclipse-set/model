@@ -238,8 +238,9 @@ public class NB_Bedien_Anzeige_Funktionen_AttributeGroupImpl extends EObjectImpl
 				return basicSetTasteFGT(null, msgs);
 			case NahbedienungPackage.NB_BEDIEN_ANZEIGE_FUNKTIONEN_ATTRIBUTE_GROUP__TASTE_WGT:
 				return basicSetTasteWGT(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class NB_Bedien_Anzeige_Funktionen_AttributeGroupImpl extends EObjectImpl
 				return getTasteFGT();
 			case NahbedienungPackage.NB_BEDIEN_ANZEIGE_FUNKTIONEN_ATTRIBUTE_GROUP__TASTE_WGT:
 				return getTasteWGT();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class NB_Bedien_Anzeige_Funktionen_AttributeGroupImpl extends EObjectImpl
 			case NahbedienungPackage.NB_BEDIEN_ANZEIGE_FUNKTIONEN_ATTRIBUTE_GROUP__TASTE_WGT:
 				setTasteWGT((Taste_WGT_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class NB_Bedien_Anzeige_Funktionen_AttributeGroupImpl extends EObjectImpl
 			case NahbedienungPackage.NB_BEDIEN_ANZEIGE_FUNKTIONEN_ATTRIBUTE_GROUP__TASTE_WGT:
 				setTasteWGT((Taste_WGT_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class NB_Bedien_Anzeige_Funktionen_AttributeGroupImpl extends EObjectImpl
 				return tasteFGT != null;
 			case NahbedienungPackage.NB_BEDIEN_ANZEIGE_FUNKTIONEN_ATTRIBUTE_GROUP__TASTE_WGT:
 				return tasteWGT != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //NB_Bedien_Anzeige_Funktionen_AttributeGroupImpl

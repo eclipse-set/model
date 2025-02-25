@@ -137,8 +137,10 @@ public class LM_G_TypeClassItemProvider extends BasisAttribut_AttributeGroupItem
 			case Balisentechnik_ETCSPackage.LM_GTYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

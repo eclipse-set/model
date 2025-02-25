@@ -160,8 +160,10 @@ public class Vz_Sperrstrecke_Vorgeschaltet_AttributeGroupItemProvider
 			case BahnuebergangPackage.VZ_SPERRSTRECKE_VORGESCHALTET_ATTRIBUTE_GROUP__RAEUMSTRECKE_DSK_STRICH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

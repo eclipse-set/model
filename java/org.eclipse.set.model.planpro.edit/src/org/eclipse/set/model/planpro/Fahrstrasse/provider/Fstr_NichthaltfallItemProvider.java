@@ -144,8 +144,10 @@ public class Fstr_NichthaltfallItemProvider extends Basis_ObjektItemProvider {
 			case FahrstrassePackage.FSTR_NICHTHALTFALL__ID_FSTR_FAHRWEG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

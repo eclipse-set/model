@@ -180,8 +180,9 @@ public class Telegramm_84_Einzelne_Fstr_AttributeGroupImpl extends EObjectImpl i
 				return basicSetIDFstrZugRangier(null, msgs);
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_84_EINZELNE_FSTR_ATTRIBUTE_GROUP__IDZLV_BUS:
 				return basicSetIDZLVBus(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,8 +197,9 @@ public class Telegramm_84_Einzelne_Fstr_AttributeGroupImpl extends EObjectImpl i
 				return getIDFstrZugRangier();
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_84_EINZELNE_FSTR_ATTRIBUTE_GROUP__IDZLV_BUS:
 				return getIDZLVBus();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -214,8 +216,10 @@ public class Telegramm_84_Einzelne_Fstr_AttributeGroupImpl extends EObjectImpl i
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_84_EINZELNE_FSTR_ATTRIBUTE_GROUP__IDZLV_BUS:
 				setIDZLVBus((ID_ZLV_Bus_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -232,8 +236,10 @@ public class Telegramm_84_Einzelne_Fstr_AttributeGroupImpl extends EObjectImpl i
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_84_EINZELNE_FSTR_ATTRIBUTE_GROUP__IDZLV_BUS:
 				setIDZLVBus((ID_ZLV_Bus_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -248,8 +254,9 @@ public class Telegramm_84_Einzelne_Fstr_AttributeGroupImpl extends EObjectImpl i
 				return iDFstrZugRangier != null;
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_84_EINZELNE_FSTR_ATTRIBUTE_GROUP__IDZLV_BUS:
 				return iDZLVBus != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Telegramm_84_Einzelne_Fstr_AttributeGroupImpl

@@ -204,8 +204,8 @@ public enum ENUMTSOTeilsystemArt implements Enumerator {
 			case ENUMTSO_TEILSYSTEM_ART_RBC_VALUE: return ENUMTSO_TEILSYSTEM_ART_RBC;
 			case ENUMTSO_TEILSYSTEM_ART_TRANSFERNETZ_MIT_SI_LST_VALUE: return ENUMTSO_TEILSYSTEM_ART_TRANSFERNETZ_MIT_SI_LST;
 			case ENUMTSO_TEILSYSTEM_ART_ZE_VALUE: return ENUMTSO_TEILSYSTEM_ART_ZE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

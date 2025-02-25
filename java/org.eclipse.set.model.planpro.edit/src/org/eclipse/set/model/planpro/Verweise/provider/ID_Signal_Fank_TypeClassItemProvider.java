@@ -159,8 +159,10 @@ public class ID_Signal_Fank_TypeClassItemProvider extends Zeiger_TypeClassItemPr
 			case VerweisePackage.ID_SIGNAL_FANK_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

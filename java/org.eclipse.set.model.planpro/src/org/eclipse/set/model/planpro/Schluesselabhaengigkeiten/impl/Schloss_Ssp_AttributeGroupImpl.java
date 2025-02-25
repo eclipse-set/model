@@ -121,8 +121,9 @@ public class Schloss_Ssp_AttributeGroupImpl extends EObjectImpl implements Schlo
 		switch (featureID) {
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SSP_ATTRIBUTE_GROUP__ID_SCHLUESSELSPERRE:
 				return basicSetIDSchluesselsperre(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,8 +136,9 @@ public class Schloss_Ssp_AttributeGroupImpl extends EObjectImpl implements Schlo
 		switch (featureID) {
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SSP_ATTRIBUTE_GROUP__ID_SCHLUESSELSPERRE:
 				return getIDSchluesselsperre();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -150,8 +152,10 @@ public class Schloss_Ssp_AttributeGroupImpl extends EObjectImpl implements Schlo
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SSP_ATTRIBUTE_GROUP__ID_SCHLUESSELSPERRE:
 				setIDSchluesselsperre((ID_Schluesselsperre_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -165,8 +169,10 @@ public class Schloss_Ssp_AttributeGroupImpl extends EObjectImpl implements Schlo
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SSP_ATTRIBUTE_GROUP__ID_SCHLUESSELSPERRE:
 				setIDSchluesselsperre((ID_Schluesselsperre_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -179,8 +185,9 @@ public class Schloss_Ssp_AttributeGroupImpl extends EObjectImpl implements Schlo
 		switch (featureID) {
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SSP_ATTRIBUTE_GROUP__ID_SCHLUESSELSPERRE:
 				return iDSchluesselsperre != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Schloss_Ssp_AttributeGroupImpl

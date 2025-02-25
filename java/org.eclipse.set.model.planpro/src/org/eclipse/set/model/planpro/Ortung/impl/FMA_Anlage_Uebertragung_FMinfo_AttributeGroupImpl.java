@@ -239,8 +239,9 @@ public class FMA_Anlage_Uebertragung_FMinfo_AttributeGroupImpl extends EObjectIm
 				return basicSetUebertragungFMinfoRichtung(null, msgs);
 			case OrtungPackage.FMA_ANLAGE_UEBERTRAGUNG_FMINFO_ATTRIBUTE_GROUP__UEBERTRAGUNG_FMINFO_TYP:
 				return basicSetUebertragungFMinfoTyp(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -257,8 +258,9 @@ public class FMA_Anlage_Uebertragung_FMinfo_AttributeGroupImpl extends EObjectIm
 				return getUebertragungFMinfoRichtung();
 			case OrtungPackage.FMA_ANLAGE_UEBERTRAGUNG_FMINFO_ATTRIBUTE_GROUP__UEBERTRAGUNG_FMINFO_TYP:
 				return getUebertragungFMinfoTyp();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -278,8 +280,10 @@ public class FMA_Anlage_Uebertragung_FMinfo_AttributeGroupImpl extends EObjectIm
 			case OrtungPackage.FMA_ANLAGE_UEBERTRAGUNG_FMINFO_ATTRIBUTE_GROUP__UEBERTRAGUNG_FMINFO_TYP:
 				setUebertragungFMinfoTyp((Uebertragung_FMinfo_Typ_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -299,8 +303,10 @@ public class FMA_Anlage_Uebertragung_FMinfo_AttributeGroupImpl extends EObjectIm
 			case OrtungPackage.FMA_ANLAGE_UEBERTRAGUNG_FMINFO_ATTRIBUTE_GROUP__UEBERTRAGUNG_FMINFO_TYP:
 				setUebertragungFMinfoTyp((Uebertragung_FMinfo_Typ_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -317,8 +323,9 @@ public class FMA_Anlage_Uebertragung_FMinfo_AttributeGroupImpl extends EObjectIm
 				return uebertragungFMinfoRichtung != null;
 			case OrtungPackage.FMA_ANLAGE_UEBERTRAGUNG_FMINFO_ATTRIBUTE_GROUP__UEBERTRAGUNG_FMINFO_TYP:
 				return uebertragungFMinfoTyp != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //FMA_Anlage_Uebertragung_FMinfo_AttributeGroupImpl

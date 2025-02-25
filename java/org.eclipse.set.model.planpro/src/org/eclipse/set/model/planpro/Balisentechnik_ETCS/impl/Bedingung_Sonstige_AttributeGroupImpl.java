@@ -179,8 +179,9 @@ public class Bedingung_Sonstige_AttributeGroupImpl extends EObjectImpl implement
 				return basicSetAnlagenteilSonstige(null, msgs);
 			case Balisentechnik_ETCSPackage.BEDINGUNG_SONSTIGE_ATTRIBUTE_GROUP__TEXT_BEDINGUNG:
 				return basicSetTextBedingung(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -195,8 +196,9 @@ public class Bedingung_Sonstige_AttributeGroupImpl extends EObjectImpl implement
 				return getAnlagenteilSonstige();
 			case Balisentechnik_ETCSPackage.BEDINGUNG_SONSTIGE_ATTRIBUTE_GROUP__TEXT_BEDINGUNG:
 				return getTextBedingung();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -213,8 +215,10 @@ public class Bedingung_Sonstige_AttributeGroupImpl extends EObjectImpl implement
 			case Balisentechnik_ETCSPackage.BEDINGUNG_SONSTIGE_ATTRIBUTE_GROUP__TEXT_BEDINGUNG:
 				setTextBedingung((Text_Bedingung_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -231,8 +235,10 @@ public class Bedingung_Sonstige_AttributeGroupImpl extends EObjectImpl implement
 			case Balisentechnik_ETCSPackage.BEDINGUNG_SONSTIGE_ATTRIBUTE_GROUP__TEXT_BEDINGUNG:
 				setTextBedingung((Text_Bedingung_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -247,8 +253,9 @@ public class Bedingung_Sonstige_AttributeGroupImpl extends EObjectImpl implement
 				return anlagenteilSonstige != null;
 			case Balisentechnik_ETCSPackage.BEDINGUNG_SONSTIGE_ATTRIBUTE_GROUP__TEXT_BEDINGUNG:
 				return textBedingung != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bedingung_Sonstige_AttributeGroupImpl

@@ -144,8 +144,9 @@ public class Abstand_Datenpunkt_TPI_Folgesignal_TypeClassImpl extends BasisAttri
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ABSTAND_DATENPUNKT_TPI_FOLGESIGNAL_TYPE_CLASS__WERT:
 				return getWert();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -159,8 +160,10 @@ public class Abstand_Datenpunkt_TPI_Folgesignal_TypeClassImpl extends BasisAttri
 			case Balisentechnik_ETCSPackage.ABSTAND_DATENPUNKT_TPI_FOLGESIGNAL_TYPE_CLASS__WERT:
 				setWert((BigDecimal)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -174,8 +177,10 @@ public class Abstand_Datenpunkt_TPI_Folgesignal_TypeClassImpl extends BasisAttri
 			case Balisentechnik_ETCSPackage.ABSTAND_DATENPUNKT_TPI_FOLGESIGNAL_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -188,8 +193,9 @@ public class Abstand_Datenpunkt_TPI_Folgesignal_TypeClassImpl extends BasisAttri
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ABSTAND_DATENPUNKT_TPI_FOLGESIGNAL_TYPE_CLASS__WERT:
 				return isSetWert();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 	/**

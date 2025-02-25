@@ -147,8 +147,10 @@ public class Fla_ZwieschutzItemProvider extends Basis_ObjektItemProvider {
 			case FlankenschutzPackage.FLA_ZWIESCHUTZ__ZWIESCHUTZ_ART:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

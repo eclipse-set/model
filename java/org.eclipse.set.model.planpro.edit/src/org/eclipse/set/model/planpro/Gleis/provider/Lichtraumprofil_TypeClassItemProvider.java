@@ -138,8 +138,10 @@ public class Lichtraumprofil_TypeClassItemProvider extends BasisAttribut_Attribu
 			case GleisPackage.LICHTRAUMPROFIL_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -155,8 +155,9 @@ public class LEU_Steuernde_AttributeGroupImpl extends EObjectImpl implements LEU
 				return basicSetIDLEUAnlage(null, msgs);
 			case Balisentechnik_ETCSPackage.LEU_STEUERNDE_ATTRIBUTE_GROUP__LEU_AUSGANG_NR:
 				return ((InternalEList<?>)getLEUAusgangNr()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -171,8 +172,9 @@ public class LEU_Steuernde_AttributeGroupImpl extends EObjectImpl implements LEU
 				return getIDLEUAnlage();
 			case Balisentechnik_ETCSPackage.LEU_STEUERNDE_ATTRIBUTE_GROUP__LEU_AUSGANG_NR:
 				return getLEUAusgangNr();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -191,8 +193,10 @@ public class LEU_Steuernde_AttributeGroupImpl extends EObjectImpl implements LEU
 				getLEUAusgangNr().clear();
 				getLEUAusgangNr().addAll((Collection<? extends LEU_Ausgang_Nr_TypeClass>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -209,8 +213,10 @@ public class LEU_Steuernde_AttributeGroupImpl extends EObjectImpl implements LEU
 			case Balisentechnik_ETCSPackage.LEU_STEUERNDE_ATTRIBUTE_GROUP__LEU_AUSGANG_NR:
 				getLEUAusgangNr().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -225,8 +231,9 @@ public class LEU_Steuernde_AttributeGroupImpl extends EObjectImpl implements LEU
 				return iDLEUAnlage != null;
 			case Balisentechnik_ETCSPackage.LEU_STEUERNDE_ATTRIBUTE_GROUP__LEU_AUSGANG_NR:
 				return lEUAusgangNr != null && !lEUAusgangNr.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //LEU_Steuernde_AttributeGroupImpl

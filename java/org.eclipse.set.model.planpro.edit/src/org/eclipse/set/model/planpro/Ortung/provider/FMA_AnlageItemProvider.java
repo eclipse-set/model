@@ -155,8 +155,10 @@ public class FMA_AnlageItemProvider extends Basis_ObjektItemProvider {
 			case OrtungPackage.FMA_ANLAGE__ID_GLEISFREIMELDE_INNENANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

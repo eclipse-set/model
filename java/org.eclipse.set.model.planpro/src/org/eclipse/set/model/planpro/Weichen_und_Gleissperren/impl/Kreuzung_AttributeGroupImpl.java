@@ -297,8 +297,9 @@ public class Kreuzung_AttributeGroupImpl extends EObjectImpl implements Kreuzung
 				return basicSetGeschwindigkeitL(null, msgs);
 			case Weichen_und_GleissperrenPackage.KREUZUNG_ATTRIBUTE_GROUP__GESCHWINDIGKEIT_R:
 				return basicSetGeschwindigkeitR(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -317,8 +318,9 @@ public class Kreuzung_AttributeGroupImpl extends EObjectImpl implements Kreuzung
 				return getGeschwindigkeitL();
 			case Weichen_und_GleissperrenPackage.KREUZUNG_ATTRIBUTE_GROUP__GESCHWINDIGKEIT_R:
 				return getGeschwindigkeitR();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -341,8 +343,10 @@ public class Kreuzung_AttributeGroupImpl extends EObjectImpl implements Kreuzung
 			case Weichen_und_GleissperrenPackage.KREUZUNG_ATTRIBUTE_GROUP__GESCHWINDIGKEIT_R:
 				setGeschwindigkeitR((Geschwindigkeit_R_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -365,8 +369,10 @@ public class Kreuzung_AttributeGroupImpl extends EObjectImpl implements Kreuzung
 			case Weichen_und_GleissperrenPackage.KREUZUNG_ATTRIBUTE_GROUP__GESCHWINDIGKEIT_R:
 				setGeschwindigkeitR((Geschwindigkeit_R_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -385,8 +391,9 @@ public class Kreuzung_AttributeGroupImpl extends EObjectImpl implements Kreuzung
 				return geschwindigkeitL != null;
 			case Weichen_und_GleissperrenPackage.KREUZUNG_ATTRIBUTE_GROUP__GESCHWINDIGKEIT_R:
 				return geschwindigkeitR != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Kreuzung_AttributeGroupImpl

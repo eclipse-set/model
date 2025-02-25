@@ -120,8 +120,9 @@ public class ZLV_Bus_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 		switch (featureID) {
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BEZEICHNUNG_ATTRIBUTE_GROUP__ZLV_BUS_NR:
 				return basicSetZLVBusNr(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class ZLV_Bus_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 		switch (featureID) {
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BEZEICHNUNG_ATTRIBUTE_GROUP__ZLV_BUS_NR:
 				return getZLVBusNr();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class ZLV_Bus_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BEZEICHNUNG_ATTRIBUTE_GROUP__ZLV_BUS_NR:
 				setZLVBusNr((ZLV_Bus_Nr_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class ZLV_Bus_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BEZEICHNUNG_ATTRIBUTE_GROUP__ZLV_BUS_NR:
 				setZLVBusNr((ZLV_Bus_Nr_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class ZLV_Bus_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 		switch (featureID) {
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BEZEICHNUNG_ATTRIBUTE_GROUP__ZLV_BUS_NR:
 				return zLVBusNr != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZLV_Bus_Bezeichnung_AttributeGroupImpl

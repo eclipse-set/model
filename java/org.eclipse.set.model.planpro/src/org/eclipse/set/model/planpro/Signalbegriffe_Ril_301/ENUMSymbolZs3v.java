@@ -411,8 +411,8 @@ public enum ENUMSymbolZs3v implements Enumerator {
 			case ENUM_SYMBOL_ZS_3V_13_VALUE: return ENUM_SYMBOL_ZS_3V_13;
 			case ENUM_SYMBOL_ZS_3V_14_VALUE: return ENUM_SYMBOL_ZS_3V_14;
 			case ENUM_SYMBOL_ZS_3V_15_VALUE: return ENUM_SYMBOL_ZS_3V_15;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

@@ -273,8 +273,8 @@ public enum ENUMXWert implements Enumerator {
 			case ENUMX_WERT_12_VALUE: return ENUMX_WERT_12;
 			case ENUMX_WERT_13_VALUE: return ENUMX_WERT_13;
 			case ENUMX_WERT_15_VALUE: return ENUMX_WERT_15;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

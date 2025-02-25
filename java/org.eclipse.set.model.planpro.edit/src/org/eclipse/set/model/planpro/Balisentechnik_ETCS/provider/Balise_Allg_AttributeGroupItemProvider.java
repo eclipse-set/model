@@ -164,8 +164,10 @@ public class Balise_Allg_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.BALISE_ALLG_ATTRIBUTE_GROUP__MONTAGEABWEICHUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

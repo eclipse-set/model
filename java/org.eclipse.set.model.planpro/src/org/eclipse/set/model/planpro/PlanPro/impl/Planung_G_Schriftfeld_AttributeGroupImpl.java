@@ -416,8 +416,9 @@ public class Planung_G_Schriftfeld_AttributeGroupImpl extends EObjectImpl implem
 				return basicSetPlanungsbuero(null, msgs);
 			case PlanProPackage.PLANUNG_GSCHRIFTFELD_ATTRIBUTE_GROUP__PLANUNGSBUERO_LOGO:
 				return basicSetPlanungsbueroLogo(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -440,8 +441,9 @@ public class Planung_G_Schriftfeld_AttributeGroupImpl extends EObjectImpl implem
 				return getPlanungsbuero();
 			case PlanProPackage.PLANUNG_GSCHRIFTFELD_ATTRIBUTE_GROUP__PLANUNGSBUERO_LOGO:
 				return getPlanungsbueroLogo();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -470,8 +472,10 @@ public class Planung_G_Schriftfeld_AttributeGroupImpl extends EObjectImpl implem
 			case PlanProPackage.PLANUNG_GSCHRIFTFELD_ATTRIBUTE_GROUP__PLANUNGSBUERO_LOGO:
 				setPlanungsbueroLogo((Anhang)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -500,8 +504,10 @@ public class Planung_G_Schriftfeld_AttributeGroupImpl extends EObjectImpl implem
 			case PlanProPackage.PLANUNG_GSCHRIFTFELD_ATTRIBUTE_GROUP__PLANUNGSBUERO_LOGO:
 				setPlanungsbueroLogo((Anhang)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -524,8 +530,9 @@ public class Planung_G_Schriftfeld_AttributeGroupImpl extends EObjectImpl implem
 				return planungsbuero != null;
 			case PlanProPackage.PLANUNG_GSCHRIFTFELD_ATTRIBUTE_GROUP__PLANUNGSBUERO_LOGO:
 				return planungsbueroLogo != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Planung_G_Schriftfeld_AttributeGroupImpl

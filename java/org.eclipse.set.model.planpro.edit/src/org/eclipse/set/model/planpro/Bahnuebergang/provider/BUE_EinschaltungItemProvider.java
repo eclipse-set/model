@@ -143,8 +143,10 @@ public class BUE_EinschaltungItemProvider extends Basis_ObjektItemProvider {
 			case BahnuebergangPackage.BUE_EINSCHALTUNG__BUE_FUNKTIONSUEBERWACHUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

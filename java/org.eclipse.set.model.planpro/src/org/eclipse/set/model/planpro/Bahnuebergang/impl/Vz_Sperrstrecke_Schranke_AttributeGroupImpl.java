@@ -179,8 +179,9 @@ public class Vz_Sperrstrecke_Schranke_AttributeGroupImpl extends EObjectImpl imp
 				return basicSetRaeumstrecke(null, msgs);
 			case BahnuebergangPackage.VZ_SPERRSTRECKE_SCHRANKE_ATTRIBUTE_GROUP__TEILSPERRSTRECKE:
 				return basicSetTeilsperrstrecke(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -195,8 +196,9 @@ public class Vz_Sperrstrecke_Schranke_AttributeGroupImpl extends EObjectImpl imp
 				return getRaeumstrecke();
 			case BahnuebergangPackage.VZ_SPERRSTRECKE_SCHRANKE_ATTRIBUTE_GROUP__TEILSPERRSTRECKE:
 				return getTeilsperrstrecke();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -213,8 +215,10 @@ public class Vz_Sperrstrecke_Schranke_AttributeGroupImpl extends EObjectImpl imp
 			case BahnuebergangPackage.VZ_SPERRSTRECKE_SCHRANKE_ATTRIBUTE_GROUP__TEILSPERRSTRECKE:
 				setTeilsperrstrecke((Teilsperrstrecke_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -231,8 +235,10 @@ public class Vz_Sperrstrecke_Schranke_AttributeGroupImpl extends EObjectImpl imp
 			case BahnuebergangPackage.VZ_SPERRSTRECKE_SCHRANKE_ATTRIBUTE_GROUP__TEILSPERRSTRECKE:
 				setTeilsperrstrecke((Teilsperrstrecke_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -247,8 +253,9 @@ public class Vz_Sperrstrecke_Schranke_AttributeGroupImpl extends EObjectImpl imp
 				return raeumstrecke != null;
 			case BahnuebergangPackage.VZ_SPERRSTRECKE_SCHRANKE_ATTRIBUTE_GROUP__TEILSPERRSTRECKE:
 				return teilsperrstrecke != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Vz_Sperrstrecke_Schranke_AttributeGroupImpl

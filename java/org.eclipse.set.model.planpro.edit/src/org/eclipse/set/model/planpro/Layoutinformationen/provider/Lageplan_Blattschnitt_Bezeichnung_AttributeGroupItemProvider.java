@@ -152,8 +152,10 @@ public class Lageplan_Blattschnitt_Bezeichnung_AttributeGroupItemProvider
 			case LayoutinformationenPackage.LAGEPLAN_BLATTSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_LAGEPLAN_BLATTSCHNITT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -156,8 +156,10 @@ public class LEU_Steuernde_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.LEU_STEUERNDE_ATTRIBUTE_GROUP__LEU_AUSGANG_NR:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

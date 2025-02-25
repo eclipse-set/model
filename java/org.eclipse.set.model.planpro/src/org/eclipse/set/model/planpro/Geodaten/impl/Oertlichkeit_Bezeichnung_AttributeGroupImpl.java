@@ -238,8 +238,9 @@ public class Oertlichkeit_Bezeichnung_AttributeGroupImpl extends EObjectImpl imp
 				return basicSetOertlichkeitKurzname(null, msgs);
 			case GeodatenPackage.OERTLICHKEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__OERTLICHKEIT_LANGNAME:
 				return basicSetOertlichkeitLangname(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class Oertlichkeit_Bezeichnung_AttributeGroupImpl extends EObjectImpl imp
 				return getOertlichkeitKurzname();
 			case GeodatenPackage.OERTLICHKEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__OERTLICHKEIT_LANGNAME:
 				return getOertlichkeitLangname();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class Oertlichkeit_Bezeichnung_AttributeGroupImpl extends EObjectImpl imp
 			case GeodatenPackage.OERTLICHKEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__OERTLICHKEIT_LANGNAME:
 				setOertlichkeitLangname((Oertlichkeit_Langname_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class Oertlichkeit_Bezeichnung_AttributeGroupImpl extends EObjectImpl imp
 			case GeodatenPackage.OERTLICHKEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__OERTLICHKEIT_LANGNAME:
 				setOertlichkeitLangname((Oertlichkeit_Langname_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class Oertlichkeit_Bezeichnung_AttributeGroupImpl extends EObjectImpl imp
 				return oertlichkeitKurzname != null;
 			case GeodatenPackage.OERTLICHKEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__OERTLICHKEIT_LANGNAME:
 				return oertlichkeitLangname != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Oertlichkeit_Bezeichnung_AttributeGroupImpl

@@ -166,8 +166,10 @@ public class SA_Schrankenbaum_AttributeGroupItemProvider
 			case BahnuebergangPackage.SA_SCHRANKENBAUM_ATTRIBUTE_GROUP__SPERRLAENGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -105,8 +105,9 @@ public class OzZuglImpl extends EObjectImpl implements OzZugl {
 		switch (featureID) {
 			case Signalbegriffe_Ril_301Package.OZ_ZUGL__SYMBOL:
 				return getSymbol();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -120,8 +121,10 @@ public class OzZuglImpl extends EObjectImpl implements OzZugl {
 			case Signalbegriffe_Ril_301Package.OZ_ZUGL__SYMBOL:
 				setSymbol((String)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -135,8 +138,10 @@ public class OzZuglImpl extends EObjectImpl implements OzZugl {
 			case Signalbegriffe_Ril_301Package.OZ_ZUGL__SYMBOL:
 				setSymbol(SYMBOL_EDEFAULT);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -149,8 +154,9 @@ public class OzZuglImpl extends EObjectImpl implements OzZugl {
 		switch (featureID) {
 			case Signalbegriffe_Ril_301Package.OZ_ZUGL__SYMBOL:
 				return SYMBOL_EDEFAULT == null ? symbol != null : !SYMBOL_EDEFAULT.equals(symbol);
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 	/**

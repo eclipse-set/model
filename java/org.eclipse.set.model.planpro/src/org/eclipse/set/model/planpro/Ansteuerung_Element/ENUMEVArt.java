@@ -368,8 +368,8 @@ public enum ENUMEVArt implements Enumerator {
 			case ENUMEV_ART_NOTSTROMANSCHLUSS_NEA_MOBIL_VALUE: return ENUMEV_ART_NOTSTROMANSCHLUSS_NEA_MOBIL;
 			case ENUMEV_ART_SOLAR_VALUE: return ENUMEV_ART_SOLAR;
 			case ENUMEV_ART_SONSTIGE_VALUE: return ENUMEV_ART_SONSTIGE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

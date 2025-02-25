@@ -147,8 +147,10 @@ public class Fla_Freimelde_ZuordnungItemProvider extends Basis_ObjektItemProvide
 			case FlankenschutzPackage.FLA_FREIMELDE_ZUORDNUNG__IDFMA_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

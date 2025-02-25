@@ -181,8 +181,9 @@ public class TOP_KnotenImpl extends Basis_ObjektImpl implements TOP_Knoten {
 				return basicSetIDGEOKnoten(null, msgs);
 			case GeodatenPackage.TOP_KNOTEN__KNOTENNAME:
 				return basicSetKnotenname(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,8 +198,9 @@ public class TOP_KnotenImpl extends Basis_ObjektImpl implements TOP_Knoten {
 				return getIDGEOKnoten();
 			case GeodatenPackage.TOP_KNOTEN__KNOTENNAME:
 				return getKnotenname();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,8 +217,10 @@ public class TOP_KnotenImpl extends Basis_ObjektImpl implements TOP_Knoten {
 			case GeodatenPackage.TOP_KNOTEN__KNOTENNAME:
 				setKnotenname((Knotenname_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -233,8 +237,10 @@ public class TOP_KnotenImpl extends Basis_ObjektImpl implements TOP_Knoten {
 			case GeodatenPackage.TOP_KNOTEN__KNOTENNAME:
 				setKnotenname((Knotenname_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -249,8 +255,9 @@ public class TOP_KnotenImpl extends Basis_ObjektImpl implements TOP_Knoten {
 				return iDGEOKnoten != null;
 			case GeodatenPackage.TOP_KNOTEN__KNOTENNAME:
 				return knotenname != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //TOP_KnotenImpl

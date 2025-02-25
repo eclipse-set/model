@@ -151,8 +151,10 @@ public class Bedien_Einrichtung_OertlichItemProvider extends Basis_ObjektItemPro
 			case BedienungPackage.BEDIEN_EINRICHTUNG_OERTLICH__ID_UNTERBRINGUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

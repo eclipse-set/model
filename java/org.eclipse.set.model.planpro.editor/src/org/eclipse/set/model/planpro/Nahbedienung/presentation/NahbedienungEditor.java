@@ -493,6 +493,8 @@ public class NahbedienungEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

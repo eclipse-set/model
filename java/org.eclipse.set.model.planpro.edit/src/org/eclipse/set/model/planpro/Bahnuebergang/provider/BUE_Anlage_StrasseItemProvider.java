@@ -147,8 +147,10 @@ public class BUE_Anlage_StrasseItemProvider extends Basis_ObjektItemProvider {
 			case BahnuebergangPackage.BUE_ANLAGE_STRASSE__IDBUE_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

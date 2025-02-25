@@ -120,8 +120,9 @@ public class Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroupImpl extends EObj
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANRUECKABSCHNITT:
 				return basicSetBezBedAnrueckabschnitt(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroupImpl extends EObj
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANRUECKABSCHNITT:
 				return getBezBedAnrueckabschnitt();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroupImpl extends EObj
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANRUECKABSCHNITT:
 				setBezBedAnrueckabschnitt((Bez_Bed_Anrueckabschnitt_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroupImpl extends EObj
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANRUECKABSCHNITT:
 				setBezBedAnrueckabschnitt((Bez_Bed_Anrueckabschnitt_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroupImpl extends EObj
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANRUECKABSCHNITT:
 				return bezBedAnrueckabschnitt != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroupImpl

@@ -533,8 +533,9 @@ public class SA_Schrankenbaum_AttributeGroupImpl extends EObjectImpl implements 
 				return basicSetMontageAusgleichsgewichte(null, msgs);
 			case BahnuebergangPackage.SA_SCHRANKENBAUM_ATTRIBUTE_GROUP__SPERRLAENGE:
 				return basicSetSperrlaenge(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -561,8 +562,9 @@ public class SA_Schrankenbaum_AttributeGroupImpl extends EObjectImpl implements 
 				return getMontageAusgleichsgewichte();
 			case BahnuebergangPackage.SA_SCHRANKENBAUM_ATTRIBUTE_GROUP__SPERRLAENGE:
 				return getSperrlaenge();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -597,8 +599,10 @@ public class SA_Schrankenbaum_AttributeGroupImpl extends EObjectImpl implements 
 			case BahnuebergangPackage.SA_SCHRANKENBAUM_ATTRIBUTE_GROUP__SPERRLAENGE:
 				setSperrlaenge((Sperrlaenge_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -633,8 +637,10 @@ public class SA_Schrankenbaum_AttributeGroupImpl extends EObjectImpl implements 
 			case BahnuebergangPackage.SA_SCHRANKENBAUM_ATTRIBUTE_GROUP__SPERRLAENGE:
 				setSperrlaenge((Sperrlaenge_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -661,8 +667,9 @@ public class SA_Schrankenbaum_AttributeGroupImpl extends EObjectImpl implements 
 				return montageAusgleichsgewichte != null;
 			case BahnuebergangPackage.SA_SCHRANKENBAUM_ATTRIBUTE_GROUP__SPERRLAENGE:
 				return sperrlaenge != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //SA_Schrankenbaum_AttributeGroupImpl

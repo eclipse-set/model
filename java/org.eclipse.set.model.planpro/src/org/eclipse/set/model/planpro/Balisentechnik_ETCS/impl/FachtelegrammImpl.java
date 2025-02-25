@@ -510,8 +510,9 @@ public class FachtelegrammImpl extends Basis_ObjektImpl implements Fachtelegramm
 				return basicSetFTGNTMerkmale(null, msgs);
 			case Balisentechnik_ETCSPackage.FACHTELEGRAMM__FTZBS_MERKMALE:
 				return basicSetFTZBSMerkmale(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -538,8 +539,9 @@ public class FachtelegrammImpl extends Basis_ObjektImpl implements Fachtelegramm
 				return getFTGNTMerkmale();
 			case Balisentechnik_ETCSPackage.FACHTELEGRAMM__FTZBS_MERKMALE:
 				return getFTZBSMerkmale();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -576,8 +578,10 @@ public class FachtelegrammImpl extends Basis_ObjektImpl implements Fachtelegramm
 			case Balisentechnik_ETCSPackage.FACHTELEGRAMM__FTZBS_MERKMALE:
 				setFTZBSMerkmale((FT_ZBS_Merkmale_AttributeGroup)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -612,8 +616,10 @@ public class FachtelegrammImpl extends Basis_ObjektImpl implements Fachtelegramm
 			case Balisentechnik_ETCSPackage.FACHTELEGRAMM__FTZBS_MERKMALE:
 				setFTZBSMerkmale((FT_ZBS_Merkmale_AttributeGroup)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -640,8 +646,9 @@ public class FachtelegrammImpl extends Basis_ObjektImpl implements Fachtelegramm
 				return fTGNTMerkmale != null;
 			case Balisentechnik_ETCSPackage.FACHTELEGRAMM__FTZBS_MERKMALE:
 				return fTZBSMerkmale != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //FachtelegrammImpl

@@ -156,8 +156,10 @@ public class ATO_Timing_Point_Allg_AttributeGroupItemProvider
 			case ATOPackage.ATO_TIMING_POINT_ALLG_ATTRIBUTE_GROUP__NIDTP:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

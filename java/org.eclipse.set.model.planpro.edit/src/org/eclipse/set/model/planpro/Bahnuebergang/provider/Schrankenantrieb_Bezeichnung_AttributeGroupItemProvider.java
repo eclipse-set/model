@@ -152,8 +152,10 @@ public class Schrankenantrieb_Bezeichnung_AttributeGroupItemProvider
 			case BahnuebergangPackage.SCHRANKENANTRIEB_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_SCHRANKENANTRIEB:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

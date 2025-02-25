@@ -147,8 +147,10 @@ public class FMA_ElementItemProvider extends Punkt_ObjektItemProvider {
 			case OrtungPackage.FMA_ELEMENT__IDFMA_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

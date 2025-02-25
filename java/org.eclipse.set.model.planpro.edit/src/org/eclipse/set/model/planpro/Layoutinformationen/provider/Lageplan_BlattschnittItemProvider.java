@@ -145,8 +145,10 @@ public class Lageplan_BlattschnittItemProvider extends Ur_ObjektItemProvider {
 			case LayoutinformationenPackage.LAGEPLAN_BLATTSCHNITT__POLYGONZUG_BLATTSCHNITT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

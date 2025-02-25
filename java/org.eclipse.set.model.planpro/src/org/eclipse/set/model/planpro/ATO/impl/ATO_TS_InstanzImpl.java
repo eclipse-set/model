@@ -181,8 +181,9 @@ public class ATO_TS_InstanzImpl extends Basis_ObjektImpl implements ATO_TS_Insta
 				return basicSetATOTSInstanzAdresse(null, msgs);
 			case ATOPackage.ATO_TS_INSTANZ__ID_UNTERBRINGUNG:
 				return basicSetIDUnterbringung(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,8 +198,9 @@ public class ATO_TS_InstanzImpl extends Basis_ObjektImpl implements ATO_TS_Insta
 				return getATOTSInstanzAdresse();
 			case ATOPackage.ATO_TS_INSTANZ__ID_UNTERBRINGUNG:
 				return getIDUnterbringung();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,8 +217,10 @@ public class ATO_TS_InstanzImpl extends Basis_ObjektImpl implements ATO_TS_Insta
 			case ATOPackage.ATO_TS_INSTANZ__ID_UNTERBRINGUNG:
 				setIDUnterbringung((ID_Unterbringung_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -233,8 +237,10 @@ public class ATO_TS_InstanzImpl extends Basis_ObjektImpl implements ATO_TS_Insta
 			case ATOPackage.ATO_TS_INSTANZ__ID_UNTERBRINGUNG:
 				setIDUnterbringung((ID_Unterbringung_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -249,8 +255,9 @@ public class ATO_TS_InstanzImpl extends Basis_ObjektImpl implements ATO_TS_Insta
 				return aTOTSInstanzAdresse != null;
 			case ATOPackage.ATO_TS_INSTANZ__ID_UNTERBRINGUNG:
 				return iDUnterbringung != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ATO_TS_InstanzImpl

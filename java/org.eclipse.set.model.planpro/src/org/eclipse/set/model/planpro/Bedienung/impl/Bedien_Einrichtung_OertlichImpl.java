@@ -358,8 +358,9 @@ public class Bedien_Einrichtung_OertlichImpl extends Basis_ObjektImpl implements
 				return basicSetIDAussenelementansteuerung(null, msgs);
 			case BedienungPackage.BEDIEN_EINRICHTUNG_OERTLICH__ID_UNTERBRINGUNG:
 				return basicSetIDUnterbringung(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -380,8 +381,9 @@ public class Bedien_Einrichtung_OertlichImpl extends Basis_ObjektImpl implements
 				return getIDAussenelementansteuerung();
 			case BedienungPackage.BEDIEN_EINRICHTUNG_OERTLICH__ID_UNTERBRINGUNG:
 				return getIDUnterbringung();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -407,8 +409,10 @@ public class Bedien_Einrichtung_OertlichImpl extends Basis_ObjektImpl implements
 			case BedienungPackage.BEDIEN_EINRICHTUNG_OERTLICH__ID_UNTERBRINGUNG:
 				setIDUnterbringung((ID_Unterbringung_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -434,8 +438,10 @@ public class Bedien_Einrichtung_OertlichImpl extends Basis_ObjektImpl implements
 			case BedienungPackage.BEDIEN_EINRICHTUNG_OERTLICH__ID_UNTERBRINGUNG:
 				setIDUnterbringung((ID_Unterbringung_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -456,8 +462,9 @@ public class Bedien_Einrichtung_OertlichImpl extends Basis_ObjektImpl implements
 				return iDAussenelementansteuerung != null;
 			case BedienungPackage.BEDIEN_EINRICHTUNG_OERTLICH__ID_UNTERBRINGUNG:
 				return iDUnterbringung != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Einrichtung_OertlichImpl

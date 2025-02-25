@@ -273,8 +273,9 @@ public class Fstr_Rangier_AttributeGroupImpl extends EObjectImpl implements Fstr
 				return ((InternalEList<?>)getIDFMAAnlageRangierFrei()).basicRemove(otherEnd, msgs);
 			case FahrstrassePackage.FSTR_RANGIER_ATTRIBUTE_GROUP__RANGIER_GEGENFAHRTAUSSCHLUSS:
 				return basicSetRangierGegenfahrtausschluss(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -293,8 +294,9 @@ public class Fstr_Rangier_AttributeGroupImpl extends EObjectImpl implements Fstr
 				return getIDFMAAnlageRangierFrei();
 			case FahrstrassePackage.FSTR_RANGIER_ATTRIBUTE_GROUP__RANGIER_GEGENFAHRTAUSSCHLUSS:
 				return getRangierGegenfahrtausschluss();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -319,8 +321,10 @@ public class Fstr_Rangier_AttributeGroupImpl extends EObjectImpl implements Fstr
 			case FahrstrassePackage.FSTR_RANGIER_ATTRIBUTE_GROUP__RANGIER_GEGENFAHRTAUSSCHLUSS:
 				setRangierGegenfahrtausschluss((Rangier_Gegenfahrtausschluss_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -343,8 +347,10 @@ public class Fstr_Rangier_AttributeGroupImpl extends EObjectImpl implements Fstr
 			case FahrstrassePackage.FSTR_RANGIER_ATTRIBUTE_GROUP__RANGIER_GEGENFAHRTAUSSCHLUSS:
 				setRangierGegenfahrtausschluss((Rangier_Gegenfahrtausschluss_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -363,8 +369,9 @@ public class Fstr_Rangier_AttributeGroupImpl extends EObjectImpl implements Fstr
 				return iDFMAAnlageRangierFrei != null && !iDFMAAnlageRangierFrei.isEmpty();
 			case FahrstrassePackage.FSTR_RANGIER_ATTRIBUTE_GROUP__RANGIER_GEGENFAHRTAUSSCHLUSS:
 				return rangierGegenfahrtausschluss != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Fstr_Rangier_AttributeGroupImpl

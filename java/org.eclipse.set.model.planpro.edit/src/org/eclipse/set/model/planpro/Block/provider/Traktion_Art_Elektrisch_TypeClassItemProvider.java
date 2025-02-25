@@ -139,8 +139,10 @@ public class Traktion_Art_Elektrisch_TypeClassItemProvider extends BasisAttribut
 			case BlockPackage.TRAKTION_ART_ELEKTRISCH_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -179,8 +179,9 @@ public class LEU_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements L
 				return basicSetLeistungsbedarf(null, msgs);
 			case Balisentechnik_ETCSPackage.LEU_ANLAGE_ALLG_ATTRIBUTE_GROUP__LEU_ANLAGE_ART:
 				return basicSetLEUAnlageArt(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -195,8 +196,9 @@ public class LEU_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements L
 				return getLeistungsbedarf();
 			case Balisentechnik_ETCSPackage.LEU_ANLAGE_ALLG_ATTRIBUTE_GROUP__LEU_ANLAGE_ART:
 				return getLEUAnlageArt();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -213,8 +215,10 @@ public class LEU_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements L
 			case Balisentechnik_ETCSPackage.LEU_ANLAGE_ALLG_ATTRIBUTE_GROUP__LEU_ANLAGE_ART:
 				setLEUAnlageArt((LEU_Anlage_Art_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -231,8 +235,10 @@ public class LEU_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements L
 			case Balisentechnik_ETCSPackage.LEU_ANLAGE_ALLG_ATTRIBUTE_GROUP__LEU_ANLAGE_ART:
 				setLEUAnlageArt((LEU_Anlage_Art_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -247,8 +253,9 @@ public class LEU_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements L
 				return leistungsbedarf != null;
 			case Balisentechnik_ETCSPackage.LEU_ANLAGE_ALLG_ATTRIBUTE_GROUP__LEU_ANLAGE_ART:
 				return lEUAnlageArt != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //LEU_Anlage_Allg_AttributeGroupImpl

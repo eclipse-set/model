@@ -831,8 +831,9 @@ public class FT_ESG_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 				return basicSetVZiel(null, msgs);
 			case Balisentechnik_ETCSPackage.FT_ESG_MERKMALE_ATTRIBUTE_GROUP__VORSIGNALABSTAND:
 				return basicSetVorsignalabstand(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -871,8 +872,9 @@ public class FT_ESG_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 				return getVZiel();
 			case Balisentechnik_ETCSPackage.FT_ESG_MERKMALE_ATTRIBUTE_GROUP__VORSIGNALABSTAND:
 				return getVorsignalabstand();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -928,8 +930,10 @@ public class FT_ESG_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 			case Balisentechnik_ETCSPackage.FT_ESG_MERKMALE_ATTRIBUTE_GROUP__VORSIGNALABSTAND:
 				setVorsignalabstand((Vorsignalabstand_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -982,8 +986,10 @@ public class FT_ESG_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 			case Balisentechnik_ETCSPackage.FT_ESG_MERKMALE_ATTRIBUTE_GROUP__VORSIGNALABSTAND:
 				setVorsignalabstand((Vorsignalabstand_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -1022,8 +1028,9 @@ public class FT_ESG_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 				return vZiel != null;
 			case Balisentechnik_ETCSPackage.FT_ESG_MERKMALE_ATTRIBUTE_GROUP__VORSIGNALABSTAND:
 				return vorsignalabstand != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //FT_ESG_Merkmale_AttributeGroupImpl

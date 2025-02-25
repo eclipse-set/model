@@ -145,8 +145,10 @@ public class Lageplan_ZustandItemProvider extends Ur_ObjektItemProvider {
 			case LayoutinformationenPackage.LAGEPLAN_ZUSTAND__REFERENZ_LST_ZUSTAND:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

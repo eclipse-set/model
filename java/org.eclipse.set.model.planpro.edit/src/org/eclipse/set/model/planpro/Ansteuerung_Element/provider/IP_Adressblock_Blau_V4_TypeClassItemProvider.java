@@ -136,8 +136,10 @@ public class IP_Adressblock_Blau_V4_TypeClassItemProvider extends BasisAttribut_
 			case Ansteuerung_ElementPackage.IP_ADRESSBLOCK_BLAU_V4_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

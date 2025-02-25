@@ -153,8 +153,10 @@ public class Fstr_Zug_RangierItemProvider extends Basis_ObjektItemProvider {
 			case FahrstrassePackage.FSTR_ZUG_RANGIER__FSTR_ZUG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

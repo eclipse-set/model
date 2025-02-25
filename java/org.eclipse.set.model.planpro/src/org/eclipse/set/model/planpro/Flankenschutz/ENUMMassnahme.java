@@ -181,8 +181,8 @@ public enum ENUMMassnahme implements Enumerator {
 			case ENUM_MASSNAHME_VERSCHLUSS_VALUE: return ENUM_MASSNAHME_VERSCHLUSS;
 			case ENUM_MASSNAHME_VERSCHLUSS_ERSATZSCHUTZ_VALUE: return ENUM_MASSNAHME_VERSCHLUSS_ERSATZSCHUTZ;
 			case ENUM_MASSNAHME_VERZICHT_VALUE: return ENUM_MASSNAHME_VERZICHT;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

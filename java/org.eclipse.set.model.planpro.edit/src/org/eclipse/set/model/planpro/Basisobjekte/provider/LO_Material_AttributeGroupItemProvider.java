@@ -162,8 +162,10 @@ public class LO_Material_AttributeGroupItemProvider
 			case BasisobjektePackage.LO_MATERIAL_ATTRIBUTE_GROUP__LO_SERIENNUMMER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

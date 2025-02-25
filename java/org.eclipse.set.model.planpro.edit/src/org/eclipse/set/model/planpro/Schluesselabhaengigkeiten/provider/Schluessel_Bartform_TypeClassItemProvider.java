@@ -138,8 +138,10 @@ public class Schluessel_Bartform_TypeClassItemProvider extends BasisAttribut_Att
 			case SchluesselabhaengigkeitenPackage.SCHLUESSEL_BARTFORM_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

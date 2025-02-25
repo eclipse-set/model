@@ -300,8 +300,9 @@ public class BUE_AnlageImpl extends Punkt_ObjektImpl implements BUE_Anlage {
 				return basicSetIDAEABUEAnschaltung(null, msgs);
 			case BahnuebergangPackage.BUE_ANLAGE__IDBUE_SCHNITTSTELLE:
 				return basicSetIDBUESchnittstelle(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -320,8 +321,9 @@ public class BUE_AnlageImpl extends Punkt_ObjektImpl implements BUE_Anlage {
 				return getIDAEABUEAnschaltung();
 			case BahnuebergangPackage.BUE_ANLAGE__IDBUE_SCHNITTSTELLE:
 				return getIDBUESchnittstelle();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -344,8 +346,10 @@ public class BUE_AnlageImpl extends Punkt_ObjektImpl implements BUE_Anlage {
 			case BahnuebergangPackage.BUE_ANLAGE__IDBUE_SCHNITTSTELLE:
 				setIDBUESchnittstelle((ID_BUE_Schnittstelle_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -368,8 +372,10 @@ public class BUE_AnlageImpl extends Punkt_ObjektImpl implements BUE_Anlage {
 			case BahnuebergangPackage.BUE_ANLAGE__IDBUE_SCHNITTSTELLE:
 				setIDBUESchnittstelle((ID_BUE_Schnittstelle_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -388,8 +394,9 @@ public class BUE_AnlageImpl extends Punkt_ObjektImpl implements BUE_Anlage {
 				return iDAEABUEAnschaltung != null;
 			case BahnuebergangPackage.BUE_ANLAGE__IDBUE_SCHNITTSTELLE:
 				return iDBUESchnittstelle != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //BUE_AnlageImpl

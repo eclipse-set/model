@@ -180,8 +180,9 @@ public class DP_Bezug_Funktional_AttributeGroupImpl extends EObjectImpl implemen
 				return basicSetDPBezugFunktionalArt(null, msgs);
 			case Balisentechnik_ETCSPackage.DP_BEZUG_FUNKTIONAL_ATTRIBUTE_GROUP__IDDP_BEZUG_FUNKTIONAL:
 				return basicSetIDDPBezugFunktional(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,8 +197,9 @@ public class DP_Bezug_Funktional_AttributeGroupImpl extends EObjectImpl implemen
 				return getDPBezugFunktionalArt();
 			case Balisentechnik_ETCSPackage.DP_BEZUG_FUNKTIONAL_ATTRIBUTE_GROUP__IDDP_BEZUG_FUNKTIONAL:
 				return getIDDPBezugFunktional();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -214,8 +216,10 @@ public class DP_Bezug_Funktional_AttributeGroupImpl extends EObjectImpl implemen
 			case Balisentechnik_ETCSPackage.DP_BEZUG_FUNKTIONAL_ATTRIBUTE_GROUP__IDDP_BEZUG_FUNKTIONAL:
 				setIDDPBezugFunktional((ID_DP_Bezug_Funktional_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -232,8 +236,10 @@ public class DP_Bezug_Funktional_AttributeGroupImpl extends EObjectImpl implemen
 			case Balisentechnik_ETCSPackage.DP_BEZUG_FUNKTIONAL_ATTRIBUTE_GROUP__IDDP_BEZUG_FUNKTIONAL:
 				setIDDPBezugFunktional((ID_DP_Bezug_Funktional_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -248,8 +254,9 @@ public class DP_Bezug_Funktional_AttributeGroupImpl extends EObjectImpl implemen
 				return dPBezugFunktionalArt != null;
 			case Balisentechnik_ETCSPackage.DP_BEZUG_FUNKTIONAL_ATTRIBUTE_GROUP__IDDP_BEZUG_FUNKTIONAL:
 				return iDDPBezugFunktional != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //DP_Bezug_Funktional_AttributeGroupImpl

@@ -179,8 +179,9 @@ public class ZL_Fstr_Anstoss_GK_AttributeGroupImpl extends EObjectImpl implement
 				return basicSetGK(null, msgs);
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS_GK_ATTRIBUTE_GROUP__TV_GK:
 				return basicSetTvGK(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -195,8 +196,9 @@ public class ZL_Fstr_Anstoss_GK_AttributeGroupImpl extends EObjectImpl implement
 				return getGK();
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS_GK_ATTRIBUTE_GROUP__TV_GK:
 				return getTvGK();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -213,8 +215,10 @@ public class ZL_Fstr_Anstoss_GK_AttributeGroupImpl extends EObjectImpl implement
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS_GK_ATTRIBUTE_GROUP__TV_GK:
 				setTvGK((Tv_GK_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -231,8 +235,10 @@ public class ZL_Fstr_Anstoss_GK_AttributeGroupImpl extends EObjectImpl implement
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS_GK_ATTRIBUTE_GROUP__TV_GK:
 				setTvGK((Tv_GK_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -247,8 +253,9 @@ public class ZL_Fstr_Anstoss_GK_AttributeGroupImpl extends EObjectImpl implement
 				return gK != null;
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS_GK_ATTRIBUTE_GROUP__TV_GK:
 				return tvGK != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZL_Fstr_Anstoss_GK_AttributeGroupImpl

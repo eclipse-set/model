@@ -434,8 +434,8 @@ public enum ENUMAWert implements Enumerator {
 			case ENUMA_WERT_208_VALUE: return ENUMA_WERT_208;
 			case ENUMA_WERT_224_VALUE: return ENUMA_WERT_224;
 			case ENUMA_WERT_240_VALUE: return ENUMA_WERT_240;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

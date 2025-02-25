@@ -159,8 +159,10 @@ public class ID_BUE_Anlage_TypeClassItemProvider extends Zeiger_TypeClassItemPro
 			case VerweisePackage.ID_BUE_ANLAGE_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

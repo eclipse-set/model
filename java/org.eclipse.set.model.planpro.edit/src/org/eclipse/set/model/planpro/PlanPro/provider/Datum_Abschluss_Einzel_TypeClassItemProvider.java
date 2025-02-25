@@ -137,8 +137,10 @@ public class Datum_Abschluss_Einzel_TypeClassItemProvider extends BasisAttribut_
 			case PlanProPackage.DATUM_ABSCHLUSS_EINZEL_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

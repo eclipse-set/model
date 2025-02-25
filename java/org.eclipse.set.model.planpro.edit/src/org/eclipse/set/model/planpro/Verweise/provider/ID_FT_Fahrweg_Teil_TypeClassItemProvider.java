@@ -159,8 +159,10 @@ public class ID_FT_Fahrweg_Teil_TypeClassItemProvider extends Zeiger_TypeClassIt
 			case VerweisePackage.ID_FT_FAHRWEG_TEIL_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

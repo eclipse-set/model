@@ -120,8 +120,9 @@ public class ZUB_Bereichsgrenze_Bezeichnung_AttributeGroupImpl extends EObjectIm
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_ZUB_BEREICHSGRENZE:
 				return basicSetBezZUBBereichsgrenze(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class ZUB_Bereichsgrenze_Bezeichnung_AttributeGroupImpl extends EObjectIm
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_ZUB_BEREICHSGRENZE:
 				return getBezZUBBereichsgrenze();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class ZUB_Bereichsgrenze_Bezeichnung_AttributeGroupImpl extends EObjectIm
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_ZUB_BEREICHSGRENZE:
 				setBezZUBBereichsgrenze((Bez_ZUB_Bereichsgrenze_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class ZUB_Bereichsgrenze_Bezeichnung_AttributeGroupImpl extends EObjectIm
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_ZUB_BEREICHSGRENZE:
 				setBezZUBBereichsgrenze((Bez_ZUB_Bereichsgrenze_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class ZUB_Bereichsgrenze_Bezeichnung_AttributeGroupImpl extends EObjectIm
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_ZUB_BEREICHSGRENZE:
 				return bezZUBBereichsgrenze != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZUB_Bereichsgrenze_Bezeichnung_AttributeGroupImpl

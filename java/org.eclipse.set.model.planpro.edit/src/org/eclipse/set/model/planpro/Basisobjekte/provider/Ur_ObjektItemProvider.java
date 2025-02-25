@@ -141,8 +141,10 @@ public class Ur_ObjektItemProvider
 			case BasisobjektePackage.UR_OBJEKT__IDENTITAET:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

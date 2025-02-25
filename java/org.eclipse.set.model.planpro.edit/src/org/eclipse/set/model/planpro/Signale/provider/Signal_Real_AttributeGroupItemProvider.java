@@ -170,8 +170,10 @@ public class Signal_Real_AttributeGroupItemProvider
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNALSICHT_SOLL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

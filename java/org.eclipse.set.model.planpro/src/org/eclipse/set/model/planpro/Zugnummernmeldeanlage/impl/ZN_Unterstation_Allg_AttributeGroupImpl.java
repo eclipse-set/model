@@ -449,8 +449,9 @@ public class ZN_Unterstation_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return basicSetZeitsynchronisationFunkuhr(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN_UNTERSTATION_ALLG_ATTRIBUTE_GROUP__ZN_UNTERSTATION_BF_NR:
 				return ((InternalEList<?>)getZNUnterstationBfNr()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -475,8 +476,9 @@ public class ZN_Unterstation_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return getZeitsynchronisationFunkuhr();
 			case ZugnummernmeldeanlagePackage.ZN_UNTERSTATION_ALLG_ATTRIBUTE_GROUP__ZN_UNTERSTATION_BF_NR:
 				return getZNUnterstationBfNr();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -510,8 +512,10 @@ public class ZN_Unterstation_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				getZNUnterstationBfNr().clear();
 				getZNUnterstationBfNr().addAll((Collection<? extends ZN_Unterstation_Bf_Nr_AttributeGroup>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -543,8 +547,10 @@ public class ZN_Unterstation_Allg_AttributeGroupImpl extends EObjectImpl impleme
 			case ZugnummernmeldeanlagePackage.ZN_UNTERSTATION_ALLG_ATTRIBUTE_GROUP__ZN_UNTERSTATION_BF_NR:
 				getZNUnterstationBfNr().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -569,8 +575,9 @@ public class ZN_Unterstation_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return zeitsynchronisationFunkuhr != null;
 			case ZugnummernmeldeanlagePackage.ZN_UNTERSTATION_ALLG_ATTRIBUTE_GROUP__ZN_UNTERSTATION_BF_NR:
 				return zNUnterstationBfNr != null && !zNUnterstationBfNr.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZN_Unterstation_Allg_AttributeGroupImpl

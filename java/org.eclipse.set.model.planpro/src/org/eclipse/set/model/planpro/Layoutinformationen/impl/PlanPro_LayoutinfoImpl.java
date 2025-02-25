@@ -201,8 +201,9 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 				return ((InternalEList<?>)getLageplanBlattschnitt()).basicRemove(otherEnd, msgs);
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__LAGEPLAN_ZUSTAND:
 				return ((InternalEList<?>)getLageplanZustand()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -223,8 +224,9 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 				return getLageplanBlattschnitt();
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__LAGEPLAN_ZUSTAND:
 				return getLageplanZustand();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -256,8 +258,10 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 				getLageplanZustand().clear();
 				getLageplanZustand().addAll((Collection<? extends Lageplan_Zustand>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -283,8 +287,10 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__LAGEPLAN_ZUSTAND:
 				getLageplanZustand().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -305,8 +311,9 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 				return lageplanBlattschnitt != null && !lageplanBlattschnitt.isEmpty();
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__LAGEPLAN_ZUSTAND:
 				return lageplanZustand != null && !lageplanZustand.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //PlanPro_LayoutinfoImpl

@@ -181,8 +181,9 @@ public class BaliseImpl extends Basis_ObjektImpl implements Balise {
 				return basicSetBaliseAllg(null, msgs);
 			case Balisentechnik_ETCSPackage.BALISE__ID_DATENPUNKT:
 				return basicSetIDDatenpunkt(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,8 +198,9 @@ public class BaliseImpl extends Basis_ObjektImpl implements Balise {
 				return getBaliseAllg();
 			case Balisentechnik_ETCSPackage.BALISE__ID_DATENPUNKT:
 				return getIDDatenpunkt();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,8 +217,10 @@ public class BaliseImpl extends Basis_ObjektImpl implements Balise {
 			case Balisentechnik_ETCSPackage.BALISE__ID_DATENPUNKT:
 				setIDDatenpunkt((ID_Datenpunkt_ohne_Proxy_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -233,8 +237,10 @@ public class BaliseImpl extends Basis_ObjektImpl implements Balise {
 			case Balisentechnik_ETCSPackage.BALISE__ID_DATENPUNKT:
 				setIDDatenpunkt((ID_Datenpunkt_ohne_Proxy_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -249,8 +255,9 @@ public class BaliseImpl extends Basis_ObjektImpl implements Balise {
 				return baliseAllg != null;
 			case Balisentechnik_ETCSPackage.BALISE__ID_DATENPUNKT:
 				return iDDatenpunkt != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //BaliseImpl

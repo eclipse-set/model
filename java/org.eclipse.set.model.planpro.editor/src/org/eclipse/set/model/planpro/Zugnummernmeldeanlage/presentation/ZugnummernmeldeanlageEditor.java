@@ -493,6 +493,8 @@ public class ZugnummernmeldeanlageEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

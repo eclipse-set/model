@@ -154,8 +154,10 @@ public class Akteur_Allg_AttributeGroupItemProvider
 			case PlanProPackage.AKTEUR_ALLG_ATTRIBUTE_GROUP__NAME_AKTEUR5:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

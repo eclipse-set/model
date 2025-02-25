@@ -138,8 +138,10 @@ public class Gleissperre_Betriebsart_TypeClassItemProvider extends BasisAttribut
 			case Weichen_und_GleissperrenPackage.GLEISSPERRE_BETRIEBSART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

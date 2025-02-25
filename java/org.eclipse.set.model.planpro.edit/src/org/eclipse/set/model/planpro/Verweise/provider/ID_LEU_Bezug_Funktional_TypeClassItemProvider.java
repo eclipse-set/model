@@ -159,8 +159,10 @@ public class ID_LEU_Bezug_Funktional_TypeClassItemProvider extends Zeiger_TypeCl
 			case VerweisePackage.ID_LEU_BEZUG_FUNKTIONAL_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

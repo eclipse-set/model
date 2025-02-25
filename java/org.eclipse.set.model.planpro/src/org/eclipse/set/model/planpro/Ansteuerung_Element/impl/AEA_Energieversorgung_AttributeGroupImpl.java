@@ -297,8 +297,9 @@ public class AEA_Energieversorgung_AttributeGroupImpl extends EObjectImpl implem
 				return basicSetEnergieversorgungArt(null, msgs);
 			case Ansteuerung_ElementPackage.AEA_ENERGIEVERSORGUNG_ATTRIBUTE_GROUP__ID_ENERGIE_PRIMAER:
 				return basicSetIDEnergiePrimaer(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -317,8 +318,9 @@ public class AEA_Energieversorgung_AttributeGroupImpl extends EObjectImpl implem
 				return getEnergieversorgungArt();
 			case Ansteuerung_ElementPackage.AEA_ENERGIEVERSORGUNG_ATTRIBUTE_GROUP__ID_ENERGIE_PRIMAER:
 				return getIDEnergiePrimaer();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -341,8 +343,10 @@ public class AEA_Energieversorgung_AttributeGroupImpl extends EObjectImpl implem
 			case Ansteuerung_ElementPackage.AEA_ENERGIEVERSORGUNG_ATTRIBUTE_GROUP__ID_ENERGIE_PRIMAER:
 				setIDEnergiePrimaer((ID_Energie_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -365,8 +369,10 @@ public class AEA_Energieversorgung_AttributeGroupImpl extends EObjectImpl implem
 			case Ansteuerung_ElementPackage.AEA_ENERGIEVERSORGUNG_ATTRIBUTE_GROUP__ID_ENERGIE_PRIMAER:
 				setIDEnergiePrimaer((ID_Energie_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -385,8 +391,9 @@ public class AEA_Energieversorgung_AttributeGroupImpl extends EObjectImpl implem
 				return energieversorgungArt != null;
 			case Ansteuerung_ElementPackage.AEA_ENERGIEVERSORGUNG_ATTRIBUTE_GROUP__ID_ENERGIE_PRIMAER:
 				return iDEnergiePrimaer != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //AEA_Energieversorgung_AttributeGroupImpl

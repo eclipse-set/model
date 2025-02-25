@@ -136,8 +136,10 @@ public class FMA_Element_Seiltyp_TypeClassItemProvider extends BasisAttribut_Att
 			case OrtungPackage.FMA_ELEMENT_SEILTYP_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

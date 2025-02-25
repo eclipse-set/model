@@ -120,8 +120,9 @@ public class ESTW_Zentraleinheit_Bezeichnung_AttributeGroupImpl extends EObjectI
 		switch (featureID) {
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ESTWZE:
 				return basicSetBezeichnungESTWZE(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class ESTW_Zentraleinheit_Bezeichnung_AttributeGroupImpl extends EObjectI
 		switch (featureID) {
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ESTWZE:
 				return getBezeichnungESTWZE();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class ESTW_Zentraleinheit_Bezeichnung_AttributeGroupImpl extends EObjectI
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ESTWZE:
 				setBezeichnungESTWZE((Bezeichnung_ESTW_ZE_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class ESTW_Zentraleinheit_Bezeichnung_AttributeGroupImpl extends EObjectI
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ESTWZE:
 				setBezeichnungESTWZE((Bezeichnung_ESTW_ZE_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class ESTW_Zentraleinheit_Bezeichnung_AttributeGroupImpl extends EObjectI
 		switch (featureID) {
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ESTWZE:
 				return bezeichnungESTWZE != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ESTW_Zentraleinheit_Bezeichnung_AttributeGroupImpl

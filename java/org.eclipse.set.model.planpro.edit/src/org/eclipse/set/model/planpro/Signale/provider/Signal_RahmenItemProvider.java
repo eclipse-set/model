@@ -153,8 +153,10 @@ public class Signal_RahmenItemProvider extends Basis_ObjektItemProvider {
 			case SignalePackage.SIGNAL_RAHMEN__RAHMEN_HOEHE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

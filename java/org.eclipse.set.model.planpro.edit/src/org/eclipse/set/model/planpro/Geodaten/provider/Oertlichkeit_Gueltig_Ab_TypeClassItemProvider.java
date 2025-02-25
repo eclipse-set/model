@@ -139,8 +139,10 @@ public class Oertlichkeit_Gueltig_Ab_TypeClassItemProvider extends BasisAttribut
 			case GeodatenPackage.OERTLICHKEIT_GUELTIG_AB_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

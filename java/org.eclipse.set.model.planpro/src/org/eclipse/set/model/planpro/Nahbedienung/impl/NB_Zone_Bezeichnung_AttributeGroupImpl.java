@@ -120,8 +120,9 @@ public class NB_Zone_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 		switch (featureID) {
 			case NahbedienungPackage.NB_ZONE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_NB_ZONE:
 				return basicSetBezeichnungNBZone(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class NB_Zone_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 		switch (featureID) {
 			case NahbedienungPackage.NB_ZONE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_NB_ZONE:
 				return getBezeichnungNBZone();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class NB_Zone_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 			case NahbedienungPackage.NB_ZONE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_NB_ZONE:
 				setBezeichnungNBZone((Bezeichnung_NB_Zone_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class NB_Zone_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 			case NahbedienungPackage.NB_ZONE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_NB_ZONE:
 				setBezeichnungNBZone((Bezeichnung_NB_Zone_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class NB_Zone_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 		switch (featureID) {
 			case NahbedienungPackage.NB_ZONE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_NB_ZONE:
 				return bezeichnungNBZone != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //NB_Zone_Bezeichnung_AttributeGroupImpl

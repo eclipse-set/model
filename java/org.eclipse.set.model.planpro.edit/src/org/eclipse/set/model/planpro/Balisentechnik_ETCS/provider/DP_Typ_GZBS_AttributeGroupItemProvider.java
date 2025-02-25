@@ -152,8 +152,10 @@ public class DP_Typ_GZBS_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.DP_TYP_GZBS_ATTRIBUTE_GROUP__DP_TYP_ZBS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

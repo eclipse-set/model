@@ -147,8 +147,10 @@ public class ZN_AkustikItemProvider extends Basis_ObjektItemProvider {
 			case ZugnummernmeldeanlagePackage.ZN_AKUSTIK__IDZN_ANZEIGEFELD:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

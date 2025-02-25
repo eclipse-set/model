@@ -181,8 +181,8 @@ public enum ENUMRolle implements Enumerator {
 			case ENUM_ROLLE_GIS_DATEN_VALUE: return ENUM_ROLLE_GIS_DATEN;
 			case ENUM_ROLLE_LST_FACHPLANER_VALUE: return ENUM_ROLLE_LST_FACHPLANER;
 			case ENUM_ROLLE_SONSTIGE_VALUE: return ENUM_ROLLE_SONSTIGE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

@@ -159,8 +159,10 @@ public class ID_Unterbringung_ohne_Proxy_TypeClassItemProvider extends Zeiger_Ty
 			case VerweisePackage.ID_UNTERBRINGUNG_OHNE_PROXY_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

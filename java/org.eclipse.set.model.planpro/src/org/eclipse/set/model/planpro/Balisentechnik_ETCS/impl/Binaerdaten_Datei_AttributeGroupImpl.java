@@ -179,8 +179,9 @@ public class Binaerdaten_Datei_AttributeGroupImpl extends EObjectImpl implements
 				return basicSetDateiname(null, msgs);
 			case Balisentechnik_ETCSPackage.BINAERDATEN_DATEI_ATTRIBUTE_GROUP__DATEITYP_BINAERDATEI:
 				return basicSetDateitypBinaerdatei(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -195,8 +196,9 @@ public class Binaerdaten_Datei_AttributeGroupImpl extends EObjectImpl implements
 				return getDateiname();
 			case Balisentechnik_ETCSPackage.BINAERDATEN_DATEI_ATTRIBUTE_GROUP__DATEITYP_BINAERDATEI:
 				return getDateitypBinaerdatei();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -213,8 +215,10 @@ public class Binaerdaten_Datei_AttributeGroupImpl extends EObjectImpl implements
 			case Balisentechnik_ETCSPackage.BINAERDATEN_DATEI_ATTRIBUTE_GROUP__DATEITYP_BINAERDATEI:
 				setDateitypBinaerdatei((Dateityp_Binaerdatei_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -231,8 +235,10 @@ public class Binaerdaten_Datei_AttributeGroupImpl extends EObjectImpl implements
 			case Balisentechnik_ETCSPackage.BINAERDATEN_DATEI_ATTRIBUTE_GROUP__DATEITYP_BINAERDATEI:
 				setDateitypBinaerdatei((Dateityp_Binaerdatei_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -247,8 +253,9 @@ public class Binaerdaten_Datei_AttributeGroupImpl extends EObjectImpl implements
 				return dateiname != null;
 			case Balisentechnik_ETCSPackage.BINAERDATEN_DATEI_ATTRIBUTE_GROUP__DATEITYP_BINAERDATEI:
 				return dateitypBinaerdatei != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Binaerdaten_Datei_AttributeGroupImpl

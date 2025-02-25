@@ -139,8 +139,10 @@ public class Fstr_V_TypeClassItemProvider extends BasisAttribut_AttributeGroupIt
 			case FahrstrassePackage.FSTR_VTYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

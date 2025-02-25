@@ -159,8 +159,10 @@ public class ID_Schluessel_TypeClassItemProvider extends Zeiger_TypeClassItemPro
 			case VerweisePackage.ID_SCHLUESSEL_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

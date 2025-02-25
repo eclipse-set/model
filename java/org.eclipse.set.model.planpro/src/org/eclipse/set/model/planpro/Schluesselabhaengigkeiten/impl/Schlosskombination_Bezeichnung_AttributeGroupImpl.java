@@ -120,8 +120,9 @@ public class Schlosskombination_Bezeichnung_AttributeGroupImpl extends EObjectIm
 		switch (featureID) {
 			case SchluesselabhaengigkeitenPackage.SCHLOSSKOMBINATION_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_SK:
 				return basicSetBezeichnungSk(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class Schlosskombination_Bezeichnung_AttributeGroupImpl extends EObjectIm
 		switch (featureID) {
 			case SchluesselabhaengigkeitenPackage.SCHLOSSKOMBINATION_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_SK:
 				return getBezeichnungSk();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class Schlosskombination_Bezeichnung_AttributeGroupImpl extends EObjectIm
 			case SchluesselabhaengigkeitenPackage.SCHLOSSKOMBINATION_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_SK:
 				setBezeichnungSk((Bezeichnung_Sk_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class Schlosskombination_Bezeichnung_AttributeGroupImpl extends EObjectIm
 			case SchluesselabhaengigkeitenPackage.SCHLOSSKOMBINATION_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_SK:
 				setBezeichnungSk((Bezeichnung_Sk_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class Schlosskombination_Bezeichnung_AttributeGroupImpl extends EObjectIm
 		switch (featureID) {
 			case SchluesselabhaengigkeitenPackage.SCHLOSSKOMBINATION_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_SK:
 				return bezeichnungSk != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Schlosskombination_Bezeichnung_AttributeGroupImpl

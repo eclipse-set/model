@@ -154,8 +154,10 @@ public class Bahnsteig_Zugang_Allg_AttributeGroupItemProvider
 			case BahnsteigPackage.BAHNSTEIG_ZUGANG_ALLG_ATTRIBUTE_GROUP__HAUPTZUGANG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

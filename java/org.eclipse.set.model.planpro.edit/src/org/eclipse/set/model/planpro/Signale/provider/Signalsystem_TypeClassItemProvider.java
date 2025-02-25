@@ -138,8 +138,10 @@ public class Signalsystem_TypeClassItemProvider extends BasisAttribut_AttributeG
 			case SignalePackage.SIGNALSYSTEM_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

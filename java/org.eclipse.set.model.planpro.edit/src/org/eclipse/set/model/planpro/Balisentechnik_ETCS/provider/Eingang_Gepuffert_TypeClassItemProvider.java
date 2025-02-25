@@ -137,8 +137,10 @@ public class Eingang_Gepuffert_TypeClassItemProvider extends BasisAttribut_Attri
 			case Balisentechnik_ETCSPackage.EINGANG_GEPUFFERT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -139,8 +139,10 @@ public class Hoehenpunkt_Datum_TypeClassItemProvider extends BasisAttribut_Attri
 			case GeodatenPackage.HOEHENPUNKT_DATUM_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

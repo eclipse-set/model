@@ -151,8 +151,10 @@ public class BUE_AnlageItemProvider extends Punkt_ObjektItemProvider {
 			case BahnuebergangPackage.BUE_ANLAGE__IDBUE_SCHNITTSTELLE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -227,8 +227,8 @@ public enum ENUMGleisart implements Enumerator {
 			case ENUM_GLEISART_NEBENGLEIS_VALUE: return ENUM_GLEISART_NEBENGLEIS;
 			case ENUM_GLEISART_SONSTIGE_VALUE: return ENUM_GLEISART_SONSTIGE;
 			case ENUM_GLEISART_STRECKENGLEIS_VALUE: return ENUM_GLEISART_STRECKENGLEIS;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

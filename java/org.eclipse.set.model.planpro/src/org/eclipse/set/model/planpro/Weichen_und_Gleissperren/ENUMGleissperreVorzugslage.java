@@ -135,8 +135,8 @@ public enum ENUMGleissperreVorzugslage implements Enumerator {
 		switch (value) {
 			case ENUM_GLEISSPERRE_VORZUGSLAGE_ABGELEGT_VALUE: return ENUM_GLEISSPERRE_VORZUGSLAGE_ABGELEGT;
 			case ENUM_GLEISSPERRE_VORZUGSLAGE_AUFGELEGT_VALUE: return ENUM_GLEISSPERRE_VORZUGSLAGE_AUFGELEGT;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

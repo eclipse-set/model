@@ -145,8 +145,10 @@ public class ZL_SignalgruppeItemProvider extends Basis_ObjektItemProvider {
 			case ZuglenkungPackage.ZL_SIGNALGRUPPE__ZL_SIGNALGRUPPE_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

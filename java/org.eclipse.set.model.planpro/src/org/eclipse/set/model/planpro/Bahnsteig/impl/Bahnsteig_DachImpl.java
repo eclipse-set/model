@@ -122,8 +122,9 @@ public class Bahnsteig_DachImpl extends Bereich_ObjektImpl implements Bahnsteig_
 		switch (featureID) {
 			case BahnsteigPackage.BAHNSTEIG_DACH__ID_BAHNSTEIG_KANTE:
 				return basicSetIDBahnsteigKante(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,8 +137,9 @@ public class Bahnsteig_DachImpl extends Bereich_ObjektImpl implements Bahnsteig_
 		switch (featureID) {
 			case BahnsteigPackage.BAHNSTEIG_DACH__ID_BAHNSTEIG_KANTE:
 				return getIDBahnsteigKante();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,8 +153,10 @@ public class Bahnsteig_DachImpl extends Bereich_ObjektImpl implements Bahnsteig_
 			case BahnsteigPackage.BAHNSTEIG_DACH__ID_BAHNSTEIG_KANTE:
 				setIDBahnsteigKante((ID_Bahnsteig_Kante_ohne_Proxy_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -166,8 +170,10 @@ public class Bahnsteig_DachImpl extends Bereich_ObjektImpl implements Bahnsteig_
 			case BahnsteigPackage.BAHNSTEIG_DACH__ID_BAHNSTEIG_KANTE:
 				setIDBahnsteigKante((ID_Bahnsteig_Kante_ohne_Proxy_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -180,8 +186,9 @@ public class Bahnsteig_DachImpl extends Bereich_ObjektImpl implements Bahnsteig_
 		switch (featureID) {
 			case BahnsteigPackage.BAHNSTEIG_DACH__ID_BAHNSTEIG_KANTE:
 				return iDBahnsteigKante != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bahnsteig_DachImpl

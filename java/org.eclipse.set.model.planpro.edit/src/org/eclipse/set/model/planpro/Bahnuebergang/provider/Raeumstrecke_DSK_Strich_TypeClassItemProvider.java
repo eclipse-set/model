@@ -139,8 +139,10 @@ public class Raeumstrecke_DSK_Strich_TypeClassItemProvider extends BasisAttribut
 			case BahnuebergangPackage.RAEUMSTRECKE_DSK_STRICH_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -145,8 +145,10 @@ public class ZBS_SignalItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.ZBS_SIGNAL__ZBS_SIGNAL_SIGNALABSTAND:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

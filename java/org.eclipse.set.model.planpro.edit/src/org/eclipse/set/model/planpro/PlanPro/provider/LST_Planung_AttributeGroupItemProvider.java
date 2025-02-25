@@ -152,8 +152,10 @@ public class LST_Planung_AttributeGroupItemProvider
 			case PlanProPackage.LST_PLANUNG_ATTRIBUTE_GROUP__OBJEKTMANAGEMENT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

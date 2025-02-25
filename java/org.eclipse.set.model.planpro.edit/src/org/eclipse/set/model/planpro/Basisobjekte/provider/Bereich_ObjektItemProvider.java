@@ -124,8 +124,10 @@ public class Bereich_ObjektItemProvider extends Basis_ObjektItemProvider {
 			case BasisobjektePackage.BEREICH_OBJEKT__BEREICH_OBJEKT_TEILBEREICH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

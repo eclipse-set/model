@@ -156,8 +156,10 @@ public class GFR_Tripelspiegel_Allg_AttributeGroupItemProvider
 			case BahnuebergangPackage.GFR_TRIPELSPIEGEL_ALLG_ATTRIBUTE_GROUP__WINKEL_ALPHA:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

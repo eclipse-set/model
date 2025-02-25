@@ -141,8 +141,10 @@ public class GEO_KnotenItemProvider extends Basis_ObjektItemProvider {
 			case GeodatenPackage.GEO_KNOTEN__GEOPAD:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -139,8 +139,10 @@ public class GEO_Radius_B_TypeClassItemProvider extends BasisAttribut_AttributeG
 			case GeodatenPackage.GEO_RADIUS_BTYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -297,8 +297,9 @@ public class GFR_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements G
 				return basicSetGFRTyp(null, msgs);
 			case BahnuebergangPackage.GFR_ANLAGE_ALLG_ATTRIBUTE_GROUP__HERSTELLER:
 				return basicSetHersteller(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -317,8 +318,9 @@ public class GFR_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements G
 				return getGFRTyp();
 			case BahnuebergangPackage.GFR_ANLAGE_ALLG_ATTRIBUTE_GROUP__HERSTELLER:
 				return getHersteller();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -341,8 +343,10 @@ public class GFR_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements G
 			case BahnuebergangPackage.GFR_ANLAGE_ALLG_ATTRIBUTE_GROUP__HERSTELLER:
 				setHersteller((Hersteller_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -365,8 +369,10 @@ public class GFR_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements G
 			case BahnuebergangPackage.GFR_ANLAGE_ALLG_ATTRIBUTE_GROUP__HERSTELLER:
 				setHersteller((Hersteller_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -385,8 +391,9 @@ public class GFR_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements G
 				return gFRTyp != null;
 			case BahnuebergangPackage.GFR_ANLAGE_ALLG_ATTRIBUTE_GROUP__HERSTELLER:
 				return hersteller != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //GFR_Anlage_Allg_AttributeGroupImpl

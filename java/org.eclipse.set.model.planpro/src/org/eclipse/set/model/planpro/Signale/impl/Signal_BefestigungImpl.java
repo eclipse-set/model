@@ -274,8 +274,9 @@ public class Signal_BefestigungImpl extends Punkt_ObjektImpl implements Signal_B
 				return basicSetIDBefestigungBauwerk(null, msgs);
 			case SignalePackage.SIGNAL_BEFESTIGUNG__ID_SIGNAL_BEFESTIGUNG:
 				return basicSetIDSignalBefestigung(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -294,8 +295,9 @@ public class Signal_BefestigungImpl extends Punkt_ObjektImpl implements Signal_B
 				return getIDBefestigungBauwerk();
 			case SignalePackage.SIGNAL_BEFESTIGUNG__ID_SIGNAL_BEFESTIGUNG:
 				return getIDSignalBefestigung();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -320,8 +322,10 @@ public class Signal_BefestigungImpl extends Punkt_ObjektImpl implements Signal_B
 			case SignalePackage.SIGNAL_BEFESTIGUNG__ID_SIGNAL_BEFESTIGUNG:
 				setIDSignalBefestigung((ID_Signal_Befestigung_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -344,8 +348,10 @@ public class Signal_BefestigungImpl extends Punkt_ObjektImpl implements Signal_B
 			case SignalePackage.SIGNAL_BEFESTIGUNG__ID_SIGNAL_BEFESTIGUNG:
 				setIDSignalBefestigung((ID_Signal_Befestigung_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -364,8 +370,9 @@ public class Signal_BefestigungImpl extends Punkt_ObjektImpl implements Signal_B
 				return iDBefestigungBauwerk != null;
 			case SignalePackage.SIGNAL_BEFESTIGUNG__ID_SIGNAL_BEFESTIGUNG:
 				return iDSignalBefestigung != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Signal_BefestigungImpl

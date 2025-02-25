@@ -147,8 +147,10 @@ public class Bedien_OertlichkeitItemProvider extends Basis_ObjektItemProvider {
 			case BedienungPackage.BEDIEN_OERTLICHKEIT__ID_OERTLICHKEIT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

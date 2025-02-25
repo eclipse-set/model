@@ -214,8 +214,9 @@ public class Signal_Fstr_S_AttributeGroupImpl extends EObjectImpl implements Sig
 				return ((InternalEList<?>)getIDAnrueckverschluss()).basicRemove(otherEnd, msgs);
 			case SignalePackage.SIGNAL_FSTR_SATTRIBUTE_GROUP__ID_ZWEITES_HALTFALLKRITERIUM:
 				return basicSetIDZweitesHaltfallkriterium(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -232,8 +233,9 @@ public class Signal_Fstr_S_AttributeGroupImpl extends EObjectImpl implements Sig
 				return getIDAnrueckverschluss();
 			case SignalePackage.SIGNAL_FSTR_SATTRIBUTE_GROUP__ID_ZWEITES_HALTFALLKRITERIUM:
 				return getIDZweitesHaltfallkriterium();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -255,8 +257,10 @@ public class Signal_Fstr_S_AttributeGroupImpl extends EObjectImpl implements Sig
 			case SignalePackage.SIGNAL_FSTR_SATTRIBUTE_GROUP__ID_ZWEITES_HALTFALLKRITERIUM:
 				setIDZweitesHaltfallkriterium((ID_Zweites_Haltfallkriterium_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -276,8 +280,10 @@ public class Signal_Fstr_S_AttributeGroupImpl extends EObjectImpl implements Sig
 			case SignalePackage.SIGNAL_FSTR_SATTRIBUTE_GROUP__ID_ZWEITES_HALTFALLKRITERIUM:
 				setIDZweitesHaltfallkriterium((ID_Zweites_Haltfallkriterium_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -294,8 +300,9 @@ public class Signal_Fstr_S_AttributeGroupImpl extends EObjectImpl implements Sig
 				return iDAnrueckverschluss != null && !iDAnrueckverschluss.isEmpty();
 			case SignalePackage.SIGNAL_FSTR_SATTRIBUTE_GROUP__ID_ZWEITES_HALTFALLKRITERIUM:
 				return iDZweitesHaltfallkriterium != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Signal_Fstr_S_AttributeGroupImpl

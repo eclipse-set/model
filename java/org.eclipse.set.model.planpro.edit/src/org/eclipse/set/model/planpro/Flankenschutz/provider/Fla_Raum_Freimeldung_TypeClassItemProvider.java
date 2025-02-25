@@ -137,8 +137,10 @@ public class Fla_Raum_Freimeldung_TypeClassItemProvider extends BasisAttribut_At
 			case FlankenschutzPackage.FLA_RAUM_FREIMELDUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

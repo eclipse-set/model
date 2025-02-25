@@ -159,8 +159,10 @@ public class ID_Ur_Objekt_TypeClassItemProvider extends Zeiger_TypeClassItemProv
 			case VerweisePackage.ID_UR_OBJEKT_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

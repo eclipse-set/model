@@ -143,8 +143,10 @@ public class Technischer_BereichItemProvider extends Bereich_ObjektItemProvider 
 			case GeodatenPackage.TECHNISCHER_BEREICH__TB_BESCHREIBUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -144,8 +144,10 @@ public class Signal_Fank_ZuordnungItemProvider extends Basis_ObjektItemProvider 
 			case SignalePackage.SIGNAL_FANK_ZUORDNUNG__ID_SIGNAL_START:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

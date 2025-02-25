@@ -135,8 +135,8 @@ public enum ENUMGspLage implements Enumerator {
 		switch (value) {
 			case ENUM_GSP_LAGE_ABGELEGT_VALUE: return ENUM_GSP_LAGE_ABGELEGT;
 			case ENUM_GSP_LAGE_AUFGELEGT_VALUE: return ENUM_GSP_LAGE_AUFGELEGT;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

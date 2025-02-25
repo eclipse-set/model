@@ -493,6 +493,8 @@ public class BasisobjekteEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

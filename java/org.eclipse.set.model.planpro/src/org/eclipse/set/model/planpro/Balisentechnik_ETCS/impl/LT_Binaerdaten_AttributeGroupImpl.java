@@ -240,8 +240,9 @@ public class LT_Binaerdaten_AttributeGroupImpl extends EObjectImpl implements LT
 				return basicSetIDBinaerdaten(null, msgs);
 			case Balisentechnik_ETCSPackage.LT_BINAERDATEN_ATTRIBUTE_GROUP__PRUEFMERKMALE_BINAERDATEN:
 				return basicSetPruefmerkmaleBinaerdaten(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,8 +259,9 @@ public class LT_Binaerdaten_AttributeGroupImpl extends EObjectImpl implements LT
 				return getIDBinaerdaten();
 			case Balisentechnik_ETCSPackage.LT_BINAERDATEN_ATTRIBUTE_GROUP__PRUEFMERKMALE_BINAERDATEN:
 				return getPruefmerkmaleBinaerdaten();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -279,8 +281,10 @@ public class LT_Binaerdaten_AttributeGroupImpl extends EObjectImpl implements LT
 			case Balisentechnik_ETCSPackage.LT_BINAERDATEN_ATTRIBUTE_GROUP__PRUEFMERKMALE_BINAERDATEN:
 				setPruefmerkmaleBinaerdaten((Pruefmerkmale_Daten_AttributeGroup)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -300,8 +304,10 @@ public class LT_Binaerdaten_AttributeGroupImpl extends EObjectImpl implements LT
 			case Balisentechnik_ETCSPackage.LT_BINAERDATEN_ATTRIBUTE_GROUP__PRUEFMERKMALE_BINAERDATEN:
 				setPruefmerkmaleBinaerdaten((Pruefmerkmale_Daten_AttributeGroup)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -318,8 +324,9 @@ public class LT_Binaerdaten_AttributeGroupImpl extends EObjectImpl implements LT
 				return iDBinaerdaten != null;
 			case Balisentechnik_ETCSPackage.LT_BINAERDATEN_ATTRIBUTE_GROUP__PRUEFMERKMALE_BINAERDATEN:
 				return pruefmerkmaleBinaerdaten != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //LT_Binaerdaten_AttributeGroupImpl

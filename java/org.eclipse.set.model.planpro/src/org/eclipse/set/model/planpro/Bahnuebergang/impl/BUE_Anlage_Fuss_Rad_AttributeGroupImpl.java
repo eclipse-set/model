@@ -179,8 +179,9 @@ public class BUE_Anlage_Fuss_Rad_AttributeGroupImpl extends EObjectImpl implemen
 				return basicSetFussRadwegArt(null, msgs);
 			case BahnuebergangPackage.BUE_ANLAGE_FUSS_RAD_ATTRIBUTE_GROUP__FUSS_RADWEG_SEITE:
 				return basicSetFussRadwegSeite(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -195,8 +196,9 @@ public class BUE_Anlage_Fuss_Rad_AttributeGroupImpl extends EObjectImpl implemen
 				return getFussRadwegArt();
 			case BahnuebergangPackage.BUE_ANLAGE_FUSS_RAD_ATTRIBUTE_GROUP__FUSS_RADWEG_SEITE:
 				return getFussRadwegSeite();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -213,8 +215,10 @@ public class BUE_Anlage_Fuss_Rad_AttributeGroupImpl extends EObjectImpl implemen
 			case BahnuebergangPackage.BUE_ANLAGE_FUSS_RAD_ATTRIBUTE_GROUP__FUSS_RADWEG_SEITE:
 				setFussRadwegSeite((Fuss_Radweg_Seite_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -231,8 +235,10 @@ public class BUE_Anlage_Fuss_Rad_AttributeGroupImpl extends EObjectImpl implemen
 			case BahnuebergangPackage.BUE_ANLAGE_FUSS_RAD_ATTRIBUTE_GROUP__FUSS_RADWEG_SEITE:
 				setFussRadwegSeite((Fuss_Radweg_Seite_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -247,8 +253,9 @@ public class BUE_Anlage_Fuss_Rad_AttributeGroupImpl extends EObjectImpl implemen
 				return fussRadwegArt != null;
 			case BahnuebergangPackage.BUE_ANLAGE_FUSS_RAD_ATTRIBUTE_GROUP__FUSS_RADWEG_SEITE:
 				return fussRadwegSeite != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //BUE_Anlage_Fuss_Rad_AttributeGroupImpl

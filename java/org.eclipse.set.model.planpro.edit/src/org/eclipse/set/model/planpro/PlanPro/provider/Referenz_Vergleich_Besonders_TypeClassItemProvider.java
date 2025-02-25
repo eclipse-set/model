@@ -134,8 +134,10 @@ public class Referenz_Vergleich_Besonders_TypeClassItemProvider extends BasisAtt
 			case PlanProPackage.REFERENZ_VERGLEICH_BESONDERS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

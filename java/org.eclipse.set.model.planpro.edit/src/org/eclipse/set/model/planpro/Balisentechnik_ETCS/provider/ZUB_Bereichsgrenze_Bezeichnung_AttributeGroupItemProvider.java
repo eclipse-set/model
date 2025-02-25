@@ -152,8 +152,10 @@ public class ZUB_Bereichsgrenze_Bezeichnung_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_ZUB_BEREICHSGRENZE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -493,6 +493,8 @@ public class FahrstrasseEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

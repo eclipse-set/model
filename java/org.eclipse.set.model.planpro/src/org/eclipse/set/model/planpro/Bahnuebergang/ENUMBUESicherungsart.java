@@ -618,8 +618,8 @@ public enum ENUMBUESicherungsart implements Enumerator {
 			case ENUMBUE_SICHERUNGSART_UE_UND_A_VALUE: return ENUMBUE_SICHERUNGSART_UE_UND_A;
 			case ENUMBUE_SICHERUNGSART_UE_UND_P_VALUE: return ENUMBUE_SICHERUNGSART_UE_UND_P;
 			case ENUMBUE_SICHERUNGSART_UE_UND_U_VALUE: return ENUMBUE_SICHERUNGSART_UE_UND_U;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

@@ -139,8 +139,10 @@ public class VBC_NID_C_TypeClassItemProvider extends BasisAttribut_AttributeGrou
 			case Balisentechnik_ETCSPackage.VBC_NID_CTYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

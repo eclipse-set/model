@@ -239,8 +239,9 @@ public class LEU_Modul_Ausgang_AttributeGroupImpl extends EObjectImpl implements
 				return basicSetLEUAusgangNr(null, msgs);
 			case Balisentechnik_ETCSPackage.LEU_MODUL_AUSGANG_ATTRIBUTE_GROUP__PORT_NR_AUSG_PHYSISCH:
 				return basicSetPortNrAusgPhysisch(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -257,8 +258,9 @@ public class LEU_Modul_Ausgang_AttributeGroupImpl extends EObjectImpl implements
 				return getLEUAusgangNr();
 			case Balisentechnik_ETCSPackage.LEU_MODUL_AUSGANG_ATTRIBUTE_GROUP__PORT_NR_AUSG_PHYSISCH:
 				return getPortNrAusgPhysisch();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -278,8 +280,10 @@ public class LEU_Modul_Ausgang_AttributeGroupImpl extends EObjectImpl implements
 			case Balisentechnik_ETCSPackage.LEU_MODUL_AUSGANG_ATTRIBUTE_GROUP__PORT_NR_AUSG_PHYSISCH:
 				setPortNrAusgPhysisch((Port_Nr_Ausg_Physisch_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -299,8 +303,10 @@ public class LEU_Modul_Ausgang_AttributeGroupImpl extends EObjectImpl implements
 			case Balisentechnik_ETCSPackage.LEU_MODUL_AUSGANG_ATTRIBUTE_GROUP__PORT_NR_AUSG_PHYSISCH:
 				setPortNrAusgPhysisch((Port_Nr_Ausg_Physisch_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -317,8 +323,9 @@ public class LEU_Modul_Ausgang_AttributeGroupImpl extends EObjectImpl implements
 				return lEUAusgangNr != null;
 			case Balisentechnik_ETCSPackage.LEU_MODUL_AUSGANG_ATTRIBUTE_GROUP__PORT_NR_AUSG_PHYSISCH:
 				return portNrAusgPhysisch != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //LEU_Modul_Ausgang_AttributeGroupImpl

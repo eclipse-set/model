@@ -166,8 +166,10 @@ public class Planung_E_Handlung_AttributeGroupItemProvider
 			case PlanProPackage.PLANUNG_EHANDLUNG_ATTRIBUTE_GROUP__PLANUNG_EUEBERNAHME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

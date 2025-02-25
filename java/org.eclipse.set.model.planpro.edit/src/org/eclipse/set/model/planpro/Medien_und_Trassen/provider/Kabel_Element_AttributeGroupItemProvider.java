@@ -160,8 +160,10 @@ public class Kabel_Element_AttributeGroupItemProvider
 			case Medien_und_TrassenPackage.KABEL_ELEMENT_ATTRIBUTE_GROUP__ADER_QUERSCHNITT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

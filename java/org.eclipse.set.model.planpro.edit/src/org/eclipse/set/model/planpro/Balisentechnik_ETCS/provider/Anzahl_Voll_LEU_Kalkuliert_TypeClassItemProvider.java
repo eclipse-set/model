@@ -139,8 +139,10 @@ public class Anzahl_Voll_LEU_Kalkuliert_TypeClassItemProvider extends BasisAttri
 			case Balisentechnik_ETCSPackage.ANZAHL_VOLL_LEU_KALKULIERT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

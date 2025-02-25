@@ -415,8 +415,9 @@ public class ESG_Spezifische_Merkmale_AttributeGroupImpl extends EObjectImpl imp
 				return basicSetRekursion2Nr(null, msgs);
 			case Balisentechnik_ETCSPackage.ESG_SPEZIFISCHE_MERKMALE_ATTRIBUTE_GROUP__REKURSION_NR:
 				return basicSetRekursionNr(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -439,8 +440,9 @@ public class ESG_Spezifische_Merkmale_AttributeGroupImpl extends EObjectImpl imp
 				return getRekursion2Nr();
 			case Balisentechnik_ETCSPackage.ESG_SPEZIFISCHE_MERKMALE_ATTRIBUTE_GROUP__REKURSION_NR:
 				return getRekursionNr();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -469,8 +471,10 @@ public class ESG_Spezifische_Merkmale_AttributeGroupImpl extends EObjectImpl imp
 			case Balisentechnik_ETCSPackage.ESG_SPEZIFISCHE_MERKMALE_ATTRIBUTE_GROUP__REKURSION_NR:
 				setRekursionNr((Rekursion_Nr_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -499,8 +503,10 @@ public class ESG_Spezifische_Merkmale_AttributeGroupImpl extends EObjectImpl imp
 			case Balisentechnik_ETCSPackage.ESG_SPEZIFISCHE_MERKMALE_ATTRIBUTE_GROUP__REKURSION_NR:
 				setRekursionNr((Rekursion_Nr_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -523,8 +529,9 @@ public class ESG_Spezifische_Merkmale_AttributeGroupImpl extends EObjectImpl imp
 				return rekursion2Nr != null;
 			case Balisentechnik_ETCSPackage.ESG_SPEZIFISCHE_MERKMALE_ATTRIBUTE_GROUP__REKURSION_NR:
 				return rekursionNr != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ESG_Spezifische_Merkmale_AttributeGroupImpl

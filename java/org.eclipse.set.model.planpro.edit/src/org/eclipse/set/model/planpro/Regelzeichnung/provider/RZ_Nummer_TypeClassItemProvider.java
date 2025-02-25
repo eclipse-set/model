@@ -136,8 +136,10 @@ public class RZ_Nummer_TypeClassItemProvider extends BasisAttribut_AttributeGrou
 			case RegelzeichnungPackage.RZ_NUMMER_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

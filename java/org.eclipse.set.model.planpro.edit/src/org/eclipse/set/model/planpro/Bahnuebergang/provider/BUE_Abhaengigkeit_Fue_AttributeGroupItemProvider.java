@@ -160,8 +160,10 @@ public class BUE_Abhaengigkeit_Fue_AttributeGroupItemProvider
 			case BahnuebergangPackage.BUE_ABHAENGIGKEIT_FUE_ATTRIBUTE_GROUP__ZEITUEBERSCHREITUNGSMELDUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

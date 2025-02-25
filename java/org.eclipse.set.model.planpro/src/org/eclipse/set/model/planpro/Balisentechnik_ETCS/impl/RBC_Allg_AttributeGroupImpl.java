@@ -238,8 +238,9 @@ public class RBC_Allg_AttributeGroupImpl extends EObjectImpl implements RBC_Allg
 				return basicSetRBCSRSVersion(null, msgs);
 			case Balisentechnik_ETCSPackage.RBC_ALLG_ATTRIBUTE_GROUP__RUFNUMMER:
 				return basicSetRufnummer(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class RBC_Allg_AttributeGroupImpl extends EObjectImpl implements RBC_Allg
 				return getRBCSRSVersion();
 			case Balisentechnik_ETCSPackage.RBC_ALLG_ATTRIBUTE_GROUP__RUFNUMMER:
 				return getRufnummer();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class RBC_Allg_AttributeGroupImpl extends EObjectImpl implements RBC_Allg
 			case Balisentechnik_ETCSPackage.RBC_ALLG_ATTRIBUTE_GROUP__RUFNUMMER:
 				setRufnummer((Rufnummer_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class RBC_Allg_AttributeGroupImpl extends EObjectImpl implements RBC_Allg
 			case Balisentechnik_ETCSPackage.RBC_ALLG_ATTRIBUTE_GROUP__RUFNUMMER:
 				setRufnummer((Rufnummer_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class RBC_Allg_AttributeGroupImpl extends EObjectImpl implements RBC_Allg
 				return rBCSRSVersion != null;
 			case Balisentechnik_ETCSPackage.RBC_ALLG_ATTRIBUTE_GROUP__RUFNUMMER:
 				return rufnummer != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //RBC_Allg_AttributeGroupImpl

@@ -138,8 +138,10 @@ public class Bahnsteig_Zugang_Art_TypeClassItemProvider extends BasisAttribut_At
 			case BahnsteigPackage.BAHNSTEIG_ZUGANG_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

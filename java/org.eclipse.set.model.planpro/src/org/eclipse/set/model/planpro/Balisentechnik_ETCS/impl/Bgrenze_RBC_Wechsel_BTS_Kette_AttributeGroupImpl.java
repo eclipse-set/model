@@ -415,8 +415,9 @@ public class Bgrenze_RBC_Wechsel_BTS_Kette_AttributeGroupImpl extends EObjectImp
 				return basicSetKmBTS2(null, msgs);
 			case Balisentechnik_ETCSPackage.BGRENZE_RBC_WECHSEL_BTS_KETTE_ATTRIBUTE_GROUP__KM_BTS3:
 				return basicSetKmBTS3(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -439,8 +440,9 @@ public class Bgrenze_RBC_Wechsel_BTS_Kette_AttributeGroupImpl extends EObjectImp
 				return getKmBTS2();
 			case Balisentechnik_ETCSPackage.BGRENZE_RBC_WECHSEL_BTS_KETTE_ATTRIBUTE_GROUP__KM_BTS3:
 				return getKmBTS3();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -469,8 +471,10 @@ public class Bgrenze_RBC_Wechsel_BTS_Kette_AttributeGroupImpl extends EObjectImp
 			case Balisentechnik_ETCSPackage.BGRENZE_RBC_WECHSEL_BTS_KETTE_ATTRIBUTE_GROUP__KM_BTS3:
 				setKmBTS3((Km_BTS_3_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -499,8 +503,10 @@ public class Bgrenze_RBC_Wechsel_BTS_Kette_AttributeGroupImpl extends EObjectImp
 			case Balisentechnik_ETCSPackage.BGRENZE_RBC_WECHSEL_BTS_KETTE_ATTRIBUTE_GROUP__KM_BTS3:
 				setKmBTS3((Km_BTS_3_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -523,8 +529,9 @@ public class Bgrenze_RBC_Wechsel_BTS_Kette_AttributeGroupImpl extends EObjectImp
 				return kmBTS2 != null;
 			case Balisentechnik_ETCSPackage.BGRENZE_RBC_WECHSEL_BTS_KETTE_ATTRIBUTE_GROUP__KM_BTS3:
 				return kmBTS3 != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bgrenze_RBC_Wechsel_BTS_Kette_AttributeGroupImpl

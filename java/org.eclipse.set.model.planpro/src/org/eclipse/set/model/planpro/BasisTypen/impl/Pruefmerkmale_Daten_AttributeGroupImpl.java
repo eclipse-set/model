@@ -297,8 +297,9 @@ public class Pruefmerkmale_Daten_AttributeGroupImpl extends EObjectImpl implemen
 				return basicSetPruefsummeArt(null, msgs);
 			case BasisTypenPackage.PRUEFMERKMALE_DATEN_ATTRIBUTE_GROUP__VERSION_AUSLIEFERUNG:
 				return basicSetVersionAuslieferung(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -317,8 +318,9 @@ public class Pruefmerkmale_Daten_AttributeGroupImpl extends EObjectImpl implemen
 				return getPruefsummeArt();
 			case BasisTypenPackage.PRUEFMERKMALE_DATEN_ATTRIBUTE_GROUP__VERSION_AUSLIEFERUNG:
 				return getVersionAuslieferung();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -341,8 +343,10 @@ public class Pruefmerkmale_Daten_AttributeGroupImpl extends EObjectImpl implemen
 			case BasisTypenPackage.PRUEFMERKMALE_DATEN_ATTRIBUTE_GROUP__VERSION_AUSLIEFERUNG:
 				setVersionAuslieferung((Version_Auslieferung_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -365,8 +369,10 @@ public class Pruefmerkmale_Daten_AttributeGroupImpl extends EObjectImpl implemen
 			case BasisTypenPackage.PRUEFMERKMALE_DATEN_ATTRIBUTE_GROUP__VERSION_AUSLIEFERUNG:
 				setVersionAuslieferung((Version_Auslieferung_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -385,8 +391,9 @@ public class Pruefmerkmale_Daten_AttributeGroupImpl extends EObjectImpl implemen
 				return pruefsummeArt != null;
 			case BasisTypenPackage.PRUEFMERKMALE_DATEN_ATTRIBUTE_GROUP__VERSION_AUSLIEFERUNG:
 				return versionAuslieferung != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Pruefmerkmale_Daten_AttributeGroupImpl

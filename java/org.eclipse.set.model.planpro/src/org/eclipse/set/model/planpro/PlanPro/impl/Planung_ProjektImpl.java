@@ -155,8 +155,9 @@ public class Planung_ProjektImpl extends Ur_ObjektImpl implements Planung_Projek
 				return ((InternalEList<?>)getLSTPlanungGruppe()).basicRemove(otherEnd, msgs);
 			case PlanProPackage.PLANUNG_PROJEKT__PLANUNG_PALLG:
 				return basicSetPlanungPAllg(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -171,8 +172,9 @@ public class Planung_ProjektImpl extends Ur_ObjektImpl implements Planung_Projek
 				return getLSTPlanungGruppe();
 			case PlanProPackage.PLANUNG_PROJEKT__PLANUNG_PALLG:
 				return getPlanungPAllg();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -191,8 +193,10 @@ public class Planung_ProjektImpl extends Ur_ObjektImpl implements Planung_Projek
 			case PlanProPackage.PLANUNG_PROJEKT__PLANUNG_PALLG:
 				setPlanungPAllg((Planung_P_Allg_AttributeGroup)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -209,8 +213,10 @@ public class Planung_ProjektImpl extends Ur_ObjektImpl implements Planung_Projek
 			case PlanProPackage.PLANUNG_PROJEKT__PLANUNG_PALLG:
 				setPlanungPAllg((Planung_P_Allg_AttributeGroup)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -225,8 +231,9 @@ public class Planung_ProjektImpl extends Ur_ObjektImpl implements Planung_Projek
 				return lSTPlanungGruppe != null && !lSTPlanungGruppe.isEmpty();
 			case PlanProPackage.PLANUNG_PROJEKT__PLANUNG_PALLG:
 				return planungPAllg != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Planung_ProjektImpl

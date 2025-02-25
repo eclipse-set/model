@@ -151,8 +151,10 @@ public class ETCS_W_KrItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.ETCS_WKR__IDW_KR_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

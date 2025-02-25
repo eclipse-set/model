@@ -152,8 +152,10 @@ public class Polygone_Planungsbereich_AttributeGroupItemProvider
 			case PlanProPackage.POLYGONE_PLANUNGSBEREICH_ATTRIBUTE_GROUP__POLYGONZUG_PLANUNGSBEREICH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

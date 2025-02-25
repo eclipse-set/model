@@ -158,8 +158,8 @@ public enum ENUMDPATO implements Enumerator {
 			case ENUMDP_ATO_PRÄZISIONSHALT_VALUE: return ENUMDP_ATO_PRÄZISIONSHALT;
 			case ENUMDP_ATO_PRÄZISIONSHALT_HOCHPRÄZISE_VALUE: return ENUMDP_ATO_PRÄZISIONSHALT_HOCHPRÄZISE;
 			case ENUMDP_ATO_SONSTIGE_VALUE: return ENUMDP_ATO_SONSTIGE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

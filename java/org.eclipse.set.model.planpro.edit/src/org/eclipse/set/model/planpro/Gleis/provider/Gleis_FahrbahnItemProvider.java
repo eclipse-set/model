@@ -141,8 +141,10 @@ public class Gleis_FahrbahnItemProvider extends Bereich_ObjektItemProvider {
 			case GleisPackage.GLEIS_FAHRBAHN__KONSTRUKTION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

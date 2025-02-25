@@ -136,8 +136,10 @@ public class Bezeichnung_LEU_Anlage_TypeClassItemProvider extends BasisAttribut_
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_LEU_ANLAGE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

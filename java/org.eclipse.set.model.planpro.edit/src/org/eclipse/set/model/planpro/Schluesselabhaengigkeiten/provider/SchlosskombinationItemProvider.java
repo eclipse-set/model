@@ -145,8 +145,10 @@ public class SchlosskombinationItemProvider extends Basis_ObjektItemProvider {
 			case SchluesselabhaengigkeitenPackage.SCHLOSSKOMBINATION__ID_UNTERBRINGUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

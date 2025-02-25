@@ -493,6 +493,8 @@ public class BahnuebergangEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

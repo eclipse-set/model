@@ -180,8 +180,9 @@ public class INA_Gefahrstelle_AttributeGroupImpl extends EObjectImpl implements 
 				return basicSetIDMarkanterPunkt(null, msgs);
 			case PZBPackage.INA_GEFAHRSTELLE_ATTRIBUTE_GROUP__PRIORITAET_GEFAHRSTELLE:
 				return basicSetPrioritaetGefahrstelle(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,8 +197,9 @@ public class INA_Gefahrstelle_AttributeGroupImpl extends EObjectImpl implements 
 				return getIDMarkanterPunkt();
 			case PZBPackage.INA_GEFAHRSTELLE_ATTRIBUTE_GROUP__PRIORITAET_GEFAHRSTELLE:
 				return getPrioritaetGefahrstelle();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -214,8 +216,10 @@ public class INA_Gefahrstelle_AttributeGroupImpl extends EObjectImpl implements 
 			case PZBPackage.INA_GEFAHRSTELLE_ATTRIBUTE_GROUP__PRIORITAET_GEFAHRSTELLE:
 				setPrioritaetGefahrstelle((Prioritaet_Gefahrstelle_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -232,8 +236,10 @@ public class INA_Gefahrstelle_AttributeGroupImpl extends EObjectImpl implements 
 			case PZBPackage.INA_GEFAHRSTELLE_ATTRIBUTE_GROUP__PRIORITAET_GEFAHRSTELLE:
 				setPrioritaetGefahrstelle((Prioritaet_Gefahrstelle_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -248,8 +254,9 @@ public class INA_Gefahrstelle_AttributeGroupImpl extends EObjectImpl implements 
 				return iDMarkanterPunkt != null;
 			case PZBPackage.INA_GEFAHRSTELLE_ATTRIBUTE_GROUP__PRIORITAET_GEFAHRSTELLE:
 				return prioritaetGefahrstelle != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //INA_Gefahrstelle_AttributeGroupImpl

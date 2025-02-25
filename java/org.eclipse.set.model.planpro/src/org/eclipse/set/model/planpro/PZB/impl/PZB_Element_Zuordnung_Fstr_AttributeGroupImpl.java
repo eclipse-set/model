@@ -180,8 +180,9 @@ public class PZB_Element_Zuordnung_Fstr_AttributeGroupImpl extends EObjectImpl i
 				return basicSetIDFstrZugRangier(null, msgs);
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG_FSTR_ATTRIBUTE_GROUP__WIRKSAMKEIT_FSTR:
 				return basicSetWirksamkeitFstr(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,8 +197,9 @@ public class PZB_Element_Zuordnung_Fstr_AttributeGroupImpl extends EObjectImpl i
 				return getIDFstrZugRangier();
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG_FSTR_ATTRIBUTE_GROUP__WIRKSAMKEIT_FSTR:
 				return getWirksamkeitFstr();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -214,8 +216,10 @@ public class PZB_Element_Zuordnung_Fstr_AttributeGroupImpl extends EObjectImpl i
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG_FSTR_ATTRIBUTE_GROUP__WIRKSAMKEIT_FSTR:
 				setWirksamkeitFstr((Wirksamkeit_Fstr_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -232,8 +236,10 @@ public class PZB_Element_Zuordnung_Fstr_AttributeGroupImpl extends EObjectImpl i
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG_FSTR_ATTRIBUTE_GROUP__WIRKSAMKEIT_FSTR:
 				setWirksamkeitFstr((Wirksamkeit_Fstr_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -248,8 +254,9 @@ public class PZB_Element_Zuordnung_Fstr_AttributeGroupImpl extends EObjectImpl i
 				return iDFstrZugRangier != null;
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG_FSTR_ATTRIBUTE_GROUP__WIRKSAMKEIT_FSTR:
 				return wirksamkeitFstr != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //PZB_Element_Zuordnung_Fstr_AttributeGroupImpl

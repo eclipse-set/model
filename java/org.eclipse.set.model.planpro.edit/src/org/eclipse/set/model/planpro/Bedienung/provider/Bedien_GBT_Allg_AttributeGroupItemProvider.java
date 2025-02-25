@@ -154,8 +154,10 @@ public class Bedien_GBT_Allg_AttributeGroupItemProvider
 			case BedienungPackage.BEDIEN_GBT_ALLG_ATTRIBUTE_GROUP__VORSCHAUZEIT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

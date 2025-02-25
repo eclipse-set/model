@@ -135,8 +135,8 @@ public enum ENUMWeichensignal implements Enumerator {
 		switch (value) {
 			case ENUM_WEICHENSIGNAL_INNENBELEUCHTET_VALUE: return ENUM_WEICHENSIGNAL_INNENBELEUCHTET;
 			case ENUM_WEICHENSIGNAL_REFLEKTIEREND_VALUE: return ENUM_WEICHENSIGNAL_REFLEKTIEREND;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

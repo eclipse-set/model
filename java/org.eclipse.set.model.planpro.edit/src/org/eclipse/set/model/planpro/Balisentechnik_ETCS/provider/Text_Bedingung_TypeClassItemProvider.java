@@ -136,8 +136,10 @@ public class Text_Bedingung_TypeClassItemProvider extends BasisAttribut_Attribut
 			case Balisentechnik_ETCSPackage.TEXT_BEDINGUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

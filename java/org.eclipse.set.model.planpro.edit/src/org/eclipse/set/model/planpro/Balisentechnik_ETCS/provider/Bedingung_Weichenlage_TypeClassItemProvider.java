@@ -139,8 +139,10 @@ public class Bedingung_Weichenlage_TypeClassItemProvider extends BasisAttribut_A
 			case Balisentechnik_ETCSPackage.BEDINGUNG_WEICHENLAGE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

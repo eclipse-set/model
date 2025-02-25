@@ -159,8 +159,10 @@ public class LT_Binaerdaten_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.LT_BINAERDATEN_ATTRIBUTE_GROUP__PRUEFMERKMALE_BINAERDATEN:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

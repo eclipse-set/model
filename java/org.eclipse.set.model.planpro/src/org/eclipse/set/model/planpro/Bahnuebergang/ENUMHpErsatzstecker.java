@@ -138,8 +138,8 @@ public enum ENUMHpErsatzstecker implements Enumerator {
 		switch (value) {
 			case ENUM_HP_ERSATZSTECKER_ABHAENGIGKEIT_AUFGEHOBEN_VALUE: return ENUM_HP_ERSATZSTECKER_ABHAENGIGKEIT_AUFGEHOBEN;
 			case ENUM_HP_ERSATZSTECKER_SONSTIGE_VALUE: return ENUM_HP_ERSATZSTECKER_SONSTIGE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

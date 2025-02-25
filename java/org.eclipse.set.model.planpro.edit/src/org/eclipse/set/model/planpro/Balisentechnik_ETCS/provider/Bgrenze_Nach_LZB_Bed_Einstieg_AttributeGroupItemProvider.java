@@ -156,8 +156,10 @@ public class Bgrenze_Nach_LZB_Bed_Einstieg_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_LZB_BED_EINSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

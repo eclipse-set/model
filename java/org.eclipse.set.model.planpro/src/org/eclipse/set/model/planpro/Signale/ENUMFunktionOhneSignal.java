@@ -158,8 +158,8 @@ public enum ENUMFunktionOhneSignal implements Enumerator {
 			case ENUM_FUNKTION_OHNE_SIGNAL_RS_VALUE: return ENUM_FUNKTION_OHNE_SIGNAL_RS;
 			case ENUM_FUNKTION_OHNE_SIGNAL_SONSTIGE_VALUE: return ENUM_FUNKTION_OHNE_SIGNAL_SONSTIGE;
 			case ENUM_FUNKTION_OHNE_SIGNAL_ZS_VALUE: return ENUM_FUNKTION_OHNE_SIGNAL_ZS;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

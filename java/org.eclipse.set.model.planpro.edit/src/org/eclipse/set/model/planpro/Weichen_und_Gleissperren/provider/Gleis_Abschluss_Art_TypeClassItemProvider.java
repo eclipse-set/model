@@ -138,8 +138,10 @@ public class Gleis_Abschluss_Art_TypeClassItemProvider extends BasisAttribut_Att
 			case Weichen_und_GleissperrenPackage.GLEIS_ABSCHLUSS_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

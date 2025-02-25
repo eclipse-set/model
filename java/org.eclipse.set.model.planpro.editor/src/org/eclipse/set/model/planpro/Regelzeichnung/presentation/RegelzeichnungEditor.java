@@ -493,6 +493,8 @@ public class RegelzeichnungEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

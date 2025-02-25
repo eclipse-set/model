@@ -415,8 +415,9 @@ public class LO_Material_AttributeGroupImpl extends EObjectImpl implements LO_Ma
 				return basicSetLOFirmensachnummer(null, msgs);
 			case BasisobjektePackage.LO_MATERIAL_ATTRIBUTE_GROUP__LO_SERIENNUMMER:
 				return basicSetLOSeriennummer(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -439,8 +440,9 @@ public class LO_Material_AttributeGroupImpl extends EObjectImpl implements LO_Ma
 				return getLOFirmensachnummer();
 			case BasisobjektePackage.LO_MATERIAL_ATTRIBUTE_GROUP__LO_SERIENNUMMER:
 				return getLOSeriennummer();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -469,8 +471,10 @@ public class LO_Material_AttributeGroupImpl extends EObjectImpl implements LO_Ma
 			case BasisobjektePackage.LO_MATERIAL_ATTRIBUTE_GROUP__LO_SERIENNUMMER:
 				setLOSeriennummer((LO_Seriennummer_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -499,8 +503,10 @@ public class LO_Material_AttributeGroupImpl extends EObjectImpl implements LO_Ma
 			case BasisobjektePackage.LO_MATERIAL_ATTRIBUTE_GROUP__LO_SERIENNUMMER:
 				setLOSeriennummer((LO_Seriennummer_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -523,8 +529,9 @@ public class LO_Material_AttributeGroupImpl extends EObjectImpl implements LO_Ma
 				return lOFirmensachnummer != null;
 			case BasisobjektePackage.LO_MATERIAL_ATTRIBUTE_GROUP__LO_SERIENNUMMER:
 				return lOSeriennummer != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //LO_Material_AttributeGroupImpl

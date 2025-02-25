@@ -449,8 +449,9 @@ public class Block_Strecke_Allg_AttributeGroupImpl extends EObjectImpl implement
 				return ((InternalEList<?>)getZugbeeinflussungArt()).basicRemove(otherEnd, msgs);
 			case BlockPackage.BLOCK_STRECKE_ALLG_ATTRIBUTE_GROUP__ZUSATZINFORMATION:
 				return basicSetZusatzinformation(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -475,8 +476,9 @@ public class Block_Strecke_Allg_AttributeGroupImpl extends EObjectImpl implement
 				return getZugbeeinflussungArt();
 			case BlockPackage.BLOCK_STRECKE_ALLG_ATTRIBUTE_GROUP__ZUSATZINFORMATION:
 				return getZusatzinformation();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -510,8 +512,10 @@ public class Block_Strecke_Allg_AttributeGroupImpl extends EObjectImpl implement
 			case BlockPackage.BLOCK_STRECKE_ALLG_ATTRIBUTE_GROUP__ZUSATZINFORMATION:
 				setZusatzinformation((Zusatzinformation_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -543,8 +547,10 @@ public class Block_Strecke_Allg_AttributeGroupImpl extends EObjectImpl implement
 			case BlockPackage.BLOCK_STRECKE_ALLG_ATTRIBUTE_GROUP__ZUSATZINFORMATION:
 				setZusatzinformation((Zusatzinformation_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -569,8 +575,9 @@ public class Block_Strecke_Allg_AttributeGroupImpl extends EObjectImpl implement
 				return zugbeeinflussungArt != null && !zugbeeinflussungArt.isEmpty();
 			case BlockPackage.BLOCK_STRECKE_ALLG_ATTRIBUTE_GROUP__ZUSATZINFORMATION:
 				return zusatzinformation != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Block_Strecke_Allg_AttributeGroupImpl

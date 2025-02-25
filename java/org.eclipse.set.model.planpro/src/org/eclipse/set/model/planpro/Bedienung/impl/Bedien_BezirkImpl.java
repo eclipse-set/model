@@ -299,8 +299,9 @@ public class Bedien_BezirkImpl extends Basis_ObjektImpl implements Bedien_Bezirk
 				return basicSetBedienBezirkAnhaenge(null, msgs);
 			case BedienungPackage.BEDIEN_BEZIRK__ID_BEDIEN_ZENTRALE:
 				return basicSetIDBedienZentrale(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -319,8 +320,9 @@ public class Bedien_BezirkImpl extends Basis_ObjektImpl implements Bedien_Bezirk
 				return getBedienBezirkAnhaenge();
 			case BedienungPackage.BEDIEN_BEZIRK__ID_BEDIEN_ZENTRALE:
 				return getIDBedienZentrale();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -343,8 +345,10 @@ public class Bedien_BezirkImpl extends Basis_ObjektImpl implements Bedien_Bezirk
 			case BedienungPackage.BEDIEN_BEZIRK__ID_BEDIEN_ZENTRALE:
 				setIDBedienZentrale((ID_Bedien_Zentrale_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -367,8 +371,10 @@ public class Bedien_BezirkImpl extends Basis_ObjektImpl implements Bedien_Bezirk
 			case BedienungPackage.BEDIEN_BEZIRK__ID_BEDIEN_ZENTRALE:
 				setIDBedienZentrale((ID_Bedien_Zentrale_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -387,8 +393,9 @@ public class Bedien_BezirkImpl extends Basis_ObjektImpl implements Bedien_Bezirk
 				return bedienBezirkAnhaenge != null;
 			case BedienungPackage.BEDIEN_BEZIRK__ID_BEDIEN_ZENTRALE:
 				return iDBedienZentrale != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bedien_BezirkImpl

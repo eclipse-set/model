@@ -180,8 +180,9 @@ public class StellelementImpl extends Basis_ObjektImpl implements Stellelement {
 				return basicSetIDEnergie(null, msgs);
 			case Ansteuerung_ElementPackage.STELLELEMENT__ID_INFORMATION:
 				return basicSetIDInformation(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,8 +197,9 @@ public class StellelementImpl extends Basis_ObjektImpl implements Stellelement {
 				return getIDEnergie();
 			case Ansteuerung_ElementPackage.STELLELEMENT__ID_INFORMATION:
 				return getIDInformation();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -214,8 +216,10 @@ public class StellelementImpl extends Basis_ObjektImpl implements Stellelement {
 			case Ansteuerung_ElementPackage.STELLELEMENT__ID_INFORMATION:
 				setIDInformation((ID_Aussenelementansteuerung_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -232,8 +236,10 @@ public class StellelementImpl extends Basis_ObjektImpl implements Stellelement {
 			case Ansteuerung_ElementPackage.STELLELEMENT__ID_INFORMATION:
 				setIDInformation((ID_Aussenelementansteuerung_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -248,8 +254,9 @@ public class StellelementImpl extends Basis_ObjektImpl implements Stellelement {
 				return iDEnergie != null;
 			case Ansteuerung_ElementPackage.STELLELEMENT__ID_INFORMATION:
 				return iDInformation != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //StellelementImpl

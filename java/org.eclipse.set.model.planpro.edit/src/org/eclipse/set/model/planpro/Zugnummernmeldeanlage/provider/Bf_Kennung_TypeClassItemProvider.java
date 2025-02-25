@@ -138,8 +138,10 @@ public class Bf_Kennung_TypeClassItemProvider extends BasisAttribut_AttributeGro
 			case ZugnummernmeldeanlagePackage.BF_KENNUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

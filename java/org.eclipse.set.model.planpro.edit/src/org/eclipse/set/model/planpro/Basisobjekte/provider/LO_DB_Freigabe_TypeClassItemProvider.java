@@ -136,8 +136,10 @@ public class LO_DB_Freigabe_TypeClassItemProvider extends BasisAttribut_Attribut
 			case BasisobjektePackage.LO_DB_FREIGABE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

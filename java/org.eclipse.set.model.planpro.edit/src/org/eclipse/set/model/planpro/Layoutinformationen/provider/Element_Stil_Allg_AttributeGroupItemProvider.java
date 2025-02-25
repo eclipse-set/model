@@ -158,8 +158,10 @@ public class Element_Stil_Allg_AttributeGroupItemProvider
 			case LayoutinformationenPackage.ELEMENT_STIL_ALLG_ATTRIBUTE_GROUP__LINIE_SUBART:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

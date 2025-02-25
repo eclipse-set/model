@@ -136,8 +136,10 @@ public class FMA_Kaskade_Bezeichnung_TypeClassItemProvider extends BasisAttribut
 			case OrtungPackage.FMA_KASKADE_BEZEICHNUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

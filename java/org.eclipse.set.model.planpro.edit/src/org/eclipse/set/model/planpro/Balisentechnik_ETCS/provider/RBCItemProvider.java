@@ -149,8 +149,10 @@ public class RBCItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.RBC__RBC_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

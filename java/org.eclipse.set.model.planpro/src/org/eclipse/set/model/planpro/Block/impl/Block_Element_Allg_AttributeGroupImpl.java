@@ -238,8 +238,9 @@ public class Block_Element_Allg_AttributeGroupImpl extends EObjectImpl implement
 				return basicSetRueckblockwecker(null, msgs);
 			case BlockPackage.BLOCK_ELEMENT_ALLG_ATTRIBUTE_GROUP__VORBLOCKWECKER:
 				return basicSetVorblockwecker(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class Block_Element_Allg_AttributeGroupImpl extends EObjectImpl implement
 				return getRueckblockwecker();
 			case BlockPackage.BLOCK_ELEMENT_ALLG_ATTRIBUTE_GROUP__VORBLOCKWECKER:
 				return getVorblockwecker();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class Block_Element_Allg_AttributeGroupImpl extends EObjectImpl implement
 			case BlockPackage.BLOCK_ELEMENT_ALLG_ATTRIBUTE_GROUP__VORBLOCKWECKER:
 				setVorblockwecker((Vorblockwecker_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class Block_Element_Allg_AttributeGroupImpl extends EObjectImpl implement
 			case BlockPackage.BLOCK_ELEMENT_ALLG_ATTRIBUTE_GROUP__VORBLOCKWECKER:
 				setVorblockwecker((Vorblockwecker_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class Block_Element_Allg_AttributeGroupImpl extends EObjectImpl implement
 				return rueckblockwecker != null;
 			case BlockPackage.BLOCK_ELEMENT_ALLG_ATTRIBUTE_GROUP__VORBLOCKWECKER:
 				return vorblockwecker != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Block_Element_Allg_AttributeGroupImpl

@@ -152,8 +152,10 @@ public class DocumentRootItemProvider
 			case LayoutinformationenPackage.DOCUMENT_ROOT__PLAN_PRO_LAYOUTINFO:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

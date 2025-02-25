@@ -158,8 +158,8 @@ public enum ENUMBeleuchtet implements Enumerator {
 			case ENUM_BELEUCHTET_ANGESTRAHLT_VALUE: return ENUM_BELEUCHTET_ANGESTRAHLT;
 			case ENUM_BELEUCHTET_INNENBELEUCHTET_VALUE: return ENUM_BELEUCHTET_INNENBELEUCHTET;
 			case ENUM_BELEUCHTET_NEIN_VALUE: return ENUM_BELEUCHTET_NEIN;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

@@ -138,8 +138,10 @@ public class DP_Typ_Art_TypeClassItemProvider extends BasisAttribut_AttributeGro
 			case Balisentechnik_ETCSPackage.DP_TYP_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

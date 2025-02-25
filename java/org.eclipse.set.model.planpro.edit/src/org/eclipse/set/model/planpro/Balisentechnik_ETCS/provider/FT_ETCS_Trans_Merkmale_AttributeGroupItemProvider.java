@@ -154,8 +154,10 @@ public class FT_ETCS_Trans_Merkmale_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_MERKMALE_ATTRIBUTE_GROUP__FTETCS_TRANS_PAKET_N:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

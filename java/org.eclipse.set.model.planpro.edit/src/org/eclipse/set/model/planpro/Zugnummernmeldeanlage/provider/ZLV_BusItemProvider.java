@@ -143,8 +143,10 @@ public class ZLV_BusItemProvider extends Basis_ObjektItemProvider {
 			case ZugnummernmeldeanlagePackage.ZLV_BUS__ZLV_BUS_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

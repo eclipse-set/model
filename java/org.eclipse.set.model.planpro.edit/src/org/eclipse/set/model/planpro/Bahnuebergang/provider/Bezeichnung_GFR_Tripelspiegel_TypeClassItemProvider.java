@@ -139,8 +139,10 @@ public class Bezeichnung_GFR_Tripelspiegel_TypeClassItemProvider extends BasisAt
 			case BahnuebergangPackage.BEZEICHNUNG_GFR_TRIPELSPIEGEL_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

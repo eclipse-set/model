@@ -138,8 +138,10 @@ public class Funktion_Ohne_Signal_TypeClassItemProvider extends BasisAttribut_At
 			case SignalePackage.FUNKTION_OHNE_SIGNAL_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

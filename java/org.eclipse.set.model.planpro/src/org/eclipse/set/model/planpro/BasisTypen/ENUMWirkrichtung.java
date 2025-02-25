@@ -158,8 +158,8 @@ public enum ENUMWirkrichtung implements Enumerator {
 			case ENUM_WIRKRICHTUNG_BEIDE_VALUE: return ENUM_WIRKRICHTUNG_BEIDE;
 			case ENUM_WIRKRICHTUNG_GEGEN_VALUE: return ENUM_WIRKRICHTUNG_GEGEN;
 			case ENUM_WIRKRICHTUNG_IN_VALUE: return ENUM_WIRKRICHTUNG_IN;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

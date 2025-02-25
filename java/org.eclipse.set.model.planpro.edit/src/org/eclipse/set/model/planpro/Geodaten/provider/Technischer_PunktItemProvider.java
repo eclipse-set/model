@@ -143,8 +143,10 @@ public class Technischer_PunktItemProvider extends Punkt_ObjektItemProvider {
 			case GeodatenPackage.TECHNISCHER_PUNKT__TP_BESCHREIBUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

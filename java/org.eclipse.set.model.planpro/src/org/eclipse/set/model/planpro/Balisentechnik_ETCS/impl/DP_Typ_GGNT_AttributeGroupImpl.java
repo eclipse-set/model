@@ -120,8 +120,9 @@ public class DP_Typ_GGNT_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.DP_TYP_GGNT_ATTRIBUTE_GROUP__DP_TYP_GNT:
 				return basicSetDPTypGNT(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class DP_Typ_GGNT_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.DP_TYP_GGNT_ATTRIBUTE_GROUP__DP_TYP_GNT:
 				return getDPTypGNT();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class DP_Typ_GGNT_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 			case Balisentechnik_ETCSPackage.DP_TYP_GGNT_ATTRIBUTE_GROUP__DP_TYP_GNT:
 				setDPTypGNT((DP_Typ_GNT_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class DP_Typ_GGNT_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 			case Balisentechnik_ETCSPackage.DP_TYP_GGNT_ATTRIBUTE_GROUP__DP_TYP_GNT:
 				setDPTypGNT((DP_Typ_GNT_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class DP_Typ_GGNT_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.DP_TYP_GGNT_ATTRIBUTE_GROUP__DP_TYP_GNT:
 				return dPTypGNT != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //DP_Typ_GGNT_AttributeGroupImpl

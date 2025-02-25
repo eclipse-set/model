@@ -152,8 +152,10 @@ public class Bahnsteig_Anlage_Bezeichnung_AttributeGroupItemProvider
 			case BahnsteigPackage.BAHNSTEIG_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BAHNSTEIG_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

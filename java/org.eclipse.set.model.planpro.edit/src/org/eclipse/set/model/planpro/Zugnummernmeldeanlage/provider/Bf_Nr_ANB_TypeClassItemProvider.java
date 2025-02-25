@@ -139,8 +139,10 @@ public class Bf_Nr_ANB_TypeClassItemProvider extends BasisAttribut_AttributeGrou
 			case ZugnummernmeldeanlagePackage.BF_NR_ANB_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

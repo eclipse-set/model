@@ -156,8 +156,10 @@ public class Hoehenlinie_Allg_AttributeGroupItemProvider
 			case GeodatenPackage.HOEHENLINIE_ALLG_ATTRIBUTE_GROUP__PLAN_QUELLE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -181,8 +181,9 @@ public class Fstr_Aneinander_ZuordnungImpl extends Basis_ObjektImpl implements F
 				return basicSetIDFstrAneinander(null, msgs);
 			case FahrstrassePackage.FSTR_ANEINANDER_ZUORDNUNG__ID_FSTR_ZUG_RANGIER:
 				return basicSetIDFstrZugRangier(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,8 +198,9 @@ public class Fstr_Aneinander_ZuordnungImpl extends Basis_ObjektImpl implements F
 				return getIDFstrAneinander();
 			case FahrstrassePackage.FSTR_ANEINANDER_ZUORDNUNG__ID_FSTR_ZUG_RANGIER:
 				return getIDFstrZugRangier();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,8 +217,10 @@ public class Fstr_Aneinander_ZuordnungImpl extends Basis_ObjektImpl implements F
 			case FahrstrassePackage.FSTR_ANEINANDER_ZUORDNUNG__ID_FSTR_ZUG_RANGIER:
 				setIDFstrZugRangier((ID_Fstr_Zug_Rangier_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -233,8 +237,10 @@ public class Fstr_Aneinander_ZuordnungImpl extends Basis_ObjektImpl implements F
 			case FahrstrassePackage.FSTR_ANEINANDER_ZUORDNUNG__ID_FSTR_ZUG_RANGIER:
 				setIDFstrZugRangier((ID_Fstr_Zug_Rangier_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -249,8 +255,9 @@ public class Fstr_Aneinander_ZuordnungImpl extends Basis_ObjektImpl implements F
 				return iDFstrAneinander != null;
 			case FahrstrassePackage.FSTR_ANEINANDER_ZUORDNUNG__ID_FSTR_ZUG_RANGIER:
 				return iDFstrZugRangier != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Fstr_Aneinander_ZuordnungImpl

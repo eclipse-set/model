@@ -159,8 +159,10 @@ public class ID_Strecke_Punkt_TypeClassItemProvider extends Zeiger_TypeClassItem
 			case VerweisePackage.ID_STRECKE_PUNKT_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

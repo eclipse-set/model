@@ -181,8 +181,9 @@ public class Fstr_Rangier_Fla_ZuordnungImpl extends Basis_ObjektImpl implements 
 				return basicSetIDFlaSchutz(null, msgs);
 			case FahrstrassePackage.FSTR_RANGIER_FLA_ZUORDNUNG__ID_FSTR_RANGIER:
 				return basicSetIDFstrRangier(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,8 +198,9 @@ public class Fstr_Rangier_Fla_ZuordnungImpl extends Basis_ObjektImpl implements 
 				return getIDFlaSchutz();
 			case FahrstrassePackage.FSTR_RANGIER_FLA_ZUORDNUNG__ID_FSTR_RANGIER:
 				return getIDFstrRangier();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,8 +217,10 @@ public class Fstr_Rangier_Fla_ZuordnungImpl extends Basis_ObjektImpl implements 
 			case FahrstrassePackage.FSTR_RANGIER_FLA_ZUORDNUNG__ID_FSTR_RANGIER:
 				setIDFstrRangier((ID_Fstr_Zug_Rangier_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -233,8 +237,10 @@ public class Fstr_Rangier_Fla_ZuordnungImpl extends Basis_ObjektImpl implements 
 			case FahrstrassePackage.FSTR_RANGIER_FLA_ZUORDNUNG__ID_FSTR_RANGIER:
 				setIDFstrRangier((ID_Fstr_Zug_Rangier_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -249,8 +255,9 @@ public class Fstr_Rangier_Fla_ZuordnungImpl extends Basis_ObjektImpl implements 
 				return iDFlaSchutz != null;
 			case FahrstrassePackage.FSTR_RANGIER_FLA_ZUORDNUNG__ID_FSTR_RANGIER:
 				return iDFstrRangier != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Fstr_Rangier_Fla_ZuordnungImpl

@@ -93,8 +93,9 @@ public abstract class BasisAttribut_AttributeGroupImpl extends EObjectImpl imple
 		switch (featureID) {
 			case BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP__ID_BEARBEITUNGSVERMERK:
 				return ((InternalEList<?>)getIDBearbeitungsvermerk()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -107,8 +108,9 @@ public abstract class BasisAttribut_AttributeGroupImpl extends EObjectImpl imple
 		switch (featureID) {
 			case BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP__ID_BEARBEITUNGSVERMERK:
 				return getIDBearbeitungsvermerk();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -124,8 +126,10 @@ public abstract class BasisAttribut_AttributeGroupImpl extends EObjectImpl imple
 				getIDBearbeitungsvermerk().clear();
 				getIDBearbeitungsvermerk().addAll((Collection<? extends ID_Bearbeitungsvermerk_TypeClass>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -139,8 +143,10 @@ public abstract class BasisAttribut_AttributeGroupImpl extends EObjectImpl imple
 			case BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP__ID_BEARBEITUNGSVERMERK:
 				getIDBearbeitungsvermerk().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -153,8 +159,9 @@ public abstract class BasisAttribut_AttributeGroupImpl extends EObjectImpl imple
 		switch (featureID) {
 			case BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP__ID_BEARBEITUNGSVERMERK:
 				return iDBearbeitungsvermerk != null && !iDBearbeitungsvermerk.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //BasisAttribut_AttributeGroupImpl

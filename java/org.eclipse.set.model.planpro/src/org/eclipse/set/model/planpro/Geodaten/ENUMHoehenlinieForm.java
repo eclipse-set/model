@@ -161,8 +161,8 @@ public enum ENUMHoehenlinieForm implements Enumerator {
 			case ENUM_HOEHENLINIE_FORM_GERADE_VALUE: return ENUM_HOEHENLINIE_FORM_GERADE;
 			case ENUM_HOEHENLINIE_FORM_PARABEL_VALUE: return ENUM_HOEHENLINIE_FORM_PARABEL;
 			case ENUM_HOEHENLINIE_FORM_WEICHENABZWEIG_VALUE: return ENUM_HOEHENLINIE_FORM_WEICHENABZWEIG;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

@@ -145,8 +145,10 @@ public class BUE_Anlage_VItemProvider extends Basis_ObjektItemProvider {
 			case BahnuebergangPackage.BUE_ANLAGE_V__IDBUE_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

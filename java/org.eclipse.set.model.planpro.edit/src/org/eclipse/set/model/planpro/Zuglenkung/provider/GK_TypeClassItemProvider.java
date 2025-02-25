@@ -139,8 +139,10 @@ public class GK_TypeClassItemProvider extends BasisAttribut_AttributeGroupItemPr
 			case ZuglenkungPackage.GK_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -159,8 +159,10 @@ public class ID_GEO_Kante_TypeClassItemProvider extends Zeiger_TypeClassItemProv
 			case VerweisePackage.ID_GEO_KANTE_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

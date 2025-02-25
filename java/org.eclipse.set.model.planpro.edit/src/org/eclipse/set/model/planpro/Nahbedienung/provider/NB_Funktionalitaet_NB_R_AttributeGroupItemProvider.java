@@ -164,8 +164,10 @@ public class NB_Funktionalitaet_NB_R_AttributeGroupItemProvider
 			case NahbedienungPackage.NB_FUNKTIONALITAET_NB_RATTRIBUTE_GROUP__WUS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**
