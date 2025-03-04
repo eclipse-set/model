@@ -242,8 +242,9 @@ public class KabelImpl extends Basis_ObjektImpl implements Kabel {
 				return basicSetKabelAllg(null, msgs);
 			case Medien_und_TrassenPackage.KABEL__KABEL_ELEMENT:
 				return ((InternalEList<?>)getKabelElement()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -262,8 +263,9 @@ public class KabelImpl extends Basis_ObjektImpl implements Kabel {
 				return getKabelAllg();
 			case Medien_und_TrassenPackage.KABEL__KABEL_ELEMENT:
 				return getKabelElement();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -289,8 +291,10 @@ public class KabelImpl extends Basis_ObjektImpl implements Kabel {
 				getKabelElement().clear();
 				getKabelElement().addAll((Collection<? extends Kabel_Element_AttributeGroup>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -313,8 +317,10 @@ public class KabelImpl extends Basis_ObjektImpl implements Kabel {
 			case Medien_und_TrassenPackage.KABEL__KABEL_ELEMENT:
 				getKabelElement().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -333,8 +339,9 @@ public class KabelImpl extends Basis_ObjektImpl implements Kabel {
 				return kabelAllg != null;
 			case Medien_und_TrassenPackage.KABEL__KABEL_ELEMENT:
 				return kabelElement != null && !kabelElement.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //KabelImpl

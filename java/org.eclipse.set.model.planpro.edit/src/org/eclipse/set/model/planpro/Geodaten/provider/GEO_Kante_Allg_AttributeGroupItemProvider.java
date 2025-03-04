@@ -164,8 +164,10 @@ public class GEO_Kante_Allg_AttributeGroupItemProvider
 			case GeodatenPackage.GEO_KANTE_ALLG_ATTRIBUTE_GROUP__PLAN_QUELLE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

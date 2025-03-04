@@ -142,8 +142,9 @@ public class FMA_Komponente_Stromversorgung_TypeClassImpl extends BasisAttribut_
 		switch (featureID) {
 			case OrtungPackage.FMA_KOMPONENTE_STROMVERSORGUNG_TYPE_CLASS__WERT:
 				return getWert();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -157,8 +158,10 @@ public class FMA_Komponente_Stromversorgung_TypeClassImpl extends BasisAttribut_
 			case OrtungPackage.FMA_KOMPONENTE_STROMVERSORGUNG_TYPE_CLASS__WERT:
 				setWert((Boolean)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -172,8 +175,10 @@ public class FMA_Komponente_Stromversorgung_TypeClassImpl extends BasisAttribut_
 			case OrtungPackage.FMA_KOMPONENTE_STROMVERSORGUNG_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -186,8 +191,9 @@ public class FMA_Komponente_Stromversorgung_TypeClassImpl extends BasisAttribut_
 		switch (featureID) {
 			case OrtungPackage.FMA_KOMPONENTE_STROMVERSORGUNG_TYPE_CLASS__WERT:
 				return isSetWert();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 	/**

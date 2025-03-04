@@ -493,6 +493,8 @@ public class GeodatenEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

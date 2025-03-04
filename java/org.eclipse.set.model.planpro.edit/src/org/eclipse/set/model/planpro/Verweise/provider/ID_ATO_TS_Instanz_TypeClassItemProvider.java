@@ -159,8 +159,10 @@ public class ID_ATO_TS_Instanz_TypeClassItemProvider extends Zeiger_TypeClassIte
 			case VerweisePackage.ID_ATO_TS_INSTANZ_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

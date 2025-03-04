@@ -155,8 +155,10 @@ public class ESTW_ZentraleinheitItemProvider extends Basis_ObjektItemProvider {
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT__ID_BEDIEN_BEZIRK_ZENTRAL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

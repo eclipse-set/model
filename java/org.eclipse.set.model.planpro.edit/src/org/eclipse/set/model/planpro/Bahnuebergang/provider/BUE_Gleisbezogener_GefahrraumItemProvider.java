@@ -147,8 +147,10 @@ public class BUE_Gleisbezogener_GefahrraumItemProvider extends Bereich_ObjektIte
 			case BahnuebergangPackage.BUE_GLEISBEZOGENER_GEFAHRRAUM__IDBUE_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

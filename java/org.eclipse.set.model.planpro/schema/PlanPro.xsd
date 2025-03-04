@@ -274,7 +274,8 @@ Bisher keine Abbildung als Schriftfeldeintrag gemäß Ril 886.0102.</xs:document
                <xs:element name="Wert"
                            type="nsPlanPro:TIndex_Ausgabe"
                            minOccurs="1"
-                           maxOccurs="1"/>
+                           maxOccurs="1"
+                           nillable="true"/>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
@@ -331,7 +332,8 @@ Bisher keine Abbildung als Schriftfeldeintrag gemäß Ril 886.0102.</xs:document
                <xs:element name="Wert"
                            type="nsPlanPro:TFuehrende_Oertlichkeit"
                            minOccurs="1"
-                           maxOccurs="1"/>
+                           maxOccurs="1"
+                           nillable="true"/>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
@@ -501,7 +503,8 @@ Bisher keine eindeutige Abbildung.</xs:documentation>
                <xs:element name="Wert"
                            type="nsPlanPro:TBauzustand_Kurzbezeichnung"
                            minOccurs="1"
-                           maxOccurs="1"/>
+                           maxOccurs="1"
+                           nillable="true"/>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
@@ -1684,7 +1687,8 @@ Bisher keine Abbildung, da Neuerung mit PlanPro-Planungsprozess.</xs:documentati
                <xs:element name="Wert"
                            type="nsPlanPro:TPolygonzug_Betrachtungsbereich"
                            minOccurs="1"
-                           maxOccurs="1"/>
+                           maxOccurs="1"
+                           nillable="true"/>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
@@ -4504,7 +4508,8 @@ Ril 809.</xs:documentation>
                <xs:element name="Wert"
                            type="nsPlanPro:TLaufende_Nummer_Ausgabe"
                            minOccurs="1"
-                           maxOccurs="1"/>
+                           maxOccurs="1"
+                           nillable="true"/>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>
@@ -4750,7 +4755,8 @@ Bisher keine Abbildung, da Neuerung mit PlanPro.</xs:documentation>
                <xs:element name="Wert"
                            type="nsPlanPro:TPolygonzug_Planungsbereich"
                            minOccurs="1"
-                           maxOccurs="1"/>
+                           maxOccurs="1"
+                           nillable="true"/>
             </xs:sequence>
          </xs:extension>
       </xs:complexContent>

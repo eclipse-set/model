@@ -121,8 +121,9 @@ public class RegelzeichnungImpl extends Basis_ObjektImpl implements Regelzeichnu
 		switch (featureID) {
 			case RegelzeichnungPackage.REGELZEICHNUNG__REGELZEICHNUNG_ALLG:
 				return basicSetRegelzeichnungAllg(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,8 +136,9 @@ public class RegelzeichnungImpl extends Basis_ObjektImpl implements Regelzeichnu
 		switch (featureID) {
 			case RegelzeichnungPackage.REGELZEICHNUNG__REGELZEICHNUNG_ALLG:
 				return getRegelzeichnungAllg();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -150,8 +152,10 @@ public class RegelzeichnungImpl extends Basis_ObjektImpl implements Regelzeichnu
 			case RegelzeichnungPackage.REGELZEICHNUNG__REGELZEICHNUNG_ALLG:
 				setRegelzeichnungAllg((Regelzeichnung_Allg_AttributeGroup)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -165,8 +169,10 @@ public class RegelzeichnungImpl extends Basis_ObjektImpl implements Regelzeichnu
 			case RegelzeichnungPackage.REGELZEICHNUNG__REGELZEICHNUNG_ALLG:
 				setRegelzeichnungAllg((Regelzeichnung_Allg_AttributeGroup)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -179,8 +185,9 @@ public class RegelzeichnungImpl extends Basis_ObjektImpl implements Regelzeichnu
 		switch (featureID) {
 			case RegelzeichnungPackage.REGELZEICHNUNG__REGELZEICHNUNG_ALLG:
 				return regelzeichnungAllg != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //RegelzeichnungImpl

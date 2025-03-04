@@ -138,8 +138,10 @@ public class Hoehenlinie_Form_TypeClassItemProvider extends BasisAttribut_Attrib
 			case GeodatenPackage.HOEHENLINIE_FORM_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

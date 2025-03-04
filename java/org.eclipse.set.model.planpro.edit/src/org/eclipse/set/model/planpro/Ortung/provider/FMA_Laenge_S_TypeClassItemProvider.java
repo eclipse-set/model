@@ -139,8 +139,10 @@ public class FMA_Laenge_S_TypeClassItemProvider extends BasisAttribut_AttributeG
 			case OrtungPackage.FMA_LAENGE_STYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

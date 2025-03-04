@@ -181,8 +181,8 @@ public enum ENUMFMAElementSeilanzahl implements Enumerator {
 			case ENUMFMA_ELEMENT_SEILANZAHL_2_VALUE: return ENUMFMA_ELEMENT_SEILANZAHL_2;
 			case ENUMFMA_ELEMENT_SEILANZAHL_4_VALUE: return ENUMFMA_ELEMENT_SEILANZAHL_4;
 			case ENUMFMA_ELEMENT_SEILANZAHL_SONSTIGE_VALUE: return ENUMFMA_ELEMENT_SEILANZAHL_SONSTIGE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

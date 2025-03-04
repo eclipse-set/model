@@ -120,8 +120,9 @@ public class Kabel_Verteilpunkt_Bezeichnung_AttributeGroupImpl extends EObjectIm
 		switch (featureID) {
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_KABEL_VERTEILPUNKT:
 				return basicSetBezeichnungKabelVerteilpunkt(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class Kabel_Verteilpunkt_Bezeichnung_AttributeGroupImpl extends EObjectIm
 		switch (featureID) {
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_KABEL_VERTEILPUNKT:
 				return getBezeichnungKabelVerteilpunkt();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class Kabel_Verteilpunkt_Bezeichnung_AttributeGroupImpl extends EObjectIm
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_KABEL_VERTEILPUNKT:
 				setBezeichnungKabelVerteilpunkt((Bezeichnung_Kabel_Verteilpunkt_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class Kabel_Verteilpunkt_Bezeichnung_AttributeGroupImpl extends EObjectIm
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_KABEL_VERTEILPUNKT:
 				setBezeichnungKabelVerteilpunkt((Bezeichnung_Kabel_Verteilpunkt_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class Kabel_Verteilpunkt_Bezeichnung_AttributeGroupImpl extends EObjectIm
 		switch (featureID) {
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_KABEL_VERTEILPUNKT:
 				return bezeichnungKabelVerteilpunkt != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Kabel_Verteilpunkt_Bezeichnung_AttributeGroupImpl

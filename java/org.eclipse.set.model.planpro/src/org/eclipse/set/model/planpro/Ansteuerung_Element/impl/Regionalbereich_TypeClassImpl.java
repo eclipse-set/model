@@ -144,8 +144,9 @@ public class Regionalbereich_TypeClassImpl extends BasisAttribut_AttributeGroupI
 		switch (featureID) {
 			case Ansteuerung_ElementPackage.REGIONALBEREICH_TYPE_CLASS__WERT:
 				return getWert();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -159,8 +160,10 @@ public class Regionalbereich_TypeClassImpl extends BasisAttribut_AttributeGroupI
 			case Ansteuerung_ElementPackage.REGIONALBEREICH_TYPE_CLASS__WERT:
 				setWert((ENUMRegionalbereich)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -174,8 +177,10 @@ public class Regionalbereich_TypeClassImpl extends BasisAttribut_AttributeGroupI
 			case Ansteuerung_ElementPackage.REGIONALBEREICH_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -188,8 +193,9 @@ public class Regionalbereich_TypeClassImpl extends BasisAttribut_AttributeGroupI
 		switch (featureID) {
 			case Ansteuerung_ElementPackage.REGIONALBEREICH_TYPE_CLASS__WERT:
 				return isSetWert();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 	/**

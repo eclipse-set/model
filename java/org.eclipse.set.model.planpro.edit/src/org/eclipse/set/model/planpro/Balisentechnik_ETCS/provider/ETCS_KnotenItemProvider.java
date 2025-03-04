@@ -145,8 +145,10 @@ public class ETCS_KnotenItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.ETCS_KNOTEN__KNOTEN_AUF_TOP_KANTE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

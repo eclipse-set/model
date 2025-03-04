@@ -238,8 +238,9 @@ public class FT_Fahrweg_Teil_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return basicSetUmfahrstrasse(null, msgs);
 			case Balisentechnik_ETCSPackage.FT_FAHRWEG_TEIL_ALLG_ATTRIBUTE_GROUP__ZIEL_IST_FAHRWEGENDE:
 				return basicSetZielIstFahrwegende(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class FT_Fahrweg_Teil_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return getUmfahrstrasse();
 			case Balisentechnik_ETCSPackage.FT_FAHRWEG_TEIL_ALLG_ATTRIBUTE_GROUP__ZIEL_IST_FAHRWEGENDE:
 				return getZielIstFahrwegende();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class FT_Fahrweg_Teil_Allg_AttributeGroupImpl extends EObjectImpl impleme
 			case Balisentechnik_ETCSPackage.FT_FAHRWEG_TEIL_ALLG_ATTRIBUTE_GROUP__ZIEL_IST_FAHRWEGENDE:
 				setZielIstFahrwegende((Ziel_Ist_Fahrwegende_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class FT_Fahrweg_Teil_Allg_AttributeGroupImpl extends EObjectImpl impleme
 			case Balisentechnik_ETCSPackage.FT_FAHRWEG_TEIL_ALLG_ATTRIBUTE_GROUP__ZIEL_IST_FAHRWEGENDE:
 				setZielIstFahrwegende((Ziel_Ist_Fahrwegende_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class FT_Fahrweg_Teil_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return umfahrstrasse != null;
 			case Balisentechnik_ETCSPackage.FT_FAHRWEG_TEIL_ALLG_ATTRIBUTE_GROUP__ZIEL_IST_FAHRWEGENDE:
 				return zielIstFahrwegende != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //FT_Fahrweg_Teil_Allg_AttributeGroupImpl

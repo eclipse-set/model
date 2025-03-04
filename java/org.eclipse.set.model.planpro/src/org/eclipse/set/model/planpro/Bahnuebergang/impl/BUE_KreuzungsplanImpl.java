@@ -215,8 +215,9 @@ public class BUE_KreuzungsplanImpl extends Basis_ObjektImpl implements BUE_Kreuz
 				return basicSetIDAnhangKreuzungsplan(null, msgs);
 			case BahnuebergangPackage.BUE_KREUZUNGSPLAN__IDBUE_ANLAGE:
 				return basicSetIDBUEAnlage(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -233,8 +234,9 @@ public class BUE_KreuzungsplanImpl extends Basis_ObjektImpl implements BUE_Kreuz
 				return getIDAnhangKreuzungsplan();
 			case BahnuebergangPackage.BUE_KREUZUNGSPLAN__IDBUE_ANLAGE:
 				return getIDBUEAnlage();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -256,8 +258,10 @@ public class BUE_KreuzungsplanImpl extends Basis_ObjektImpl implements BUE_Kreuz
 			case BahnuebergangPackage.BUE_KREUZUNGSPLAN__IDBUE_ANLAGE:
 				setIDBUEAnlage((ID_BUE_Anlage_ohne_Proxy_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -277,8 +281,10 @@ public class BUE_KreuzungsplanImpl extends Basis_ObjektImpl implements BUE_Kreuz
 			case BahnuebergangPackage.BUE_KREUZUNGSPLAN__IDBUE_ANLAGE:
 				setIDBUEAnlage((ID_BUE_Anlage_ohne_Proxy_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -295,8 +301,9 @@ public class BUE_KreuzungsplanImpl extends Basis_ObjektImpl implements BUE_Kreuz
 				return iDAnhangKreuzungsplan != null;
 			case BahnuebergangPackage.BUE_KREUZUNGSPLAN__IDBUE_ANLAGE:
 				return iDBUEAnlage != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //BUE_KreuzungsplanImpl

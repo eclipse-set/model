@@ -361,8 +361,9 @@ public class UnterbringungImpl extends Basis_ObjektImpl implements Unterbringung
 				return basicSetStandortBeschreibung(null, msgs);
 			case Ansteuerung_ElementPackage.UNTERBRINGUNG__UNTERBRINGUNG_POLYGONZUG:
 				return basicSetUnterbringungPolygonzug(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -385,8 +386,9 @@ public class UnterbringungImpl extends Basis_ObjektImpl implements Unterbringung
 				return getStandortBeschreibung();
 			case Ansteuerung_ElementPackage.UNTERBRINGUNG__UNTERBRINGUNG_POLYGONZUG:
 				return getUnterbringungPolygonzug();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -418,8 +420,10 @@ public class UnterbringungImpl extends Basis_ObjektImpl implements Unterbringung
 			case Ansteuerung_ElementPackage.UNTERBRINGUNG__UNTERBRINGUNG_POLYGONZUG:
 				setUnterbringungPolygonzug((Unterbringung_Polygonzug_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -448,8 +452,10 @@ public class UnterbringungImpl extends Basis_ObjektImpl implements Unterbringung
 			case Ansteuerung_ElementPackage.UNTERBRINGUNG__UNTERBRINGUNG_POLYGONZUG:
 				setUnterbringungPolygonzug((Unterbringung_Polygonzug_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -472,8 +478,9 @@ public class UnterbringungImpl extends Basis_ObjektImpl implements Unterbringung
 				return standortBeschreibung != null;
 			case Ansteuerung_ElementPackage.UNTERBRINGUNG__UNTERBRINGUNG_POLYGONZUG:
 				return unterbringungPolygonzug != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //UnterbringungImpl

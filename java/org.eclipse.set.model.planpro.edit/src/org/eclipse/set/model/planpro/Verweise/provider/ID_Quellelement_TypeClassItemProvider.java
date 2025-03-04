@@ -159,8 +159,10 @@ public class ID_Quellelement_TypeClassItemProvider extends Zeiger_TypeClassItemP
 			case VerweisePackage.ID_QUELLELEMENT_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

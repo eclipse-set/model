@@ -300,8 +300,9 @@ public class ZN_Fortschalt_KriteriumImpl extends Basis_ObjektImpl implements ZN_
 				return basicSetZNFortschaltKritDruck(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN_FORTSCHALT_KRITERIUM__ZN_FORTSCHALT_KRIT_SCHALT:
 				return ((InternalEList<?>)getZNFortschaltKritSchalt()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -322,8 +323,9 @@ public class ZN_Fortschalt_KriteriumImpl extends Basis_ObjektImpl implements ZN_
 				return getZNFortschaltKritDruck();
 			case ZugnummernmeldeanlagePackage.ZN_FORTSCHALT_KRITERIUM__ZN_FORTSCHALT_KRIT_SCHALT:
 				return getZNFortschaltKritSchalt();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -352,8 +354,10 @@ public class ZN_Fortschalt_KriteriumImpl extends Basis_ObjektImpl implements ZN_
 				getZNFortschaltKritSchalt().clear();
 				getZNFortschaltKritSchalt().addAll((Collection<? extends ZN_Fortschalt_Krit_Schalt_AttributeGroup>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -379,8 +383,10 @@ public class ZN_Fortschalt_KriteriumImpl extends Basis_ObjektImpl implements ZN_
 			case ZugnummernmeldeanlagePackage.ZN_FORTSCHALT_KRITERIUM__ZN_FORTSCHALT_KRIT_SCHALT:
 				getZNFortschaltKritSchalt().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -401,8 +407,9 @@ public class ZN_Fortschalt_KriteriumImpl extends Basis_ObjektImpl implements ZN_
 				return zNFortschaltKritDruck != null;
 			case ZugnummernmeldeanlagePackage.ZN_FORTSCHALT_KRITERIUM__ZN_FORTSCHALT_KRIT_SCHALT:
 				return zNFortschaltKritSchalt != null && !zNFortschaltKritSchalt.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZN_Fortschalt_KriteriumImpl

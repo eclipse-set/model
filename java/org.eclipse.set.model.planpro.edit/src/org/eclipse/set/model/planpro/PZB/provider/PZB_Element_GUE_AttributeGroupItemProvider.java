@@ -170,8 +170,10 @@ public class PZB_Element_GUE_AttributeGroupItemProvider
 			case PZBPackage.PZB_ELEMENT_GUE_ATTRIBUTE_GROUP__PRUEFZEIT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

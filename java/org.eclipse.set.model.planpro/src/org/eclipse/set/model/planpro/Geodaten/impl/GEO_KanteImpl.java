@@ -298,8 +298,9 @@ public class GEO_KanteImpl extends Basis_ObjektImpl implements GEO_Kante {
 				return basicSetIDGEOKnotenA(null, msgs);
 			case GeodatenPackage.GEO_KANTE__IDGEO_KNOTEN_B:
 				return basicSetIDGEOKnotenB(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -318,8 +319,9 @@ public class GEO_KanteImpl extends Basis_ObjektImpl implements GEO_Kante {
 				return getIDGEOKnotenA();
 			case GeodatenPackage.GEO_KANTE__IDGEO_KNOTEN_B:
 				return getIDGEOKnotenB();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -342,8 +344,10 @@ public class GEO_KanteImpl extends Basis_ObjektImpl implements GEO_Kante {
 			case GeodatenPackage.GEO_KANTE__IDGEO_KNOTEN_B:
 				setIDGEOKnotenB((ID_GEO_Knoten_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -366,8 +370,10 @@ public class GEO_KanteImpl extends Basis_ObjektImpl implements GEO_Kante {
 			case GeodatenPackage.GEO_KANTE__IDGEO_KNOTEN_B:
 				setIDGEOKnotenB((ID_GEO_Knoten_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -386,8 +392,9 @@ public class GEO_KanteImpl extends Basis_ObjektImpl implements GEO_Kante {
 				return iDGEOKnotenA != null;
 			case GeodatenPackage.GEO_KANTE__IDGEO_KNOTEN_B:
 				return iDGEOKnotenB != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //GEO_KanteImpl

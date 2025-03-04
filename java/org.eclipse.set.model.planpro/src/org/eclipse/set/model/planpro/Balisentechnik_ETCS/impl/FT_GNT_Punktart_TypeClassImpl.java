@@ -143,8 +143,9 @@ public class FT_GNT_Punktart_TypeClassImpl extends BasisAttribut_AttributeGroupI
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.FT_GNT_PUNKTART_TYPE_CLASS__WERT:
 				return getWert();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -158,8 +159,10 @@ public class FT_GNT_Punktart_TypeClassImpl extends BasisAttribut_AttributeGroupI
 			case Balisentechnik_ETCSPackage.FT_GNT_PUNKTART_TYPE_CLASS__WERT:
 				setWert((ENUMFTGNTPunktart)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -173,8 +176,10 @@ public class FT_GNT_Punktart_TypeClassImpl extends BasisAttribut_AttributeGroupI
 			case Balisentechnik_ETCSPackage.FT_GNT_PUNKTART_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -187,8 +192,9 @@ public class FT_GNT_Punktart_TypeClassImpl extends BasisAttribut_AttributeGroupI
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.FT_GNT_PUNKTART_TYPE_CLASS__WERT:
 				return isSetWert();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 	/**

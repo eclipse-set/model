@@ -120,8 +120,9 @@ public class LEU_Anlage_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.LEU_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_LEU_ANLAGE:
 				return basicSetBezeichnungLEUAnlage(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class LEU_Anlage_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.LEU_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_LEU_ANLAGE:
 				return getBezeichnungLEUAnlage();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class LEU_Anlage_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 			case Balisentechnik_ETCSPackage.LEU_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_LEU_ANLAGE:
 				setBezeichnungLEUAnlage((Bezeichnung_LEU_Anlage_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class LEU_Anlage_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 			case Balisentechnik_ETCSPackage.LEU_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_LEU_ANLAGE:
 				setBezeichnungLEUAnlage((Bezeichnung_LEU_Anlage_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class LEU_Anlage_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.LEU_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_LEU_ANLAGE:
 				return bezeichnungLEUAnlage != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //LEU_Anlage_Bezeichnung_AttributeGroupImpl

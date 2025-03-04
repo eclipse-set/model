@@ -120,8 +120,9 @@ public class Bedingung_Besondere_AttributeGroupImpl extends EObjectImpl implemen
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.BEDINGUNG_BESONDERE_ATTRIBUTE_GROUP__ART_BEDINGUNG:
 				return basicSetArtBedingung(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class Bedingung_Besondere_AttributeGroupImpl extends EObjectImpl implemen
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.BEDINGUNG_BESONDERE_ATTRIBUTE_GROUP__ART_BEDINGUNG:
 				return getArtBedingung();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class Bedingung_Besondere_AttributeGroupImpl extends EObjectImpl implemen
 			case Balisentechnik_ETCSPackage.BEDINGUNG_BESONDERE_ATTRIBUTE_GROUP__ART_BEDINGUNG:
 				setArtBedingung((Art_Bedingung_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class Bedingung_Besondere_AttributeGroupImpl extends EObjectImpl implemen
 			case Balisentechnik_ETCSPackage.BEDINGUNG_BESONDERE_ATTRIBUTE_GROUP__ART_BEDINGUNG:
 				setArtBedingung((Art_Bedingung_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class Bedingung_Besondere_AttributeGroupImpl extends EObjectImpl implemen
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.BEDINGUNG_BESONDERE_ATTRIBUTE_GROUP__ART_BEDINGUNG:
 				return artBedingung != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bedingung_Besondere_AttributeGroupImpl

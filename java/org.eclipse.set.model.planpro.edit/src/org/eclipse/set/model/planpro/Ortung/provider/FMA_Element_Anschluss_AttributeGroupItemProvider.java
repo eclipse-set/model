@@ -154,8 +154,10 @@ public class FMA_Element_Anschluss_AttributeGroupItemProvider
 			case OrtungPackage.FMA_ELEMENT_ANSCHLUSS_ATTRIBUTE_GROUP__FMA_ANSCHLUSS_SPEISERICHTUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

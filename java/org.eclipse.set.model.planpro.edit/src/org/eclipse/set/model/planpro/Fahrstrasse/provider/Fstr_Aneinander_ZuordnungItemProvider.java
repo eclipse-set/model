@@ -144,8 +144,10 @@ public class Fstr_Aneinander_ZuordnungItemProvider extends Basis_ObjektItemProvi
 			case FahrstrassePackage.FSTR_ANEINANDER_ZUORDNUNG__ID_FSTR_ZUG_RANGIER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

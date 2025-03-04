@@ -134,8 +134,10 @@ public class Verantwortliche_Stelle_DB_TypeClassItemProvider extends BasisAttrib
 			case PlanProPackage.VERANTWORTLICHE_STELLE_DB_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

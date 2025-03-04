@@ -392,8 +392,9 @@ public class Fstr_Zug_RangierImpl extends Basis_ObjektImpl implements Fstr_Zug_R
 				return basicSetFstrRangier(null, msgs);
 			case FahrstrassePackage.FSTR_ZUG_RANGIER__FSTR_ZUG:
 				return basicSetFstrZug(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -416,8 +417,9 @@ public class Fstr_Zug_RangierImpl extends Basis_ObjektImpl implements Fstr_Zug_R
 				return getFstrRangier();
 			case FahrstrassePackage.FSTR_ZUG_RANGIER__FSTR_ZUG:
 				return getFstrZug();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -448,8 +450,10 @@ public class Fstr_Zug_RangierImpl extends Basis_ObjektImpl implements Fstr_Zug_R
 			case FahrstrassePackage.FSTR_ZUG_RANGIER__FSTR_ZUG:
 				setFstrZug((Fstr_Zug_AttributeGroup)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -478,8 +482,10 @@ public class Fstr_Zug_RangierImpl extends Basis_ObjektImpl implements Fstr_Zug_R
 			case FahrstrassePackage.FSTR_ZUG_RANGIER__FSTR_ZUG:
 				setFstrZug((Fstr_Zug_AttributeGroup)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -502,8 +508,9 @@ public class Fstr_Zug_RangierImpl extends Basis_ObjektImpl implements Fstr_Zug_R
 				return fstrRangier != null;
 			case FahrstrassePackage.FSTR_ZUG_RANGIER__FSTR_ZUG:
 				return fstrZug != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Fstr_Zug_RangierImpl

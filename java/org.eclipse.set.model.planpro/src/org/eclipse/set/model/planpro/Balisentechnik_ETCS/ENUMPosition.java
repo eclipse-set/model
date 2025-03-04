@@ -158,8 +158,8 @@ public enum ENUMPosition implements Enumerator {
 			case ENUM_POSITION_AM_VALUE: return ENUM_POSITION_AM;
 			case ENUM_POSITION_HINTER_VALUE: return ENUM_POSITION_HINTER;
 			case ENUM_POSITION_VOR_VALUE: return ENUM_POSITION_VOR;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

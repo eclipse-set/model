@@ -390,8 +390,9 @@ public class BSO_IP_Adressblock_AttributeGroupImpl extends EObjectImpl implement
 				return basicSetIPAdressblockGrauV6(null, msgs);
 			case BedienungPackage.BSO_IP_ADRESSBLOCK_ATTRIBUTE_GROUP__REGIONALBEREICH:
 				return basicSetRegionalbereich(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -414,8 +415,9 @@ public class BSO_IP_Adressblock_AttributeGroupImpl extends EObjectImpl implement
 				return getIPAdressblockGrauV6();
 			case BedienungPackage.BSO_IP_ADRESSBLOCK_ATTRIBUTE_GROUP__REGIONALBEREICH:
 				return getRegionalbereich();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -446,8 +448,10 @@ public class BSO_IP_Adressblock_AttributeGroupImpl extends EObjectImpl implement
 			case BedienungPackage.BSO_IP_ADRESSBLOCK_ATTRIBUTE_GROUP__REGIONALBEREICH:
 				setRegionalbereich((Regionalbereich_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -476,8 +480,10 @@ public class BSO_IP_Adressblock_AttributeGroupImpl extends EObjectImpl implement
 			case BedienungPackage.BSO_IP_ADRESSBLOCK_ATTRIBUTE_GROUP__REGIONALBEREICH:
 				setRegionalbereich((Regionalbereich_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -500,8 +506,9 @@ public class BSO_IP_Adressblock_AttributeGroupImpl extends EObjectImpl implement
 				return iPAdressblockGrauV6 != null;
 			case BedienungPackage.BSO_IP_ADRESSBLOCK_ATTRIBUTE_GROUP__REGIONALBEREICH:
 				return regionalbereich != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //BSO_IP_Adressblock_AttributeGroupImpl

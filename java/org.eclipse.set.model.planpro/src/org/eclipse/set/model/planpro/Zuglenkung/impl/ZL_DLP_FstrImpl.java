@@ -122,8 +122,9 @@ public class ZL_DLP_FstrImpl extends Basis_ObjektImpl implements ZL_DLP_Fstr {
 		switch (featureID) {
 			case ZuglenkungPackage.ZL_DLP_FSTR__IDZL_FSTR:
 				return basicSetIDZLFstr(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,8 +137,9 @@ public class ZL_DLP_FstrImpl extends Basis_ObjektImpl implements ZL_DLP_Fstr {
 		switch (featureID) {
 			case ZuglenkungPackage.ZL_DLP_FSTR__IDZL_FSTR:
 				return getIDZLFstr();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,8 +153,10 @@ public class ZL_DLP_FstrImpl extends Basis_ObjektImpl implements ZL_DLP_Fstr {
 			case ZuglenkungPackage.ZL_DLP_FSTR__IDZL_FSTR:
 				setIDZLFstr((ID_ZL_Fstr_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -166,8 +170,10 @@ public class ZL_DLP_FstrImpl extends Basis_ObjektImpl implements ZL_DLP_Fstr {
 			case ZuglenkungPackage.ZL_DLP_FSTR__IDZL_FSTR:
 				setIDZLFstr((ID_ZL_Fstr_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -180,8 +186,9 @@ public class ZL_DLP_FstrImpl extends Basis_ObjektImpl implements ZL_DLP_Fstr {
 		switch (featureID) {
 			case ZuglenkungPackage.ZL_DLP_FSTR__IDZL_FSTR:
 				return iDZLFstr != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZL_DLP_FstrImpl

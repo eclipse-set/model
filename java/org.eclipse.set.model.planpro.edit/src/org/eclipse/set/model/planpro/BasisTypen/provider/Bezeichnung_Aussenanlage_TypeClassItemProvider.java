@@ -130,8 +130,10 @@ public class Bezeichnung_Aussenanlage_TypeClassItemProvider extends BasisAttribu
 			case BasisTypenPackage.BEZEICHNUNG_AUSSENANLAGE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

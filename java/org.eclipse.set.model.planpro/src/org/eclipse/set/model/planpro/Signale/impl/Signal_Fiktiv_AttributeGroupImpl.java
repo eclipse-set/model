@@ -154,8 +154,9 @@ public class Signal_Fiktiv_AttributeGroupImpl extends EObjectImpl implements Sig
 				return basicSetAutoEinstellung(null, msgs);
 			case SignalePackage.SIGNAL_FIKTIV_ATTRIBUTE_GROUP__FIKTIVES_SIGNAL_FUNKTION:
 				return ((InternalEList<?>)getFiktivesSignalFunktion()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -170,8 +171,9 @@ public class Signal_Fiktiv_AttributeGroupImpl extends EObjectImpl implements Sig
 				return getAutoEinstellung();
 			case SignalePackage.SIGNAL_FIKTIV_ATTRIBUTE_GROUP__FIKTIVES_SIGNAL_FUNKTION:
 				return getFiktivesSignalFunktion();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -190,8 +192,10 @@ public class Signal_Fiktiv_AttributeGroupImpl extends EObjectImpl implements Sig
 				getFiktivesSignalFunktion().clear();
 				getFiktivesSignalFunktion().addAll((Collection<? extends Fiktives_Signal_Funktion_TypeClass>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -208,8 +212,10 @@ public class Signal_Fiktiv_AttributeGroupImpl extends EObjectImpl implements Sig
 			case SignalePackage.SIGNAL_FIKTIV_ATTRIBUTE_GROUP__FIKTIVES_SIGNAL_FUNKTION:
 				getFiktivesSignalFunktion().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -224,8 +230,9 @@ public class Signal_Fiktiv_AttributeGroupImpl extends EObjectImpl implements Sig
 				return autoEinstellung != null;
 			case SignalePackage.SIGNAL_FIKTIV_ATTRIBUTE_GROUP__FIKTIVES_SIGNAL_FUNKTION:
 				return fiktivesSignalFunktion != null && !fiktivesSignalFunktion.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Signal_Fiktiv_AttributeGroupImpl

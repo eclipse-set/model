@@ -139,8 +139,10 @@ public class V_Min_Schiene_TypeClassItemProvider extends BasisAttribut_Attribute
 			case BahnuebergangPackage.VMIN_SCHIENE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

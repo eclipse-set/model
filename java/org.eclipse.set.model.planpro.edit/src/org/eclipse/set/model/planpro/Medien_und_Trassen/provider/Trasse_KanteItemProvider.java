@@ -149,8 +149,10 @@ public class Trasse_KanteItemProvider extends Basis_ObjektItemProvider {
 			case Medien_und_TrassenPackage.TRASSE_KANTE__TRASSE_NUTZER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

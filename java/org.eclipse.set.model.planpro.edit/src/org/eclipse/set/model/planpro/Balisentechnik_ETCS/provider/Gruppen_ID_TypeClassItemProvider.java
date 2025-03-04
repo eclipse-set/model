@@ -136,8 +136,10 @@ public class Gruppen_ID_TypeClassItemProvider extends BasisAttribut_AttributeGro
 			case Balisentechnik_ETCSPackage.GRUPPEN_ID_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

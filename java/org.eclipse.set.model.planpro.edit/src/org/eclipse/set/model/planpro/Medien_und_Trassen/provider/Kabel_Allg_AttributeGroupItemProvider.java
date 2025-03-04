@@ -160,8 +160,10 @@ public class Kabel_Allg_AttributeGroupItemProvider
 			case Medien_und_TrassenPackage.KABEL_ALLG_ATTRIBUTE_GROUP__NAGETIERSCHUTZ:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

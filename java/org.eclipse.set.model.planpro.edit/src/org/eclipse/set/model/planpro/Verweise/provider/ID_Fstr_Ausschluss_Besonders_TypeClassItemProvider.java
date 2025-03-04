@@ -159,8 +159,10 @@ public class ID_Fstr_Ausschluss_Besonders_TypeClassItemProvider extends Zeiger_T
 			case VerweisePackage.ID_FSTR_AUSSCHLUSS_BESONDERS_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

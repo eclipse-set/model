@@ -493,6 +493,8 @@ public class Balisentechnik_ETCSEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

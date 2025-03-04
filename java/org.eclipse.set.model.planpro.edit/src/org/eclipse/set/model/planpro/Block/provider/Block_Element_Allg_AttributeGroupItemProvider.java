@@ -156,8 +156,10 @@ public class Block_Element_Allg_AttributeGroupItemProvider
 			case BlockPackage.BLOCK_ELEMENT_ALLG_ATTRIBUTE_GROUP__VORBLOCKWECKER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -120,8 +120,9 @@ public class Strecke_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 		switch (featureID) {
 			case GeodatenPackage.STRECKE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_STRECKE:
 				return basicSetBezeichnungStrecke(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class Strecke_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 		switch (featureID) {
 			case GeodatenPackage.STRECKE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_STRECKE:
 				return getBezeichnungStrecke();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class Strecke_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 			case GeodatenPackage.STRECKE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_STRECKE:
 				setBezeichnungStrecke((Bezeichnung_Strecke_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class Strecke_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 			case GeodatenPackage.STRECKE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_STRECKE:
 				setBezeichnungStrecke((Bezeichnung_Strecke_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class Strecke_Bezeichnung_AttributeGroupImpl extends EObjectImpl implemen
 		switch (featureID) {
 			case GeodatenPackage.STRECKE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_STRECKE:
 				return bezeichnungStrecke != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Strecke_Bezeichnung_AttributeGroupImpl

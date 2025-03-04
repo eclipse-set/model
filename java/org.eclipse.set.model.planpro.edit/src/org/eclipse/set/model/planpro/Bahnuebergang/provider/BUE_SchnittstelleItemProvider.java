@@ -147,8 +147,10 @@ public class BUE_SchnittstelleItemProvider extends Basis_ObjektItemProvider {
 			case BahnuebergangPackage.BUE_SCHNITTSTELLE__ID_STELLELEMENT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

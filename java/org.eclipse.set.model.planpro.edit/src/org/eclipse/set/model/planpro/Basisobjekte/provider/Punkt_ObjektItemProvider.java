@@ -126,8 +126,10 @@ public class Punkt_ObjektItemProvider extends Basis_ObjektItemProvider {
 			case BasisobjektePackage.PUNKT_OBJEKT__PUNKT_OBJEKT_TOP_KANTE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

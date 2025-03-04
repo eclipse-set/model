@@ -151,8 +151,10 @@ public class GFR_ElementItemProvider extends Basis_ObjektItemProvider {
 			case BahnuebergangPackage.GFR_ELEMENT__GFR_NEIGUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

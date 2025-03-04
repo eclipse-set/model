@@ -493,6 +493,8 @@ public class ATOEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

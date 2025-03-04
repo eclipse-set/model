@@ -152,8 +152,10 @@ public class Gleis_Bezeichnung_Bezeichnung_AttributeGroupItemProvider
 			case GleisPackage.GLEIS_BEZEICHNUNG_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_GLEIS_BEZEICHNUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

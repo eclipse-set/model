@@ -180,8 +180,9 @@ public class AkteurImpl extends Ur_ObjektImpl implements Akteur {
 				return basicSetAkteurAllg(null, msgs);
 			case PlanProPackage.AKTEUR__KONTAKTDATEN:
 				return basicSetKontaktdaten(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,8 +197,9 @@ public class AkteurImpl extends Ur_ObjektImpl implements Akteur {
 				return getAkteurAllg();
 			case PlanProPackage.AKTEUR__KONTAKTDATEN:
 				return getKontaktdaten();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -214,8 +216,10 @@ public class AkteurImpl extends Ur_ObjektImpl implements Akteur {
 			case PlanProPackage.AKTEUR__KONTAKTDATEN:
 				setKontaktdaten((Organisation)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -232,8 +236,10 @@ public class AkteurImpl extends Ur_ObjektImpl implements Akteur {
 			case PlanProPackage.AKTEUR__KONTAKTDATEN:
 				setKontaktdaten((Organisation)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -248,8 +254,9 @@ public class AkteurImpl extends Ur_ObjektImpl implements Akteur {
 				return akteurAllg != null;
 			case PlanProPackage.AKTEUR__KONTAKTDATEN:
 				return kontaktdaten != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //AkteurImpl

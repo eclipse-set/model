@@ -145,8 +145,10 @@ public class Regelzeichnung_ParameterItemProvider extends Basis_ObjektItemProvid
 			case RegelzeichnungPackage.REGELZEICHNUNG_PARAMETER__REGELZEICHNUNG_PARAMETER_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

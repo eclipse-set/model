@@ -158,8 +158,10 @@ public class Bedien_Platz_Allg_AttributeGroupItemProvider
 			case BedienungPackage.BEDIEN_PLATZ_ALLG_ATTRIBUTE_GROUP__BEDIENRAUMNUMMER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

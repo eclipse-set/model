@@ -137,8 +137,10 @@ public class DWeg_Vorzug_TypeClassItemProvider extends BasisAttribut_AttributeGr
 			case FahrstrassePackage.DWEG_VORZUG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -157,8 +157,10 @@ public class Datenpunkt_LinkItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.DATENPUNKT_LINK__ZBS_MERKMALE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

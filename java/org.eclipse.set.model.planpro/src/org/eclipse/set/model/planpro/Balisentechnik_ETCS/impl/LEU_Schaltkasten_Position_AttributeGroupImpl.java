@@ -239,8 +239,9 @@ public class LEU_Schaltkasten_Position_AttributeGroupImpl extends EObjectImpl im
 				return basicSetPosition(null, msgs);
 			case Balisentechnik_ETCSPackage.LEU_SCHALTKASTEN_POSITION_ATTRIBUTE_GROUP__POSITION_SONSTIGE:
 				return basicSetPositionSonstige(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -257,8 +258,9 @@ public class LEU_Schaltkasten_Position_AttributeGroupImpl extends EObjectImpl im
 				return getPosition();
 			case Balisentechnik_ETCSPackage.LEU_SCHALTKASTEN_POSITION_ATTRIBUTE_GROUP__POSITION_SONSTIGE:
 				return getPositionSonstige();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -278,8 +280,10 @@ public class LEU_Schaltkasten_Position_AttributeGroupImpl extends EObjectImpl im
 			case Balisentechnik_ETCSPackage.LEU_SCHALTKASTEN_POSITION_ATTRIBUTE_GROUP__POSITION_SONSTIGE:
 				setPositionSonstige((Position_Sonstige_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -299,8 +303,10 @@ public class LEU_Schaltkasten_Position_AttributeGroupImpl extends EObjectImpl im
 			case Balisentechnik_ETCSPackage.LEU_SCHALTKASTEN_POSITION_ATTRIBUTE_GROUP__POSITION_SONSTIGE:
 				setPositionSonstige((Position_Sonstige_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -317,8 +323,9 @@ public class LEU_Schaltkasten_Position_AttributeGroupImpl extends EObjectImpl im
 				return position != null;
 			case Balisentechnik_ETCSPackage.LEU_SCHALTKASTEN_POSITION_ATTRIBUTE_GROUP__POSITION_SONSTIGE:
 				return positionSonstige != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //LEU_Schaltkasten_Position_AttributeGroupImpl

@@ -237,8 +237,9 @@ public class Bedien_Oberflaeche_Anhaenge_AttributeGroupImpl extends EObjectImpl 
 				return basicSetIDAnhangRichtungssinn(null, msgs);
 			case BedienungPackage.BEDIEN_OBERFLAECHE_ANHAENGE_ATTRIBUTE_GROUP__ID_ANHANG_VORGABE_BELU:
 				return basicSetIDAnhangVorgabeBELU(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -255,8 +256,9 @@ public class Bedien_Oberflaeche_Anhaenge_AttributeGroupImpl extends EObjectImpl 
 				return getIDAnhangRichtungssinn();
 			case BedienungPackage.BEDIEN_OBERFLAECHE_ANHAENGE_ATTRIBUTE_GROUP__ID_ANHANG_VORGABE_BELU:
 				return getIDAnhangVorgabeBELU();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -276,8 +278,10 @@ public class Bedien_Oberflaeche_Anhaenge_AttributeGroupImpl extends EObjectImpl 
 			case BedienungPackage.BEDIEN_OBERFLAECHE_ANHAENGE_ATTRIBUTE_GROUP__ID_ANHANG_VORGABE_BELU:
 				setIDAnhangVorgabeBELU((ID_Anhang_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -297,8 +301,10 @@ public class Bedien_Oberflaeche_Anhaenge_AttributeGroupImpl extends EObjectImpl 
 			case BedienungPackage.BEDIEN_OBERFLAECHE_ANHAENGE_ATTRIBUTE_GROUP__ID_ANHANG_VORGABE_BELU:
 				setIDAnhangVorgabeBELU((ID_Anhang_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -315,8 +321,9 @@ public class Bedien_Oberflaeche_Anhaenge_AttributeGroupImpl extends EObjectImpl 
 				return iDAnhangRichtungssinn != null;
 			case BedienungPackage.BEDIEN_OBERFLAECHE_ANHAENGE_ATTRIBUTE_GROUP__ID_ANHANG_VORGABE_BELU:
 				return iDAnhangVorgabeBELU != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Oberflaeche_Anhaenge_AttributeGroupImpl

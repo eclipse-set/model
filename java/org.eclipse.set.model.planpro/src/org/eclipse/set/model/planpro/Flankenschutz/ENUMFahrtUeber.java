@@ -158,8 +158,8 @@ public enum ENUMFahrtUeber implements Enumerator {
 			case ENUM_FAHRT_UEBER_LINKS_VALUE: return ENUM_FAHRT_UEBER_LINKS;
 			case ENUM_FAHRT_UEBER_RECHTS_VALUE: return ENUM_FAHRT_UEBER_RECHTS;
 			case ENUM_FAHRT_UEBER_SPITZE_VALUE: return ENUM_FAHRT_UEBER_SPITZE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

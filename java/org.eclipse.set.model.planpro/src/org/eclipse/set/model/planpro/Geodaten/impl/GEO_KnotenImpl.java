@@ -121,8 +121,9 @@ public class GEO_KnotenImpl extends Basis_ObjektImpl implements GEO_Knoten {
 		switch (featureID) {
 			case GeodatenPackage.GEO_KNOTEN__GEOPAD:
 				return basicSetGEOPAD(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,8 +136,9 @@ public class GEO_KnotenImpl extends Basis_ObjektImpl implements GEO_Knoten {
 		switch (featureID) {
 			case GeodatenPackage.GEO_KNOTEN__GEOPAD:
 				return getGEOPAD();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -150,8 +152,10 @@ public class GEO_KnotenImpl extends Basis_ObjektImpl implements GEO_Knoten {
 			case GeodatenPackage.GEO_KNOTEN__GEOPAD:
 				setGEOPAD((GEO_PAD_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -165,8 +169,10 @@ public class GEO_KnotenImpl extends Basis_ObjektImpl implements GEO_Knoten {
 			case GeodatenPackage.GEO_KNOTEN__GEOPAD:
 				setGEOPAD((GEO_PAD_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -179,8 +185,9 @@ public class GEO_KnotenImpl extends Basis_ObjektImpl implements GEO_Knoten {
 		switch (featureID) {
 			case GeodatenPackage.GEO_KNOTEN__GEOPAD:
 				return gEOPAD != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //GEO_KnotenImpl

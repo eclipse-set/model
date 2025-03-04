@@ -155,8 +155,9 @@ public class Knoten_Auf_TOP_Kante_AttributeGroupImpl extends EObjectImpl impleme
 				return basicSetETCSKnotenArtSonstige(null, msgs);
 			case Balisentechnik_ETCSPackage.KNOTEN_AUF_TOP_KANTE_ATTRIBUTE_GROUP__PUNKT_OBJEKT_TOP_KANTE:
 				return ((InternalEList<?>)getPunktObjektTOPKante()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -171,8 +172,9 @@ public class Knoten_Auf_TOP_Kante_AttributeGroupImpl extends EObjectImpl impleme
 				return getETCSKnotenArtSonstige();
 			case Balisentechnik_ETCSPackage.KNOTEN_AUF_TOP_KANTE_ATTRIBUTE_GROUP__PUNKT_OBJEKT_TOP_KANTE:
 				return getPunktObjektTOPKante();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -191,8 +193,10 @@ public class Knoten_Auf_TOP_Kante_AttributeGroupImpl extends EObjectImpl impleme
 				getPunktObjektTOPKante().clear();
 				getPunktObjektTOPKante().addAll((Collection<? extends Punkt_Objekt_TOP_Kante_AttributeGroup>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -209,8 +213,10 @@ public class Knoten_Auf_TOP_Kante_AttributeGroupImpl extends EObjectImpl impleme
 			case Balisentechnik_ETCSPackage.KNOTEN_AUF_TOP_KANTE_ATTRIBUTE_GROUP__PUNKT_OBJEKT_TOP_KANTE:
 				getPunktObjektTOPKante().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -225,8 +231,9 @@ public class Knoten_Auf_TOP_Kante_AttributeGroupImpl extends EObjectImpl impleme
 				return eTCSKnotenArtSonstige != null;
 			case Balisentechnik_ETCSPackage.KNOTEN_AUF_TOP_KANTE_ATTRIBUTE_GROUP__PUNKT_OBJEKT_TOP_KANTE:
 				return punktObjektTOPKante != null && !punktObjektTOPKante.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Knoten_Auf_TOP_Kante_AttributeGroupImpl

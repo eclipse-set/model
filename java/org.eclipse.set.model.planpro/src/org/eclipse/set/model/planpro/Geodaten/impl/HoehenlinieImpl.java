@@ -239,8 +239,9 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 				return basicSetIDHoehenpunktA(null, msgs);
 			case GeodatenPackage.HOEHENLINIE__ID_HOEHENPUNKT_B:
 				return basicSetIDHoehenpunktB(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -257,8 +258,9 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 				return getIDHoehenpunktA();
 			case GeodatenPackage.HOEHENLINIE__ID_HOEHENPUNKT_B:
 				return getIDHoehenpunktB();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -278,8 +280,10 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 			case GeodatenPackage.HOEHENLINIE__ID_HOEHENPUNKT_B:
 				setIDHoehenpunktB((ID_Hoehenpunkt_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -299,8 +303,10 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 			case GeodatenPackage.HOEHENLINIE__ID_HOEHENPUNKT_B:
 				setIDHoehenpunktB((ID_Hoehenpunkt_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -317,8 +323,9 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 				return iDHoehenpunktA != null;
 			case GeodatenPackage.HOEHENLINIE__ID_HOEHENPUNKT_B:
 				return iDHoehenpunktB != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //HoehenlinieImpl

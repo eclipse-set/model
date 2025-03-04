@@ -141,8 +141,10 @@ public class GeschwindigkeitsprofilItemProvider extends Bereich_ObjektItemProvid
 			case GeodatenPackage.GESCHWINDIGKEITSPROFIL__GESCHWINDIGKEITSPROFIL_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

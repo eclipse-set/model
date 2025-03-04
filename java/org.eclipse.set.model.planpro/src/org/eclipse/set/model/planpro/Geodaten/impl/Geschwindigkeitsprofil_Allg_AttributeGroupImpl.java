@@ -238,8 +238,9 @@ public class Geschwindigkeitsprofil_Allg_AttributeGroupImpl extends EObjectImpl 
 				return basicSetGeschwindigkeit(null, msgs);
 			case GeodatenPackage.GESCHWINDIGKEITSPROFIL_ALLG_ATTRIBUTE_GROUP__VPROFIL_ART:
 				return basicSetVProfilArt(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class Geschwindigkeitsprofil_Allg_AttributeGroupImpl extends EObjectImpl 
 				return getGeschwindigkeit();
 			case GeodatenPackage.GESCHWINDIGKEITSPROFIL_ALLG_ATTRIBUTE_GROUP__VPROFIL_ART:
 				return getVProfilArt();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class Geschwindigkeitsprofil_Allg_AttributeGroupImpl extends EObjectImpl 
 			case GeodatenPackage.GESCHWINDIGKEITSPROFIL_ALLG_ATTRIBUTE_GROUP__VPROFIL_ART:
 				setVProfilArt((V_Profil_Art_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class Geschwindigkeitsprofil_Allg_AttributeGroupImpl extends EObjectImpl 
 			case GeodatenPackage.GESCHWINDIGKEITSPROFIL_ALLG_ATTRIBUTE_GROUP__VPROFIL_ART:
 				setVProfilArt((V_Profil_Art_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class Geschwindigkeitsprofil_Allg_AttributeGroupImpl extends EObjectImpl 
 				return geschwindigkeit != null;
 			case GeodatenPackage.GESCHWINDIGKEITSPROFIL_ALLG_ATTRIBUTE_GROUP__VPROFIL_ART:
 				return vProfilArt != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Geschwindigkeitsprofil_Allg_AttributeGroupImpl

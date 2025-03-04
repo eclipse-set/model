@@ -136,8 +136,10 @@ public class Zugeinwirkung_Typ_TypeClassItemProvider extends BasisAttribut_Attri
 			case OrtungPackage.ZUGEINWIRKUNG_TYP_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

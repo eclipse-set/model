@@ -296,8 +296,8 @@ public enum ENUMSpannungArt implements Enumerator {
 			case ENUM_SPANNUNG_ART_DC_36_VALUE: return ENUM_SPANNUNG_ART_DC_36;
 			case ENUM_SPANNUNG_ART_DC_48_VALUE: return ENUM_SPANNUNG_ART_DC_48;
 			case ENUM_SPANNUNG_ART_DC_60_VALUE: return ENUM_SPANNUNG_ART_DC_60;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

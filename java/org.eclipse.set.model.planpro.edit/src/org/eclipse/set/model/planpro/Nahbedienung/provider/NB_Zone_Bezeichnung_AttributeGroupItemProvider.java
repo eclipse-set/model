@@ -152,8 +152,10 @@ public class NB_Zone_Bezeichnung_AttributeGroupItemProvider
 			case NahbedienungPackage.NB_ZONE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_NB_ZONE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

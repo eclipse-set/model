@@ -356,8 +356,9 @@ public class GEO_Punkt_Allg_AttributeGroupImpl extends EObjectImpl implements GE
 				return basicSetGKZ(null, msgs);
 			case GeodatenPackage.GEO_PUNKT_ALLG_ATTRIBUTE_GROUP__PLAN_QUELLE:
 				return basicSetPlanQuelle(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -378,8 +379,9 @@ public class GEO_Punkt_Allg_AttributeGroupImpl extends EObjectImpl implements GE
 				return getGKZ();
 			case GeodatenPackage.GEO_PUNKT_ALLG_ATTRIBUTE_GROUP__PLAN_QUELLE:
 				return getPlanQuelle();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -405,8 +407,10 @@ public class GEO_Punkt_Allg_AttributeGroupImpl extends EObjectImpl implements GE
 			case GeodatenPackage.GEO_PUNKT_ALLG_ATTRIBUTE_GROUP__PLAN_QUELLE:
 				setPlanQuelle((Plan_Quelle_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -432,8 +436,10 @@ public class GEO_Punkt_Allg_AttributeGroupImpl extends EObjectImpl implements GE
 			case GeodatenPackage.GEO_PUNKT_ALLG_ATTRIBUTE_GROUP__PLAN_QUELLE:
 				setPlanQuelle((Plan_Quelle_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -454,8 +460,9 @@ public class GEO_Punkt_Allg_AttributeGroupImpl extends EObjectImpl implements GE
 				return gKZ != null;
 			case GeodatenPackage.GEO_PUNKT_ALLG_ATTRIBUTE_GROUP__PLAN_QUELLE:
 				return planQuelle != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //GEO_Punkt_Allg_AttributeGroupImpl

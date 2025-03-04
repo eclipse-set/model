@@ -136,8 +136,10 @@ public class LO_EMA_Nr_TypeClassItemProvider extends BasisAttribut_AttributeGrou
 			case BasisobjektePackage.LO_EMA_NR_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

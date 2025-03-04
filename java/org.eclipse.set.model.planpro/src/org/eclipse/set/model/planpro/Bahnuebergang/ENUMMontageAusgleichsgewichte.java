@@ -135,8 +135,8 @@ public enum ENUMMontageAusgleichsgewichte implements Enumerator {
 		switch (value) {
 			case ENUM_MONTAGE_AUSGLEICHSGEWICHTE_BEIDSEITIG_VALUE: return ENUM_MONTAGE_AUSGLEICHSGEWICHTE_BEIDSEITIG;
 			case ENUM_MONTAGE_AUSGLEICHSGEWICHTE_EINSEITIG_VALUE: return ENUM_MONTAGE_AUSGLEICHSGEWICHTE_EINSEITIG;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

@@ -158,8 +158,9 @@ public class ID_Komponente_Programmiert_TypeClassImpl extends Zeiger_TypeClassIm
 				return basicGetValue();
 			case VerweisePackage.ID_KOMPONENTE_PROGRAMMIERT_TYPE_CLASS__INVALID_REFERENCE:
 				return isInvalidReference();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -176,8 +177,10 @@ public class ID_Komponente_Programmiert_TypeClassImpl extends Zeiger_TypeClassIm
 			case VerweisePackage.ID_KOMPONENTE_PROGRAMMIERT_TYPE_CLASS__INVALID_REFERENCE:
 				setInvalidReference((Boolean)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -194,8 +197,10 @@ public class ID_Komponente_Programmiert_TypeClassImpl extends Zeiger_TypeClassIm
 			case VerweisePackage.ID_KOMPONENTE_PROGRAMMIERT_TYPE_CLASS__INVALID_REFERENCE:
 				setInvalidReference(INVALID_REFERENCE_EDEFAULT);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -210,8 +215,9 @@ public class ID_Komponente_Programmiert_TypeClassImpl extends Zeiger_TypeClassIm
 				return value != null;
 			case VerweisePackage.ID_KOMPONENTE_PROGRAMMIERT_TYPE_CLASS__INVALID_REFERENCE:
 				return invalidReference != INVALID_REFERENCE_EDEFAULT;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 	/**

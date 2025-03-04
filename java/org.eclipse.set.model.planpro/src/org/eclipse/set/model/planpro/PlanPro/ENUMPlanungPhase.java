@@ -204,8 +204,8 @@ public enum ENUMPlanungPhase implements Enumerator {
 			case ENUM_PLANUNG_PHASE_PT_2_VALUE: return ENUM_PLANUNG_PHASE_PT_2;
 			case ENUM_PLANUNG_PHASE_SONSTIGE_VALUE: return ENUM_PLANUNG_PHASE_SONSTIGE;
 			case ENUM_PLANUNG_PHASE_VP_VALUE: return ENUM_PLANUNG_PHASE_VP;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

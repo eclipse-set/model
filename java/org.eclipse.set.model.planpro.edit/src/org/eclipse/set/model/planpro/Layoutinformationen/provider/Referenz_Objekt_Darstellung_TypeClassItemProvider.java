@@ -136,8 +136,10 @@ public class Referenz_Objekt_Darstellung_TypeClassItemProvider extends BasisAttr
 			case LayoutinformationenPackage.REFERENZ_OBJEKT_DARSTELLUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

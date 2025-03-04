@@ -147,8 +147,10 @@ public class BUE_Deckendes_Signal_ZuordnungItemProvider extends Basis_ObjektItem
 			case BahnuebergangPackage.BUE_DECKENDES_SIGNAL_ZUORDNUNG__SICHERHEITSABSTAND:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

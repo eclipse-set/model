@@ -136,8 +136,10 @@ public class Bezeichnung_Kabel_TypeClassItemProvider extends BasisAttribut_Attri
 			case Medien_und_TrassenPackage.BEZEICHNUNG_KABEL_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

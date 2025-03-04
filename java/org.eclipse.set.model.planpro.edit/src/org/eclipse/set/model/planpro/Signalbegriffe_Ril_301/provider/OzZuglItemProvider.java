@@ -147,8 +147,10 @@ public class OzZuglItemProvider
 			case Signalbegriffe_Ril_301Package.OZ_ZUGL__SYMBOL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

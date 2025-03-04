@@ -141,8 +141,10 @@ public class Gleis_BezeichnungItemProvider extends Bereich_ObjektItemProvider {
 			case GleisPackage.GLEIS_BEZEICHNUNG__BEZEICHNUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

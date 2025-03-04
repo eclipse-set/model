@@ -142,8 +142,9 @@ public class Referenz_Objekt_Darstellung_TypeClassImpl extends BasisAttribut_Att
 		switch (featureID) {
 			case LayoutinformationenPackage.REFERENZ_OBJEKT_DARSTELLUNG_TYPE_CLASS__WERT:
 				return getWert();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -157,8 +158,10 @@ public class Referenz_Objekt_Darstellung_TypeClassImpl extends BasisAttribut_Att
 			case LayoutinformationenPackage.REFERENZ_OBJEKT_DARSTELLUNG_TYPE_CLASS__WERT:
 				setWert((String)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -172,8 +175,10 @@ public class Referenz_Objekt_Darstellung_TypeClassImpl extends BasisAttribut_Att
 			case LayoutinformationenPackage.REFERENZ_OBJEKT_DARSTELLUNG_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -186,8 +191,9 @@ public class Referenz_Objekt_Darstellung_TypeClassImpl extends BasisAttribut_Att
 		switch (featureID) {
 			case LayoutinformationenPackage.REFERENZ_OBJEKT_DARSTELLUNG_TYPE_CLASS__WERT:
 				return isSetWert();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 	/**

@@ -156,8 +156,10 @@ public class Knoten_Auf_TOP_Kante_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.KNOTEN_AUF_TOP_KANTE_ATTRIBUTE_GROUP__PUNKT_OBJEKT_TOP_KANTE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -142,8 +142,9 @@ public class W_Kr_Grundform_TypeClassImpl extends BasisAttribut_AttributeGroupIm
 		switch (featureID) {
 			case Weichen_und_GleissperrenPackage.WKR_GRUNDFORM_TYPE_CLASS__WERT:
 				return getWert();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -157,8 +158,10 @@ public class W_Kr_Grundform_TypeClassImpl extends BasisAttribut_AttributeGroupIm
 			case Weichen_und_GleissperrenPackage.WKR_GRUNDFORM_TYPE_CLASS__WERT:
 				setWert((String)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -172,8 +175,10 @@ public class W_Kr_Grundform_TypeClassImpl extends BasisAttribut_AttributeGroupIm
 			case Weichen_und_GleissperrenPackage.WKR_GRUNDFORM_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -186,8 +191,9 @@ public class W_Kr_Grundform_TypeClassImpl extends BasisAttribut_AttributeGroupIm
 		switch (featureID) {
 			case Weichen_und_GleissperrenPackage.WKR_GRUNDFORM_TYPE_CLASS__WERT:
 				return isSetWert();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 	/**

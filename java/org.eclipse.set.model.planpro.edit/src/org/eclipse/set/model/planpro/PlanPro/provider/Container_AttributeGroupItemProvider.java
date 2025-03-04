@@ -525,8 +525,10 @@ public class Container_AttributeGroupItemProvider
 			case PlanProPackage.CONTAINER_ATTRIBUTE_GROUP__ZUGEINWIRKUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -180,8 +180,9 @@ public class Fstr_Zug_DWeg_AttributeGroupImpl extends EObjectImpl implements Fst
 				return basicSetDWegVorzug(null, msgs);
 			case FahrstrassePackage.FSTR_ZUG_DWEG_ATTRIBUTE_GROUP__ID_FSTR_DWEG:
 				return basicSetIDFstrDWeg(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,8 +197,9 @@ public class Fstr_Zug_DWeg_AttributeGroupImpl extends EObjectImpl implements Fst
 				return getDWegVorzug();
 			case FahrstrassePackage.FSTR_ZUG_DWEG_ATTRIBUTE_GROUP__ID_FSTR_DWEG:
 				return getIDFstrDWeg();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -214,8 +216,10 @@ public class Fstr_Zug_DWeg_AttributeGroupImpl extends EObjectImpl implements Fst
 			case FahrstrassePackage.FSTR_ZUG_DWEG_ATTRIBUTE_GROUP__ID_FSTR_DWEG:
 				setIDFstrDWeg((ID_Fstr_DWeg_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -232,8 +236,10 @@ public class Fstr_Zug_DWeg_AttributeGroupImpl extends EObjectImpl implements Fst
 			case FahrstrassePackage.FSTR_ZUG_DWEG_ATTRIBUTE_GROUP__ID_FSTR_DWEG:
 				setIDFstrDWeg((ID_Fstr_DWeg_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -248,8 +254,9 @@ public class Fstr_Zug_DWeg_AttributeGroupImpl extends EObjectImpl implements Fst
 				return dWegVorzug != null;
 			case FahrstrassePackage.FSTR_ZUG_DWEG_ATTRIBUTE_GROUP__ID_FSTR_DWEG:
 				return iDFstrDWeg != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Fstr_Zug_DWeg_AttributeGroupImpl

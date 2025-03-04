@@ -146,8 +146,10 @@ public class Fstr_SignalisierungItemProvider extends Basis_ObjektItemProvider {
 			case FahrstrassePackage.FSTR_SIGNALISIERUNG__ID_SIGNAL_SIGNALBEGRIFF_ZIEL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

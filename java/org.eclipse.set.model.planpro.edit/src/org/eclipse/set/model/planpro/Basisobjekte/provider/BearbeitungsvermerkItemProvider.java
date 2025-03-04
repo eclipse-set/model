@@ -139,8 +139,10 @@ public class BearbeitungsvermerkItemProvider extends Ur_ObjektItemProvider {
 			case BasisobjektePackage.BEARBEITUNGSVERMERK__ID_ANHANG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

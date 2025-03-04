@@ -181,8 +181,9 @@ public class Regelzeichnung_ParameterImpl extends Basis_ObjektImpl implements Re
 				return basicSetIDRegelzeichnung(null, msgs);
 			case RegelzeichnungPackage.REGELZEICHNUNG_PARAMETER__REGELZEICHNUNG_PARAMETER_ALLG:
 				return basicSetRegelzeichnungParameterAllg(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,8 +198,9 @@ public class Regelzeichnung_ParameterImpl extends Basis_ObjektImpl implements Re
 				return getIDRegelzeichnung();
 			case RegelzeichnungPackage.REGELZEICHNUNG_PARAMETER__REGELZEICHNUNG_PARAMETER_ALLG:
 				return getRegelzeichnungParameterAllg();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,8 +217,10 @@ public class Regelzeichnung_ParameterImpl extends Basis_ObjektImpl implements Re
 			case RegelzeichnungPackage.REGELZEICHNUNG_PARAMETER__REGELZEICHNUNG_PARAMETER_ALLG:
 				setRegelzeichnungParameterAllg((Regelzeichnung_Parameter_Allg_AttributeGroup)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -233,8 +237,10 @@ public class Regelzeichnung_ParameterImpl extends Basis_ObjektImpl implements Re
 			case RegelzeichnungPackage.REGELZEICHNUNG_PARAMETER__REGELZEICHNUNG_PARAMETER_ALLG:
 				setRegelzeichnungParameterAllg((Regelzeichnung_Parameter_Allg_AttributeGroup)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -249,8 +255,9 @@ public class Regelzeichnung_ParameterImpl extends Basis_ObjektImpl implements Re
 				return iDRegelzeichnung != null;
 			case RegelzeichnungPackage.REGELZEICHNUNG_PARAMETER__REGELZEICHNUNG_PARAMETER_ALLG:
 				return regelzeichnungParameterAllg != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Regelzeichnung_ParameterImpl

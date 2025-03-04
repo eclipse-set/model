@@ -147,8 +147,10 @@ public class Bedien_StandortItemProvider extends Basis_ObjektItemProvider {
 			case BedienungPackage.BEDIEN_STANDORT__ID_UNTERBRINGUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -273,8 +273,8 @@ public enum ENUMMediumArt implements Enumerator {
 			case ENUM_MEDIUM_ART_LWL_E2000_VALUE: return ENUM_MEDIUM_ART_LWL_E2000;
 			case ENUM_MEDIUM_ART_LWL_SC_LC_VALUE: return ENUM_MEDIUM_ART_LWL_SC_LC;
 			case ENUM_MEDIUM_ART_SONSTIGE_VALUE: return ENUM_MEDIUM_ART_SONSTIGE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

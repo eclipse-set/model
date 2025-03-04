@@ -147,8 +147,10 @@ public class Bedien_Oberflaeche_BildItemProvider extends Basis_ObjektItemProvide
 			case BedienungPackage.BEDIEN_OBERFLAECHE_BILD__ID_OERTLICHKEIT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -149,8 +149,10 @@ public class Fstr_FahrwegItemProvider extends Bereich_ObjektItemProvider {
 			case FahrstrassePackage.FSTR_FAHRWEG__START_SIGNAL_CHARAKTER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -149,8 +149,10 @@ public class KabelItemProvider extends Basis_ObjektItemProvider {
 			case Medien_und_TrassenPackage.KABEL__KABEL_ELEMENT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

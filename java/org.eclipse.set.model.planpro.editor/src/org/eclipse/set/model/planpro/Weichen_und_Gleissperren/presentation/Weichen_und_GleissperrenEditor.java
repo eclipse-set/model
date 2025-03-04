@@ -493,6 +493,8 @@ public class Weichen_und_GleissperrenEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

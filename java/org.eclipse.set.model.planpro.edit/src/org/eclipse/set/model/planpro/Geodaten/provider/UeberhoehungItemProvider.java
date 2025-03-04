@@ -141,8 +141,10 @@ public class UeberhoehungItemProvider extends Punkt_ObjektItemProvider {
 			case GeodatenPackage.UEBERHOEHUNG__UEBERHOEHUNG_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

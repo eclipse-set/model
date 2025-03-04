@@ -298,8 +298,9 @@ public class EV_Modul_Eingang_AttributeGroupImpl extends EObjectImpl implements 
 				return basicSetEnergieEingangArt(null, msgs);
 			case Balisentechnik_ETCSPackage.EV_MODUL_EINGANG_ATTRIBUTE_GROUP__ID_ENERGIE_EINGANG:
 				return basicSetIDEnergieEingang(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -318,8 +319,9 @@ public class EV_Modul_Eingang_AttributeGroupImpl extends EObjectImpl implements 
 				return getEnergieEingangArt();
 			case Balisentechnik_ETCSPackage.EV_MODUL_EINGANG_ATTRIBUTE_GROUP__ID_ENERGIE_EINGANG:
 				return getIDEnergieEingang();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -342,8 +344,10 @@ public class EV_Modul_Eingang_AttributeGroupImpl extends EObjectImpl implements 
 			case Balisentechnik_ETCSPackage.EV_MODUL_EINGANG_ATTRIBUTE_GROUP__ID_ENERGIE_EINGANG:
 				setIDEnergieEingang((ID_Energie_Eingang_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -366,8 +370,10 @@ public class EV_Modul_Eingang_AttributeGroupImpl extends EObjectImpl implements 
 			case Balisentechnik_ETCSPackage.EV_MODUL_EINGANG_ATTRIBUTE_GROUP__ID_ENERGIE_EINGANG:
 				setIDEnergieEingang((ID_Energie_Eingang_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -386,8 +392,9 @@ public class EV_Modul_Eingang_AttributeGroupImpl extends EObjectImpl implements 
 				return energieEingangArt != null;
 			case Balisentechnik_ETCSPackage.EV_MODUL_EINGANG_ATTRIBUTE_GROUP__ID_ENERGIE_EINGANG:
 				return iDEnergieEingang != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //EV_Modul_Eingang_AttributeGroupImpl

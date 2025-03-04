@@ -149,8 +149,10 @@ public class OrganisationItemProvider extends Ur_ObjektItemProvider {
 			case PlanProPackage.ORGANISATION__TELEFONNUMMER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

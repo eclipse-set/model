@@ -159,8 +159,10 @@ public class ID_Bedien_Bezirk_TypeClassItemProvider extends Zeiger_TypeClassItem
 			case VerweisePackage.ID_BEDIEN_BEZIRK_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

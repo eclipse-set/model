@@ -356,8 +356,9 @@ public class ZBS_Signal_Signalabstand_AttributeGroupImpl extends EObjectImpl imp
 				return basicSetSolllaengeMindSig(null, msgs);
 			case Balisentechnik_ETCSPackage.ZBS_SIGNAL_SIGNALABSTAND_ATTRIBUTE_GROUP__SOLLLAENGE_MIND_SIG150:
 				return basicSetSolllaengeMindSig150(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -378,8 +379,9 @@ public class ZBS_Signal_Signalabstand_AttributeGroupImpl extends EObjectImpl imp
 				return getSolllaengeMindSig();
 			case Balisentechnik_ETCSPackage.ZBS_SIGNAL_SIGNALABSTAND_ATTRIBUTE_GROUP__SOLLLAENGE_MIND_SIG150:
 				return getSolllaengeMindSig150();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -405,8 +407,10 @@ public class ZBS_Signal_Signalabstand_AttributeGroupImpl extends EObjectImpl imp
 			case Balisentechnik_ETCSPackage.ZBS_SIGNAL_SIGNALABSTAND_ATTRIBUTE_GROUP__SOLLLAENGE_MIND_SIG150:
 				setSolllaengeMindSig150((Solllaenge_Mind_Sig_150_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -432,8 +436,10 @@ public class ZBS_Signal_Signalabstand_AttributeGroupImpl extends EObjectImpl imp
 			case Balisentechnik_ETCSPackage.ZBS_SIGNAL_SIGNALABSTAND_ATTRIBUTE_GROUP__SOLLLAENGE_MIND_SIG150:
 				setSolllaengeMindSig150((Solllaenge_Mind_Sig_150_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -454,8 +460,9 @@ public class ZBS_Signal_Signalabstand_AttributeGroupImpl extends EObjectImpl imp
 				return solllaengeMindSig != null;
 			case Balisentechnik_ETCSPackage.ZBS_SIGNAL_SIGNALABSTAND_ATTRIBUTE_GROUP__SOLLLAENGE_MIND_SIG150:
 				return solllaengeMindSig150 != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZBS_Signal_Signalabstand_AttributeGroupImpl

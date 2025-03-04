@@ -138,8 +138,10 @@ public class SBE_TypeClassItemProvider extends BasisAttribut_AttributeGroupItemP
 			case Balisentechnik_ETCSPackage.SBE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

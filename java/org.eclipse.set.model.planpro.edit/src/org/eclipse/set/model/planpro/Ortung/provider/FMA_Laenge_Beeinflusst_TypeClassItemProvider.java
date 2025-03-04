@@ -139,8 +139,10 @@ public class FMA_Laenge_Beeinflusst_TypeClassItemProvider extends BasisAttribut_
 			case OrtungPackage.FMA_LAENGE_BEEINFLUSST_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

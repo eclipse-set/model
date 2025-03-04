@@ -160,8 +160,10 @@ public class DP_Telegramm_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.DP_TELEGRAMM_ATTRIBUTE_GROUP__SRS_VERSION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

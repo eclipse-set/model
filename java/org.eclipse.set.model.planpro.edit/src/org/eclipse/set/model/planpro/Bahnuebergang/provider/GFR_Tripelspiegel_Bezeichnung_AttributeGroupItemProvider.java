@@ -152,8 +152,10 @@ public class GFR_Tripelspiegel_Bezeichnung_AttributeGroupItemProvider
 			case BahnuebergangPackage.GFR_TRIPELSPIEGEL_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_GFR_TRIPELSPIEGEL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

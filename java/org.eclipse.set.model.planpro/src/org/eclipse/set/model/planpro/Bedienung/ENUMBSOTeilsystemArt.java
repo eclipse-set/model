@@ -135,8 +135,8 @@ public enum ENUMBSOTeilsystemArt implements Enumerator {
 		switch (value) {
 			case ENUMBSO_TEILSYSTEM_ART_IBS_VALUE: return ENUMBSO_TEILSYSTEM_ART_IBS;
 			case ENUMBSO_TEILSYSTEM_ART_TRANSFERNETZ_BEDIENUNG_VALUE: return ENUMBSO_TEILSYSTEM_ART_TRANSFERNETZ_BEDIENUNG;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

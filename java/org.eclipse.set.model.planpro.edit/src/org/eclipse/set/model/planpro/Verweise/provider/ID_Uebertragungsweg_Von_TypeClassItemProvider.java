@@ -159,8 +159,10 @@ public class ID_Uebertragungsweg_Von_TypeClassItemProvider extends Zeiger_TypeCl
 			case VerweisePackage.ID_UEBERTRAGUNGSWEG_VON_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -297,8 +297,9 @@ public class PlanPro_Schnittstelle_Allg_AttributeGroupImpl extends EObjectImpl i
 				return basicSetWerkzeugName(null, msgs);
 			case PlanProPackage.PLAN_PRO_SCHNITTSTELLE_ALLG_ATTRIBUTE_GROUP__WERKZEUG_VERSION:
 				return basicSetWerkzeugVersion(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -317,8 +318,9 @@ public class PlanPro_Schnittstelle_Allg_AttributeGroupImpl extends EObjectImpl i
 				return getWerkzeugName();
 			case PlanProPackage.PLAN_PRO_SCHNITTSTELLE_ALLG_ATTRIBUTE_GROUP__WERKZEUG_VERSION:
 				return getWerkzeugVersion();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -341,8 +343,10 @@ public class PlanPro_Schnittstelle_Allg_AttributeGroupImpl extends EObjectImpl i
 			case PlanProPackage.PLAN_PRO_SCHNITTSTELLE_ALLG_ATTRIBUTE_GROUP__WERKZEUG_VERSION:
 				setWerkzeugVersion((Werkzeug_Version_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -365,8 +369,10 @@ public class PlanPro_Schnittstelle_Allg_AttributeGroupImpl extends EObjectImpl i
 			case PlanProPackage.PLAN_PRO_SCHNITTSTELLE_ALLG_ATTRIBUTE_GROUP__WERKZEUG_VERSION:
 				setWerkzeugVersion((Werkzeug_Version_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -385,8 +391,9 @@ public class PlanPro_Schnittstelle_Allg_AttributeGroupImpl extends EObjectImpl i
 				return werkzeugName != null;
 			case PlanProPackage.PLAN_PRO_SCHNITTSTELLE_ALLG_ATTRIBUTE_GROUP__WERKZEUG_VERSION:
 				return werkzeugVersion != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //PlanPro_Schnittstelle_Allg_AttributeGroupImpl

@@ -238,8 +238,9 @@ public class ZN_Allg_AttributeGroupImpl extends EObjectImpl implements ZN_Allg_A
 				return basicSetReaktivierungsfunktion(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN_ALLG_ATTRIBUTE_GROUP__ZN_ANLAGENTYP:
 				return basicSetZNAnlagentyp(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class ZN_Allg_AttributeGroupImpl extends EObjectImpl implements ZN_Allg_A
 				return getReaktivierungsfunktion();
 			case ZugnummernmeldeanlagePackage.ZN_ALLG_ATTRIBUTE_GROUP__ZN_ANLAGENTYP:
 				return getZNAnlagentyp();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class ZN_Allg_AttributeGroupImpl extends EObjectImpl implements ZN_Allg_A
 			case ZugnummernmeldeanlagePackage.ZN_ALLG_ATTRIBUTE_GROUP__ZN_ANLAGENTYP:
 				setZNAnlagentyp((ZN_Anlagentyp_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class ZN_Allg_AttributeGroupImpl extends EObjectImpl implements ZN_Allg_A
 			case ZugnummernmeldeanlagePackage.ZN_ALLG_ATTRIBUTE_GROUP__ZN_ANLAGENTYP:
 				setZNAnlagentyp((ZN_Anlagentyp_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class ZN_Allg_AttributeGroupImpl extends EObjectImpl implements ZN_Allg_A
 				return reaktivierungsfunktion != null;
 			case ZugnummernmeldeanlagePackage.ZN_ALLG_ATTRIBUTE_GROUP__ZN_ANLAGENTYP:
 				return zNAnlagentyp != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZN_Allg_AttributeGroupImpl

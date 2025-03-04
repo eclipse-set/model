@@ -139,8 +139,10 @@ public class Port_Nr_Ausg_Physisch_TypeClassItemProvider extends BasisAttribut_A
 			case Balisentechnik_ETCSPackage.PORT_NR_AUSG_PHYSISCH_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

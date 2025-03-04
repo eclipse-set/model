@@ -136,8 +136,10 @@ public class Bezeichnung_Schloss_TypeClassItemProvider extends BasisAttribut_Att
 			case SchluesselabhaengigkeitenPackage.BEZEICHNUNG_SCHLOSS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

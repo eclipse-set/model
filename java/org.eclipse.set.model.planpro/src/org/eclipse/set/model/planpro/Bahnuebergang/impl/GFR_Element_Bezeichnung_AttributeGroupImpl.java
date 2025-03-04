@@ -120,8 +120,9 @@ public class GFR_Element_Bezeichnung_AttributeGroupImpl extends EObjectImpl impl
 		switch (featureID) {
 			case BahnuebergangPackage.GFR_ELEMENT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_GFR_ELEMENT:
 				return basicSetBezeichnungGFRElement(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class GFR_Element_Bezeichnung_AttributeGroupImpl extends EObjectImpl impl
 		switch (featureID) {
 			case BahnuebergangPackage.GFR_ELEMENT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_GFR_ELEMENT:
 				return getBezeichnungGFRElement();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class GFR_Element_Bezeichnung_AttributeGroupImpl extends EObjectImpl impl
 			case BahnuebergangPackage.GFR_ELEMENT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_GFR_ELEMENT:
 				setBezeichnungGFRElement((Bezeichnung_GFR_Element_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class GFR_Element_Bezeichnung_AttributeGroupImpl extends EObjectImpl impl
 			case BahnuebergangPackage.GFR_ELEMENT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_GFR_ELEMENT:
 				setBezeichnungGFRElement((Bezeichnung_GFR_Element_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class GFR_Element_Bezeichnung_AttributeGroupImpl extends EObjectImpl impl
 		switch (featureID) {
 			case BahnuebergangPackage.GFR_ELEMENT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_GFR_ELEMENT:
 				return bezeichnungGFRElement != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //GFR_Element_Bezeichnung_AttributeGroupImpl

@@ -138,8 +138,10 @@ public class Bedien_Einricht_Bauart_TypeClassItemProvider extends BasisAttribut_
 			case BedienungPackage.BEDIEN_EINRICHT_BAUART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

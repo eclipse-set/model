@@ -145,8 +145,10 @@ public class Bahnsteig_ZugangItemProvider extends Punkt_ObjektItemProvider {
 			case BahnsteigPackage.BAHNSTEIG_ZUGANG__ID_BAHNSTEIG_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

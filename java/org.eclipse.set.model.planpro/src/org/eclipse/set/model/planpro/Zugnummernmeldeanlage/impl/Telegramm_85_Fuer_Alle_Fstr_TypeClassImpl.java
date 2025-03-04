@@ -142,8 +142,9 @@ public class Telegramm_85_Fuer_Alle_Fstr_TypeClassImpl extends BasisAttribut_Att
 		switch (featureID) {
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_85_FUER_ALLE_FSTR_TYPE_CLASS__WERT:
 				return getWert();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -157,8 +158,10 @@ public class Telegramm_85_Fuer_Alle_Fstr_TypeClassImpl extends BasisAttribut_Att
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_85_FUER_ALLE_FSTR_TYPE_CLASS__WERT:
 				setWert((Boolean)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -172,8 +175,10 @@ public class Telegramm_85_Fuer_Alle_Fstr_TypeClassImpl extends BasisAttribut_Att
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_85_FUER_ALLE_FSTR_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -186,8 +191,9 @@ public class Telegramm_85_Fuer_Alle_Fstr_TypeClassImpl extends BasisAttribut_Att
 		switch (featureID) {
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_85_FUER_ALLE_FSTR_TYPE_CLASS__WERT:
 				return isSetWert();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 	/**

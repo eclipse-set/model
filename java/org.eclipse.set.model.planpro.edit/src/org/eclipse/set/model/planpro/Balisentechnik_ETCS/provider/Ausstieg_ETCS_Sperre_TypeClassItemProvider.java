@@ -138,8 +138,10 @@ public class Ausstieg_ETCS_Sperre_TypeClassItemProvider extends BasisAttribut_At
 			case Balisentechnik_ETCSPackage.AUSSTIEG_ETCS_SPERRE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -240,8 +240,9 @@ public class BUE_Deckendes_Signal_ZuordnungImpl extends Basis_ObjektImpl impleme
 				return basicSetIDSignal(null, msgs);
 			case BahnuebergangPackage.BUE_DECKENDES_SIGNAL_ZUORDNUNG__SICHERHEITSABSTAND:
 				return basicSetSicherheitsabstand(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,8 +259,9 @@ public class BUE_Deckendes_Signal_ZuordnungImpl extends Basis_ObjektImpl impleme
 				return getIDSignal();
 			case BahnuebergangPackage.BUE_DECKENDES_SIGNAL_ZUORDNUNG__SICHERHEITSABSTAND:
 				return getSicherheitsabstand();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -279,8 +281,10 @@ public class BUE_Deckendes_Signal_ZuordnungImpl extends Basis_ObjektImpl impleme
 			case BahnuebergangPackage.BUE_DECKENDES_SIGNAL_ZUORDNUNG__SICHERHEITSABSTAND:
 				setSicherheitsabstand((Sicherheitsabstand_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -300,8 +304,10 @@ public class BUE_Deckendes_Signal_ZuordnungImpl extends Basis_ObjektImpl impleme
 			case BahnuebergangPackage.BUE_DECKENDES_SIGNAL_ZUORDNUNG__SICHERHEITSABSTAND:
 				setSicherheitsabstand((Sicherheitsabstand_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -318,8 +324,9 @@ public class BUE_Deckendes_Signal_ZuordnungImpl extends Basis_ObjektImpl impleme
 				return iDSignal != null;
 			case BahnuebergangPackage.BUE_DECKENDES_SIGNAL_ZUORDNUNG__SICHERHEITSABSTAND:
 				return sicherheitsabstand != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //BUE_Deckendes_Signal_ZuordnungImpl

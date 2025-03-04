@@ -159,8 +159,10 @@ public class DatenpunktItemProvider extends Punkt_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.DATENPUNKT__DP_TELEGRAMM_ESG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

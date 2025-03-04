@@ -154,8 +154,10 @@ public class ZL_Fstr_Anstoss_GK_AttributeGroupItemProvider
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS_GK_ATTRIBUTE_GROUP__TV_GK:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

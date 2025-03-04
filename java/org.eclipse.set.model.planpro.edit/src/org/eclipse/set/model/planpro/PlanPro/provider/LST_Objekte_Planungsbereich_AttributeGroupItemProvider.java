@@ -151,8 +151,10 @@ public class LST_Objekte_Planungsbereich_AttributeGroupItemProvider
 			case PlanProPackage.LST_OBJEKTE_PLANUNGSBEREICH_ATTRIBUTE_GROUP__IDLST_OBJEKT_PLANUNGSBEREICH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

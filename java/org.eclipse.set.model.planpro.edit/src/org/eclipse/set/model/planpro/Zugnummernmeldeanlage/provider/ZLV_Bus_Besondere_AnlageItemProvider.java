@@ -145,8 +145,10 @@ public class ZLV_Bus_Besondere_AnlageItemProvider extends Basis_ObjektItemProvid
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

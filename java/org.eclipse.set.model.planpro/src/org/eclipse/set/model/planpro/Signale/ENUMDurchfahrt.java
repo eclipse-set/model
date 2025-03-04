@@ -158,8 +158,8 @@ public enum ENUMDurchfahrt implements Enumerator {
 			case ENUM_DURCHFAHRT_ERLAUBT_VALUE: return ENUM_DURCHFAHRT_ERLAUBT;
 			case ENUM_DURCHFAHRT_NUR_MIT_SH1_VALUE: return ENUM_DURCHFAHRT_NUR_MIT_SH1;
 			case ENUM_DURCHFAHRT_VERBOTEN_VALUE: return ENUM_DURCHFAHRT_VERBOTEN;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

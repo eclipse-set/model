@@ -154,8 +154,10 @@ public class Planung_E_Ausgabe_Besonders_AttributeGroupItemProvider
 			case PlanProPackage.PLANUNG_EAUSGABE_BESONDERS_ATTRIBUTE_GROUP__VERGLEICHSTYP_BESONDERS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

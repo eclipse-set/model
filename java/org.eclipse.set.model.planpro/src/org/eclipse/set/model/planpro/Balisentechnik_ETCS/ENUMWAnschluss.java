@@ -158,8 +158,8 @@ public enum ENUMWAnschluss implements Enumerator {
 			case ENUMW_ANSCHLUSS_LINKS_VALUE: return ENUMW_ANSCHLUSS_LINKS;
 			case ENUMW_ANSCHLUSS_RECHTS_VALUE: return ENUMW_ANSCHLUSS_RECHTS;
 			case ENUMW_ANSCHLUSS_SPITZE_VALUE: return ENUMW_ANSCHLUSS_SPITZE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

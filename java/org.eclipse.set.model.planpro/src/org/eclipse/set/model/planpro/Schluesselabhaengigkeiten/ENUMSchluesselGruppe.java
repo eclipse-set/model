@@ -227,8 +227,8 @@ public enum ENUMSchluesselGruppe implements Enumerator {
 			case ENUM_SCHLUESSEL_GRUPPE_3_VALUE: return ENUM_SCHLUESSEL_GRUPPE_3;
 			case ENUM_SCHLUESSEL_GRUPPE_4_VALUE: return ENUM_SCHLUESSEL_GRUPPE_4;
 			case ENUM_SCHLUESSEL_GRUPPE_5_VALUE: return ENUM_SCHLUESSEL_GRUPPE_5;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

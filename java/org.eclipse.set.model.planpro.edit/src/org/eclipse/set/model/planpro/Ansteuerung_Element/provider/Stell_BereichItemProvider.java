@@ -147,8 +147,10 @@ public class Stell_BereichItemProvider extends Bereich_ObjektItemProvider {
 			case Ansteuerung_ElementPackage.STELL_BEREICH__ID_AUSSENELEMENTANSTEUERUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

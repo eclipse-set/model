@@ -449,8 +449,9 @@ public class Bearbeitungsvermerk_Allg_AttributeGroupImpl extends EObjectImpl imp
 				return basicSetKurztext(null, msgs);
 			case BasisobjektePackage.BEARBEITUNGSVERMERK_ALLG_ATTRIBUTE_GROUP__ZEIT_BEARBEITUNGSVERMERK:
 				return basicSetZeitBearbeitungsvermerk(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -475,8 +476,9 @@ public class Bearbeitungsvermerk_Allg_AttributeGroupImpl extends EObjectImpl imp
 				return getKurztext();
 			case BasisobjektePackage.BEARBEITUNGSVERMERK_ALLG_ATTRIBUTE_GROUP__ZEIT_BEARBEITUNGSVERMERK:
 				return getZeitBearbeitungsvermerk();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -510,8 +512,10 @@ public class Bearbeitungsvermerk_Allg_AttributeGroupImpl extends EObjectImpl imp
 			case BasisobjektePackage.BEARBEITUNGSVERMERK_ALLG_ATTRIBUTE_GROUP__ZEIT_BEARBEITUNGSVERMERK:
 				setZeitBearbeitungsvermerk((Zeit_Bearbeitungsvermerk_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -543,8 +547,10 @@ public class Bearbeitungsvermerk_Allg_AttributeGroupImpl extends EObjectImpl imp
 			case BasisobjektePackage.BEARBEITUNGSVERMERK_ALLG_ATTRIBUTE_GROUP__ZEIT_BEARBEITUNGSVERMERK:
 				setZeitBearbeitungsvermerk((Zeit_Bearbeitungsvermerk_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -569,8 +575,9 @@ public class Bearbeitungsvermerk_Allg_AttributeGroupImpl extends EObjectImpl imp
 				return kurztext != null;
 			case BasisobjektePackage.BEARBEITUNGSVERMERK_ALLG_ATTRIBUTE_GROUP__ZEIT_BEARBEITUNGSVERMERK:
 				return zeitBearbeitungsvermerk != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bearbeitungsvermerk_Allg_AttributeGroupImpl

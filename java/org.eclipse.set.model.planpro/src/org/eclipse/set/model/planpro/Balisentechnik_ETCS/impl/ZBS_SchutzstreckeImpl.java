@@ -181,8 +181,9 @@ public class ZBS_SchutzstreckeImpl extends Basis_ObjektImpl implements ZBS_Schut
 				return basicSetIDFstrDWeg(null, msgs);
 			case Balisentechnik_ETCSPackage.ZBS_SCHUTZSTRECKE__ZBS_SCHUTZSTRECKE_ALLG:
 				return basicSetZBSSchutzstreckeAllg(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,8 +198,9 @@ public class ZBS_SchutzstreckeImpl extends Basis_ObjektImpl implements ZBS_Schut
 				return getIDFstrDWeg();
 			case Balisentechnik_ETCSPackage.ZBS_SCHUTZSTRECKE__ZBS_SCHUTZSTRECKE_ALLG:
 				return getZBSSchutzstreckeAllg();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,8 +217,10 @@ public class ZBS_SchutzstreckeImpl extends Basis_ObjektImpl implements ZBS_Schut
 			case Balisentechnik_ETCSPackage.ZBS_SCHUTZSTRECKE__ZBS_SCHUTZSTRECKE_ALLG:
 				setZBSSchutzstreckeAllg((ZBS_Schutzstrecke_Allg_AttributeGroup)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -233,8 +237,10 @@ public class ZBS_SchutzstreckeImpl extends Basis_ObjektImpl implements ZBS_Schut
 			case Balisentechnik_ETCSPackage.ZBS_SCHUTZSTRECKE__ZBS_SCHUTZSTRECKE_ALLG:
 				setZBSSchutzstreckeAllg((ZBS_Schutzstrecke_Allg_AttributeGroup)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -249,8 +255,9 @@ public class ZBS_SchutzstreckeImpl extends Basis_ObjektImpl implements ZBS_Schut
 				return iDFstrDWeg != null;
 			case Balisentechnik_ETCSPackage.ZBS_SCHUTZSTRECKE__ZBS_SCHUTZSTRECKE_ALLG:
 				return zBSSchutzstreckeAllg != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZBS_SchutzstreckeImpl

@@ -55,6 +55,15 @@ public class Fuehrende_Oertlichkeit_TypeClassImpl extends BasisAttribut_Attribut
 	protected String wert = WERT_EDEFAULT;
 
 	/**
+	 * This is true if the Wert attribute has been set.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean wertESet;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -92,8 +101,35 @@ public class Fuehrende_Oertlichkeit_TypeClassImpl extends BasisAttribut_Attribut
 	public void setWert(String newWert) {
 		String oldWert = wert;
 		wert = newWert;
+		boolean oldWertESet = wertESet;
+		wertESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PlanProPackage.FUEHRENDE_OERTLICHKEIT_TYPE_CLASS__WERT, oldWert, wert));
+			eNotify(new ENotificationImpl(this, Notification.SET, PlanProPackage.FUEHRENDE_OERTLICHKEIT_TYPE_CLASS__WERT, oldWert, wert, !oldWertESet));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void unsetWert() {
+		String oldWert = wert;
+		boolean oldWertESet = wertESet;
+		wert = WERT_EDEFAULT;
+		wertESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, PlanProPackage.FUEHRENDE_OERTLICHKEIT_TYPE_CLASS__WERT, oldWert, WERT_EDEFAULT, oldWertESet));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isSetWert() {
+		return wertESet;
 	}
 
 	/**
@@ -106,8 +142,9 @@ public class Fuehrende_Oertlichkeit_TypeClassImpl extends BasisAttribut_Attribut
 		switch (featureID) {
 			case PlanProPackage.FUEHRENDE_OERTLICHKEIT_TYPE_CLASS__WERT:
 				return getWert();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -121,8 +158,10 @@ public class Fuehrende_Oertlichkeit_TypeClassImpl extends BasisAttribut_Attribut
 			case PlanProPackage.FUEHRENDE_OERTLICHKEIT_TYPE_CLASS__WERT:
 				setWert((String)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -134,10 +173,12 @@ public class Fuehrende_Oertlichkeit_TypeClassImpl extends BasisAttribut_Attribut
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case PlanProPackage.FUEHRENDE_OERTLICHKEIT_TYPE_CLASS__WERT:
-				setWert(WERT_EDEFAULT);
+				unsetWert();
+				return;
+			default:
+				super.eUnset(featureID);
 				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -149,9 +190,10 @@ public class Fuehrende_Oertlichkeit_TypeClassImpl extends BasisAttribut_Attribut
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case PlanProPackage.FUEHRENDE_OERTLICHKEIT_TYPE_CLASS__WERT:
-				return WERT_EDEFAULT == null ? wert != null : !WERT_EDEFAULT.equals(wert);
+				return isSetWert();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 	/**
@@ -165,7 +207,7 @@ public class Fuehrende_Oertlichkeit_TypeClassImpl extends BasisAttribut_Attribut
 
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (wert: ");
-		result.append(wert);
+		if (wertESet) result.append(wert); else result.append("<unset>");
 		result.append(')');
 		return result.toString();
 	}

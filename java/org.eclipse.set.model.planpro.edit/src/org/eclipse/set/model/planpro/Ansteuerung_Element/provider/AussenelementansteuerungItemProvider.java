@@ -159,8 +159,10 @@ public class AussenelementansteuerungItemProvider extends Basis_ObjektItemProvid
 			case Ansteuerung_ElementPackage.AUSSENELEMENTANSTEUERUNG__ID_UNTERBRINGUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

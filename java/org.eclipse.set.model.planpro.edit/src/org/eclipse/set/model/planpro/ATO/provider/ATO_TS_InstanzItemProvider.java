@@ -145,8 +145,10 @@ public class ATO_TS_InstanzItemProvider extends Basis_ObjektItemProvider {
 			case ATOPackage.ATO_TS_INSTANZ__ID_UNTERBRINGUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

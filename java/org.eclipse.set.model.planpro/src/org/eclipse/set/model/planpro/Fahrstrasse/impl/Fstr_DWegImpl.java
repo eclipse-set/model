@@ -392,8 +392,9 @@ public class Fstr_DWegImpl extends Basis_ObjektImpl implements Fstr_DWeg {
 				return basicSetIDFstrFahrweg(null, msgs);
 			case FahrstrassePackage.FSTR_DWEG__IDPZB_GEFAHRPUNKT:
 				return basicSetIDPZBGefahrpunkt(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -416,8 +417,9 @@ public class Fstr_DWegImpl extends Basis_ObjektImpl implements Fstr_DWeg {
 				return getIDFstrFahrweg();
 			case FahrstrassePackage.FSTR_DWEG__IDPZB_GEFAHRPUNKT:
 				return getIDPZBGefahrpunkt();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -448,8 +450,10 @@ public class Fstr_DWegImpl extends Basis_ObjektImpl implements Fstr_DWeg {
 			case FahrstrassePackage.FSTR_DWEG__IDPZB_GEFAHRPUNKT:
 				setIDPZBGefahrpunkt((ID_Markanter_Punkt_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -478,8 +482,10 @@ public class Fstr_DWegImpl extends Basis_ObjektImpl implements Fstr_DWeg {
 			case FahrstrassePackage.FSTR_DWEG__IDPZB_GEFAHRPUNKT:
 				setIDPZBGefahrpunkt((ID_Markanter_Punkt_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -502,8 +508,9 @@ public class Fstr_DWegImpl extends Basis_ObjektImpl implements Fstr_DWeg {
 				return iDFstrFahrweg != null;
 			case FahrstrassePackage.FSTR_DWEG__IDPZB_GEFAHRPUNKT:
 				return iDPZBGefahrpunkt != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Fstr_DWegImpl

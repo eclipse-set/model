@@ -240,8 +240,9 @@ public class Fla_ZwieschutzImpl extends Basis_ObjektImpl implements Fla_Zwieschu
 				return basicSetIDWElement(null, msgs);
 			case FlankenschutzPackage.FLA_ZWIESCHUTZ__ZWIESCHUTZ_ART:
 				return basicSetZwieschutzArt(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,8 +259,9 @@ public class Fla_ZwieschutzImpl extends Basis_ObjektImpl implements Fla_Zwieschu
 				return getIDWElement();
 			case FlankenschutzPackage.FLA_ZWIESCHUTZ__ZWIESCHUTZ_ART:
 				return getZwieschutzArt();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -279,8 +281,10 @@ public class Fla_ZwieschutzImpl extends Basis_ObjektImpl implements Fla_Zwieschu
 			case FlankenschutzPackage.FLA_ZWIESCHUTZ__ZWIESCHUTZ_ART:
 				setZwieschutzArt((Zwieschutz_Art_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -300,8 +304,10 @@ public class Fla_ZwieschutzImpl extends Basis_ObjektImpl implements Fla_Zwieschu
 			case FlankenschutzPackage.FLA_ZWIESCHUTZ__ZWIESCHUTZ_ART:
 				setZwieschutzArt((Zwieschutz_Art_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -318,8 +324,9 @@ public class Fla_ZwieschutzImpl extends Basis_ObjektImpl implements Fla_Zwieschu
 				return iDWElement != null;
 			case FlankenschutzPackage.FLA_ZWIESCHUTZ__ZWIESCHUTZ_ART:
 				return zwieschutzArt != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Fla_ZwieschutzImpl

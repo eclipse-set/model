@@ -153,8 +153,10 @@ public class ZN_AnzeigefeldItemProvider extends Basis_ObjektItemProvider {
 			case ZugnummernmeldeanlagePackage.ZN_ANZEIGEFELD__ZN_ANZEIGEFELD_BEZEICHNUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

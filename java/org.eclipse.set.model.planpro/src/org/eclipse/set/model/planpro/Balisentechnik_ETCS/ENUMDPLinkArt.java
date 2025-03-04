@@ -158,8 +158,8 @@ public enum ENUMDPLinkArt implements Enumerator {
 			case ENUMDP_LINK_ART_GRUND_VALUE: return ENUMDP_LINK_ART_GRUND;
 			case ENUMDP_LINK_ART_HILFS_VALUE: return ENUMDP_LINK_ART_HILFS;
 			case ENUMDP_LINK_ART_SONSTIGE_VALUE: return ENUMDP_LINK_ART_SONSTIGE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

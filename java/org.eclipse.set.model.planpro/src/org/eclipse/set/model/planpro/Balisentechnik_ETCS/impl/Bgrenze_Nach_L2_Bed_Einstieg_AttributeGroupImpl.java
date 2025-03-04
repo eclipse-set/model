@@ -180,8 +180,9 @@ public class Bgrenze_Nach_L2_Bed_Einstieg_AttributeGroupImpl extends EObjectImpl
 				return basicSetIDWElement(null, msgs);
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_L2_BED_EINSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				return basicSetWLage(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,8 +197,9 @@ public class Bgrenze_Nach_L2_Bed_Einstieg_AttributeGroupImpl extends EObjectImpl
 				return getIDWElement();
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_L2_BED_EINSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				return getWLage();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -214,8 +216,10 @@ public class Bgrenze_Nach_L2_Bed_Einstieg_AttributeGroupImpl extends EObjectImpl
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_L2_BED_EINSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				setWLage((W_Lage_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -232,8 +236,10 @@ public class Bgrenze_Nach_L2_Bed_Einstieg_AttributeGroupImpl extends EObjectImpl
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_L2_BED_EINSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				setWLage((W_Lage_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -248,8 +254,9 @@ public class Bgrenze_Nach_L2_Bed_Einstieg_AttributeGroupImpl extends EObjectImpl
 				return iDWElement != null;
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_L2_BED_EINSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				return wLage != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bgrenze_Nach_L2_Bed_Einstieg_AttributeGroupImpl

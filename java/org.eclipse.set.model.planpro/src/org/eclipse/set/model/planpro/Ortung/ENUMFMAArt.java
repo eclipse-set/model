@@ -204,8 +204,8 @@ public enum ENUMFMAArt implements Enumerator {
 			case ENUMFMA_ART_NF_GLEISSTROMKREIS_VALUE: return ENUMFMA_ART_NF_GLEISSTROMKREIS;
 			case ENUMFMA_ART_SONSTIGE_VALUE: return ENUMFMA_ART_SONSTIGE;
 			case ENUMFMA_ART_TF_GLEISSTROMKREIS_VALUE: return ENUMFMA_ART_TF_GLEISSTROMKREIS;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

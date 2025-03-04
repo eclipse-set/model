@@ -152,8 +152,10 @@ public class Schlosskombination_Bezeichnung_AttributeGroupItemProvider
 			case SchluesselabhaengigkeitenPackage.SCHLOSSKOMBINATION_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_SK:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

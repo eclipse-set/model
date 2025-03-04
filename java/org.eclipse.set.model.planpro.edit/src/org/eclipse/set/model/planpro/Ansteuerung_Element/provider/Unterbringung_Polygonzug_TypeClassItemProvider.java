@@ -136,8 +136,10 @@ public class Unterbringung_Polygonzug_TypeClassItemProvider extends BasisAttribu
 			case Ansteuerung_ElementPackage.UNTERBRINGUNG_POLYGONZUG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

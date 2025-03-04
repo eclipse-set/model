@@ -136,8 +136,10 @@ public class Bezeichnung_AEA_TypeClassItemProvider extends BasisAttribut_Attribu
 			case Ansteuerung_ElementPackage.BEZEICHNUNG_AEA_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

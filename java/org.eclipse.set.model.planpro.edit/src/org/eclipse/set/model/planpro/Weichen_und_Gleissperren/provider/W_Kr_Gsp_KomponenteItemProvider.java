@@ -155,8 +155,10 @@ public class W_Kr_Gsp_KomponenteItemProvider extends Punkt_ObjektItemProvider {
 			case Weichen_und_GleissperrenPackage.WKR_GSP_KOMPONENTE__ZUNGENPAAR:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

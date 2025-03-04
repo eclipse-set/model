@@ -120,8 +120,9 @@ public class Bedien_Zentrale_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_ZENTRALE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ZENTRALE:
 				return basicSetBezBedZentrale(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class Bedien_Zentrale_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_ZENTRALE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ZENTRALE:
 				return getBezBedZentrale();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class Bedien_Zentrale_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 			case BedienungPackage.BEDIEN_ZENTRALE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ZENTRALE:
 				setBezBedZentrale((Bez_Bed_Zentrale_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class Bedien_Zentrale_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 			case BedienungPackage.BEDIEN_ZENTRALE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ZENTRALE:
 				setBezBedZentrale((Bez_Bed_Zentrale_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class Bedien_Zentrale_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_ZENTRALE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ZENTRALE:
 				return bezBedZentrale != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Zentrale_Bezeichnung_AttributeGroupImpl

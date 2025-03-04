@@ -120,8 +120,9 @@ public class ATO_Timing_Point_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case ATOPackage.ATO_TIMING_POINT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ATOTP:
 				return basicSetBezeichnungATOTP(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +135,9 @@ public class ATO_Timing_Point_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case ATOPackage.ATO_TIMING_POINT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ATOTP:
 				return getBezeichnungATOTP();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +151,10 @@ public class ATO_Timing_Point_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 			case ATOPackage.ATO_TIMING_POINT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ATOTP:
 				setBezeichnungATOTP((Bezeichnung_ATO_TP_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +168,10 @@ public class ATO_Timing_Point_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 			case ATOPackage.ATO_TIMING_POINT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ATOTP:
 				setBezeichnungATOTP((Bezeichnung_ATO_TP_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +184,9 @@ public class ATO_Timing_Point_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case ATOPackage.ATO_TIMING_POINT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ATOTP:
 				return bezeichnungATOTP != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ATO_Timing_Point_Bezeichnung_AttributeGroupImpl

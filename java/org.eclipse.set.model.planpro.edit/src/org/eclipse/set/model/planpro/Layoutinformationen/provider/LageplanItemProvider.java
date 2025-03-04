@@ -147,8 +147,10 @@ public class LageplanItemProvider extends Ur_ObjektItemProvider {
 			case LayoutinformationenPackage.LAGEPLAN__LAGEPLAN_ART:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

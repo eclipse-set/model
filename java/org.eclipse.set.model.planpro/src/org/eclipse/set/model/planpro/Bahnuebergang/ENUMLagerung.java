@@ -135,8 +135,8 @@ public enum ENUMLagerung implements Enumerator {
 		switch (value) {
 			case ENUM_LAGERUNG_BEIDSEITIG_VALUE: return ENUM_LAGERUNG_BEIDSEITIG;
 			case ENUM_LAGERUNG_EINSEITIG_VALUE: return ENUM_LAGERUNG_EINSEITIG;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

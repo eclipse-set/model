@@ -136,8 +136,10 @@ public class Verwendung_TypeClassItemProvider extends BasisAttribut_AttributeGro
 			case Balisentechnik_ETCSPackage.VERWENDUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

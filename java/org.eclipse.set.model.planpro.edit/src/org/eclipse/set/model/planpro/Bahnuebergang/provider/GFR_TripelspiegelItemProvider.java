@@ -147,8 +147,10 @@ public class GFR_TripelspiegelItemProvider extends Punkt_ObjektItemProvider {
 			case BahnuebergangPackage.GFR_TRIPELSPIEGEL__IDGFR_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

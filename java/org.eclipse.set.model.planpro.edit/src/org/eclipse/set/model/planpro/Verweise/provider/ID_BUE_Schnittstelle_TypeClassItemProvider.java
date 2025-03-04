@@ -159,8 +159,10 @@ public class ID_BUE_Schnittstelle_TypeClassItemProvider extends Zeiger_TypeClass
 			case VerweisePackage.ID_BUE_SCHNITTSTELLE_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

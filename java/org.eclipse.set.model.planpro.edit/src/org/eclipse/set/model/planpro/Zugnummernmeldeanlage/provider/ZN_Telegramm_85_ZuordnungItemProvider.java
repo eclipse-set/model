@@ -147,8 +147,10 @@ public class ZN_Telegramm_85_ZuordnungItemProvider extends Basis_ObjektItemProvi
 			case ZugnummernmeldeanlagePackage.ZN_TELEGRAMM_85_ZUORDNUNG__TELEGRAMM85_EINZELNE_FSTR:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

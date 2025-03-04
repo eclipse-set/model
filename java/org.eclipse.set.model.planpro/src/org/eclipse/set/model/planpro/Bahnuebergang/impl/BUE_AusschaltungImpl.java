@@ -122,8 +122,9 @@ public class BUE_AusschaltungImpl extends Basis_ObjektImpl implements BUE_Aussch
 		switch (featureID) {
 			case BahnuebergangPackage.BUE_AUSSCHALTUNG__IDBUE_GLEISBEZ_GEFAHRRAUM:
 				return basicSetIDBUEGleisbezGefahrraum(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,8 +137,9 @@ public class BUE_AusschaltungImpl extends Basis_ObjektImpl implements BUE_Aussch
 		switch (featureID) {
 			case BahnuebergangPackage.BUE_AUSSCHALTUNG__IDBUE_GLEISBEZ_GEFAHRRAUM:
 				return getIDBUEGleisbezGefahrraum();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,8 +153,10 @@ public class BUE_AusschaltungImpl extends Basis_ObjektImpl implements BUE_Aussch
 			case BahnuebergangPackage.BUE_AUSSCHALTUNG__IDBUE_GLEISBEZ_GEFAHRRAUM:
 				setIDBUEGleisbezGefahrraum((ID_BUE_Gleisbezogener_Gefahrraum_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -166,8 +170,10 @@ public class BUE_AusschaltungImpl extends Basis_ObjektImpl implements BUE_Aussch
 			case BahnuebergangPackage.BUE_AUSSCHALTUNG__IDBUE_GLEISBEZ_GEFAHRRAUM:
 				setIDBUEGleisbezGefahrraum((ID_BUE_Gleisbezogener_Gefahrraum_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -180,8 +186,9 @@ public class BUE_AusschaltungImpl extends Basis_ObjektImpl implements BUE_Aussch
 		switch (featureID) {
 			case BahnuebergangPackage.BUE_AUSSCHALTUNG__IDBUE_GLEISBEZ_GEFAHRRAUM:
 				return iDBUEGleisbezGefahrraum != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //BUE_AusschaltungImpl

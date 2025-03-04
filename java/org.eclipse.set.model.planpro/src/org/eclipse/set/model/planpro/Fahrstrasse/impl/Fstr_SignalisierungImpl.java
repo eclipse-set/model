@@ -239,8 +239,9 @@ public class Fstr_SignalisierungImpl extends Basis_ObjektImpl implements Fstr_Si
 				return basicSetIDSignalSignalbegriff(null, msgs);
 			case FahrstrassePackage.FSTR_SIGNALISIERUNG__ID_SIGNAL_SIGNALBEGRIFF_ZIEL:
 				return basicSetIDSignalSignalbegriffZiel(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -257,8 +258,9 @@ public class Fstr_SignalisierungImpl extends Basis_ObjektImpl implements Fstr_Si
 				return getIDSignalSignalbegriff();
 			case FahrstrassePackage.FSTR_SIGNALISIERUNG__ID_SIGNAL_SIGNALBEGRIFF_ZIEL:
 				return getIDSignalSignalbegriffZiel();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -278,8 +280,10 @@ public class Fstr_SignalisierungImpl extends Basis_ObjektImpl implements Fstr_Si
 			case FahrstrassePackage.FSTR_SIGNALISIERUNG__ID_SIGNAL_SIGNALBEGRIFF_ZIEL:
 				setIDSignalSignalbegriffZiel((ID_Signal_Signalbegriff_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -299,8 +303,10 @@ public class Fstr_SignalisierungImpl extends Basis_ObjektImpl implements Fstr_Si
 			case FahrstrassePackage.FSTR_SIGNALISIERUNG__ID_SIGNAL_SIGNALBEGRIFF_ZIEL:
 				setIDSignalSignalbegriffZiel((ID_Signal_Signalbegriff_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -317,8 +323,9 @@ public class Fstr_SignalisierungImpl extends Basis_ObjektImpl implements Fstr_Si
 				return iDSignalSignalbegriff != null;
 			case FahrstrassePackage.FSTR_SIGNALISIERUNG__ID_SIGNAL_SIGNALBEGRIFF_ZIEL:
 				return iDSignalSignalbegriffZiel != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Fstr_SignalisierungImpl

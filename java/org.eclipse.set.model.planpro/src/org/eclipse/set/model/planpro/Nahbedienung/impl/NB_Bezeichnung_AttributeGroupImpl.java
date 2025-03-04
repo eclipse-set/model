@@ -179,8 +179,9 @@ public class NB_Bezeichnung_AttributeGroupImpl extends EObjectImpl implements NB
 				return basicSetBezeichnungNB(null, msgs);
 			case NahbedienungPackage.NB_BEZEICHNUNG_ATTRIBUTE_GROUP__KENNZAHL:
 				return basicSetKennzahl(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -195,8 +196,9 @@ public class NB_Bezeichnung_AttributeGroupImpl extends EObjectImpl implements NB
 				return getBezeichnungNB();
 			case NahbedienungPackage.NB_BEZEICHNUNG_ATTRIBUTE_GROUP__KENNZAHL:
 				return getKennzahl();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -213,8 +215,10 @@ public class NB_Bezeichnung_AttributeGroupImpl extends EObjectImpl implements NB
 			case NahbedienungPackage.NB_BEZEICHNUNG_ATTRIBUTE_GROUP__KENNZAHL:
 				setKennzahl((Kennzahl_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -231,8 +235,10 @@ public class NB_Bezeichnung_AttributeGroupImpl extends EObjectImpl implements NB
 			case NahbedienungPackage.NB_BEZEICHNUNG_ATTRIBUTE_GROUP__KENNZAHL:
 				setKennzahl((Kennzahl_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -247,8 +253,9 @@ public class NB_Bezeichnung_AttributeGroupImpl extends EObjectImpl implements NB
 				return bezeichnungNB != null;
 			case NahbedienungPackage.NB_BEZEICHNUNG_ATTRIBUTE_GROUP__KENNZAHL:
 				return kennzahl != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //NB_Bezeichnung_AttributeGroupImpl

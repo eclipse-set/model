@@ -1423,8 +1423,8 @@ public enum ENUMDPTypESG implements Enumerator {
 			case ENUMDP_TYP_ESG_VP_VALUE: return ENUMDP_TYP_ESG_VP;
 			case ENUMDP_TYP_ESG_VS_VALUE: return ENUMDP_TYP_ESG_VS;
 			case ENUMDP_TYP_ESG_VW_VALUE: return ENUMDP_TYP_ESG_VW;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

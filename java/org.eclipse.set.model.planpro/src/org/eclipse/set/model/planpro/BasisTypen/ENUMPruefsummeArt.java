@@ -184,8 +184,8 @@ public enum ENUMPruefsummeArt implements Enumerator {
 			case ENUM_PRUEFSUMME_ART_MD5_VALUE: return ENUM_PRUEFSUMME_ART_MD5;
 			case ENUM_PRUEFSUMME_ART_SHA1_VALUE: return ENUM_PRUEFSUMME_ART_SHA1;
 			case ENUM_PRUEFSUMME_ART_SHA256_VALUE: return ENUM_PRUEFSUMME_ART_SHA256;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

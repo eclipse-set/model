@@ -145,8 +145,10 @@ public class EV_ModulItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.EV_MODUL__EV_MODUL_VIRTUELL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

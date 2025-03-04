@@ -238,8 +238,9 @@ public class Akteur_Allg_AttributeGroupImpl extends EObjectImpl implements Akteu
 				return basicSetNameAkteur10(null, msgs);
 			case PlanProPackage.AKTEUR_ALLG_ATTRIBUTE_GROUP__NAME_AKTEUR5:
 				return basicSetNameAkteur5(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class Akteur_Allg_AttributeGroupImpl extends EObjectImpl implements Akteu
 				return getNameAkteur10();
 			case PlanProPackage.AKTEUR_ALLG_ATTRIBUTE_GROUP__NAME_AKTEUR5:
 				return getNameAkteur5();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class Akteur_Allg_AttributeGroupImpl extends EObjectImpl implements Akteu
 			case PlanProPackage.AKTEUR_ALLG_ATTRIBUTE_GROUP__NAME_AKTEUR5:
 				setNameAkteur5((Name_Akteur_5_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class Akteur_Allg_AttributeGroupImpl extends EObjectImpl implements Akteu
 			case PlanProPackage.AKTEUR_ALLG_ATTRIBUTE_GROUP__NAME_AKTEUR5:
 				setNameAkteur5((Name_Akteur_5_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class Akteur_Allg_AttributeGroupImpl extends EObjectImpl implements Akteu
 				return nameAkteur10 != null;
 			case PlanProPackage.AKTEUR_ALLG_ATTRIBUTE_GROUP__NAME_AKTEUR5:
 				return nameAkteur5 != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Akteur_Allg_AttributeGroupImpl

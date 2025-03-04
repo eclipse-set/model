@@ -238,8 +238,9 @@ public class Schrankenantrieb_Allg_AttributeGroupImpl extends EObjectImpl implem
 				return basicSetHersteller(null, msgs);
 			case BahnuebergangPackage.SCHRANKENANTRIEB_ALLG_ATTRIBUTE_GROUP__SCHALTGRUPPE:
 				return basicSetSchaltgruppe(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class Schrankenantrieb_Allg_AttributeGroupImpl extends EObjectImpl implem
 				return getHersteller();
 			case BahnuebergangPackage.SCHRANKENANTRIEB_ALLG_ATTRIBUTE_GROUP__SCHALTGRUPPE:
 				return getSchaltgruppe();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class Schrankenantrieb_Allg_AttributeGroupImpl extends EObjectImpl implem
 			case BahnuebergangPackage.SCHRANKENANTRIEB_ALLG_ATTRIBUTE_GROUP__SCHALTGRUPPE:
 				setSchaltgruppe((Schaltgruppe_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class Schrankenantrieb_Allg_AttributeGroupImpl extends EObjectImpl implem
 			case BahnuebergangPackage.SCHRANKENANTRIEB_ALLG_ATTRIBUTE_GROUP__SCHALTGRUPPE:
 				setSchaltgruppe((Schaltgruppe_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class Schrankenantrieb_Allg_AttributeGroupImpl extends EObjectImpl implem
 				return hersteller != null;
 			case BahnuebergangPackage.SCHRANKENANTRIEB_ALLG_ATTRIBUTE_GROUP__SCHALTGRUPPE:
 				return schaltgruppe != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Schrankenantrieb_Allg_AttributeGroupImpl

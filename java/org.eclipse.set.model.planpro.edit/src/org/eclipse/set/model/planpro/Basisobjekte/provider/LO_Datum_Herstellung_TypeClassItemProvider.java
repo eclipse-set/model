@@ -139,8 +139,10 @@ public class LO_Datum_Herstellung_TypeClassItemProvider extends BasisAttribut_At
 			case BasisobjektePackage.LO_DATUM_HERSTELLUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

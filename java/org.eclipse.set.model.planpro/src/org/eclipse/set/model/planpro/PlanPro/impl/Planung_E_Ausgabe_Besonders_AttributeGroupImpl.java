@@ -238,8 +238,9 @@ public class Planung_E_Ausgabe_Besonders_AttributeGroupImpl extends EObjectImpl 
 				return basicSetVergleichAusgabestandBasis(null, msgs);
 			case PlanProPackage.PLANUNG_EAUSGABE_BESONDERS_ATTRIBUTE_GROUP__VERGLEICHSTYP_BESONDERS:
 				return basicSetVergleichstypBesonders(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class Planung_E_Ausgabe_Besonders_AttributeGroupImpl extends EObjectImpl 
 				return getVergleichAusgabestandBasis();
 			case PlanProPackage.PLANUNG_EAUSGABE_BESONDERS_ATTRIBUTE_GROUP__VERGLEICHSTYP_BESONDERS:
 				return getVergleichstypBesonders();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class Planung_E_Ausgabe_Besonders_AttributeGroupImpl extends EObjectImpl 
 			case PlanProPackage.PLANUNG_EAUSGABE_BESONDERS_ATTRIBUTE_GROUP__VERGLEICHSTYP_BESONDERS:
 				setVergleichstypBesonders((Vergleichstyp_Besonders_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class Planung_E_Ausgabe_Besonders_AttributeGroupImpl extends EObjectImpl 
 			case PlanProPackage.PLANUNG_EAUSGABE_BESONDERS_ATTRIBUTE_GROUP__VERGLEICHSTYP_BESONDERS:
 				setVergleichstypBesonders((Vergleichstyp_Besonders_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class Planung_E_Ausgabe_Besonders_AttributeGroupImpl extends EObjectImpl 
 				return vergleichAusgabestandBasis != null;
 			case PlanProPackage.PLANUNG_EAUSGABE_BESONDERS_ATTRIBUTE_GROUP__VERGLEICHSTYP_BESONDERS:
 				return vergleichstypBesonders != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Planung_E_Ausgabe_Besonders_AttributeGroupImpl

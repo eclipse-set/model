@@ -147,8 +147,10 @@ public class UeberhoehungslinieItemProvider extends Basis_ObjektItemProvider {
 			case GeodatenPackage.UEBERHOEHUNGSLINIE__UEBERHOEHUNGSLINIE_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

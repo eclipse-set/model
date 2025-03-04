@@ -155,8 +155,10 @@ public class VerkehrszeichenItemProvider extends Basis_ObjektItemProvider {
 			case BahnuebergangPackage.VERKEHRSZEICHEN__VZ_SPERRSTRECKE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

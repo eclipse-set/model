@@ -141,8 +141,10 @@ public class Bahnsteig_AnlageItemProvider extends Basis_ObjektItemProvider {
 			case BahnsteigPackage.BAHNSTEIG_ANLAGE__BEZEICHNUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

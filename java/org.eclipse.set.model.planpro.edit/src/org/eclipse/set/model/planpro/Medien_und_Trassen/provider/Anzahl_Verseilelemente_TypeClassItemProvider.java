@@ -139,8 +139,10 @@ public class Anzahl_Verseilelemente_TypeClassItemProvider extends BasisAttribut_
 			case Medien_und_TrassenPackage.ANZAHL_VERSEILELEMENTE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

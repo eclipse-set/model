@@ -154,8 +154,10 @@ public class Bedien_Oertlichkeit_Kennzahlen_AttributeGroupItemProvider
 			case BedienungPackage.BEDIEN_OERTLICHKEIT_KENNZAHLEN_ATTRIBUTE_GROUP__KENNZAHL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

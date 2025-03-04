@@ -536,8 +536,9 @@ public class W_Kr_Gsp_ElementImpl extends Basis_ObjektImpl implements W_Kr_Gsp_E
 				return basicSetGleissperreElement(null, msgs);
 			case Weichen_und_GleissperrenPackage.WKR_GSP_ELEMENT__WEICHE_ELEMENT:
 				return basicSetWeicheElement(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -564,8 +565,9 @@ public class W_Kr_Gsp_ElementImpl extends Basis_ObjektImpl implements W_Kr_Gsp_E
 				return getGleissperreElement();
 			case Weichen_und_GleissperrenPackage.WKR_GSP_ELEMENT__WEICHE_ELEMENT:
 				return getWeicheElement();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -600,8 +602,10 @@ public class W_Kr_Gsp_ElementImpl extends Basis_ObjektImpl implements W_Kr_Gsp_E
 			case Weichen_und_GleissperrenPackage.WKR_GSP_ELEMENT__WEICHE_ELEMENT:
 				setWeicheElement((Weiche_Element_AttributeGroup)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -636,8 +640,10 @@ public class W_Kr_Gsp_ElementImpl extends Basis_ObjektImpl implements W_Kr_Gsp_E
 			case Weichen_und_GleissperrenPackage.WKR_GSP_ELEMENT__WEICHE_ELEMENT:
 				setWeicheElement((Weiche_Element_AttributeGroup)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -664,8 +670,9 @@ public class W_Kr_Gsp_ElementImpl extends Basis_ObjektImpl implements W_Kr_Gsp_E
 				return gleissperreElement != null;
 			case Weichen_und_GleissperrenPackage.WKR_GSP_ELEMENT__WEICHE_ELEMENT:
 				return weicheElement != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //W_Kr_Gsp_ElementImpl

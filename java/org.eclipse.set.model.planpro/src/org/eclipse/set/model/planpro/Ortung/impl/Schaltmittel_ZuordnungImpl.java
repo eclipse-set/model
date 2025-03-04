@@ -240,8 +240,9 @@ public class Schaltmittel_ZuordnungImpl extends Basis_ObjektImpl implements Scha
 				return basicSetIDSchalter(null, msgs);
 			case OrtungPackage.SCHALTMITTEL_ZUORDNUNG__SCHALTMITTEL_FUNKTION:
 				return basicSetSchaltmittelFunktion(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,8 +259,9 @@ public class Schaltmittel_ZuordnungImpl extends Basis_ObjektImpl implements Scha
 				return getIDSchalter();
 			case OrtungPackage.SCHALTMITTEL_ZUORDNUNG__SCHALTMITTEL_FUNKTION:
 				return getSchaltmittelFunktion();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -279,8 +281,10 @@ public class Schaltmittel_ZuordnungImpl extends Basis_ObjektImpl implements Scha
 			case OrtungPackage.SCHALTMITTEL_ZUORDNUNG__SCHALTMITTEL_FUNKTION:
 				setSchaltmittelFunktion((Schaltmittel_Funktion_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -300,8 +304,10 @@ public class Schaltmittel_ZuordnungImpl extends Basis_ObjektImpl implements Scha
 			case OrtungPackage.SCHALTMITTEL_ZUORDNUNG__SCHALTMITTEL_FUNKTION:
 				setSchaltmittelFunktion((Schaltmittel_Funktion_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -318,8 +324,9 @@ public class Schaltmittel_ZuordnungImpl extends Basis_ObjektImpl implements Scha
 				return iDSchalter != null;
 			case OrtungPackage.SCHALTMITTEL_ZUORDNUNG__SCHALTMITTEL_FUNKTION:
 				return schaltmittelFunktion != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Schaltmittel_ZuordnungImpl

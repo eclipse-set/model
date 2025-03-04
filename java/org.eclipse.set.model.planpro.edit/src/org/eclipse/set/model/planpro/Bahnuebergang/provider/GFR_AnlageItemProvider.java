@@ -145,8 +145,10 @@ public class GFR_AnlageItemProvider extends Basis_ObjektItemProvider {
 			case BahnuebergangPackage.GFR_ANLAGE__IDBUE_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

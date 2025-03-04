@@ -238,8 +238,9 @@ public class Oertlichkeit_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return basicSetOertlichkeitGueltigAb(null, msgs);
 			case GeodatenPackage.OERTLICHKEIT_ALLG_ATTRIBUTE_GROUP__OERTLICHKEIT_GUELTIG_BIS:
 				return basicSetOertlichkeitGueltigBis(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class Oertlichkeit_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return getOertlichkeitGueltigAb();
 			case GeodatenPackage.OERTLICHKEIT_ALLG_ATTRIBUTE_GROUP__OERTLICHKEIT_GUELTIG_BIS:
 				return getOertlichkeitGueltigBis();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class Oertlichkeit_Allg_AttributeGroupImpl extends EObjectImpl implements
 			case GeodatenPackage.OERTLICHKEIT_ALLG_ATTRIBUTE_GROUP__OERTLICHKEIT_GUELTIG_BIS:
 				setOertlichkeitGueltigBis((Oertlichkeit_Gueltig_Bis_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class Oertlichkeit_Allg_AttributeGroupImpl extends EObjectImpl implements
 			case GeodatenPackage.OERTLICHKEIT_ALLG_ATTRIBUTE_GROUP__OERTLICHKEIT_GUELTIG_BIS:
 				setOertlichkeitGueltigBis((Oertlichkeit_Gueltig_Bis_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class Oertlichkeit_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return oertlichkeitGueltigAb != null;
 			case GeodatenPackage.OERTLICHKEIT_ALLG_ATTRIBUTE_GROUP__OERTLICHKEIT_GUELTIG_BIS:
 				return oertlichkeitGueltigBis != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Oertlichkeit_Allg_AttributeGroupImpl

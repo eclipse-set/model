@@ -135,8 +135,8 @@ public enum ENUMEinzeldateiArt implements Enumerator {
 		switch (value) {
 			case ENUM_EINZELDATEI_ART_HILFSDATEI_VALUE: return ENUM_EINZELDATEI_ART_HILFSDATEI;
 			case ENUM_EINZELDATEI_ART_LADEDATEI_VALUE: return ENUM_EINZELDATEI_ART_LADEDATEI;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

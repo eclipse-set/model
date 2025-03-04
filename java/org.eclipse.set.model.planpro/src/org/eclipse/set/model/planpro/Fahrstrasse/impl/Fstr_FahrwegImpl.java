@@ -299,8 +299,9 @@ public class Fstr_FahrwegImpl extends Bereich_ObjektImpl implements Fstr_Fahrweg
 				return basicSetIDZiel(null, msgs);
 			case FahrstrassePackage.FSTR_FAHRWEG__START_SIGNAL_CHARAKTER:
 				return basicSetStartSignalCharakter(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -319,8 +320,9 @@ public class Fstr_FahrwegImpl extends Bereich_ObjektImpl implements Fstr_Fahrweg
 				return getIDZiel();
 			case FahrstrassePackage.FSTR_FAHRWEG__START_SIGNAL_CHARAKTER:
 				return getStartSignalCharakter();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -343,8 +345,10 @@ public class Fstr_FahrwegImpl extends Bereich_ObjektImpl implements Fstr_Fahrweg
 			case FahrstrassePackage.FSTR_FAHRWEG__START_SIGNAL_CHARAKTER:
 				setStartSignalCharakter((Start_Signal_Charakter_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -367,8 +371,10 @@ public class Fstr_FahrwegImpl extends Bereich_ObjektImpl implements Fstr_Fahrweg
 			case FahrstrassePackage.FSTR_FAHRWEG__START_SIGNAL_CHARAKTER:
 				setStartSignalCharakter((Start_Signal_Charakter_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -387,8 +393,9 @@ public class Fstr_FahrwegImpl extends Bereich_ObjektImpl implements Fstr_Fahrweg
 				return iDZiel != null;
 			case FahrstrassePackage.FSTR_FAHRWEG__START_SIGNAL_CHARAKTER:
 				return startSignalCharakter != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Fstr_FahrwegImpl

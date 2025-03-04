@@ -141,8 +141,10 @@ public class Planung_ProjektItemProvider extends Ur_ObjektItemProvider {
 			case PlanProPackage.PLANUNG_PROJEKT__PLANUNG_PALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

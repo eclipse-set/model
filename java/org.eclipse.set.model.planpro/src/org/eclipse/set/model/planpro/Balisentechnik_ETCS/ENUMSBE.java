@@ -135,8 +135,8 @@ public enum ENUMSBE implements Enumerator {
 		switch (value) {
 			case ENUMSBE_1_VALUE: return ENUMSBE_1;
 			case ENUMSBE_2_VALUE: return ENUMSBE_2;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

@@ -238,8 +238,9 @@ public class FMA_Element_Allg_AttributeGroupImpl extends EObjectImpl implements 
 				return basicSetFMAElementSeilanzahl(null, msgs);
 			case OrtungPackage.FMA_ELEMENT_ALLG_ATTRIBUTE_GROUP__FMA_ELEMENT_SEILTYP:
 				return basicSetFMAElementSeiltyp(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class FMA_Element_Allg_AttributeGroupImpl extends EObjectImpl implements 
 				return getFMAElementSeilanzahl();
 			case OrtungPackage.FMA_ELEMENT_ALLG_ATTRIBUTE_GROUP__FMA_ELEMENT_SEILTYP:
 				return getFMAElementSeiltyp();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class FMA_Element_Allg_AttributeGroupImpl extends EObjectImpl implements 
 			case OrtungPackage.FMA_ELEMENT_ALLG_ATTRIBUTE_GROUP__FMA_ELEMENT_SEILTYP:
 				setFMAElementSeiltyp((FMA_Element_Seiltyp_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class FMA_Element_Allg_AttributeGroupImpl extends EObjectImpl implements 
 			case OrtungPackage.FMA_ELEMENT_ALLG_ATTRIBUTE_GROUP__FMA_ELEMENT_SEILTYP:
 				setFMAElementSeiltyp((FMA_Element_Seiltyp_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class FMA_Element_Allg_AttributeGroupImpl extends EObjectImpl implements 
 				return fMAElementSeilanzahl != null;
 			case OrtungPackage.FMA_ELEMENT_ALLG_ATTRIBUTE_GROUP__FMA_ELEMENT_SEILTYP:
 				return fMAElementSeiltyp != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //FMA_Element_Allg_AttributeGroupImpl

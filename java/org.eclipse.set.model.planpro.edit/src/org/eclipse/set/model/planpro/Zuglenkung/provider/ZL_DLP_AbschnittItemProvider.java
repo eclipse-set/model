@@ -144,8 +144,10 @@ public class ZL_DLP_AbschnittItemProvider extends Basis_ObjektItemProvider {
 			case ZuglenkungPackage.ZL_DLP_ABSCHNITT__IDZLDLP_FSTR:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

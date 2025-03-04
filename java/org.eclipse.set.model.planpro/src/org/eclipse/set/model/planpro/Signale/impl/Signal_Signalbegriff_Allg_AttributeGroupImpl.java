@@ -297,8 +297,9 @@ public class Signal_Signalbegriff_Allg_AttributeGroupImpl extends EObjectImpl im
 				return basicSetGeschaltet(null, msgs);
 			case SignalePackage.SIGNAL_SIGNALBEGRIFF_ALLG_ATTRIBUTE_GROUP__ZS2_UEBERWACHT:
 				return basicSetZs2Ueberwacht(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -317,8 +318,9 @@ public class Signal_Signalbegriff_Allg_AttributeGroupImpl extends EObjectImpl im
 				return getGeschaltet();
 			case SignalePackage.SIGNAL_SIGNALBEGRIFF_ALLG_ATTRIBUTE_GROUP__ZS2_UEBERWACHT:
 				return getZs2Ueberwacht();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -341,8 +343,10 @@ public class Signal_Signalbegriff_Allg_AttributeGroupImpl extends EObjectImpl im
 			case SignalePackage.SIGNAL_SIGNALBEGRIFF_ALLG_ATTRIBUTE_GROUP__ZS2_UEBERWACHT:
 				setZs2Ueberwacht((Zs2_Ueberwacht_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -365,8 +369,10 @@ public class Signal_Signalbegriff_Allg_AttributeGroupImpl extends EObjectImpl im
 			case SignalePackage.SIGNAL_SIGNALBEGRIFF_ALLG_ATTRIBUTE_GROUP__ZS2_UEBERWACHT:
 				setZs2Ueberwacht((Zs2_Ueberwacht_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -385,8 +391,9 @@ public class Signal_Signalbegriff_Allg_AttributeGroupImpl extends EObjectImpl im
 				return geschaltet != null;
 			case SignalePackage.SIGNAL_SIGNALBEGRIFF_ALLG_ATTRIBUTE_GROUP__ZS2_UEBERWACHT:
 				return zs2Ueberwacht != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Signal_Signalbegriff_Allg_AttributeGroupImpl

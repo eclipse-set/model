@@ -415,8 +415,9 @@ public class EV_Modul_Ausgang_AttributeGroupImpl extends EObjectImpl implements 
 				return basicSetSpannungToleranzObere(null, msgs);
 			case Balisentechnik_ETCSPackage.EV_MODUL_AUSGANG_ATTRIBUTE_GROUP__SPANNUNG_TOLERANZ_UNTERE:
 				return basicSetSpannungToleranzUntere(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -439,8 +440,9 @@ public class EV_Modul_Ausgang_AttributeGroupImpl extends EObjectImpl implements 
 				return getSpannungToleranzObere();
 			case Balisentechnik_ETCSPackage.EV_MODUL_AUSGANG_ATTRIBUTE_GROUP__SPANNUNG_TOLERANZ_UNTERE:
 				return getSpannungToleranzUntere();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -469,8 +471,10 @@ public class EV_Modul_Ausgang_AttributeGroupImpl extends EObjectImpl implements 
 			case Balisentechnik_ETCSPackage.EV_MODUL_AUSGANG_ATTRIBUTE_GROUP__SPANNUNG_TOLERANZ_UNTERE:
 				setSpannungToleranzUntere((Spannung_Toleranz_Untere_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -499,8 +503,10 @@ public class EV_Modul_Ausgang_AttributeGroupImpl extends EObjectImpl implements 
 			case Balisentechnik_ETCSPackage.EV_MODUL_AUSGANG_ATTRIBUTE_GROUP__SPANNUNG_TOLERANZ_UNTERE:
 				setSpannungToleranzUntere((Spannung_Toleranz_Untere_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -523,8 +529,9 @@ public class EV_Modul_Ausgang_AttributeGroupImpl extends EObjectImpl implements 
 				return spannungToleranzObere != null;
 			case Balisentechnik_ETCSPackage.EV_MODUL_AUSGANG_ATTRIBUTE_GROUP__SPANNUNG_TOLERANZ_UNTERE:
 				return spannungToleranzUntere != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //EV_Modul_Ausgang_AttributeGroupImpl

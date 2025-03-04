@@ -238,8 +238,9 @@ public class ZL_Fstr_Anstoss_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return basicSetVmaxAnnaeherung(null, msgs);
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS_ALLG_ATTRIBUTE_GROUP__ZL_FSTR_ZUSCHLAG:
 				return basicSetZLFstrZuschlag(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +257,9 @@ public class ZL_Fstr_Anstoss_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return getVmaxAnnaeherung();
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS_ALLG_ATTRIBUTE_GROUP__ZL_FSTR_ZUSCHLAG:
 				return getZLFstrZuschlag();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +279,10 @@ public class ZL_Fstr_Anstoss_Allg_AttributeGroupImpl extends EObjectImpl impleme
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS_ALLG_ATTRIBUTE_GROUP__ZL_FSTR_ZUSCHLAG:
 				setZLFstrZuschlag((ZL_Fstr_Zuschlag_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +302,10 @@ public class ZL_Fstr_Anstoss_Allg_AttributeGroupImpl extends EObjectImpl impleme
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS_ALLG_ATTRIBUTE_GROUP__ZL_FSTR_ZUSCHLAG:
 				setZLFstrZuschlag((ZL_Fstr_Zuschlag_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +322,9 @@ public class ZL_Fstr_Anstoss_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return vmaxAnnaeherung != null;
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS_ALLG_ATTRIBUTE_GROUP__ZL_FSTR_ZUSCHLAG:
 				return zLFstrZuschlag != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZL_Fstr_Anstoss_Allg_AttributeGroupImpl

@@ -141,8 +141,10 @@ public class Fstr_AneinanderItemProvider extends Basis_ObjektItemProvider {
 			case FahrstrassePackage.FSTR_ANEINANDER__FSTR_ANEINANDER_BEDIENSTRING:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

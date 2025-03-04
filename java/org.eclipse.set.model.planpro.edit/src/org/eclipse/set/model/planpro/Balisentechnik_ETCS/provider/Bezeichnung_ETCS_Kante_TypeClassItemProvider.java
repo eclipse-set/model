@@ -136,8 +136,10 @@ public class Bezeichnung_ETCS_Kante_TypeClassItemProvider extends BasisAttribut_
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_ETCS_KANTE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

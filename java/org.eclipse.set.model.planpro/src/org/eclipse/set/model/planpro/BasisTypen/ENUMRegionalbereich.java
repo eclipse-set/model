@@ -250,8 +250,8 @@ public enum ENUMRegionalbereich implements Enumerator {
 			case ENUM_REGIONALBEREICH_SÜDOST_VALUE: return ENUM_REGIONALBEREICH_SÜDOST;
 			case ENUM_REGIONALBEREICH_SÜDWEST_VALUE: return ENUM_REGIONALBEREICH_SÜDWEST;
 			case ENUM_REGIONALBEREICH_WEST_VALUE: return ENUM_REGIONALBEREICH_WEST;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

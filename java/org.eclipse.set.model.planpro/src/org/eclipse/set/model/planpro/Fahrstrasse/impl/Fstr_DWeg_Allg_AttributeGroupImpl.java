@@ -179,8 +179,9 @@ public class Fstr_DWeg_Allg_AttributeGroupImpl extends EObjectImpl implements Fs
 				return basicSetLaengeSoll(null, msgs);
 			case FahrstrassePackage.FSTR_DWEG_ALLG_ATTRIBUTE_GROUP__MASSGEBENDE_NEIGUNG:
 				return basicSetMassgebendeNeigung(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -195,8 +196,9 @@ public class Fstr_DWeg_Allg_AttributeGroupImpl extends EObjectImpl implements Fs
 				return getLaengeSoll();
 			case FahrstrassePackage.FSTR_DWEG_ALLG_ATTRIBUTE_GROUP__MASSGEBENDE_NEIGUNG:
 				return getMassgebendeNeigung();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -213,8 +215,10 @@ public class Fstr_DWeg_Allg_AttributeGroupImpl extends EObjectImpl implements Fs
 			case FahrstrassePackage.FSTR_DWEG_ALLG_ATTRIBUTE_GROUP__MASSGEBENDE_NEIGUNG:
 				setMassgebendeNeigung((Massgebende_Neigung_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -231,8 +235,10 @@ public class Fstr_DWeg_Allg_AttributeGroupImpl extends EObjectImpl implements Fs
 			case FahrstrassePackage.FSTR_DWEG_ALLG_ATTRIBUTE_GROUP__MASSGEBENDE_NEIGUNG:
 				setMassgebendeNeigung((Massgebende_Neigung_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -247,8 +253,9 @@ public class Fstr_DWeg_Allg_AttributeGroupImpl extends EObjectImpl implements Fs
 				return laengeSoll != null;
 			case FahrstrassePackage.FSTR_DWEG_ALLG_ATTRIBUTE_GROUP__MASSGEBENDE_NEIGUNG:
 				return massgebendeNeigung != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Fstr_DWeg_Allg_AttributeGroupImpl

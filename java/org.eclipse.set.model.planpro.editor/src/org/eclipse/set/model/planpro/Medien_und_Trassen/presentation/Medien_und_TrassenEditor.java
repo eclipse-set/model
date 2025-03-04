@@ -493,6 +493,8 @@ public class Medien_und_TrassenEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

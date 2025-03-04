@@ -159,8 +159,10 @@ public class ID_Regelzeichnung_TypeClassItemProvider extends Zeiger_TypeClassIte
 			case VerweisePackage.ID_REGELZEICHNUNG_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

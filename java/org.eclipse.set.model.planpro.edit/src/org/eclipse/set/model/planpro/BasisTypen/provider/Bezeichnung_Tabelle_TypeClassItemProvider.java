@@ -130,8 +130,10 @@ public class Bezeichnung_Tabelle_TypeClassItemProvider extends BasisAttribut_Att
 			case BasisTypenPackage.BEZEICHNUNG_TABELLE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -156,8 +156,10 @@ public class RBC_Allg_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.RBC_ALLG_ATTRIBUTE_GROUP__RUFNUMMER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

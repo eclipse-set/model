@@ -139,8 +139,10 @@ public class Herzstueck_Antriebe_TypeClassItemProvider extends BasisAttribut_Att
 			case Weichen_und_GleissperrenPackage.HERZSTUECK_ANTRIEBE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

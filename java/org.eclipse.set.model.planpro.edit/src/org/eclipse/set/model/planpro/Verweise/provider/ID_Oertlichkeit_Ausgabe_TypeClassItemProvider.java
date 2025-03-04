@@ -159,8 +159,10 @@ public class ID_Oertlichkeit_Ausgabe_TypeClassItemProvider extends Zeiger_TypeCl
 			case VerweisePackage.ID_OERTLICHKEIT_AUSGABE_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

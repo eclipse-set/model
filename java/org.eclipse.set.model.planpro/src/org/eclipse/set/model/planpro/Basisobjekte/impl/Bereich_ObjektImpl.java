@@ -91,8 +91,9 @@ public abstract class Bereich_ObjektImpl extends Basis_ObjektImpl implements Ber
 		switch (featureID) {
 			case BasisobjektePackage.BEREICH_OBJEKT__BEREICH_OBJEKT_TEILBEREICH:
 				return ((InternalEList<?>)getBereichObjektTeilbereich()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -105,8 +106,9 @@ public abstract class Bereich_ObjektImpl extends Basis_ObjektImpl implements Ber
 		switch (featureID) {
 			case BasisobjektePackage.BEREICH_OBJEKT__BEREICH_OBJEKT_TEILBEREICH:
 				return getBereichObjektTeilbereich();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -122,8 +124,10 @@ public abstract class Bereich_ObjektImpl extends Basis_ObjektImpl implements Ber
 				getBereichObjektTeilbereich().clear();
 				getBereichObjektTeilbereich().addAll((Collection<? extends Bereich_Objekt_Teilbereich_AttributeGroup>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -137,8 +141,10 @@ public abstract class Bereich_ObjektImpl extends Basis_ObjektImpl implements Ber
 			case BasisobjektePackage.BEREICH_OBJEKT__BEREICH_OBJEKT_TEILBEREICH:
 				getBereichObjektTeilbereich().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -151,8 +157,9 @@ public abstract class Bereich_ObjektImpl extends Basis_ObjektImpl implements Ber
 		switch (featureID) {
 			case BasisobjektePackage.BEREICH_OBJEKT__BEREICH_OBJEKT_TEILBEREICH:
 				return bereichObjektTeilbereich != null && !bereichObjektTeilbereich.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bereich_ObjektImpl

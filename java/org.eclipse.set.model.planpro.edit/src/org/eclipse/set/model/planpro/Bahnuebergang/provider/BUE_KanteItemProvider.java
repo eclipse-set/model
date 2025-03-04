@@ -142,8 +142,10 @@ public class BUE_KanteItemProvider extends Punkt_ObjektItemProvider {
 			case BahnuebergangPackage.BUE_KANTE__IDBUE_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

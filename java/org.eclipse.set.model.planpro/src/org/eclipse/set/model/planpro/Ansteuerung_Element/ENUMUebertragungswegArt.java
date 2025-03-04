@@ -204,8 +204,8 @@ public enum ENUMUebertragungswegArt implements Enumerator {
 			case ENUM_UEBERTRAGUNGSWEG_ART_ESTW_VALUE: return ENUM_UEBERTRAGUNGSWEG_ART_ESTW;
 			case ENUM_UEBERTRAGUNGSWEG_ART_SONSTIGE_VALUE: return ENUM_UEBERTRAGUNGSWEG_ART_SONSTIGE;
 			case ENUM_UEBERTRAGUNGSWEG_ART_ZBS_VALUE: return ENUM_UEBERTRAGUNGSWEG_ART_ZBS;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

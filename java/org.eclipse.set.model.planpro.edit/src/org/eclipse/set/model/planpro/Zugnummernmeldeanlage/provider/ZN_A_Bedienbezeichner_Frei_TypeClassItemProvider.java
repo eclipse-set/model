@@ -136,8 +136,10 @@ public class ZN_A_Bedienbezeichner_Frei_TypeClassItemProvider extends BasisAttri
 			case ZugnummernmeldeanlagePackage.ZN_ABEDIENBEZEICHNER_FREI_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

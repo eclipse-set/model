@@ -356,8 +356,9 @@ public class FT_ETCS_L2_Merkmale_AttributeGroupImpl extends EObjectImpl implemen
 				return basicSetVBCSetzen(null, msgs);
 			case Balisentechnik_ETCSPackage.FT_ETCS_L2_MERKMALE_ATTRIBUTE_GROUP__VBC_TIMER:
 				return basicSetVBCTimer(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -378,8 +379,9 @@ public class FT_ETCS_L2_Merkmale_AttributeGroupImpl extends EObjectImpl implemen
 				return getVBCSetzen();
 			case Balisentechnik_ETCSPackage.FT_ETCS_L2_MERKMALE_ATTRIBUTE_GROUP__VBC_TIMER:
 				return getVBCTimer();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -405,8 +407,10 @@ public class FT_ETCS_L2_Merkmale_AttributeGroupImpl extends EObjectImpl implemen
 			case Balisentechnik_ETCSPackage.FT_ETCS_L2_MERKMALE_ATTRIBUTE_GROUP__VBC_TIMER:
 				setVBCTimer((VBC_Timer_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -432,8 +436,10 @@ public class FT_ETCS_L2_Merkmale_AttributeGroupImpl extends EObjectImpl implemen
 			case Balisentechnik_ETCSPackage.FT_ETCS_L2_MERKMALE_ATTRIBUTE_GROUP__VBC_TIMER:
 				setVBCTimer((VBC_Timer_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -454,8 +460,9 @@ public class FT_ETCS_L2_Merkmale_AttributeGroupImpl extends EObjectImpl implemen
 				return vBCSetzen != null;
 			case Balisentechnik_ETCSPackage.FT_ETCS_L2_MERKMALE_ATTRIBUTE_GROUP__VBC_TIMER:
 				return vBCTimer != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //FT_ETCS_L2_Merkmale_AttributeGroupImpl

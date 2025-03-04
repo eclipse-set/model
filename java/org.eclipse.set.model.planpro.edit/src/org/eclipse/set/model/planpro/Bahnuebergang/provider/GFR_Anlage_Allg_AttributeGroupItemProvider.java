@@ -158,8 +158,10 @@ public class GFR_Anlage_Allg_AttributeGroupItemProvider
 			case BahnuebergangPackage.GFR_ANLAGE_ALLG_ATTRIBUTE_GROUP__HERSTELLER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

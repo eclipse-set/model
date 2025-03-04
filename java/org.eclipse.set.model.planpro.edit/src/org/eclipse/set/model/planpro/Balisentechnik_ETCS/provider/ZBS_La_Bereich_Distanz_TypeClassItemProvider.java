@@ -139,8 +139,10 @@ public class ZBS_La_Bereich_Distanz_TypeClassItemProvider extends BasisAttribut_
 			case Balisentechnik_ETCSPackage.ZBS_LA_BEREICH_DISTANZ_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

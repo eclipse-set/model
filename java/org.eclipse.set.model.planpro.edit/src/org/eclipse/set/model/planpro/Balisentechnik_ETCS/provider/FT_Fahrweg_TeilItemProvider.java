@@ -155,8 +155,10 @@ public class FT_Fahrweg_TeilItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.FT_FAHRWEG_TEIL__START_WELEMENT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -1003,8 +1003,9 @@ public abstract class Signalbegriff_ID_TypeClassImpl extends EObjectImpl impleme
 				return isSchaltbar();
 			case Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH:
 				return isZusatzMoeglich();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -1060,8 +1061,10 @@ public abstract class Signalbegriff_ID_TypeClassImpl extends EObjectImpl impleme
 			case Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH:
 				setZusatzMoeglich((Boolean)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -1117,8 +1120,10 @@ public abstract class Signalbegriff_ID_TypeClassImpl extends EObjectImpl impleme
 			case Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH:
 				unsetZusatzMoeglich();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -1159,8 +1164,9 @@ public abstract class Signalbegriff_ID_TypeClassImpl extends EObjectImpl impleme
 				return isSetSchaltbar();
 			case Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH:
 				return isSetZusatzMoeglich();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 	/**

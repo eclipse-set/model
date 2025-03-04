@@ -179,8 +179,9 @@ public class NB_Zone_Allg_AttributeGroupImpl extends EObjectImpl implements NB_Z
 				return basicSetNBVerhaeltnisBesonders(null, msgs);
 			case NahbedienungPackage.NB_ZONE_ALLG_ATTRIBUTE_GROUP__RANG:
 				return basicSetRang(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -195,8 +196,9 @@ public class NB_Zone_Allg_AttributeGroupImpl extends EObjectImpl implements NB_Z
 				return getNBVerhaeltnisBesonders();
 			case NahbedienungPackage.NB_ZONE_ALLG_ATTRIBUTE_GROUP__RANG:
 				return getRang();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -213,8 +215,10 @@ public class NB_Zone_Allg_AttributeGroupImpl extends EObjectImpl implements NB_Z
 			case NahbedienungPackage.NB_ZONE_ALLG_ATTRIBUTE_GROUP__RANG:
 				setRang((Rang_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -231,8 +235,10 @@ public class NB_Zone_Allg_AttributeGroupImpl extends EObjectImpl implements NB_Z
 			case NahbedienungPackage.NB_ZONE_ALLG_ATTRIBUTE_GROUP__RANG:
 				setRang((Rang_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -247,8 +253,9 @@ public class NB_Zone_Allg_AttributeGroupImpl extends EObjectImpl implements NB_Z
 				return nBVerhaeltnisBesonders != null;
 			case NahbedienungPackage.NB_ZONE_ALLG_ATTRIBUTE_GROUP__RANG:
 				return rang != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //NB_Zone_Allg_AttributeGroupImpl

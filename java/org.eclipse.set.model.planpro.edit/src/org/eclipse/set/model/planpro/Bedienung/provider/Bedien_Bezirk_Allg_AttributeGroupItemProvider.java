@@ -162,8 +162,10 @@ public class Bedien_Bezirk_Allg_AttributeGroupItemProvider
 			case BedienungPackage.BEDIEN_BEZIRK_ALLG_ATTRIBUTE_GROUP__STEUERBEZIRKSNUMMER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

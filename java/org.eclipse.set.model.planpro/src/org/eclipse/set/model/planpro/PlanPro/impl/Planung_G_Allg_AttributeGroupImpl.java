@@ -391,8 +391,9 @@ public class Planung_G_Allg_AttributeGroupImpl extends EObjectImpl implements Pl
 				return basicSetUntergewerkArt(null, msgs);
 			case PlanProPackage.PLANUNG_GALLG_ATTRIBUTE_GROUP__VERANTWORTLICHE_STELLE_DB:
 				return basicSetVerantwortlicheStelleDB(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -415,8 +416,9 @@ public class Planung_G_Allg_AttributeGroupImpl extends EObjectImpl implements Pl
 				return getUntergewerkArt();
 			case PlanProPackage.PLANUNG_GALLG_ATTRIBUTE_GROUP__VERANTWORTLICHE_STELLE_DB:
 				return getVerantwortlicheStelleDB();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -447,8 +449,10 @@ public class Planung_G_Allg_AttributeGroupImpl extends EObjectImpl implements Pl
 			case PlanProPackage.PLANUNG_GALLG_ATTRIBUTE_GROUP__VERANTWORTLICHE_STELLE_DB:
 				setVerantwortlicheStelleDB((Verantwortliche_Stelle_DB_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -477,8 +481,10 @@ public class Planung_G_Allg_AttributeGroupImpl extends EObjectImpl implements Pl
 			case PlanProPackage.PLANUNG_GALLG_ATTRIBUTE_GROUP__VERANTWORTLICHE_STELLE_DB:
 				setVerantwortlicheStelleDB((Verantwortliche_Stelle_DB_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -501,8 +507,9 @@ public class Planung_G_Allg_AttributeGroupImpl extends EObjectImpl implements Pl
 				return untergewerkArt != null;
 			case PlanProPackage.PLANUNG_GALLG_ATTRIBUTE_GROUP__VERANTWORTLICHE_STELLE_DB:
 				return verantwortlicheStelleDB != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Planung_G_Allg_AttributeGroupImpl

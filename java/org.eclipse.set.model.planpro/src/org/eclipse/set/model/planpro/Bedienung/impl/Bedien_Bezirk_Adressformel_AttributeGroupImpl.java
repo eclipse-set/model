@@ -474,8 +474,9 @@ public class Bedien_Bezirk_Adressformel_AttributeGroupImpl extends EObjectImpl i
 				return basicSetYWert(null, msgs);
 			case BedienungPackage.BEDIEN_BEZIRK_ADRESSFORMEL_ATTRIBUTE_GROUP__YY_WERT:
 				return basicSetYYWert(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -500,8 +501,9 @@ public class Bedien_Bezirk_Adressformel_AttributeGroupImpl extends EObjectImpl i
 				return getYWert();
 			case BedienungPackage.BEDIEN_BEZIRK_ADRESSFORMEL_ATTRIBUTE_GROUP__YY_WERT:
 				return getYYWert();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -533,8 +535,10 @@ public class Bedien_Bezirk_Adressformel_AttributeGroupImpl extends EObjectImpl i
 			case BedienungPackage.BEDIEN_BEZIRK_ADRESSFORMEL_ATTRIBUTE_GROUP__YY_WERT:
 				setYYWert((YY_Wert_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -566,8 +570,10 @@ public class Bedien_Bezirk_Adressformel_AttributeGroupImpl extends EObjectImpl i
 			case BedienungPackage.BEDIEN_BEZIRK_ADRESSFORMEL_ATTRIBUTE_GROUP__YY_WERT:
 				setYYWert((YY_Wert_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -592,8 +598,9 @@ public class Bedien_Bezirk_Adressformel_AttributeGroupImpl extends EObjectImpl i
 				return yWert != null;
 			case BedienungPackage.BEDIEN_BEZIRK_ADRESSFORMEL_ATTRIBUTE_GROUP__YY_WERT:
 				return yYWert != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Bezirk_Adressformel_AttributeGroupImpl

@@ -147,8 +147,10 @@ public class HoehenlinieItemProvider extends Basis_ObjektItemProvider {
 			case GeodatenPackage.HOEHENLINIE__ID_HOEHENPUNKT_B:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

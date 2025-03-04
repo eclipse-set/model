@@ -415,8 +415,9 @@ public class Hoehenpunkt_Allg_AttributeGroupImpl extends EObjectImpl implements 
 				return basicSetNeigung(null, msgs);
 			case GeodatenPackage.HOEHENPUNKT_ALLG_ATTRIBUTE_GROUP__PLAN_QUELLE:
 				return basicSetPlanQuelle(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -439,8 +440,9 @@ public class Hoehenpunkt_Allg_AttributeGroupImpl extends EObjectImpl implements 
 				return getNeigung();
 			case GeodatenPackage.HOEHENPUNKT_ALLG_ATTRIBUTE_GROUP__PLAN_QUELLE:
 				return getPlanQuelle();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -469,8 +471,10 @@ public class Hoehenpunkt_Allg_AttributeGroupImpl extends EObjectImpl implements 
 			case GeodatenPackage.HOEHENPUNKT_ALLG_ATTRIBUTE_GROUP__PLAN_QUELLE:
 				setPlanQuelle((Plan_Quelle_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -499,8 +503,10 @@ public class Hoehenpunkt_Allg_AttributeGroupImpl extends EObjectImpl implements 
 			case GeodatenPackage.HOEHENPUNKT_ALLG_ATTRIBUTE_GROUP__PLAN_QUELLE:
 				setPlanQuelle((Plan_Quelle_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -523,8 +529,9 @@ public class Hoehenpunkt_Allg_AttributeGroupImpl extends EObjectImpl implements 
 				return neigung != null;
 			case GeodatenPackage.HOEHENPUNKT_ALLG_ATTRIBUTE_GROUP__PLAN_QUELLE:
 				return planQuelle != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Hoehenpunkt_Allg_AttributeGroupImpl

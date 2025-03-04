@@ -154,8 +154,10 @@ public class Bedien_Oberflaeche_Bild_Allg_AttributeGroupItemProvider
 			case BedienungPackage.BEDIEN_OBERFLAECHE_BILD_ALLG_ATTRIBUTE_GROUP__OBERFLAECHE_ZUSTAENDIGKEIT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

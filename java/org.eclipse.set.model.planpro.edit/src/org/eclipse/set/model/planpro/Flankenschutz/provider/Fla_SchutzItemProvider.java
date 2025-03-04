@@ -149,8 +149,10 @@ public class Fla_SchutzItemProvider extends Basis_ObjektItemProvider {
 			case FlankenschutzPackage.FLA_SCHUTZ__FLA_VERZICHT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

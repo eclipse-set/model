@@ -493,6 +493,8 @@ public class VerweiseEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

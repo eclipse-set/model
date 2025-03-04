@@ -139,8 +139,10 @@ public class V_Frei_TypeClassItemProvider extends BasisAttribut_AttributeGroupIt
 			case Balisentechnik_ETCSPackage.VFREI_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -147,8 +147,10 @@ public class Akteur_ZuordnungItemProvider extends Ur_ObjektItemProvider {
 			case PlanProPackage.AKTEUR_ZUORDNUNG__IDENT_ROLLE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

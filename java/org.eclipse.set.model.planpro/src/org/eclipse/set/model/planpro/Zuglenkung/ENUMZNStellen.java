@@ -135,8 +135,8 @@ public enum ENUMZNStellen implements Enumerator {
 		switch (value) {
 			case ENUMZN_STELLEN_5_VALUE: return ENUMZN_STELLEN_5;
 			case ENUMZN_STELLEN_6_VALUE: return ENUMZN_STELLEN_6;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

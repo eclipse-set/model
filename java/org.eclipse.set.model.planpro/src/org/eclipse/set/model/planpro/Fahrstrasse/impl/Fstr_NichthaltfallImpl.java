@@ -181,8 +181,9 @@ public class Fstr_NichthaltfallImpl extends Basis_ObjektImpl implements Fstr_Nic
 				return basicSetIDFMAAnlage(null, msgs);
 			case FahrstrassePackage.FSTR_NICHTHALTFALL__ID_FSTR_FAHRWEG:
 				return basicSetIDFstrFahrweg(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,8 +198,9 @@ public class Fstr_NichthaltfallImpl extends Basis_ObjektImpl implements Fstr_Nic
 				return getIDFMAAnlage();
 			case FahrstrassePackage.FSTR_NICHTHALTFALL__ID_FSTR_FAHRWEG:
 				return getIDFstrFahrweg();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,8 +217,10 @@ public class Fstr_NichthaltfallImpl extends Basis_ObjektImpl implements Fstr_Nic
 			case FahrstrassePackage.FSTR_NICHTHALTFALL__ID_FSTR_FAHRWEG:
 				setIDFstrFahrweg((ID_Fstr_Fahrweg_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -233,8 +237,10 @@ public class Fstr_NichthaltfallImpl extends Basis_ObjektImpl implements Fstr_Nic
 			case FahrstrassePackage.FSTR_NICHTHALTFALL__ID_FSTR_FAHRWEG:
 				setIDFstrFahrweg((ID_Fstr_Fahrweg_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -249,8 +255,9 @@ public class Fstr_NichthaltfallImpl extends Basis_ObjektImpl implements Fstr_Nic
 				return iDFMAAnlage != null;
 			case FahrstrassePackage.FSTR_NICHTHALTFALL__ID_FSTR_FAHRWEG:
 				return iDFstrFahrweg != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Fstr_NichthaltfallImpl

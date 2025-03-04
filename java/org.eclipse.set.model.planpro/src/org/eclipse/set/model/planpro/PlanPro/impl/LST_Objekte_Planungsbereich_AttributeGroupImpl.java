@@ -94,8 +94,9 @@ public class LST_Objekte_Planungsbereich_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case PlanProPackage.LST_OBJEKTE_PLANUNGSBEREICH_ATTRIBUTE_GROUP__IDLST_OBJEKT_PLANUNGSBEREICH:
 				return ((InternalEList<?>)getIDLSTObjektPlanungsbereich()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -108,8 +109,9 @@ public class LST_Objekte_Planungsbereich_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case PlanProPackage.LST_OBJEKTE_PLANUNGSBEREICH_ATTRIBUTE_GROUP__IDLST_OBJEKT_PLANUNGSBEREICH:
 				return getIDLSTObjektPlanungsbereich();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -125,8 +127,10 @@ public class LST_Objekte_Planungsbereich_AttributeGroupImpl extends EObjectImpl 
 				getIDLSTObjektPlanungsbereich().clear();
 				getIDLSTObjektPlanungsbereich().addAll((Collection<? extends ID_Ur_Objekt_TypeClass>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -140,8 +144,10 @@ public class LST_Objekte_Planungsbereich_AttributeGroupImpl extends EObjectImpl 
 			case PlanProPackage.LST_OBJEKTE_PLANUNGSBEREICH_ATTRIBUTE_GROUP__IDLST_OBJEKT_PLANUNGSBEREICH:
 				getIDLSTObjektPlanungsbereich().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -154,8 +160,9 @@ public class LST_Objekte_Planungsbereich_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case PlanProPackage.LST_OBJEKTE_PLANUNGSBEREICH_ATTRIBUTE_GROUP__IDLST_OBJEKT_PLANUNGSBEREICH:
 				return iDLSTObjektPlanungsbereich != null && !iDLSTObjektPlanungsbereich.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //LST_Objekte_Planungsbereich_AttributeGroupImpl

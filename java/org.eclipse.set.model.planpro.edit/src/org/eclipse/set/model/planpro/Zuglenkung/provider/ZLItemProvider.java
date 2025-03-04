@@ -149,8 +149,10 @@ public class ZLItemProvider extends Basis_ObjektItemProvider {
 			case ZuglenkungPackage.ZL__ZLZN:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

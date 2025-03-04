@@ -149,8 +149,10 @@ public class ZL_FstrItemProvider extends Basis_ObjektItemProvider {
 			case ZuglenkungPackage.ZL_FSTR__ZL_FSTR_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

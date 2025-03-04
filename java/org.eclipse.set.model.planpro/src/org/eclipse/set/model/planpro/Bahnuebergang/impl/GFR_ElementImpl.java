@@ -358,8 +358,9 @@ public class GFR_ElementImpl extends Basis_ObjektImpl implements GFR_Element {
 				return basicSetBUENeigung(null, msgs);
 			case BahnuebergangPackage.GFR_ELEMENT__GFR_NEIGUNG:
 				return basicSetGFRNeigung(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -380,8 +381,9 @@ public class GFR_ElementImpl extends Basis_ObjektImpl implements GFR_Element {
 				return getBUENeigung();
 			case BahnuebergangPackage.GFR_ELEMENT__GFR_NEIGUNG:
 				return getGFRNeigung();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -407,8 +409,10 @@ public class GFR_ElementImpl extends Basis_ObjektImpl implements GFR_Element {
 			case BahnuebergangPackage.GFR_ELEMENT__GFR_NEIGUNG:
 				setGFRNeigung((GFR_Neigung_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -434,8 +438,10 @@ public class GFR_ElementImpl extends Basis_ObjektImpl implements GFR_Element {
 			case BahnuebergangPackage.GFR_ELEMENT__GFR_NEIGUNG:
 				setGFRNeigung((GFR_Neigung_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -456,8 +462,9 @@ public class GFR_ElementImpl extends Basis_ObjektImpl implements GFR_Element {
 				return bUENeigung != null;
 			case BahnuebergangPackage.GFR_ELEMENT__GFR_NEIGUNG:
 				return gFRNeigung != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //GFR_ElementImpl

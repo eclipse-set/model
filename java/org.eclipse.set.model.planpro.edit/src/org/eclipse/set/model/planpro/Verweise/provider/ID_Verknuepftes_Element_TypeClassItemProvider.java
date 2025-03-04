@@ -159,8 +159,10 @@ public class ID_Verknuepftes_Element_TypeClassItemProvider extends Zeiger_TypeCl
 			case VerweisePackage.ID_VERKNUEPFTES_ELEMENT_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

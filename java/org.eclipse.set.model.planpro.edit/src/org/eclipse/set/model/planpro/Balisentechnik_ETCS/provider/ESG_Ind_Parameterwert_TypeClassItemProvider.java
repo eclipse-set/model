@@ -139,8 +139,10 @@ public class ESG_Ind_Parameterwert_TypeClassItemProvider extends BasisAttribut_A
 			case Balisentechnik_ETCSPackage.ESG_IND_PARAMETERWERT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

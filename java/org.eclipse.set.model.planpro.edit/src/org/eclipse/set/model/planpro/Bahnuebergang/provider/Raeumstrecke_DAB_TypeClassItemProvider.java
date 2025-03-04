@@ -139,8 +139,10 @@ public class Raeumstrecke_DAB_TypeClassItemProvider extends BasisAttribut_Attrib
 			case BahnuebergangPackage.RAEUMSTRECKE_DAB_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

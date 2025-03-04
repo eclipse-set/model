@@ -162,8 +162,10 @@ public class Fstr_DWeg_Spezifisch_AttributeGroupItemProvider
 			case FahrstrassePackage.FSTR_DWEG_SPEZIFISCH_ATTRIBUTE_GROUP__IDFMA_ANLAGE_ZIELGLEIS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

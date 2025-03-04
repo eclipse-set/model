@@ -214,8 +214,9 @@ public class BUE_Kreuzungsplan_Koordinaten_AttributeGroupImpl extends EObjectImp
 				return basicSetPixelKoordinateX(null, msgs);
 			case BahnuebergangPackage.BUE_KREUZUNGSPLAN_KOORDINATEN_ATTRIBUTE_GROUP__PIXEL_KOORDINATE_Y:
 				return basicSetPixelKoordinateY(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -232,8 +233,9 @@ public class BUE_Kreuzungsplan_Koordinaten_AttributeGroupImpl extends EObjectImp
 				return getPixelKoordinateX();
 			case BahnuebergangPackage.BUE_KREUZUNGSPLAN_KOORDINATEN_ATTRIBUTE_GROUP__PIXEL_KOORDINATE_Y:
 				return getPixelKoordinateY();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -255,8 +257,10 @@ public class BUE_Kreuzungsplan_Koordinaten_AttributeGroupImpl extends EObjectImp
 			case BahnuebergangPackage.BUE_KREUZUNGSPLAN_KOORDINATEN_ATTRIBUTE_GROUP__PIXEL_KOORDINATE_Y:
 				setPixelKoordinateY((Pixel_Koordinate_Y_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -276,8 +280,10 @@ public class BUE_Kreuzungsplan_Koordinaten_AttributeGroupImpl extends EObjectImp
 			case BahnuebergangPackage.BUE_KREUZUNGSPLAN_KOORDINATEN_ATTRIBUTE_GROUP__PIXEL_KOORDINATE_Y:
 				setPixelKoordinateY((Pixel_Koordinate_Y_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -294,8 +300,9 @@ public class BUE_Kreuzungsplan_Koordinaten_AttributeGroupImpl extends EObjectImp
 				return pixelKoordinateX != null;
 			case BahnuebergangPackage.BUE_KREUZUNGSPLAN_KOORDINATEN_ATTRIBUTE_GROUP__PIXEL_KOORDINATE_Y:
 				return pixelKoordinateY != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //BUE_Kreuzungsplan_Koordinaten_AttributeGroupImpl

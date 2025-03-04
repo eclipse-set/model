@@ -136,8 +136,10 @@ public class Bez_ZUB_Bereichsgrenze_TypeClassItemProvider extends BasisAttribut_
 			case Balisentechnik_ETCSPackage.BEZ_ZUB_BEREICHSGRENZE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

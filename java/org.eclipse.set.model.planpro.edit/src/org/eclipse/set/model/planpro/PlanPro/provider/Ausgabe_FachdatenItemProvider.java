@@ -143,8 +143,10 @@ public class Ausgabe_FachdatenItemProvider extends Ur_ObjektItemProvider {
 			case PlanProPackage.AUSGABE_FACHDATEN__UNTERGEWERK_ART:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

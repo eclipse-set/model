@@ -139,8 +139,10 @@ public class Kreuzungsgleis_TypeClassItemProvider extends BasisAttribut_Attribut
 			case Weichen_und_GleissperrenPackage.KREUZUNGSGLEIS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

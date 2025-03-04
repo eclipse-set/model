@@ -180,8 +180,9 @@ public class Bedingung_PZB_AttributeGroupImpl extends EObjectImpl implements Bed
 				return basicSetIDPZBElement(null, msgs);
 			case Balisentechnik_ETCSPackage.BEDINGUNG_PZB_ATTRIBUTE_GROUP__WIRKSAM:
 				return basicSetWirksam(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,8 +197,9 @@ public class Bedingung_PZB_AttributeGroupImpl extends EObjectImpl implements Bed
 				return getIDPZBElement();
 			case Balisentechnik_ETCSPackage.BEDINGUNG_PZB_ATTRIBUTE_GROUP__WIRKSAM:
 				return getWirksam();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -214,8 +216,10 @@ public class Bedingung_PZB_AttributeGroupImpl extends EObjectImpl implements Bed
 			case Balisentechnik_ETCSPackage.BEDINGUNG_PZB_ATTRIBUTE_GROUP__WIRKSAM:
 				setWirksam((Wirksam_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -232,8 +236,10 @@ public class Bedingung_PZB_AttributeGroupImpl extends EObjectImpl implements Bed
 			case Balisentechnik_ETCSPackage.BEDINGUNG_PZB_ATTRIBUTE_GROUP__WIRKSAM:
 				setWirksam((Wirksam_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -248,8 +254,9 @@ public class Bedingung_PZB_AttributeGroupImpl extends EObjectImpl implements Bed
 				return iDPZBElement != null;
 			case Balisentechnik_ETCSPackage.BEDINGUNG_PZB_ATTRIBUTE_GROUP__WIRKSAM:
 				return wirksam != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bedingung_PZB_AttributeGroupImpl

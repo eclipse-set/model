@@ -158,8 +158,8 @@ public enum ENUMWeicheBetriebsart implements Enumerator {
 			case ENUM_WEICHE_BETRIEBSART_BETRIEB_VALUE: return ENUM_WEICHE_BETRIEBSART_BETRIEB;
 			case ENUM_WEICHE_BETRIEBSART_LINKS_VALUE: return ENUM_WEICHE_BETRIEBSART_LINKS;
 			case ENUM_WEICHE_BETRIEBSART_RECHTS_VALUE: return ENUM_WEICHE_BETRIEBSART_RECHTS;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

@@ -493,6 +493,8 @@ public class FlankenschutzEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

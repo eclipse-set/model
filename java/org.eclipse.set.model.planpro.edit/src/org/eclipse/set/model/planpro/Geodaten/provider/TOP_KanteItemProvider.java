@@ -147,8 +147,10 @@ public class TOP_KanteItemProvider extends Basis_ObjektItemProvider {
 			case GeodatenPackage.TOP_KANTE__TOP_KANTE_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

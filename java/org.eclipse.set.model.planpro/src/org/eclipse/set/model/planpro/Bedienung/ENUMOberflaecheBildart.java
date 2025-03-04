@@ -158,8 +158,8 @@ public enum ENUMOberflaecheBildart implements Enumerator {
 			case ENUM_OBERFLAECHE_BILDART_BERUE_VALUE: return ENUM_OBERFLAECHE_BILDART_BERUE;
 			case ENUM_OBERFLAECHE_BILDART_LUPE_VALUE: return ENUM_OBERFLAECHE_BILDART_LUPE;
 			case ENUM_OBERFLAECHE_BILDART_SONSTIGE_VALUE: return ENUM_OBERFLAECHE_BILDART_SONSTIGE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

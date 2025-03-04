@@ -144,8 +144,10 @@ public class PZB_Zuordnung_SignalItemProvider extends Basis_ObjektItemProvider {
 			case PZBPackage.PZB_ZUORDNUNG_SIGNAL__ID_SIGNAL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

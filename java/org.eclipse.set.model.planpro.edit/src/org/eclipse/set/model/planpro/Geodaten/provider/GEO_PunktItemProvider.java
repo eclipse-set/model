@@ -147,8 +147,10 @@ public class GEO_PunktItemProvider extends Basis_ObjektItemProvider {
 			case GeodatenPackage.GEO_PUNKT__IDGEO_KNOTEN:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

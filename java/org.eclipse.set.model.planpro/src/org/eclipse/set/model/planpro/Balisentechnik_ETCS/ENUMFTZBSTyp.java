@@ -572,8 +572,8 @@ public enum ENUMFTZBSTyp implements Enumerator {
 			case ENUMFT_ZBS_TYP_ZRV_VALUE: return ENUMFT_ZBS_TYP_ZRV;
 			case ENUMFT_ZBS_TYP_ZU_VALUE: return ENUMFT_ZBS_TYP_ZU;
 			case ENUMFT_ZBS_TYP_ZV_VALUE: return ENUMFT_ZBS_TYP_ZV;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

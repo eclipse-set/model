@@ -139,8 +139,10 @@ public class Verkuerzter_Abstand_TypeClassItemProvider extends BasisAttribut_Att
 			case Balisentechnik_ETCSPackage.VERKUERZTER_ABSTAND_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

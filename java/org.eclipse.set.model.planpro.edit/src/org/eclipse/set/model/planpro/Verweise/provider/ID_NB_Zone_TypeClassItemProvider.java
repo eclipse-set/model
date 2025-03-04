@@ -159,8 +159,10 @@ public class ID_NB_Zone_TypeClassItemProvider extends Zeiger_TypeClassItemProvid
 			case VerweisePackage.ID_NB_ZONE_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

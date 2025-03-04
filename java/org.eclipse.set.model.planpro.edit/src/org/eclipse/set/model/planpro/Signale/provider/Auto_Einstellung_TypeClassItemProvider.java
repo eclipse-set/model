@@ -138,8 +138,10 @@ public class Auto_Einstellung_TypeClassItemProvider extends BasisAttribut_Attrib
 			case SignalePackage.AUTO_EINSTELLUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

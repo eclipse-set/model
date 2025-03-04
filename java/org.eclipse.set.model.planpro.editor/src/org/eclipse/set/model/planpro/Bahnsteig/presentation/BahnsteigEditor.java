@@ -493,6 +493,8 @@ public class BahnsteigEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
+						default:
+							break;
 					}
 				}
 				else {

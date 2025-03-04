@@ -159,8 +159,10 @@ public class ID_PZB_Element_TypeClassItemProvider extends Zeiger_TypeClassItemPr
 			case VerweisePackage.ID_PZB_ELEMENT_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -138,8 +138,10 @@ public class ZBS_Reaktion_TypeClassItemProvider extends BasisAttribut_AttributeG
 			case Balisentechnik_ETCSPackage.ZBS_REAKTION_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

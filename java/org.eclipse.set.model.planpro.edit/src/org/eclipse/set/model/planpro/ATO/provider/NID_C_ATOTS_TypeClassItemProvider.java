@@ -139,8 +139,10 @@ public class NID_C_ATOTS_TypeClassItemProvider extends BasisAttribut_AttributeGr
 			case ATOPackage.NID_CATOTS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

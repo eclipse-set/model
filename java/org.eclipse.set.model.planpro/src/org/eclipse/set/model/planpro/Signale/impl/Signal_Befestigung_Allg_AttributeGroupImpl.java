@@ -297,8 +297,9 @@ public class Signal_Befestigung_Allg_AttributeGroupImpl extends EObjectImpl impl
 				return basicSetHoeheFundamentoberkante(null, msgs);
 			case SignalePackage.SIGNAL_BEFESTIGUNG_ALLG_ATTRIBUTE_GROUP__OBERE_LICHTPUNKTHOEHE:
 				return basicSetObereLichtpunkthoehe(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -317,8 +318,9 @@ public class Signal_Befestigung_Allg_AttributeGroupImpl extends EObjectImpl impl
 				return getHoeheFundamentoberkante();
 			case SignalePackage.SIGNAL_BEFESTIGUNG_ALLG_ATTRIBUTE_GROUP__OBERE_LICHTPUNKTHOEHE:
 				return getObereLichtpunkthoehe();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -341,8 +343,10 @@ public class Signal_Befestigung_Allg_AttributeGroupImpl extends EObjectImpl impl
 			case SignalePackage.SIGNAL_BEFESTIGUNG_ALLG_ATTRIBUTE_GROUP__OBERE_LICHTPUNKTHOEHE:
 				setObereLichtpunkthoehe((Obere_Lichtpunkthoehe_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -365,8 +369,10 @@ public class Signal_Befestigung_Allg_AttributeGroupImpl extends EObjectImpl impl
 			case SignalePackage.SIGNAL_BEFESTIGUNG_ALLG_ATTRIBUTE_GROUP__OBERE_LICHTPUNKTHOEHE:
 				setObereLichtpunkthoehe((Obere_Lichtpunkthoehe_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -385,8 +391,9 @@ public class Signal_Befestigung_Allg_AttributeGroupImpl extends EObjectImpl impl
 				return hoeheFundamentoberkante != null;
 			case SignalePackage.SIGNAL_BEFESTIGUNG_ALLG_ATTRIBUTE_GROUP__OBERE_LICHTPUNKTHOEHE:
 				return obereLichtpunkthoehe != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Signal_Befestigung_Allg_AttributeGroupImpl

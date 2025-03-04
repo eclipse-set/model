@@ -139,8 +139,10 @@ public class VGR_2_TypeClassItemProvider extends BasisAttribut_AttributeGroupIte
 			case Balisentechnik_ETCSPackage.VGR_2TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

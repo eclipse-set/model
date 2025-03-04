@@ -162,8 +162,10 @@ public class BUE_Anlage_Allg_AttributeGroupItemProvider
 			case BahnuebergangPackage.BUE_ANLAGE_ALLG_ATTRIBUTE_GROUP__BUE_TECHNIK:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**
