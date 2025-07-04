@@ -27,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
  *
  * @see org.eclipse.set.model.planpro.Verweise.VerweisePackage#getID_Befestigung_Bauwerk_TypeClass()
  * @model extendedMetaData="name='TCID_Befestigung_Bauwerk' kind='elementOnly'"
+ *        annotation="planpro/id_reference"
  * @generated
  */
 public interface ID_Befestigung_Bauwerk_TypeClass extends Zeiger_TypeClass {

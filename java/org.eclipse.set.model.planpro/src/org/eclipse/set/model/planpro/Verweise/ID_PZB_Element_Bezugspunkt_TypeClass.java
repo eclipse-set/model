@@ -27,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
  *
  * @see org.eclipse.set.model.planpro.Verweise.VerweisePackage#getID_PZB_Element_Bezugspunkt_TypeClass()
  * @model extendedMetaData="name='TCID_PZB_Element_Bezugspunkt' kind='elementOnly'"
+ *        annotation="planpro/id_reference"
  * @generated
  */
 public interface ID_PZB_Element_Bezugspunkt_TypeClass extends Zeiger_TypeClass {

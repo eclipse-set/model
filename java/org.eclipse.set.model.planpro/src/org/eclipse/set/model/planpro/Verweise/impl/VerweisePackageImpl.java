@@ -9,6 +9,7 @@
  */
 package org.eclipse.set.model.planpro.Verweise.impl;
 
+import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -8116,6 +8117,8 @@ public class VerweisePackageImpl extends EPackageImpl implements VerweisePackage
 		createGenModelAnnotations();
 		// http:///org/eclipse/emf/ecore/util/ExtendedMetaData
 		createExtendedMetaDataAnnotations();
+		// planpro/id_reference
+		createId_referenceAnnotations();
 	}
 
 	/**
@@ -8130,7 +8133,7 @@ public class VerweisePackageImpl extends EPackageImpl implements VerweisePackage
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 	}
 
@@ -9289,6 +9292,354 @@ public class VerweisePackageImpl extends EPackageImpl implements VerweisePackage
 		   new String[] {
 			   "name", "TCID_Zweites_Haltfallkriterium",
 			   "kind", "elementOnly"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>planpro/id_reference</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createId_referenceAnnotations() {
+		String source = "planpro/id_reference";
+		addAnnotation
+		  (iD_Anforderer_Element_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Weichen_und_GleissperrenPackage.eNS_URI).appendFragment("//W_Kr_Gsp_Element"),
+			 URI.createURI(NahbedienungPackage.eNS_URI).appendFragment("//NB_Zone_Grenze")
+		   });
+		addAnnotation
+		  (iD_Anforderung_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(BlockPackage.eNS_URI).appendFragment("//Block_Element"),
+			 URI.createURI(FahrstrassePackage.eNS_URI).appendFragment("//Fstr_Fahrweg"),
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Einschaltung"),
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Ausschaltung")
+		   });
+		addAnnotation
+		  (iD_AnhangBearbeitungsvermerk_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(BasisobjektePackage.eNS_URI).appendFragment("//Anhang"),
+			 URI.createURI(BasisobjektePackage.eNS_URI).appendFragment("//Bearbeitungsvermerk")
+		   });
+		addAnnotation
+		  (iD_Anschluss_Element_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Aussenelementansteuerung"),
+			 URI.createURI(BedienungPackage.eNS_URI).appendFragment("//Bedien_Standort"),
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//Datenpunkt"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//ESTW_Zentraleinheit"),
+			 URI.createURI(OrtungPackage.eNS_URI).appendFragment("//FMA_Komponente"),
+			 URI.createURI(Medien_und_TrassenPackage.eNS_URI).appendFragment("//Kabel_Verteilpunkt"),
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//LEU_Anlage"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Stellelement"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Technik_Standort")
+		   });
+		addAnnotation
+		  (iD_Befestigung_Bauwerk_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(GeodatenPackage.eNS_URI).appendFragment("//Technischer_Punkt"),
+			 URI.createURI(GeodatenPackage.eNS_URI).appendFragment("//Technischer_Bereich")
+		   });
+		addAnnotation
+		  (iD_Beginn_Bereich_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(BahnsteigPackage.eNS_URI).appendFragment("//Bahnsteig_Kante"),
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Gleisbezogener_Gefahrraum"),
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//ZUB_Streckeneigenschaft")
+		   });
+		addAnnotation
+		  (iD_Bezugspunkt_Positionierung_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(SignalePackage.eNS_URI).appendFragment("//Signal"),
+			 URI.createURI(GeodatenPackage.eNS_URI).appendFragment("//Technischer_Punkt")
+		   });
+		addAnnotation
+		  (iD_DP_Bezug_Funktional_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Anlage"),
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Einschaltung"),
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Kante"),
+			 URI.createURI(FahrstrassePackage.eNS_URI).appendFragment("//Markanter_Punkt"),
+			 URI.createURI(PZBPackage.eNS_URI).appendFragment("//PZB_Element"),
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//ZUB_Streckeneigenschaft")
+		   });
+		addAnnotation
+		  (iD_Element_Grenze_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(SignalePackage.eNS_URI).appendFragment("//Signal"),
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//Datenpunkt")
+		   });
+		addAnnotation
+		  (iD_Element_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Weichen_und_GleissperrenPackage.eNS_URI).appendFragment("//W_Kr_Gsp_Element"),
+			 URI.createURI(GleisPackage.eNS_URI).appendFragment("//Gleis_Abschnitt")
+		   });
+		addAnnotation
+		  (iD_Element_Unterbringung_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//LEU_Schaltkasten"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Unterbringung")
+		   });
+		addAnnotation
+		  (iD_Energie_Eingang_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Aussenelementansteuerung"),
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Anlage"),
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//EV_Modul"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//ESTW_Zentraleinheit"),
+			 URI.createURI(PZBPackage.eNS_URI).appendFragment("//PZB_Element")
+		   });
+		addAnnotation
+		  (iD_Energie_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Aussenelementansteuerung"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//ESTW_Zentraleinheit"),
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//EV_Modul")
+		   });
+		addAnnotation
+		  (iD_Fortschaltung_Start_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(OrtungPackage.eNS_URI).appendFragment("//FMA_Anlage"),
+			 URI.createURI(SignalePackage.eNS_URI).appendFragment("//Signal")
+		   });
+		addAnnotation
+		  (iD_GEO_Art_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(GeodatenPackage.eNS_URI).appendFragment("//TOP_Kante"),
+			 URI.createURI(GeodatenPackage.eNS_URI).appendFragment("//Strecke")
+		   });
+		addAnnotation
+		  (iD_Handschalt_Wirkfunktion_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Anlage"),
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Einschaltung"),
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Ausschaltung")
+		   });
+		addAnnotation
+		  (iD_Information_Eingang_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Aussenelementansteuerung"),
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Anlage"),
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//LEU_Anlage"),
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//LEU_Modul"),
+			 URI.createURI(PZBPackage.eNS_URI).appendFragment("//PZB_Element"),
+			 URI.createURI(SignalePackage.eNS_URI).appendFragment("//Signal"),
+			 URI.createURI(Weichen_und_GleissperrenPackage.eNS_URI).appendFragment("//W_Kr_Anlage")
+		   });
+		addAnnotation
+		  (iD_Information_Primaer_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Aussenelementansteuerung"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//ESTW_Zentraleinheit")
+		   });
+		addAnnotation
+		  (iD_Komponente_Programmiert_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//Balise"),
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//LEU_Modul")
+		   });
+		addAnnotation
+		  (iD_LEU_Bezug_Funktional_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Anlage"),
+			 URI.createURI(SignalePackage.eNS_URI).appendFragment("//Signal"),
+			 URI.createURI(Weichen_und_GleissperrenPackage.eNS_URI).appendFragment("//W_Kr_Gsp_Element")
+		   });
+		addAnnotation
+		  (iD_Markante_Stelle_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//Datenpunkt"),
+			 URI.createURI(SignalePackage.eNS_URI).appendFragment("//Signal"),
+			 URI.createURI(Weichen_und_GleissperrenPackage.eNS_URI).appendFragment("//W_Kr_Gsp_Komponente"),
+			 URI.createURI(FahrstrassePackage.eNS_URI).appendFragment("//Sonstiger_Punkt"),
+			 URI.createURI(OrtungPackage.eNS_URI).appendFragment("//FMA_Komponente")
+		   });
+		addAnnotation
+		  (iD_Markanter_Punkt_Gleis_Abschluss_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(FahrstrassePackage.eNS_URI).appendFragment("//Markanter_Punkt"),
+			 URI.createURI(Weichen_und_GleissperrenPackage.eNS_URI).appendFragment("//Gleis_Abschluss")
+		   });
+		addAnnotation
+		  (iD_NB_Element_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(SignalePackage.eNS_URI).appendFragment("//Signal"),
+			 URI.createURI(Weichen_und_GleissperrenPackage.eNS_URI).appendFragment("//W_Kr_Gsp_Element"),
+			 URI.createURI(SchluesselabhaengigkeitenPackage.eNS_URI).appendFragment("//Schluesselsperre")
+		   });
+		addAnnotation
+		  (iD_PZB_Element_Bezugspunkt_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(SignalePackage.eNS_URI).appendFragment("//Signal"),
+			 URI.createURI(Weichen_und_GleissperrenPackage.eNS_URI).appendFragment("//W_Kr_Gsp_Element")
+		   });
+		addAnnotation
+		  (iD_Quellelement_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Aussenelementansteuerung"),
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Anlage"),
+			 URI.createURI(Balisentechnik_ETCSPackage.eNS_URI).appendFragment("//EV_Modul"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//ESTW_Zentraleinheit"),
+			 URI.createURI(PZBPackage.eNS_URI).appendFragment("//PZB_Element")
+		   });
+		addAnnotation
+		  (iD_Schalter_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(OrtungPackage.eNS_URI).appendFragment("//FMA_Anlage"),
+			 URI.createURI(OrtungPackage.eNS_URI).appendFragment("//FMA_Komponente"),
+			 URI.createURI(OrtungPackage.eNS_URI).appendFragment("//Zugeinwirkung")
+		   });
+		addAnnotation
+		  (iD_Stellwerk_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//ESTW_Zentraleinheit"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Aussenelementansteuerung")
+		   });
+		addAnnotation
+		  (iD_Uebertragungsweg_Nach_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Aussenelementansteuerung"),
+			 URI.createURI(BedienungPackage.eNS_URI).appendFragment("//Bedien_Bezirk"),
+			 URI.createURI(BedienungPackage.eNS_URI).appendFragment("//Bedien_Zentrale"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//ESTW_Zentraleinheit"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Stellelement"),
+			 URI.createURI(ZugnummernmeldeanlagePackage.eNS_URI).appendFragment("//ZN_ZBS")
+		   });
+		addAnnotation
+		  (iD_Uebertragungsweg_Von_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Aussenelementansteuerung"),
+			 URI.createURI(BedienungPackage.eNS_URI).appendFragment("//Bedien_Bezirk"),
+			 URI.createURI(BedienungPackage.eNS_URI).appendFragment("//Bedien_Zentrale"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//ESTW_Zentraleinheit"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Stellelement"),
+			 URI.createURI(ZugnummernmeldeanlagePackage.eNS_URI).appendFragment("//ZN_ZBS")
+		   });
+		addAnnotation
+		  (iD_Umfahrpunkt_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Weichen_und_GleissperrenPackage.eNS_URI).appendFragment("//W_Kr_Gsp_Element"),
+			 URI.createURI(GleisPackage.eNS_URI).appendFragment("//Gleis_Abschnitt")
+		   });
+		addAnnotation
+		  (iD_Unterbringung_Technik_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Technik_Standort"),
+			 URI.createURI(Ansteuerung_ElementPackage.eNS_URI).appendFragment("//Unterbringung")
+		   });
+		addAnnotation
+		  (iD_Verknuepftes_Element_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(SignalePackage.eNS_URI).appendFragment("//Signal"),
+			 URI.createURI(Weichen_und_GleissperrenPackage.eNS_URI).appendFragment("//W_Kr_Gsp_Element")
+		   });
+		addAnnotation
+		  (iD_Ziel_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(SignalePackage.eNS_URI).appendFragment("//Signal"),
+			 URI.createURI(FahrstrassePackage.eNS_URI).appendFragment("//Markanter_Punkt")
 		   });
 	}
 

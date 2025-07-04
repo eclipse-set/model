@@ -27,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
  *
  * @see org.eclipse.set.model.planpro.Verweise.VerweisePackage#getID_Anforderung_TypeClass()
  * @model extendedMetaData="name='TCID_Anforderung' kind='elementOnly'"
+ *        annotation="planpro/id_reference"
  * @generated
  */
 public interface ID_Anforderung_TypeClass extends Zeiger_TypeClass {

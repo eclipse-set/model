@@ -27,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
  *
  * @see org.eclipse.set.model.planpro.Verweise.VerweisePackage#getID_Element_Unterbringung_TypeClass()
  * @model extendedMetaData="name='TCID_Element_Unterbringung' kind='elementOnly'"
+ *        annotation="planpro/id_reference"
  * @generated
  */
 public interface ID_Element_Unterbringung_TypeClass extends Zeiger_TypeClass {

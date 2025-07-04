@@ -27,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
  *
  * @see org.eclipse.set.model.planpro.Verweise.VerweisePackage#getID_Unterbringung_Technik_TypeClass()
  * @model extendedMetaData="name='TCID_Unterbringung_Technik' kind='elementOnly'"
+ *        annotation="planpro/id_reference"
  * @generated
  */
 public interface ID_Unterbringung_Technik_TypeClass extends Zeiger_TypeClass {

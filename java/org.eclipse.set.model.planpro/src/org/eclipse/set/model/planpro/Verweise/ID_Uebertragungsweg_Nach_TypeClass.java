@@ -27,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
  *
  * @see org.eclipse.set.model.planpro.Verweise.VerweisePackage#getID_Uebertragungsweg_Nach_TypeClass()
  * @model extendedMetaData="name='TCID_Uebertragungsweg_Nach' kind='elementOnly'"
+ *        annotation="planpro/id_reference"
  * @generated
  */
 public interface ID_Uebertragungsweg_Nach_TypeClass extends Zeiger_TypeClass {

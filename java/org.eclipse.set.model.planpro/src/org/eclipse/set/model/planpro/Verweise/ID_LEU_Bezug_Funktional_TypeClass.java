@@ -27,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
  *
  * @see org.eclipse.set.model.planpro.Verweise.VerweisePackage#getID_LEU_Bezug_Funktional_TypeClass()
  * @model extendedMetaData="name='TCID_LEU_Bezug_Funktional' kind='elementOnly'"
+ *        annotation="planpro/id_reference"
  * @generated
  */
 public interface ID_LEU_Bezug_Funktional_TypeClass extends Zeiger_TypeClass {

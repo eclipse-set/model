@@ -27,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
  *
  * @see org.eclipse.set.model.planpro.Verweise.VerweisePackage#getID_Beginn_Bereich_TypeClass()
  * @model extendedMetaData="name='TCID_Beginn_Bereich' kind='elementOnly'"
+ *        annotation="planpro/id_reference"
  * @generated
  */
 public interface ID_Beginn_Bereich_TypeClass extends Zeiger_TypeClass {
