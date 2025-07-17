@@ -27,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
  *
  * @see org.eclipse.set.model.planpro.Verweise.VerweisePackage#getID_Information_Eingang_TypeClass()
  * @model extendedMetaData="name='TCID_Information_Eingang' kind='elementOnly'"
+ *        annotation="planpro/id_reference"
  * @generated
  */
 public interface ID_Information_Eingang_TypeClass extends Zeiger_TypeClass {

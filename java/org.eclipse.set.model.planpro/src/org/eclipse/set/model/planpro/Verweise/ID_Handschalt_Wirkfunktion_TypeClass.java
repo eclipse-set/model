@@ -27,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
  *
  * @see org.eclipse.set.model.planpro.Verweise.VerweisePackage#getID_Handschalt_Wirkfunktion_TypeClass()
  * @model extendedMetaData="name='TCID_Handschalt_Wirkfunktion' kind='elementOnly'"
+ *        annotation="planpro/id_reference"
  * @generated
  */
 public interface ID_Handschalt_Wirkfunktion_TypeClass extends Zeiger_TypeClass {

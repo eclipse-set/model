@@ -27,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
  *
  * @see org.eclipse.set.model.planpro.Verweise.VerweisePackage#getID_Markanter_Punkt_Gleis_Abschluss_TypeClass()
  * @model extendedMetaData="name='TCID_Markanter_Punkt_Gleis_Abschluss' kind='elementOnly'"
+ *        annotation="planpro/id_reference"
  * @generated
  */
 public interface ID_Markanter_Punkt_Gleis_Abschluss_TypeClass extends Zeiger_TypeClass {

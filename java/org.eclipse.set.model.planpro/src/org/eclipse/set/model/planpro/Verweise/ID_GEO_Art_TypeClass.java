@@ -27,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
  *
  * @see org.eclipse.set.model.planpro.Verweise.VerweisePackage#getID_GEO_Art_TypeClass()
  * @model extendedMetaData="name='TCID_GEO_Art' kind='elementOnly'"
+ *        annotation="planpro/id_reference"
  * @generated
  */
 public interface ID_GEO_Art_TypeClass extends Zeiger_TypeClass {

@@ -27,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
  *
  * @see org.eclipse.set.model.planpro.Verweise.VerweisePackage#getID_Energie_Eingang_TypeClass()
  * @model extendedMetaData="name='TCID_Energie_Eingang' kind='elementOnly'"
+ *        annotation="planpro/id_reference"
  * @generated
  */
 public interface ID_Energie_Eingang_TypeClass extends Zeiger_TypeClass {

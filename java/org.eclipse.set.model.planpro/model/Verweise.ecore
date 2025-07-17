@@ -17,8 +17,10 @@
          <details key="name" value="TCID_Anforderer_Element"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element Nahbedienung.ecore#//NB_Zone_Grenze"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -38,8 +40,10 @@
          <details key="name" value="TCID_Anforderung"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Block.ecore#//Block_Element Fahrstrasse.ecore#//Fstr_Fahrweg Bahnuebergang.ecore#//BUE_Einschaltung Bahnuebergang.ecore#//BUE_Ausschaltung"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -101,8 +105,10 @@
          <details key="name" value="TCID_AnhangBearbeitungsvermerk"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Basisobjekte.ecore#//Anhang Basisobjekte.ecore#//Bearbeitungsvermerk"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -122,8 +128,10 @@
          <details key="name" value="TCID_Anschluss_Element"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Bedienung.ecore#//Bedien_Standort Balisentechnik_ETCS.ecore#//Datenpunkt Ansteuerung_Element.ecore#//ESTW_Zentraleinheit Ortung.ecore#//FMA_Komponente Medien_und_Trassen.ecore#//Kabel_Verteilpunkt Balisentechnik_ETCS.ecore#//LEU_Anlage Ansteuerung_Element.ecore#//Stellelement Ansteuerung_Element.ecore#//Technik_Standort"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -500,8 +508,10 @@
          <details key="name" value="TCID_Befestigung_Bauwerk"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Geodaten.ecore#//Technischer_Punkt Geodaten.ecore#//Technischer_Bereich"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -521,8 +531,10 @@
          <details key="name" value="TCID_Beginn_Bereich"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Bahnsteig.ecore#//Bahnsteig_Kante Bahnuebergang.ecore#//BUE_Gleisbezogener_Gefahrraum Balisentechnik_ETCS.ecore#//ZUB_Streckeneigenschaft"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -542,8 +554,10 @@
          <details key="name" value="TCID_Bezugspunkt_Positionierung"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Signale.ecore#//Signal Geodaten.ecore#//Technischer_Punkt"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -836,8 +850,10 @@
          <details key="name" value="TCID_DP_Bezug_Funktional"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Bahnuebergang.ecore#//BUE_Anlage Bahnuebergang.ecore#//BUE_Einschaltung Bahnuebergang.ecore#//BUE_Kante Fahrstrasse.ecore#//Markanter_Punkt PZB.ecore#//PZB_Element Balisentechnik_ETCS.ecore#//ZUB_Streckeneigenschaft"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -878,8 +894,10 @@
          <details key="name" value="TCID_Element_Grenze"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Signale.ecore#//Signal Balisentechnik_ETCS.ecore#//Datenpunkt"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -899,8 +917,10 @@
          <details key="name" value="TCID_Element"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element Gleis.ecore#//Gleis_Abschnitt"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -920,8 +940,10 @@
          <details key="name" value="TCID_Element_Unterbringung"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Balisentechnik_ETCS.ecore#//LEU_Schaltkasten Ansteuerung_Element.ecore#//Unterbringung"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -941,8 +963,10 @@
          <details key="name" value="TCID_Energie_Eingang"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Bahnuebergang.ecore#//BUE_Anlage Balisentechnik_ETCS.ecore#//EV_Modul Ansteuerung_Element.ecore#//ESTW_Zentraleinheit PZB.ecore#//PZB_Element"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -962,8 +986,10 @@
          <details key="name" value="TCID_Energie"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Ansteuerung_Element.ecore#//ESTW_Zentraleinheit Balisentechnik_ETCS.ecore#//EV_Modul"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1235,8 +1261,10 @@
          <details key="name" value="TCID_Fortschaltung_Start"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Ortung.ecore#//FMA_Anlage Signale.ecore#//Signal"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1445,8 +1473,10 @@
          <details key="name" value="TCID_GEO_Art"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Geodaten.ecore#//TOP_Kante Geodaten.ecore#//Strecke"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1634,8 +1664,10 @@
          <details key="name" value="TCID_Handschalt_Wirkfunktion"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Bahnuebergang.ecore#//BUE_Anlage Bahnuebergang.ecore#//BUE_Einschaltung Bahnuebergang.ecore#//BUE_Ausschaltung"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1676,8 +1708,10 @@
          <details key="name" value="TCID_Information_Eingang"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Bahnuebergang.ecore#//BUE_Anlage Balisentechnik_ETCS.ecore#//LEU_Anlage Balisentechnik_ETCS.ecore#//LEU_Modul PZB.ecore#//PZB_Element Signale.ecore#//Signal Weichen_und_Gleissperren.ecore#//W_Kr_Anlage"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1697,8 +1731,10 @@
          <details key="name" value="TCID_Information_Primaer"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Ansteuerung_Element.ecore#//ESTW_Zentraleinheit"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1718,8 +1754,10 @@
          <details key="name" value="TCID_Komponente_Programmiert"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Balisentechnik_ETCS.ecore#//Balise Balisentechnik_ETCS.ecore#//LEU_Modul"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1844,8 +1882,10 @@
          <details key="name" value="TCID_LEU_Bezug_Funktional"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Bahnuebergang.ecore#//BUE_Anlage Signale.ecore#//Signal Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1907,8 +1947,10 @@
          <details key="name" value="TCID_Markante_Stelle"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Balisentechnik_ETCS.ecore#//Datenpunkt Signale.ecore#//Signal Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Komponente Fahrstrasse.ecore#//Sonstiger_Punkt Ortung.ecore#//FMA_Komponente"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1928,8 +1970,10 @@
          <details key="name" value="TCID_Markanter_Punkt_Gleis_Abschluss"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Fahrstrasse.ecore#//Markanter_Punkt Weichen_und_Gleissperren.ecore#//Gleis_Abschluss"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1970,8 +2014,10 @@
          <details key="name" value="TCID_NB_Element"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Signale.ecore#//Signal Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element Schluesselabhaengigkeiten.ecore#//Schluesselsperre"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2159,8 +2205,10 @@
          <details key="name" value="TCID_PZB_Element_Bezugspunkt"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Signale.ecore#//Signal Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2243,8 +2291,10 @@
          <details key="name" value="TCID_Quellelement"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Bahnuebergang.ecore#//BUE_Anlage Balisentechnik_ETCS.ecore#//EV_Modul Ansteuerung_Element.ecore#//ESTW_Zentraleinheit PZB.ecore#//PZB_Element"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2327,8 +2377,10 @@
          <details key="name" value="TCID_Schalter"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Ortung.ecore#//FMA_Anlage Ortung.ecore#//FMA_Komponente Ortung.ecore#//Zugeinwirkung"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2642,8 +2694,10 @@
          <details key="name" value="TCID_Stellwerk"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Ansteuerung_Element.ecore#//ESTW_Zentraleinheit Ansteuerung_Element.ecore#//Aussenelementansteuerung"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2873,8 +2927,10 @@
          <details key="name" value="TCID_Uebertragungsweg_Nach"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Bedienung.ecore#//Bedien_Bezirk Bedienung.ecore#//Bedien_Zentrale Ansteuerung_Element.ecore#//ESTW_Zentraleinheit Ansteuerung_Element.ecore#//Stellelement Zugnummernmeldeanlage.ecore#//ZN_ZBS"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2894,8 +2950,10 @@
          <details key="name" value="TCID_Uebertragungsweg_Von"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Bedienung.ecore#//Bedien_Bezirk Bedienung.ecore#//Bedien_Zentrale Ansteuerung_Element.ecore#//ESTW_Zentraleinheit Ansteuerung_Element.ecore#//Stellelement Zugnummernmeldeanlage.ecore#//ZN_ZBS"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2915,8 +2973,10 @@
          <details key="name" value="TCID_Umfahrpunkt"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element Gleis.ecore#//Gleis_Abschnitt"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2957,8 +3017,10 @@
          <details key="name" value="TCID_Unterbringung_Technik"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Ansteuerung_Element.ecore#//Technik_Standort Ansteuerung_Element.ecore#//Unterbringung"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -3020,8 +3082,10 @@
          <details key="name" value="TCID_Verknuepftes_Element"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Signale.ecore#//Signal Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -3146,8 +3210,10 @@
          <details key="name" value="TCID_Ziel"/>
          <details key="kind" value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                           xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Signale.ecore#//Signal Fahrstrasse.ecore#//Markanter_Punkt"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
