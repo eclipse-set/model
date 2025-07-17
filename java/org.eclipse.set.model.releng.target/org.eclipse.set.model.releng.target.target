@@ -3,27 +3,30 @@
 <target name="org.eclipse.set.model.releng.target" sequenceNumber="1676560184">
   <locations>
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-        <unit id="org.eclipse.sdk.feature.group" version="4.30.0.v20231201-0512"/>
-        <unit id="org.eclipse.emf.ecore.feature.group" version="2.36.0.v20231002-1156"/>
-        <unit id="org.eclipse.emf.sdk.feature.group" version="2.36.0.v20231107-0612"/>
-        <unit id="org.eclipse.e4.rcp.feature.group" version="4.30.0.v20231113-1355"/>
-        <unit id="org.eclipse.net4j.util.feature.group" version="4.22.0.v20231129-1234"/>
-        <unit id="org.eclipse.equinox.sdk.feature.group" version="3.23.1000.v20231114-0937"/>
-        <unit id="org.eclipse.orbit.xml-apis-ext" version="1.0.0.v20230923-0644"/>
-        <unit id="org.apache.commons.commons-io" version="2.15.0"/>
-        <unit id="org.apache.commons.jxpath" version="1.3.0.v200911051830"/>
-        <unit id="org.apache.batik.css" version="1.17.0.v20231009-1000"/>
-        <unit id="org.apache.batik.i18n" version="1.17.0.v20231009-1000"/>
-        <unit id="org.apache.batik.util" version="1.17.0.v20231009-1000"/>
-        <unit id="org.apache.batik.constants" version="1.17.0.v20231009-1000"/>
-        <unit id="com.ibm.icu" version="74.1.0"/>
-        <unit id="com.sun.jna" version="5.13.0.v20230812-1000"/>
-        <unit id="com.sun.jna.platform" version="5.13.0"/>
-        <unit id="bcpg" version="1.77.0"/>
-        <unit id="bcprov" version="1.77.0"/>
+        <unit id="org.eclipse.sdk.feature.group" version="4.36.0.v20250528-2229"/>
+        <unit id="org.eclipse.emf.ecore.feature.group" version="2.40.0.v20250414-1351"/>
+        <unit id="org.eclipse.emf.sdk.feature.group" version="2.42.0.v20250415-0852"/>
+        <unit id="org.eclipse.e4.rcp.feature.group" version="4.36.0.v20250528-1759"/>
+        <unit id="org.eclipse.net4j.util.feature.group" version="4.27.0.v20250603-1655"/>
+        <unit id="org.eclipse.equinox.sdk.feature.group" version="3.23.1700.v20250526-2018"/>
+        <unit id="org.eclipse.orbit.xml-apis-ext" version="1.0.0.v20240917-0534"/>
+        <unit id="org.apache.commons.commons-io" version="2.19.0"/>
+        <unit id="org.apache.batik.css" version="1.18.0.v20241009-1200"/>
+        <unit id="org.apache.batik.i18n" version="1.18.0.v20241009-1200"/>
+        <unit id="org.apache.batik.util" version="1.18.0.v20241009-1200"/>
+        <unit id="org.apache.batik.constants" version="1.18.0.v20241009-1200"/>
+        <unit id="org.apache.xmlgraphics" version="2.10.0.v20241009-1200"/>
+        <unit id="com.ibm.icu" version="77.1.0"/>
+        <unit id="com.sun.jna" version="5.17.0.v20250316-1700"/>
+        <unit id="com.sun.jna.platform" version="5.17.0"/>
+        <unit id="bcpg" version="1.80.0"/>
+        <unit id="bcprov" version="1.80.0"/>
+        <unit id="bcutil" version="1.80.0"/>
         <unit id="jakarta.annotation-api" version="2.1.1"/>
         <unit id="jakarta.inject.jakarta.inject-api" version="2.0.1"/>
-        <repository location="https://download.eclipse.org/releases/2023-12/"/>
+        <unit id="com.github.weisj.jsvg" version="1.7.2"/>
+        <unit id="org.tukaani.xz" version="1.10.0"/>
+        <repository location="https://download.eclipse.org/releases/2025-06/"/>
     </location>
   </locations>
 </target>
