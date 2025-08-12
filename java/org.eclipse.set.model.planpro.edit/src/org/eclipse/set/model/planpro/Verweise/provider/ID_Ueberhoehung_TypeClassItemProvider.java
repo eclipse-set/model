@@ -159,10 +159,8 @@ public class ID_Ueberhoehung_TypeClassItemProvider extends Zeiger_TypeClassItemP
 			case VerweisePackage.ID_UEBERHOEHUNG_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

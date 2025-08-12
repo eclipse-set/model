@@ -137,10 +137,8 @@ public class FMA_Komponente_Stromversorgung_TypeClassItemProvider extends BasisA
 			case OrtungPackage.FMA_KOMPONENTE_STROMVERSORGUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

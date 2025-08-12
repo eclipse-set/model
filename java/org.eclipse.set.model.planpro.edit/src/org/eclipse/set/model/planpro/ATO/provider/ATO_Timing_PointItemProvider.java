@@ -147,10 +147,8 @@ public class ATO_Timing_PointItemProvider extends Punkt_ObjektItemProvider {
 			case ATOPackage.ATO_TIMING_POINT__ID_SIGNAL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

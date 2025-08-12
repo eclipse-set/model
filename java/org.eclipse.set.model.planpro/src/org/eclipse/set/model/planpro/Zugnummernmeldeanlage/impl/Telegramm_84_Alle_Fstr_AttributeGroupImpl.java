@@ -180,9 +180,8 @@ public class Telegramm_84_Alle_Fstr_AttributeGroupImpl extends EObjectImpl imple
 				return basicSetIDZLVBus(null, msgs);
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_84_ALLE_FSTR_ATTRIBUTE_GROUP__TELEGRAMM84_FUER_ALLE_FSTR:
 				return basicSetTelegramm84FuerAlleFstr(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,9 +196,8 @@ public class Telegramm_84_Alle_Fstr_AttributeGroupImpl extends EObjectImpl imple
 				return getIDZLVBus();
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_84_ALLE_FSTR_ATTRIBUTE_GROUP__TELEGRAMM84_FUER_ALLE_FSTR:
 				return getTelegramm84FuerAlleFstr();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -216,10 +214,8 @@ public class Telegramm_84_Alle_Fstr_AttributeGroupImpl extends EObjectImpl imple
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_84_ALLE_FSTR_ATTRIBUTE_GROUP__TELEGRAMM84_FUER_ALLE_FSTR:
 				setTelegramm84FuerAlleFstr((Telegramm_84_Fuer_Alle_Fstr_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -236,10 +232,8 @@ public class Telegramm_84_Alle_Fstr_AttributeGroupImpl extends EObjectImpl imple
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_84_ALLE_FSTR_ATTRIBUTE_GROUP__TELEGRAMM84_FUER_ALLE_FSTR:
 				setTelegramm84FuerAlleFstr((Telegramm_84_Fuer_Alle_Fstr_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -254,9 +248,8 @@ public class Telegramm_84_Alle_Fstr_AttributeGroupImpl extends EObjectImpl imple
 				return iDZLVBus != null;
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_84_ALLE_FSTR_ATTRIBUTE_GROUP__TELEGRAMM84_FUER_ALLE_FSTR:
 				return telegramm84FuerAlleFstr != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Telegramm_84_Alle_Fstr_AttributeGroupImpl

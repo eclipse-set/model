@@ -204,8 +204,8 @@ public enum ENUMDateityp implements Enumerator {
 			case ENUM_DATEITYP_PDF_VALUE: return ENUM_DATEITYP_PDF;
 			case ENUM_DATEITYP_PNG_VALUE: return ENUM_DATEITYP_PNG;
 			case ENUM_DATEITYP_TIF_VALUE: return ENUM_DATEITYP_TIF;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

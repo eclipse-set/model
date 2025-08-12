@@ -139,10 +139,8 @@ public class Ader_Reserve_TypeClassItemProvider extends BasisAttribut_AttributeG
 			case Medien_und_TrassenPackage.ADER_RESERVE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

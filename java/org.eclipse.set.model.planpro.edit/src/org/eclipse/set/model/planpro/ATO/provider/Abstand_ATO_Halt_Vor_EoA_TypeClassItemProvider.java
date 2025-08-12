@@ -139,10 +139,8 @@ public class Abstand_ATO_Halt_Vor_EoA_TypeClassItemProvider extends BasisAttribu
 			case ATOPackage.ABSTAND_ATO_HALT_VOR_EO_ATYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

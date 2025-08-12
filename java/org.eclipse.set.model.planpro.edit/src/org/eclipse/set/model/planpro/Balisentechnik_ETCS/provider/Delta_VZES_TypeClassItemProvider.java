@@ -139,10 +139,8 @@ public class Delta_VZES_TypeClassItemProvider extends BasisAttribut_AttributeGro
 			case Balisentechnik_ETCSPackage.DELTA_VZES_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

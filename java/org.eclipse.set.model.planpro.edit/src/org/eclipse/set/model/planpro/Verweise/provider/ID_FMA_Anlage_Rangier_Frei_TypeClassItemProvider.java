@@ -159,10 +159,8 @@ public class ID_FMA_Anlage_Rangier_Frei_TypeClassItemProvider extends Zeiger_Typ
 			case VerweisePackage.ID_FMA_ANLAGE_RANGIER_FREI_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

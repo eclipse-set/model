@@ -179,9 +179,8 @@ public class Bahnsteig_Zugang_Allg_AttributeGroupImpl extends EObjectImpl implem
 				return basicSetBahnsteigZugangArt(null, msgs);
 			case BahnsteigPackage.BAHNSTEIG_ZUGANG_ALLG_ATTRIBUTE_GROUP__HAUPTZUGANG:
 				return basicSetHauptzugang(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class Bahnsteig_Zugang_Allg_AttributeGroupImpl extends EObjectImpl implem
 				return getBahnsteigZugangArt();
 			case BahnsteigPackage.BAHNSTEIG_ZUGANG_ALLG_ATTRIBUTE_GROUP__HAUPTZUGANG:
 				return getHauptzugang();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class Bahnsteig_Zugang_Allg_AttributeGroupImpl extends EObjectImpl implem
 			case BahnsteigPackage.BAHNSTEIG_ZUGANG_ALLG_ATTRIBUTE_GROUP__HAUPTZUGANG:
 				setHauptzugang((Hauptzugang_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class Bahnsteig_Zugang_Allg_AttributeGroupImpl extends EObjectImpl implem
 			case BahnsteigPackage.BAHNSTEIG_ZUGANG_ALLG_ATTRIBUTE_GROUP__HAUPTZUGANG:
 				setHauptzugang((Hauptzugang_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class Bahnsteig_Zugang_Allg_AttributeGroupImpl extends EObjectImpl implem
 				return bahnsteigZugangArt != null;
 			case BahnsteigPackage.BAHNSTEIG_ZUGANG_ALLG_ATTRIBUTE_GROUP__HAUPTZUGANG:
 				return hauptzugang != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bahnsteig_Zugang_Allg_AttributeGroupImpl

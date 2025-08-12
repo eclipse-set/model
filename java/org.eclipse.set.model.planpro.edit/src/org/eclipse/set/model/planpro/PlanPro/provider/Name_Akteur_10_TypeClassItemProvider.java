@@ -134,10 +134,8 @@ public class Name_Akteur_10_TypeClassItemProvider extends BasisAttribut_Attribut
 			case PlanProPackage.NAME_AKTEUR_10_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

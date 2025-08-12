@@ -147,10 +147,8 @@ public class Element_StilItemProvider extends Ur_ObjektItemProvider {
 			case LayoutinformationenPackage.ELEMENT_STIL__REFERENZ_OBJEKT_DARSTELLUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

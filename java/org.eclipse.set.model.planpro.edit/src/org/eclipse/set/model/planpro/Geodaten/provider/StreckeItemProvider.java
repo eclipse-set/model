@@ -141,10 +141,8 @@ public class StreckeItemProvider extends Bereich_ObjektItemProvider {
 			case GeodatenPackage.STRECKE__BEZEICHNUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

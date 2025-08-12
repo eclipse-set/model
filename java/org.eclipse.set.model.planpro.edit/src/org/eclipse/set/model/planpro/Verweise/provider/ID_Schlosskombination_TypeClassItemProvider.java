@@ -159,10 +159,8 @@ public class ID_Schlosskombination_TypeClassItemProvider extends Zeiger_TypeClas
 			case VerweisePackage.ID_SCHLOSSKOMBINATION_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

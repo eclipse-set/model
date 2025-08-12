@@ -162,10 +162,8 @@ public class Planung_G_Allg_AttributeGroupItemProvider
 			case PlanProPackage.PLANUNG_GALLG_ATTRIBUTE_GROUP__VERANTWORTLICHE_STELLE_DB:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

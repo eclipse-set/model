@@ -151,10 +151,8 @@ public class Block_StreckeItemProvider extends Basis_ObjektItemProvider {
 			case BlockPackage.BLOCK_STRECKE__ID_STRECKE_BREMSWEG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

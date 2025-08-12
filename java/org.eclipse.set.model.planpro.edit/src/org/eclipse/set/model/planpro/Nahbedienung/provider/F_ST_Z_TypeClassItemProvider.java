@@ -137,10 +137,8 @@ public class F_ST_Z_TypeClassItemProvider extends BasisAttribut_AttributeGroupIt
 			case NahbedienungPackage.FST_ZTYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

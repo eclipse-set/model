@@ -137,10 +137,8 @@ public class Telegramm_30_TypeClassItemProvider extends BasisAttribut_AttributeG
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_30_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

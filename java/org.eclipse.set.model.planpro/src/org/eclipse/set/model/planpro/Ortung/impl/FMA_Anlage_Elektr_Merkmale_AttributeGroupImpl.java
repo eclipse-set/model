@@ -474,9 +474,8 @@ public class FMA_Anlage_Elektr_Merkmale_AttributeGroupImpl extends EObjectImpl i
 				return basicSetFMALaengeE3(null, msgs);
 			case OrtungPackage.FMA_ANLAGE_ELEKTR_MERKMALE_ATTRIBUTE_GROUP__FMA_LAENGE_S:
 				return basicSetFMALaengeS(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -501,9 +500,8 @@ public class FMA_Anlage_Elektr_Merkmale_AttributeGroupImpl extends EObjectImpl i
 				return getFMALaengeE3();
 			case OrtungPackage.FMA_ANLAGE_ELEKTR_MERKMALE_ATTRIBUTE_GROUP__FMA_LAENGE_S:
 				return getFMALaengeS();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -535,10 +533,8 @@ public class FMA_Anlage_Elektr_Merkmale_AttributeGroupImpl extends EObjectImpl i
 			case OrtungPackage.FMA_ANLAGE_ELEKTR_MERKMALE_ATTRIBUTE_GROUP__FMA_LAENGE_S:
 				setFMALaengeS((FMA_Laenge_S_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -570,10 +566,8 @@ public class FMA_Anlage_Elektr_Merkmale_AttributeGroupImpl extends EObjectImpl i
 			case OrtungPackage.FMA_ANLAGE_ELEKTR_MERKMALE_ATTRIBUTE_GROUP__FMA_LAENGE_S:
 				setFMALaengeS((FMA_Laenge_S_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -598,9 +592,8 @@ public class FMA_Anlage_Elektr_Merkmale_AttributeGroupImpl extends EObjectImpl i
 				return fMALaengeE3 != null;
 			case OrtungPackage.FMA_ANLAGE_ELEKTR_MERKMALE_ATTRIBUTE_GROUP__FMA_LAENGE_S:
 				return fMALaengeS != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //FMA_Anlage_Elektr_Merkmale_AttributeGroupImpl

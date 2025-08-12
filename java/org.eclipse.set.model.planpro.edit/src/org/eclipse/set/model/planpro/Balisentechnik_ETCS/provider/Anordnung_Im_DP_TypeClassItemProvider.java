@@ -139,10 +139,8 @@ public class Anordnung_Im_DP_TypeClassItemProvider extends BasisAttribut_Attribu
 			case Balisentechnik_ETCSPackage.ANORDNUNG_IM_DP_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

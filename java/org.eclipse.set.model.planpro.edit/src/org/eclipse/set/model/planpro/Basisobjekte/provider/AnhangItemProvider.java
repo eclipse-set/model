@@ -135,10 +135,8 @@ public class AnhangItemProvider extends Ur_ObjektItemProvider {
 			case BasisobjektePackage.ANHANG__ANHANG_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

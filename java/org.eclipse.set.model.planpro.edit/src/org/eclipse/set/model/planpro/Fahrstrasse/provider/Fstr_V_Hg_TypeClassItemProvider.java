@@ -139,10 +139,8 @@ public class Fstr_V_Hg_TypeClassItemProvider extends BasisAttribut_AttributeGrou
 			case FahrstrassePackage.FSTR_VHG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

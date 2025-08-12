@@ -297,9 +297,8 @@ public class LEU_Modul_Allg_AttributeGroupImpl extends EObjectImpl implements LE
 				return basicSetLEUModulGeraetestand(null, msgs);
 			case Balisentechnik_ETCSPackage.LEU_MODUL_ALLG_ATTRIBUTE_GROUP__LEU_MODUL_TYP:
 				return basicSetLEUModulTyp(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -318,9 +317,8 @@ public class LEU_Modul_Allg_AttributeGroupImpl extends EObjectImpl implements LE
 				return getLEUModulGeraetestand();
 			case Balisentechnik_ETCSPackage.LEU_MODUL_ALLG_ATTRIBUTE_GROUP__LEU_MODUL_TYP:
 				return getLEUModulTyp();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -343,10 +341,8 @@ public class LEU_Modul_Allg_AttributeGroupImpl extends EObjectImpl implements LE
 			case Balisentechnik_ETCSPackage.LEU_MODUL_ALLG_ATTRIBUTE_GROUP__LEU_MODUL_TYP:
 				setLEUModulTyp((LEU_Modul_Typ_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -369,10 +365,8 @@ public class LEU_Modul_Allg_AttributeGroupImpl extends EObjectImpl implements LE
 			case Balisentechnik_ETCSPackage.LEU_MODUL_ALLG_ATTRIBUTE_GROUP__LEU_MODUL_TYP:
 				setLEUModulTyp((LEU_Modul_Typ_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -391,9 +385,8 @@ public class LEU_Modul_Allg_AttributeGroupImpl extends EObjectImpl implements LE
 				return lEUModulGeraetestand != null;
 			case Balisentechnik_ETCSPackage.LEU_MODUL_ALLG_ATTRIBUTE_GROUP__LEU_MODUL_TYP:
 				return lEUModulTyp != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //LEU_Modul_Allg_AttributeGroupImpl

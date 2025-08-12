@@ -145,10 +145,8 @@ public class BUE_Gefahrraum_EckpunktItemProvider extends Punkt_ObjektItemProvide
 			case BahnuebergangPackage.BUE_GEFAHRRAUM_ECKPUNKT__IDBUE_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

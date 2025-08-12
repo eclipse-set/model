@@ -159,10 +159,8 @@ public class ID_Oertlichkeit_TypeClassItemProvider extends Zeiger_TypeClassItemP
 			case VerweisePackage.ID_OERTLICHKEIT_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

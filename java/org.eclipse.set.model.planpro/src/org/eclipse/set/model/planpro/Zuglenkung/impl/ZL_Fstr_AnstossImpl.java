@@ -392,9 +392,8 @@ public class ZL_Fstr_AnstossImpl extends Basis_ObjektImpl implements ZL_Fstr_Ans
 				return basicSetIDEinschaltpunkt(null, msgs);
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS__IDZN_ANZEIGEFELD_ANSTOSS:
 				return basicSetIDZNAnzeigefeldAnstoss(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -417,9 +416,8 @@ public class ZL_Fstr_AnstossImpl extends Basis_ObjektImpl implements ZL_Fstr_Ans
 				return getIDEinschaltpunkt();
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS__IDZN_ANZEIGEFELD_ANSTOSS:
 				return getIDZNAnzeigefeldAnstoss();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -450,10 +448,8 @@ public class ZL_Fstr_AnstossImpl extends Basis_ObjektImpl implements ZL_Fstr_Ans
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS__IDZN_ANZEIGEFELD_ANSTOSS:
 				setIDZNAnzeigefeldAnstoss((ID_ZN_Anzeigefeld_Anstoss_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -482,10 +478,8 @@ public class ZL_Fstr_AnstossImpl extends Basis_ObjektImpl implements ZL_Fstr_Ans
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS__IDZN_ANZEIGEFELD_ANSTOSS:
 				setIDZNAnzeigefeldAnstoss((ID_ZN_Anzeigefeld_Anstoss_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -508,9 +502,8 @@ public class ZL_Fstr_AnstossImpl extends Basis_ObjektImpl implements ZL_Fstr_Ans
 				return iDEinschaltpunkt != null;
 			case ZuglenkungPackage.ZL_FSTR_ANSTOSS__IDZN_ANZEIGEFELD_ANSTOSS:
 				return iDZNAnzeigefeldAnstoss != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZL_Fstr_AnstossImpl

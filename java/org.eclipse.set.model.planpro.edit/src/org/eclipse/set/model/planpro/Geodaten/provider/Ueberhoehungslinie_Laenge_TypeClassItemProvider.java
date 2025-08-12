@@ -139,10 +139,8 @@ public class Ueberhoehungslinie_Laenge_TypeClassItemProvider extends BasisAttrib
 			case GeodatenPackage.UEBERHOEHUNGSLINIE_LAENGE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -143,9 +143,8 @@ public class Bedien_Platz_Art_TypeClassImpl extends BasisAttribut_AttributeGroup
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_PLATZ_ART_TYPE_CLASS__WERT:
 				return getWert();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -159,10 +158,8 @@ public class Bedien_Platz_Art_TypeClassImpl extends BasisAttribut_AttributeGroup
 			case BedienungPackage.BEDIEN_PLATZ_ART_TYPE_CLASS__WERT:
 				setWert((ENUMBedienPlatzArt)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -176,10 +173,8 @@ public class Bedien_Platz_Art_TypeClassImpl extends BasisAttribut_AttributeGroup
 			case BedienungPackage.BEDIEN_PLATZ_ART_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -192,9 +187,8 @@ public class Bedien_Platz_Art_TypeClassImpl extends BasisAttribut_AttributeGroup
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_PLATZ_ART_TYPE_CLASS__WERT:
 				return isSetWert();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

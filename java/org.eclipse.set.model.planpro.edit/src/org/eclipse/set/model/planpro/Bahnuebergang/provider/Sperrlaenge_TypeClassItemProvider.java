@@ -139,10 +139,8 @@ public class Sperrlaenge_TypeClassItemProvider extends BasisAttribut_AttributeGr
 			case BahnuebergangPackage.SPERRLAENGE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

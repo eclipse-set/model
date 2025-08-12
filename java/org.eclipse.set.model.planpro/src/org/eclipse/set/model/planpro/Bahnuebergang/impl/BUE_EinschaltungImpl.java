@@ -180,9 +180,8 @@ public class BUE_EinschaltungImpl extends Basis_ObjektImpl implements BUE_Einsch
 				return basicSetBUEEinschaltungHp(null, msgs);
 			case BahnuebergangPackage.BUE_EINSCHALTUNG__BUE_FUNKTIONSUEBERWACHUNG:
 				return basicSetBUEFunktionsueberwachung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,9 +196,8 @@ public class BUE_EinschaltungImpl extends Basis_ObjektImpl implements BUE_Einsch
 				return getBUEEinschaltungHp();
 			case BahnuebergangPackage.BUE_EINSCHALTUNG__BUE_FUNKTIONSUEBERWACHUNG:
 				return getBUEFunktionsueberwachung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -216,10 +214,8 @@ public class BUE_EinschaltungImpl extends Basis_ObjektImpl implements BUE_Einsch
 			case BahnuebergangPackage.BUE_EINSCHALTUNG__BUE_FUNKTIONSUEBERWACHUNG:
 				setBUEFunktionsueberwachung((BUE_Funktionsueberwachung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -236,10 +232,8 @@ public class BUE_EinschaltungImpl extends Basis_ObjektImpl implements BUE_Einsch
 			case BahnuebergangPackage.BUE_EINSCHALTUNG__BUE_FUNKTIONSUEBERWACHUNG:
 				setBUEFunktionsueberwachung((BUE_Funktionsueberwachung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -254,9 +248,8 @@ public class BUE_EinschaltungImpl extends Basis_ObjektImpl implements BUE_Einsch
 				return bUEEinschaltungHp != null;
 			case BahnuebergangPackage.BUE_EINSCHALTUNG__BUE_FUNKTIONSUEBERWACHUNG:
 				return bUEFunktionsueberwachung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //BUE_EinschaltungImpl

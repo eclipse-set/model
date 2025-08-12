@@ -240,9 +240,8 @@ public class Stell_BereichImpl extends Bereich_ObjektImpl implements Stell_Berei
 				return basicSetBezeichnungStellwerk(null, msgs);
 			case Ansteuerung_ElementPackage.STELL_BEREICH__ID_AUSSENELEMENTANSTEUERUNG:
 				return basicSetIDAussenelementansteuerung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -259,9 +258,8 @@ public class Stell_BereichImpl extends Bereich_ObjektImpl implements Stell_Berei
 				return getBezeichnungStellwerk();
 			case Ansteuerung_ElementPackage.STELL_BEREICH__ID_AUSSENELEMENTANSTEUERUNG:
 				return getIDAussenelementansteuerung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -281,10 +279,8 @@ public class Stell_BereichImpl extends Bereich_ObjektImpl implements Stell_Berei
 			case Ansteuerung_ElementPackage.STELL_BEREICH__ID_AUSSENELEMENTANSTEUERUNG:
 				setIDAussenelementansteuerung((ID_Aussenelementansteuerung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -304,10 +300,8 @@ public class Stell_BereichImpl extends Bereich_ObjektImpl implements Stell_Berei
 			case Ansteuerung_ElementPackage.STELL_BEREICH__ID_AUSSENELEMENTANSTEUERUNG:
 				setIDAussenelementansteuerung((ID_Aussenelementansteuerung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -324,9 +318,8 @@ public class Stell_BereichImpl extends Bereich_ObjektImpl implements Stell_Berei
 				return bezeichnungStellwerk != null;
 			case Ansteuerung_ElementPackage.STELL_BEREICH__ID_AUSSENELEMENTANSTEUERUNG:
 				return iDAussenelementansteuerung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Stell_BereichImpl

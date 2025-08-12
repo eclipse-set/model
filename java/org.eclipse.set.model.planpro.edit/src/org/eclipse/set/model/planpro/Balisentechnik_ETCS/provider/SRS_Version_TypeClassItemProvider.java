@@ -136,10 +136,8 @@ public class SRS_Version_TypeClassItemProvider extends BasisAttribut_AttributeGr
 			case Balisentechnik_ETCSPackage.SRS_VERSION_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

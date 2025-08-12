@@ -159,10 +159,8 @@ public class ID_ATO_TS_Instanz_ohne_Proxy_TypeClassItemProvider extends Zeiger_T
 			case VerweisePackage.ID_ATO_TS_INSTANZ_OHNE_PROXY_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

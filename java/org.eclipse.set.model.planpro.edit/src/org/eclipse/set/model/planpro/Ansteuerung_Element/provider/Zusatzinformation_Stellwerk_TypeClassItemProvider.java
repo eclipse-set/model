@@ -136,10 +136,8 @@ public class Zusatzinformation_Stellwerk_TypeClassItemProvider extends BasisAttr
 			case Ansteuerung_ElementPackage.ZUSATZINFORMATION_STELLWERK_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

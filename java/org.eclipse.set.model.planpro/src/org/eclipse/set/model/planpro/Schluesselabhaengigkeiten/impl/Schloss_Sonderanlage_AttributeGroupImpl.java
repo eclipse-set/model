@@ -239,9 +239,8 @@ public class Schloss_Sonderanlage_AttributeGroupImpl extends EObjectImpl impleme
 				return basicSetBeschreibungSonderanlage(null, msgs);
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SONDERANLAGE_ATTRIBUTE_GROUP__ID_SONDERANLAGE:
 				return basicSetIDSonderanlage(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +257,8 @@ public class Schloss_Sonderanlage_AttributeGroupImpl extends EObjectImpl impleme
 				return getBeschreibungSonderanlage();
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SONDERANLAGE_ATTRIBUTE_GROUP__ID_SONDERANLAGE:
 				return getIDSonderanlage();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +278,8 @@ public class Schloss_Sonderanlage_AttributeGroupImpl extends EObjectImpl impleme
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SONDERANLAGE_ATTRIBUTE_GROUP__ID_SONDERANLAGE:
 				setIDSonderanlage((ID_Sonderanlage_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +299,8 @@ public class Schloss_Sonderanlage_AttributeGroupImpl extends EObjectImpl impleme
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SONDERANLAGE_ATTRIBUTE_GROUP__ID_SONDERANLAGE:
 				setIDSonderanlage((ID_Sonderanlage_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +317,8 @@ public class Schloss_Sonderanlage_AttributeGroupImpl extends EObjectImpl impleme
 				return beschreibungSonderanlage != null;
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SONDERANLAGE_ATTRIBUTE_GROUP__ID_SONDERANLAGE:
 				return iDSonderanlage != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Schloss_Sonderanlage_AttributeGroupImpl

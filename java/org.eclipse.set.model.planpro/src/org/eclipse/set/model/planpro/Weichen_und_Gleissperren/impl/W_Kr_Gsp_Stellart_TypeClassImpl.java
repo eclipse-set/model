@@ -143,9 +143,8 @@ public class W_Kr_Gsp_Stellart_TypeClassImpl extends BasisAttribut_AttributeGrou
 		switch (featureID) {
 			case Weichen_und_GleissperrenPackage.WKR_GSP_STELLART_TYPE_CLASS__WERT:
 				return getWert();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -159,10 +158,8 @@ public class W_Kr_Gsp_Stellart_TypeClassImpl extends BasisAttribut_AttributeGrou
 			case Weichen_und_GleissperrenPackage.WKR_GSP_STELLART_TYPE_CLASS__WERT:
 				setWert((ENUMWKrGspStellart)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -176,10 +173,8 @@ public class W_Kr_Gsp_Stellart_TypeClassImpl extends BasisAttribut_AttributeGrou
 			case Weichen_und_GleissperrenPackage.WKR_GSP_STELLART_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -192,9 +187,8 @@ public class W_Kr_Gsp_Stellart_TypeClassImpl extends BasisAttribut_AttributeGrou
 		switch (featureID) {
 			case Weichen_und_GleissperrenPackage.WKR_GSP_STELLART_TYPE_CLASS__WERT:
 				return isSetWert();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

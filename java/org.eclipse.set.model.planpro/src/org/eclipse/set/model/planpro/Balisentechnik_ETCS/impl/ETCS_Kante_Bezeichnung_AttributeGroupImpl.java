@@ -120,9 +120,8 @@ public class ETCS_Kante_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ETCS_KANTE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ETCS_KANTE:
 				return basicSetBezeichnungETCSKante(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,9 +134,8 @@ public class ETCS_Kante_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ETCS_KANTE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ETCS_KANTE:
 				return getBezeichnungETCSKante();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,10 +149,8 @@ public class ETCS_Kante_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 			case Balisentechnik_ETCSPackage.ETCS_KANTE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ETCS_KANTE:
 				setBezeichnungETCSKante((Bezeichnung_ETCS_Kante_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -168,10 +164,8 @@ public class ETCS_Kante_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 			case Balisentechnik_ETCSPackage.ETCS_KANTE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ETCS_KANTE:
 				setBezeichnungETCSKante((Bezeichnung_ETCS_Kante_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -184,9 +178,8 @@ public class ETCS_Kante_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ETCS_KANTE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ETCS_KANTE:
 				return bezeichnungETCSKante != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ETCS_Kante_Bezeichnung_AttributeGroupImpl

@@ -161,10 +161,8 @@ public class SchlossItemProvider extends Basis_ObjektItemProvider {
 			case SchluesselabhaengigkeitenPackage.SCHLOSS__TECHNISCH_BERECHTIGTER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

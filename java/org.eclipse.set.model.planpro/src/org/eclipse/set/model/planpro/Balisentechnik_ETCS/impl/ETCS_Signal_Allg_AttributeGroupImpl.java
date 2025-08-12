@@ -356,9 +356,8 @@ public class ETCS_Signal_Allg_AttributeGroupImpl extends EObjectImpl implements 
 				return basicSetGruppenID(null, msgs);
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL_ALLG_ATTRIBUTE_GROUP__UNTERGRUPPEN_ID:
 				return basicSetUntergruppenID(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -379,9 +378,8 @@ public class ETCS_Signal_Allg_AttributeGroupImpl extends EObjectImpl implements 
 				return getGruppenID();
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL_ALLG_ATTRIBUTE_GROUP__UNTERGRUPPEN_ID:
 				return getUntergruppenID();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -407,10 +405,8 @@ public class ETCS_Signal_Allg_AttributeGroupImpl extends EObjectImpl implements 
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL_ALLG_ATTRIBUTE_GROUP__UNTERGRUPPEN_ID:
 				setUntergruppenID((Untergruppen_ID_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -436,10 +432,8 @@ public class ETCS_Signal_Allg_AttributeGroupImpl extends EObjectImpl implements 
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL_ALLG_ATTRIBUTE_GROUP__UNTERGRUPPEN_ID:
 				setUntergruppenID((Untergruppen_ID_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -460,9 +454,8 @@ public class ETCS_Signal_Allg_AttributeGroupImpl extends EObjectImpl implements 
 				return gruppenID != null;
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL_ALLG_ATTRIBUTE_GROUP__UNTERGRUPPEN_ID:
 				return untergruppenID != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ETCS_Signal_Allg_AttributeGroupImpl

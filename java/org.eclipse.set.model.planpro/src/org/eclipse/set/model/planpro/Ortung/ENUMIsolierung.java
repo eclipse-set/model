@@ -181,8 +181,8 @@ public enum ENUMIsolierung implements Enumerator {
 			case ENUM_ISOLIERUNG_EINSCHIENIG_R_VALUE: return ENUM_ISOLIERUNG_EINSCHIENIG_R;
 			case ENUM_ISOLIERUNG_SONSTIGE_VALUE: return ENUM_ISOLIERUNG_SONSTIGE;
 			case ENUM_ISOLIERUNG_ZWEISCHIENIG_VALUE: return ENUM_ISOLIERUNG_ZWEISCHIENIG;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

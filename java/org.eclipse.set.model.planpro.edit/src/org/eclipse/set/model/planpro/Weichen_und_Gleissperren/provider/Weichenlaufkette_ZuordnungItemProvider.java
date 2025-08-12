@@ -144,10 +144,8 @@ public class Weichenlaufkette_ZuordnungItemProvider extends Basis_ObjektItemProv
 			case Weichen_und_GleissperrenPackage.WEICHENLAUFKETTE_ZUORDNUNG__ID_WEICHENLAUFKETTE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -181,8 +181,8 @@ public enum ENUMGUEBauart implements Enumerator {
 			case ENUMGUE_BAUART_GUE_60_VALUE: return ENUMGUE_BAUART_GUE_60;
 			case ENUMGUE_BAUART_PZ_80_VALUE: return ENUMGUE_BAUART_PZ_80;
 			case ENUMGUE_BAUART_SONSTIGE_VALUE: return ENUMGUE_BAUART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

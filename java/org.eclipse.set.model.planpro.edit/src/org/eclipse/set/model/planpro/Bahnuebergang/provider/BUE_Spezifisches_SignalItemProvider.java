@@ -146,10 +146,8 @@ public class BUE_Spezifisches_SignalItemProvider extends Basis_ObjektItemProvide
 			case BahnuebergangPackage.BUE_SPEZIFISCHES_SIGNAL__IDBUE_EINSCHALTUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

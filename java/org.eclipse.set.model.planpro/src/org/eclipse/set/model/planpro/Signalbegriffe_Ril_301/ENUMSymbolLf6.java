@@ -434,8 +434,8 @@ public enum ENUMSymbolLf6 implements Enumerator {
 			case ENUM_SYMBOL_LF_613_VALUE: return ENUM_SYMBOL_LF_613;
 			case ENUM_SYMBOL_LF_614_VALUE: return ENUM_SYMBOL_LF_614;
 			case ENUM_SYMBOL_LF_615_VALUE: return ENUM_SYMBOL_LF_615;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

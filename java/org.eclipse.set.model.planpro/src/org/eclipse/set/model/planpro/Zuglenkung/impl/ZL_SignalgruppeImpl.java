@@ -181,9 +181,8 @@ public class ZL_SignalgruppeImpl extends Basis_ObjektImpl implements ZL_Signalgr
 				return basicSetIDZL(null, msgs);
 			case ZuglenkungPackage.ZL_SIGNALGRUPPE__ZL_SIGNALGRUPPE_ALLG:
 				return basicSetZLSignalgruppeAllg(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -198,9 +197,8 @@ public class ZL_SignalgruppeImpl extends Basis_ObjektImpl implements ZL_Signalgr
 				return getIDZL();
 			case ZuglenkungPackage.ZL_SIGNALGRUPPE__ZL_SIGNALGRUPPE_ALLG:
 				return getZLSignalgruppeAllg();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -217,10 +215,8 @@ public class ZL_SignalgruppeImpl extends Basis_ObjektImpl implements ZL_Signalgr
 			case ZuglenkungPackage.ZL_SIGNALGRUPPE__ZL_SIGNALGRUPPE_ALLG:
 				setZLSignalgruppeAllg((ZL_Signalgruppe_Allg_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -237,10 +233,8 @@ public class ZL_SignalgruppeImpl extends Basis_ObjektImpl implements ZL_Signalgr
 			case ZuglenkungPackage.ZL_SIGNALGRUPPE__ZL_SIGNALGRUPPE_ALLG:
 				setZLSignalgruppeAllg((ZL_Signalgruppe_Allg_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -255,9 +249,8 @@ public class ZL_SignalgruppeImpl extends Basis_ObjektImpl implements ZL_Signalgr
 				return iDZL != null;
 			case ZuglenkungPackage.ZL_SIGNALGRUPPE__ZL_SIGNALGRUPPE_ALLG:
 				return zLSignalgruppeAllg != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZL_SignalgruppeImpl

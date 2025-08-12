@@ -334,9 +334,8 @@ public class FMA_KomponenteImpl extends Punkt_ObjektImpl implements FMA_Komponen
 				return basicSetFMAKomponenteAchszaehlpunkt(null, msgs);
 			case OrtungPackage.FMA_KOMPONENTE__FMA_KOMPONENTE_ART:
 				return basicSetFMAKomponenteArt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -357,9 +356,8 @@ public class FMA_KomponenteImpl extends Punkt_ObjektImpl implements FMA_Komponen
 				return getFMAKomponenteAchszaehlpunkt();
 			case OrtungPackage.FMA_KOMPONENTE__FMA_KOMPONENTE_ART:
 				return getFMAKomponenteArt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -387,10 +385,8 @@ public class FMA_KomponenteImpl extends Punkt_ObjektImpl implements FMA_Komponen
 			case OrtungPackage.FMA_KOMPONENTE__FMA_KOMPONENTE_ART:
 				setFMAKomponenteArt((FMA_Komponente_Art_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -416,10 +412,8 @@ public class FMA_KomponenteImpl extends Punkt_ObjektImpl implements FMA_Komponen
 			case OrtungPackage.FMA_KOMPONENTE__FMA_KOMPONENTE_ART:
 				setFMAKomponenteArt((FMA_Komponente_Art_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -440,9 +434,8 @@ public class FMA_KomponenteImpl extends Punkt_ObjektImpl implements FMA_Komponen
 				return fMAKomponenteAchszaehlpunkt != null;
 			case OrtungPackage.FMA_KOMPONENTE__FMA_KOMPONENTE_ART:
 				return fMAKomponenteArt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //FMA_KomponenteImpl

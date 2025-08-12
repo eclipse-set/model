@@ -159,10 +159,8 @@ public class ID_Bedien_Oberflaeche_TypeClassItemProvider extends Zeiger_TypeClas
 			case VerweisePackage.ID_BEDIEN_OBERFLAECHE_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

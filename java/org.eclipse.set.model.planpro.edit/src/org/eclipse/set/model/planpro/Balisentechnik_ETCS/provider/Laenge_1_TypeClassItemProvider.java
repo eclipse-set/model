@@ -139,10 +139,8 @@ public class Laenge_1_TypeClassItemProvider extends BasisAttribut_AttributeGroup
 			case Balisentechnik_ETCSPackage.LAENGE_1TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

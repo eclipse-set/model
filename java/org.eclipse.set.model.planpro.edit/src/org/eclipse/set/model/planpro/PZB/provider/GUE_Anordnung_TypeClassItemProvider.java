@@ -138,10 +138,8 @@ public class GUE_Anordnung_TypeClassItemProvider extends BasisAttribut_Attribute
 			case PZBPackage.GUE_ANORDNUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

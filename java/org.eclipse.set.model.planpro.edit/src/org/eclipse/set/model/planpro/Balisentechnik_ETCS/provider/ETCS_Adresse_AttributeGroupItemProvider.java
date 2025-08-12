@@ -154,10 +154,8 @@ public class ETCS_Adresse_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.ETCS_ADRESSE_ATTRIBUTE_GROUP__NIDRBC:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

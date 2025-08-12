@@ -445,9 +445,8 @@ public class ZUB_Bereichsgrenze_Nach_L2_AttributeGroupImpl extends EObjectImpl i
 				return basicSetPrioritaet(null, msgs);
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_L2_ATTRIBUTE_GROUP__ZUB_BEREICHSGRENZE_NACH_L2_VON_ESG:
 				return ((InternalEList<?>)getZUBBereichsgrenzeNachL2VonESG()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -474,9 +473,8 @@ public class ZUB_Bereichsgrenze_Nach_L2_AttributeGroupImpl extends EObjectImpl i
 				return getPrioritaet();
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_L2_ATTRIBUTE_GROUP__ZUB_BEREICHSGRENZE_NACH_L2_VON_ESG:
 				return getZUBBereichsgrenzeNachL2VonESG();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -515,10 +513,8 @@ public class ZUB_Bereichsgrenze_Nach_L2_AttributeGroupImpl extends EObjectImpl i
 				getZUBBereichsgrenzeNachL2VonESG().clear();
 				getZUBBereichsgrenzeNachL2VonESG().addAll((Collection<? extends ZUB_Bereichsgrenze_Nach_L2_Von_ESG_AttributeGroup>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -553,10 +549,8 @@ public class ZUB_Bereichsgrenze_Nach_L2_AttributeGroupImpl extends EObjectImpl i
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_L2_ATTRIBUTE_GROUP__ZUB_BEREICHSGRENZE_NACH_L2_VON_ESG:
 				getZUBBereichsgrenzeNachL2VonESG().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -583,9 +577,8 @@ public class ZUB_Bereichsgrenze_Nach_L2_AttributeGroupImpl extends EObjectImpl i
 				return prioritaet != null;
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_L2_ATTRIBUTE_GROUP__ZUB_BEREICHSGRENZE_NACH_L2_VON_ESG:
 				return zUBBereichsgrenzeNachL2VonESG != null && !zUBBereichsgrenzeNachL2VonESG.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZUB_Bereichsgrenze_Nach_L2_AttributeGroupImpl

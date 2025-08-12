@@ -179,9 +179,8 @@ public class ZLV_Bus_Allg_AttributeGroupImpl extends EObjectImpl implements ZLV_
 				return basicSetUnterstationMax(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_ALLG_ATTRIBUTE_GROUP__ZN_MODEM:
 				return basicSetZNModem(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class ZLV_Bus_Allg_AttributeGroupImpl extends EObjectImpl implements ZLV_
 				return getUnterstationMax();
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_ALLG_ATTRIBUTE_GROUP__ZN_MODEM:
 				return getZNModem();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class ZLV_Bus_Allg_AttributeGroupImpl extends EObjectImpl implements ZLV_
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_ALLG_ATTRIBUTE_GROUP__ZN_MODEM:
 				setZNModem((ZN_Modem_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class ZLV_Bus_Allg_AttributeGroupImpl extends EObjectImpl implements ZLV_
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_ALLG_ATTRIBUTE_GROUP__ZN_MODEM:
 				setZNModem((ZN_Modem_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class ZLV_Bus_Allg_AttributeGroupImpl extends EObjectImpl implements ZLV_
 				return unterstationMax != null;
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_ALLG_ATTRIBUTE_GROUP__ZN_MODEM:
 				return zNModem != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZLV_Bus_Allg_AttributeGroupImpl

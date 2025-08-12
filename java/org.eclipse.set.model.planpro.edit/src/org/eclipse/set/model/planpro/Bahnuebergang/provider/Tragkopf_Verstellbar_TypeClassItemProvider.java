@@ -137,10 +137,8 @@ public class Tragkopf_Verstellbar_TypeClassItemProvider extends BasisAttribut_At
 			case BahnuebergangPackage.TRAGKOPF_VERSTELLBAR_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

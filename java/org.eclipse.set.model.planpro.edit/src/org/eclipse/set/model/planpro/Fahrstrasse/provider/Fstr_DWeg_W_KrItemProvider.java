@@ -147,10 +147,8 @@ public class Fstr_DWeg_W_KrItemProvider extends Basis_ObjektItemProvider {
 			case FahrstrassePackage.FSTR_DWEG_WKR__IDW_KR_GSP_ELEMENT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

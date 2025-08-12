@@ -134,10 +134,8 @@ public class Laufende_Nummer_Ausgabe_TypeClassItemProvider extends BasisAttribut
 			case PlanProPackage.LAUFENDE_NUMMER_AUSGABE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

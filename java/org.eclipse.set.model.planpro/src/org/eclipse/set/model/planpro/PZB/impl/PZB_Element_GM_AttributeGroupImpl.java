@@ -179,9 +179,8 @@ public class PZB_Element_GM_AttributeGroupImpl extends EObjectImpl implements PZ
 				return basicSetPZBAbstandGM(null, msgs);
 			case PZBPackage.PZB_ELEMENT_GM_ATTRIBUTE_GROUP__PZBINA:
 				return basicSetPZBINA(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class PZB_Element_GM_AttributeGroupImpl extends EObjectImpl implements PZ
 				return getPZBAbstandGM();
 			case PZBPackage.PZB_ELEMENT_GM_ATTRIBUTE_GROUP__PZBINA:
 				return getPZBINA();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class PZB_Element_GM_AttributeGroupImpl extends EObjectImpl implements PZ
 			case PZBPackage.PZB_ELEMENT_GM_ATTRIBUTE_GROUP__PZBINA:
 				setPZBINA((PZB_INA_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class PZB_Element_GM_AttributeGroupImpl extends EObjectImpl implements PZ
 			case PZBPackage.PZB_ELEMENT_GM_ATTRIBUTE_GROUP__PZBINA:
 				setPZBINA((PZB_INA_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class PZB_Element_GM_AttributeGroupImpl extends EObjectImpl implements PZ
 				return pZBAbstandGM != null;
 			case PZBPackage.PZB_ELEMENT_GM_ATTRIBUTE_GROUP__PZBINA:
 				return pZBINA != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //PZB_Element_GM_AttributeGroupImpl

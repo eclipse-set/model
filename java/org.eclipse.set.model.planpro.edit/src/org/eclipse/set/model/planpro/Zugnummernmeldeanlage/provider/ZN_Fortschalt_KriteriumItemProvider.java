@@ -151,10 +151,8 @@ public class ZN_Fortschalt_KriteriumItemProvider extends Basis_ObjektItemProvide
 			case ZugnummernmeldeanlagePackage.ZN_FORTSCHALT_KRITERIUM__ZN_FORTSCHALT_KRIT_SCHALT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

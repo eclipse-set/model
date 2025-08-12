@@ -135,8 +135,8 @@ public enum ENUMNBVerhaeltnisBesonders implements Enumerator {
 		switch (value) {
 			case ENUMNB_VERHAELTNIS_BESONDERS_UEBERLAPPEND_VALUE: return ENUMNB_VERHAELTNIS_BESONDERS_UEBERLAPPEND;
 			case ENUMNB_VERHAELTNIS_BESONDERS_VEREINIGT_VALUE: return ENUMNB_VERHAELTNIS_BESONDERS_VEREINIGT;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

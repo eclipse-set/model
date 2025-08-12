@@ -136,10 +136,8 @@ public class FMA_Anschluss_Bezeichnung_TypeClassItemProvider extends BasisAttrib
 			case OrtungPackage.FMA_ANSCHLUSS_BEZEICHNUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

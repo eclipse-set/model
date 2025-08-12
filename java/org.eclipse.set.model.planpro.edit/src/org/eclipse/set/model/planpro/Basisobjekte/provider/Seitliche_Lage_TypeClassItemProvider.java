@@ -139,10 +139,8 @@ public class Seitliche_Lage_TypeClassItemProvider extends BasisAttribut_Attribut
 			case BasisobjektePackage.SEITLICHE_LAGE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

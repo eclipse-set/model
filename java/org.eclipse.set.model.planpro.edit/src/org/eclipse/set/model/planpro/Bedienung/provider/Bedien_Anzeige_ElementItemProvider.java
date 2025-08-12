@@ -149,10 +149,8 @@ public class Bedien_Anzeige_ElementItemProvider extends Basis_ObjektItemProvider
 			case BedienungPackage.BEDIEN_ANZEIGE_ELEMENT__ID_VERKNUEPFTES_ELEMENT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

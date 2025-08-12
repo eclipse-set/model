@@ -250,8 +250,8 @@ public enum ENUMTueranschlag implements Enumerator {
 			case ENUM_TUERANSCHLAG_RECHTS_VALUE: return ENUM_TUERANSCHLAG_RECHTS;
 			case ENUM_TUERANSCHLAG_SONSTIGE_VALUE: return ENUM_TUERANSCHLAG_SONSTIGE;
 			case ENUM_TUERANSCHLAG_UNTEN_VALUE: return ENUM_TUERANSCHLAG_UNTEN;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

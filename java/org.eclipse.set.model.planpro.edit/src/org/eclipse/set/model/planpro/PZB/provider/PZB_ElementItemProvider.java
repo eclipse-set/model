@@ -153,10 +153,8 @@ public class PZB_ElementItemProvider extends Punkt_ObjektItemProvider {
 			case PZBPackage.PZB_ELEMENT__PZB_ELEMENT_GUE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

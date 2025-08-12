@@ -159,10 +159,8 @@ public class ID_Gleis_Abschnitt_TypeClassItemProvider extends Zeiger_TypeClassIt
 			case VerweisePackage.ID_GLEIS_ABSCHNITT_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

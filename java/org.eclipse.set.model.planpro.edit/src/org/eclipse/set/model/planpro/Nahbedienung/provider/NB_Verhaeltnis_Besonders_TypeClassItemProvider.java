@@ -138,10 +138,8 @@ public class NB_Verhaeltnis_Besonders_TypeClassItemProvider extends BasisAttribu
 			case NahbedienungPackage.NB_VERHAELTNIS_BESONDERS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

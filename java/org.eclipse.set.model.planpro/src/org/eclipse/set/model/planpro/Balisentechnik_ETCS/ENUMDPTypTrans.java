@@ -158,8 +158,8 @@ public enum ENUMDPTypTrans implements Enumerator {
 			case ENUMDP_TYP_TRANS_A_VALUE: return ENUMDP_TYP_TRANS_A;
 			case ENUMDP_TYP_TRANS_SONSTIGE_VALUE: return ENUMDP_TYP_TRANS_SONSTIGE;
 			case ENUMDP_TYP_TRANS_TR_VALUE: return ENUMDP_TYP_TRANS_TR;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

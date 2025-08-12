@@ -138,10 +138,8 @@ public class FMA_Isolierung_TypeClassItemProvider extends BasisAttribut_Attribut
 			case OrtungPackage.FMA_ISOLIERUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

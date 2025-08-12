@@ -153,10 +153,8 @@ public class Block_ElementItemProvider extends Basis_ObjektItemProvider {
 			case BlockPackage.BLOCK_ELEMENT__ID_ZUGSCHLUSSMELDUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

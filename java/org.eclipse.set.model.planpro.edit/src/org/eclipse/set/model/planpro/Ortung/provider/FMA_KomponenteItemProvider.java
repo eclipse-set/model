@@ -153,10 +153,8 @@ public class FMA_KomponenteItemProvider extends Punkt_ObjektItemProvider {
 			case OrtungPackage.FMA_KOMPONENTE__FMA_KOMPONENTE_ART:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

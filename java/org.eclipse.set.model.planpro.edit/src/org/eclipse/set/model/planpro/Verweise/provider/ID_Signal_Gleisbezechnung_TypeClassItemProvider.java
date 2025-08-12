@@ -159,10 +159,8 @@ public class ID_Signal_Gleisbezechnung_TypeClassItemProvider extends Zeiger_Type
 			case VerweisePackage.ID_SIGNAL_GLEISBEZECHNUNG_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

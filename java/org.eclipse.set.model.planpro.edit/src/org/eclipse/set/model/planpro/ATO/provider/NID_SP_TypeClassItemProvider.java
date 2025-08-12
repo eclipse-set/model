@@ -136,10 +136,8 @@ public class NID_SP_TypeClassItemProvider extends BasisAttribut_AttributeGroupIt
 			case ATOPackage.NID_SP_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

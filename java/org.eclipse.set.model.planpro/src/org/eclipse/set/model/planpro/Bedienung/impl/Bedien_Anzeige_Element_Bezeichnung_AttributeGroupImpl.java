@@ -120,9 +120,8 @@ public class Bedien_Anzeige_Element_Bezeichnung_AttributeGroupImpl extends EObje
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_ANZEIGE_ELEMENT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANZEIGE_ELEMENT:
 				return basicSetBezBedAnzeigeElement(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,9 +134,8 @@ public class Bedien_Anzeige_Element_Bezeichnung_AttributeGroupImpl extends EObje
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_ANZEIGE_ELEMENT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANZEIGE_ELEMENT:
 				return getBezBedAnzeigeElement();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,10 +149,8 @@ public class Bedien_Anzeige_Element_Bezeichnung_AttributeGroupImpl extends EObje
 			case BedienungPackage.BEDIEN_ANZEIGE_ELEMENT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANZEIGE_ELEMENT:
 				setBezBedAnzeigeElement((Bez_Bed_Anzeige_Element_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -168,10 +164,8 @@ public class Bedien_Anzeige_Element_Bezeichnung_AttributeGroupImpl extends EObje
 			case BedienungPackage.BEDIEN_ANZEIGE_ELEMENT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANZEIGE_ELEMENT:
 				setBezBedAnzeigeElement((Bez_Bed_Anzeige_Element_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -184,9 +178,8 @@ public class Bedien_Anzeige_Element_Bezeichnung_AttributeGroupImpl extends EObje
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_ANZEIGE_ELEMENT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANZEIGE_ELEMENT:
 				return bezBedAnzeigeElement != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Anzeige_Element_Bezeichnung_AttributeGroupImpl

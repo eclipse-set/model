@@ -150,10 +150,8 @@ public class DocumentRootItemProvider
 			case PlanProPackage.DOCUMENT_ROOT__PLAN_PRO_SCHNITTSTELLE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

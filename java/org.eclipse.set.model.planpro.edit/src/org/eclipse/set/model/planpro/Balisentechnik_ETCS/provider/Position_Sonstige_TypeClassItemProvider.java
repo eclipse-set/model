@@ -136,10 +136,8 @@ public class Position_Sonstige_TypeClassItemProvider extends BasisAttribut_Attri
 			case Balisentechnik_ETCSPackage.POSITION_SONSTIGE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

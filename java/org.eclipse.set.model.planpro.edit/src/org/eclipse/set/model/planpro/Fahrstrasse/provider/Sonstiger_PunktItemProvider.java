@@ -142,10 +142,8 @@ public class Sonstiger_PunktItemProvider extends Punkt_ObjektItemProvider {
 			case FahrstrassePackage.SONSTIGER_PUNKT__ID_BEGINN_BEREICH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

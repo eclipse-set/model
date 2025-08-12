@@ -158,8 +158,8 @@ public enum ENUMFTHinweisFunktion implements Enumerator {
 			case ENUMFT_HINWEIS_FUNKTION_ORTUNG_VALUE: return ENUMFT_HINWEIS_FUNKTION_ORTUNG;
 			case ENUMFT_HINWEIS_FUNKTION_SONSTIGE_VALUE: return ENUMFT_HINWEIS_FUNKTION_SONSTIGE;
 			case ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_VALUE: return ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

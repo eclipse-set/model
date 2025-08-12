@@ -274,9 +274,8 @@ public class RBCImpl extends Basis_ObjektImpl implements RBC {
 				return basicSetIDUnterbringung(null, msgs);
 			case Balisentechnik_ETCSPackage.RBC__RBC_ALLG:
 				return basicSetRBCAllg(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -295,9 +294,8 @@ public class RBCImpl extends Basis_ObjektImpl implements RBC {
 				return getIDUnterbringung();
 			case Balisentechnik_ETCSPackage.RBC__RBC_ALLG:
 				return getRBCAllg();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -322,10 +320,8 @@ public class RBCImpl extends Basis_ObjektImpl implements RBC {
 			case Balisentechnik_ETCSPackage.RBC__RBC_ALLG:
 				setRBCAllg((RBC_Allg_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -348,10 +344,8 @@ public class RBCImpl extends Basis_ObjektImpl implements RBC {
 			case Balisentechnik_ETCSPackage.RBC__RBC_ALLG:
 				setRBCAllg((RBC_Allg_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -370,9 +364,8 @@ public class RBCImpl extends Basis_ObjektImpl implements RBC {
 				return iDUnterbringung != null;
 			case Balisentechnik_ETCSPackage.RBC__RBC_ALLG:
 				return rBCAllg != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //RBCImpl

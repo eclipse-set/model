@@ -139,10 +139,8 @@ public class Vormeldestart_TypeClassItemProvider extends BasisAttribut_Attribute
 			case ZugnummernmeldeanlagePackage.VORMELDESTART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

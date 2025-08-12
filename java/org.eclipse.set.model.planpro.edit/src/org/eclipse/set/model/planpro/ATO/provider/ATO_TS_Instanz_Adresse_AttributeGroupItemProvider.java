@@ -154,10 +154,8 @@ public class ATO_TS_Instanz_Adresse_AttributeGroupItemProvider
 			case ATOPackage.ATO_TS_INSTANZ_ADRESSE_ATTRIBUTE_GROUP__NIDCATOTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

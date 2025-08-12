@@ -179,9 +179,8 @@ public class ZUB_Bereichsgrenze_Nach_Sonstige_AttributeGroupImpl extends EObject
 				return basicSetBezeichnungZUB(null, msgs);
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_SONSTIGE_ATTRIBUTE_GROUP__LAENGE_AUSFUEHRUNGSBEREICH:
 				return basicSetLaengeAusfuehrungsbereich(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class ZUB_Bereichsgrenze_Nach_Sonstige_AttributeGroupImpl extends EObject
 				return getBezeichnungZUB();
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_SONSTIGE_ATTRIBUTE_GROUP__LAENGE_AUSFUEHRUNGSBEREICH:
 				return getLaengeAusfuehrungsbereich();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class ZUB_Bereichsgrenze_Nach_Sonstige_AttributeGroupImpl extends EObject
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_SONSTIGE_ATTRIBUTE_GROUP__LAENGE_AUSFUEHRUNGSBEREICH:
 				setLaengeAusfuehrungsbereich((Laenge_Ausfuehrungsbereich_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class ZUB_Bereichsgrenze_Nach_Sonstige_AttributeGroupImpl extends EObject
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_SONSTIGE_ATTRIBUTE_GROUP__LAENGE_AUSFUEHRUNGSBEREICH:
 				setLaengeAusfuehrungsbereich((Laenge_Ausfuehrungsbereich_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class ZUB_Bereichsgrenze_Nach_Sonstige_AttributeGroupImpl extends EObject
 				return bezeichnungZUB != null;
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_SONSTIGE_ATTRIBUTE_GROUP__LAENGE_AUSFUEHRUNGSBEREICH:
 				return laengeAusfuehrungsbereich != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZUB_Bereichsgrenze_Nach_Sonstige_AttributeGroupImpl

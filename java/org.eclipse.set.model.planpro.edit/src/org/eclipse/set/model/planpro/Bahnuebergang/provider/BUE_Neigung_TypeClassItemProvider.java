@@ -139,10 +139,8 @@ public class BUE_Neigung_TypeClassItemProvider extends BasisAttribut_AttributeGr
 			case BahnuebergangPackage.BUE_NEIGUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

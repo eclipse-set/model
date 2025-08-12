@@ -239,9 +239,8 @@ public class Punkt_Objekt_Strecke_AttributeGroupImpl extends EObjectImpl impleme
 				return basicSetKmMassgebend(null, msgs);
 			case BasisobjektePackage.PUNKT_OBJEKT_STRECKE_ATTRIBUTE_GROUP__STRECKE_KM:
 				return basicSetStreckeKm(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +257,8 @@ public class Punkt_Objekt_Strecke_AttributeGroupImpl extends EObjectImpl impleme
 				return getKmMassgebend();
 			case BasisobjektePackage.PUNKT_OBJEKT_STRECKE_ATTRIBUTE_GROUP__STRECKE_KM:
 				return getStreckeKm();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +278,8 @@ public class Punkt_Objekt_Strecke_AttributeGroupImpl extends EObjectImpl impleme
 			case BasisobjektePackage.PUNKT_OBJEKT_STRECKE_ATTRIBUTE_GROUP__STRECKE_KM:
 				setStreckeKm((Strecke_Km_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +299,8 @@ public class Punkt_Objekt_Strecke_AttributeGroupImpl extends EObjectImpl impleme
 			case BasisobjektePackage.PUNKT_OBJEKT_STRECKE_ATTRIBUTE_GROUP__STRECKE_KM:
 				setStreckeKm((Strecke_Km_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +317,8 @@ public class Punkt_Objekt_Strecke_AttributeGroupImpl extends EObjectImpl impleme
 				return kmMassgebend != null;
 			case BasisobjektePackage.PUNKT_OBJEKT_STRECKE_ATTRIBUTE_GROUP__STRECKE_KM:
 				return streckeKm != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Punkt_Objekt_Strecke_AttributeGroupImpl

@@ -474,9 +474,8 @@ public class BUE_Einschaltung_Hp_AttributeGroupImpl extends EObjectImpl implemen
 				return basicSetSignalverzGewaehlt(null, msgs);
 			case BahnuebergangPackage.BUE_EINSCHALTUNG_HP_ATTRIBUTE_GROUP__TEILVORGABEZEIT:
 				return basicSetTeilvorgabezeit(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -501,9 +500,8 @@ public class BUE_Einschaltung_Hp_AttributeGroupImpl extends EObjectImpl implemen
 				return getSignalverzGewaehlt();
 			case BahnuebergangPackage.BUE_EINSCHALTUNG_HP_ATTRIBUTE_GROUP__TEILVORGABEZEIT:
 				return getTeilvorgabezeit();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -535,10 +533,8 @@ public class BUE_Einschaltung_Hp_AttributeGroupImpl extends EObjectImpl implemen
 			case BahnuebergangPackage.BUE_EINSCHALTUNG_HP_ATTRIBUTE_GROUP__TEILVORGABEZEIT:
 				setTeilvorgabezeit((Teilvorgabezeit_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -570,10 +566,8 @@ public class BUE_Einschaltung_Hp_AttributeGroupImpl extends EObjectImpl implemen
 			case BahnuebergangPackage.BUE_EINSCHALTUNG_HP_ATTRIBUTE_GROUP__TEILVORGABEZEIT:
 				setTeilvorgabezeit((Teilvorgabezeit_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -598,9 +592,8 @@ public class BUE_Einschaltung_Hp_AttributeGroupImpl extends EObjectImpl implemen
 				return signalverzGewaehlt != null;
 			case BahnuebergangPackage.BUE_EINSCHALTUNG_HP_ATTRIBUTE_GROUP__TEILVORGABEZEIT:
 				return teilvorgabezeit != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //BUE_Einschaltung_Hp_AttributeGroupImpl

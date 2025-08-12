@@ -156,10 +156,8 @@ public class Bgrenze_Nach_ESG_Bed_Ausstieg_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_ESG_BED_AUSSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

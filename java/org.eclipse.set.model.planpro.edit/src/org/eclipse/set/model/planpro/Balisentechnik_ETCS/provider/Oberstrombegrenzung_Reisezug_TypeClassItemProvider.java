@@ -139,10 +139,8 @@ public class Oberstrombegrenzung_Reisezug_TypeClassItemProvider extends BasisAtt
 			case Balisentechnik_ETCSPackage.OBERSTROMBEGRENZUNG_REISEZUG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

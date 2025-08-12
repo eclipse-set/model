@@ -154,10 +154,8 @@ public class NB_Zone_Allg_AttributeGroupItemProvider
 			case NahbedienungPackage.NB_ZONE_ALLG_ATTRIBUTE_GROUP__RANG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

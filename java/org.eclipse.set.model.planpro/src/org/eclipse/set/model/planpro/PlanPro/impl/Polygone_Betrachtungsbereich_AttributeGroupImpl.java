@@ -154,9 +154,8 @@ public class Polygone_Betrachtungsbereich_AttributeGroupImpl extends EObjectImpl
 				return basicSetKoordinatensystemBB(null, msgs);
 			case PlanProPackage.POLYGONE_BETRACHTUNGSBEREICH_ATTRIBUTE_GROUP__POLYGONZUG_BETRACHTUNGSBEREICH:
 				return ((InternalEList<?>)getPolygonzugBetrachtungsbereich()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -171,9 +170,8 @@ public class Polygone_Betrachtungsbereich_AttributeGroupImpl extends EObjectImpl
 				return getKoordinatensystemBB();
 			case PlanProPackage.POLYGONE_BETRACHTUNGSBEREICH_ATTRIBUTE_GROUP__POLYGONZUG_BETRACHTUNGSBEREICH:
 				return getPolygonzugBetrachtungsbereich();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -192,10 +190,8 @@ public class Polygone_Betrachtungsbereich_AttributeGroupImpl extends EObjectImpl
 				getPolygonzugBetrachtungsbereich().clear();
 				getPolygonzugBetrachtungsbereich().addAll((Collection<? extends Polygonzug_Betrachtungsbereich_TypeClass>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -212,10 +208,8 @@ public class Polygone_Betrachtungsbereich_AttributeGroupImpl extends EObjectImpl
 			case PlanProPackage.POLYGONE_BETRACHTUNGSBEREICH_ATTRIBUTE_GROUP__POLYGONZUG_BETRACHTUNGSBEREICH:
 				getPolygonzugBetrachtungsbereich().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -230,9 +224,8 @@ public class Polygone_Betrachtungsbereich_AttributeGroupImpl extends EObjectImpl
 				return koordinatensystemBB != null;
 			case PlanProPackage.POLYGONE_BETRACHTUNGSBEREICH_ATTRIBUTE_GROUP__POLYGONZUG_BETRACHTUNGSBEREICH:
 				return polygonzugBetrachtungsbereich != null && !polygonzugBetrachtungsbereich.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Polygone_Betrachtungsbereich_AttributeGroupImpl

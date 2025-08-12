@@ -238,9 +238,8 @@ public class ETCS_Signal_DWeg_AttributeGroupImpl extends EObjectImpl implements 
 				return basicSetDWegIntervall50(null, msgs);
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL_DWEG_ATTRIBUTE_GROUP__DWEG_INTERVALL50200:
 				return basicSetDWegIntervall50200(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -257,9 +256,8 @@ public class ETCS_Signal_DWeg_AttributeGroupImpl extends EObjectImpl implements 
 				return getDWegIntervall50();
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL_DWEG_ATTRIBUTE_GROUP__DWEG_INTERVALL50200:
 				return getDWegIntervall50200();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -279,10 +277,8 @@ public class ETCS_Signal_DWeg_AttributeGroupImpl extends EObjectImpl implements 
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL_DWEG_ATTRIBUTE_GROUP__DWEG_INTERVALL50200:
 				setDWegIntervall50200((DWeg_Intervall_50_200_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -302,10 +298,8 @@ public class ETCS_Signal_DWeg_AttributeGroupImpl extends EObjectImpl implements 
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL_DWEG_ATTRIBUTE_GROUP__DWEG_INTERVALL50200:
 				setDWegIntervall50200((DWeg_Intervall_50_200_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -322,9 +316,8 @@ public class ETCS_Signal_DWeg_AttributeGroupImpl extends EObjectImpl implements 
 				return dWegIntervall50 != null;
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL_DWEG_ATTRIBUTE_GROUP__DWEG_INTERVALL50200:
 				return dWegIntervall50200 != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ETCS_Signal_DWeg_AttributeGroupImpl

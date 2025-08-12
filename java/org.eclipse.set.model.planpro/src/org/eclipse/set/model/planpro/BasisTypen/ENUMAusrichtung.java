@@ -158,8 +158,8 @@ public enum ENUMAusrichtung implements Enumerator {
 			case ENUM_AUSRICHTUNG_GEGEN_VALUE: return ENUM_AUSRICHTUNG_GEGEN;
 			case ENUM_AUSRICHTUNG_IN_VALUE: return ENUM_AUSRICHTUNG_IN;
 			case ENUM_AUSRICHTUNG_KEINE_VALUE: return ENUM_AUSRICHTUNG_KEINE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

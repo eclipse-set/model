@@ -134,10 +134,8 @@ public class E_Mail_Adresse_TypeClassItemProvider extends BasisAttribut_Attribut
 			case PlanProPackage.EMAIL_ADRESSE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

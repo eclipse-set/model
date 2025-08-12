@@ -144,9 +144,8 @@ public class Datum_Abschluss_Projekt_TypeClassImpl extends BasisAttribut_Attribu
 		switch (featureID) {
 			case PlanProPackage.DATUM_ABSCHLUSS_PROJEKT_TYPE_CLASS__WERT:
 				return getWert();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -160,10 +159,8 @@ public class Datum_Abschluss_Projekt_TypeClassImpl extends BasisAttribut_Attribu
 			case PlanProPackage.DATUM_ABSCHLUSS_PROJEKT_TYPE_CLASS__WERT:
 				setWert((XMLGregorianCalendar)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -177,10 +174,8 @@ public class Datum_Abschluss_Projekt_TypeClassImpl extends BasisAttribut_Attribu
 			case PlanProPackage.DATUM_ABSCHLUSS_PROJEKT_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -193,9 +188,8 @@ public class Datum_Abschluss_Projekt_TypeClassImpl extends BasisAttribut_Attribu
 		switch (featureID) {
 			case PlanProPackage.DATUM_ABSCHLUSS_PROJEKT_TYPE_CLASS__WERT:
 				return isSetWert();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

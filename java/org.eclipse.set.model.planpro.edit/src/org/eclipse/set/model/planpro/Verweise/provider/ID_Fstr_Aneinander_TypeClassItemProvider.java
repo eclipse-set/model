@@ -159,10 +159,8 @@ public class ID_Fstr_Aneinander_TypeClassItemProvider extends Zeiger_TypeClassIt
 			case VerweisePackage.ID_FSTR_ANEINANDER_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

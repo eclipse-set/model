@@ -181,8 +181,8 @@ public enum ENUMGeltungsbereich implements Enumerator {
 			case ENUM_GELTUNGSBEREICH_DV_VALUE: return ENUM_GELTUNGSBEREICH_DV;
 			case ENUM_GELTUNGSBEREICH_SBAHN_B_VALUE: return ENUM_GELTUNGSBEREICH_SBAHN_B;
 			case ENUM_GELTUNGSBEREICH_SBAHN_HH_VALUE: return ENUM_GELTUNGSBEREICH_SBAHN_HH;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

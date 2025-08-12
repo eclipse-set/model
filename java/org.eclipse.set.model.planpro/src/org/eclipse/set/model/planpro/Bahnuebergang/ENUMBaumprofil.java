@@ -158,8 +158,8 @@ public enum ENUMBaumprofil implements Enumerator {
 			case ENUM_BAUMPROFIL_RECHTECK_VALUE: return ENUM_BAUMPROFIL_RECHTECK;
 			case ENUM_BAUMPROFIL_RUND_VALUE: return ENUM_BAUMPROFIL_RUND;
 			case ENUM_BAUMPROFIL_SONSTIGE_VALUE: return ENUM_BAUMPROFIL_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

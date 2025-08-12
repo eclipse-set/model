@@ -138,10 +138,8 @@ public class Oertlichkeit_Art_TypeClassItemProvider extends BasisAttribut_Attrib
 			case GeodatenPackage.OERTLICHKEIT_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

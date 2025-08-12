@@ -227,8 +227,8 @@ public enum ENUMBetriebsfuehrung implements Enumerator {
 			case ENUM_BETRIEBSFUEHRUNG_ZLB_VALUE: return ENUM_BETRIEBSFUEHRUNG_ZLB;
 			case ENUM_BETRIEBSFUEHRUNG_ZWEIGL_VALUE: return ENUM_BETRIEBSFUEHRUNG_ZWEIGL;
 			case ENUM_BETRIEBSFUEHRUNG_ZWEIGL_GWB_VALUE: return ENUM_BETRIEBSFUEHRUNG_ZWEIGL_GWB;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

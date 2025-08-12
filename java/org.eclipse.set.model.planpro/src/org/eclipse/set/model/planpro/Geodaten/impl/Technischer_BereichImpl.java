@@ -180,9 +180,8 @@ public class Technischer_BereichImpl extends Bereich_ObjektImpl implements Techn
 				return basicSetTBArt(null, msgs);
 			case GeodatenPackage.TECHNISCHER_BEREICH__TB_BESCHREIBUNG:
 				return basicSetTBBeschreibung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,9 +196,8 @@ public class Technischer_BereichImpl extends Bereich_ObjektImpl implements Techn
 				return getTBArt();
 			case GeodatenPackage.TECHNISCHER_BEREICH__TB_BESCHREIBUNG:
 				return getTBBeschreibung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -216,10 +214,8 @@ public class Technischer_BereichImpl extends Bereich_ObjektImpl implements Techn
 			case GeodatenPackage.TECHNISCHER_BEREICH__TB_BESCHREIBUNG:
 				setTBBeschreibung((TB_Beschreibung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -236,10 +232,8 @@ public class Technischer_BereichImpl extends Bereich_ObjektImpl implements Techn
 			case GeodatenPackage.TECHNISCHER_BEREICH__TB_BESCHREIBUNG:
 				setTBBeschreibung((TB_Beschreibung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -254,9 +248,8 @@ public class Technischer_BereichImpl extends Bereich_ObjektImpl implements Techn
 				return tBArt != null;
 			case GeodatenPackage.TECHNISCHER_BEREICH__TB_BESCHREIBUNG:
 				return tBBeschreibung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Technischer_BereichImpl

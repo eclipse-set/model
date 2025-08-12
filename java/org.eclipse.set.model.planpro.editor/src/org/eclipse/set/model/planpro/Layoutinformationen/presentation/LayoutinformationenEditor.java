@@ -493,8 +493,6 @@ public class LayoutinformationenEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
-						default:
-							break;
 					}
 				}
 				else {

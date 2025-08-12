@@ -135,8 +135,8 @@ public enum ENUMFueSchaltfall implements Enumerator {
 		switch (value) {
 			case ENUM_FUE_SCHALTFALL_12_VALUE: return ENUM_FUE_SCHALTFALL_12;
 			case ENUM_FUE_SCHALTFALL_2_VALUE: return ENUM_FUE_SCHALTFALL_2;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

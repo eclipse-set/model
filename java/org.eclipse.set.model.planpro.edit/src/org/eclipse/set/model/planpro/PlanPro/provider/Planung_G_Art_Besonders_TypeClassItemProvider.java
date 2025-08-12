@@ -136,10 +136,8 @@ public class Planung_G_Art_Besonders_TypeClassItemProvider extends BasisAttribut
 			case PlanProPackage.PLANUNG_GART_BESONDERS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

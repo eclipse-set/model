@@ -154,10 +154,8 @@ public class Metallteil_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.METALLTEIL_ATTRIBUTE_GROUP__METALLTEIL_LAENGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

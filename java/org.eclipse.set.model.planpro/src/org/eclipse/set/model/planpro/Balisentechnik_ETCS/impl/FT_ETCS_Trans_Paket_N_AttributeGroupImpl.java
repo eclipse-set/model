@@ -415,9 +415,8 @@ public class FT_ETCS_Trans_Paket_N_AttributeGroupImpl extends EObjectImpl implem
 				return basicSetRekursion2Nr(null, msgs);
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_PAKET_NATTRIBUTE_GROUP__REKURSION_NR:
 				return basicSetRekursionNr(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -440,9 +439,8 @@ public class FT_ETCS_Trans_Paket_N_AttributeGroupImpl extends EObjectImpl implem
 				return getRekursion2Nr();
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_PAKET_NATTRIBUTE_GROUP__REKURSION_NR:
 				return getRekursionNr();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -471,10 +469,8 @@ public class FT_ETCS_Trans_Paket_N_AttributeGroupImpl extends EObjectImpl implem
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_PAKET_NATTRIBUTE_GROUP__REKURSION_NR:
 				setRekursionNr((Rekursion_Nr_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -503,10 +499,8 @@ public class FT_ETCS_Trans_Paket_N_AttributeGroupImpl extends EObjectImpl implem
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_PAKET_NATTRIBUTE_GROUP__REKURSION_NR:
 				setRekursionNr((Rekursion_Nr_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -529,9 +523,8 @@ public class FT_ETCS_Trans_Paket_N_AttributeGroupImpl extends EObjectImpl implem
 				return rekursion2Nr != null;
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_PAKET_NATTRIBUTE_GROUP__REKURSION_NR:
 				return rekursionNr != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //FT_ETCS_Trans_Paket_N_AttributeGroupImpl

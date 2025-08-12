@@ -159,10 +159,8 @@ public class ID_Fstr_DWeg_TypeClassItemProvider extends Zeiger_TypeClassItemProv
 			case VerweisePackage.ID_FSTR_DWEG_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

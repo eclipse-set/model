@@ -139,10 +139,8 @@ public class FW_Teil_Nummer_TypeClassItemProvider extends BasisAttribut_Attribut
 			case Balisentechnik_ETCSPackage.FW_TEIL_NUMMER_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

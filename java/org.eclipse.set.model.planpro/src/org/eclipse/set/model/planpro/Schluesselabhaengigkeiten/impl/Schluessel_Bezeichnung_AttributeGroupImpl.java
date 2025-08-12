@@ -120,9 +120,8 @@ public class Schluessel_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 		switch (featureID) {
 			case SchluesselabhaengigkeitenPackage.SCHLUESSEL_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_SCHLUESSEL:
 				return basicSetBezeichnungSchluessel(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,9 +134,8 @@ public class Schluessel_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 		switch (featureID) {
 			case SchluesselabhaengigkeitenPackage.SCHLUESSEL_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_SCHLUESSEL:
 				return getBezeichnungSchluessel();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,10 +149,8 @@ public class Schluessel_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 			case SchluesselabhaengigkeitenPackage.SCHLUESSEL_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_SCHLUESSEL:
 				setBezeichnungSchluessel((Bezeichnung_Schluessel_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -168,10 +164,8 @@ public class Schluessel_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 			case SchluesselabhaengigkeitenPackage.SCHLUESSEL_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_SCHLUESSEL:
 				setBezeichnungSchluessel((Bezeichnung_Schluessel_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -184,9 +178,8 @@ public class Schluessel_Bezeichnung_AttributeGroupImpl extends EObjectImpl imple
 		switch (featureID) {
 			case SchluesselabhaengigkeitenPackage.SCHLUESSEL_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_SCHLUESSEL:
 				return bezeichnungSchluessel != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Schluessel_Bezeichnung_AttributeGroupImpl

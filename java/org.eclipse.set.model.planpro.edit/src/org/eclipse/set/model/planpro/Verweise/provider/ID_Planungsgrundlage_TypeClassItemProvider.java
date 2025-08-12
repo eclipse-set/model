@@ -159,10 +159,8 @@ public class ID_Planungsgrundlage_TypeClassItemProvider extends Zeiger_TypeClass
 			case VerweisePackage.ID_PLANUNGSGRUNDLAGE_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

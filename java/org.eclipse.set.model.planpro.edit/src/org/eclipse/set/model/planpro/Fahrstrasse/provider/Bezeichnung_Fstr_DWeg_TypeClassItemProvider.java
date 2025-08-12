@@ -136,10 +136,8 @@ public class Bezeichnung_Fstr_DWeg_TypeClassItemProvider extends BasisAttribut_A
 			case FahrstrassePackage.BEZEICHNUNG_FSTR_DWEG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -139,10 +139,8 @@ public class V_Zul_Strecke_TypeClassItemProvider extends BasisAttribut_Attribute
 			case Balisentechnik_ETCSPackage.VZUL_STRECKE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

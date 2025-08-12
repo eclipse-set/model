@@ -572,8 +572,8 @@ public enum ENUMDPTypZBS implements Enumerator {
 			case ENUMDP_TYP_ZBS_ZRV_VALUE: return ENUMDP_TYP_ZBS_ZRV;
 			case ENUMDP_TYP_ZBS_ZU_VALUE: return ENUMDP_TYP_ZBS_ZU;
 			case ENUMDP_TYP_ZBS_ZV_VALUE: return ENUMDP_TYP_ZBS_ZV;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -240,9 +240,8 @@ public class NB_Zone_GrenzeImpl extends Basis_ObjektImpl implements NB_Zone_Gren
 				return basicSetIDNBZone(null, msgs);
 			case NahbedienungPackage.NB_ZONE_GRENZE__NB_GRENZE_ART:
 				return basicSetNBGrenzeArt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -259,9 +258,8 @@ public class NB_Zone_GrenzeImpl extends Basis_ObjektImpl implements NB_Zone_Gren
 				return getIDNBZone();
 			case NahbedienungPackage.NB_ZONE_GRENZE__NB_GRENZE_ART:
 				return getNBGrenzeArt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -281,10 +279,8 @@ public class NB_Zone_GrenzeImpl extends Basis_ObjektImpl implements NB_Zone_Gren
 			case NahbedienungPackage.NB_ZONE_GRENZE__NB_GRENZE_ART:
 				setNBGrenzeArt((NB_Grenze_Art_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -304,10 +300,8 @@ public class NB_Zone_GrenzeImpl extends Basis_ObjektImpl implements NB_Zone_Gren
 			case NahbedienungPackage.NB_ZONE_GRENZE__NB_GRENZE_ART:
 				setNBGrenzeArt((NB_Grenze_Art_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -324,9 +318,8 @@ public class NB_Zone_GrenzeImpl extends Basis_ObjektImpl implements NB_Zone_Gren
 				return iDNBZone != null;
 			case NahbedienungPackage.NB_ZONE_GRENZE__NB_GRENZE_ART:
 				return nBGrenzeArt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //NB_Zone_GrenzeImpl

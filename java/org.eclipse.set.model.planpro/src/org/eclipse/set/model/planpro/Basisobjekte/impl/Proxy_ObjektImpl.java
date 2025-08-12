@@ -119,9 +119,8 @@ public class Proxy_ObjektImpl extends Ur_ObjektImpl implements Proxy_Objekt {
 		switch (featureID) {
 			case BasisobjektePackage.PROXY_OBJEKT__LST_OBJEKT_ART:
 				return basicSetLSTObjektArt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,9 +133,8 @@ public class Proxy_ObjektImpl extends Ur_ObjektImpl implements Proxy_Objekt {
 		switch (featureID) {
 			case BasisobjektePackage.PROXY_OBJEKT__LST_OBJEKT_ART:
 				return getLSTObjektArt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -150,10 +148,8 @@ public class Proxy_ObjektImpl extends Ur_ObjektImpl implements Proxy_Objekt {
 			case BasisobjektePackage.PROXY_OBJEKT__LST_OBJEKT_ART:
 				setLSTObjektArt((LST_Objekt_Art_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -167,10 +163,8 @@ public class Proxy_ObjektImpl extends Ur_ObjektImpl implements Proxy_Objekt {
 			case BasisobjektePackage.PROXY_OBJEKT__LST_OBJEKT_ART:
 				setLSTObjektArt((LST_Objekt_Art_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -183,9 +177,8 @@ public class Proxy_ObjektImpl extends Ur_ObjektImpl implements Proxy_Objekt {
 		switch (featureID) {
 			case BasisobjektePackage.PROXY_OBJEKT__LST_OBJEKT_ART:
 				return lSTObjektArt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Proxy_ObjektImpl

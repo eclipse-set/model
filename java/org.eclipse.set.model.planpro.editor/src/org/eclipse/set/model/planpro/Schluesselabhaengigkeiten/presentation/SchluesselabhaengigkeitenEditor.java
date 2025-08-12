@@ -493,8 +493,6 @@ public class SchluesselabhaengigkeitenEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
-						default:
-							break;
 					}
 				}
 				else {

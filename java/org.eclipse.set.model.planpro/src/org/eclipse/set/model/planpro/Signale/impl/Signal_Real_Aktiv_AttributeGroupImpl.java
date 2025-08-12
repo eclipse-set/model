@@ -298,9 +298,8 @@ public class Signal_Real_Aktiv_AttributeGroupImpl extends EObjectImpl implements
 				return basicSetSonstigeZulaessigeAnordnung(null, msgs);
 			case SignalePackage.SIGNAL_REAL_AKTIV_ATTRIBUTE_GROUP__TUNNELSIGNAL:
 				return basicSetTunnelsignal(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -319,9 +318,8 @@ public class Signal_Real_Aktiv_AttributeGroupImpl extends EObjectImpl implements
 				return getSonstigeZulaessigeAnordnung();
 			case SignalePackage.SIGNAL_REAL_AKTIV_ATTRIBUTE_GROUP__TUNNELSIGNAL:
 				return getTunnelsignal();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -344,10 +342,8 @@ public class Signal_Real_Aktiv_AttributeGroupImpl extends EObjectImpl implements
 			case SignalePackage.SIGNAL_REAL_AKTIV_ATTRIBUTE_GROUP__TUNNELSIGNAL:
 				setTunnelsignal((Tunnelsignal_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -370,10 +366,8 @@ public class Signal_Real_Aktiv_AttributeGroupImpl extends EObjectImpl implements
 			case SignalePackage.SIGNAL_REAL_AKTIV_ATTRIBUTE_GROUP__TUNNELSIGNAL:
 				setTunnelsignal((Tunnelsignal_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -392,9 +386,8 @@ public class Signal_Real_Aktiv_AttributeGroupImpl extends EObjectImpl implements
 				return sonstigeZulaessigeAnordnung != null;
 			case SignalePackage.SIGNAL_REAL_AKTIV_ATTRIBUTE_GROUP__TUNNELSIGNAL:
 				return tunnelsignal != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Signal_Real_Aktiv_AttributeGroupImpl

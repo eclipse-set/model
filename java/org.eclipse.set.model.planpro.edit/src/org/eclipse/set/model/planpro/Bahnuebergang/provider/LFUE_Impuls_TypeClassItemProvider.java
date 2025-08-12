@@ -138,10 +138,8 @@ public class LFUE_Impuls_TypeClassItemProvider extends BasisAttribut_AttributeGr
 			case BahnuebergangPackage.LFUE_IMPULS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

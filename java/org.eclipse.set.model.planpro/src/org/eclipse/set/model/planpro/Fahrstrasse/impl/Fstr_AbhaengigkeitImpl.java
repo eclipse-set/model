@@ -240,9 +240,8 @@ public class Fstr_AbhaengigkeitImpl extends Basis_ObjektImpl implements Fstr_Abh
 				return basicSetFstrAbhaengigkeitSsp(null, msgs);
 			case FahrstrassePackage.FSTR_ABHAENGIGKEIT__ID_BEDIEN_ANZEIGE_ELEMENT:
 				return basicSetIDBedienAnzeigeElement(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -259,9 +258,8 @@ public class Fstr_AbhaengigkeitImpl extends Basis_ObjektImpl implements Fstr_Abh
 				return getFstrAbhaengigkeitSsp();
 			case FahrstrassePackage.FSTR_ABHAENGIGKEIT__ID_BEDIEN_ANZEIGE_ELEMENT:
 				return getIDBedienAnzeigeElement();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -281,10 +279,8 @@ public class Fstr_AbhaengigkeitImpl extends Basis_ObjektImpl implements Fstr_Abh
 			case FahrstrassePackage.FSTR_ABHAENGIGKEIT__ID_BEDIEN_ANZEIGE_ELEMENT:
 				setIDBedienAnzeigeElement((ID_Bedien_Anzeige_Element_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -304,10 +300,8 @@ public class Fstr_AbhaengigkeitImpl extends Basis_ObjektImpl implements Fstr_Abh
 			case FahrstrassePackage.FSTR_ABHAENGIGKEIT__ID_BEDIEN_ANZEIGE_ELEMENT:
 				setIDBedienAnzeigeElement((ID_Bedien_Anzeige_Element_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -324,9 +318,8 @@ public class Fstr_AbhaengigkeitImpl extends Basis_ObjektImpl implements Fstr_Abh
 				return fstrAbhaengigkeitSsp != null;
 			case FahrstrassePackage.FSTR_ABHAENGIGKEIT__ID_BEDIEN_ANZEIGE_ELEMENT:
 				return iDBedienAnzeigeElement != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Fstr_AbhaengigkeitImpl

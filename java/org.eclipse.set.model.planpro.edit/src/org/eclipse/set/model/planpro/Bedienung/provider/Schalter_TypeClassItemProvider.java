@@ -138,10 +138,8 @@ public class Schalter_TypeClassItemProvider extends BasisAttribut_AttributeGroup
 			case BedienungPackage.SCHALTER_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

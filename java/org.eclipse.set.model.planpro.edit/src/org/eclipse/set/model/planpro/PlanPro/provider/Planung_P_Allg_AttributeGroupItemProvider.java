@@ -156,10 +156,8 @@ public class Planung_P_Allg_AttributeGroupItemProvider
 			case PlanProPackage.PLANUNG_PALLG_ATTRIBUTE_GROUP__PROJEKTLEITER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -144,10 +144,8 @@ public class Schaltmittel_Fstr_ZuordnungItemProvider extends Basis_ObjektItemPro
 			case BahnuebergangPackage.SCHALTMITTEL_FSTR_ZUORDNUNG__ID_SCHALTMITTEL_ZUORDNUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -240,9 +240,8 @@ public class ZN_Telegramm_85_ZuordnungImpl extends Basis_ObjektImpl implements Z
 				return basicSetTelegramm85AlleFstr(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN_TELEGRAMM_85_ZUORDNUNG__TELEGRAMM85_EINZELNE_FSTR:
 				return basicSetTelegramm85EinzelneFstr(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -259,9 +258,8 @@ public class ZN_Telegramm_85_ZuordnungImpl extends Basis_ObjektImpl implements Z
 				return getTelegramm85AlleFstr();
 			case ZugnummernmeldeanlagePackage.ZN_TELEGRAMM_85_ZUORDNUNG__TELEGRAMM85_EINZELNE_FSTR:
 				return getTelegramm85EinzelneFstr();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -281,10 +279,8 @@ public class ZN_Telegramm_85_ZuordnungImpl extends Basis_ObjektImpl implements Z
 			case ZugnummernmeldeanlagePackage.ZN_TELEGRAMM_85_ZUORDNUNG__TELEGRAMM85_EINZELNE_FSTR:
 				setTelegramm85EinzelneFstr((Telegramm_85_Einzelne_Fstr_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -304,10 +300,8 @@ public class ZN_Telegramm_85_ZuordnungImpl extends Basis_ObjektImpl implements Z
 			case ZugnummernmeldeanlagePackage.ZN_TELEGRAMM_85_ZUORDNUNG__TELEGRAMM85_EINZELNE_FSTR:
 				setTelegramm85EinzelneFstr((Telegramm_85_Einzelne_Fstr_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -324,9 +318,8 @@ public class ZN_Telegramm_85_ZuordnungImpl extends Basis_ObjektImpl implements Z
 				return telegramm85AlleFstr != null;
 			case ZugnummernmeldeanlagePackage.ZN_TELEGRAMM_85_ZUORDNUNG__TELEGRAMM85_EINZELNE_FSTR:
 				return telegramm85EinzelneFstr != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZN_Telegramm_85_ZuordnungImpl

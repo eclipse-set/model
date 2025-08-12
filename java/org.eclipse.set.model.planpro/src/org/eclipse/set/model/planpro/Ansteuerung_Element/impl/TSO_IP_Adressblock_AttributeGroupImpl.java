@@ -390,9 +390,8 @@ public class TSO_IP_Adressblock_AttributeGroupImpl extends EObjectImpl implement
 				return basicSetRegionalbereich(null, msgs);
 			case Ansteuerung_ElementPackage.TSO_IP_ADRESSBLOCK_ATTRIBUTE_GROUP__TSOIPAB_TEILSYSTEM:
 				return ((InternalEList<?>)getTSOIPABTeilsystem()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -415,9 +414,8 @@ public class TSO_IP_Adressblock_AttributeGroupImpl extends EObjectImpl implement
 				return getRegionalbereich();
 			case Ansteuerung_ElementPackage.TSO_IP_ADRESSBLOCK_ATTRIBUTE_GROUP__TSOIPAB_TEILSYSTEM:
 				return getTSOIPABTeilsystem();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -448,10 +446,8 @@ public class TSO_IP_Adressblock_AttributeGroupImpl extends EObjectImpl implement
 				getTSOIPABTeilsystem().clear();
 				getTSOIPABTeilsystem().addAll((Collection<? extends TSO_IP_AB_Teilsystem_AttributeGroup>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -480,10 +476,8 @@ public class TSO_IP_Adressblock_AttributeGroupImpl extends EObjectImpl implement
 			case Ansteuerung_ElementPackage.TSO_IP_ADRESSBLOCK_ATTRIBUTE_GROUP__TSOIPAB_TEILSYSTEM:
 				getTSOIPABTeilsystem().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -506,9 +500,8 @@ public class TSO_IP_Adressblock_AttributeGroupImpl extends EObjectImpl implement
 				return regionalbereich != null;
 			case Ansteuerung_ElementPackage.TSO_IP_ADRESSBLOCK_ATTRIBUTE_GROUP__TSOIPAB_TEILSYSTEM:
 				return tSOIPABTeilsystem != null && !tSOIPABTeilsystem.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //TSO_IP_Adressblock_AttributeGroupImpl

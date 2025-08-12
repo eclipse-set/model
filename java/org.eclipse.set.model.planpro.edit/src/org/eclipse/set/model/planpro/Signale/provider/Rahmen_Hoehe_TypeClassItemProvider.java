@@ -139,10 +139,8 @@ public class Rahmen_Hoehe_TypeClassItemProvider extends BasisAttribut_AttributeG
 			case SignalePackage.RAHMEN_HOEHE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -155,10 +155,8 @@ public class ZUB_StreckeneigenschaftItemProvider extends Bereich_ObjektItemProvi
 			case Balisentechnik_ETCSPackage.ZUB_STRECKENEIGENSCHAFT__ZUBSE_AUSRUESTUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

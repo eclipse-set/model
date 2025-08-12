@@ -143,10 +143,8 @@ public class BinaerdatenItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.BINAERDATEN__DATEN:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

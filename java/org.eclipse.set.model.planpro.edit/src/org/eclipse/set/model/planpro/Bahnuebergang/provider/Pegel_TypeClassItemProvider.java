@@ -139,10 +139,8 @@ public class Pegel_TypeClassItemProvider extends BasisAttribut_AttributeGroupIte
 			case BahnuebergangPackage.PEGEL_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

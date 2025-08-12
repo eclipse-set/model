@@ -1653,8 +1653,8 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 			case ENUM_OERTLICHKEIT_ART_VP_HP_AWANST_VALUE: return ENUM_OERTLICHKEIT_ART_VP_HP_AWANST;
 			case ENUM_OERTLICHKEIT_ART_VP_LGR_VALUE: return ENUM_OERTLICHKEIT_ART_VP_LGR;
 			case ENUM_OERTLICHKEIT_ART_VP_RB_GR_VALUE: return ENUM_OERTLICHKEIT_ART_VP_RB_GR;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -120,9 +120,8 @@ public class Markanter_Punkt_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case FahrstrassePackage.MARKANTER_PUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_MARKANTER_PUNKT:
 				return basicSetBezeichnungMarkanterPunkt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,9 +134,8 @@ public class Markanter_Punkt_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case FahrstrassePackage.MARKANTER_PUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_MARKANTER_PUNKT:
 				return getBezeichnungMarkanterPunkt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,10 +149,8 @@ public class Markanter_Punkt_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 			case FahrstrassePackage.MARKANTER_PUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_MARKANTER_PUNKT:
 				setBezeichnungMarkanterPunkt((Bezeichnung_Markanter_Punkt_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -168,10 +164,8 @@ public class Markanter_Punkt_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 			case FahrstrassePackage.MARKANTER_PUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_MARKANTER_PUNKT:
 				setBezeichnungMarkanterPunkt((Bezeichnung_Markanter_Punkt_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -184,9 +178,8 @@ public class Markanter_Punkt_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case FahrstrassePackage.MARKANTER_PUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_MARKANTER_PUNKT:
 				return bezeichnungMarkanterPunkt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Markanter_Punkt_Bezeichnung_AttributeGroupImpl

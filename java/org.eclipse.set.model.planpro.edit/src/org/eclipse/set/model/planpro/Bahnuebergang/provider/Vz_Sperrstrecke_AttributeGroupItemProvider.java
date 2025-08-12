@@ -158,10 +158,8 @@ public class Vz_Sperrstrecke_AttributeGroupItemProvider
 			case BahnuebergangPackage.VZ_SPERRSTRECKE_ATTRIBUTE_GROUP__VZ_SPERRSTRECKE_SCHRANKE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -194,10 +194,8 @@ public class ID_Bearbeitungsvermerk_TypeClassItemProvider
 			case BasisTypenPackage.ID_BEARBEITUNGSVERMERK_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

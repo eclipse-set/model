@@ -156,10 +156,8 @@ public class FMA_Element_Allg_AttributeGroupItemProvider
 			case OrtungPackage.FMA_ELEMENT_ALLG_ATTRIBUTE_GROUP__FMA_ELEMENT_SEILTYP:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

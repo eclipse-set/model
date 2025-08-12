@@ -139,10 +139,8 @@ public class Tv_GK_TypeClassItemProvider extends BasisAttribut_AttributeGroupIte
 			case ZuglenkungPackage.TV_GK_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

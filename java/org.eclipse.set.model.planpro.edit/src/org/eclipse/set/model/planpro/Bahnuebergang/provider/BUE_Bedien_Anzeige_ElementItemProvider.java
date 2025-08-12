@@ -141,10 +141,8 @@ public class BUE_Bedien_Anzeige_ElementItemProvider extends Basis_ObjektItemProv
 			case BahnuebergangPackage.BUE_BEDIEN_ANZEIGE_ELEMENT__BUE_BEDIEN_ANZ_ELEMENT_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -298,9 +298,8 @@ public class Block_AnlageImpl extends Basis_ObjektImpl implements Block_Anlage {
 				return basicSetIDBlockElementB(null, msgs);
 			case BlockPackage.BLOCK_ANLAGE__ID_GLEIS_BEZEICHNUNG:
 				return basicSetIDGleisBezeichnung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -319,9 +318,8 @@ public class Block_AnlageImpl extends Basis_ObjektImpl implements Block_Anlage {
 				return getIDBlockElementB();
 			case BlockPackage.BLOCK_ANLAGE__ID_GLEIS_BEZEICHNUNG:
 				return getIDGleisBezeichnung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -344,10 +342,8 @@ public class Block_AnlageImpl extends Basis_ObjektImpl implements Block_Anlage {
 			case BlockPackage.BLOCK_ANLAGE__ID_GLEIS_BEZEICHNUNG:
 				setIDGleisBezeichnung((ID_Gleis_Bezeichnung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -370,10 +366,8 @@ public class Block_AnlageImpl extends Basis_ObjektImpl implements Block_Anlage {
 			case BlockPackage.BLOCK_ANLAGE__ID_GLEIS_BEZEICHNUNG:
 				setIDGleisBezeichnung((ID_Gleis_Bezeichnung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -392,9 +386,8 @@ public class Block_AnlageImpl extends Basis_ObjektImpl implements Block_Anlage {
 				return iDBlockElementB != null;
 			case BlockPackage.BLOCK_ANLAGE__ID_GLEIS_BEZEICHNUNG:
 				return iDGleisBezeichnung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Block_AnlageImpl

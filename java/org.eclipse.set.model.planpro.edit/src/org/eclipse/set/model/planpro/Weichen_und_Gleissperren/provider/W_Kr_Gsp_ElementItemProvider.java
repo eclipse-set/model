@@ -159,10 +159,8 @@ public class W_Kr_Gsp_ElementItemProvider extends Basis_ObjektItemProvider {
 			case Weichen_und_GleissperrenPackage.WKR_GSP_ELEMENT__WEICHE_ELEMENT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

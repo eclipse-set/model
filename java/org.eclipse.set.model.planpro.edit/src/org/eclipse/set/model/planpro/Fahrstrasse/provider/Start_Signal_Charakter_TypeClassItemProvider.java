@@ -138,10 +138,8 @@ public class Start_Signal_Charakter_TypeClassItemProvider extends BasisAttribut_
 			case FahrstrassePackage.START_SIGNAL_CHARAKTER_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

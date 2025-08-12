@@ -138,10 +138,8 @@ public class NB_Grenze_Art_TypeClassItemProvider extends BasisAttribut_Attribute
 			case NahbedienungPackage.NB_GRENZE_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

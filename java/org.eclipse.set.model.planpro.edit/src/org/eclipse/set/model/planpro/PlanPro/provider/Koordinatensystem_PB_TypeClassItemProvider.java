@@ -136,10 +136,8 @@ public class Koordinatensystem_PB_TypeClassItemProvider extends BasisAttribut_At
 			case PlanProPackage.KOORDINATENSYSTEM_PB_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

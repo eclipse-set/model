@@ -159,10 +159,8 @@ public class ID_Bedien_Einrichtung_Oertlich_TypeClassItemProvider extends Zeiger
 			case VerweisePackage.ID_BEDIEN_EINRICHTUNG_OERTLICH_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -136,10 +136,8 @@ public class W_Kr_Grundform_TypeClassItemProvider extends BasisAttribut_Attribut
 			case Weichen_und_GleissperrenPackage.WKR_GRUNDFORM_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

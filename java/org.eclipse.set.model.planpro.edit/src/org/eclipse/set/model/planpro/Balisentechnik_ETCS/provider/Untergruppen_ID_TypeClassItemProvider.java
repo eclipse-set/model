@@ -136,10 +136,8 @@ public class Untergruppen_ID_TypeClassItemProvider extends BasisAttribut_Attribu
 			case Balisentechnik_ETCSPackage.UNTERGRUPPEN_ID_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

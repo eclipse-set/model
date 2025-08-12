@@ -342,8 +342,8 @@ public enum ENUMTOPAnschluss implements Enumerator {
 			case ENUMTOP_ANSCHLUSS_SPITZE_VALUE: return ENUMTOP_ANSCHLUSS_SPITZE;
 			case ENUMTOP_ANSCHLUSS_STRECKENWECHSEL_VALUE: return ENUMTOP_ANSCHLUSS_STRECKENWECHSEL;
 			case ENUMTOP_ANSCHLUSS_VERBINDUNG_VALUE: return ENUMTOP_ANSCHLUSS_VERBINDUNG;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

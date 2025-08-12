@@ -153,10 +153,8 @@ public class LEU_ModulItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.LEU_MODUL__LEU_MODUL_AUSGANG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

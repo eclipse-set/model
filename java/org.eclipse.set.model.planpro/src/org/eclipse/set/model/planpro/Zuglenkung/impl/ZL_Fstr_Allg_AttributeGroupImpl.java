@@ -356,9 +356,8 @@ public class ZL_Fstr_Allg_AttributeGroupImpl extends EObjectImpl implements ZL_F
 				return basicSetFUEMAuswertung(null, msgs);
 			case ZuglenkungPackage.ZL_FSTR_ALLG_ATTRIBUTE_GROUP__SICHTZEIT_VORSIGNAL:
 				return basicSetSichtzeitVorsignal(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -379,9 +378,8 @@ public class ZL_Fstr_Allg_AttributeGroupImpl extends EObjectImpl implements ZL_F
 				return getFUEMAuswertung();
 			case ZuglenkungPackage.ZL_FSTR_ALLG_ATTRIBUTE_GROUP__SICHTZEIT_VORSIGNAL:
 				return getSichtzeitVorsignal();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -407,10 +405,8 @@ public class ZL_Fstr_Allg_AttributeGroupImpl extends EObjectImpl implements ZL_F
 			case ZuglenkungPackage.ZL_FSTR_ALLG_ATTRIBUTE_GROUP__SICHTZEIT_VORSIGNAL:
 				setSichtzeitVorsignal((Sichtzeit_Vorsignal_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -436,10 +432,8 @@ public class ZL_Fstr_Allg_AttributeGroupImpl extends EObjectImpl implements ZL_F
 			case ZuglenkungPackage.ZL_FSTR_ALLG_ATTRIBUTE_GROUP__SICHTZEIT_VORSIGNAL:
 				setSichtzeitVorsignal((Sichtzeit_Vorsignal_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -460,9 +454,8 @@ public class ZL_Fstr_Allg_AttributeGroupImpl extends EObjectImpl implements ZL_F
 				return fUEMAuswertung != null;
 			case ZuglenkungPackage.ZL_FSTR_ALLG_ATTRIBUTE_GROUP__SICHTZEIT_VORSIGNAL:
 				return sichtzeitVorsignal != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZL_Fstr_Allg_AttributeGroupImpl

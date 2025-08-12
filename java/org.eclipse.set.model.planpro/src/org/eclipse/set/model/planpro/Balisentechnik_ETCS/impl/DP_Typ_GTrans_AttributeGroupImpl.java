@@ -120,9 +120,8 @@ public class DP_Typ_GTrans_AttributeGroupImpl extends EObjectImpl implements DP_
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.DP_TYP_GTRANS_ATTRIBUTE_GROUP__DP_TYP_TRANS:
 				return basicSetDPTypTrans(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,9 +134,8 @@ public class DP_Typ_GTrans_AttributeGroupImpl extends EObjectImpl implements DP_
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.DP_TYP_GTRANS_ATTRIBUTE_GROUP__DP_TYP_TRANS:
 				return getDPTypTrans();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,10 +149,8 @@ public class DP_Typ_GTrans_AttributeGroupImpl extends EObjectImpl implements DP_
 			case Balisentechnik_ETCSPackage.DP_TYP_GTRANS_ATTRIBUTE_GROUP__DP_TYP_TRANS:
 				setDPTypTrans((DP_Typ_Trans_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -168,10 +164,8 @@ public class DP_Typ_GTrans_AttributeGroupImpl extends EObjectImpl implements DP_
 			case Balisentechnik_ETCSPackage.DP_TYP_GTRANS_ATTRIBUTE_GROUP__DP_TYP_TRANS:
 				setDPTypTrans((DP_Typ_Trans_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -184,9 +178,8 @@ public class DP_Typ_GTrans_AttributeGroupImpl extends EObjectImpl implements DP_
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.DP_TYP_GTRANS_ATTRIBUTE_GROUP__DP_TYP_TRANS:
 				return dPTypTrans != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //DP_Typ_GTrans_AttributeGroupImpl

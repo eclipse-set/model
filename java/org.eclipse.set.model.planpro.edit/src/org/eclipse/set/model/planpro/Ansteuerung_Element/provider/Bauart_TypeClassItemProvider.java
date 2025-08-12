@@ -136,10 +136,8 @@ public class Bauart_TypeClassItemProvider extends BasisAttribut_AttributeGroupIt
 			case Ansteuerung_ElementPackage.BAUART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

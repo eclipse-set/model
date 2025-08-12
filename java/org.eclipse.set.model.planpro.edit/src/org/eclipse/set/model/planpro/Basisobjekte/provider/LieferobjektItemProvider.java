@@ -145,10 +145,8 @@ public class LieferobjektItemProvider extends Basis_ObjektItemProvider {
 			case BasisobjektePackage.LIEFEROBJEKT__LO_MATERIAL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -158,8 +158,8 @@ public enum ENUMStreckeRichtung implements Enumerator {
 			case ENUM_STRECKE_RICHTUNG_A_VALUE: return ENUM_STRECKE_RICHTUNG_A;
 			case ENUM_STRECKE_RICHTUNG_B_VALUE: return ENUM_STRECKE_RICHTUNG_B;
 			case ENUM_STRECKE_RICHTUNG_SONSTIGE_VALUE: return ENUM_STRECKE_RICHTUNG_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

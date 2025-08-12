@@ -154,10 +154,8 @@ public class Gleissperre_Element_AttributeGroupItemProvider
 			case Weichen_und_GleissperrenPackage.GLEISSPERRE_ELEMENT_ATTRIBUTE_GROUP__GLEISSPERRE_VORZUGSLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -162,10 +162,8 @@ public class EV_Modul_Ausgang_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.EV_MODUL_AUSGANG_ATTRIBUTE_GROUP__SPANNUNG_TOLERANZ_UNTERE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

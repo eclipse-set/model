@@ -181,8 +181,8 @@ public enum ENUMFstrRangierArt implements Enumerator {
 			case ENUM_FSTR_RANGIER_ART_RT_VALUE: return ENUM_FSTR_RANGIER_ART_RT;
 			case ENUM_FSTR_RANGIER_ART_RTU_VALUE: return ENUM_FSTR_RANGIER_ART_RTU;
 			case ENUM_FSTR_RANGIER_ART_RU_VALUE: return ENUM_FSTR_RANGIER_ART_RU;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

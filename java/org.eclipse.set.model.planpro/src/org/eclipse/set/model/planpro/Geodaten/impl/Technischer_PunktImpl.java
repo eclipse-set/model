@@ -180,9 +180,8 @@ public class Technischer_PunktImpl extends Punkt_ObjektImpl implements Technisch
 				return basicSetTPArt(null, msgs);
 			case GeodatenPackage.TECHNISCHER_PUNKT__TP_BESCHREIBUNG:
 				return basicSetTPBeschreibung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,9 +196,8 @@ public class Technischer_PunktImpl extends Punkt_ObjektImpl implements Technisch
 				return getTPArt();
 			case GeodatenPackage.TECHNISCHER_PUNKT__TP_BESCHREIBUNG:
 				return getTPBeschreibung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -216,10 +214,8 @@ public class Technischer_PunktImpl extends Punkt_ObjektImpl implements Technisch
 			case GeodatenPackage.TECHNISCHER_PUNKT__TP_BESCHREIBUNG:
 				setTPBeschreibung((TP_Beschreibung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -236,10 +232,8 @@ public class Technischer_PunktImpl extends Punkt_ObjektImpl implements Technisch
 			case GeodatenPackage.TECHNISCHER_PUNKT__TP_BESCHREIBUNG:
 				setTPBeschreibung((TP_Beschreibung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -254,9 +248,8 @@ public class Technischer_PunktImpl extends Punkt_ObjektImpl implements Technisch
 				return tPArt != null;
 			case GeodatenPackage.TECHNISCHER_PUNKT__TP_BESCHREIBUNG:
 				return tPBeschreibung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Technischer_PunktImpl

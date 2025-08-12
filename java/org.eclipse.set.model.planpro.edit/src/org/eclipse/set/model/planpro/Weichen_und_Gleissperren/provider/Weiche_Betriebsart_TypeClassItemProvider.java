@@ -138,10 +138,8 @@ public class Weiche_Betriebsart_TypeClassItemProvider extends BasisAttribut_Attr
 			case Weichen_und_GleissperrenPackage.WEICHE_BETRIEBSART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

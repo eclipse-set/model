@@ -160,10 +160,8 @@ public class BUE_Anlage_V_Allg_AttributeGroupItemProvider
 			case BahnuebergangPackage.BUE_ANLAGE_VALLG_ATTRIBUTE_GROUP__VMIN_STRASSE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

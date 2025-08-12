@@ -137,10 +137,8 @@ public class Ersatzstecker_Gleisbezogen_TypeClassItemProvider extends BasisAttri
 			case BahnuebergangPackage.ERSATZSTECKER_GLEISBEZOGEN_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

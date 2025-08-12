@@ -139,10 +139,8 @@ public class Einfahrdruck_Gegengleis_TypeClassItemProvider extends BasisAttribut
 			case ZugnummernmeldeanlagePackage.EINFAHRDRUCK_GEGENGLEIS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

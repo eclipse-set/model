@@ -475,9 +475,8 @@ public class ESTW_ZentraleinheitImpl extends Basis_ObjektImpl implements ESTW_Ze
 				return basicSetIDBedienBezirkVirtuell(null, msgs);
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT__ID_BEDIEN_BEZIRK_ZENTRAL:
 				return basicSetIDBedienBezirkZentral(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -502,9 +501,8 @@ public class ESTW_ZentraleinheitImpl extends Basis_ObjektImpl implements ESTW_Ze
 				return getIDBedienBezirkVirtuell();
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT__ID_BEDIEN_BEZIRK_ZENTRAL:
 				return getIDBedienBezirkZentral();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -536,10 +534,8 @@ public class ESTW_ZentraleinheitImpl extends Basis_ObjektImpl implements ESTW_Ze
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT__ID_BEDIEN_BEZIRK_ZENTRAL:
 				setIDBedienBezirkZentral((ID_Bedien_Bezirk_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -571,10 +567,8 @@ public class ESTW_ZentraleinheitImpl extends Basis_ObjektImpl implements ESTW_Ze
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT__ID_BEDIEN_BEZIRK_ZENTRAL:
 				setIDBedienBezirkZentral((ID_Bedien_Bezirk_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -599,9 +593,8 @@ public class ESTW_ZentraleinheitImpl extends Basis_ObjektImpl implements ESTW_Ze
 				return iDBedienBezirkVirtuell != null;
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT__ID_BEDIEN_BEZIRK_ZENTRAL:
 				return iDBedienBezirkZentral != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ESTW_ZentraleinheitImpl

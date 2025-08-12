@@ -142,9 +142,8 @@ public class SLE_SLS_TypeClassImpl extends BasisAttribut_AttributeGroupImpl impl
 		switch (featureID) {
 			case NahbedienungPackage.SLE_SLS_TYPE_CLASS__WERT:
 				return getWert();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -158,10 +157,8 @@ public class SLE_SLS_TypeClassImpl extends BasisAttribut_AttributeGroupImpl impl
 			case NahbedienungPackage.SLE_SLS_TYPE_CLASS__WERT:
 				setWert((Boolean)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -175,10 +172,8 @@ public class SLE_SLS_TypeClassImpl extends BasisAttribut_AttributeGroupImpl impl
 			case NahbedienungPackage.SLE_SLS_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -191,9 +186,8 @@ public class SLE_SLS_TypeClassImpl extends BasisAttribut_AttributeGroupImpl impl
 		switch (featureID) {
 			case NahbedienungPackage.SLE_SLS_TYPE_CLASS__WERT:
 				return isSetWert();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

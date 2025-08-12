@@ -180,9 +180,8 @@ public class GZ_Freimeldung_L_AttributeGroupImpl extends EObjectImpl implements 
 				return basicSetElementLage(null, msgs);
 			case Weichen_und_GleissperrenPackage.GZ_FREIMELDUNG_LATTRIBUTE_GROUP__ID_ELEMENT:
 				return basicSetIDElement(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,9 +196,8 @@ public class GZ_Freimeldung_L_AttributeGroupImpl extends EObjectImpl implements 
 				return getElementLage();
 			case Weichen_und_GleissperrenPackage.GZ_FREIMELDUNG_LATTRIBUTE_GROUP__ID_ELEMENT:
 				return getIDElement();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -216,10 +214,8 @@ public class GZ_Freimeldung_L_AttributeGroupImpl extends EObjectImpl implements 
 			case Weichen_und_GleissperrenPackage.GZ_FREIMELDUNG_LATTRIBUTE_GROUP__ID_ELEMENT:
 				setIDElement((ID_Element_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -236,10 +232,8 @@ public class GZ_Freimeldung_L_AttributeGroupImpl extends EObjectImpl implements 
 			case Weichen_und_GleissperrenPackage.GZ_FREIMELDUNG_LATTRIBUTE_GROUP__ID_ELEMENT:
 				setIDElement((ID_Element_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -254,9 +248,8 @@ public class GZ_Freimeldung_L_AttributeGroupImpl extends EObjectImpl implements 
 				return elementLage != null;
 			case Weichen_und_GleissperrenPackage.GZ_FREIMELDUNG_LATTRIBUTE_GROUP__ID_ELEMENT:
 				return iDElement != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //GZ_Freimeldung_L_AttributeGroupImpl

@@ -156,10 +156,8 @@ public class NB_Zone_Element_Allg_AttributeGroupItemProvider
 			case NahbedienungPackage.NB_ZONE_ELEMENT_ALLG_ATTRIBUTE_GROUP__WGSP_LAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

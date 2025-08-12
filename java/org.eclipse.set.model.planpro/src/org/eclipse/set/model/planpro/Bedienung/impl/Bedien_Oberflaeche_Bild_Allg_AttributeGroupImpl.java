@@ -179,9 +179,8 @@ public class Bedien_Oberflaeche_Bild_Allg_AttributeGroupImpl extends EObjectImpl
 				return basicSetOberflaecheBildart(null, msgs);
 			case BedienungPackage.BEDIEN_OBERFLAECHE_BILD_ALLG_ATTRIBUTE_GROUP__OBERFLAECHE_ZUSTAENDIGKEIT:
 				return basicSetOberflaecheZustaendigkeit(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class Bedien_Oberflaeche_Bild_Allg_AttributeGroupImpl extends EObjectImpl
 				return getOberflaecheBildart();
 			case BedienungPackage.BEDIEN_OBERFLAECHE_BILD_ALLG_ATTRIBUTE_GROUP__OBERFLAECHE_ZUSTAENDIGKEIT:
 				return getOberflaecheZustaendigkeit();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class Bedien_Oberflaeche_Bild_Allg_AttributeGroupImpl extends EObjectImpl
 			case BedienungPackage.BEDIEN_OBERFLAECHE_BILD_ALLG_ATTRIBUTE_GROUP__OBERFLAECHE_ZUSTAENDIGKEIT:
 				setOberflaecheZustaendigkeit((Oberflaeche_Zustaendigkeit_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class Bedien_Oberflaeche_Bild_Allg_AttributeGroupImpl extends EObjectImpl
 			case BedienungPackage.BEDIEN_OBERFLAECHE_BILD_ALLG_ATTRIBUTE_GROUP__OBERFLAECHE_ZUSTAENDIGKEIT:
 				setOberflaecheZustaendigkeit((Oberflaeche_Zustaendigkeit_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class Bedien_Oberflaeche_Bild_Allg_AttributeGroupImpl extends EObjectImpl
 				return oberflaecheBildart != null;
 			case BedienungPackage.BEDIEN_OBERFLAECHE_BILD_ALLG_ATTRIBUTE_GROUP__OBERFLAECHE_ZUSTAENDIGKEIT:
 				return oberflaecheZustaendigkeit != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Oberflaeche_Bild_Allg_AttributeGroupImpl

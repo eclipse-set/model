@@ -138,10 +138,8 @@ public class NID_STM_TypeClassItemProvider extends BasisAttribut_AttributeGroupI
 			case Balisentechnik_ETCSPackage.NID_STM_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

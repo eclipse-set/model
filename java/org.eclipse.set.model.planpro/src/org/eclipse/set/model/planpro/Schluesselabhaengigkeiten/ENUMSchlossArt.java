@@ -227,8 +227,8 @@ public enum ENUMSchlossArt implements Enumerator {
 			case ENUM_SCHLOSS_ART_SONSTIGE_VALUE: return ENUM_SCHLOSS_ART_SONSTIGE;
 			case ENUM_SCHLOSS_ART_WEICHENSCHLOSS_VALUE: return ENUM_SCHLOSS_ART_WEICHENSCHLOSS;
 			case ENUM_SCHLOSS_ART_ZUNGENSPERRE_VALUE: return ENUM_SCHLOSS_ART_ZUNGENSPERRE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -181,9 +181,8 @@ public class ZN_UnterstationImpl extends Basis_ObjektImpl implements ZN_Untersta
 				return basicSetIDZNZBS(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN_UNTERSTATION__ZN_UNTERSTATION_ALLG:
 				return basicSetZNUnterstationAllg(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -198,9 +197,8 @@ public class ZN_UnterstationImpl extends Basis_ObjektImpl implements ZN_Untersta
 				return getIDZNZBS();
 			case ZugnummernmeldeanlagePackage.ZN_UNTERSTATION__ZN_UNTERSTATION_ALLG:
 				return getZNUnterstationAllg();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -217,10 +215,8 @@ public class ZN_UnterstationImpl extends Basis_ObjektImpl implements ZN_Untersta
 			case ZugnummernmeldeanlagePackage.ZN_UNTERSTATION__ZN_UNTERSTATION_ALLG:
 				setZNUnterstationAllg((ZN_Unterstation_Allg_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -237,10 +233,8 @@ public class ZN_UnterstationImpl extends Basis_ObjektImpl implements ZN_Untersta
 			case ZugnummernmeldeanlagePackage.ZN_UNTERSTATION__ZN_UNTERSTATION_ALLG:
 				setZNUnterstationAllg((ZN_Unterstation_Allg_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -255,9 +249,8 @@ public class ZN_UnterstationImpl extends Basis_ObjektImpl implements ZN_Untersta
 				return iDZNZBS != null;
 			case ZugnummernmeldeanlagePackage.ZN_UNTERSTATION__ZN_UNTERSTATION_ALLG:
 				return zNUnterstationAllg != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZN_UnterstationImpl

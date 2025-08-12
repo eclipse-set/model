@@ -342,8 +342,8 @@ public enum ENUMWKrArt implements Enumerator {
 			case ENUMW_KR_ART_KORBBOGENWEICHE_VALUE: return ENUMW_KR_ART_KORBBOGENWEICHE;
 			case ENUMW_KR_ART_KR_VALUE: return ENUMW_KR_ART_KR;
 			case ENUMW_KR_ART_SONSTIGE_VALUE: return ENUMW_KR_ART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

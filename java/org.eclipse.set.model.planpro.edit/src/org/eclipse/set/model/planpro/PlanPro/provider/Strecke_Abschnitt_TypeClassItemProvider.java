@@ -134,10 +134,8 @@ public class Strecke_Abschnitt_TypeClassItemProvider extends BasisAttribut_Attri
 			case PlanProPackage.STRECKE_ABSCHNITT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

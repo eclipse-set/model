@@ -240,9 +240,8 @@ public class ZN_AkustikImpl extends Basis_ObjektImpl implements ZN_Akustik {
 				return basicSetIDZN(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN_AKUSTIK__IDZN_ANZEIGEFELD:
 				return basicSetIDZNAnzeigefeld(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -259,9 +258,8 @@ public class ZN_AkustikImpl extends Basis_ObjektImpl implements ZN_Akustik {
 				return getIDZN();
 			case ZugnummernmeldeanlagePackage.ZN_AKUSTIK__IDZN_ANZEIGEFELD:
 				return getIDZNAnzeigefeld();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -281,10 +279,8 @@ public class ZN_AkustikImpl extends Basis_ObjektImpl implements ZN_Akustik {
 			case ZugnummernmeldeanlagePackage.ZN_AKUSTIK__IDZN_ANZEIGEFELD:
 				setIDZNAnzeigefeld((ID_ZN_Anzeigefeld_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -304,10 +300,8 @@ public class ZN_AkustikImpl extends Basis_ObjektImpl implements ZN_Akustik {
 			case ZugnummernmeldeanlagePackage.ZN_AKUSTIK__IDZN_ANZEIGEFELD:
 				setIDZNAnzeigefeld((ID_ZN_Anzeigefeld_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -324,9 +318,8 @@ public class ZN_AkustikImpl extends Basis_ObjektImpl implements ZN_Akustik {
 				return iDZN != null;
 			case ZugnummernmeldeanlagePackage.ZN_AKUSTIK__IDZN_ANZEIGEFELD:
 				return iDZNAnzeigefeld != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZN_AkustikImpl

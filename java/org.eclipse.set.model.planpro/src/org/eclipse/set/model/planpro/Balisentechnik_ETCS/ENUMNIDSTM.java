@@ -480,8 +480,8 @@ public enum ENUMNIDSTM implements Enumerator {
 			case ENUMNID_STM_TVM_VALUE: return ENUMNID_STM_TVM;
 			case ENUMNID_STM_ZUB121_SIGNUM_VALUE: return ENUMNID_STM_ZUB121_SIGNUM;
 			case ENUMNID_STM_ZUB123_VALUE: return ENUMNID_STM_ZUB123;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

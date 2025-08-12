@@ -297,9 +297,8 @@ public class Vz_Sperrstrecke_AttributeGroupImpl extends EObjectImpl implements V
 				return basicSetSperrstreckeFussgaenger(null, msgs);
 			case BahnuebergangPackage.VZ_SPERRSTRECKE_ATTRIBUTE_GROUP__VZ_SPERRSTRECKE_SCHRANKE:
 				return basicSetVzSperrstreckeSchranke(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -318,9 +317,8 @@ public class Vz_Sperrstrecke_AttributeGroupImpl extends EObjectImpl implements V
 				return getSperrstreckeFussgaenger();
 			case BahnuebergangPackage.VZ_SPERRSTRECKE_ATTRIBUTE_GROUP__VZ_SPERRSTRECKE_SCHRANKE:
 				return getVzSperrstreckeSchranke();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -343,10 +341,8 @@ public class Vz_Sperrstrecke_AttributeGroupImpl extends EObjectImpl implements V
 			case BahnuebergangPackage.VZ_SPERRSTRECKE_ATTRIBUTE_GROUP__VZ_SPERRSTRECKE_SCHRANKE:
 				setVzSperrstreckeSchranke((Vz_Sperrstrecke_Schranke_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -369,10 +365,8 @@ public class Vz_Sperrstrecke_AttributeGroupImpl extends EObjectImpl implements V
 			case BahnuebergangPackage.VZ_SPERRSTRECKE_ATTRIBUTE_GROUP__VZ_SPERRSTRECKE_SCHRANKE:
 				setVzSperrstreckeSchranke((Vz_Sperrstrecke_Schranke_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -391,9 +385,8 @@ public class Vz_Sperrstrecke_AttributeGroupImpl extends EObjectImpl implements V
 				return sperrstreckeFussgaenger != null;
 			case BahnuebergangPackage.VZ_SPERRSTRECKE_ATTRIBUTE_GROUP__VZ_SPERRSTRECKE_SCHRANKE:
 				return vzSperrstreckeSchranke != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Vz_Sperrstrecke_AttributeGroupImpl

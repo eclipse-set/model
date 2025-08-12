@@ -138,8 +138,8 @@ public enum ENUMLinksRechts implements Enumerator {
 		switch (value) {
 			case ENUM_LINKS_RECHTS_LINKS_VALUE: return ENUM_LINKS_RECHTS_LINKS;
 			case ENUM_LINKS_RECHTS_RECHTS_VALUE: return ENUM_LINKS_RECHTS_RECHTS;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -475,9 +475,8 @@ public class Weiche_Element_AttributeGroupImpl extends EObjectImpl implements We
 				return basicSetWeicheBetriebsart(null, msgs);
 			case Weichen_und_GleissperrenPackage.WEICHE_ELEMENT_ATTRIBUTE_GROUP__WEICHE_VORZUGSLAGE:
 				return basicSetWeicheVorzugslage(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -502,9 +501,8 @@ public class Weiche_Element_AttributeGroupImpl extends EObjectImpl implements We
 				return getWeicheBetriebsart();
 			case Weichen_und_GleissperrenPackage.WEICHE_ELEMENT_ATTRIBUTE_GROUP__WEICHE_VORZUGSLAGE:
 				return getWeicheVorzugslage();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -536,10 +534,8 @@ public class Weiche_Element_AttributeGroupImpl extends EObjectImpl implements We
 			case Weichen_und_GleissperrenPackage.WEICHE_ELEMENT_ATTRIBUTE_GROUP__WEICHE_VORZUGSLAGE:
 				setWeicheVorzugslage((Weiche_Vorzugslage_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -571,10 +567,8 @@ public class Weiche_Element_AttributeGroupImpl extends EObjectImpl implements We
 			case Weichen_und_GleissperrenPackage.WEICHE_ELEMENT_ATTRIBUTE_GROUP__WEICHE_VORZUGSLAGE:
 				setWeicheVorzugslage((Weiche_Vorzugslage_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -599,9 +593,8 @@ public class Weiche_Element_AttributeGroupImpl extends EObjectImpl implements We
 				return weicheBetriebsart != null;
 			case Weichen_und_GleissperrenPackage.WEICHE_ELEMENT_ATTRIBUTE_GROUP__WEICHE_VORZUGSLAGE:
 				return weicheVorzugslage != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Weiche_Element_AttributeGroupImpl

@@ -136,10 +136,8 @@ public class Strecke_Km_TypeClassItemProvider extends BasisAttribut_AttributeGro
 			case BasisobjektePackage.STRECKE_KM_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

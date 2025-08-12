@@ -139,10 +139,8 @@ public class Einschaltverz_Errechnet_TypeClassItemProvider extends BasisAttribut
 			case BahnuebergangPackage.EINSCHALTVERZ_ERRECHNET_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

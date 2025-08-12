@@ -121,9 +121,8 @@ public class Gleis_LichtraumImpl extends Bereich_ObjektImpl implements Gleis_Lic
 		switch (featureID) {
 			case GleisPackage.GLEIS_LICHTRAUM__LICHTRAUMPROFIL:
 				return basicSetLichtraumprofil(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,9 +135,8 @@ public class Gleis_LichtraumImpl extends Bereich_ObjektImpl implements Gleis_Lic
 		switch (featureID) {
 			case GleisPackage.GLEIS_LICHTRAUM__LICHTRAUMPROFIL:
 				return getLichtraumprofil();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -152,10 +150,8 @@ public class Gleis_LichtraumImpl extends Bereich_ObjektImpl implements Gleis_Lic
 			case GleisPackage.GLEIS_LICHTRAUM__LICHTRAUMPROFIL:
 				setLichtraumprofil((Lichtraumprofil_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -169,10 +165,8 @@ public class Gleis_LichtraumImpl extends Bereich_ObjektImpl implements Gleis_Lic
 			case GleisPackage.GLEIS_LICHTRAUM__LICHTRAUMPROFIL:
 				setLichtraumprofil((Lichtraumprofil_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -185,9 +179,8 @@ public class Gleis_LichtraumImpl extends Bereich_ObjektImpl implements Gleis_Lic
 		switch (featureID) {
 			case GleisPackage.GLEIS_LICHTRAUM__LICHTRAUMPROFIL:
 				return lichtraumprofil != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Gleis_LichtraumImpl

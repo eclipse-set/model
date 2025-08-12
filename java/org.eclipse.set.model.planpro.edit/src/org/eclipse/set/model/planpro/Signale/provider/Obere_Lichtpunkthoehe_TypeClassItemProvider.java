@@ -139,10 +139,8 @@ public class Obere_Lichtpunkthoehe_TypeClassItemProvider extends BasisAttribut_A
 			case SignalePackage.OBERE_LICHTPUNKTHOEHE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

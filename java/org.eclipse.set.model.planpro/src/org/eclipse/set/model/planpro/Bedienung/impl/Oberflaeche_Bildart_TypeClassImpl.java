@@ -143,9 +143,8 @@ public class Oberflaeche_Bildart_TypeClassImpl extends BasisAttribut_AttributeGr
 		switch (featureID) {
 			case BedienungPackage.OBERFLAECHE_BILDART_TYPE_CLASS__WERT:
 				return getWert();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -159,10 +158,8 @@ public class Oberflaeche_Bildart_TypeClassImpl extends BasisAttribut_AttributeGr
 			case BedienungPackage.OBERFLAECHE_BILDART_TYPE_CLASS__WERT:
 				setWert((ENUMOberflaecheBildart)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -176,10 +173,8 @@ public class Oberflaeche_Bildart_TypeClassImpl extends BasisAttribut_AttributeGr
 			case BedienungPackage.OBERFLAECHE_BILDART_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -192,9 +187,8 @@ public class Oberflaeche_Bildart_TypeClassImpl extends BasisAttribut_AttributeGr
 		switch (featureID) {
 			case BedienungPackage.OBERFLAECHE_BILDART_TYPE_CLASS__WERT:
 				return isSetWert();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

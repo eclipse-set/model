@@ -134,10 +134,8 @@ public class Referenz_Planung_Basis_TypeClassItemProvider extends BasisAttribut_
 			case PlanProPackage.REFERENZ_PLANUNG_BASIS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

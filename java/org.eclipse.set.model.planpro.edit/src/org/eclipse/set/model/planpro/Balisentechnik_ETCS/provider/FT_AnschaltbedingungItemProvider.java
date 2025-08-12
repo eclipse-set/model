@@ -149,10 +149,8 @@ public class FT_AnschaltbedingungItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.FT_ANSCHALTBEDINGUNG__BEDINGUNG_WEICHE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

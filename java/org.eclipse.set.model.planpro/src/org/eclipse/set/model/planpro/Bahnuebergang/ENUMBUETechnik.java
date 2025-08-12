@@ -572,8 +572,8 @@ public enum ENUMBUETechnik implements Enumerator {
 			case ENUMBUE_TECHNIK_RBUET_VALUE: return ENUMBUE_TECHNIK_RBUET;
 			case ENUMBUE_TECHNIK_SIMIS_LC_VALUE: return ENUMBUE_TECHNIK_SIMIS_LC;
 			case ENUMBUE_TECHNIK_SONSTIGE_VALUE: return ENUMBUE_TECHNIK_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

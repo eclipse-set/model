@@ -159,10 +159,8 @@ public class ID_Bezugspunkt_Positionierung_TypeClassItemProvider extends Zeiger_
 			case VerweisePackage.ID_BEZUGSPUNKT_POSITIONIERUNG_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -158,8 +158,8 @@ public enum ENUMAnschaltdauer implements Enumerator {
 			case ENUM_ANSCHALTDAUER_G_VALUE: return ENUM_ANSCHALTDAUER_G;
 			case ENUM_ANSCHALTDAUER_T_VALUE: return ENUM_ANSCHALTDAUER_T;
 			case ENUM_ANSCHALTDAUER_Z_VALUE: return ENUM_ANSCHALTDAUER_Z;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

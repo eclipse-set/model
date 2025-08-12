@@ -147,10 +147,8 @@ public class Schaltmittel_ZuordnungItemProvider extends Basis_ObjektItemProvider
 			case OrtungPackage.SCHALTMITTEL_ZUORDNUNG__SCHALTMITTEL_FUNKTION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

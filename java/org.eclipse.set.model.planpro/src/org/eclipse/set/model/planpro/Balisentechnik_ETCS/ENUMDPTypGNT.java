@@ -181,8 +181,8 @@ public enum ENUMDPTypGNT implements Enumerator {
 			case ENUMDP_TYP_GNT_B2_VALUE: return ENUMDP_TYP_GNT_B2;
 			case ENUMDP_TYP_GNT_B3_VALUE: return ENUMDP_TYP_GNT_B3;
 			case ENUMDP_TYP_GNT_SONSTIGE_VALUE: return ENUMDP_TYP_GNT_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

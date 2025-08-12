@@ -180,9 +180,8 @@ public class Bgrenze_Nach_ESG_Bed_Ausstieg_AttributeGroupImpl extends EObjectImp
 				return basicSetIDWElement(null, msgs);
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_ESG_BED_AUSSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				return basicSetWLage(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,9 +196,8 @@ public class Bgrenze_Nach_ESG_Bed_Ausstieg_AttributeGroupImpl extends EObjectImp
 				return getIDWElement();
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_ESG_BED_AUSSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				return getWLage();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -216,10 +214,8 @@ public class Bgrenze_Nach_ESG_Bed_Ausstieg_AttributeGroupImpl extends EObjectImp
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_ESG_BED_AUSSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				setWLage((W_Lage_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -236,10 +232,8 @@ public class Bgrenze_Nach_ESG_Bed_Ausstieg_AttributeGroupImpl extends EObjectImp
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_ESG_BED_AUSSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				setWLage((W_Lage_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -254,9 +248,8 @@ public class Bgrenze_Nach_ESG_Bed_Ausstieg_AttributeGroupImpl extends EObjectImp
 				return iDWElement != null;
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_ESG_BED_AUSSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				return wLage != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bgrenze_Nach_ESG_Bed_Ausstieg_AttributeGroupImpl

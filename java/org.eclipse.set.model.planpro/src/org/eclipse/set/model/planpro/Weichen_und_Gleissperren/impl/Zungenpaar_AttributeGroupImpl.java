@@ -592,9 +592,8 @@ public class Zungenpaar_AttributeGroupImpl extends EObjectImpl implements Zungen
 				return basicSetWeichensignal(null, msgs);
 			case Weichen_und_GleissperrenPackage.ZUNGENPAAR_ATTRIBUTE_GROUP__ZUNGENPRUEFKONTAKT_ANZAHL:
 				return basicSetZungenpruefkontaktAnzahl(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -623,9 +622,8 @@ public class Zungenpaar_AttributeGroupImpl extends EObjectImpl implements Zungen
 				return getWeichensignal();
 			case Weichen_und_GleissperrenPackage.ZUNGENPAAR_ATTRIBUTE_GROUP__ZUNGENPRUEFKONTAKT_ANZAHL:
 				return getZungenpruefkontaktAnzahl();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -663,10 +661,8 @@ public class Zungenpaar_AttributeGroupImpl extends EObjectImpl implements Zungen
 			case Weichen_und_GleissperrenPackage.ZUNGENPAAR_ATTRIBUTE_GROUP__ZUNGENPRUEFKONTAKT_ANZAHL:
 				setZungenpruefkontaktAnzahl((Zungenpruefkontakt_Anzahl_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -704,10 +700,8 @@ public class Zungenpaar_AttributeGroupImpl extends EObjectImpl implements Zungen
 			case Weichen_und_GleissperrenPackage.ZUNGENPAAR_ATTRIBUTE_GROUP__ZUNGENPRUEFKONTAKT_ANZAHL:
 				setZungenpruefkontaktAnzahl((Zungenpruefkontakt_Anzahl_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -736,9 +730,8 @@ public class Zungenpaar_AttributeGroupImpl extends EObjectImpl implements Zungen
 				return weichensignal != null;
 			case Weichen_und_GleissperrenPackage.ZUNGENPAAR_ATTRIBUTE_GROUP__ZUNGENPRUEFKONTAKT_ANZAHL:
 				return zungenpruefkontaktAnzahl != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Zungenpaar_AttributeGroupImpl

@@ -154,9 +154,8 @@ public class BearbeitungsvermerkImpl extends Ur_ObjektImpl implements Bearbeitun
 				return basicSetBearbeitungsvermerkAllg(null, msgs);
 			case BasisobjektePackage.BEARBEITUNGSVERMERK__ID_ANHANG:
 				return ((InternalEList<?>)getIDAnhang()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -171,9 +170,8 @@ public class BearbeitungsvermerkImpl extends Ur_ObjektImpl implements Bearbeitun
 				return getBearbeitungsvermerkAllg();
 			case BasisobjektePackage.BEARBEITUNGSVERMERK__ID_ANHANG:
 				return getIDAnhang();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -192,10 +190,8 @@ public class BearbeitungsvermerkImpl extends Ur_ObjektImpl implements Bearbeitun
 				getIDAnhang().clear();
 				getIDAnhang().addAll((Collection<? extends ID_Anhang_TypeClass>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -212,10 +208,8 @@ public class BearbeitungsvermerkImpl extends Ur_ObjektImpl implements Bearbeitun
 			case BasisobjektePackage.BEARBEITUNGSVERMERK__ID_ANHANG:
 				getIDAnhang().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -230,9 +224,8 @@ public class BearbeitungsvermerkImpl extends Ur_ObjektImpl implements Bearbeitun
 				return bearbeitungsvermerkAllg != null;
 			case BasisobjektePackage.BEARBEITUNGSVERMERK__ID_ANHANG:
 				return iDAnhang != null && !iDAnhang.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //BearbeitungsvermerkImpl

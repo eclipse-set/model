@@ -240,9 +240,8 @@ public class Strecke_PunktImpl extends Basis_ObjektImpl implements Strecke_Punkt
 				return basicSetIDStrecke(null, msgs);
 			case GeodatenPackage.STRECKE_PUNKT__STRECKE_METER:
 				return basicSetStreckeMeter(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -259,9 +258,8 @@ public class Strecke_PunktImpl extends Basis_ObjektImpl implements Strecke_Punkt
 				return getIDStrecke();
 			case GeodatenPackage.STRECKE_PUNKT__STRECKE_METER:
 				return getStreckeMeter();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -281,10 +279,8 @@ public class Strecke_PunktImpl extends Basis_ObjektImpl implements Strecke_Punkt
 			case GeodatenPackage.STRECKE_PUNKT__STRECKE_METER:
 				setStreckeMeter((Strecke_Meter_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -304,10 +300,8 @@ public class Strecke_PunktImpl extends Basis_ObjektImpl implements Strecke_Punkt
 			case GeodatenPackage.STRECKE_PUNKT__STRECKE_METER:
 				setStreckeMeter((Strecke_Meter_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -324,9 +318,8 @@ public class Strecke_PunktImpl extends Basis_ObjektImpl implements Strecke_Punkt
 				return iDStrecke != null;
 			case GeodatenPackage.STRECKE_PUNKT__STRECKE_METER:
 				return streckeMeter != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Strecke_PunktImpl

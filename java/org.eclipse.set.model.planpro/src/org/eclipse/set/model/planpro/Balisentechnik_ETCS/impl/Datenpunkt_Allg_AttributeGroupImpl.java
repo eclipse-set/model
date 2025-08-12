@@ -415,9 +415,8 @@ public class Datenpunkt_Allg_AttributeGroupImpl extends EObjectImpl implements D
 				return basicSetSonstigeStandortangabe(null, msgs);
 			case Balisentechnik_ETCSPackage.DATENPUNKT_ALLG_ATTRIBUTE_GROUP__STANDORTANGABE_BALISENSCHILD:
 				return basicSetStandortangabeBalisenschild(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -440,9 +439,8 @@ public class Datenpunkt_Allg_AttributeGroupImpl extends EObjectImpl implements D
 				return getSonstigeStandortangabe();
 			case Balisentechnik_ETCSPackage.DATENPUNKT_ALLG_ATTRIBUTE_GROUP__STANDORTANGABE_BALISENSCHILD:
 				return getStandortangabeBalisenschild();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -471,10 +469,8 @@ public class Datenpunkt_Allg_AttributeGroupImpl extends EObjectImpl implements D
 			case Balisentechnik_ETCSPackage.DATENPUNKT_ALLG_ATTRIBUTE_GROUP__STANDORTANGABE_BALISENSCHILD:
 				setStandortangabeBalisenschild((Standortangabe_Balisenschild_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -503,10 +499,8 @@ public class Datenpunkt_Allg_AttributeGroupImpl extends EObjectImpl implements D
 			case Balisentechnik_ETCSPackage.DATENPUNKT_ALLG_ATTRIBUTE_GROUP__STANDORTANGABE_BALISENSCHILD:
 				setStandortangabeBalisenschild((Standortangabe_Balisenschild_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -529,9 +523,8 @@ public class Datenpunkt_Allg_AttributeGroupImpl extends EObjectImpl implements D
 				return sonstigeStandortangabe != null;
 			case Balisentechnik_ETCSPackage.DATENPUNKT_ALLG_ATTRIBUTE_GROUP__STANDORTANGABE_BALISENSCHILD:
 				return standortangabeBalisenschild != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Datenpunkt_Allg_AttributeGroupImpl

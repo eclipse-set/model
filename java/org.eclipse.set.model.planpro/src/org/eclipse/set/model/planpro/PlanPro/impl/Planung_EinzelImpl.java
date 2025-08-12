@@ -504,9 +504,8 @@ public class Planung_EinzelImpl extends Ur_ObjektImpl implements Planung_Einzel 
 				return basicSetPlanungEHandlung(null, msgs);
 			case PlanProPackage.PLANUNG_EINZEL__REFERENZ_PLANUNG_BASIS:
 				return basicSetReferenzPlanungBasis(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -535,9 +534,8 @@ public class Planung_EinzelImpl extends Ur_ObjektImpl implements Planung_Einzel 
 				return getPlanungEHandlung();
 			case PlanProPackage.PLANUNG_EINZEL__REFERENZ_PLANUNG_BASIS:
 				return getReferenzPlanungBasis();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -579,10 +577,8 @@ public class Planung_EinzelImpl extends Ur_ObjektImpl implements Planung_Einzel 
 			case PlanProPackage.PLANUNG_EINZEL__REFERENZ_PLANUNG_BASIS:
 				setReferenzPlanungBasis((Referenz_Planung_Basis_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -620,10 +616,8 @@ public class Planung_EinzelImpl extends Ur_ObjektImpl implements Planung_Einzel 
 			case PlanProPackage.PLANUNG_EINZEL__REFERENZ_PLANUNG_BASIS:
 				setReferenzPlanungBasis((Referenz_Planung_Basis_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -652,9 +646,8 @@ public class Planung_EinzelImpl extends Ur_ObjektImpl implements Planung_Einzel 
 				return planungEHandlung != null;
 			case PlanProPackage.PLANUNG_EINZEL__REFERENZ_PLANUNG_BASIS:
 				return referenzPlanungBasis != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Planung_EinzelImpl

@@ -160,10 +160,8 @@ public class ZL_Allg_AttributeGroupItemProvider
 			case ZuglenkungPackage.ZL_ALLG_ATTRIBUTE_GROUP__PERSONAL_REAKTIONSZEIT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

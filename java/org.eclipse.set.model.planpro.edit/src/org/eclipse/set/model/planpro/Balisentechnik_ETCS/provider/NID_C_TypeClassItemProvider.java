@@ -139,10 +139,8 @@ public class NID_C_TypeClassItemProvider extends BasisAttribut_AttributeGroupIte
 			case Balisentechnik_ETCSPackage.NID_CTYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

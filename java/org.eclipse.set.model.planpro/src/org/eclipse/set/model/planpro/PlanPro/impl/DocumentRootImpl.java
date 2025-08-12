@@ -180,9 +180,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
 				return ((InternalEList<?>)getXSISchemaLocation()).basicRemove(otherEnd, msgs);
 			case PlanProPackage.DOCUMENT_ROOT__PLAN_PRO_SCHNITTSTELLE:
 				return basicSetPlanProSchnittstelle(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -204,9 +203,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
 				else return getXSISchemaLocation().map();
 			case PlanProPackage.DOCUMENT_ROOT__PLAN_PRO_SCHNITTSTELLE:
 				return getPlanProSchnittstelle();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -229,10 +227,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
 			case PlanProPackage.DOCUMENT_ROOT__PLAN_PRO_SCHNITTSTELLE:
 				setPlanProSchnittstelle((PlanPro_Schnittstelle)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -255,10 +251,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
 			case PlanProPackage.DOCUMENT_ROOT__PLAN_PRO_SCHNITTSTELLE:
 				setPlanProSchnittstelle((PlanPro_Schnittstelle)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -277,9 +271,8 @@ public class DocumentRootImpl extends EObjectImpl implements DocumentRoot {
 				return xSISchemaLocation != null && !xSISchemaLocation.isEmpty();
 			case PlanProPackage.DOCUMENT_ROOT__PLAN_PRO_SCHNITTSTELLE:
 				return getPlanProSchnittstelle() != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

@@ -139,10 +139,8 @@ public class Anzahl_Wiederhol_ZL_Anstoesse_TypeClassItemProvider extends BasisAt
 			case ZuglenkungPackage.ANZAHL_WIEDERHOL_ZL_ANSTOESSE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

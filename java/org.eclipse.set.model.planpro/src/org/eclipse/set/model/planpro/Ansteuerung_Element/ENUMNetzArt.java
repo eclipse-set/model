@@ -227,8 +227,8 @@ public enum ENUMNetzArt implements Enumerator {
 			case ENUM_NETZ_ART_SBI_INTERN_VALUE: return ENUM_NETZ_ART_SBI_INTERN;
 			case ENUM_NETZ_ART_SG_VALUE: return ENUM_NETZ_ART_SG;
 			case ENUM_NETZ_ART_SONSTIGE_VALUE: return ENUM_NETZ_ART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

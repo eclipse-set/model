@@ -159,10 +159,8 @@ public class ID_Aussenelementansteuerung_ohne_Proxy_TypeClassItemProvider extend
 			case VerweisePackage.ID_AUSSENELEMENTANSTEUERUNG_OHNE_PROXY_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -147,10 +147,8 @@ public class Kabel_VerteilpunktItemProvider extends Basis_ObjektItemProvider {
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT__KABEL_VERTEILPUNKT_ART:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

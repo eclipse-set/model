@@ -156,10 +156,8 @@ public class Fstr_Zug_DWeg_AttributeGroupItemProvider
 			case FahrstrassePackage.FSTR_ZUG_DWEG_ATTRIBUTE_GROUP__ID_FSTR_DWEG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

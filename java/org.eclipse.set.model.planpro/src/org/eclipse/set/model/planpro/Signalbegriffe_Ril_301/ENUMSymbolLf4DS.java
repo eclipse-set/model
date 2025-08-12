@@ -457,8 +457,8 @@ public enum ENUMSymbolLf4DS implements Enumerator {
 			case ENUM_SYMBOL_LF_4DS_13_VALUE: return ENUM_SYMBOL_LF_4DS_13;
 			case ENUM_SYMBOL_LF_4DS_14_VALUE: return ENUM_SYMBOL_LF_4DS_14;
 			case ENUM_SYMBOL_LF_4DS_15_VALUE: return ENUM_SYMBOL_LF_4DS_15;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

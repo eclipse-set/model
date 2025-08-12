@@ -139,10 +139,8 @@ public class Zungenpruefkontakt_Anzahl_TypeClassItemProvider extends BasisAttrib
 			case Weichen_und_GleissperrenPackage.ZUNGENPRUEFKONTAKT_ANZAHL_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

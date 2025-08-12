@@ -141,10 +141,8 @@ public class AkteurItemProvider extends Ur_ObjektItemProvider {
 			case PlanProPackage.AKTEUR__KONTAKTDATEN:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

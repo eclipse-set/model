@@ -493,8 +493,6 @@ public class Signalbegriffe_Ril_301Editor
 							dispatchUpdateProblemIndication();
 							break;
 						}
-						default:
-							break;
 					}
 				}
 				else {

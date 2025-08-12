@@ -180,9 +180,8 @@ public class Start_W_Element_AttributeGroupImpl extends EObjectImpl implements S
 				return basicSetIDStartWElement(null, msgs);
 			case Balisentechnik_ETCSPackage.START_WELEMENT_ATTRIBUTE_GROUP__WANSCHLUSS:
 				return basicSetWAnschluss(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,9 +196,8 @@ public class Start_W_Element_AttributeGroupImpl extends EObjectImpl implements S
 				return getIDStartWElement();
 			case Balisentechnik_ETCSPackage.START_WELEMENT_ATTRIBUTE_GROUP__WANSCHLUSS:
 				return getWAnschluss();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -216,10 +214,8 @@ public class Start_W_Element_AttributeGroupImpl extends EObjectImpl implements S
 			case Balisentechnik_ETCSPackage.START_WELEMENT_ATTRIBUTE_GROUP__WANSCHLUSS:
 				setWAnschluss((W_Anschluss_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -236,10 +232,8 @@ public class Start_W_Element_AttributeGroupImpl extends EObjectImpl implements S
 			case Balisentechnik_ETCSPackage.START_WELEMENT_ATTRIBUTE_GROUP__WANSCHLUSS:
 				setWAnschluss((W_Anschluss_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -254,9 +248,8 @@ public class Start_W_Element_AttributeGroupImpl extends EObjectImpl implements S
 				return iDStartWElement != null;
 			case Balisentechnik_ETCSPackage.START_WELEMENT_ATTRIBUTE_GROUP__WANSCHLUSS:
 				return wAnschluss != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Start_W_Element_AttributeGroupImpl

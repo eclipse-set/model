@@ -296,8 +296,8 @@ public enum ENUMHSystem implements Enumerator {
 			case ENUMH_SYSTEM_HN_56_VALUE: return ENUMH_SYSTEM_HN_56;
 			case ENUMH_SYSTEM_HN_76_VALUE: return ENUMH_SYSTEM_HN_76;
 			case ENUMH_SYSTEM_SONSTIGE_VALUE: return ENUMH_SYSTEM_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -136,10 +136,8 @@ public class ESG_Ind_Parameter_TypeClassItemProvider extends BasisAttribut_Attri
 			case Balisentechnik_ETCSPackage.ESG_IND_PARAMETER_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

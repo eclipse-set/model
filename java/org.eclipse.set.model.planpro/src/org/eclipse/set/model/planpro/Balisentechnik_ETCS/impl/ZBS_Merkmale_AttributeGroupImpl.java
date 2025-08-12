@@ -179,9 +179,8 @@ public class ZBS_Merkmale_AttributeGroupImpl extends EObjectImpl implements ZBS_
 				return basicSetDPLinkArt(null, msgs);
 			case Balisentechnik_ETCSPackage.ZBS_MERKMALE_ATTRIBUTE_GROUP__ZBS_REAKTION:
 				return basicSetZBSReaktion(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class ZBS_Merkmale_AttributeGroupImpl extends EObjectImpl implements ZBS_
 				return getDPLinkArt();
 			case Balisentechnik_ETCSPackage.ZBS_MERKMALE_ATTRIBUTE_GROUP__ZBS_REAKTION:
 				return getZBSReaktion();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class ZBS_Merkmale_AttributeGroupImpl extends EObjectImpl implements ZBS_
 			case Balisentechnik_ETCSPackage.ZBS_MERKMALE_ATTRIBUTE_GROUP__ZBS_REAKTION:
 				setZBSReaktion((ZBS_Reaktion_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class ZBS_Merkmale_AttributeGroupImpl extends EObjectImpl implements ZBS_
 			case Balisentechnik_ETCSPackage.ZBS_MERKMALE_ATTRIBUTE_GROUP__ZBS_REAKTION:
 				setZBSReaktion((ZBS_Reaktion_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class ZBS_Merkmale_AttributeGroupImpl extends EObjectImpl implements ZBS_
 				return dPLinkArt != null;
 			case Balisentechnik_ETCSPackage.ZBS_MERKMALE_ATTRIBUTE_GROUP__ZBS_REAKTION:
 				return zBSReaktion != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZBS_Merkmale_AttributeGroupImpl

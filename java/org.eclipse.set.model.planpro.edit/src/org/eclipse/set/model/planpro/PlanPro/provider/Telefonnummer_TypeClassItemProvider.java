@@ -134,10 +134,8 @@ public class Telefonnummer_TypeClassItemProvider extends BasisAttribut_Attribute
 			case PlanProPackage.TELEFONNUMMER_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

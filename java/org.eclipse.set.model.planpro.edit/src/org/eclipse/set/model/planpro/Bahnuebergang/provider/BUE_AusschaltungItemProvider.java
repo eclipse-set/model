@@ -142,10 +142,8 @@ public class BUE_AusschaltungItemProvider extends Basis_ObjektItemProvider {
 			case BahnuebergangPackage.BUE_AUSSCHALTUNG__IDBUE_GLEISBEZ_GEFAHRRAUM:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

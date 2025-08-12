@@ -151,10 +151,8 @@ public class Planung_GruppeItemProvider extends Ur_ObjektItemProvider {
 			case PlanProPackage.PLANUNG_GRUPPE__POLYGONE_PLANUNGSBEREICH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -135,8 +135,8 @@ public enum ENUMVerbotWBArt implements Enumerator {
 		switch (value) {
 			case ENUM_VERBOT_WB_ART_BETRIEBSBREMSUNG_VALUE: return ENUM_VERBOT_WB_ART_BETRIEBSBREMSUNG;
 			case ENUM_VERBOT_WB_ART_VOLLSTÄNDIG_VALUE: return ENUM_VERBOT_WB_ART_VOLLSTÄNDIG;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

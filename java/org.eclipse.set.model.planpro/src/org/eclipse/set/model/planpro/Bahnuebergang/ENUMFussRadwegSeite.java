@@ -158,8 +158,8 @@ public enum ENUMFussRadwegSeite implements Enumerator {
 			case ENUM_FUSS_RADWEG_SEITE_BEIDSEITIG_VALUE: return ENUM_FUSS_RADWEG_SEITE_BEIDSEITIG;
 			case ENUM_FUSS_RADWEG_SEITE_QUADRANT_12_VALUE: return ENUM_FUSS_RADWEG_SEITE_QUADRANT_12;
 			case ENUM_FUSS_RADWEG_SEITE_QUADRANT_34_VALUE: return ENUM_FUSS_RADWEG_SEITE_QUADRANT_34;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

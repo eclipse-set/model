@@ -136,10 +136,8 @@ public class Km_BTS_3_TypeClassItemProvider extends BasisAttribut_AttributeGroup
 			case Balisentechnik_ETCSPackage.KM_BTS_3TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

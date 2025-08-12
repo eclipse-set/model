@@ -159,10 +159,8 @@ public class ID_Fstr_Zug_Rangier_TypeClassItemProvider extends Zeiger_TypeClassI
 			case VerweisePackage.ID_FSTR_ZUG_RANGIER_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

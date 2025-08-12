@@ -162,10 +162,8 @@ public class FT_ETCS_Trans_Paket_N_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_PAKET_NATTRIBUTE_GROUP__REKURSION_NR:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

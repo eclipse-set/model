@@ -139,10 +139,8 @@ public class Laenge_Soll_TypeClassItemProvider extends BasisAttribut_AttributeGr
 			case FahrstrassePackage.LAENGE_SOLL_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

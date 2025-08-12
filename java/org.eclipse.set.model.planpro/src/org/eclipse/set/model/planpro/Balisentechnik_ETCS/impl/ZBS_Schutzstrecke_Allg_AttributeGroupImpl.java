@@ -238,9 +238,8 @@ public class ZBS_Schutzstrecke_Allg_AttributeGroupImpl extends EObjectImpl imple
 				return basicSetMassgebendeNeigungMind150(null, msgs);
 			case Balisentechnik_ETCSPackage.ZBS_SCHUTZSTRECKE_ALLG_ATTRIBUTE_GROUP__VFREI:
 				return basicSetVFrei(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -257,9 +256,8 @@ public class ZBS_Schutzstrecke_Allg_AttributeGroupImpl extends EObjectImpl imple
 				return getMassgebendeNeigungMind150();
 			case Balisentechnik_ETCSPackage.ZBS_SCHUTZSTRECKE_ALLG_ATTRIBUTE_GROUP__VFREI:
 				return getVFrei();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -279,10 +277,8 @@ public class ZBS_Schutzstrecke_Allg_AttributeGroupImpl extends EObjectImpl imple
 			case Balisentechnik_ETCSPackage.ZBS_SCHUTZSTRECKE_ALLG_ATTRIBUTE_GROUP__VFREI:
 				setVFrei((V_Frei_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -302,10 +298,8 @@ public class ZBS_Schutzstrecke_Allg_AttributeGroupImpl extends EObjectImpl imple
 			case Balisentechnik_ETCSPackage.ZBS_SCHUTZSTRECKE_ALLG_ATTRIBUTE_GROUP__VFREI:
 				setVFrei((V_Frei_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -322,9 +316,8 @@ public class ZBS_Schutzstrecke_Allg_AttributeGroupImpl extends EObjectImpl imple
 				return massgebendeNeigungMind150 != null;
 			case Balisentechnik_ETCSPackage.ZBS_SCHUTZSTRECKE_ALLG_ATTRIBUTE_GROUP__VFREI:
 				return vFrei != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZBS_Schutzstrecke_Allg_AttributeGroupImpl

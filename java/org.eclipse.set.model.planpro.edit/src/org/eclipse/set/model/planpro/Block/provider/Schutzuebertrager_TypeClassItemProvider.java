@@ -137,10 +137,8 @@ public class Schutzuebertrager_TypeClassItemProvider extends BasisAttribut_Attri
 			case BlockPackage.SCHUTZUEBERTRAGER_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

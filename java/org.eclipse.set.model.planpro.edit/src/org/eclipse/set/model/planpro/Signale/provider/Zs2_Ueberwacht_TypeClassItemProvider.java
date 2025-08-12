@@ -137,10 +137,8 @@ public class Zs2_Ueberwacht_TypeClassItemProvider extends BasisAttribut_Attribut
 			case SignalePackage.ZS2_UEBERWACHT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

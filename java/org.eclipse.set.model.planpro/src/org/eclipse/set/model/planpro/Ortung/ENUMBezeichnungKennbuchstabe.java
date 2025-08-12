@@ -181,8 +181,8 @@ public enum ENUMBezeichnungKennbuchstabe implements Enumerator {
 			case ENUM_BEZEICHNUNG_KENNBUCHSTABE_G_VALUE: return ENUM_BEZEICHNUNG_KENNBUCHSTABE_G;
 			case ENUM_BEZEICHNUNG_KENNBUCHSTABE_K_VALUE: return ENUM_BEZEICHNUNG_KENNBUCHSTABE_K;
 			case ENUM_BEZEICHNUNG_KENNBUCHSTABE_W_VALUE: return ENUM_BEZEICHNUNG_KENNBUCHSTABE_W;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

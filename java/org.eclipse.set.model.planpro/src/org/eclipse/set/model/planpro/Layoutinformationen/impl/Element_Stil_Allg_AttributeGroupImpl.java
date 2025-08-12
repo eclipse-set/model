@@ -297,9 +297,8 @@ public class Element_Stil_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return basicSetLinieFarbwert(null, msgs);
 			case LayoutinformationenPackage.ELEMENT_STIL_ALLG_ATTRIBUTE_GROUP__LINIE_SUBART:
 				return basicSetLinieSubart(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -318,9 +317,8 @@ public class Element_Stil_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return getLinieFarbwert();
 			case LayoutinformationenPackage.ELEMENT_STIL_ALLG_ATTRIBUTE_GROUP__LINIE_SUBART:
 				return getLinieSubart();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -343,10 +341,8 @@ public class Element_Stil_Allg_AttributeGroupImpl extends EObjectImpl implements
 			case LayoutinformationenPackage.ELEMENT_STIL_ALLG_ATTRIBUTE_GROUP__LINIE_SUBART:
 				setLinieSubart((Linie_Subart_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -369,10 +365,8 @@ public class Element_Stil_Allg_AttributeGroupImpl extends EObjectImpl implements
 			case LayoutinformationenPackage.ELEMENT_STIL_ALLG_ATTRIBUTE_GROUP__LINIE_SUBART:
 				setLinieSubart((Linie_Subart_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -391,9 +385,8 @@ public class Element_Stil_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return linieFarbwert != null;
 			case LayoutinformationenPackage.ELEMENT_STIL_ALLG_ATTRIBUTE_GROUP__LINIE_SUBART:
 				return linieSubart != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Element_Stil_Allg_AttributeGroupImpl

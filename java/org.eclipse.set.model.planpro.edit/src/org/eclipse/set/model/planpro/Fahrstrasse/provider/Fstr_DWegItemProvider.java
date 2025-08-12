@@ -153,10 +153,8 @@ public class Fstr_DWegItemProvider extends Basis_ObjektItemProvider {
 			case FahrstrassePackage.FSTR_DWEG__IDPZB_GEFAHRPUNKT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

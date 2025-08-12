@@ -138,10 +138,8 @@ public class ZN_Schaltkriterium_TypeClassItemProvider extends BasisAttribut_Attr
 			case ZugnummernmeldeanlagePackage.ZN_SCHALTKRITERIUM_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

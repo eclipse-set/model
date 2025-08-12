@@ -181,8 +181,8 @@ public enum ENUMSchaltung implements Enumerator {
 			case ENUM_SCHALTUNG_6DRAHTSCHALTUNG_VALUE: return ENUM_SCHALTUNG_6DRAHTSCHALTUNG;
 			case ENUM_SCHALTUNG_9DRAHTSCHALTUNG_VALUE: return ENUM_SCHALTUNG_9DRAHTSCHALTUNG;
 			case ENUM_SCHALTUNG_SONSTIGE_VALUE: return ENUM_SCHALTUNG_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

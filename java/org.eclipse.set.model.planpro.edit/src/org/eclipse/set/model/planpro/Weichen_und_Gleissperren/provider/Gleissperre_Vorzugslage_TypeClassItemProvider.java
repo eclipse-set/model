@@ -138,10 +138,8 @@ public class Gleissperre_Vorzugslage_TypeClassItemProvider extends BasisAttribut
 			case Weichen_und_GleissperrenPackage.GLEISSPERRE_VORZUGSLAGE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

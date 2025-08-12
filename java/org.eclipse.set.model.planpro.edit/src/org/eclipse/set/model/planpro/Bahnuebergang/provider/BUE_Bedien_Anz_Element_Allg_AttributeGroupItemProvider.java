@@ -158,10 +158,8 @@ public class BUE_Bedien_Anz_Element_Allg_AttributeGroupItemProvider
 			case BahnuebergangPackage.BUE_BEDIEN_ANZ_ELEMENT_ALLG_ATTRIBUTE_GROUP__ID_HANDSCHALT_WIRKFUNKTION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

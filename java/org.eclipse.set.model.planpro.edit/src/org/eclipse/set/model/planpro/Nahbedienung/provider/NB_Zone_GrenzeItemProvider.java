@@ -147,10 +147,8 @@ public class NB_Zone_GrenzeItemProvider extends Basis_ObjektItemProvider {
 			case NahbedienungPackage.NB_ZONE_GRENZE__NB_GRENZE_ART:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

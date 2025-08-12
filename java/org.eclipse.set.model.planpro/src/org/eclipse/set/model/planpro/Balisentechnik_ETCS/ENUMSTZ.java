@@ -135,8 +135,8 @@ public enum ENUMSTZ implements Enumerator {
 		switch (value) {
 			case ENUMSTZ_2_VALUE: return ENUMSTZ_2;
 			case ENUMSTZ_4_VALUE: return ENUMSTZ_4;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

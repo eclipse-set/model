@@ -139,10 +139,8 @@ public class Geschwindigkeit_R_TypeClassItemProvider extends BasisAttribut_Attri
 			case Weichen_und_GleissperrenPackage.GESCHWINDIGKEIT_RTYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

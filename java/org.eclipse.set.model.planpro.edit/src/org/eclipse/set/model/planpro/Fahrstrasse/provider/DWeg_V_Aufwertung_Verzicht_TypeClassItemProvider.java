@@ -137,10 +137,8 @@ public class DWeg_V_Aufwertung_Verzicht_TypeClassItemProvider extends BasisAttri
 			case FahrstrassePackage.DWEG_VAUFWERTUNG_VERZICHT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

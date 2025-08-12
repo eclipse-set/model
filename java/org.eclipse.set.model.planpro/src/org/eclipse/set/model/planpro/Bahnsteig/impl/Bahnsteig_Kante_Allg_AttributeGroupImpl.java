@@ -179,9 +179,8 @@ public class Bahnsteig_Kante_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return basicSetLageZumGleis(null, msgs);
 			case BahnsteigPackage.BAHNSTEIG_KANTE_ALLG_ATTRIBUTE_GROUP__SYSTEMHOEHE:
 				return basicSetSystemhoehe(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class Bahnsteig_Kante_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return getLageZumGleis();
 			case BahnsteigPackage.BAHNSTEIG_KANTE_ALLG_ATTRIBUTE_GROUP__SYSTEMHOEHE:
 				return getSystemhoehe();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class Bahnsteig_Kante_Allg_AttributeGroupImpl extends EObjectImpl impleme
 			case BahnsteigPackage.BAHNSTEIG_KANTE_ALLG_ATTRIBUTE_GROUP__SYSTEMHOEHE:
 				setSystemhoehe((Systemhoehe_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class Bahnsteig_Kante_Allg_AttributeGroupImpl extends EObjectImpl impleme
 			case BahnsteigPackage.BAHNSTEIG_KANTE_ALLG_ATTRIBUTE_GROUP__SYSTEMHOEHE:
 				setSystemhoehe((Systemhoehe_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class Bahnsteig_Kante_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return lageZumGleis != null;
 			case BahnsteigPackage.BAHNSTEIG_KANTE_ALLG_ATTRIBUTE_GROUP__SYSTEMHOEHE:
 				return systemhoehe != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bahnsteig_Kante_Allg_AttributeGroupImpl

@@ -181,8 +181,8 @@ public enum ENUMZNModem implements Enumerator {
 			case ENUMZN_MODEM_NOKIA_1200_SE_VALUE: return ENUMZN_MODEM_NOKIA_1200_SE;
 			case ENUMZN_MODEM_SCADA_NG_VALUE: return ENUMZN_MODEM_SCADA_NG;
 			case ENUMZN_MODEM_SONSTIGE_VALUE: return ENUMZN_MODEM_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

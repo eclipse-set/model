@@ -331,9 +331,8 @@ public class FMA_Komponente_Achszaehlpunkt_AttributeGroupImpl extends EObjectImp
 				return basicSetIDEnergie(null, msgs);
 			case OrtungPackage.FMA_KOMPONENTE_ACHSZAEHLPUNKT_ATTRIBUTE_GROUP__ID_INFORMATION:
 				return ((InternalEList<?>)getIDInformation()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -354,9 +353,8 @@ public class FMA_Komponente_Achszaehlpunkt_AttributeGroupImpl extends EObjectImp
 				return getIDEnergie();
 			case OrtungPackage.FMA_KOMPONENTE_ACHSZAEHLPUNKT_ATTRIBUTE_GROUP__ID_INFORMATION:
 				return getIDInformation();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -384,10 +382,8 @@ public class FMA_Komponente_Achszaehlpunkt_AttributeGroupImpl extends EObjectImp
 				getIDInformation().clear();
 				getIDInformation().addAll((Collection<? extends ID_Aussenelementansteuerung_TypeClass>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -413,10 +409,8 @@ public class FMA_Komponente_Achszaehlpunkt_AttributeGroupImpl extends EObjectImp
 			case OrtungPackage.FMA_KOMPONENTE_ACHSZAEHLPUNKT_ATTRIBUTE_GROUP__ID_INFORMATION:
 				getIDInformation().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -437,9 +431,8 @@ public class FMA_Komponente_Achszaehlpunkt_AttributeGroupImpl extends EObjectImp
 				return iDEnergie != null;
 			case OrtungPackage.FMA_KOMPONENTE_ACHSZAEHLPUNKT_ATTRIBUTE_GROUP__ID_INFORMATION:
 				return iDInformation != null && !iDInformation.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //FMA_Komponente_Achszaehlpunkt_AttributeGroupImpl

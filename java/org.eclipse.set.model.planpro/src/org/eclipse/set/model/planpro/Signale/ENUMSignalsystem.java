@@ -204,8 +204,8 @@ public enum ENUMSignalsystem implements Enumerator {
 			case ENUM_SIGNALSYSTEM_KS_VALUE: return ENUM_SIGNALSYSTEM_KS;
 			case ENUM_SIGNALSYSTEM_SONSTIGE_VALUE: return ENUM_SIGNALSYSTEM_SONSTIGE;
 			case ENUM_SIGNALSYSTEM_SV_VALUE: return ENUM_SIGNALSYSTEM_SV;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

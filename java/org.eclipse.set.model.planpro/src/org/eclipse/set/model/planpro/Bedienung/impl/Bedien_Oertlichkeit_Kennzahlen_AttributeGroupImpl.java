@@ -179,9 +179,8 @@ public class Bedien_Oertlichkeit_Kennzahlen_AttributeGroupImpl extends EObjectIm
 				return basicSetBetriebsstellenbezeichner(null, msgs);
 			case BedienungPackage.BEDIEN_OERTLICHKEIT_KENNZAHLEN_ATTRIBUTE_GROUP__KENNZAHL:
 				return basicSetKennzahl(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class Bedien_Oertlichkeit_Kennzahlen_AttributeGroupImpl extends EObjectIm
 				return getBetriebsstellenbezeichner();
 			case BedienungPackage.BEDIEN_OERTLICHKEIT_KENNZAHLEN_ATTRIBUTE_GROUP__KENNZAHL:
 				return getKennzahl();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class Bedien_Oertlichkeit_Kennzahlen_AttributeGroupImpl extends EObjectIm
 			case BedienungPackage.BEDIEN_OERTLICHKEIT_KENNZAHLEN_ATTRIBUTE_GROUP__KENNZAHL:
 				setKennzahl((Kennzahl_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class Bedien_Oertlichkeit_Kennzahlen_AttributeGroupImpl extends EObjectIm
 			case BedienungPackage.BEDIEN_OERTLICHKEIT_KENNZAHLEN_ATTRIBUTE_GROUP__KENNZAHL:
 				setKennzahl((Kennzahl_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class Bedien_Oertlichkeit_Kennzahlen_AttributeGroupImpl extends EObjectIm
 				return betriebsstellenbezeichner != null;
 			case BedienungPackage.BEDIEN_OERTLICHKEIT_KENNZAHLEN_ATTRIBUTE_GROUP__KENNZAHL:
 				return kennzahl != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Oertlichkeit_Kennzahlen_AttributeGroupImpl

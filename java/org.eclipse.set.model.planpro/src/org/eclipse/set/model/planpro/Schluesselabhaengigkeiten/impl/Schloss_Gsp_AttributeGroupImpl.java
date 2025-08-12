@@ -180,9 +180,8 @@ public class Schloss_Gsp_AttributeGroupImpl extends EObjectImpl implements Schlo
 				return basicSetGspLage(null, msgs);
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_GSP_ATTRIBUTE_GROUP__ID_GSP_ELEMENT:
 				return basicSetIDGspElement(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,9 +196,8 @@ public class Schloss_Gsp_AttributeGroupImpl extends EObjectImpl implements Schlo
 				return getGspLage();
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_GSP_ATTRIBUTE_GROUP__ID_GSP_ELEMENT:
 				return getIDGspElement();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -216,10 +214,8 @@ public class Schloss_Gsp_AttributeGroupImpl extends EObjectImpl implements Schlo
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_GSP_ATTRIBUTE_GROUP__ID_GSP_ELEMENT:
 				setIDGspElement((ID_W_Kr_Gsp_Element_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -236,10 +232,8 @@ public class Schloss_Gsp_AttributeGroupImpl extends EObjectImpl implements Schlo
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_GSP_ATTRIBUTE_GROUP__ID_GSP_ELEMENT:
 				setIDGspElement((ID_W_Kr_Gsp_Element_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -254,9 +248,8 @@ public class Schloss_Gsp_AttributeGroupImpl extends EObjectImpl implements Schlo
 				return gspLage != null;
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_GSP_ATTRIBUTE_GROUP__ID_GSP_ELEMENT:
 				return iDGspElement != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Schloss_Gsp_AttributeGroupImpl

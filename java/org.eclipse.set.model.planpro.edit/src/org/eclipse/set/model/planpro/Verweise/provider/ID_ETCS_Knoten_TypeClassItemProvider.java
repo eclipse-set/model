@@ -159,10 +159,8 @@ public class ID_ETCS_Knoten_TypeClassItemProvider extends Zeiger_TypeClassItemPr
 			case VerweisePackage.ID_ETCS_KNOTEN_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

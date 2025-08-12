@@ -415,9 +415,8 @@ public class Signal_Real_Aktiv_Schirm_AttributeGroupImpl extends EObjectImpl imp
 				return basicSetStreuscheibeArt(null, msgs);
 			case SignalePackage.SIGNAL_REAL_AKTIV_SCHIRM_ATTRIBUTE_GROUP__STREUSCHEIBE_BETRIEBSSTELLUNG:
 				return basicSetStreuscheibeBetriebsstellung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -440,9 +439,8 @@ public class Signal_Real_Aktiv_Schirm_AttributeGroupImpl extends EObjectImpl imp
 				return getStreuscheibeArt();
 			case SignalePackage.SIGNAL_REAL_AKTIV_SCHIRM_ATTRIBUTE_GROUP__STREUSCHEIBE_BETRIEBSSTELLUNG:
 				return getStreuscheibeBetriebsstellung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -471,10 +469,8 @@ public class Signal_Real_Aktiv_Schirm_AttributeGroupImpl extends EObjectImpl imp
 			case SignalePackage.SIGNAL_REAL_AKTIV_SCHIRM_ATTRIBUTE_GROUP__STREUSCHEIBE_BETRIEBSSTELLUNG:
 				setStreuscheibeBetriebsstellung((Streuscheibe_Betriebsstellung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -503,10 +499,8 @@ public class Signal_Real_Aktiv_Schirm_AttributeGroupImpl extends EObjectImpl imp
 			case SignalePackage.SIGNAL_REAL_AKTIV_SCHIRM_ATTRIBUTE_GROUP__STREUSCHEIBE_BETRIEBSSTELLUNG:
 				setStreuscheibeBetriebsstellung((Streuscheibe_Betriebsstellung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -529,9 +523,8 @@ public class Signal_Real_Aktiv_Schirm_AttributeGroupImpl extends EObjectImpl imp
 				return streuscheibeArt != null;
 			case SignalePackage.SIGNAL_REAL_AKTIV_SCHIRM_ATTRIBUTE_GROUP__STREUSCHEIBE_BETRIEBSSTELLUNG:
 				return streuscheibeBetriebsstellung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Signal_Real_Aktiv_Schirm_AttributeGroupImpl

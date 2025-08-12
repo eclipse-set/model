@@ -356,9 +356,8 @@ public class Kabel_Element_AttributeGroupImpl extends EObjectImpl implements Kab
 				return basicSetAderDurchmesser(null, msgs);
 			case Medien_und_TrassenPackage.KABEL_ELEMENT_ATTRIBUTE_GROUP__ADER_QUERSCHNITT:
 				return basicSetAderQuerschnitt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -379,9 +378,8 @@ public class Kabel_Element_AttributeGroupImpl extends EObjectImpl implements Kab
 				return getAderDurchmesser();
 			case Medien_und_TrassenPackage.KABEL_ELEMENT_ATTRIBUTE_GROUP__ADER_QUERSCHNITT:
 				return getAderQuerschnitt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -407,10 +405,8 @@ public class Kabel_Element_AttributeGroupImpl extends EObjectImpl implements Kab
 			case Medien_und_TrassenPackage.KABEL_ELEMENT_ATTRIBUTE_GROUP__ADER_QUERSCHNITT:
 				setAderQuerschnitt((Ader_Querschnitt_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -436,10 +432,8 @@ public class Kabel_Element_AttributeGroupImpl extends EObjectImpl implements Kab
 			case Medien_und_TrassenPackage.KABEL_ELEMENT_ATTRIBUTE_GROUP__ADER_QUERSCHNITT:
 				setAderQuerschnitt((Ader_Querschnitt_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -460,9 +454,8 @@ public class Kabel_Element_AttributeGroupImpl extends EObjectImpl implements Kab
 				return aderDurchmesser != null;
 			case Medien_und_TrassenPackage.KABEL_ELEMENT_ATTRIBUTE_GROUP__ADER_QUERSCHNITT:
 				return aderQuerschnitt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Kabel_Element_AttributeGroupImpl

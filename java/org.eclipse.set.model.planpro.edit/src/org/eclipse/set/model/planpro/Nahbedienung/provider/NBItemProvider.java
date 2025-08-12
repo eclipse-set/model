@@ -145,10 +145,8 @@ public class NBItemProvider extends Basis_ObjektItemProvider {
 			case NahbedienungPackage.NB__NB_FUNKTIONALITAET_NBR:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

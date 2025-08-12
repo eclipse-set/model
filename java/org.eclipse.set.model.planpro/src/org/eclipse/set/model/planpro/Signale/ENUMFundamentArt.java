@@ -158,8 +158,8 @@ public enum ENUMFundamentArt implements Enumerator {
 			case ENUM_FUNDAMENT_ART_GROSS_VALUE: return ENUM_FUNDAMENT_ART_GROSS;
 			case ENUM_FUNDAMENT_ART_KLEIN_VALUE: return ENUM_FUNDAMENT_ART_KLEIN;
 			case ENUM_FUNDAMENT_ART_SONSTIGE_VALUE: return ENUM_FUNDAMENT_ART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

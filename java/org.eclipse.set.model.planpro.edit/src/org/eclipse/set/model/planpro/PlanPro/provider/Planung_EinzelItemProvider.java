@@ -159,10 +159,8 @@ public class Planung_EinzelItemProvider extends Ur_ObjektItemProvider {
 			case PlanProPackage.PLANUNG_EINZEL__REFERENZ_PLANUNG_BASIS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**
