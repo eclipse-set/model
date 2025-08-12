@@ -14,13 +14,17 @@
                  name="ID_Anforderer_Element_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Anforderer_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Anforderer_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element Nahbedienung.ecore#//NB_Zone_Grenze"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -37,13 +41,17 @@
                  name="ID_Anforderung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Anforderung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Anforderung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Block.ecore#//Block_Element Fahrstrasse.ecore#//Fstr_Fahrweg Bahnuebergang.ecore#//BUE_Einschaltung Bahnuebergang.ecore#//BUE_Ausschaltung"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -60,8 +68,10 @@
                  name="ID_Anhang_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Anhang_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Anhang_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -81,8 +91,10 @@
                  name="ID_Anhang_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Anhang"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Anhang"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -102,13 +114,17 @@
                  name="ID_AnhangBearbeitungsvermerk_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_AnhangBearbeitungsvermerk"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_AnhangBearbeitungsvermerk"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Basisobjekte.ecore#//Anhang Basisobjekte.ecore#//Bearbeitungsvermerk"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -125,13 +141,17 @@
                  name="ID_Anschluss_Element_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Anschluss_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Anschluss_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Bedienung.ecore#//Bedien_Standort Balisentechnik_ETCS.ecore#//Datenpunkt Ansteuerung_Element.ecore#//ESTW_Zentraleinheit Ortung.ecore#//FMA_Komponente Medien_und_Trassen.ecore#//Kabel_Verteilpunkt Balisentechnik_ETCS.ecore#//LEU_Anlage Ansteuerung_Element.ecore#//Stellelement Ansteuerung_Element.ecore#//Technik_Standort"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -148,8 +168,10 @@
                  name="ID_ATO_TS_Instanz_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ATO_TS_Instanz_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ATO_TS_Instanz_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -169,8 +191,10 @@
                  name="ID_ATO_TS_Instanz_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ATO_TS_Instanz"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ATO_TS_Instanz"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -190,8 +214,10 @@
                  name="ID_Ausgabe_Fachdaten_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Ausgabe_Fachdaten_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Ausgabe_Fachdaten_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -211,8 +237,10 @@
                  name="ID_Aussenelementansteuerung_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Aussenelementansteuerung_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Aussenelementansteuerung_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -232,8 +260,10 @@
                  name="ID_Aussenelementansteuerung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Aussenelementansteuerung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Aussenelementansteuerung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -253,8 +283,10 @@
                  name="ID_Bahnsteig_Anlage_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Bahnsteig_Anlage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Bahnsteig_Anlage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -274,8 +306,10 @@
                  name="ID_Bahnsteig_Kante_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Bahnsteig_Kante_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Bahnsteig_Kante_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -295,8 +329,10 @@
                  name="ID_Bahnsteig_Kante_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Bahnsteig_Kante"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Bahnsteig_Kante"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -316,8 +352,10 @@
                  name="ID_Balise_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Balise_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Balise_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -337,8 +375,10 @@
                  name="ID_Balise_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Balise"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Balise"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -358,8 +398,10 @@
                  name="ID_Basis_Objekt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Basis_Objekt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Basis_Objekt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -379,8 +421,10 @@
                  name="ID_Bedien_Anzeige_Element_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Bedien_Anzeige_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Bedien_Anzeige_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -400,8 +444,10 @@
                  name="ID_Bedien_Bezirk_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Bedien_Bezirk"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Bedien_Bezirk"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -421,8 +467,10 @@
                  name="ID_Bedien_Einrichtung_Oertlich_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Bedien_Einrichtung_Oertlich"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Bedien_Einrichtung_Oertlich"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -442,8 +490,10 @@
                  name="ID_Bedien_Oberflaeche_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Bedien_Oberflaeche"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Bedien_Oberflaeche"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -463,8 +513,10 @@
                  name="ID_Bedien_Standort_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Bedien_Standort"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Bedien_Standort"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -484,8 +536,10 @@
                  name="ID_Bedien_Zentrale_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Bedien_Zentrale"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Bedien_Zentrale"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -505,13 +559,17 @@
                  name="ID_Befestigung_Bauwerk_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Befestigung_Bauwerk"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Befestigung_Bauwerk"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Geodaten.ecore#//Technischer_Punkt Geodaten.ecore#//Technischer_Bereich"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -528,13 +586,17 @@
                  name="ID_Beginn_Bereich_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Beginn_Bereich"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Beginn_Bereich"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Bahnsteig.ecore#//Bahnsteig_Kante Bahnuebergang.ecore#//BUE_Gleisbezogener_Gefahrraum Balisentechnik_ETCS.ecore#//ZUB_Streckeneigenschaft"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -551,13 +613,17 @@
                  name="ID_Bezugspunkt_Positionierung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Bezugspunkt_Positionierung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Bezugspunkt_Positionierung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Signale.ecore#//Signal Geodaten.ecore#//Technischer_Punkt"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -574,8 +640,10 @@
                  name="ID_Binaerdaten_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Binaerdaten_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Binaerdaten_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -595,8 +663,10 @@
                  name="ID_Block_Anlage_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Block_Anlage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Block_Anlage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -616,8 +686,10 @@
                  name="ID_Block_Element_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Block_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Block_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -637,8 +709,10 @@
                  name="ID_Block_Strecke_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Block_Strecke"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Block_Strecke"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -658,8 +732,10 @@
                  name="ID_BUE_Anlage_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_BUE_Anlage_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_BUE_Anlage_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -679,8 +755,10 @@
                  name="ID_BUE_Anlage_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_BUE_Anlage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_BUE_Anlage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -700,8 +778,10 @@
                  name="ID_BUE_Bedien_Anzeige_Element_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_BUE_Bedien_Anzeige_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_BUE_Bedien_Anzeige_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -721,8 +801,10 @@
                  name="ID_BUE_Einschaltung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_BUE_Einschaltung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_BUE_Einschaltung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -742,8 +824,10 @@
                  name="ID_BUE_Gleisbezogener_Gefahrraum_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_BUE_Gleisbezogener_Gefahrraum"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_BUE_Gleisbezogener_Gefahrraum"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -763,8 +847,10 @@
                  name="ID_BUE_Schnittstelle_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_BUE_Schnittstelle"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_BUE_Schnittstelle"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -784,8 +870,10 @@
                  name="ID_BUE_WS_Fstr_Zuordnung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_BUE_WS_Fstr_Zuordnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_BUE_WS_Fstr_Zuordnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -805,8 +893,10 @@
                  name="ID_Datenpunkt_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Datenpunkt_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Datenpunkt_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -826,8 +916,10 @@
                  name="ID_Datenpunkt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Datenpunkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Datenpunkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -847,13 +939,17 @@
                  name="ID_DP_Bezug_Funktional_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_DP_Bezug_Funktional"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_DP_Bezug_Funktional"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Bahnuebergang.ecore#//BUE_Anlage Bahnuebergang.ecore#//BUE_Einschaltung Bahnuebergang.ecore#//BUE_Kante Fahrstrasse.ecore#//Markanter_Punkt PZB.ecore#//PZB_Element Balisentechnik_ETCS.ecore#//ZUB_Streckeneigenschaft"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -870,8 +966,10 @@
                  name="ID_Einschaltpunkt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Einschaltpunkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Einschaltpunkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -891,13 +989,17 @@
                  name="ID_Element_Grenze_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Element_Grenze"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Element_Grenze"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Signale.ecore#//Signal Balisentechnik_ETCS.ecore#//Datenpunkt"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -914,13 +1016,17 @@
                  name="ID_Element_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element Gleis.ecore#//Gleis_Abschnitt"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -937,13 +1043,17 @@
                  name="ID_Element_Unterbringung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Element_Unterbringung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Element_Unterbringung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Balisentechnik_ETCS.ecore#//LEU_Schaltkasten Ansteuerung_Element.ecore#//Unterbringung"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -960,13 +1070,17 @@
                  name="ID_Energie_Eingang_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Energie_Eingang"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Energie_Eingang"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Bahnuebergang.ecore#//BUE_Anlage Balisentechnik_ETCS.ecore#//EV_Modul Ansteuerung_Element.ecore#//ESTW_Zentraleinheit PZB.ecore#//PZB_Element"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -983,13 +1097,17 @@
                  name="ID_Energie_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Energie"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Energie"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Ansteuerung_Element.ecore#//ESTW_Zentraleinheit Balisentechnik_ETCS.ecore#//EV_Modul"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1006,8 +1124,10 @@
                  name="ID_ESTW_Zentraleinheit_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ESTW_Zentraleinheit"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ESTW_Zentraleinheit"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1027,8 +1147,10 @@
                  name="ID_ETCS_Kante_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ETCS_Kante"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ETCS_Kante"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1048,8 +1170,10 @@
                  name="ID_ETCS_Knoten_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ETCS_Knoten_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ETCS_Knoten_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1069,8 +1193,10 @@
                  name="ID_ETCS_Knoten_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ETCS_Knoten"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ETCS_Knoten"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1090,8 +1216,10 @@
                  name="ID_EV_Modul_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_EV_Modul"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_EV_Modul"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1111,8 +1239,10 @@
                  name="ID_Fachtelegramm_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Fachtelegramm_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Fachtelegramm_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1132,8 +1262,10 @@
                  name="ID_Fachtelegramm_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Fachtelegramm"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Fachtelegramm"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1153,8 +1285,10 @@
                  name="ID_Fla_Schutz_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Fla_Schutz"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Fla_Schutz"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1174,8 +1308,10 @@
                  name="ID_FMA_Anlage_Rangier_Frei_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_FMA_Anlage_Rangier_Frei"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_FMA_Anlage_Rangier_Frei"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1195,8 +1331,10 @@
                  name="ID_FMA_Anlage_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_FMA_Anlage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_FMA_Anlage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1216,8 +1354,10 @@
                  name="ID_FMA_Element_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_FMA_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_FMA_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1237,8 +1377,10 @@
                  name="ID_FMA_Komponente_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_FMA_Komponente"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_FMA_Komponente"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1258,13 +1400,17 @@
                  name="ID_Fortschaltung_Start_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Fortschaltung_Start"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Fortschaltung_Start"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Ortung.ecore#//FMA_Anlage Signale.ecore#//Signal"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1281,8 +1427,10 @@
                  name="ID_Fstr_Aneinander_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Fstr_Aneinander"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Fstr_Aneinander"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1302,8 +1450,10 @@
                  name="ID_Fstr_Ausschluss_Besonders_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Fstr_Ausschluss_Besonders"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Fstr_Ausschluss_Besonders"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1323,8 +1473,10 @@
                  name="ID_Fstr_DWeg_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Fstr_DWeg_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Fstr_DWeg_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1344,8 +1496,10 @@
                  name="ID_Fstr_DWeg_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Fstr_DWeg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Fstr_DWeg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1365,8 +1519,10 @@
                  name="ID_Fstr_Fahrweg_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Fstr_Fahrweg_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Fstr_Fahrweg_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1386,8 +1542,10 @@
                  name="ID_Fstr_Fahrweg_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Fstr_Fahrweg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Fstr_Fahrweg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1407,8 +1565,10 @@
                  name="ID_Fstr_Zug_Rangier_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Fstr_Zug_Rangier"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Fstr_Zug_Rangier"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1428,8 +1588,10 @@
                  name="ID_FT_Anschaltbedingung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_FT_Anschaltbedingung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_FT_Anschaltbedingung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1449,8 +1611,10 @@
                  name="ID_FT_Fahrweg_Teil_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_FT_Fahrweg_Teil"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_FT_Fahrweg_Teil"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1470,13 +1634,17 @@
                  name="ID_GEO_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_GEO_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_GEO_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Geodaten.ecore#//TOP_Kante Geodaten.ecore#//Strecke"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1493,8 +1661,10 @@
                  name="ID_GEO_Kante_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_GEO_Kante"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_GEO_Kante"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1514,8 +1684,10 @@
                  name="ID_GEO_Knoten_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_GEO_Knoten"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_GEO_Knoten"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1535,8 +1707,10 @@
                  name="ID_GEO_Punkt_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_GEO_Punkt_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_GEO_Punkt_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1556,8 +1730,10 @@
                  name="ID_GEO_Punkt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_GEO_Punkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_GEO_Punkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1577,8 +1753,10 @@
                  name="ID_GFR_Anlage_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_GFR_Anlage_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_GFR_Anlage_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1598,8 +1776,10 @@
                  name="ID_Gleis_Abschnitt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Gleis_Abschnitt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Gleis_Abschnitt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1619,8 +1799,10 @@
                  name="ID_Gleis_Bezeichnung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Gleis_Bezeichnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Gleis_Bezeichnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1640,8 +1822,10 @@
                  name="ID_Grenzzeichen_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Grenzzeichen"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Grenzzeichen"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1661,13 +1845,17 @@
                  name="ID_Handschalt_Wirkfunktion_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Handschalt_Wirkfunktion"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Handschalt_Wirkfunktion"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Bahnuebergang.ecore#//BUE_Anlage Bahnuebergang.ecore#//BUE_Einschaltung Bahnuebergang.ecore#//BUE_Ausschaltung"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1684,8 +1872,10 @@
                  name="ID_Hoehenpunkt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Hoehenpunkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Hoehenpunkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1705,13 +1895,17 @@
                  name="ID_Information_Eingang_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Information_Eingang"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Information_Eingang"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Bahnuebergang.ecore#//BUE_Anlage Balisentechnik_ETCS.ecore#//LEU_Anlage Balisentechnik_ETCS.ecore#//LEU_Modul PZB.ecore#//PZB_Element Signale.ecore#//Signal Weichen_und_Gleissperren.ecore#//W_Kr_Anlage"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1728,13 +1922,17 @@
                  name="ID_Information_Primaer_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Information_Primaer"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Information_Primaer"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Ansteuerung_Element.ecore#//ESTW_Zentraleinheit"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1751,13 +1949,17 @@
                  name="ID_Komponente_Programmiert_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Komponente_Programmiert"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Komponente_Programmiert"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Balisentechnik_ETCS.ecore#//Balise Balisentechnik_ETCS.ecore#//LEU_Modul"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1774,8 +1976,10 @@
                  name="ID_Lageplan_Blattschnitt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Lageplan_Blattschnitt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Lageplan_Blattschnitt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1795,8 +1999,10 @@
                  name="ID_Lageplan_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Lageplan"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Lageplan"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1816,8 +2022,10 @@
                  name="ID_Lageplan_Zustand_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Lageplan_Zustand"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Lageplan_Zustand"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1837,8 +2045,10 @@
                  name="ID_LEU_Anlage_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_LEU_Anlage_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_LEU_Anlage_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1858,8 +2068,10 @@
                  name="ID_LEU_Anlage_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_LEU_Anlage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_LEU_Anlage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1879,13 +2091,17 @@
                  name="ID_LEU_Bezug_Funktional_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_LEU_Bezug_Funktional"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_LEU_Bezug_Funktional"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Bahnuebergang.ecore#//BUE_Anlage Signale.ecore#//Signal Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1902,8 +2118,10 @@
                  name="ID_LEU_Schaltkasten_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_LEU_Schaltkasten_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_LEU_Schaltkasten_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1923,8 +2141,10 @@
                  name="ID_LO_Einbau_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_LO_Einbau"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_LO_Einbau"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -1944,13 +2164,17 @@
                  name="ID_Markante_Stelle_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Markante_Stelle"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Markante_Stelle"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Balisentechnik_ETCS.ecore#//Datenpunkt Signale.ecore#//Signal Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Komponente Fahrstrasse.ecore#//Sonstiger_Punkt Ortung.ecore#//FMA_Komponente"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1967,13 +2191,17 @@
                  name="ID_Markanter_Punkt_Gleis_Abschluss_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Markanter_Punkt_Gleis_Abschluss"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Markanter_Punkt_Gleis_Abschluss"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Fahrstrasse.ecore#//Markanter_Punkt Weichen_und_Gleissperren.ecore#//Gleis_Abschluss"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -1990,8 +2218,10 @@
                  name="ID_Markanter_Punkt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Markanter_Punkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Markanter_Punkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2011,13 +2241,17 @@
                  name="ID_NB_Element_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_NB_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_NB_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Signale.ecore#//Signal Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element Schluesselabhaengigkeiten.ecore#//Schluesselsperre"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2034,8 +2268,10 @@
                  name="ID_NB_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_NB"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_NB"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2055,8 +2291,10 @@
                  name="ID_NB_Zone_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_NB_Zone"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_NB_Zone"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2076,8 +2314,10 @@
                  name="ID_Oertlichkeit_Ausgabe_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Oertlichkeit_Ausgabe"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Oertlichkeit_Ausgabe"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2097,8 +2337,10 @@
                  name="ID_Oertlichkeit_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Oertlichkeit_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Oertlichkeit_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2118,8 +2360,10 @@
                  name="ID_Oertlichkeit_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Oertlichkeit"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Oertlichkeit"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2139,8 +2383,10 @@
                  name="ID_PlanPro_Schnittstelle_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_PlanPro_Schnittstelle"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_PlanPro_Schnittstelle"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2160,8 +2406,10 @@
                  name="ID_Planung_Einzel_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Planung_Einzel"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Planung_Einzel"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2181,8 +2429,10 @@
                  name="ID_Planungsgrundlage_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Planungsgrundlage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Planungsgrundlage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2202,13 +2452,17 @@
                  name="ID_PZB_Element_Bezugspunkt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_PZB_Element_Bezugspunkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_PZB_Element_Bezugspunkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Signale.ecore#//Signal Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2225,8 +2479,10 @@
                  name="ID_PZB_Element_Mitnutzung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_PZB_Element_Mitnutzung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_PZB_Element_Mitnutzung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2246,8 +2502,10 @@
                  name="ID_PZB_Element_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_PZB_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_PZB_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2267,8 +2525,10 @@
                  name="ID_PZB_Element_Zuordnung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_PZB_Element_Zuordnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_PZB_Element_Zuordnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2288,13 +2548,17 @@
                  name="ID_Quellelement_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Quellelement"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Quellelement"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Bahnuebergang.ecore#//BUE_Anlage Balisentechnik_ETCS.ecore#//EV_Modul Ansteuerung_Element.ecore#//ESTW_Zentraleinheit PZB.ecore#//PZB_Element"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2311,8 +2575,10 @@
                  name="ID_RBC_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_RBC"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_RBC"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2332,8 +2598,10 @@
                  name="ID_Regelzeichnung_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Regelzeichnung_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Regelzeichnung_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2353,8 +2621,10 @@
                  name="ID_Regelzeichnung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Regelzeichnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Regelzeichnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2374,13 +2644,17 @@
                  name="ID_Schalter_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Schalter"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Schalter"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Ortung.ecore#//FMA_Anlage Ortung.ecore#//FMA_Komponente Ortung.ecore#//Zugeinwirkung"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2397,8 +2671,10 @@
                  name="ID_Schaltmittel_Zuordnung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Schaltmittel_Zuordnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Schaltmittel_Zuordnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2418,8 +2694,10 @@
                  name="ID_Schlosskombination_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Schlosskombination"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Schlosskombination"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2439,8 +2717,10 @@
                  name="ID_Schluessel_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Schluessel"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Schluessel"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2460,8 +2740,10 @@
                  name="ID_Schluesselsperre_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Schluesselsperre"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Schluesselsperre"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2481,8 +2763,10 @@
                  name="ID_Signal_Befestigung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Signal_Befestigung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Signal_Befestigung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2502,8 +2786,10 @@
                  name="ID_Signal_Fank_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Signal_Fank"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Signal_Fank"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2523,8 +2809,10 @@
                  name="ID_Signal_Gleisbezechnung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Signal_Gleisbezechnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Signal_Gleisbezechnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2544,8 +2832,10 @@
                  name="ID_Signal_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Signal_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Signal_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2565,8 +2855,10 @@
                  name="ID_Signal_Rahmen_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Signal_Rahmen"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Signal_Rahmen"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2586,8 +2878,10 @@
                  name="ID_Signal_Signalbegriff_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Signal_Signalbegriff"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Signal_Signalbegriff"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2607,8 +2901,10 @@
                  name="ID_Signal_Start_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Signal_Start"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Signal_Start"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2628,8 +2924,10 @@
                  name="ID_Signal_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Signal"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Signal"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2649,8 +2947,10 @@
                  name="ID_Sonderanlage_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Sonderanlage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Sonderanlage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2670,8 +2970,10 @@
                  name="ID_Stellelement_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Stellelement"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Stellelement"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2691,13 +2993,17 @@
                  name="ID_Stellwerk_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Stellwerk"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Stellwerk"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Ansteuerung_Element.ecore#//ESTW_Zentraleinheit Ansteuerung_Element.ecore#//Aussenelementansteuerung"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2714,8 +3020,10 @@
                  name="ID_Strecke_Bremsweg_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Strecke_Bremsweg_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Strecke_Bremsweg_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2735,8 +3043,10 @@
                  name="ID_Strecke_Punkt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Strecke_Punkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Strecke_Punkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2756,8 +3066,10 @@
                  name="ID_Strecke_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Strecke"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Strecke"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2777,8 +3089,10 @@
                  name="ID_Technischer_Punkt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Technischer_Punkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Technischer_Punkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2798,8 +3112,10 @@
                  name="ID_TOP_Kante_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_TOP_Kante_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_TOP_Kante_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2819,8 +3135,10 @@
                  name="ID_TOP_Kante_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_TOP_Kante"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_TOP_Kante"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2840,8 +3158,10 @@
                  name="ID_TOP_Knoten_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_TOP_Knoten"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_TOP_Knoten"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2861,8 +3181,10 @@
                  name="ID_Trasse_Kante_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Trasse_Kante"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Trasse_Kante"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2882,8 +3204,10 @@
                  name="ID_Trasse_Knoten_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Trasse_Knoten"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Trasse_Knoten"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2903,8 +3227,10 @@
                  name="ID_Ueberhoehung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Ueberhoehung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Ueberhoehung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -2924,13 +3250,17 @@
                  name="ID_Uebertragungsweg_Nach_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Uebertragungsweg_Nach"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Uebertragungsweg_Nach"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Bedienung.ecore#//Bedien_Bezirk Bedienung.ecore#//Bedien_Zentrale Ansteuerung_Element.ecore#//ESTW_Zentraleinheit Ansteuerung_Element.ecore#//Stellelement Zugnummernmeldeanlage.ecore#//ZN_ZBS"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2947,13 +3277,17 @@
                  name="ID_Uebertragungsweg_Von_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Uebertragungsweg_Von"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Uebertragungsweg_Von"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Ansteuerung_Element.ecore#//Aussenelementansteuerung Bedienung.ecore#//Bedien_Bezirk Bedienung.ecore#//Bedien_Zentrale Ansteuerung_Element.ecore#//ESTW_Zentraleinheit Ansteuerung_Element.ecore#//Stellelement Zugnummernmeldeanlage.ecore#//ZN_ZBS"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2970,13 +3304,17 @@
                  name="ID_Umfahrpunkt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Umfahrpunkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Umfahrpunkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element Gleis.ecore#//Gleis_Abschnitt"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -2993,8 +3331,10 @@
                  name="ID_Unterbringung_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Unterbringung_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Unterbringung_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3014,13 +3354,17 @@
                  name="ID_Unterbringung_Technik_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Unterbringung_Technik"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Unterbringung_Technik"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Ansteuerung_Element.ecore#//Technik_Standort Ansteuerung_Element.ecore#//Unterbringung"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -3037,8 +3381,10 @@
                  name="ID_Unterbringung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Unterbringung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Unterbringung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3058,8 +3404,10 @@
                  name="ID_Ur_Objekt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Ur_Objekt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Ur_Objekt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3079,13 +3427,17 @@
                  name="ID_Verknuepftes_Element_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Verknuepftes_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Verknuepftes_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Signale.ecore#//Signal Weichen_und_Gleissperren.ecore#//W_Kr_Gsp_Element"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -3102,8 +3454,10 @@
                  name="ID_W_Kr_Anlage_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_W_Kr_Anlage_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_W_Kr_Anlage_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3123,8 +3477,10 @@
                  name="ID_W_Kr_Anlage_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_W_Kr_Anlage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_W_Kr_Anlage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3144,8 +3500,10 @@
                  name="ID_W_Kr_Gsp_Element_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_W_Kr_Gsp_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_W_Kr_Gsp_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3165,8 +3523,10 @@
                  name="ID_W_Kr_Gsp_Komponente_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_W_Kr_Gsp_Komponente"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_W_Kr_Gsp_Komponente"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3186,8 +3546,10 @@
                  name="ID_Weichenlaufkette_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Weichenlaufkette"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Weichenlaufkette"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3207,13 +3569,17 @@
                  name="ID_Ziel_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Ziel"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Ziel"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
-      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Signale.ecore#//Signal Fahrstrasse.ecore#//Markanter_Punkt"/>
-      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:func="localhost/function"
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"
                            name="value"
                            eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
@@ -3230,8 +3596,10 @@
                  name="ID_ZL_DLP_Fstr_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ZL_DLP_Fstr"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ZL_DLP_Fstr"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3251,8 +3619,10 @@
                  name="ID_ZL_Fstr_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ZL_Fstr"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ZL_Fstr"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3272,8 +3642,10 @@
                  name="ID_ZL_Signalgruppe_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ZL_Signalgruppe"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ZL_Signalgruppe"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3293,8 +3665,10 @@
                  name="ID_ZL_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ZL"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ZL"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3314,8 +3688,10 @@
                  name="ID_ZLV_Bus_ohne_Proxy_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ZLV_Bus_ohne_Proxy"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ZLV_Bus_ohne_Proxy"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3335,8 +3711,10 @@
                  name="ID_ZLV_Bus_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ZLV_Bus"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ZLV_Bus"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3356,8 +3734,10 @@
                  name="ID_ZN_Anzeigefeld_Anstoss_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ZN_Anzeigefeld_Anstoss"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ZN_Anzeigefeld_Anstoss"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3377,8 +3757,10 @@
                  name="ID_ZN_Anzeigefeld_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ZN_Anzeigefeld"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ZN_Anzeigefeld"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3398,8 +3780,10 @@
                  name="ID_ZN_Fortschalt_Kriterium_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ZN_Fortschalt_Kriterium"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ZN_Fortschalt_Kriterium"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3419,8 +3803,10 @@
                  name="ID_ZN_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ZN"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ZN"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3440,8 +3826,10 @@
                  name="ID_ZN_Unterstation_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ZN_Unterstation"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ZN_Unterstation"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3461,8 +3849,10 @@
                  name="ID_ZN_ZBS_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_ZN_ZBS"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_ZN_ZBS"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3482,8 +3872,10 @@
                  name="ID_Zugeinwirkung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Zugeinwirkung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Zugeinwirkung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
@@ -3503,8 +3895,10 @@
                  name="ID_Zweites_Haltfallkriterium_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCID_Zweites_Haltfallkriterium"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCID_Zweites_Haltfallkriterium"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"

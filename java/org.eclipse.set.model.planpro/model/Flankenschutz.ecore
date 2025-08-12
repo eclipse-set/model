@@ -14,8 +14,10 @@
                  name="EKW_Kr_Anteil_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCEKW_Kr_Anteil"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCEKW_Kr_Anteil"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -23,68 +25,99 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMFahrtUeber">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMFahrtUeber">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMFahrt_Ueber"/>
+         <details key="name"
+                  value="ENUMFahrt_Ueber"/>
       </eAnnotations>
-      <eLiterals name="ENUMFahrt_Ueber_links" literal="links"/>
-      <eLiterals name="ENUMFahrt_Ueber_rechts" value="1" literal="rechts"/>
-      <eLiterals name="ENUMFahrt_Ueber_Spitze" value="2" literal="Spitze"/>
+      <eLiterals name="ENUMFahrt_Ueber_links"
+                 literal="links"/>
+      <eLiterals name="ENUMFahrt_Ueber_rechts"
+                 value="1"
+                 literal="rechts"/>
+      <eLiterals name="ENUMFahrt_Ueber_Spitze"
+                 value="2"
+                 literal="Spitze"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMFahrtUeberObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMFahrt_Ueber:Object"/>
-         <details key="baseType" value="ENUMFahrt_Ueber"/>
+         <details key="name"
+                  value="ENUMFahrt_Ueber:Object"/>
+         <details key="baseType"
+                  value="ENUMFahrt_Ueber"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMMassnahme">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMMassnahme">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMMassnahme"/>
+         <details key="name"
+                  value="ENUMMassnahme"/>
       </eAnnotations>
-      <eLiterals name="ENUMMassnahme_Ersatzschutz" literal="Ersatzschutz"/>
-      <eLiterals name="ENUMMassnahme_Verschluss" value="1" literal="Verschluss"/>
+      <eLiterals name="ENUMMassnahme_Ersatzschutz"
+                 literal="Ersatzschutz"/>
+      <eLiterals name="ENUMMassnahme_Verschluss"
+                 value="1"
+                 literal="Verschluss"/>
       <eLiterals name="ENUMMassnahme_Verschluss_Ersatzschutz"
                  value="2"
                  literal="Verschluss_Ersatzschutz"/>
-      <eLiterals name="ENUMMassnahme_Verzicht" value="3" literal="Verzicht"/>
+      <eLiterals name="ENUMMassnahme_Verzicht"
+                 value="3"
+                 literal="Verzicht"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMMassnahmeObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMMassnahme:Object"/>
-         <details key="baseType" value="ENUMMassnahme"/>
+         <details key="name"
+                  value="ENUMMassnahme:Object"/>
+         <details key="baseType"
+                  value="ENUMMassnahme"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMZwieschutzArt">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMZwieschutzArt">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMZwieschutz_Art"/>
+         <details key="name"
+                  value="ENUMZwieschutz_Art"/>
       </eAnnotations>
-      <eLiterals name="ENUMZwieschutz_Art_echt" literal="echt"/>
-      <eLiterals name="ENUMZwieschutz_Art_echt_eigen" value="1" literal="echt_eigen"/>
-      <eLiterals name="ENUMZwieschutz_Art_eigen" value="2" literal="eigen"/>
+      <eLiterals name="ENUMZwieschutz_Art_echt"
+                 literal="echt"/>
+      <eLiterals name="ENUMZwieschutz_Art_echt_eigen"
+                 value="1"
+                 literal="echt_eigen"/>
+      <eLiterals name="ENUMZwieschutz_Art_eigen"
+                 value="2"
+                 literal="eigen"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMZwieschutzArtObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMZwieschutz_Art:Object"/>
-         <details key="baseType" value="ENUMZwieschutz_Art"/>
+         <details key="name"
+                  value="ENUMZwieschutz_Art:Object"/>
+         <details key="baseType"
+                  value="ENUMZwieschutz_Art"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Fahrt_Ueber_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCFahrt_Ueber"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCFahrt_Ueber"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -92,8 +125,10 @@
                            eType="#//ENUMFahrtUeberObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -109,8 +144,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CFla_Freimelde_Zuordnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CFla_Freimelde_Zuordnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="flaRaumFreimeldung"
@@ -127,8 +164,10 @@
                      value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                               &#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                       &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Fla_Raum_Freimeldung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Fla_Raum_Freimeldung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -142,8 +181,10 @@
                      value="Zuordnung des Flankenschutzfalls zu den dafür freizumeldenden Gleisfreimeldeabschnitten. DB-Regelwerk Flankenschutztabelle, Zeile. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Fla_Schutz"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Fla_Schutz"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -157,8 +198,10 @@
                      value="Beschreibung des freizuprüfenden Flankenschutzraums. DB-Regelwerk Flankenschutztabelle, Spalte 10: \&#34;überwachter Schutzraum\&#34;. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_FMA_Anlage"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_FMA_Anlage"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -166,8 +209,10 @@
                  name="Fla_Raum_Freimeldung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCFla_Raum_Freimeldung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCFla_Raum_Freimeldung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -175,8 +220,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -192,8 +239,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CFla_Schutz"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CFla_Schutz"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="flaSchutzAnforderer"
@@ -202,8 +251,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Fla_Schutz_Anforderer"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Fla_Schutz_Anforderer"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -212,8 +263,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Fla_Schutz_Signal"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Fla_Schutz_Signal"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -222,8 +275,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Fla_Schutz_W_Gsp"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Fla_Schutz_W_Gsp"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -232,8 +287,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Fla_Schutz_Weitergabe"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Fla_Schutz_Weitergabe"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -246,15 +303,20 @@
                      value="Auswahl der Maßnahme \&#34;Verzicht\&#34; für den Flankenschutz. Der Flankenschutz wird durch betriebliche Maßnahmen hergestellt (mittelbarer Flankenschutz). Die Maßnahmen \&#34;unmittelbar\&#34; und \&#34;Weitergabe\&#34; sind aus der Befüllung anderer Attribute erkennbar, deshalb muss nur die Maßnahme \&#34;Verzicht\&#34; explizit angegeben werden. DB-Regelwerk Flankenschutztabelle, Spalte 8 \&#34;Flankenschutzumkehr, Verzicht\&#34;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Fla_Verzicht"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Fla_Verzicht"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Fla_Schutz_Anforderer_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Fla_Schutz_Anforderer_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CFla_Schutz_Anforderer"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CFla_Schutz_Anforderer"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="eKWKrAnteil"
@@ -270,8 +332,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="EKW_Kr_Anteil"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="EKW_Kr_Anteil"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -284,8 +348,10 @@
                      value="Beschreibung des Weichenanschlusses der Flankenschutz anfordernden Weiche. links/rechts: Der linke/rechte Strang der Weiche wird befahren, der jeweils andere sucht Flankenschutz. Spitze: Die nicht durch Verschluss befriedigte Flankenschutzanforderung, die auf eine Zwieschutzweiche trifft, wird über die Spitze der Zwieschutzweiche weitergegeben. DB-Regelwerk links/rechts: Flankenschutztabelle, Spalte 1 \&#34;Fahrstraßen über\&#34;; Spitze: Zwieschutzweichentabelle, indirekt über Spalte 4 \&#34;Zwieschutzfall-Maßnahme\&#34;, wenn dort \&#34;Fernschutz\&#34; (eigentlich: Ersatzschutz) oder \&#34;Verzicht\&#34; ausgewählt ist. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Fahrt_Ueber"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Fahrt_Ueber"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -299,15 +365,20 @@
                      value="Element, das den Flankenschutz anfordert. Flankenschutz können Weichen, Kreuzungen (W Kr Gsp Element) und Nahstellbereiche (NB Zone Grenze) anfordern. Ist bei einer Zwieschutzweiche ein Ersatzschutz geplant, ist die Zwieschutzweiche der Anforderer. DB-Regelwerk Flankenschutztabelle, Spalten 1 \&#34;Fahrstraßen über/Nahbedienbezirk\&#34; und 2 \&#34;Nahbediengrenze\&#34;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Anforderer_Element"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Anforderer_Element"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Fla_Schutz_Signal_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Fla_Schutz_Signal_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CFla_Schutz_Signal"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CFla_Schutz_Signal"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="flaSignalZielsperrung"
@@ -323,8 +394,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;false&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Fla_Signal_Zielsperrung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Fla_Signal_Zielsperrung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -338,15 +411,20 @@
                      value="Verweis auf das Signal, das unmittelbar an die Weiche angrenzt und Flankenschutz bietet. Steht das Signal nicht grenzzeichenfrei an der Flankenschutz suchenden Weiche, so wird dies nicht explizit im Datenmodell gespeichert. Stattdessen wird das nächste Flankenschutz bietende Element als Flankenschutzmaßnahme geplant. DB-Regelwerk Flankenschutztabelle, Spalte 5 \&#34;Hp 0\&#34;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Fla_Signal"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Fla_Signal"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Fla_Schutz_W_Gsp_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Fla_Schutz_W_Gsp_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CFla_Schutz_W_Gsp"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CFla_Schutz_W_Gsp"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="flaWLage"
@@ -358,8 +436,10 @@
                      value="Lage der Flankenschutz bietenden Weiche. DB-Regelwerk Flankenschutztabelle, Spalte 3 \&#34;Weiche Gs\&#34;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Fla_W_Lage"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Fla_W_Lage"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -373,15 +453,20 @@
                      value="Verweis auf die Flankenschutz bietende Weiche oder Gleissperre. DB-Regelwerk Flankenschutztabelle, Spalte 3 \&#34;Weiche Gs\&#34;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Fla_W_Gsp_Element"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Fla_W_Gsp_Element"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Fla_Schutz_Weitergabe_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Fla_Schutz_Weitergabe_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CFla_Schutz_Weitergabe"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CFla_Schutz_Weitergabe"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDFlaWeitergabeL"
@@ -393,8 +478,10 @@
                      value="Verweis auf die Flankenschutzmaßnahme bei Weitergabe der Flankenschutzanforderung wie bei Fahrt über den linken Strang der Flankenschutztransportweiche. DB-Regelwerk Flankenschutztabelle, Spalten 6 \&#34;Weitergabe über Weiche, Kreuzung\&#34; und 7 \&#34;wie Fahrt über deren Strang\&#34; mit Ausfüllung \&#34;L\&#34; (Links)"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Fla_Weitergabe_L"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Fla_Weitergabe_L"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -407,8 +494,10 @@
                      value="Verweis auf die Flankenschutzmaßnahme bei Weitergabe der Flankenschutzanforderung wie bei Fahrt über den rechten Strang der Flankenschutztransportweiche. DB-Regelwerk Flankenschutztabelle, Spalten 6 \&#34;Weitergabe über Weiche, Kreuzung\&#34; und 7 \&#34;wie Fahrt über deren Strang\&#34; mit Ausfüllung \&#34;R\&#34; (Rechts)"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Fla_Weitergabe_R"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Fla_Weitergabe_R"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -416,8 +505,10 @@
                  name="Fla_Signal_Zielsperrung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCFla_Signal_Zielsperrung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCFla_Signal_Zielsperrung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -425,8 +516,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -434,8 +527,10 @@
                  name="Fla_Verzicht_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCFla_Verzicht"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCFla_Verzicht"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -443,8 +538,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -452,7 +549,8 @@
                  name="Fla_W_Lage_Type"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TFla_W_Lage"/>
+         <details key="name"
+                  value="TFla_W_Lage"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"/>
       </eAnnotations>
@@ -461,8 +559,10 @@
                  name="Fla_W_Lage_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCFla_W_Lage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCFla_W_Lage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -470,8 +570,10 @@
                            eType="#//Fla_W_Lage_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -487,8 +589,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CFla_Zwieschutz"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CFla_Zwieschutz"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="flaZwieschutzElement"
@@ -497,8 +601,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Fla_Zwieschutz_Element"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Fla_Zwieschutz_Element"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -512,8 +618,10 @@
                      value="Verweis auf die Zwieschutzweiche. DB-Regelwerk Fla Zwieschutz: Zwieschutzweichentabelle, Spalte 1: \&#34;Weiche/Kreuzung in angeforderter Weichenstellung\&#34;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_W_Element"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_W_Element"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -527,15 +635,20 @@
                      value="Charakter der Zwieschutzweiche. Echte Zwieschutzweiche: Flankenschutzweiche, die durch unabhängige Fahrten in beiden Stellungen angefordert wird. Ohne spezielle Behandlung kann nur eine der beiden Fahrten zu einem Zeitpunkt eingestellt sein, da sich durch die Zwieschutzweiche ein Fahrstraßenausschluss ergibt. Eigenzwieschutzweiche: Flankenschutzweiche, die durch die gleiche Fahrt in beiden Stellungen angefordert wird. Ohne spezielle Behandlung kann die Fahrt nicht eingestellt werden. Eine Zwieschutzweiche kann gleichzeitig beide Charaktere annehmen. DB-Regelwerk Zwieschutzweichentabelle, Spalte 2 \&#34;Zwieschutzweiche - Eigen\&#34; und Spalte 3 \&#34;Zwieschutzweiche - Echt\&#34;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Zwieschutz_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Zwieschutz_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Fla_Zwieschutz_Element_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Fla_Zwieschutz_Element_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CFla_Zwieschutz_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CFla_Zwieschutz_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDFlaSchutzL"
@@ -547,8 +660,10 @@
                      value="Verweis auf die Ersatzschutzmaßnahme bei Ersatzschutz und Anforderung in Linkslage. DB-Regelwerk Zwieschutzweichentabelle, Spalten 5...7 \&#34;direkt anschließender Flankenschutz\&#34; und 8...9 \&#34;Flankenschutz\&#34;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Fla_Schutz_L"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Fla_Schutz_L"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -561,8 +676,10 @@
                      value="Verweis auf die Ersatzschutzmaßnahme bei Ersatzschutz und Anforderung in Rechtslage. DB-Regelwerk Zwieschutzweichentabelle, Spalten 5...7 \&#34;direkt anschließender Flankenschutz\&#34; und 8...9 \&#34;Flankenschutz\&#34;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Fla_Schutz_R"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Fla_Schutz_R"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -576,8 +693,10 @@
                      value="Maßnahme, durch die der Flankenschutz im linken Strang der Zwieschutzweiche hergestellt wird. Ersatzschutz: Der Flankenschutz wird durch das nächste Flankenschutzelement hergestellt. Verschluss: Die Flankenschutzweiche wird in der Linkslage verschlossen. Verzicht: Der Flankenschutz wird durch betriebliche Maßnahmen hergestellt; technisch wird darauf verzichtet. Verschluss/Ersatzschutz: Der Wert bildet den Planungsfall ab, dass die Flankenschutzanforderungen an die Zwieschutzweiche von gleichberechtigten Fahrstraßen kommen und damit planerisch keine feste Zuweisung von Verschluss und Ersatzschutz erfolgt. Der ENUM-Wert ist also im Sinne „Verschluss oder Ersatzschutz“ zu interpretieren. In der Praxis bedeutet dies, dass die Fahrstraße, die zuerst eingestellt wird, den direkten Flankenschutz und die als zweite eingestellte Fahrstraße den Ersatzschutz erhält. &#xA;Die Maßnahmen beziehen sich nur auf den Zwieschutzfall. Wird die Weiche nur in einem Strang angefordert, wird sie regulär Flankenschutz bieten, wie es in der Flankenschutzplanung vorgesehen ist. DB-Regelwerk Zwieschutzweichentabelle, Spalte 4 \&#34;Zwieschutzfall-Maßnahme\&#34;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Massnahme_L"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Massnahme_L"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -591,8 +710,10 @@
                      value="Maßnahme, durch die der Flankenschutz im rechten Strang der Zwieschutzweiche hergestellt wird. Ersatzschutz: Der Flankenschutz wird durch das nächste Flankenschutzelement hergestellt. Verschluss: Die Flankenschutzweiche wird in der Rechtslage verschlossen. Verzicht: Der Flankenschutz wird durch betriebliche Maßnahmen hergestellt; technisch wird darauf verzichtet. Verschluss/Ersatzschutz: Der Wert bildet den Planungsfall ab, dass die Flankenschutzanforderungen an die Zwieschutzweiche von gleichberechtigten Fahrstraßen kommen und damit planerisch keine feste Zuweisung von Verschluss und Ersatzschutz erfolgt. Der ENUM-Wert ist also im Sinne „Verschluss oder Ersatzschutz“ zu interpretieren. In der Praxis bedeutet dies, dass die Fahrstraße, die zuerst eingestellt wird, den direkten Flankenschutz und die als zweite eingestellte Fahrstraße den Ersatzchutz erhält. Die Maßnahmen beziehen sich nur auf den Zwieschutzfall. Wird die Weiche nur in einem Strang angefordert, wird sie regulär Flankenschutz bieten, wie es in der Flankenschutzplanung vorgesehen ist. &#xA;DB-Regelwerk Zwieschutzweichentabelle, Spalte 4 \&#34;Zwieschutzfall-Maßnahme\&#34;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Massnahme_R"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Massnahme_R"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -610,8 +731,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Nachlaufverhinderung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Nachlaufverhinderung"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -619,8 +742,10 @@
                  name="Massnahme_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCMassnahme"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCMassnahme"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -628,8 +753,10 @@
                            eType="#//ENUMMassnahmeObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -637,8 +764,10 @@
                  name="Nachlaufverhinderung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCNachlaufverhinderung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCNachlaufverhinderung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -646,8 +775,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -655,8 +786,10 @@
                  name="Zwieschutz_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCZwieschutz_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCZwieschutz_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -664,8 +797,10 @@
                            eType="#//ENUMZwieschutzArtObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>

@@ -14,8 +14,10 @@
                  name="Auffahrortung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCAuffahrortung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCAuffahrortung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -23,8 +25,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -32,8 +36,10 @@
                  name="Austausch_Antriebe_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCAustausch_Antriebe"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCAustausch_Antriebe"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -41,8 +47,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -50,8 +58,10 @@
                  name="Auswurfrichtung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCAuswurfrichtung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCAuswurfrichtung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -59,8 +69,10 @@
                            eType="#//CAuswurfrichtung"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -68,8 +80,10 @@
                  name="Besonderes_Fahrwegelement_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCBesonderes_Fahrwegelement"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCBesonderes_Fahrwegelement"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -77,8 +91,10 @@
                            eType="#//ENUMBesonderesFahrwegelementObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -86,7 +102,8 @@
                  name="CAuswurfrichtung"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CAuswurfrichtung"/>
+         <details key="name"
+                  value="CAuswurfrichtung"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"/>
       </eAnnotations>
@@ -95,17 +112,22 @@
                  name="Elektrischer_Antrieb_Anzahl_Type"
                  instanceClassName="java.math.BigInteger">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TElektrischer_Antrieb_Anzahl"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
-         <details key="pattern" value="[0-9]|1[0-5]"/>
+         <details key="name"
+                  value="TElektrischer_Antrieb_Anzahl"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+         <details key="pattern"
+                  value="[0-9]|1[0-5]"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Elektrischer_Antrieb_Anzahl_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCElektrischer_Antrieb_Anzahl"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCElektrischer_Antrieb_Anzahl"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -113,8 +135,10 @@
                            eType="#//Elektrischer_Antrieb_Anzahl_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -122,8 +146,10 @@
                  name="Elektrischer_Antrieb_Lage_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCElektrischer_Antrieb_Lage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCElektrischer_Antrieb_Lage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -131,8 +157,10 @@
                            eType="#//ENUMElektrischerAntriebLageObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -140,8 +168,10 @@
                  name="Element_Lage_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCElement_Lage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCElement_Lage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -149,15 +179,20 @@
                            eType="#//ENUMElementLageObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Entgleisungsschuh_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Entgleisungsschuh_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CEntgleisungsschuh"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CEntgleisungsschuh"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="auswurfrichtung"
@@ -169,8 +204,10 @@
                      value="Entgleisungsrichtung eines Fahrzeugs, das über den Entgleisungsschuh fährt. Die Entgleisungsrichtung ist in Bewegungsrichtung des Fahrzeuges auf den Entgleisungsschuhs zu sehen und ist nicht auf die Wirkrichtung der topologischen Kante bezogen. Da das zugehörige Objekt (W_Kr_Gsp_Komponente) als Punktobjekt auf eine Fahrschiene des Gleises (Topologiekante) verortet ist, kann daraus ebenfalls die Auswurfrichtung ermittelt werden. Achtung: Die Angabe ist redundant zu den Angaben im Punktobjekt bezüglich der Attribute Seitliche Lage und Wirkrichtung und soll daher zukünftig entfallen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Auswurfrichtung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Auswurfrichtung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -187,8 +224,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;reflektierend_beidseitig&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Gleissperrensignal"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Gleissperrensignal"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -202,14 +241,18 @@
                      value="Für die Gleissperre ist eine Schutzschiene vorgesehen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Schutzschiene"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Schutzschiene"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMBesonderesFahrwegelement">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMBesonderesFahrwegelement">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMBesonderes_Fahrwegelement"/>
+         <details key="name"
+                  value="ENUMBesonderes_Fahrwegelement"/>
       </eAnnotations>
       <eLiterals name="ENUMBesonderes_Fahrwegelement_abklappbarer_Prellbock"
                  literal="abklappbarer Prellbock"/>
@@ -227,15 +270,20 @@
                  name="ENUMBesonderesFahrwegelementObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMBesonderes_Fahrwegelement:Object"/>
-         <details key="baseType" value="ENUMBesonderes_Fahrwegelement"/>
+         <details key="name"
+                  value="ENUMBesonderes_Fahrwegelement:Object"/>
+         <details key="baseType"
+                  value="ENUMBesonderes_Fahrwegelement"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMElektrischerAntriebLage">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMElektrischerAntriebLage">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMElektrischer_Antrieb_Lage"/>
+         <details key="name"
+                  value="ENUMElektrischer_Antrieb_Lage"/>
       </eAnnotations>
-      <eLiterals name="ENUMElektrischer_Antrieb_Lage_links" literal="links"/>
+      <eLiterals name="ENUMElektrischer_Antrieb_Lage_links"
+                 literal="links"/>
       <eLiterals name="ENUMElektrischer_Antrieb_Lage_mittig"
                  value="1"
                  literal="mittig"/>
@@ -250,32 +298,48 @@
                  name="ENUMElektrischerAntriebLageObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMElektrischer_Antrieb_Lage:Object"/>
-         <details key="baseType" value="ENUMElektrischer_Antrieb_Lage"/>
+         <details key="name"
+                  value="ENUMElektrischer_Antrieb_Lage:Object"/>
+         <details key="baseType"
+                  value="ENUMElektrischer_Antrieb_Lage"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMElementLage">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMElementLage">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMElement_Lage"/>
+         <details key="name"
+                  value="ENUMElement_Lage"/>
       </eAnnotations>
-      <eLiterals name="ENUMElement_Lage_Abschnitt" literal="Abschnitt"/>
-      <eLiterals name="ENUMElement_Lage_Weiche" value="1" literal="Weiche"/>
-      <eLiterals name="ENUMElement_Lage_WeicheL" value="2" literal="WeicheL"/>
-      <eLiterals name="ENUMElement_Lage_WeicheR" value="3" literal="WeicheR"/>
+      <eLiterals name="ENUMElement_Lage_Abschnitt"
+                 literal="Abschnitt"/>
+      <eLiterals name="ENUMElement_Lage_Weiche"
+                 value="1"
+                 literal="Weiche"/>
+      <eLiterals name="ENUMElement_Lage_WeicheL"
+                 value="2"
+                 literal="WeicheL"/>
+      <eLiterals name="ENUMElement_Lage_WeicheR"
+                 value="3"
+                 literal="WeicheR"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMElementLageObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMElement_Lage:Object"/>
-         <details key="baseType" value="ENUMElement_Lage"/>
+         <details key="name"
+                  value="ENUMElement_Lage:Object"/>
+         <details key="baseType"
+                  value="ENUMElement_Lage"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMGleisAbschlussArt">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMGleisAbschlussArt">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGleis_Abschluss_Art"/>
+         <details key="name"
+                  value="ENUMGleis_Abschluss_Art"/>
       </eAnnotations>
-      <eLiterals name="ENUMGleis_Abschluss_Art_Bremsprellbock" literal="Bremsprellbock"/>
+      <eLiterals name="ENUMGleis_Abschluss_Art_Bremsprellbock"
+                 literal="Bremsprellbock"/>
       <eLiterals name="ENUMGleis_Abschluss_Art_Drehscheibe"
                  value="1"
                  literal="Drehscheibe"/>
@@ -305,15 +369,20 @@
                  name="ENUMGleisAbschlussArtObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGleis_Abschluss_Art:Object"/>
-         <details key="baseType" value="ENUMGleis_Abschluss_Art"/>
+         <details key="name"
+                  value="ENUMGleis_Abschluss_Art:Object"/>
+         <details key="baseType"
+                  value="ENUMGleis_Abschluss_Art"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMGleissperreBetriebsart">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMGleissperreBetriebsart">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGleissperre_Betriebsart"/>
+         <details key="name"
+                  value="ENUMGleissperre_Betriebsart"/>
       </eAnnotations>
-      <eLiterals name="ENUMGleissperre_Betriebsart_abgelegt" literal="abgelegt"/>
+      <eLiterals name="ENUMGleissperre_Betriebsart_abgelegt"
+                 literal="abgelegt"/>
       <eLiterals name="ENUMGleissperre_Betriebsart_aufgelegt"
                  value="1"
                  literal="aufgelegt"/>
@@ -325,13 +394,17 @@
                  name="ENUMGleissperreBetriebsartObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGleissperre_Betriebsart:Object"/>
-         <details key="baseType" value="ENUMGleissperre_Betriebsart"/>
+         <details key="name"
+                  value="ENUMGleissperre_Betriebsart:Object"/>
+         <details key="baseType"
+                  value="ENUMGleissperre_Betriebsart"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMGleissperrensignal">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMGleissperrensignal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGleissperrensignal"/>
+         <details key="name"
+                  value="ENUMGleissperrensignal"/>
       </eAnnotations>
       <eLiterals name="ENUMGleissperrensignal_innenbeleuchtet_beidseitig"
                  literal="innenbeleuchtet_beidseitig"/>
@@ -349,15 +422,20 @@
                  name="ENUMGleissperrensignalObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGleissperrensignal:Object"/>
-         <details key="baseType" value="ENUMGleissperrensignal"/>
+         <details key="name"
+                  value="ENUMGleissperrensignal:Object"/>
+         <details key="baseType"
+                  value="ENUMGleissperrensignal"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMGleissperreVorzugslage">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMGleissperreVorzugslage">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGleissperre_Vorzugslage"/>
+         <details key="name"
+                  value="ENUMGleissperre_Vorzugslage"/>
       </eAnnotations>
-      <eLiterals name="ENUMGleissperre_Vorzugslage_abgelegt" literal="abgelegt"/>
+      <eLiterals name="ENUMGleissperre_Vorzugslage_abgelegt"
+                 literal="abgelegt"/>
       <eLiterals name="ENUMGleissperre_Vorzugslage_aufgelegt"
                  value="1"
                  literal="aufgelegt"/>
@@ -366,31 +444,45 @@
                  name="ENUMGleissperreVorzugslageObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGleissperre_Vorzugslage:Object"/>
-         <details key="baseType" value="ENUMGleissperre_Vorzugslage"/>
+         <details key="name"
+                  value="ENUMGleissperre_Vorzugslage:Object"/>
+         <details key="baseType"
+                  value="ENUMGleissperre_Vorzugslage"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMWeicheBetriebsart">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMWeicheBetriebsart">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMWeiche_Betriebsart"/>
+         <details key="name"
+                  value="ENUMWeiche_Betriebsart"/>
       </eAnnotations>
-      <eLiterals name="ENUMWeiche_Betriebsart_Betrieb" literal="Betrieb"/>
-      <eLiterals name="ENUMWeiche_Betriebsart_links" value="1" literal="links"/>
-      <eLiterals name="ENUMWeiche_Betriebsart_rechts" value="2" literal="rechts"/>
+      <eLiterals name="ENUMWeiche_Betriebsart_Betrieb"
+                 literal="Betrieb"/>
+      <eLiterals name="ENUMWeiche_Betriebsart_links"
+                 value="1"
+                 literal="links"/>
+      <eLiterals name="ENUMWeiche_Betriebsart_rechts"
+                 value="2"
+                 literal="rechts"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMWeicheBetriebsartObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMWeiche_Betriebsart:Object"/>
-         <details key="baseType" value="ENUMWeiche_Betriebsart"/>
+         <details key="name"
+                  value="ENUMWeiche_Betriebsart:Object"/>
+         <details key="baseType"
+                  value="ENUMWeiche_Betriebsart"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMWeichensignal">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMWeichensignal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMWeichensignal"/>
+         <details key="name"
+                  value="ENUMWeichensignal"/>
       </eAnnotations>
-      <eLiterals name="ENUMWeichensignal_innenbeleuchtet" literal="innenbeleuchtet"/>
+      <eLiterals name="ENUMWeichensignal_innenbeleuchtet"
+                 literal="innenbeleuchtet"/>
       <eLiterals name="ENUMWeichensignal_reflektierend"
                  value="1"
                  literal="reflektierend"/>
@@ -399,41 +491,66 @@
                  name="ENUMWeichensignalObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMWeichensignal:Object"/>
-         <details key="baseType" value="ENUMWeichensignal"/>
+         <details key="name"
+                  value="ENUMWeichensignal:Object"/>
+         <details key="baseType"
+                  value="ENUMWeichensignal"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMWKrArt">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMWKrArt">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMW_Kr_Art"/>
+         <details key="name"
+                  value="ENUMW_Kr_Art"/>
       </eAnnotations>
-      <eLiterals name="ENUMW_Kr_Art_ABW" literal="ABW"/>
-      <eLiterals name="ENUMW_Kr_Art_DKW" value="1" literal="DKW"/>
-      <eLiterals name="ENUMW_Kr_Art_DW" value="2" literal="DW"/>
-      <eLiterals name="ENUMW_Kr_Art_EKW" value="3" literal="EKW"/>
-      <eLiterals name="ENUMW_Kr_Art_EW" value="4" literal="EW"/>
-      <eLiterals name="ENUMW_Kr_Art_Flachkreuzung" value="5" literal="Flachkreuzung"/>
-      <eLiterals name="ENUMW_Kr_Art_IBW" value="6" literal="IBW"/>
+      <eLiterals name="ENUMW_Kr_Art_ABW"
+                 literal="ABW"/>
+      <eLiterals name="ENUMW_Kr_Art_DKW"
+                 value="1"
+                 literal="DKW"/>
+      <eLiterals name="ENUMW_Kr_Art_DW"
+                 value="2"
+                 literal="DW"/>
+      <eLiterals name="ENUMW_Kr_Art_EKW"
+                 value="3"
+                 literal="EKW"/>
+      <eLiterals name="ENUMW_Kr_Art_EW"
+                 value="4"
+                 literal="EW"/>
+      <eLiterals name="ENUMW_Kr_Art_Flachkreuzung"
+                 value="5"
+                 literal="Flachkreuzung"/>
+      <eLiterals name="ENUMW_Kr_Art_IBW"
+                 value="6"
+                 literal="IBW"/>
       <eLiterals name="ENUMW_Kr_Art_Klothoidenweiche"
                  value="7"
                  literal="Klothoidenweiche"/>
       <eLiterals name="ENUMW_Kr_Art_Korbbogenweiche"
                  value="8"
                  literal="Korbbogenweiche"/>
-      <eLiterals name="ENUMW_Kr_Art_Kr" value="9" literal="Kr"/>
-      <eLiterals name="ENUMW_Kr_Art_sonstige" value="10" literal="sonstige"/>
+      <eLiterals name="ENUMW_Kr_Art_Kr"
+                 value="9"
+                 literal="Kr"/>
+      <eLiterals name="ENUMW_Kr_Art_sonstige"
+                 value="10"
+                 literal="sonstige"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMWKrArtObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMW_Kr_Art:Object"/>
-         <details key="baseType" value="ENUMW_Kr_Art"/>
+         <details key="name"
+                  value="ENUMW_Kr_Art:Object"/>
+         <details key="baseType"
+                  value="ENUMW_Kr_Art"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMWKrGspStellart">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMWKrGspStellart">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMW_Kr_Gsp_Stellart"/>
+         <details key="name"
+                  value="ENUMW_Kr_Gsp_Stellart"/>
       </eAnnotations>
       <eLiterals name="ENUMW_Kr_Gsp_Stellart_elektrisch_ferngestellt"
                  literal="elektrisch_ferngestellt"/>
@@ -452,7 +569,9 @@
       <eLiterals name="ENUMW_Kr_Gsp_Stellart_Rueckfallweiche"
                  value="5"
                  literal="Rueckfallweiche"/>
-      <eLiterals name="ENUMW_Kr_Gsp_Stellart_sonstige" value="6" literal="sonstige"/>
+      <eLiterals name="ENUMW_Kr_Gsp_Stellart_sonstige"
+                 value="6"
+                 literal="sonstige"/>
       <eLiterals name="ENUMW_Kr_Gsp_Stellart_stillgelegt_links"
                  value="7"
                  literal="stillgelegt_links"/>
@@ -467,15 +586,18 @@
                  name="ENUMWKrGspStellartObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMW_Kr_Gsp_Stellart:Object"/>
-         <details key="baseType" value="ENUMW_Kr_Gsp_Stellart"/>
+         <details key="name"
+                  value="ENUMW_Kr_Gsp_Stellart:Object"/>
+         <details key="baseType"
+                  value="ENUMW_Kr_Gsp_Stellart"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="Geschwindigkeit_L_Type"
                  instanceClassName="java.math.BigInteger">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGeschwindigkeit_L"/>
+         <details key="name"
+                  value="TGeschwindigkeit_L"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"/>
       </eAnnotations>
@@ -484,8 +606,10 @@
                  name="Geschwindigkeit_L_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGeschwindigkeit_L"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGeschwindigkeit_L"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -493,8 +617,10 @@
                            eType="#//Geschwindigkeit_L_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -502,7 +628,8 @@
                  name="Geschwindigkeit_R_Type"
                  instanceClassName="java.math.BigInteger">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGeschwindigkeit_R"/>
+         <details key="name"
+                  value="TGeschwindigkeit_R"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"/>
       </eAnnotations>
@@ -511,8 +638,10 @@
                  name="Geschwindigkeit_R_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGeschwindigkeit_R"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGeschwindigkeit_R"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -520,8 +649,10 @@
                            eType="#//Geschwindigkeit_R_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -537,8 +668,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGleis_Abschluss"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGleis_Abschluss"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="gleisAbschlussArt"
@@ -555,8 +688,10 @@
                      value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                               &#xA;    &lt;ppi:ProposedValue&gt;Bremsprellbock&lt;/ppi:ProposedValue&gt;&#xA;                               &#xA;    &lt;ppi:PlanningStage&gt;PT1&lt;/ppi:PlanningStage&gt;&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                       &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Gleis_Abschluss_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Gleis_Abschluss_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -564,8 +699,10 @@
                  name="Gleis_Abschluss_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGleis_Abschluss_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGleis_Abschluss_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -573,8 +710,10 @@
                            eType="#//ENUMGleisAbschlussArtObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -582,8 +721,10 @@
                  name="Gleissperre_Betriebsart_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGleissperre_Betriebsart"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGleissperre_Betriebsart"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -591,15 +732,20 @@
                            eType="#//ENUMGleissperreBetriebsartObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Gleissperre_Element_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Gleissperre_Element_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGleissperre_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGleissperre_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="gleissperreBetriebsart"
@@ -615,8 +761,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;Betrieb&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Gleissperre_Betriebsart"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Gleissperre_Betriebsart"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -629,8 +777,10 @@
                      value="Vorzugslage der Gleissperre (Grundstellung). Dieses Attribut enthält den Eintrag abgelegt oder aufgelegt. Mit dem Attribut Vorzugslage Automatik kann festgelegt werden, dass diese Vorzugslage automatisch hergestellt wird. In großen Rangierbahnhöfen wird u. U. auf die Festlegung einer Vorzugslage verzichtet."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Gleissperre_Vorzugslage"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Gleissperre_Vorzugslage"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -638,8 +788,10 @@
                  name="Gleissperre_Vorzugslage_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGleissperre_Vorzugslage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGleissperre_Vorzugslage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -647,8 +799,10 @@
                            eType="#//ENUMGleissperreVorzugslageObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -656,8 +810,10 @@
                  name="Gleissperrensignal_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGleissperrensignal"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGleissperrensignal"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -665,15 +821,20 @@
                            eType="#//ENUMGleissperrensignalObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="GZ_Freimeldung_L_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="GZ_Freimeldung_L_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGZ_Freimeldung_L"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGZ_Freimeldung_L"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="elementLage"
@@ -686,8 +847,10 @@
                      value="Angabe bei nicht grenzzeichenfreier Freimeldung eines Weichenschenkels, in welcher Lage das angrenzende Fahrwegelement (Gleis oder Weiche) zur Freiprüfung herangezogen wird. Wenn die Grenzzeichenfreiheit durch die Freiprüfung eines angrenzenden Fahrwegelementes erkannt wird, das ein Gleisabschnitt ist, wird Abschnitt, eine Weiche ist, die unabhängig von ihrer Lage herangezogen wird, wird Weiche, eine Weiche ist, die nur in Linkslage herangezogen wird, wird WeicheL, eine Weiche ist, die nur in Rechtslage herangezogen wird, wird WeicheR als ENUM-Wert verwendet."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Element_Lage"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Element_Lage"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -701,15 +864,20 @@
                      value="Verweis auf das angrenzende W_Kr_Gsp_Element bzw. den angrenzenden Gleis_Abschnitt, das/der zum Prüfen der Grenzzeichenfreiheit des rechten bzw. linken Weichenschenkels herangezogen wird."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Element"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Element"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="GZ_Freimeldung_R_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="GZ_Freimeldung_R_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGZ_Freimeldung_R"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGZ_Freimeldung_R"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="elementLage"
@@ -722,8 +890,10 @@
                      value="Angabe bei nicht grenzzeichenfreier Freimeldung eines Weichenschenkels, in welcher Lage das angrenzende Fahrwegelement (Gleis oder Weiche) zur Freiprüfung herangezogen wird. Wenn die Grenzzeichenfreiheit durch die Freiprüfung eines angrenzenden Fahrwegelementes erkannt wird, das ein Gleisabschnitt ist, wird Abschnitt, eine Weiche ist, die unabhängig von ihrer Lage herangezogen wird, wird Weiche, eine Weiche ist, die nur in Linkslage herangezogen wird, wird WeicheL, eine Weiche ist, die nur in Rechtslage herangezogen wird, wird WeicheR als ENUM-Wert verwendet."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Element_Lage"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Element_Lage"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -737,8 +907,10 @@
                      value="Verweis auf das angrenzende W_Kr_Gsp_Element bzw. den angrenzenden Gleis_Abschnitt, das/der zum Prüfen der Grenzzeichenfreiheit des rechten bzw. linken Weichenschenkels herangezogen wird."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Element"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Element"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -746,17 +918,22 @@
                  name="Herzstueck_Antriebe_Type"
                  instanceClassName="java.math.BigInteger">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="THerzstueck_Antriebe"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
-         <details key="pattern" value="[1-9]|1[0-5]"/>
+         <details key="name"
+                  value="THerzstueck_Antriebe"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+         <details key="pattern"
+                  value="[1-9]|1[0-5]"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Herzstueck_Antriebe_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCHerzstueck_Antriebe"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCHerzstueck_Antriebe"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -764,8 +941,10 @@
                            eType="#//Herzstueck_Antriebe_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -773,18 +952,22 @@
                  name="Isolierfall_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TIsolierfall"/>
+         <details key="name"
+                  value="TIsolierfall"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
-         <details key="pattern" value=".{1,20}"/>
+         <details key="pattern"
+                  value=".{1,20}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Isolierfall_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCIsolierfall"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCIsolierfall"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -792,8 +975,10 @@
                            eType="#//Isolierfall_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -801,7 +986,8 @@
                  name="Kr_KrW_Seitenzuordnung_Type"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TKr_KrW_Seitenzuordnung"/>
+         <details key="name"
+                  value="TKr_KrW_Seitenzuordnung"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"/>
       </eAnnotations>
@@ -810,8 +996,10 @@
                  name="Kr_KrW_Seitenzuordnung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCKr_KrW_Seitenzuordnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCKr_KrW_Seitenzuordnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -819,15 +1007,20 @@
                            eType="#//Kr_KrW_Seitenzuordnung_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Kreuzung_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Kreuzung_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CKreuzung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CKreuzung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="elektrischerAntriebAnzahl"
@@ -844,8 +1037,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;0&lt;/ppi:ProposedValue&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[0..15]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Elektrischer_Antrieb_Anzahl"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Elektrischer_Antrieb_Anzahl"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -858,8 +1053,10 @@
                      value="Lage des Antriebs vom Kreuzungsmittelpunkt aus gesehen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Elektrischer_Antrieb_Lage"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Elektrischer_Antrieb_Lage"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -873,8 +1070,10 @@
                      value="Zulässige Geschwindigkeit über den linken Weichenschenkel. Die Geschwindigkeit kann geringer sein als die aus der Weichengeometrie abgeleitete. Die Angabe erfolgt in km/h."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Geschwindigkeit_L"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Geschwindigkeit_L"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -888,8 +1087,10 @@
                      value="Zulässige Geschwindigkeit über den rechten Weichenschenkel. Die Geschwindigkeit kann geringer sein als die aus der Weichengeometrie abgeleitete. Die Angabe erfolgt in km/h."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Geschwindigkeit_R"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Geschwindigkeit_R"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -897,7 +1098,8 @@
                  name="Kreuzungsgleis_Type"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TKreuzungsgleis"/>
+         <details key="name"
+                  value="TKreuzungsgleis"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"/>
       </eAnnotations>
@@ -906,8 +1108,10 @@
                  name="Kreuzungsgleis_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCKreuzungsgleis"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCKreuzungsgleis"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -915,8 +1119,10 @@
                            eType="#//Kreuzungsgleis_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -924,8 +1130,10 @@
                  name="Schutzschiene_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCSchutzschiene"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCSchutzschiene"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -933,8 +1141,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -942,7 +1152,8 @@
                  name="Stammgleis_Type"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TStammgleis"/>
+         <details key="name"
+                  value="TStammgleis"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"/>
       </eAnnotations>
@@ -951,8 +1162,10 @@
                  name="Stammgleis_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCStammgleis"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCStammgleis"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -960,8 +1173,10 @@
                            eType="#//Stammgleis_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -969,8 +1184,10 @@
                  name="Vorzugslage_Automatik_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCVorzugslage_Automatik"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCVorzugslage_Automatik"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -978,8 +1195,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -995,8 +1214,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CW_Kr_Anlage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CW_Kr_Anlage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDAnhangDWS"
@@ -1008,8 +1229,10 @@
                      value="Verweis auf die zugehörige Digitale Weichenskizze, die als Dateianhang mittels des Objektes Anhang eingebunden wird. DB-Regelwerk Die Digitale Weichenskizze wird für alle neu zu beschaffenden Weichen nach Ril 823.0700 erstellt. Sie enthält alle konstruktiven Daten der zu beschaffenden Weiche. Die relevanten Daten für die signaltechnischen Planungen werden künftig der DWS entnommen bzw. mit dieser Datei abgeglichen. Die für die LST-Planung relevanten Daten werden in entsprechende Attribute der allgemeinen Merkmale eingetragen. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Anhang_DWS"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Anhang_DWS"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1022,8 +1245,10 @@
                      value="Verweis auf ein Signal, welches den Zustand der W_Kr_Anlage signalisiert (z. B. Rückfallweichensignal)."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Signal"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Signal"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1033,15 +1258,20 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="W_Kr_Anlage_Allg"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="W_Kr_Anlage_Allg"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="W_Kr_Anlage_Allg_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="W_Kr_Anlage_Allg_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CW_Kr_Anlage_Allg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CW_Kr_Anlage_Allg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="isolierfall"
@@ -1057,8 +1287,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt; [1..20] &lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Isolierfall"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Isolierfall"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1072,8 +1304,10 @@
                      value="Beschreibt die W Kr Anlage bezüglich ihrer konstruktiven Art. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="W_Kr_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="W_Kr_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1091,8 +1325,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:PlanningStage&gt;EP&lt;/ppi:PlanningStage&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[1..50]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="W_Kr_Grundform"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="W_Kr_Grundform"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1100,8 +1336,10 @@
                  name="W_Kr_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCW_Kr_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCW_Kr_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1109,8 +1347,10 @@
                            eType="#//ENUMWKrArtObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1118,18 +1358,22 @@
                  name="W_Kr_Grundform_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TW_Kr_Grundform"/>
+         <details key="name"
+                  value="TW_Kr_Grundform"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
-         <details key="pattern" value=".{1,50}"/>
+         <details key="pattern"
+                  value=".{1,50}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="W_Kr_Grundform_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCW_Kr_Grundform"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCW_Kr_Grundform"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1137,8 +1381,10 @@
                            eType="#//W_Kr_Grundform_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1154,8 +1400,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CW_Kr_Gsp_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CW_Kr_Gsp_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bezeichnung"
@@ -1168,8 +1416,10 @@
                      value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bezeichnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bezeichnung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1182,8 +1432,10 @@
                      value="Verweis auf ein Objekt Regelzeichnung, sofern bei einer Weiche (z. B. DKW) oder Gleissperre (z. B. gekuppelte Gleissperre) mehrere Komponenten in einer Regelzeichnung zusammengefasst sind. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Regelzeichnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Regelzeichnung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1196,8 +1448,10 @@
                      value="Verweis auf das Objekt Stellelement zur Zusammenfassung von Eigenschaften der Objekte BUE Schnittstelle, PZB Element, Schluesselsperre, Signal, W Kr Gsp Element. Das Stellelement enthält Informationen über den energetischen und logischen Anschluss der Objekte. Für das PZB Element ist der Verweis nur zu füllen, wenn das PZB_Element eine GÜ ist. DB-Regelwerk Bisher ohne eindeutige Darstellung "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Stellelement"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Stellelement"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1210,8 +1464,10 @@
                      value="Verweis auf die W_Kr_Anlage, deren Bestandteil das W_Kr_Gsp_Element ist. Der Verweis wird nur für Weichen und Keuzungen verwendet. Er darf nicht bei Gleissperren verwendet werden."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_W_Kr_Anlage"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_W_Kr_Anlage"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1224,8 +1480,10 @@
                      value="Verweis auf die Weichenlaufkette, in der das Weichenelement enthalten ist. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Weichenlaufkette"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Weichenlaufkette"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1235,8 +1493,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="W_Kr_Gsp_Element_Allg"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="W_Kr_Gsp_Element_Allg"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1245,8 +1505,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Gleissperre_Element"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Gleissperre_Element"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1255,15 +1517,20 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Weiche_Element"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Weiche_Element"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="W_Kr_Gsp_Element_Allg_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="W_Kr_Gsp_Element_Allg_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CW_Kr_Gsp_Element_Allg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CW_Kr_Gsp_Element_Allg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="krKrWSeitenzuordnung"
@@ -1275,8 +1542,10 @@
                      value="Bei unsymmetrischen Kreuzungen (Kr) und Kreuzungsweichen (KrW): Zuordnung der Seite Links/Rechts gemäß Ril 800.0120. Die Angabe wird nachfolgend für das korrekte Zeichnen der Weichendreiecke in maßstäblichen Lageplänen benötigt."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Kr_KrW_Seitenzuordnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Kr_KrW_Seitenzuordnung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1293,8 +1562,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xA;                         &#xA;    &lt;ppi:PlanningStage&gt;PT1&lt;/ppi:PlanningStage&gt;&#xA;                         &#xA;    &lt;ppi:ExampleValue&gt;links&lt;/ppi:ExampleValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Vorzugslage_Automatik"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Vorzugslage_Automatik"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1312,8 +1583,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;elektrisch_ferngestellt&lt;/ppi:ProposedValue&gt;&#xA;                         &#xA;    &lt;ppi:PlanningStage&gt;PT1&lt;/ppi:PlanningStage&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="W_Kr_Gsp_Stellart"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="W_Kr_Gsp_Stellart"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1329,8 +1602,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CW_Kr_Gsp_Komponente"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CW_Kr_Gsp_Komponente"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="austauschAntriebe"
@@ -1346,8 +1621,10 @@
                      value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                               &#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                       &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Austausch_Antriebe"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Austausch_Antriebe"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1361,8 +1638,10 @@
                      value="Verweis auf ein Objekt Regelzeichnung. Für Weichen, Kreuzungen und Gleissperren werden die Regelzeichnungen der Gruppe S73xx.yy verwendet. Die Regelzeichnung wird für die W_Kr_Gsp_Komponente angegeben und enthält u. a. auch die Anordnung der Antriebe und Endlagenprüfer. Die Lage ist durch unterschiedliche Bilder in der Regelzeichnung spezifiziert, so dass auch das Bild mit angegeben werden muss. Nur dann, wenn in einer Regelzeichnung mehrere Komponenten zusammengefasst sind (z. B. bei der DKW und der gekuppelten Gleissperre), wird der Eintrag bei W Kr Gsp Element vorgenommen. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Regelzeichnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Regelzeichnung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1376,8 +1655,10 @@
                      value="Verweis auf das zugehörige Weichen-, Kreuzungs- oder Gleissperrenelement. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_W_Kr_Gsp_Element"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_W_Kr_Gsp_Element"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1390,8 +1671,10 @@
                      value="Abbildung besonderer Fahrwegelemente wie Wehrkammtertor, bewegliche Brücke oder abklappbarer Prellbock."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Besonderes_Fahrwegelement"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Besonderes_Fahrwegelement"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1400,8 +1683,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Entgleisungsschuh"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Entgleisungsschuh"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1414,8 +1699,10 @@
                      value="Fahrwegelement, an dem sich zwei Gleise höhengleich kreuzen, ohne dass ein Übergang zwischen den Gleisen möglich ist. Einfache Kreuzungen sind in der Regel nicht stellbar. Kreuzungen, die einen besonders spitzen Winkel haben (Kreuzungen mit beweglichen Doppelherzstückspitzen, auch Flachkreuzung genannt) sind stellbar und besitzen mindestens einen, vorzugsweise zwei gleichlaufende Antriebe"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Kreuzung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Kreuzung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1424,8 +1711,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Zungenpaar"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Zungenpaar"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1433,8 +1722,10 @@
                  name="W_Kr_Gsp_Stellart_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCW_Kr_Gsp_Stellart"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCW_Kr_Gsp_Stellart"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1442,8 +1733,10 @@
                            eType="#//ENUMWKrGspStellartObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1451,8 +1744,10 @@
                  name="Weiche_Betriebsart_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCWeiche_Betriebsart"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCWeiche_Betriebsart"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1460,15 +1755,20 @@
                            eType="#//ENUMWeicheBetriebsartObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Weiche_Element_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Weiche_Element_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CWeiche_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CWeiche_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="auffahrortung"
@@ -1484,8 +1784,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Auffahrortung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Auffahrortung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1498,8 +1800,10 @@
                      value="Angabe, ob die Freimeldung im linken Weichenschenkel grenzzeichenfrei realisiert ist (true) oder nicht (false)."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GZ_Freimeldung_L"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GZ_Freimeldung_L"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1512,8 +1816,10 @@
                      value="Angabe, ob die Freimeldung im rechten Weichenschenkel grenzzeichenfrei realisiert ist (true) oder nicht (false)."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GZ_Freimeldung_R"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GZ_Freimeldung_R"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1526,8 +1832,10 @@
                      value="Verweis auf ein Signal, was das zugehörige Grenzzeichen dieser Weiche ist."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Grenzzeichen"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Grenzzeichen"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1540,8 +1848,10 @@
                      value="Verweis auf ein Signal, welches den Zustand des W_Kr_Gsp_Element signalisiert (z. B. Weichenlagemelder)."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Signal"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Signal"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1558,8 +1868,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;Betrieb&lt;/ppi:ProposedValue&gt;&#xA;                         &#xA;    &lt;ppi:PlanningStage&gt;PT1&lt;/ppi:PlanningStage&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Weiche_Betriebsart"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Weiche_Betriebsart"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1576,8 +1888,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:PlanningStage&gt;PT1&lt;/ppi:PlanningStage&gt;&#xA;                         &#xA;    &lt;ppi:ExampleValue&gt;links&lt;/ppi:ExampleValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Weiche_Vorzugslage"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Weiche_Vorzugslage"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1585,7 +1899,8 @@
                  name="Weiche_Vorzugslage_Type"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TWeiche_Vorzugslage"/>
+         <details key="name"
+                  value="TWeiche_Vorzugslage"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"/>
       </eAnnotations>
@@ -1594,8 +1909,10 @@
                  name="Weiche_Vorzugslage_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCWeiche_Vorzugslage"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCWeiche_Vorzugslage"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1603,8 +1920,10 @@
                            eType="#//Weiche_Vorzugslage_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1620,8 +1939,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CWeichenlaufkette"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CWeichenlaufkette"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bezeichnung"
@@ -1634,8 +1955,10 @@
                      value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bezeichnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bezeichnung"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1651,8 +1974,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CWeichenlaufkette_Zuordnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CWeichenlaufkette_Zuordnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDSignal"
@@ -1665,8 +1990,10 @@
                      value="Verweis auf das Signal, dem die Weichenlaufkette zugeordnet wird."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Signal"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Signal"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1680,8 +2007,10 @@
                      value="Verweis auf die Weichenlaufkette, die dem Signal zugeordnet wird. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Weichenlaufkette"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Weichenlaufkette"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1689,8 +2018,10 @@
                  name="Weichensignal_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCWeichensignal"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCWeichensignal"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1698,15 +2029,20 @@
                            eType="#//ENUMWeichensignalObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Zungenpaar_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Zungenpaar_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CZungenpaar"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CZungenpaar"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="elektrischerAntriebAnzahl"
@@ -1723,8 +2059,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;1&lt;/ppi:ProposedValue&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt; [0..15] &lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Elektrischer_Antrieb_Anzahl"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Elektrischer_Antrieb_Anzahl"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1737,8 +2075,10 @@
                      value="Lage des Antriebs von der Weichenspitze aus gesehen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Elektrischer_Antrieb_Lage"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Elektrischer_Antrieb_Lage"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1756,8 +2096,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:PlanningStage&gt;PT1:MUSS&lt;/ppi:PlanningStage&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Geschwindigkeit_L"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Geschwindigkeit_L"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1775,8 +2117,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:PlanningStage&gt;PT1:MUSS&lt;/ppi:PlanningStage&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Geschwindigkeit_R"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Geschwindigkeit_R"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1793,8 +2137,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[1..15]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Herzstueck_Antriebe"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Herzstueck_Antriebe"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1807,8 +2153,10 @@
                      value="Lage der TOP Kante, die bei EKW und DKW vom zugehörigen Zungenpaar in Richtung des Kreuzungsmittelpunktes führt. Das Attribut muss bei EKW und DKW angegeben werden, um eine lagerichtige Zuordnung der Kanteneigenschaften in dem Ausgabetabellen sicherzustellen. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Kreuzungsgleis"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Kreuzungsgleis"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1821,8 +2169,10 @@
                      value="Lage der TOP Kante, die das Stammgleis repräsentiert (Blickrichtung von der Weichenspitze zum Weichenstumpf bzw. Kreuzungsmittelpunkt)."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Stammgleis"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Stammgleis"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1839,8 +2189,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;reflektierend&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Weichensignal"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Weichensignal"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1858,8 +2210,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt; [0..15] &lt;/ppi:Patternbeschreibung&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;0&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Zungenpruefkontakt_Anzahl"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Zungenpruefkontakt_Anzahl"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1867,17 +2221,22 @@
                  name="Zungenpruefkontakt_Anzahl_Type"
                  instanceClassName="java.math.BigInteger">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TZungenpruefkontakt_Anzahl"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
-         <details key="pattern" value="[0-9]|1[0-5]"/>
+         <details key="name"
+                  value="TZungenpruefkontakt_Anzahl"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+         <details key="pattern"
+                  value="[0-9]|1[0-5]"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Zungenpruefkontakt_Anzahl_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCZungenpruefkontakt_Anzahl"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCZungenpruefkontakt_Anzahl"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1885,8 +2244,10 @@
                            eType="#//Zungenpruefkontakt_Anzahl_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>

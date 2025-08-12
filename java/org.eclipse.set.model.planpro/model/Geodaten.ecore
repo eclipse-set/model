@@ -14,7 +14,8 @@
                  name="Anzeigegefuehrt_ES_Kategorie_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TAnzeigegefuehrt_ES_Kategorie"/>
+         <details key="name"
+                  value="TAnzeigegefuehrt_ES_Kategorie"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
       </eAnnotations>
@@ -23,8 +24,10 @@
                  name="Anzeigegefuehrt_ES_Kategorie_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCAnzeigegefuehrt_ES_Kategorie"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCAnzeigegefuehrt_ES_Kategorie"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -32,8 +35,10 @@
                            eType="#//Anzeigegefuehrt_ES_Kategorie_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -41,18 +46,22 @@
                  name="Bezeichnung_Strecke_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TBezeichnung_Strecke"/>
+         <details key="name"
+                  value="TBezeichnung_Strecke"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
-         <details key="pattern" value="[0-9]{4}(\-[a-zA-Z0-9])?"/>
+         <details key="pattern"
+                  value="[0-9]{4}(\-[a-zA-Z0-9])?"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Bezeichnung_Strecke_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCBezeichnung_Strecke"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCBezeichnung_Strecke"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -60,8 +69,10 @@
                            eType="#//Bezeichnung_Strecke_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -69,8 +80,10 @@
                  name="Bremsweg_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCBremsweg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCBremsweg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -78,8 +91,10 @@
                            eType="ecore:EDataType BasisTypen.ecore#//Bremsweg_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -87,27 +102,44 @@
                  name="Enumeration1"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="Enumeration1"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#string"/>
+         <details key="name"
+                  value="Enumeration1"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#string"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMGEOForm">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMGEOForm">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGEO_Form"/>
+         <details key="name"
+                  value="ENUMGEO_Form"/>
       </eAnnotations>
-      <eLiterals name="ENUMGEO_Form_Bogen" literal="Bogen"/>
-      <eLiterals name="ENUMGEO_Form_Blosskurve" value="1" literal="Blosskurve"/>
+      <eLiterals name="ENUMGEO_Form_Bogen"
+                 literal="Bogen"/>
+      <eLiterals name="ENUMGEO_Form_Blosskurve"
+                 value="1"
+                 literal="Blosskurve"/>
       <eLiterals name="ENUMGEO_Form_Bloss_einfach_geschwungen"
                  value="2"
                  literal="Bloss_einfach_geschwungen"/>
-      <eLiterals name="ENUMGEO_Form_Gerade" value="3" literal="Gerade"/>
-      <eLiterals name="ENUMGEO_Form_Klothoide" value="4" literal="Klothoide"/>
-      <eLiterals name="ENUMGEO_Form_Km_Sprung" value="5" literal="Km_Sprung"/>
-      <eLiterals name="ENUMGEO_Form_Polylinie" value="6" literal="Polylinie"/>
+      <eLiterals name="ENUMGEO_Form_Gerade"
+                 value="3"
+                 literal="Gerade"/>
+      <eLiterals name="ENUMGEO_Form_Klothoide"
+                 value="4"
+                 literal="Klothoide"/>
+      <eLiterals name="ENUMGEO_Form_Km_Sprung"
+                 value="5"
+                 literal="Km_Sprung"/>
+      <eLiterals name="ENUMGEO_Form_Polylinie"
+                 value="6"
+                 literal="Polylinie"/>
       <eLiterals name="ENUMGEO_Form_Richtgerade_Knick_am_Ende_200_gon"
                  value="7"
                  literal="Richtgerade_Knick_am_Ende_200_gon"/>
-      <eLiterals name="ENUMGEO_Form_sonstige" value="8" literal="sonstige"/>
+      <eLiterals name="ENUMGEO_Form_sonstige"
+                 value="8"
+                 literal="sonstige"/>
       <eLiterals name="ENUMGEO_Form_S_Form_einfach_geschwungen"
                  value="9"
                  literal="S_Form_einfach_geschwungen"/>
@@ -119,18 +151,29 @@
                  name="ENUMGEOFormObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGEO_Form:Object"/>
-         <details key="baseType" value="ENUMGEO_Form"/>
+         <details key="name"
+                  value="ENUMGEO_Form:Object"/>
+         <details key="baseType"
+                  value="ENUMGEO_Form"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMGEOKoordinatensystem">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMGEOKoordinatensystem">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGEO_Koordinatensystem"/>
+         <details key="name"
+                  value="ENUMGEO_Koordinatensystem"/>
       </eAnnotations>
-      <eLiterals name="ENUMGEO_Koordinatensystem_CR0" literal="CR0"/>
-      <eLiterals name="ENUMGEO_Koordinatensystem_DR0" value="1" literal="DR0"/>
-      <eLiterals name="ENUMGEO_Koordinatensystem_ER0" value="2" literal="ER0"/>
-      <eLiterals name="ENUMGEO_Koordinatensystem_FR0" value="3" literal="FR0"/>
+      <eLiterals name="ENUMGEO_Koordinatensystem_CR0"
+                 literal="CR0"/>
+      <eLiterals name="ENUMGEO_Koordinatensystem_DR0"
+                 value="1"
+                 literal="DR0"/>
+      <eLiterals name="ENUMGEO_Koordinatensystem_ER0"
+                 value="2"
+                 literal="ER0"/>
+      <eLiterals name="ENUMGEO_Koordinatensystem_FR0"
+                 value="3"
+                 literal="FR0"/>
       <eLiterals name="ENUMGEO_Koordinatensystem_sonstige"
                  value="4"
                  literal="sonstige"/>
@@ -139,19 +182,27 @@
                  name="ENUMGEOKoordinatensystemObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGEO_Koordinatensystem:Object"/>
-         <details key="baseType" value="ENUMGEO_Koordinatensystem"/>
+         <details key="name"
+                  value="ENUMGEO_Koordinatensystem:Object"/>
+         <details key="baseType"
+                  value="ENUMGEO_Koordinatensystem"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMHoehenlinieForm">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMHoehenlinieForm">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-         <details key="documentation" value="spa/WS 31.07.2018"/>
+         <details key="documentation"
+                  value="spa/WS 31.07.2018"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMHoehenlinie_Form"/>
+         <details key="name"
+                  value="ENUMHoehenlinie_Form"/>
       </eAnnotations>
-      <eLiterals name="ENUMHoehenlinie_Form_Gerade" literal="Gerade"/>
-      <eLiterals name="ENUMHoehenlinie_Form_Parabel" value="1" literal="Parabel"/>
+      <eLiterals name="ENUMHoehenlinie_Form_Gerade"
+                 literal="Gerade"/>
+      <eLiterals name="ENUMHoehenlinie_Form_Parabel"
+                 value="1"
+                 literal="Parabel"/>
       <eLiterals name="ENUMHoehenlinie_Form_Weichenabzweig"
                  value="2"
                  literal="Weichenabzweig"/>
@@ -160,63 +211,123 @@
                  name="ENUMHoehenlinieFormObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMHoehenlinie_Form:Object"/>
-         <details key="baseType" value="ENUMHoehenlinie_Form"/>
+         <details key="name"
+                  value="ENUMHoehenlinie_Form:Object"/>
+         <details key="baseType"
+                  value="ENUMHoehenlinie_Form"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMHSystem">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMHSystem">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMHSystem"/>
+         <details key="name"
+                  value="ENUMHSystem"/>
       </eAnnotations>
-      <eLiterals name="ENUMHSystem_DBRH_2003" literal="DBRH_2003"/>
-      <eLiterals name="ENUMHSystem_DBRH_2016" value="1" literal="DBRH_2016"/>
-      <eLiterals name="ENUMHSystem_DHHN_12" value="2" literal="DHHN_12"/>
-      <eLiterals name="ENUMHSystem_DHHN_2016" value="3" literal="DHHN_2016"/>
-      <eLiterals name="ENUMHSystem_DHHN_85" value="4" literal="DHHN_85"/>
-      <eLiterals name="ENUMHSystem_DHHN_92" value="5" literal="DHHN_92"/>
-      <eLiterals name="ENUMHSystem_HN_56" value="6" literal="HN_56"/>
-      <eLiterals name="ENUMHSystem_HN_76" value="7" literal="HN_76"/>
-      <eLiterals name="ENUMHSystem_sonstige" value="8" literal="sonstige"/>
+      <eLiterals name="ENUMHSystem_DBRH_2003"
+                 literal="DBRH_2003"/>
+      <eLiterals name="ENUMHSystem_DBRH_2016"
+                 value="1"
+                 literal="DBRH_2016"/>
+      <eLiterals name="ENUMHSystem_DHHN_12"
+                 value="2"
+                 literal="DHHN_12"/>
+      <eLiterals name="ENUMHSystem_DHHN_2016"
+                 value="3"
+                 literal="DHHN_2016"/>
+      <eLiterals name="ENUMHSystem_DHHN_85"
+                 value="4"
+                 literal="DHHN_85"/>
+      <eLiterals name="ENUMHSystem_DHHN_92"
+                 value="5"
+                 literal="DHHN_92"/>
+      <eLiterals name="ENUMHSystem_HN_56"
+                 value="6"
+                 literal="HN_56"/>
+      <eLiterals name="ENUMHSystem_HN_76"
+                 value="7"
+                 literal="HN_76"/>
+      <eLiterals name="ENUMHSystem_sonstige"
+                 value="8"
+                 literal="sonstige"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMHSystemObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMHSystem:Object"/>
-         <details key="baseType" value="ENUMHSystem"/>
+         <details key="name"
+                  value="ENUMHSystem:Object"/>
+         <details key="baseType"
+                  value="ENUMHSystem"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMOertlichkeitArt">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMOertlichkeitArt">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMOertlichkeit_Art"/>
+         <details key="name"
+                  value="ENUMOertlichkeit_Art"/>
       </eAnnotations>
-      <eLiterals name="ENUMOertlichkeit_Art_Abzw" literal="Abzw"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Abzw_Anst" value="1" literal="Abzw Anst"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Abzw"
+                 literal="Abzw"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Abzw_Anst"
+                 value="1"
+                 literal="Abzw Anst"/>
       <eLiterals name="ENUMOertlichkeit_Art_Abzw_Awanst"
                  value="2"
                  literal="Abzw Awanst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Anst" value="3" literal="Anst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Anst_Bk" value="4" literal="Anst Bk"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Awanst" value="5" literal="Awanst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Awanst_Bk" value="6" literal="Awanst Bk"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Bf" value="7" literal="Bf"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Bf_Abzw" value="8" literal="Bf Abzw"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Bft" value="9" literal="Bft"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Bft_Abzw" value="10" literal="Bft Abzw"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Bk" value="11" literal="Bk"/>
-      <eLiterals name="ENUMOertlichkeit_Art_BSO" value="12" literal="BSO"/>
-      <eLiterals name="ENUMOertlichkeit_Art_BZ" value="13" literal="BZ"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Dkst" value="14" literal="Dkst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Gp" value="15" literal="Gp"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Hp" value="16" literal="Hp"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Hp_Abzw" value="17" literal="Hp Abzw"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Anst"
+                 value="3"
+                 literal="Anst"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Anst_Bk"
+                 value="4"
+                 literal="Anst Bk"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Awanst"
+                 value="5"
+                 literal="Awanst"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Awanst_Bk"
+                 value="6"
+                 literal="Awanst Bk"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Bf"
+                 value="7"
+                 literal="Bf"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Bf_Abzw"
+                 value="8"
+                 literal="Bf Abzw"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Bft"
+                 value="9"
+                 literal="Bft"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Bft_Abzw"
+                 value="10"
+                 literal="Bft Abzw"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Bk"
+                 value="11"
+                 literal="Bk"/>
+      <eLiterals name="ENUMOertlichkeit_Art_BSO"
+                 value="12"
+                 literal="BSO"/>
+      <eLiterals name="ENUMOertlichkeit_Art_BZ"
+                 value="13"
+                 literal="BZ"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Dkst"
+                 value="14"
+                 literal="Dkst"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Gp"
+                 value="15"
+                 literal="Gp"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Hp"
+                 value="16"
+                 literal="Hp"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Hp_Abzw"
+                 value="17"
+                 literal="Hp Abzw"/>
       <eLiterals name="ENUMOertlichkeit_Art_Hp_Abzw_Anst"
                  value="18"
                  literal="Hp Abzw Anst"/>
       <eLiterals name="ENUMOertlichkeit_Art_Hp_Abzw_Awanst"
                  value="19"
                  literal="Hp Abzw Awanst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Hp_Anst" value="20" literal="Hp Anst"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Hp_Anst"
+                 value="20"
+                 literal="Hp Anst"/>
       <eLiterals name="ENUMOertlichkeit_Art_Hp_Anst_Bk"
                  value="21"
                  literal="Hp Anst Bk"/>
@@ -226,30 +337,54 @@
       <eLiterals name="ENUMOertlichkeit_Art_Hp_Awanst_Bk"
                  value="23"
                  literal="Hp Awanst Bk"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Hp_Bft" value="24" literal="Hp Bft"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Hp_Bk" value="25" literal="Hp Bk"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Hp_Dkst" value="26" literal="Hp Dkst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Hp_Ust" value="27" literal="Hp Üst"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Hp_Bft"
+                 value="24"
+                 literal="Hp Bft"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Hp_Bk"
+                 value="25"
+                 literal="Hp Bk"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Hp_Dkst"
+                 value="26"
+                 literal="Hp Dkst"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Hp_Ust"
+                 value="27"
+                 literal="Hp Üst"/>
       <eLiterals name="ENUMOertlichkeit_Art_Hp_Ust_Anst"
                  value="28"
                  literal="Hp Üst Anst"/>
       <eLiterals name="ENUMOertlichkeit_Art_Hp_Ust_Awanst"
                  value="29"
                  literal="Hp Üst Awanst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_LGr" value="30" literal="LGr"/>
-      <eLiterals name="ENUMOertlichkeit_Art_NE_Abzw" value="31" literal="NE-Abzw"/>
-      <eLiterals name="ENUMOertlichkeit_Art_NE_Anst" value="32" literal="NE-Anst"/>
+      <eLiterals name="ENUMOertlichkeit_Art_LGr"
+                 value="30"
+                 literal="LGr"/>
+      <eLiterals name="ENUMOertlichkeit_Art_NE_Abzw"
+                 value="31"
+                 literal="NE-Abzw"/>
+      <eLiterals name="ENUMOertlichkeit_Art_NE_Anst"
+                 value="32"
+                 literal="NE-Anst"/>
       <eLiterals name="ENUMOertlichkeit_Art_NE_Awanst"
                  value="33"
                  literal="NE-Awanst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_NE_Bf" value="34" literal="NE-Bf"/>
-      <eLiterals name="ENUMOertlichkeit_Art_NE_Bft" value="35" literal="NE-Bft"/>
+      <eLiterals name="ENUMOertlichkeit_Art_NE_Bf"
+                 value="34"
+                 literal="NE-Bf"/>
+      <eLiterals name="ENUMOertlichkeit_Art_NE_Bft"
+                 value="35"
+                 literal="NE-Bft"/>
       <eLiterals name="ENUMOertlichkeit_Art_NE_Bft_Abzw"
                  value="36"
                  literal="NE-Bft Abzw"/>
-      <eLiterals name="ENUMOertlichkeit_Art_NE_Bk" value="37" literal="NE-Bk"/>
-      <eLiterals name="ENUMOertlichkeit_Art_NE_Gp" value="38" literal="NE-Gp"/>
-      <eLiterals name="ENUMOertlichkeit_Art_NE_Hp" value="39" literal="NE-Hp"/>
+      <eLiterals name="ENUMOertlichkeit_Art_NE_Bk"
+                 value="37"
+                 literal="NE-Bk"/>
+      <eLiterals name="ENUMOertlichkeit_Art_NE_Gp"
+                 value="38"
+                 literal="NE-Gp"/>
+      <eLiterals name="ENUMOertlichkeit_Art_NE_Hp"
+                 value="39"
+                 literal="NE-Hp"/>
       <eLiterals name="ENUMOertlichkeit_Art_NE_Hp_Abzw"
                  value="40"
                  literal="NE-Hp Abzw"/>
@@ -259,29 +394,63 @@
       <eLiterals name="ENUMOertlichkeit_Art_NE_Hp_Awanst"
                  value="42"
                  literal="NE-Hp Awanst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_NE_Hp_Bk" value="43" literal="NE-Hp Bk"/>
-      <eLiterals name="ENUMOertlichkeit_Art_NE_LGr" value="44" literal="NE-LGr"/>
-      <eLiterals name="ENUMOertlichkeit_Art_NE_RBGr" value="45" literal="NE-RBGr"/>
-      <eLiterals name="ENUMOertlichkeit_Art_NE_Ust" value="46" literal="NE-Üst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_PDGr" value="47" literal="PDGr"/>
-      <eLiterals name="ENUMOertlichkeit_Art_RBGr" value="48" literal="RBGr"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Sbk" value="49" literal="Sbk"/>
-      <eLiterals name="ENUMOertlichkeit_Art_sonstige" value="50" literal="sonstige"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Strw" value="51" literal="Strw"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Ust" value="52" literal="Üst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_Ust_Anst" value="53" literal="Üst Anst"/>
+      <eLiterals name="ENUMOertlichkeit_Art_NE_Hp_Bk"
+                 value="43"
+                 literal="NE-Hp Bk"/>
+      <eLiterals name="ENUMOertlichkeit_Art_NE_LGr"
+                 value="44"
+                 literal="NE-LGr"/>
+      <eLiterals name="ENUMOertlichkeit_Art_NE_RBGr"
+                 value="45"
+                 literal="NE-RBGr"/>
+      <eLiterals name="ENUMOertlichkeit_Art_NE_Ust"
+                 value="46"
+                 literal="NE-Üst"/>
+      <eLiterals name="ENUMOertlichkeit_Art_PDGr"
+                 value="47"
+                 literal="PDGr"/>
+      <eLiterals name="ENUMOertlichkeit_Art_RBGr"
+                 value="48"
+                 literal="RBGr"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Sbk"
+                 value="49"
+                 literal="Sbk"/>
+      <eLiterals name="ENUMOertlichkeit_Art_sonstige"
+                 value="50"
+                 literal="sonstige"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Strw"
+                 value="51"
+                 literal="Strw"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Ust"
+                 value="52"
+                 literal="Üst"/>
+      <eLiterals name="ENUMOertlichkeit_Art_Ust_Anst"
+                 value="53"
+                 literal="Üst Anst"/>
       <eLiterals name="ENUMOertlichkeit_Art_Ust_Awanst"
                  value="54"
                  literal="Üst Awanst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_vp_Abzw" value="55" literal="vp-Abzw"/>
-      <eLiterals name="ENUMOertlichkeit_Art_vp_Anst" value="56" literal="vp-Anst"/>
+      <eLiterals name="ENUMOertlichkeit_Art_vp_Abzw"
+                 value="55"
+                 literal="vp-Abzw"/>
+      <eLiterals name="ENUMOertlichkeit_Art_vp_Anst"
+                 value="56"
+                 literal="vp-Anst"/>
       <eLiterals name="ENUMOertlichkeit_Art_vp_Awanst"
                  value="57"
                  literal="vp-Awanst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_vp_Bf" value="58" literal="vp-Bf"/>
-      <eLiterals name="ENUMOertlichkeit_Art_vp_Bft" value="59" literal="vp-Bft"/>
-      <eLiterals name="ENUMOertlichkeit_Art_vp_Bk" value="60" literal="vp-Bk"/>
-      <eLiterals name="ENUMOertlichkeit_Art_vp_Hp" value="61" literal="vp-Hp"/>
+      <eLiterals name="ENUMOertlichkeit_Art_vp_Bf"
+                 value="58"
+                 literal="vp-Bf"/>
+      <eLiterals name="ENUMOertlichkeit_Art_vp_Bft"
+                 value="59"
+                 literal="vp-Bft"/>
+      <eLiterals name="ENUMOertlichkeit_Art_vp_Bk"
+                 value="60"
+                 literal="vp-Bk"/>
+      <eLiterals name="ENUMOertlichkeit_Art_vp_Hp"
+                 value="61"
+                 literal="vp-Hp"/>
       <eLiterals name="ENUMOertlichkeit_Art_vp_Hp_Abzw"
                  value="62"
                  literal="vp-Hp Abzw"/>
@@ -294,75 +463,120 @@
       <eLiterals name="ENUMOertlichkeit_Art_vp_Hp_Awanst"
                  value="65"
                  literal="vp-Hp Awanst"/>
-      <eLiterals name="ENUMOertlichkeit_Art_vp_LGr" value="66" literal="vp-LGr"/>
-      <eLiterals name="ENUMOertlichkeit_Art_vp_RBGr" value="67" literal="vp-RBGr"/>
+      <eLiterals name="ENUMOertlichkeit_Art_vp_LGr"
+                 value="66"
+                 literal="vp-LGr"/>
+      <eLiterals name="ENUMOertlichkeit_Art_vp_RBGr"
+                 value="67"
+                 literal="vp-RBGr"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMOertlichkeitArtObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMOertlichkeit_Art:Object"/>
-         <details key="baseType" value="ENUMOertlichkeit_Art"/>
+         <details key="name"
+                  value="ENUMOertlichkeit_Art:Object"/>
+         <details key="baseType"
+                  value="ENUMOertlichkeit_Art"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMPlanQuelle">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMPlanQuelle">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMPlan_Quelle"/>
+         <details key="name"
+                  value="ENUMPlan_Quelle"/>
       </eAnnotations>
-      <eLiterals name="ENUMPlan_Quelle_Ersatztrassierung" literal="Ersatztrassierung"/>
-      <eLiterals name="ENUMPlan_Quelle_GIS" value="1" literal="GIS"/>
-      <eLiterals name="ENUMPlan_Quelle_GND" value="2" literal="GND"/>
+      <eLiterals name="ENUMPlan_Quelle_Ersatztrassierung"
+                 literal="Ersatztrassierung"/>
+      <eLiterals name="ENUMPlan_Quelle_GIS"
+                 value="1"
+                 literal="GIS"/>
+      <eLiterals name="ENUMPlan_Quelle_GND"
+                 value="2"
+                 literal="GND"/>
       <eLiterals name="ENUMPlan_Quelle_GND_autokorr"
                  value="3"
                  literal="GND_autokorr"/>
-      <eLiterals name="ENUMPlan_Quelle_GND_mankorr" value="4" literal="GND_mankorr"/>
-      <eLiterals name="ENUMPlan_Quelle_Ivl" value="5" literal="Ivl"/>
-      <eLiterals name="ENUMPlan_Quelle_Ivmg" value="6" literal="Ivmg"/>
-      <eLiterals name="ENUMPlan_Quelle_Kopie" value="7" literal="Kopie"/>
+      <eLiterals name="ENUMPlan_Quelle_GND_mankorr"
+                 value="4"
+                 literal="GND_mankorr"/>
+      <eLiterals name="ENUMPlan_Quelle_Ivl"
+                 value="5"
+                 literal="Ivl"/>
+      <eLiterals name="ENUMPlan_Quelle_Ivmg"
+                 value="6"
+                 literal="Ivmg"/>
+      <eLiterals name="ENUMPlan_Quelle_Kopie"
+                 value="7"
+                 literal="Kopie"/>
       <eLiterals name="ENUMPlan_Quelle_Neutrassierung"
                  value="8"
                  literal="Neutrassierung"/>
-      <eLiterals name="ENUMPlan_Quelle_Planung" value="9" literal="Planung"/>
-      <eLiterals name="ENUMPlan_Quelle_PT_2" value="10" literal="PT 2"/>
-      <eLiterals name="ENUMPlan_Quelle_sonstige" value="11" literal="sonstige"/>
-      <eLiterals name="ENUMPlan_Quelle_Vermessung" value="12" literal="Vermessung"/>
+      <eLiterals name="ENUMPlan_Quelle_Planung"
+                 value="9"
+                 literal="Planung"/>
+      <eLiterals name="ENUMPlan_Quelle_PT_2"
+                 value="10"
+                 literal="PT 2"/>
+      <eLiterals name="ENUMPlan_Quelle_sonstige"
+                 value="11"
+                 literal="sonstige"/>
+      <eLiterals name="ENUMPlan_Quelle_Vermessung"
+                 value="12"
+                 literal="Vermessung"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMPlanQuelleObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMPlan_Quelle:Object"/>
-         <details key="baseType" value="ENUMPlan_Quelle"/>
+         <details key="name"
+                  value="ENUMPlan_Quelle:Object"/>
+         <details key="baseType"
+                  value="ENUMPlan_Quelle"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMStreckeRichtung">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMStreckeRichtung">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMStrecke_Richtung"/>
+         <details key="name"
+                  value="ENUMStrecke_Richtung"/>
       </eAnnotations>
-      <eLiterals name="ENUMStrecke_Richtung_a" literal="a"/>
-      <eLiterals name="ENUMStrecke_Richtung_b" value="1" literal="b"/>
-      <eLiterals name="ENUMStrecke_Richtung_sonstige" value="2" literal="sonstige"/>
+      <eLiterals name="ENUMStrecke_Richtung_a"
+                 literal="a"/>
+      <eLiterals name="ENUMStrecke_Richtung_b"
+                 value="1"
+                 literal="b"/>
+      <eLiterals name="ENUMStrecke_Richtung_sonstige"
+                 value="2"
+                 literal="sonstige"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMStreckeRichtungObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMStrecke_Richtung:Object"/>
-         <details key="baseType" value="ENUMStrecke_Richtung"/>
+         <details key="name"
+                  value="ENUMStrecke_Richtung:Object"/>
+         <details key="baseType"
+                  value="ENUMStrecke_Richtung"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMTBArt">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMTBArt">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMTB_Art"/>
+         <details key="name"
+                  value="ENUMTB_Art"/>
       </eAnnotations>
-      <eLiterals name="ENUMTB_Art_Bahnsteig_ungenutzt" literal="Bahnsteig_ungenutzt"/>
+      <eLiterals name="ENUMTB_Art_Bahnsteig_ungenutzt"
+                 literal="Bahnsteig_ungenutzt"/>
       <eLiterals name="ENUMTB_Art_Personenunterfuehrung"
                  value="1"
                  literal="Personenunterfuehrung"/>
       <eLiterals name="ENUMTB_Art_Bahnsteigabsenkung"
                  value="2"
                  literal="Bahnsteigabsenkung"/>
-      <eLiterals name="ENUMTB_Art_Durchlass" value="3" literal="Durchlass"/>
+      <eLiterals name="ENUMTB_Art_Durchlass"
+                 value="3"
+                 literal="Durchlass"/>
       <eLiterals name="ENUMTB_Art_Eisenbahnkreuzungsbauwerk_oben"
                  value="4"
                  literal="Eisenbahnkreuzungsbauwerk_oben"/>
@@ -378,8 +592,12 @@
       <eLiterals name="ENUMTB_Art_Schutzwand_rechts"
                  value="8"
                  literal="Schutzwand_rechts"/>
-      <eLiterals name="ENUMTB_Art_sonstige" value="9" literal="sonstige"/>
-      <eLiterals name="ENUMTB_Art_Tunnel" value="10" literal="Tunnel"/>
+      <eLiterals name="ENUMTB_Art_sonstige"
+                 value="9"
+                 literal="sonstige"/>
+      <eLiterals name="ENUMTB_Art_Tunnel"
+                 value="10"
+                 literal="Tunnel"/>
       <eLiterals name="ENUMTB_Art_Ueberfuehrung_ueber_Eisenbahn"
                  value="11"
                  literal="Ueberfuehrung_ueber_Eisenbahn"/>
@@ -388,66 +606,106 @@
                  name="ENUMTBArtObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMTB_Art:Object"/>
-         <details key="baseType" value="ENUMTB_Art"/>
+         <details key="name"
+                  value="ENUMTB_Art:Object"/>
+         <details key="baseType"
+                  value="ENUMTB_Art"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMTOPAnschluss">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMTOPAnschluss">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMTOP_Anschluss"/>
+         <details key="name"
+                  value="ENUMTOP_Anschluss"/>
       </eAnnotations>
-      <eLiterals name="ENUMTOP_Anschluss_Ende" literal="Ende"/>
+      <eLiterals name="ENUMTOP_Anschluss_Ende"
+                 literal="Ende"/>
       <eLiterals name="ENUMTOP_Anschluss_Ende_Bestdig"
                  value="1"
                  literal="Ende_Bestdig"/>
-      <eLiterals name="ENUMTOP_Anschluss_Links" value="2" literal="Links"/>
+      <eLiterals name="ENUMTOP_Anschluss_Links"
+                 value="2"
+                 literal="Links"/>
       <eLiterals name="ENUMTOP_Anschluss_Meridiansprung"
                  value="3"
                  literal="Meridiansprung"/>
-      <eLiterals name="ENUMTOP_Anschluss_RB_Grenze" value="4" literal="RB_Grenze"/>
-      <eLiterals name="ENUMTOP_Anschluss_Rechts" value="5" literal="Rechts"/>
-      <eLiterals name="ENUMTOP_Anschluss_Schnitt" value="6" literal="Schnitt"/>
-      <eLiterals name="ENUMTOP_Anschluss_sonstige" value="7" literal="sonstige"/>
-      <eLiterals name="ENUMTOP_Anschluss_Spitze" value="8" literal="Spitze"/>
+      <eLiterals name="ENUMTOP_Anschluss_RB_Grenze"
+                 value="4"
+                 literal="RB_Grenze"/>
+      <eLiterals name="ENUMTOP_Anschluss_Rechts"
+                 value="5"
+                 literal="Rechts"/>
+      <eLiterals name="ENUMTOP_Anschluss_Schnitt"
+                 value="6"
+                 literal="Schnitt"/>
+      <eLiterals name="ENUMTOP_Anschluss_sonstige"
+                 value="7"
+                 literal="sonstige"/>
+      <eLiterals name="ENUMTOP_Anschluss_Spitze"
+                 value="8"
+                 literal="Spitze"/>
       <eLiterals name="ENUMTOP_Anschluss_Streckenwechsel"
                  value="9"
                  literal="Streckenwechsel"/>
-      <eLiterals name="ENUMTOP_Anschluss_Verbindung" value="10" literal="Verbindung"/>
+      <eLiterals name="ENUMTOP_Anschluss_Verbindung"
+                 value="10"
+                 literal="Verbindung"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMTOPAnschlussObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMTOP_Anschluss:Object"/>
-         <details key="baseType" value="ENUMTOP_Anschluss"/>
+         <details key="name"
+                  value="ENUMTOP_Anschluss:Object"/>
+         <details key="baseType"
+                  value="ENUMTOP_Anschluss"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMTPArt">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMTPArt">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMTP_Art"/>
+         <details key="name"
+                  value="ENUMTP_Art"/>
       </eAnnotations>
-      <eLiterals name="ENUMTP_Art_Bahnsteigmonitor" literal="Bahnsteigmonitor"/>
-      <eLiterals name="ENUMTP_Art_FBOA" value="1" literal="FBOA"/>
+      <eLiterals name="ENUMTP_Art_Bahnsteigmonitor"
+                 literal="Bahnsteigmonitor"/>
+      <eLiterals name="ENUMTP_Art_FBOA"
+                 value="1"
+                 literal="FBOA"/>
       <eLiterals name="ENUMTP_Art_Bahnsteigspiegel"
                  value="2"
                  literal="Bahnsteigspiegel"/>
-      <eLiterals name="ENUMTP_Art_Gebaeude" value="3" literal="Gebaeude"/>
-      <eLiterals name="ENUMTP_Art_HOA" value="4" literal="HOA"/>
-      <eLiterals name="ENUMTP_Art_sonstige" value="5" literal="sonstige"/>
-      <eLiterals name="ENUMTP_Art_Mast" value="6" literal="Mast"/>
-      <eLiterals name="ENUMTP_Art_Zughaltesensor" value="7" literal="Zughaltesensor"/>
+      <eLiterals name="ENUMTP_Art_Gebaeude"
+                 value="3"
+                 literal="Gebaeude"/>
+      <eLiterals name="ENUMTP_Art_HOA"
+                 value="4"
+                 literal="HOA"/>
+      <eLiterals name="ENUMTP_Art_sonstige"
+                 value="5"
+                 literal="sonstige"/>
+      <eLiterals name="ENUMTP_Art_Mast"
+                 value="6"
+                 literal="Mast"/>
+      <eLiterals name="ENUMTP_Art_Zughaltesensor"
+                 value="7"
+                 literal="Zughaltesensor"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMTPArtObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMTP_Art:Object"/>
-         <details key="baseType" value="ENUMTP_Art"/>
+         <details key="name"
+                  value="ENUMTP_Art:Object"/>
+         <details key="baseType"
+                  value="ENUMTP_Art"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMUeberhoehungslinieForm">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMUeberhoehungslinieForm">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMUeberhoehungslinie_Form"/>
+         <details key="name"
+                  value="ENUMUeberhoehungslinie_Form"/>
       </eAnnotations>
       <eLiterals name="ENUMUeberhoehungslinie_Form_gleichbleibend"
                  literal="gleichbleibend"/>
@@ -471,18 +729,24 @@
                  name="ENUMUeberhoehungslinieFormObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMUeberhoehungslinie_Form:Object"/>
-         <details key="baseType" value="ENUMUeberhoehungslinie_Form"/>
+         <details key="name"
+                  value="ENUMUeberhoehungslinie_Form:Object"/>
+         <details key="baseType"
+                  value="ENUMUeberhoehungslinie_Form"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMVProfilArt">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMVProfilArt">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-         <details key="documentation" value="ES: Erhöhte Seitenbeschleunigung"/>
+         <details key="documentation"
+                  value="ES: Erhöhte Seitenbeschleunigung"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMV_Profil_Art"/>
+         <details key="name"
+                  value="ENUMV_Profil_Art"/>
       </eAnnotations>
-      <eLiterals name="ENUMV_Profil_Art_anzeigegeführt" literal="anzeigegeführt"/>
+      <eLiterals name="ENUMV_Profil_Art_anzeigegeführt"
+                 literal="anzeigegeführt"/>
       <eLiterals name="ENUMV_Profil_Art_anzeigegeführt_ES"
                  value="1"
                  literal="anzeigegeführt ES"/>
@@ -492,7 +756,9 @@
       <eLiterals name="ENUMV_Profil_Art_signalgeführt_ES"
                  value="3"
                  literal="signalgeführt ES"/>
-      <eLiterals name="ENUMV_Profil_Art_sonstige" value="4" literal="sonstige"/>
+      <eLiterals name="ENUMV_Profil_Art_sonstige"
+                 value="4"
+                 literal="sonstige"/>
       <eLiterals name="ENUMV_Profil_Art_windabhängig"
                  value="5"
                  literal="windabhängig"/>
@@ -501,16 +767,20 @@
                  name="ENUMVProfilArtObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMV_Profil_Art:Object"/>
-         <details key="baseType" value="ENUMV_Profil_Art"/>
+         <details key="name"
+                  value="ENUMV_Profil_Art:Object"/>
+         <details key="baseType"
+                  value="ENUMV_Profil_Art"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="GEO_Form_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGEO_Form"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGEO_Form"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -518,8 +788,10 @@
                            eType="#//ENUMGEOFormObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -527,7 +799,8 @@
                  name="GEO_KAD_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGEO_KAD"/>
+         <details key="name"
+                  value="TGEO_KAD"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
       </eAnnotations>
@@ -536,8 +809,10 @@
                  name="GEO_KAD_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGEO_KAD"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGEO_KAD"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -545,8 +820,10 @@
                            eType="#//GEO_KAD_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -562,8 +839,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGEO_Kante"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGEO_Kante"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="gEOKanteAllg"
@@ -572,8 +851,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GEO_Kante_Allg"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GEO_Kante_Allg"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -587,8 +868,10 @@
                      value="Durch den Verweis auf eine TOP_Kante wird die GEO_Kante als Gleislinie, beim Verweis auf eine Strecke als Kilometrierungslinie und beim Verweis auf eine Trasse_Kante als Kabel- bzw. Medientrassenlinie definiert. Der Startpunkt einer TOP-Kante ist über die Verweise auf einen TOP-Knoten A und anschließend auf einen GEO-Knoten A oder GEO-Knoten B identifizierbar. Wenn der Verweis auf GEO-Knoten A fällt, liegt der Verlauf der GEO-Kante in Richtung der TOP-Kante, andernfalls in Gegenrichtung. Weitere GEO-Kanten werden mit End- und Anfangs-Knoten verbunden, bis auf den End-Knoten einer GEO-Kante wiederum von einem TOP-Knoten B verwiesen wird. DIe Verfahrensweise ist bei Trassen-Kanten analog."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_GEO_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_GEO_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -602,8 +885,10 @@
                      value="Verweis auf den GEO Knoten am Anfang der GEO Kante. Durch die Angabe des Anfangs- sowie des Endknotens wird die Richtung der GEO Kante definiert."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_GEO_Knoten_A"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_GEO_Knoten_A"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -617,15 +902,20 @@
                      value="Verweis auf den GEO Knoten am Ende der GEO Kante. Durch die Angabe des Anfangs- sowie des Endknotens wird die Richtung der GEO Kante definiert."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_GEO_Knoten_B"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_GEO_Knoten_B"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="GEO_Kante_Allg_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="GEO_Kante_Allg_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGEO_Kante_Allg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGEO_Kante_Allg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="gEOForm"
@@ -638,8 +928,10 @@
                      value="Beschreibung der geometrischen Form der Gleis-Kante. In Abhängigkeit von der Geo_Form werden die Attribute GEO Radius A und GEO Radius B mit entsprechenden Werten befüllt oder bleiben LEER. Beispiel: GEO_Form: Gerade GEO_Radius_A = LEER GEO_Radius_B = LEER GEO_Form: BOGEN GEO_Radius_A = Radius GEO_Radius_B = LEER "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GEO_Form"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GEO_Form"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -652,8 +944,10 @@
                      value="Bezeichnung der topografischen Kantenadresse. Aktuell ist eine Verwendung bei der Übernahme von Trassierungsdaten (ASCIBAHN) vorgesehen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GEO_KAD"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GEO_KAD"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -671,8 +965,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;+/-[0.00000..9999.99999]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GEO_Laenge"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GEO_Laenge"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -689,8 +985,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[-99999.99999..-10.00000|0.00000|10.00000..99999.99999]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GEO_Radius_A"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GEO_Radius_A"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -707,8 +1005,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[-99999.99999..-10.00000|0.00000|10.00000..99999.99999]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GEO_Radius_B"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GEO_Radius_B"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -725,8 +1025,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[0.00000...399.99999]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GEO_Richtungswinkel"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GEO_Richtungswinkel"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -744,8 +1046,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;GND&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Plan_Quelle"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Plan_Quelle"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -761,8 +1065,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGEO_Knoten"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGEO_Knoten"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="gEOPAD"
@@ -778,8 +1084,10 @@
                      value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                               &#xA;    &lt;ppi:Patternbeschreibung&gt;[1..20&lt;/ppi:Patternbeschreibung&gt;&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                       &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GEO_PAD"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GEO_PAD"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -787,8 +1095,10 @@
                  name="GEO_Koordinatensystem_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGEO_Koordinatensystem"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGEO_Koordinatensystem"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -796,8 +1106,10 @@
                            eType="#//ENUMGEOKoordinatensystemObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -805,18 +1117,22 @@
                  name="GEO_Laenge_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGEO_Laenge"/>
+         <details key="name"
+                  value="TGEO_Laenge"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
-         <details key="pattern" value="-?(0|[1-9][0-9]{0,3})\.[0-9]{5}"/>
+         <details key="pattern"
+                  value="-?(0|[1-9][0-9]{0,3})\.[0-9]{5}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="GEO_Laenge_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGEO_Laenge"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGEO_Laenge"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -824,8 +1140,10 @@
                            eType="#//GEO_Laenge_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -833,18 +1151,22 @@
                  name="GEO_PAD_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGEO_PAD"/>
+         <details key="name"
+                  value="TGEO_PAD"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
-         <details key="pattern" value=".{1,20}"/>
+         <details key="pattern"
+                  value=".{1,20}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="GEO_PAD_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGEO_PAD"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGEO_PAD"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -852,8 +1174,10 @@
                            eType="#//GEO_PAD_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -869,8 +1193,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGEO_Punkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGEO_Punkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="gEOPunktAllg"
@@ -879,8 +1205,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GEO_Punkt_Allg"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GEO_Punkt_Allg"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -893,8 +1221,10 @@
                      value="Verweis auf eine GEO_Kante, wenn der GEO_Punkt als Stützpunkt einer Polylinie fungiert. Eine Polylinie kann durch bis zu 999&#xA;GEO_Punkte beschrieben werden. Es ist jedoch auch zulässig, eine virtuelle Polylinie ohne GEO_Punkte&#xA;darzustellen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_GEO_Kante"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_GEO_Kante"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -907,15 +1237,20 @@
                      value="ID des GEO_Knoten, auf den dieser GEO Punkt verweist. Einem GEO Knoten können über diesen Verweis mehrere GEO_Punkte zugewiesen werden. Das ist erforderlich, wenn ein GEO_Knoten in unterschiedlichen Koordinatensystemen zugeordnet ist. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_GEO_Knoten"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_GEO_Knoten"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="GEO_Punkt_Allg_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="GEO_Punkt_Allg_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGEO_Punkt_Allg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGEO_Punkt_Allg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="gEOKoordinatensystem"
@@ -928,8 +1263,10 @@
                      value="Angabe der topographischen Koordinaten des Geo-Punkts, in der Regel in LSys-Koordinaten. Neben den eigentlichen Koordinaten (x, y, z) wird auch das konkrete Koordinatensystem in der Bezeichnung dargestellt. Bei übergreifenden Koordinaten in Grenzbereichen, die nicht mit LSys darstellbar sind, ist der Wert \&#34;sonstige\&#34; zu verwenden und das Koordinatensystem mittels Bearbeitungsvermerk anzugeben. Folgende Wertigkeiten (3 Zeichen) liefert das Attribut LSys (s. a. Spezifikation Gleisnetzdaten der DB): 1. Zeichen: C Meridianstreifen 6° östliche Länge; D Meridianstreifen 9° östliche Länge; E Meridianstreifen 12° östliche Länge; F Meridianstreifen 15° östliche Länge. 2. Zeichen: A System RD/83 - Bessel-Ellipsoid, Datumspunkt Rauenberg (westliche Bundesländer, Sachsen); B System PD/83 - Bessel-Ellipsoid, Datumspunkt Potsdam (Thüringen); C System 42/83 - Krassowski-Ellipsoid, Datumspunkt Pulkowo (Brandenburg, Mecklenburg, Sachsen-Anhalt); R DB-Referenzsystem (Kartesische Koordinaten); S System Soldner - Netz 88, Datumspunkt Müggelberg (Berlin). 3. Zeichen: 0 DB-GIS Bezugsystem; A..9 Sonstige kartesische Koordinaten."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GEO_Koordinatensystem"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GEO_Koordinatensystem"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -947,8 +1284,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GK_X"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GK_X"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -966,8 +1305,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GK_Y"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GK_Y"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -984,8 +1325,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GK_Z"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GK_Z"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1003,8 +1346,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;GND&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Plan_Quelle"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Plan_Quelle"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1012,18 +1357,22 @@
                  name="GEO_Radius_A_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGEO_Radius_A"/>
+         <details key="name"
+                  value="TGEO_Radius_A"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
-         <details key="pattern" value="0\.00000|(-?[1-9][0-9]{1,4}\.[0-9]{5})"/>
+         <details key="pattern"
+                  value="0\.00000|(-?[1-9][0-9]{1,4}\.[0-9]{5})"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="GEO_Radius_A_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGEO_Radius_A"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGEO_Radius_A"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1031,8 +1380,10 @@
                            eType="#//GEO_Radius_A_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1040,18 +1391,22 @@
                  name="GEO_Radius_B_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGEO_Radius_B"/>
+         <details key="name"
+                  value="TGEO_Radius_B"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
-         <details key="pattern" value="0\.00000|(-?[1-9][0-9]{1,4}\.[0-9]{5})"/>
+         <details key="pattern"
+                  value="0\.00000|(-?[1-9][0-9]{1,4}\.[0-9]{5})"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="GEO_Radius_B_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGEO_Radius_B"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGEO_Radius_B"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1059,8 +1414,10 @@
                            eType="#//GEO_Radius_B_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1068,17 +1425,22 @@
                  name="GEO_Richtungswinkel_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGEO_Richtungswinkel"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
-         <details key="pattern" value="(0|[1-9][0-9]{0,1}|[1-3][0-9]{2})\.[0-9]{5}"/>
+         <details key="name"
+                  value="TGEO_Richtungswinkel"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+         <details key="pattern"
+                  value="(0|[1-9][0-9]{0,1}|[1-3][0-9]{2})\.[0-9]{5}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="GEO_Richtungswinkel_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGEO_Richtungswinkel"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGEO_Richtungswinkel"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1086,8 +1448,10 @@
                            eType="#//GEO_Richtungswinkel_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1095,7 +1459,8 @@
                  name="Geschwindigkeit_Type"
                  instanceClassName="java.math.BigInteger">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGeschwindigkeit"/>
+         <details key="name"
+                  value="TGeschwindigkeit"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"/>
       </eAnnotations>
@@ -1104,8 +1469,10 @@
                  name="Geschwindigkeit_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGeschwindigkeit"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGeschwindigkeit"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1113,8 +1480,10 @@
                            eType="#//Geschwindigkeit_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1130,8 +1499,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGeschwindigkeitsprofil"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGeschwindigkeitsprofil"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="geschwindigkeitsprofilAllg"
@@ -1140,16 +1511,20 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Geschwindigkeitsprofil_Allg"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Geschwindigkeitsprofil_Allg"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Geschwindigkeitsprofil_Allg_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGeschwindigkeitsprofil_Allg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGeschwindigkeitsprofil_Allg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="anzeigegefuehrtESKategorie"
@@ -1161,8 +1536,10 @@
                      value="Kategorie für Geschwindigkeitsprofile der Art \&#34;anzeigefeführt ES\&#34;, z. B. Gültigkeit für Reise- oder Güterzüge."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Anzeigegefuehrt_ES_Kategorie"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Anzeigegefuehrt_ES_Kategorie"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1176,8 +1553,10 @@
                      value="Zulässige Geschwindigkeit nach jeweiligem Geschwindigkeitsprofil. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Geschwindigkeit"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Geschwindigkeit"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1187,11 +1566,14 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="Art des Geschwindigkeitsprofils."/>
+            <details key="documentation"
+                     value="Art des Geschwindigkeitsprofils."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="V_Profil_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="V_Profil_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1199,8 +1581,10 @@
                  name="GK_X_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGK_X"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+         <details key="name"
+                  value="TGK_X"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
          <details key="pattern"
                   value="((0|(-?[1-9][0-9]{0,}))\.[0-9]{5})|(-0\.([1-9][0-9]{4}|[0-9][1-9][0-9]{3}|[0-9]{2}[1-9][0-9]{2}|[0-9]{3}[1-9][0-9]|[0-9]{4}[1-9]))"/>
       </eAnnotations>
@@ -1209,8 +1593,10 @@
                  name="GK_X_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGK_X"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGK_X"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1218,8 +1604,10 @@
                            eType="#//GK_X_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1227,8 +1615,10 @@
                  name="GK_Y_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGK_Y"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+         <details key="name"
+                  value="TGK_Y"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
          <details key="pattern"
                   value="((0|(-?[1-9][0-9]{0,}))\.[0-9]{5})|(-0\.([1-9][0-9]{4}|[0-9][1-9][0-9]{3}|[0-9]{2}[1-9][0-9]{2}|[0-9]{3}[1-9][0-9]|[0-9]{4}[1-9]))"/>
       </eAnnotations>
@@ -1237,8 +1627,10 @@
                  name="GK_Y_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGK_Y"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGK_Y"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1246,8 +1638,10 @@
                            eType="#//GK_Y_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1255,8 +1649,10 @@
                  name="GK_Z_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGK_Z"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+         <details key="name"
+                  value="TGK_Z"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
          <details key="pattern"
                   value="((0|(-?[1-9][0-9]{0,}))\.[0-9]{5})|(-0\.([1-9][0-9]{4}|[0-9][1-9][0-9]{3}|[0-9]{2}[1-9][0-9]{2}|[0-9]{3}[1-9][0-9]|[0-9]{4}[1-9]))"/>
       </eAnnotations>
@@ -1265,8 +1661,10 @@
                  name="GK_Z_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGK_Z"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGK_Z"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1274,8 +1672,10 @@
                            eType="#//GK_Z_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1283,15 +1683,18 @@
                  name="Hoehenlinie"
                  eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-         <details key="documentation" value="Höhenverlauf zwischen zwei Höhenpunkten."/>
+         <details key="documentation"
+                  value="Höhenverlauf zwischen zwei Höhenpunkten."/>
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CHoehenlinie"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CHoehenlinie"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="hoehenlinieAllg"
@@ -1300,8 +1703,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Hoehenlinie_Allg"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Hoehenlinie_Allg"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1315,8 +1720,10 @@
                      value="Verweis auf den Hoehenpunkt am Anfang der Hoehenlinie. Durch die Angabe des Anfangs- sowie des Endpunkts wird die Richtung der Hoehenlinie definiert."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Hoehenpunkt_A"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Hoehenpunkt_A"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1330,15 +1737,20 @@
                      value="Verweis auf den Hoehenpunkt am Ende der Hoehenlinie. Durch die Angabe des Anfangs- sowie des Endpunkts wird die Richtung der Hoehenlinie definiert."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Hoehenpunkt_B"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Hoehenpunkt_B"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Hoehenlinie_Allg_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Hoehenlinie_Allg_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CHoehenlinie_Allg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CHoehenlinie_Allg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="hoehenlinieForm"
@@ -1347,11 +1759,14 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="Form der Hoehenlinie, z. B. Gerade."/>
+            <details key="documentation"
+                     value="Form der Hoehenlinie, z. B. Gerade."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Hoehenlinie_Form"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Hoehenlinie_Form"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1369,8 +1784,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[0.000..99999.999]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Hoehenlinie_Laenge"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Hoehenlinie_Laenge"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1388,8 +1805,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;GND&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Plan_Quelle"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Plan_Quelle"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1397,8 +1816,10 @@
                  name="Hoehenlinie_Form_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCHoehenlinie_Form"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCHoehenlinie_Form"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1406,8 +1827,10 @@
                            eType="#//ENUMHoehenlinieFormObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1415,18 +1838,22 @@
                  name="Hoehenlinie_Laenge_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="THoehenlinie_Laenge"/>
+         <details key="name"
+                  value="THoehenlinie_Laenge"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
-         <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
+         <details key="pattern"
+                  value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Hoehenlinie_Laenge_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCHoehenlinie_Laenge"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCHoehenlinie_Laenge"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1434,8 +1861,10 @@
                            eType="#//Hoehenlinie_Laenge_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1451,8 +1880,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CHoehenpunkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CHoehenpunkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="hoehenpunktAllg"
@@ -1461,15 +1892,20 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Hoehenpunkt_Allg"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Hoehenpunkt_Allg"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Hoehenpunkt_Allg_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Hoehenpunkt_Allg_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CHoehenpunkt_Allg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CHoehenpunkt_Allg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="gEOPAD"
@@ -1485,8 +1921,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt; [7..11] Alphanumerische Zeichenkette, die ersten vier Zeichen sind Ziffern [0..9], die 5. und 6. Stelle sind Großbuchstaben [A..Z] und die letzten fünf Zeichen sind Zahlen [1 .. 99999] ohne führende Nullen. &lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GEO_PAD"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GEO_PAD"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1499,8 +1937,10 @@
                      value="Aufnahmedatum der Höhenwerte des Hoehenpunktes. GND: Punktdatum; Ivl und Ivmg: Datum der letzten Bearbeitung; Kopie: Datum aus kopierter Höhe; Neutrassierung: Freigabedatum; sonstige: Datum der letzten Bearbeitung.&#xA;Die Information wird zukünftig über das Attribut Datum_Regelwerk abgebildet. Das Attribut soll daher langfristig entfallen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Hoehenpunkt_Datum"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Hoehenpunkt_Datum"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1518,8 +1958,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[-100.000..3000.000]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Hoehenpunkt_Hoehe"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Hoehenpunkt_Hoehe"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1532,8 +1974,10 @@
                      value="Angabe, auf welchem Höhensystem die Angabe der Höhe beruht. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="HSystem"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="HSystem"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1550,8 +1994,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[0.000..100.000]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Neigung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Neigung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1568,8 +2014,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;GND&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Plan_Quelle"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Plan_Quelle"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1577,8 +2025,10 @@
                  name="Hoehenpunkt_Datum_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCHoehenpunkt_Datum"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCHoehenpunkt_Datum"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1586,8 +2036,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1595,8 +2047,10 @@
                  name="Hoehenpunkt_Hoehe_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="THoehenpunkt_Hoehe"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+         <details key="name"
+                  value="THoehenpunkt_Hoehe"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
          <details key="pattern"
                   value="-100\.000|-([1-9][0-9]{0,1}\.[0-9]{3})|(-0\.[1-9][0-9]{2}|-0\.0[1-9][0-9]|-0\.0[0-9][1-9])|((0|[1-9][0-9]{0,2}|[1-2][0-9]{3})\.[0-9]{3})|3000\.000"/>
       </eAnnotations>
@@ -1605,8 +2059,10 @@
                  name="Hoehenpunkt_Hoehe_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCHoehenpunkt_Hoehe"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCHoehenpunkt_Hoehe"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1614,8 +2070,10 @@
                            eType="#//Hoehenpunkt_Hoehe_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1623,8 +2081,10 @@
                  name="HSystem_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCHSystem"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCHSystem"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1632,8 +2092,10 @@
                            eType="#//ENUMHSystemObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1641,7 +2103,8 @@
                  name="Kantenname_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TKantenname"/>
+         <details key="name"
+                  value="TKantenname"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
       </eAnnotations>
@@ -1650,8 +2113,10 @@
                  name="Kantenname_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCKantenname"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCKantenname"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1659,8 +2124,10 @@
                            eType="#//Kantenname_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1668,18 +2135,22 @@
                  name="Knotenname_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TKnotenname"/>
+         <details key="name"
+                  value="TKnotenname"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
-         <details key="pattern" value=".{1,20}"/>
+         <details key="pattern"
+                  value=".{1,20}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Knotenname_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCKnotenname"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCKnotenname"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1687,8 +2158,10 @@
                            eType="#//Knotenname_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1696,8 +2169,10 @@
                  name="Neigung_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TNeigung"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+         <details key="name"
+                  value="TNeigung"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
          <details key="pattern"
                   value="0\.000|([1-9][0-9]{0,1}\.[0-9]{3})|(0\.[1-9][0-9]{2}|0\.0[1-9][0-9]|0\.0[0-9][1-9])|((0|[1-9][0-9]{0,1})\.[0-9]{3})|100\.000"/>
       </eAnnotations>
@@ -1706,8 +2181,10 @@
                  name="Neigung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCNeigung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCNeigung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1715,8 +2192,10 @@
                            eType="#//Neigung_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1732,8 +2211,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="COertlichkeit"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="COertlichkeit"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bezeichnung"
@@ -1742,8 +2223,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bezeichnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bezeichnung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1756,8 +2239,10 @@
                      value="Verweis zur (betrieblichen) Zuordnung von Bahnhofsteilen zu Bahnhöfen und von Betriebsstellen untereinander. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Oertlichkeit"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Oertlichkeit"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1770,8 +2255,10 @@
                      value="Bei Awanst: Angabe der Örtlichkeit, von der die Awanst bedient wird."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Oertlichkeit_Awanst_Bedient"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Oertlichkeit_Awanst_Bedient"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1785,8 +2272,10 @@
                      value="Verweis auf einen bzw. mehrere Streckenpunkt(e) zur Lokalisierung der Örtlichkeit im Netz. Die Information wird für die Erstellung der Ausgabeformate benötigt."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Strecke_Punkt"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Strecke_Punkt"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1796,8 +2285,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Oertlichkeit_Allg"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Oertlichkeit_Allg"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1805,18 +2296,22 @@
                  name="Oertlichkeit_Abkuerzung_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TOertlichkeit_Abkuerzung"/>
+         <details key="name"
+                  value="TOertlichkeit_Abkuerzung"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
-         <details key="pattern" value="[A-Z][A-Z0-9%20]{1,4}"/>
+         <details key="pattern"
+                  value="[A-Z][A-Z0-9%20]{1,4}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Oertlichkeit_Abkuerzung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCOertlichkeit_Abkuerzung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCOertlichkeit_Abkuerzung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1824,15 +2319,20 @@
                            eType="#//Oertlichkeit_Abkuerzung_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Oertlichkeit_Allg_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Oertlichkeit_Allg_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="COertlichkeit_Allg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="COertlichkeit_Allg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="oertlichkeitArt"
@@ -1845,8 +2345,10 @@
                      value="Art der Örtlichkeit. Die Befüllungen sind der ENUM-Liste von Bahnanlagen und Betriebsstellen des Netzes, weiterer Örtlichkeiten mit Fahrplanzeiten sowie sonstiger Punkte zu entnehmen und müssen in der Regel mit der Angabe in der Ril 100 übereinstimmen. Ab der Version 1.8.0 wird die Schreibweise der ENUM-Werte identisch zur Ril 100 übernommen, indem Umlaute und Leezeichen verwendet werden. Die im Glossar mit (E) gekennzeichneten Werte entfallen zukünftig und sollen daher nicht mehr für Neuanwendungen genutzt werden. DB-Regelwerk Die verwendeten Codierungen sind im Anhang 1 Abschnitt 3 der Richtlinie 100.0001 zusammengestellt und in ihrer Bedeutung erklärt. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Oertlichkeit_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Oertlichkeit_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1859,8 +2361,10 @@
                      value="Gültig ab ist eine Angabe zum ersten Gültigkeitstag der Abkürzung oder eine andere Angabe gemäß Regelwerk. DB-Regelwerk Die Angaben zur Gültigkeit sind in Richtlinie 100.0001 Abschnitt 4 (2) geregelt."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Oertlichkeit_Gueltig_Ab"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Oertlichkeit_Gueltig_Ab"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1873,8 +2377,10 @@
                      value="Gültig bis ist eine Angabe zum letzten Gültigkeitstag der Abkürzung oder eine andere Angabe gemäß Regelwerk. DB-Regelwerk Die Angaben zur Gültigkeit sind in Richtlinie 100.0001 Abschnitt 4 (2) geregelt."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Oertlichkeit_Gueltig_Bis"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Oertlichkeit_Gueltig_Bis"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1882,8 +2388,10 @@
                  name="Oertlichkeit_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCOertlichkeit_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCOertlichkeit_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1891,15 +2399,20 @@
                            eType="#//ENUMOertlichkeitArtObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Oertlichkeit_Bezeichnung_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Oertlichkeit_Bezeichnung_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="COertlichkeit_Bezeichnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="COertlichkeit_Bezeichnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="oertlichkeitAbkuerzung"
@@ -1916,8 +2429,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt; [2..5] Großbuchstaben, Zahlen und Leerzeichen ohne Umlaute, führende Zahlen sowie führende Leerzeichen&lt;/ppi:Patternbeschreibung&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung_Abweichend&gt;[2..5] Großbuchstaben ohne Umlaute&lt;/ppi:Patternbeschreibung_Abweichend&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Oertlichkeit_Abkuerzung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Oertlichkeit_Abkuerzung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1934,8 +2449,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[1..16]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Oertlichkeit_Kurzname"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Oertlichkeit_Kurzname"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -1953,8 +2470,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[1..40] darf sich innerhalb eines Datenbestandes nicht wiederholen beinhaltet rechtsbündig einzutragende Ergänzungen zur Unterscheidung gleichnamiger Örtlichkeiten muss mit Orts- bzw. Ortsteilnamen beginnen &lt;/ppi:Patternbeschreibung&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung_Abweichend&gt;[1..40]&lt;/ppi:Patternbeschreibung_Abweichend&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Oertlichkeit_Langname"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Oertlichkeit_Langname"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1962,8 +2481,10 @@
                  name="Oertlichkeit_Gueltig_Ab_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCOertlichkeit_Gueltig_Ab"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCOertlichkeit_Gueltig_Ab"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1971,8 +2492,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1980,8 +2503,10 @@
                  name="Oertlichkeit_Gueltig_Bis_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCOertlichkeit_Gueltig_Bis"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCOertlichkeit_Gueltig_Bis"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1989,8 +2514,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1998,18 +2525,22 @@
                  name="Oertlichkeit_Kurzname_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TOertlichkeit_Kurzname"/>
+         <details key="name"
+                  value="TOertlichkeit_Kurzname"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
-         <details key="pattern" value=".{1,16}"/>
+         <details key="pattern"
+                  value=".{1,16}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Oertlichkeit_Kurzname_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCOertlichkeit_Kurzname"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCOertlichkeit_Kurzname"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2017,8 +2548,10 @@
                            eType="#//Oertlichkeit_Kurzname_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2026,18 +2559,22 @@
                  name="Oertlichkeit_Langname_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TOertlichkeit_Langname"/>
+         <details key="name"
+                  value="TOertlichkeit_Langname"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
-         <details key="pattern" value=".{1,40}"/>
+         <details key="pattern"
+                  value=".{1,40}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Oertlichkeit_Langname_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCOertlichkeit_Langname"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCOertlichkeit_Langname"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2045,8 +2582,10 @@
                            eType="#//Oertlichkeit_Langname_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2054,8 +2593,10 @@
                  name="Plan_Quelle_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCPlan_Quelle"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCPlan_Quelle"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2063,8 +2604,10 @@
                            eType="#//ENUMPlanQuelleObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2080,8 +2623,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CStrecke"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CStrecke"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bezeichnung"
@@ -2094,15 +2639,20 @@
                      value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bezeichnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bezeichnung"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Strecke_Bezeichnung_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Strecke_Bezeichnung_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CStrecke_Bezeichnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CStrecke_Bezeichnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bezeichnungStrecke"
@@ -2119,8 +2669,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;  [4..6]; Die ersten vier Zeichen sind verpflichtend und bestehen aus Ziffern [0..9]. Zur zusätzlichen Kennung bei stark auseinander triftenden Kilometierungsachsen einer zweigleisigen Strecke wird ein [-] als fünftes Zeichen und ein alphanumerisches Zeichen [A..Z|a..z|0..9] als sechstes Zeichen verwendet. &lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bezeichnung_Strecke"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bezeichnung_Strecke"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2136,8 +2688,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo|ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CStrecke_Bremsweg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CStrecke_Bremsweg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bremsweg"
@@ -2154,8 +2708,10 @@
                      value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                               &#xA;    &lt;ppi:ProposedValue&gt;1000&lt;/ppi:ProposedValue&gt;&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                       &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bremsweg"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bremsweg"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2169,8 +2725,10 @@
                      value="Richtung der Strecke, für die der Bremsweg vorgegeben ist. Die Richtung wird topologisch über das Attribut Richtungsbezug (Bereich_Objekt) abgetragen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Strecke_Richtung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Strecke_Richtung"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2178,18 +2736,22 @@
                  name="Strecke_Meter_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TStrecke_Meter"/>
+         <details key="name"
+                  value="TStrecke_Meter"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
-         <details key="pattern" value="-?(0|[1-9][0-9]{0,5})\.[0-9]{3}"/>
+         <details key="pattern"
+                  value="-?(0|[1-9][0-9]{0,5})\.[0-9]{3}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Strecke_Meter_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCStrecke_Meter"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCStrecke_Meter"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2197,8 +2759,10 @@
                            eType="#//Strecke_Meter_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2214,8 +2778,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CStrecke_Punkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CStrecke_Punkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDGEOKnoten"
@@ -2227,8 +2793,10 @@
                      value="ID des GEO_Knoten, auf den der Strecke_Punkt verweist. Der Verweis ist nur zu befüllen, wenn auch eine Streckenlinie mit GEO-Daten vorhanden ist. Für jeden GEO_Knoten der Streckenachse wird dabei ein Strecke_Punkt erstellt."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_GEO_Knoten"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_GEO_Knoten"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2242,8 +2810,10 @@
                      value="Zuordnung eines Streckenpunktes zu einer Streckennummer."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Strecke"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Strecke"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2261,8 +2831,10 @@
                      value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                               &#xA;    &lt;ppi:Patternbeschreibung&gt;[-999999.999..0.000..999999.999]&lt;/ppi:Patternbeschreibung&gt;&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                       &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Strecke_Meter"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Strecke_Meter"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2270,8 +2842,10 @@
                  name="Strecke_Richtung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCStrecke_Richtung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCStrecke_Richtung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2279,8 +2853,10 @@
                            eType="#//ENUMStreckeRichtungObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2288,8 +2864,10 @@
                  name="TB_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCTB_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCTB_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2297,8 +2875,10 @@
                            eType="#//ENUMTBArtObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2306,7 +2886,8 @@
                  name="TB_Beschreibung_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TTB_Beschreibung"/>
+         <details key="name"
+                  value="TTB_Beschreibung"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
       </eAnnotations>
@@ -2315,8 +2896,10 @@
                  name="TB_Beschreibung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCTB_Beschreibung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCTB_Beschreibung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2324,8 +2907,10 @@
                            eType="#//TB_Beschreibung_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2341,8 +2926,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW|ETCS|Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CTechnischer_Bereich"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CTechnischer_Bereich"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="tBArt"
@@ -2354,8 +2941,10 @@
                      value="Art des technischen Bereichs. Anhand der in der Planung entstehenden Erfahrungen wird die ENUM-Liste erweitert. &#xA;Schutzwand: bauliches Element in unmittelbarer Nähe des Gleises, das bei der Platzierung von Elementen zu berücksichtigen ist (z. B. Stützmauer, Schallschutzwand)."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="TB_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="TB_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2369,8 +2958,10 @@
                      value="Verbale Beschreibung oder Bezeichnung des technischen Bereichs."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="TB_Beschreibung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="TB_Beschreibung"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2386,8 +2977,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW|ETCS|Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CTechnischer_Punkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CTechnischer_Punkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="tPArt"
@@ -2399,8 +2992,10 @@
                      value="Art des technischen Punktes. Anhand der in der Planung entstehenden Erfahrungen wird die ENUM-Liste erweitert."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="TP_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="TP_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2414,8 +3009,10 @@
                      value="Verbale Beschreibung oder Bezeichnung des technischen Punktes."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="TP_Beschreibung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="TP_Beschreibung"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2423,8 +3020,10 @@
                  name="TOP_Anschluss_A_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCTOP_Anschluss_A"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCTOP_Anschluss_A"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2432,8 +3031,10 @@
                            eType="#//ENUMTOPAnschlussObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2441,8 +3042,10 @@
                  name="TOP_Anschluss_B_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCTOP_Anschluss_B"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCTOP_Anschluss_B"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2450,8 +3053,10 @@
                            eType="#//ENUMTOPAnschlussObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2467,8 +3072,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CTOP_Kante"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CTOP_Kante"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDTOPKnotenA"
@@ -2481,8 +3088,10 @@
                      value="Verweis auf den TOP Knoten am Anfang der Kante. Beginn der laufenden Länge, d. h. laufende Länge == 0."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_TOP_Knoten_A"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_TOP_Knoten_A"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2496,8 +3105,10 @@
                      value="Verweis auf den TOP Knoten am Ende der Kante. Ende der laufenden Länge, d. h. laufende Länge = TOP Laenge."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_TOP_Knoten_B"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_TOP_Knoten_B"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2507,15 +3118,20 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="TOP_Kante_Allg"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="TOP_Kante_Allg"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="TOP_Kante_Allg_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="TOP_Kante_Allg_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CTOP_Kante_Allg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CTOP_Kante_Allg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="kantenname"
@@ -2527,8 +3143,10 @@
                      value="Bezeichnung für die Kante. Die Bezeichnung wird beispielsweise bei Neutrassierungen (ASCIBAHN) übernommen um eine Verknüpfung der gelieferten Trassierungsdaten mit den an den LST-Fachplaner übegebenen PlanPro-Geodaten sicherzustellen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Kantenname"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Kantenname"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2542,8 +3160,10 @@
                      value="Art des Anschlusses am Ende A der TOP_Kante. Eine TOP_Kante muss sowohl am Ende A als auch am Ende B auf einem TOP_Knoten verweisen. In der Regel schließen an einen TOP_Knoten weitere TOP_Kanten an. Wenn an einem TOP_Knoten nur eine TOP_Kante anschließt, endet an diesem Knoten die Topologie des Gleisnetzes. Nachfolgende Arten des Endes einer Topologie sind vorgesehen: Ende - reales Ende einer Gleislinie (z.B. Prellbock, Fähranleger, ...). Ende_Bestdig - temporäres Ende einer Gleislinie, die real weiterführt, aber deren Weiterführung noch nicht im Modell hinterlegt ist. Schnitt - Anschlusspunkt einer Neutrassierung an einen vorhandenen Bestand der Gleislinie. Im Bestand muss dieser Knoten nur ein GEO Punkt sein. Nach dem Einbinden der Neutrassierung in die Bestandsgleislage entfällt dieser TOP_Knoten durch eine neue durchlaufende TOP_Kante. Hinweis für die Fahrwegfindung (Routing): Endet ein Routing auf LINKS oder RECHTS, darf nur ein Fahrweg (Routing) vom gleichen Knoten über die SPITZE gesucht werden. Endet ein Routing auf SPITZE, findet eine Fahrwegverzweigung statt, d.h. vom gleichen Knoten werden zwei getrennte Fahrwege (Routings) über LINKS und RECHTS gesucht. Bei einer Kante mit dem Anschluss VERBINDUNG ist die nachfolgende Infrastruktur aufgrund des Zuschnitts des Planungsbereichs nicht verfügbar. Folgende Werte-Kombinationen entstehen daher für TOP_Knoten.Art Besonders (E) und TOP_Kante.TOP_Anschluss_A bzw. ..._B: Art des TOP_Knoten TOP_Knoten.Art Besonders TOP_Kante.TOP_Anschluss_... Verbindungsknoten Verbindung (E) Verbindung Weichenknoten - Links, Rechts, Spitze Infrastrukturende (Gleisabschluss) - Ende Digitalisierungsende Ende_Bestdig (E) Ende_Bestdig "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="TOP_Anschluss_A"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="TOP_Anschluss_A"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2557,8 +3177,10 @@
                      value="Art des Anschlusses am Ende B der TOP_Kante. Eine TOP_Kante muss sowohl am Ende A als auch am Ende B auf einem TOP_Knoten verweisen. In der Regel schließen an einen TOP_Knoten weitere TOP_Kanten an. Wenn an einem TOP_Knoten nur eine TOP_Kante anschließt, endet an diesem Knoten die Topologie des Gleisnetzes. Nachfolgende Arten des Endes einer Topologie sind vorgesehen: Ende - reales Ende einer Gleislinie (z.B. Prellbock, Fähranleger, ...). Ende_Bestdig - temporäres Ende einer Gleislinie, die real weiterführt, aber deren Weiterführung noch nicht im Modell hinterlegt ist. Schnitt - Anschlusspunkt einer Neutrassierung an einen vorhandenen Bestand der Gleislinie. Im Bestand muss dieser Knoten nur ein GEO Punkt sein. Nach dem Einbinden der Neutrassierung in die Bestandsgleislage entfällt dieser TOP_Knoten durch eine neue durchlaufende TOP_Kante. Hinweis für die Fahrwegfindung (Routing): Endet ein Routing auf LINKS oder RECHTS, darf nur ein Fahrweg (Routing) vom gleichen Knoten über die SPITZE gesucht werden. Endet ein Routing auf SPITZE, findet eine Fahrwegverzweigung statt, d.h. vom gleichen Knoten werden zwei getrennte Fahrwege (Routings) über LINKS und RECHTS gesucht. Bei einer Kante mit dem Anschluss VERBINDUNG ist die nachfolgende Infrastruktur aufgrund des Zuschnitts des Planungsbereichs nicht verfügbar. Folgende Werte-Kombinationen entstehen daher für TOP_Knoten.Art Besonders (E) und TOP_Kante.TOP_Anschluss_A bzw. ..._B: Art des TOP_Knoten TOP_Knoten.Art Besonders TOP_Kante.TOP_Anschluss_... Verbindungsknoten Verbindung (E) Verbindung Weichenknoten - Links, Rechts, Spitze Infrastrukturende (Gleisabschluss) - Ende Digitalisierungsende Ende_Bestdig (E) Ende_Bestdig "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="TOP_Anschluss_B"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="TOP_Anschluss_B"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2576,8 +3198,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt; [0.000..99999.999]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="TOP_Laenge"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="TOP_Laenge"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2593,8 +3217,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CTOP_Knoten"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CTOP_Knoten"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDGEOKnoten"
@@ -2607,8 +3233,10 @@
                      value="Ein TOP_Knoten fällt immer mit einem GEO_Knoten der Gleislinie zusammen. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_GEO_Knoten"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_GEO_Knoten"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2625,8 +3253,10 @@
                      value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                               &#xA;    &lt;ppi:Patternbeschreibung&gt;[1..20]&lt;/ppi:Patternbeschreibung&gt;&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                       &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Knotenname"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Knotenname"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2634,18 +3264,22 @@
                  name="TOP_Laenge_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TTOP_Laenge"/>
+         <details key="name"
+                  value="TTOP_Laenge"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
-         <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
+         <details key="pattern"
+                  value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="TOP_Laenge_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCTOP_Laenge"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCTOP_Laenge"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2653,8 +3287,10 @@
                            eType="#//TOP_Laenge_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2662,8 +3298,10 @@
                  name="TP_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCTP_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCTP_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2671,8 +3309,10 @@
                            eType="#//ENUMTPArtObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2680,7 +3320,8 @@
                  name="TP_Beschreibung_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TTP_Beschreibung"/>
+         <details key="name"
+                  value="TTP_Beschreibung"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
       </eAnnotations>
@@ -2689,8 +3330,10 @@
                  name="TP_Beschreibung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCTP_Beschreibung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCTP_Beschreibung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2698,8 +3341,10 @@
                            eType="#//TP_Beschreibung_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2707,8 +3352,10 @@
                  name="Trasse_Kante_child_AttributeGroup"
                  eSuperTypes="Medien_und_Trassen.ecore#//Trasse_Kante">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CTrasse_Kante_child"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CTrasse_Kante_child"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -2723,8 +3370,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CUeberhoehung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CUeberhoehung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="ueberhoehungAllg"
@@ -2733,15 +3382,20 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Ueberhoehung_Allg"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Ueberhoehung_Allg"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Ueberhoehung_Allg_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Ueberhoehung_Allg_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CUeberhoehung_Allg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CUeberhoehung_Allg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="gEOPAD"
@@ -2757,8 +3411,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[1..20]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GEO_PAD"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GEO_PAD"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2771,8 +3427,10 @@
                      value="Quelle der Geo-Kante, des Geo-Knotens, des Höhenpunkts, der Höhenlinie, der Überhöhung bzw. der Überhöhungslinie. Bei Auswahl von „sonstige“ ist zwingend ein Bearbeitungsvermerk anzugeben. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Plan_Quelle"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Plan_Quelle"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2785,8 +3443,10 @@
                      value="Aufnahmedatum der Koordinaten der Überhöhung. GND: Punktdatum; Ivl und Ivmg: Datum der letzten Bearbeitung; Kopie: Datum aus kopierter Höhe; Neutrassierung: Freigabedatum; sonstige: Datum der letzten Bearbeitung.  Die Information wird zukünftig über das Attribut Datum_Regelwerk abgebildet. Das Attribut soll daher langfristig entfallen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Ueberhoehung_Datum"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Ueberhoehung_Datum"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2804,8 +3464,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[-0.200..0.200]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Ueberhoehung_Hoehe"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Ueberhoehung_Hoehe"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2813,8 +3475,10 @@
                  name="Ueberhoehung_Datum_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCUeberhoehung_Datum"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCUeberhoehung_Datum"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2822,8 +3486,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Date"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2831,18 +3497,22 @@
                  name="Ueberhoehung_Hoehe_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TUeberhoehung_Hoehe"/>
+         <details key="name"
+                  value="TUeberhoehung_Hoehe"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
-         <details key="pattern" value="-?(0\.[01][0-9][0-9]|0\.200)"/>
+         <details key="pattern"
+                  value="-?(0\.[01][0-9][0-9]|0\.200)"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Ueberhoehung_Hoehe_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCUeberhoehung_Hoehe"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCUeberhoehung_Hoehe"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2850,8 +3520,10 @@
                            eType="#//Ueberhoehung_Hoehe_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2867,8 +3539,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;Geo&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CUeberhoehungslinie"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CUeberhoehungslinie"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDUeberhoehungA"
@@ -2881,8 +3555,10 @@
                      value="Verweis auf die Ueberhoehung am Anfang der Ueberhoehungslinie. Durch die Angabe des Anfangs- sowie des Endpunkts wird die Richtung der Ueberhoehungslinie definiert."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Ueberhoehung_A"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Ueberhoehung_A"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2896,8 +3572,10 @@
                      value="Verweis auf die Ueberhoehung am Ende der Ueberhoehungslinie. Durch die Angabe des Anfangs- sowie des Endpunkts wird die Richtung der Ueberhoehungslinie definiert."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Ueberhoehung_B"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Ueberhoehung_B"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2907,15 +3585,20 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Ueberhoehungslinie_Allg"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Ueberhoehungslinie_Allg"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Ueberhoehungslinie_Allg_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Ueberhoehungslinie_Allg_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CUeberhoehungslinie_Allg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CUeberhoehungslinie_Allg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="planQuelle"
@@ -2932,8 +3615,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;GND&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Plan_Quelle"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Plan_Quelle"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2947,8 +3632,10 @@
                      value="Form der Ueberhoehungslinie, z. B. gleichbleibend oder gerade Rampe. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Ueberhoehungslinie_Form"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Ueberhoehungslinie_Form"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -2966,8 +3653,10 @@
                      value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[0.000..99999.999]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Ueberhoehungslinie_Laenge"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Ueberhoehungslinie_Laenge"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2975,8 +3664,10 @@
                  name="Ueberhoehungslinie_Form_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCUeberhoehungslinie_Form"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCUeberhoehungslinie_Form"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -2984,8 +3675,10 @@
                            eType="#//ENUMUeberhoehungslinieFormObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -2993,18 +3686,22 @@
                  name="Ueberhoehungslinie_Laenge_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TUeberhoehungslinie_Laenge"/>
+         <details key="name"
+                  value="TUeberhoehungslinie_Laenge"/>
          <details key="baseType"
                   value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
-         <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
+         <details key="pattern"
+                  value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Ueberhoehungslinie_Laenge_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCUeberhoehungslinie_Laenge"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCUeberhoehungslinie_Laenge"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -3012,8 +3709,10 @@
                            eType="#//Ueberhoehungslinie_Laenge_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -3021,8 +3720,10 @@
                  name="V_Profil_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCV_Profil_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCV_Profil_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -3030,8 +3731,10 @@
                            eType="#//ENUMVProfilArtObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>

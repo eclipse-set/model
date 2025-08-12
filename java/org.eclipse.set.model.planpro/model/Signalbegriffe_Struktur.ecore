@@ -22,8 +22,10 @@
                   value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCSignalbegriff_ID"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCSignalbegriff_ID"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="symbol"
@@ -33,8 +35,10 @@
                      value="Bedeutung 1: Anzuzeigendes Symbol des Signalbegriffs. &#xA;&#xA;Das Signalbuch (Ril 301) schränkt nicht in allen Fällen den Wertevorrat ausreichend ein, sodass direkt ENUM-Werte abgeleitet werden können. Eine Angabe als Text ist jedoch ebenfalls nicht zielführend. Die ENUM-Werte wurden daher unter Berücksichtigung der Vorgaben der Ril 301 nach ingenieurmäßigem Ermessen festgelegt, sodass alle denkbaren Konstellationen abbildbar sind.&#xA;&#xA;Bedeutung 2: Zusatzangabe bzw. Aufschrift eines Zusatzschildes.&#xA;&#xA;Im Fall des Signalbegriffs "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Symbol"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Symbol"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -45,8 +49,10 @@
                      value="Beschreibung von Besonderheiten des Signalbegriffs gemäß Ril 301 (Signalbuch). Das Attribut ist nicht durch den Planer veränderbar.&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Anmerkungen"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Anmerkungen"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -58,8 +64,10 @@
                      value="Angabe, ob der Signalbegriff gemäß Ril 301 (Signalbuch) prinzipiell beleuchtbar ist. &#xA;&#xA;Ein positiver Eintrag erfolgt auch dann, wenn ein Signalbegriff nur in einer Ausführungsform (Lichtsignal, Formsignal etc.) die entsprechende Eigenschaft besitzt. Ob der Signalbegriff tatsächlich beleuchtet werden soll, ist im Objekt Signal Signalbegriff im Attribut Beleuchtet hinterlegt. &#xA;&#xA;Wertzuordnung: &#xA;• true - Signalbegriff ist beleuchtbar, &#xA;• false - Signalbegriff ist nicht beleuchtbar. &#xA;&#xA;Das Attribut ist nicht durch den Planer veränderbar.&#xA;&#xA;Besonderheiten:&#xA;&#xA;Lf 1: Das Nachtzeichen wird im LST-Datenmodell nicht berücksichtigt, da es kein Bestandteil der AP PT 1 ist.&#xA;&#xA;Sh 1: Beleuchtete Formsignale Sh 1 werden aufgrund der geringen Auftrittswahrscheinlichkeit im Vergleich zum Lichtsignal nicht berücksichtigt. Die Planung muss ggf. über einen Bearbeitungsvermerk erfolgen.&#xA;&#xA;Sh 2 (Sh_2): Beleuchtbar == "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Beleuchtbar"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Beleuchtbar"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -70,8 +78,10 @@
                      value="Erscheinungsbild des Signalbegriffs gemäß Ril 301 (Signalbuch). Das Attribut ist nicht durch den Planer veränderbar."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Beschreibung"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Beschreibung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -83,8 +93,10 @@
                      value="Angabe, ob der Signalbegriff gemäß Ril 301 (Signalbuch) im Geltungsbereich DS gültig ist (true) oder nicht (false). Das Attribut ist nicht durch den Planer veränderbar."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Geltungsbereich_DS"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Geltungsbereich_DS"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -96,8 +108,10 @@
                      value="Angabe, ob der Signalbegriff gemäß Ril 301 (Signalbuch) im Geltungsbereich DV gültig ist (true) oder nicht (false). Das Attribut ist nicht durch den Planer veränderbar."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Geltungsbereich_DV"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Geltungsbereich_DV"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -109,8 +123,10 @@
                      value="Angabe, ob der Signalbegriff gemäß Ril 301 (Signalbuch) im Geltungsbereich der S-Bahn Berlin gültig ist (true) oder nicht (false). Das Attribut ist nicht durch den Planer veränderbar."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Geltungsbereich_SBahn_B"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Geltungsbereich_SBahn_B"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -122,8 +138,10 @@
                      value="Angabe, ob der Signalbegriff gemäß Ril 301 (Signalbuch) im Geltungsbereich der S-Bahn Hamburg gültig ist (true) oder nicht (false). Das Attribut ist nicht durch den Planer veränderbar."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Geltungsbereich_SBahn_HH"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Geltungsbereich_SBahn_HH"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -134,8 +152,10 @@
                      value="Zeitlicher Beginn der Gültigkeit eines Signalbegriffs gemäß Ril 301 (Signalbuch). Das Attribut ist nicht durch den Planer veränderbar."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Gueltig_Ab"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Gueltig_Ab"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -146,8 +166,10 @@
                      value="Zeitliches Ende der Gültigkeit eines Signalbegriffs gemäß Ril 301 (Signalbuch). Das Attribut ist nicht durch den Planer veränderbar."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Gueltig_Bis"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Gueltig_Bis"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -158,8 +180,10 @@
                      value="Kurzbezeichnung des Signalbegriffs gemäß Ril 301 (Signalbuch) im Geltungsbereich DS. Das Attribut ist nicht durch den Planer veränderbar."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Kurzbezeichnung_DS"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Kurzbezeichnung_DS"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -170,8 +194,10 @@
                      value="Kurzbezeichnung des Signalbegriffs gemäß Ril 301 (Signalbuch) im Geltungsbereich DV. Das Attribut ist nicht durch den Planer veränderbar."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Kurzbezeichnung_DV"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Kurzbezeichnung_DV"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -182,8 +208,10 @@
                      value="Langbezeichnung des Signalbegriffs gemäß Ril 301 (Signalbuch). Das Attribut ist nicht durch den Planer veränderbar."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Langbezeichnung"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Langbezeichnung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -195,8 +223,10 @@
                      value="Angabe, ob der Signalbegriff gemäß Ril 301 (Signalbuch) prinzipiell schaltbar ist.&#xA;&#xA;Ein positiver Eintrag erfolgt auch dann, wenn ein Signalbegriff nur in einer Ausführungsform (Lichtsignal, Formsignal etc.) die entsprechende Eigenschaft besitzt. &#xA;&#xA;Nicht schaltbar sind demnach z. B. &#xA;• Mastschilder oder &#xA;• Zs 3-Formsignale (auch wenn sie in bestimmten Kombinationen nicht gelten - hier fehlt die aktive Handlung). &#xA;&#xA;Ob der Signalbegriff tatsächlich geschaltet werden soll, ist im Objekt Signal Signalbegriff im Attribut Geschaltet hinterlegt. &#xA;&#xA;Wertzuordnung: &#xA;• true - Signalbegriff ist schaltbar, &#xA;• false - Signalbegriff ist nicht schaltbar. &#xA;&#xA;Das Attribut ist nicht durch den Planer veränderbar.&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Schaltbar"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Schaltbar"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
@@ -208,8 +238,10 @@
                      value="Angabe, ob für den Signalbegriff gemäß Ril 301 (Signalbuch) eine Zusatzinformation bzw. ein Zusatzschild möglich ist (true) oder nicht (false). Das Attribut ist nicht durch den Planer veränderbar."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="attribute"/>
-            <details key="name" value="Zusatz_Moeglich"/>
+            <details key="kind"
+                     value="attribute"/>
+            <details key="name"
+                     value="Zusatz_Moeglich"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
