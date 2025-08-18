@@ -37,7 +37,7 @@ public interface GEO_Knoten extends Basis_Objekt {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus dem DB-GIS für jeden Vermessungspunkt bereitgestellt. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB Netz AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten händisch (z.B. von Ivl-Plänen nachgezeichnet) erstellt wurden, wird das Attribut nicht befüllt. 
+	 * Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus AVANI für jeden Vermessungspunkt bereitgestellt. Führende Leerzeichen sind bei der Datenübernahme zu erhalten. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB InfraGO AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten händisch (z.B. von Ivl-Plänen nachgezeichnet) erstellt wurden, wird das Attribut nicht befüllt. 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>GEOPAD</em>' containment reference.
 	 * @see #setGEOPAD(GEO_PAD_TypeClass)

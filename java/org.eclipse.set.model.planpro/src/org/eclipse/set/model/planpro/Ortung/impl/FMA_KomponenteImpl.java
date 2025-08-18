@@ -33,8 +33,8 @@ import org.eclipse.set.model.planpro.Ortung.FMA_Komponente_Achszaehlpunkt_Attrib
 import org.eclipse.set.model.planpro.Ortung.FMA_Komponente_Art_TypeClass;
 import org.eclipse.set.model.planpro.Ortung.OrtungPackage;
 
+import org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_FMA_Anlage_TypeClass;
-import org.eclipse.set.model.planpro.Verweise.ID_Markanter_Punkt_TypeClass;
 
 /**
  * <!-- begin-user-doc -->
@@ -72,7 +72,7 @@ public class FMA_KomponenteImpl extends Punkt_ObjektImpl implements FMA_Komponen
 	 * @generated
 	 * @ordered
 	 */
-	protected ID_Markanter_Punkt_TypeClass iDBezugspunkt;
+	protected ID_Bezugspunkt_TypeClass iDBezugspunkt;
 
 	/**
 	 * The cached value of the '{@link #getIDFMAgrenze() <em>IDFM Agrenze</em>}' containment reference list.
@@ -174,7 +174,7 @@ public class FMA_KomponenteImpl extends Punkt_ObjektImpl implements FMA_Komponen
 	 * @generated
 	 */
 	@Override
-	public ID_Markanter_Punkt_TypeClass getIDBezugspunkt() {
+	public ID_Bezugspunkt_TypeClass getIDBezugspunkt() {
 		return iDBezugspunkt;
 	}
 
@@ -183,8 +183,8 @@ public class FMA_KomponenteImpl extends Punkt_ObjektImpl implements FMA_Komponen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetIDBezugspunkt(ID_Markanter_Punkt_TypeClass newIDBezugspunkt, NotificationChain msgs) {
-		ID_Markanter_Punkt_TypeClass oldIDBezugspunkt = iDBezugspunkt;
+	public NotificationChain basicSetIDBezugspunkt(ID_Bezugspunkt_TypeClass newIDBezugspunkt, NotificationChain msgs) {
+		ID_Bezugspunkt_TypeClass oldIDBezugspunkt = iDBezugspunkt;
 		iDBezugspunkt = newIDBezugspunkt;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OrtungPackage.FMA_KOMPONENTE__ID_BEZUGSPUNKT, oldIDBezugspunkt, newIDBezugspunkt);
@@ -199,7 +199,7 @@ public class FMA_KomponenteImpl extends Punkt_ObjektImpl implements FMA_Komponen
 	 * @generated
 	 */
 	@Override
-	public void setIDBezugspunkt(ID_Markanter_Punkt_TypeClass newIDBezugspunkt) {
+	public void setIDBezugspunkt(ID_Bezugspunkt_TypeClass newIDBezugspunkt) {
 		if (newIDBezugspunkt != iDBezugspunkt) {
 			NotificationChain msgs = null;
 			if (iDBezugspunkt != null)
@@ -373,7 +373,7 @@ public class FMA_KomponenteImpl extends Punkt_ObjektImpl implements FMA_Komponen
 				setBezeichnung((Bezeichnung_Element_AttributeGroup)newValue);
 				return;
 			case OrtungPackage.FMA_KOMPONENTE__ID_BEZUGSPUNKT:
-				setIDBezugspunkt((ID_Markanter_Punkt_TypeClass)newValue);
+				setIDBezugspunkt((ID_Bezugspunkt_TypeClass)newValue);
 				return;
 			case OrtungPackage.FMA_KOMPONENTE__IDFM_AGRENZE:
 				getIDFMAgrenze().clear();
@@ -401,7 +401,7 @@ public class FMA_KomponenteImpl extends Punkt_ObjektImpl implements FMA_Komponen
 				setBezeichnung((Bezeichnung_Element_AttributeGroup)null);
 				return;
 			case OrtungPackage.FMA_KOMPONENTE__ID_BEZUGSPUNKT:
-				setIDBezugspunkt((ID_Markanter_Punkt_TypeClass)null);
+				setIDBezugspunkt((ID_Bezugspunkt_TypeClass)null);
 				return;
 			case OrtungPackage.FMA_KOMPONENTE__IDFM_AGRENZE:
 				getIDFMAgrenze().clear();

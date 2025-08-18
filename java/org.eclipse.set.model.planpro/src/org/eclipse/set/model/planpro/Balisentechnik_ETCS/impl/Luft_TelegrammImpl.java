@@ -9,13 +9,20 @@
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage;
 import org.eclipse.set.model.planpro.Balisentechnik_ETCS.LT_Binaerdatei_Hilfe_AttributeGroup;
@@ -57,14 +64,14 @@ public class Luft_TelegrammImpl extends Basis_ObjektImpl implements Luft_Telegra
 	protected ID_Balise_ohne_Proxy_TypeClass iDBaliseUebertragung;
 
 	/**
-	 * The cached value of the '{@link #getIDFachtelegramm() <em>ID Fachtelegramm</em>}' containment reference.
+	 * The cached value of the '{@link #getIDFachtelegramm() <em>ID Fachtelegramm</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getIDFachtelegramm()
 	 * @generated
 	 * @ordered
 	 */
-	protected ID_Fachtelegramm_TypeClass iDFachtelegramm;
+	protected EList<ID_Fachtelegramm_TypeClass> iDFachtelegramm;
 
 	/**
 	 * The cached value of the '{@link #getLTBinaerdateiHilfe() <em>LT Binaerdatei Hilfe</em>}' containment reference.
@@ -166,43 +173,11 @@ public class Luft_TelegrammImpl extends Basis_ObjektImpl implements Luft_Telegra
 	 * @generated
 	 */
 	@Override
-	public ID_Fachtelegramm_TypeClass getIDFachtelegramm() {
+	public EList<ID_Fachtelegramm_TypeClass> getIDFachtelegramm() {
+		if (iDFachtelegramm == null) {
+			iDFachtelegramm = new EObjectContainmentEList<ID_Fachtelegramm_TypeClass>(ID_Fachtelegramm_TypeClass.class, this, Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__ID_FACHTELEGRAMM);
+		}
 		return iDFachtelegramm;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetIDFachtelegramm(ID_Fachtelegramm_TypeClass newIDFachtelegramm, NotificationChain msgs) {
-		ID_Fachtelegramm_TypeClass oldIDFachtelegramm = iDFachtelegramm;
-		iDFachtelegramm = newIDFachtelegramm;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__ID_FACHTELEGRAMM, oldIDFachtelegramm, newIDFachtelegramm);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setIDFachtelegramm(ID_Fachtelegramm_TypeClass newIDFachtelegramm) {
-		if (newIDFachtelegramm != iDFachtelegramm) {
-			NotificationChain msgs = null;
-			if (iDFachtelegramm != null)
-				msgs = ((InternalEObject)iDFachtelegramm).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__ID_FACHTELEGRAMM, null, msgs);
-			if (newIDFachtelegramm != null)
-				msgs = ((InternalEObject)newIDFachtelegramm).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__ID_FACHTELEGRAMM, null, msgs);
-			msgs = basicSetIDFachtelegramm(newIDFachtelegramm, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__ID_FACHTELEGRAMM, newIDFachtelegramm, newIDFachtelegramm));
 	}
 
 	/**
@@ -351,7 +326,7 @@ public class Luft_TelegrammImpl extends Basis_ObjektImpl implements Luft_Telegra
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__ID_BALISE_UEBERTRAGUNG:
 				return basicSetIDBaliseUebertragung(null, msgs);
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__ID_FACHTELEGRAMM:
-				return basicSetIDFachtelegramm(null, msgs);
+				return ((InternalEList<?>)getIDFachtelegramm()).basicRemove(otherEnd, msgs);
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__LT_BINAERDATEI_HILFE:
 				return basicSetLTBinaerdateiHilfe(null, msgs);
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__LT_BINAERDATEN:
@@ -389,6 +364,7 @@ public class Luft_TelegrammImpl extends Basis_ObjektImpl implements Luft_Telegra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -396,7 +372,8 @@ public class Luft_TelegrammImpl extends Basis_ObjektImpl implements Luft_Telegra
 				setIDBaliseUebertragung((ID_Balise_ohne_Proxy_TypeClass)newValue);
 				return;
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__ID_FACHTELEGRAMM:
-				setIDFachtelegramm((ID_Fachtelegramm_TypeClass)newValue);
+				getIDFachtelegramm().clear();
+				getIDFachtelegramm().addAll((Collection<? extends ID_Fachtelegramm_TypeClass>)newValue);
 				return;
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__LT_BINAERDATEI_HILFE:
 				setLTBinaerdateiHilfe((LT_Binaerdatei_Hilfe_AttributeGroup)newValue);
@@ -423,7 +400,7 @@ public class Luft_TelegrammImpl extends Basis_ObjektImpl implements Luft_Telegra
 				setIDBaliseUebertragung((ID_Balise_ohne_Proxy_TypeClass)null);
 				return;
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__ID_FACHTELEGRAMM:
-				setIDFachtelegramm((ID_Fachtelegramm_TypeClass)null);
+				getIDFachtelegramm().clear();
 				return;
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__LT_BINAERDATEI_HILFE:
 				setLTBinaerdateiHilfe((LT_Binaerdatei_Hilfe_AttributeGroup)null);
@@ -449,7 +426,7 @@ public class Luft_TelegrammImpl extends Basis_ObjektImpl implements Luft_Telegra
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__ID_BALISE_UEBERTRAGUNG:
 				return iDBaliseUebertragung != null;
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__ID_FACHTELEGRAMM:
-				return iDFachtelegramm != null;
+				return iDFachtelegramm != null && !iDFachtelegramm.isEmpty();
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__LT_BINAERDATEI_HILFE:
 				return lTBinaerdateiHilfe != null;
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__LT_BINAERDATEN:

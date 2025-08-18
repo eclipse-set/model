@@ -907,6 +907,29 @@ public class Balisentechnik_ETCSItemProviderAdapterFactory extends Balisentechni
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.Bezeichnung_RBC_TypeClass} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Bezeichnung_RBC_TypeClassItemProvider bezeichnung_RBC_TypeClassItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.Bezeichnung_RBC_TypeClass}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createBezeichnung_RBC_TypeClassAdapter() {
+		if (bezeichnung_RBC_TypeClassItemProvider == null) {
+			bezeichnung_RBC_TypeClassItemProvider = new Bezeichnung_RBC_TypeClassItemProvider(this);
+		}
+
+		return bezeichnung_RBC_TypeClassItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.Bezeichnung_ZUB_SE_TypeClass} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5116,6 +5139,29 @@ public class Balisentechnik_ETCSItemProviderAdapterFactory extends Balisentechni
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_Bezeichnung_AttributeGroup} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected RBC_Bezeichnung_AttributeGroupItemProvider rbC_Bezeichnung_AttributeGroupItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_Bezeichnung_AttributeGroup}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createRBC_Bezeichnung_AttributeGroupAdapter() {
+		if (rbC_Bezeichnung_AttributeGroupItemProvider == null) {
+			rbC_Bezeichnung_AttributeGroupItemProvider = new RBC_Bezeichnung_AttributeGroupItemProvider(this);
+		}
+
+		return rbC_Bezeichnung_AttributeGroupItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_ETCS_System_Version_TypeClass} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7280,6 +7326,7 @@ public class Balisentechnik_ETCSItemProviderAdapterFactory extends Balisentechni
 		if (bez_ZUB_Bereichsgrenze_TypeClassItemProvider != null) bez_ZUB_Bereichsgrenze_TypeClassItemProvider.dispose();
 		if (bezeichnung_ETCS_Kante_TypeClassItemProvider != null) bezeichnung_ETCS_Kante_TypeClassItemProvider.dispose();
 		if (bezeichnung_LEU_Anlage_TypeClassItemProvider != null) bezeichnung_LEU_Anlage_TypeClassItemProvider.dispose();
+		if (bezeichnung_RBC_TypeClassItemProvider != null) bezeichnung_RBC_TypeClassItemProvider.dispose();
 		if (bezeichnung_ZUB_SE_TypeClassItemProvider != null) bezeichnung_ZUB_SE_TypeClassItemProvider.dispose();
 		if (bezeichnung_ZUB_TypeClassItemProvider != null) bezeichnung_ZUB_TypeClassItemProvider.dispose();
 		if (bgrenze_Nach_ESG_Bed_Ausstieg_AttributeGroupItemProvider != null) bgrenze_Nach_ESG_Bed_Ausstieg_AttributeGroupItemProvider.dispose();
@@ -7463,6 +7510,7 @@ public class Balisentechnik_ETCSItemProviderAdapterFactory extends Balisentechni
 		if (projektierungsfall_TypeClassItemProvider != null) projektierungsfall_TypeClassItemProvider.dispose();
 		if (rbcItemProvider != null) rbcItemProvider.dispose();
 		if (rbC_Allg_AttributeGroupItemProvider != null) rbC_Allg_AttributeGroupItemProvider.dispose();
+		if (rbC_Bezeichnung_AttributeGroupItemProvider != null) rbC_Bezeichnung_AttributeGroupItemProvider.dispose();
 		if (rbC_ETCS_System_Version_TypeClassItemProvider != null) rbC_ETCS_System_Version_TypeClassItemProvider.dispose();
 		if (rbC_SRS_Version_TypeClassItemProvider != null) rbC_SRS_Version_TypeClassItemProvider.dispose();
 		if (rekursion_2_Nr_TypeClassItemProvider != null) rekursion_2_Nr_TypeClassItemProvider.dispose();

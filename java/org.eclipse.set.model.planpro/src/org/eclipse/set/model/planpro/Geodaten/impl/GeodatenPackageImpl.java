@@ -1932,6 +1932,16 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 	 * @generated
 	 */
 	@Override
+	public EReference getHoehenlinie_IDTOPKantePfad() {
+		return (EReference)hoehenlinieEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getHoehenlinie_Allg_AttributeGroup() {
 		return hoehenlinie_Allg_AttributeGroupEClass;
 	}
@@ -3102,7 +3112,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getUeberhoehungslinie_IDUeberhoehungA() {
+	public EReference getUeberhoehungslinie_IDTOPKantePfad() {
 		return (EReference)ueberhoehungslinieEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -3112,7 +3122,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getUeberhoehungslinie_IDUeberhoehungB() {
+	public EReference getUeberhoehungslinie_IDUeberhoehungA() {
 		return (EReference)ueberhoehungslinieEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -3122,8 +3132,18 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getUeberhoehungslinie_UeberhoehungslinieAllg() {
+	public EReference getUeberhoehungslinie_IDUeberhoehungB() {
 		return (EReference)ueberhoehungslinieEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getUeberhoehungslinie_UeberhoehungslinieAllg() {
+		return (EReference)ueberhoehungslinieEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -3852,6 +3872,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		createEReference(hoehenlinieEClass, HOEHENLINIE__HOEHENLINIE_ALLG);
 		createEReference(hoehenlinieEClass, HOEHENLINIE__ID_HOEHENPUNKT_A);
 		createEReference(hoehenlinieEClass, HOEHENLINIE__ID_HOEHENPUNKT_B);
+		createEReference(hoehenlinieEClass, HOEHENLINIE__IDTOP_KANTE_PFAD);
 
 		hoehenlinie_Allg_AttributeGroupEClass = createEClass(HOEHENLINIE_ALLG_ATTRIBUTE_GROUP);
 		createEReference(hoehenlinie_Allg_AttributeGroupEClass, HOEHENLINIE_ALLG_ATTRIBUTE_GROUP__HOEHENLINIE_FORM);
@@ -4014,6 +4035,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		createEAttribute(ueberhoehung_Hoehe_TypeClassEClass, UEBERHOEHUNG_HOEHE_TYPE_CLASS__WERT);
 
 		ueberhoehungslinieEClass = createEClass(UEBERHOEHUNGSLINIE);
+		createEReference(ueberhoehungslinieEClass, UEBERHOEHUNGSLINIE__IDTOP_KANTE_PFAD);
 		createEReference(ueberhoehungslinieEClass, UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_A);
 		createEReference(ueberhoehungslinieEClass, UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_B);
 		createEReference(ueberhoehungslinieEClass, UEBERHOEHUNGSLINIE__UEBERHOEHUNGSLINIE_ALLG);
@@ -4273,6 +4295,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		initEReference(getHoehenlinie_HoehenlinieAllg(), this.getHoehenlinie_Allg_AttributeGroup(), null, "hoehenlinieAllg", null, 1, 1, Hoehenlinie.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getHoehenlinie_IDHoehenpunktA(), theVerweisePackage.getID_Hoehenpunkt_TypeClass(), null, "iDHoehenpunktA", null, 1, 1, Hoehenlinie.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getHoehenlinie_IDHoehenpunktB(), theVerweisePackage.getID_Hoehenpunkt_TypeClass(), null, "iDHoehenpunktB", null, 1, 1, Hoehenlinie.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getHoehenlinie_IDTOPKantePfad(), theVerweisePackage.getID_TOP_Kante_ohne_Proxy_TypeClass(), null, "iDTOPKantePfad", null, 0, -1, Hoehenlinie.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(hoehenlinie_Allg_AttributeGroupEClass, Hoehenlinie_Allg_AttributeGroup.class, "Hoehenlinie_Allg_AttributeGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getHoehenlinie_Allg_AttributeGroup_HoehenlinieForm(), this.getHoehenlinie_Form_TypeClass(), null, "hoehenlinieForm", null, 1, 1, Hoehenlinie_Allg_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4435,6 +4458,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		initEAttribute(getUeberhoehung_Hoehe_TypeClass_Wert(), this.getUeberhoehung_Hoehe_Type(), "wert", null, 1, 1, Ueberhoehung_Hoehe_TypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(ueberhoehungslinieEClass, Ueberhoehungslinie.class, "Ueberhoehungslinie", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getUeberhoehungslinie_IDTOPKantePfad(), theVerweisePackage.getID_TOP_Kante_ohne_Proxy_TypeClass(), null, "iDTOPKantePfad", null, 0, -1, Ueberhoehungslinie.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getUeberhoehungslinie_IDUeberhoehungA(), theVerweisePackage.getID_Ueberhoehung_TypeClass(), null, "iDUeberhoehungA", null, 1, 1, Ueberhoehungslinie.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getUeberhoehungslinie_IDUeberhoehungB(), theVerweisePackage.getID_Ueberhoehung_TypeClass(), null, "iDUeberhoehungB", null, 1, 1, Ueberhoehungslinie.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getUeberhoehungslinie_UeberhoehungslinieAllg(), this.getUeberhoehungslinie_Allg_AttributeGroup(), null, "ueberhoehungslinieAllg", null, 1, 1, Ueberhoehungslinie.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4477,6 +4501,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		initEEnum(enumHoehenlinieFormEEnum, ENUMHoehenlinieForm.class, "ENUMHoehenlinieForm");
 		addEEnumLiteral(enumHoehenlinieFormEEnum, ENUMHoehenlinieForm.ENUM_HOEHENLINIE_FORM_GERADE);
 		addEEnumLiteral(enumHoehenlinieFormEEnum, ENUMHoehenlinieForm.ENUM_HOEHENLINIE_FORM_PARABEL);
+		addEEnumLiteral(enumHoehenlinieFormEEnum, ENUMHoehenlinieForm.ENUM_HOEHENLINIE_FORM_SONSTIGE);
 		addEEnumLiteral(enumHoehenlinieFormEEnum, ENUMHoehenlinieForm.ENUM_HOEHENLINIE_FORM_WEICHENABZWEIG);
 
 		initEEnum(enumhSystemEEnum, ENUMHSystem.class, "ENUMHSystem");
@@ -4543,6 +4568,8 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_SBK);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_SONSTIGE);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_STRW);
+		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_TA_W);
+		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_TSO);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_UST);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_UST_ANST);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_UST_AWANST);
@@ -4624,6 +4651,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		addEEnumLiteral(enumUeberhoehungslinieFormEEnum, ENUMUeberhoehungslinieForm.ENUM_UEBERHOEHUNGSLINIE_FORM_RAMPE_S);
 		addEEnumLiteral(enumUeberhoehungslinieFormEEnum, ENUMUeberhoehungslinieForm.ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_BLOSS);
 		addEEnumLiteral(enumUeberhoehungslinieFormEEnum, ENUMUeberhoehungslinieForm.ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_S);
+		addEEnumLiteral(enumUeberhoehungslinieFormEEnum, ENUMUeberhoehungslinieForm.ENUM_UEBERHOEHUNGSLINIE_FORM_SONSTIGE);
 
 		initEEnum(enumvProfilArtEEnum, ENUMVProfilArt.class, "ENUMVProfilArt");
 		addEEnumLiteral(enumvProfilArtEEnum, ENUMVProfilArt.ENUMV_PROFIL_ART_ANZEIGEGEFÜHRT);
@@ -4698,13 +4726,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
-		   });
-		addAnnotation
-		  (enumHoehenlinieFormEEnum,
-		   source,
-		   new String[] {
-			   "documentation", "spa/WS 31.07.2018"
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 		addAnnotation
 		  (enumvProfilArtEEnum,
@@ -4758,13 +4780,13 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		  (getGEO_Kante_Allg_AttributeGroup_GEORadiusA(),
 		   source,
 		   new String[] {
-			   "documentation", "Zugeh\u00f6rige Parameter f\u00fcr die GEO_Form Gerade: kein zus\u00e4tzlicher Parameter erforderlich oder 0.00000 angeben; Bogen: GEO_Radius_A enth\u00e4lt den Radius (Anfangsradius = Endradius) in [m]; Richtgerade Knick am Ende: GEO_Radius_A enth\u00e4lt den Brechungswinkel am Ende in [gon]; Alle anderen Kanten: GEO_Radius_A enth\u00e4lt den Anfangsradius in [m]. In Abh\u00e4ngigkeit der Bogenrichtung am GEO_Knoten_A wird der Radius bei einem Linksbogen negativ und bei einem Rechtsbogen positiv angegeben. "
+			   "documentation", "Zugeh\u00f6rige Parameter f\u00fcr die GEO_Form. Gerade: kein zus\u00e4tzlicher Parameter erforderlich oder 0.00000 angeben; Bogen: GEO_Radius_A enth\u00e4lt den Radius (Anfangsradius = Endradius) in [m]; Richtgerade Knick am Ende 200 gon: kein Eintrag; Alle anderen Kanten: GEO_Radius_A enth\u00e4lt den Anfangsradius in [m]. In Abh\u00e4ngigkeit der Bogenrichtung am GEO_Knoten_A wird der Radius bei einem Linksbogen negativ und bei einem Rechtsbogen positiv angegeben. "
 		   });
 		addAnnotation
 		  (getGEO_Kante_Allg_AttributeGroup_GEORadiusB(),
 		   source,
 		   new String[] {
-			   "documentation", "Zugeh\u00f6rige Parameter f\u00fcr die GEO_Form Gerade: kein zus\u00e4tzlicher Parameter; Bogen: kein zus\u00e4tzlicher Parameter; Richtgerade Knick am Ende: kein zus\u00e4tzlicher Parameter; Alle anderen Kanten: GEO_Bogen_B enth\u00e4lt den Endradius in [m]. In Abh\u00e4ngigkeit der Bogenrichtung am GEO_Knoten_A wird der Radius bei einem Linksbogen negativ und bei einem Rechtsbogen positiv angegeben. Die Bogenrichtung ist immer identisch zum GEO_Radius_A. "
+			   "documentation", "Zugeh\u00f6rige Parameter f\u00fcr die GEO_Form. Gerade: kein zus\u00e4tzlicher Parameter; Bogen: kein zus\u00e4tzlicher Parameter; Richtgerade Knick am Ende: kein zus\u00e4tzlicher Parameter; Alle anderen Kanten: GEO_Bogen_B enth\u00e4lt den Endradius in [m]. In Abh\u00e4ngigkeit der Bogenrichtung am GEO_Knoten_A wird der Radius bei einem Linksbogen negativ und bei einem Rechtsbogen positiv angegeben. Die Bogenrichtung ist immer identisch zum GEO_Radius_A. "
 		   });
 		addAnnotation
 		  (getGEO_Kante_Allg_AttributeGroup_GEORichtungswinkel(),
@@ -4788,7 +4810,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		  (getGEO_Knoten_GEOPAD(),
 		   source,
 		   new String[] {
-			   "documentation", "Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus dem DB-GIS f\u00fcr jeden Vermessungspunkt bereitgestellt. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB Netz AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten h\u00e4ndisch (z.B. von Ivl-Pl\u00e4nen nachgezeichnet) erstellt wurden, wird das Attribut nicht bef\u00fcllt. "
+			   "documentation", "Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus AVANI f\u00fcr jeden Vermessungspunkt bereitgestellt. F\u00fchrende Leerzeichen sind bei der Daten\u00fcbernahme zu erhalten. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB InfraGO AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten h\u00e4ndisch (z.B. von Ivl-Pl\u00e4nen nachgezeichnet) erstellt wurden, wird das Attribut nicht bef\u00fcllt. "
 		   });
 		addAnnotation
 		  (geO_PunktEClass,
@@ -4800,7 +4822,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		  (getGEO_Punkt_IDGEOKante(),
 		   source,
 		   new String[] {
-			   "documentation", "Verweis auf eine GEO_Kante, wenn der GEO_Punkt als St\u00fctzpunkt einer Polylinie fungiert. Eine Polylinie kann durch bis zu 999\nGEO_Punkte beschrieben werden. Es ist jedoch auch zul\u00e4ssig, eine virtuelle Polylinie ohne GEO_Punkte\ndarzustellen."
+			   "documentation", "Verweis auf eine GEO_Kante, wenn der GEO_Punkt als St\u00fctzpunkt einer Polylinie fungiert. GEO_Punkte der begrenzenden GEO_Knoten erhaten keinen Verweis auf die GEO_Kante. Eine Polylinie kann durch bis zu 999 GEO_Punkte beschrieben werden. Es ist jedoch auch zul\u00e4ssig, eine virtuelle Polylinie ohne GEO_Punkte darzustellen."
 		   });
 		addAnnotation
 		  (getGEO_Punkt_IDGEOKnoten(),
@@ -4848,7 +4870,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		  (getGeschwindigkeitsprofil_Allg_AttributeGroup_AnzeigegefuehrtESKategorie(),
 		   source,
 		   new String[] {
-			   "documentation", "Kategorie f\u00fcr Geschwindigkeitsprofile der Art \\\"anzeigefef\u00fchrt ES\\\", z. B. G\u00fcltigkeit f\u00fcr Reise- oder G\u00fcterz\u00fcge."
+			   "documentation", "Kategorie f\u00fcr Geschwindigkeitsprofile der Art \\\"anzeigegef\u00fchrt ES\\\", z. B. G\u00fcltigkeit f\u00fcr Reise- oder G\u00fcterz\u00fcge. \\\"ES\\\" steht dabei f\u00fcr erh\u00f6hte Seitenbeschleunigung."
 		   });
 		addAnnotation
 		  (getGeschwindigkeitsprofil_Allg_AttributeGroup_Geschwindigkeit(),
@@ -4860,7 +4882,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		  (getGeschwindigkeitsprofil_Allg_AttributeGroup_VProfilArt(),
 		   source,
 		   new String[] {
-			   "documentation", "Art des Geschwindigkeitsprofils."
+			   "documentation", "Art des Geschwindigkeitsprofils. \\\"ES\\\" steht dabei f\u00fcr erh\u00f6hte Seitenbeschleunigung."
 		   });
 		addAnnotation
 		  (hoehenlinieEClass,
@@ -4879,6 +4901,12 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "documentation", "Verweis auf den Hoehenpunkt am Ende der Hoehenlinie. Durch die Angabe des Anfangs- sowie des Endpunkts wird die Richtung der Hoehenlinie definiert."
+		   });
+		addAnnotation
+		  (getHoehenlinie_IDTOPKantePfad(),
+		   source,
+		   new String[] {
+			   "documentation", "Verweis auf vollst\u00e4ndig von der Hoehenlinie \u00fcberdeckte TOP-Kanten. Sind die begrenzenden H\u00f6henpunkte A und B auf einer oder zwei aneinander angrenzenden TOP-Kanten verortet, ist keine Angabe erforderlich."
 		   });
 		addAnnotation
 		  (getHoehenlinie_Allg_AttributeGroup_HoehenlinieForm(),
@@ -4908,7 +4936,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		  (getHoehenpunkt_Allg_AttributeGroup_GEOPAD(),
 		   source,
 		   new String[] {
-			   "documentation", "Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus dem DB-GIS f\u00fcr jeden Vermessungspunkt bereitgestellt. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB Netz AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten h\u00e4ndisch (z.B. von Ivl-Pl\u00e4nen nachgezeichnet) erstellt wurden, wird das Attribut nicht bef\u00fcllt. "
+			   "documentation", "Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus AVANI f\u00fcr jeden Vermessungspunkt bereitgestellt. F\u00fchrende Leerzeichen sind bei der Daten\u00fcbernahme zu erhalten. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB InfraGO AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten h\u00e4ndisch (z.B. von Ivl-Pl\u00e4nen nachgezeichnet) erstellt wurden, wird das Attribut nicht bef\u00fcllt. "
 		   });
 		addAnnotation
 		  (getHoehenpunkt_Allg_AttributeGroup_HoehenpunktDatum(),
@@ -5154,7 +5182,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		  (getTOP_Knoten_Knotenname(),
 		   source,
 		   new String[] {
-			   "documentation", "Bezeichnung f\u00fcr den Knoten. Die Bezeichnung wird aus dem DB-GIS System \u00fcbernommen um die Referenz sicherzustellen. Bei Neutrassierung kann diese Bezeichnung leer bleiben. "
+			   "documentation", "Bezeichnung f\u00fcr den Knoten. Die Bezeichnung wird aus AVANI \u00fcbernommen um die Referenz sicherzustellen. F\u00fchrende Leerzeichen sind bei der Daten\u00fcbernahme zu erhalten. Bei Neutrassierung kann diese Bezeichnung leer bleiben. "
 		   });
 		addAnnotation
 		  (ueberhoehungEClass,
@@ -5166,7 +5194,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		  (getUeberhoehung_Allg_AttributeGroup_GEOPAD(),
 		   source,
 		   new String[] {
-			   "documentation", "Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus dem DB-GIS f\u00fcr jeden Vermessungspunkt bereitgestellt. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB Netz AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten h\u00e4ndisch (z.B. von Ivl-Pl\u00e4nen nachgezeichnet) erstellt wurden, wird das Attribut nicht bef\u00fcllt. "
+			   "documentation", "Bezeichnung der topografischen Punktadresse. Die Punktadresse wird aus AVANI f\u00fcr jeden Vermessungspunkt bereitgestellt. F\u00fchrende Leerzeichen sind bei der Daten\u00fcbernahme zu erhalten. Eine PAD kann in verschiedenen Koordinatensystemen liegen (GEO_Punkt). Die Verwendung ist zum Abgleich mit dem GIS-System der DB InfraGO AG erforderlich. Bei Neutrassierungen existiert noch keine PAD-Angabe. Dann wird hier die Bezeichnung des Knotens aus dieser Neutrassierung eingetragen. Wenn Daten h\u00e4ndisch (z.B. von Ivl-Pl\u00e4nen nachgezeichnet) erstellt wurden, wird das Attribut nicht bef\u00fcllt. "
 		   });
 		addAnnotation
 		  (getUeberhoehung_Allg_AttributeGroup_PlanQuelle(),
@@ -5191,6 +5219,12 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "documentation", "\u00dcberh\u00f6hungsverlauf zwischen zwei \u00dcberh\u00f6hungspunkten."
+		   });
+		addAnnotation
+		  (getUeberhoehungslinie_IDTOPKantePfad(),
+		   source,
+		   new String[] {
+			   "documentation", "Verweis auf vollst\u00e4ndig von der Ueberhoehungslinie \u00fcberdeckte TOP-Kanten. Sind die begrenzenden H\u00f6henpunkte A und B auf einer oder zwei aneinander angrenzenden TOP-Kanten verortet, ist keine Angabe erforderlich."
 		   });
 		addAnnotation
 		  (getUeberhoehungslinie_IDUeberhoehungA(),
@@ -5237,7 +5271,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TAnzeigegefuehrt_ES_Kategorie",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (anzeigegefuehrt_ES_Kategorie_TypeClassEClass,
@@ -5258,7 +5292,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TBezeichnung_Strecke",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", "[0-9]{4}(\\-[a-zA-Z0-9])?"
 		   });
 		addAnnotation
@@ -5471,7 +5505,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TGEO_KAD",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (geO_KAD_TypeClassEClass,
@@ -5611,7 +5645,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TGEO_Laenge",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "-?(0|[1-9][0-9]{0,3})\\.[0-9]{5}"
 		   });
 		addAnnotation
@@ -5633,7 +5667,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TGEO_PAD",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{1,20}"
 		   });
 		addAnnotation
@@ -5725,7 +5759,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TGEO_Radius_A",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "0\\.00000|(-?[1-9][0-9]{1,4}\\.[0-9]{5})"
 		   });
 		addAnnotation
@@ -5747,7 +5781,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TGEO_Radius_B",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "0\\.00000|(-?[1-9][0-9]{1,4}\\.[0-9]{5})"
 		   });
 		addAnnotation
@@ -5791,7 +5825,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TGeschwindigkeit",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit"
 		   });
 		addAnnotation
 		  (geschwindigkeit_TypeClassEClass,
@@ -5944,6 +5978,13 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 			   "name", "ID_Hoehenpunkt_B"
 		   });
 		addAnnotation
+		  (getHoehenlinie_IDTOPKantePfad(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "ID_TOP_Kante_Pfad"
+		   });
+		addAnnotation
 		  (hoehenlinie_Allg_AttributeGroupEClass,
 		   source,
 		   new String[] {
@@ -5990,8 +6031,8 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "THoehenlinie_Laenge",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
-			   "pattern", "(0|[1-9][0-9]{0,4})\\.[0-9]{3}"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
+			   "pattern", "(0|[1-9][0-9]{0,4})\\.[0-9]{3}|(0|[1-9][0-9]{0,4})\\.[0-9]{5}"
 		   });
 		addAnnotation
 		  (hoehenlinie_Laenge_TypeClassEClass,
@@ -6090,7 +6131,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   new String[] {
 			   "name", "THoehenpunkt_Hoehe",
 			   "baseType", "http://www.eclipse.org/emf/2003/XMLType#decimal",
-			   "pattern", "-100\\.000|-([1-9][0-9]{0,1}\\.[0-9]{3})|(-0\\.[1-9][0-9]{2}|-0\\.0[1-9][0-9]|-0\\.0[0-9][1-9])|((0|[1-9][0-9]{0,2}|[1-2][0-9]{3})\\.[0-9]{3})|3000\\.000"
+			   "pattern", "(-100\\.000|-([1-9][0-9]{0,1}\\.[0-9]{3})|(-0\\.[1-9][0-9]{2}|-0\\.0[1-9][0-9]|-0\\.0[0-9][1-9])|((0|[1-9][0-9]{0,2}|[1-2][0-9]{3})\\.[0-9]{3})|3000\\.000)|(-100\\.00000|-([1-9][0-9]{0,1}\\.[0-9]{5})|(-0\\.[1-9][0-9]{4}|-0\\.0[1-9][0-9]{3}|-0\\.0[0-9][1-9][0-9]{2}|-0\\.0[0-9]{2}[1-9][0-9]|-0\\.0[0-9]{3}[1-9])|((0|[1-9][0-9]{0,2}|[1-2][0-9]{3})\\.[0-9]{5})|3000\\.00000)"
 		   });
 		addAnnotation
 		  (hoehenpunkt_Hoehe_TypeClassEClass,
@@ -6125,7 +6166,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TKantenname",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (kantenname_TypeClassEClass,
@@ -6146,7 +6187,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TKnotenname",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{1,20}"
 		   });
 		addAnnotation
@@ -6169,7 +6210,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   new String[] {
 			   "name", "TNeigung",
 			   "baseType", "http://www.eclipse.org/emf/2003/XMLType#decimal",
-			   "pattern", "0\\.000|([1-9][0-9]{0,1}\\.[0-9]{3})|(0\\.[1-9][0-9]{2}|0\\.0[1-9][0-9]|0\\.0[0-9][1-9])|((0|[1-9][0-9]{0,1})\\.[0-9]{3})|100\\.000"
+			   "pattern", "((0\\.[0-9]{3})|((0|[1-9][0-9]{0,1})\\.[0-9]{3})|100\\.000)|((0\\.[0-9]{5})|((0|[1-9][0-9]{0,1})\\.[0-9]{5})|100\\.00000)"
 		   });
 		addAnnotation
 		  (neigung_TypeClassEClass,
@@ -6232,7 +6273,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TOertlichkeit_Abkuerzung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", "[A-Z][A-Z0-9%20]{1,4}"
 		   });
 		addAnnotation
@@ -6352,7 +6393,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TOertlichkeit_Kurzname",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{1,16}"
 		   });
 		addAnnotation
@@ -6374,7 +6415,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TOertlichkeit_Langname",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{1,40}"
 		   });
 		addAnnotation
@@ -6459,7 +6500,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TStrecke_Meter",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "-?(0|[1-9][0-9]{0,5})\\.[0-9]{3}"
 		   });
 		addAnnotation
@@ -6537,7 +6578,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TTB_Beschreibung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (tB_Beschreibung_TypeClassEClass,
@@ -6712,8 +6753,8 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TTOP_Laenge",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
-			   "pattern", "(0|[1-9][0-9]{0,4})\\.[0-9]{3}"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
+			   "pattern", "(0|[1-9][0-9]{0,4})\\.[0-9]{3}|(0|[1-9][0-9]{0,4})\\.[0-9]{5}"
 		   });
 		addAnnotation
 		  (toP_Laenge_TypeClassEClass,
@@ -6748,7 +6789,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TTP_Beschreibung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (tP_Beschreibung_TypeClassEClass,
@@ -6839,7 +6880,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TUeberhoehung_Hoehe",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "-?(0\\.[01][0-9][0-9]|0\\.200)"
 		   });
 		addAnnotation
@@ -6862,6 +6903,13 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   new String[] {
 			   "name", "CUeberhoehungslinie",
 			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getUeberhoehungslinie_IDTOPKantePfad(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "ID_TOP_Kante_Pfad"
 		   });
 		addAnnotation
 		  (getUeberhoehungslinie_IDUeberhoehungA(),
@@ -6931,8 +6979,8 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		   source,
 		   new String[] {
 			   "name", "TUeberhoehungslinie_Laenge",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
-			   "pattern", "(0|[1-9][0-9]{0,4})\\.[0-9]{3}"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
+			   "pattern", "(0|[1-9][0-9]{0,4})\\.[0-9]{3}|(0|[1-9][0-9]{0,4})\\.[0-9]{5}"
 		   });
 		addAnnotation
 		  (ueberhoehungslinie_Laenge_TypeClassEClass,
@@ -6976,265 +7024,265 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		  (geO_KanteEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getGEO_Kante_Allg_AttributeGroup_GEOLaenge(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>+/-[0.00000..9999.99999]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>+/-[0.00000..9999.99999]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getGEO_Kante_Allg_AttributeGroup_GEORadiusA(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[-99999.99999..-10.00000|0.00000|10.00000..99999.99999]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[-99999.99999..-10.00000|0.00000|10.00000..99999.99999]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getGEO_Kante_Allg_AttributeGroup_GEORadiusB(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[-99999.99999..-10.00000|0.00000|10.00000..99999.99999]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[-99999.99999..-10.00000|0.00000|10.00000..99999.99999]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getGEO_Kante_Allg_AttributeGroup_GEORichtungswinkel(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[0.00000...399.99999]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[0.00000...399.99999]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getGEO_Kante_Allg_AttributeGroup_PlanQuelle(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>GND</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>GND</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (geO_KnotenEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getGEO_Knoten_GEOPAD(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                          \n  <ppi:WorkflowInformation>\n                               \n    <ppi:Patternbeschreibung>[1..20</ppi:Patternbeschreibung>\n                            \n  </ppi:WorkflowInformation>\n                       \n"
+			   "appinfo", "\r\n                          \r\n  <ppi:WorkflowInformation>\r\n                               \r\n    <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>\r\n                            \r\n  </ppi:WorkflowInformation>\r\n                       \r\n"
 		   });
 		addAnnotation
 		  (geO_PunktEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getGEO_Punkt_Allg_AttributeGroup_GKX(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getGEO_Punkt_Allg_AttributeGroup_GKY(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getGEO_Punkt_Allg_AttributeGroup_GKZ(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>Positive und negative Werte mit genau 5 Nachkommastellen, beliebige Vorkommastellen</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getGEO_Punkt_Allg_AttributeGroup_PlanQuelle(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>GND</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>GND</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (geschwindigkeitsprofilEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (hoehenlinieEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getHoehenlinie_Allg_AttributeGroup_HoehenlinieLaenge(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[0.000..99999.999]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[0.000..99999.999] oder [0.00000..99999.99999]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getHoehenlinie_Allg_AttributeGroup_PlanQuelle(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>GND</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>GND</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (hoehenpunktEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getHoehenpunkt_Allg_AttributeGroup_GEOPAD(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [7..11] Alphanumerische Zeichenkette, die ersten vier Zeichen sind Ziffern [0..9], die 5. und 6. Stelle sind Gro\u00dfbuchstaben [A..Z] und die letzten f\u00fcnf Zeichen sind Zahlen [1 .. 99999] ohne f\u00fchrende Nullen. </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getHoehenpunkt_Allg_AttributeGroup_HoehenpunktHoehe(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[-100.000..3000.000]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[-100.000..3000.000] oder [-100.00000..3000.00000]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getHoehenpunkt_Allg_AttributeGroup_Neigung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[0.000..100.000]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[0.000..100.000] oder [0.00000..100.00000]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getHoehenpunkt_Allg_AttributeGroup_PlanQuelle(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>GND</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>GND</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (oertlichkeitEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getOertlichkeit_Bezeichnung_AttributeGroup_OertlichkeitAbkuerzung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [2..5] Gro\u00dfbuchstaben, Zahlen und Leerzeichen ohne Umlaute, f\u00fchrende Zahlen sowie f\u00fchrende Leerzeichen</ppi:Patternbeschreibung>\n                         \n    <ppi:Patternbeschreibung_Abweichend>[2..5] Gro\u00dfbuchstaben ohne Umlaute</ppi:Patternbeschreibung_Abweichend>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [2..5] Gro\u00dfbuchstaben, Zahlen und Leerzeichen ohne Umlaute, f\u00fchrende Zahlen sowie f\u00fchrende Leerzeichen</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getOertlichkeit_Bezeichnung_AttributeGroup_OertlichkeitKurzname(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getOertlichkeit_Bezeichnung_AttributeGroup_OertlichkeitLangname(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..40] darf sich innerhalb eines Datenbestandes nicht wiederholen beinhaltet rechtsb\u00fcndig einzutragende Erg\u00e4nzungen zur Unterscheidung gleichnamiger \u00d6rtlichkeiten muss mit Orts- bzw. Ortsteilnamen beginnen </ppi:Patternbeschreibung>\n                         \n    <ppi:Patternbeschreibung_Abweichend>[1..40]</ppi:Patternbeschreibung_Abweichend>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..40] darf sich innerhalb eines Datenbestandes nicht wiederholen beinhaltet rechtsb\u00fcndig einzutragende Erg\u00e4nzungen zur Unterscheidung gleichnamiger \u00d6rtlichkeiten muss mit Orts- bzw. Ortsteilnamen beginnen </ppi:Patternbeschreibung>\r\n                         \r\n    <ppi:Patternbeschreibung_Abweichend>[1..40]</ppi:Patternbeschreibung_Abweichend>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (streckeEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getStrecke_Bezeichnung_AttributeGroup_BezeichnungStrecke(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>  [4..6]; Die ersten vier Zeichen sind verpflichtend und bestehen aus Ziffern [0..9]. Zur zus\u00e4tzlichen Kennung bei stark auseinander triftenden Kilometierungsachsen einer zweigleisigen Strecke wird ein [-] als f\u00fcnftes Zeichen und ein alphanumerisches Zeichen [A..Z|a..z|0..9] als sechstes Zeichen verwendet. </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>  [4..6]; Die ersten vier Zeichen sind verpflichtend und bestehen aus Ziffern [0..9]. Zur zus\u00e4tzlichen Kennung bei stark auseinander triftenden Kilometierungsachsen einer zweigleisigen Strecke wird ein [-] als f\u00fcnftes Zeichen und ein alphanumerisches Zeichen [A..Z|a..z|0..9] als sechstes Zeichen verwendet. </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (strecke_BremswegEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo|ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo|ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getStrecke_Bremsweg_Bremsweg(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                          \n  <ppi:WorkflowInformation>\n                               \n    <ppi:ProposedValue>1000</ppi:ProposedValue>\n                            \n  </ppi:WorkflowInformation>\n                       \n"
+			   "appinfo", "\r\n                          \r\n  <ppi:WorkflowInformation>\r\n                               \r\n    <ppi:ProposedValue>1000</ppi:ProposedValue>\r\n                            \r\n  </ppi:WorkflowInformation>\r\n                       \r\n"
 		   });
 		addAnnotation
 		  (strecke_PunktEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getStrecke_Punkt_StreckeMeter(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                          \n  <ppi:WorkflowInformation>\n                               \n    <ppi:Patternbeschreibung>[-999999.999..0.000..999999.999]</ppi:Patternbeschreibung>\n                            \n  </ppi:WorkflowInformation>\n                       \n"
+			   "appinfo", "\r\n                          \r\n  <ppi:WorkflowInformation>\r\n                               \r\n    <ppi:Patternbeschreibung>[-999999.999..0.000..999999.999]</ppi:Patternbeschreibung>\r\n                            \r\n  </ppi:WorkflowInformation>\r\n                       \r\n"
 		   });
 		addAnnotation
 		  (technischer_BereichEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>B\u00dc|ESTW|ETCS|Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>B\u00dc|ESTW|ETCS|Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (technischer_PunktEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>B\u00dc|ESTW|ETCS|Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>B\u00dc|ESTW|ETCS|Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (toP_KanteEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getTOP_Kante_Allg_AttributeGroup_TOPLaenge(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [0.000..99999.999]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[0.000..99999.999] oder [0.00000..99999.99999]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (toP_KnotenEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getTOP_Knoten_Knotenname(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                          \n  <ppi:WorkflowInformation>\n                               \n    <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>\n                            \n  </ppi:WorkflowInformation>\n                       \n"
+			   "appinfo", "\r\n                          \r\n  <ppi:WorkflowInformation>\r\n                               \r\n    <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>\r\n                            \r\n  </ppi:WorkflowInformation>\r\n                       \r\n"
 		   });
 		addAnnotation
 		  (ueberhoehungEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getUeberhoehung_Allg_AttributeGroup_GEOPAD(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getUeberhoehung_Allg_AttributeGroup_UeberhoehungHoehe(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[-0.200..0.200]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[-0.200..0.200]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (ueberhoehungslinieEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Geo</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getUeberhoehungslinie_Allg_AttributeGroup_PlanQuelle(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>GND</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>GND</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getUeberhoehungslinie_Allg_AttributeGroup_UeberhoehungslinieLaenge(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[0.000..99999.999]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[0.000..99999.999] oder [0.00000..99999.99999]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 	}
 

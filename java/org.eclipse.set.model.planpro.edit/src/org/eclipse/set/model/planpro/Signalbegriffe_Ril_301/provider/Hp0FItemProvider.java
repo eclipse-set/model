@@ -7,7 +7,7 @@
  *  
  * SPDX-License-Identifier: EPL-2.0
  */
-package org.eclipse.set.model.planpro.Layoutinformationen.provider;
+package org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.provider;
 
 
 import java.util.Collection;
@@ -18,32 +18,28 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
 
-import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ViewerNotification;
-
-import org.eclipse.set.model.planpro.BasisTypen.provider.BasisAttribut_AttributeGroupItemProvider;
-
-import org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_GEO_Punkt_TypeClass;
-import org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenPackage;
 
 import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
+import org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp0F;
+
+import org.eclipse.set.model.planpro.Signalbegriffe_Struktur.provider.Signalbegriff_ID_TypeClassItemProvider;
+
 /**
- * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_GEO_Punkt_TypeClass} object.
+ * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp0F} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class Darstellung_GEO_Punkt_TypeClassItemProvider extends BasisAttribut_AttributeGroupItemProvider {
+public class Hp0FItemProvider extends Signalbegriff_ID_TypeClassItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Darstellung_GEO_Punkt_TypeClassItemProvider(AdapterFactory adapterFactory) {
+	public Hp0FItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -58,42 +54,19 @@ public class Darstellung_GEO_Punkt_TypeClassItemProvider extends BasisAttribut_A
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addWertPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Wert feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addWertPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Darstellung_GEO_Punkt_TypeClass_wert_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Darstellung_GEO_Punkt_TypeClass_wert_feature", "_UI_Darstellung_GEO_Punkt_TypeClass_type"),
-				 LayoutinformationenPackage.Literals.DARSTELLUNG_GEO_PUNKT_TYPE_CLASS__WERT,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This returns Darstellung_GEO_Punkt_TypeClass.gif.
+	 * This returns Hp0F.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Darstellung_GEO_Punkt_TypeClass"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/Hp0F"));
 	}
 
 	/**
@@ -114,10 +87,10 @@ public class Darstellung_GEO_Punkt_TypeClassItemProvider extends BasisAttribut_A
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Darstellung_GEO_Punkt_TypeClass)object).getWert();
+		String label = ((Hp0F)object).getSymbol();
 		return label == null || label.length() == 0 ?
-			getString("_UI_Darstellung_GEO_Punkt_TypeClass_type") :
-			getString("_UI_Darstellung_GEO_Punkt_TypeClass_type") + " " + label;
+			getString("_UI_Hp0F_type") :
+			getString("_UI_Hp0F_type") + " " + label;
 	}
 
 
@@ -131,12 +104,6 @@ public class Darstellung_GEO_Punkt_TypeClassItemProvider extends BasisAttribut_A
 	@Override
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
-
-		switch (notification.getFeatureID(Darstellung_GEO_Punkt_TypeClass.class)) {
-			case LayoutinformationenPackage.DARSTELLUNG_GEO_PUNKT_TYPE_CLASS__WERT:
-				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-				return;
-		}
 		super.notifyChanged(notification);
 	}
 

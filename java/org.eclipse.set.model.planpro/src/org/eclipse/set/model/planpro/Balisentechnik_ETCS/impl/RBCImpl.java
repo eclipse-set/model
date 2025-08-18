@@ -28,10 +28,12 @@ import org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPack
 import org.eclipse.set.model.planpro.Balisentechnik_ETCS.ETCS_Adresse_AttributeGroup;
 import org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC;
 import org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_Allg_AttributeGroup;
+import org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_Bezeichnung_AttributeGroup;
 
 import org.eclipse.set.model.planpro.Basisobjekte.impl.Basis_ObjektImpl;
 
 import org.eclipse.set.model.planpro.Verweise.ID_ESTW_Zentraleinheit_TypeClass;
+import org.eclipse.set.model.planpro.Verweise.ID_Oertlichkeit_Proxy_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_Unterbringung_TypeClass;
 
 /**
@@ -42,8 +44,10 @@ import org.eclipse.set.model.planpro.Verweise.ID_Unterbringung_TypeClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.RBCImpl#getBezeichnung <em>Bezeichnung</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.RBCImpl#getETCSAdresse <em>ETCS Adresse</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.RBCImpl#getIDESTWZentraleinheit <em>IDESTW Zentraleinheit</em>}</li>
+ *   <li>{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.RBCImpl#getIDOertlichkeitNamensgebend <em>ID Oertlichkeit Namensgebend</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.RBCImpl#getIDUnterbringung <em>ID Unterbringung</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.RBCImpl#getRBCAllg <em>RBC Allg</em>}</li>
  * </ul>
@@ -51,6 +55,16 @@ import org.eclipse.set.model.planpro.Verweise.ID_Unterbringung_TypeClass;
  * @generated
  */
 public class RBCImpl extends Basis_ObjektImpl implements RBC {
+	/**
+	 * The cached value of the '{@link #getBezeichnung() <em>Bezeichnung</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBezeichnung()
+	 * @generated
+	 * @ordered
+	 */
+	protected RBC_Bezeichnung_AttributeGroup bezeichnung;
+
 	/**
 	 * The cached value of the '{@link #getETCSAdresse() <em>ETCS Adresse</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -70,6 +84,16 @@ public class RBCImpl extends Basis_ObjektImpl implements RBC {
 	 * @ordered
 	 */
 	protected EList<ID_ESTW_Zentraleinheit_TypeClass> iDESTWZentraleinheit;
+
+	/**
+	 * The cached value of the '{@link #getIDOertlichkeitNamensgebend() <em>ID Oertlichkeit Namensgebend</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIDOertlichkeitNamensgebend()
+	 * @generated
+	 * @ordered
+	 */
+	protected ID_Oertlichkeit_Proxy_TypeClass iDOertlichkeitNamensgebend;
 
 	/**
 	 * The cached value of the '{@link #getIDUnterbringung() <em>ID Unterbringung</em>}' containment reference.
@@ -108,6 +132,51 @@ public class RBCImpl extends Basis_ObjektImpl implements RBC {
 	@Override
 	protected EClass eStaticClass() {
 		return Balisentechnik_ETCSPackage.eINSTANCE.getRBC();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RBC_Bezeichnung_AttributeGroup getBezeichnung() {
+		return bezeichnung;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetBezeichnung(RBC_Bezeichnung_AttributeGroup newBezeichnung, NotificationChain msgs) {
+		RBC_Bezeichnung_AttributeGroup oldBezeichnung = bezeichnung;
+		bezeichnung = newBezeichnung;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Balisentechnik_ETCSPackage.RBC__BEZEICHNUNG, oldBezeichnung, newBezeichnung);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBezeichnung(RBC_Bezeichnung_AttributeGroup newBezeichnung) {
+		if (newBezeichnung != bezeichnung) {
+			NotificationChain msgs = null;
+			if (bezeichnung != null)
+				msgs = ((InternalEObject)bezeichnung).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - Balisentechnik_ETCSPackage.RBC__BEZEICHNUNG, null, msgs);
+			if (newBezeichnung != null)
+				msgs = ((InternalEObject)newBezeichnung).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - Balisentechnik_ETCSPackage.RBC__BEZEICHNUNG, null, msgs);
+			msgs = basicSetBezeichnung(newBezeichnung, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Balisentechnik_ETCSPackage.RBC__BEZEICHNUNG, newBezeichnung, newBezeichnung));
 	}
 
 	/**
@@ -166,6 +235,51 @@ public class RBCImpl extends Basis_ObjektImpl implements RBC {
 			iDESTWZentraleinheit = new EObjectContainmentEList<ID_ESTW_Zentraleinheit_TypeClass>(ID_ESTW_Zentraleinheit_TypeClass.class, this, Balisentechnik_ETCSPackage.RBC__IDESTW_ZENTRALEINHEIT);
 		}
 		return iDESTWZentraleinheit;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ID_Oertlichkeit_Proxy_TypeClass getIDOertlichkeitNamensgebend() {
+		return iDOertlichkeitNamensgebend;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetIDOertlichkeitNamensgebend(ID_Oertlichkeit_Proxy_TypeClass newIDOertlichkeitNamensgebend, NotificationChain msgs) {
+		ID_Oertlichkeit_Proxy_TypeClass oldIDOertlichkeitNamensgebend = iDOertlichkeitNamensgebend;
+		iDOertlichkeitNamensgebend = newIDOertlichkeitNamensgebend;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Balisentechnik_ETCSPackage.RBC__ID_OERTLICHKEIT_NAMENSGEBEND, oldIDOertlichkeitNamensgebend, newIDOertlichkeitNamensgebend);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setIDOertlichkeitNamensgebend(ID_Oertlichkeit_Proxy_TypeClass newIDOertlichkeitNamensgebend) {
+		if (newIDOertlichkeitNamensgebend != iDOertlichkeitNamensgebend) {
+			NotificationChain msgs = null;
+			if (iDOertlichkeitNamensgebend != null)
+				msgs = ((InternalEObject)iDOertlichkeitNamensgebend).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - Balisentechnik_ETCSPackage.RBC__ID_OERTLICHKEIT_NAMENSGEBEND, null, msgs);
+			if (newIDOertlichkeitNamensgebend != null)
+				msgs = ((InternalEObject)newIDOertlichkeitNamensgebend).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - Balisentechnik_ETCSPackage.RBC__ID_OERTLICHKEIT_NAMENSGEBEND, null, msgs);
+			msgs = basicSetIDOertlichkeitNamensgebend(newIDOertlichkeitNamensgebend, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Balisentechnik_ETCSPackage.RBC__ID_OERTLICHKEIT_NAMENSGEBEND, newIDOertlichkeitNamensgebend, newIDOertlichkeitNamensgebend));
 	}
 
 	/**
@@ -266,10 +380,14 @@ public class RBCImpl extends Basis_ObjektImpl implements RBC {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case Balisentechnik_ETCSPackage.RBC__BEZEICHNUNG:
+				return basicSetBezeichnung(null, msgs);
 			case Balisentechnik_ETCSPackage.RBC__ETCS_ADRESSE:
 				return basicSetETCSAdresse(null, msgs);
 			case Balisentechnik_ETCSPackage.RBC__IDESTW_ZENTRALEINHEIT:
 				return ((InternalEList<?>)getIDESTWZentraleinheit()).basicRemove(otherEnd, msgs);
+			case Balisentechnik_ETCSPackage.RBC__ID_OERTLICHKEIT_NAMENSGEBEND:
+				return basicSetIDOertlichkeitNamensgebend(null, msgs);
 			case Balisentechnik_ETCSPackage.RBC__ID_UNTERBRINGUNG:
 				return basicSetIDUnterbringung(null, msgs);
 			case Balisentechnik_ETCSPackage.RBC__RBC_ALLG:
@@ -286,10 +404,14 @@ public class RBCImpl extends Basis_ObjektImpl implements RBC {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case Balisentechnik_ETCSPackage.RBC__BEZEICHNUNG:
+				return getBezeichnung();
 			case Balisentechnik_ETCSPackage.RBC__ETCS_ADRESSE:
 				return getETCSAdresse();
 			case Balisentechnik_ETCSPackage.RBC__IDESTW_ZENTRALEINHEIT:
 				return getIDESTWZentraleinheit();
+			case Balisentechnik_ETCSPackage.RBC__ID_OERTLICHKEIT_NAMENSGEBEND:
+				return getIDOertlichkeitNamensgebend();
 			case Balisentechnik_ETCSPackage.RBC__ID_UNTERBRINGUNG:
 				return getIDUnterbringung();
 			case Balisentechnik_ETCSPackage.RBC__RBC_ALLG:
@@ -307,12 +429,18 @@ public class RBCImpl extends Basis_ObjektImpl implements RBC {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case Balisentechnik_ETCSPackage.RBC__BEZEICHNUNG:
+				setBezeichnung((RBC_Bezeichnung_AttributeGroup)newValue);
+				return;
 			case Balisentechnik_ETCSPackage.RBC__ETCS_ADRESSE:
 				setETCSAdresse((ETCS_Adresse_AttributeGroup)newValue);
 				return;
 			case Balisentechnik_ETCSPackage.RBC__IDESTW_ZENTRALEINHEIT:
 				getIDESTWZentraleinheit().clear();
 				getIDESTWZentraleinheit().addAll((Collection<? extends ID_ESTW_Zentraleinheit_TypeClass>)newValue);
+				return;
+			case Balisentechnik_ETCSPackage.RBC__ID_OERTLICHKEIT_NAMENSGEBEND:
+				setIDOertlichkeitNamensgebend((ID_Oertlichkeit_Proxy_TypeClass)newValue);
 				return;
 			case Balisentechnik_ETCSPackage.RBC__ID_UNTERBRINGUNG:
 				setIDUnterbringung((ID_Unterbringung_TypeClass)newValue);
@@ -332,11 +460,17 @@ public class RBCImpl extends Basis_ObjektImpl implements RBC {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case Balisentechnik_ETCSPackage.RBC__BEZEICHNUNG:
+				setBezeichnung((RBC_Bezeichnung_AttributeGroup)null);
+				return;
 			case Balisentechnik_ETCSPackage.RBC__ETCS_ADRESSE:
 				setETCSAdresse((ETCS_Adresse_AttributeGroup)null);
 				return;
 			case Balisentechnik_ETCSPackage.RBC__IDESTW_ZENTRALEINHEIT:
 				getIDESTWZentraleinheit().clear();
+				return;
+			case Balisentechnik_ETCSPackage.RBC__ID_OERTLICHKEIT_NAMENSGEBEND:
+				setIDOertlichkeitNamensgebend((ID_Oertlichkeit_Proxy_TypeClass)null);
 				return;
 			case Balisentechnik_ETCSPackage.RBC__ID_UNTERBRINGUNG:
 				setIDUnterbringung((ID_Unterbringung_TypeClass)null);
@@ -356,10 +490,14 @@ public class RBCImpl extends Basis_ObjektImpl implements RBC {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case Balisentechnik_ETCSPackage.RBC__BEZEICHNUNG:
+				return bezeichnung != null;
 			case Balisentechnik_ETCSPackage.RBC__ETCS_ADRESSE:
 				return eTCSAdresse != null;
 			case Balisentechnik_ETCSPackage.RBC__IDESTW_ZENTRALEINHEIT:
 				return iDESTWZentraleinheit != null && !iDESTWZentraleinheit.isEmpty();
+			case Balisentechnik_ETCSPackage.RBC__ID_OERTLICHKEIT_NAMENSGEBEND:
+				return iDOertlichkeitNamensgebend != null;
 			case Balisentechnik_ETCSPackage.RBC__ID_UNTERBRINGUNG:
 				return iDUnterbringung != null;
 			case Balisentechnik_ETCSPackage.RBC__RBC_ALLG:

@@ -9,13 +9,20 @@
  */
 package org.eclipse.set.model.planpro.Geodaten.impl;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.eclipse.set.model.planpro.Basisobjekte.impl.Basis_ObjektImpl;
 
@@ -23,6 +30,7 @@ import org.eclipse.set.model.planpro.Geodaten.GeodatenPackage;
 import org.eclipse.set.model.planpro.Geodaten.Ueberhoehungslinie;
 import org.eclipse.set.model.planpro.Geodaten.Ueberhoehungslinie_Allg_AttributeGroup;
 
+import org.eclipse.set.model.planpro.Verweise.ID_TOP_Kante_ohne_Proxy_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_Ueberhoehung_TypeClass;
 
 /**
@@ -33,6 +41,7 @@ import org.eclipse.set.model.planpro.Verweise.ID_Ueberhoehung_TypeClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.eclipse.set.model.planpro.Geodaten.impl.UeberhoehungslinieImpl#getIDTOPKantePfad <em>IDTOP Kante Pfad</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Geodaten.impl.UeberhoehungslinieImpl#getIDUeberhoehungA <em>ID Ueberhoehung A</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Geodaten.impl.UeberhoehungslinieImpl#getIDUeberhoehungB <em>ID Ueberhoehung B</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Geodaten.impl.UeberhoehungslinieImpl#getUeberhoehungslinieAllg <em>Ueberhoehungslinie Allg</em>}</li>
@@ -41,6 +50,16 @@ import org.eclipse.set.model.planpro.Verweise.ID_Ueberhoehung_TypeClass;
  * @generated
  */
 public class UeberhoehungslinieImpl extends Basis_ObjektImpl implements Ueberhoehungslinie {
+	/**
+	 * The cached value of the '{@link #getIDTOPKantePfad() <em>IDTOP Kante Pfad</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIDTOPKantePfad()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ID_TOP_Kante_ohne_Proxy_TypeClass> iDTOPKantePfad;
+
 	/**
 	 * The cached value of the '{@link #getIDUeberhoehungA() <em>ID Ueberhoehung A</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -88,6 +107,19 @@ public class UeberhoehungslinieImpl extends Basis_ObjektImpl implements Ueberhoe
 	@Override
 	protected EClass eStaticClass() {
 		return GeodatenPackage.Literals.UEBERHOEHUNGSLINIE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EList<ID_TOP_Kante_ohne_Proxy_TypeClass> getIDTOPKantePfad() {
+		if (iDTOPKantePfad == null) {
+			iDTOPKantePfad = new EObjectContainmentEList<ID_TOP_Kante_ohne_Proxy_TypeClass>(ID_TOP_Kante_ohne_Proxy_TypeClass.class, this, GeodatenPackage.UEBERHOEHUNGSLINIE__IDTOP_KANTE_PFAD);
+		}
+		return iDTOPKantePfad;
 	}
 
 	/**
@@ -233,6 +265,8 @@ public class UeberhoehungslinieImpl extends Basis_ObjektImpl implements Ueberhoe
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case GeodatenPackage.UEBERHOEHUNGSLINIE__IDTOP_KANTE_PFAD:
+				return ((InternalEList<?>)getIDTOPKantePfad()).basicRemove(otherEnd, msgs);
 			case GeodatenPackage.UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_A:
 				return basicSetIDUeberhoehungA(null, msgs);
 			case GeodatenPackage.UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_B:
@@ -251,6 +285,8 @@ public class UeberhoehungslinieImpl extends Basis_ObjektImpl implements Ueberhoe
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case GeodatenPackage.UEBERHOEHUNGSLINIE__IDTOP_KANTE_PFAD:
+				return getIDTOPKantePfad();
 			case GeodatenPackage.UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_A:
 				return getIDUeberhoehungA();
 			case GeodatenPackage.UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_B:
@@ -266,9 +302,14 @@ public class UeberhoehungslinieImpl extends Basis_ObjektImpl implements Ueberhoe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case GeodatenPackage.UEBERHOEHUNGSLINIE__IDTOP_KANTE_PFAD:
+				getIDTOPKantePfad().clear();
+				getIDTOPKantePfad().addAll((Collection<? extends ID_TOP_Kante_ohne_Proxy_TypeClass>)newValue);
+				return;
 			case GeodatenPackage.UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_A:
 				setIDUeberhoehungA((ID_Ueberhoehung_TypeClass)newValue);
 				return;
@@ -290,6 +331,9 @@ public class UeberhoehungslinieImpl extends Basis_ObjektImpl implements Ueberhoe
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case GeodatenPackage.UEBERHOEHUNGSLINIE__IDTOP_KANTE_PFAD:
+				getIDTOPKantePfad().clear();
+				return;
 			case GeodatenPackage.UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_A:
 				setIDUeberhoehungA((ID_Ueberhoehung_TypeClass)null);
 				return;
@@ -311,6 +355,8 @@ public class UeberhoehungslinieImpl extends Basis_ObjektImpl implements Ueberhoe
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case GeodatenPackage.UEBERHOEHUNGSLINIE__IDTOP_KANTE_PFAD:
+				return iDTOPKantePfad != null && !iDTOPKantePfad.isEmpty();
 			case GeodatenPackage.UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_A:
 				return iDUeberhoehungA != null;
 			case GeodatenPackage.UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_B:

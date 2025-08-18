@@ -20,9 +20,6 @@ import org.eclipse.emf.common.util.Enumerator;
  * A representation of the literals of the enumeration '<em><b>ENUM Hoehenlinie Form</b></em>',
  * and utility methods for working with them.
  * <!-- end-user-doc -->
- * <!-- begin-model-doc -->
- * spa/WS 31.07.2018
- * <!-- end-model-doc -->
  * @see org.eclipse.set.model.planpro.Geodaten.GeodatenPackage#getENUMHoehenlinieForm()
  * @model extendedMetaData="name='ENUMHoehenlinie_Form'"
  * @generated
@@ -49,6 +46,16 @@ public enum ENUMHoehenlinieForm implements Enumerator {
 	ENUM_HOEHENLINIE_FORM_PARABEL(1, "ENUMHoehenlinie_Form_Parabel", "Parabel"),
 
 	/**
+	 * The '<em><b>ENUM Hoehenlinie Form sonstige</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_HOEHENLINIE_FORM_SONSTIGE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_HOEHENLINIE_FORM_SONSTIGE(2, "ENUMHoehenlinie_Form_sonstige", "sonstige"),
+
+	/**
 	 * The '<em><b>ENUM Hoehenlinie Form Weichenabzweig</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -56,7 +63,7 @@ public enum ENUMHoehenlinieForm implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_HOEHENLINIE_FORM_WEICHENABZWEIG(2, "ENUMHoehenlinie_Form_Weichenabzweig", "Weichenabzweig");
+	ENUM_HOEHENLINIE_FORM_WEICHENABZWEIG(3, "ENUMHoehenlinie_Form_Weichenabzweig", "Weichenabzweig");
 
 	/**
 	 * The '<em><b>ENUM Hoehenlinie Form Gerade</b></em>' literal value.
@@ -81,6 +88,17 @@ public enum ENUMHoehenlinieForm implements Enumerator {
 	public static final int ENUM_HOEHENLINIE_FORM_PARABEL_VALUE = 1;
 
 	/**
+	 * The '<em><b>ENUM Hoehenlinie Form sonstige</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_HOEHENLINIE_FORM_SONSTIGE
+	 * @model name="ENUMHoehenlinie_Form_sonstige" literal="sonstige"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_HOEHENLINIE_FORM_SONSTIGE_VALUE = 2;
+
+	/**
 	 * The '<em><b>ENUM Hoehenlinie Form Weichenabzweig</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -89,7 +107,7 @@ public enum ENUMHoehenlinieForm implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_HOEHENLINIE_FORM_WEICHENABZWEIG_VALUE = 2;
+	public static final int ENUM_HOEHENLINIE_FORM_WEICHENABZWEIG_VALUE = 3;
 
 	/**
 	 * An array of all the '<em><b>ENUM Hoehenlinie Form</b></em>' enumerators.
@@ -101,6 +119,7 @@ public enum ENUMHoehenlinieForm implements Enumerator {
 		new ENUMHoehenlinieForm[] {
 			ENUM_HOEHENLINIE_FORM_GERADE,
 			ENUM_HOEHENLINIE_FORM_PARABEL,
+			ENUM_HOEHENLINIE_FORM_SONSTIGE,
 			ENUM_HOEHENLINIE_FORM_WEICHENABZWEIG,
 		};
 
@@ -160,6 +179,7 @@ public enum ENUMHoehenlinieForm implements Enumerator {
 		switch (value) {
 			case ENUM_HOEHENLINIE_FORM_GERADE_VALUE: return ENUM_HOEHENLINIE_FORM_GERADE;
 			case ENUM_HOEHENLINIE_FORM_PARABEL_VALUE: return ENUM_HOEHENLINIE_FORM_PARABEL;
+			case ENUM_HOEHENLINIE_FORM_SONSTIGE_VALUE: return ENUM_HOEHENLINIE_FORM_SONSTIGE;
 			case ENUM_HOEHENLINIE_FORM_WEICHENABZWEIG_VALUE: return ENUM_HOEHENLINIE_FORM_WEICHENABZWEIG;
 		}
 		return null;

@@ -83,7 +83,17 @@ public enum ENUMUeberhoehungslinieForm implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_S(5, "ENUMUeberhoehungslinie_Form_Schere_S", "Schere_S");
+	ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_S(5, "ENUMUeberhoehungslinie_Form_Schere_S", "Schere_S"),
+
+	/**
+	 * The '<em><b>ENUM Ueberhoehungslinie Form sonstige</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_UEBERHOEHUNGSLINIE_FORM_SONSTIGE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_UEBERHOEHUNGSLINIE_FORM_SONSTIGE(6, "ENUMUeberhoehungslinie_Form_sonstige", "sonstige");
 
 	/**
 	 * The '<em><b>ENUM Ueberhoehungslinie Form gleichbleibend</b></em>' literal value.
@@ -152,6 +162,17 @@ public enum ENUMUeberhoehungslinieForm implements Enumerator {
 	public static final int ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_S_VALUE = 5;
 
 	/**
+	 * The '<em><b>ENUM Ueberhoehungslinie Form sonstige</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_UEBERHOEHUNGSLINIE_FORM_SONSTIGE
+	 * @model name="ENUMUeberhoehungslinie_Form_sonstige" literal="sonstige"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_UEBERHOEHUNGSLINIE_FORM_SONSTIGE_VALUE = 6;
+
+	/**
 	 * An array of all the '<em><b>ENUM Ueberhoehungslinie Form</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -165,6 +186,7 @@ public enum ENUMUeberhoehungslinieForm implements Enumerator {
 			ENUM_UEBERHOEHUNGSLINIE_FORM_RAMPE_S,
 			ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_BLOSS,
 			ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_S,
+			ENUM_UEBERHOEHUNGSLINIE_FORM_SONSTIGE,
 		};
 
 	/**
@@ -227,6 +249,7 @@ public enum ENUMUeberhoehungslinieForm implements Enumerator {
 			case ENUM_UEBERHOEHUNGSLINIE_FORM_RAMPE_S_VALUE: return ENUM_UEBERHOEHUNGSLINIE_FORM_RAMPE_S;
 			case ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_BLOSS_VALUE: return ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_BLOSS;
 			case ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_S_VALUE: return ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_S;
+			case ENUM_UEBERHOEHUNGSLINIE_FORM_SONSTIGE_VALUE: return ENUM_UEBERHOEHUNGSLINIE_FORM_SONSTIGE;
 		}
 		return null;
 	}

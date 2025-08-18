@@ -3197,6 +3197,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		addEEnumLiteral(enumAnhangArtEEnum, ENUMAnhangArt.ENUM_ANHANG_ART_MOEBELAUFSTELLPLAN_AUFRISS);
 		addEEnumLiteral(enumAnhangArtEEnum, ENUMAnhangArt.ENUM_ANHANG_ART_MOEBELAUFSTELLPLAN_GRUNDRISS);
 		addEEnumLiteral(enumAnhangArtEEnum, ENUMAnhangArt.ENUM_ANHANG_ART_MONITORAUFTEILUNG);
+		addEEnumLiteral(enumAnhangArtEEnum, ENUMAnhangArt.ENUM_ANHANG_ART_PLANUNGSBUERO_LOGO);
 		addEEnumLiteral(enumAnhangArtEEnum, ENUMAnhangArt.ENUM_ANHANG_ART_PLANVERZEICHNIS);
 		addEEnumLiteral(enumAnhangArtEEnum, ENUMAnhangArt.ENUM_ANHANG_ART_PRUEFBERICHT);
 		addEEnumLiteral(enumAnhangArtEEnum, ENUMAnhangArt.ENUM_ANHANG_ART_RAUMPLAN_BEDIENRAEUME);
@@ -3282,6 +3283,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 
 		initEEnum(enumDateitypEEnum, ENUMDateityp.class, "ENUMDateityp");
 		addEEnumLiteral(enumDateitypEEnum, ENUMDateityp.ENUM_DATEITYP_JPG);
+		addEEnumLiteral(enumDateitypEEnum, ENUMDateityp.ENUM_DATEITYP_MP4);
 		addEEnumLiteral(enumDateitypEEnum, ENUMDateityp.ENUM_DATEITYP_MPEG);
 		addEEnumLiteral(enumDateitypEEnum, ENUMDateityp.ENUM_DATEITYP_PDF);
 		addEEnumLiteral(enumDateitypEEnum, ENUMDateityp.ENUM_DATEITYP_PNG);
@@ -3458,6 +3460,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		initEEnum(enumObjektzustandBesondersEEnum, ENUMObjektzustandBesonders.class, "ENUMObjektzustandBesonders");
 		addEEnumLiteral(enumObjektzustandBesondersEEnum, ENUMObjektzustandBesonders.ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_ANGESTEUERT_NICHT_GUELTIG);
 		addEEnumLiteral(enumObjektzustandBesondersEEnum, ENUMObjektzustandBesonders.ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_ANGESTEUERT_UNGUELTIG_ABGEDECKT);
+		addEEnumLiteral(enumObjektzustandBesondersEEnum, ENUMObjektzustandBesonders.ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_ABGEDECKT);
 		addEEnumLiteral(enumObjektzustandBesondersEEnum, ENUMObjektzustandBesonders.ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_UNGUELTIG);
 		addEEnumLiteral(enumObjektzustandBesondersEEnum, ENUMObjektzustandBesonders.ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_VORBEREITEND);
 		addEEnumLiteral(enumObjektzustandBesondersEEnum, ENUMObjektzustandBesonders.ENUM_OBJEKTZUSTAND_BESONDERS_SONSTIGE);
@@ -3468,6 +3471,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		addEEnumLiteral(enumRolleEEnum, ENUMRolle.ENUM_ROLLE_GEO_PLANER);
 		addEEnumLiteral(enumRolleEEnum, ENUMRolle.ENUM_ROLLE_GIS_DATEN);
 		addEEnumLiteral(enumRolleEEnum, ENUMRolle.ENUM_ROLLE_LST_FACHPLANER);
+		addEEnumLiteral(enumRolleEEnum, ENUMRolle.ENUM_ROLLE_ODB2_PLAN_PRO);
 		addEEnumLiteral(enumRolleEEnum, ENUMRolle.ENUM_ROLLE_SONSTIGE);
 
 		// Initialize data types
@@ -3522,7 +3526,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 		addAnnotation
 		  (anhangEClass,
@@ -3720,7 +3724,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		  (getLO_Material_AttributeGroup_LODBFreigabe(),
 		   source,
 		   new String[] {
-			   "documentation", "Art der von der DB Netz AG erteilten Freigabe (Erprobung oder Serienfreigabe)."
+			   "documentation", "Art der von der DB InfraGO AG erteilten Freigabe (Erprobung oder Serienfreigabe)."
 		   });
 		addAnnotation
 		  (getLO_Material_AttributeGroup_LOEMANr(),
@@ -3863,7 +3867,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TAbstand",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "(0|[1-9][0-9]{0,4})\\.[0-9]{3}"
 		   });
 		addAnnotation
@@ -4102,7 +4106,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TBegrenzung_A",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "(0|[1-9][0-9]{0,4})\\.[0-9]{3}"
 		   });
 		addAnnotation
@@ -4124,7 +4128,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TBegrenzung_B",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "(0|[1-9][0-9]{0,4})\\.[0-9]{3}"
 		   });
 		addAnnotation
@@ -4195,7 +4199,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TBeschreibung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (beschreibung_TypeClassEClass,
@@ -4258,7 +4262,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TBV_Kategorie",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bV_Kategorie_TypeClassEClass,
@@ -4321,7 +4325,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TDB_GDI_Referenz",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{1,20}"
 		   });
 		addAnnotation
@@ -4434,7 +4438,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TIdentitaet",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGUID"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGUID"
 		   });
 		addAnnotation
 		  (identitaet_TypeClassEClass,
@@ -4469,7 +4473,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TKommentar",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText"
 		   });
 		addAnnotation
 		  (kommentar_TypeClassEClass,
@@ -4490,8 +4494,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TKurztext",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
-			   "pattern", ".{1,100}"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (kurztext_TypeClassEClass,
@@ -4554,7 +4557,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TLO_Ausgabestand",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (lO_Ausgabestand_TypeClassEClass,
@@ -4589,7 +4592,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TLO_DB_Freigabe",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (lO_DB_Freigabe_TypeClassEClass,
@@ -4610,7 +4613,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TLO_EMA_Nr",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (lO_EMA_Nr_TypeClassEClass,
@@ -4645,7 +4648,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TLO_Firmensachnummer",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (lO_Firmensachnummer_TypeClassEClass,
@@ -4715,7 +4718,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TLO_Seriennummer",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (lO_Seriennummer_TypeClassEClass,
@@ -4897,7 +4900,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TRichtungsbezug",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TWirkrichtung"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TWirkrichtung"
 		   });
 		addAnnotation
 		  (richtungsbezug_TypeClassEClass,
@@ -4918,7 +4921,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TSeitliche_Lage",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts"
 		   });
 		addAnnotation
 		  (seitliche_Lage_TypeClassEClass,
@@ -4939,8 +4942,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TSeitlicher_Abstand",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
-			   "pattern", "(-?[1-9][0-9]{0,4}\\.[0-9]{3})|(-?0\\.[89][0-9]{2})|0.000"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"
 		   });
 		addAnnotation
 		  (seitlicher_Abstand_TypeClassEClass,
@@ -4961,7 +4963,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TStrecke_Km",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TKilometrierung"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TKilometrierung"
 		   });
 		addAnnotation
 		  (strecke_Km_TypeClassEClass,
@@ -4982,8 +4984,7 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		   source,
 		   new String[] {
 			   "name", "TTechnischer_Platz",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
-			   "pattern", "[A-Z0-9\\-]{30}"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (technischer_Platz_TypeClassEClass,
@@ -5055,91 +5056,73 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		  (anhangEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|B\u00dc|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|B\u00dc|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (basis_ObjektEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (bearbeitungsvermerkEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|B\u00dc|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
-		   });
-		addAnnotation
-		  (getBearbeitungsvermerk_Allg_AttributeGroup_Kurztext(),
-		   source,
-		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..100]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|B\u00dc|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (bereich_ObjektEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getBereich_Objekt_Teilbereich_AttributeGroup_BegrenzungA(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [0.000..99999.999]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [0.000..99999.999]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getBereich_Objekt_Teilbereich_AttributeGroup_BegrenzungB(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [0.000..99999.999]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [0.000..99999.999]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (lieferobjektEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|B\u00dc|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|B\u00dc|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getObjektreferenzen_AttributeGroup_DBGDIReferenz(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
-		   });
-		addAnnotation
-		  (getObjektreferenzen_AttributeGroup_TechnischerPlatz(),
-		   source,
-		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[30], nur Gro\u00dfbuchstaben, die Zahlen 0-9 und Bindestrich</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (proxy_ObjektEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|B\u00dc|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|B\u00dc|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (punkt_ObjektEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getPunkt_Objekt_TOP_Kante_AttributeGroup_Abstand(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                         \n    <ppi:Patternbeschreibung>[0.000..99999.999]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
-		   });
-		addAnnotation
-		  (getPunkt_Objekt_TOP_Kante_AttributeGroup_SeitlicherAbstand(),
-		   source,
-		   new String[] {
-			   "appinfo", "\n                       \n  <ppi:WorkflowInformation>\n                            \n    <ppi:Patternbeschreibung>[-99999.999 bis -0.800, 0.000, 0.800 bis 99999.999]</ppi:Patternbeschreibung>\n                         \n  </ppi:WorkflowInformation>\n                    \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                         \r\n    <ppi:Patternbeschreibung>[0.000..99999.999]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (ur_ObjektEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 	}
 

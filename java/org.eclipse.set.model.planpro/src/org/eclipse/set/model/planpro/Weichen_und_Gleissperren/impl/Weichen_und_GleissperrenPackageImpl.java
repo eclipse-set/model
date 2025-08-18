@@ -3013,6 +3013,7 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 		addEEnumLiteral(enumGleisAbschlussArtEEnum, ENUMGleisAbschlussArt.ENUM_GLEIS_ABSCHLUSS_ART_DREHSCHEIBE);
 		addEEnumLiteral(enumGleisAbschlussArtEEnum, ENUMGleisAbschlussArt.ENUM_GLEIS_ABSCHLUSS_ART_FAEHRANLEGER);
 		addEEnumLiteral(enumGleisAbschlussArtEEnum, ENUMGleisAbschlussArt.ENUM_GLEIS_ABSCHLUSS_ART_FESTPRELLBOCK);
+		addEEnumLiteral(enumGleisAbschlussArtEEnum, ENUMGleisAbschlussArt.ENUM_GLEIS_ABSCHLUSS_ART_FIKTIV);
 		addEEnumLiteral(enumGleisAbschlussArtEEnum, ENUMGleisAbschlussArt.ENUM_GLEIS_ABSCHLUSS_ART_INFRASTRUKTURGRENZE);
 		addEEnumLiteral(enumGleisAbschlussArtEEnum, ENUMGleisAbschlussArt.ENUM_GLEIS_ABSCHLUSS_ART_KOPFRAMPE);
 		addEEnumLiteral(enumGleisAbschlussArtEEnum, ENUMGleisAbschlussArt.ENUM_GLEIS_ABSCHLUSS_ART_SCHIEBEBUEHNE);
@@ -3045,16 +3046,29 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 
 		initEEnum(enumwKrArtEEnum, ENUMWKrArt.class, "ENUMWKrArt");
 		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_ABW);
+		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_ABW_IBW);
+		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_BKR);
+		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_DBKW);
 		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_DKW);
 		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_DW);
+		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_EABKW);
+		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_EBKW);
+		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_EIBKW);
+		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_EINS_DW);
 		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_EKW);
 		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_EW);
 		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_FLACHKREUZUNG);
+		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_IB_KR);
 		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_IBW);
+		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_IBW_ABW);
 		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_KLOTHOIDENWEICHE);
 		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_KORBBOGENWEICHE);
 		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_KR);
 		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_SONSTIGE);
+		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_SYM_ABW);
+		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_ZHA);
+		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_ZHV_ABW);
+		addEEnumLiteral(enumwKrArtEEnum, ENUMWKrArt.ENUMW_KR_ART_ZHV_IBW);
 
 		initEEnum(enumwKrGspStellartEEnum, ENUMWKrGspStellart.class, "ENUMWKrGspStellart");
 		addEEnumLiteral(enumwKrGspStellartEEnum, ENUMWKrGspStellart.ENUMW_KR_GSP_STELLART_ELEKTRISCH_FERNGESTELLT);
@@ -3067,6 +3081,7 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 		addEEnumLiteral(enumwKrGspStellartEEnum, ENUMWKrGspStellart.ENUMW_KR_GSP_STELLART_STILLGELEGT_LINKS);
 		addEEnumLiteral(enumwKrGspStellartEEnum, ENUMWKrGspStellart.ENUMW_KR_GSP_STELLART_STILLGELEGT_RECHTS);
 		addEEnumLiteral(enumwKrGspStellartEEnum, ENUMWKrGspStellart.ENUMW_KR_GSP_STELLART_UNBESTIMMT);
+		addEEnumLiteral(enumwKrGspStellartEEnum, ENUMWKrGspStellart.ENUMW_KR_GSP_STELLART_ZHA);
 
 		// Initialize data types
 		initEDataType(cAuswurfrichtungEDataType, ENUMLinksRechts.class, "CAuswurfrichtung", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
@@ -3117,7 +3132,7 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 		addAnnotation
 		  (getEntgleisungsschuh_AttributeGroup_Auswurfrichtung(),
@@ -3532,7 +3547,7 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 		   source,
 		   new String[] {
 			   "name", "CAuswurfrichtung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts"
 		   });
 		addAnnotation
 		  (elektrischer_Antrieb_Anzahl_TypeEDataType,
@@ -3760,7 +3775,7 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 		   source,
 		   new String[] {
 			   "name", "TGeschwindigkeit_L",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit"
 		   });
 		addAnnotation
 		  (geschwindigkeit_L_TypeClassEClass,
@@ -3781,7 +3796,7 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 		   source,
 		   new String[] {
 			   "name", "TGeschwindigkeit_R",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit"
 		   });
 		addAnnotation
 		  (geschwindigkeit_R_TypeClassEClass,
@@ -3957,7 +3972,7 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 		   source,
 		   new String[] {
 			   "name", "TIsolierfall",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{1,20}"
 		   });
 		addAnnotation
@@ -3979,7 +3994,7 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 		   source,
 		   new String[] {
 			   "name", "TKr_KrW_Seitenzuordnung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts"
 		   });
 		addAnnotation
 		  (kr_KrW_Seitenzuordnung_TypeClassEClass,
@@ -4035,7 +4050,7 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 		   source,
 		   new String[] {
 			   "name", "TKreuzungsgleis",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts"
 		   });
 		addAnnotation
 		  (kreuzungsgleis_TypeClassEClass,
@@ -4070,7 +4085,7 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 		   source,
 		   new String[] {
 			   "name", "TStammgleis",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts"
 		   });
 		addAnnotation
 		  (stammgleis_TypeClassEClass,
@@ -4175,7 +4190,7 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 		   source,
 		   new String[] {
 			   "name", "TW_Kr_Grundform",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{1,50}"
 		   });
 		addAnnotation
@@ -4428,7 +4443,7 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 		   source,
 		   new String[] {
 			   "name", "TWeiche_Vorzugslage",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts"
 		   });
 		addAnnotation
 		  (weiche_Vorzugslage_TypeClassEClass,
@@ -4599,145 +4614,145 @@ public class Weichen_und_GleissperrenPackageImpl extends EPackageImpl implements
 		  (getEntgleisungsschuh_AttributeGroup_Gleissperrensignal(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>reflektierend_beidseitig</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>reflektierend_beidseitig</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (gleis_AbschlussEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getGleis_Abschluss_GleisAbschlussArt(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                          \n  <ppi:WorkflowInformation>\n                               \n    <ppi:ProposedValue>Bremsprellbock</ppi:ProposedValue>\n                               \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                            \n  </ppi:WorkflowInformation>\n                       \n"
+			   "appinfo", "\r\n                          \r\n  <ppi:WorkflowInformation>\r\n                               \r\n    <ppi:ProposedValue>Bremsprellbock</ppi:ProposedValue>\r\n                               \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                            \r\n  </ppi:WorkflowInformation>\r\n                       \r\n"
 		   });
 		addAnnotation
 		  (getGleissperre_Element_AttributeGroup_GleissperreBetriebsart(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>Betrieb</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>Betrieb</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getKreuzung_AttributeGroup_ElektrischerAntriebAnzahl(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>0</ppi:ProposedValue>\n                         \n    <ppi:Patternbeschreibung>[0..15]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>0</ppi:ProposedValue>\r\n                         \r\n    <ppi:Patternbeschreibung>[0..15]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (w_Kr_AnlageEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getW_Kr_Anlage_Allg_AttributeGroup_Isolierfall(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1..20] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..20] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getW_Kr_Anlage_Allg_AttributeGroup_WKrGrundform(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:PlanningStage>EP</ppi:PlanningStage>\n                         \n    <ppi:Patternbeschreibung>[1..50]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:PlanningStage>EP</ppi:PlanningStage>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..50]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (w_Kr_Gsp_ElementEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getW_Kr_Gsp_Element_Allg_AttributeGroup_VorzugslageAutomatik(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>true</ppi:ProposedValue>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                         \n    <ppi:ExampleValue>links</ppi:ExampleValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>true</ppi:ProposedValue>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                         \r\n    <ppi:ExampleValue>links</ppi:ExampleValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getW_Kr_Gsp_Element_Allg_AttributeGroup_WKrGspStellart(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>elektrisch_ferngestellt</ppi:ProposedValue>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>elektrisch_ferngestellt</ppi:ProposedValue>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (w_Kr_Gsp_KomponenteEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getW_Kr_Gsp_Komponente_AustauschAntriebe(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                          \n  <ppi:WorkflowInformation>\n                               \n    <ppi:ProposedValue>true</ppi:ProposedValue>\n                            \n  </ppi:WorkflowInformation>\n                       \n"
+			   "appinfo", "\r\n                          \r\n  <ppi:WorkflowInformation>\r\n                               \r\n    <ppi:ProposedValue>true</ppi:ProposedValue>\r\n                            \r\n  </ppi:WorkflowInformation>\r\n                       \r\n"
 		   });
 		addAnnotation
 		  (getWeiche_Element_AttributeGroup_Auffahrortung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>true</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>true</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getWeiche_Element_AttributeGroup_WeicheBetriebsart(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>Betrieb</ppi:ProposedValue>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>Betrieb</ppi:ProposedValue>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getWeiche_Element_AttributeGroup_WeicheVorzugslage(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                         \n    <ppi:ExampleValue>links</ppi:ExampleValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                         \r\n    <ppi:ExampleValue>links</ppi:ExampleValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (weichenlaufketteEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (weichenlaufkette_ZuordnungEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZungenpaar_AttributeGroup_ElektrischerAntriebAnzahl(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>1</ppi:ProposedValue>\n                         \n    <ppi:Patternbeschreibung> [0..15] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>1</ppi:ProposedValue>\r\n                         \r\n    <ppi:Patternbeschreibung> [0..15] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZungenpaar_AttributeGroup_GeschwindigkeitL(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:PlanningStage>PT1:MUSS</ppi:PlanningStage>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:PlanningStage>PT1:MUSS</ppi:PlanningStage>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZungenpaar_AttributeGroup_GeschwindigkeitR(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:PlanningStage>PT1:MUSS</ppi:PlanningStage>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:PlanningStage>PT1:MUSS</ppi:PlanningStage>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZungenpaar_AttributeGroup_HerzstueckAntriebe(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..15]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..15]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZungenpaar_AttributeGroup_Weichensignal(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>reflektierend</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>reflektierend</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZungenpaar_AttributeGroup_ZungenpruefkontaktAnzahl(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [0..15] </ppi:Patternbeschreibung>\n                         \n    <ppi:ProposedValue>0</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [0..15] </ppi:Patternbeschreibung>\r\n                         \r\n    <ppi:ProposedValue>0</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 	}
 

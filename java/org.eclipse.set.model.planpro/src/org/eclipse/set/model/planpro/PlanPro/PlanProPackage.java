@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,10 +44,428 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -70,10 +488,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +500,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,409 +519,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
- * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
- * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
- * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 
- * --------------------------------------------------------------------------------
- * 
- * This Document is licensed under the open source license RailPL V1.0.
- * 
- * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -527,7 +546,7 @@ public interface PlanProPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/PlanPro/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/PlanPro/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -10138,7 +10157,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Adresse PLZ Ort Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TAdresse_PLZ_Ort' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,50}'"
+	 *        extendedMetaData="name='TAdresse_PLZ_Ort' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,50}'"
 	 * @generated
 	 */
 	EDataType getAdresse_PLZ_Ort_Type();
@@ -10150,7 +10169,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Adresse Strasse Nr Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TAdresse_Strasse_Nr' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,50}'"
+	 *        extendedMetaData="name='TAdresse_Strasse_Nr' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,50}'"
 	 * @generated
 	 */
 	EDataType getAdresse_Strasse_Nr_Type();
@@ -10162,7 +10181,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bauabschnitt Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBauabschnitt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,50}'"
+	 *        extendedMetaData="name='TBauabschnitt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,50}'"
 	 * @generated
 	 */
 	EDataType getBauabschnitt_Type();
@@ -10174,7 +10193,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bauphase Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBauphase' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,50}'"
+	 *        extendedMetaData="name='TBauphase' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,50}'"
 	 * @generated
 	 */
 	EDataType getBauphase_Type();
@@ -10186,7 +10205,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bauzustand Kurzbezeichnung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBauzustand_Kurzbezeichnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='[A-Z,a-z,0-9]{1,15}'"
+	 *        extendedMetaData="name='TBauzustand_Kurzbezeichnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='[A-Z,a-z,\344\366\374\304\326\3340-9%20_\\-]{1,20}'"
 	 * @generated
 	 */
 	EDataType getBauzustand_Kurzbezeichnung_Type();
@@ -10198,7 +10217,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bauzustand Langbezeichnung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBauzustand_Langbezeichnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,50}'"
+	 *        extendedMetaData="name='TBauzustand_Langbezeichnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,50}'"
 	 * @generated
 	 */
 	EDataType getBauzustand_Langbezeichnung_Type();
@@ -10210,7 +10229,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bemerkung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBemerkung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText'"
+	 *        extendedMetaData="name='TBemerkung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText'"
 	 * @generated
 	 */
 	EDataType getBemerkung_Type();
@@ -10222,7 +10241,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Anlage Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Anlage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,35}'"
+	 *        extendedMetaData="name='TBezeichnung_Anlage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,35}'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Anlage_Type();
@@ -10234,7 +10253,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Planung Gruppe Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Planung_Gruppe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,50}'"
+	 *        extendedMetaData="name='TBezeichnung_Planung_Gruppe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,50}'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Planung_Gruppe_Type();
@@ -10246,7 +10265,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Planung Projekt Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Planung_Projekt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,150}'"
+	 *        extendedMetaData="name='TBezeichnung_Planung_Projekt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,150}'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Planung_Projekt_Type();
@@ -10258,7 +10277,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Unteranlage Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Unteranlage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,35}'"
+	 *        extendedMetaData="name='TBezeichnung_Unteranlage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,35}'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Unteranlage_Type();
@@ -10270,7 +10289,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>EMail Adresse Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TE_Mail_Adresse' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,50}@.{1,50}'"
+	 *        extendedMetaData="name='TE_Mail_Adresse' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,50}@.{1,50}'"
 	 * @generated
 	 */
 	EDataType getE_Mail_Adresse_Type();
@@ -10354,7 +10373,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Fuehrende Oertlichkeit Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TFuehrende_Oertlichkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='[A-Z][A-Z0-9%20]{1,4}'"
+	 *        extendedMetaData="name='TFuehrende_Oertlichkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='[A-Z][A-Z0-9%20]{1,4}'"
 	 * @generated
 	 */
 	EDataType getFuehrende_Oertlichkeit_Type();
@@ -10366,7 +10385,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Ident Rolle Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIdent_Rolle' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,20}'"
+	 *        extendedMetaData="name='TIdent_Rolle' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,20}'"
 	 * @generated
 	 */
 	EDataType getIdent_Rolle_Type();
@@ -10402,7 +10421,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Name Akteur 10 Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TName_Akteur_10' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,10}'"
+	 *        extendedMetaData="name='TName_Akteur_10' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,10}'"
 	 * @generated
 	 */
 	EDataType getName_Akteur_10_Type();
@@ -10414,7 +10433,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Name Akteur 5Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TName_Akteur_5' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,5}'"
+	 *        extendedMetaData="name='TName_Akteur_5' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,5}'"
 	 * @generated
 	 */
 	EDataType getName_Akteur_5_Type();
@@ -10426,7 +10445,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Name Akteur Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TName_Akteur' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,35}'"
+	 *        extendedMetaData="name='TName_Akteur' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,35}'"
 	 * @generated
 	 */
 	EDataType getName_Akteur_Type();
@@ -10438,7 +10457,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Name Organisation Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TName_Organisation' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,30}'"
+	 *        extendedMetaData="name='TName_Organisation' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,50}'"
 	 * @generated
 	 */
 	EDataType getName_Organisation_Type();
@@ -10450,7 +10469,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Organisationseinheit Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TOrganisationseinheit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,30}'"
+	 *        extendedMetaData="name='TOrganisationseinheit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,50}'"
 	 * @generated
 	 */
 	EDataType getOrganisationseinheit_Type();
@@ -10462,7 +10481,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Plan Pro XSD Version Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TPlanPro_XSD_Version' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText' pattern='(0|([1-9][0-9]{0,}))\\.(0|([1-9][0-9]{0,}))\\.(0|([1-9][0-9]{0,}))(\\.(0|([1-9][0-9]{0,})))?'"
+	 *        extendedMetaData="name='TPlanPro_XSD_Version' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText' pattern='(0|([1-9][0-9]{0,}))\\.(0|([1-9][0-9]{0,}))\\.(0|([1-9][0-9]{0,}))(\\.(0|([1-9][0-9]{0,})))?'"
 	 * @generated
 	 */
 	EDataType getPlanPro_XSD_Version_Type();
@@ -10474,7 +10493,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Polygonzug Betrachtungsbereich Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TPolygonzug_Betrachtungsbereich' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText'"
+	 *        extendedMetaData="name='TPolygonzug_Betrachtungsbereich' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText'"
 	 * @generated
 	 */
 	EDataType getPolygonzug_Betrachtungsbereich_Type();
@@ -10486,7 +10505,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Polygonzug Planungsbereich Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TPolygonzug_Planungsbereich' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText'"
+	 *        extendedMetaData="name='TPolygonzug_Planungsbereich' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText'"
 	 * @generated
 	 */
 	EDataType getPolygonzug_Planungsbereich_Type();
@@ -10498,7 +10517,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Projekt Nummer Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TProjekt_Nummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,20}'"
+	 *        extendedMetaData="name='TProjekt_Nummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,20}'"
 	 * @generated
 	 */
 	EDataType getProjekt_Nummer_Type();
@@ -10510,7 +10529,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Referenz Planung Basis Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TReferenz_Planung_Basis' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TReferenz_Planung_Basis' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getReferenz_Planung_Basis_Type();
@@ -10522,7 +10541,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Referenz Vergleich Besonders Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TReferenz_Vergleich_Besonders' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TReferenz_Vergleich_Besonders' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getReferenz_Vergleich_Besonders_Type();
@@ -10534,7 +10553,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Strecke Abschnitt Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TStrecke_Abschnitt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,50}'"
+	 *        extendedMetaData="name='TStrecke_Abschnitt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,50}'"
 	 * @generated
 	 */
 	EDataType getStrecke_Abschnitt_Type();
@@ -10546,7 +10565,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Strecke Km Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TStrecke_Km' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TKilometrierung'"
+	 *        extendedMetaData="name='TStrecke_Km' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TKilometrierung'"
 	 * @generated
 	 */
 	EDataType getStrecke_Km_Type();
@@ -10558,7 +10577,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Strecke Nummer Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TStrecke_Nummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette' pattern='[0-9]{4}'"
+	 *        extendedMetaData="name='TStrecke_Nummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette' pattern='[0-9]{4}'"
 	 * @generated
 	 */
 	EDataType getStrecke_Nummer_Type();
@@ -10570,7 +10589,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Telefonnummer Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TTelefonnummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,30}'"
+	 *        extendedMetaData="name='TTelefonnummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,30}'"
 	 * @generated
 	 */
 	EDataType getTelefonnummer_Type();
@@ -10582,7 +10601,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Verantwortliche Stelle DB Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TVerantwortliche_Stelle_DB' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TVerantwortliche_Stelle_DB' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getVerantwortliche_Stelle_DB_Type();
@@ -10594,7 +10613,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Vergleich Ausgabestand Basis Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TVergleich_Ausgabestand_Basis' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,30}'"
+	 *        extendedMetaData="name='TVergleich_Ausgabestand_Basis' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,30}'"
 	 * @generated
 	 */
 	EDataType getVergleich_Ausgabestand_Basis_Type();
@@ -10606,7 +10625,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Werkzeug Name Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TWerkzeug_Name' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,30}'"
+	 *        extendedMetaData="name='TWerkzeug_Name' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,30}'"
 	 * @generated
 	 */
 	EDataType getWerkzeug_Name_Type();
@@ -10618,7 +10637,7 @@ public interface PlanProPackage extends EPackage {
 	 * @return the meta object for data type '<em>Werkzeug Version Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TWerkzeug_Version' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,30}'"
+	 *        extendedMetaData="name='TWerkzeug_Version' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,30}'"
 	 * @generated
 	 */
 	EDataType getWerkzeug_Version_Type();

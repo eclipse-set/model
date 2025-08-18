@@ -36,6 +36,16 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	ENUM_SCHALTMITTEL_FUNKTION_ARM(0, "ENUMSchaltmittel_Funktion_ARM", "ARM"),
 
 	/**
+	 * The '<em><b>ENUM Schaltmittel Funktion ARV</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_SCHALTMITTEL_FUNKTION_ARV_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_SCHALTMITTEL_FUNKTION_ARV(1, "ENUMSchaltmittel_Funktion_ARV", "ARV"),
+
+	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion Aus BUE</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -43,7 +53,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_SCHALTMITTEL_FUNKTION_AUS_BUE(1, "ENUMSchaltmittel_Funktion_Aus_BUE", "Aus_BUE"),
+	ENUM_SCHALTMITTEL_FUNKTION_AUS_BUE(2, "ENUMSchaltmittel_Funktion_Aus_BUE", "Aus_BUE"),
 
 	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion Awanst</b></em>' literal object.
@@ -53,7 +63,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_SCHALTMITTEL_FUNKTION_AWANST(2, "ENUMSchaltmittel_Funktion_Awanst", "Awanst"),
+	ENUM_SCHALTMITTEL_FUNKTION_AWANST(3, "ENUMSchaltmittel_Funktion_Awanst", "Awanst"),
 
 	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion Ein BUE</b></em>' literal object.
@@ -63,7 +73,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_SCHALTMITTEL_FUNKTION_EIN_BUE(3, "ENUMSchaltmittel_Funktion_Ein_BUE", "Ein_BUE"),
+	ENUM_SCHALTMITTEL_FUNKTION_EIN_BUE(4, "ENUMSchaltmittel_Funktion_Ein_BUE", "Ein_BUE"),
 
 	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion Haltfall</b></em>' literal object.
@@ -73,7 +83,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_SCHALTMITTEL_FUNKTION_HALTFALL(4, "ENUMSchaltmittel_Funktion_Haltfall", "Haltfall"),
+	ENUM_SCHALTMITTEL_FUNKTION_HALTFALL(5, "ENUMSchaltmittel_Funktion_Haltfall", "Haltfall"),
 
 	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion Raeumungspruefung</b></em>' literal object.
@@ -83,7 +93,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_SCHALTMITTEL_FUNKTION_RAEUMUNGSPRUEFUNG(5, "ENUMSchaltmittel_Funktion_Raeumungspruefung", "Raeumungspruefung"),
+	ENUM_SCHALTMITTEL_FUNKTION_RAEUMUNGSPRUEFUNG(6, "ENUMSchaltmittel_Funktion_Raeumungspruefung", "Raeumungspruefung"),
 
 	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion sonstige</b></em>' literal object.
@@ -93,7 +103,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_SCHALTMITTEL_FUNKTION_SONSTIGE(6, "ENUMSchaltmittel_Funktion_sonstige", "sonstige"),
+	ENUM_SCHALTMITTEL_FUNKTION_SONSTIGE(7, "ENUMSchaltmittel_Funktion_sonstige", "sonstige"),
 
 	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion ZL Anstoss</b></em>' literal object.
@@ -103,7 +113,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_SCHALTMITTEL_FUNKTION_ZL_ANSTOSS(7, "ENUMSchaltmittel_Funktion_ZL_Anstoss", "ZL_Anstoss");
+	ENUM_SCHALTMITTEL_FUNKTION_ZL_ANSTOSS(8, "ENUMSchaltmittel_Funktion_ZL_Anstoss", "ZL_Anstoss");
 
 	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion ARM</b></em>' literal value.
@@ -117,6 +127,17 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	public static final int ENUM_SCHALTMITTEL_FUNKTION_ARM_VALUE = 0;
 
 	/**
+	 * The '<em><b>ENUM Schaltmittel Funktion ARV</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_SCHALTMITTEL_FUNKTION_ARV
+	 * @model name="ENUMSchaltmittel_Funktion_ARV" literal="ARV"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_SCHALTMITTEL_FUNKTION_ARV_VALUE = 1;
+
+	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion Aus BUE</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -125,7 +146,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_SCHALTMITTEL_FUNKTION_AUS_BUE_VALUE = 1;
+	public static final int ENUM_SCHALTMITTEL_FUNKTION_AUS_BUE_VALUE = 2;
 
 	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion Awanst</b></em>' literal value.
@@ -136,7 +157,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_SCHALTMITTEL_FUNKTION_AWANST_VALUE = 2;
+	public static final int ENUM_SCHALTMITTEL_FUNKTION_AWANST_VALUE = 3;
 
 	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion Ein BUE</b></em>' literal value.
@@ -147,7 +168,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_SCHALTMITTEL_FUNKTION_EIN_BUE_VALUE = 3;
+	public static final int ENUM_SCHALTMITTEL_FUNKTION_EIN_BUE_VALUE = 4;
 
 	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion Haltfall</b></em>' literal value.
@@ -158,7 +179,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_SCHALTMITTEL_FUNKTION_HALTFALL_VALUE = 4;
+	public static final int ENUM_SCHALTMITTEL_FUNKTION_HALTFALL_VALUE = 5;
 
 	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion Raeumungspruefung</b></em>' literal value.
@@ -169,7 +190,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_SCHALTMITTEL_FUNKTION_RAEUMUNGSPRUEFUNG_VALUE = 5;
+	public static final int ENUM_SCHALTMITTEL_FUNKTION_RAEUMUNGSPRUEFUNG_VALUE = 6;
 
 	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion sonstige</b></em>' literal value.
@@ -180,7 +201,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_SCHALTMITTEL_FUNKTION_SONSTIGE_VALUE = 6;
+	public static final int ENUM_SCHALTMITTEL_FUNKTION_SONSTIGE_VALUE = 7;
 
 	/**
 	 * The '<em><b>ENUM Schaltmittel Funktion ZL Anstoss</b></em>' literal value.
@@ -191,7 +212,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_SCHALTMITTEL_FUNKTION_ZL_ANSTOSS_VALUE = 7;
+	public static final int ENUM_SCHALTMITTEL_FUNKTION_ZL_ANSTOSS_VALUE = 8;
 
 	/**
 	 * An array of all the '<em><b>ENUM Schaltmittel Funktion</b></em>' enumerators.
@@ -202,6 +223,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	private static final ENUMSchaltmittelFunktion[] VALUES_ARRAY =
 		new ENUMSchaltmittelFunktion[] {
 			ENUM_SCHALTMITTEL_FUNKTION_ARM,
+			ENUM_SCHALTMITTEL_FUNKTION_ARV,
 			ENUM_SCHALTMITTEL_FUNKTION_AUS_BUE,
 			ENUM_SCHALTMITTEL_FUNKTION_AWANST,
 			ENUM_SCHALTMITTEL_FUNKTION_EIN_BUE,
@@ -266,6 +288,7 @@ public enum ENUMSchaltmittelFunktion implements Enumerator {
 	public static ENUMSchaltmittelFunktion get(int value) {
 		switch (value) {
 			case ENUM_SCHALTMITTEL_FUNKTION_ARM_VALUE: return ENUM_SCHALTMITTEL_FUNKTION_ARM;
+			case ENUM_SCHALTMITTEL_FUNKTION_ARV_VALUE: return ENUM_SCHALTMITTEL_FUNKTION_ARV;
 			case ENUM_SCHALTMITTEL_FUNKTION_AUS_BUE_VALUE: return ENUM_SCHALTMITTEL_FUNKTION_AUS_BUE;
 			case ENUM_SCHALTMITTEL_FUNKTION_AWANST_VALUE: return ENUM_SCHALTMITTEL_FUNKTION_AWANST;
 			case ENUM_SCHALTMITTEL_FUNKTION_EIN_BUE_VALUE: return ENUM_SCHALTMITTEL_FUNKTION_EIN_BUE;

@@ -253,7 +253,17 @@ public enum ENUMBUESicherungsart implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMBUE_SICHERUNGSART_UE_UND_U(22, "ENUMBUE_Sicherungsart_Ue_und_U", "Ue_und_U");
+	ENUMBUE_SICHERUNGSART_UE_UND_U(22, "ENUMBUE_Sicherungsart_Ue_und_U", "Ue_und_U"),
+
+	/**
+	 * The '<em><b>ENUMBUE Sicherungsart Zugpersonal</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMBUE_SICHERUNGSART_ZUGPERSONAL_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMBUE_SICHERUNGSART_ZUGPERSONAL(23, "ENUMBUE_Sicherungsart_Zugpersonal", "Zugpersonal");
 
 	/**
 	 * The '<em><b>ENUMBUE Sicherungsart A</b></em>' literal value.
@@ -509,6 +519,17 @@ public enum ENUMBUESicherungsart implements Enumerator {
 	public static final int ENUMBUE_SICHERUNGSART_UE_UND_U_VALUE = 22;
 
 	/**
+	 * The '<em><b>ENUMBUE Sicherungsart Zugpersonal</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMBUE_SICHERUNGSART_ZUGPERSONAL
+	 * @model name="ENUMBUE_Sicherungsart_Zugpersonal" literal="Zugpersonal"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMBUE_SICHERUNGSART_ZUGPERSONAL_VALUE = 23;
+
+	/**
 	 * An array of all the '<em><b>ENUMBUE Sicherungsart</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -539,6 +560,7 @@ public enum ENUMBUESicherungsart implements Enumerator {
 			ENUMBUE_SICHERUNGSART_UE_UND_A,
 			ENUMBUE_SICHERUNGSART_UE_UND_P,
 			ENUMBUE_SICHERUNGSART_UE_UND_U,
+			ENUMBUE_SICHERUNGSART_ZUGPERSONAL,
 		};
 
 	/**
@@ -618,6 +640,7 @@ public enum ENUMBUESicherungsart implements Enumerator {
 			case ENUMBUE_SICHERUNGSART_UE_UND_A_VALUE: return ENUMBUE_SICHERUNGSART_UE_UND_A;
 			case ENUMBUE_SICHERUNGSART_UE_UND_P_VALUE: return ENUMBUE_SICHERUNGSART_UE_UND_P;
 			case ENUMBUE_SICHERUNGSART_UE_UND_U_VALUE: return ENUMBUE_SICHERUNGSART_UE_UND_U;
+			case ENUMBUE_SICHERUNGSART_ZUGPERSONAL_VALUE: return ENUMBUE_SICHERUNGSART_ZUGPERSONAL;
 		}
 		return null;
 	}

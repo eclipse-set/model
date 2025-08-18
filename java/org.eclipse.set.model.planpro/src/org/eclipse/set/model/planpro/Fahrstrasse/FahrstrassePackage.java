@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +128,7 @@ public interface FahrstrassePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Fahrstrasse/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Fahrstrasse/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -4553,7 +4553,7 @@ public interface FahrstrassePackage extends EPackage {
 	 * @return the meta object for data type '<em>Aufloesung Verzoegerung Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TAufloesung_Verzoegerung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='0|[1-9][0-9]{0,1}|1[0-1][0-9]|120'"
+	 *        extendedMetaData="name='TAufloesung_Verzoegerung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='0|[1-9][0-9]{0,1}|1[0-4][0-9]|150'"
 	 * @generated
 	 */
 	EDataType getAufloesung_Verzoegerung_Type();
@@ -4565,7 +4565,7 @@ public interface FahrstrassePackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Fstr DWeg Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Fstr_DWeg' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette' pattern='[a-zA-Z0-9_]{1,3}'"
+	 *        extendedMetaData="name='TBezeichnung_Fstr_DWeg' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette' pattern='[a-zA-Z0-9_]{1,3}'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Fstr_DWeg_Type();
@@ -4577,7 +4577,7 @@ public interface FahrstrassePackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Markanter Punkt Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Markanter_Punkt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,30}'"
+	 *        extendedMetaData="name='TBezeichnung_Markanter_Punkt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,30}'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Markanter_Punkt_Type();
@@ -4697,7 +4697,7 @@ public interface FahrstrassePackage extends EPackage {
 	 * @return the meta object for data type '<em>Fstr Aneinander Bedienstring Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TFstr_Aneinander_Bedienstring' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{3,20}'"
+	 *        extendedMetaData="name='TFstr_Aneinander_Bedienstring' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{3,20}'"
 	 * @generated
 	 */
 	EDataType getFstr_Aneinander_Bedienstring_Type();
@@ -4709,7 +4709,7 @@ public interface FahrstrassePackage extends EPackage {
 	 * @return the meta object for data type '<em>Fstr Bedienstring Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TFstr_Bedienstring' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{3,26}'"
+	 *        extendedMetaData="name='TFstr_Bedienstring' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{3,26}'"
 	 * @generated
 	 */
 	EDataType getFstr_Bedienstring_Type();
@@ -4733,7 +4733,7 @@ public interface FahrstrassePackage extends EPackage {
 	 * @return the meta object for data type '<em>Fstr VHg Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TFstr_V_Hg' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TFstr_V_Hg' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getFstr_V_Hg_Type();
@@ -4745,7 +4745,7 @@ public interface FahrstrassePackage extends EPackage {
 	 * @return the meta object for data type '<em>Fstr VType</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TFstr_V' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit' pattern='20|30|40|50|60|70|80|90|100|110|120|130|140|150'"
+	 *        extendedMetaData="name='TFstr_V' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit' pattern='20|30|40|50|60|70|80|90|100|110|120|130|140|150'"
 	 * @generated
 	 */
 	EDataType getFstr_V_Type();
@@ -4757,7 +4757,7 @@ public interface FahrstrassePackage extends EPackage {
 	 * @return the meta object for data type '<em>Laenge Soll Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TLaenge_Soll' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='0|[1-9][0-9]{0,1}|[1-2][0-9]{2}|300'"
+	 *        extendedMetaData="name='TLaenge_Soll' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='0|[1-9][0-9]{0,1}|[1-2][0-9]{2}|300'"
 	 * @generated
 	 */
 	EDataType getLaenge_Soll_Type();

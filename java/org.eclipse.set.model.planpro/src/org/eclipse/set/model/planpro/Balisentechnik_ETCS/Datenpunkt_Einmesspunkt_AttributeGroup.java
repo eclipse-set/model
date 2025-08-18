@@ -62,7 +62,7 @@ public interface Datenpunkt_Einmesspunkt_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Verweis auf den Referenzpunkt für die Montage. ETCS L2: Vorläufig wird dieser Verweis nicht verwendet und in der ETCS-Datenpunkttabelle der funktionale Bezugspunkt als Einmesspunkt angegeben.
+	 * Verweis auf den Referenzpunkt für die Montage. ETCS L2: Vorläufig wird dieser Verweis nicht verwendet.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>ID Einmesspunkt</em>' containment reference.
 	 * @see #setIDEinmesspunkt(ID_Markanter_Punkt_TypeClass)

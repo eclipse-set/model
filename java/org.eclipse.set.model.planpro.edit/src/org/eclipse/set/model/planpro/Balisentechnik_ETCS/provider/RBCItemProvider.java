@@ -77,8 +77,10 @@ public class RBCItemProvider extends Basis_ObjektItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
+			childrenFeatures.add(Balisentechnik_ETCSPackage.eINSTANCE.getRBC_Bezeichnung());
 			childrenFeatures.add(Balisentechnik_ETCSPackage.eINSTANCE.getRBC_ETCSAdresse());
 			childrenFeatures.add(Balisentechnik_ETCSPackage.eINSTANCE.getRBC_IDESTWZentraleinheit());
+			childrenFeatures.add(Balisentechnik_ETCSPackage.eINSTANCE.getRBC_IDOertlichkeitNamensgebend());
 			childrenFeatures.add(Balisentechnik_ETCSPackage.eINSTANCE.getRBC_IDUnterbringung());
 			childrenFeatures.add(Balisentechnik_ETCSPackage.eINSTANCE.getRBC_RBCAllg());
 		}
@@ -143,8 +145,10 @@ public class RBCItemProvider extends Basis_ObjektItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(RBC.class)) {
+			case Balisentechnik_ETCSPackage.RBC__BEZEICHNUNG:
 			case Balisentechnik_ETCSPackage.RBC__ETCS_ADRESSE:
 			case Balisentechnik_ETCSPackage.RBC__IDESTW_ZENTRALEINHEIT:
+			case Balisentechnik_ETCSPackage.RBC__ID_OERTLICHKEIT_NAMENSGEBEND:
 			case Balisentechnik_ETCSPackage.RBC__ID_UNTERBRINGUNG:
 			case Balisentechnik_ETCSPackage.RBC__RBC_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
@@ -166,6 +170,11 @@ public class RBCItemProvider extends Basis_ObjektItemProvider {
 
 		newChildDescriptors.add
 			(createChildParameter
+				(Balisentechnik_ETCSPackage.eINSTANCE.getRBC_Bezeichnung(),
+				 Balisentechnik_ETCSFactory.eINSTANCE.createRBC_Bezeichnung_AttributeGroup()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(Balisentechnik_ETCSPackage.eINSTANCE.getRBC_ETCSAdresse(),
 				 Balisentechnik_ETCSFactory.eINSTANCE.createETCS_Adresse_AttributeGroup()));
 
@@ -173,6 +182,11 @@ public class RBCItemProvider extends Basis_ObjektItemProvider {
 			(createChildParameter
 				(Balisentechnik_ETCSPackage.eINSTANCE.getRBC_IDESTWZentraleinheit(),
 				 VerweiseFactory.eINSTANCE.createID_ESTW_Zentraleinheit_TypeClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Balisentechnik_ETCSPackage.eINSTANCE.getRBC_IDOertlichkeitNamensgebend(),
+				 VerweiseFactory.eINSTANCE.createID_Oertlichkeit_Proxy_TypeClass()));
 
 		newChildDescriptors.add
 			(createChildParameter

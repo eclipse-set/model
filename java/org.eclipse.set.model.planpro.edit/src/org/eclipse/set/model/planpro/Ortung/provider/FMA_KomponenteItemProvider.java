@@ -176,7 +176,7 @@ public class FMA_KomponenteItemProvider extends Punkt_ObjektItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(OrtungPackage.Literals.FMA_KOMPONENTE__ID_BEZUGSPUNKT,
-				 VerweiseFactory.eINSTANCE.createID_Markanter_Punkt_TypeClass()));
+				 VerweiseFactory.eINSTANCE.createID_Bezugspunkt_TypeClass()));
 
 		newChildDescriptors.add
 			(createChildParameter

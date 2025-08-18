@@ -46,6 +46,16 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 	ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_ANGESTEUERT_UNGUELTIG_ABGEDECKT(1, "ENUMObjektzustand_Besonders_am_Standort_angesteuert_ungueltig_abgedeckt", "am_Standort_angesteuert_ungueltig_abgedeckt"),
 
 	/**
+	 * The '<em><b>ENUM Objektzustand Besonders am Standort nicht angesteuert abgedeckt</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_ABGEDECKT_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_ABGEDECKT(2, "ENUMObjektzustand_Besonders_am_Standort_nicht_angesteuert_abgedeckt", "am_Standort_nicht_angesteuert_abgedeckt"),
+
+	/**
 	 * The '<em><b>ENUM Objektzustand Besonders am Standort nicht angesteuert ungueltig</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53,7 +63,7 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_UNGUELTIG(2, "ENUMObjektzustand_Besonders_am_Standort_nicht_angesteuert_ungueltig", "am_Standort_nicht_angesteuert_ungueltig"),
+	ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_UNGUELTIG(3, "ENUMObjektzustand_Besonders_am_Standort_nicht_angesteuert_ungueltig", "am_Standort_nicht_angesteuert_ungueltig"),
 
 	/**
 	 * The '<em><b>ENUM Objektzustand Besonders am Standort nicht angesteuert vorbereitend</b></em>' literal object.
@@ -63,7 +73,7 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_VORBEREITEND(3, "ENUMObjektzustand_Besonders_am_Standort_nicht_angesteuert_vorbereitend", "am_Standort_nicht_angesteuert_vorbereitend"),
+	ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_VORBEREITEND(4, "ENUMObjektzustand_Besonders_am_Standort_nicht_angesteuert_vorbereitend", "am_Standort_nicht_angesteuert_vorbereitend"),
 
 	/**
 	 * The '<em><b>ENUM Objektzustand Besonders sonstige</b></em>' literal object.
@@ -73,7 +83,7 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OBJEKTZUSTAND_BESONDERS_SONSTIGE(4, "ENUMObjektzustand_Besonders_sonstige", "sonstige"),
+	ENUM_OBJEKTZUSTAND_BESONDERS_SONSTIGE(5, "ENUMObjektzustand_Besonders_sonstige", "sonstige"),
 
 	/**
 	 * The '<em><b>ENUM Objektzustand Besonders standortfern angesteuert ungueltig</b></em>' literal object.
@@ -83,7 +93,7 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OBJEKTZUSTAND_BESONDERS_STANDORTFERN_ANGESTEUERT_UNGUELTIG(5, "ENUMObjektzustand_Besonders_standortfern_angesteuert_ungueltig", "standortfern_angesteuert_ungueltig"),
+	ENUM_OBJEKTZUSTAND_BESONDERS_STANDORTFERN_ANGESTEUERT_UNGUELTIG(6, "ENUMObjektzustand_Besonders_standortfern_angesteuert_ungueltig", "standortfern_angesteuert_ungueltig"),
 
 	/**
 	 * The '<em><b>ENUM Objektzustand Besonders standortfern nicht angesteuert ungueltig</b></em>' literal object.
@@ -93,7 +103,7 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OBJEKTZUSTAND_BESONDERS_STANDORTFERN_NICHT_ANGESTEUERT_UNGUELTIG(6, "ENUMObjektzustand_Besonders_standortfern_nicht_angesteuert_ungueltig", "standortfern_nicht_angesteuert_ungueltig");
+	ENUM_OBJEKTZUSTAND_BESONDERS_STANDORTFERN_NICHT_ANGESTEUERT_UNGUELTIG(7, "ENUMObjektzustand_Besonders_standortfern_nicht_angesteuert_ungueltig", "standortfern_nicht_angesteuert_ungueltig");
 
 	/**
 	 * The '<em><b>ENUM Objektzustand Besonders am Standort angesteuert nicht gueltig</b></em>' literal value.
@@ -118,6 +128,17 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 	public static final int ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_ANGESTEUERT_UNGUELTIG_ABGEDECKT_VALUE = 1;
 
 	/**
+	 * The '<em><b>ENUM Objektzustand Besonders am Standort nicht angesteuert abgedeckt</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_ABGEDECKT
+	 * @model name="ENUMObjektzustand_Besonders_am_Standort_nicht_angesteuert_abgedeckt" literal="am_Standort_nicht_angesteuert_abgedeckt"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_ABGEDECKT_VALUE = 2;
+
+	/**
 	 * The '<em><b>ENUM Objektzustand Besonders am Standort nicht angesteuert ungueltig</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -126,7 +147,7 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_UNGUELTIG_VALUE = 2;
+	public static final int ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_UNGUELTIG_VALUE = 3;
 
 	/**
 	 * The '<em><b>ENUM Objektzustand Besonders am Standort nicht angesteuert vorbereitend</b></em>' literal value.
@@ -137,7 +158,7 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_VORBEREITEND_VALUE = 3;
+	public static final int ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_VORBEREITEND_VALUE = 4;
 
 	/**
 	 * The '<em><b>ENUM Objektzustand Besonders sonstige</b></em>' literal value.
@@ -148,7 +169,7 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OBJEKTZUSTAND_BESONDERS_SONSTIGE_VALUE = 4;
+	public static final int ENUM_OBJEKTZUSTAND_BESONDERS_SONSTIGE_VALUE = 5;
 
 	/**
 	 * The '<em><b>ENUM Objektzustand Besonders standortfern angesteuert ungueltig</b></em>' literal value.
@@ -159,7 +180,7 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OBJEKTZUSTAND_BESONDERS_STANDORTFERN_ANGESTEUERT_UNGUELTIG_VALUE = 5;
+	public static final int ENUM_OBJEKTZUSTAND_BESONDERS_STANDORTFERN_ANGESTEUERT_UNGUELTIG_VALUE = 6;
 
 	/**
 	 * The '<em><b>ENUM Objektzustand Besonders standortfern nicht angesteuert ungueltig</b></em>' literal value.
@@ -170,7 +191,7 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OBJEKTZUSTAND_BESONDERS_STANDORTFERN_NICHT_ANGESTEUERT_UNGUELTIG_VALUE = 6;
+	public static final int ENUM_OBJEKTZUSTAND_BESONDERS_STANDORTFERN_NICHT_ANGESTEUERT_UNGUELTIG_VALUE = 7;
 
 	/**
 	 * An array of all the '<em><b>ENUM Objektzustand Besonders</b></em>' enumerators.
@@ -182,6 +203,7 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 		new ENUMObjektzustandBesonders[] {
 			ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_ANGESTEUERT_NICHT_GUELTIG,
 			ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_ANGESTEUERT_UNGUELTIG_ABGEDECKT,
+			ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_ABGEDECKT,
 			ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_UNGUELTIG,
 			ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_VORBEREITEND,
 			ENUM_OBJEKTZUSTAND_BESONDERS_SONSTIGE,
@@ -245,6 +267,7 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 		switch (value) {
 			case ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_ANGESTEUERT_NICHT_GUELTIG_VALUE: return ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_ANGESTEUERT_NICHT_GUELTIG;
 			case ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_ANGESTEUERT_UNGUELTIG_ABGEDECKT_VALUE: return ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_ANGESTEUERT_UNGUELTIG_ABGEDECKT;
+			case ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_ABGEDECKT_VALUE: return ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_ABGEDECKT;
 			case ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_UNGUELTIG_VALUE: return ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_UNGUELTIG;
 			case ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_VORBEREITEND_VALUE: return ENUM_OBJEKTZUSTAND_BESONDERS_AM_STANDORT_NICHT_ANGESTEUERT_VORBEREITEND;
 			case ENUM_OBJEKTZUSTAND_BESONDERS_SONSTIGE_VALUE: return ENUM_OBJEKTZUSTAND_BESONDERS_SONSTIGE;

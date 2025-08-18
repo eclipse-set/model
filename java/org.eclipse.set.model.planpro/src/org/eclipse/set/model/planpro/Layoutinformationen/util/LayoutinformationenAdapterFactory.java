@@ -87,12 +87,12 @@ public class LayoutinformationenAdapterFactory extends AdapterFactoryImpl {
 				return createBezeichnung_Lageplan_TypeClassAdapter();
 			}
 			@Override
-			public Adapter caseDarstellung_GEO_Punkt_TypeClass(Darstellung_GEO_Punkt_TypeClass object) {
-				return createDarstellung_GEO_Punkt_TypeClassAdapter();
-			}
-			@Override
 			public Adapter caseDarstellung_Polygonzug_TypeClass(Darstellung_Polygonzug_TypeClass object) {
 				return createDarstellung_Polygonzug_TypeClassAdapter();
+			}
+			@Override
+			public Adapter caseDarstellung_Richtungswinkel_Bezeichnung_TypeClass(Darstellung_Richtungswinkel_Bezeichnung_TypeClass object) {
+				return createDarstellung_Richtungswinkel_Bezeichnung_TypeClassAdapter();
 			}
 			@Override
 			public Adapter caseDarstellung_Richtungswinkel_TypeClass(Darstellung_Richtungswinkel_TypeClass object) {
@@ -235,20 +235,6 @@ public class LayoutinformationenAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_GEO_Punkt_TypeClass <em>Darstellung GEO Punkt Type Class</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_GEO_Punkt_TypeClass
-	 * @generated
-	 */
-	public Adapter createDarstellung_GEO_Punkt_TypeClassAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Polygonzug_TypeClass <em>Darstellung Polygonzug Type Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -259,6 +245,20 @@ public class LayoutinformationenAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createDarstellung_Polygonzug_TypeClassAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Richtungswinkel_Bezeichnung_TypeClass <em>Darstellung Richtungswinkel Bezeichnung Type Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Richtungswinkel_Bezeichnung_TypeClass
+	 * @generated
+	 */
+	public Adapter createDarstellung_Richtungswinkel_Bezeichnung_TypeClassAdapter() {
 		return null;
 	}
 

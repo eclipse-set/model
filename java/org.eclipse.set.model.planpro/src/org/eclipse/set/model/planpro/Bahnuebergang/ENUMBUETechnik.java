@@ -46,6 +46,16 @@ public enum ENUMBUETechnik implements Enumerator {
 	ENUMBUE_TECHNIK_BUEP_93(1, "ENUMBUE_Technik_BUEP_93", "BUEP_93"),
 
 	/**
+	 * The '<em><b>ENUMBUE Technik BUES2000</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMBUE_TECHNIK_BUES2000_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMBUE_TECHNIK_BUES2000(2, "ENUMBUE_Technik_BUES2000", "BUES2000"),
+
+	/**
 	 * The '<em><b>ENUMBUE Technik BUES 72D</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53,7 +63,7 @@ public enum ENUMBUETechnik implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMBUE_TECHNIK_BUES_72D(2, "ENUMBUE_Technik_BUES_72D", "BUES_72D"),
+	ENUMBUE_TECHNIK_BUES_72D(3, "ENUMBUE_Technik_BUES_72D", "BUES_72D"),
 
 	/**
 	 * The '<em><b>ENUMBUE Technik BUES 72Z</b></em>' literal object.
@@ -63,17 +73,7 @@ public enum ENUMBUETechnik implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMBUE_TECHNIK_BUES_72Z(3, "ENUMBUE_Technik_BUES_72Z", "BUES_72Z"),
-
-	/**
-	 * The '<em><b>ENUMBUE Technik BUES2000</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUMBUE_TECHNIK_BUES2000_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ENUMBUE_TECHNIK_BUES2000(4, "ENUMBUE_Technik_BUES2000", "BUES2000"),
+	ENUMBUE_TECHNIK_BUES_72Z(4, "ENUMBUE_Technik_BUES_72Z", "BUES_72Z"),
 
 	/**
 	 * The '<em><b>ENUMBUE Technik EBUET 80</b></em>' literal object.
@@ -258,6 +258,17 @@ public enum ENUMBUETechnik implements Enumerator {
 	public static final int ENUMBUE_TECHNIK_BUEP_93_VALUE = 1;
 
 	/**
+	 * The '<em><b>ENUMBUE Technik BUES2000</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMBUE_TECHNIK_BUES2000
+	 * @model name="ENUMBUE_Technik_BUES2000" literal="BUES2000"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMBUE_TECHNIK_BUES2000_VALUE = 2;
+
+	/**
 	 * The '<em><b>ENUMBUE Technik BUES 72D</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -266,7 +277,7 @@ public enum ENUMBUETechnik implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMBUE_TECHNIK_BUES_72D_VALUE = 2;
+	public static final int ENUMBUE_TECHNIK_BUES_72D_VALUE = 3;
 
 	/**
 	 * The '<em><b>ENUMBUE Technik BUES 72Z</b></em>' literal value.
@@ -277,18 +288,7 @@ public enum ENUMBUETechnik implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMBUE_TECHNIK_BUES_72Z_VALUE = 3;
-
-	/**
-	 * The '<em><b>ENUMBUE Technik BUES2000</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUMBUE_TECHNIK_BUES2000
-	 * @model name="ENUMBUE_Technik_BUES2000" literal="BUES2000"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ENUMBUE_TECHNIK_BUES2000_VALUE = 4;
+	public static final int ENUMBUE_TECHNIK_BUES_72Z_VALUE = 4;
 
 	/**
 	 * The '<em><b>ENUMBUE Technik EBUET 80</b></em>' literal value.
@@ -476,9 +476,9 @@ public enum ENUMBUETechnik implements Enumerator {
 		new ENUMBUETechnik[] {
 			ENUMBUE_TECHNIK_ANRUFSCHRANKE,
 			ENUMBUE_TECHNIK_BUEP_93,
+			ENUMBUE_TECHNIK_BUES2000,
 			ENUMBUE_TECHNIK_BUES_72D,
 			ENUMBUE_TECHNIK_BUES_72Z,
-			ENUMBUE_TECHNIK_BUES2000,
 			ENUMBUE_TECHNIK_EBUET_80,
 			ENUMBUE_TECHNIK_EBUET_80_VB,
 			ENUMBUE_TECHNIK_FUE_58,
@@ -553,9 +553,9 @@ public enum ENUMBUETechnik implements Enumerator {
 		switch (value) {
 			case ENUMBUE_TECHNIK_ANRUFSCHRANKE_VALUE: return ENUMBUE_TECHNIK_ANRUFSCHRANKE;
 			case ENUMBUE_TECHNIK_BUEP_93_VALUE: return ENUMBUE_TECHNIK_BUEP_93;
+			case ENUMBUE_TECHNIK_BUES2000_VALUE: return ENUMBUE_TECHNIK_BUES2000;
 			case ENUMBUE_TECHNIK_BUES_72D_VALUE: return ENUMBUE_TECHNIK_BUES_72D;
 			case ENUMBUE_TECHNIK_BUES_72Z_VALUE: return ENUMBUE_TECHNIK_BUES_72Z;
-			case ENUMBUE_TECHNIK_BUES2000_VALUE: return ENUMBUE_TECHNIK_BUES2000;
 			case ENUMBUE_TECHNIK_EBUET_80_VALUE: return ENUMBUE_TECHNIK_EBUET_80;
 			case ENUMBUE_TECHNIK_EBUET_80_VB_VALUE: return ENUMBUE_TECHNIK_EBUET_80_VB;
 			case ENUMBUE_TECHNIK_FUE_58_VALUE: return ENUMBUE_TECHNIK_FUE_58;

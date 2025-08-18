@@ -24,7 +24,9 @@ import org.eclipse.set.model.planpro.Geodaten.GEO_Punkt;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.Element_Position_Allg_AttributeGroup#getDarstellungGEOPunktBezeichnung <em>Darstellung GEO Punkt Bezeichnung</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.Element_Position_Allg_AttributeGroup#getDarstellungRichtungswinkel <em>Darstellung Richtungswinkel</em>}</li>
+ *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.Element_Position_Allg_AttributeGroup#getDarstellungRichtungswinkelBezeichnung <em>Darstellung Richtungswinkel Bezeichnung</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.Element_Position_Allg_AttributeGroup#getDarstellungGEOPunkt <em>Darstellung GEO Punkt</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.Element_Position_Allg_AttributeGroup#getDarstellungPolygonzug <em>Darstellung Polygonzug</em>}</li>
  * </ul>
@@ -34,6 +36,32 @@ import org.eclipse.set.model.planpro.Geodaten.GEO_Punkt;
  * @generated
  */
 public interface Element_Position_Allg_AttributeGroup extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Darstellung GEO Punkt Bezeichnung</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Verweis auf einen GEO_Punkt zur Angabe der Position, an der die Bezeichnung für das Fachobjekt im referenzierten Lageplan dargestellt werden soll.
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Darstellung GEO Punkt Bezeichnung</em>' containment reference.
+	 * @see #setDarstellungGEOPunktBezeichnung(GEO_Punkt)
+	 * @see org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenPackage#getElement_Position_Allg_AttributeGroup_DarstellungGEOPunktBezeichnung()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='Darstellung_GEO_Punkt_Bezeichnung'"
+	 * @generated
+	 */
+	GEO_Punkt getDarstellungGEOPunktBezeichnung();
+
+	/**
+	 * Sets the value of the '{@link org.eclipse.set.model.planpro.Layoutinformationen.Element_Position_Allg_AttributeGroup#getDarstellungGEOPunktBezeichnung <em>Darstellung GEO Punkt Bezeichnung</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Darstellung GEO Punkt Bezeichnung</em>' containment reference.
+	 * @see #getDarstellungGEOPunktBezeichnung()
+	 * @generated
+	 */
+	void setDarstellungGEOPunktBezeichnung(GEO_Punkt value);
+
 	/**
 	 * Returns the value of the '<em><b>Darstellung Richtungswinkel</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -59,6 +87,32 @@ public interface Element_Position_Allg_AttributeGroup extends EObject {
 	 * @generated
 	 */
 	void setDarstellungRichtungswinkel(Darstellung_Richtungswinkel_TypeClass value);
+
+	/**
+	 * Returns the value of the '<em><b>Darstellung Richtungswinkel Bezeichnung</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Richtungswinkel für die Darstellung der Bezeichnung in [gon]. Es gilt nachfolgende Zuordnung der Richtung: Nord = 0,0 gon Ost = 100,0 gon Süd = 200,0 gon West = 300,0 gon. Originale negative Werte werden durch Addition von 400.0 gon normalisiert.
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Darstellung Richtungswinkel Bezeichnung</em>' containment reference.
+	 * @see #setDarstellungRichtungswinkelBezeichnung(Darstellung_Richtungswinkel_Bezeichnung_TypeClass)
+	 * @see org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenPackage#getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkelBezeichnung()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='Darstellung_Richtungswinkel_Bezeichnung'"
+	 * @generated
+	 */
+	Darstellung_Richtungswinkel_Bezeichnung_TypeClass getDarstellungRichtungswinkelBezeichnung();
+
+	/**
+	 * Sets the value of the '{@link org.eclipse.set.model.planpro.Layoutinformationen.Element_Position_Allg_AttributeGroup#getDarstellungRichtungswinkelBezeichnung <em>Darstellung Richtungswinkel Bezeichnung</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Darstellung Richtungswinkel Bezeichnung</em>' containment reference.
+	 * @see #getDarstellungRichtungswinkelBezeichnung()
+	 * @generated
+	 */
+	void setDarstellungRichtungswinkelBezeichnung(Darstellung_Richtungswinkel_Bezeichnung_TypeClass value);
 
 	/**
 	 * Returns the value of the '<em><b>Darstellung GEO Punkt</b></em>' containment reference list.

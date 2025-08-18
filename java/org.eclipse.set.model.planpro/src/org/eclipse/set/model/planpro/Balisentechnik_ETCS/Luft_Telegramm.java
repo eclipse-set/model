@@ -9,6 +9,8 @@
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
+import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
 
 import org.eclipse.set.model.planpro.Verweise.ID_Balise_ohne_Proxy_TypeClass;
@@ -66,30 +68,20 @@ public interface Luft_Telegramm extends Basis_Objekt {
 	void setIDBaliseUebertragung(ID_Balise_ohne_Proxy_TypeClass value);
 
 	/**
-	 * Returns the value of the '<em><b>ID Fachtelegramm</b></em>' containment reference.
+	 * Returns the value of the '<em><b>ID Fachtelegramm</b></em>' containment reference list.
+	 * The list contents are of type {@link org.eclipse.set.model.planpro.Verweise.ID_Fachtelegramm_TypeClass}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Verweis auf das Fachtelegramm, das vom Lufttelegramm umgesetzt wird. Ein Fachtelegramm kann dabei durch mehrere Lufttelegramme umgesetzt werden.
+	 * Verweis auf 1..* Fachtelegramme, die vom Lufttelegramm umgesetzt werden. Ein Lufttelegramm darf dabei nur auf die Fachtelegramme verweisen, die zu genau einer Menge von Anschaltbedingungen gehören (abzuleiten aus Attributgruppe DP_Telegramm). Ein Fachtelegramm kann durch Lufttelegramme mehrerer Balisen eines Datenpunkts umgesetzt werden.
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>ID Fachtelegramm</em>' containment reference.
-	 * @see #setIDFachtelegramm(ID_Fachtelegramm_TypeClass)
+	 * @return the value of the '<em>ID Fachtelegramm</em>' containment reference list.
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage#getLuft_Telegramm_IDFachtelegramm()
 	 * @model containment="true" required="true"
 	 *        extendedMetaData="kind='element' name='ID_Fachtelegramm'"
 	 * @generated
 	 */
-	ID_Fachtelegramm_TypeClass getIDFachtelegramm();
-
-	/**
-	 * Sets the value of the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.Luft_Telegramm#getIDFachtelegramm <em>ID Fachtelegramm</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>ID Fachtelegramm</em>' containment reference.
-	 * @see #getIDFachtelegramm()
-	 * @generated
-	 */
-	void setIDFachtelegramm(ID_Fachtelegramm_TypeClass value);
+	EList<ID_Fachtelegramm_TypeClass> getIDFachtelegramm();
 
 	/**
 	 * Returns the value of the '<em><b>LT Binaerdatei Hilfe</b></em>' containment reference.

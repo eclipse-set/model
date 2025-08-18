@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,48 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +166,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Layoutinformationen/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Layoutinformationen/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -221,43 +259,6 @@ public interface LayoutinformationenPackage extends EPackage {
 	int BEZEICHNUNG_LAGEPLAN_TYPE_CLASS_FEATURE_COUNT = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_GEO_Punkt_TypeClassImpl <em>Darstellung GEO Punkt Type Class</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_GEO_Punkt_TypeClassImpl
-	 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.LayoutinformationenPackageImpl#getDarstellung_GEO_Punkt_TypeClass()
-	 * @generated
-	 */
-	int DARSTELLUNG_GEO_PUNKT_TYPE_CLASS = 2;
-
-	/**
-	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DARSTELLUNG_GEO_PUNKT_TYPE_CLASS__ID_BEARBEITUNGSVERMERK = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP__ID_BEARBEITUNGSVERMERK;
-
-	/**
-	 * The feature id for the '<em><b>Wert</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DARSTELLUNG_GEO_PUNKT_TYPE_CLASS__WERT = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP_FEATURE_COUNT + 0;
-
-	/**
-	 * The number of structural features of the '<em>Darstellung GEO Punkt Type Class</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int DARSTELLUNG_GEO_PUNKT_TYPE_CLASS_FEATURE_COUNT = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP_FEATURE_COUNT + 1;
-
-	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_Polygonzug_TypeClassImpl <em>Darstellung Polygonzug Type Class</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -265,7 +266,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.LayoutinformationenPackageImpl#getDarstellung_Polygonzug_TypeClass()
 	 * @generated
 	 */
-	int DARSTELLUNG_POLYGONZUG_TYPE_CLASS = 3;
+	int DARSTELLUNG_POLYGONZUG_TYPE_CLASS = 2;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -293,6 +294,43 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @ordered
 	 */
 	int DARSTELLUNG_POLYGONZUG_TYPE_CLASS_FEATURE_COUNT = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_Richtungswinkel_Bezeichnung_TypeClassImpl <em>Darstellung Richtungswinkel Bezeichnung Type Class</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_Richtungswinkel_Bezeichnung_TypeClassImpl
+	 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.LayoutinformationenPackageImpl#getDarstellung_Richtungswinkel_Bezeichnung_TypeClass()
+	 * @generated
+	 */
+	int DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS = 3;
+
+	/**
+	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS__ID_BEARBEITUNGSVERMERK = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP__ID_BEARBEITUNGSVERMERK;
+
+	/**
+	 * The feature id for the '<em><b>Wert</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS__WERT = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Darstellung Richtungswinkel Bezeichnung Type Class</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS_FEATURE_COUNT = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_Richtungswinkel_TypeClassImpl <em>Darstellung Richtungswinkel Type Class</em>}' class.
@@ -452,13 +490,31 @@ public interface LayoutinformationenPackage extends EPackage {
 	int ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP = 7;
 
 	/**
+	 * The feature id for the '<em><b>Darstellung GEO Punkt Bezeichnung</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_GEO_PUNKT_BEZEICHNUNG = 0;
+
+	/**
 	 * The feature id for the '<em><b>Darstellung Richtungswinkel</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_RICHTUNGSWINKEL = 0;
+	int ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_RICHTUNGSWINKEL = 1;
+
+	/**
+	 * The feature id for the '<em><b>Darstellung Richtungswinkel Bezeichnung</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG = 2;
 
 	/**
 	 * The feature id for the '<em><b>Darstellung GEO Punkt</b></em>' containment reference list.
@@ -467,7 +523,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_GEO_PUNKT = 1;
+	int ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_GEO_PUNKT = 3;
 
 	/**
 	 * The feature id for the '<em><b>Darstellung Polygonzug</b></em>' containment reference.
@@ -476,7 +532,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_POLYGONZUG = 2;
+	int ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_POLYGONZUG = 4;
 
 	/**
 	 * The number of structural features of the '<em>Element Position Allg Attribute Group</em>' class.
@@ -485,7 +541,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP_FEATURE_COUNT = 3;
+	int ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP_FEATURE_COUNT = 5;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.Element_StilImpl <em>Element Stil</em>}' class.
@@ -1014,13 +1070,22 @@ public interface LayoutinformationenPackage extends EPackage {
 	int PLAN_PRO_LAYOUTINFO__IDENTITAET = BasisobjektePackage.UR_OBJEKT__IDENTITAET;
 
 	/**
+	 * The feature id for the '<em><b>Bearbeitungsvermerk</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAN_PRO_LAYOUTINFO__BEARBEITUNGSVERMERK = BasisobjektePackage.UR_OBJEKT_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Element Position</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_PRO_LAYOUTINFO__ELEMENT_POSITION = BasisobjektePackage.UR_OBJEKT_FEATURE_COUNT + 0;
+	int PLAN_PRO_LAYOUTINFO__ELEMENT_POSITION = BasisobjektePackage.UR_OBJEKT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Element Stil</b></em>' containment reference list.
@@ -1029,7 +1094,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_PRO_LAYOUTINFO__ELEMENT_STIL = BasisobjektePackage.UR_OBJEKT_FEATURE_COUNT + 1;
+	int PLAN_PRO_LAYOUTINFO__ELEMENT_STIL = BasisobjektePackage.UR_OBJEKT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Lageplan</b></em>' containment reference list.
@@ -1038,7 +1103,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_PRO_LAYOUTINFO__LAGEPLAN = BasisobjektePackage.UR_OBJEKT_FEATURE_COUNT + 2;
+	int PLAN_PRO_LAYOUTINFO__LAGEPLAN = BasisobjektePackage.UR_OBJEKT_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Lageplan Blattschnitt</b></em>' containment reference list.
@@ -1047,7 +1112,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_PRO_LAYOUTINFO__LAGEPLAN_BLATTSCHNITT = BasisobjektePackage.UR_OBJEKT_FEATURE_COUNT + 3;
+	int PLAN_PRO_LAYOUTINFO__LAGEPLAN_BLATTSCHNITT = BasisobjektePackage.UR_OBJEKT_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Lageplan Zustand</b></em>' containment reference list.
@@ -1056,7 +1121,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_PRO_LAYOUTINFO__LAGEPLAN_ZUSTAND = BasisobjektePackage.UR_OBJEKT_FEATURE_COUNT + 4;
+	int PLAN_PRO_LAYOUTINFO__LAGEPLAN_ZUSTAND = BasisobjektePackage.UR_OBJEKT_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Plan Pro Layoutinfo</em>' class.
@@ -1065,7 +1130,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAN_PRO_LAYOUTINFO_FEATURE_COUNT = BasisobjektePackage.UR_OBJEKT_FEATURE_COUNT + 5;
+	int PLAN_PRO_LAYOUTINFO_FEATURE_COUNT = BasisobjektePackage.UR_OBJEKT_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.Polygonzug_Ausrichtung_TypeClassImpl <em>Polygonzug Ausrichtung Type Class</em>}' class.
@@ -1276,16 +1341,6 @@ public interface LayoutinformationenPackage extends EPackage {
 	int BEZEICHNUNG_LAGEPLAN_TYPE = 30;
 
 	/**
-	 * The meta object id for the '<em>Darstellung GEO Punkt Type</em>' data type.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see java.lang.String
-	 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.LayoutinformationenPackageImpl#getDarstellung_GEO_Punkt_Type()
-	 * @generated
-	 */
-	int DARSTELLUNG_GEO_PUNKT_TYPE = 31;
-
-	/**
 	 * The meta object id for the '<em>Darstellung Polygonzug Type</em>' data type.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1293,7 +1348,17 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.LayoutinformationenPackageImpl#getDarstellung_Polygonzug_Type()
 	 * @generated
 	 */
-	int DARSTELLUNG_POLYGONZUG_TYPE = 32;
+	int DARSTELLUNG_POLYGONZUG_TYPE = 31;
+
+	/**
+	 * The meta object id for the '<em>Darstellung Richtungswinkel Bezeichnung Type</em>' data type.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see java.math.BigDecimal
+	 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.LayoutinformationenPackageImpl#getDarstellung_Richtungswinkel_Bezeichnung_Type()
+	 * @generated
+	 */
+	int DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE = 32;
 
 	/**
 	 * The meta object id for the '<em>Darstellung Richtungswinkel Type</em>' data type.
@@ -1439,27 +1504,6 @@ public interface LayoutinformationenPackage extends EPackage {
 	EAttribute getBezeichnung_Lageplan_TypeClass_Wert();
 
 	/**
-	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_GEO_Punkt_TypeClass <em>Darstellung GEO Punkt Type Class</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Darstellung GEO Punkt Type Class</em>'.
-	 * @see org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_GEO_Punkt_TypeClass
-	 * @generated
-	 */
-	EClass getDarstellung_GEO_Punkt_TypeClass();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_GEO_Punkt_TypeClass#getWert <em>Wert</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Wert</em>'.
-	 * @see org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_GEO_Punkt_TypeClass#getWert()
-	 * @see #getDarstellung_GEO_Punkt_TypeClass()
-	 * @generated
-	 */
-	EAttribute getDarstellung_GEO_Punkt_TypeClass_Wert();
-
-	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Polygonzug_TypeClass <em>Darstellung Polygonzug Type Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1479,6 +1523,27 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getDarstellung_Polygonzug_TypeClass_Wert();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Richtungswinkel_Bezeichnung_TypeClass <em>Darstellung Richtungswinkel Bezeichnung Type Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Darstellung Richtungswinkel Bezeichnung Type Class</em>'.
+	 * @see org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Richtungswinkel_Bezeichnung_TypeClass
+	 * @generated
+	 */
+	EClass getDarstellung_Richtungswinkel_Bezeichnung_TypeClass();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Richtungswinkel_Bezeichnung_TypeClass#getWert <em>Wert</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Wert</em>'.
+	 * @see org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Richtungswinkel_Bezeichnung_TypeClass#getWert()
+	 * @see #getDarstellung_Richtungswinkel_Bezeichnung_TypeClass()
+	 * @generated
+	 */
+	EAttribute getDarstellung_Richtungswinkel_Bezeichnung_TypeClass_Wert();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Richtungswinkel_TypeClass <em>Darstellung Richtungswinkel Type Class</em>}'.
@@ -1609,6 +1674,17 @@ public interface LayoutinformationenPackage extends EPackage {
 	EClass getElement_Position_Allg_AttributeGroup();
 
 	/**
+	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Layoutinformationen.Element_Position_Allg_AttributeGroup#getDarstellungGEOPunktBezeichnung <em>Darstellung GEO Punkt Bezeichnung</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Darstellung GEO Punkt Bezeichnung</em>'.
+	 * @see org.eclipse.set.model.planpro.Layoutinformationen.Element_Position_Allg_AttributeGroup#getDarstellungGEOPunktBezeichnung()
+	 * @see #getElement_Position_Allg_AttributeGroup()
+	 * @generated
+	 */
+	EReference getElement_Position_Allg_AttributeGroup_DarstellungGEOPunktBezeichnung();
+
+	/**
 	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Layoutinformationen.Element_Position_Allg_AttributeGroup#getDarstellungRichtungswinkel <em>Darstellung Richtungswinkel</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1618,6 +1694,17 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkel();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Layoutinformationen.Element_Position_Allg_AttributeGroup#getDarstellungRichtungswinkelBezeichnung <em>Darstellung Richtungswinkel Bezeichnung</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Darstellung Richtungswinkel Bezeichnung</em>'.
+	 * @see org.eclipse.set.model.planpro.Layoutinformationen.Element_Position_Allg_AttributeGroup#getDarstellungRichtungswinkelBezeichnung()
+	 * @see #getElement_Position_Allg_AttributeGroup()
+	 * @generated
+	 */
+	EReference getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkelBezeichnung();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link org.eclipse.set.model.planpro.Layoutinformationen.Element_Position_Allg_AttributeGroup#getDarstellungGEOPunkt <em>Darstellung GEO Punkt</em>}'.
@@ -2014,6 +2101,17 @@ public interface LayoutinformationenPackage extends EPackage {
 	EClass getPlanPro_Layoutinfo();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link org.eclipse.set.model.planpro.Layoutinformationen.PlanPro_Layoutinfo#getBearbeitungsvermerk <em>Bearbeitungsvermerk</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Bearbeitungsvermerk</em>'.
+	 * @see org.eclipse.set.model.planpro.Layoutinformationen.PlanPro_Layoutinfo#getBearbeitungsvermerk()
+	 * @see #getPlanPro_Layoutinfo()
+	 * @generated
+	 */
+	EReference getPlanPro_Layoutinfo_Bearbeitungsvermerk();
+
+	/**
 	 * Returns the meta object for the containment reference list '{@link org.eclipse.set.model.planpro.Layoutinformationen.PlanPro_Layoutinfo#getElementPosition <em>Element Position</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2211,22 +2309,10 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Lageplan Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Lageplan' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBezeichnung_Lageplan' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Lageplan_Type();
-
-	/**
-	 * Returns the meta object for data type '{@link java.lang.String <em>Darstellung GEO Punkt Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for data type '<em>Darstellung GEO Punkt Type</em>'.
-	 * @see java.lang.String
-	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TDarstellung_GEO_Punkt' baseType='http://www.eclipse.org/emf/2003/XMLType#string'"
-	 * @generated
-	 */
-	EDataType getDarstellung_GEO_Punkt_Type();
 
 	/**
 	 * Returns the meta object for data type '{@link java.lang.String <em>Darstellung Polygonzug Type</em>}'.
@@ -2235,10 +2321,22 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Darstellung Polygonzug Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TDarstellung_Polygonzug' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText'"
+	 *        extendedMetaData="name='TDarstellung_Polygonzug' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText'"
 	 * @generated
 	 */
 	EDataType getDarstellung_Polygonzug_Type();
+
+	/**
+	 * Returns the meta object for data type '{@link java.math.BigDecimal <em>Darstellung Richtungswinkel Bezeichnung Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for data type '<em>Darstellung Richtungswinkel Bezeichnung Type</em>'.
+	 * @see java.math.BigDecimal
+	 * @model instanceClass="java.math.BigDecimal"
+	 *        extendedMetaData="name='TDarstellung_Richtungswinkel_Bezeichnung' baseType='http://www.eclipse.org/emf/2003/XMLType#decimal'"
+	 * @generated
+	 */
+	EDataType getDarstellung_Richtungswinkel_Bezeichnung_Type();
 
 	/**
 	 * Returns the meta object for data type '{@link java.math.BigDecimal <em>Darstellung Richtungswinkel Type</em>}'.
@@ -2307,7 +2405,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Linie Farbwert Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TLinie_Farbwert' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='[a-fA-F0-9]{6}'"
+	 *        extendedMetaData="name='TLinie_Farbwert' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='[a-fA-F0-9]{6}'"
 	 * @generated
 	 */
 	EDataType getLinie_Farbwert_Type();
@@ -2319,7 +2417,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Polygonzug Ausrichtung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TPolygonzug_Ausrichtung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText'"
+	 *        extendedMetaData="name='TPolygonzug_Ausrichtung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText'"
 	 * @generated
 	 */
 	EDataType getPolygonzug_Ausrichtung_Type();
@@ -2331,7 +2429,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Polygonzug Blattschnitt Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TPolygonzug_Blattschnitt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText'"
+	 *        extendedMetaData="name='TPolygonzug_Blattschnitt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText'"
 	 * @generated
 	 */
 	EDataType getPolygonzug_Blattschnitt_Type();
@@ -2343,7 +2441,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Referenz LST Zustand Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TReferenz_LST_Zustand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGUID'"
+	 *        extendedMetaData="name='TReferenz_LST_Zustand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGUID'"
 	 * @generated
 	 */
 	EDataType getReferenz_LST_Zustand_Type();
@@ -2355,7 +2453,7 @@ public interface LayoutinformationenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Referenz Objekt Darstellung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TReferenz_Objekt_Darstellung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGUID'"
+	 *        extendedMetaData="name='TReferenz_Objekt_Darstellung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGUID'"
 	 * @generated
 	 */
 	EDataType getReferenz_Objekt_Darstellung_Type();
@@ -2419,24 +2517,6 @@ public interface LayoutinformationenPackage extends EPackage {
 		EAttribute BEZEICHNUNG_LAGEPLAN_TYPE_CLASS__WERT = eINSTANCE.getBezeichnung_Lageplan_TypeClass_Wert();
 
 		/**
-		 * The meta object literal for the '{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_GEO_Punkt_TypeClassImpl <em>Darstellung GEO Punkt Type Class</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_GEO_Punkt_TypeClassImpl
-		 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.LayoutinformationenPackageImpl#getDarstellung_GEO_Punkt_TypeClass()
-		 * @generated
-		 */
-		EClass DARSTELLUNG_GEO_PUNKT_TYPE_CLASS = eINSTANCE.getDarstellung_GEO_Punkt_TypeClass();
-
-		/**
-		 * The meta object literal for the '<em><b>Wert</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute DARSTELLUNG_GEO_PUNKT_TYPE_CLASS__WERT = eINSTANCE.getDarstellung_GEO_Punkt_TypeClass_Wert();
-
-		/**
 		 * The meta object literal for the '{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_Polygonzug_TypeClassImpl <em>Darstellung Polygonzug Type Class</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2453,6 +2533,24 @@ public interface LayoutinformationenPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute DARSTELLUNG_POLYGONZUG_TYPE_CLASS__WERT = eINSTANCE.getDarstellung_Polygonzug_TypeClass_Wert();
+
+		/**
+		 * The meta object literal for the '{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_Richtungswinkel_Bezeichnung_TypeClassImpl <em>Darstellung Richtungswinkel Bezeichnung Type Class</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_Richtungswinkel_Bezeichnung_TypeClassImpl
+		 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.LayoutinformationenPackageImpl#getDarstellung_Richtungswinkel_Bezeichnung_TypeClass()
+		 * @generated
+		 */
+		EClass DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS = eINSTANCE.getDarstellung_Richtungswinkel_Bezeichnung_TypeClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Wert</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS__WERT = eINSTANCE.getDarstellung_Richtungswinkel_Bezeichnung_TypeClass_Wert();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_Richtungswinkel_TypeClassImpl <em>Darstellung Richtungswinkel Type Class</em>}' class.
@@ -2559,12 +2657,28 @@ public interface LayoutinformationenPackage extends EPackage {
 		EClass ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP = eINSTANCE.getElement_Position_Allg_AttributeGroup();
 
 		/**
+		 * The meta object literal for the '<em><b>Darstellung GEO Punkt Bezeichnung</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_GEO_PUNKT_BEZEICHNUNG = eINSTANCE.getElement_Position_Allg_AttributeGroup_DarstellungGEOPunktBezeichnung();
+
+		/**
 		 * The meta object literal for the '<em><b>Darstellung Richtungswinkel</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_RICHTUNGSWINKEL = eINSTANCE.getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkel();
+
+		/**
+		 * The meta object literal for the '<em><b>Darstellung Richtungswinkel Bezeichnung</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG = eINSTANCE.getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkelBezeichnung();
 
 		/**
 		 * The meta object literal for the '<em><b>Darstellung GEO Punkt</b></em>' containment reference list feature.
@@ -2889,6 +3003,14 @@ public interface LayoutinformationenPackage extends EPackage {
 		EClass PLAN_PRO_LAYOUTINFO = eINSTANCE.getPlanPro_Layoutinfo();
 
 		/**
+		 * The meta object literal for the '<em><b>Bearbeitungsvermerk</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PLAN_PRO_LAYOUTINFO__BEARBEITUNGSVERMERK = eINSTANCE.getPlanPro_Layoutinfo_Bearbeitungsvermerk();
+
+		/**
 		 * The meta object literal for the '<em><b>Element Position</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3061,16 +3183,6 @@ public interface LayoutinformationenPackage extends EPackage {
 		EDataType BEZEICHNUNG_LAGEPLAN_TYPE = eINSTANCE.getBezeichnung_Lageplan_Type();
 
 		/**
-		 * The meta object literal for the '<em>Darstellung GEO Punkt Type</em>' data type.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see java.lang.String
-		 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.LayoutinformationenPackageImpl#getDarstellung_GEO_Punkt_Type()
-		 * @generated
-		 */
-		EDataType DARSTELLUNG_GEO_PUNKT_TYPE = eINSTANCE.getDarstellung_GEO_Punkt_Type();
-
-		/**
 		 * The meta object literal for the '<em>Darstellung Polygonzug Type</em>' data type.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3079,6 +3191,16 @@ public interface LayoutinformationenPackage extends EPackage {
 		 * @generated
 		 */
 		EDataType DARSTELLUNG_POLYGONZUG_TYPE = eINSTANCE.getDarstellung_Polygonzug_Type();
+
+		/**
+		 * The meta object literal for the '<em>Darstellung Richtungswinkel Bezeichnung Type</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see java.math.BigDecimal
+		 * @see org.eclipse.set.model.planpro.Layoutinformationen.impl.LayoutinformationenPackageImpl#getDarstellung_Richtungswinkel_Bezeichnung_Type()
+		 * @generated
+		 */
+		EDataType DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE = eINSTANCE.getDarstellung_Richtungswinkel_Bezeichnung_Type();
 
 		/**
 		 * The meta object literal for the '<em>Darstellung Richtungswinkel Type</em>' data type.

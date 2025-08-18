@@ -286,6 +286,29 @@ public class ZugnummernmeldeanlageItemProviderAdapterFactory extends Zugnummernm
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bezeichnung_Stellwerk_TypeClass} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Bezeichnung_Stellwerk_TypeClassItemProvider bezeichnung_Stellwerk_TypeClassItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bezeichnung_Stellwerk_TypeClass}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createBezeichnung_Stellwerk_TypeClassAdapter() {
+		if (bezeichnung_Stellwerk_TypeClassItemProvider == null) {
+			bezeichnung_Stellwerk_TypeClassItemProvider = new Bezeichnung_Stellwerk_TypeClassItemProvider(this);
+		}
+
+		return bezeichnung_Stellwerk_TypeClassItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bf_Kennung_TypeClass} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2055,6 +2078,7 @@ public class ZugnummernmeldeanlageItemProviderAdapterFactory extends Zugnummernm
 		if (bedienbarkeit_Anzeigefeld_TypeClassItemProvider != null) bedienbarkeit_Anzeigefeld_TypeClassItemProvider.dispose();
 		if (besonderes_Schaltkriterium_TypeClassItemProvider != null) besonderes_Schaltkriterium_TypeClassItemProvider.dispose();
 		if (bezeichnung_Besondere_Anlage_TypeClassItemProvider != null) bezeichnung_Besondere_Anlage_TypeClassItemProvider.dispose();
+		if (bezeichnung_Stellwerk_TypeClassItemProvider != null) bezeichnung_Stellwerk_TypeClassItemProvider.dispose();
 		if (bf_Kennung_TypeClassItemProvider != null) bf_Kennung_TypeClassItemProvider.dispose();
 		if (bf_Nr_ANB_TypeClassItemProvider != null) bf_Nr_ANB_TypeClassItemProvider.dispose();
 		if (bf_Nr_TypeClassItemProvider != null) bf_Nr_TypeClassItemProvider.dispose();

@@ -38,7 +38,7 @@ public interface Datenpunkt_Allg_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Auf dem Balisenschild angegebenes Hauptanwendungssystem des Datenpunkts (z. B. GNT, ETCS). Die Kennzeichnung von Datenpunkten im ETCS-Übersichtsplan wird nicht aus diesem Attribut abgeleitet, sondern aus den vorhandenen Attributgruppen DP_Typ_Gxxxx.
+	 * Hauptanwendungssystem des Datenpunkts, aus dem die Angabe auf dem Balisenschild  (z. B. GNT, ESG, ETCS) abgeleitet wird. Bei Ausrüstung mit ETCS L2oS ist der Wert \"L2\" zu verwenden. Die Kennzeichnung von Datenpunkten im ETCS-Übersichtsplan wird nicht aus diesem Attribut abgeleitet, sondern aus den vorhandenen Attributgruppen DP_Typ_Gxxxx.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Anwendungssystem</em>' containment reference.
 	 * @see #setAnwendungssystem(Anwendungssystem_TypeClass)
@@ -169,6 +169,7 @@ public interface Datenpunkt_Allg_AttributeGroup extends EObject {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Auswahl der Bezeichnungskomponenten für die Angabe des Balisenstandortes auf dem Balisenschild. Die aufzubringende Bezeichnung ergibt sich aus weiteren im Datenmodell vorhandenen Angaben und wird regelbasiert durch den Hersteller festgelegt.
+	 * Bei ETCS L2 ist keine Angabe erforderlich.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Standortangabe Balisenschild</em>' containment reference.
 	 * @see #setStandortangabeBalisenschild(Standortangabe_Balisenschild_TypeClass)

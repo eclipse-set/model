@@ -114,7 +114,10 @@ public interface Signal_Signalbegriff_Allg_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Angabe, ob die Anschaltung von Zs 2 zu überwachen ist (true) oder nicht (false). Die Angabe erfolgt nur für den Signalbegriff Zs 2.
+	 * Angabe, ob die Anschaltung von Zs 2 bzw. Zs 2v zu überwachen ist (true) oder nicht (false). Die Angabe erfolgt nur für die Signalbegriffe Zs 2 und Zs 2v. 
+	 * Das Zs 2v wird i. d. R. überwacht, wenn auch das zugehörige Zs 2 überwacht wird. Ausnahmen sind möglich, wenn für ein zwingend zu überwachendes Zs 2 keine Vorsignalisierung erforderlich ist, diese aber auf Wunsch des Bestellers vorgesehen wird.
+	 * DB-Regelwerk 
+	 * Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Zs2 Ueberwacht</em>' containment reference.
 	 * @see #setZs2Ueberwacht(Zs2_Ueberwacht_TypeClass)

@@ -4,11 +4,11 @@
                 xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
                 xmi:version="2.0"
                 name="Verweise"
-                nsURI="http://www.plan-pro.org/modell/Verweise/1.10.0.1"
+                nsURI="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
                 nsPrefix="nsVerweise">
    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+               value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
    </eAnnotations>
    <eClassifiers xsi:type="ecore:EClass"
                  name="ID_Anforderer_Element_TypeClass"
@@ -622,6 +622,33 @@
                     xmlns:func="localhost/function"
                     source="planpro/id_reference"
                     references="Signale.ecore#//Signal Geodaten.ecore#//Technischer_Punkt"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
+                           xsi:type="ecore:EReference"
+                           name="value"
+                           eType="ecore:EClass Basisobjekte.ecore#//Basis_Objekt"
+                           transient="true"/>
+      <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:func="localhost/function"
+                           xsi:type="ecore:EAttribute"
+                           name="invalidReference"
+                           eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"
+                           transient="true"
+                           defaultValueLiteral="false"/>
+   </eClassifiers>
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="ID_Bezugspunkt_TypeClass"
+                 eSuperTypes="BasisTypen.ecore#//Zeiger_TypeClass">
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+         <details key="name"
+                  value="TCID_Bezugspunkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
+      </eAnnotations>
+      <eAnnotations xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                    xmlns:func="localhost/function"
+                    source="planpro/id_reference"
+                    references="Bahnuebergang.ecore#//BUE_Anlage Bahnuebergang.ecore#//BUE_Kante Fahrstrasse.ecore#//Markanter_Punkt"/>
       <eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
                            xmlns:func="localhost/function"
                            xsi:type="ecore:EReference"

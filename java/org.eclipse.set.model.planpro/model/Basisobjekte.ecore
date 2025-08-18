@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ecore:EPackage xmlns:xmi="http://www.omg.org/XMI"
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
                 xmi:version="2.0"
                 name="Basisobjekte"
-                nsURI="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1"
+                nsURI="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
                 nsPrefix="nsBasisobjekte">
    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+               value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
    </eAnnotations>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="Abstand_Type"
@@ -17,7 +17,7 @@
          <details key="name"
                   value="TAbstand"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
          <details key="pattern"
                   value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
       </eAnnotations>
@@ -53,7 +53,7 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
          <details key="name"
@@ -167,7 +167,7 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
          <details key="name"
@@ -316,7 +316,7 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
          <details key="name"
@@ -371,7 +371,7 @@
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation"
-                     value="Fachliche Rolle des Bearbeiters, der den Bearbeitungsvermerk verfasst hat. In der ersten Umsetzungsstufe PlanPro ist dabei nur die Rolle \&quot;LST_Fachplaner\&quot; (Ingenieurbüro) vorgesehen. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
+                     value="Fachliche Rolle des Bearbeiters, der den Bearbeitungsvermerk verfasst hat. In der ersten Umsetzungsstufe PlanPro ist dabei nur die Rolle \&#34;LST_Fachplaner\&#34; (Ingenieurbüro) vorgesehen. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
             <details key="kind"
@@ -455,10 +455,6 @@
             <details key="documentation"
                      value="Kurzform des Kommentars des Bearbeitungsvermerks für Anzeige bzw. Druck in den Ausgabeformaten."/>
          </eAnnotations>
-         <eAnnotations>
-            <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..100]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
-         </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
             <details key="kind"
                      value="element"/>
@@ -513,7 +509,7 @@
          <details key="name"
                   value="TBegrenzung_A"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
          <details key="pattern"
                   value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
       </eAnnotations>
@@ -547,7 +543,7 @@
          <details key="name"
                   value="TBegrenzung_B"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
          <details key="pattern"
                   value="(0|[1-9][0-9]{0,4})\.[0-9]{3}"/>
       </eAnnotations>
@@ -584,7 +580,7 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
          <details key="name"
@@ -627,7 +623,7 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung> [0.000..99999.999]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [0.000..99999.999]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
             <details key="kind"
@@ -648,7 +644,7 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung> [0.000..99999.999]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [0.000..99999.999]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
             <details key="kind"
@@ -698,7 +694,7 @@
          <details key="name"
                   value="TBeschreibung"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -796,7 +792,7 @@
          <details key="name"
                   value="TBV_Kategorie"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -894,7 +890,7 @@
          <details key="name"
                   value="TDB_GDI_Referenz"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
          <details key="pattern"
                   value=".{1,20}"/>
       </eAnnotations>
@@ -986,50 +982,53 @@
       <eLiterals name="ENUMAnhang_Art_Monitoraufteilung"
                  value="19"
                  literal="Monitoraufteilung"/>
-      <eLiterals name="ENUMAnhang_Art_Planverzeichnis"
+      <eLiterals name="ENUMAnhang_Art_Planungsbuero_Logo"
                  value="20"
+                 literal="Planungsbuero_Logo"/>
+      <eLiterals name="ENUMAnhang_Art_Planverzeichnis"
+                 value="21"
                  literal="Planverzeichnis"/>
       <eLiterals name="ENUMAnhang_Art_Pruefbericht"
-                 value="21"
+                 value="22"
                  literal="Pruefbericht"/>
       <eLiterals name="ENUMAnhang_Art_Raumplan_Bedienraeume"
-                 value="22"
+                 value="23"
                  literal="Raumplan_Bedienraeume"/>
       <eLiterals name="ENUMAnhang_Art_Raumplan_Rechnerraeume"
-                 value="23"
+                 value="24"
                  literal="Raumplan_Rechnerraeume"/>
       <eLiterals name="ENUMAnhang_Art_Regelwerksstand_Besonders"
-                 value="24"
+                 value="25"
                  literal="Regelwerksstand_Besonders"/>
       <eLiterals name="ENUMAnhang_Art_Richtungssinn"
-                 value="25"
+                 value="26"
                  literal="Richtungssinn"/>
       <eLiterals name="ENUMAnhang_Art_sonstige"
-                 value="26"
+                 value="27"
                  literal="sonstige"/>
       <eLiterals name="ENUMAnhang_Art_Steuerbezirksuebersicht"
-                 value="27"
+                 value="28"
                  literal="Steuerbezirksuebersicht"/>
       <eLiterals name="ENUMAnhang_Art_UiG"
-                 value="28"
+                 value="29"
                  literal="UiG"/>
       <eLiterals name="ENUMAnhang_Art_Vorgabe"
-                 value="29"
+                 value="30"
                  literal="Vorgabe"/>
       <eLiterals name="ENUMAnhang_Art_Vorgabe_GBT"
-                 value="30"
+                 value="31"
                  literal="Vorgabe_GBT"/>
       <eLiterals name="ENUMAnhang_Art_VzG"
-                 value="31"
+                 value="32"
                  literal="VzG"/>
       <eLiterals name="ENUMAnhang_Art_ZiE"
-                 value="32"
+                 value="33"
                  literal="ZiE"/>
       <eLiterals name="ENUMAnhang_Art_ZN_Raumplan_Bedienraum"
-                 value="33"
+                 value="34"
                  literal="ZN_Raumplan_Bedienraum"/>
       <eLiterals name="ENUMAnhang_Art_ZN_Raumplan_Rechnerraum"
-                 value="34"
+                 value="35"
                  literal="ZN_Raumplan_Rechnerraum"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
@@ -1271,17 +1270,20 @@
       </eAnnotations>
       <eLiterals name="ENUMDateityp_jpg"
                  literal="jpg"/>
-      <eLiterals name="ENUMDateityp_mpeg"
+      <eLiterals name="ENUMDateityp_mp4"
                  value="1"
+                 literal="mp4"/>
+      <eLiterals name="ENUMDateityp_mpeg"
+                 value="2"
                  literal="mpeg"/>
       <eLiterals name="ENUMDateityp_pdf"
-                 value="2"
+                 value="3"
                  literal="pdf"/>
       <eLiterals name="ENUMDateityp_png"
-                 value="3"
+                 value="4"
                  literal="png"/>
       <eLiterals name="ENUMDateityp_tif"
-                 value="4"
+                 value="5"
                  literal="tif"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
@@ -1819,20 +1821,23 @@
       <eLiterals name="ENUMObjektzustand_Besonders_am_Standort_angesteuert_ungueltig_abgedeckt"
                  value="1"
                  literal="am_Standort_angesteuert_ungueltig_abgedeckt"/>
-      <eLiterals name="ENUMObjektzustand_Besonders_am_Standort_nicht_angesteuert_ungueltig"
+      <eLiterals name="ENUMObjektzustand_Besonders_am_Standort_nicht_angesteuert_abgedeckt"
                  value="2"
+                 literal="am_Standort_nicht_angesteuert_abgedeckt"/>
+      <eLiterals name="ENUMObjektzustand_Besonders_am_Standort_nicht_angesteuert_ungueltig"
+                 value="3"
                  literal="am_Standort_nicht_angesteuert_ungueltig"/>
       <eLiterals name="ENUMObjektzustand_Besonders_am_Standort_nicht_angesteuert_vorbereitend"
-                 value="3"
+                 value="4"
                  literal="am_Standort_nicht_angesteuert_vorbereitend"/>
       <eLiterals name="ENUMObjektzustand_Besonders_sonstige"
-                 value="4"
+                 value="5"
                  literal="sonstige"/>
       <eLiterals name="ENUMObjektzustand_Besonders_standortfern_angesteuert_ungueltig"
-                 value="5"
+                 value="6"
                  literal="standortfern_angesteuert_ungueltig"/>
       <eLiterals name="ENUMObjektzustand_Besonders_standortfern_nicht_angesteuert_ungueltig"
-                 value="6"
+                 value="7"
                  literal="standortfern_nicht_angesteuert_ungueltig"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
@@ -1859,8 +1864,11 @@
       <eLiterals name="ENUMRolle_LST_Fachplaner"
                  value="2"
                  literal="LST_Fachplaner"/>
-      <eLiterals name="ENUMRolle_sonstige"
+      <eLiterals name="ENUMRolle_ODB2PlanPro"
                  value="3"
+                 literal="ODB2PlanPro"/>
+      <eLiterals name="ENUMRolle_sonstige"
+                 value="4"
                  literal="sonstige"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
@@ -1880,7 +1888,7 @@
          <details key="name"
                   value="TIdentitaet"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGUID"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGUID"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -1934,7 +1942,7 @@
          <details key="name"
                   value="TKommentar"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -1966,9 +1974,7 @@
          <details key="name"
                   value="TKurztext"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
-         <details key="pattern"
-                  value=".{1,100}"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -2002,7 +2008,7 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
          <details key="name"
@@ -2097,7 +2103,7 @@
          <details key="name"
                   value="TLO_Ausgabestand"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -2151,7 +2157,7 @@
          <details key="name"
                   value="TLO_DB_Freigabe"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -2183,7 +2189,7 @@
          <details key="name"
                   value="TLO_EMA_Nr"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -2237,7 +2243,7 @@
          <details key="name"
                   value="TLO_Firmensachnummer"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -2312,7 +2318,7 @@
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation"
-                     value="Art der von der DB Netz AG erteilten Freigabe (Erprobung oder Serienfreigabe)."/>
+                     value="Art der von der DB InfraGO AG erteilten Freigabe (Erprobung oder Serienfreigabe)."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
             <details key="kind"
@@ -2329,7 +2335,7 @@
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation"
-                     value="EMA-Nummer der DB (zur Nachbestellbarkeit des Ersatzeils über die DB-internen Beschaffungswege).&#xA;Für LO ohne EMA-Nummer ist \&quot;ohne EMA-Nummer\&quot; anzugeben."/>
+                     value="EMA-Nummer der DB (zur Nachbestellbarkeit des Ersatzeils über die DB-internen Beschaffungswege).&#xA;Für LO ohne EMA-Nummer ist \&#34;ohne EMA-Nummer\&#34; anzugeben."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
             <details key="kind"
@@ -2363,7 +2369,7 @@
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation"
-                     value="Seriennummer des Bauteils. Falls keine existiert, ist \&quot;ohne Seriennummer\&quot; einzutragen."/>
+                     value="Seriennummer des Bauteils. Falls keine existiert, ist \&#34;ohne Seriennummer\&#34; einzutragen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
             <details key="kind"
@@ -2380,7 +2386,7 @@
          <details key="name"
                   value="TLO_Seriennummer"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -2446,7 +2452,7 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..20]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..20]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
             <details key="kind"
@@ -2463,10 +2469,6 @@
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation"
                      value="Bezeichnung des zugehörigen Technischen Platzes im SAP-System. Das Attribut ist optional und enthält die Bezeichnung des zugehörigen technischen Platzes im SAP-System. Die Kennung ist eindeutig einem konkreten Objekt im SAP zugeordnet. Mehrere PlanPro-Objekte können auf den gleichen technischen Platz verweisen. Das Attribut ist dann zu befüllen, wenn Daten über Objekte aus einem Fremdsystem der DB AG mit Verweis auf einen Technischen Platz verarbeitet werden oder im Rahmen der Bestandserstellung die technischen Plätze zugewiesen werden. Es ist noch gesondert festzulegen, für welche PlanPro-Objekte technische Plätze zugewiesen werden."/>
-         </eAnnotations>
-         <eAnnotations>
-            <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[30], nur Großbuchstaben, die Zahlen 0-9 und Bindestrich&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
             <details key="kind"
@@ -2507,7 +2509,7 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
          <details key="name"
@@ -2543,7 +2545,7 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
          <details key="name"
@@ -2619,7 +2621,7 @@
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation"
-                     value="Kennzeichnung der maßgebenden Kilometrierung (\&quot;true\&quot;) bei Referenz zu mehreren Strecken."/>
+                     value="Kennzeichnung der maßgebenden Kilometrierung (\&#34;true\&#34;) bei Referenz zu mehreren Strecken."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
             <details key="kind"
@@ -2666,7 +2668,7 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[0.000..99999.999]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage&gt;PT1&lt;/ppi:PlanningStage&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0.000..99999.999]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
             <details key="kind"
@@ -2716,7 +2718,7 @@
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation"
-                     value="(Fahrt-)Richtung, in die ein verortetes Objekt wirkt. Die Angabe \&quot;in\&quot;, \&quot;gegen\&quot; bzw. \&quot;beide\&quot; bezieht sich auf die Topologierichtung der TOP Kante. Weitere Erläuterungen zu den verwendeten Richtungsbegriffen siehe Modellierung Richtung. Zur vererbungsspezifischen Befüllung siehe Modellierung Basisobjekte. DB-Regelwerk Darstellung im sicherungstechnischen Lageplan"/>
+                     value="(Fahrt-)Richtung, in die ein verortetes Objekt wirkt. Die Angabe \&#34;in\&#34;, \&#34;gegen\&#34; bzw. \&#34;beide\&#34; bezieht sich auf die Topologierichtung der TOP Kante. Weitere Erläuterungen zu den verwendeten Richtungsbegriffen siehe Modellierung Richtung. Zur vererbungsspezifischen Befüllung siehe Modellierung Basisobjekte. DB-Regelwerk Darstellung im sicherungstechnischen Lageplan"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
             <details key="kind"
@@ -2750,10 +2752,6 @@
             <details key="documentation"
                      value="Gibt den orthogonalen seitlichen Abstand eines Elementes zur Gleisachse bezogen auf die Topologierichtung A - B der TOP Kante an: Anordnung des Elementes in Topologierichtung rechts: seitlicher Abstand ist ein positiver Wert. Anordnung des Elementes in Topologierichtung links: seitlicher Abstand ist ein negativer Wert. Die Wirkrichtung des verorteten Elements bleibt bei der Ermittlung des seitlichen Abstands unberücksichtigt. Weitere Erläuterungen zu den verwendeten Richtungsbegriffen siehe Modellierung Richtung. Im Datenmodell wird (teilweise abweichend von der bisherigen Praxis) der seitliche Abstand immer als Abstand Achse zu Achse (z. B. Gleisachse zu Achse des Signalfundaments bzw. Signalmastes) verstanden. Zur vererbungsspezifischen Befüllung siehe Modellierung Basisobjekte. Besonderheiten: Für Elemente, die an einer Fahrschiene angebracht sind (z.B. Entgleissungsschuhe, PZB-Magnete) ist das Attribut Seitliche Lage zu verwenden Für Elemente, die in der Gleismitte angeordnet werden sollen (z. B. Gleis Abschluss) bzw. die keinen realen Abstand haben (z. B. NB_Zone_Grenze), ist der Wert 0.000 zu verwenden. Fiktive Signale erhalten keinen seitlichen Abstand. Punkt_Objekte, die mehreren TOP_Kanten zugeordnet sind, erhalten nur zur nächstliegenden TOP_Kante einen seitlichen Abstand, wenn alle zugeordneten TOP_Kanten auf der selben Seite liegen (z. B. Weichensignal) bzw. nur zu der jeweils rechts und links nächstliegenden TOP_Kante einen seitlichen Abstand, wenn das Punkt_Objekt zwischen den zugeordneten TOP-Kanten liegt (z. B. Grenzzeichen). DB-Regelwerk Darstellung im sicherungstechnischen Lageplan"/>
          </eAnnotations>
-         <eAnnotations>
-            <details key="appinfo"
-                     value="&#xA;                       &#xA;  &lt;ppi:WorkflowInformation>&#xA;                            &#xA;    &lt;ppi:Patternbeschreibung>[-99999.999 bis -0.800, 0.000, 0.800 bis 99999.999]&lt;/ppi:Patternbeschreibung>&#xA;                         &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                    &#xA;"/>
-         </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
             <details key="kind"
                      value="element"/>
@@ -2769,7 +2767,7 @@
          <details key="name"
                   value="TRichtungsbezug"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TWirkrichtung"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TWirkrichtung"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -2801,7 +2799,7 @@
          <details key="name"
                   value="TSeitliche_Lage"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -2833,9 +2831,7 @@
          <details key="name"
                   value="TSeitlicher_Abstand"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
-         <details key="pattern"
-                  value="(-?[1-9][0-9]{0,4}\.[0-9]{3})|(-?0\.[89][0-9]{2})|0.000"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -2867,7 +2863,7 @@
          <details key="name"
                   value="TStrecke_Km"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TKilometrierung"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TKilometrierung"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -2899,9 +2895,7 @@
          <details key="name"
                   value="TTechnischer_Platz"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
-         <details key="pattern"
-                  value="[A-Z0-9\-]{30}"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -2935,7 +2929,7 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
          <details key="name"

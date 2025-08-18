@@ -546,6 +546,26 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	ENUM_OERTLICHKEIT_ART_STRW(51, "ENUMOertlichkeit_Art_Strw", "Strw"),
 
 	/**
+	 * The '<em><b>ENUM Oertlichkeit Art Ta W</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_OERTLICHKEIT_ART_TA_W_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_OERTLICHKEIT_ART_TA_W(52, "ENUMOertlichkeit_Art_TaW", "TaW"),
+
+	/**
+	 * The '<em><b>ENUM Oertlichkeit Art TSO</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_OERTLICHKEIT_ART_TSO_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_OERTLICHKEIT_ART_TSO(53, "ENUMOertlichkeit_Art_TSO", "TSO"),
+
+	/**
 	 * The '<em><b>ENUM Oertlichkeit Art Ust</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -553,7 +573,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_UST(52, "ENUMOertlichkeit_Art_Ust", "\u00dcst"),
+	ENUM_OERTLICHKEIT_ART_UST(54, "ENUMOertlichkeit_Art_Ust", "\u00dcst"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art Ust Anst</b></em>' literal object.
@@ -563,7 +583,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_UST_ANST(53, "ENUMOertlichkeit_Art_Ust_Anst", "\u00dcst Anst"),
+	ENUM_OERTLICHKEIT_ART_UST_ANST(55, "ENUMOertlichkeit_Art_Ust_Anst", "\u00dcst Anst"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art Ust Awanst</b></em>' literal object.
@@ -573,7 +593,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_UST_AWANST(54, "ENUMOertlichkeit_Art_Ust_Awanst", "\u00dcst Awanst"),
+	ENUM_OERTLICHKEIT_ART_UST_AWANST(56, "ENUMOertlichkeit_Art_Ust_Awanst", "\u00dcst Awanst"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Abzw</b></em>' literal object.
@@ -583,7 +603,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_VP_ABZW(55, "ENUMOertlichkeit_Art_vp_Abzw", "vp-Abzw"),
+	ENUM_OERTLICHKEIT_ART_VP_ABZW(57, "ENUMOertlichkeit_Art_vp_Abzw", "vp-Abzw"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Anst</b></em>' literal object.
@@ -593,7 +613,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_VP_ANST(56, "ENUMOertlichkeit_Art_vp_Anst", "vp-Anst"),
+	ENUM_OERTLICHKEIT_ART_VP_ANST(58, "ENUMOertlichkeit_Art_vp_Anst", "vp-Anst"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Awanst</b></em>' literal object.
@@ -603,7 +623,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_VP_AWANST(57, "ENUMOertlichkeit_Art_vp_Awanst", "vp-Awanst"),
+	ENUM_OERTLICHKEIT_ART_VP_AWANST(59, "ENUMOertlichkeit_Art_vp_Awanst", "vp-Awanst"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Bf</b></em>' literal object.
@@ -613,7 +633,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_VP_BF(58, "ENUMOertlichkeit_Art_vp_Bf", "vp-Bf"),
+	ENUM_OERTLICHKEIT_ART_VP_BF(60, "ENUMOertlichkeit_Art_vp_Bf", "vp-Bf"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Bft</b></em>' literal object.
@@ -623,7 +643,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_VP_BFT(59, "ENUMOertlichkeit_Art_vp_Bft", "vp-Bft"),
+	ENUM_OERTLICHKEIT_ART_VP_BFT(61, "ENUMOertlichkeit_Art_vp_Bft", "vp-Bft"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Bk</b></em>' literal object.
@@ -633,7 +653,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_VP_BK(60, "ENUMOertlichkeit_Art_vp_Bk", "vp-Bk"),
+	ENUM_OERTLICHKEIT_ART_VP_BK(62, "ENUMOertlichkeit_Art_vp_Bk", "vp-Bk"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Hp</b></em>' literal object.
@@ -643,7 +663,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_VP_HP(61, "ENUMOertlichkeit_Art_vp_Hp", "vp-Hp"),
+	ENUM_OERTLICHKEIT_ART_VP_HP(63, "ENUMOertlichkeit_Art_vp_Hp", "vp-Hp"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Hp Abzw</b></em>' literal object.
@@ -653,7 +673,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_VP_HP_ABZW(62, "ENUMOertlichkeit_Art_vp_Hp_Abzw", "vp-Hp Abzw"),
+	ENUM_OERTLICHKEIT_ART_VP_HP_ABZW(64, "ENUMOertlichkeit_Art_vp_Hp_Abzw", "vp-Hp Abzw"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Hp Anst</b></em>' literal object.
@@ -663,7 +683,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_VP_HP_ANST(63, "ENUMOertlichkeit_Art_vp_Hp_Anst", "vp-Hp Anst"),
+	ENUM_OERTLICHKEIT_ART_VP_HP_ANST(65, "ENUMOertlichkeit_Art_vp_Hp_Anst", "vp-Hp Anst"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Hp Anst Bk</b></em>' literal object.
@@ -673,7 +693,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_VP_HP_ANST_BK(64, "ENUMOertlichkeit_Art_vp_Hp_Anst_Bk", "vp-Hp Anst Bk"),
+	ENUM_OERTLICHKEIT_ART_VP_HP_ANST_BK(66, "ENUMOertlichkeit_Art_vp_Hp_Anst_Bk", "vp-Hp Anst Bk"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Hp Awanst</b></em>' literal object.
@@ -683,7 +703,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_VP_HP_AWANST(65, "ENUMOertlichkeit_Art_vp_Hp_Awanst", "vp-Hp Awanst"),
+	ENUM_OERTLICHKEIT_ART_VP_HP_AWANST(67, "ENUMOertlichkeit_Art_vp_Hp_Awanst", "vp-Hp Awanst"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp LGr</b></em>' literal object.
@@ -693,7 +713,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_VP_LGR(66, "ENUMOertlichkeit_Art_vp_LGr", "vp-LGr"),
+	ENUM_OERTLICHKEIT_ART_VP_LGR(68, "ENUMOertlichkeit_Art_vp_LGr", "vp-LGr"),
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp RB Gr</b></em>' literal object.
@@ -703,7 +723,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_OERTLICHKEIT_ART_VP_RB_GR(67, "ENUMOertlichkeit_Art_vp_RBGr", "vp-RBGr");
+	ENUM_OERTLICHKEIT_ART_VP_RB_GR(69, "ENUMOertlichkeit_Art_vp_RBGr", "vp-RBGr");
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art Abzw</b></em>' literal value.
@@ -1278,6 +1298,28 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	public static final int ENUM_OERTLICHKEIT_ART_STRW_VALUE = 51;
 
 	/**
+	 * The '<em><b>ENUM Oertlichkeit Art Ta W</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_OERTLICHKEIT_ART_TA_W
+	 * @model name="ENUMOertlichkeit_Art_TaW" literal="TaW"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_OERTLICHKEIT_ART_TA_W_VALUE = 52;
+
+	/**
+	 * The '<em><b>ENUM Oertlichkeit Art TSO</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_OERTLICHKEIT_ART_TSO
+	 * @model name="ENUMOertlichkeit_Art_TSO" literal="TSO"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_OERTLICHKEIT_ART_TSO_VALUE = 53;
+
+	/**
 	 * The '<em><b>ENUM Oertlichkeit Art Ust</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1286,7 +1328,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_UST_VALUE = 52;
+	public static final int ENUM_OERTLICHKEIT_ART_UST_VALUE = 54;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art Ust Anst</b></em>' literal value.
@@ -1297,7 +1339,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_UST_ANST_VALUE = 53;
+	public static final int ENUM_OERTLICHKEIT_ART_UST_ANST_VALUE = 55;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art Ust Awanst</b></em>' literal value.
@@ -1308,7 +1350,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_UST_AWANST_VALUE = 54;
+	public static final int ENUM_OERTLICHKEIT_ART_UST_AWANST_VALUE = 56;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Abzw</b></em>' literal value.
@@ -1319,7 +1361,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_VP_ABZW_VALUE = 55;
+	public static final int ENUM_OERTLICHKEIT_ART_VP_ABZW_VALUE = 57;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Anst</b></em>' literal value.
@@ -1330,7 +1372,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_VP_ANST_VALUE = 56;
+	public static final int ENUM_OERTLICHKEIT_ART_VP_ANST_VALUE = 58;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Awanst</b></em>' literal value.
@@ -1341,7 +1383,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_VP_AWANST_VALUE = 57;
+	public static final int ENUM_OERTLICHKEIT_ART_VP_AWANST_VALUE = 59;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Bf</b></em>' literal value.
@@ -1352,7 +1394,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_VP_BF_VALUE = 58;
+	public static final int ENUM_OERTLICHKEIT_ART_VP_BF_VALUE = 60;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Bft</b></em>' literal value.
@@ -1363,7 +1405,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_VP_BFT_VALUE = 59;
+	public static final int ENUM_OERTLICHKEIT_ART_VP_BFT_VALUE = 61;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Bk</b></em>' literal value.
@@ -1374,7 +1416,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_VP_BK_VALUE = 60;
+	public static final int ENUM_OERTLICHKEIT_ART_VP_BK_VALUE = 62;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Hp</b></em>' literal value.
@@ -1385,7 +1427,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_VP_HP_VALUE = 61;
+	public static final int ENUM_OERTLICHKEIT_ART_VP_HP_VALUE = 63;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Hp Abzw</b></em>' literal value.
@@ -1396,7 +1438,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_VP_HP_ABZW_VALUE = 62;
+	public static final int ENUM_OERTLICHKEIT_ART_VP_HP_ABZW_VALUE = 64;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Hp Anst</b></em>' literal value.
@@ -1407,7 +1449,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_VP_HP_ANST_VALUE = 63;
+	public static final int ENUM_OERTLICHKEIT_ART_VP_HP_ANST_VALUE = 65;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Hp Anst Bk</b></em>' literal value.
@@ -1418,7 +1460,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_VP_HP_ANST_BK_VALUE = 64;
+	public static final int ENUM_OERTLICHKEIT_ART_VP_HP_ANST_BK_VALUE = 66;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp Hp Awanst</b></em>' literal value.
@@ -1429,7 +1471,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_VP_HP_AWANST_VALUE = 65;
+	public static final int ENUM_OERTLICHKEIT_ART_VP_HP_AWANST_VALUE = 67;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp LGr</b></em>' literal value.
@@ -1440,7 +1482,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_VP_LGR_VALUE = 66;
+	public static final int ENUM_OERTLICHKEIT_ART_VP_LGR_VALUE = 68;
 
 	/**
 	 * The '<em><b>ENUM Oertlichkeit Art vp RB Gr</b></em>' literal value.
@@ -1451,7 +1493,7 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_OERTLICHKEIT_ART_VP_RB_GR_VALUE = 67;
+	public static final int ENUM_OERTLICHKEIT_ART_VP_RB_GR_VALUE = 69;
 
 	/**
 	 * An array of all the '<em><b>ENUM Oertlichkeit Art</b></em>' enumerators.
@@ -1513,6 +1555,8 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 			ENUM_OERTLICHKEIT_ART_SBK,
 			ENUM_OERTLICHKEIT_ART_SONSTIGE,
 			ENUM_OERTLICHKEIT_ART_STRW,
+			ENUM_OERTLICHKEIT_ART_TA_W,
+			ENUM_OERTLICHKEIT_ART_TSO,
 			ENUM_OERTLICHKEIT_ART_UST,
 			ENUM_OERTLICHKEIT_ART_UST_ANST,
 			ENUM_OERTLICHKEIT_ART_UST_AWANST,
@@ -1637,6 +1681,8 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 			case ENUM_OERTLICHKEIT_ART_SBK_VALUE: return ENUM_OERTLICHKEIT_ART_SBK;
 			case ENUM_OERTLICHKEIT_ART_SONSTIGE_VALUE: return ENUM_OERTLICHKEIT_ART_SONSTIGE;
 			case ENUM_OERTLICHKEIT_ART_STRW_VALUE: return ENUM_OERTLICHKEIT_ART_STRW;
+			case ENUM_OERTLICHKEIT_ART_TA_W_VALUE: return ENUM_OERTLICHKEIT_ART_TA_W;
+			case ENUM_OERTLICHKEIT_ART_TSO_VALUE: return ENUM_OERTLICHKEIT_ART_TSO;
 			case ENUM_OERTLICHKEIT_ART_UST_VALUE: return ENUM_OERTLICHKEIT_ART_UST;
 			case ENUM_OERTLICHKEIT_ART_UST_ANST_VALUE: return ENUM_OERTLICHKEIT_ART_UST_ANST;
 			case ENUM_OERTLICHKEIT_ART_UST_AWANST_VALUE: return ENUM_OERTLICHKEIT_ART_UST_AWANST;

@@ -28,10 +28,10 @@ import org.eclipse.set.model.planpro.BasisTypen.BasisTypenPackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -40,17 +40,17 @@ import org.eclipse.set.model.planpro.BasisTypen.BasisTypenPackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -59,10 +59,10 @@ import org.eclipse.set.model.planpro.BasisTypen.BasisTypenPackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -86,7 +86,7 @@ public interface VerweisePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Verweise/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Verweise/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -1535,6 +1535,61 @@ public interface VerweisePackage extends EPackage {
 	int ID_BEZUGSPUNKT_POSITIONIERUNG_TYPE_CLASS_FEATURE_COUNT = BasisTypenPackage.ZEIGER_TYPE_CLASS_FEATURE_COUNT + 2;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Verweise.impl.ID_Bezugspunkt_TypeClassImpl <em>ID Bezugspunkt Type Class</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Verweise.impl.ID_Bezugspunkt_TypeClassImpl
+	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Bezugspunkt_TypeClass()
+	 * @generated
+	 */
+	int ID_BEZUGSPUNKT_TYPE_CLASS = 26;
+
+	/**
+	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ID_BEZUGSPUNKT_TYPE_CLASS__ID_BEARBEITUNGSVERMERK = BasisTypenPackage.ZEIGER_TYPE_CLASS__ID_BEARBEITUNGSVERMERK;
+
+	/**
+	 * The feature id for the '<em><b>Wert</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ID_BEZUGSPUNKT_TYPE_CLASS__WERT = BasisTypenPackage.ZEIGER_TYPE_CLASS__WERT;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ID_BEZUGSPUNKT_TYPE_CLASS__VALUE = BasisTypenPackage.ZEIGER_TYPE_CLASS_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Invalid Reference</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ID_BEZUGSPUNKT_TYPE_CLASS__INVALID_REFERENCE = BasisTypenPackage.ZEIGER_TYPE_CLASS_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>ID Bezugspunkt Type Class</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ID_BEZUGSPUNKT_TYPE_CLASS_FEATURE_COUNT = BasisTypenPackage.ZEIGER_TYPE_CLASS_FEATURE_COUNT + 2;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Verweise.impl.ID_Binaerdaten_ohne_Proxy_TypeClassImpl <em>ID Binaerdaten ohne Proxy Type Class</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1542,7 +1597,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Binaerdaten_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_BINAERDATEN_OHNE_PROXY_TYPE_CLASS = 26;
+	int ID_BINAERDATEN_OHNE_PROXY_TYPE_CLASS = 27;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1597,7 +1652,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Block_Anlage_TypeClass()
 	 * @generated
 	 */
-	int ID_BLOCK_ANLAGE_TYPE_CLASS = 27;
+	int ID_BLOCK_ANLAGE_TYPE_CLASS = 28;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1652,7 +1707,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Block_Element_TypeClass()
 	 * @generated
 	 */
-	int ID_BLOCK_ELEMENT_TYPE_CLASS = 28;
+	int ID_BLOCK_ELEMENT_TYPE_CLASS = 29;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1707,7 +1762,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Block_Strecke_TypeClass()
 	 * @generated
 	 */
-	int ID_BLOCK_STRECKE_TYPE_CLASS = 29;
+	int ID_BLOCK_STRECKE_TYPE_CLASS = 30;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1762,7 +1817,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_BUE_Anlage_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_BUE_ANLAGE_OHNE_PROXY_TYPE_CLASS = 30;
+	int ID_BUE_ANLAGE_OHNE_PROXY_TYPE_CLASS = 31;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1817,7 +1872,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_BUE_Anlage_TypeClass()
 	 * @generated
 	 */
-	int ID_BUE_ANLAGE_TYPE_CLASS = 31;
+	int ID_BUE_ANLAGE_TYPE_CLASS = 32;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1872,7 +1927,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_BUE_Bedien_Anzeige_Element_TypeClass()
 	 * @generated
 	 */
-	int ID_BUE_BEDIEN_ANZEIGE_ELEMENT_TYPE_CLASS = 32;
+	int ID_BUE_BEDIEN_ANZEIGE_ELEMENT_TYPE_CLASS = 33;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1927,7 +1982,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_BUE_Einschaltung_TypeClass()
 	 * @generated
 	 */
-	int ID_BUE_EINSCHALTUNG_TYPE_CLASS = 33;
+	int ID_BUE_EINSCHALTUNG_TYPE_CLASS = 34;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1982,7 +2037,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_BUE_Gleisbezogener_Gefahrraum_TypeClass()
 	 * @generated
 	 */
-	int ID_BUE_GLEISBEZOGENER_GEFAHRRAUM_TYPE_CLASS = 34;
+	int ID_BUE_GLEISBEZOGENER_GEFAHRRAUM_TYPE_CLASS = 35;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2037,7 +2092,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_BUE_Schnittstelle_TypeClass()
 	 * @generated
 	 */
-	int ID_BUE_SCHNITTSTELLE_TYPE_CLASS = 35;
+	int ID_BUE_SCHNITTSTELLE_TYPE_CLASS = 36;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2092,7 +2147,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_BUE_WS_Fstr_Zuordnung_TypeClass()
 	 * @generated
 	 */
-	int ID_BUE_WS_FSTR_ZUORDNUNG_TYPE_CLASS = 36;
+	int ID_BUE_WS_FSTR_ZUORDNUNG_TYPE_CLASS = 37;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2147,7 +2202,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Datenpunkt_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_DATENPUNKT_OHNE_PROXY_TYPE_CLASS = 37;
+	int ID_DATENPUNKT_OHNE_PROXY_TYPE_CLASS = 38;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2202,7 +2257,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Datenpunkt_TypeClass()
 	 * @generated
 	 */
-	int ID_DATENPUNKT_TYPE_CLASS = 38;
+	int ID_DATENPUNKT_TYPE_CLASS = 39;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2257,7 +2312,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_DP_Bezug_Funktional_TypeClass()
 	 * @generated
 	 */
-	int ID_DP_BEZUG_FUNKTIONAL_TYPE_CLASS = 39;
+	int ID_DP_BEZUG_FUNKTIONAL_TYPE_CLASS = 40;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2312,7 +2367,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Einschaltpunkt_TypeClass()
 	 * @generated
 	 */
-	int ID_EINSCHALTPUNKT_TYPE_CLASS = 40;
+	int ID_EINSCHALTPUNKT_TYPE_CLASS = 41;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2367,7 +2422,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Element_Grenze_TypeClass()
 	 * @generated
 	 */
-	int ID_ELEMENT_GRENZE_TYPE_CLASS = 41;
+	int ID_ELEMENT_GRENZE_TYPE_CLASS = 42;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2422,7 +2477,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Element_TypeClass()
 	 * @generated
 	 */
-	int ID_ELEMENT_TYPE_CLASS = 42;
+	int ID_ELEMENT_TYPE_CLASS = 43;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2477,7 +2532,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Element_Unterbringung_TypeClass()
 	 * @generated
 	 */
-	int ID_ELEMENT_UNTERBRINGUNG_TYPE_CLASS = 43;
+	int ID_ELEMENT_UNTERBRINGUNG_TYPE_CLASS = 44;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2532,7 +2587,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Energie_Eingang_TypeClass()
 	 * @generated
 	 */
-	int ID_ENERGIE_EINGANG_TYPE_CLASS = 44;
+	int ID_ENERGIE_EINGANG_TYPE_CLASS = 45;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2587,7 +2642,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Energie_TypeClass()
 	 * @generated
 	 */
-	int ID_ENERGIE_TYPE_CLASS = 45;
+	int ID_ENERGIE_TYPE_CLASS = 46;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2642,7 +2697,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ESTW_Zentraleinheit_TypeClass()
 	 * @generated
 	 */
-	int ID_ESTW_ZENTRALEINHEIT_TYPE_CLASS = 46;
+	int ID_ESTW_ZENTRALEINHEIT_TYPE_CLASS = 47;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2697,7 +2752,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ETCS_Kante_TypeClass()
 	 * @generated
 	 */
-	int ID_ETCS_KANTE_TYPE_CLASS = 47;
+	int ID_ETCS_KANTE_TYPE_CLASS = 48;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2752,7 +2807,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ETCS_Knoten_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_ETCS_KNOTEN_OHNE_PROXY_TYPE_CLASS = 48;
+	int ID_ETCS_KNOTEN_OHNE_PROXY_TYPE_CLASS = 49;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2807,7 +2862,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ETCS_Knoten_TypeClass()
 	 * @generated
 	 */
-	int ID_ETCS_KNOTEN_TYPE_CLASS = 49;
+	int ID_ETCS_KNOTEN_TYPE_CLASS = 50;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2862,7 +2917,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_EV_Modul_TypeClass()
 	 * @generated
 	 */
-	int ID_EV_MODUL_TYPE_CLASS = 50;
+	int ID_EV_MODUL_TYPE_CLASS = 51;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2917,7 +2972,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Fachtelegramm_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_FACHTELEGRAMM_OHNE_PROXY_TYPE_CLASS = 51;
+	int ID_FACHTELEGRAMM_OHNE_PROXY_TYPE_CLASS = 52;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2972,7 +3027,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Fachtelegramm_TypeClass()
 	 * @generated
 	 */
-	int ID_FACHTELEGRAMM_TYPE_CLASS = 52;
+	int ID_FACHTELEGRAMM_TYPE_CLASS = 53;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3027,7 +3082,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Fla_Schutz_TypeClass()
 	 * @generated
 	 */
-	int ID_FLA_SCHUTZ_TYPE_CLASS = 53;
+	int ID_FLA_SCHUTZ_TYPE_CLASS = 54;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3082,7 +3137,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_FMA_Anlage_Rangier_Frei_TypeClass()
 	 * @generated
 	 */
-	int ID_FMA_ANLAGE_RANGIER_FREI_TYPE_CLASS = 54;
+	int ID_FMA_ANLAGE_RANGIER_FREI_TYPE_CLASS = 55;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3137,7 +3192,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_FMA_Anlage_TypeClass()
 	 * @generated
 	 */
-	int ID_FMA_ANLAGE_TYPE_CLASS = 55;
+	int ID_FMA_ANLAGE_TYPE_CLASS = 56;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3192,7 +3247,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_FMA_Element_TypeClass()
 	 * @generated
 	 */
-	int ID_FMA_ELEMENT_TYPE_CLASS = 56;
+	int ID_FMA_ELEMENT_TYPE_CLASS = 57;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3247,7 +3302,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_FMA_Komponente_TypeClass()
 	 * @generated
 	 */
-	int ID_FMA_KOMPONENTE_TYPE_CLASS = 57;
+	int ID_FMA_KOMPONENTE_TYPE_CLASS = 58;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3302,7 +3357,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Fortschaltung_Start_TypeClass()
 	 * @generated
 	 */
-	int ID_FORTSCHALTUNG_START_TYPE_CLASS = 58;
+	int ID_FORTSCHALTUNG_START_TYPE_CLASS = 59;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3357,7 +3412,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Fstr_Aneinander_TypeClass()
 	 * @generated
 	 */
-	int ID_FSTR_ANEINANDER_TYPE_CLASS = 59;
+	int ID_FSTR_ANEINANDER_TYPE_CLASS = 60;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3412,7 +3467,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Fstr_Ausschluss_Besonders_TypeClass()
 	 * @generated
 	 */
-	int ID_FSTR_AUSSCHLUSS_BESONDERS_TYPE_CLASS = 60;
+	int ID_FSTR_AUSSCHLUSS_BESONDERS_TYPE_CLASS = 61;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3467,7 +3522,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Fstr_DWeg_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_FSTR_DWEG_OHNE_PROXY_TYPE_CLASS = 61;
+	int ID_FSTR_DWEG_OHNE_PROXY_TYPE_CLASS = 62;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3522,7 +3577,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Fstr_DWeg_TypeClass()
 	 * @generated
 	 */
-	int ID_FSTR_DWEG_TYPE_CLASS = 62;
+	int ID_FSTR_DWEG_TYPE_CLASS = 63;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3577,7 +3632,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Fstr_Fahrweg_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_FSTR_FAHRWEG_OHNE_PROXY_TYPE_CLASS = 63;
+	int ID_FSTR_FAHRWEG_OHNE_PROXY_TYPE_CLASS = 64;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3632,7 +3687,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Fstr_Fahrweg_TypeClass()
 	 * @generated
 	 */
-	int ID_FSTR_FAHRWEG_TYPE_CLASS = 64;
+	int ID_FSTR_FAHRWEG_TYPE_CLASS = 65;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3687,7 +3742,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Fstr_Zug_Rangier_TypeClass()
 	 * @generated
 	 */
-	int ID_FSTR_ZUG_RANGIER_TYPE_CLASS = 65;
+	int ID_FSTR_ZUG_RANGIER_TYPE_CLASS = 66;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3742,7 +3797,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_FT_Anschaltbedingung_TypeClass()
 	 * @generated
 	 */
-	int ID_FT_ANSCHALTBEDINGUNG_TYPE_CLASS = 66;
+	int ID_FT_ANSCHALTBEDINGUNG_TYPE_CLASS = 67;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3797,7 +3852,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_FT_Fahrweg_Teil_TypeClass()
 	 * @generated
 	 */
-	int ID_FT_FAHRWEG_TEIL_TYPE_CLASS = 67;
+	int ID_FT_FAHRWEG_TEIL_TYPE_CLASS = 68;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3852,7 +3907,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_GEO_Art_TypeClass()
 	 * @generated
 	 */
-	int ID_GEO_ART_TYPE_CLASS = 68;
+	int ID_GEO_ART_TYPE_CLASS = 69;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3907,7 +3962,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_GEO_Kante_TypeClass()
 	 * @generated
 	 */
-	int ID_GEO_KANTE_TYPE_CLASS = 69;
+	int ID_GEO_KANTE_TYPE_CLASS = 70;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3962,7 +4017,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_GEO_Knoten_TypeClass()
 	 * @generated
 	 */
-	int ID_GEO_KNOTEN_TYPE_CLASS = 70;
+	int ID_GEO_KNOTEN_TYPE_CLASS = 71;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4017,7 +4072,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_GEO_Punkt_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_GEO_PUNKT_OHNE_PROXY_TYPE_CLASS = 71;
+	int ID_GEO_PUNKT_OHNE_PROXY_TYPE_CLASS = 72;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4072,7 +4127,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_GEO_Punkt_TypeClass()
 	 * @generated
 	 */
-	int ID_GEO_PUNKT_TYPE_CLASS = 72;
+	int ID_GEO_PUNKT_TYPE_CLASS = 73;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4127,7 +4182,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_GFR_Anlage_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_GFR_ANLAGE_OHNE_PROXY_TYPE_CLASS = 73;
+	int ID_GFR_ANLAGE_OHNE_PROXY_TYPE_CLASS = 74;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4182,7 +4237,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Gleis_Abschnitt_TypeClass()
 	 * @generated
 	 */
-	int ID_GLEIS_ABSCHNITT_TYPE_CLASS = 74;
+	int ID_GLEIS_ABSCHNITT_TYPE_CLASS = 75;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4237,7 +4292,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Gleis_Bezeichnung_TypeClass()
 	 * @generated
 	 */
-	int ID_GLEIS_BEZEICHNUNG_TYPE_CLASS = 75;
+	int ID_GLEIS_BEZEICHNUNG_TYPE_CLASS = 76;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4292,7 +4347,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Grenzzeichen_TypeClass()
 	 * @generated
 	 */
-	int ID_GRENZZEICHEN_TYPE_CLASS = 76;
+	int ID_GRENZZEICHEN_TYPE_CLASS = 77;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4347,7 +4402,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Handschalt_Wirkfunktion_TypeClass()
 	 * @generated
 	 */
-	int ID_HANDSCHALT_WIRKFUNKTION_TYPE_CLASS = 77;
+	int ID_HANDSCHALT_WIRKFUNKTION_TYPE_CLASS = 78;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4402,7 +4457,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Hoehenpunkt_TypeClass()
 	 * @generated
 	 */
-	int ID_HOEHENPUNKT_TYPE_CLASS = 78;
+	int ID_HOEHENPUNKT_TYPE_CLASS = 79;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4457,7 +4512,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Information_Eingang_TypeClass()
 	 * @generated
 	 */
-	int ID_INFORMATION_EINGANG_TYPE_CLASS = 79;
+	int ID_INFORMATION_EINGANG_TYPE_CLASS = 80;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4512,7 +4567,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Information_Primaer_TypeClass()
 	 * @generated
 	 */
-	int ID_INFORMATION_PRIMAER_TYPE_CLASS = 80;
+	int ID_INFORMATION_PRIMAER_TYPE_CLASS = 81;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4567,7 +4622,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Komponente_Programmiert_TypeClass()
 	 * @generated
 	 */
-	int ID_KOMPONENTE_PROGRAMMIERT_TYPE_CLASS = 81;
+	int ID_KOMPONENTE_PROGRAMMIERT_TYPE_CLASS = 82;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4622,7 +4677,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Lageplan_Blattschnitt_TypeClass()
 	 * @generated
 	 */
-	int ID_LAGEPLAN_BLATTSCHNITT_TYPE_CLASS = 82;
+	int ID_LAGEPLAN_BLATTSCHNITT_TYPE_CLASS = 83;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4677,7 +4732,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Lageplan_TypeClass()
 	 * @generated
 	 */
-	int ID_LAGEPLAN_TYPE_CLASS = 83;
+	int ID_LAGEPLAN_TYPE_CLASS = 84;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4732,7 +4787,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Lageplan_Zustand_TypeClass()
 	 * @generated
 	 */
-	int ID_LAGEPLAN_ZUSTAND_TYPE_CLASS = 84;
+	int ID_LAGEPLAN_ZUSTAND_TYPE_CLASS = 85;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4787,7 +4842,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_LEU_Anlage_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_LEU_ANLAGE_OHNE_PROXY_TYPE_CLASS = 85;
+	int ID_LEU_ANLAGE_OHNE_PROXY_TYPE_CLASS = 86;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4842,7 +4897,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_LEU_Anlage_TypeClass()
 	 * @generated
 	 */
-	int ID_LEU_ANLAGE_TYPE_CLASS = 86;
+	int ID_LEU_ANLAGE_TYPE_CLASS = 87;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4897,7 +4952,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_LEU_Bezug_Funktional_TypeClass()
 	 * @generated
 	 */
-	int ID_LEU_BEZUG_FUNKTIONAL_TYPE_CLASS = 87;
+	int ID_LEU_BEZUG_FUNKTIONAL_TYPE_CLASS = 88;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4952,7 +5007,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_LEU_Schaltkasten_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_LEU_SCHALTKASTEN_OHNE_PROXY_TYPE_CLASS = 88;
+	int ID_LEU_SCHALTKASTEN_OHNE_PROXY_TYPE_CLASS = 89;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5007,7 +5062,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_LO_Einbau_TypeClass()
 	 * @generated
 	 */
-	int ID_LO_EINBAU_TYPE_CLASS = 89;
+	int ID_LO_EINBAU_TYPE_CLASS = 90;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5062,7 +5117,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Markante_Stelle_TypeClass()
 	 * @generated
 	 */
-	int ID_MARKANTE_STELLE_TYPE_CLASS = 90;
+	int ID_MARKANTE_STELLE_TYPE_CLASS = 91;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5117,7 +5172,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Markanter_Punkt_Gleis_Abschluss_TypeClass()
 	 * @generated
 	 */
-	int ID_MARKANTER_PUNKT_GLEIS_ABSCHLUSS_TYPE_CLASS = 91;
+	int ID_MARKANTER_PUNKT_GLEIS_ABSCHLUSS_TYPE_CLASS = 92;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5172,7 +5227,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Markanter_Punkt_TypeClass()
 	 * @generated
 	 */
-	int ID_MARKANTER_PUNKT_TYPE_CLASS = 92;
+	int ID_MARKANTER_PUNKT_TYPE_CLASS = 93;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5227,7 +5282,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_NB_Element_TypeClass()
 	 * @generated
 	 */
-	int ID_NB_ELEMENT_TYPE_CLASS = 93;
+	int ID_NB_ELEMENT_TYPE_CLASS = 94;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5282,7 +5337,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_NB_TypeClass()
 	 * @generated
 	 */
-	int ID_NB_TYPE_CLASS = 94;
+	int ID_NB_TYPE_CLASS = 95;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5337,7 +5392,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_NB_Zone_TypeClass()
 	 * @generated
 	 */
-	int ID_NB_ZONE_TYPE_CLASS = 95;
+	int ID_NB_ZONE_TYPE_CLASS = 96;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5392,7 +5447,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Oertlichkeit_Ausgabe_TypeClass()
 	 * @generated
 	 */
-	int ID_OERTLICHKEIT_AUSGABE_TYPE_CLASS = 96;
+	int ID_OERTLICHKEIT_AUSGABE_TYPE_CLASS = 97;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5447,7 +5502,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Oertlichkeit_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_OERTLICHKEIT_PROXY_TYPE_CLASS = 97;
+	int ID_OERTLICHKEIT_PROXY_TYPE_CLASS = 98;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5502,7 +5557,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Oertlichkeit_TypeClass()
 	 * @generated
 	 */
-	int ID_OERTLICHKEIT_TYPE_CLASS = 98;
+	int ID_OERTLICHKEIT_TYPE_CLASS = 99;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5557,7 +5612,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_PlanPro_Schnittstelle_TypeClass()
 	 * @generated
 	 */
-	int ID_PLAN_PRO_SCHNITTSTELLE_TYPE_CLASS = 99;
+	int ID_PLAN_PRO_SCHNITTSTELLE_TYPE_CLASS = 100;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5612,7 +5667,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Planung_Einzel_TypeClass()
 	 * @generated
 	 */
-	int ID_PLANUNG_EINZEL_TYPE_CLASS = 100;
+	int ID_PLANUNG_EINZEL_TYPE_CLASS = 101;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5667,7 +5722,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Planungsgrundlage_TypeClass()
 	 * @generated
 	 */
-	int ID_PLANUNGSGRUNDLAGE_TYPE_CLASS = 101;
+	int ID_PLANUNGSGRUNDLAGE_TYPE_CLASS = 102;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5722,7 +5777,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_PZB_Element_Bezugspunkt_TypeClass()
 	 * @generated
 	 */
-	int ID_PZB_ELEMENT_BEZUGSPUNKT_TYPE_CLASS = 102;
+	int ID_PZB_ELEMENT_BEZUGSPUNKT_TYPE_CLASS = 103;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5777,7 +5832,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_PZB_Element_Mitnutzung_TypeClass()
 	 * @generated
 	 */
-	int ID_PZB_ELEMENT_MITNUTZUNG_TYPE_CLASS = 103;
+	int ID_PZB_ELEMENT_MITNUTZUNG_TYPE_CLASS = 104;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5832,7 +5887,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_PZB_Element_TypeClass()
 	 * @generated
 	 */
-	int ID_PZB_ELEMENT_TYPE_CLASS = 104;
+	int ID_PZB_ELEMENT_TYPE_CLASS = 105;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5887,7 +5942,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_PZB_Element_Zuordnung_TypeClass()
 	 * @generated
 	 */
-	int ID_PZB_ELEMENT_ZUORDNUNG_TYPE_CLASS = 105;
+	int ID_PZB_ELEMENT_ZUORDNUNG_TYPE_CLASS = 106;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5942,7 +5997,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Quellelement_TypeClass()
 	 * @generated
 	 */
-	int ID_QUELLELEMENT_TYPE_CLASS = 106;
+	int ID_QUELLELEMENT_TYPE_CLASS = 107;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5997,7 +6052,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_RBC_TypeClass()
 	 * @generated
 	 */
-	int ID_RBC_TYPE_CLASS = 107;
+	int ID_RBC_TYPE_CLASS = 108;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6052,7 +6107,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Regelzeichnung_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_REGELZEICHNUNG_OHNE_PROXY_TYPE_CLASS = 108;
+	int ID_REGELZEICHNUNG_OHNE_PROXY_TYPE_CLASS = 109;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6107,7 +6162,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Regelzeichnung_TypeClass()
 	 * @generated
 	 */
-	int ID_REGELZEICHNUNG_TYPE_CLASS = 109;
+	int ID_REGELZEICHNUNG_TYPE_CLASS = 110;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6162,7 +6217,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Schalter_TypeClass()
 	 * @generated
 	 */
-	int ID_SCHALTER_TYPE_CLASS = 110;
+	int ID_SCHALTER_TYPE_CLASS = 111;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6217,7 +6272,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Schaltmittel_Zuordnung_TypeClass()
 	 * @generated
 	 */
-	int ID_SCHALTMITTEL_ZUORDNUNG_TYPE_CLASS = 111;
+	int ID_SCHALTMITTEL_ZUORDNUNG_TYPE_CLASS = 112;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6272,7 +6327,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Schlosskombination_TypeClass()
 	 * @generated
 	 */
-	int ID_SCHLOSSKOMBINATION_TYPE_CLASS = 112;
+	int ID_SCHLOSSKOMBINATION_TYPE_CLASS = 113;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6327,7 +6382,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Schluessel_TypeClass()
 	 * @generated
 	 */
-	int ID_SCHLUESSEL_TYPE_CLASS = 113;
+	int ID_SCHLUESSEL_TYPE_CLASS = 114;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6382,7 +6437,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Schluesselsperre_TypeClass()
 	 * @generated
 	 */
-	int ID_SCHLUESSELSPERRE_TYPE_CLASS = 114;
+	int ID_SCHLUESSELSPERRE_TYPE_CLASS = 115;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6437,7 +6492,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Signal_Befestigung_TypeClass()
 	 * @generated
 	 */
-	int ID_SIGNAL_BEFESTIGUNG_TYPE_CLASS = 115;
+	int ID_SIGNAL_BEFESTIGUNG_TYPE_CLASS = 116;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6492,7 +6547,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Signal_Fank_TypeClass()
 	 * @generated
 	 */
-	int ID_SIGNAL_FANK_TYPE_CLASS = 116;
+	int ID_SIGNAL_FANK_TYPE_CLASS = 117;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6547,7 +6602,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Signal_Gleisbezechnung_TypeClass()
 	 * @generated
 	 */
-	int ID_SIGNAL_GLEISBEZECHNUNG_TYPE_CLASS = 117;
+	int ID_SIGNAL_GLEISBEZECHNUNG_TYPE_CLASS = 118;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6602,7 +6657,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Signal_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_SIGNAL_OHNE_PROXY_TYPE_CLASS = 118;
+	int ID_SIGNAL_OHNE_PROXY_TYPE_CLASS = 119;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6657,7 +6712,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Signal_Rahmen_TypeClass()
 	 * @generated
 	 */
-	int ID_SIGNAL_RAHMEN_TYPE_CLASS = 119;
+	int ID_SIGNAL_RAHMEN_TYPE_CLASS = 120;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6712,7 +6767,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Signal_Signalbegriff_TypeClass()
 	 * @generated
 	 */
-	int ID_SIGNAL_SIGNALBEGRIFF_TYPE_CLASS = 120;
+	int ID_SIGNAL_SIGNALBEGRIFF_TYPE_CLASS = 121;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6767,7 +6822,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Signal_Start_TypeClass()
 	 * @generated
 	 */
-	int ID_SIGNAL_START_TYPE_CLASS = 121;
+	int ID_SIGNAL_START_TYPE_CLASS = 122;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6822,7 +6877,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Signal_TypeClass()
 	 * @generated
 	 */
-	int ID_SIGNAL_TYPE_CLASS = 122;
+	int ID_SIGNAL_TYPE_CLASS = 123;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6877,7 +6932,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Sonderanlage_TypeClass()
 	 * @generated
 	 */
-	int ID_SONDERANLAGE_TYPE_CLASS = 123;
+	int ID_SONDERANLAGE_TYPE_CLASS = 124;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6932,7 +6987,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Stellelement_TypeClass()
 	 * @generated
 	 */
-	int ID_STELLELEMENT_TYPE_CLASS = 124;
+	int ID_STELLELEMENT_TYPE_CLASS = 125;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6987,7 +7042,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Stellwerk_TypeClass()
 	 * @generated
 	 */
-	int ID_STELLWERK_TYPE_CLASS = 125;
+	int ID_STELLWERK_TYPE_CLASS = 126;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7042,7 +7097,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Strecke_Bremsweg_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_STRECKE_BREMSWEG_OHNE_PROXY_TYPE_CLASS = 126;
+	int ID_STRECKE_BREMSWEG_OHNE_PROXY_TYPE_CLASS = 127;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7097,7 +7152,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Strecke_Punkt_TypeClass()
 	 * @generated
 	 */
-	int ID_STRECKE_PUNKT_TYPE_CLASS = 127;
+	int ID_STRECKE_PUNKT_TYPE_CLASS = 128;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7152,7 +7207,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Strecke_TypeClass()
 	 * @generated
 	 */
-	int ID_STRECKE_TYPE_CLASS = 128;
+	int ID_STRECKE_TYPE_CLASS = 129;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7207,7 +7262,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Technischer_Punkt_TypeClass()
 	 * @generated
 	 */
-	int ID_TECHNISCHER_PUNKT_TYPE_CLASS = 129;
+	int ID_TECHNISCHER_PUNKT_TYPE_CLASS = 130;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7262,7 +7317,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_TOP_Kante_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_TOP_KANTE_OHNE_PROXY_TYPE_CLASS = 130;
+	int ID_TOP_KANTE_OHNE_PROXY_TYPE_CLASS = 131;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7317,7 +7372,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_TOP_Kante_TypeClass()
 	 * @generated
 	 */
-	int ID_TOP_KANTE_TYPE_CLASS = 131;
+	int ID_TOP_KANTE_TYPE_CLASS = 132;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7372,7 +7427,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_TOP_Knoten_TypeClass()
 	 * @generated
 	 */
-	int ID_TOP_KNOTEN_TYPE_CLASS = 132;
+	int ID_TOP_KNOTEN_TYPE_CLASS = 133;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7427,7 +7482,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Trasse_Kante_TypeClass()
 	 * @generated
 	 */
-	int ID_TRASSE_KANTE_TYPE_CLASS = 133;
+	int ID_TRASSE_KANTE_TYPE_CLASS = 134;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7482,7 +7537,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Trasse_Knoten_TypeClass()
 	 * @generated
 	 */
-	int ID_TRASSE_KNOTEN_TYPE_CLASS = 134;
+	int ID_TRASSE_KNOTEN_TYPE_CLASS = 135;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7537,7 +7592,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Ueberhoehung_TypeClass()
 	 * @generated
 	 */
-	int ID_UEBERHOEHUNG_TYPE_CLASS = 135;
+	int ID_UEBERHOEHUNG_TYPE_CLASS = 136;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7592,7 +7647,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Uebertragungsweg_Nach_TypeClass()
 	 * @generated
 	 */
-	int ID_UEBERTRAGUNGSWEG_NACH_TYPE_CLASS = 136;
+	int ID_UEBERTRAGUNGSWEG_NACH_TYPE_CLASS = 137;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7647,7 +7702,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Uebertragungsweg_Von_TypeClass()
 	 * @generated
 	 */
-	int ID_UEBERTRAGUNGSWEG_VON_TYPE_CLASS = 137;
+	int ID_UEBERTRAGUNGSWEG_VON_TYPE_CLASS = 138;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7702,7 +7757,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Umfahrpunkt_TypeClass()
 	 * @generated
 	 */
-	int ID_UMFAHRPUNKT_TYPE_CLASS = 138;
+	int ID_UMFAHRPUNKT_TYPE_CLASS = 139;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7757,7 +7812,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Unterbringung_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_UNTERBRINGUNG_OHNE_PROXY_TYPE_CLASS = 139;
+	int ID_UNTERBRINGUNG_OHNE_PROXY_TYPE_CLASS = 140;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7812,7 +7867,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Unterbringung_Technik_TypeClass()
 	 * @generated
 	 */
-	int ID_UNTERBRINGUNG_TECHNIK_TYPE_CLASS = 140;
+	int ID_UNTERBRINGUNG_TECHNIK_TYPE_CLASS = 141;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7867,7 +7922,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Unterbringung_TypeClass()
 	 * @generated
 	 */
-	int ID_UNTERBRINGUNG_TYPE_CLASS = 141;
+	int ID_UNTERBRINGUNG_TYPE_CLASS = 142;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7922,7 +7977,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Ur_Objekt_TypeClass()
 	 * @generated
 	 */
-	int ID_UR_OBJEKT_TYPE_CLASS = 142;
+	int ID_UR_OBJEKT_TYPE_CLASS = 143;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7977,7 +8032,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Verknuepftes_Element_TypeClass()
 	 * @generated
 	 */
-	int ID_VERKNUEPFTES_ELEMENT_TYPE_CLASS = 143;
+	int ID_VERKNUEPFTES_ELEMENT_TYPE_CLASS = 144;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8032,7 +8087,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_W_Kr_Anlage_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_WKR_ANLAGE_OHNE_PROXY_TYPE_CLASS = 144;
+	int ID_WKR_ANLAGE_OHNE_PROXY_TYPE_CLASS = 145;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8087,7 +8142,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_W_Kr_Anlage_TypeClass()
 	 * @generated
 	 */
-	int ID_WKR_ANLAGE_TYPE_CLASS = 145;
+	int ID_WKR_ANLAGE_TYPE_CLASS = 146;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8142,7 +8197,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_W_Kr_Gsp_Element_TypeClass()
 	 * @generated
 	 */
-	int ID_WKR_GSP_ELEMENT_TYPE_CLASS = 146;
+	int ID_WKR_GSP_ELEMENT_TYPE_CLASS = 147;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8197,7 +8252,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_W_Kr_Gsp_Komponente_TypeClass()
 	 * @generated
 	 */
-	int ID_WKR_GSP_KOMPONENTE_TYPE_CLASS = 147;
+	int ID_WKR_GSP_KOMPONENTE_TYPE_CLASS = 148;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8252,7 +8307,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Weichenlaufkette_TypeClass()
 	 * @generated
 	 */
-	int ID_WEICHENLAUFKETTE_TYPE_CLASS = 148;
+	int ID_WEICHENLAUFKETTE_TYPE_CLASS = 149;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8307,7 +8362,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Ziel_TypeClass()
 	 * @generated
 	 */
-	int ID_ZIEL_TYPE_CLASS = 149;
+	int ID_ZIEL_TYPE_CLASS = 150;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8362,7 +8417,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ZL_DLP_Fstr_TypeClass()
 	 * @generated
 	 */
-	int ID_ZL_DLP_FSTR_TYPE_CLASS = 150;
+	int ID_ZL_DLP_FSTR_TYPE_CLASS = 151;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8417,7 +8472,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ZL_Fstr_TypeClass()
 	 * @generated
 	 */
-	int ID_ZL_FSTR_TYPE_CLASS = 151;
+	int ID_ZL_FSTR_TYPE_CLASS = 152;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8472,7 +8527,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ZL_Signalgruppe_TypeClass()
 	 * @generated
 	 */
-	int ID_ZL_SIGNALGRUPPE_TYPE_CLASS = 152;
+	int ID_ZL_SIGNALGRUPPE_TYPE_CLASS = 153;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8527,7 +8582,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ZL_TypeClass()
 	 * @generated
 	 */
-	int ID_ZL_TYPE_CLASS = 153;
+	int ID_ZL_TYPE_CLASS = 154;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8582,7 +8637,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ZLV_Bus_ohne_Proxy_TypeClass()
 	 * @generated
 	 */
-	int ID_ZLV_BUS_OHNE_PROXY_TYPE_CLASS = 154;
+	int ID_ZLV_BUS_OHNE_PROXY_TYPE_CLASS = 155;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8637,7 +8692,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ZLV_Bus_TypeClass()
 	 * @generated
 	 */
-	int ID_ZLV_BUS_TYPE_CLASS = 155;
+	int ID_ZLV_BUS_TYPE_CLASS = 156;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8692,7 +8747,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ZN_Anzeigefeld_Anstoss_TypeClass()
 	 * @generated
 	 */
-	int ID_ZN_ANZEIGEFELD_ANSTOSS_TYPE_CLASS = 156;
+	int ID_ZN_ANZEIGEFELD_ANSTOSS_TYPE_CLASS = 157;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8747,7 +8802,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ZN_Anzeigefeld_TypeClass()
 	 * @generated
 	 */
-	int ID_ZN_ANZEIGEFELD_TYPE_CLASS = 157;
+	int ID_ZN_ANZEIGEFELD_TYPE_CLASS = 158;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8802,7 +8857,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ZN_Fortschalt_Kriterium_TypeClass()
 	 * @generated
 	 */
-	int ID_ZN_FORTSCHALT_KRITERIUM_TYPE_CLASS = 158;
+	int ID_ZN_FORTSCHALT_KRITERIUM_TYPE_CLASS = 159;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8857,7 +8912,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ZN_TypeClass()
 	 * @generated
 	 */
-	int ID_ZN_TYPE_CLASS = 159;
+	int ID_ZN_TYPE_CLASS = 160;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8912,7 +8967,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ZN_Unterstation_TypeClass()
 	 * @generated
 	 */
-	int ID_ZN_UNTERSTATION_TYPE_CLASS = 160;
+	int ID_ZN_UNTERSTATION_TYPE_CLASS = 161;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8967,7 +9022,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_ZN_ZBS_TypeClass()
 	 * @generated
 	 */
-	int ID_ZN_ZBS_TYPE_CLASS = 161;
+	int ID_ZN_ZBS_TYPE_CLASS = 162;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9022,7 +9077,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Zugeinwirkung_TypeClass()
 	 * @generated
 	 */
-	int ID_ZUGEINWIRKUNG_TYPE_CLASS = 162;
+	int ID_ZUGEINWIRKUNG_TYPE_CLASS = 163;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9077,7 +9132,7 @@ public interface VerweisePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Zweites_Haltfallkriterium_TypeClass()
 	 * @generated
 	 */
-	int ID_ZWEITES_HALTFALLKRITERIUM_TYPE_CLASS = 163;
+	int ID_ZWEITES_HALTFALLKRITERIUM_TYPE_CLASS = 164;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9956,6 +10011,38 @@ public interface VerweisePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getID_Bezugspunkt_Positionierung_TypeClass_InvalidReference();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_TypeClass <em>ID Bezugspunkt Type Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>ID Bezugspunkt Type Class</em>'.
+	 * @see org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_TypeClass
+	 * @generated
+	 */
+	EClass getID_Bezugspunkt_TypeClass();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_TypeClass#getValue <em>Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Value</em>'.
+	 * @see org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_TypeClass#getValue()
+	 * @see #getID_Bezugspunkt_TypeClass()
+	 * @generated
+	 */
+	EReference getID_Bezugspunkt_TypeClass_Value();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_TypeClass#isInvalidReference <em>Invalid Reference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Invalid Reference</em>'.
+	 * @see org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_TypeClass#isInvalidReference()
+	 * @see #getID_Bezugspunkt_TypeClass()
+	 * @generated
+	 */
+	EAttribute getID_Bezugspunkt_TypeClass_InvalidReference();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Verweise.ID_Binaerdaten_ohne_Proxy_TypeClass <em>ID Binaerdaten ohne Proxy Type Class</em>}'.
@@ -15070,6 +15157,32 @@ public interface VerweisePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ID_BEZUGSPUNKT_POSITIONIERUNG_TYPE_CLASS__INVALID_REFERENCE = eINSTANCE.getID_Bezugspunkt_Positionierung_TypeClass_InvalidReference();
+
+		/**
+		 * The meta object literal for the '{@link org.eclipse.set.model.planpro.Verweise.impl.ID_Bezugspunkt_TypeClassImpl <em>ID Bezugspunkt Type Class</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.eclipse.set.model.planpro.Verweise.impl.ID_Bezugspunkt_TypeClassImpl
+		 * @see org.eclipse.set.model.planpro.Verweise.impl.VerweisePackageImpl#getID_Bezugspunkt_TypeClass()
+		 * @generated
+		 */
+		EClass ID_BEZUGSPUNKT_TYPE_CLASS = eINSTANCE.getID_Bezugspunkt_TypeClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Value</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ID_BEZUGSPUNKT_TYPE_CLASS__VALUE = eINSTANCE.getID_Bezugspunkt_TypeClass_Value();
+
+		/**
+		 * The meta object literal for the '<em><b>Invalid Reference</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ID_BEZUGSPUNKT_TYPE_CLASS__INVALID_REFERENCE = eINSTANCE.getID_Bezugspunkt_TypeClass_InvalidReference();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.set.model.planpro.Verweise.impl.ID_Binaerdaten_ohne_Proxy_TypeClassImpl <em>ID Binaerdaten ohne Proxy Type Class</em>}' class.

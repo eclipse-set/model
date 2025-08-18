@@ -30,10 +30,10 @@ import org.eclipse.set.model.planpro.BasisTypen.BasisTypenPackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -42,17 +42,17 @@ import org.eclipse.set.model.planpro.BasisTypen.BasisTypenPackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -61,17 +61,17 @@ import org.eclipse.set.model.planpro.BasisTypen.BasisTypenPackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -80,10 +80,10 @@ import org.eclipse.set.model.planpro.BasisTypen.BasisTypenPackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -107,7 +107,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -4180,7 +4180,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>Abstand Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TAbstand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{3}'"
+	 *        extendedMetaData="name='TAbstand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{3}'"
 	 * @generated
 	 */
 	EDataType getAbstand_Type();
@@ -4192,7 +4192,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>Begrenzung AType</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TBegrenzung_A' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{3}'"
+	 *        extendedMetaData="name='TBegrenzung_A' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{3}'"
 	 * @generated
 	 */
 	EDataType getBegrenzung_A_Type();
@@ -4204,7 +4204,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>Begrenzung BType</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TBegrenzung_B' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{3}'"
+	 *        extendedMetaData="name='TBegrenzung_B' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{3}'"
 	 * @generated
 	 */
 	EDataType getBegrenzung_B_Type();
@@ -4216,7 +4216,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>Beschreibung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBeschreibung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBeschreibung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBeschreibung_Type();
@@ -4228,7 +4228,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>BV Kategorie Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBV_Kategorie' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBV_Kategorie' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBV_Kategorie_Type();
@@ -4240,7 +4240,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>DB GDI Referenz Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TDB_GDI_Referenz' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,20}'"
+	 *        extendedMetaData="name='TDB_GDI_Referenz' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,20}'"
 	 * @generated
 	 */
 	EDataType getDB_GDI_Referenz_Type();
@@ -4336,7 +4336,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>Identitaet Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIdentitaet' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGUID'"
+	 *        extendedMetaData="name='TIdentitaet' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGUID'"
 	 * @generated
 	 */
 	EDataType getIdentitaet_Type();
@@ -4348,7 +4348,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>Kommentar Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TKommentar' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText'"
+	 *        extendedMetaData="name='TKommentar' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText'"
 	 * @generated
 	 */
 	EDataType getKommentar_Type();
@@ -4360,7 +4360,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>Kurztext Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TKurztext' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,100}'"
+	 *        extendedMetaData="name='TKurztext' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getKurztext_Type();
@@ -4372,7 +4372,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>LO Ausgabestand Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TLO_Ausgabestand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TLO_Ausgabestand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getLO_Ausgabestand_Type();
@@ -4384,7 +4384,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>LO DB Freigabe Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TLO_DB_Freigabe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TLO_DB_Freigabe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getLO_DB_Freigabe_Type();
@@ -4396,7 +4396,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>LO EMA Nr Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TLO_EMA_Nr' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TLO_EMA_Nr' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getLO_EMA_Nr_Type();
@@ -4408,7 +4408,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>LO Firmensachnummer Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TLO_Firmensachnummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TLO_Firmensachnummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getLO_Firmensachnummer_Type();
@@ -4420,7 +4420,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>LO Seriennummer Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TLO_Seriennummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TLO_Seriennummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getLO_Seriennummer_Type();
@@ -4432,7 +4432,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>Richtungsbezug Type</em>'.
 	 * @see org.eclipse.set.model.planpro.BasisTypen.ENUMWirkrichtung
 	 * @model instanceClass="org.eclipse.set.model.planpro.BasisTypen.ENUMWirkrichtung"
-	 *        extendedMetaData="name='TRichtungsbezug' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TWirkrichtung'"
+	 *        extendedMetaData="name='TRichtungsbezug' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TWirkrichtung'"
 	 * @generated
 	 */
 	EDataType getRichtungsbezug_Type();
@@ -4444,7 +4444,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>Seitliche Lage Type</em>'.
 	 * @see org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts
 	 * @model instanceClass="org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts"
-	 *        extendedMetaData="name='TSeitliche_Lage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts'"
+	 *        extendedMetaData="name='TSeitliche_Lage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts'"
 	 * @generated
 	 */
 	EDataType getSeitliche_Lage_Type();
@@ -4456,7 +4456,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>Seitlicher Abstand Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSeitlicher_Abstand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='(-?[1-9][0-9]{0,4}\\.[0-9]{3})|(-?0\\.[89][0-9]{2})|0.000'"
+	 *        extendedMetaData="name='TSeitlicher_Abstand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getSeitlicher_Abstand_Type();
@@ -4468,7 +4468,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>Strecke Km Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TStrecke_Km' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TKilometrierung'"
+	 *        extendedMetaData="name='TStrecke_Km' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TKilometrierung'"
 	 * @generated
 	 */
 	EDataType getStrecke_Km_Type();
@@ -4480,7 +4480,7 @@ public interface BasisobjektePackage extends EPackage {
 	 * @return the meta object for data type '<em>Technischer Platz Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TTechnischer_Platz' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='[A-Z0-9\\-]{30}'"
+	 *        extendedMetaData="name='TTechnischer_Platz' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getTechnischer_Platz_Type();

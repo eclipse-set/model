@@ -263,6 +263,15 @@ public interface VerweiseFactory extends EFactory {
 	ID_Bezugspunkt_Positionierung_TypeClass createID_Bezugspunkt_Positionierung_TypeClass();
 
 	/**
+	 * Returns a new object of class '<em>ID Bezugspunkt Type Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>ID Bezugspunkt Type Class</em>'.
+	 * @generated
+	 */
+	ID_Bezugspunkt_TypeClass createID_Bezugspunkt_TypeClass();
+
+	/**
 	 * Returns a new object of class '<em>ID Binaerdaten ohne Proxy Type Class</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -9,8 +9,6 @@
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
-import java.math.BigInteger;
-
 import org.eclipse.set.model.planpro.BasisTypen.BasisAttribut_AttributeGroup;
 
 /**
@@ -37,13 +35,13 @@ public interface RBC_ETCS_System_Version_TypeClass extends BasisAttribut_Attribu
 	 * @return the value of the '<em>Wert</em>' attribute.
 	 * @see #isSetWert()
 	 * @see #unsetWert()
-	 * @see #setWert(BigInteger)
+	 * @see #setWert(String)
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage#getRBC_ETCS_System_Version_TypeClass_Wert()
 	 * @model unsettable="true" dataType="org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_ETCS_System_Version_Type" required="true"
 	 *        extendedMetaData="kind='element' name='Wert'"
 	 * @generated
 	 */
-	BigInteger getWert();
+	String getWert();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_ETCS_System_Version_TypeClass#getWert <em>Wert</em>}' attribute.
@@ -55,7 +53,7 @@ public interface RBC_ETCS_System_Version_TypeClass extends BasisAttribut_Attribu
 	 * @see #getWert()
 	 * @generated
 	 */
-	void setWert(BigInteger value);
+	void setWert(String value);
 
 	/**
 	 * Unsets the value of the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_ETCS_System_Version_TypeClass#getWert <em>Wert</em>}' attribute.
@@ -63,7 +61,7 @@ public interface RBC_ETCS_System_Version_TypeClass extends BasisAttribut_Attribu
 	 * <!-- end-user-doc -->
 	 * @see #isSetWert()
 	 * @see #getWert()
-	 * @see #setWert(BigInteger)
+	 * @see #setWert(String)
 	 * @generated
 	 */
 	void unsetWert();
@@ -75,7 +73,7 @@ public interface RBC_ETCS_System_Version_TypeClass extends BasisAttribut_Attribu
 	 * @return whether the value of the '<em>Wert</em>' attribute is set.
 	 * @see #unsetWert()
 	 * @see #getWert()
-	 * @see #setWert(BigInteger)
+	 * @see #setWert(String)
 	 * @generated
 	 */
 	boolean isSetWert();

@@ -353,6 +353,15 @@ public interface Balisentechnik_ETCSFactory extends EFactory {
 	Bezeichnung_LEU_Anlage_TypeClass createBezeichnung_LEU_Anlage_TypeClass();
 
 	/**
+	 * Returns a new object of class '<em>Bezeichnung RBC Type Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Bezeichnung RBC Type Class</em>'.
+	 * @generated
+	 */
+	Bezeichnung_RBC_TypeClass createBezeichnung_RBC_TypeClass();
+
+	/**
 	 * Returns a new object of class '<em>Bezeichnung ZUB SE Type Class</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1998,6 +2007,15 @@ public interface Balisentechnik_ETCSFactory extends EFactory {
 	 * @generated
 	 */
 	RBC_Allg_AttributeGroup createRBC_Allg_AttributeGroup();
+
+	/**
+	 * Returns a new object of class '<em>RBC Bezeichnung Attribute Group</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>RBC Bezeichnung Attribute Group</em>'.
+	 * @generated
+	 */
+	RBC_Bezeichnung_AttributeGroup createRBC_Bezeichnung_AttributeGroup();
 
 	/**
 	 * Returns a new object of class '<em>RBC ETCS System Version Type Class</em>'.

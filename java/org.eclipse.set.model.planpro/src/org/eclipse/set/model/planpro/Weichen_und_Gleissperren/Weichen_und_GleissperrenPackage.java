@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +128,7 @@ public interface Weichen_und_GleissperrenPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Weichen_und_Gleissperren/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Weichen_und_Gleissperren/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -4051,7 +4051,7 @@ public interface Weichen_und_GleissperrenPackage extends EPackage {
 	 * @return the meta object for data type '<em>CAuswurfrichtung</em>'.
 	 * @see org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts
 	 * @model instanceClass="org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts"
-	 *        extendedMetaData="name='CAuswurfrichtung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts'"
+	 *        extendedMetaData="name='CAuswurfrichtung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts'"
 	 * @generated
 	 */
 	EDataType getCAuswurfrichtung();
@@ -4207,7 +4207,7 @@ public interface Weichen_und_GleissperrenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Geschwindigkeit LType</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TGeschwindigkeit_L' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TGeschwindigkeit_L' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getGeschwindigkeit_L_Type();
@@ -4219,7 +4219,7 @@ public interface Weichen_und_GleissperrenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Geschwindigkeit RType</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TGeschwindigkeit_R' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TGeschwindigkeit_R' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getGeschwindigkeit_R_Type();
@@ -4243,7 +4243,7 @@ public interface Weichen_und_GleissperrenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Isolierfall Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIsolierfall' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,20}'"
+	 *        extendedMetaData="name='TIsolierfall' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,20}'"
 	 * @generated
 	 */
 	EDataType getIsolierfall_Type();
@@ -4255,7 +4255,7 @@ public interface Weichen_und_GleissperrenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Kr Kr WSeitenzuordnung Type</em>'.
 	 * @see org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts
 	 * @model instanceClass="org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts"
-	 *        extendedMetaData="name='TKr_KrW_Seitenzuordnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts'"
+	 *        extendedMetaData="name='TKr_KrW_Seitenzuordnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts'"
 	 * @generated
 	 */
 	EDataType getKr_KrW_Seitenzuordnung_Type();
@@ -4267,7 +4267,7 @@ public interface Weichen_und_GleissperrenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Kreuzungsgleis Type</em>'.
 	 * @see org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts
 	 * @model instanceClass="org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts"
-	 *        extendedMetaData="name='TKreuzungsgleis' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts'"
+	 *        extendedMetaData="name='TKreuzungsgleis' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts'"
 	 * @generated
 	 */
 	EDataType getKreuzungsgleis_Type();
@@ -4279,7 +4279,7 @@ public interface Weichen_und_GleissperrenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Stammgleis Type</em>'.
 	 * @see org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts
 	 * @model instanceClass="org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts"
-	 *        extendedMetaData="name='TStammgleis' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts'"
+	 *        extendedMetaData="name='TStammgleis' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts'"
 	 * @generated
 	 */
 	EDataType getStammgleis_Type();
@@ -4291,7 +4291,7 @@ public interface Weichen_und_GleissperrenPackage extends EPackage {
 	 * @return the meta object for data type '<em>WKr Grundform Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TW_Kr_Grundform' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,50}'"
+	 *        extendedMetaData="name='TW_Kr_Grundform' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,50}'"
 	 * @generated
 	 */
 	EDataType getW_Kr_Grundform_Type();
@@ -4303,7 +4303,7 @@ public interface Weichen_und_GleissperrenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Weiche Vorzugslage Type</em>'.
 	 * @see org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts
 	 * @model instanceClass="org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts"
-	 *        extendedMetaData="name='TWeiche_Vorzugslage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts'"
+	 *        extendedMetaData="name='TWeiche_Vorzugslage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts'"
 	 * @generated
 	 */
 	EDataType getWeiche_Vorzugslage_Type();

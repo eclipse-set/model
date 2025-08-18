@@ -9,8 +9,6 @@
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
-import java.math.BigInteger;
-
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -44,7 +42,7 @@ public class RBC_ETCS_System_Version_TypeClassImpl extends BasisAttribut_Attribu
 	 * @generated
 	 * @ordered
 	 */
-	protected static final BigInteger WERT_EDEFAULT = null;
+	protected static final String WERT_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getWert() <em>Wert</em>}' attribute.
@@ -54,7 +52,7 @@ public class RBC_ETCS_System_Version_TypeClassImpl extends BasisAttribut_Attribu
 	 * @generated
 	 * @ordered
 	 */
-	protected BigInteger wert = WERT_EDEFAULT;
+	protected String wert = WERT_EDEFAULT;
 
 	/**
 	 * This is true if the Wert attribute has been set.
@@ -90,7 +88,7 @@ public class RBC_ETCS_System_Version_TypeClassImpl extends BasisAttribut_Attribu
 	 * @generated
 	 */
 	@Override
-	public BigInteger getWert() {
+	public String getWert() {
 		return wert;
 	}
 
@@ -100,8 +98,8 @@ public class RBC_ETCS_System_Version_TypeClassImpl extends BasisAttribut_Attribu
 	 * @generated
 	 */
 	@Override
-	public void setWert(BigInteger newWert) {
-		BigInteger oldWert = wert;
+	public void setWert(String newWert) {
+		String oldWert = wert;
 		wert = newWert;
 		boolean oldWertESet = wertESet;
 		wertESet = true;
@@ -116,7 +114,7 @@ public class RBC_ETCS_System_Version_TypeClassImpl extends BasisAttribut_Attribu
 	 */
 	@Override
 	public void unsetWert() {
-		BigInteger oldWert = wert;
+		String oldWert = wert;
 		boolean oldWertESet = wertESet;
 		wert = WERT_EDEFAULT;
 		wertESet = false;
@@ -157,7 +155,7 @@ public class RBC_ETCS_System_Version_TypeClassImpl extends BasisAttribut_Attribu
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.RBC_ETCS_SYSTEM_VERSION_TYPE_CLASS__WERT:
-				setWert((BigInteger)newValue);
+				setWert((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

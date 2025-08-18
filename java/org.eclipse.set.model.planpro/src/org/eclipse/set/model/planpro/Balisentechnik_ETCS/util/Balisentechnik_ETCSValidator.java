@@ -193,6 +193,8 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 				return validateBezeichnung_ETCS_Kante_TypeClass((Bezeichnung_ETCS_Kante_TypeClass)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_LEU_ANLAGE_TYPE_CLASS:
 				return validateBezeichnung_LEU_Anlage_TypeClass((Bezeichnung_LEU_Anlage_TypeClass)value, diagnostics, context);
+			case Balisentechnik_ETCSPackage.BEZEICHNUNG_RBC_TYPE_CLASS:
+				return validateBezeichnung_RBC_TypeClass((Bezeichnung_RBC_TypeClass)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_ZUB_SE_TYPE_CLASS:
 				return validateBezeichnung_ZUB_SE_TypeClass((Bezeichnung_ZUB_SE_TypeClass)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_ZUB_TYPE_CLASS:
@@ -559,6 +561,8 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 				return validateRBC((RBC)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.RBC_ALLG_ATTRIBUTE_GROUP:
 				return validateRBC_Allg_AttributeGroup((RBC_Allg_AttributeGroup)value, diagnostics, context);
+			case Balisentechnik_ETCSPackage.RBC_BEZEICHNUNG_ATTRIBUTE_GROUP:
+				return validateRBC_Bezeichnung_AttributeGroup((RBC_Bezeichnung_AttributeGroup)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.RBC_ETCS_SYSTEM_VERSION_TYPE_CLASS:
 				return validateRBC_ETCS_System_Version_TypeClass((RBC_ETCS_System_Version_TypeClass)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.RBC_SRS_VERSION_TYPE_CLASS:
@@ -807,6 +811,8 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 				return validateAbstand_Einmesspunkt_Type((BigDecimal)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.ABSTAND_GRENZE_BEREICH_CTYPE:
 				return validateAbstand_Grenze_Bereich_C_Type((BigDecimal)value, diagnostics, context);
+			case Balisentechnik_ETCSPackage.ABSTAND_ZU_REFERENZBALISE_TYPE:
+				return validateAbstand_Zu_Referenzbalise_Type((BigDecimal)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.ANLAGENTEIL_SONSTIGE_TYPE:
 				return validateAnlagenteil_Sonstige_Type((String)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.ANORDNUNG_IM_DP_TYPE:
@@ -837,6 +843,8 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 				return validateBezeichnung_ETCS_Kante_Type((String)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_LEU_ANLAGE_TYPE:
 				return validateBezeichnung_LEU_Anlage_Type((String)value, diagnostics, context);
+			case Balisentechnik_ETCSPackage.BEZEICHNUNG_RBC_TYPE:
+				return validateBezeichnung_RBC_Type((String)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_ZUB_SE_TYPE:
 				return validateBezeichnung_ZUB_SE_Type((String)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_ZUB_TYPE:
@@ -1046,7 +1054,7 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 			case Balisentechnik_ETCSPackage.PROJEKTIERUNGSFALL_TYPE:
 				return validateProjektierungsfall_Type((BigInteger)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.RBC_ETCS_SYSTEM_VERSION_TYPE:
-				return validateRBC_ETCS_System_Version_Type((BigInteger)value, diagnostics, context);
+				return validateRBC_ETCS_System_Version_Type((String)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.RBC_SRS_VERSION_TYPE:
 				return validateRBC_SRS_Version_Type((String)value, diagnostics, context);
 			case Balisentechnik_ETCSPackage.REKURSION_2NR_TYPE:
@@ -1466,6 +1474,15 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 	 */
 	public boolean validateBezeichnung_LEU_Anlage_TypeClass(Bezeichnung_LEU_Anlage_TypeClass bezeichnung_LEU_Anlage_TypeClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(bezeichnung_LEU_Anlage_TypeClass, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateBezeichnung_RBC_TypeClass(Bezeichnung_RBC_TypeClass bezeichnung_RBC_TypeClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(bezeichnung_RBC_TypeClass, diagnostics, context);
 	}
 
 	/**
@@ -3120,6 +3137,15 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateRBC_Bezeichnung_AttributeGroup(RBC_Bezeichnung_AttributeGroup rbC_Bezeichnung_AttributeGroup, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(rbC_Bezeichnung_AttributeGroup, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateRBC_ETCS_System_Version_TypeClass(RBC_ETCS_System_Version_TypeClass rbC_ETCS_System_Version_TypeClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(rbC_ETCS_System_Version_TypeClass, diagnostics, context);
 	}
@@ -4260,6 +4286,15 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAbstand_Zu_Referenzbalise_Type(BigDecimal abstand_Zu_Referenzbalise_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return true;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAnlagenteil_Sonstige_Type(String anlagenteil_Sonstige_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = basisTypenValidator.validateText_Type_Pattern(anlagenteil_Sonstige_Type, diagnostics, context);
 		return result;
@@ -4365,7 +4400,7 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] BASELINE_SYSTEM_VERSION_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("[0-9]")
+				XMLTypeUtil.createPatternMatcher(".{1,9}")
 			},
 			new PatternMatcher [] {
 				XMLTypeUtil.createPatternMatcher(".{1,250}")
@@ -4500,6 +4535,16 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 	 */
 	public boolean validateBezeichnung_LEU_Anlage_Type(String bezeichnung_LEU_Anlage_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = basisTypenValidator.validateText_Type_Pattern(bezeichnung_LEU_Anlage_Type, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateBezeichnung_RBC_Type(String bezeichnung_RBC_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		boolean result = basisTypenValidator.validateText_Type_Pattern(bezeichnung_RBC_Type, diagnostics, context);
 		return result;
 	}
 
@@ -4660,7 +4705,7 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] DP_TYP_ETCS_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("[1-9]|[1-6][0-9]")
+				XMLTypeUtil.createPatternMatcher("[1-9]|[1-9][0-9]")
 			}
 		};
 
@@ -5966,8 +6011,9 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRBC_ETCS_System_Version_Type(BigInteger rbC_ETCS_System_Version_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return true;
+	public boolean validateRBC_ETCS_System_Version_Type(String rbC_ETCS_System_Version_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		boolean result = basisTypenValidator.validateText_Type_Pattern(rbC_ETCS_System_Version_Type, diagnostics, context);
+		return result;
 	}
 
 	/**
@@ -5976,34 +6022,8 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateRBC_SRS_Version_Type(String rbC_SRS_Version_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		boolean result = validateRBC_SRS_Version_Type_Pattern(rbC_SRS_Version_Type, diagnostics, context);
+		boolean result = basisTypenValidator.validateText_Type_Pattern(rbC_SRS_Version_Type, diagnostics, context);
 		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @see #validateRBC_SRS_Version_Type_Pattern
-	 */
-	public static final  PatternMatcher [][] RBC_SRS_VERSION_TYPE__PATTERN__VALUES =
-		new PatternMatcher [][] {
-			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher(".{1}")
-			},
-			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("[a-zA-Z_0-9]{1,250}")
-			}
-		};
-
-	/**
-	 * Validates the Pattern constraint of '<em>RBC SRS Version Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateRBC_SRS_Version_Type_Pattern(String rbC_SRS_Version_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validatePattern(Balisentechnik_ETCSPackage.eINSTANCE.getRBC_SRS_Version_Type(), rbC_SRS_Version_Type, RBC_SRS_VERSION_TYPE__PATTERN__VALUES, diagnostics, context);
 	}
 
 	/**
@@ -6104,7 +6124,7 @@ public class Balisentechnik_ETCSValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSRS_Version_Type(String srS_Version_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		boolean result = basisTypenValidator.validateZeichenkette_Type_Pattern(srS_Version_Type, diagnostics, context);
+		boolean result = basisTypenValidator.validateText_Type_Pattern(srS_Version_Type, diagnostics, context);
 		return result;
 	}
 

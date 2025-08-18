@@ -677,6 +677,29 @@ public class VerweiseItemProviderAdapterFactory extends VerweiseAdapterFactory i
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_TypeClass} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ID_Bezugspunkt_TypeClassItemProvider iD_Bezugspunkt_TypeClassItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_TypeClass}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createID_Bezugspunkt_TypeClassAdapter() {
+		if (iD_Bezugspunkt_TypeClassItemProvider == null) {
+			iD_Bezugspunkt_TypeClassItemProvider = new ID_Bezugspunkt_TypeClassItemProvider(this);
+		}
+
+		return iD_Bezugspunkt_TypeClassItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Verweise.ID_Binaerdaten_ohne_Proxy_TypeClass} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3981,6 +4004,7 @@ public class VerweiseItemProviderAdapterFactory extends VerweiseAdapterFactory i
 		if (iD_Befestigung_Bauwerk_TypeClassItemProvider != null) iD_Befestigung_Bauwerk_TypeClassItemProvider.dispose();
 		if (iD_Beginn_Bereich_TypeClassItemProvider != null) iD_Beginn_Bereich_TypeClassItemProvider.dispose();
 		if (iD_Bezugspunkt_Positionierung_TypeClassItemProvider != null) iD_Bezugspunkt_Positionierung_TypeClassItemProvider.dispose();
+		if (iD_Bezugspunkt_TypeClassItemProvider != null) iD_Bezugspunkt_TypeClassItemProvider.dispose();
 		if (iD_Binaerdaten_ohne_Proxy_TypeClassItemProvider != null) iD_Binaerdaten_ohne_Proxy_TypeClassItemProvider.dispose();
 		if (iD_Block_Anlage_TypeClassItemProvider != null) iD_Block_Anlage_TypeClassItemProvider.dispose();
 		if (iD_Block_Element_TypeClassItemProvider != null) iD_Block_Element_TypeClassItemProvider.dispose();

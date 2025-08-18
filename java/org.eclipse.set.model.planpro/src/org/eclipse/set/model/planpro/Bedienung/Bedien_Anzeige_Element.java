@@ -45,7 +45,7 @@ public interface Bedien_Anzeige_Element extends Basis_Objekt {
 	 * @return the value of the '<em>Bedien Anzeige Element Allg</em>' containment reference.
 	 * @see #setBedienAnzeigeElementAllg(Bedien_Anzeige_Element_Allg_AttributeGroup)
 	 * @see org.eclipse.set.model.planpro.Bedienung.BedienungPackage#getBedien_Anzeige_Element_BedienAnzeigeElementAllg()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Bedien_Anzeige_Element_Allg'"
 	 * @generated
 	 */

@@ -26,6 +26,36 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ENUMFTHinweisFunktion implements Enumerator {
 	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion Hp 0</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_HP_0_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMFT_HINWEIS_FUNKTION_HP_0(0, "ENUMFT_Hinweis_Funktion_Hp_0", "Hp 0"),
+
+	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion Ks 1</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_KS_1_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMFT_HINWEIS_FUNKTION_KS_1(1, "ENUMFT_Hinweis_Funktion_Ks_1", "Ks 1"),
+
+	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion Ks 2</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_KS_2_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMFT_HINWEIS_FUNKTION_KS_2(2, "ENUMFT_Hinweis_Funktion_Ks_2", "Ks 2"),
+
+	/**
 	 * The '<em><b>ENUMFT Hinweis Funktion Ortung</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -33,7 +63,27 @@ public enum ENUMFTHinweisFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMFT_HINWEIS_FUNKTION_ORTUNG(0, "ENUMFT_Hinweis_Funktion_Ortung", "Ortung"),
+	ENUMFT_HINWEIS_FUNKTION_ORTUNG(3, "ENUMFT_Hinweis_Funktion_Ortung", "Ortung"),
+
+	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion Ra 12</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_RA_12_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMFT_HINWEIS_FUNKTION_RA_12(4, "ENUMFT_Hinweis_Funktion_Ra_12", "Ra 12"),
+
+	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion Sh 2Sh 0</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_SH_2SH_0_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMFT_HINWEIS_FUNKTION_SH_2SH_0(5, "ENUMFT_Hinweis_Funktion_Sh_2_Sh_0", "Sh 2/Sh 0"),
 
 	/**
 	 * The '<em><b>ENUMFT Hinweis Funktion sonstige</b></em>' literal object.
@@ -43,7 +93,7 @@ public enum ENUMFTHinweisFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMFT_HINWEIS_FUNKTION_SONSTIGE(1, "ENUMFT_Hinweis_Funktion_sonstige", "sonstige"),
+	ENUMFT_HINWEIS_FUNKTION_SONSTIGE(6, "ENUMFT_Hinweis_Funktion_sonstige", "sonstige"),
 
 	/**
 	 * The '<em><b>ENUMFT Hinweis Funktion ZBS Ende</b></em>' literal object.
@@ -53,7 +103,60 @@ public enum ENUMFTHinweisFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE(2, "ENUMFT_Hinweis_Funktion_ZBS_Ende", "ZBS Ende");
+	ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE(7, "ENUMFT_Hinweis_Funktion_ZBS_Ende", "ZBS Ende"),
+
+	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion ZBS Ende 1</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_1_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_1(8, "ENUMFT_Hinweis_Funktion_ZBS_Ende_1", "ZBS Ende 1"),
+
+	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion ZBS Ende 2</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_2_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_2(9, "ENUMFT_Hinweis_Funktion_ZBS_Ende_2", "ZBS Ende 2");
+
+	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion Hp 0</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_HP_0
+	 * @model name="ENUMFT_Hinweis_Funktion_Hp_0" literal="Hp 0"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMFT_HINWEIS_FUNKTION_HP_0_VALUE = 0;
+
+	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion Ks 1</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_KS_1
+	 * @model name="ENUMFT_Hinweis_Funktion_Ks_1" literal="Ks 1"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMFT_HINWEIS_FUNKTION_KS_1_VALUE = 1;
+
+	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion Ks 2</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_KS_2
+	 * @model name="ENUMFT_Hinweis_Funktion_Ks_2" literal="Ks 2"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMFT_HINWEIS_FUNKTION_KS_2_VALUE = 2;
 
 	/**
 	 * The '<em><b>ENUMFT Hinweis Funktion Ortung</b></em>' literal value.
@@ -64,7 +167,29 @@ public enum ENUMFTHinweisFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMFT_HINWEIS_FUNKTION_ORTUNG_VALUE = 0;
+	public static final int ENUMFT_HINWEIS_FUNKTION_ORTUNG_VALUE = 3;
+
+	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion Ra 12</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_RA_12
+	 * @model name="ENUMFT_Hinweis_Funktion_Ra_12" literal="Ra 12"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMFT_HINWEIS_FUNKTION_RA_12_VALUE = 4;
+
+	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion Sh 2Sh 0</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_SH_2SH_0
+	 * @model name="ENUMFT_Hinweis_Funktion_Sh_2_Sh_0" literal="Sh 2/Sh 0"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMFT_HINWEIS_FUNKTION_SH_2SH_0_VALUE = 5;
 
 	/**
 	 * The '<em><b>ENUMFT Hinweis Funktion sonstige</b></em>' literal value.
@@ -75,7 +200,7 @@ public enum ENUMFTHinweisFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMFT_HINWEIS_FUNKTION_SONSTIGE_VALUE = 1;
+	public static final int ENUMFT_HINWEIS_FUNKTION_SONSTIGE_VALUE = 6;
 
 	/**
 	 * The '<em><b>ENUMFT Hinweis Funktion ZBS Ende</b></em>' literal value.
@@ -86,7 +211,29 @@ public enum ENUMFTHinweisFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_VALUE = 2;
+	public static final int ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_VALUE = 7;
+
+	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion ZBS Ende 1</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_1
+	 * @model name="ENUMFT_Hinweis_Funktion_ZBS_Ende_1" literal="ZBS Ende 1"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_1_VALUE = 8;
+
+	/**
+	 * The '<em><b>ENUMFT Hinweis Funktion ZBS Ende 2</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_2
+	 * @model name="ENUMFT_Hinweis_Funktion_ZBS_Ende_2" literal="ZBS Ende 2"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_2_VALUE = 9;
 
 	/**
 	 * An array of all the '<em><b>ENUMFT Hinweis Funktion</b></em>' enumerators.
@@ -96,9 +243,16 @@ public enum ENUMFTHinweisFunktion implements Enumerator {
 	 */
 	private static final ENUMFTHinweisFunktion[] VALUES_ARRAY =
 		new ENUMFTHinweisFunktion[] {
+			ENUMFT_HINWEIS_FUNKTION_HP_0,
+			ENUMFT_HINWEIS_FUNKTION_KS_1,
+			ENUMFT_HINWEIS_FUNKTION_KS_2,
 			ENUMFT_HINWEIS_FUNKTION_ORTUNG,
+			ENUMFT_HINWEIS_FUNKTION_RA_12,
+			ENUMFT_HINWEIS_FUNKTION_SH_2SH_0,
 			ENUMFT_HINWEIS_FUNKTION_SONSTIGE,
 			ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE,
+			ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_1,
+			ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_2,
 		};
 
 	/**
@@ -155,9 +309,16 @@ public enum ENUMFTHinweisFunktion implements Enumerator {
 	 */
 	public static ENUMFTHinweisFunktion get(int value) {
 		switch (value) {
+			case ENUMFT_HINWEIS_FUNKTION_HP_0_VALUE: return ENUMFT_HINWEIS_FUNKTION_HP_0;
+			case ENUMFT_HINWEIS_FUNKTION_KS_1_VALUE: return ENUMFT_HINWEIS_FUNKTION_KS_1;
+			case ENUMFT_HINWEIS_FUNKTION_KS_2_VALUE: return ENUMFT_HINWEIS_FUNKTION_KS_2;
 			case ENUMFT_HINWEIS_FUNKTION_ORTUNG_VALUE: return ENUMFT_HINWEIS_FUNKTION_ORTUNG;
+			case ENUMFT_HINWEIS_FUNKTION_RA_12_VALUE: return ENUMFT_HINWEIS_FUNKTION_RA_12;
+			case ENUMFT_HINWEIS_FUNKTION_SH_2SH_0_VALUE: return ENUMFT_HINWEIS_FUNKTION_SH_2SH_0;
 			case ENUMFT_HINWEIS_FUNKTION_SONSTIGE_VALUE: return ENUMFT_HINWEIS_FUNKTION_SONSTIGE;
 			case ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_VALUE: return ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE;
+			case ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_1_VALUE: return ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_1;
+			case ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_2_VALUE: return ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_2;
 		}
 		return null;
 	}

@@ -25,6 +25,7 @@ import org.eclipse.set.model.planpro.Verweise.ID_Stellwerk_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_Unterbringung_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_ZN_Unterstation_TypeClass;
 
+import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bezeichnung_Stellwerk_TypeClass;
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN;
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN_Allg_AttributeGroup;
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZugnummernmeldeanlagePackage;
@@ -40,6 +41,7 @@ import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Zugnummernmeldeanlage
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZNImpl#getIDAnhangZNPlanBedienraum <em>ID Anhang ZN Plan Bedienraum</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZNImpl#getIDAnhangZNPlanRechnerraum <em>ID Anhang ZN Plan Rechnerraum</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZNImpl#getIDOertlichkeit <em>ID Oertlichkeit</em>}</li>
+ *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZNImpl#getBezeichnungStellwerk <em>Bezeichnung Stellwerk</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZNImpl#getIDStellwerk <em>ID Stellwerk</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZNImpl#getIDUnterbringung <em>ID Unterbringung</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZNImpl#getIDZNUnterstation <em>IDZN Unterstation</em>}</li>
@@ -78,6 +80,16 @@ public class ZNImpl extends Basis_ObjektImpl implements ZN {
 	 * @ordered
 	 */
 	protected ID_Oertlichkeit_TypeClass iDOertlichkeit;
+
+	/**
+	 * The cached value of the '{@link #getBezeichnungStellwerk() <em>Bezeichnung Stellwerk</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBezeichnungStellwerk()
+	 * @generated
+	 * @ordered
+	 */
+	protected Bezeichnung_Stellwerk_TypeClass bezeichnungStellwerk;
 
 	/**
 	 * The cached value of the '{@link #getIDStellwerk() <em>ID Stellwerk</em>}' containment reference.
@@ -279,6 +291,51 @@ public class ZNImpl extends Basis_ObjektImpl implements ZN {
 	 * @generated
 	 */
 	@Override
+	public Bezeichnung_Stellwerk_TypeClass getBezeichnungStellwerk() {
+		return bezeichnungStellwerk;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetBezeichnungStellwerk(Bezeichnung_Stellwerk_TypeClass newBezeichnungStellwerk, NotificationChain msgs) {
+		Bezeichnung_Stellwerk_TypeClass oldBezeichnungStellwerk = bezeichnungStellwerk;
+		bezeichnungStellwerk = newBezeichnungStellwerk;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ZugnummernmeldeanlagePackage.ZN__BEZEICHNUNG_STELLWERK, oldBezeichnungStellwerk, newBezeichnungStellwerk);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setBezeichnungStellwerk(Bezeichnung_Stellwerk_TypeClass newBezeichnungStellwerk) {
+		if (newBezeichnungStellwerk != bezeichnungStellwerk) {
+			NotificationChain msgs = null;
+			if (bezeichnungStellwerk != null)
+				msgs = ((InternalEObject)bezeichnungStellwerk).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ZugnummernmeldeanlagePackage.ZN__BEZEICHNUNG_STELLWERK, null, msgs);
+			if (newBezeichnungStellwerk != null)
+				msgs = ((InternalEObject)newBezeichnungStellwerk).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ZugnummernmeldeanlagePackage.ZN__BEZEICHNUNG_STELLWERK, null, msgs);
+			msgs = basicSetBezeichnungStellwerk(newBezeichnungStellwerk, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ZugnummernmeldeanlagePackage.ZN__BEZEICHNUNG_STELLWERK, newBezeichnungStellwerk, newBezeichnungStellwerk));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ID_Stellwerk_TypeClass getIDStellwerk() {
 		return iDStellwerk;
 	}
@@ -467,6 +524,8 @@ public class ZNImpl extends Basis_ObjektImpl implements ZN {
 				return basicSetIDAnhangZNPlanRechnerraum(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN__ID_OERTLICHKEIT:
 				return basicSetIDOertlichkeit(null, msgs);
+			case ZugnummernmeldeanlagePackage.ZN__BEZEICHNUNG_STELLWERK:
+				return basicSetBezeichnungStellwerk(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN__ID_STELLWERK:
 				return basicSetIDStellwerk(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN__ID_UNTERBRINGUNG:
@@ -493,6 +552,8 @@ public class ZNImpl extends Basis_ObjektImpl implements ZN {
 				return getIDAnhangZNPlanRechnerraum();
 			case ZugnummernmeldeanlagePackage.ZN__ID_OERTLICHKEIT:
 				return getIDOertlichkeit();
+			case ZugnummernmeldeanlagePackage.ZN__BEZEICHNUNG_STELLWERK:
+				return getBezeichnungStellwerk();
 			case ZugnummernmeldeanlagePackage.ZN__ID_STELLWERK:
 				return getIDStellwerk();
 			case ZugnummernmeldeanlagePackage.ZN__ID_UNTERBRINGUNG:
@@ -521,6 +582,9 @@ public class ZNImpl extends Basis_ObjektImpl implements ZN {
 				return;
 			case ZugnummernmeldeanlagePackage.ZN__ID_OERTLICHKEIT:
 				setIDOertlichkeit((ID_Oertlichkeit_TypeClass)newValue);
+				return;
+			case ZugnummernmeldeanlagePackage.ZN__BEZEICHNUNG_STELLWERK:
+				setBezeichnungStellwerk((Bezeichnung_Stellwerk_TypeClass)newValue);
 				return;
 			case ZugnummernmeldeanlagePackage.ZN__ID_STELLWERK:
 				setIDStellwerk((ID_Stellwerk_TypeClass)newValue);
@@ -555,6 +619,9 @@ public class ZNImpl extends Basis_ObjektImpl implements ZN {
 			case ZugnummernmeldeanlagePackage.ZN__ID_OERTLICHKEIT:
 				setIDOertlichkeit((ID_Oertlichkeit_TypeClass)null);
 				return;
+			case ZugnummernmeldeanlagePackage.ZN__BEZEICHNUNG_STELLWERK:
+				setBezeichnungStellwerk((Bezeichnung_Stellwerk_TypeClass)null);
+				return;
 			case ZugnummernmeldeanlagePackage.ZN__ID_STELLWERK:
 				setIDStellwerk((ID_Stellwerk_TypeClass)null);
 				return;
@@ -585,6 +652,8 @@ public class ZNImpl extends Basis_ObjektImpl implements ZN {
 				return iDAnhangZNPlanRechnerraum != null;
 			case ZugnummernmeldeanlagePackage.ZN__ID_OERTLICHKEIT:
 				return iDOertlichkeit != null;
+			case ZugnummernmeldeanlagePackage.ZN__BEZEICHNUNG_STELLWERK:
+				return bezeichnungStellwerk != null;
 			case ZugnummernmeldeanlagePackage.ZN__ID_STELLWERK:
 				return iDStellwerk != null;
 			case ZugnummernmeldeanlagePackage.ZN__ID_UNTERBRINGUNG:

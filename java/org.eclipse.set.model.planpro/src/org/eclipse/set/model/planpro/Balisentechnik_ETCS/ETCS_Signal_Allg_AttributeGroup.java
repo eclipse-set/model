@@ -94,7 +94,7 @@ public interface ETCS_Signal_Allg_AttributeGroup extends EObject {
 	 * @return the value of the '<em>Einstieg Erlaubt</em>' containment reference.
 	 * @see #setEinstiegErlaubt(Einstieg_Erlaubt_TypeClass)
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage#getETCS_Signal_Allg_AttributeGroup_EinstiegErlaubt()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Einstieg_Erlaubt'"
 	 * @generated
 	 */

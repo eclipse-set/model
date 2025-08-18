@@ -3429,9 +3429,9 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		initEClass(signal_Real_AttributeGroupEClass, Signal_Real_AttributeGroup.class, "Signal_Real_AttributeGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getSignal_Real_AttributeGroup_Dunkelschaltung(), this.getDunkelschaltung_TypeClass(), null, "dunkelschaltung", null, 0, 1, Signal_Real_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSignal_Real_AttributeGroup_FunktionOhneSignal(), this.getFunktion_Ohne_Signal_TypeClass(), null, "funktionOhneSignal", null, 0, 1, Signal_Real_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSignal_Real_AttributeGroup_Geltungsbereich(), this.getGeltungsbereich_TypeClass(), null, "geltungsbereich", null, 0, 1, Signal_Real_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSignal_Real_AttributeGroup_Geltungsbereich(), this.getGeltungsbereich_TypeClass(), null, "geltungsbereich", null, 0, 2, Signal_Real_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSignal_Real_AttributeGroup_SignalBefestigungsart(), this.getSignal_Befestigungsart_TypeClass(), null, "signalBefestigungsart", null, 1, 1, Signal_Real_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSignal_Real_AttributeGroup_SignalFunktion(), this.getSignal_Funktion_TypeClass(), null, "signalFunktion", null, 1, 1, Signal_Real_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSignal_Real_AttributeGroup_SignalFunktion(), this.getSignal_Funktion_TypeClass(), null, "signalFunktion", null, 0, 1, Signal_Real_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSignal_Real_AttributeGroup_SignalRealAktiv(), this.getSignal_Real_Aktiv_AttributeGroup(), null, "signalRealAktiv", null, 0, 1, Signal_Real_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSignal_Real_AttributeGroup_SignalRealAktivSchirm(), this.getSignal_Real_Aktiv_Schirm_AttributeGroup(), null, "signalRealAktivSchirm", null, 0, 1, Signal_Real_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSignal_Real_AttributeGroup_SignalsichtErreichbar(), this.getSignalsicht_Erreichbar_TypeClass(), null, "signalsichtErreichbar", null, 0, 1, Signal_Real_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3527,21 +3527,33 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		initEEnum(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.class, "ENUMFiktivesSignalFunktion");
 		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_FAP_START);
 		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_FAP_ZIEL);
+		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_NE_14);
 		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_OHNE_SIGNAL);
 		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_SONSTIGE);
+		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_VSIG_VIRTUELL);
+		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_START);
+		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_ZIEL);
 		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_AWANST);
 		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_MITTELWEICHE);
 		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_OHNE_SIGNAL);
 		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_AWANST);
 		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_OHNE_SIGNAL);
 		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_STRECKE);
-		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_VSIG_VIRTUELL);
 		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK);
+		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_1);
+		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_7);
 		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14);
+		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_1);
+		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_7);
+		addEEnumLiteral(enumFiktivesSignalFunktionEEnum, ENUMFiktivesSignalFunktion.ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_8);
 
 		initEEnum(enumFundamentArtEEnum, ENUMFundamentArt.class, "ENUMFundamentArt");
+		addEEnumLiteral(enumFundamentArtEEnum, ENUMFundamentArt.ENUM_FUNDAMENT_ART_BETONMONOLITH_GROSS);
+		addEEnumLiteral(enumFundamentArtEEnum, ENUMFundamentArt.ENUM_FUNDAMENT_ART_BETONMONOLITH_KLEIN);
 		addEEnumLiteral(enumFundamentArtEEnum, ENUMFundamentArt.ENUM_FUNDAMENT_ART_GROSS);
 		addEEnumLiteral(enumFundamentArtEEnum, ENUMFundamentArt.ENUM_FUNDAMENT_ART_KLEIN);
+		addEEnumLiteral(enumFundamentArtEEnum, ENUMFundamentArt.ENUM_FUNDAMENT_ART_RAMMROHR_GROSS);
+		addEEnumLiteral(enumFundamentArtEEnum, ENUMFundamentArt.ENUM_FUNDAMENT_ART_RAMMROHR_KLEIN);
 		addEEnumLiteral(enumFundamentArtEEnum, ENUMFundamentArt.ENUM_FUNDAMENT_ART_SONSTIGE);
 
 		initEEnum(enumFunktionOhneSignalEEnum, ENUMFunktionOhneSignal.class, "ENUMFunktionOhneSignal");
@@ -3699,7 +3711,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 		addAnnotation
 		  (enumStreuscheibeBetriebsstellungEEnum,
@@ -3723,7 +3735,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		  (getSignal_PZBSchutzstreckeSoll(),
 		   source,
 		   new String[] {
-			   "documentation", "Solll\u00e4nge der PZB-Schutzstrecke eines Signals. Liegen mehrere Schutzstrecken vor (unterschiedliche Durchrutschwege), so wird hier die Solll\u00e4nge zum ma\u00dfgebenden PZB-Gefahrpunkt eingetragen. Ma\u00dfgebend ist der PZB-Gefahrpunkt, der f\u00fcr die Positionierung des Signals ausschlaggebend ist. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung."
+			   "documentation", "Solll\u00e4nge der PZB-Schutzstrecke eines Signals, sofern hinter diesem ein Gefahrpunktabstand vorgesehen ist. F\u00fcr Durchrutschwege wird die Solll\u00e4nge in Abh\u00e4ngigkeit der Geschwindigkeitsklasse berechnet."
 		   });
 		addAnnotation
 		  (signal_BefestigungEClass,
@@ -3795,7 +3807,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		  (getSignal_Fiktiv_AttributeGroup_AutoEinstellung(),
 		   source,
 		   new String[] {
-			   "documentation", "Art der automatischen Einstellung.\nDB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung; bei realen, aktiven Signalen mittelbar aus Angaben in der Zugstra\u00dfentabelle zu erkennen."
+			   "documentation", "Art der automatischen Einstellung.\nDB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung."
 		   });
 		addAnnotation
 		  (getSignal_Fiktiv_AttributeGroup_FiktivesSignalFunktion(),
@@ -3867,7 +3879,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		  (signal_RahmenEClass,
 		   source,
 		   new String[] {
-			   "documentation", "Fiktive Signale haben keinen Signalrahmen, da sie keinen Signalbegriff zeigen k\u00f6nnen. Ein oder mehrere Signalrahmen bilden ein Signal. Die Gruppierung von Signalbegriffen innerhalb eines Signals zu Signalrahmen wird anhand der konstruktiven Gestaltung vorgenommen, z.B. werden alle Signalbegriffe des Hauptsignalschirms oder alle Signalbegriffe eines Zusatzanzeigers jeweils zu einem Signalrahmen zusammengefasst. Kann die Anzahl oder Art der Signalbegriffe eines Signalrahmens in Abh\u00e4ngigkeit vom betrieblichen Zustand ge\u00e4ndert werden, so wird dieser als schaltbar bezeichnet, andernfalls als fest. Im LST-Datenmodell ist diese Eigenschaft als Attribut zu den Signalbegriffen definiert; ein Signalrahmen ist danach genau dann schaltbar, wenn mindestens eines der enthaltenen Signalbegriffe schaltbar ist. Typische schaltbare Signalrahmen sind der Signalschirm eines Mehrabschnittssignals, das Lichtsignal eines Zusatzanzeigers und das Form- oder Lichtsignal eines Weichensignals. Typische feste Signalrahmen sind das Mastschild eines Hauptsignals, das Formsignal eines Zusatzanzeigers und die Haltetafel. \u00dcber den Signalrahmen erfolgt, sofern dies geplant ist, die Zuordnung von Signalbegriffen eines nachgeordneten Signals zu einem anderen Signal ohne Bezug zur Fahrstra\u00dfe, siehe dazu ID Signal Nachordnung Ausf\u00fchrliche Beschreibung s. Modellierung Signal. DB-Regelwerk Planungsdaten: im bisherigen PT1 ohne eindeutige Darstellung. In der Regel aus den Angaben in der Signaltabelle 1 zu erkennen. "
+			   "documentation", "Fiktive Signale haben keinen Signalrahmen, da sie keinen Signalbegriff zeigen k\u00f6nnen. Reale Signale besitzen einen oder mehrere Signalrahmen. Die Gruppierung von Signalbegriffen innerhalb eines Signals zu Signalrahmen wird anhand der konstruktiven Gestaltung vorgenommen, z.B. werden alle Signalbegriffe des Hauptsignalschirms oder alle Signalbegriffe eines Zusatzanzeigers jeweils zu einem Signalrahmen zusammengefasst. Kann die Anzahl oder Art der Signalbegriffe eines Signalrahmens in Abh\u00e4ngigkeit vom betrieblichen Zustand ge\u00e4ndert werden, so wird dieser als schaltbar bezeichnet, andernfalls als fest. Im LST-Datenmodell ist diese Eigenschaft als Attribut zu den Signalbegriffen definiert; ein Signalrahmen ist danach genau dann schaltbar, wenn mindestens eines der enthaltenen Signalbegriffe schaltbar ist. Typische schaltbare Signalrahmen sind der Signalschirm eines Mehrabschnittssignals, das Lichtsignal eines Zusatzanzeigers und das Form- oder Lichtsignal eines Weichensignals. Typische feste Signalrahmen sind das Mastschild eines Hauptsignals, das Formsignal eines Zusatzanzeigers und die Haltetafel. \u00dcber den Signalrahmen erfolgt, sofern dies geplant ist, die Zuordnung von Signalbegriffen eines nachgeordneten Signals zu einem anderen Signal ohne Bezug zur Fahrstra\u00dfe, siehe dazu ID Signal Nachordnung Ausf\u00fchrliche Beschreibung s. Modellierung Signal. DB-Regelwerk Planungsdaten: im bisherigen PT1 ohne eindeutige Darstellung. In der Regel aus den Angaben in der Signaltabelle 1 zu erkennen. "
 		   });
 		addAnnotation
 		  (getSignal_Rahmen_IDRegelzeichnung(),
@@ -3981,7 +3993,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		  (getSignal_Real_AttributeGroup_Geltungsbereich(),
 		   source,
 		   new String[] {
-			   "documentation", "Geltungsbereich, dem das Signal zugeordnet wird (DS/DV). Die Angabe wird zun\u00e4chst nur zur Unterscheidung Sh 1/Ra 12 vorgesehen."
+			   "documentation", "Geltungsbereich, dem das Signal zugeordnet wird (DS/DV). Die Angabe wird u. a. zur Unterscheidung Sh 1/Ra 12 vorgesehen. Eine Mehrfachangabe ist bei Mischbetrieb Fernbahn/S-Bahn erforderlich."
 		   });
 		addAnnotation
 		  (getSignal_Real_AttributeGroup_SignalBefestigungsart(),
@@ -3993,7 +4005,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		  (getSignal_Real_AttributeGroup_SignalFunktion(),
 		   source,
 		   new String[] {
-			   "documentation", "Angabe der betrieblichen Funktion eines Aktiven Signals f\u00fcr Zugfahrten. Aktive Signale sind Signale, an denen mindestens ein Signalbegriff schaltbar ist. Hauptsignale und Mehrabschnittssignale werden dabei detailliert in Einfahr-, Ausfahr-, Zwischen-, Nachr\u00fcck-, Block-, Deckungs-, Zugdeckungs- oder Gruppensignale bzw. Kombinationen aus diesen betrieblichen Funktionen unterteilt. Von den anderen aktiven Signalen wird nur noch das Zugzielsignal (z.B. hohes Sperrsignal als Zielsignal bei Zugfahrten) mit einem eigenen Attribut hervorgehoben, alle weiteren Aktiven Signale werden unter \\\"andere\\\" zusammengefasst. DB-Regelwerk 301, 819.20, Planungsdaten: im bisherigen PT 1 nur bei Signalen im Geltungsbereich der Ril 819.20, Tabelle f\u00fcr Signalabst\u00e4nde und Schutzstrecken, sonst ohne eindeutige Darstellung. "
+			   "documentation", "Angabe der betrieblichen Funktion eines realen Signals f\u00fcr Zugfahrten. Hauptsignale und Mehrabschnittssignale bzw. entsprechende Tafeln werden dabei detailliert in Einfahr-, Ausfahr-, Zwischen-, Nachr\u00fcck-, Block-, Deckungs-, Zugdeckungs- oder Gruppensignale bzw. Kombinationen aus diesen betrieblichen Funktionen unterteilt. Von den anderen aktiven Signalen wird nur noch das Zugzielsignal (z.B. hohes Sperrsignal als Zielsignal bei Zugfahrten) sowie das alleinstehende Zusatzsignal mit einem eigenen Attributwert hervorgehoben, alle weiteren aktiven Signale werden unter \\\"andere\\\" zusammengefasst. F\u00fcr Gz, Tafeln und Vorsignalbaken etc. ist die Angabe nicht erforderlich. DB-Regelwerk 301, 819.20, Planungsdaten: im bisherigen PT 1 nur bei Signalen im Geltungsbereich der Ril 819.20, Tabelle f\u00fcr Signalabst\u00e4nde und Schutzstrecken, sonst ohne eindeutige Darstellung. "
 		   });
 		addAnnotation
 		  (getSignal_Real_AttributeGroup_SignalsichtErreichbar(),
@@ -4053,7 +4065,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		  (getSignal_Signalbegriff_Allg_AttributeGroup_Zs2Ueberwacht(),
 		   source,
 		   new String[] {
-			   "documentation", "Angabe, ob die Anschaltung von Zs 2 zu \u00fcberwachen ist (true) oder nicht (false). Die Angabe erfolgt nur f\u00fcr den Signalbegriff Zs 2."
+			   "documentation", "Angabe, ob die Anschaltung von Zs 2 bzw. Zs 2v zu \u00fcberwachen ist (true) oder nicht (false). Die Angabe erfolgt nur f\u00fcr die Signalbegriffe Zs 2 und Zs 2v. \nDas Zs 2v wird i. d. R. \u00fcberwacht, wenn auch das zugeh\u00f6rige Zs 2 \u00fcberwacht wird. Ausnahmen sind m\u00f6glich, wenn f\u00fcr ein zwingend zu \u00fcberwachendes Zs 2 keine Vorsignalisierung erforderlich ist, diese aber auf Wunsch des Bestellers vorgesehen wird.\nDB-Regelwerk \nRil 819.0204 3 (2) Richtungsanzeiger anwenden Zwang"
 		   });
 	}
 
@@ -4500,7 +4512,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		   source,
 		   new String[] {
 			   "name", "THoehe_Fundamentoberkante",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "(-?((1\\.(250|2[0-4][0-9]|[01][0-9]{2}))|(0\\.([1-9][0-9]{2}|0[0-9][1-9]|0[1-9]0))))|0\\.000"
 		   });
 		addAnnotation
@@ -4522,7 +4534,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		   source,
 		   new String[] {
 			   "name", "TObere_Lichtpunkthoehe",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "0\\.(22[5-9]|2[3-9][0-9]|[3-9][0-9]{2})|([1-9]|1[0-4])\\.[0-9]{3}|15.000"
 		   });
 		addAnnotation
@@ -4544,8 +4556,8 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		   source,
 		   new String[] {
 			   "name", "TPZB_Schutzstrecke_Soll",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
-			   "pattern", "2[1-9][0-9]|[34][0-9]{2}|5[0-4][0-9]|550"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
+			   "pattern", "2[0-9][0-9]|[34][0-9]{2}|5[0-4][0-9]|550"
 		   });
 		addAnnotation
 		  (pzB_Schutzstrecke_Soll_TypeClassEClass,
@@ -4580,7 +4592,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		   source,
 		   new String[] {
 			   "name", "TRahmen_Hoehe",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"
 		   });
 		addAnnotation
 		  (rahmen_Hoehe_TypeClassEClass,
@@ -4615,7 +4627,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		   source,
 		   new String[] {
 			   "name", "TRichtpunkt",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{1,16}"
 		   });
 		addAnnotation
@@ -4637,7 +4649,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		   source,
 		   new String[] {
 			   "name", "TRichtpunktentfernung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "[1-9][0-9]{0,1}|[1-4][0-9]{2}|500"
 		   });
 		addAnnotation
@@ -5233,7 +5245,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		   source,
 		   new String[] {
 			   "name", "TSignalsicht_Erreichbar",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "[1-9][0-9]{0,1}|[1-4][0-9]{2}|500"
 		   });
 		addAnnotation
@@ -5255,7 +5267,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		   source,
 		   new String[] {
 			   "name", "TSignalsicht_Mindest",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "[1-9][0-9]{0,1}|[1-2][0-9]{2}|300"
 		   });
 		addAnnotation
@@ -5277,7 +5289,7 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		   source,
 		   new String[] {
 			   "name", "TSignalsicht_Soll",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "[1-9][0-9]{0,1}|[1-4][0-9]{2}|500"
 		   });
 		addAnnotation
@@ -5392,133 +5404,133 @@ public class SignalePackageImpl extends EPackageImpl implements SignalePackage {
 		  (signalEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getSignal_PZBSchutzstreckeSoll(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                          \n  <ppi:WorkflowInformation>\n                               \n    <ppi:Patternbeschreibung> [210..550] </ppi:Patternbeschreibung>\n                            \n  </ppi:WorkflowInformation>\n                       \n"
+			   "appinfo", "\r\n                          \r\n  <ppi:WorkflowInformation>\r\n                               \r\n    <ppi:Patternbeschreibung> [200..550]</ppi:Patternbeschreibung>\r\n                            \r\n  </ppi:WorkflowInformation>\r\n                       \r\n"
 		   });
 		addAnnotation
 		  (signal_BefestigungEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Befestigung_Allg_AttributeGroup_HoeheFundamentoberkante(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[-1.250..1.250], 3 Nachkommastellen</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[-1.250..1.250], 3 Nachkommastellen</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Befestigung_Allg_AttributeGroup_ObereLichtpunkthoehe(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [0.225..15.000], immer drei Stellen nach dem Dezimaltrennzeichen </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [0.225..15.000], immer drei Stellen nach dem Dezimaltrennzeichen </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (signal_Fank_ZuordnungEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Fstr_AttributeGroup_BesetzteAusfahrt(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>false</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>false</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Fstr_AttributeGroup_Durchfahrt(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>erlaubt</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>erlaubt</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (signal_RahmenEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Real_Aktiv_Schirm_AttributeGroup_Richtpunkt(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Real_Aktiv_Schirm_AttributeGroup_Richtpunktentfernung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1..500] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..500] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Real_Aktiv_Schirm_AttributeGroup_Signalsystem(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:PlanningStage>EP</ppi:PlanningStage>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:PlanningStage>EP</ppi:PlanningStage>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Real_AttributeGroup_SignalBefestigungsart(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Real_AttributeGroup_SignalFunktion(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:PlanningStage>EP</ppi:PlanningStage>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:PlanningStage>EP</ppi:PlanningStage>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Real_AttributeGroup_SignalsichtErreichbar(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1..500] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..500] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Real_AttributeGroup_SignalsichtMindest(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1..300] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..300] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Real_AttributeGroup_SignalsichtSoll(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:PlanningStage>EP</ppi:PlanningStage>\n                         \n    <ppi:Patternbeschreibung> [1..500] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:PlanningStage>EP</ppi:PlanningStage>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..500] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (signal_SignalbegriffEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Signalbegriff_Allg_AttributeGroup_Anschaltdauer(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>T</ppi:ProposedValue>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>T</ppi:ProposedValue>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Signalbegriff_Allg_AttributeGroup_Beleuchtet(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>nein</ppi:ProposedValue>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>nein</ppi:ProposedValue>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Signalbegriff_Allg_AttributeGroup_Geschaltet(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getSignal_Signalbegriff_Allg_AttributeGroup_Zs2Ueberwacht(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>true</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>true</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 	}
 

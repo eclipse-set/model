@@ -10,8 +10,6 @@
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.provider;
 
 
-import java.math.BigInteger;
-
 import java.util.Collection;
 import java.util.List;
 
@@ -116,8 +114,7 @@ public class RBC_ETCS_System_Version_TypeClassItemProvider extends BasisAttribut
 	 */
 	@Override
 	public String getText(Object object) {
-		BigInteger labelValue = ((RBC_ETCS_System_Version_TypeClass)object).getWert();
-		String label = labelValue == null ? null : labelValue.toString();
+		String label = ((RBC_ETCS_System_Version_TypeClass)object).getWert();
 		return label == null || label.length() == 0 ?
 			getString("_UI_RBC_ETCS_System_Version_TypeClass_type") :
 			getString("_UI_RBC_ETCS_System_Version_TypeClass_type") + " " + label;

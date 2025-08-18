@@ -193,6 +193,14 @@ public class Signalbegriffe_Ril_301AdapterFactory extends AdapterFactoryImpl {
 				return createEl3Adapter();
 			}
 			@Override
+			public Adapter caseEl34Zusatz(El34Zusatz object) {
+				return createEl34ZusatzAdapter();
+			}
+			@Override
+			public Adapter caseEl34ZusatzKombi(El34ZusatzKombi object) {
+				return createEl34ZusatzKombiAdapter();
+			}
+			@Override
 			public Adapter caseEl4(El4 object) {
 				return createEl4Adapter();
 			}
@@ -301,12 +309,24 @@ public class Signalbegriffe_Ril_301AdapterFactory extends AdapterFactoryImpl {
 				return createHp02LpAdapter();
 			}
 			@Override
+			public Adapter caseHp0F(Hp0F object) {
+				return createHp0FAdapter();
+			}
+			@Override
 			public Adapter caseHp1(Hp1 object) {
 				return createHp1Adapter();
 			}
 			@Override
+			public Adapter caseHp1F(Hp1F object) {
+				return createHp1FAdapter();
+			}
+			@Override
 			public Adapter caseHp2(Hp2 object) {
 				return createHp2Adapter();
+			}
+			@Override
+			public Adapter caseHp2F(Hp2F object) {
+				return createHp2FAdapter();
 			}
 			@Override
 			public Adapter caseKl(Kl object) {
@@ -529,6 +549,10 @@ public class Signalbegriffe_Ril_301AdapterFactory extends AdapterFactoryImpl {
 				return createOzOBGrenzeAdapter();
 			}
 			@Override
+			public Adapter caseOzPZB2000Hz(OzPZB2000Hz object) {
+				return createOzPZB2000HzAdapter();
+			}
+			@Override
 			public Adapter caseOzPZBBUE(OzPZBBUE object) {
 				return createOzPZBBUEAdapter();
 			}
@@ -669,12 +693,28 @@ public class Signalbegriffe_Ril_301AdapterFactory extends AdapterFactoryImpl {
 				return createVr0Adapter();
 			}
 			@Override
+			public Adapter caseVr0F(Vr0F object) {
+				return createVr0FAdapter();
+			}
+			@Override
 			public Adapter caseVr1(Vr1 object) {
 				return createVr1Adapter();
 			}
 			@Override
+			public Adapter caseVr12F(Vr12F object) {
+				return createVr12FAdapter();
+			}
+			@Override
+			public Adapter caseVr1F(Vr1F object) {
+				return createVr1FAdapter();
+			}
+			@Override
 			public Adapter caseVr2(Vr2 object) {
 				return createVr2Adapter();
+			}
+			@Override
+			public Adapter caseVr2F(Vr2F object) {
+				return createVr2FAdapter();
 			}
 			@Override
 			public Adapter caseWn1(Wn1 object) {
@@ -1235,6 +1275,34 @@ public class Signalbegriffe_Ril_301AdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El34Zusatz <em>El34 Zusatz</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El34Zusatz
+	 * @generated
+	 */
+	public Adapter createEl34ZusatzAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El34ZusatzKombi <em>El34 Zusatz Kombi</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El34ZusatzKombi
+	 * @generated
+	 */
+	public Adapter createEl34ZusatzKombiAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El4 <em>El4</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -1613,6 +1681,20 @@ public class Signalbegriffe_Ril_301AdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp0F <em>Hp0 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp0F
+	 * @generated
+	 */
+	public Adapter createHp0FAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp1 <em>Hp1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -1627,6 +1709,20 @@ public class Signalbegriffe_Ril_301AdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp1F <em>Hp1 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp1F
+	 * @generated
+	 */
+	public Adapter createHp1FAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp2 <em>Hp2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -1637,6 +1733,20 @@ public class Signalbegriffe_Ril_301AdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createHp2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp2F <em>Hp2 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp2F
+	 * @generated
+	 */
+	public Adapter createHp2FAdapter() {
 		return null;
 	}
 
@@ -2411,6 +2521,20 @@ public class Signalbegriffe_Ril_301AdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.OzPZB2000Hz <em>Oz PZB2000 Hz</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.OzPZB2000Hz
+	 * @generated
+	 */
+	public Adapter createOzPZB2000HzAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.OzPZBBUE <em>Oz PZBBUE</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -2901,6 +3025,20 @@ public class Signalbegriffe_Ril_301AdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr0F <em>Vr0 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr0F
+	 * @generated
+	 */
+	public Adapter createVr0FAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr1 <em>Vr1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -2915,6 +3053,34 @@ public class Signalbegriffe_Ril_301AdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr12F <em>Vr12 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr12F
+	 * @generated
+	 */
+	public Adapter createVr12FAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr1F <em>Vr1 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr1F
+	 * @generated
+	 */
+	public Adapter createVr1FAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr2 <em>Vr2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -2925,6 +3091,20 @@ public class Signalbegriffe_Ril_301AdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createVr2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr2F <em>Vr2 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr2F
+	 * @generated
+	 */
+	public Adapter createVr2FAdapter() {
 		return null;
 	}
 

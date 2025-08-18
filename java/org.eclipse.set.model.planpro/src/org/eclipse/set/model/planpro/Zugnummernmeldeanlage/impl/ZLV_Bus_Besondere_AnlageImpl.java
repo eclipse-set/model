@@ -9,18 +9,26 @@
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
 import org.eclipse.set.model.planpro.Basisobjekte.impl.Basis_ObjektImpl;
 
 import org.eclipse.set.model.planpro.Verweise.ID_ZLV_Bus_ohne_Proxy_TypeClass;
 
+import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Unterstation_Nr_TypeClass;
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZLV_Bus_Besondere_Anlage;
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup;
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZugnummernmeldeanlagePackage;
@@ -35,6 +43,7 @@ import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Zugnummernmeldeanlage
  * <ul>
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZLV_Bus_Besondere_AnlageImpl#getBezeichnung <em>Bezeichnung</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZLV_Bus_Besondere_AnlageImpl#getIDZLVBus <em>IDZLV Bus</em>}</li>
+ *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZLV_Bus_Besondere_AnlageImpl#getUnterstationNr <em>Unterstation Nr</em>}</li>
  * </ul>
  *
  * @generated
@@ -51,14 +60,24 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 	protected ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup bezeichnung;
 
 	/**
-	 * The cached value of the '{@link #getIDZLVBus() <em>IDZLV Bus</em>}' containment reference.
+	 * The cached value of the '{@link #getIDZLVBus() <em>IDZLV Bus</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getIDZLVBus()
 	 * @generated
 	 * @ordered
 	 */
-	protected ID_ZLV_Bus_ohne_Proxy_TypeClass iDZLVBus;
+	protected EList<ID_ZLV_Bus_ohne_Proxy_TypeClass> iDZLVBus;
+
+	/**
+	 * The cached value of the '{@link #getUnterstationNr() <em>Unterstation Nr</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUnterstationNr()
+	 * @generated
+	 * @ordered
+	 */
+	protected Unterstation_Nr_TypeClass unterstationNr;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -130,7 +149,10 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 	 * @generated
 	 */
 	@Override
-	public ID_ZLV_Bus_ohne_Proxy_TypeClass getIDZLVBus() {
+	public EList<ID_ZLV_Bus_ohne_Proxy_TypeClass> getIDZLVBus() {
+		if (iDZLVBus == null) {
+			iDZLVBus = new EObjectContainmentEList<ID_ZLV_Bus_ohne_Proxy_TypeClass>(ID_ZLV_Bus_ohne_Proxy_TypeClass.class, this, ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS);
+		}
 		return iDZLVBus;
 	}
 
@@ -139,11 +161,21 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetIDZLVBus(ID_ZLV_Bus_ohne_Proxy_TypeClass newIDZLVBus, NotificationChain msgs) {
-		ID_ZLV_Bus_ohne_Proxy_TypeClass oldIDZLVBus = iDZLVBus;
-		iDZLVBus = newIDZLVBus;
+	@Override
+	public Unterstation_Nr_TypeClass getUnterstationNr() {
+		return unterstationNr;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetUnterstationNr(Unterstation_Nr_TypeClass newUnterstationNr, NotificationChain msgs) {
+		Unterstation_Nr_TypeClass oldUnterstationNr = unterstationNr;
+		unterstationNr = newUnterstationNr;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS, oldIDZLVBus, newIDZLVBus);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR, oldUnterstationNr, newUnterstationNr);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -155,18 +187,18 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 	 * @generated
 	 */
 	@Override
-	public void setIDZLVBus(ID_ZLV_Bus_ohne_Proxy_TypeClass newIDZLVBus) {
-		if (newIDZLVBus != iDZLVBus) {
+	public void setUnterstationNr(Unterstation_Nr_TypeClass newUnterstationNr) {
+		if (newUnterstationNr != unterstationNr) {
 			NotificationChain msgs = null;
-			if (iDZLVBus != null)
-				msgs = ((InternalEObject)iDZLVBus).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS, null, msgs);
-			if (newIDZLVBus != null)
-				msgs = ((InternalEObject)newIDZLVBus).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS, null, msgs);
-			msgs = basicSetIDZLVBus(newIDZLVBus, msgs);
+			if (unterstationNr != null)
+				msgs = ((InternalEObject)unterstationNr).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR, null, msgs);
+			if (newUnterstationNr != null)
+				msgs = ((InternalEObject)newUnterstationNr).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR, null, msgs);
+			msgs = basicSetUnterstationNr(newUnterstationNr, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS, newIDZLVBus, newIDZLVBus));
+			eNotify(new ENotificationImpl(this, Notification.SET, ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR, newUnterstationNr, newUnterstationNr));
 	}
 
 	/**
@@ -180,7 +212,9 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__BEZEICHNUNG:
 				return basicSetBezeichnung(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS:
-				return basicSetIDZLVBus(null, msgs);
+				return ((InternalEList<?>)getIDZLVBus()).basicRemove(otherEnd, msgs);
+			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR:
+				return basicSetUnterstationNr(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -197,6 +231,8 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 				return getBezeichnung();
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS:
 				return getIDZLVBus();
+			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR:
+				return getUnterstationNr();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -206,6 +242,7 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -213,7 +250,11 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 				setBezeichnung((ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup)newValue);
 				return;
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS:
-				setIDZLVBus((ID_ZLV_Bus_ohne_Proxy_TypeClass)newValue);
+				getIDZLVBus().clear();
+				getIDZLVBus().addAll((Collection<? extends ID_ZLV_Bus_ohne_Proxy_TypeClass>)newValue);
+				return;
+			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR:
+				setUnterstationNr((Unterstation_Nr_TypeClass)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -231,7 +272,10 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 				setBezeichnung((ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup)null);
 				return;
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS:
-				setIDZLVBus((ID_ZLV_Bus_ohne_Proxy_TypeClass)null);
+				getIDZLVBus().clear();
+				return;
+			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR:
+				setUnterstationNr((Unterstation_Nr_TypeClass)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -248,7 +292,9 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__BEZEICHNUNG:
 				return bezeichnung != null;
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS:
-				return iDZLVBus != null;
+				return iDZLVBus != null && !iDZLVBus.isEmpty();
+			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR:
+				return unterstationNr != null;
 		}
 		return super.eIsSet(featureID);
 	}

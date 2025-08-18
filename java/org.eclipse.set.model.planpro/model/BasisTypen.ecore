@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0"
-				xmlns:xmi="http://www.omg.org/XMI"
+<?xml version="1.0" encoding="utf-8"?>
+<ecore:EPackage xmlns:xmi="http://www.omg.org/XMI"
 				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 				xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+				xmi:version="2.0"
 				name="BasisTypen"
-				nsURI="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1"
+				nsURI="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
 				nsPrefix="nsBasisTypen">
 	<eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
 		<details key="documentation"
-				 value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+				 value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
 	</eAnnotations>
 	<eClassifiers xsi:type="ecore:EDataType"
 				  name="Anwendungssystem_Type"
 				  instanceClassName="org.eclipse.emf.common.util.Enumerator">
 		<eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
 			<details key="documentation"
-					 value="System der Zugbeeinflussung bzw. -sicherung, mit dem ein bestimmter Streckenbereich ausgerüstet ist. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen.&#xA;"/>
+					 value="System der Zugbeeinflussung bzw. -sicherung, mit dem ein bestimmter Streckenbereich ausgerüstet ist. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen.&#xA;"/>
 		</eAnnotations>
 		<eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
 			<details key="name"
@@ -29,7 +29,7 @@
 				  instanceClassName="org.eclipse.emf.common.util.Enumerator">
 		<eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
 			<details key="documentation"
-					 value="Ein Attribut diesen Typs wird verwendet, um die Ausrichtung eines Objekts in Bezug zur Topologierichtung anzuzeigen. Ein Attribut mit diesem Basistyp nimmt einen der ENUM-Werte \&quot;gegen\&quot;, \&quot;in\&quot; und \&quot;keine\&quot; an.&#xA;"/>
+					 value="Ein Attribut diesen Typs wird verwendet, um die Ausrichtung eines Objekts in Bezug zur Topologierichtung anzuzeigen. Ein Attribut mit diesem Basistyp nimmt einen der ENUM-Werte \&#34;gegen\&#34;, \&#34;in\&#34; und \&#34;keine\&#34; an.&#xA;"/>
 		</eAnnotations>
 		<eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
 			<details key="name"
@@ -122,7 +122,7 @@
 							 resolveProxies="false">
 			<eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
 				<details key="documentation"
-						 value="Beschriftung des Elements oder der Komponente der LST-Anlage. &#xA;&#xA;Die Bezeichnung besteht i. d. R. aus dem Elementnamen (siehe Bildung der Bezeichnungen). Komponenten, die nicht bedienbar sind (z.B. Achszählpunkte) können durch Zusammenfügen von Elementnamen oder modifizierten Elementnamen bezeichnet werden. &#xA;&#xA;Bei Elementen der LST-Anlage, die in der Außenanlage kein Bezeichnungsschild und im sicherungstechnischen Plan- und Tabellenwerk keinen spezifischen Bezeichner haben, kann dieses Attribut entfallen.&#xA;&#xA;Beispiele: &#xA;• ein Hauptsignal hat in der Außenanlage ein Bezeichnungsschild und auf dem sicherungstechnischen Lageplan einen spezifischen Bezeichner, das Attribut wird befüllt; &#xA;• ein Vorsignal hat in der Außenanlage kein Bezeichnungsschild, aber auf dem sicherungstechnischen Lageplan einen spezifischen Bezeichner, das Attribut wird befüllt; &#xA;• ein Bedienpunkt (fiktives Signal) existiert gar nicht in der Außenanlage, hat aber mindestens im Tabellenwerk einen spezifischen Bezeichner, das Attribut wird befüllt; &#xA;• ein Lf 7 hat in der Außenanlage kein Bezeichnungsschild und auf dem sicherungstechnischen Lageplan keinen spezifischen Bezeichner, das Attribut entfällt (Hinweis: Auch wenn im Lageplan der Bezeichner \&quot;LF7\&quot; eingetragen wird, so ist das dennoch kein spezifischer Bezeichner, sondern ein allgemeiner Bezeichner für alle Signale Lf 7). &#xA;&#xA;DB-Regelwerk&#xA;• 819.9001&#xA;"/>
+						 value="Beschriftung des Elements oder der Komponente der LST-Anlage. &#xA;&#xA;Die Bezeichnung besteht i. d. R. aus dem Elementnamen (siehe Bildung der Bezeichnungen). Komponenten, die nicht bedienbar sind (z.B. Achszählpunkte) können durch Zusammenfügen von Elementnamen oder modifizierten Elementnamen bezeichnet werden. &#xA;&#xA;Bei Elementen der LST-Anlage, die in der Außenanlage kein Bezeichnungsschild und im sicherungstechnischen Plan- und Tabellenwerk keinen spezifischen Bezeichner haben, kann dieses Attribut entfallen.&#xA;&#xA;Beispiele: &#xA;• ein Hauptsignal hat in der Außenanlage ein Bezeichnungsschild und auf dem sicherungstechnischen Lageplan einen spezifischen Bezeichner, das Attribut wird befüllt; &#xA;• ein Vorsignal hat in der Außenanlage kein Bezeichnungsschild, aber auf dem sicherungstechnischen Lageplan einen spezifischen Bezeichner, das Attribut wird befüllt; &#xA;• ein Bedienpunkt (fiktives Signal) existiert gar nicht in der Außenanlage, hat aber mindestens im Tabellenwerk einen spezifischen Bezeichner, das Attribut wird befüllt; &#xA;• ein Lf 7 hat in der Außenanlage kein Bezeichnungsschild und auf dem sicherungstechnischen Lageplan keinen spezifischen Bezeichner, das Attribut entfällt (Hinweis: Auch wenn im Lageplan der Bezeichner \&#34;LF7\&#34; eingetragen wird, so ist das dennoch kein spezifischer Bezeichner, sondern ein allgemeiner Bezeichner für alle Signale Lf 7). &#xA;&#xA;DB-Regelwerk&#xA;• 819.9001&#xA;"/>
 			</eAnnotations>
 			<eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
 				<details key="kind"
@@ -187,11 +187,11 @@
 							 resolveProxies="false">
 			<eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
 				<details key="documentation"
-						 value="Eindeutige Kennzahl der operativen Sicherungstechnik innerhalb eines Bedienbezirks für eine Betriebsstelle.&#xA;&#xA;Die ESTW-Kennzahl kennzeichnet eine Betriebsstelle oder einen Betriebsstellenteil. Es handelt sich nicht um die Bahnhofsnummer der Zugnummernmeldeanlage (Ril 819.0731)!&#xA;&#xA;Eine Betriebsstelle kann mehrere Kennzahlen erhalten. Z.B. dann, wenn in einem Gebäude zwei ESTW-Zentraleinheiten untergebracht sind (Beispiel Hannover Hbf mit den ESTW-Zentraleinheiten \&quot;HH Kennzahl 06\&quot; und \&quot;HHZX Kennzahl 30\&quot;).&#xA;&#xA;Eine Kennzahl kann aber auch mehrere Betriebsstellen beinhalten. Z. B dann, wenn eine ESTW-Zentraleinheit zwei Überleitstellen steuert (Beispiel ESTW-Zentraleinheit Giften HGIF Kennzahl 71 mit \&quot;Üst Giften HGIF\&quot; und \&quot;Üst Ritterkamp HRIT\&quot;.&#xA;&#xA;In Stellbereichen von Bedienbezirken werden für Betriebsstellen (z. B. Bahnhöfe, Abzweigstellen, Anschlussstellen) Kennzahlen von 01 bis 99 vergeben. Diese Kennzahl muss im Bedienbezirk eindeutig sein.&#xA;&#xA;Eindeutigkeit der Kennzahlen bei angrenzenden Bedienbezirken entlang einer Strecke:&#xA;&#xA;Innerhalb eines Bedienbezirks und für benachbarte Betriebsstellen eines angrenzenden Bedienbezirks entlang einer Strecke darf eine Kennzahl nur einmal verwendet werden. Beispiel: Media:Bedien Oertlichkeit Kennzahl 131121.pdf&#xA;&#xA;Für alle im jeweiligen Bereich befindlichen Stellelemente der Betriebsstellen und Strecken wird die Kennzahl Bestandteil der ausführlichen Elementbezeichnung. Hierdurch erübrigt sich in einem größeren Bereich der Infrastruktur die Mitführung eines Ortsbezeichners.&#xA;&#xA;Zentrale Vergabe von Kennzahlen auch ohne Anbindung an Bedien_Zentralen:&#xA;&#xA;Unabnhängig ob eine ESTW-Zentraleinheit aus einer Bedien_Zentrale gesteuert wird oder nur örtlich eingerichtet ist, soll die Kennzahlenvergabe zentral im Sinne einer möglichen Konzentration von ESTW-Zentraleinheiten in Bedienbezirken geplant und vergeben werden. &#xA;&#xA;DB-Regelwerk&#xA;• Kennzahltabelle oder Kennzahelnübersichtsplan im PT 1, &#xA;• 819.0603 2, &#xA;• 819.9001 1 (5).&#xA;&#xA;"/>
+						 value="Eindeutige Kennzahl der operativen Sicherungstechnik innerhalb eines Bedienbezirks für eine Betriebsstelle.&#xA;&#xA;Die ESTW-Kennzahl kennzeichnet eine Betriebsstelle oder einen Betriebsstellenteil. Es handelt sich nicht um die Bahnhofsnummer der Zugnummernmeldeanlage (Ril 819.0731)!&#xA;&#xA;Eine Betriebsstelle kann mehrere Kennzahlen erhalten. Z.B. dann, wenn in einem Gebäude zwei ESTW-Zentraleinheiten untergebracht sind (Beispiel Hannover Hbf mit den ESTW-Zentraleinheiten \&#34;HH Kennzahl 06\&#34; und \&#34;HHZX Kennzahl 30\&#34;).&#xA;&#xA;Eine Kennzahl kann aber auch mehrere Betriebsstellen beinhalten. Z. B dann, wenn eine ESTW-Zentraleinheit zwei Überleitstellen steuert (Beispiel ESTW-Zentraleinheit Giften HGIF Kennzahl 71 mit \&#34;Üst Giften HGIF\&#34; und \&#34;Üst Ritterkamp HRIT\&#34;.&#xA;&#xA;In Stellbereichen von Bedienbezirken werden für Betriebsstellen (z. B. Bahnhöfe, Abzweigstellen, Anschlussstellen) Kennzahlen von 01 bis 99 vergeben. Diese Kennzahl muss im Bedienbezirk eindeutig sein.&#xA;&#xA;Eindeutigkeit der Kennzahlen bei angrenzenden Bedienbezirken entlang einer Strecke:&#xA;&#xA;Innerhalb eines Bedienbezirks und für benachbarte Betriebsstellen eines angrenzenden Bedienbezirks entlang einer Strecke darf eine Kennzahl nur einmal verwendet werden. Beispiel: Media:Bedien Oertlichkeit Kennzahl 131121.pdf&#xA;&#xA;Für alle im jeweiligen Bereich befindlichen Stellelemente der Betriebsstellen und Strecken wird die Kennzahl Bestandteil der ausführlichen Elementbezeichnung. Hierdurch erübrigt sich in einem größeren Bereich der Infrastruktur die Mitführung eines Ortsbezeichners.&#xA;&#xA;Zentrale Vergabe von Kennzahlen auch ohne Anbindung an Bedien_Zentralen:&#xA;&#xA;Unabnhängig ob eine ESTW-Zentraleinheit aus einer Bedien_Zentrale gesteuert wird oder nur örtlich eingerichtet ist, soll die Kennzahlenvergabe zentral im Sinne einer möglichen Konzentration von ESTW-Zentraleinheiten in Bedienbezirken geplant und vergeben werden. &#xA;&#xA;DB-Regelwerk&#xA;• Kennzahltabelle oder Kennzahelnübersichtsplan im PT 1, &#xA;• 819.0603 2, &#xA;• 819.9001 1 (5).&#xA;&#xA;"/>
 			</eAnnotations>
 			<eAnnotations>
 				<details key="appinfo"
-						 value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung> [2] führende Null ist mitzuschreiben, '00' ist unzulässig&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+						 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [2] führende Null ist mitzuschreiben, '00' ist unzulässig&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
 			</eAnnotations>
 			<eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
 				<details key="kind"
@@ -324,7 +324,7 @@
 				  instanceClassName="org.eclipse.emf.common.util.Enumerator">
 		<eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
 			<details key="documentation"
-					 value="Bremsweg als Grundlage für die Dimensionierung der zugehörigen Strecke. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen."/>
+					 value="Bremsweg als Grundlage für die Dimensionierung der zugehörigen Strecke. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen."/>
 		</eAnnotations>
 		<eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
 			<details key="name"
@@ -342,7 +342,7 @@
 		</eAnnotations>
 		<eAnnotations>
 			<details key="appinfo"
-					 value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:Patternbeschreibung>Alle Zeichen ausser den folgenden: ^\\/?:*|&amp;lt;&amp;gt;&lt;/ppi:Patternbeschreibung>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+					 value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;Alle Zeichen ausser den folgenden: ^\\/?:*|&amp;lt;&amp;gt;&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
 		</eAnnotations>
 		<eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
 			<details key="name"
@@ -350,7 +350,7 @@
 			<details key="baseType"
 					 value="TText"/>
 			<details key="pattern"
-					 value="[^\\/?:\*\|&quot;&lt;>]*"/>
+					 value="[^\\/?:\*\|&#34;&lt;&gt;]*"/>
 		</eAnnotations>
 	</eClassifiers>
 	<eClassifiers xsi:type="ecore:EDataType"
@@ -694,7 +694,7 @@
 				  instanceClassName="java.lang.String">
 		<eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
 			<details key="documentation"
-					 value="Beschränkt die Befüllung auf eine 32-stellige GUID in der Form 8-4-4-4-12 Zeichen unter Verwendung der Zahlen 0-9 und der Groß- und Kleinbuchstaben A-F/a-f."/>
+					 value="Beschränkt die Befüllung auf eine 32-stellige GUID in der Form 8-4-4-4-12 Zeichen unter Verwendung der Zahlen 0-9 und der Großbuchstaben A-F."/>
 		</eAnnotations>
 		<eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
 			<details key="name"
@@ -739,11 +739,15 @@
 						 value="Wert"/>
 			</eAnnotations>
 		</eStructuralFeatures>
-		<eStructuralFeatures xsi:type="ecore:EReference"
+		<eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+							 xmlns:func="localhost/function"
+							 xsi:type="ecore:EReference"
 							 name="value"
 							 eType="ecore:EClass Basisobjekte.ecore#//Bearbeitungsvermerk"
 							 transient="true"/>
-		<eStructuralFeatures xsi:type="ecore:EAttribute"
+		<eStructuralFeatures xmlns:xs="http://www.w3.org/2001/XMLSchema"
+							 xmlns:func="localhost/function"
+							 xsi:type="ecore:EAttribute"
 							 name="invalidReference"
 							 eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"
 							 transient="true"
@@ -754,11 +758,11 @@
 				  instanceClassName="java.lang.String">
 		<eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
 			<details key="documentation"
-					 value="Eindeutige Kennzahl der operativen Sicherungstechnik innerhalb eines Bedienbezirks für eine Betriebsstelle.&#xA;&#xA;Die ESTW-Kennzahl kennzeichnet eine Betriebsstelle oder einen Betriebsstellenteil. Es handelt sich nicht um die Bahnhofsnummer der Zugnummernmeldeanlage (Ril 819.0731)!&#xA;&#xA;Eine Betriebsstelle kann mehrere Kennzahlen erhalten. Z.B. dann, wenn in einem Gebäude zwei ESTW-Zentraleinheiten untergebracht sind (Beispiel Hannover Hbf mit den ESTW-Zentraleinheiten \&quot;HH Kennzahl 06\&quot; und \&quot;HHZX Kennzahl 30\&quot;).&#xA;&#xA;Eine Kennzahl kann aber auch mehrere Betriebsstellen beinhalten. Z. B dann, wenn eine ESTW-Zentraleinheit zwei Überleitstellen steuert (Beispiel ESTW-Zentraleinheit Giften HGIF Kennzahl 71 mit \&quot;Üst Giften HGIF\&quot; und \&quot;Üst Ritterkamp HRIT\&quot;.&#xA;&#xA;In Stellbereichen von Bedienbezirken werden für Betriebsstellen (z. B. Bahnhöfe, Abzweigstellen, Anschlussstellen) Kennzahlen von 01 bis 99 vergeben. Diese Kennzahl muss im Bedienbezirk eindeutig sein.&#xA;&#xA;Eindeutigkeit der Kennzahlen bei angrenzenden Bedienbezirken entlang einer Strecke:&#xA;&#xA;Innerhalb eines Bedienbezirks und für benachbarte Betriebsstellen eines angrenzenden Bedienbezirks entlang einer Strecke darf eine Kennzahl nur einmal verwendet werden. Beispiel: Media:Bedien Oertlichkeit Kennzahl 131121.pdf&#xA;&#xA;Für alle im jeweiligen Bereich befindlichen Stellelemente der Betriebsstellen und Strecken wird die Kennzahl Bestandteil der ausführlichen Elementbezeichnung. Hierdurch erübrigt sich in einem größeren Bereich der Infrastruktur die Mitführung eines Ortsbezeichners.&#xA;&#xA;Zentrale Vergabe von Kennzahlen auch ohne Anbindung an Bedien_Zentralen:&#xA;&#xA;Unabnhängig ob eine ESTW-Zentraleinheit aus einer Bedien_Zentrale gesteuert wird oder nur örtlich eingerichtet ist, soll die Kennzahlenvergabe zentral im Sinne einer möglichen Konzentration von ESTW-Zentraleinheiten in Bedienbezirken geplant und vergeben werden. &#xA;&#xA;DB-Regelwerk&#xA;• Kennzahltabelle oder Kennzahelnübersichtsplan im PT 1, &#xA;• 819.0603 2, &#xA;• 819.9001 1 (5).&#xA;&#xA;"/>
+					 value="Eindeutige Kennzahl der operativen Sicherungstechnik innerhalb eines Bedienbezirks für eine Betriebsstelle.&#xA;&#xA;Die ESTW-Kennzahl kennzeichnet eine Betriebsstelle oder einen Betriebsstellenteil. Es handelt sich nicht um die Bahnhofsnummer der Zugnummernmeldeanlage (Ril 819.0731)!&#xA;&#xA;Eine Betriebsstelle kann mehrere Kennzahlen erhalten. Z.B. dann, wenn in einem Gebäude zwei ESTW-Zentraleinheiten untergebracht sind (Beispiel Hannover Hbf mit den ESTW-Zentraleinheiten \&#34;HH Kennzahl 06\&#34; und \&#34;HHZX Kennzahl 30\&#34;).&#xA;&#xA;Eine Kennzahl kann aber auch mehrere Betriebsstellen beinhalten. Z. B dann, wenn eine ESTW-Zentraleinheit zwei Überleitstellen steuert (Beispiel ESTW-Zentraleinheit Giften HGIF Kennzahl 71 mit \&#34;Üst Giften HGIF\&#34; und \&#34;Üst Ritterkamp HRIT\&#34;.&#xA;&#xA;In Stellbereichen von Bedienbezirken werden für Betriebsstellen (z. B. Bahnhöfe, Abzweigstellen, Anschlussstellen) Kennzahlen von 01 bis 99 vergeben. Diese Kennzahl muss im Bedienbezirk eindeutig sein.&#xA;&#xA;Eindeutigkeit der Kennzahlen bei angrenzenden Bedienbezirken entlang einer Strecke:&#xA;&#xA;Innerhalb eines Bedienbezirks und für benachbarte Betriebsstellen eines angrenzenden Bedienbezirks entlang einer Strecke darf eine Kennzahl nur einmal verwendet werden. Beispiel: Media:Bedien Oertlichkeit Kennzahl 131121.pdf&#xA;&#xA;Für alle im jeweiligen Bereich befindlichen Stellelemente der Betriebsstellen und Strecken wird die Kennzahl Bestandteil der ausführlichen Elementbezeichnung. Hierdurch erübrigt sich in einem größeren Bereich der Infrastruktur die Mitführung eines Ortsbezeichners.&#xA;&#xA;Zentrale Vergabe von Kennzahlen auch ohne Anbindung an Bedien_Zentralen:&#xA;&#xA;Unabnhängig ob eine ESTW-Zentraleinheit aus einer Bedien_Zentrale gesteuert wird oder nur örtlich eingerichtet ist, soll die Kennzahlenvergabe zentral im Sinne einer möglichen Konzentration von ESTW-Zentraleinheiten in Bedienbezirken geplant und vergeben werden. &#xA;&#xA;DB-Regelwerk&#xA;• Kennzahltabelle oder Kennzahelnübersichtsplan im PT 1, &#xA;• 819.0603 2, &#xA;• 819.9001 1 (5).&#xA;&#xA;"/>
 		</eAnnotations>
 		<eAnnotations>
 			<details key="appinfo"
-					 value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:Patternbeschreibung> [2] führende Null ist mitzuschreiben, \u002700\u0027 ist unzulässig&lt;/ppi:Patternbeschreibung>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+					 value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [2] führende Null ist mitzuschreiben, \u002700\u0027 ist unzulässig&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
 		</eAnnotations>
 		<eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
 			<details key="name"
@@ -812,7 +816,7 @@
 				  instanceClassName="org.eclipse.emf.common.util.Enumerator">
 		<eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
 			<details key="documentation"
-					 value="Attribute dieses Basistyps können den ENUM-Wert \&quot;links\&quot; oder \&quot;rechts\&quot; annehmen."/>
+					 value="Attribute dieses Basistyps können den ENUM-Wert \&#34;links\&#34; oder \&#34;rechts\&#34; annehmen."/>
 		</eAnnotations>
 		<eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
 			<details key="name"
@@ -1017,7 +1021,7 @@
 				  instanceClassName="org.eclipse.emf.common.util.Enumerator">
 		<eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
 			<details key="documentation"
-					 value="Regionalbereich der DB Netz AG, dem die Anlage zugewiesen ist.&#xA;"/>
+					 value="Regionalbereich der DB InfraGO AG, dem die Anlage zugewiesen ist.&#xA;"/>
 		</eAnnotations>
 		<eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
 			<details key="name"

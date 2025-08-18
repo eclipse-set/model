@@ -35,7 +35,7 @@ public interface RBC_Allg_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Erste Stelle der Systemversion gemäß System Requirement Specification (Subset 26, Kapitel 7). Die Angabe kann nicht eindeutig aus der ersten Stelle der SRS-Version abgeleitet werden. Auf Basis der SRS 3.3.0 kann beispielsweise die Systemversion 1 oder 2 implementiert werden.
+	 * Systemversion gemäß System Requirement Specification (Subset 26, Kapitel 7). Die Angabe kann nicht eindeutig aus der ersten Stelle der SRS-Version abgeleitet werden. Auf Basis der SRS 3.3.0 kann beispielsweise die Systemversion 1.1 oder 2.0 implementiert werden.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>RBCETCS System Version</em>' containment reference.
 	 * @see #setRBCETCSSystemVersion(RBC_ETCS_System_Version_TypeClass)

@@ -71,7 +71,7 @@ public interface Signal extends Punkt_Objekt {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Solllänge der PZB-Schutzstrecke eines Signals. Liegen mehrere Schutzstrecken vor (unterschiedliche Durchrutschwege), so wird hier die Solllänge zum maßgebenden PZB-Gefahrpunkt eingetragen. Maßgebend ist der PZB-Gefahrpunkt, der für die Positionierung des Signals ausschlaggebend ist. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung.
+	 * Solllänge der PZB-Schutzstrecke eines Signals, sofern hinter diesem ein Gefahrpunktabstand vorgesehen ist. Für Durchrutschwege wird die Solllänge in Abhängigkeit der Geschwindigkeitsklasse berechnet.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>PZB Schutzstrecke Soll</em>' containment reference.
 	 * @see #setPZBSchutzstreckeSoll(PZB_Schutzstrecke_Soll_TypeClass)

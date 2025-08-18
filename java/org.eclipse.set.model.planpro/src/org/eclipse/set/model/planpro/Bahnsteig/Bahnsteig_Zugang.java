@@ -19,7 +19,7 @@ import org.eclipse.set.model.planpro.Verweise.ID_Bahnsteig_Anlage_TypeClass;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * Zugangspunkt der Reisenden zum Bahnsteig. Es wird jeweils die Mitte der Linie angegeben, auf der der Zugangsweg auf den Bahnsteig stößt. Für die Verwendung im Sicherungstechnischen Lageplan während der Bearbeitung wurde ein neues Symbol erschaffen. Dieses soll im endgültigen Lageplan nicht erscheinen. Der Zugang ist in der LST-Planung für die INA-Berechnung relevant. Hierbei wird der Punkt auf der Bahnsteigkante benötigt, an der der Zustrom der Reisenden erfolgt. Dieser Punkt wird im Datenmodell nicht abgespeichert, er kann aus Bahnsteig_Zugang hergeleitet werden. DB-Regelwerk Nennung des Zugangs im INA-Erhebungsbogen, Verortung erfolgt bisher nicht
+ * Zugangspunkt der Reisenden zum Bahnsteig, projiziert auf die Gleisachse. Es wird jeweils die Mitte der Linie zugrundegelegt, auf der der Zugangsweg auf den Bahnsteig stößt. Der Zugang ist in der LST-Planung für die INA-Berechnung relevant. Hierbei wird der Punkt auf der Bahnsteigkante benötigt, an der der Zustrom der Reisenden erfolgt. Dieser Punkt wird im Datenmodell nicht abgespeichert, er kann aus Bahnsteig_Zugang hergeleitet werden. DB-Regelwerk Nennung des Zugangs im INA-Erhebungsbogen, Verortung erfolgt bisher nicht.
  * <!-- end-model-doc -->
  *
  * <p>

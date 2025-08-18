@@ -226,6 +226,10 @@ public class Balisentechnik_ETCSAdapterFactory extends AdapterFactoryImpl {
 				return createBezeichnung_LEU_Anlage_TypeClassAdapter();
 			}
 			@Override
+			public Adapter caseBezeichnung_RBC_TypeClass(Bezeichnung_RBC_TypeClass object) {
+				return createBezeichnung_RBC_TypeClassAdapter();
+			}
+			@Override
 			public Adapter caseBezeichnung_ZUB_SE_TypeClass(Bezeichnung_ZUB_SE_TypeClass object) {
 				return createBezeichnung_ZUB_SE_TypeClassAdapter();
 			}
@@ -956,6 +960,10 @@ public class Balisentechnik_ETCSAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseRBC_Allg_AttributeGroup(RBC_Allg_AttributeGroup object) {
 				return createRBC_Allg_AttributeGroupAdapter();
+			}
+			@Override
+			public Adapter caseRBC_Bezeichnung_AttributeGroup(RBC_Bezeichnung_AttributeGroup object) {
+				return createRBC_Bezeichnung_AttributeGroupAdapter();
 			}
 			@Override
 			public Adapter caseRBC_ETCS_System_Version_TypeClass(RBC_ETCS_System_Version_TypeClass object) {
@@ -1850,6 +1858,20 @@ public class Balisentechnik_ETCSAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createBezeichnung_LEU_Anlage_TypeClassAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.Bezeichnung_RBC_TypeClass <em>Bezeichnung RBC Type Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.Bezeichnung_RBC_TypeClass
+	 * @generated
+	 */
+	public Adapter createBezeichnung_RBC_TypeClassAdapter() {
 		return null;
 	}
 
@@ -4412,6 +4434,20 @@ public class Balisentechnik_ETCSAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createRBC_Allg_AttributeGroupAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_Bezeichnung_AttributeGroup <em>RBC Bezeichnung Attribute Group</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_Bezeichnung_AttributeGroup
+	 * @generated
+	 */
+	public Adapter createRBC_Bezeichnung_AttributeGroupAdapter() {
 		return null;
 	}
 

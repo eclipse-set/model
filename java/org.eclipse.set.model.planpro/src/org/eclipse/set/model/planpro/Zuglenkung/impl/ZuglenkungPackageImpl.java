@@ -2149,7 +2149,7 @@ public class ZuglenkungPackageImpl extends EPackageImpl implements ZuglenkungPac
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 		addAnnotation
 		  (zlEClass,
@@ -2406,7 +2406,7 @@ public class ZuglenkungPackageImpl extends EPackageImpl implements ZuglenkungPac
 		   source,
 		   new String[] {
 			   "name", "TAnnaeherungsgeschwindigkeit",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit",
 			   "pattern", "[4-9][0-9]|1[0-5][0-9]|160"
 		   });
 		addAnnotation
@@ -2486,7 +2486,7 @@ public class ZuglenkungPackageImpl extends EPackageImpl implements ZuglenkungPac
 		   source,
 		   new String[] {
 			   "name", "TEinstellkontrollzeit",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde",
 			   "pattern", "[1-9][0-9]{0,1}|1[0-9]{2}|200"
 		   });
 		addAnnotation
@@ -2534,7 +2534,7 @@ public class ZuglenkungPackageImpl extends EPackageImpl implements ZuglenkungPac
 		   source,
 		   new String[] {
 			   "name", "TFstr_Bildezeit",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde",
 			   "pattern", "0|[1-9][0-9]{0,1}|[1-8][0-9]{2}|900"
 		   });
 		addAnnotation
@@ -2570,7 +2570,7 @@ public class ZuglenkungPackageImpl extends EPackageImpl implements ZuglenkungPac
 		   source,
 		   new String[] {
 			   "name", "TGK",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit",
 			   "pattern", "[4-9][0-9]|1[0-5][0-9]|160"
 		   });
 		addAnnotation
@@ -2606,7 +2606,7 @@ public class ZuglenkungPackageImpl extends EPackageImpl implements ZuglenkungPac
 		   source,
 		   new String[] {
 			   "name", "TLenkabbruchzeit",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde",
 			   "pattern", "0|[1-9][0-9]{0,2}|1[01][0-9]{2}|1200"
 		   });
 		addAnnotation
@@ -2642,7 +2642,7 @@ public class ZuglenkungPackageImpl extends EPackageImpl implements ZuglenkungPac
 		   source,
 		   new String[] {
 			   "name", "TPersonal_Reaktionszeit",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde",
 			   "pattern", "1[5-9]|[23][0-9]|4[0-5]"
 		   });
 		addAnnotation
@@ -2664,7 +2664,7 @@ public class ZuglenkungPackageImpl extends EPackageImpl implements ZuglenkungPac
 		   source,
 		   new String[] {
 			   "name", "TSichtzeit_Vorsignal",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde",
 			   "pattern", "0|1[0-9]|20"
 		   });
 		addAnnotation
@@ -2686,7 +2686,7 @@ public class ZuglenkungPackageImpl extends EPackageImpl implements ZuglenkungPac
 		   source,
 		   new String[] {
 			   "name", "TSignalgruppe_Bezeichner",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette"
 		   });
 		addAnnotation
 		  (signalgruppe_Bezeichner_TypeClassEClass,
@@ -2707,7 +2707,7 @@ public class ZuglenkungPackageImpl extends EPackageImpl implements ZuglenkungPac
 		   source,
 		   new String[] {
 			   "name", "TTv_GK",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde",
 			   "pattern", "0|[1-9][0-9]{0,1}|[1-2][0-9]{2}|300"
 		   });
 		addAnnotation
@@ -2729,7 +2729,7 @@ public class ZuglenkungPackageImpl extends EPackageImpl implements ZuglenkungPac
 		   source,
 		   new String[] {
 			   "name", "TVmax_Annaeherung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit"
 		   });
 		addAnnotation
 		  (vmax_Annaeherung_TypeClassEClass,
@@ -3037,7 +3037,7 @@ public class ZuglenkungPackageImpl extends EPackageImpl implements ZuglenkungPac
 		   source,
 		   new String[] {
 			   "name", "TZL_Fstr_Zuschlag",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"
 		   });
 		addAnnotation
 		  (zL_Fstr_Zuschlag_TypeClassEClass,
@@ -3158,133 +3158,133 @@ public class ZuglenkungPackageImpl extends EPackageImpl implements ZuglenkungPac
 		  (zlEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZL_Allg_AttributeGroup_AnzahlWiederholZLAnstoesse(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>1</ppi:ProposedValue>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                         \n    <ppi:Patternbeschreibung> [1..10] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>1</ppi:ProposedValue>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..10] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZL_Allg_AttributeGroup_Deadlockpruefung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>false</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>false</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZL_Allg_AttributeGroup_Einstellkontrollzeit(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>120</ppi:ProposedValue>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                         \n    <ppi:Patternbeschreibung> [1..200] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>120</ppi:ProposedValue>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..200] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZL_Allg_AttributeGroup_Lenkabbruchzeit(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>600</ppi:ProposedValue>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                         \n    <ppi:Patternbeschreibung> [0..1200] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>600</ppi:ProposedValue>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                         \r\n    <ppi:Patternbeschreibung> [0..1200] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZL_Allg_AttributeGroup_PersonalReaktionszeit(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>45</ppi:ProposedValue>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                         \n    <ppi:Patternbeschreibung> [15..45] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>45</ppi:ProposedValue>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                         \r\n    <ppi:Patternbeschreibung> [15..45] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (zL_DLP_AbschnittEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (zL_DLP_FstrEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (zL_FstrEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZL_Fstr_Allg_AttributeGroup_Annaeherungsgeschwindigkeit(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [40..160] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [40..160] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZL_Fstr_Allg_AttributeGroup_DWegPrio(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[0..4]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[0..4]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZL_Fstr_Allg_AttributeGroup_FstrBildezeit(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [0..900] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [0..900] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZL_Fstr_Allg_AttributeGroup_FUEMAuswertung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>false</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>false</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZL_Fstr_Allg_AttributeGroup_SichtzeitVorsignal(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>15</ppi:ProposedValue>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                         \n    <ppi:Patternbeschreibung>0,[10..20] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>15</ppi:ProposedValue>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                         \r\n    <ppi:Patternbeschreibung>0,[10..20] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (zL_Fstr_AnstossEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZL_Fstr_Anstoss_GK_AttributeGroup_GK(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [40..160] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [40..160] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZL_Fstr_Anstoss_GK_AttributeGroup_TvGK(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [0..300] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [0..300] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (zL_SignalgruppeEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZL_Signalgruppe_Allg_AttributeGroup_SignalgruppeBezeichner(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (zL_Signalgruppe_ZuordnungEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZL</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZL_ZN_AttributeGroup_Lenkziffernstellen(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>0</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>0</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZL_ZN_AttributeGroup_ZNStellen(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>5</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>5</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 	}
 

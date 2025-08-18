@@ -3369,7 +3369,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		initEClass(estW_ZentraleinheitEClass, ESTW_Zentraleinheit.class, "ESTW_Zentraleinheit", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getESTW_Zentraleinheit_Bezeichnung(), this.getESTW_Zentraleinheit_Bezeichnung_AttributeGroup(), null, "bezeichnung", null, 1, 1, ESTW_Zentraleinheit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getESTW_Zentraleinheit_ESTWZEEnergieversorgung(), this.getESTW_ZE_Energieversorgung_AttributeGroup(), null, "eSTWZEEnergieversorgung", null, 1, 1, ESTW_Zentraleinheit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getESTW_Zentraleinheit_ESTWZentraleinheitAllg(), this.getESTW_Zentraleinheit_Allg_AttributeGroup(), null, "eSTWZentraleinheitAllg", null, 1, 1, ESTW_Zentraleinheit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getESTW_Zentraleinheit_ESTWZentraleinheitAllg(), this.getESTW_Zentraleinheit_Allg_AttributeGroup(), null, "eSTWZentraleinheitAllg", null, 0, 1, ESTW_Zentraleinheit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getESTW_Zentraleinheit_IDOertlichkeitNamensgebend(), theVerweisePackage.getID_Oertlichkeit_Proxy_TypeClass(), null, "iDOertlichkeitNamensgebend", null, 0, 1, ESTW_Zentraleinheit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getESTW_Zentraleinheit_IDUnterbringung(), theVerweisePackage.getID_Unterbringung_Technik_TypeClass(), null, "iDUnterbringung", null, 1, 1, ESTW_Zentraleinheit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getESTW_Zentraleinheit_IDBedienBezirkVirtuell(), theVerweisePackage.getID_Bedien_Bezirk_TypeClass(), null, "iDBedienBezirkVirtuell", null, 0, 1, ESTW_Zentraleinheit.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -3508,11 +3508,13 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		// Initialize enums and add enum literals
 		initEEnum(enumAussenelementansteuerungArtEEnum, ENUMAussenelementansteuerungArt.class, "ENUMAussenelementansteuerungArt");
 		addEEnumLiteral(enumAussenelementansteuerungArtEEnum, ENUMAussenelementansteuerungArt.ENUM_AUSSENELEMENTANSTEUERUNG_ART_BUE_ANSCHALTUNG);
+		addEEnumLiteral(enumAussenelementansteuerungArtEEnum, ENUMAussenelementansteuerungArt.ENUM_AUSSENELEMENTANSTEUERUNG_ART_EEA_MODUL);
 		addEEnumLiteral(enumAussenelementansteuerungArtEEnum, ENUMAussenelementansteuerungArt.ENUM_AUSSENELEMENTANSTEUERUNG_ART_ESTW_A);
 		addEEnumLiteral(enumAussenelementansteuerungArtEEnum, ENUMAussenelementansteuerungArt.ENUM_AUSSENELEMENTANSTEUERUNG_ART_FE_AK);
 		addEEnumLiteral(enumAussenelementansteuerungArtEEnum, ENUMAussenelementansteuerungArt.ENUM_AUSSENELEMENTANSTEUERUNG_ART_FE_AS);
 		addEEnumLiteral(enumAussenelementansteuerungArtEEnum, ENUMAussenelementansteuerungArt.ENUM_AUSSENELEMENTANSTEUERUNG_ART_GFK);
 		addEEnumLiteral(enumAussenelementansteuerungArtEEnum, ENUMAussenelementansteuerungArt.ENUM_AUSSENELEMENTANSTEUERUNG_ART_GLEISFREIMELDE_INNENANLAGE);
+		addEEnumLiteral(enumAussenelementansteuerungArtEEnum, ENUMAussenelementansteuerungArt.ENUM_AUSSENELEMENTANSTEUERUNG_ART_GVD);
 		addEEnumLiteral(enumAussenelementansteuerungArtEEnum, ENUMAussenelementansteuerungArt.ENUM_AUSSENELEMENTANSTEUERUNG_ART_OBJEKTCONTROLLER);
 		addEEnumLiteral(enumAussenelementansteuerungArtEEnum, ENUMAussenelementansteuerungArt.ENUM_AUSSENELEMENTANSTEUERUNG_ART_SONSTIGE);
 		addEEnumLiteral(enumAussenelementansteuerungArtEEnum, ENUMAussenelementansteuerungArt.ENUM_AUSSENELEMENTANSTEUERUNG_ART_VIRTUELLE_AUSSENELEMENTANSTEUERUNG);
@@ -3664,13 +3666,13 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 		addAnnotation
 		  (getAEA_Allg_AttributeGroup_AussenelementansteuerungArt(),
 		   source,
 		   new String[] {
-			   "documentation", "Art der Aussenelementansteuerung (herstellerneutral). ESTW_A: F\u00fcr konventionelle ESTW-Strukturen ist die AEA in der Regel das ESTW-A (mit Ausnahme des Schaltkastens am Signal in bestimmten F\u00e4llen als Objektcontroller, siehe Aussenelementansteuerung). Objektcontroller: In neuerer ESTW-Technik wird zunehmend der Objektcontroller (auch kaskadiert) verwendet. Gleisfreimelde_Innenanlage: Einheit, die die logische Aufbereitung der Informationen der Freimeldeanlage \u00fcbernimmt (z. B. Achsz\u00e4hlrechner) und nicht direkt einem ESTW-A zugeordnet ist. Relaisstellwerk: Die AEA besteht aus einem (\u00fcber die ESTW-ZE ferngesteuerten) Relaisstellwerk. virtuelle_Aussenelementansteuerung: Die virtuelle Aussenelementansteuerung wird verwendet, wenn die Struktur der Aussenelementansteuerungen (zwischen ESTW Zentraleinheit und Stellelement w\u00e4hrend der PT 1-Planung noch nicht klar ist. Eine virtuelle Aussenelementansteuerung soll den Bereich einer ma\u00dfgebenden \u00d6rtlichkeit (z. B. ein Bf) umfassen. Im nicht firmenneutralen Teil der Planung (u. a. Kabelplanung) muss dann die virtuelle AEA durch die tats\u00e4chliche Struktur der AEA ersetzt werden. sonstige: Alle mit den \u00fcbrigen ENUM nicht beschreibbare Arten. Ein Bearbeitungsvermerk muss angegeben werden. Siehe auch Bauart. DB-Regelwerk Beschreibung im Erl\u00e4uterungsbericht"
+			   "documentation", "Art der Aussenelementansteuerung (herstellerneutral). ESTW_A: F\u00fcr konventionelle ESTW-Strukturen ist die AEA in der Regel das ESTW-A (mit Ausnahme des Schaltkastens am Signal in bestimmten F\u00e4llen als Objektcontroller, siehe Aussenelementansteuerung). Objektcontroller: In neuerer ESTW-Technik wird zunehmend der Objektcontroller (auch kaskadiert) verwendet. Gleisfreimelde_Innenanlage: Einheit, die die logische Aufbereitung der Informationen der Freimeldeanlage \u00fcbernimmt (z. B. Achsz\u00e4hlrechner) und nicht direkt einem ESTW-A zugeordnet ist. virtuelle_Aussenelementansteuerung: Die virtuelle Aussenelementansteuerung wird verwendet, wenn die Struktur der Aussenelementansteuerungen (zwischen ESTW Zentraleinheit und Stellelement w\u00e4hrend der PT 1-Planung noch nicht klar ist oder die vorhandenen Aussenelementansteuerungen keine sinnvolle Stellbereichsdefinition erlauben (z. B. Zusammenfassung mehrerer GFK). Eine virtuelle Aussenelementansteuerung soll den Bereich einer ma\u00dfgebenden \u00d6rtlichkeit (z. B. ein Bf) umfassen. Im nicht firmenneutralen Teil der Planung (u. a. Kabelplanung) muss dann die virtuelle AEA durch die tats\u00e4chliche Struktur der AEA ersetzt werden. sonstige: Alle mit den \u00fcbrigen ENUM nicht beschreibbare Arten. Ein Bearbeitungsvermerk muss angegeben werden. Siehe auch Bauart. DB-Regelwerk Beschreibung im Erl\u00e4uterungsbericht"
 		   });
 		addAnnotation
 		  (getAEA_Allg_AttributeGroup_Bauart(),
@@ -4348,7 +4350,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TBauart",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bauart_TypeClassEClass,
@@ -4369,7 +4371,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TBezeichnung_AEA",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{1,30}"
 		   });
 		addAnnotation
@@ -4391,7 +4393,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TBezeichnung_ESTW_ZE",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bezeichnung_ESTW_ZE_TypeClassEClass,
@@ -4412,7 +4414,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TBezeichnung_Stellwerk",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bezeichnung_Stellwerk_TypeClassEClass,
@@ -4433,7 +4435,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TBezeichnung_TSO",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bezeichnung_TSO_TypeClassEClass,
@@ -4799,7 +4801,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TIP_Adressblock_Blau",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (iP_Adressblock_Blau_TypeClassEClass,
@@ -4820,7 +4822,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TIP_Adressblock_Blau_V4",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (iP_Adressblock_Blau_V4_TypeClassEClass,
@@ -4841,7 +4843,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TIP_Adressblock_Blau_V6",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (iP_Adressblock_Blau_V6_TypeClassEClass,
@@ -4862,7 +4864,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TIP_Adressblock_Grau",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (iP_Adressblock_Grau_TypeClassEClass,
@@ -4883,7 +4885,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TIP_Adressblock_Grau_V4",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (iP_Adressblock_Grau_V4_TypeClassEClass,
@@ -4904,7 +4906,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TIP_Adressblock_Grau_V6",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (iP_Adressblock_Grau_V6_TypeClassEClass,
@@ -4967,7 +4969,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TStandort_Beschreibung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (standort_Beschreibung_TypeClassEClass,
@@ -5051,7 +5053,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TTechnik_Beschreibung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (technik_Beschreibung_TypeClassEClass,
@@ -5443,7 +5445,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TUnterbringung_Polygonzug",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText"
 		   });
 		addAnnotation
 		  (unterbringung_Polygonzug_TypeClassEClass,
@@ -5464,7 +5466,7 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		   source,
 		   new String[] {
 			   "name", "TZusatzinformation_Stellwerk",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (zusatzinformation_Stellwerk_TypeClassEClass,
@@ -5494,49 +5496,49 @@ public class Ansteuerung_ElementPackageImpl extends EPackageImpl implements Anst
 		  (aussenelementansteuerungEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getAussenelementansteuerung_Bezeichnung_AttributeGroup_BezeichnungAEA(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..30]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..30]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (estW_ZentraleinheitEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (stell_BereichEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (stellelementEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW|B\u00dc</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW|B\u00dc</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (technik_StandortEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (uebertragungswegEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW|B\u00dc|ZN</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW|B\u00dc|ZN</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (unterbringungEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ATO|Bedienung Fdl ESTW|Bedienung Fdl BZ|B\u00dc| ESTW|ETCS|ZN</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ATO|Bedienung Fdl ESTW|Bedienung Fdl BZ|B\u00dc| ESTW|ETCS|ZN</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 	}
 

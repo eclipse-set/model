@@ -136,6 +136,8 @@ public class ZugnummernmeldeanlageValidator extends EObjectValidator {
 				return validateBesonderes_Schaltkriterium_TypeClass((Besonderes_Schaltkriterium_TypeClass)value, diagnostics, context);
 			case ZugnummernmeldeanlagePackage.BEZEICHNUNG_BESONDERE_ANLAGE_TYPE_CLASS:
 				return validateBezeichnung_Besondere_Anlage_TypeClass((Bezeichnung_Besondere_Anlage_TypeClass)value, diagnostics, context);
+			case ZugnummernmeldeanlagePackage.BEZEICHNUNG_STELLWERK_TYPE_CLASS:
+				return validateBezeichnung_Stellwerk_TypeClass((Bezeichnung_Stellwerk_TypeClass)value, diagnostics, context);
 			case ZugnummernmeldeanlagePackage.BF_KENNUNG_TYPE_CLASS:
 				return validateBf_Kennung_TypeClass((Bf_Kennung_TypeClass)value, diagnostics, context);
 			case ZugnummernmeldeanlagePackage.BF_NR_ANB_TYPE_CLASS:
@@ -304,6 +306,8 @@ public class ZugnummernmeldeanlageValidator extends EObjectValidator {
 				return validateBesonderes_Schaltkriterium_Type((String)value, diagnostics, context);
 			case ZugnummernmeldeanlagePackage.BEZEICHNUNG_BESONDERE_ANLAGE_TYPE:
 				return validateBezeichnung_Besondere_Anlage_Type((String)value, diagnostics, context);
+			case ZugnummernmeldeanlagePackage.BEZEICHNUNG_STELLWERK_TYPE:
+				return validateBezeichnung_Stellwerk_Type((String)value, diagnostics, context);
 			case ZugnummernmeldeanlagePackage.BF_NR_TYPE:
 				return validateBf_Nr_Type((BigInteger)value, diagnostics, context);
 			case ZugnummernmeldeanlagePackage.ENUM_AKUSTIK_ANB_ANN_OBJECT:
@@ -426,6 +430,15 @@ public class ZugnummernmeldeanlageValidator extends EObjectValidator {
 	 */
 	public boolean validateBezeichnung_Besondere_Anlage_TypeClass(Bezeichnung_Besondere_Anlage_TypeClass bezeichnung_Besondere_Anlage_TypeClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(bezeichnung_Besondere_Anlage_TypeClass, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateBezeichnung_Stellwerk_TypeClass(Bezeichnung_Stellwerk_TypeClass bezeichnung_Stellwerk_TypeClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(bezeichnung_Stellwerk_TypeClass, diagnostics, context);
 	}
 
 	/**
@@ -1183,6 +1196,16 @@ public class ZugnummernmeldeanlageValidator extends EObjectValidator {
 	 */
 	public boolean validateBezeichnung_Besondere_Anlage_Type(String bezeichnung_Besondere_Anlage_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		boolean result = basisTypenValidator.validateText_Type_Pattern(bezeichnung_Besondere_Anlage_Type, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateBezeichnung_Stellwerk_Type(String bezeichnung_Stellwerk_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		boolean result = basisTypenValidator.validateText_Type_Pattern(bezeichnung_Stellwerk_Type, diagnostics, context);
 		return result;
 	}
 

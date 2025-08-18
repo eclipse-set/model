@@ -1149,7 +1149,7 @@ public class SignaleValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] PZB_SCHUTZSTRECKE_SOLL_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("2[1-9][0-9]|[34][0-9]{2}|5[0-4][0-9]|550")
+				XMLTypeUtil.createPatternMatcher("2[0-9][0-9]|[34][0-9]{2}|5[0-4][0-9]|550")
 			}
 		};
 

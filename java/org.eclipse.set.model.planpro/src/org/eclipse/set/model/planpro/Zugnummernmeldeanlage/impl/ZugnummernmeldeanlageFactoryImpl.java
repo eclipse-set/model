@@ -82,6 +82,7 @@ public class ZugnummernmeldeanlageFactoryImpl extends EFactoryImpl implements Zu
 			case ZugnummernmeldeanlagePackage.BEDIENBARKEIT_ANZEIGEFELD_TYPE_CLASS: return createBedienbarkeit_Anzeigefeld_TypeClass();
 			case ZugnummernmeldeanlagePackage.BESONDERES_SCHALTKRITERIUM_TYPE_CLASS: return createBesonderes_Schaltkriterium_TypeClass();
 			case ZugnummernmeldeanlagePackage.BEZEICHNUNG_BESONDERE_ANLAGE_TYPE_CLASS: return createBezeichnung_Besondere_Anlage_TypeClass();
+			case ZugnummernmeldeanlagePackage.BEZEICHNUNG_STELLWERK_TYPE_CLASS: return createBezeichnung_Stellwerk_TypeClass();
 			case ZugnummernmeldeanlagePackage.BF_KENNUNG_TYPE_CLASS: return createBf_Kennung_TypeClass();
 			case ZugnummernmeldeanlagePackage.BF_NR_ANB_TYPE_CLASS: return createBf_Nr_ANB_TypeClass();
 			case ZugnummernmeldeanlagePackage.BF_NR_TYPE_CLASS: return createBf_Nr_TypeClass();
@@ -191,6 +192,8 @@ public class ZugnummernmeldeanlageFactoryImpl extends EFactoryImpl implements Zu
 				return createBesonderes_Schaltkriterium_TypeFromString(eDataType, initialValue);
 			case ZugnummernmeldeanlagePackage.BEZEICHNUNG_BESONDERE_ANLAGE_TYPE:
 				return createBezeichnung_Besondere_Anlage_TypeFromString(eDataType, initialValue);
+			case ZugnummernmeldeanlagePackage.BEZEICHNUNG_STELLWERK_TYPE:
+				return createBezeichnung_Stellwerk_TypeFromString(eDataType, initialValue);
 			case ZugnummernmeldeanlagePackage.BF_NR_TYPE:
 				return createBf_Nr_TypeFromString(eDataType, initialValue);
 			case ZugnummernmeldeanlagePackage.ENUM_AKUSTIK_ANB_ANN_OBJECT:
@@ -266,6 +269,8 @@ public class ZugnummernmeldeanlageFactoryImpl extends EFactoryImpl implements Zu
 				return convertBesonderes_Schaltkriterium_TypeToString(eDataType, instanceValue);
 			case ZugnummernmeldeanlagePackage.BEZEICHNUNG_BESONDERE_ANLAGE_TYPE:
 				return convertBezeichnung_Besondere_Anlage_TypeToString(eDataType, instanceValue);
+			case ZugnummernmeldeanlagePackage.BEZEICHNUNG_STELLWERK_TYPE:
+				return convertBezeichnung_Stellwerk_TypeToString(eDataType, instanceValue);
 			case ZugnummernmeldeanlagePackage.BF_NR_TYPE:
 				return convertBf_Nr_TypeToString(eDataType, instanceValue);
 			case ZugnummernmeldeanlagePackage.ENUM_AKUSTIK_ANB_ANN_OBJECT:
@@ -406,6 +411,17 @@ public class ZugnummernmeldeanlageFactoryImpl extends EFactoryImpl implements Zu
 	public Bezeichnung_Besondere_Anlage_TypeClass createBezeichnung_Besondere_Anlage_TypeClass() {
 		Bezeichnung_Besondere_Anlage_TypeClassImpl bezeichnung_Besondere_Anlage_TypeClass = new Bezeichnung_Besondere_Anlage_TypeClassImpl();
 		return bezeichnung_Besondere_Anlage_TypeClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Bezeichnung_Stellwerk_TypeClass createBezeichnung_Stellwerk_TypeClass() {
+		Bezeichnung_Stellwerk_TypeClassImpl bezeichnung_Stellwerk_TypeClass = new Bezeichnung_Stellwerk_TypeClassImpl();
+		return bezeichnung_Stellwerk_TypeClass;
 	}
 
 	/**
@@ -1431,6 +1447,24 @@ public class ZugnummernmeldeanlageFactoryImpl extends EFactoryImpl implements Zu
 	 * @generated
 	 */
 	public String convertBezeichnung_Besondere_Anlage_TypeToString(EDataType eDataType, Object instanceValue) {
+		return BasisTypenFactory.eINSTANCE.convertToString(BasisTypenPackage.Literals.TEXT_TYPE, instanceValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String createBezeichnung_Stellwerk_TypeFromString(EDataType eDataType, String initialValue) {
+		return (String)BasisTypenFactory.eINSTANCE.createFromString(BasisTypenPackage.Literals.TEXT_TYPE, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertBezeichnung_Stellwerk_TypeToString(EDataType eDataType, Object instanceValue) {
 		return BasisTypenFactory.eINSTANCE.convertToString(BasisTypenPackage.Literals.TEXT_TYPE, instanceValue);
 	}
 

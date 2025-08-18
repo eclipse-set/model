@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Signalbegriffe_Ril_301" nsURI="http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.1"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Signalbegriffe_Ril_301" nsURI="http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.3"
     nsPrefix="nsSignalbegriffe_Ril_301">
   <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-    <details key="documentation" value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+    <details key="documentation" value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EDataType" name="BS_Zusatz_Symbol_Type" instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -186,6 +186,18 @@
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="El34Zusatz" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="El_3_4_Zusatz"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="El34ZusatzKombi" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="El_3_4_Zusatz_Kombi"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="El4" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="El_4"/>
@@ -238,6 +250,40 @@
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="El_T_DC"/>
       <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ENUMSymbolEl34Zusatz">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSymbol_El_3_4_Zusatz"/>
+    </eAnnotations>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_A" literal="A"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_B" value="1" literal="B"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_C" value="2" literal="C"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_D" value="3" literal="D"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_E" value="4" literal="E"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_F" value="5" literal="F"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_H" value="6" literal="H"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_I" value="7" literal="I"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_J" value="8" literal="J"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_K" value="9" literal="K"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_L" value="10" literal="L"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_M" value="11" literal="M"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_N" value="12" literal="N"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_O" value="13" literal="O"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_P" value="14" literal="P"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_R" value="15" literal="R"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_S" value="16" literal="S"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_T" value="17" literal="T"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_U" value="18" literal="U"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_V" value="19" literal="V"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_W" value="20" literal="W"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_X" value="21" literal="X"/>
+    <eLiterals name="ENUMSymbol_El_3_4_Zusatz_Z" value="22" literal="Z"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ENUMSymbolEl34ZusatzObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="ENUMSymbol_El_3_4_Zusatz:Object"/>
+      <details key="baseType" value="ENUMSymbol_El_3_4_Zusatz"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="ENUMSymbolLf1">
@@ -656,15 +702,33 @@
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hp0F" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="Hp_0_F"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Hp1" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Hp_1"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hp1F" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="Hp_1_F"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Hp2" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Hp_2"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Hp2F" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="Hp_2_F"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
   </eClassifiers>
@@ -1005,6 +1069,12 @@
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OzPZB2000Hz" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="Oz_PZB_2000_Hz"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OzPZBBUE" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Oz_PZB_BUE"/>
@@ -1222,15 +1292,39 @@
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Vr0F" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="Vr_0_F"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Vr1" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Vr_1"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Vr12F" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="Vr_1_2_F"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Vr1F" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="Vr_1_F"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Vr2" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Vr_2"/>
+      <details key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Vr2F" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
+    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details key="name" value="Vr_2_F"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
   </eClassifiers>

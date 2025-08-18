@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +128,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Ansteuerung_Element/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Ansteuerung_Element/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -4819,7 +4819,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bauart Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBauart' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBauart' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBauart_Type();
@@ -4831,7 +4831,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung AEA Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_AEA' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,30}'"
+	 *        extendedMetaData="name='TBezeichnung_AEA' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,30}'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_AEA_Type();
@@ -4843,7 +4843,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung ESTW ZE Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_ESTW_ZE' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBezeichnung_ESTW_ZE' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_ESTW_ZE_Type();
@@ -4855,7 +4855,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Stellwerk Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Stellwerk' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBezeichnung_Stellwerk' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Stellwerk_Type();
@@ -4867,7 +4867,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung TSO Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_TSO' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBezeichnung_TSO' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_TSO_Type();
@@ -5023,7 +5023,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>IP Adressblock Blau Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIP_Adressblock_Blau' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TIP_Adressblock_Blau' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getIP_Adressblock_Blau_Type();
@@ -5035,7 +5035,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>IP Adressblock Blau V4 Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIP_Adressblock_Blau_V4' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TIP_Adressblock_Blau_V4' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getIP_Adressblock_Blau_V4_Type();
@@ -5047,7 +5047,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>IP Adressblock Blau V6 Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIP_Adressblock_Blau_V6' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TIP_Adressblock_Blau_V6' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getIP_Adressblock_Blau_V6_Type();
@@ -5059,7 +5059,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>IP Adressblock Grau Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIP_Adressblock_Grau' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TIP_Adressblock_Grau' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getIP_Adressblock_Grau_Type();
@@ -5071,7 +5071,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>IP Adressblock Grau V4 Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIP_Adressblock_Grau_V4' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TIP_Adressblock_Grau_V4' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getIP_Adressblock_Grau_V4_Type();
@@ -5083,7 +5083,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>IP Adressblock Grau V6 Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIP_Adressblock_Grau_V6' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TIP_Adressblock_Grau_V6' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getIP_Adressblock_Grau_V6_Type();
@@ -5095,7 +5095,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>Standort Beschreibung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TStandort_Beschreibung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TStandort_Beschreibung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getStandort_Beschreibung_Type();
@@ -5107,7 +5107,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>Technik Beschreibung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TTechnik_Beschreibung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TTechnik_Beschreibung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getTechnik_Beschreibung_Type();
@@ -5119,7 +5119,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>Unterbringung Polygonzug Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TUnterbringung_Polygonzug' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText'"
+	 *        extendedMetaData="name='TUnterbringung_Polygonzug' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText'"
 	 * @generated
 	 */
 	EDataType getUnterbringung_Polygonzug_Type();
@@ -5131,7 +5131,7 @@ public interface Ansteuerung_ElementPackage extends EPackage {
 	 * @return the meta object for data type '<em>Zusatzinformation Stellwerk Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TZusatzinformation_Stellwerk' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TZusatzinformation_Stellwerk' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getZusatzinformation_Stellwerk_Type();

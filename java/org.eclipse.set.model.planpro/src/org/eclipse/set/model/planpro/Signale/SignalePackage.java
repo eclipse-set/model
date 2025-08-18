@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -147,7 +147,7 @@ public interface SignalePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Signale/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Signale/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -1949,7 +1949,7 @@ public interface SignalePackage extends EPackage {
 	int SIGNAL_REAL_ATTRIBUTE_GROUP__FUNKTION_OHNE_SIGNAL = 1;
 
 	/**
-	 * The feature id for the '<em><b>Geltungsbereich</b></em>' containment reference.
+	 * The feature id for the '<em><b>Geltungsbereich</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -4122,10 +4122,10 @@ public interface SignalePackage extends EPackage {
 	EReference getSignal_Real_AttributeGroup_FunktionOhneSignal();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Signale.Signal_Real_AttributeGroup#getGeltungsbereich <em>Geltungsbereich</em>}'.
+	 * Returns the meta object for the containment reference list '{@link org.eclipse.set.model.planpro.Signale.Signal_Real_AttributeGroup#getGeltungsbereich <em>Geltungsbereich</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Geltungsbereich</em>'.
+	 * @return the meta object for the containment reference list '<em>Geltungsbereich</em>'.
 	 * @see org.eclipse.set.model.planpro.Signale.Signal_Real_AttributeGroup#getGeltungsbereich()
 	 * @see #getSignal_Real_AttributeGroup()
 	 * @generated
@@ -4898,7 +4898,7 @@ public interface SignalePackage extends EPackage {
 	 * @return the meta object for data type '<em>Hoehe Fundamentoberkante Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='THoehe_Fundamentoberkante' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='(-?((1\\.(250|2[0-4][0-9]|[01][0-9]{2}))|(0\\.([1-9][0-9]{2}|0[0-9][1-9]|0[1-9]0))))|0\\.000'"
+	 *        extendedMetaData="name='THoehe_Fundamentoberkante' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='(-?((1\\.(250|2[0-4][0-9]|[01][0-9]{2}))|(0\\.([1-9][0-9]{2}|0[0-9][1-9]|0[1-9]0))))|0\\.000'"
 	 * @generated
 	 */
 	EDataType getHoehe_Fundamentoberkante_Type();
@@ -4910,7 +4910,7 @@ public interface SignalePackage extends EPackage {
 	 * @return the meta object for data type '<em>Obere Lichtpunkthoehe Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TObere_Lichtpunkthoehe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='0\\.(22[5-9]|2[3-9][0-9]|[3-9][0-9]{2})|([1-9]|1[0-4])\\.[0-9]{3}|15.000'"
+	 *        extendedMetaData="name='TObere_Lichtpunkthoehe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='0\\.(22[5-9]|2[3-9][0-9]|[3-9][0-9]{2})|([1-9]|1[0-4])\\.[0-9]{3}|15.000'"
 	 * @generated
 	 */
 	EDataType getObere_Lichtpunkthoehe_Type();
@@ -4922,7 +4922,7 @@ public interface SignalePackage extends EPackage {
 	 * @return the meta object for data type '<em>PZB Schutzstrecke Soll Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TPZB_Schutzstrecke_Soll' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='2[1-9][0-9]|[34][0-9]{2}|5[0-4][0-9]|550'"
+	 *        extendedMetaData="name='TPZB_Schutzstrecke_Soll' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='2[0-9][0-9]|[34][0-9]{2}|5[0-4][0-9]|550'"
 	 * @generated
 	 */
 	EDataType getPZB_Schutzstrecke_Soll_Type();
@@ -4934,7 +4934,7 @@ public interface SignalePackage extends EPackage {
 	 * @return the meta object for data type '<em>Rahmen Hoehe Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TRahmen_Hoehe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TRahmen_Hoehe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getRahmen_Hoehe_Type();
@@ -4946,7 +4946,7 @@ public interface SignalePackage extends EPackage {
 	 * @return the meta object for data type '<em>Richtpunkt Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TRichtpunkt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,16}'"
+	 *        extendedMetaData="name='TRichtpunkt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,16}'"
 	 * @generated
 	 */
 	EDataType getRichtpunkt_Type();
@@ -4958,7 +4958,7 @@ public interface SignalePackage extends EPackage {
 	 * @return the meta object for data type '<em>Richtpunktentfernung Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TRichtpunktentfernung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='[1-9][0-9]{0,1}|[1-4][0-9]{2}|500'"
+	 *        extendedMetaData="name='TRichtpunktentfernung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='[1-9][0-9]{0,1}|[1-4][0-9]{2}|500'"
 	 * @generated
 	 */
 	EDataType getRichtpunktentfernung_Type();
@@ -4970,7 +4970,7 @@ public interface SignalePackage extends EPackage {
 	 * @return the meta object for data type '<em>Signalsicht Erreichbar Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSignalsicht_Erreichbar' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='[1-9][0-9]{0,1}|[1-4][0-9]{2}|500'"
+	 *        extendedMetaData="name='TSignalsicht_Erreichbar' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='[1-9][0-9]{0,1}|[1-4][0-9]{2}|500'"
 	 * @generated
 	 */
 	EDataType getSignalsicht_Erreichbar_Type();
@@ -4982,7 +4982,7 @@ public interface SignalePackage extends EPackage {
 	 * @return the meta object for data type '<em>Signalsicht Mindest Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSignalsicht_Mindest' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='[1-9][0-9]{0,1}|[1-2][0-9]{2}|300'"
+	 *        extendedMetaData="name='TSignalsicht_Mindest' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='[1-9][0-9]{0,1}|[1-2][0-9]{2}|300'"
 	 * @generated
 	 */
 	EDataType getSignalsicht_Mindest_Type();
@@ -4994,7 +4994,7 @@ public interface SignalePackage extends EPackage {
 	 * @return the meta object for data type '<em>Signalsicht Soll Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSignalsicht_Soll' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='[1-9][0-9]{0,1}|[1-4][0-9]{2}|500'"
+	 *        extendedMetaData="name='TSignalsicht_Soll' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='[1-9][0-9]{0,1}|[1-4][0-9]{2}|500'"
 	 * @generated
 	 */
 	EDataType getSignalsicht_Soll_Type();
@@ -5968,7 +5968,7 @@ public interface SignalePackage extends EPackage {
 		EReference SIGNAL_REAL_ATTRIBUTE_GROUP__FUNKTION_OHNE_SIGNAL = eINSTANCE.getSignal_Real_AttributeGroup_FunktionOhneSignal();
 
 		/**
-		 * The meta object literal for the '<em><b>Geltungsbereich</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Geltungsbereich</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

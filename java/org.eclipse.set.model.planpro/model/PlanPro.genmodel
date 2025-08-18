@@ -4,10 +4,10 @@
                    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
                    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
                    copyrightText="Copyright (c) 2024 DB InfraGO AG and others&#xA;&#xA;This program and the accompanying materials are made available under the&#xA;terms of the Eclipse Public License 2.0 which is available at&#xA;https://www.eclipse.org/legal/epl-2.0.&#xA; &#xA;SPDX-License-Identifier: EPL-2.0"
-                   modelDirectory="org.eclipse.set.model.planpro/./src/."
+                   modelDirectory="org.eclipse.set.model.planpro/src/"
                    creationIcons="false"
-                   editDirectory="org.eclipse.set.model.planpro.edit/./src/."
-                   editorDirectory="org.eclipse.set.model.planpro.editor/./src/."
+                   editDirectory="org.eclipse.set.model.planpro.edit/src/"
+                   editorDirectory="org.eclipse.set.model.planpro.editor/src/"
                    modelPluginID="org.eclipse.set.model.planpro"
                    modelName="PlanPro"
                    testsDirectory=""
@@ -1469,6 +1469,7 @@
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMAnhangArt/ENUMAnhang_Art_Moebelaufstellplan_Aufriss"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMAnhangArt/ENUMAnhang_Art_Moebelaufstellplan_Grundriss"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMAnhangArt/ENUMAnhang_Art_Monitoraufteilung"/>
+      <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMAnhangArt/ENUMAnhang_Art_Planungsbuero_Logo"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMAnhangArt/ENUMAnhang_Art_Planverzeichnis"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMAnhangArt/ENUMAnhang_Art_Pruefbericht"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMAnhangArt/ENUMAnhang_Art_Raumplan_Bedienraeume"/>
@@ -1557,6 +1558,7 @@
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Basisobjekte.ecore#//ENUMDateityp">
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMDateityp/ENUMDateityp_jpg"/>
+      <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMDateityp/ENUMDateityp_mp4"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMDateityp/ENUMDateityp_mpeg"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMDateityp/ENUMDateityp_pdf"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMDateityp/ENUMDateityp_png"/>
@@ -1735,6 +1737,7 @@
               ecoreEnum="Basisobjekte.ecore#//ENUMObjektzustandBesonders">
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMObjektzustandBesonders/ENUMObjektzustand_Besonders_am_Standort_angesteuert_nicht_gueltig"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMObjektzustandBesonders/ENUMObjektzustand_Besonders_am_Standort_angesteuert_ungueltig_abgedeckt"/>
+      <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMObjektzustandBesonders/ENUMObjektzustand_Besonders_am_Standort_nicht_angesteuert_abgedeckt"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMObjektzustandBesonders/ENUMObjektzustand_Besonders_am_Standort_nicht_angesteuert_ungueltig"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMObjektzustandBesonders/ENUMObjektzustand_Besonders_am_Standort_nicht_angesteuert_vorbereitend"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMObjektzustandBesonders/ENUMObjektzustand_Besonders_sonstige"/>
@@ -1746,6 +1749,7 @@
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMRolle/ENUMRolle_GEO_Planer"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMRolle/ENUMRolle_GIS_Daten"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMRolle/ENUMRolle_LST_Fachplaner"/>
+      <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMRolle/ENUMRolle_ODB2PlanPro"/>
       <genEnumLiterals ecoreEnumLiteral="Basisobjekte.ecore#//ENUMRolle/ENUMRolle_sonstige"/>
     </genEnums>
     <genDataTypes ecoreDataType="Basisobjekte.ecore#//Abstand_Type"/>
@@ -2708,6 +2712,14 @@
                    ecoreFeature="ecore:EReference Verweise.ecore#//ID_Bezugspunkt_Positionierung_TypeClass/value"/>
       <genFeatures createChild="false"
                    ecoreFeature="ecore:EAttribute Verweise.ecore#//ID_Bezugspunkt_Positionierung_TypeClass/invalidReference"/>
+    </genClasses>
+    <genClasses ecoreClass="Verweise.ecore#//ID_Bezugspunkt_TypeClass">
+      <genFeatures notify="false"
+                   createChild="false"
+                   propertySortChoices="true"
+                   ecoreFeature="ecore:EReference Verweise.ecore#//ID_Bezugspunkt_TypeClass/value"/>
+      <genFeatures createChild="false"
+                   ecoreFeature="ecore:EAttribute Verweise.ecore#//ID_Bezugspunkt_TypeClass/invalidReference"/>
     </genClasses>
     <genClasses ecoreClass="Verweise.ecore#//ID_Binaerdaten_ohne_Proxy_TypeClass">
       <genFeatures notify="false"
@@ -3822,11 +3834,13 @@
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Ansteuerung_Element.ecore#//ENUMAussenelementansteuerungArt">
       <genEnumLiterals ecoreEnumLiteral="Ansteuerung_Element.ecore#//ENUMAussenelementansteuerungArt/ENUMAussenelementansteuerung_Art_BUE_Anschaltung"/>
+      <genEnumLiterals ecoreEnumLiteral="Ansteuerung_Element.ecore#//ENUMAussenelementansteuerungArt/ENUMAussenelementansteuerung_Art_EEA_Modul"/>
       <genEnumLiterals ecoreEnumLiteral="Ansteuerung_Element.ecore#//ENUMAussenelementansteuerungArt/ENUMAussenelementansteuerung_Art_ESTW_A"/>
       <genEnumLiterals ecoreEnumLiteral="Ansteuerung_Element.ecore#//ENUMAussenelementansteuerungArt/ENUMAussenelementansteuerung_Art_FeAk"/>
       <genEnumLiterals ecoreEnumLiteral="Ansteuerung_Element.ecore#//ENUMAussenelementansteuerungArt/ENUMAussenelementansteuerung_Art_FeAS"/>
       <genEnumLiterals ecoreEnumLiteral="Ansteuerung_Element.ecore#//ENUMAussenelementansteuerungArt/ENUMAussenelementansteuerung_Art_GFK"/>
       <genEnumLiterals ecoreEnumLiteral="Ansteuerung_Element.ecore#//ENUMAussenelementansteuerungArt/ENUMAussenelementansteuerung_Art_Gleisfreimelde_Innenanlage"/>
+      <genEnumLiterals ecoreEnumLiteral="Ansteuerung_Element.ecore#//ENUMAussenelementansteuerungArt/ENUMAussenelementansteuerung_Art_GVD"/>
       <genEnumLiterals ecoreEnumLiteral="Ansteuerung_Element.ecore#//ENUMAussenelementansteuerungArt/ENUMAussenelementansteuerung_Art_Objektcontroller"/>
       <genEnumLiterals ecoreEnumLiteral="Ansteuerung_Element.ecore#//ENUMAussenelementansteuerungArt/ENUMAussenelementansteuerung_Art_sonstige"/>
       <genEnumLiterals ecoreEnumLiteral="Ansteuerung_Element.ecore#//ENUMAussenelementansteuerungArt/ENUMAussenelementansteuerung_Art_virtuelle_Aussenelementansteuerung"/>
@@ -4700,8 +4714,8 @@
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMDPTypZBS/ENUMDP_Typ_ZBS_ZRHF"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMDPTypZBS/ENUMDP_Typ_ZBS_ZRLa"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMDPTypZBS/ENUMDP_Typ_ZBS_ZRV"/>
-      <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMDPTypZBS/ENUMDP_Typ_ZBS_ZU"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMDPTypZBS/ENUMDP_Typ_ZBS_ZV"/>
+      <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMDPTypZBS/ENUMDP_Typ_ZBS_ZU"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Balisentechnik_ETCS.ecore#//ENUMEinzeldateiArt">
@@ -4720,7 +4734,9 @@
               ecoreEnum="Balisentechnik_ETCS.ecore#//ENUMETCSKnotenArtSonstige">
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMETCSKnotenArtSonstige/ENUMETCS_Knoten_Art_Sonstige_Gleisabschluss"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMETCSKnotenArtSonstige/ENUMETCS_Knoten_Art_Sonstige_Grenze_Ausruestungsbereich"/>
+      <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMETCSKnotenArtSonstige/ENUMETCS_Knoten_Art_Sonstige_Grenze_LZB_La_Eingabe"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMETCSKnotenArtSonstige/ENUMETCS_Knoten_Art_Sonstige_Km_Sprung"/>
+      <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMETCSKnotenArtSonstige/ENUMETCS_Knoten_Art_Sonstige_Knotenverschmelzung"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMETCSKnotenArtSonstige/ENUMETCS_Knoten_Art_Sonstige_KrW"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMETCSKnotenArtSonstige/ENUMETCS_Knoten_Art_Sonstige_sonstige"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMETCSKnotenArtSonstige/ENUMETCS_Knoten_Art_Sonstige_Streckenende"/>
@@ -4742,9 +4758,16 @@
     </genEnums>
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Balisentechnik_ETCS.ecore#//ENUMFTHinweisFunktion">
+      <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTHinweisFunktion/ENUMFT_Hinweis_Funktion_Hp_0"/>
+      <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTHinweisFunktion/ENUMFT_Hinweis_Funktion_Ks_1"/>
+      <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTHinweisFunktion/ENUMFT_Hinweis_Funktion_Ks_2"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTHinweisFunktion/ENUMFT_Hinweis_Funktion_Ortung"/>
+      <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTHinweisFunktion/ENUMFT_Hinweis_Funktion_Ra_12"/>
+      <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTHinweisFunktion/ENUMFT_Hinweis_Funktion_Sh_2_Sh_0"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTHinweisFunktion/ENUMFT_Hinweis_Funktion_sonstige"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTHinweisFunktion/ENUMFT_Hinweis_Funktion_ZBS_Ende"/>
+      <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTHinweisFunktion/ENUMFT_Hinweis_Funktion_ZBS_Ende_1"/>
+      <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTHinweisFunktion/ENUMFT_Hinweis_Funktion_ZBS_Ende_2"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Balisentechnik_ETCS.ecore#//ENUMFTZBSTyp">
@@ -4767,8 +4790,8 @@
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTZBSTyp/ENUMFT_ZBS_Typ_ZRHF"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTZBSTyp/ENUMFT_ZBS_Typ_ZRLa"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTZBSTyp/ENUMFT_ZBS_Typ_ZRV"/>
-      <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTZBSTyp/ENUMFT_ZBS_Typ_ZU"/>
       <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTZBSTyp/ENUMFT_ZBS_Typ_ZV"/>
+      <genEnumLiterals ecoreEnumLiteral="Balisentechnik_ETCS.ecore#//ENUMFTZBSTyp/ENUMFT_ZBS_Typ_ZU"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Balisentechnik_ETCS.ecore#//ENUMLEUArt">
@@ -4868,6 +4891,7 @@
     <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//Abstand_Datenpunkt_TPI_Folgesignal_Type"/>
     <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//Abstand_Einmesspunkt_Type"/>
     <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//Abstand_Grenze_Bereich_C_Type"/>
+    <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//Abstand_Zu_Referenzbalise_Type"/>
     <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//Anlagenteil_Sonstige_Type"/>
     <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//Anordnung_Im_DP_Type"/>
     <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//Anwendung_Sonst_Type"/>
@@ -4883,6 +4907,7 @@
     <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//Bez_ZUB_Bereichsgrenze_Type"/>
     <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//Bezeichnung_ETCS_Kante_Type"/>
     <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//Bezeichnung_LEU_Anlage_Type"/>
+    <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//Bezeichnung_RBC_Type"/>
     <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//Bezeichnung_ZUB_SE_Type"/>
     <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//Bezeichnung_ZUB_Type"/>
     <genDataTypes ecoreDataType="Balisentechnik_ETCS.ecore#//D_LEVELTR_Type"/>
@@ -5239,6 +5264,10 @@
     <genClasses ecoreClass="Balisentechnik_ETCS.ecore#//Bezeichnung_LEU_Anlage_TypeClass">
       <genFeatures createChild="false"
                    ecoreFeature="ecore:EAttribute Balisentechnik_ETCS.ecore#//Bezeichnung_LEU_Anlage_TypeClass/wert"/>
+    </genClasses>
+    <genClasses ecoreClass="Balisentechnik_ETCS.ecore#//Bezeichnung_RBC_TypeClass">
+      <genFeatures createChild="false"
+                   ecoreFeature="ecore:EAttribute Balisentechnik_ETCS.ecore#//Bezeichnung_RBC_TypeClass/wert"/>
     </genClasses>
     <genClasses ecoreClass="Balisentechnik_ETCS.ecore#//Bezeichnung_ZUB_SE_TypeClass">
       <genFeatures createChild="false"
@@ -7016,11 +7045,19 @@
       <genFeatures property="None"
                    children="true"
                    createChild="true"
+                   ecoreFeature="ecore:EReference Balisentechnik_ETCS.ecore#//RBC/bezeichnung"/>
+      <genFeatures property="None"
+                   children="true"
+                   createChild="true"
                    ecoreFeature="ecore:EReference Balisentechnik_ETCS.ecore#//RBC/eTCSAdresse"/>
       <genFeatures property="None"
                    children="true"
                    createChild="true"
                    ecoreFeature="ecore:EReference Balisentechnik_ETCS.ecore#//RBC/iDESTWZentraleinheit"/>
+      <genFeatures property="None"
+                   children="true"
+                   createChild="true"
+                   ecoreFeature="ecore:EReference Balisentechnik_ETCS.ecore#//RBC/iDOertlichkeitNamensgebend"/>
       <genFeatures property="None"
                    children="true"
                    createChild="true"
@@ -7043,6 +7080,12 @@
                    children="true"
                    createChild="true"
                    ecoreFeature="ecore:EReference Balisentechnik_ETCS.ecore#//RBC_Allg_AttributeGroup/rufnummer"/>
+    </genClasses>
+    <genClasses ecoreClass="Balisentechnik_ETCS.ecore#//RBC_Bezeichnung_AttributeGroup">
+      <genFeatures property="None"
+                   children="true"
+                   createChild="true"
+                   ecoreFeature="ecore:EReference Balisentechnik_ETCS.ecore#//RBC_Bezeichnung_AttributeGroup/bezeichnungRBC"/>
     </genClasses>
     <genClasses ecoreClass="Balisentechnik_ETCS.ecore#//RBC_ETCS_System_Version_TypeClass">
       <genFeatures createChild="false"
@@ -8718,14 +8761,15 @@
       <genEnumLiterals ecoreEnumLiteral="Bahnuebergang.ecore#//ENUMBUESicherungsart/ENUMBUE_Sicherungsart_Ue_und_A"/>
       <genEnumLiterals ecoreEnumLiteral="Bahnuebergang.ecore#//ENUMBUESicherungsart/ENUMBUE_Sicherungsart_Ue_und_P"/>
       <genEnumLiterals ecoreEnumLiteral="Bahnuebergang.ecore#//ENUMBUESicherungsart/ENUMBUE_Sicherungsart_Ue_und_U"/>
+      <genEnumLiterals ecoreEnumLiteral="Bahnuebergang.ecore#//ENUMBUESicherungsart/ENUMBUE_Sicherungsart_Zugpersonal"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Bahnuebergang.ecore#//ENUMBUETechnik">
       <genEnumLiterals ecoreEnumLiteral="Bahnuebergang.ecore#//ENUMBUETechnik/ENUMBUE_Technik_Anrufschranke"/>
       <genEnumLiterals ecoreEnumLiteral="Bahnuebergang.ecore#//ENUMBUETechnik/ENUMBUE_Technik_BUEP_93"/>
+      <genEnumLiterals ecoreEnumLiteral="Bahnuebergang.ecore#//ENUMBUETechnik/ENUMBUE_Technik_BUES2000"/>
       <genEnumLiterals ecoreEnumLiteral="Bahnuebergang.ecore#//ENUMBUETechnik/ENUMBUE_Technik_BUES_72D"/>
       <genEnumLiterals ecoreEnumLiteral="Bahnuebergang.ecore#//ENUMBUETechnik/ENUMBUE_Technik_BUES_72Z"/>
-      <genEnumLiterals ecoreEnumLiteral="Bahnuebergang.ecore#//ENUMBUETechnik/ENUMBUE_Technik_BUES2000"/>
       <genEnumLiterals ecoreEnumLiteral="Bahnuebergang.ecore#//ENUMBUETechnik/ENUMBUE_Technik_EBUET_80"/>
       <genEnumLiterals ecoreEnumLiteral="Bahnuebergang.ecore#//ENUMBUETechnik/ENUMBUE_Technik_EBUET_80_VB"/>
       <genEnumLiterals ecoreEnumLiteral="Bahnuebergang.ecore#//ENUMBUETechnik/ENUMBUE_Technik_FUE_58"/>
@@ -10175,6 +10219,7 @@
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Ortung.ecore#//ENUMSchaltmittelFunktion">
       <genEnumLiterals ecoreEnumLiteral="Ortung.ecore#//ENUMSchaltmittelFunktion/ENUMSchaltmittel_Funktion_ARM"/>
+      <genEnumLiterals ecoreEnumLiteral="Ortung.ecore#//ENUMSchaltmittelFunktion/ENUMSchaltmittel_Funktion_ARV"/>
       <genEnumLiterals ecoreEnumLiteral="Ortung.ecore#//ENUMSchaltmittelFunktion/ENUMSchaltmittel_Funktion_Aus_BUE"/>
       <genEnumLiterals ecoreEnumLiteral="Ortung.ecore#//ENUMSchaltmittelFunktion/ENUMSchaltmittel_Funktion_Awanst"/>
       <genEnumLiterals ecoreEnumLiteral="Ortung.ecore#//ENUMSchaltmittelFunktion/ENUMSchaltmittel_Funktion_Ein_BUE"/>
@@ -11092,6 +11137,7 @@
               ecoreEnum="Geodaten.ecore#//ENUMHoehenlinieForm">
       <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMHoehenlinieForm/ENUMHoehenlinie_Form_Gerade"/>
       <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMHoehenlinieForm/ENUMHoehenlinie_Form_Parabel"/>
+      <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMHoehenlinieForm/ENUMHoehenlinie_Form_sonstige"/>
       <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMHoehenlinieForm/ENUMHoehenlinie_Form_Weichenabzweig"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false"
@@ -11160,6 +11206,8 @@
       <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMOertlichkeitArt/ENUMOertlichkeit_Art_Sbk"/>
       <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMOertlichkeitArt/ENUMOertlichkeit_Art_sonstige"/>
       <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMOertlichkeitArt/ENUMOertlichkeit_Art_Strw"/>
+      <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMOertlichkeitArt/ENUMOertlichkeit_Art_TaW"/>
+      <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMOertlichkeitArt/ENUMOertlichkeit_Art_TSO"/>
       <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMOertlichkeitArt/ENUMOertlichkeit_Art_Ust"/>
       <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMOertlichkeitArt/ENUMOertlichkeit_Art_Ust_Anst"/>
       <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMOertlichkeitArt/ENUMOertlichkeit_Art_Ust_Awanst"/>
@@ -11247,6 +11295,7 @@
       <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMUeberhoehungslinieForm/ENUMUeberhoehungslinie_Form_Rampe_S"/>
       <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMUeberhoehungslinieForm/ENUMUeberhoehungslinie_Form_Schere_Bloss"/>
       <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMUeberhoehungslinieForm/ENUMUeberhoehungslinie_Form_Schere_S"/>
+      <genEnumLiterals ecoreEnumLiteral="Geodaten.ecore#//ENUMUeberhoehungslinieForm/ENUMUeberhoehungslinie_Form_sonstige"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Geodaten.ecore#//ENUMVProfilArt">
@@ -11479,6 +11528,10 @@
                    children="true"
                    createChild="true"
                    ecoreFeature="ecore:EReference Geodaten.ecore#//Hoehenlinie/iDHoehenpunktB"/>
+      <genFeatures property="None"
+                   children="true"
+                   createChild="true"
+                   ecoreFeature="ecore:EReference Geodaten.ecore#//Hoehenlinie/iDTOPKantePfad"/>
     </genClasses>
     <genClasses ecoreClass="Geodaten.ecore#//Hoehenlinie_Allg_AttributeGroup">
       <genFeatures property="None"
@@ -11807,6 +11860,10 @@
       <genFeatures property="None"
                    children="true"
                    createChild="true"
+                   ecoreFeature="ecore:EReference Geodaten.ecore#//Ueberhoehungslinie/iDTOPKantePfad"/>
+      <genFeatures property="None"
+                   children="true"
+                   createChild="true"
                    ecoreFeature="ecore:EReference Geodaten.ecore#//Ueberhoehungslinie/iDUeberhoehungA"/>
       <genFeatures property="None"
                    children="true"
@@ -11876,6 +11933,7 @@
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMGleisAbschlussArt/ENUMGleis_Abschluss_Art_Drehscheibe"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMGleisAbschlussArt/ENUMGleis_Abschluss_Art_Faehranleger"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMGleisAbschlussArt/ENUMGleis_Abschluss_Art_Festprellbock"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMGleisAbschlussArt/ENUMGleis_Abschluss_Art_fiktiv"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMGleisAbschlussArt/ENUMGleis_Abschluss_Art_Infrastrukturgrenze"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMGleisAbschlussArt/ENUMGleis_Abschluss_Art_Kopframpe"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMGleisAbschlussArt/ENUMGleis_Abschluss_Art_Schiebebuehne"/>
@@ -11914,16 +11972,29 @@
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Weichen_und_Gleissperren.ecore#//ENUMWKrArt">
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_ABW"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_ABW_IBW"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_BKr"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_DBKW"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_DKW"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_DW"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_EABKW"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_EBKW"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_EIBKW"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_Eins__DW"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_EKW"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_EW"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_Flachkreuzung"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_IBKr"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_IBW"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_IBW_ABW"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_Klothoidenweiche"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_Korbbogenweiche"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_Kr"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_sonstige"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_Sym__ABW"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_ZHA"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_ZHV_ABW"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrArt/ENUMW_Kr_Art_ZHV_IBW"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Weichen_und_Gleissperren.ecore#//ENUMWKrGspStellart">
@@ -11937,6 +12008,7 @@
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrGspStellart/ENUMW_Kr_Gsp_Stellart_stillgelegt_links"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrGspStellart/ENUMW_Kr_Gsp_Stellart_stillgelegt_rechts"/>
       <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrGspStellart/ENUMW_Kr_Gsp_Stellart_unbestimmt"/>
+      <genEnumLiterals ecoreEnumLiteral="Weichen_und_Gleissperren.ecore#//ENUMWKrGspStellart/ENUMW_Kr_Gsp_Stellart_ZHA"/>
     </genEnums>
     <genDataTypes ecoreDataType="Weichen_und_Gleissperren.ecore#//CAuswurfrichtung"/>
     <genDataTypes ecoreDataType="Weichen_und_Gleissperren.ecore#//Elektrischer_Antrieb_Anzahl_Type"/>
@@ -12502,6 +12574,8 @@
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Medien_und_Trassen.ecore#//ENUMTrasseNutzer">
       <genEnumLiterals ecoreEnumLiteral="Medien_und_Trassen.ecore#//ENUMTrasseNutzer/ENUMTrasse_Nutzer_DB_Energie"/>
+      <genEnumLiterals ecoreEnumLiteral="Medien_und_Trassen.ecore#//ENUMTrasseNutzer/ENUMTrasse_Nutzer_DB_InfraGO_Fahrweg"/>
+      <genEnumLiterals ecoreEnumLiteral="Medien_und_Trassen.ecore#//ENUMTrasseNutzer/ENUMTrasse_Nutzer_DB_InfraGO_Personenbahnhoefe"/>
       <genEnumLiterals ecoreEnumLiteral="Medien_und_Trassen.ecore#//ENUMTrasseNutzer/ENUMTrasse_Nutzer_DB_KT"/>
       <genEnumLiterals ecoreEnumLiteral="Medien_und_Trassen.ecore#//ENUMTrasseNutzer/ENUMTrasse_Nutzer_DB_Netz"/>
       <genEnumLiterals ecoreEnumLiteral="Medien_und_Trassen.ecore#//ENUMTrasseNutzer/ENUMTrasse_Nutzer_DB_StuS"/>
@@ -13753,22 +13827,34 @@
               ecoreEnum="Signale.ecore#//ENUMFiktivesSignalFunktion">
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_FAP_Start"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_FAP_Ziel"/>
+      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Rangier_Start_Ziel_Ne_14"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Rangier_Start_Ziel_ohne_Signal"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_sonstige"/>
+      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Vsig_virtuell"/>
+      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zentralblock_Start"/>
+      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zentralblock_Ziel"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zug_Start_Awanst"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zug_Start_Mittelweiche"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zug_Start_ohne_Signal"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zug_Ziel_Awanst"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zug_Ziel_ohne_Signal"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zug_Ziel_Strecke"/>
-      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Vsig_virtuell"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Bk"/>
+      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Bk_mit_Zs_1"/>
+      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Bk_mit_Zs_7"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14"/>
+      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14_mit_Zs_1"/>
+      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14_mit_Zs_7"/>
+      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFiktivesSignalFunktion/ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14_mit_Zs_8"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Signale.ecore#//ENUMFundamentArt">
+      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFundamentArt/ENUMFundament_Art_Betonmonolith_groß"/>
+      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFundamentArt/ENUMFundament_Art_Betonmonolith_klein"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFundamentArt/ENUMFundament_Art_groß"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFundamentArt/ENUMFundament_Art_klein"/>
+      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFundamentArt/ENUMFundament_Art_Rammrohr_groß"/>
+      <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFundamentArt/ENUMFundament_Art_Rammrohr_klein"/>
       <genEnumLiterals ecoreEnumLiteral="Signale.ecore#//ENUMFundamentArt/ENUMFundament_Art_sonstige"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false"
@@ -14733,6 +14819,7 @@
     <genDataTypes ecoreDataType="Zugnummernmeldeanlage.ecore#//Anschlussnummer_Type"/>
     <genDataTypes ecoreDataType="Zugnummernmeldeanlage.ecore#//Besonderes_Schaltkriterium_Type"/>
     <genDataTypes ecoreDataType="Zugnummernmeldeanlage.ecore#//Bezeichnung_Besondere_Anlage_Type"/>
+    <genDataTypes ecoreDataType="Zugnummernmeldeanlage.ecore#//Bezeichnung_Stellwerk_Type"/>
     <genDataTypes ecoreDataType="Zugnummernmeldeanlage.ecore#//Bf_Nr_Type"/>
     <genDataTypes ecoreDataType="Zugnummernmeldeanlage.ecore#//ENUMAkustikAnbAnnObject"/>
     <genDataTypes ecoreDataType="Zugnummernmeldeanlage.ecore#//ENUMAkustikSonstObject"/>
@@ -14787,6 +14874,10 @@
     <genClasses ecoreClass="Zugnummernmeldeanlage.ecore#//Bezeichnung_Besondere_Anlage_TypeClass">
       <genFeatures createChild="false"
                    ecoreFeature="ecore:EAttribute Zugnummernmeldeanlage.ecore#//Bezeichnung_Besondere_Anlage_TypeClass/wert"/>
+    </genClasses>
+    <genClasses ecoreClass="Zugnummernmeldeanlage.ecore#//Bezeichnung_Stellwerk_TypeClass">
+      <genFeatures createChild="false"
+                   ecoreFeature="ecore:EAttribute Zugnummernmeldeanlage.ecore#//Bezeichnung_Stellwerk_TypeClass/wert"/>
     </genClasses>
     <genClasses ecoreClass="Zugnummernmeldeanlage.ecore#//Bf_Kennung_TypeClass">
       <genFeatures createChild="false"
@@ -14997,6 +15088,10 @@
                    children="true"
                    createChild="true"
                    ecoreFeature="ecore:EReference Zugnummernmeldeanlage.ecore#//ZLV_Bus_Besondere_Anlage/iDZLVBus"/>
+      <genFeatures property="None"
+                   children="true"
+                   createChild="true"
+                   ecoreFeature="ecore:EReference Zugnummernmeldeanlage.ecore#//ZLV_Bus_Besondere_Anlage/unterstationNr"/>
     </genClasses>
     <genClasses ecoreClass="Zugnummernmeldeanlage.ecore#//ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup">
       <genFeatures property="None"
@@ -15081,6 +15176,10 @@
                    children="true"
                    createChild="true"
                    ecoreFeature="ecore:EReference Zugnummernmeldeanlage.ecore#//ZN/iDOertlichkeit"/>
+      <genFeatures property="None"
+                   children="true"
+                   createChild="true"
+                   ecoreFeature="ecore:EReference Zugnummernmeldeanlage.ecore#//ZN/bezeichnungStellwerk"/>
       <genFeatures property="None"
                    children="true"
                    createChild="true"
@@ -15429,6 +15528,32 @@
                literalsInterface="false"
                ecorePackage="Signalbegriffe_Ril_301.ecore#/">
     <genEnums typeSafeEnumCompatible="false"
+              ecoreEnum="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz">
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_A"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_B"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_C"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_D"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_E"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_F"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_H"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_I"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_J"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_K"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_L"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_M"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_N"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_O"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_P"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_R"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_S"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_T"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_U"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_V"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_W"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_X"/>
+      <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34Zusatz/ENUMSymbol_El_3_4_Zusatz_Z"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Signalbegriffe_Ril_301.ecore#//ENUMSymbolLf1">
       <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolLf1/ENUMSymbol_Lf_1_0_5"/>
       <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolLf1/ENUMSymbol_Lf_1_1"/>
@@ -15649,6 +15774,7 @@
       <genEnumLiterals ecoreEnumLiteral="Signalbegriffe_Ril_301.ecore#//ENUMSymbolZs3v/ENUMSymbol_Zs_3v_15"/>
     </genEnums>
     <genDataTypes ecoreDataType="Signalbegriffe_Ril_301.ecore#//BS_Zusatz_Symbol_Type"/>
+    <genDataTypes ecoreDataType="Signalbegriffe_Ril_301.ecore#//ENUMSymbolEl34ZusatzObject"/>
     <genDataTypes ecoreDataType="Signalbegriffe_Ril_301.ecore#//ENUMSymbolLf12Object"/>
     <genDataTypes ecoreDataType="Signalbegriffe_Ril_301.ecore#//ENUMSymbolLf1Object"/>
     <genDataTypes ecoreDataType="Signalbegriffe_Ril_301.ecore#//ENUMSymbolLf1WdhObject"/>
@@ -15690,6 +15816,8 @@
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//El1v"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//El2"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//El3"/>
+    <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//El34Zusatz"/>
+    <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//El34ZusatzKombi"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//El4"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//El5"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//El6"/>
@@ -15717,8 +15845,11 @@
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Hl9b"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Hp0"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Hp02Lp"/>
+    <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Hp0F"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Hp1"/>
+    <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Hp1F"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Hp2"/>
+    <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Hp2F"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Kl"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Ks1"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Ks2"/>
@@ -15774,6 +15905,7 @@
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//OzICE"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//OzLZBBer"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//OzOBGrenze"/>
+    <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//OzPZB2000Hz"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//OzPZBBUE"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//OzZf"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//OzZugl">
@@ -15812,8 +15944,12 @@
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Ts3"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Ukr"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Vr0"/>
+    <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Vr0F"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Vr1"/>
+    <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Vr12F"/>
+    <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Vr1F"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Vr2"/>
+    <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Vr2F"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Wn1"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Wn2"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Wn3"/>
@@ -15871,6 +16007,7 @@
       <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_sonstige"/>
       <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_Stammkabelübersichtsplan"/>
       <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_ZLV_Bus_Ubersichtsplan"/>
+      <genEnumLiterals ecoreEnumLiteral="Layoutinformationen.ecore#//ENUMLageplanArt/ENUMLageplan_Art_ZN_Ubersichtsplan"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false"
               ecoreEnum="Layoutinformationen.ecore#//ENUMLinieArt">
@@ -15895,8 +16032,8 @@
     </genEnums>
     <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Bez_Lageplan_Blattschnitt_Type"/>
     <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Bezeichnung_Lageplan_Type"/>
-    <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Darstellung_GEO_Punkt_Type"/>
     <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Darstellung_Polygonzug_Type"/>
+    <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Darstellung_Richtungswinkel_Bezeichnung_Type"/>
     <genDataTypes ecoreDataType="Layoutinformationen.ecore#//Darstellung_Richtungswinkel_Type"/>
     <genDataTypes ecoreDataType="Layoutinformationen.ecore#//ENUMFuellungObject"/>
     <genDataTypes ecoreDataType="Layoutinformationen.ecore#//ENUMLageplanArtObject"/>
@@ -15915,13 +16052,13 @@
       <genFeatures createChild="false"
                    ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Bezeichnung_Lageplan_TypeClass/wert"/>
     </genClasses>
-    <genClasses ecoreClass="Layoutinformationen.ecore#//Darstellung_GEO_Punkt_TypeClass">
-      <genFeatures createChild="false"
-                   ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Darstellung_GEO_Punkt_TypeClass/wert"/>
-    </genClasses>
     <genClasses ecoreClass="Layoutinformationen.ecore#//Darstellung_Polygonzug_TypeClass">
       <genFeatures createChild="false"
                    ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Darstellung_Polygonzug_TypeClass/wert"/>
+    </genClasses>
+    <genClasses ecoreClass="Layoutinformationen.ecore#//Darstellung_Richtungswinkel_Bezeichnung_TypeClass">
+      <genFeatures createChild="false"
+                   ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Darstellung_Richtungswinkel_Bezeichnung_TypeClass/wert"/>
     </genClasses>
     <genClasses ecoreClass="Layoutinformationen.ecore#//Darstellung_Richtungswinkel_TypeClass">
       <genFeatures createChild="false"
@@ -15963,7 +16100,15 @@
       <genFeatures property="None"
                    children="true"
                    createChild="true"
+                   ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Position_Allg_AttributeGroup/darstellungGEOPunktBezeichnung"/>
+      <genFeatures property="None"
+                   children="true"
+                   createChild="true"
                    ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Position_Allg_AttributeGroup/darstellungRichtungswinkel"/>
+      <genFeatures property="None"
+                   children="true"
+                   createChild="true"
+                   ecoreFeature="ecore:EReference Layoutinformationen.ecore#//Element_Position_Allg_AttributeGroup/darstellungRichtungswinkelBezeichnung"/>
       <genFeatures property="None"
                    children="true"
                    createChild="true"
@@ -16076,6 +16221,10 @@
                    ecoreFeature="ecore:EAttribute Layoutinformationen.ecore#//Linie_Subart_TypeClass/wert"/>
     </genClasses>
     <genClasses ecoreClass="Layoutinformationen.ecore#//PlanPro_Layoutinfo">
+      <genFeatures property="None"
+                   children="true"
+                   createChild="true"
+                   ecoreFeature="ecore:EReference Layoutinformationen.ecore#//PlanPro_Layoutinfo/bearbeitungsvermerk"/>
       <genFeatures property="None"
                    children="true"
                    createChild="true"

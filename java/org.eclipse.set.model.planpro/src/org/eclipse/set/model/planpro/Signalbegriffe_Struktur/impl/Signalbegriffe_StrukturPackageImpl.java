@@ -713,7 +713,7 @@ public class Signalbegriffe_StrukturPackageImpl extends EPackageImpl implements 
 		  (signalbegriff_ID_TypeClassEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 	}
 

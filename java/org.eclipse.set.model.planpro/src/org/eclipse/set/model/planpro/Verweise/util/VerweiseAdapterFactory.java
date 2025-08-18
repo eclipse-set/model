@@ -182,6 +182,10 @@ public class VerweiseAdapterFactory extends AdapterFactoryImpl {
 				return createID_Bezugspunkt_Positionierung_TypeClassAdapter();
 			}
 			@Override
+			public Adapter caseID_Bezugspunkt_TypeClass(ID_Bezugspunkt_TypeClass object) {
+				return createID_Bezugspunkt_TypeClassAdapter();
+			}
+			@Override
 			public Adapter caseID_Binaerdaten_ohne_Proxy_TypeClass(ID_Binaerdaten_ohne_Proxy_TypeClass object) {
 				return createID_Binaerdaten_ohne_Proxy_TypeClassAdapter();
 			}
@@ -1122,6 +1126,20 @@ public class VerweiseAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createID_Bezugspunkt_Positionierung_TypeClassAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_TypeClass <em>ID Bezugspunkt Type Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_TypeClass
+	 * @generated
+	 */
+	public Adapter createID_Bezugspunkt_TypeClassAdapter() {
 		return null;
 	}
 

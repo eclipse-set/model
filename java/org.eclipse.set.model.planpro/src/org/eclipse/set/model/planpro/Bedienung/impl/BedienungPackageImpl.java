@@ -4122,7 +4122,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		initEReference(getBedien_Anrueckabschnitt_Bezeichnung_AttributeGroup_BezBedAnrueckabschnitt(), this.getBez_Bed_Anrueckabschnitt_TypeClass(), null, "bezBedAnrueckabschnitt", null, 1, 1, Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(bedien_Anzeige_ElementEClass, Bedien_Anzeige_Element.class, "Bedien_Anzeige_Element", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBedien_Anzeige_Element_BedienAnzeigeElementAllg(), this.getBedien_Anzeige_Element_Allg_AttributeGroup(), null, "bedienAnzeigeElementAllg", null, 1, 1, Bedien_Anzeige_Element.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getBedien_Anzeige_Element_BedienAnzeigeElementAllg(), this.getBedien_Anzeige_Element_Allg_AttributeGroup(), null, "bedienAnzeigeElementAllg", null, 0, 1, Bedien_Anzeige_Element.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBedien_Anzeige_Element_Bezeichnung(), this.getBedien_Anzeige_Element_Bezeichnung_AttributeGroup(), null, "bezeichnung", null, 0, 1, Bedien_Anzeige_Element.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBedien_Anzeige_Element_IDBedienEinrichtungOertlich(), theVerweisePackage.getID_Bedien_Einrichtung_Oertlich_TypeClass(), null, "iDBedienEinrichtungOertlich", null, 1, 1, Bedien_Anzeige_Element.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBedien_Anzeige_Element_IDVerknuepftesElement(), theVerweisePackage.getID_Verknuepftes_Element_TypeClass(), null, "iDVerknuepftesElement", null, 0, 1, Bedien_Anzeige_Element.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4537,7 +4537,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 		addAnnotation
 		  (bedien_AnrueckabschnittEClass,
@@ -4621,7 +4621,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		  (bedien_BezirkEClass,
 		   source,
 		   new String[] {
-			   "documentation", "Bedienung von mehreren ESTW-Zentraleinheiten. Das Objekt Bedien_Bezirk erm\u00f6glicht den Anschluss mehrerer ESTW-Zentraleinheiten an einen Bedien_Bezirk z. B. in einer Bedien_Zentrale. F\u00fcr einen Bedien_Bezirk gibt es zwei Modellierungen / Auspr\u00e4gungen. 1.) Reell in einer Bedien_Zentrale, Regio-BZ oder sonstigem Technikstandort errichteter Bedien_Bezirk mit angeschalteten ESTW_Zentraleinheiten (mindestens einer) ==\\u0026gt; zentraler Bedien_Bezirk 2.) Geplante, auf die Streckeninfrastruktur bezogene, logische Zusammenfassung von betrieblich und geographisch zusammenh\u00e4ngenden Strecken. ==\\u0026gt; virtueller Bedien_Bezirk Beispiele: Siehe auch Anlage Media:Bedien Bezirk Typ.pdf 1.) Zentraler Bedien_Bezirk Das Konzept der zentralen Betriebsf\u00fchrung sieht vor, die Bedienung hochwertiger Strecken von ESTW, durch Bedien_Zentralen (Betriebszentralen) zu b\u00fcndeln. Besonderheit dabei ist, dass in den Bedien_Zentralen selbst keine ESTW_Zentraleinheiten aus Verf\u00fcgbarkeitsgr\u00fcnden aufgebaut werden d\u00fcrfen. Das hei\u00dft, in den Betriebszentralen sind keine ESTW_Zentraleinheiten sondern nur Bedien_Pl\u00e4tze und Bedien_Bezirke errichtet. Diese Bedien_Bezirke, die die Bedienung hochwertiger Strecken b\u00fcndeln, sind \u201ezentrale Bedien_Bezirke\u201c. Die Einschr\u00e4nkung, ESTW_Zentraleinheiten nicht im selben Geb\u00e4ude wie ESTW_Bedien_Bezirke aufzubauen, gilt nicht f\u00fcr eine Regio-BZ oder sonstige Technikstandorte. Auch im Regionalnetz werden ESTW_Zentraleinheiten errichtet. Bisher sind diese \u00f6rtlich besetzt. Unter anderem ist geplant bzw. in Realisierung, die Geb\u00e4ude in denen bereits eine Regio-ESTW_Zentraleinheit errichtet ist, eine weitere Regio-ESTW_Zentraleinheit einzubauen. Um auch hier Redundanzen und Synergien nutzen zu k\u00f6nnen, ist geplant auch hier einen Bedien_Bezirk \u00fcber die ESTW_Zentraleinheiten zu installieren. Der entscheidende Unterschied zur Bedienzentrale ist hier, dass Bedien_Bezirk und ESTW_Zentraleinheit in einem Geb\u00e4ude untergebracht sind. Da Strecken sowohl das Regionalnetz und das Fern- und Ballungsnetz durchlaufen k\u00f6nnen, m\u00fcssen die Kennzahlenplanungen ebenfalls Netzart\u00fcbergreifend sein. Siehe auch Attribut \u201eKennzahl\u201c. 2.) Virtueller Bedienbezirk Als Zweites ist die Option des virtuellen Bedien_Bezirks zu modellieren. Da ein Bedien_Bezirk ja nicht von Heute auf Morgen in ESTW-Technik da steht, m\u00fcssen \u00dcbergangsregelungen geschaffen werden. Auch wenn Stellwerke in einem Bedien_Bezirk (noch) nicht in ESTW-Technik realisiert sind oder die Zuordnung zum Regionalnetz oder Fern- und Ballungsnetz noch offen ist gilt: Die Stw sind einem Bedien_Bezirk zuzuordnen um jegliche sp\u00e4tere Realisierungsform zu erm\u00f6glichen und so auch die Kennzahlenvergabe sicher zu gestalten. Siehe auch Attribut \u201eKennzahl\u201c. Am Beispiel der Bedien_Bezirke 08 und 11 in der BZ Hannover sieht man, dass auch Stellwerke, die (noch) nicht an einen Bedien_Bezirk angebunden sind, eine Zuordnung erfahren m\u00fcssen. Alle Stellwerke (HORX, HK, Sarstedt und Barnten) liegen in einem betrieblich zusammenh\u00e4ngenden Bezirk. N\u00e4mlich auf den Nord-S\u00fcd Strecken von Hannover Richtung G\u00f6ttingen. Die Stellwerke HK, Sarstedt und Barnten sogar auf derselben Strecke 1732. Aktuell sind die Stellwerke Sarstedt und Barnten noch nicht an einen Bedien_Bezirk angebunden. In den Planungen und betrieblichen Vorgaben des Regionalbereichs aber f\u00fcr eine Zuordnung zum Bedien_Bezirk 11 vorgesehen. Daher muss schon jetzt der Bedienbezirk den Stw zugeordnet werden k\u00f6nnen, auch wenn sie ggf. trotz ESTW-Aufbau, \u00f6rtlich besetzt werden. Durch die Darstellung in dem Verweis \u201ezentral\u201c oder \u201evirtuell\u201c l\u00e4sst sich die aktuelle und geplante Anbindung darstellen. Im Verst\u00e4ndnis der Betriebszentralen entspricht das Objekt Bedien_Bezirk dem Steuerbezirk. Das Objekt kann im LST-Datenmodell jedoch auch als virtueller Bedien_Bezirk vorkommen. Jeder ESTW-Zentraleinheit wird auch ein Bedien_Bezirk zugeordnet. In der Regel der, der in der Kennzahlenplanung vorgesehen ist. Also auch dann, wenn physisch kein Bedienbezirk (Steuerbezirk) oder eine vergleichbare Einheit vorhanden ist (z. B. Regionale Bedienzentrale mit nur einer ESTW-Zentraleinheit), aber bestimmte Eigenschaften mehrerer gemeinsam gesteuerter ESTW-Zentraleinheiten \u00fcbergreifend geplant werden m\u00fcssen (z.B. Richtungssinn und Kennzahlen). Gem\u00e4\u00df Richtlinie 819.0603 m\u00fcssen Kennzahlen und Betriebsstellenbezeichner im Steuerbezirk und an seinen Grenzen eindeutig (einmalig) sein. Diese Regel kann nicht \u00fcber das Modell abgebildet werden, sondern muss in der Plausibilit\u00e4ts- und Zul\u00e4ssigkeitspr\u00fcfung (PlaZ) abgefangen werden. Die Vorgabe f\u00fcr den Richtungssinn bezieht sich immer auf einen kompletten Steuerbezirk. Sie ist jedoch als Eigenschaft der Bedienoberfl\u00e4che modelliert. Gegebenenfalls m\u00fcssen hier Zul\u00e4ssigkeitspr\u00fcfungen ablaufen. Im Bedienbezirk werden au\u00dferdem die Angaben f\u00fcr die Datenkommunikation mit den zugeordneten ESTW-Zentraleinheiten geplant. Die Werte A, B und C werden nach Ril 819.0705A01 von der DB Netz festgelegt. Der Ansprechpartner findet sich in der Ril. Alle weiteren Werte lassen sich anhand dieser Unterlage bestimmen. Siehe Anlage Media:ipadr namensv ib1.pdf DB-Regelwerk 819.0603 819.0705A01 "
+			   "documentation", "Bedienung von mehreren ESTW-Zentraleinheiten. Das Objekt Bedien_Bezirk erm\u00f6glicht den Anschluss mehrerer ESTW-Zentraleinheiten an einen Bedien_Bezirk z. B. in einer Bedien_Zentrale. F\u00fcr einen Bedien_Bezirk gibt es zwei Modellierungen / Auspr\u00e4gungen. 1.) Reell in einer Bedien_Zentrale, Regio-BZ oder sonstigem Technikstandort errichteter Bedien_Bezirk mit angeschalteten ESTW_Zentraleinheiten (mindestens einer) ==> zentraler Bedien_Bezirk 2.) Geplante, auf die Streckeninfrastruktur bezogene, logische Zusammenfassung von betrieblich und geographisch zusammenh\u00e4ngenden Strecken. ==> virtueller Bedien_Bezirk Beispiele: Siehe auch Anlage Media:Bedien Bezirk Typ.pdf 1.) Zentraler Bedien_Bezirk Das Konzept der zentralen Betriebsf\u00fchrung sieht vor, die Bedienung hochwertiger Strecken von ESTW, durch Bedien_Zentralen (Betriebszentralen) zu b\u00fcndeln. Besonderheit dabei ist, dass in den Bedien_Zentralen selbst keine ESTW_Zentraleinheiten aus Verf\u00fcgbarkeitsgr\u00fcnden aufgebaut werden d\u00fcrfen. Das hei\u00dft, in den Betriebszentralen sind keine ESTW_Zentraleinheiten sondern nur Bedien_Pl\u00e4tze und Bedien_Bezirke errichtet. Diese Bedien_Bezirke, die die Bedienung hochwertiger Strecken b\u00fcndeln, sind \u201ezentrale Bedien_Bezirke\u201c. Die Einschr\u00e4nkung, ESTW_Zentraleinheiten nicht im selben Geb\u00e4ude wie ESTW_Bedien_Bezirke aufzubauen, gilt nicht f\u00fcr eine Regio-BZ oder sonstige Technikstandorte. Auch im Regionalnetz werden ESTW_Zentraleinheiten errichtet. Bisher sind diese \u00f6rtlich besetzt. Unter anderem ist geplant bzw. in Realisierung, die Geb\u00e4ude in denen bereits eine Regio-ESTW_Zentraleinheit errichtet ist, eine weitere Regio-ESTW_Zentraleinheit einzubauen. Um auch hier Redundanzen und Synergien nutzen zu k\u00f6nnen, ist geplant auch hier einen Bedien_Bezirk \u00fcber die ESTW_Zentraleinheiten zu installieren. Der entscheidende Unterschied zur Bedienzentrale ist hier, dass Bedien_Bezirk und ESTW_Zentraleinheit in einem Geb\u00e4ude untergebracht sind. Da Strecken sowohl das Regionalnetz und das Fern- und Ballungsnetz durchlaufen k\u00f6nnen, m\u00fcssen die Kennzahlenplanungen ebenfalls Netzart\u00fcbergreifend sein. Siehe auch Attribut \u201eKennzahl\u201c. 2.) Virtueller Bedienbezirk Als Zweites ist die Option des virtuellen Bedien_Bezirks zu modellieren. Da ein Bedien_Bezirk ja nicht von Heute auf Morgen in ESTW-Technik da steht, m\u00fcssen \u00dcbergangsregelungen geschaffen werden. Auch wenn Stellwerke in einem Bedien_Bezirk (noch) nicht in ESTW-Technik realisiert sind oder die Zuordnung zum Regionalnetz oder Fern- und Ballungsnetz noch offen ist gilt: Die Stw sind einem Bedien_Bezirk zuzuordnen um jegliche sp\u00e4tere Realisierungsform zu erm\u00f6glichen und so auch die Kennzahlenvergabe sicher zu gestalten. Siehe auch Attribut \u201eKennzahl\u201c. Am Beispiel der Bedien_Bezirke 08 und 11 in der BZ Hannover sieht man, dass auch Stellwerke, die (noch) nicht an einen Bedien_Bezirk angebunden sind, eine Zuordnung erfahren m\u00fcssen. Alle Stellwerke (HORX, HK, Sarstedt und Barnten) liegen in einem betrieblich zusammenh\u00e4ngenden Bezirk. N\u00e4mlich auf den Nord-S\u00fcd Strecken von Hannover Richtung G\u00f6ttingen. Die Stellwerke HK, Sarstedt und Barnten sogar auf derselben Strecke 1732. Aktuell sind die Stellwerke Sarstedt und Barnten noch nicht an einen Bedien_Bezirk angebunden. In den Planungen und betrieblichen Vorgaben des Regionalbereichs aber f\u00fcr eine Zuordnung zum Bedien_Bezirk 11 vorgesehen. Daher muss schon jetzt der Bedienbezirk den Stw zugeordnet werden k\u00f6nnen, auch wenn sie ggf. trotz ESTW-Aufbau, \u00f6rtlich besetzt werden. Durch die Darstellung in dem Verweis \u201ezentral\u201c oder \u201evirtuell\u201c l\u00e4sst sich die aktuelle und geplante Anbindung darstellen. Im Verst\u00e4ndnis der Betriebszentralen entspricht das Objekt Bedien_Bezirk dem Steuerbezirk. Das Objekt kann im LST-Datenmodell jedoch auch als virtueller Bedien_Bezirk vorkommen. Jeder ESTW-Zentraleinheit wird auch ein Bedien_Bezirk zugeordnet. In der Regel der, der in der Kennzahlenplanung vorgesehen ist. Also auch dann, wenn physisch kein Bedienbezirk (Steuerbezirk) oder eine vergleichbare Einheit vorhanden ist (z. B. Regionale Bedienzentrale mit nur einer ESTW-Zentraleinheit), aber bestimmte Eigenschaften mehrerer gemeinsam gesteuerter ESTW-Zentraleinheiten \u00fcbergreifend geplant werden m\u00fcssen (z.B. Richtungssinn und Kennzahlen). Gem\u00e4\u00df Richtlinie 819.0603 m\u00fcssen Kennzahlen und Betriebsstellenbezeichner im Steuerbezirk und an seinen Grenzen eindeutig (einmalig) sein. Diese Regel kann nicht \u00fcber das Modell abgebildet werden, sondern muss in der Plausibilit\u00e4ts- und Zul\u00e4ssigkeitspr\u00fcfung (PlaZ) abgefangen werden. Die Vorgabe f\u00fcr den Richtungssinn bezieht sich immer auf einen kompletten Steuerbezirk. Sie ist jedoch als Eigenschaft der Bedienoberfl\u00e4che modelliert. Gegebenenfalls m\u00fcssen hier Zul\u00e4ssigkeitspr\u00fcfungen ablaufen. Im Bedienbezirk werden au\u00dferdem die Angaben f\u00fcr die Datenkommunikation mit den zugeordneten ESTW-Zentraleinheiten geplant. Die Werte A, B und C werden nach Ril 819.0705A01 von der DB InfraGO festgelegt. Der Ansprechpartner findet sich in der Ril. Alle weiteren Werte lassen sich anhand dieser Unterlage bestimmen. Siehe Anlage Media:ipadr namensv ib1.pdf DB-Regelwerk 819.0603 819.0705A01 "
 		   });
 		addAnnotation
 		  (getBedien_Bezirk_IDBedienZentrale(),
@@ -4975,7 +4975,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		  (bedien_ZentraleEClass,
 		   source,
 		   new String[] {
-			   "documentation", "Betriebsleitstelle eines EIU, aus der die Leit- und Sicherungstechnik von zentral gesteuerten ESTW planm\u00e4\u00dfig bedient wird. Die Betriebsleitstelle kann eine Betriebszentrale (BZ) der DB Netz oder auch eine zentrale Bedienstelle der Regionalnetze sein. Da die Bedien_Zentrale nicht notwendigerweise in der N\u00e4he von Gleisen liegt, wird kein unmittelbarer Bezug zu einer Strecke hergestellt. Eine \u00d6rtlichkeit wird jedoch nach Ril 100 f\u00fcr den Standort festgelegt. In der Bedien_Zentrale sind die spezifischen Anh\u00e4nge dargestellt. Weitere Pl\u00e4ne aus dem PT I BZ, wie beispielsweise Belegungspl\u00e4ne f\u00fcr Bodentanks, Kabel\u00fcbersichtspl\u00e4ne, Verteilerbelegungspl\u00e4ne, Schrankpl\u00e4ne, H\u00f6heneinheiten und Patchfeldbelegungen in den Schr\u00e4nken f\u00fcr die BZ, werden als allgemeiner Anhang f\u00fcr die vererbten Eigenschaften aus dem Basisobjekt (Attribut Anhang) im Objekt Bedien_Zentrale angeh\u00e4ngt."
+			   "documentation", "Betriebsleitstelle eines EIU, aus der die Leit- und Sicherungstechnik von zentral gesteuerten ESTW planm\u00e4\u00dfig bedient wird. Die Betriebsleitstelle kann eine Betriebszentrale (BZ) der DB InfraGO oder auch eine zentrale Bedienstelle der Regionalnetze sein. Da die Bedien_Zentrale nicht notwendigerweise in der N\u00e4he von Gleisen liegt, wird kein unmittelbarer Bezug zu einer Strecke hergestellt. Eine \u00d6rtlichkeit wird jedoch nach Ril 100 f\u00fcr den Standort festgelegt. In der Bedien_Zentrale sind die spezifischen Anh\u00e4nge dargestellt. Weitere Pl\u00e4ne aus dem PT I BZ, wie beispielsweise Belegungspl\u00e4ne f\u00fcr Bodentanks, Kabel\u00fcbersichtspl\u00e4ne, Verteilerbelegungspl\u00e4ne, Schrankpl\u00e4ne, H\u00f6heneinheiten und Patchfeldbelegungen in den Schr\u00e4nken f\u00fcr die BZ, werden als allgemeiner Anhang f\u00fcr die vererbten Eigenschaften aus dem Basisobjekt (Attribut Anhang) im Objekt Bedien_Zentrale angeh\u00e4ngt."
 		   });
 		addAnnotation
 		  (getBedien_Zentrale_IDAnhangPlanBedienraum(),
@@ -4993,7 +4993,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		  (getBedien_Zentrale_IDStrecke(),
 		   source,
 		   new String[] {
-			   "documentation", "Zuordnung einer Bedienzentrale zu einer Streckennummer. Bedienzentralen (Betriebszentralen) der DB Netz AG werden willk\u00fcrlich einer Strecke zugeordnet, um den Anforderungen der Richtlinie 100 minimal zu gen\u00fcgen. Diese Zuordnung ist auf die \u201eH\u00fclle\u201c der Zentrale bezogen, nicht auf die aus ihr gesteuerte Infrastruktur. "
+			   "documentation", "Zuordnung einer Bedienzentrale zu einer Streckennummer. Bedienzentralen (Betriebszentralen) der DB InfraGO AG werden willk\u00fcrlich einer Strecke zugeordnet, um den Anforderungen der Richtlinie 100 minimal zu gen\u00fcgen. Diese Zuordnung ist auf die \u201eH\u00fclle\u201c der Zentrale bezogen, nicht auf die aus ihr gesteuerte Infrastruktur. "
 		   });
 		addAnnotation
 		  (getBedien_Zentrale_Bezeichnung(),
@@ -5441,7 +5441,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TBedien_Einricht_Oertl_Bez",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bedien_Einricht_Oertl_Bez_TypeClassEClass,
@@ -5931,7 +5931,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TBedienplatzbezeichnung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bedienplatzbezeichnung_TypeClassEClass,
@@ -5952,7 +5952,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TBedienplatznummer",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bedienplatznummer_TypeClassEClass,
@@ -5973,7 +5973,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TBedienraumnummer",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bedienraumnummer_TypeClassEClass,
@@ -5994,7 +5994,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TBetriebsstellenbezeichner",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette",
 			   "pattern", "[a-zA-Z]{2}"
 		   });
 		addAnnotation
@@ -6016,7 +6016,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TBez_Bed_Anrueckabschnitt",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette"
 		   });
 		addAnnotation
 		  (bez_Bed_Anrueckabschnitt_TypeClassEClass,
@@ -6037,7 +6037,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TBez_Bed_Anzeige_Element",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bez_Bed_Anzeige_Element_TypeClassEClass,
@@ -6058,7 +6058,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TBez_Bed_Zentrale",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bez_Bed_Zentrale_TypeClassEClass,
@@ -6079,7 +6079,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TBezeichnung_BSO",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bezeichnung_BSO_TypeClassEClass,
@@ -6371,7 +6371,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "THupe_Anschaltzeit",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde",
 			   "pattern", "0|[1-9][0-9]{0,3}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5]"
 		   });
 		addAnnotation
@@ -6393,7 +6393,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TIP_Adressblock_Blau",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (iP_Adressblock_Blau_TypeClassEClass,
@@ -6414,7 +6414,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TIP_Adressblock_Blau_V4",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (iP_Adressblock_Blau_V4_TypeClassEClass,
@@ -6435,7 +6435,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TIP_Adressblock_Blau_V6",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (iP_Adressblock_Blau_V6_TypeClassEClass,
@@ -6456,7 +6456,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TIP_Adressblock_Grau",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (iP_Adressblock_Grau_TypeClassEClass,
@@ -6477,7 +6477,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TIP_Adressblock_Grau_V4",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (iP_Adressblock_Grau_V4_TypeClassEClass,
@@ -6498,7 +6498,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TIP_Adressblock_Grau_V6",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (iP_Adressblock_Grau_V6_TypeClassEClass,
@@ -6561,7 +6561,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TOberflaeche_Zustaendigkeit",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (oberflaeche_Zustaendigkeit_TypeClassEClass,
@@ -6596,7 +6596,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TRueckschauzeit",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"
 		   });
 		addAnnotation
 		  (rueckschauzeit_TypeClassEClass,
@@ -6631,7 +6631,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TSchrankreihe",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (schrankreihe_TypeClassEClass,
@@ -6652,7 +6652,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TSteuerbezirksname",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (steuerbezirksname_TypeClassEClass,
@@ -6673,7 +6673,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TSteuerbezirksnummer",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (steuerbezirksnummer_TypeClassEClass,
@@ -6708,7 +6708,7 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		   source,
 		   new String[] {
 			   "name", "TVorschauzeit",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"
 		   });
 		addAnnotation
 		  (vorschauzeit_TypeClassEClass,
@@ -6796,121 +6796,121 @@ public class BedienungPackageImpl extends EPackageImpl implements BedienungPacka
 		  (bedien_AnrueckabschnittEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Bedienung Fdl ESTW-ZE</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Bedienung Fdl ESTW-ZE</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (bedien_Anzeige_ElementEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (bedien_BezirkEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Bedienung Fdl BZ</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Bedienung Fdl BZ</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getBedien_Bezirk_Adressformel_AttributeGroup_BWert(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..16] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..16] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getBedien_Bezirk_Adressformel_AttributeGroup_DDWert(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..10] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..10] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getBedien_Bezirk_Adressformel_AttributeGroup_YWert(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..15] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..15] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getBedien_Bezirk_Adressformel_AttributeGroup_YYWert(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..15] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..15] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getBedien_Bezirk_Allg_AttributeGroup_AnbindungIB2(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>false</ppi:ProposedValue>\n                         \n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>false</ppi:ProposedValue>\r\n                         \r\n    <ppi:PlanningStage>PT1</ppi:PlanningStage>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getBedien_Bezirk_Allg_AttributeGroup_AnbindungIB3(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>false</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>false</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getBedien_Bezirk_Allg_AttributeGroup_Hersteller(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:PlanningStage>PT2</ppi:PlanningStage>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:PlanningStage>PT2</ppi:PlanningStage>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getBedien_Einricht_Oertlich_Allg_AttributeGroup_HupeAnschaltzeit(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[0..65535]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[0..65535]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (bedien_Einrichtung_OertlichEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (bedien_GBTEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Bedienung Fdl ESTW-ZE</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Bedienung Fdl ESTW-ZE</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (bedien_OberflaecheEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Bedienung Fdl ESTW-ZE</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Bedienung Fdl ESTW-ZE</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (bedien_Oberflaeche_BildEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Bedienung Fdl ESTW-ZE</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Bedienung Fdl ESTW-ZE</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (bedien_OertlichkeitEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Bedienung Fdl BZ</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Bedienung Fdl BZ</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getBedien_Oertlichkeit_Kennzahlen_AttributeGroup_Betriebsstellenbezeichner(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [2] Die Bezeichner f\u00fcr die Ausfahrziele (Betriebsstellenbezeichner) bestehen in der Regel aus den ersten beiden Buchstaben des Namens der n\u00e4chsten Betriebsstelle. Sie sind so zu w\u00e4hlen, dass sie im Steuerbezirk einer BZ eindeutig sind. Dazu kann es notwendig sein, dass f\u00fcr den 2. Buchstaben ein anderer gew\u00e4hlt werden muss. Diese Vorgabe ist im PT 1 BZ niedergelegt und somit Planungsdatum des LST-Datenmodells. Auf der Bedienoberfl\u00e4che werden duch den Hersteller entsprechend des g\u00fcltigen Regelwerks folgende Erg\u00e4nzungen vorgenommen: Eine Ziffer ist nur bei parallel gef\u00fchrten Gleisen/Strecken zwischen benachbarten Betriebsstellen (Bf, Abzw, Awanst) zu vergeben. Bei parallel gef\u00fchrten Strecken mit 3 Gleisen sind nur dann alle Gleise mittels Ziffern zu nummerieren, wenn die signaltechnische Ausr\u00fcstung aller Gleise gleich ist und alle Gleise gleichberechtigt betrieblich genutzt werden k\u00f6nnen. Bei parallel gef\u00fchrten Strecken mit mehr als 3 Gleisen sind alle Gleise mittels Ziffern zu bezeichnen. Bei 2 x zweigleisiger Streckenf\u00fchrung kann zus\u00e4tzlich zur Nummerierung eine Gegengleiskennung mit \u201eG\u201c sinnvoll sein. Bei 2 x zweigleisiger Streckenf\u00fchrung mit spezifischerNutzung, wie z.B. durch Fernbahn bzw. S-Bahn, kann es sinnvoll sein, die Ausfahrzielbezeichnungen f\u00fcr eine oder beide Strecken an Stelle der fortlaufenden Ziffer mit einem Buchstaben, wie z.B. \u201eF\u201c bzw. \u201eS\u201c, zu bezeichnen. Diese Erg\u00e4nzungen sind nicht Bestandteile des LST-Datenmodells.</ppi:Patternbeschreibung>\n                         \n    <ppi:Patternbeschreibung_Abweichend>[2] zwei Gro\u00df oder Kleinbuchstaben ohne Umlaute</ppi:Patternbeschreibung_Abweichend>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [2] Die Bezeichner f\u00fcr die Ausfahrziele (Betriebsstellenbezeichner) bestehen in der Regel aus den ersten beiden Buchstaben des Namens der n\u00e4chsten Betriebsstelle. Sie sind so zu w\u00e4hlen, dass sie im Steuerbezirk einer BZ eindeutig sind. Dazu kann es notwendig sein, dass f\u00fcr den 2. Buchstaben ein anderer gew\u00e4hlt werden muss. Diese Vorgabe ist im PT 1 BZ niedergelegt und somit Planungsdatum des LST-Datenmodells. Auf der Bedienoberfl\u00e4che werden duch den Hersteller entsprechend des g\u00fcltigen Regelwerks folgende Erg\u00e4nzungen vorgenommen: Eine Ziffer ist nur bei parallel gef\u00fchrten Gleisen/Strecken zwischen benachbarten Betriebsstellen (Bf, Abzw, Awanst) zu vergeben. Bei parallel gef\u00fchrten Strecken mit 3 Gleisen sind nur dann alle Gleise mittels Ziffern zu nummerieren, wenn die signaltechnische Ausr\u00fcstung aller Gleise gleich ist und alle Gleise gleichberechtigt betrieblich genutzt werden k\u00f6nnen. Bei parallel gef\u00fchrten Strecken mit mehr als 3 Gleisen sind alle Gleise mittels Ziffern zu bezeichnen. Bei 2 x zweigleisiger Streckenf\u00fchrung kann zus\u00e4tzlich zur Nummerierung eine Gegengleiskennung mit \u201eG\u201c sinnvoll sein. Bei 2 x zweigleisiger Streckenf\u00fchrung mit spezifischerNutzung, wie z.B. durch Fernbahn bzw. S-Bahn, kann es sinnvoll sein, die Ausfahrzielbezeichnungen f\u00fcr eine oder beide Strecken an Stelle der fortlaufenden Ziffer mit einem Buchstaben, wie z.B. \u201eF\u201c bzw. \u201eS\u201c, zu bezeichnen. Diese Erg\u00e4nzungen sind nicht Bestandteile des LST-Datenmodells.</ppi:Patternbeschreibung>\r\n                         \r\n    <ppi:Patternbeschreibung_Abweichend>[2] zwei Gro\u00df oder Kleinbuchstaben ohne Umlaute</ppi:Patternbeschreibung_Abweichend>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (bedien_PlatzEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Bedienung Fdl ESTW-ZE|Bedienung Fdl BZ</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Bedienung Fdl ESTW-ZE|Bedienung Fdl BZ</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (bedien_StandortEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Bedienung Fdl BZ</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Bedienung Fdl BZ</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (bedien_ZentraleEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>Bedienung Fdl BZ</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>Bedienung Fdl BZ</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 	}
 

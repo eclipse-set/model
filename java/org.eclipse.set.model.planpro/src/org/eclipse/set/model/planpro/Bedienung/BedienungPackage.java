@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +128,7 @@ public interface BedienungPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Bedienung/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Bedienung/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -6191,7 +6191,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bedien Einricht Oertl Bez Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBedien_Einricht_Oertl_Bez' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBedien_Einricht_Oertl_Bez' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBedien_Einricht_Oertl_Bez_Type();
@@ -6203,7 +6203,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bedienplatzbezeichnung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBedienplatzbezeichnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBedienplatzbezeichnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBedienplatzbezeichnung_Type();
@@ -6215,7 +6215,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bedienplatznummer Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBedienplatznummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBedienplatznummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBedienplatznummer_Type();
@@ -6227,7 +6227,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bedienraumnummer Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBedienraumnummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBedienraumnummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBedienraumnummer_Type();
@@ -6239,7 +6239,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Betriebsstellenbezeichner Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBetriebsstellenbezeichner' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette' pattern='[a-zA-Z]{2}'"
+	 *        extendedMetaData="name='TBetriebsstellenbezeichner' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette' pattern='[a-zA-Z]{2}'"
 	 * @generated
 	 */
 	EDataType getBetriebsstellenbezeichner_Type();
@@ -6251,7 +6251,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bez Bed Anrueckabschnitt Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBez_Bed_Anrueckabschnitt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette'"
+	 *        extendedMetaData="name='TBez_Bed_Anrueckabschnitt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette'"
 	 * @generated
 	 */
 	EDataType getBez_Bed_Anrueckabschnitt_Type();
@@ -6263,7 +6263,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bez Bed Anzeige Element Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBez_Bed_Anzeige_Element' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBez_Bed_Anzeige_Element' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBez_Bed_Anzeige_Element_Type();
@@ -6275,7 +6275,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bez Bed Zentrale Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBez_Bed_Zentrale' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBez_Bed_Zentrale' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBez_Bed_Zentrale_Type();
@@ -6287,7 +6287,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung BSO Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_BSO' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBezeichnung_BSO' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_BSO_Type();
@@ -6431,7 +6431,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Hupe Anschaltzeit Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='THupe_Anschaltzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='0|[1-9][0-9]{0,3}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5]'"
+	 *        extendedMetaData="name='THupe_Anschaltzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='0|[1-9][0-9]{0,3}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5]'"
 	 * @generated
 	 */
 	EDataType getHupe_Anschaltzeit_Type();
@@ -6443,7 +6443,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>IP Adressblock Blau Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIP_Adressblock_Blau' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TIP_Adressblock_Blau' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getIP_Adressblock_Blau_Type();
@@ -6455,7 +6455,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>IP Adressblock Blau V4 Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIP_Adressblock_Blau_V4' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TIP_Adressblock_Blau_V4' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getIP_Adressblock_Blau_V4_Type();
@@ -6467,7 +6467,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>IP Adressblock Blau V6 Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIP_Adressblock_Blau_V6' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TIP_Adressblock_Blau_V6' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getIP_Adressblock_Blau_V6_Type();
@@ -6479,7 +6479,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>IP Adressblock Grau Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIP_Adressblock_Grau' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TIP_Adressblock_Grau' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getIP_Adressblock_Grau_Type();
@@ -6491,7 +6491,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>IP Adressblock Grau V4 Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIP_Adressblock_Grau_V4' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TIP_Adressblock_Grau_V4' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getIP_Adressblock_Grau_V4_Type();
@@ -6503,7 +6503,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>IP Adressblock Grau V6 Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIP_Adressblock_Grau_V6' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TIP_Adressblock_Grau_V6' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getIP_Adressblock_Grau_V6_Type();
@@ -6515,7 +6515,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Oberflaeche Zustaendigkeit Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TOberflaeche_Zustaendigkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TOberflaeche_Zustaendigkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getOberflaeche_Zustaendigkeit_Type();
@@ -6527,7 +6527,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Rueckschauzeit Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TRueckschauzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde'"
+	 *        extendedMetaData="name='TRueckschauzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde'"
 	 * @generated
 	 */
 	EDataType getRueckschauzeit_Type();
@@ -6539,7 +6539,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Schrankreihe Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TSchrankreihe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TSchrankreihe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getSchrankreihe_Type();
@@ -6551,7 +6551,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Steuerbezirksname Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TSteuerbezirksname' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TSteuerbezirksname' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getSteuerbezirksname_Type();
@@ -6563,7 +6563,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Steuerbezirksnummer Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TSteuerbezirksnummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TSteuerbezirksnummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getSteuerbezirksnummer_Type();
@@ -6575,7 +6575,7 @@ public interface BedienungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Vorschauzeit Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TVorschauzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde'"
+	 *        extendedMetaData="name='TVorschauzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde'"
 	 * @generated
 	 */
 	EDataType getVorschauzeit_Type();

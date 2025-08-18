@@ -172,7 +172,7 @@ public class ZugeinwirkungItemProvider extends Punkt_ObjektItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(OrtungPackage.Literals.ZUGEINWIRKUNG__ID_BEZUGSPUNKT,
-				 VerweiseFactory.eINSTANCE.createID_Markanter_Punkt_TypeClass()));
+				 VerweiseFactory.eINSTANCE.createID_Bezugspunkt_TypeClass()));
 
 		newChildDescriptors.add
 			(createChildParameter

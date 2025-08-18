@@ -122,10 +122,10 @@ public class LayoutinformationenValidator extends EObjectValidator {
 				return validateBez_Lageplan_Blattschnitt_TypeClass((Bez_Lageplan_Blattschnitt_TypeClass)value, diagnostics, context);
 			case LayoutinformationenPackage.BEZEICHNUNG_LAGEPLAN_TYPE_CLASS:
 				return validateBezeichnung_Lageplan_TypeClass((Bezeichnung_Lageplan_TypeClass)value, diagnostics, context);
-			case LayoutinformationenPackage.DARSTELLUNG_GEO_PUNKT_TYPE_CLASS:
-				return validateDarstellung_GEO_Punkt_TypeClass((Darstellung_GEO_Punkt_TypeClass)value, diagnostics, context);
 			case LayoutinformationenPackage.DARSTELLUNG_POLYGONZUG_TYPE_CLASS:
 				return validateDarstellung_Polygonzug_TypeClass((Darstellung_Polygonzug_TypeClass)value, diagnostics, context);
+			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS:
+				return validateDarstellung_Richtungswinkel_Bezeichnung_TypeClass((Darstellung_Richtungswinkel_Bezeichnung_TypeClass)value, diagnostics, context);
 			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_TYPE_CLASS:
 				return validateDarstellung_Richtungswinkel_TypeClass((Darstellung_Richtungswinkel_TypeClass)value, diagnostics, context);
 			case LayoutinformationenPackage.DOCUMENT_ROOT:
@@ -180,10 +180,10 @@ public class LayoutinformationenValidator extends EObjectValidator {
 				return validateBez_Lageplan_Blattschnitt_Type((BigInteger)value, diagnostics, context);
 			case LayoutinformationenPackage.BEZEICHNUNG_LAGEPLAN_TYPE:
 				return validateBezeichnung_Lageplan_Type((String)value, diagnostics, context);
-			case LayoutinformationenPackage.DARSTELLUNG_GEO_PUNKT_TYPE:
-				return validateDarstellung_GEO_Punkt_Type((String)value, diagnostics, context);
 			case LayoutinformationenPackage.DARSTELLUNG_POLYGONZUG_TYPE:
 				return validateDarstellung_Polygonzug_Type((String)value, diagnostics, context);
+			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE:
+				return validateDarstellung_Richtungswinkel_Bezeichnung_Type((BigDecimal)value, diagnostics, context);
 			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_TYPE:
 				return validateDarstellung_Richtungswinkel_Type((BigDecimal)value, diagnostics, context);
 			case LayoutinformationenPackage.ENUM_FUELLUNG_OBJECT:
@@ -232,8 +232,8 @@ public class LayoutinformationenValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDarstellung_GEO_Punkt_TypeClass(Darstellung_GEO_Punkt_TypeClass darstellung_GEO_Punkt_TypeClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(darstellung_GEO_Punkt_TypeClass, diagnostics, context);
+	public boolean validateDarstellung_Polygonzug_TypeClass(Darstellung_Polygonzug_TypeClass darstellung_Polygonzug_TypeClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(darstellung_Polygonzug_TypeClass, diagnostics, context);
 	}
 
 	/**
@@ -241,8 +241,8 @@ public class LayoutinformationenValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDarstellung_Polygonzug_TypeClass(Darstellung_Polygonzug_TypeClass darstellung_Polygonzug_TypeClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(darstellung_Polygonzug_TypeClass, diagnostics, context);
+	public boolean validateDarstellung_Richtungswinkel_Bezeichnung_TypeClass(Darstellung_Richtungswinkel_Bezeichnung_TypeClass darstellung_Richtungswinkel_Bezeichnung_TypeClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return validate_EveryDefaultConstraint(darstellung_Richtungswinkel_Bezeichnung_TypeClass, diagnostics, context);
 	}
 
 	/**
@@ -494,7 +494,7 @@ public class LayoutinformationenValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDarstellung_GEO_Punkt_Type(String darstellung_GEO_Punkt_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDarstellung_Polygonzug_Type(String darstellung_Polygonzug_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
@@ -503,7 +503,7 @@ public class LayoutinformationenValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDarstellung_Polygonzug_Type(String darstellung_Polygonzug_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDarstellung_Richtungswinkel_Bezeichnung_Type(BigDecimal darstellung_Richtungswinkel_Bezeichnung_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 

@@ -140,7 +140,7 @@ public interface ETCS_Kante extends Basis_Objekt {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Verweis auf die Strecke, der die STCS-Kante zugeordnet wird. Die Angabe lässt sich durch Auswertung der topologischen Verortung der Strecke(n) sowie der Verortung der ETCS_Knoten ermitteln. Eine Abspeicherung kann zur Erleichterung weiterer Anwendungen (z. B. DiB) erfolgen.
+	 * Verweis auf die Strecke, der die ETCS-Kante zugeordnet wird. Die Angabe lässt sich durch Auswertung der topologischen Verortung der Strecke(n) sowie der Verortung der ETCS_Knoten ermitteln. Eine Abspeicherung kann zur Erleichterung weiterer Anwendungen (z. B. iLBS) erfolgen.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>ID Strecke</em>' containment reference.
 	 * @see #setIDStrecke(ID_Strecke_TypeClass)

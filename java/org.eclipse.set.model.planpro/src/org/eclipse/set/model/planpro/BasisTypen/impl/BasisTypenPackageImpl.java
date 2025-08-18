@@ -1922,7 +1922,7 @@ public class BasisTypenPackageImpl extends EPackageImpl implements BasisTypenPac
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 		addAnnotation
 		  (anwendungssystem_TypeEDataType,
@@ -2042,7 +2042,7 @@ public class BasisTypenPackageImpl extends EPackageImpl implements BasisTypenPac
 		  (guiD_TypeEDataType,
 		   source,
 		   new String[] {
-			   "documentation", "Beschr\u00e4nkt die Bef\u00fcllung auf eine 32-stellige GUID in der Form 8-4-4-4-12 Zeichen unter Verwendung der Zahlen 0-9 und der Gro\u00df- und Kleinbuchstaben A-F/a-f."
+			   "documentation", "Beschr\u00e4nkt die Bef\u00fcllung auf eine 32-stellige GUID in der Form 8-4-4-4-12 Zeichen unter Verwendung der Zahlen 0-9 und der Gro\u00dfbuchstaben A-F."
 		   });
 		addAnnotation
 		  (hersteller_TypeEDataType,
@@ -2120,7 +2120,7 @@ public class BasisTypenPackageImpl extends EPackageImpl implements BasisTypenPac
 		  (regionalbereich_TypeEDataType,
 		   source,
 		   new String[] {
-			   "documentation", "Regionalbereich der DB Netz AG, dem die Anlage zugewiesen ist.\n"
+			   "documentation", "Regionalbereich der DB InfraGO AG, dem die Anlage zugewiesen ist.\n"
 		   });
 		addAnnotation
 		  (sekunde_TypeEDataType,
@@ -2753,19 +2753,19 @@ public class BasisTypenPackageImpl extends EPackageImpl implements BasisTypenPac
 		  (getBezeichnung_Element_AttributeGroup_Kennzahl(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [2] f\u00fchrende Null ist mitzuschreiben, \'00\' ist unzul\u00e4ssig</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [2] f\u00fchrende Null ist mitzuschreiben, \'00\' ist unzul\u00e4ssig</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (dateiname_TypeEDataType,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:Patternbeschreibung>Alle Zeichen ausser den folgenden: ^\\\\/?:*|&lt;&gt;</ppi:Patternbeschreibung>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:Patternbeschreibung>Alle Zeichen ausser den folgenden: ^\\\\/?:*|&lt;&gt;</ppi:Patternbeschreibung>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (kennzahl_TypeEDataType,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:Patternbeschreibung> [2] f\u00fchrende Null ist mitzuschreiben, \\u002700\\u0027 ist unzul\u00e4ssig</ppi:Patternbeschreibung>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:Patternbeschreibung> [2] f\u00fchrende Null ist mitzuschreiben, \\u002700\\u0027 ist unzul\u00e4ssig</ppi:Patternbeschreibung>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 	}
 

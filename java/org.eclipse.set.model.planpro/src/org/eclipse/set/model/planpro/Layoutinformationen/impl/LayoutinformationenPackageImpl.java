@@ -76,8 +76,8 @@ import org.eclipse.set.model.planpro.Gleis.impl.GleisPackageImpl;
 
 import org.eclipse.set.model.planpro.Layoutinformationen.Bez_Lageplan_Blattschnitt_TypeClass;
 import org.eclipse.set.model.planpro.Layoutinformationen.Bezeichnung_Lageplan_TypeClass;
-import org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_GEO_Punkt_TypeClass;
 import org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Polygonzug_TypeClass;
+import org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Richtungswinkel_Bezeichnung_TypeClass;
 import org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Richtungswinkel_TypeClass;
 import org.eclipse.set.model.planpro.Layoutinformationen.DocumentRoot;
 import org.eclipse.set.model.planpro.Layoutinformationen.ENUMFuellung;
@@ -190,14 +190,14 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass darstellung_GEO_Punkt_TypeClassEClass = null;
+	private EClass darstellung_Polygonzug_TypeClassEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass darstellung_Polygonzug_TypeClassEClass = null;
+	private EClass darstellung_Richtungswinkel_Bezeichnung_TypeClassEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -393,14 +393,14 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EDataType darstellung_GEO_Punkt_TypeEDataType = null;
+	private EDataType darstellung_Polygonzug_TypeEDataType = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EDataType darstellung_Polygonzug_TypeEDataType = null;
+	private EDataType darstellung_Richtungswinkel_Bezeichnung_TypeEDataType = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -702,26 +702,6 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	 * @generated
 	 */
 	@Override
-	public EClass getDarstellung_GEO_Punkt_TypeClass() {
-		return darstellung_GEO_Punkt_TypeClassEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getDarstellung_GEO_Punkt_TypeClass_Wert() {
-		return (EAttribute)darstellung_GEO_Punkt_TypeClassEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getDarstellung_Polygonzug_TypeClass() {
 		return darstellung_Polygonzug_TypeClassEClass;
 	}
@@ -734,6 +714,26 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	@Override
 	public EAttribute getDarstellung_Polygonzug_TypeClass_Wert() {
 		return (EAttribute)darstellung_Polygonzug_TypeClassEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDarstellung_Richtungswinkel_Bezeichnung_TypeClass() {
+		return darstellung_Richtungswinkel_Bezeichnung_TypeClassEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDarstellung_Richtungswinkel_Bezeichnung_TypeClass_Wert() {
+		return (EAttribute)darstellung_Richtungswinkel_Bezeichnung_TypeClassEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -862,7 +862,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	 * @generated
 	 */
 	@Override
-	public EReference getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkel() {
+	public EReference getElement_Position_Allg_AttributeGroup_DarstellungGEOPunktBezeichnung() {
 		return (EReference)element_Position_Allg_AttributeGroupEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -872,7 +872,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	 * @generated
 	 */
 	@Override
-	public EReference getElement_Position_Allg_AttributeGroup_DarstellungGEOPunkt() {
+	public EReference getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkel() {
 		return (EReference)element_Position_Allg_AttributeGroupEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -882,8 +882,28 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	 * @generated
 	 */
 	@Override
-	public EReference getElement_Position_Allg_AttributeGroup_DarstellungPolygonzug() {
+	public EReference getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkelBezeichnung() {
 		return (EReference)element_Position_Allg_AttributeGroupEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getElement_Position_Allg_AttributeGroup_DarstellungGEOPunkt() {
+		return (EReference)element_Position_Allg_AttributeGroupEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getElement_Position_Allg_AttributeGroup_DarstellungPolygonzug() {
+		return (EReference)element_Position_Allg_AttributeGroupEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -1242,7 +1262,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	 * @generated
 	 */
 	@Override
-	public EReference getPlanPro_Layoutinfo_ElementPosition() {
+	public EReference getPlanPro_Layoutinfo_Bearbeitungsvermerk() {
 		return (EReference)planPro_LayoutinfoEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1252,7 +1272,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	 * @generated
 	 */
 	@Override
-	public EReference getPlanPro_Layoutinfo_ElementStil() {
+	public EReference getPlanPro_Layoutinfo_ElementPosition() {
 		return (EReference)planPro_LayoutinfoEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -1262,7 +1282,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	 * @generated
 	 */
 	@Override
-	public EReference getPlanPro_Layoutinfo_Lageplan() {
+	public EReference getPlanPro_Layoutinfo_ElementStil() {
 		return (EReference)planPro_LayoutinfoEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -1272,7 +1292,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	 * @generated
 	 */
 	@Override
-	public EReference getPlanPro_Layoutinfo_LageplanBlattschnitt() {
+	public EReference getPlanPro_Layoutinfo_Lageplan() {
 		return (EReference)planPro_LayoutinfoEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -1282,8 +1302,18 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	 * @generated
 	 */
 	@Override
-	public EReference getPlanPro_Layoutinfo_LageplanZustand() {
+	public EReference getPlanPro_Layoutinfo_LageplanBlattschnitt() {
 		return (EReference)planPro_LayoutinfoEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getPlanPro_Layoutinfo_LageplanZustand() {
+		return (EReference)planPro_LayoutinfoEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -1432,8 +1462,8 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	 * @generated
 	 */
 	@Override
-	public EDataType getDarstellung_GEO_Punkt_Type() {
-		return darstellung_GEO_Punkt_TypeEDataType;
+	public EDataType getDarstellung_Polygonzug_Type() {
+		return darstellung_Polygonzug_TypeEDataType;
 	}
 
 	/**
@@ -1442,8 +1472,8 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 	 * @generated
 	 */
 	@Override
-	public EDataType getDarstellung_Polygonzug_Type() {
-		return darstellung_Polygonzug_TypeEDataType;
+	public EDataType getDarstellung_Richtungswinkel_Bezeichnung_Type() {
+		return darstellung_Richtungswinkel_Bezeichnung_TypeEDataType;
 	}
 
 	/**
@@ -1581,11 +1611,11 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		bezeichnung_Lageplan_TypeClassEClass = createEClass(BEZEICHNUNG_LAGEPLAN_TYPE_CLASS);
 		createEAttribute(bezeichnung_Lageplan_TypeClassEClass, BEZEICHNUNG_LAGEPLAN_TYPE_CLASS__WERT);
 
-		darstellung_GEO_Punkt_TypeClassEClass = createEClass(DARSTELLUNG_GEO_PUNKT_TYPE_CLASS);
-		createEAttribute(darstellung_GEO_Punkt_TypeClassEClass, DARSTELLUNG_GEO_PUNKT_TYPE_CLASS__WERT);
-
 		darstellung_Polygonzug_TypeClassEClass = createEClass(DARSTELLUNG_POLYGONZUG_TYPE_CLASS);
 		createEAttribute(darstellung_Polygonzug_TypeClassEClass, DARSTELLUNG_POLYGONZUG_TYPE_CLASS__WERT);
+
+		darstellung_Richtungswinkel_Bezeichnung_TypeClassEClass = createEClass(DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS);
+		createEAttribute(darstellung_Richtungswinkel_Bezeichnung_TypeClassEClass, DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS__WERT);
 
 		darstellung_Richtungswinkel_TypeClassEClass = createEClass(DARSTELLUNG_RICHTUNGSWINKEL_TYPE_CLASS);
 		createEAttribute(darstellung_Richtungswinkel_TypeClassEClass, DARSTELLUNG_RICHTUNGSWINKEL_TYPE_CLASS__WERT);
@@ -1602,7 +1632,9 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		createEReference(element_PositionEClass, ELEMENT_POSITION__REFERENZ_OBJEKT_DARSTELLUNG);
 
 		element_Position_Allg_AttributeGroupEClass = createEClass(ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP);
+		createEReference(element_Position_Allg_AttributeGroupEClass, ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_GEO_PUNKT_BEZEICHNUNG);
 		createEReference(element_Position_Allg_AttributeGroupEClass, ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_RICHTUNGSWINKEL);
+		createEReference(element_Position_Allg_AttributeGroupEClass, ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG);
 		createEReference(element_Position_Allg_AttributeGroupEClass, ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_GEO_PUNKT);
 		createEReference(element_Position_Allg_AttributeGroupEClass, ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_POLYGONZUG);
 
@@ -1653,6 +1685,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		createEAttribute(linie_Subart_TypeClassEClass, LINIE_SUBART_TYPE_CLASS__WERT);
 
 		planPro_LayoutinfoEClass = createEClass(PLAN_PRO_LAYOUTINFO);
+		createEReference(planPro_LayoutinfoEClass, PLAN_PRO_LAYOUTINFO__BEARBEITUNGSVERMERK);
 		createEReference(planPro_LayoutinfoEClass, PLAN_PRO_LAYOUTINFO__ELEMENT_POSITION);
 		createEReference(planPro_LayoutinfoEClass, PLAN_PRO_LAYOUTINFO__ELEMENT_STIL);
 		createEReference(planPro_LayoutinfoEClass, PLAN_PRO_LAYOUTINFO__LAGEPLAN);
@@ -1680,8 +1713,8 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		// Create data types
 		bez_Lageplan_Blattschnitt_TypeEDataType = createEDataType(BEZ_LAGEPLAN_BLATTSCHNITT_TYPE);
 		bezeichnung_Lageplan_TypeEDataType = createEDataType(BEZEICHNUNG_LAGEPLAN_TYPE);
-		darstellung_GEO_Punkt_TypeEDataType = createEDataType(DARSTELLUNG_GEO_PUNKT_TYPE);
 		darstellung_Polygonzug_TypeEDataType = createEDataType(DARSTELLUNG_POLYGONZUG_TYPE);
+		darstellung_Richtungswinkel_Bezeichnung_TypeEDataType = createEDataType(DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE);
 		darstellung_Richtungswinkel_TypeEDataType = createEDataType(DARSTELLUNG_RICHTUNGSWINKEL_TYPE);
 		enumFuellungObjectEDataType = createEDataType(ENUM_FUELLUNG_OBJECT);
 		enumLageplanArtObjectEDataType = createEDataType(ENUM_LAGEPLAN_ART_OBJECT);
@@ -1730,8 +1763,8 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		// Add supertypes to classes
 		bez_Lageplan_Blattschnitt_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getBasisAttribut_AttributeGroup());
 		bezeichnung_Lageplan_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getBasisAttribut_AttributeGroup());
-		darstellung_GEO_Punkt_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getBasisAttribut_AttributeGroup());
 		darstellung_Polygonzug_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getBasisAttribut_AttributeGroup());
+		darstellung_Richtungswinkel_Bezeichnung_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getBasisAttribut_AttributeGroup());
 		darstellung_Richtungswinkel_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getBasisAttribut_AttributeGroup());
 		element_PositionEClass.getESuperTypes().add(theBasisobjektePackage.getUr_Objekt());
 		element_StilEClass.getESuperTypes().add(theBasisobjektePackage.getUr_Objekt());
@@ -1756,11 +1789,11 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		initEClass(bezeichnung_Lageplan_TypeClassEClass, Bezeichnung_Lageplan_TypeClass.class, "Bezeichnung_Lageplan_TypeClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getBezeichnung_Lageplan_TypeClass_Wert(), this.getBezeichnung_Lageplan_Type(), "wert", null, 1, 1, Bezeichnung_Lageplan_TypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(darstellung_GEO_Punkt_TypeClassEClass, Darstellung_GEO_Punkt_TypeClass.class, "Darstellung_GEO_Punkt_TypeClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDarstellung_GEO_Punkt_TypeClass_Wert(), this.getDarstellung_GEO_Punkt_Type(), "wert", null, 1, 1, Darstellung_GEO_Punkt_TypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
 		initEClass(darstellung_Polygonzug_TypeClassEClass, Darstellung_Polygonzug_TypeClass.class, "Darstellung_Polygonzug_TypeClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDarstellung_Polygonzug_TypeClass_Wert(), this.getDarstellung_Polygonzug_Type(), "wert", null, 1, 1, Darstellung_Polygonzug_TypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(darstellung_Richtungswinkel_Bezeichnung_TypeClassEClass, Darstellung_Richtungswinkel_Bezeichnung_TypeClass.class, "Darstellung_Richtungswinkel_Bezeichnung_TypeClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDarstellung_Richtungswinkel_Bezeichnung_TypeClass_Wert(), this.getDarstellung_Richtungswinkel_Bezeichnung_Type(), "wert", null, 1, 1, Darstellung_Richtungswinkel_Bezeichnung_TypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(darstellung_Richtungswinkel_TypeClassEClass, Darstellung_Richtungswinkel_TypeClass.class, "Darstellung_Richtungswinkel_TypeClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDarstellung_Richtungswinkel_TypeClass_Wert(), this.getDarstellung_Richtungswinkel_Type(), "wert", null, 1, 1, Darstellung_Richtungswinkel_TypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1777,7 +1810,9 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		initEReference(getElement_Position_ReferenzObjektDarstellung(), this.getReferenz_Objekt_Darstellung_TypeClass(), null, "referenzObjektDarstellung", null, 1, 1, Element_Position.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(element_Position_Allg_AttributeGroupEClass, Element_Position_Allg_AttributeGroup.class, "Element_Position_Allg_AttributeGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getElement_Position_Allg_AttributeGroup_DarstellungGEOPunktBezeichnung(), theGeodatenPackage.getGEO_Punkt(), null, "darstellungGEOPunktBezeichnung", null, 0, 1, Element_Position_Allg_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkel(), this.getDarstellung_Richtungswinkel_TypeClass(), null, "darstellungRichtungswinkel", null, 0, 1, Element_Position_Allg_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkelBezeichnung(), this.getDarstellung_Richtungswinkel_Bezeichnung_TypeClass(), null, "darstellungRichtungswinkelBezeichnung", null, 0, 1, Element_Position_Allg_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getElement_Position_Allg_AttributeGroup_DarstellungGEOPunkt(), theGeodatenPackage.getGEO_Punkt(), null, "darstellungGEOPunkt", null, 0, -1, Element_Position_Allg_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getElement_Position_Allg_AttributeGroup_DarstellungPolygonzug(), this.getDarstellung_Polygonzug_TypeClass(), null, "darstellungPolygonzug", null, 0, 1, Element_Position_Allg_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1828,6 +1863,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		initEAttribute(getLinie_Subart_TypeClass_Wert(), this.getENUMLinieSubartObject(), "wert", null, 1, 1, Linie_Subart_TypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(planPro_LayoutinfoEClass, PlanPro_Layoutinfo.class, "PlanPro_Layoutinfo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getPlanPro_Layoutinfo_Bearbeitungsvermerk(), theBasisobjektePackage.getBearbeitungsvermerk(), null, "bearbeitungsvermerk", null, 0, -1, PlanPro_Layoutinfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPlanPro_Layoutinfo_ElementPosition(), this.getElement_Position(), null, "elementPosition", null, 0, -1, PlanPro_Layoutinfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPlanPro_Layoutinfo_ElementStil(), this.getElement_Stil(), null, "elementStil", null, 0, -1, PlanPro_Layoutinfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPlanPro_Layoutinfo_Lageplan(), this.getLageplan(), null, "lageplan", null, 0, -1, PlanPro_Layoutinfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1864,6 +1900,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		addEEnumLiteral(enumLageplanArtEEnum, ENUMLageplanArt.ENUM_LAGEPLAN_ART_SONSTIGE);
 		addEEnumLiteral(enumLageplanArtEEnum, ENUMLageplanArt.ENUM_LAGEPLAN_ART_STAMMKABELÜBERSICHTSPLAN);
 		addEEnumLiteral(enumLageplanArtEEnum, ENUMLageplanArt.ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN);
+		addEEnumLiteral(enumLageplanArtEEnum, ENUMLageplanArt.ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN);
 
 		initEEnum(enumLinieArtEEnum, ENUMLinieArt.class, "ENUMLinieArt");
 		addEEnumLiteral(enumLinieArtEEnum, ENUMLinieArt.ENUM_LINIE_ART_PUNKTLINIE);
@@ -1887,8 +1924,8 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		// Initialize data types
 		initEDataType(bez_Lageplan_Blattschnitt_TypeEDataType, BigInteger.class, "Bez_Lageplan_Blattschnitt_Type", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 		initEDataType(bezeichnung_Lageplan_TypeEDataType, String.class, "Bezeichnung_Lageplan_Type", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
-		initEDataType(darstellung_GEO_Punkt_TypeEDataType, String.class, "Darstellung_GEO_Punkt_Type", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 		initEDataType(darstellung_Polygonzug_TypeEDataType, String.class, "Darstellung_Polygonzug_Type", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
+		initEDataType(darstellung_Richtungswinkel_Bezeichnung_TypeEDataType, BigDecimal.class, "Darstellung_Richtungswinkel_Bezeichnung_Type", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 		initEDataType(darstellung_Richtungswinkel_TypeEDataType, BigDecimal.class, "Darstellung_Richtungswinkel_Type", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 		initEDataType(enumFuellungObjectEDataType, ENUMFuellung.class, "ENUMFuellungObject", IS_SERIALIZABLE, IS_GENERATED_INSTANCE_CLASS);
 		initEDataType(enumLageplanArtObjectEDataType, ENUMLageplanArt.class, "ENUMLageplanArtObject", IS_SERIALIZABLE, IS_GENERATED_INSTANCE_CLASS);
@@ -1924,7 +1961,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 		addAnnotation
 		  (getDocumentRoot_PlanProLayoutinfo(),
@@ -1951,10 +1988,22 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 			   "documentation", "GUID des Fachobjekts, f\u00fcr dessen Darstellung die Layoutinformationen gegeben werden."
 		   });
 		addAnnotation
+		  (getElement_Position_Allg_AttributeGroup_DarstellungGEOPunktBezeichnung(),
+		   source,
+		   new String[] {
+			   "documentation", "Verweis auf einen GEO_Punkt zur Angabe der Position, an der die Bezeichnung f\u00fcr das Fachobjekt im referenzierten Lageplan dargestellt werden soll."
+		   });
+		addAnnotation
 		  (getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkel(),
 		   source,
 		   new String[] {
 			   "documentation", "Richtungswinkel f\u00fcr die Darstellung in [gon]. Es gilt nachfolgende Zuordnung der Richtung: Nord = 0,0 gon Ost = 100,0 gon S\u00fcd = 200,0 gon West = 300,0 gon. Originale negative Werte werden durch Addition von 400.0 gon normalisiert."
+		   });
+		addAnnotation
+		  (getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkelBezeichnung(),
+		   source,
+		   new String[] {
+			   "documentation", "Richtungswinkel f\u00fcr die Darstellung der Bezeichnung in [gon]. Es gilt nachfolgende Zuordnung der Richtung: Nord = 0,0 gon Ost = 100,0 gon S\u00fcd = 200,0 gon West = 300,0 gon. Originale negative Werte werden durch Addition von 400.0 gon normalisiert."
 		   });
 		addAnnotation
 		  (getElement_Position_Allg_AttributeGroup_DarstellungGEOPunkt(),
@@ -2083,6 +2132,12 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 			   "documentation", "Oberstes Objekt der Layout-XML. Bei jeder Erzeugung einer XML-Ausgabe f\u00fcr eine Planung muss eine neue GUID (Identitaet) erzeugt werden."
 		   });
 		addAnnotation
+		  (getPlanPro_Layoutinfo_Bearbeitungsvermerk(),
+		   source,
+		   new String[] {
+			   "documentation", "Anhang in Form von Datei oder Text zu einem Objekt oder Attribut. Jeder zugelassene Projektbeteiligte kann zu einem Objekt oder Attribut einen Bearbeitungsvermerk anf\u00fcgen, sofern er die entsprechend notwendige Berechtigung besitzt. Dies gilt f\u00fcr fachliche wie organisatorische Objekte und Attribute. F\u00fcr ENUM-Attribute ist bei Auswahl des Werts \\\"sonstige\\\" zwingend ein Bearbeitungsvermerk anzuf\u00fcgen. Eine Dokumentenbeigabe ist dabei optional. Zu einem Objekt oder Attribut k\u00f6nnen mehrere Bearbeitungsvermerke erstellt werden. Der Bearbeitungsvermerk enth\u00e4lt vorl\u00e4ufig eine GUID zur Identifikation des Bearbeiters sowie eine GUID f\u00fcr die Signatur. Im Attribut \u201eBearbeitungsvermerk Rolle\u201c kann die fachliche Rolle des Bearbeiters abgelegt werden. Kommentare des Bearbeiters werden als Freitext im Attribut \u201eKommentar\u201c hinterlegt. Der Bearbeitungsvermerk kann einen Anhang aufnehmen. Um mehrere Anh\u00e4nge zu einem Objekt zuzuordnen, m\u00fcssen mehrere Bearbeitungsvermerke erstellt werden."
+		   });
+		addAnnotation
 		  (getPlanPro_Layoutinfo_ElementPosition(),
 		   source,
 		   new String[] {
@@ -2148,7 +2203,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		   source,
 		   new String[] {
 			   "name", "TBezeichnung_Lageplan",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bezeichnung_Lageplan_TypeClassEClass,
@@ -2165,32 +2220,11 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 			   "name", "Wert"
 		   });
 		addAnnotation
-		  (darstellung_GEO_Punkt_TypeEDataType,
-		   source,
-		   new String[] {
-			   "name", "TDarstellung_GEO_Punkt",
-			   "baseType", "http://www.eclipse.org/emf/2003/XMLType#string"
-		   });
-		addAnnotation
-		  (darstellung_GEO_Punkt_TypeClassEClass,
-		   source,
-		   new String[] {
-			   "name", "TCDarstellung_GEO_Punkt",
-			   "kind", "elementOnly"
-		   });
-		addAnnotation
-		  (getDarstellung_GEO_Punkt_TypeClass_Wert(),
-		   source,
-		   new String[] {
-			   "kind", "element",
-			   "name", "Wert"
-		   });
-		addAnnotation
 		  (darstellung_Polygonzug_TypeEDataType,
 		   source,
 		   new String[] {
 			   "name", "TDarstellung_Polygonzug",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText"
 		   });
 		addAnnotation
 		  (darstellung_Polygonzug_TypeClassEClass,
@@ -2201,6 +2235,27 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		   });
 		addAnnotation
 		  (getDarstellung_Polygonzug_TypeClass_Wert(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Wert"
+		   });
+		addAnnotation
+		  (darstellung_Richtungswinkel_Bezeichnung_TypeEDataType,
+		   source,
+		   new String[] {
+			   "name", "TDarstellung_Richtungswinkel_Bezeichnung",
+			   "baseType", "http://www.eclipse.org/emf/2003/XMLType#decimal"
+		   });
+		addAnnotation
+		  (darstellung_Richtungswinkel_Bezeichnung_TypeClassEClass,
+		   source,
+		   new String[] {
+			   "name", "TCDarstellung_Richtungswinkel_Bezeichnung",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getDarstellung_Richtungswinkel_Bezeichnung_TypeClass_Wert(),
 		   source,
 		   new String[] {
 			   "kind", "element",
@@ -2299,11 +2354,25 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 			   "kind", "elementOnly"
 		   });
 		addAnnotation
+		  (getElement_Position_Allg_AttributeGroup_DarstellungGEOPunktBezeichnung(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Darstellung_GEO_Punkt_Bezeichnung"
+		   });
+		addAnnotation
 		  (getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkel(),
 		   source,
 		   new String[] {
 			   "kind", "element",
 			   "name", "Darstellung_Richtungswinkel"
+		   });
+		addAnnotation
+		  (getElement_Position_Allg_AttributeGroup_DarstellungRichtungswinkelBezeichnung(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Darstellung_Richtungswinkel_Bezeichnung"
 		   });
 		addAnnotation
 		  (getElement_Position_Allg_AttributeGroup_DarstellungGEOPunkt(),
@@ -2586,7 +2655,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		   source,
 		   new String[] {
 			   "name", "TLinie_Farbwert",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", "[a-fA-F0-9]{6}"
 		   });
 		addAnnotation
@@ -2623,6 +2692,13 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		   new String[] {
 			   "name", "CPlanPro_Layoutinfo",
 			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getPlanPro_Layoutinfo_Bearbeitungsvermerk(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Bearbeitungsvermerk"
 		   });
 		addAnnotation
 		  (getPlanPro_Layoutinfo_ElementPosition(),
@@ -2664,7 +2740,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		   source,
 		   new String[] {
 			   "name", "TPolygonzug_Ausrichtung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText"
 		   });
 		addAnnotation
 		  (polygonzug_Ausrichtung_TypeClassEClass,
@@ -2685,7 +2761,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		   source,
 		   new String[] {
 			   "name", "TPolygonzug_Blattschnitt",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFreiText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFreiText"
 		   });
 		addAnnotation
 		  (polygonzug_Blattschnitt_TypeClassEClass,
@@ -2706,7 +2782,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		   source,
 		   new String[] {
 			   "name", "TReferenz_LST_Zustand",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGUID"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGUID"
 		   });
 		addAnnotation
 		  (referenz_LST_Zustand_TypeClassEClass,
@@ -2727,7 +2803,7 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		   source,
 		   new String[] {
 			   "name", "TReferenz_Objekt_Darstellung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGUID"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGUID"
 		   });
 		addAnnotation
 		  (referenz_Objekt_Darstellung_TypeClassEClass,
@@ -2757,73 +2833,79 @@ public class LayoutinformationenPackageImpl extends EPackageImpl implements Layo
 		  (element_PositionEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getElement_Position_Allg_AttributeGroup_DarstellungGEOPunkt(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                       \n  <ppi:WorkflowInformation>\n                            \n    <ppi:ProposedValue>GEO_Punkt</ppi:ProposedValue>\n                         \n  </ppi:WorkflowInformation>\n                    \n"
+			   "appinfo", "\r\n                       \r\n  <ppi:WorkflowInformation>\r\n                            \r\n    <ppi:ProposedValue>GEO_Punkt</ppi:ProposedValue>\r\n                         \r\n  </ppi:WorkflowInformation>\r\n                    \r\n"
 		   });
 		addAnnotation
 		  (element_StilEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getElement_Stil_Allg_AttributeGroup_LinieFarbwert(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[6], hexadezimal</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[6], hexadezimal</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (lageplanEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (lageplan_BlattschnittEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (lageplan_ZustandEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (planPro_LayoutinfoEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
+		   });
+		addAnnotation
+		  (getPlanPro_Layoutinfo_Bearbeitungsvermerk(),
+		   source,
+		   new String[] {
+			   "appinfo", "\r\n                          \r\n  <ppi:WorkflowInformation>\r\n                               \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                               \r\n    <ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|B\u00dc|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN</ppi:Untergewerke>\r\n                            \r\n  </ppi:WorkflowInformation>\r\n                       \r\n"
 		   });
 		addAnnotation
 		  (getPlanPro_Layoutinfo_ElementPosition(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                          \n  <ppi:WorkflowInformation>\n                               \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                            \n  </ppi:WorkflowInformation>\n                       \n"
+			   "appinfo", "\r\n                          \r\n  <ppi:WorkflowInformation>\r\n                               \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                            \r\n  </ppi:WorkflowInformation>\r\n                       \r\n"
 		   });
 		addAnnotation
 		  (getPlanPro_Layoutinfo_ElementStil(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                          \n  <ppi:WorkflowInformation>\n                               \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                            \n  </ppi:WorkflowInformation>\n                       \n"
+			   "appinfo", "\r\n                          \r\n  <ppi:WorkflowInformation>\r\n                               \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                            \r\n  </ppi:WorkflowInformation>\r\n                       \r\n"
 		   });
 		addAnnotation
 		  (getPlanPro_Layoutinfo_Lageplan(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                          \n  <ppi:WorkflowInformation>\n                               \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                            \n  </ppi:WorkflowInformation>\n                       \n"
+			   "appinfo", "\r\n                          \r\n  <ppi:WorkflowInformation>\r\n                               \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                            \r\n  </ppi:WorkflowInformation>\r\n                       \r\n"
 		   });
 		addAnnotation
 		  (getPlanPro_Layoutinfo_LageplanBlattschnitt(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                          \n  <ppi:WorkflowInformation>\n                               \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                            \n  </ppi:WorkflowInformation>\n                       \n"
+			   "appinfo", "\r\n                          \r\n  <ppi:WorkflowInformation>\r\n                               \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                            \r\n  </ppi:WorkflowInformation>\r\n                       \r\n"
 		   });
 	}
 

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Bahnuebergang" nsURI="http://www.plan-pro.org/modell/Bahnuebergang/1.10.0.1"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Bahnuebergang" nsURI="http://www.plan-pro.org/modell/Bahnuebergang/1.10.0.3"
     nsPrefix="nsBahnuebergang">
   <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-    <details key="documentation" value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+    <details key="documentation" value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EDataType" name="Abstand_Gehweg_Fahrbahn_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TAbstand_Gehweg_Fahrbahn"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Abstand_Gehweg_Fahrbahn_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Abstand_Gehweg_Fahrbahn_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCAbstand_Gehweg_Fahrbahn"/>
       <details key="kind" value="elementOnly"/>
@@ -30,7 +30,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#boolean"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Akustik_Fussgaenger_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Akustik_Fussgaenger_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCAkustik_Fussgaenger"/>
       <details key="kind" value="elementOnly"/>
@@ -49,12 +49,12 @@
       <details key="baseType" value="TAkustik_Fussgaenger"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Ausrichtung_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Ausrichtung_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCAusrichtung"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//Ausrichtung_Type"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//Ausrichtung_Type"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -69,7 +69,7 @@
       <details key="pattern" value="-?([1-8]?[0-9]|90)"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Ausrichtung_Winkel_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Ausrichtung_Winkel_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCAusrichtung_Winkel"/>
       <details key="kind" value="elementOnly"/>
@@ -82,7 +82,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Auto_Het_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Auto_Het_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCAuto_Het"/>
       <details key="kind" value="elementOnly"/>
@@ -98,10 +98,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Baulast_Type" instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TBaulast"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Baulast_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Baulast_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBaulast"/>
       <details key="kind" value="elementOnly"/>
@@ -114,7 +114,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Baumprofil_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Baumprofil_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBaumprofil"/>
       <details key="kind" value="elementOnly"/>
@@ -131,11 +131,11 @@
       instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TBeeinflussung_Strassenverkehr"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Beeinflussung_Strassenverkehr_TypeClass"
-      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBeeinflussung_Strassenverkehr"/>
       <details key="kind" value="elementOnly"/>
@@ -151,11 +151,11 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Bez_Schrankenantrieb_Type" instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TBez_Schrankenantrieb"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette"/>
       <details key="pattern" value=".{2,3}"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Bez_Schrankenantrieb_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Bez_Schrankenantrieb_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBez_Schrankenantrieb"/>
       <details key="kind" value="elementOnly"/>
@@ -172,11 +172,11 @@
       instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TBezeichnung_BUE_GFR_Eckpunkt"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Bezeichnung_BUE_GFR_Eckpunkt_TypeClass"
-      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBezeichnung_BUE_GFR_Eckpunkt"/>
       <details key="kind" value="elementOnly"/>
@@ -192,10 +192,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Bezeichnung_GFR_Element_Type" instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TBezeichnung_GFR_Element"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Bezeichnung_GFR_Element_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Bezeichnung_GFR_Element_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBezeichnung_GFR_Element"/>
       <details key="kind" value="elementOnly"/>
@@ -217,7 +217,7 @@
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Bezeichnung_GFR_Tripelspiegel_TypeClass"
-      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBezeichnung_GFR_Tripelspiegel"/>
       <details key="kind" value="elementOnly"/>
@@ -234,11 +234,11 @@
       instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TBezeichnung_Verkehrszeichen"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Bezeichnung_Verkehrszeichen_TypeClass"
-      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBezeichnung_Verkehrszeichen"/>
       <details key="kind" value="elementOnly"/>
@@ -257,7 +257,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#boolean"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Blitzpfeil_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Blitzpfeil_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBlitzpfeil"/>
       <details key="kind" value="elementOnly"/>
@@ -307,7 +307,7 @@
         <details key="documentation" value="Haltfall des vor einem FÜ-BÜ liegenden Signals, wenn dieser gestört ist. Ist ein Abschnitt der freien Strecke in die Zuglenkung einbezogen und befinden sich in diesem Streckenabschnitt BÜ mit der Funktionsüberwachung FÜ, dann ist bei Bedienung des ESTW aus der Betriebszentrale die Störhaltabhängigkeit zu planen. Damit wird verhindert, dass die Zuglenkung auch bei gestörtem BÜ Fahrstraßen in Richtung Strecke mit gestörtem BÜ einstellt. DB-Regelwerk TM 2010 - 120 I.NVT3 (Fa. Siemens) Datenblatt für die Abhängigkeiten BÜ - Stw Weiterhin existiert ein Lastenheft für die technisch-funktionale Störhaltfunktionalität, das dem LST-Fachplaner nicht zur Verfügung steht."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -320,7 +320,7 @@
         <details key="documentation" value="Ein Merkhinweis ist zu setzen. Der Merkhinweis wird gesetzt, wenn die Verbindung zwischen Betriebszentrale (BZ) und derjenigen ESTW-Unterzentrale (UZ) getrennt ist, in der der entsprechende Bahnübergang fernüberwacht wird. DB-Regelwerk TM 2010 - 120 I.NVT3 (Fa. Siemens) Datenblatt für die Abhängigkeiten BÜ - Stw Weiterhin existiert ein Lastenheft für die technisch-funktionale Störhaltfunktionalität, das dem LST-Fachplaner nicht zur Verfügung steht."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -334,7 +334,7 @@
         <details key="documentation" value="Angabe der gewählten Zeit für die Zeitüberschreitungsmeldung aus der Einschaltstreckenberechnung. DB-Regelwerk Einschaltstreckenberechnung "/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>0&lt;/ppi:ProposedValue>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..n] ganzzahlig &lt;/ppi:Patternbeschreibung>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[1..99999] ganzzahlig&lt;/ppi:Patternbeschreibung_Abweichend>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>0&lt;/ppi:ProposedValue>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..n] ganzzahlig &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[1..99999] ganzzahlig&lt;/ppi:Patternbeschreibung_Abweichend>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -342,19 +342,19 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Anlage" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Punkt_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Anlage" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Punkt_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Beschreibung der baulichen Anlage des Bahnübergangs (BÜ) einschließlich der technischen Sicherung, sofern vorhanden. Das Objekt wird auf den Kreuzungspunkt gem. Ril 815.2000 verortet, wobei die punktförmige Verortung auf alle zum BÜ gehörigen Gleisachsen erfolgen soll. Damit ergibt sich die sogenannte BÜ-Mitte gemäß Einschaltstreckenberechnung. DB-Regelwerk Für die Planung von Bahnübergängen gelten folgende Regelwerke: 815, 819.12xx. Die konkreten Bezüge zum Regelwerk werden für die einzelnen Attributen angegeben."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Anlage"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="bezeichnung" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//Bezeichnung_Element_AttributeGroup"
+        eType="ecore:EClass http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//Bezeichnung_Element_AttributeGroup"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
@@ -371,7 +371,7 @@
         <details key="name" value="BUE_Anlage_Allg"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAEABUEAnschaltung" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_Aussenelementansteuerung_ohne_Proxy_TypeClass"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDAEABUEAnschaltung" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_Aussenelementansteuerung_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die Aussenelementansteuerung, von der die BÜ-Anlage gesteuert/geschaltet wird."/>
@@ -381,7 +381,7 @@
         <details key="name" value="ID_AEA_BUE_Anschaltung"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUESchnittstelle" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Schnittstelle_TypeClass"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUESchnittstelle" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Schnittstelle_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die Schnittstelle zwischen BÜ und ESTW, die für diese BÜ-Anlage erforderlich ist. Der Verweis wird nur für technisch gesicherte Bahnübergänge mit Abhängigkeit zu einem Stellwerk befültt (Hp, Fü sowie Kombinationen aus beiden)."/>
@@ -403,7 +403,7 @@
         <details key="documentation" value="Angabe der Bauart des Bahnübergang (BÜ). Folgende Unterscheidungen werden vorgenommen: BÜ: BÜ nach Ril 815 mit oder ohne technische Sicherung; Bau-BÜ: zeitlich begrenzte Anordnung eines BÜ, meist zur Anbindung eines Baufeldes in Insellage; Resi: Übergang für die Sicherung von Bahnsteigzugängen für Reisende (Reisendensicherung), die höhengleich über das Gleis führen; im Zusammenhang mit der signaltechnischen Ausrüstung des Gleises, an dem die Resi angeordnet wird, gelten besondere Anforderungen. Nach EBO gelten Resi nicht als Bahnübergang, werden in PlanPro aber abweichend von der EBO als Bahnübergang modelliert. DB-Regelwerk Für BÜ und Resi gelten unterschiedliche Vorschriften zur Auslegung und Berechnung. BÜ: Ril 815 Resi: Ril 413 "/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>Bue&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>Bue&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -416,7 +416,7 @@
         <details key="documentation" value="Für die BÜ-Anlage besteht eine Abhängigkeit zur Lichtzeichenanlage einer benachbarten Straßenkreuzung/-einmündung. Das Attribut wird nur befüllt, wenn eine Abhängigkeit zu einer Lichtzeichenanlage besteht. DB-Regelwerk 815.0051 \&quot;Richtlinien über Abhängigkeiten zwischen der technischen Sicherung von Bahnübergängen und der Verkehrsregelung an benachbarten Straßenkreuzungen und -einmündungen (BÜSTRA)\&quot; "/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -429,7 +429,7 @@
         <details key="documentation" value="Der Bahnübergang wird mit einer technischen Gefahrraumfreimeldeanlage (GFR) überwacht. Die GFR findet nur bei BÜ mit Vollschrankenabschuss (HH oder V) Anwendung. Planungsattribute zur GFR werden zu einem späteren Zeitpunkt in das Modell aufgenommen. Das Attribut wird nur befüllt, wenn eine GFR vorhanden ist. DB-Regelwerk 819.1210 "/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -493,12 +493,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Anlage_Strasse" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Anlage_Strasse" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Straßenbezogene Angaben zur BUE_Anlage, die im Wesentlichen im Rahmen der bautechnischen Planung benötigt werden. Die Themen Längsneigung und Ausrundungshalbmesser werden aufgrund der Vielzahl notwendiger Angaben nicht im Modell abgebildet (separate Betrachtung erforderlich)."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Anlage_Strasse"/>
@@ -519,7 +519,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEAnlage" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die zugehörige BÜ-Anlage"/>
@@ -597,12 +597,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Anlage_V" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Anlage_V" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Angaben zu gleis- und straßenseitigen Mindest- und Höchstgeschwindigkeiten für die Einschaltstreckenberechnung."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Anlage_V"/>
@@ -616,7 +616,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEAnlage" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die zugehörige BÜ-Anlage"/>
@@ -658,7 +658,7 @@
         <details key="documentation" value="Minimale Räumgeschwindigkeit von Fußgängern auf dem den BÜ kreuzenden Weg in m/s (vF). Zulässig sind 1,0 bis 1,5 m/s bzw. 0,5 oder 0,8 m/s bei technischer Reisendensicherung."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[0.5..1.5]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0.5..1.5]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -681,7 +681,7 @@
         <details key="documentation" value="Minimale Räumgeschwindigkeit von Fahrzeugen auf der den BÜ kreuzenden Straße (vST). Zulässig sind 5 oder 10 km/h."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[5, 10]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[5, 10]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -689,19 +689,19 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Ausschaltung" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Ausschaltung" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Logisches Objekt, das alle Informationen zur Ausschaltung eines Bahnübergangs enthält. Über den Verweis auf BUE Gleisbezogener Gefahrraum findet eine Verortung am zugehörigen Gleis statt, für das der Ausschaltkontakt angeordnet wird. Der Ausschaltkontakt selbst ist über das Objekt Schaltmittel Zuordnung abgebildet. Für die BUE_Ausschaltung ist, in Fahrtrichtung Ausschaltkontakt weg vom BÜ gesehen, die RÜCKGELEGENE Grenze von BUE Gleisbezogener Gefahrraum für die Verortung maßgebend. Die Gefahrraum-Grenze liegt damit in Fahrtrichtung VOR dem Ausschaltkontakt. DB-Regelwerk 815.0032 4 (3) Die Planung der Ausschaltung erfolgt entsprechend der Projektierungshinweise der konkreten BÜ-Technik. Seitens der Ril 815 gibt es dazu keine konkreten Vorgaben. "/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Ausschaltung"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEGleisbezGefahrraum"
-        lowerBound="1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Gleisbezogener_Gefahrraum_TypeClass"
+        lowerBound="1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Gleisbezogener_Gefahrraum_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf den zugehörigen Gefahrraum, auf den sich die Ausschaltung – gleisbezogen - bezieht. Ist bei der Planung von technisch gesicherten BÜ zu befüllen. "/>
@@ -712,7 +712,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Bauart_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Bauart_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBUE_Bauart"/>
       <details key="kind" value="elementOnly"/>
@@ -742,7 +742,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBedienAnzeigeElement"
-        lowerBound="1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_Bedien_Anzeige_Element_TypeClass"
+        lowerBound="1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_Bedien_Anzeige_Element_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf das Bedien Anzeige Element, welches die Zuordnung zur Bedien Einrichtung Oertlich und damit zur physischen Unterbringung der Tasten herstellt. "/>
@@ -753,7 +753,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDHandschaltWirkfunktion"
-        lowerBound="1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_Handschalt_Wirkfunktion_TypeClass"
+        lowerBound="1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_Handschalt_Wirkfunktion_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die zugehörige BUE Anlage (bei BÜ-bezogenen Funktionen) bzw. auf die zugehörige BUE Einschaltung / BUE Ausschaltung (bei gleisbezogenen Funktionen). "/>
@@ -764,12 +764,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Bedien_Anzeige_Element" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Bedien_Anzeige_Element" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Objekt zur Definition der logischen Bedienfunktionen, die über Taster auf den BÜ einwirken. Es dient der Zuordnung der ausgewählten Bedienfunktionen zum BÜ bzw. zu den Ein-/Ausschaltungen des zugehörigen Gleises. Die Zuordnung zur physischen Unterbringung erfolgt über den Verweis auf Bedien Anzeige Element. DB-Regelwerk 819.1204 8 TM 2012 - 001 I.NVT 3 "/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Bedien_Anzeige_Element"/>
@@ -784,7 +784,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Buestra_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Buestra_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBUE_Buestra"/>
       <details key="kind" value="elementOnly"/>
@@ -797,19 +797,19 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Deckendes_Signal_Zuordnung" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Deckendes_Signal_Zuordnung" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Das Zuordnungsobjekt BUE_Deckendes_Signal bildet die diesbezügliche Angabe in der Signaltabelle 1 sowie in der Einschaltstreckenberechnung ab. Die Angaben in der Signaltabelle 1 sowie in der Einschaltstreckenberechnung beziehen sich auf das deckende Signal (Haupt-/LS-Signal) und nicht auf die den BÜ-Schließvorgang anstoßende Fahrstraße. DB-Regelwerk Signaltabelle 1, Zeile 33 und 34 Einschaltstreckenberechnung "/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Deckendes_Signal_Zuordnung"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEEinschaltung" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Einschaltung_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Einschaltung_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die zu dem deckenden Signal zugehörige Einschaltung. DB-Regelwerk Signaltabelle 1 "/>
@@ -820,7 +820,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDSignal" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_Signal_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_Signal_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Zuordnung zu dem Signal, welches den BÜ deckt (deckendes Haupt-/ LS-Signal)."/>
@@ -841,12 +841,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Einschaltung" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Einschaltung" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Logisches Objekt, das alle Informationen zur Einschaltung eines Bahnübergangs (BÜ) enthält. Über den Verweis auf BUE Gleisbezogener Gefahrraum findet eine Verortung am zugehörigen Gleis statt, für das der Einschaltkontakt angeordnet wird. Der Einschaltkontakt selbst ist über das Objekt Schaltmittel Zuordnung abgebildet. Für die BUE Einschaltung ist die in Fahrtrichtung von Anrückmelder / Einschaltkontakt in Richtung BÜ die VOR der BÜ-Mitte liegende Grenze von BUE Gleisbezogener Gefahrraum maßgebend, auf dem das Objekt verortet wird. Die Gefahrraum-Grenze liegt damit in Fahrtrichtung HINTER dem Anrückmelder / Einschaltkontakt. Bei Ausbildung des Einschaltpunktes als Doppelschleife gelten hinsichtlich des maßgebenden Einschaltpunktes gemäß Einschaltstreckenberechnung folgende Unterschiede: Hersteller PintschBamag: maßgebend ist die Mitte der in Fahrtrichtung BÜ liegenden ERSTEN Schleife Hersteller Scheidt\u0026amp;Bachmann: maßgebend ist die Mitte der in Fahrtrichtung BÜ liegenden ZWEITE Schleife DB-Regelwerk 815.0033 in Verbindung mit Einschaltstreckenberechnung Die Angaben zur BÜ-Einschaltung beschränken sich gegenwärtig auf die Planungswerte mit Auswirkungen auf das Stellwerk."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Einschaltung"/>
@@ -863,7 +863,7 @@
         lowerBound="1" eType="#//BUE_Funktionsueberwachung_TypeClass" containment="true"
         resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="Angabe der Funktionsüberwachung, die der Ermittlung der Einschaltung zugrunde liegt. Es wird zwischen folgenden Funktionsüberwachungen unterschieden: Hp: Der BÜ ist durch Hauptsignal(e) gedeckt. Die Fahrtstellung erfolgt erst, wenn der BÜ geschlossen ist. Fü: Der BÜ wird zugbewirkt eingeschaltet, die Überwachung erfolgt durch einen Fahrdienstleiter im Stellwerk. Dieser kann im Störungsfall eingreifen. Üs: Der BÜ wird zugbewirkt eingeschaltet und vom Triebfahrzeugführer überwacht. Der Zustand des BÜ wird diesem durch Überwachungssignale angezeigt. Es gibt keine Verbindung zum Stellwerk. Kombinationen der Funtkionsüberwachungen sind möglich. DB-Regelwerk 815.0032 1 (1) und (2) 819.1203 3 "/>
+        <details key="documentation" value="Angabe der Funktionsüberwachung, die der Ermittlung der Einschaltung zugrunde liegt. Es wird zwischen folgenden Funktionsüberwachungen unterschieden: Hp: Der BÜ ist durch Hauptsignal(e) gedeckt. Die Fahrtstellung erfolgt erst, wenn der BÜ geschlossen ist. Fü: Der BÜ wird zugbewirkt eingeschaltet, die Überwachung erfolgt durch einen Fahrdienstleiter im Stellwerk. Dieser kann im Störungsfall eingreifen. Üs: Der BÜ wird zugbewirkt eingeschaltet und vom Triebfahrzeugführer überwacht. Der Zustand des BÜ wird diesem durch Überwachungssignale angezeigt. Es gibt keine Verbindung zum Stellwerk. FSÜ(B): Eigensichere BÜSA mit sicherer Einschaltung, bei der die Einschaltpunkte durch die BÜSA (B) verwaltet werden. Der Einsatz erfolgt außerhalb komplexer Gleistopologien, vorrangig auf der freien Strecke. Es werden damit die bisherigen Anwendungsfälle für Fü, ÜS und ÜSOE abgelöst. FSÜ(E): Eigensichere BÜSA mit sicherer Einschaltung, bei der die Einschaltpunkte durch das ESTW (E) verwaltet werden, was bei komplexen Gleistopologien notwendig ist. Bisher konnten diese Fälle nur mit der Überwachungsart Hp realisiert werden. FSÜ(S): Nicht eigensichere BÜSA ohne Einschaltpunkte. Die Einschaltung erfolgt signalbewirkt (S) durch das ESTW. Es erfolgt die Überwachung der Einschaltung, was bei BÜSA notwendig ist, die eine Gefahrenraumfreiprüfung (siehe auch 8.1.3) erfordern oder als BÜSTRA ausgeführt sind. Derartige Anlagen wurden bisher mit der Überwachungsart Hp gesichert; der Nachteil der langen Sperrzeit bleibt erhalten. Kombinationen der Funtkionsüberwachungen sind möglich. DB-Regelwerk 815.0032 1 (1) und (2) 819.1203 3 "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -883,7 +883,7 @@
         <details key="documentation" value="Errechnete Einschaltverzögerungszeit aus der Einschaltstreckenberechnung. Die Einschaltverzögerungszeit (Angabe in vollen Sekunden) dient der Optimierung der zugbewirkten Einschaltung. Zur Auswertung werden Gleisfreimeldeabschnitte verwendet, wobei der Beginn der Besetzung den Einschaltimpuls bewirkt. Da der Beginn eines Gleisfreimeldeabschnitte selten am Ort des optimalen, errechneten Einschaltpunktes des BÜ liegt, wird eine Verzögerungszeit vorgesehen, die zunächst vergehen muss, bis der Einschaltimpuls nach Befahren der Gleisfreimeldeabschnittsgrenze vom ESTW an den BÜ weitergegeben wird. DB-Regelwerk Einschaltstreckenberechnung Datenblatt für die Abhängigkeiten BÜ - Stw "/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>0&lt;/ppi:ProposedValue>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[0.00..99999.99] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung_Abweichend>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>0&lt;/ppi:ProposedValue>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[0.00..99999.99] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung_Abweichend>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -897,7 +897,7 @@
         <details key="documentation" value="Auf der Grundlage der errechneten Einschaltverzögerung (siehe dazu Definition unter Einschaltverz Errechnet) wird in Abhängigkeit des ESTW-Herstellers eine firmenspezifische Einschaltverzögerungszeit ausgerechnet. Das gegenwärtig gültige \&quot;Datenblatt für die Abhängigkeiten BÜ - Stw\&quot; sieht eine firmenspezifisch errechnete Einschaltverzögerung (Spalte \&quot;Faktor beim ESTW\&quot;) mit Hilfe eines \&quot;ESTW-Faktors\&quot; vor. Auf diese Berechnung wird im Modell verzichtet. DB-Regelwerk Einschaltstreckenberechnung Datenblatt für die Abhängigkeiten BÜ - Stw "/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>0&lt;/ppi:ProposedValue>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[0.00..99999.99] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung_Abweichend>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>0&lt;/ppi:ProposedValue>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[0.00..99999.99] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung_Abweichend>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -920,7 +920,7 @@
         <details key="documentation" value="Eine Kurzzugschaltung ist zu berücksichtigen. Dies wäre der Fall, wenn sich der Bahnübergang in einem Bahnhofsgleis befindet und nach Einfahrt des Zuges durch diesen nicht mehr besetzt ist. DB-Regelwerk Datenblatt für die Abhängigkeiten BÜ - Stw "/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -933,7 +933,7 @@
         <details key="documentation" value="Errechnete Signalverzögerungszeit aus der Einschaltstreckenberechnung. Bei abhängigen Signalen vor BÜ mit Halbschranken wird die Signalfahrtstellung so lange verzögert, dass am Signal anfahrende Züge den vom BÜ abfließenden Straßenverkehr nicht mehr gefährden können. In den Planungsdaten wird dieser Wert je Signal festgelegt. DB-Regelwerk Einschaltstreckenberechnung Datenblatt für die Abhängigkeiten BÜ - Stw "/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>0&lt;/ppi:ProposedValue>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[0.00..99999.99] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung_Abweichend>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>0&lt;/ppi:ProposedValue>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[0.00..99999.99] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung_Abweichend>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -946,7 +946,7 @@
         <details key="documentation" value="Firmenspezifische Signalverzögerungszeit, die auf Basis der errechneten Signalverzögerungszeit (Definition siehe Signalverz Errechnet) in Abhängigkeit des ESTW-Herstellers errechnet wird. Das gegenwärtig gültige \&quot;Datenblatt für die Abhängigkeiten BÜ - Stw\&quot; sieht eine firmenspezifisch errechnete Signalverzögerungszeit (Spalte \&quot;Faktor beim ESTW\&quot;) mit Hilfe eines \&quot;ESTW-Faktors\&quot; vor. Auf diese Berechnung wird im Modell verzichtet. DB-Regelwerk Datenblatt für die Abhängigkeiten BÜ - Stw "/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>0&lt;/ppi:ProposedValue>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[0.00..99999.99] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung_Abweichend>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>0&lt;/ppi:ProposedValue>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[0.00..99999.99] zwei Stellen nach dem Komma&lt;/ppi:Patternbeschreibung_Abweichend>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -964,19 +964,19 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Einschaltung_Zuordnung" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Einschaltung_Zuordnung" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Logisches Objekt zur Zuordnung zwischen BUE Einschaltung und zugehörigem BUE Gleisbezogener Gefahrraum. Im Regelfall wirkt eine BUE_Einschaltung direkt auf einen gleisbezogenen Gefahrraum; das Zuordnungsobjekt wäre nicht erforderlich. Liegt jedoch zwischen BUE_Einschaltung und dem BÜ eine Weichenverbindung, wird eine Zuordnung der BUE_Einschaltung auf mehrere gleisbezogene Gefahrräume notwendig. Diese Verbindung stellt das Zuordnungsobjekt her. Zur Vereinheitlichung wurde auf eine Choice zwischen direktem Verweis von BUE_Einschaltung auf BUE_Gleisbezogener_Gefahrraum und den Verweisen durch das Zuordnungsobjekt verzichtet. DB-Regelwerk Dieser Anwendungsfall ist im Regelwerk der DB AG nicht explizit beschrieben."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Einschaltung_Zuordnung"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEEinschaltung" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Einschaltung_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Einschaltung_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf denjenigen Einschaltpunkt, der die Einschaltung des betreffenden BUE Gleisbezogener Gefahrraum bewirkt. DB-Regelwerk Einschaltstreckenberechnung "/>
@@ -987,7 +987,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEGleisbezGefahrraum"
-        lowerBound="1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Gleisbezogener_Gefahrraum_TypeClass"
+        lowerBound="1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Gleisbezogener_Gefahrraum_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf den zugehörigen Gefahrraum, auf den sich die BUE_Einschaltung - gleisbezogen - bezieht. "/>
@@ -999,7 +999,7 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BUE_Funktionsueberwachung_TypeClass"
-      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBUE_Funktionsueberwachung"/>
       <details key="kind" value="elementOnly"/>
@@ -1012,12 +1012,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Gefahrraum_Eckpunkt" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Punkt_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Gefahrraum_Eckpunkt" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Punkt_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Eckpunkt des BÜ-Gefahrraums."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Gefahrraum_Eckpunkt"/>
@@ -1032,7 +1032,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEAnlage" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die zugehörige BÜ-Anlage"/>
@@ -1060,12 +1060,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Gleisbezogener_Gefahrraum" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Bereich_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Gleisbezogener_Gefahrraum" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Bereich_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Bereichsobjekt, das den Gefahrraum eines BÜ für ein Gleis abbildet. Die Grenzen des Bereichsobjektes liegen jeweils auf dem Schnittpunkt zwischen Gefahrraumkante und zugehörigem Gleis. Die zugehörigen Ein- und Ausschaltelemente verweisen auf die jeweilige Grenze des Bereichsobjektes. Für jedes Gleis am BÜ ist ein solches Objekt vorzusehen. Somit hat ein BÜ bzw. eine BUE Anlage immer genauso viele Instanzen von BUE_Gleisbezogener_Gefahrraum wie BÜ-Gleise. Zu einem späteren Zeitpunkt werden ggf. weitere, Gefahrraum-spezifische Angaben ergänzt. DB-Regelwerk 819.1210 7 (1)-(3) "/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Gleisbezogener_Gefahrraum"/>
@@ -1087,7 +1087,7 @@
         <details key="documentation" value="Bezeichnung des BÜ-Gleises. Die Bezeichnung wird in alphabetisch aufsteigender Reihenfolge vergeben, beginnend bei \&quot;a\&quot;. Bei mehrgleisigen Strecken über einen BÜ wird das in aufsteigender km-Richtung rechts liegende Gleis mit \&quot;a\&quot; bezeichnet; das daneben liegende (Gegen)Gleis mit \&quot;b\&quot; usw. Diese \&quot;Kennung\&quot; ist Bestandteil der Bezeichnung der Anrueckmelder und Einschaltkontakte (sofern vorhanden) sowie der Ausschaltkontakte des BÜ. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht eindeutig beschrieben. Es geht aus dem Eingabeblättern der Einschaltstreckenberechnung hervor."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation>&#xA;                               &#xA;    &lt;ppi:ProposedValue>a&lt;/ppi:ProposedValue>&#xA;                               &#xA;    &lt;ppi:Patternbeschreibung>[1] Kleinbuchstabe &lt;/ppi:Patternbeschreibung>&#xA;                               &#xA;    &lt;ppi:Patternbeschreibung_Abweichend> [1] Kleinbuchstabe ohne Umlaute&lt;/ppi:Patternbeschreibung_Abweichend>&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                       &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                          &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                               &#xD;&#xA;    &lt;ppi:ProposedValue>a&lt;/ppi:ProposedValue>&#xD;&#xA;                               &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1] Kleinbuchstabe &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                               &#xD;&#xA;    &lt;ppi:Patternbeschreibung_Abweichend> [1] Kleinbuchstabe ohne Umlaute&lt;/ppi:Patternbeschreibung_Abweichend>&#xD;&#xA;                            &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                       &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1095,7 +1095,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEAnlage" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Anlage_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Anlage_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die BUE Anlage, zu der der Gefahrraum zugehörig ist. "/>
@@ -1107,7 +1107,7 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BUE_Handschalteinrichtung_TypeClass"
-      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBUE_Handschalteinrichtung"/>
       <details key="kind" value="elementOnly"/>
@@ -1120,19 +1120,19 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Kante" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Punkt_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Kante" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Punkt_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="Gleisbezogene Abbildung der BÜ-Kante zur Berechnung des Sicherheitsabstands bei Hp-gedeckten Bahnübergängen."/>
+      <details key="documentation" value="Gleisbezogene Abbildung der BÜ-Kante zur Berechnung des Sicherheitsabstands bei Hp-gedeckten Bahnübergängen. Es ist nur eine punktförmige Verortung auf einer Gleiskante anzugeben."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Kante"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEAnlage" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die zugehörige BÜ-Anlage."/>
@@ -1143,12 +1143,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Kreuzungsplan" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Kreuzungsplan" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Verortungspunkte des für die BÜ-Planung verwendeten bautechnischen BÜ-Kreuzungsplans. Sofern der Anhang nicht als GeoTiff vorliegt, sind mindestens 2 Verortungspunkte anzugeben."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Kreuzungsplan"/>
@@ -1163,7 +1163,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDAnhangKreuzungsplan"
-        lowerBound="1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_Anhang_ohne_Proxy_TypeClass"
+        lowerBound="1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_Anhang_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf den einzubindenden bautechnischen BÜ-Kreuzungsplan als Bild."/>
@@ -1174,7 +1174,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEAnlage" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die für die Ausgabe des Kreuzungsplans relevante BÜ-Anlage."/>
@@ -1191,7 +1191,7 @@
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDGEOPunkt" lowerBound="1"
-        upperBound="-1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_GEO_Punkt_ohne_Proxy_TypeClass"
+        upperBound="-1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_GEO_Punkt_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf einen GEO_Punkt zur geografischen Verortung des Bildpunktes. Eine Mehrfachangabe ist bei Verortung in unterschiedlichen Koordinatensystemen notwendig."/>
@@ -1222,7 +1222,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Mit_GFR_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Mit_GFR_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBUE_Mit_GFR"/>
       <details key="kind" value="elementOnly"/>
@@ -1238,11 +1238,11 @@
   <eClassifiers xsi:type="ecore:EDataType" name="BUE_Nachlaufzeit_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TBUE_Nachlaufzeit"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"/>
       <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Nachlaufzeit_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Nachlaufzeit_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBUE_Nachlaufzeit"/>
       <details key="kind" value="elementOnly"/>
@@ -1261,7 +1261,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Neigung_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Neigung_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBUE_Neigung"/>
       <details key="kind" value="elementOnly"/>
@@ -1274,12 +1274,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Schnittstelle" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Schnittstelle" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Schnittstelle zwischen dem Planer des ESTW und dem Planer der technischen Sicherung des Bahnübergangs. Im ESTW wird eine technische Schnittstelle für Hp-Abhängigkeiten zwischen ESTW und BÜ und/oder Fernüberwachung (FÜ) durch den özF vorgesehen. Bau-BÜ, die über eine Schlüsselsperre gesichert werden, sowie nichttechnisch gesicherte BÜ erhalten keine BUE_Schnittstelle. DB-Regelwerk Die betreffenden Angaben finden sich im \&quot;Datenblatt für die Abhängigkeiten BÜ - Stw\&quot;."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Schnittstelle"/>
@@ -1300,7 +1300,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDStellelement" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_Stellelement_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_Stellelement_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf das Objekt Stellelement zur Zusammenfassung von Eigenschaften der Objekte BUE Schnittstelle, PZB Element, Schluesselsperre, Signal, W Kr Gsp Element. Das Stellelement enthält Informationen über den energetischen und logischen Anschluss der Objekte. Für das PZB Element ist der Verweis nur zu füllen, wenn das PZB_Element eine GÜ ist. DB-Regelwerk Bisher ohne eindeutige Darstellung "/>
@@ -1322,7 +1322,7 @@
         <details key="documentation" value="Nachlaufzeit des BÜ. Eine Nachlaufzeit wird vorgesehen, um an mehrgleisigen BÜ nach der Ausschaltung des BÜ eine Mindestöffnungszeit für den kreuzenden Straßenverkehr einzuhalten, bevor der BÜ erneut wieder eingeschaltet wird. Die Nachlaufzeit wirkt unmittelbar bei manueller Einschaltung durch den Fahrdienstleiter oder fahrstraßenbewirkter Einschaltung. DB-Regelwerk Einschaltstreckenberechnung "/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma &lt;/ppi:Patternbeschreibung>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung_Abweichend> [0.00..99999.99] zwei Stellen nach dem Komma &lt;/ppi:Patternbeschreibung_Abweichend>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung_Abweichend> [0.00..99999.99] zwei Stellen nach dem Komma &lt;/ppi:Patternbeschreibung_Abweichend>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1335,7 +1335,7 @@
         <details key="documentation" value="Vorlaufzeit des BÜ. Eine Vorlaufzeit wird vorgesehen, um an mehrgleisigen BÜ nach der Ausschaltung des BÜ eine Mindestöffnungszeit für den kreuzenden Straßenverkehr einzuhalten, bevor der BÜ erneut wieder eingeschaltet wird. Sie wird bei zugbewirkter Einschaltung vorgesehen und durch die Vorverlegung des Einschaltkontaktes erzwungen. Die sich daraus ergebene Verzögerungszeit wird als \&quot;Vorlaufzeit\&quot; bezeichnet. Damit verbunden ist der Nachteil, dass der BÜ zu früh eingeschaltet wird, wenn keine Zugbegegnung stattfindet. DB-Regelwerk Einschaltstreckenberechnung "/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma &lt;/ppi:Patternbeschreibung>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung_Abweichend> [0.00..99999.99] zwei Stellen nach dem Komma &lt;/ppi:Patternbeschreibung_Abweichend>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0.00..n] zwei Stellen nach dem Komma &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung_Abweichend> [0.00..99999.99] zwei Stellen nach dem Komma &lt;/ppi:Patternbeschreibung_Abweichend>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1348,7 +1348,7 @@
         <details key="documentation" value="Stecker, der die Betriebsart des zugehörigen Stellteils bestimmt. Bei vorbereiteten BÜ-Abhängigkeiten im Stellwerk, ohne dass die Außenanlage des BÜ vorhanden ist, kann mittels Ersatzstecker für das Stellwerk die Abhängigkeit zum BÜ aufgehoben werden. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Die Anwendung ist mit allen Beteiligten projektbezogen abzustimmen."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>Abhaengigkeit_aufgehoben&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>Abhaengigkeit_aufgehoben&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -1366,7 +1366,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Sicherungsart_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Sicherungsart_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBUE_Sicherungsart"/>
       <details key="kind" value="elementOnly"/>
@@ -1385,7 +1385,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Sicherungszeit_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Sicherungszeit_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBUE_Sicherungszeit"/>
       <details key="kind" value="elementOnly"/>
@@ -1398,19 +1398,19 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Spezifisches_Signal" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Spezifisches_Signal" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Objekt zur Zuordnung von Signalen, die ausschließlich im Zusammenhang mit einem Bahnübergang (BÜ) angeordnet werden. Dazu gehören zum Beispiel Pfeiftafeln, Lf-Signale mit und ohne Zusatz \&quot;BÜ\&quot; oder Überwachungssignale für BÜ, Merktafeln oder Merkpfähle u.a. Die Anwendung von Pfeiftafeln und Lf-Signalen erfolgt zumeist bei nichttechnisch gesicherten BÜ; die Anwendung der Überwachungssignale bei Bahnübergängen der Funktionsüberwachung \&quot;ÜS\&quot;. Für die vorgenannten Fälle ist der Verweis auf BUE Anlage zu befüllen. Wird zum Beispiel ein Merkpfahl zur Kennzeichnung eines Einschaltpunktes (Anwendung in besonderen Planungsfällen) vorgesehen, ist der Verweis auf BUE Einschaltung zu befüllen. Für die Bezeichnung von BÜ-spezifischen Signalen, insbesondere Überwachungssignale, sind Ausführungen auf der Seite Bezeichnung Signal vorhanden. DB-Regelwerk Formblatt zur Ermittlung der Sichtflächen für nichttechnisch gesicherte BÜ 819.1204 9 für ÜS SPU 24 für Merktafel /-pfahl BÜ-Kabellage- und -übersichtsplan "/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_Spezifisches_Signal"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDSignal" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_Signal_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_Signal_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf das Signal, welches im Zusammenhang mit dem BÜ angeordnet wird. Es ist zu unterscheiden, ob das Signal zur BUE Anlage (z. B. ÜS, Pfeiftafel) oder zur BUE Einschaltung (z. B. Merktafel) gehört."/>
@@ -1420,7 +1420,7 @@
         <details key="name" value="ID_Signal"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEAnlage" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Anlage_TypeClass"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEAnlage" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Anlage_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die BUE Anlage, für die das Signal angeordnet wird. "/>
@@ -1430,7 +1430,7 @@
         <details key="name" value="ID_BUE_Anlage"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEEinschaltung" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Einschaltung_TypeClass"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEEinschaltung" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Einschaltung_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die BUE_Einschaltung, an der das Signal angeordnet wird (z.B. Tafel für die Markierung des Einschaltkontaktes). DB-Regelwerk SPU (Sammlung der Planunterlagen) 24 "/>
@@ -1444,10 +1444,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="BUE_Strasse_Type" instanceClassName="java.util.List">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TBUE_Strasse"/>
-      <details key="itemType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="itemType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Strasse_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Strasse_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBUE_Strasse"/>
       <details key="kind" value="elementOnly"/>
@@ -1460,7 +1460,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Technik_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Technik_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBUE_Technik"/>
       <details key="kind" value="elementOnly"/>
@@ -1476,11 +1476,11 @@
   <eClassifiers xsi:type="ecore:EDataType" name="BUE_Vorlaufzeit_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TBUE_Vorlaufzeit"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"/>
       <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_Vorlaufzeit_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_Vorlaufzeit_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCBUE_Vorlaufzeit"/>
       <details key="kind" value="elementOnly"/>
@@ -1493,19 +1493,19 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BUE_WS_Fstr_Zuordnung" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="BUE_WS_Fstr_Zuordnung" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Zuordnung zwischen BUE-Einschaltung und zugehörigen Fahrstraßen, für die die Wirksamkeitskontakte wirken sollen."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CBUE_WS_Fstr_Zuordnung"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEEinschaltung" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Einschaltung_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Einschaltung_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf denjenigen Einschaltpunkt, für den die Wirksamschaltung vorgesehen wird. DB-Regelwerk Einschaltstreckenberechnung "/>
@@ -1516,7 +1516,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDFstrZugRangier" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_Fstr_Zug_Rangier_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_Fstr_Zug_Rangier_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Zeiger auf die Fahrstraße, für die die Einschaltung des BÜ abhängig geschaltet wird. DB-Regelwerk Datenblatt für die Abhängigkeiten BÜ - Stw "/>
@@ -1530,11 +1530,11 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Einschaltverz_Errechnet_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TEinschaltverz_Errechnet"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"/>
       <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Einschaltverz_Errechnet_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Einschaltverz_Errechnet_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCEinschaltverz_Errechnet"/>
       <details key="kind" value="elementOnly"/>
@@ -1550,11 +1550,11 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Einschaltverz_Gewaehlt_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TEinschaltverz_Gewaehlt"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"/>
       <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Einschaltverz_Gewaehlt_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Einschaltverz_Gewaehlt_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCEinschaltverz_Gewaehlt"/>
       <details key="kind" value="elementOnly"/>
@@ -1664,6 +1664,7 @@
     <eLiterals name="ENUMBUE_Sicherungsart_Ue_und_A" value="20" literal="Ue_und_A"/>
     <eLiterals name="ENUMBUE_Sicherungsart_Ue_und_P" value="21" literal="Ue_und_P"/>
     <eLiterals name="ENUMBUE_Sicherungsart_Ue_und_U" value="22" literal="Ue_und_U"/>
+    <eLiterals name="ENUMBUE_Sicherungsart_Zugpersonal" value="23" literal="Zugpersonal"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="ENUMBUESicherungsartObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -1677,9 +1678,9 @@
     </eAnnotations>
     <eLiterals name="ENUMBUE_Technik_Anrufschranke" literal="Anrufschranke"/>
     <eLiterals name="ENUMBUE_Technik_BUEP_93" value="1" literal="BUEP_93"/>
-    <eLiterals name="ENUMBUE_Technik_BUES_72D" value="2" literal="BUES_72D"/>
-    <eLiterals name="ENUMBUE_Technik_BUES_72Z" value="3" literal="BUES_72Z"/>
-    <eLiterals name="ENUMBUE_Technik_BUES2000" value="4" literal="BUES2000"/>
+    <eLiterals name="ENUMBUE_Technik_BUES2000" value="2" literal="BUES2000"/>
+    <eLiterals name="ENUMBUE_Technik_BUES_72D" value="3" literal="BUES_72D"/>
+    <eLiterals name="ENUMBUE_Technik_BUES_72Z" value="4" literal="BUES_72Z"/>
     <eLiterals name="ENUMBUE_Technik_EBUET_80" value="5" literal="EBUET_80"/>
     <eLiterals name="ENUMBUE_Technik_EBUET_80_VB" value="6" literal="EBUET_80_VB"/>
     <eLiterals name="ENUMBUE_Technik_FUE_58" value="7" literal="FUE_58"/>
@@ -1879,7 +1880,7 @@
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Ersatzstecker_Gleisbezogen_TypeClass"
-      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCErsatzstecker_Gleisbezogen"/>
       <details key="kind" value="elementOnly"/>
@@ -1896,11 +1897,11 @@
       instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TFahrbahn_Befestigung_Gleis"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Fahrbahn_Befestigung_Gleis_TypeClass"
-      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCFahrbahn_Befestigung_Gleis"/>
       <details key="kind" value="elementOnly"/>
@@ -1916,10 +1917,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Fahrbahn_Befestigung_Type" instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TFahrbahn_Befestigung"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Fahrbahn_Befestigung_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Fahrbahn_Befestigung_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCFahrbahn_Befestigung"/>
       <details key="kind" value="elementOnly"/>
@@ -1935,10 +1936,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Fahrbahn_Breite_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TFahrbahn_Breite"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Fahrbahn_Breite_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Fahrbahn_Breite_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCFahrbahn_Breite"/>
       <details key="kind" value="elementOnly"/>
@@ -1951,7 +1952,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Fue_Schaltfall_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Fue_Schaltfall_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCFue_Schaltfall"/>
       <details key="kind" value="elementOnly"/>
@@ -1964,7 +1965,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Fuss_Radweg_Art_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Fuss_Radweg_Art_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCFuss_Radweg_Art"/>
       <details key="kind" value="elementOnly"/>
@@ -1977,7 +1978,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Fuss_Radweg_Seite_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Fuss_Radweg_Seite_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCFuss_Radweg_Seite"/>
       <details key="kind" value="elementOnly"/>
@@ -1990,12 +1991,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GFR_Anlage" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="GFR_Anlage" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Gerfahrraumfreimeldeanlage. Folgende Rahmenbedingungen sind für den Einsatz einer GFR zu beachten: max. Höhe der Bodenwellen des BÜ: 15 cm; max. Neigung des BÜ: 2°."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CGFR_Anlage"/>
@@ -2009,7 +2010,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEAnlage" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die zugehörige BÜ-Anlage."/>
@@ -2066,7 +2067,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GFR_Art_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="GFR_Art_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCGFR_Art"/>
       <details key="kind" value="elementOnly"/>
@@ -2079,12 +2080,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GFR_Element" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="GFR_Element" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Detektor der GFR-Anlage (z. B. Radar). Elemente für eine Kamera-Überwachung sind  Bestandteil TK-Ausrüstung und werden daher nicht abgebildet."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CGFR_Element"/>
@@ -2098,7 +2099,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDGFRAnlage" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_GFR_Anlage_ohne_Proxy_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_GFR_Anlage_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die zugehörige GFR_Anlage."/>
@@ -2109,7 +2110,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDUnterbringung" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_Unterbringung_ohne_Proxy_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_Unterbringung_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf eine Unterbringung zur Angabe von Position und Befestigungsart des Detektors der GFR-Anlage."/>
@@ -2163,7 +2164,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GFR_Neigung_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="GFR_Neigung_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCGFR_Neigung"/>
       <details key="kind" value="elementOnly"/>
@@ -2176,12 +2177,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GFR_Tripelspiegel" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Punkt_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="GFR_Tripelspiegel" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Punkt_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Ortungshilfe für GFR-Anlagen der Firma Honeywell."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CGFR_Tripelspiegel"/>
@@ -2203,7 +2204,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDGFRAnlage" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_GFR_Anlage_ohne_Proxy_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_GFR_Anlage_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die zugehörige GFR-Anlage."/>
@@ -2262,7 +2263,7 @@
         <details key="documentation" value="Bezeichnung des Tripelspiegels."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..9]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..9]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -2273,10 +2274,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="GFR_Typ_Type" instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TGFR_Typ"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GFR_Typ_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="GFR_Typ_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCGFR_Typ"/>
       <details key="kind" value="elementOnly"/>
@@ -2289,7 +2290,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Gitterbehang_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Gitterbehang_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCGitterbehang"/>
       <details key="kind" value="elementOnly"/>
@@ -2305,11 +2306,11 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Gleis_Am_Bue_Type" instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TGleis_Am_Bue"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette"/>
       <details key="pattern" value="[a-z]"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Gleis_Am_Bue_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Gleis_Am_Bue_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCGleis_Am_Bue"/>
       <details key="kind" value="elementOnly"/>
@@ -2325,10 +2326,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Haltezeit_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="THaltezeit"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Haltezeit_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Haltezeit_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCHaltezeit"/>
       <details key="kind" value="elementOnly"/>
@@ -2341,12 +2342,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Hersteller_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Hersteller_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCHersteller"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//Hersteller_Type"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="ecore:EDataType http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//Hersteller_Type"
         unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -2354,7 +2355,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Hp_Ersatzstecker_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Hp_Ersatzstecker_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCHp_Ersatzstecker"/>
       <details key="kind" value="elementOnly"/>
@@ -2367,7 +2368,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Klassifizierung_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Klassifizierung_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCKlassifizierung"/>
       <details key="kind" value="elementOnly"/>
@@ -2386,7 +2387,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#boolean"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Kontrastblende_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Kontrastblende_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCKontrastblende"/>
       <details key="kind" value="elementOnly"/>
@@ -2411,7 +2412,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Kreuzungswinkel_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Kreuzungswinkel_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCKreuzungswinkel"/>
       <details key="kind" value="elementOnly"/>
@@ -2424,7 +2425,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Kurzzugschaltung_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Kurzzugschaltung_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCKurzzugschaltung"/>
       <details key="kind" value="elementOnly"/>
@@ -2437,7 +2438,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Lagerung_Art_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Lagerung_Art_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCLagerung_Art"/>
       <details key="kind" value="elementOnly"/>
@@ -2450,7 +2451,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LFUE_Impuls_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="LFUE_Impuls_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCLFUE_Impuls"/>
       <details key="kind" value="elementOnly"/>
@@ -2466,11 +2467,11 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Lieferlaenge_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TLieferlaenge"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
       <details key="pattern" value="1[0-9]|20|[1-9]"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Lieferlaenge_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Lieferlaenge_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCLieferlaenge"/>
       <details key="kind" value="elementOnly"/>
@@ -2484,7 +2485,7 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Montage_Ausgleichsgewichte_TypeClass"
-      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCMontage_Ausgleichsgewichte"/>
       <details key="kind" value="elementOnly"/>
@@ -2500,10 +2501,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Montage_Besonders_Type" instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TMontage_Besonders"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Montage_Besonders_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Montage_Besonders_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCMontage_Besonders"/>
       <details key="kind" value="elementOnly"/>
@@ -2519,10 +2520,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Montagehoehe_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TMontagehoehe"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Montagehoehe_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Montagehoehe_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCMontagehoehe"/>
       <details key="kind" value="elementOnly"/>
@@ -2542,7 +2543,7 @@
       <details key="pattern" value="200|300"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Optik_Durchmesser_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Optik_Durchmesser_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCOptik_Durchmesser"/>
       <details key="kind" value="elementOnly"/>
@@ -2555,7 +2556,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Optik_Symbolmaske_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Optik_Symbolmaske_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCOptik_Symbolmaske"/>
       <details key="kind" value="elementOnly"/>
@@ -2574,7 +2575,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Pegel_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Pegel_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCPegel"/>
       <details key="kind" value="elementOnly"/>
@@ -2593,7 +2594,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Pixel_Koordinate_X_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Pixel_Koordinate_X_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCPixel_Koordinate_X"/>
       <details key="kind" value="elementOnly"/>
@@ -2612,7 +2613,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Pixel_Koordinate_Y_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Pixel_Koordinate_Y_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCPixel_Koordinate_Y"/>
       <details key="kind" value="elementOnly"/>
@@ -2628,10 +2629,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Raeumstrecke_DAB_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TRaeumstrecke_DAB"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Raeumstrecke_DAB_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Raeumstrecke_DAB_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCRaeumstrecke_DAB"/>
       <details key="kind" value="elementOnly"/>
@@ -2647,10 +2648,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Raeumstrecke_DBK_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TRaeumstrecke_DBK"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Raeumstrecke_DBK_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Raeumstrecke_DBK_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCRaeumstrecke_DBK"/>
       <details key="kind" value="elementOnly"/>
@@ -2666,10 +2667,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Raeumstrecke_DCK_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TRaeumstrecke_DCK"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Raeumstrecke_DCK_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Raeumstrecke_DCK_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCRaeumstrecke_DCK"/>
       <details key="kind" value="elementOnly"/>
@@ -2685,10 +2686,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Raeumstrecke_DSK_Strich_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TRaeumstrecke_DSK_Strich"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Raeumstrecke_DSK_Strich_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Raeumstrecke_DSK_Strich_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCRaeumstrecke_DSK_Strich"/>
       <details key="kind" value="elementOnly"/>
@@ -2704,10 +2705,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Raeumstrecke_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TRaeumstrecke"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Raeumstrecke_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Raeumstrecke_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCRaeumstrecke"/>
       <details key="kind" value="elementOnly"/>
@@ -2720,7 +2721,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Richtungspfeil_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Richtungspfeil_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCRichtungspfeil"/>
       <details key="kind" value="elementOnly"/>
@@ -2754,7 +2755,7 @@
         <details key="documentation" value="Ausrichtungswinkel des Schrankenbaums in Bezug auf die Tangente am Verortungspunkt auf der topologischen Kante. Ein direkter Bezug zur Straßenachse ist nicht möglich, da der Straßenverlauf zunächst nur als Bild eingebunden wird."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[-90..90]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[-90..90]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -2797,7 +2798,7 @@
         <details key="documentation" value="Lieferlänge des Schrankenbaums."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..20]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..20]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -2820,7 +2821,7 @@
         <details key="documentation" value="Sperrlänge des Schrankenbaums."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..20]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..20]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -2835,7 +2836,7 @@
       <details key="pattern" value="[1-9]|10"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Schaltgruppe_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Schaltgruppe_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCSchaltgruppe"/>
       <details key="kind" value="elementOnly"/>
@@ -2848,19 +2849,19 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Schaltmittel_Fstr_Zuordnung" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="Schaltmittel_Fstr_Zuordnung" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Verknüpft bei einem Bahnübergang mit der Funktionsüberwachung Fü die möglichen Fahrstraßen mit den Elementen für die Wirksamschaltung."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CSchaltmittel_Fstr_Zuordnung"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEWSFstrZuordnung" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_WS_Fstr_Zuordnung_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_WS_Fstr_Zuordnung_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Ordnet eine zulässige Kombination von Fahrstraße und BÜ-Einschaltung für die Wirksamkeitsschaltung der Einschaltstelle zu. Falls Einschaltstellen von BÜ nur dann wirksam sein sollen, wenn bestimmte Fahrstraßen eingestellt sind, so werden in einem ersten Schritt Zuordnungsobjekte zwischen der Funktion Einschaltung eines BÜ und allen auf diesen BÜ zulaufenden Fahrstraßen gebildet. ID_BUE_WS_Fstr_Zuordnung verweist auf dieses Zuordnungsobjekt."/>
@@ -2871,7 +2872,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDSchaltmittelZuordnung"
-        lowerBound="1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_Schaltmittel_Zuordnung_TypeClass"
+        lowerBound="1" eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_Schaltmittel_Zuordnung_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Ordnet einer vom Befahren eines bestimmten Punktes abhängigen Funktion ein Schaltmittel zu. "/>
@@ -2882,12 +2883,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Schrankenantrieb" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Punkt_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="Schrankenantrieb" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Punkt_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Abbildung von Schrankenantrieben für Bahnübergänge."/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CSchrankenantrieb"/>
@@ -2902,7 +2903,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEAnlage" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die BÜ-Anlage, zu der der Schrankenantrieb gehört."/>
@@ -2959,7 +2960,7 @@
         <details key="documentation" value="Zuordnung des Schrankenantriebs zu einer Schaltgruppe."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..10]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..10]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -2978,7 +2979,7 @@
         <details key="documentation" value="Bezeichnung des Schrankenantriebs, z. B. A1."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[2..3]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[2..3]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -2992,7 +2993,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#boolean"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Schutzbuegel_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Schutzbuegel_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCSchutzbuegel"/>
       <details key="kind" value="elementOnly"/>
@@ -3014,10 +3015,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Sicherheitsabstand_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TSicherheitsabstand"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Sicherheitsabstand_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Sicherheitsabstand_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCSicherheitsabstand"/>
       <details key="kind" value="elementOnly"/>
@@ -3033,11 +3034,11 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Signalverz_Errechnet_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TSignalverz_Errechnet"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"/>
       <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Signalverz_Errechnet_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Signalverz_Errechnet_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCSignalverz_Errechnet"/>
       <details key="kind" value="elementOnly"/>
@@ -3053,11 +3054,11 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Signalverz_Gewaehlt_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TSignalverz_Gewaehlt"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"/>
       <details key="pattern" value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Signalverz_Gewaehlt_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Signalverz_Gewaehlt_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCSignalverz_Gewaehlt"/>
       <details key="kind" value="elementOnly"/>
@@ -3073,11 +3074,11 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Sperrlaenge_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TSperrlaenge"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
       <details key="pattern" value="1[0-9]|20|[1-9]"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Sperrlaenge_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Sperrlaenge_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCSperrlaenge"/>
       <details key="kind" value="elementOnly"/>
@@ -3093,11 +3094,11 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Sperrstrecke_Fussgaenger_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TSperrstrecke_Fussgaenger"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Sperrstrecke_Fussgaenger_TypeClass"
-      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCSperrstrecke_Fussgaenger"/>
       <details key="kind" value="elementOnly"/>
@@ -3113,10 +3114,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Sperrstrecke_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TSperrstrecke"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Sperrstrecke_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Sperrstrecke_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCSperrstrecke"/>
       <details key="kind" value="elementOnly"/>
@@ -3129,7 +3130,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Stoerhalt_Haltfall_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Stoerhalt_Haltfall_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCStoerhalt_Haltfall"/>
       <details key="kind" value="elementOnly"/>
@@ -3142,7 +3143,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Stoerhalt_Merkhinweis_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Stoerhalt_Merkhinweis_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCStoerhalt_Merkhinweis"/>
       <details key="kind" value="elementOnly"/>
@@ -3158,10 +3159,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Teilsperrstrecke_Type" instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TTeilsperrstrecke"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Teilsperrstrecke_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Teilsperrstrecke_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCTeilsperrstrecke"/>
       <details key="kind" value="elementOnly"/>
@@ -3180,7 +3181,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Teilvorgabezeit_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Teilvorgabezeit_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCTeilvorgabezeit"/>
       <details key="kind" value="elementOnly"/>
@@ -3199,7 +3200,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#boolean"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Tragkopf_Verstellbar_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Tragkopf_Verstellbar_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCTragkopf_Verstellbar"/>
       <details key="kind" value="elementOnly"/>
@@ -3222,10 +3223,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="V_Max_Schiene_Type" instanceClassName="java.math.BigInteger">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TV_Max_Schiene"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="V_Max_Schiene_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="V_Max_Schiene_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCV_Max_Schiene"/>
       <details key="kind" value="elementOnly"/>
@@ -3241,10 +3242,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="V_Max_Strasse_Type" instanceClassName="java.math.BigInteger">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TV_Max_Strasse"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="V_Max_Strasse_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="V_Max_Strasse_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCV_Max_Strasse"/>
       <details key="kind" value="elementOnly"/>
@@ -3264,7 +3265,7 @@
       <details key="pattern" value="0\.[5-9]|1\.[0-5]"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="V_Min_Fussweg_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="V_Min_Fussweg_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCV_Min_Fussweg"/>
       <details key="kind" value="elementOnly"/>
@@ -3280,10 +3281,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="V_Min_Schiene_Type" instanceClassName="java.math.BigInteger">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TV_Min_Schiene"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="V_Min_Schiene_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="V_Min_Schiene_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCV_Min_Schiene"/>
       <details key="kind" value="elementOnly"/>
@@ -3299,11 +3300,11 @@
   <eClassifiers xsi:type="ecore:EDataType" name="V_Min_Strasse_Type" instanceClassName="java.math.BigInteger">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TV_Min_Strasse"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit"/>
       <details key="pattern" value="5|10"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="V_Min_Strasse_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="V_Min_Strasse_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCV_Min_Strasse"/>
       <details key="kind" value="elementOnly"/>
@@ -3316,12 +3317,12 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Verkehrszeichen" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1#//Basis_Objekt">
+  <eClassifiers xsi:type="ecore:EClass" name="Verkehrszeichen" eSuperTypes="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Abbildung von Lichtzeichen und Andreaskreuzen im Rahmen der BÜ-Planung. Die Attributgruppe Verkehrszeichen_Lz entfällt bei nichttechnisch gesicherten BÜ oder beschrankten BÜ mit Läutewerk. Die Attributgruppe Verkehrszeichen_Andreaskreuz entfällt bei vorgeschalteten Lichtzeichen. Mehrere Andreaskreuze bei einmündenden Straßen sind möglich (i. d. R. max 3). Die Attributgruppe Vz_Sperrstrecke entfällt bei vorgeschalteten Lichtzeichen"/>
     </eAnnotations>
     <eAnnotations>
-      <details key="appinfo" value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation>&#xA;                   &#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xA;                   &#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xA;                &#xA;  &lt;/ppi:WorkflowInformation>&#xA;           &#xA;"/>
+      <details key="appinfo" value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="CVerkehrszeichen"/>
@@ -3335,7 +3336,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDBUEAnlage" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_BUE_Anlage_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf die BÜ-Anlage, zu der das Verkehrszeichen gehört."/>
@@ -3346,7 +3347,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="iDUnterbringung" lowerBound="1"
-        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.1#//ID_Unterbringung_ohne_Proxy_TypeClass"
+        eType="ecore:EClass http://www.plan-pro.org/modell/Verweise/1.10.0.3#//ID_Unterbringung_ohne_Proxy_TypeClass"
         containment="true" resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Verweis auf eine Unterbringung zur Verortung des Verkehrszeichens"/>
@@ -3418,7 +3419,7 @@
         <details key="documentation" value="Ausrichtungswinkel des Verkehrszeichens in Bezug auf die Tangente am Verortungspunkt auf der topologischen Kante. Ein direkter Bezug zur Straßenachse ist nicht möglich, da der Straßenverlauf zunächst nur als Bild eingebunden wird."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[-90..90]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[-90..90]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -3520,7 +3521,7 @@
         <details key="documentation" value="Für das Lichtzeichen ist eine Kontrastblende vorzusehen (true). Das Attribut entfällt, wenn keine Kontrastblende benötigt wird."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -3533,7 +3534,7 @@
         <details key="documentation" value="Durchmesser der Signalgeberoptik in mm. Der Standardwert sind 200 mm."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[200,300]&lt;/ppi:Patternbeschreibung>&#xA;                         &#xA;    &lt;ppi:ProposedValue>200&lt;/ppi:ProposedValue>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[200,300]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>200&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -3556,7 +3557,7 @@
         <details key="documentation" value="Bei BUESTRA und vorgeschalteten Lz: Zuordnung des Lz zu einer Schaltgruppe."/>
       </eAnnotations>
       <eAnnotations>
-        <details key="appinfo" value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation>&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung>[1..10]&lt;/ppi:Patternbeschreibung>&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation>&#xA;                 &#xA;"/>
+        <details key="appinfo" value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..10]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -3590,7 +3591,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#boolean"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Vorgeschaltet_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Vorgeschaltet_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCVorgeschaltet"/>
       <details key="kind" value="elementOnly"/>
@@ -3744,7 +3745,7 @@
       <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Winkel_Alpha_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Winkel_Alpha_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCWinkel_Alpha"/>
       <details key="kind" value="elementOnly"/>
@@ -3761,12 +3762,12 @@
       instanceClassName="java.math.BigDecimal">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TZeitueberschreitungsmeldung"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"/>
       <details key="pattern" value="[1-9][0-9]{0,4}"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Zeitueberschreitungsmeldung_TypeClass"
-      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+      eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCZeitueberschreitungsmeldung"/>
       <details key="kind" value="elementOnly"/>
@@ -3782,10 +3783,10 @@
   <eClassifiers xsi:type="ecore:EDataType" name="Zusatzschild_Type" instanceClassName="java.lang.String">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TZusatzschild"/>
-      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+      <details key="baseType" value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Zusatzschild_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#//BasisAttribut_AttributeGroup">
+  <eClassifiers xsi:type="ecore:EClass" name="Zusatzschild_TypeClass" eSuperTypes="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#//BasisAttribut_AttributeGroup">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="TCZusatzschild"/>
       <details key="kind" value="elementOnly"/>

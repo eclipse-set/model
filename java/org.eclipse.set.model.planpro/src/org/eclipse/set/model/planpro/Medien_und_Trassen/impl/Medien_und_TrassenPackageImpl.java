@@ -1855,6 +1855,8 @@ public class Medien_und_TrassenPackageImpl extends EPackageImpl implements Medie
 
 		initEEnum(enumTrasseNutzerEEnum, ENUMTrasseNutzer.class, "ENUMTrasseNutzer");
 		addEEnumLiteral(enumTrasseNutzerEEnum, ENUMTrasseNutzer.ENUM_TRASSE_NUTZER_DB_ENERGIE);
+		addEEnumLiteral(enumTrasseNutzerEEnum, ENUMTrasseNutzer.ENUM_TRASSE_NUTZER_DB_INFRA_GO_FAHRWEG);
+		addEEnumLiteral(enumTrasseNutzerEEnum, ENUMTrasseNutzer.ENUM_TRASSE_NUTZER_DB_INFRA_GO_PERSONENBAHNHOEFE);
 		addEEnumLiteral(enumTrasseNutzerEEnum, ENUMTrasseNutzer.ENUM_TRASSE_NUTZER_DB_KT);
 		addEEnumLiteral(enumTrasseNutzerEEnum, ENUMTrasseNutzer.ENUM_TRASSE_NUTZER_DB_NETZ);
 		addEEnumLiteral(enumTrasseNutzerEEnum, ENUMTrasseNutzer.ENUM_TRASSE_NUTZER_DB_STU_S);
@@ -1903,7 +1905,7 @@ public class Medien_und_TrassenPackageImpl extends EPackageImpl implements Medie
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 		addAnnotation
 		  (enumTrasseKanteArtEEnum,
@@ -2053,7 +2055,7 @@ public class Medien_und_TrassenPackageImpl extends EPackageImpl implements Medie
 		  (getTrasse_Kante_TrasseNutzer(),
 		   source,
 		   new String[] {
-			   "documentation", "Nutzer der Medientrasse, z. B. DB Netz. Eine Trasse kann von mehreren Nutzern beansprucht werden."
+			   "documentation", "Nutzer der Medientrasse, z. B. DB InfraGO. Eine Trasse kann von mehreren Nutzern beansprucht werden."
 		   });
 		addAnnotation
 		  (trasse_KnotenEClass,
@@ -2182,8 +2184,8 @@ public class Medien_und_TrassenPackageImpl extends EPackageImpl implements Medie
 		   source,
 		   new String[] {
 			   "name", "TBezeichnung_Kabel",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
-			   "pattern", "[1-9]|1[0-6]"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
+			   "pattern", ".{1,16}"
 		   });
 		addAnnotation
 		  (bezeichnung_Kabel_TypeClassEClass,
@@ -2204,8 +2206,8 @@ public class Medien_und_TrassenPackageImpl extends EPackageImpl implements Medie
 		   source,
 		   new String[] {
 			   "name", "TBezeichnung_Kabel_Verteilpunkt",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
-			   "pattern", "[1-9]|1[0-9]|20"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
+			   "pattern", ".{1,20}"
 		   });
 		addAnnotation
 		  (bezeichnung_Kabel_Verteilpunkt_TypeClassEClass,
@@ -2459,8 +2461,8 @@ public class Medien_und_TrassenPackageImpl extends EPackageImpl implements Medie
 		   source,
 		   new String[] {
 			   "name", "TKabel_Laenge",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
-			   "pattern", "(-?[1-9][0-9]{0,})|0"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
+			   "pattern", "[1-9][0-9]{0,4}"
 		   });
 		addAnnotation
 		  (kabel_Laenge_TypeClassEClass,
@@ -2481,7 +2483,7 @@ public class Medien_und_TrassenPackageImpl extends EPackageImpl implements Medie
 		   source,
 		   new String[] {
 			   "name", "TKabel_Typ",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (kabel_Typ_TypeClassEClass,
@@ -2708,79 +2710,79 @@ public class Medien_und_TrassenPackageImpl extends EPackageImpl implements Medie
 		  (kabelEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW|B\u00dc</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW|B\u00dc</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getKabel_Allg_AttributeGroup_KabelLaenge(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[ganzzahliger Wert]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..99999]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getKabel_Bezeichnung_AttributeGroup_BezeichnungKabel(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getKabel_Element_AttributeGroup_AderReserve(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..200]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..200]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getKabel_Element_AttributeGroup_AnzahlVerseilelemente(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..200]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..200]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getKabel_Element_AttributeGroup_Verseilart(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1,4]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1,4]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getKabel_Element_AttributeGroup_AderDurchmesser(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                       \n  <ppi:WorkflowInformation>\n                            \n    <ppi:Patternbeschreibung>[0.1..1.8]</ppi:Patternbeschreibung>\n                         \n  </ppi:WorkflowInformation>\n                    \n"
+			   "appinfo", "\r\n                       \r\n  <ppi:WorkflowInformation>\r\n                            \r\n    <ppi:Patternbeschreibung>[0.1..1.8]</ppi:Patternbeschreibung>\r\n                         \r\n  </ppi:WorkflowInformation>\r\n                    \r\n"
 		   });
 		addAnnotation
 		  (getKabel_Element_AttributeGroup_AderQuerschnitt(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                       \n  <ppi:WorkflowInformation>\n                            \n    <ppi:Patternbeschreibung>[1..99, optional eine Nachkommastelle]</ppi:Patternbeschreibung>\n                         \n  </ppi:WorkflowInformation>\n                    \n"
+			   "appinfo", "\r\n                       \r\n  <ppi:WorkflowInformation>\r\n                            \r\n    <ppi:Patternbeschreibung>[1..99, optional eine Nachkommastelle]</ppi:Patternbeschreibung>\r\n                         \r\n  </ppi:WorkflowInformation>\r\n                    \r\n"
 		   });
 		addAnnotation
 		  (kabel_VerteilpunktEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW|B\u00dc</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW|B\u00dc</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getKabel_Verteilpunkt_Bezeichnung_AttributeGroup_BezeichnungKabelVerteilpunkt(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..20]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (trasse_KanteEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW|B\u00dc</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW|B\u00dc</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getTrasse_Kante_TrasseNutzer(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                          \n  <ppi:WorkflowInformation>\n                               \n    <ppi:ProposedValue>DB_Netz</ppi:ProposedValue>\n                            \n  </ppi:WorkflowInformation>\n                       \n"
+			   "appinfo", "\r\n                          \r\n  <ppi:WorkflowInformation>\r\n                               \r\n    <ppi:ProposedValue>DB_InfraGO_Fahrweg</ppi:ProposedValue>\r\n                            \r\n  </ppi:WorkflowInformation>\r\n                       \r\n"
 		   });
 		addAnnotation
 		  (trasse_KnotenEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW|B\u00dc</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW|B\u00dc</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 	}
 

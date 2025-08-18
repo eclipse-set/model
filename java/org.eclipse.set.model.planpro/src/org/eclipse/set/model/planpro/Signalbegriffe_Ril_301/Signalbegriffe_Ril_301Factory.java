@@ -290,6 +290,24 @@ public interface Signalbegriffe_Ril_301Factory extends EFactory {
 	El3 createEl3();
 
 	/**
+	 * Returns a new object of class '<em>El34 Zusatz</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>El34 Zusatz</em>'.
+	 * @generated
+	 */
+	El34Zusatz createEl34Zusatz();
+
+	/**
+	 * Returns a new object of class '<em>El34 Zusatz Kombi</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>El34 Zusatz Kombi</em>'.
+	 * @generated
+	 */
+	El34ZusatzKombi createEl34ZusatzKombi();
+
+	/**
 	 * Returns a new object of class '<em>El4</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -533,6 +551,15 @@ public interface Signalbegriffe_Ril_301Factory extends EFactory {
 	Hp02Lp createHp02Lp();
 
 	/**
+	 * Returns a new object of class '<em>Hp0 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hp0 F</em>'.
+	 * @generated
+	 */
+	Hp0F createHp0F();
+
+	/**
 	 * Returns a new object of class '<em>Hp1</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -542,6 +569,15 @@ public interface Signalbegriffe_Ril_301Factory extends EFactory {
 	Hp1 createHp1();
 
 	/**
+	 * Returns a new object of class '<em>Hp1 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hp1 F</em>'.
+	 * @generated
+	 */
+	Hp1F createHp1F();
+
+	/**
 	 * Returns a new object of class '<em>Hp2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -549,6 +585,15 @@ public interface Signalbegriffe_Ril_301Factory extends EFactory {
 	 * @generated
 	 */
 	Hp2 createHp2();
+
+	/**
+	 * Returns a new object of class '<em>Hp2 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Hp2 F</em>'.
+	 * @generated
+	 */
+	Hp2F createHp2F();
 
 	/**
 	 * Returns a new object of class '<em>Kl</em>'.
@@ -1046,6 +1091,15 @@ public interface Signalbegriffe_Ril_301Factory extends EFactory {
 	OzOBGrenze createOzOBGrenze();
 
 	/**
+	 * Returns a new object of class '<em>Oz PZB2000 Hz</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Oz PZB2000 Hz</em>'.
+	 * @generated
+	 */
+	OzPZB2000Hz createOzPZB2000Hz();
+
+	/**
 	 * Returns a new object of class '<em>Oz PZBBUE</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1361,6 +1415,15 @@ public interface Signalbegriffe_Ril_301Factory extends EFactory {
 	Vr0 createVr0();
 
 	/**
+	 * Returns a new object of class '<em>Vr0 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vr0 F</em>'.
+	 * @generated
+	 */
+	Vr0F createVr0F();
+
+	/**
 	 * Returns a new object of class '<em>Vr1</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1370,6 +1433,24 @@ public interface Signalbegriffe_Ril_301Factory extends EFactory {
 	Vr1 createVr1();
 
 	/**
+	 * Returns a new object of class '<em>Vr12 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vr12 F</em>'.
+	 * @generated
+	 */
+	Vr12F createVr12F();
+
+	/**
+	 * Returns a new object of class '<em>Vr1 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vr1 F</em>'.
+	 * @generated
+	 */
+	Vr1F createVr1F();
+
+	/**
 	 * Returns a new object of class '<em>Vr2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1377,6 +1458,15 @@ public interface Signalbegriffe_Ril_301Factory extends EFactory {
 	 * @generated
 	 */
 	Vr2 createVr2();
+
+	/**
+	 * Returns a new object of class '<em>Vr2 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vr2 F</em>'.
+	 * @generated
+	 */
+	Vr2F createVr2F();
 
 	/**
 	 * Returns a new object of class '<em>Wn1</em>'.

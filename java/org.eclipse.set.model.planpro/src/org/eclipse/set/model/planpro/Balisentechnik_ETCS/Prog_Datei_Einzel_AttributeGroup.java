@@ -195,7 +195,7 @@ public interface Prog_Datei_Einzel_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Herstellerspezifische Kodierung zur Beschreibung des Verwendungszwecks der Ladedatei (z. B. Kanalzuordnung) bzw. Hilfsdatei (z. B. Kanalzuordnung, Prüfdaten, Ortskodierung). Die Kodierung kann zur Steuerung der Programmier-Software verwendet werden.
+	 * Herstellerspezifische Kodierung zur Beschreibung des Verwendungszwecks der Ladedatei (z. B. Kanalzuordnung, Dateiart (LEU-ID, Konfigurationsdaten etc.)) bzw. Hilfsdatei (z. B. Kanalzuordnung, Prüfdaten, Ortskodierung). Die Kodierung kann zur Steuerung der Programmier-Software verwendet werden.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Verwendung</em>' containment reference.
 	 * @see #setVerwendung(Verwendung_TypeClass)
