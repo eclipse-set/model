@@ -1,18 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:nsATO="http://www.plan-pro.org/modell/ATO/1.10.0.1"
-           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1"
-           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1"
-           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.1"
-           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-           ecore:nsPrefix="nsATO"
-           ecore:package="org.eclipse.set.model.planpro.ATO"
-           targetNamespace="http://www.plan-pro.org/modell/ATO/1.10.0.1">
-   <xs:annotation>
-      <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+           xmlns:nsATO="http://www.plan-pro.org/modell/ATO/1.10.0.3"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
+           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
+           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           targetNamespace="http://www.plan-pro.org/modell/ATO/1.10.0.3">
+	  <xs:annotation>
+		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
 
 Weitere Informationen zur Lizenz finden Sie auf
-http://www.dbnetze.com/planpro
+http://www.dbinfrago.com/planpro
 
 Inhalt der Datei:
 XML Schema für PlanPro Schnittstelle.
@@ -21,156 +18,53 @@ Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
 
 --------------------------------------------------------------------------------
 
-This Document is licensed under the open source license RailPL V1.0.
+This Document is licensed under the open source license RailPL V1.1.
 
 More information about the license can be found on
-http://www.dbnetze.com/planpro
+http://www.dbinfrago.com/planpro
 
 Contents of the file:
 XML Schema for PlanPro interface.</xs:documentation>
-   </xs:annotation>
-   <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.10.0.1"
+	  </xs:annotation>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
               schemaLocation="Verweise.xsd"/>
-   <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1"
-              schemaLocation="BasisTypen.xsd"/>
-   <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1"
+	  <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
               schemaLocation="Basisobjekte.xsd"/>
-   <xs:complexType ecore:name="ATO_Timing_Point_Bezeichnung_AttributeGroup"
-                   name="CATO_Timing_Point_Bezeichnung">
-      <xs:sequence>
-         <xs:element name="Bezeichnung_ATO_TP"
-                     type="nsATO:TCBezeichnung_ATO_TP"
-                     minOccurs="1"
-                     maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Fachliche Bezeichnung des Timing Points (Parameter „X_TEXT“ aus dem Block „Timing Point Name“, siehe Subset 126).</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType ecore:name="ATO_Timing_Point_Allg_AttributeGroup"
-                   name="CATO_Timing_Point_Allg">
-      <xs:sequence>
-         <xs:element name="Erreichungstoleranz"
-                     type="nsATO:TCErreichungstoleranz"
-                     minOccurs="1"
-                     maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kodierung des Haltefensters am Haltplatz bei manueller Fahrt. Der Parameter entspricht dem ATO-Parameter \"Q_STP_Reached\" gemäß Subset 126, Version 0.0.17 vom 05.08.2020.</xs:documentation>
-               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
-                  <ppi:WorkflowInformation>
-                     <ppi:Patternbeschreibung>[0..31]</ppi:Patternbeschreibung>
-                  </ppi:WorkflowInformation>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="Haltetoleranz"
-                     type="nsATO:TCHaltetoleranz"
-                     minOccurs="1"
-                     maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kodierung des Haltefensters am Halteplatz bei automatischer Fahrt (Q_Stop_Location Tolerance).</xs:documentation>
-               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
-                  <ppi:WorkflowInformation>
-                     <ppi:Patternbeschreibung>[0..31]</ppi:Patternbeschreibung>
-                  </ppi:WorkflowInformation>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="NID_TP" type="nsATO:TCNID_TP" minOccurs="1" maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Innerhalb eines Landes (NID-C-Bereich) einmalige Adresse des Timing Points.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType ecore:name="ATO_TS_Instanz_Adresse_AttributeGroup"
-                   name="CATO_TS_Instanz_Adresse">
-      <xs:sequence>
-         <xs:element name="NID_ATOTS"
-                     type="nsATO:TCNID_ATOTS"
-                     minOccurs="1"
-                     maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kennung der ATO-TS-Instanz als Bestandteil der ATO-Kennung (ATO-ID) gemäß Subset 126, Version 0.0.17 vom 05.08.2020.
-Die Kennung wird zentral zugeteilt und verwaltet.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="NID_C_ATOTS"
-                     type="nsATO:TCNID_C_ATOTS"
-                     minOccurs="1"
-                     maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gebietskennung als Bestandteil der ATO-Kennung (ATO-ID) gemäß Subset 126, Version 0.0.17 vom 05.08.2020.
-Die Gebietskennung NID_C_ATOTS für ATO-TS- Instanzen wird aus der ETCS-Gebietskennung (NID_C) des entsprechenden Bereichs übernommen.</xs:documentation>
-               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
-                  <ppi:WorkflowInformation>
-                     <ppi:Patternbeschreibung>[0..1023]</ppi:Patternbeschreibung>
-                  </ppi:WorkflowInformation>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:simpleType ecore:name="NID_SP_Type" name="TNID_SP">
-      <xs:restriction base="nsBasisTypen:TText"/>
-   </xs:simpleType>
-   <xs:simpleType ecore:name="Abstand_ATO_Halt_Vor_EoA_Type"
-                  name="TAbstand_ATO_Halt_Vor_EoA">
-      <xs:restriction base="nsBasisTypen:TMeter"/>
-   </xs:simpleType>
-   <xs:simpleType ecore:name="Erreichungstoleranz_Type" name="TErreichungstoleranz">
-      <xs:restriction base="xs:integer">
-         <xs:pattern value="[0-9]|[12][0-9]|30|31"/>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType ecore:name="Haltetoleranz_Type" name="THaltetoleranz">
-      <xs:restriction base="xs:integer">
-         <xs:pattern value="[0-9]|[12][0-9]|30|31"/>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:complexType ecore:name="Erreichungstoleranz_TypeClass" name="TCErreichungstoleranz">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsATO:TErreichungstoleranz"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Bezeichnung_ATO_TP_TypeClass" name="TCBezeichnung_ATO_TP">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsATO:TBezeichnung_ATO_TP"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="NID_C_ATOTS_TypeClass" name="TCNID_C_ATOTS">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsATO:TNID_C_ATOTS"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="ATO_TS_Instanz" name="CATO_TS_Instanz">
-      <xs:annotation>
-         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zentrale Komponente für einen ATO-Infrastrukturbereich, die für die gesamten ATO-relevanten Infrastrukturdaten, insbesondere Segment Profiles und deren Verteilung an die ATO-Fahrzeugkomponenten (ATO-OB), verantwortlich ist.</xs:documentation>
+	  <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
+              schemaLocation="BasisTypen.xsd"/>
+	  <xs:simpleType name="TAbstand_ATO_Halt_Vor_EoA">
+		    <xs:restriction base="nsBasisTypen:TMeter"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBezeichnung_ATO_TP">
+		    <xs:restriction base="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TErreichungstoleranz">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="[0-9]|[12][0-9]|30|31"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="THaltetoleranz">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="[0-9]|[12][0-9]|30|31"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TNID_ATOTS">
+		    <xs:restriction base="xs:integer"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TNID_C_ATOTS">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="102[0-3]|10[0-1][0-9]|[1-9][0-9]{2}|0|[1-9][0-9]{0,1}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TNID_SP">
+		    <xs:restriction base="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TNID_TP">
+		    <xs:restriction base="xs:integer"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CATO_Segment_Profile">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Infrastrukturabschnitte mit definiertem Beginn und Ende sowie zugehörigen Infrastrukturangaben bzw. Eigenschaften für den atomatischen Bahnbetrieb (ATO). Die Definition der Richtung wird aus der zugehörigen ETCS-Kante übernommen.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
             <ppi:WorkflowInformation>
                <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
@@ -178,43 +72,59 @@ Die Gebietskennung NID_C_ATOTS für ATO-TS- Instanzen wird aus der ETCS-Gebietsk
             </ppi:WorkflowInformation>
          </xs:appinfo>
       </xs:annotation>
-      <xs:complexContent>
-         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
-            <xs:sequence>
-               <xs:element name="ATO_TS_Instanz_Adresse"
-                           type="nsATO:CATO_TS_Instanz_Adresse"
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Abstand_ATO_Halt_Vor_EoA" type="nsATO:TCAbstand_ATO_Halt_Vor_EoA"
                            minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Distanz vor dem eigentlichen Punkt der End of Authority (EoA) der relevanten ETCS MA, auf die ATO-OB den automatisch geführten Zug hin bremst. Der Parameter entspricht dem ATO-Parameter „D_EoA_Offset“ und beträgt in der Regel 5 m. Abweichende Angaben sind durch die betriebliche Infrastrukturplanung in der BAst vorzugeben.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Bezeichnung" type="nsATO:CATO_Segment_Profile_Bezeichnung" minOccurs="1"
                            maxOccurs="1"/>
-               <xs:element name="ID_Unterbringung"
-                           type="nsVerweise:TCID_Unterbringung"
+					          <xs:element name="ID_ATO_TS_Instanz" type="nsVerweise:TCID_ATO_TS_Instanz_ohne_Proxy"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ATO-TS-Instanz, von der dieses Segment Profile verwaltet wird.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ATO_TS_Instanz_Nachbar" type="nsVerweise:TCID_ATO_TS_Instanz"
                            minOccurs="0"
                            maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Unterbringung, in der die ATO-TS-Instanz untergebracht ist. Über die Unterbringung wird auch die Position abgebildet. Die Angabe entfällt bei einer cloud-basierten Realisierung.</xs:documentation>
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die benachbarte ATO-TS-Instanz, der dieses Segment Profile bekannt ist.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="NID_ATOTS_TypeClass" name="TCNID_ATOTS">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsATO:TNID_ATOTS"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:simpleType ecore:name="NID_ATOTS_Type" name="TNID_ATOTS">
-      <xs:restriction base="xs:integer"/>
-   </xs:simpleType>
-   <xs:complexType ecore:name="ATO_Timing_Point" name="CATO_Timing_Point">
-      <xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ETCS_Kante" type="nsVerweise:TCID_ETCS_Kante" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ETCS-Kante, deren Bezeichnung als Bezeichnung des Segment Profiles verwendet wird.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Oertlichkeit" type="nsVerweise:TCID_Oertlichkeit_Proxy" minOccurs="0"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Betriebsstelle(n) (Örtlichkeiten), denen das Segment Profil zugeordnet ist. Aus der Zuordnung lässt sich der Zuständigkeitsbereich einer ATO-TS-Instanz ableiten.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CATO_Segment_Profile_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="NID_SP" type="nsATO:TCNID_SP" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung des Segment Profiles, die sich in der Regel aus der Bezeichnung der referenzierten ETCS-Gleiskante ergibt. Zur Herstellung der Eineindeutigkeit können weitere Bezeichnungsbestandteile ergänzt werden.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CATO_Timing_Point">
+		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Definierter Punkt in den Infrastrukturdaten für ATO (Segment Profile), an dem betriebliche Vorgaben definiert werden können. Diese betrieblichen Vorgaben werden entweder direkt aus dem Fahrplan abgeleitet oder durch dispositive Handlungen definiert, z. B. Betriebshalte oder Verkehrshalte einfügen oder auslassen, Beschleunigen oder Verlangsamung der Fahrt (frühere/spätere Zeit für die Erreichung des Timing Points) und über das Journey Profile an ATO-OB kommandiert. 
 Darüber hinaus kann an einem Timing Point die geplante betriebliche Fahrplanlage eines Zuges mit der tatsächlichen betrieblichen Lage des Zuges verglichen werden.
 Die Position des TP im Segment Profile muss über die Topologie ermittelt werden. Der TP besitzt keine Wirkrichtung.</xs:documentation>
@@ -225,106 +135,66 @@ Die Position des TP im Segment Profile muss über die Topologie ermittelt werden
             </ppi:WorkflowInformation>
          </xs:appinfo>
       </xs:annotation>
-      <xs:complexContent>
-         <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
-            <xs:sequence>
-               <xs:element name="ATO_Timing_Point_Allg"
-                           type="nsATO:CATO_Timing_Point_Allg"
-                           minOccurs="1"
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CPunkt_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ATO_Timing_Point_Allg" type="nsATO:CATO_Timing_Point_Allg" minOccurs="1"
                            maxOccurs="1"/>
-               <xs:element name="Bezeichnung"
-                           type="nsATO:CATO_Timing_Point_Bezeichnung"
-                           minOccurs="1"
+					          <xs:element name="Bezeichnung" type="nsATO:CATO_Timing_Point_Bezeichnung" minOccurs="1"
                            maxOccurs="1"/>
-               <xs:element name="ID_Signal"
-                           type="nsVerweise:TCID_Signal_ohne_Proxy"
-                           minOccurs="0"
+					          <xs:element name="ID_Signal" type="nsVerweise:TCID_Signal_ohne_Proxy" minOccurs="0"
                            maxOccurs="1">
-                  <xs:annotation>
+						            <xs:annotation>
                      <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Signal, zu dem der Timing Point gehört. Timing Points an weiteren Infrastrukturelementen oder -punkten (z.B. Fahrzeitmesspunkte in der Mitte von Betriebsstellen) können projektspezifisch durch die betriebliche Infrastrukturplanung in der BAst ATO vorgegeben werden.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:simpleType ecore:name="NID_C_ATOTS_Type" name="TNID_C_ATOTS">
-      <xs:restriction base="xs:integer">
-         <xs:pattern value="102[0-3]|10[0-1][0-9]|[1-9][0-9]{2}|0|[1-9][0-9]{0,1}"/>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType ecore:name="Bezeichnung_ATO_TP_Type" name="TBezeichnung_ATO_TP">
-      <xs:restriction base="nsBasisTypen:TText"/>
-   </xs:simpleType>
-   <xs:complexType ecore:name="ATO_Segment_Profile_Bezeichnung_AttributeGroup"
-                   name="CATO_Segment_Profile_Bezeichnung">
-      <xs:sequence>
-         <xs:element name="NID_SP" type="nsATO:TCNID_SP" minOccurs="1" maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung des Segment Profiles, die sich in der Regel aus der Bezeichnung der referenzierten ETCS-Gleiskante ergibt. Zur Herstellung der Eineindeutigkeit können weitere Bezeichnungsbestandteile ergänzt werden.</xs:documentation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CATO_Timing_Point_Allg">
+		    <xs:sequence>
+			      <xs:element name="Erreichungstoleranz" type="nsATO:TCErreichungstoleranz" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kodierung des Haltefensters am Haltplatz bei manueller Fahrt. Der Parameter entspricht dem ATO-Parameter \"Q_STP_Reached\" gemäß Subset 126, Version 0.0.17 vom 05.08.2020.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[0..31]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
             </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType ecore:name="Haltetoleranz_TypeClass" name="TCHaltetoleranz">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsATO:THaltetoleranz"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:simpleType ecore:name="NID_TP_Type" name="TNID_TP">
-      <xs:restriction base="xs:integer"/>
-   </xs:simpleType>
-   <xs:complexType ecore:name="NID_TP_TypeClass" name="TCNID_TP">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsATO:TNID_TP"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Abstand_ATO_Halt_Vor_EoA_TypeClass"
-                   name="TCAbstand_ATO_Halt_Vor_EoA">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsATO:TAbstand_ATO_Halt_Vor_EoA"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="NID_SP_TypeClass" name="TCNID_SP">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsATO:TNID_SP"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="ATO_Segment_Profile" name="CATO_Segment_Profile">
-      <xs:annotation>
-         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Infrastrukturabschnitte mit definiertem Beginn und Ende sowie zugehörigen Infrastrukturangaben bzw. Eigenschaften für den atomatischen Bahnbetrieb (ATO). Die Definition der Richtung wird aus der zugehörigen ETCS-Kante übernommen.</xs:documentation>
+			      </xs:element>
+			      <xs:element name="Haltetoleranz" type="nsATO:TCHaltetoleranz" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kodierung des Haltefensters am Halteplatz bei automatischer Fahrt (Q_Stop_Location Tolerance).</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[0..31]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="NID_TP" type="nsATO:TCNID_TP" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Innerhalb eines Landes (NID-C-Bereich) einmalige Adresse des Timing Points.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CATO_Timing_Point_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="Bezeichnung_ATO_TP" type="nsATO:TCBezeichnung_ATO_TP" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Fachliche Bezeichnung des Timing Points (Parameter „X_TEXT“ aus dem Block „Timing Point Name“, siehe Subset 126).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CATO_TS_Instanz">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zentrale Komponente für einen ATO-Infrastrukturbereich, die für die gesamten ATO-relevanten Infrastrukturdaten, insbesondere Segment Profiles und deren Verteilung an die ATO-Fahrzeugkomponenten (ATO-OB), verantwortlich ist.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
             <ppi:WorkflowInformation>
                <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
@@ -332,55 +202,118 @@ Die Position des TP im Segment Profile muss über die Topologie ermittelt werden
             </ppi:WorkflowInformation>
          </xs:appinfo>
       </xs:annotation>
-      <xs:complexContent>
-         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
-            <xs:sequence>
-               <xs:element name="Abstand_ATO_Halt_Vor_EoA"
-                           type="nsATO:TCAbstand_ATO_Halt_Vor_EoA"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Distanz vor dem eigentlichen Punkt der End of Authority (EoA) der relevanten ETCS MA, auf die ATO-OB den automatisch geführten Zug hin bremst. Der Parameter entspricht dem ATO-Parameter „D_EoA_Offset“ und beträgt in der Regel 5 m. Abweichende Angaben sind durch die betriebliche Infrastrukturplanung in der BAst vorzugeben.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="Bezeichnung"
-                           type="nsATO:CATO_Segment_Profile_Bezeichnung"
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ATO_TS_Instanz_Adresse" type="nsATO:CATO_TS_Instanz_Adresse"
                            minOccurs="1"
                            maxOccurs="1"/>
-               <xs:element name="ID_ATO_TS_Instanz"
-                           type="nsVerweise:TCID_ATO_TS_Instanz_ohne_Proxy"
-                           minOccurs="1"
+					          <xs:element name="ID_Unterbringung" type="nsVerweise:TCID_Unterbringung" minOccurs="0"
                            maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ATO-TS-Instanz, von der dieses Segment Profile verwaltet wird.</xs:documentation>
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Unterbringung, in der die ATO-TS-Instanz untergebracht ist. Über die Unterbringung wird auch die Position abgebildet. Die Angabe entfällt bei einer cloud-basierten Realisierung.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
-               <xs:element name="ID_ATO_TS_Instanz_Nachbar"
-                           type="nsVerweise:TCID_ATO_TS_Instanz"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die benachbarte ATO-TS-Instanz, der dieses Segment Profile bekannt ist.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="ID_ETCS_Kante"
-                           type="nsVerweise:TCID_ETCS_Kante"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ETCS-Kante, deren Bezeichnung als Bezeichnung des Segment Profiles verwendet wird.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="ID_Oertlichkeit"
-                           type="nsVerweise:TCID_Oertlichkeit_Proxy"
-                           minOccurs="0"
-                           maxOccurs="unbounded">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Betriebsstelle(n) (Örtlichkeiten), denen das Segment Profil zugeordnet ist. Aus der Zuordnung lässt sich der Zuständigkeitsbereich einer ATO-TS-Instanz ableiten.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CATO_TS_Instanz_Adresse">
+		    <xs:sequence>
+			      <xs:element name="NID_ATOTS" type="nsATO:TCNID_ATOTS" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kennung der ATO-TS-Instanz als Bestandteil der ATO-Kennung (ATO-ID) gemäß Subset 126, Version 0.0.17 vom 05.08.2020.
+Die Kennung wird zentral zugeteilt und verwaltet.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="NID_C_ATOTS" type="nsATO:TCNID_C_ATOTS" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gebietskennung als Bestandteil der ATO-Kennung (ATO-ID) gemäß Subset 126, Version 0.0.17 vom 05.08.2020.
+Die Gebietskennung NID_C_ATOTS für ATO-TS- Instanzen wird aus der ETCS-Gebietskennung (NID_C) des entsprechenden Bereichs übernommen.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[0..1023]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCAbstand_ATO_Halt_Vor_EoA">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsATO:TAbstand_ATO_Halt_Vor_EoA" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBezeichnung_ATO_TP">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsATO:TBezeichnung_ATO_TP" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCErreichungstoleranz">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsATO:TErreichungstoleranz" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCHaltetoleranz">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsATO:THaltetoleranz" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCNID_ATOTS">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsATO:TNID_ATOTS" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCNID_C_ATOTS">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsATO:TNID_C_ATOTS" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCNID_SP">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsATO:TNID_SP" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCNID_TP">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsATO:TNID_TP" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
 </xs:schema>

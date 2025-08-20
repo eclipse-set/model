@@ -1,18 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:nsBlock="http://www.plan-pro.org/modell/Block/1.10.0.1"
-           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1"
-           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1"
-           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.1"
-           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-           ecore:nsPrefix="nsBlock"
-           ecore:package="org.eclipse.set.model.planpro.Block"
-           targetNamespace="http://www.plan-pro.org/modell/Block/1.10.0.1">
-   <xs:annotation>
-      <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+           xmlns:nsBlock="http://www.plan-pro.org/modell/Block/1.10.0.3"
+           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
+           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           targetNamespace="http://www.plan-pro.org/modell/Block/1.10.0.3">
+	  <xs:annotation>
+		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
 
 Weitere Informationen zur Lizenz finden Sie auf
-http://www.dbnetze.com/planpro
+http://www.dbinfrago.com/planpro
 
 Inhalt der Datei:
 XML Schema für PlanPro Schnittstelle.
@@ -21,449 +18,81 @@ Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
 
 --------------------------------------------------------------------------------
 
-This Document is licensed under the open source license RailPL V1.0.
+This Document is licensed under the open source license RailPL V1.1.
 
 More information about the license can be found on
-http://www.dbnetze.com/planpro
+http://www.dbinfrago.com/planpro
 
 Contents of the file:
 XML Schema for PlanPro interface.</xs:documentation>
-   </xs:annotation>
-   <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.10.0.1"
+	  </xs:annotation>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
               schemaLocation="Verweise.xsd"/>
-   <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1"
+	  <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
               schemaLocation="BasisTypen.xsd"/>
-   <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.1"
+	  <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
               schemaLocation="Basisobjekte.xsd"/>
-   <xs:complexType ecore:name="Block_Element" name="CBlock_Element">
-      <xs:annotation>
-         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Element am Ende einer Blockstrecke/Blockanlage. Ein Streckengleis, welches mit einer Block Anlage ausgerüstet ist, besitzt zwei korrespondierende Blockelemente in den benachbarten Betriebsstellen. Eine Ausnahme bildet der Stichstreckenblock, der nur ein Block_Element besitzt. Das Block_Element verweist auch auf die zugehörige Blockstrecke, die die relevanten blocktechnischen und betrieblichen Daten der Strecke enthält. Bei zweigleisigen Strecken verweisen zwei Blockelemente auf die Blockstrecke. Das Block_Element verweist auf ein Signal in Form des Streckenziels (A-Feld) und auf ein Schaltmittel zur Räumungsprüfung (E-Feld). Wenn eine gesonderte Zugschlussmeldung verwendet wird, wird mit ID_Zugschlussmeldung auf eine entsprechende Bedieneinrichtung verwiesen. Aus der Blockbauform der jeweiligen Endstelle kann die Art der technischen Realisierung erkannt werden. </xs:documentation>
-         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
-            <ppi:WorkflowInformation>
-               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
-               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
-            </ppi:WorkflowInformation>
-         </xs:appinfo>
-      </xs:annotation>
-      <xs:complexContent>
-         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
-            <xs:sequence>
-               <xs:element name="Block_Element_Allg"
-                           type="nsBlock:CBlock_Element_Allg"
-                           minOccurs="1"
-                           maxOccurs="1"/>
-               <xs:element name="Block_Element_Erlaubnis"
-                           type="nsBlock:CBlock_Element_Erlaubnis"
-                           minOccurs="0"
-                           maxOccurs="1"/>
-               <xs:element name="ID_Block_Strecke"
-                           type="nsVerweise:TCID_Block_Strecke"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis vom Block Element auf die zugehörige Block Strecke. Bei zweigleisigen Strecken verweisen zwei Block_Elemente auf die Block_Strecke. Bei eingleisigen Strecken verweist nur ein Block_Element auf die Block_Strecke. </xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="ID_Raeumungspruefung"
-                           type="nsVerweise:TCID_Schaltmittel_Zuordnung"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis vom Block Element auf die zugehörge Räumungsprüfung. Das Blockelement verweist über Schaltmittel Zuordnung auf ein Schaltmittel, welches zur Räumungsprüfung befahren und freigefahren werden muss. Nach erfolgreicher Räumungsprüfung kann der (automatische) Rückblock erfolgen. </xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="ID_Signal"
-                           type="nsVerweise:TCID_Signal"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein fiktives Signal (Ausfahrziel), über das die Abhängigkeit des zugehörigen A-Feldes beschrieben wird. </xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="ID_Zugschlussmeldung"
-                           type="nsVerweise:TCID_Bedien_Anzeige_Element"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis vom Block Element auf die zugehörige Bedieneinrichtung zur Abgabe einer Zugschlussmeldung. </xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Zugbeeinflussung_Art_TypeClass"
-                   name="TCZugbeeinflussung_Art">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsBasisTypen:TAnwendungssystem"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Schutzuebertrager_TypeClass" name="TCSchutzuebertrager">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="xs:boolean"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:simpleType ecore:name="Streckengeschwindigkeit_Type"
-                  name="TStreckengeschwindigkeit">
-      <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
-   </xs:simpleType>
-   <xs:simpleType name="ENUMSchaltung">
-      <xs:restriction base="xs:string">
-         <xs:enumeration ecore:name="ENUMSchaltung_3_Drahtschaltung" value="3_Drahtschaltung"/>
-         <xs:enumeration ecore:name="ENUMSchaltung_6_Drahtschaltung" value="6_Drahtschaltung"/>
-         <xs:enumeration ecore:name="ENUMSchaltung_9_Drahtschaltung" value="9_Drahtschaltung"/>
-         <xs:enumeration ecore:name="ENUMSchaltung_sonstige" value="sonstige"/>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:complexType ecore:name="Auto_Erlaubnisholen_TypeClass" name="TCAuto_Erlaubnisholen">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="xs:boolean"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Erlaubnisabgabespeicherung_TypeClass"
-                   name="TCErlaubnisabgabespeicherung">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="xs:boolean"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Vorblockwecker_TypeClass" name="TCVorblockwecker">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="xs:boolean"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:simpleType name="ENUMBlock_Bauform">
-      <xs:restriction base="xs:string">
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_AB64" value="AB64"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_AB70" value="AB70"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_Blockanpassung_RB"
-                         value="Blockanpassung_RB"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_DB_Block" value="DB_Block"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_elektronischer_Block_EBL2000"
-                         value="elektronischer_Block_EBL2000"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_ESTW_Zentralblock"
-                         value="ESTW_Zentralblock"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_ESTW_Zentralblock_mit_Sb_Abschluss_MCL84"
-                         value="ESTW_Zentralblock_mit_Sb_Abschluss_MCL84"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_ESTW_Zentralblock_mit_Sb_Abschluss_SBL60"
-                         value="ESTW_Zentralblock_mit_Sb_Abschluss_SBL60"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_ESTW_Zentralblock_mit_Sb_Abschluss_SBS59"
-                         value="ESTW_Zentralblock_mit_Sb_Abschluss_SBS59"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_ESTW_Zentralblock_mit_Sb_Abschluss_SBS60"
-                         value="ESTW_Zentralblock_mit_Sb_Abschluss_SBS60"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_Felderblock" value="Felderblock"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_firmenneutrale_Blockschnittstelle"
-                         value="firmenneutrale_Blockschnittstelle"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_ILS_Adapter" value="ILS-Adapter"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_sonstige" value="sonstige"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_Selbstblock_SBL60"
-                         value="Selbstblock_SBL60"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_Selbstblock_SBS59"
-                         value="Selbstblock_SBS59"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_Selbstblock_SBS60"
-                         value="Selbstblock_SBS60"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_Relaisblock_RBII60"
-                         value="Relaisblock_RBII60"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_Relaisblock_RBIISp64b"
-                         value="Relaisblock_RBIISp64b"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_Relaisblock_RBIIISp68"
-                         value="Relaisblock_RBIIISp68"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_Zentralblock_ZSB2000"
-                         value="Zentralblock_ZSB2000"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_Zentralblock_ZBS600"
-                         value="Zentralblock_ZBS600"/>
-         <xs:enumeration ecore:name="ENUMBlock_Bauform_Zentralblock_ZBS65"
-                         value="Zentralblock_ZBS65"/>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:complexType ecore:name="Block_Strecke" name="CBlock_Strecke">
-      <xs:annotation>
-         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Speicherung der betrieblich relevanter Streckendaten einer Blockstrecke. Das Objekt enthält die zwischen zwei Zugmeldestellen typischen betrieblichen Informationen (Streckendaten) zur Information. Es wird dem Blockelement der zugehörigen Blockstelle zugeordnet.</xs:documentation>
-         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
-            <ppi:WorkflowInformation>
-               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
-               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
-            </ppi:WorkflowInformation>
-         </xs:appinfo>
-      </xs:annotation>
-      <xs:complexContent>
-         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
-            <xs:sequence>
-               <xs:element name="Block_Strecke_Allg"
-                           type="nsBlock:CBlock_Strecke_Allg"
-                           minOccurs="1"
-                           maxOccurs="1"/>
-               <xs:element name="ID_Betriebsstelle_Nachbar"
-                           type="nsVerweise:TCID_Oertlichkeit_Proxy"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Örtlichkeit der nächsten Zugmeldestelle.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="ID_Knotenbahnhof"
-                           type="nsVerweise:TCID_Oertlichkeit_Proxy"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Örtlichkeit des nächsten Knotenbahnhofs oder am Streckenende zur besseren Orientierung. Das Attribut ist nicht zu befüllen, wenn ID_Betriebsstelle_Nachbar bereits auf einen Knotenbahnhof oder die Örtlichkeit am Streckenende verweist.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="ID_Strecke"
-                           type="nsVerweise:TCID_Strecke"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung auf die Strecke. </xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="ID_Strecke_Bremsweg"
-                           type="nsVerweise:TCID_Strecke_Bremsweg_ohne_Proxy"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Bereichsobjekt Strecke_Bremsweg zur Angabe des Bremswegs der Strecke. Es besteht übergangsweise noch die Möglichkeit, das Attribut Bremsweg zu befüllen.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Erlaubnis_Staendig_Vorhanden_TypeClass"
-                   name="TCErlaubnis_Staendig_Vorhanden">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="xs:boolean"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Strecke_Art_TypeClass" name="TCStrecke_Art">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsBlock:ENUMStrecke_Art"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Block_Anlage_Allg_AttributeGroup" name="CBlock_Anlage_Allg">
-      <xs:sequence>
-         <xs:element name="Schaltung"
-                     type="nsBlock:TCSchaltung"
-                     minOccurs="0"
-                     maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ausführung der Schaltung für die Übertragung der Blockinformationen.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="Schutzuebertrager"
-                     type="nsBlock:TCSchutzuebertrager"
-                     minOccurs="0"
-                     maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Die Schaltung des Streckenblocks ist mit Schutzübertrager ausgerüstet. Die konkrete Anzahl der Schutzübertrager ergibt sich aus der Beeinflussungsberechnung, die nicht Bestandteil des Modells ist.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType ecore:name="Rueckblockwecker_TypeClass" name="TCRueckblockwecker">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="xs:boolean"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Block_Element_Allg_AttributeGroup"
-                   name="CBlock_Element_Allg">
-      <xs:sequence>
-         <xs:element name="Block_Bauform"
-                     type="nsBlock:TCBlock_Bauform"
-                     minOccurs="1"
-                     maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Technische Ausprägung der Blockbauform an den beiden Enden einer Blockanlage. Eine Blockstrecke beginnt und endet an einer Betriebsstelle, zu der jeweils ein Block Element mit der entsprechenden Block_Bauform zugeordnet wird. DB-Regelwerk Ril 482.9001A07, Seite 1 und 5 </xs:documentation>
-               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
-                  <ppi:WorkflowInformation>
-                     <ppi:ProposedValue>ESTW_Zentralblock</ppi:ProposedValue>
-                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
-                  </ppi:WorkflowInformation>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="Rueckblockwecker"
-                     type="nsBlock:TCRueckblockwecker"
-                     minOccurs="1"
-                     maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für den Streckenblock des Streckengleises ist ein Rückblockwecker eingerichtet. Mit dieser technischen Einrichtung wird eine akustische Meldung beim Eintreffen des Rückblocks von der Gegenstelle ausgegeben.</xs:documentation>
-               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
-                  <ppi:WorkflowInformation>
-                     <ppi:ProposedValue>false</ppi:ProposedValue>
-                  </ppi:WorkflowInformation>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="Vorblockwecker"
-                     type="nsBlock:TCVorblockwecker"
-                     minOccurs="1"
-                     maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für den Streckenblock des Streckengleises ist ein Vorkblockwecker eingerichtet. Mit dieser technischen Einrichtung wird eine akustische Meldung beim Eintreffen des Vorblocks von der Gegenstelle ausgegeben.</xs:documentation>
-               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
-                  <ppi:WorkflowInformation>
-                     <ppi:ProposedValue>false</ppi:ProposedValue>
-                  </ppi:WorkflowInformation>
-               </xs:appinfo>
-            </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType ecore:name="Zusatzinformation_TypeClass" name="TCZusatzinformation">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsBlock:TZusatzinformation"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Traktion_Art_Elektrisch_TypeClass"
-                   name="TCTraktion_Art_Elektrisch">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsBasisTypen:TFahrstrom"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:simpleType ecore:name="Zusatzinformation_Type" name="TZusatzinformation">
-      <xs:restriction base="nsBasisTypen:TText">
-         <xs:pattern value=".{1,50}"/>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:complexType ecore:name="Erlaubnisholen_TypeClass" name="TCErlaubnisholen">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="xs:boolean"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:simpleType name="ENUMBetriebsfuehrung">
-      <xs:restriction base="xs:string">
-         <xs:enumeration ecore:name="ENUMBetriebsfuehrung_eingl" value="eingl"/>
-         <xs:enumeration ecore:name="ENUMBetriebsfuehrung_sonstige" value="sonstige"/>
-         <xs:enumeration ecore:name="ENUMBetriebsfuehrung_Stichstreckenblock"
-                         value="Stichstreckenblock"/>
-         <xs:enumeration ecore:name="ENUMBetriebsfuehrung_ZLB" value="ZLB"/>
-         <xs:enumeration ecore:name="ENUMBetriebsfuehrung_zweigl" value="zweigl"/>
-         <xs:enumeration ecore:name="ENUMBetriebsfuehrung_zweigl_GWB" value="zweigl_GWB"/>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType name="ENUMStrecke_Art">
-      <xs:restriction base="xs:string">
-         <xs:enumeration ecore:name="ENUMStrecke_Art_Hauptbahn" value="Hauptbahn"/>
-         <xs:enumeration ecore:name="ENUMStrecke_Art_Nebenbahn" value="Nebenbahn"/>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:complexType ecore:name="Auto_Erlaubnisruecklauf_TypeClass"
-                   name="TCAuto_Erlaubnisruecklauf">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="xs:boolean"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Schaltung_TypeClass" name="TCSchaltung">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsBlock:ENUMSchaltung"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Block_Anlage" name="CBlock_Anlage">
-      <xs:annotation>
+	  <xs:simpleType name="ENUMBetriebsfuehrung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="eingl"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="Stichstreckenblock"/>
+			      <xs:enumeration value="ZLB"/>
+			      <xs:enumeration value="zweigl"/>
+			      <xs:enumeration value="zweigl_GWB"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMBlock_Bauform">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="AB64"/>
+			      <xs:enumeration value="AB70"/>
+			      <xs:enumeration value="Blockanpassung_RB"/>
+			      <xs:enumeration value="DB_Block"/>
+			      <xs:enumeration value="elektronischer_Block_EBL2000"/>
+			      <xs:enumeration value="ESTW_Zentralblock"/>
+			      <xs:enumeration value="ESTW_Zentralblock_mit_Sb_Abschluss_MCL84"/>
+			      <xs:enumeration value="ESTW_Zentralblock_mit_Sb_Abschluss_SBL60"/>
+			      <xs:enumeration value="ESTW_Zentralblock_mit_Sb_Abschluss_SBS59"/>
+			      <xs:enumeration value="ESTW_Zentralblock_mit_Sb_Abschluss_SBS60"/>
+			      <xs:enumeration value="Felderblock"/>
+			      <xs:enumeration value="firmenneutrale_Blockschnittstelle"/>
+			      <xs:enumeration value="ILS-Adapter"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="Selbstblock_SBL60"/>
+			      <xs:enumeration value="Selbstblock_SBS59"/>
+			      <xs:enumeration value="Selbstblock_SBS60"/>
+			      <xs:enumeration value="Relaisblock_RBII60"/>
+			      <xs:enumeration value="Relaisblock_RBIISp64b"/>
+			      <xs:enumeration value="Relaisblock_RBIIISp68"/>
+			      <xs:enumeration value="Zentralblock_ZSB2000"/>
+			      <xs:enumeration value="Zentralblock_ZBS600"/>
+			      <xs:enumeration value="Zentralblock_ZBS65"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMSchaltung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="3_Drahtschaltung"/>
+			      <xs:enumeration value="6_Drahtschaltung"/>
+			      <xs:enumeration value="9_Drahtschaltung"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMStrecke_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Hauptbahn"/>
+			      <xs:enumeration value="Nebenbahn"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TStreckengeschwindigkeit">
+		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TZusatzinformation">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,50}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CBlock_Anlage">
+		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Technische Einrichtungen für die blocktechnische Sicherung von Zugfahrten auf Streckengleisen. Die zugehörige Bezeichnung des Streckengleises wird über das Objekt Gleis Bezeichnung ermittelt. Die Klammern der Gleisbezeichnung für Streckengleise sind Bestandteil der Gleisbezeichnung. Für die Darstellung der Streckendaten für eine Blockstrecke wird über das Objekt Block Element das Objekt Block Strecke verwendet. Ist Streckenblock geplant, wird einem Streckengleis eine Block_Anlage zugeordnet. Bei einer zweigleisigen Strecke, bei der beide Streckengleise mit Streckenblock ausgerüstet sind, wird den beiden Streckengleisen jeweils eine eigene Block_Anlage zugeordnet. Eine Block_Anlage verfügt über zwei Block_Elemente A und B (Blockendstellen), die entsprechend der Regelfahrrichtung zugewiesen werden. Bei eingleisigen Strecken ergibt sich der Richtungssinn A - B aus der Streckenkilometrierung. Eine Ausnahme bildet der Stichstreckenblock, dem nur ein Block Element zugeordnet wird. Als Zusammenfassung aller Objekte wird auch die Bezeichnung Block verwendet. </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
             <ppi:WorkflowInformation>
@@ -472,151 +101,138 @@ XML Schema for PlanPro interface.</xs:documentation>
             </ppi:WorkflowInformation>
          </xs:appinfo>
       </xs:annotation>
-      <xs:complexContent>
-         <xs:extension base="nsBasisobjekte:CBasis_Objekt">
-            <xs:sequence>
-               <xs:element name="Block_Anlage_Allg"
-                           type="nsBlock:CBlock_Anlage_Allg"
-                           minOccurs="0"
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Block_Anlage_Allg" type="nsBlock:CBlock_Anlage_Allg" minOccurs="0"
                            maxOccurs="1"/>
-               <xs:element name="ID_Block_Element_A"
-                           type="nsVerweise:TCID_Block_Element"
-                           minOccurs="1"
+					          <xs:element name="ID_Block_Element_A" type="nsVerweise:TCID_Block_Element" minOccurs="1"
                            maxOccurs="1">
-                  <xs:annotation>
+						            <xs:annotation>
                      <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Block_Element am Anfang einer Blockanlage.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
-               <xs:element name="ID_Block_Element_B"
-                           type="nsVerweise:TCID_Block_Element"
-                           minOccurs="0"
+					          </xs:element>
+					          <xs:element name="ID_Block_Element_B" type="nsVerweise:TCID_Block_Element" minOccurs="0"
                            maxOccurs="1">
-                  <xs:annotation>
+						            <xs:annotation>
                      <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Block_Element am Ende einer Blockanlage. Die Angabe ist nur bei Stichstreckenblock nicht erforderlich.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
-               <xs:element name="ID_Gleis_Bezeichnung"
-                           type="nsVerweise:TCID_Gleis_Bezeichnung"
+					          </xs:element>
+					          <xs:element name="ID_Gleis_Bezeichnung" type="nsVerweise:TCID_Gleis_Bezeichnung"
                            minOccurs="1"
                            maxOccurs="1">
-                  <xs:annotation>
+						            <xs:annotation>
                      <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das zugehörige Streckengleis als Träger der Bezeichnung des Streckengleises zwischen den beiden Blockendstellen.</xs:documentation>
                   </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Block_Strecke_Allg_AttributeGroup"
-                   name="CBlock_Strecke_Allg">
-      <xs:sequence>
-         <xs:element name="Betriebsfuehrung"
-                     type="nsBlock:TCBetriebsfuehrung"
-                     minOccurs="1"
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBlock_Anlage_Allg">
+		    <xs:sequence>
+			      <xs:element name="Schaltung" type="nsBlock:TCSchaltung" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ausführung der Schaltung für die Übertragung der Blockinformationen.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Schutzuebertrager" type="nsBlock:TCSchutzuebertrager" minOccurs="0"
                      maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Betriebsführung auf der zugehörigen Strecke. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen.</xs:documentation>
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Die Schaltung des Streckenblocks ist mit Schutzübertrager ausgerüstet. Die konkrete Anzahl der Schutzübertrager ergibt sich aus der Beeinflussungsberechnung, die nicht Bestandteil des Modells ist.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CBlock_Element">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Element am Ende einer Blockstrecke/Blockanlage. Ein Streckengleis, welches mit einer Block Anlage ausgerüstet ist, besitzt zwei korrespondierende Blockelemente in den benachbarten Betriebsstellen. Eine Ausnahme bildet der Stichstreckenblock, der nur ein Block_Element besitzt. Das Block_Element verweist auch auf die zugehörige Blockstrecke, die die relevanten blocktechnischen und betrieblichen Daten der Strecke enthält. Bei zweigleisigen Strecken verweisen zwei Blockelemente auf die Blockstrecke. Das Block_Element verweist auf ein Signal in Form des Streckenziels (A-Feld) und auf ein Schaltmittel zur Räumungsprüfung (E-Feld). Wenn eine gesonderte Zugschlussmeldung verwendet wird, wird mit ID_Zugschlussmeldung auf eine entsprechende Bedieneinrichtung verwiesen. Aus der Blockbauform der jeweiligen Endstelle kann die Art der technischen Realisierung erkannt werden. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Block_Element_Allg" type="nsBlock:CBlock_Element_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="Block_Element_Erlaubnis" type="nsBlock:CBlock_Element_Erlaubnis"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_Block_Strecke" type="nsVerweise:TCID_Block_Strecke" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis vom Block Element auf die zugehörige Block Strecke. Bei zweigleisigen Strecken verweisen zwei Block_Elemente auf die Block_Strecke. Bei eingleisigen Strecken verweist nur ein Block_Element auf die Block_Strecke. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Raeumungspruefung" type="nsVerweise:TCID_Schaltmittel_Zuordnung"
+                           minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis vom Block Element auf die zugehörge Räumungsprüfung. Das Blockelement verweist über Schaltmittel Zuordnung auf ein Schaltmittel, welches zur Räumungsprüfung befahren und freigefahren werden muss. Nach erfolgreicher Räumungsprüfung kann der (automatische) Rückblock erfolgen. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Signal" type="nsVerweise:TCID_Signal" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein fiktives Signal (Ausfahrziel), über das die Abhängigkeit des zugehörigen A-Feldes beschrieben wird. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Zugschlussmeldung" type="nsVerweise:TCID_Bedien_Anzeige_Element"
+                           minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis vom Block Element auf die zugehörige Bedieneinrichtung zur Abgabe einer Zugschlussmeldung. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBlock_Element_Allg">
+		    <xs:sequence>
+			      <xs:element name="Block_Bauform" type="nsBlock:TCBlock_Bauform" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Technische Ausprägung der Blockbauform an den beiden Enden einer Blockanlage. Eine Blockstrecke beginnt und endet an einer Betriebsstelle, zu der jeweils ein Block Element mit der entsprechenden Block_Bauform zugeordnet wird. DB-Regelwerk Ril 482.9001A07, Seite 1 und 5 </xs:documentation>
                <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
                   <ppi:WorkflowInformation>
-                     <ppi:ProposedValue>zweigl_GWB</ppi:ProposedValue>
+                     <ppi:ProposedValue>ESTW_Zentralblock</ppi:ProposedValue>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
                   </ppi:WorkflowInformation>
                </xs:appinfo>
             </xs:annotation>
-         </xs:element>
-         <xs:element name="Bremsweg"
-                     type="nsBlock:TCBremsweg"
-                     minOccurs="0"
+			      </xs:element>
+			      <xs:element name="Rueckblockwecker" type="nsBlock:TCRueckblockwecker" minOccurs="1"
                      maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bremsweg als Grundlage für die Dimesionierung der zugehörigen Strecke. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. Das Attribut wird zukünftig durch einen Verweis auf das Objekt Strecke_Bremsweg ersetzt. Zur Unterstützung der Migration wird das Attribut jedoch zunächst optional beibehalten.</xs:documentation>
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für den Streckenblock des Streckengleises ist ein Rückblockwecker eingerichtet. Mit dieser technischen Einrichtung wird eine akustische Meldung beim Eintreffen des Rückblocks von der Gegenstelle ausgegeben.</xs:documentation>
                <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
                   <ppi:WorkflowInformation>
-                     <ppi:ProposedValue>1000</ppi:ProposedValue>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
                   </ppi:WorkflowInformation>
                </xs:appinfo>
             </xs:annotation>
-         </xs:element>
-         <xs:element name="Strecke_Art"
-                     type="nsBlock:TCStrecke_Art"
-                     minOccurs="0"
+			      </xs:element>
+			      <xs:element name="Vorblockwecker" type="nsBlock:TCVorblockwecker" minOccurs="1"
                      maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Rechtliche Klassifizierung der Strecke (Haupt-/Nebenbahn). DB-Regelwerk Angabe auf dem LP</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="Streckengeschwindigkeit"
-                     type="nsBlock:TCStreckengeschwindigkeit"
-                     minOccurs="1"
-                     maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">VzG-Geschwindigkeit der zugehörigen Strecke.</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="Traktion_Art_Elektrisch"
-                     type="nsBlock:TCTraktion_Art_Elektrisch"
-                     minOccurs="0"
-                     maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der Fahrstromversorgung (Stromart, Spannung, besondere Zuführung). Die Angabe entfällt bei nicht elektrifizierten Strecken. Auf die Angabe verschiedener nicht-elektrischer Traktionsarten (Diesel, Batterie, Wasserstoff etc.) wird verzichtet. DB-Regelwerk Angabe auf dem LP</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="Zugbeeinflussung_Art"
-                     type="nsBlock:TCZugbeeinflussung_Art"
-                     minOccurs="0"
-                     maxOccurs="unbounded">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vorhandenes bzw. vorgesehenes Zugbeeinflussungssystem. Bei Mehrfachausrüstung ist das Attribut mehrfach einzubinden. DB-Regelwerk Angabe auf dem LP</xs:documentation>
-            </xs:annotation>
-         </xs:element>
-         <xs:element name="Zusatzinformation"
-                     type="nsBlock:TCZusatzinformation"
-                     minOccurs="0"
-                     maxOccurs="1">
-            <xs:annotation>
-               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Erlaubt die Angabe zusätzlicher Informationen zur Ausgabe im LP. DB-Regelwerk Angabe auf dem LP</xs:documentation>
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für den Streckenblock des Streckengleises ist ein Vorkblockwecker eingerichtet. Mit dieser technischen Einrichtung wird eine akustische Meldung beim Eintreffen des Vorblocks von der Gegenstelle ausgegeben.</xs:documentation>
                <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
                   <ppi:WorkflowInformation>
-                     <ppi:Patternbeschreibung>[1..50]</ppi:Patternbeschreibung>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
                   </ppi:WorkflowInformation>
                </xs:appinfo>
             </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType ecore:name="Betriebsfuehrung_TypeClass" name="TCBetriebsfuehrung">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsBlock:ENUMBetriebsfuehrung"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Block_Bauform_TypeClass" name="TCBlock_Bauform">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsBlock:ENUMBlock_Bauform"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Block_Element_Erlaubnis_AttributeGroup"
-                   name="CBlock_Element_Erlaubnis">
-      <xs:sequence>
-         <xs:element name="Auto_Erlaubnisholen"
-                     type="nsBlock:TCAuto_Erlaubnisholen"
-                     minOccurs="0"
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CBlock_Element_Erlaubnis">
+		    <xs:sequence>
+			      <xs:element name="Auto_Erlaubnisholen" type="nsBlock:TCAuto_Erlaubnisholen" minOccurs="0"
                      maxOccurs="1">
-            <xs:annotation>
+				        <xs:annotation>
                <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Das zugehörige Block Element kann sich die Erlaubnis von der Gegenstelle automatisch holen. Dass Attribut kann für die zu einer Block Anlage zugehörigen Block_Elementen unabhängig voneinander verwendet werden. Nur die Blockendstelle kann die Erlaubnis automatisch holen, bei der dieses Attribut auf wahr gesetzt ist. Siehe dazu auch Erlaubnisholen als Alternative. </xs:documentation>
                <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
                   <ppi:WorkflowInformation>
@@ -624,12 +240,11 @@ XML Schema for PlanPro interface.</xs:documentation>
                   </ppi:WorkflowInformation>
                </xs:appinfo>
             </xs:annotation>
-         </xs:element>
-         <xs:element name="Auto_Erlaubnisruecklauf"
-                     type="nsBlock:TCAuto_Erlaubnisruecklauf"
+			      </xs:element>
+			      <xs:element name="Auto_Erlaubnisruecklauf" type="nsBlock:TCAuto_Erlaubnisruecklauf"
                      minOccurs="0"
                      maxOccurs="1">
-            <xs:annotation>
+				        <xs:annotation>
                <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Automatischer Erlaubnisrücklauf für die Block Anlage. Das Attribut ist auf beiden Block_Elementen der Blockanlage anzugeben, wobei eines mit wahr und das andere mit falsch zu befüllen ist. Die Erlaubnis läuft zu dem mit wahr gekennzeichneten Block Element zurück. Wenn kein automatischer Erlaubnisruecklauf eingerichtet ist, entfällt das Attribut. DB-Regelwerk [Ril 819.0102A04] Streckenblocktabelle. [482.9014, Abschnitt 3 (4)] Selbsttätige Erlaubnisrückgabe: Ist eine Fahrtrichtung für die Erlaubnis bevorrechtigt geschaltet, wird die Erlaubnis nach einer Zugfahrt gegen die bevorrechtigte Fahrtrichtung selbsttätig an die bevorrechtigte Betriebsstelle zurückgegeben. </xs:documentation>
                <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
                   <ppi:WorkflowInformation>
@@ -638,12 +253,12 @@ XML Schema for PlanPro interface.</xs:documentation>
                   </ppi:WorkflowInformation>
                </xs:appinfo>
             </xs:annotation>
-         </xs:element>
-         <xs:element name="Erlaubnis_Staendig_Vorhanden"
+			      </xs:element>
+			      <xs:element name="Erlaubnis_Staendig_Vorhanden"
                      type="nsBlock:TCErlaubnis_Staendig_Vorhanden"
                      minOccurs="0"
                      maxOccurs="1">
-            <xs:annotation>
+				        <xs:annotation>
                <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Die Erlaubnis befindet sind ständig im zugehörigen Block Element einer Block Anlage. Die Erlaubnis kann nicht abgegeben werden. Die Anwendung ist typisch für zweigleisige Strecken im Richtungsbetrieb ohne signalisiertem Gleiswechelbetrieb. Die anderen Funktionen des Erlaubniswechsels sind dann nicht möglich.</xs:documentation>
                <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
                   <ppi:WorkflowInformation>
@@ -651,12 +266,11 @@ XML Schema for PlanPro interface.</xs:documentation>
                   </ppi:WorkflowInformation>
                </xs:appinfo>
             </xs:annotation>
-         </xs:element>
-         <xs:element name="Erlaubnisabgabespeicherung"
-                     type="nsBlock:TCErlaubnisabgabespeicherung"
+			      </xs:element>
+			      <xs:element name="Erlaubnisabgabespeicherung" type="nsBlock:TCErlaubnisabgabespeicherung"
                      minOccurs="0"
                      maxOccurs="1">
-            <xs:annotation>
+				        <xs:annotation>
                <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Das Block Element kann die Abgabe der Erlaubnis speichern, wenn die Bedingungen zum Erlaubniswechsel noch nicht erfüllt sind. DB-Regelwerk [Ril 482.9014, Abschnitt 3 (3), Abschnitt 7 (3), Abschnitt 11 (3)]. </xs:documentation>
                <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
                   <ppi:WorkflowInformation>
@@ -665,12 +279,10 @@ XML Schema for PlanPro interface.</xs:documentation>
                   </ppi:WorkflowInformation>
                </xs:appinfo>
             </xs:annotation>
-         </xs:element>
-         <xs:element name="Erlaubnisholen"
-                     type="nsBlock:TCErlaubnisholen"
-                     minOccurs="0"
+			      </xs:element>
+			      <xs:element name="Erlaubnisholen" type="nsBlock:TCErlaubnisholen" minOccurs="0"
                      maxOccurs="1">
-            <xs:annotation>
+				        <xs:annotation>
                <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Das Block Element kann die Erlaubnis durch manuelle Bedienung von der Gegenstelle holen. Dass Attribut kann für die zu einer Block Anlage zugehörigen Block_Elemente unabhängig voneinander verwendet werden. Nur die Blockendstelle kann die Erlaubnis holen, bei der dieses Attribut auf true gesetzt ist. Siehe dazu auch Automatisches Erlaubnisholen als Alternative. DB Regelwerk Ril 482.9090 </xs:documentation>
                <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
                   <ppi:WorkflowInformation>
@@ -678,34 +290,274 @@ XML Schema for PlanPro interface.</xs:documentation>
                   </ppi:WorkflowInformation>
                </xs:appinfo>
             </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-   </xs:complexType>
-   <xs:complexType ecore:name="Streckengeschwindigkeit_TypeClass"
-                   name="TCStreckengeschwindigkeit">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsBlock:TStreckengeschwindigkeit"
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CBlock_Strecke">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Speicherung der betrieblich relevanter Streckendaten einer Blockstrecke. Das Objekt enthält die zwischen zwei Zugmeldestellen typischen betrieblichen Informationen (Streckendaten) zur Information. Es wird dem Blockelement der zugehörigen Blockstelle zugeordnet.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Block_Strecke_Allg" type="nsBlock:CBlock_Strecke_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_Betriebsstelle_Nachbar" type="nsVerweise:TCID_Oertlichkeit_Proxy"
                            minOccurs="1"
-                           maxOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Örtlichkeit der nächsten Zugmeldestelle.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Knotenbahnhof" type="nsVerweise:TCID_Oertlichkeit_Proxy" minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die Örtlichkeit des nächsten Knotenbahnhofs oder am Streckenende zur besseren Orientierung. Das Attribut ist nicht zu befüllen, wenn ID_Betriebsstelle_Nachbar bereits auf einen Knotenbahnhof oder die Örtlichkeit am Streckenende verweist.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Strecke" type="nsVerweise:TCID_Strecke" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung auf die Strecke. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_Strecke_Bremsweg" type="nsVerweise:TCID_Strecke_Bremsweg_ohne_Proxy"
+                           minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Bereichsobjekt Strecke_Bremsweg zur Angabe des Bremswegs der Strecke. Es besteht übergangsweise noch die Möglichkeit, das Attribut Bremsweg zu befüllen.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CBlock_Strecke_Allg">
+		    <xs:sequence>
+			      <xs:element name="Betriebsfuehrung" type="nsBlock:TCBetriebsfuehrung" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Betriebsführung auf der zugehörigen Strecke. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>zweigl_GWB</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Bremsweg" type="nsBlock:TCBremsweg" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bremsweg als Grundlage für die Dimesionierung der zugehörigen Strecke. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. Das Attribut wird zukünftig durch einen Verweis auf das Objekt Strecke_Bremsweg ersetzt. Zur Unterstützung der Migration wird das Attribut jedoch zunächst optional beibehalten.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>1000</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Strecke_Art" type="nsBlock:TCStrecke_Art" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Rechtliche Klassifizierung der Strecke (Haupt-/Nebenbahn). DB-Regelwerk Angabe auf dem LP</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Streckengeschwindigkeit" type="nsBlock:TCStreckengeschwindigkeit"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">VzG-Geschwindigkeit der zugehörigen Strecke.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Traktion_Art_Elektrisch" type="nsBlock:TCTraktion_Art_Elektrisch"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der Fahrstromversorgung (Stromart, Spannung, besondere Zuführung). Die Angabe entfällt bei nicht elektrifizierten Strecken. Auf die Angabe verschiedener nicht-elektrischer Traktionsarten (Diesel, Batterie, Wasserstoff etc.) wird verzichtet. DB-Regelwerk Angabe auf dem LP</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Zugbeeinflussung_Art" type="nsBlock:TCZugbeeinflussung_Art" minOccurs="0"
+                     maxOccurs="unbounded">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Vorhandenes bzw. vorgesehenes Zugbeeinflussungssystem. Bei Mehrfachausrüstung ist das Attribut mehrfach einzubinden. DB-Regelwerk Angabe auf dem LP</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Zusatzinformation" type="nsBlock:TCZusatzinformation" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Erlaubt die Angabe zusätzlicher Informationen zur Ausgabe im LP. DB-Regelwerk Angabe auf dem LP</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[1..50]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCAuto_Erlaubnisholen">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCAuto_Erlaubnisruecklauf">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBetriebsfuehrung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBlock:ENUMBetriebsfuehrung" minOccurs="1" maxOccurs="1"
                            nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType ecore:name="Bremsweg_TypeClass" name="TCBremsweg">
-      <xs:complexContent>
-         <xs:extension base="nsBasisTypen:CBasisAttribut">
-            <xs:sequence>
-               <xs:element name="Wert"
-                           type="nsBasisTypen:TBremsweg"
-                           minOccurs="1"
-                           maxOccurs="1"
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBlock_Bauform">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBlock:ENUMBlock_Bauform" minOccurs="1" maxOccurs="1"
                            nillable="true"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBremsweg">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TBremsweg" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCErlaubnis_Staendig_Vorhanden">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCErlaubnisabgabespeicherung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCErlaubnisholen">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCRueckblockwecker">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSchaltung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBlock:ENUMSchaltung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSchutzuebertrager">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCStrecke_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBlock:ENUMStrecke_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCStreckengeschwindigkeit">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBlock:TStreckengeschwindigkeit" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTraktion_Art_Elektrisch">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TFahrstrom" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCVorblockwecker">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZugbeeinflussung_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TAnwendungssystem" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZusatzinformation">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBlock:TZusatzinformation" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
 </xs:schema>
