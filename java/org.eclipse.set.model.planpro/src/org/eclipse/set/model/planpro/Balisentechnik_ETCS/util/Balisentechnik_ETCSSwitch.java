@@ -327,6 +327,13 @@ public class Balisentechnik_ETCSSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Balisentechnik_ETCSPackage.BEZEICHNUNG_RBC_TYPE_CLASS: {
+				Bezeichnung_RBC_TypeClass bezeichnung_RBC_TypeClass = (Bezeichnung_RBC_TypeClass)theEObject;
+				T result = caseBezeichnung_RBC_TypeClass(bezeichnung_RBC_TypeClass);
+				if (result == null) result = caseBasisAttribut_AttributeGroup(bezeichnung_RBC_TypeClass);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_ZUB_SE_TYPE_CLASS: {
 				Bezeichnung_ZUB_SE_TypeClass bezeichnung_ZUB_SE_TypeClass = (Bezeichnung_ZUB_SE_TypeClass)theEObject;
 				T result = caseBezeichnung_ZUB_SE_TypeClass(bezeichnung_ZUB_SE_TypeClass);
@@ -1569,6 +1576,12 @@ public class Balisentechnik_ETCSSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Balisentechnik_ETCSPackage.RBC_BEZEICHNUNG_ATTRIBUTE_GROUP: {
+				RBC_Bezeichnung_AttributeGroup rbC_Bezeichnung_AttributeGroup = (RBC_Bezeichnung_AttributeGroup)theEObject;
+				T result = caseRBC_Bezeichnung_AttributeGroup(rbC_Bezeichnung_AttributeGroup);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case Balisentechnik_ETCSPackage.RBC_ETCS_SYSTEM_VERSION_TYPE_CLASS: {
 				RBC_ETCS_System_Version_TypeClass rbC_ETCS_System_Version_TypeClass = (RBC_ETCS_System_Version_TypeClass)theEObject;
 				T result = caseRBC_ETCS_System_Version_TypeClass(rbC_ETCS_System_Version_TypeClass);
@@ -2714,6 +2727,21 @@ public class Balisentechnik_ETCSSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseBezeichnung_LEU_Anlage_TypeClass(Bezeichnung_LEU_Anlage_TypeClass object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Bezeichnung RBC Type Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Bezeichnung RBC Type Class</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBezeichnung_RBC_TypeClass(Bezeichnung_RBC_TypeClass object) {
 		return null;
 	}
 
@@ -5459,6 +5487,21 @@ public class Balisentechnik_ETCSSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRBC_Allg_AttributeGroup(RBC_Allg_AttributeGroup object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>RBC Bezeichnung Attribute Group</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>RBC Bezeichnung Attribute Group</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRBC_Bezeichnung_AttributeGroup(RBC_Bezeichnung_AttributeGroup object) {
 		return null;
 	}
 

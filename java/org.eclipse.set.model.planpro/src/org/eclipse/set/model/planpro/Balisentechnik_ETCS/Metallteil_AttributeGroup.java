@@ -34,7 +34,7 @@ public interface Metallteil_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Kategorie des Metallteils, sofern ein Metallwarnungs-Datenpunkt erforderlich ist. Gemäß Ril 819.1344 ist hierfür der Wert 0 zu verwenden. Andere Einträge sind nicht zulässig.
+	 * Kennzeichnung eines großen Metallobjekts gemäß Ril 819.1340, für das ein Metallwarnungs-Datenpunkt erforderlich ist. Die Angabe der Kategorie \"0\" entstammt der früheren Vorgabe in der Ril 819.1344. Andere Einträge sind nicht zulässig.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Metallteil Kategorie</em>' containment reference.
 	 * @see #setMetallteilKategorie(Metallteil_Kategorie_TypeClass)

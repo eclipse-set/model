@@ -136,10 +136,8 @@ public class Besonderes_Schaltkriterium_TypeClassItemProvider extends BasisAttri
 			case ZugnummernmeldeanlagePackage.BESONDERES_SCHALTKRITERIUM_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

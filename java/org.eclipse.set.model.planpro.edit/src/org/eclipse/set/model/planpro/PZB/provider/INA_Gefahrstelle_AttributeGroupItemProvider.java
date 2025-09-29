@@ -156,10 +156,8 @@ public class INA_Gefahrstelle_AttributeGroupItemProvider
 			case PZBPackage.INA_GEFAHRSTELLE_ATTRIBUTE_GROUP__PRIORITAET_GEFAHRSTELLE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

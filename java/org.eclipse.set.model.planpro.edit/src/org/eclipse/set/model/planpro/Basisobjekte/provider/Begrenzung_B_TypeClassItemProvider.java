@@ -139,10 +139,8 @@ public class Begrenzung_B_TypeClassItemProvider extends BasisAttribut_AttributeG
 			case BasisobjektePackage.BEGRENZUNG_BTYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

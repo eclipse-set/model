@@ -123,7 +123,17 @@ public enum ENUMLageplanArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN(9, "ENUMLageplan_Art_ZLV_Bus_Ubersichtsplan", "ZLV-Bus-\u00dcbersichtsplan");
+	ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN(9, "ENUMLageplan_Art_ZLV_Bus_Ubersichtsplan", "ZLV-Bus-\u00dcbersichtsplan"),
+
+	/**
+	 * The '<em><b>ENUM Lageplan Art ZN Ubersichtsplan</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN(10, "ENUMLageplan_Art_ZN_Ubersichtsplan", "ZN-\u00dcbersichtsplan");
 
 	/**
 	 * The '<em><b>ENUM Lageplan Art BU Kreuzungsplan LST</b></em>' literal value.
@@ -236,6 +246,17 @@ public enum ENUMLageplanArt implements Enumerator {
 	public static final int ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN_VALUE = 9;
 
 	/**
+	 * The '<em><b>ENUM Lageplan Art ZN Ubersichtsplan</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN
+	 * @model name="ENUMLageplan_Art_ZN_Ubersichtsplan" literal="ZN-\334bersichtsplan"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN_VALUE = 10;
+
+	/**
 	 * An array of all the '<em><b>ENUM Lageplan Art</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -253,6 +274,7 @@ public enum ENUMLageplanArt implements Enumerator {
 			ENUM_LAGEPLAN_ART_SONSTIGE,
 			ENUM_LAGEPLAN_ART_STAMMKABELÜBERSICHTSPLAN,
 			ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN,
+			ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN,
 		};
 
 	/**
@@ -319,8 +341,9 @@ public enum ENUMLageplanArt implements Enumerator {
 			case ENUM_LAGEPLAN_ART_SONSTIGE_VALUE: return ENUM_LAGEPLAN_ART_SONSTIGE;
 			case ENUM_LAGEPLAN_ART_STAMMKABELÜBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_STAMMKABELÜBERSICHTSPLAN;
 			case ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN;
-			default: return null;
+			case ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN;
 		}
+		return null;
 	}
 
 	/**

@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
+           targetNamespace="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3">
+	  <xs:annotation>
+		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+
+Weitere Informationen zur Lizenz finden Sie auf
+http://www.dbinfrago.com/planpro
+
+Inhalt der Datei:
+XML Schema für PlanPro Schnittstelle.
+
+Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+
+--------------------------------------------------------------------------------
+
+This Document is licensed under the open source license RailPL V1.1.
+
+More information about the license can be found on
+http://www.dbinfrago.com/planpro
+
+Contents of the file:
+XML Schema for PlanPro interface.</xs:documentation>
+	  </xs:annotation>
+	  <xs:simpleType name="ENUMAnwendungssystem">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="ESG"/>
+			      <xs:enumeration value="GNT"/>
+			      <xs:enumeration value="L2"/>
+			      <xs:enumeration value="L2oS"/>
+			      <xs:enumeration value="LZB"/>
+			      <xs:enumeration value="ohne"/>
+			      <xs:enumeration value="PZB"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="ZBS"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMAusrichtung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="gegen"/>
+			      <xs:enumeration value="in"/>
+			      <xs:enumeration value="keine"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMBremsweg">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="1000"/>
+			      <xs:enumeration value="400"/>
+			      <xs:enumeration value="700"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMFahrstrom">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="1200V_DC_Stromschiene"/>
+			      <xs:enumeration value="1500V_DC"/>
+			      <xs:enumeration value="15kV_16_7Hz"/>
+			      <xs:enumeration value="2400V_DC"/>
+			      <xs:enumeration value="25kV_50Hz"/>
+			      <xs:enumeration value="3000V_DC"/>
+			      <xs:enumeration value="750V_DC_Stromschiene"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMLinksRechts">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attribute dieses Basistyps können den ENUM-Wert 'links' oder 'rechts' annehmen.</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="links"/>
+			      <xs:enumeration value="rechts"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMPruefsumme_Art">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der verwendeten Prüfsumme (z. B. MD4).</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="MD4"/>
+			      <xs:enumeration value="MD5"/>
+			      <xs:enumeration value="SHA1"/>
+			      <xs:enumeration value="SHA256"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMRegionalbereich">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Mitte"/>
+			      <xs:enumeration value="Nord"/>
+			      <xs:enumeration value="Ost"/>
+			      <xs:enumeration value="Süd"/>
+			      <xs:enumeration value="Südost"/>
+			      <xs:enumeration value="Südwest"/>
+			      <xs:enumeration value="West"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMWirkrichtung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="beide"/>
+			      <xs:enumeration value="gegen"/>
+			      <xs:enumeration value="in"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TAnwendungssystem">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">System der Zugbeeinflussung bzw. -sicherung, mit dem ein bestimmter Streckenbereich ausgerüstet ist. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen.
+</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="nsBasisTypen:ENUMAnwendungssystem"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TAusrichtung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ein Attribut diesen Typs wird verwendet, um die Ausrichtung eines Objekts in Bezug zur Topologierichtung anzuzeigen. Ein Attribut mit diesem Basistyp nimmt einen der ENUM-Werte \"gegen\", \"in\" und \"keine\" an.
+</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="nsBasisTypen:ENUMAusrichtung"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBezeichnung_Aussenanlage">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,36}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBezeichnung_Lageplan_Kurz">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,36}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBezeichnung_Lageplan_Lang">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,36}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBezeichnung_Tabelle">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value=".{1,36}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBremsweg">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bremsweg als Grundlage für die Dimensionierung der zugehörigen Strecke. Bei Auswahl von \"sonstige\" ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen.</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="nsBasisTypen:ENUMBremsweg"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TDateiname">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Name einer Datei ohne Dateiformat bzw. -typ.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:Patternbeschreibung>Alle Zeichen ausser den folgenden: ^\\/?:*|&lt;&gt;</ppi:Patternbeschreibung>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value="[^\\/?:\*\|&#34;&lt;&gt;]*"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TDatum_Auslieferung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Datum, an dem die Binaerdatei vom Hersteller ausgeliefert wurde.</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:date"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TFahrstrom">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der Fahrstromversorgung (Stromart, Spannung, besondere Zuführung)
+</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="nsBasisTypen:ENUMFahrstrom"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TFreiText">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschränkt die Befüllung auf Fließtext inkl. Zahlen, Leerzeichen und Sonderzeichen aus den Zeichenvorat von UTF-8. Die Länge des Fließtextes ist unbeschränkt.</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:string"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TGeschwindigkeit">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Von xs:integer abgeleitet mit der Bedeutung einer Geschwindigkeit in Kilometer pro Stunde (km/h) mit dem Wertebereich von 0 bis 500. Geschwindigkeitsangaben werden derzeit beispielsweise verwendet bei: Block Strecke, Gleis Abschnitt, W Kr Gsp Komponente.</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="0|[1-9][0-9]{0,1}|[1-4][0-9]{2}|500"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TGUID">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschränkt die Befüllung auf eine 32-stellige GUID in der Form 8-4-4-4-12 Zeichen unter Verwendung der Zahlen 0-9 und der Großbuchstaben A-F.</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="THersteller">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Unternehmen, das die Funktionsfähigkeit der Anlage verantwortlich hergestellt hat oder Hersteller des jeweiligen Elements. Diese Eigenschaft ist kein Datum einer Planung, sondern dient im Rücklauf der Planung dazu den Hersteller im Bestand zu erfassen. Es ist die zum Zeitpunkt der Inbetriebnahme gültige Firmierung zu verwenden. 
+</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TKennzahl">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Eindeutige Kennzahl der operativen Sicherungstechnik innerhalb eines Bedienbezirks für eine Betriebsstelle.
+
+Die ESTW-Kennzahl kennzeichnet eine Betriebsstelle oder einen Betriebsstellenteil. Es handelt sich nicht um die Bahnhofsnummer der Zugnummernmeldeanlage (Ril 819.0731)!
+
+Eine Betriebsstelle kann mehrere Kennzahlen erhalten. Z.B. dann, wenn in einem Gebäude zwei ESTW-Zentraleinheiten untergebracht sind (Beispiel Hannover Hbf mit den ESTW-Zentraleinheiten \"HH Kennzahl 06\" und \"HHZX Kennzahl 30\").
+
+Eine Kennzahl kann aber auch mehrere Betriebsstellen beinhalten. Z. B dann, wenn eine ESTW-Zentraleinheit zwei Überleitstellen steuert (Beispiel ESTW-Zentraleinheit Giften HGIF Kennzahl 71 mit \"Üst Giften HGIF\" und \"Üst Ritterkamp HRIT\".
+
+In Stellbereichen von Bedienbezirken werden für Betriebsstellen (z. B. Bahnhöfe, Abzweigstellen, Anschlussstellen) Kennzahlen von 01 bis 99 vergeben. Diese Kennzahl muss im Bedienbezirk eindeutig sein.
+
+Eindeutigkeit der Kennzahlen bei angrenzenden Bedienbezirken entlang einer Strecke:
+
+Innerhalb eines Bedienbezirks und für benachbarte Betriebsstellen eines angrenzenden Bedienbezirks entlang einer Strecke darf eine Kennzahl nur einmal verwendet werden. Beispiel: Media:Bedien Oertlichkeit Kennzahl 131121.pdf
+
+Für alle im jeweiligen Bereich befindlichen Stellelemente der Betriebsstellen und Strecken wird die Kennzahl Bestandteil der ausführlichen Elementbezeichnung. Hierdurch erübrigt sich in einem größeren Bereich der Infrastruktur die Mitführung eines Ortsbezeichners.
+
+Zentrale Vergabe von Kennzahlen auch ohne Anbindung an Bedien_Zentralen:
+
+Unabnhängig ob eine ESTW-Zentraleinheit aus einer Bedien_Zentrale gesteuert wird oder nur örtlich eingerichtet ist, soll die Kennzahlenvergabe zentral im Sinne einer möglichen Konzentration von ESTW-Zentraleinheiten in Bedienbezirken geplant und vergeben werden. 
+
+DB-Regelwerk
+• Kennzahltabelle oder Kennzahelnübersichtsplan im PT 1, 
+• 819.0603 2, 
+• 819.9001 1 (5).
+
+</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:Patternbeschreibung> [2] führende Null ist mitzuschreiben, \u002700\u0027 ist unzulässig</ppi:Patternbeschreibung>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:restriction base="nsBasisTypen:TZeichenkette">
+			      <xs:pattern value="0[1-9]|[1-9][0-9]"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TKilometrierung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschränkt die Befüllung auf einen String mit der Bedeutung eines kilometrischen Wertes in Kilometer (km).
+
+Die Kilometrierung bildet sich aus: 
+¦ einem optionalen negativen Vorzeichen, 
+¦ der Ziffer 0 oder einer ein- bis dreistelligen Zahl ohne führende Nullen, 
+¦ einem Komma, 
+
+dann entweder 
+¦ eine dreistellige Nachkommazahl, 
+
+oder bei der Angabe von Mehr- oder Minderlängen 
+¦ ein Vorzeichen + oder - und 
+¦ eine bis zu fünfstellige Zahl ohne führende Nullen.
+</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:pattern value="-?(([1-9][0-9]{0,2})|0),([0-9]{3}|([0-9][\+\-][1-9][0-9]{0,4}))"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TLinksRechts">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attribute dieses Basistyps können den ENUM-Wert \"links\" oder \"rechts\" annehmen.</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="nsBasisTypen:ENUMLinksRechts"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TMeter">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Von xs:decimal abgeleiteter Basistyp zur Angabe von Werten mit der Einheit Meter.</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:decimal"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TObjektname">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Der Typ wird im Modell verwendet, um GUID-Zeiger auf ein spezifisches Ziel-LST-Objekt zu konfigurieren.</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TOertlicher_Elementname">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kurzbezeichnung eines Elements. Der örtliche Elementbezeichner ist Bestandteil des Elementnamens und wird elementspezifisch gebildet. Bei Lichtsperrsignalen und anderen Elementen mit Richtungsbuchstaben (X, Y) kann dieser nicht immer eindeutig und automatisch aus einem Richtungsattribut abgeleitet werden. Er ist in jedem Fall vom Planer zu bestimmen und als Bestandteil des örtlichen Elementbezeichners abzuspeichern. Der örtliche Elementbezeichner wird üblicherweise im Lageplan verwendet. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk 819.0603 (Stellwerkseinrichtungen - Bedienoberflächen), 819.9001 (Symbolbezeichnungen sicherungstechnischer Pläne).
+
+
+</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="nsBasisTypen:TZeichenkette">
+			      <xs:pattern value=".{1,6}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TRegionalbereich">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Regionalbereich der DB InfraGO AG, dem die Anlage zugewiesen ist.
+</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="nsBasisTypen:ENUMRegionalbereich"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TSekunde">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Von xs:decimal abgeleiteter Basistyp zur Angabe von Werten mit der Einheit Sekunde im Format sssss[.zh] (s: Sekunde, z: Zehntel, h: Hundertstel).</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:decimal">
+			      <xs:pattern value="[0-9]{1,5}(\.[0-9]{2})?"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TText">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschränkt die Befüllung auf Fließtext inkl. Zahlen, Leerzeichen und Sonderzeichen aus den Zeichenvorat von UTF-8, wobei die Länge auf [1..250] Zeichen festgelegt ist.</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:pattern value=".{1,250}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TVersion_Auslieferung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Version der Auslieferung vom Hersteller.
+</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TWirkrichtung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ein Attribut diesen Typs wird verwendet, um die Wirkrichtung eines Objekts in Bezug zur Topologierichtung anzuzeigen. Ein Attribut mit diesem Basistyp nimmt einen der ENUM-Werte 'beide', 'gegen' und 'in' an.</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="nsBasisTypen:ENUMWirkrichtung"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TZeichenkette">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschränkt die Befüllung auf alphanumerische Zeichen und Unterstrich, wobei die Länge auf [1..250] Zeichen festgelegt ist.</xs:documentation>
+      </xs:annotation>
+		    <xs:restriction base="xs:string">
+			      <xs:pattern value="[a-zA-Z_0-9]{1,250}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CBasisAttribut" abstract="true">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Das BasisAttribut stellt die Schablone für alle Attribute aller Objekte dar. 
+
+Die Attributeigenschaften des BasisAttributs sind in 2 Gruppen unterteilbar. Zum einen die vom Modell gefüllten Attribute, die als eine xs:appinfo umgesetzt sind:
+• Beispielbefuellung, 
+• Patternbeschreibung, 
+• Planungsphase. 
+
+In ihnen werden Informationen zum Attribut fest gespeichert. Sie sind für alle Programme, die das Schema auslesen, verfügbar und werden zur Durchführung von Prüfungen verwendet oder um dem jeweiligen Bearbeitungsprogramm zusätzliche Informationen über das Attribut zur Verfügung zu stellen.
+
+Die zweite Gruppe der Attributeigenschaften sind als XSDElement modellierten Informationen, die von den Nutzern der Schnittstelle erstellt werden. Es handelt sich neben dem eigentlichen Wert, welcher verpflichtend zu füllen ist, um einen oder mehrere optionale Verweise auf Bearbeitungsvermerke. In diesen können weitere Informationen zu der speziellen Ausprägung des Attributs hinterlegt werden.
+• ID_Bearbeitungsvermerk, 
+• Wert.</xs:documentation>
+      </xs:annotation>
+		    <xs:sequence>
+			      <xs:element name="ID_Bearbeitungsvermerk" type="nsBasisTypen:TCID_Bearbeitungsvermerk"
+                     minOccurs="0"
+                     maxOccurs="unbounded">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweist auf einen oder mehrere Bearbeitungsvermerke. Ein Anhang wird über einen Bearbeitungsvermerk zugeordnet. 
+</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CBezeichnung_Element">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Basisattributgruppe zur einheitlichen Modellierung der Bezeichnung von Stell- und weiteren Elementen. Die Bildung der resultierenden Bezeichnung eines Elements in den verschiedenen Ausprägungen ist in Bildung der Bezeichnungen beschrieben. DB-Regelwerk Ril 819.9001 (Symbolbezeichnungen sicherungstechnischer Pläne)</xs:documentation>
+      </xs:annotation>
+		    <xs:sequence>
+			      <xs:element name="Bezeichnung_Aussenanlage" type="nsBasisTypen:TCBezeichnung_Aussenanlage"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschriftung des Elements oder der Komponente der LST-Anlage. 
+
+Die Bezeichnung besteht i. d. R. aus dem Elementnamen (siehe Bildung der Bezeichnungen). Komponenten, die nicht bedienbar sind (z.B. Achszählpunkte) können durch Zusammenfügen von Elementnamen oder modifizierten Elementnamen bezeichnet werden. 
+
+Bei Elementen der LST-Anlage, die in der Außenanlage kein Bezeichnungsschild und im sicherungstechnischen Plan- und Tabellenwerk keinen spezifischen Bezeichner haben, kann dieses Attribut entfallen.
+
+Beispiele: 
+• ein Hauptsignal hat in der Außenanlage ein Bezeichnungsschild und auf dem sicherungstechnischen Lageplan einen spezifischen Bezeichner, das Attribut wird befüllt; 
+• ein Vorsignal hat in der Außenanlage kein Bezeichnungsschild, aber auf dem sicherungstechnischen Lageplan einen spezifischen Bezeichner, das Attribut wird befüllt; 
+• ein Bedienpunkt (fiktives Signal) existiert gar nicht in der Außenanlage, hat aber mindestens im Tabellenwerk einen spezifischen Bezeichner, das Attribut wird befüllt; 
+• ein Lf 7 hat in der Außenanlage kein Bezeichnungsschild und auf dem sicherungstechnischen Lageplan keinen spezifischen Bezeichner, das Attribut entfällt (Hinweis: Auch wenn im Lageplan der Bezeichner \"LF7\" eingetragen wird, so ist das dennoch kein spezifischer Bezeichner, sondern ein allgemeiner Bezeichner für alle Signale Lf 7). 
+
+DB-Regelwerk
+• 819.9001
+</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Bezeichnung_Lageplan_Kurz"
+                     type="nsBasisTypen:TCBezeichnung_Lageplan_Kurz"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kurze Bezeichnung eines bedienbaren Elements im Lageplan. Die Bezeichnung besteht i. d. R. ausschließlich aus dem Oertlichen Elementnamen (siehe Bildung der Bezeichnungen).
+
+</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Bezeichnung_Lageplan_Lang"
+                     type="nsBasisTypen:TCBezeichnung_Lageplan_Lang"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Lange Bezeichnung eines bedienbaren Elements im Lageplan. Die Bezeichnung besteht i. d. R. aus dem Elementnamen (siehe Bildung der Bezeichnungen).
+</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Bezeichnung_Tabelle" type="nsBasisTypen:TCBezeichnung_Tabelle"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung eines bedienbaren Elements in den Tabellen der AP PT 1. Die Bezeichnung besteht i. d. R. aus dem Elementnamen (siehe Bildung der Bezeichnungen).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Kennzahl" type="nsBasisTypen:TCKennzahl" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Eindeutige Kennzahl der operativen Sicherungstechnik innerhalb eines Bedienbezirks für eine Betriebsstelle.
+
+Die ESTW-Kennzahl kennzeichnet eine Betriebsstelle oder einen Betriebsstellenteil. Es handelt sich nicht um die Bahnhofsnummer der Zugnummernmeldeanlage (Ril 819.0731)!
+
+Eine Betriebsstelle kann mehrere Kennzahlen erhalten. Z.B. dann, wenn in einem Gebäude zwei ESTW-Zentraleinheiten untergebracht sind (Beispiel Hannover Hbf mit den ESTW-Zentraleinheiten \"HH Kennzahl 06\" und \"HHZX Kennzahl 30\").
+
+Eine Kennzahl kann aber auch mehrere Betriebsstellen beinhalten. Z. B dann, wenn eine ESTW-Zentraleinheit zwei Überleitstellen steuert (Beispiel ESTW-Zentraleinheit Giften HGIF Kennzahl 71 mit \"Üst Giften HGIF\" und \"Üst Ritterkamp HRIT\".
+
+In Stellbereichen von Bedienbezirken werden für Betriebsstellen (z. B. Bahnhöfe, Abzweigstellen, Anschlussstellen) Kennzahlen von 01 bis 99 vergeben. Diese Kennzahl muss im Bedienbezirk eindeutig sein.
+
+Eindeutigkeit der Kennzahlen bei angrenzenden Bedienbezirken entlang einer Strecke:
+
+Innerhalb eines Bedienbezirks und für benachbarte Betriebsstellen eines angrenzenden Bedienbezirks entlang einer Strecke darf eine Kennzahl nur einmal verwendet werden. Beispiel: Media:Bedien Oertlichkeit Kennzahl 131121.pdf
+
+Für alle im jeweiligen Bereich befindlichen Stellelemente der Betriebsstellen und Strecken wird die Kennzahl Bestandteil der ausführlichen Elementbezeichnung. Hierdurch erübrigt sich in einem größeren Bereich der Infrastruktur die Mitführung eines Ortsbezeichners.
+
+Zentrale Vergabe von Kennzahlen auch ohne Anbindung an Bedien_Zentralen:
+
+Unabnhängig ob eine ESTW-Zentraleinheit aus einer Bedien_Zentrale gesteuert wird oder nur örtlich eingerichtet ist, soll die Kennzahlenvergabe zentral im Sinne einer möglichen Konzentration von ESTW-Zentraleinheiten in Bedienbezirken geplant und vergeben werden. 
+
+DB-Regelwerk
+• Kennzahltabelle oder Kennzahelnübersichtsplan im PT 1, 
+• 819.0603 2, 
+• 819.9001 1 (5).
+
+</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [2] führende Null ist mitzuschreiben, '00' ist unzulässig</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Oertlicher_Elementname" type="nsBasisTypen:TCOertlicher_Elementname"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kurzbezeichnung eines Elements. Der örtliche Elementname ist Bestandteil des Elementnamens und wird elementspezifisch gebildet. Bei Lichtsperrsignalen und anderen Elementen mit Richtungsbuchstaben (X, Y) kann dieser nicht immer eindeutig und automatisch aus einem Richtungsattribut abgeleitet werden. Er ist in jedem Fall vom Planer zu bestimmen und als Bestandteil des örtlichen Elementnamens abzuspeichern. Der örtliche Elementname wird üblicherweise im Lageplan verwendet. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk 819.0603 (Stellwerkseinrichtungen - Bedienoberflächen), 819.9001 (Symbolbezeichnungen sicherungstechnischer Pläne).
+
+</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CPruefmerkmale_Daten">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Basisattributgruppe zur Zuordnung von Prüfmerkmalen zu Daten bzw. einer Datei.</xs:documentation>
+      </xs:annotation>
+		    <xs:sequence>
+			      <xs:element name="Datum_Auslieferung" type="nsBasisTypen:TCDatum_Auslieferung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Datum, an dem die Daten bzw. die Datei vom Hersteller ausgeliefert wurde(n).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Pruefsumme" type="nsBasisTypen:TCPruefsumme" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Prüfsumme für die Daten bzw. die Datei zur Sicherstellung der Unverfälschtheit.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Pruefsumme_Art" type="nsBasisTypen:TCPruefsumme_Art" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art der verwendeten Prüfsumme (z. B. MD4).</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Version_Auslieferung" type="nsBasisTypen:TCVersion_Auslieferung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Version der Auslieferung vom Hersteller.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCBezeichnung_Aussenanlage">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TBezeichnung_Aussenanlage" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBezeichnung_Lageplan_Kurz">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TBezeichnung_Lageplan_Kurz" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBezeichnung_Lageplan_Lang">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TBezeichnung_Lageplan_Lang" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBezeichnung_Tabelle">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TBezeichnung_Tabelle" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCDatum_Auslieferung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TDatum_Auslieferung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCID_Bearbeitungsvermerk">
+		    <xs:sequence>
+			      <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                     nillable="true"/>
+		    </xs:sequence>
+		    <xs:attribute name="Objektname" use="prohibited" fixed="Bearbeitungsvermerk|Proxy_Objekt"
+                    type="nsBasisTypen:TObjektname"/>
+	  </xs:complexType>
+	  <xs:complexType name="TCKennzahl">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TKennzahl" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCOertlicher_Elementname">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TOertlicher_Elementname" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCPruefsumme">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TText" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCPruefsumme_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:ENUMPruefsumme_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCVersion_Auslieferung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TVersion_Auslieferung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZeiger">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Typklasse, von der alle spezifischen Zeiger im Modell abgeleitet sind. Spezifische Zeiger werden verwendet, um einen Verweis von einem Objekt auf ein anderes Objekt zu modellieren. Dazu wird technisch auf die GUID des Zielobjektes referenziert.</xs:documentation>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TGUID" minOccurs="1" maxOccurs="1"
+                           nillable="true">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Enthält die GUID des Ziel-LST-Objekts, auf das der GUID-Zeiger verweist.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+				        <xs:attribute name="Objektname" use="prohibited" type="nsBasisTypen:TObjektname">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Der Typ wird im Modell verwendet, um GUID-Zeiger auf ein spezifisches Ziel-LST-Objekt zu konfigurieren.</xs:documentation>
+               </xs:annotation>
+				        </xs:attribute>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+</xs:schema>

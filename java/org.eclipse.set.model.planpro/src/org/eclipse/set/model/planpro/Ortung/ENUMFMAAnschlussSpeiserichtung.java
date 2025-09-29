@@ -135,8 +135,8 @@ public enum ENUMFMAAnschlussSpeiserichtung implements Enumerator {
 		switch (value) {
 			case ENUMFMA_ANSCHLUSS_SPEISERICHTUNG_AUSSPEISUNG_VALUE: return ENUMFMA_ANSCHLUSS_SPEISERICHTUNG_AUSSPEISUNG;
 			case ENUMFMA_ANSCHLUSS_SPEISERICHTUNG_EINSPEISUNG_VALUE: return ENUMFMA_ANSCHLUSS_SPEISERICHTUNG_EINSPEISUNG;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

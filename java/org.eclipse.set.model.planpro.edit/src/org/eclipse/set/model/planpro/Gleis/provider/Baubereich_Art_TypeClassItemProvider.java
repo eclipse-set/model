@@ -138,10 +138,8 @@ public class Baubereich_Art_TypeClassItemProvider extends BasisAttribut_Attribut
 			case GleisPackage.BAUBEREICH_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

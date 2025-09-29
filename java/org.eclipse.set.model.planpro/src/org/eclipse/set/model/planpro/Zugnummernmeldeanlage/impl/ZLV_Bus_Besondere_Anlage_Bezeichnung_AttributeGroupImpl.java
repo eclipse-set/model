@@ -120,9 +120,8 @@ public class ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroupImpl extends EOb
 		switch (featureID) {
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BESONDERE_ANLAGE:
 				return basicSetBezeichnungBesondereAnlage(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,9 +134,8 @@ public class ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroupImpl extends EOb
 		switch (featureID) {
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BESONDERE_ANLAGE:
 				return getBezeichnungBesondereAnlage();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,10 +149,8 @@ public class ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroupImpl extends EOb
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BESONDERE_ANLAGE:
 				setBezeichnungBesondereAnlage((Bezeichnung_Besondere_Anlage_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -168,10 +164,8 @@ public class ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroupImpl extends EOb
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BESONDERE_ANLAGE:
 				setBezeichnungBesondereAnlage((Bezeichnung_Besondere_Anlage_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -184,9 +178,8 @@ public class ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroupImpl extends EOb
 		switch (featureID) {
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BESONDERE_ANLAGE:
 				return bezeichnungBesondereAnlage != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroupImpl

@@ -137,10 +137,8 @@ public class Vorzugslage_Automatik_TypeClassItemProvider extends BasisAttribut_A
 			case Weichen_und_GleissperrenPackage.VORZUGSLAGE_AUTOMATIK_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

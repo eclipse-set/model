@@ -33,9 +33,6 @@ import org.eclipse.set.model.planpro.PlanPro.*;
  * @generated
  */
 public class PlanProValidator extends EObjectValidator {
-
-	
-	
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
@@ -1270,7 +1267,7 @@ public class PlanProValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] BAUZUSTAND_KURZBEZEICHNUNG_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("[A-Z,a-z,0-9]{1,15}")
+				XMLTypeUtil.createPatternMatcher("[A-Z,a-z,\u00e4\u00f6\u00fc\u00c4\u00d6\u00dc0-9 _\\-]{1,20}")
 			},
 			new PatternMatcher [] {
 				XMLTypeUtil.createPatternMatcher(".{1,250}")
@@ -1831,7 +1828,7 @@ public class PlanProValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] NAME_ORGANISATION_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher(".{1,30}")
+				XMLTypeUtil.createPatternMatcher(".{1,50}")
 			},
 			new PatternMatcher [] {
 				XMLTypeUtil.createPatternMatcher(".{1,250}")
@@ -1867,7 +1864,7 @@ public class PlanProValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] ORGANISATIONSEINHEIT_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher(".{1,30}")
+				XMLTypeUtil.createPatternMatcher(".{1,50}")
 			},
 			new PatternMatcher [] {
 				XMLTypeUtil.createPatternMatcher(".{1,250}")

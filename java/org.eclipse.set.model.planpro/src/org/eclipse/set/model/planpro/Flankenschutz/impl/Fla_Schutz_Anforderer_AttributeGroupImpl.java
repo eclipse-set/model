@@ -239,9 +239,8 @@ public class Fla_Schutz_Anforderer_AttributeGroupImpl extends EObjectImpl implem
 				return basicSetFahrtUeber(null, msgs);
 			case FlankenschutzPackage.FLA_SCHUTZ_ANFORDERER_ATTRIBUTE_GROUP__ID_ANFORDERER_ELEMENT:
 				return basicSetIDAnfordererElement(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +257,8 @@ public class Fla_Schutz_Anforderer_AttributeGroupImpl extends EObjectImpl implem
 				return getFahrtUeber();
 			case FlankenschutzPackage.FLA_SCHUTZ_ANFORDERER_ATTRIBUTE_GROUP__ID_ANFORDERER_ELEMENT:
 				return getIDAnfordererElement();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +278,8 @@ public class Fla_Schutz_Anforderer_AttributeGroupImpl extends EObjectImpl implem
 			case FlankenschutzPackage.FLA_SCHUTZ_ANFORDERER_ATTRIBUTE_GROUP__ID_ANFORDERER_ELEMENT:
 				setIDAnfordererElement((ID_Anforderer_Element_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +299,8 @@ public class Fla_Schutz_Anforderer_AttributeGroupImpl extends EObjectImpl implem
 			case FlankenschutzPackage.FLA_SCHUTZ_ANFORDERER_ATTRIBUTE_GROUP__ID_ANFORDERER_ELEMENT:
 				setIDAnfordererElement((ID_Anforderer_Element_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +317,8 @@ public class Fla_Schutz_Anforderer_AttributeGroupImpl extends EObjectImpl implem
 				return fahrtUeber != null;
 			case FlankenschutzPackage.FLA_SCHUTZ_ANFORDERER_ATTRIBUTE_GROUP__ID_ANFORDERER_ELEMENT:
 				return iDAnfordererElement != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Fla_Schutz_Anforderer_AttributeGroupImpl

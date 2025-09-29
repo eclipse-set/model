@@ -145,10 +145,8 @@ public class ZBS_SchutzstreckeItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.ZBS_SCHUTZSTRECKE__ZBS_SCHUTZSTRECKE_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

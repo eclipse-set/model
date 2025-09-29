@@ -168,10 +168,8 @@ public class Planung_E_Allg_AttributeGroupItemProvider
 			case PlanProPackage.PLANUNG_EALLG_ATTRIBUTE_GROUP__PLANUNG_PHASE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

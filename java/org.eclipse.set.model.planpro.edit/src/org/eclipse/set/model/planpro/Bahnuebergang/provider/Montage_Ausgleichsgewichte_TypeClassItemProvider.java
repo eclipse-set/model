@@ -138,10 +138,8 @@ public class Montage_Ausgleichsgewichte_TypeClassItemProvider extends BasisAttri
 			case BahnuebergangPackage.MONTAGE_AUSGLEICHSGEWICHTE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

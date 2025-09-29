@@ -297,9 +297,8 @@ public class Ueberhoehung_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return basicSetUeberhoehungDatum(null, msgs);
 			case GeodatenPackage.UEBERHOEHUNG_ALLG_ATTRIBUTE_GROUP__UEBERHOEHUNG_HOEHE:
 				return basicSetUeberhoehungHoehe(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -318,9 +317,8 @@ public class Ueberhoehung_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return getUeberhoehungDatum();
 			case GeodatenPackage.UEBERHOEHUNG_ALLG_ATTRIBUTE_GROUP__UEBERHOEHUNG_HOEHE:
 				return getUeberhoehungHoehe();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -343,10 +341,8 @@ public class Ueberhoehung_Allg_AttributeGroupImpl extends EObjectImpl implements
 			case GeodatenPackage.UEBERHOEHUNG_ALLG_ATTRIBUTE_GROUP__UEBERHOEHUNG_HOEHE:
 				setUeberhoehungHoehe((Ueberhoehung_Hoehe_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -369,10 +365,8 @@ public class Ueberhoehung_Allg_AttributeGroupImpl extends EObjectImpl implements
 			case GeodatenPackage.UEBERHOEHUNG_ALLG_ATTRIBUTE_GROUP__UEBERHOEHUNG_HOEHE:
 				setUeberhoehungHoehe((Ueberhoehung_Hoehe_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -391,9 +385,8 @@ public class Ueberhoehung_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return ueberhoehungDatum != null;
 			case GeodatenPackage.UEBERHOEHUNG_ALLG_ATTRIBUTE_GROUP__UEBERHOEHUNG_HOEHE:
 				return ueberhoehungHoehe != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Ueberhoehung_Allg_AttributeGroupImpl

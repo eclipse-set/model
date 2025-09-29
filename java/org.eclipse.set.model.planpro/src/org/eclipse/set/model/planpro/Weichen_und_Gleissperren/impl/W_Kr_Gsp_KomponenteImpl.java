@@ -451,9 +451,8 @@ public class W_Kr_Gsp_KomponenteImpl extends Punkt_ObjektImpl implements W_Kr_Gs
 				return basicSetKreuzung(null, msgs);
 			case Weichen_und_GleissperrenPackage.WKR_GSP_KOMPONENTE__ZUNGENPAAR:
 				return basicSetZungenpaar(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -478,9 +477,8 @@ public class W_Kr_Gsp_KomponenteImpl extends Punkt_ObjektImpl implements W_Kr_Gs
 				return getKreuzung();
 			case Weichen_und_GleissperrenPackage.WKR_GSP_KOMPONENTE__ZUNGENPAAR:
 				return getZungenpaar();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -514,10 +512,8 @@ public class W_Kr_Gsp_KomponenteImpl extends Punkt_ObjektImpl implements W_Kr_Gs
 			case Weichen_und_GleissperrenPackage.WKR_GSP_KOMPONENTE__ZUNGENPAAR:
 				setZungenpaar((Zungenpaar_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -549,10 +545,8 @@ public class W_Kr_Gsp_KomponenteImpl extends Punkt_ObjektImpl implements W_Kr_Gs
 			case Weichen_und_GleissperrenPackage.WKR_GSP_KOMPONENTE__ZUNGENPAAR:
 				setZungenpaar((Zungenpaar_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -577,9 +571,8 @@ public class W_Kr_Gsp_KomponenteImpl extends Punkt_ObjektImpl implements W_Kr_Gs
 				return kreuzung != null;
 			case Weichen_und_GleissperrenPackage.WKR_GSP_KOMPONENTE__ZUNGENPAAR:
 				return zungenpaar != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //W_Kr_Gsp_KomponenteImpl

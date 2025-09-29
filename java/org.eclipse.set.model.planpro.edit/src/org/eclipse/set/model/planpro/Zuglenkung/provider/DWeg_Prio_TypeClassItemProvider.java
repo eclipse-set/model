@@ -139,10 +139,8 @@ public class DWeg_Prio_TypeClassItemProvider extends BasisAttribut_AttributeGrou
 			case ZuglenkungPackage.DWEG_PRIO_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

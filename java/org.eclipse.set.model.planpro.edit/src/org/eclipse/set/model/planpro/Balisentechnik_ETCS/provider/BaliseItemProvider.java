@@ -145,10 +145,8 @@ public class BaliseItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.BALISE__ID_DATENPUNKT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

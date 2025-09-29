@@ -120,9 +120,8 @@ public class DP_Typ_GZBS_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.DP_TYP_GZBS_ATTRIBUTE_GROUP__DP_TYP_ZBS:
 				return basicSetDPTypZBS(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,9 +134,8 @@ public class DP_Typ_GZBS_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.DP_TYP_GZBS_ATTRIBUTE_GROUP__DP_TYP_ZBS:
 				return getDPTypZBS();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,10 +149,8 @@ public class DP_Typ_GZBS_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 			case Balisentechnik_ETCSPackage.DP_TYP_GZBS_ATTRIBUTE_GROUP__DP_TYP_ZBS:
 				setDPTypZBS((DP_Typ_ZBS_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -168,10 +164,8 @@ public class DP_Typ_GZBS_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 			case Balisentechnik_ETCSPackage.DP_TYP_GZBS_ATTRIBUTE_GROUP__DP_TYP_ZBS:
 				setDPTypZBS((DP_Typ_ZBS_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -184,9 +178,8 @@ public class DP_Typ_GZBS_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.DP_TYP_GZBS_ATTRIBUTE_GROUP__DP_TYP_ZBS:
 				return dPTypZBS != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //DP_Typ_GZBS_AttributeGroupImpl

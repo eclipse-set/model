@@ -273,8 +273,8 @@ public enum ENUMFstrZugArt implements Enumerator {
 			case ENUM_FSTR_ZUG_ART_ZU_VALUE: return ENUM_FSTR_ZUG_ART_ZU;
 			case ENUM_FSTR_ZUG_ART_ZUH_VALUE: return ENUM_FSTR_ZUG_ART_ZUH;
 			case ENUM_FSTR_ZUG_ART_ZZ_VALUE: return ENUM_FSTR_ZUG_ART_ZZ;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

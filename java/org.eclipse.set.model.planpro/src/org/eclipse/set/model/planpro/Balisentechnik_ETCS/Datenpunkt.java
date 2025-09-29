@@ -209,6 +209,9 @@ public interface Datenpunkt extends Punkt_Objekt {
 	 * The list contents are of type {@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.DP_Telegramm_ESG_AttributeGroup}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Die Attributgruppe soll nicht mehr verwendet werden. Die Notwendigkeit wird für Version 1.12 nochmalig geprüft.
+	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>DP Telegramm ESG</em>' containment reference list.
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage#getDatenpunkt_DPTelegrammESG()
 	 * @model containment="true"

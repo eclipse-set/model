@@ -156,10 +156,8 @@ public class Telegramm_85_Alle_Fstr_AttributeGroupItemProvider
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_85_ALLE_FSTR_ATTRIBUTE_GROUP__TELEGRAMM85_FUER_ALLE_FSTR:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

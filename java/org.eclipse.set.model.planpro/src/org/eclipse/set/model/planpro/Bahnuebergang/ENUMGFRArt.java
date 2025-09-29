@@ -158,8 +158,8 @@ public enum ENUMGFRArt implements Enumerator {
 			case ENUMGFR_ART_AUTOMATISCH_VALUE: return ENUMGFR_ART_AUTOMATISCH;
 			case ENUMGFR_ART_MIT_BEDIENER_VALUE: return ENUMGFR_ART_MIT_BEDIENER;
 			case ENUMGFR_ART_SONSTIGE_VALUE: return ENUMGFR_ART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

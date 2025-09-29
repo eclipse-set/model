@@ -137,10 +137,8 @@ public class Bedienbarkeit_Anzeigefeld_TypeClassItemProvider extends BasisAttrib
 			case ZugnummernmeldeanlagePackage.BEDIENBARKEIT_ANZEIGEFELD_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -138,10 +138,8 @@ public class Anschaltdauer_TypeClassItemProvider extends BasisAttribut_Attribute
 			case SignalePackage.ANSCHALTDAUER_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

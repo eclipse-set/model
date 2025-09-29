@@ -139,10 +139,8 @@ public class Abstand_Grenze_Bereich_C_TypeClassItemProvider extends BasisAttribu
 			case Balisentechnik_ETCSPackage.ABSTAND_GRENZE_BEREICH_CTYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

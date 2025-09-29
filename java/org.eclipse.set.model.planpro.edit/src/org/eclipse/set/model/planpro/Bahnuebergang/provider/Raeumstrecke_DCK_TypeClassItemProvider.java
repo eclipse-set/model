@@ -139,10 +139,8 @@ public class Raeumstrecke_DCK_TypeClassItemProvider extends BasisAttribut_Attrib
 			case BahnuebergangPackage.RAEUMSTRECKE_DCK_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

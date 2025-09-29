@@ -493,8 +493,6 @@ public class BlockEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
-						default:
-							break;
 					}
 				}
 				else {

@@ -137,10 +137,8 @@ public class Fstr_Mittel_V_Aufwertung_TypeClassItemProvider extends BasisAttribu
 			case FahrstrassePackage.FSTR_MITTEL_VAUFWERTUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

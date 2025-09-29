@@ -137,10 +137,8 @@ public class Telegramm_85_Fuer_Alle_Fstr_TypeClassItemProvider extends BasisAttr
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_85_FUER_ALLE_FSTR_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

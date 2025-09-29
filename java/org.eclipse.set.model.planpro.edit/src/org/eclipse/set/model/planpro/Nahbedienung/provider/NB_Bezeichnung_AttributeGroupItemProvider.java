@@ -154,10 +154,8 @@ public class NB_Bezeichnung_AttributeGroupItemProvider
 			case NahbedienungPackage.NB_BEZEICHNUNG_ATTRIBUTE_GROUP__KENNZAHL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

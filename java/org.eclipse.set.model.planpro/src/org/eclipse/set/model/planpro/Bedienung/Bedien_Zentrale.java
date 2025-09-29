@@ -21,7 +21,7 @@ import org.eclipse.set.model.planpro.Verweise.ID_Strecke_TypeClass;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * Betriebsleitstelle eines EIU, aus der die Leit- und Sicherungstechnik von zentral gesteuerten ESTW planmäßig bedient wird. Die Betriebsleitstelle kann eine Betriebszentrale (BZ) der DB Netz oder auch eine zentrale Bedienstelle der Regionalnetze sein. Da die Bedien_Zentrale nicht notwendigerweise in der Nähe von Gleisen liegt, wird kein unmittelbarer Bezug zu einer Strecke hergestellt. Eine Örtlichkeit wird jedoch nach Ril 100 für den Standort festgelegt. In der Bedien_Zentrale sind die spezifischen Anhänge dargestellt. Weitere Pläne aus dem PT I BZ, wie beispielsweise Belegungspläne für Bodentanks, Kabelübersichtspläne, Verteilerbelegungspläne, Schrankpläne, Höheneinheiten und Patchfeldbelegungen in den Schränken für die BZ, werden als allgemeiner Anhang für die vererbten Eigenschaften aus dem Basisobjekt (Attribut Anhang) im Objekt Bedien_Zentrale angehängt.
+ * Betriebsleitstelle eines EIU, aus der die Leit- und Sicherungstechnik von zentral gesteuerten ESTW planmäßig bedient wird. Die Betriebsleitstelle kann eine Betriebszentrale (BZ) der DB InfraGO oder auch eine zentrale Bedienstelle der Regionalnetze sein. Da die Bedien_Zentrale nicht notwendigerweise in der Nähe von Gleisen liegt, wird kein unmittelbarer Bezug zu einer Strecke hergestellt. Eine Örtlichkeit wird jedoch nach Ril 100 für den Standort festgelegt. In der Bedien_Zentrale sind die spezifischen Anhänge dargestellt. Weitere Pläne aus dem PT I BZ, wie beispielsweise Belegungspläne für Bodentanks, Kabelübersichtspläne, Verteilerbelegungspläne, Schrankpläne, Höheneinheiten und Patchfeldbelegungen in den Schränken für die BZ, werden als allgemeiner Anhang für die vererbten Eigenschaften aus dem Basisobjekt (Attribut Anhang) im Objekt Bedien_Zentrale angehängt.
  * <!-- end-model-doc -->
  *
  * <p>
@@ -97,7 +97,7 @@ public interface Bedien_Zentrale extends Basis_Objekt {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Zuordnung einer Bedienzentrale zu einer Streckennummer. Bedienzentralen (Betriebszentralen) der DB Netz AG werden willkürlich einer Strecke zugeordnet, um den Anforderungen der Richtlinie 100 minimal zu genügen. Diese Zuordnung ist auf die „Hülle“ der Zentrale bezogen, nicht auf die aus ihr gesteuerte Infrastruktur. 
+	 * Zuordnung einer Bedienzentrale zu einer Streckennummer. Bedienzentralen (Betriebszentralen) der DB InfraGO AG werden willkürlich einer Strecke zugeordnet, um den Anforderungen der Richtlinie 100 minimal zu genügen. Diese Zuordnung ist auf die „Hülle“ der Zentrale bezogen, nicht auf die aus ihr gesteuerte Infrastruktur. 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>ID Strecke</em>' containment reference.
 	 * @see #setIDStrecke(ID_Strecke_TypeClass)

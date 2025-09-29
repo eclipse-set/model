@@ -90,7 +90,7 @@ public interface LO_Material_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Art der von der DB Netz AG erteilten Freigabe (Erprobung oder Serienfreigabe).
+	 * Art der von der DB InfraGO AG erteilten Freigabe (Erprobung oder Serienfreigabe).
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>LODB Freigabe</em>' containment reference.
 	 * @see #setLODBFreigabe(LO_DB_Freigabe_TypeClass)

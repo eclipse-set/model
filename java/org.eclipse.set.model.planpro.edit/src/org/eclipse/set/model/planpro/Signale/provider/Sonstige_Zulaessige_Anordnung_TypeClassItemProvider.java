@@ -138,10 +138,8 @@ public class Sonstige_Zulaessige_Anordnung_TypeClassItemProvider extends BasisAt
 			case SignalePackage.SONSTIGE_ZULAESSIGE_ANORDNUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

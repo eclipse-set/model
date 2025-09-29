@@ -179,9 +179,8 @@ public class FMA_Element_Anschluss_AttributeGroupImpl extends EObjectImpl implem
 				return basicSetFMAAnschlussBezeichnung(null, msgs);
 			case OrtungPackage.FMA_ELEMENT_ANSCHLUSS_ATTRIBUTE_GROUP__FMA_ANSCHLUSS_SPEISERICHTUNG:
 				return basicSetFMAAnschlussSpeiserichtung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class FMA_Element_Anschluss_AttributeGroupImpl extends EObjectImpl implem
 				return getFMAAnschlussBezeichnung();
 			case OrtungPackage.FMA_ELEMENT_ANSCHLUSS_ATTRIBUTE_GROUP__FMA_ANSCHLUSS_SPEISERICHTUNG:
 				return getFMAAnschlussSpeiserichtung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class FMA_Element_Anschluss_AttributeGroupImpl extends EObjectImpl implem
 			case OrtungPackage.FMA_ELEMENT_ANSCHLUSS_ATTRIBUTE_GROUP__FMA_ANSCHLUSS_SPEISERICHTUNG:
 				setFMAAnschlussSpeiserichtung((FMA_Anschluss_Speiserichtung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class FMA_Element_Anschluss_AttributeGroupImpl extends EObjectImpl implem
 			case OrtungPackage.FMA_ELEMENT_ANSCHLUSS_ATTRIBUTE_GROUP__FMA_ANSCHLUSS_SPEISERICHTUNG:
 				setFMAAnschlussSpeiserichtung((FMA_Anschluss_Speiserichtung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class FMA_Element_Anschluss_AttributeGroupImpl extends EObjectImpl implem
 				return fMAAnschlussBezeichnung != null;
 			case OrtungPackage.FMA_ELEMENT_ANSCHLUSS_ATTRIBUTE_GROUP__FMA_ANSCHLUSS_SPEISERICHTUNG:
 				return fMAAnschlussSpeiserichtung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //FMA_Element_Anschluss_AttributeGroupImpl

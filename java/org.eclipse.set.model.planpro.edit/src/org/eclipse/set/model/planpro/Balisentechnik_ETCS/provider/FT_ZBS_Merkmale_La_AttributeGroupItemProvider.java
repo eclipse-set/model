@@ -158,10 +158,8 @@ public class FT_ZBS_Merkmale_La_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.FT_ZBS_MERKMALE_LA_ATTRIBUTE_GROUP__ZBS_LA_BEREICH_NEIGUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

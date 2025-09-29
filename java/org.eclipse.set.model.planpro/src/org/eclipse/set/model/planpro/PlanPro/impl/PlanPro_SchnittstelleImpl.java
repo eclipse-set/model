@@ -239,9 +239,8 @@ public class PlanPro_SchnittstelleImpl extends Ur_ObjektImpl implements PlanPro_
 				return basicSetLSTPlanung(null, msgs);
 			case PlanProPackage.PLAN_PRO_SCHNITTSTELLE__LST_ZUSTAND:
 				return basicSetLSTZustand(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +257,8 @@ public class PlanPro_SchnittstelleImpl extends Ur_ObjektImpl implements PlanPro_
 				return getLSTPlanung();
 			case PlanProPackage.PLAN_PRO_SCHNITTSTELLE__LST_ZUSTAND:
 				return getLSTZustand();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +278,8 @@ public class PlanPro_SchnittstelleImpl extends Ur_ObjektImpl implements PlanPro_
 			case PlanProPackage.PLAN_PRO_SCHNITTSTELLE__LST_ZUSTAND:
 				setLSTZustand((LST_Zustand)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +299,8 @@ public class PlanPro_SchnittstelleImpl extends Ur_ObjektImpl implements PlanPro_
 			case PlanProPackage.PLAN_PRO_SCHNITTSTELLE__LST_ZUSTAND:
 				setLSTZustand((LST_Zustand)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +317,8 @@ public class PlanPro_SchnittstelleImpl extends Ur_ObjektImpl implements PlanPro_
 				return lSTPlanung != null;
 			case PlanProPackage.PLAN_PRO_SCHNITTSTELLE__LST_ZUSTAND:
 				return lSTZustand != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //PlanPro_SchnittstelleImpl

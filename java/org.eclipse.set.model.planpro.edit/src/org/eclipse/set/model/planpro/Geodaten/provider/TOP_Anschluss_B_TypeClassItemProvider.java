@@ -138,10 +138,8 @@ public class TOP_Anschluss_B_TypeClassItemProvider extends BasisAttribut_Attribu
 			case GeodatenPackage.TOP_ANSCHLUSS_BTYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

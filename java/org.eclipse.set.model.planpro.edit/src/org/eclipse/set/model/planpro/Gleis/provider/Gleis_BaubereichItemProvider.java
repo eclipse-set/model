@@ -141,10 +141,8 @@ public class Gleis_BaubereichItemProvider extends Bereich_ObjektItemProvider {
 			case GleisPackage.GLEIS_BAUBEREICH__BAUBEREICH_ART:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

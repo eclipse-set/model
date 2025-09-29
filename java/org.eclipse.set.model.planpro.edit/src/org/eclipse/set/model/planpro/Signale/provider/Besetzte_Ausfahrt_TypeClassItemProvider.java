@@ -137,10 +137,8 @@ public class Besetzte_Ausfahrt_TypeClassItemProvider extends BasisAttribut_Attri
 			case SignalePackage.BESETZTE_AUSFAHRT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

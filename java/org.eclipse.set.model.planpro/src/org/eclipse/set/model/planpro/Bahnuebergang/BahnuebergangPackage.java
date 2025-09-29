@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +128,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Bahnuebergang/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Bahnuebergang/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -11605,7 +11605,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Abstand Gehweg Fahrbahn Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TAbstand_Gehweg_Fahrbahn' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TAbstand_Gehweg_Fahrbahn' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getAbstand_Gehweg_Fahrbahn_Type();
@@ -11652,7 +11652,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Baulast Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBaulast' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBaulast' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBaulast_Type();
@@ -11664,7 +11664,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Beeinflussung Strassenverkehr Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TBeeinflussung_Strassenverkehr' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde'"
+	 *        extendedMetaData="name='TBeeinflussung_Strassenverkehr' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde'"
 	 * @generated
 	 */
 	EDataType getBeeinflussung_Strassenverkehr_Type();
@@ -11676,7 +11676,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bez Schrankenantrieb Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBez_Schrankenantrieb' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette' pattern='.{2,3}'"
+	 *        extendedMetaData="name='TBez_Schrankenantrieb' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette' pattern='.{2,3}'"
 	 * @generated
 	 */
 	EDataType getBez_Schrankenantrieb_Type();
@@ -11688,7 +11688,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung BUE GFR Eckpunkt Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_BUE_GFR_Eckpunkt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette'"
+	 *        extendedMetaData="name='TBezeichnung_BUE_GFR_Eckpunkt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_BUE_GFR_Eckpunkt_Type();
@@ -11700,7 +11700,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung GFR Element Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_GFR_Element' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette'"
+	 *        extendedMetaData="name='TBezeichnung_GFR_Element' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_GFR_Element_Type();
@@ -11724,7 +11724,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Verkehrszeichen Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Verkehrszeichen' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette'"
+	 *        extendedMetaData="name='TBezeichnung_Verkehrszeichen' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Verkehrszeichen_Type();
@@ -11759,7 +11759,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>BUE Nachlaufzeit Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TBUE_Nachlaufzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{2}'"
+	 *        extendedMetaData="name='TBUE_Nachlaufzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{2}'"
 	 * @generated
 	 */
 	EDataType getBUE_Nachlaufzeit_Type();
@@ -11795,7 +11795,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>BUE Strasse Type</em>'.
 	 * @see java.util.List
 	 * @model instanceClass="java.util.List"
-	 *        extendedMetaData="name='TBUE_Strasse' itemType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBUE_Strasse' itemType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBUE_Strasse_Type();
@@ -11807,7 +11807,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>BUE Vorlaufzeit Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TBUE_Vorlaufzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{2}'"
+	 *        extendedMetaData="name='TBUE_Vorlaufzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{2}'"
 	 * @generated
 	 */
 	EDataType getBUE_Vorlaufzeit_Type();
@@ -11819,7 +11819,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Einschaltverz Errechnet Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TEinschaltverz_Errechnet' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{2}'"
+	 *        extendedMetaData="name='TEinschaltverz_Errechnet' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{2}'"
 	 * @generated
 	 */
 	EDataType getEinschaltverz_Errechnet_Type();
@@ -11831,7 +11831,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Einschaltverz Gewaehlt Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TEinschaltverz_Gewaehlt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{2}'"
+	 *        extendedMetaData="name='TEinschaltverz_Gewaehlt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{2}'"
 	 * @generated
 	 */
 	EDataType getEinschaltverz_Gewaehlt_Type();
@@ -12047,7 +12047,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Fahrbahn Befestigung Gleis Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TFahrbahn_Befestigung_Gleis' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TFahrbahn_Befestigung_Gleis' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getFahrbahn_Befestigung_Gleis_Type();
@@ -12059,7 +12059,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Fahrbahn Befestigung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TFahrbahn_Befestigung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TFahrbahn_Befestigung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getFahrbahn_Befestigung_Type();
@@ -12071,7 +12071,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Fahrbahn Breite Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TFahrbahn_Breite' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TFahrbahn_Breite' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getFahrbahn_Breite_Type();
@@ -12095,7 +12095,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>GFR Typ Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TGFR_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TGFR_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getGFR_Typ_Type();
@@ -12107,7 +12107,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Gleis Am Bue Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TGleis_Am_Bue' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette' pattern='[a-z]'"
+	 *        extendedMetaData="name='TGleis_Am_Bue' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette' pattern='[a-z]'"
 	 * @generated
 	 */
 	EDataType getGleis_Am_Bue_Type();
@@ -12119,7 +12119,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Haltezeit Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='THaltezeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde'"
+	 *        extendedMetaData="name='THaltezeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde'"
 	 * @generated
 	 */
 	EDataType getHaltezeit_Type();
@@ -12166,7 +12166,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Lieferlaenge Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TLieferlaenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='1[0-9]|20|[1-9]'"
+	 *        extendedMetaData="name='TLieferlaenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='1[0-9]|20|[1-9]'"
 	 * @generated
 	 */
 	EDataType getLieferlaenge_Type();
@@ -12178,7 +12178,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Montage Besonders Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TMontage_Besonders' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TMontage_Besonders' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getMontage_Besonders_Type();
@@ -12190,7 +12190,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Montagehoehe Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TMontagehoehe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TMontagehoehe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getMontagehoehe_Type();
@@ -12250,7 +12250,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Raeumstrecke DAB Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TRaeumstrecke_DAB' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TRaeumstrecke_DAB' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getRaeumstrecke_DAB_Type();
@@ -12262,7 +12262,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Raeumstrecke DBK Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TRaeumstrecke_DBK' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TRaeumstrecke_DBK' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getRaeumstrecke_DBK_Type();
@@ -12274,7 +12274,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Raeumstrecke DCK Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TRaeumstrecke_DCK' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TRaeumstrecke_DCK' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getRaeumstrecke_DCK_Type();
@@ -12286,7 +12286,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Raeumstrecke DSK Strich Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TRaeumstrecke_DSK_Strich' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TRaeumstrecke_DSK_Strich' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getRaeumstrecke_DSK_Strich_Type();
@@ -12298,7 +12298,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Raeumstrecke Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TRaeumstrecke' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TRaeumstrecke' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getRaeumstrecke_Type();
@@ -12345,7 +12345,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Sicherheitsabstand Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSicherheitsabstand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TSicherheitsabstand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getSicherheitsabstand_Type();
@@ -12357,7 +12357,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Signalverz Errechnet Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSignalverz_Errechnet' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{2}'"
+	 *        extendedMetaData="name='TSignalverz_Errechnet' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{2}'"
 	 * @generated
 	 */
 	EDataType getSignalverz_Errechnet_Type();
@@ -12369,7 +12369,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Signalverz Gewaehlt Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSignalverz_Gewaehlt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{2}'"
+	 *        extendedMetaData="name='TSignalverz_Gewaehlt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{2}'"
 	 * @generated
 	 */
 	EDataType getSignalverz_Gewaehlt_Type();
@@ -12381,7 +12381,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Sperrlaenge Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSperrlaenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='1[0-9]|20|[1-9]'"
+	 *        extendedMetaData="name='TSperrlaenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='1[0-9]|20|[1-9]'"
 	 * @generated
 	 */
 	EDataType getSperrlaenge_Type();
@@ -12393,7 +12393,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Sperrstrecke Fussgaenger Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSperrstrecke_Fussgaenger' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TSperrstrecke_Fussgaenger' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getSperrstrecke_Fussgaenger_Type();
@@ -12405,7 +12405,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Sperrstrecke Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSperrstrecke' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TSperrstrecke' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getSperrstrecke_Type();
@@ -12417,7 +12417,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Teilsperrstrecke Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TTeilsperrstrecke' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TTeilsperrstrecke' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getTeilsperrstrecke_Type();
@@ -12464,7 +12464,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>VMax Schiene Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TV_Max_Schiene' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TV_Max_Schiene' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getV_Max_Schiene_Type();
@@ -12476,7 +12476,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>VMax Strasse Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TV_Max_Strasse' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TV_Max_Strasse' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getV_Max_Strasse_Type();
@@ -12500,7 +12500,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>VMin Schiene Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TV_Min_Schiene' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TV_Min_Schiene' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getV_Min_Schiene_Type();
@@ -12512,7 +12512,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>VMin Strasse Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TV_Min_Strasse' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit' pattern='5|10'"
+	 *        extendedMetaData="name='TV_Min_Strasse' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit' pattern='5|10'"
 	 * @generated
 	 */
 	EDataType getV_Min_Strasse_Type();
@@ -12559,7 +12559,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Zeitueberschreitungsmeldung Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TZeitueberschreitungsmeldung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='[1-9][0-9]{0,4}'"
+	 *        extendedMetaData="name='TZeitueberschreitungsmeldung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='[1-9][0-9]{0,4}'"
 	 * @generated
 	 */
 	EDataType getZeitueberschreitungsmeldung_Type();
@@ -12571,7 +12571,7 @@ public interface BahnuebergangPackage extends EPackage {
 	 * @return the meta object for data type '<em>Zusatzschild Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TZusatzschild' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TZusatzschild' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getZusatzschild_Type();

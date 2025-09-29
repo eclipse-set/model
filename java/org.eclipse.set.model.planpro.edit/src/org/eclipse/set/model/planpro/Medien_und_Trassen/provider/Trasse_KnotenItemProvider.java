@@ -147,10 +147,8 @@ public class Trasse_KnotenItemProvider extends Basis_ObjektItemProvider {
 			case Medien_und_TrassenPackage.TRASSE_KNOTEN__TRASSE_KNOTEN_ART:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -36,6 +36,16 @@ public enum ENUMDateityp implements Enumerator {
 	ENUM_DATEITYP_JPG(0, "ENUMDateityp_jpg", "jpg"),
 
 	/**
+	 * The '<em><b>ENUM Dateityp mp4</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_DATEITYP_MP4_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_DATEITYP_MP4(1, "ENUMDateityp_mp4", "mp4"),
+
+	/**
 	 * The '<em><b>ENUM Dateityp mpeg</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -43,7 +53,7 @@ public enum ENUMDateityp implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_DATEITYP_MPEG(1, "ENUMDateityp_mpeg", "mpeg"),
+	ENUM_DATEITYP_MPEG(2, "ENUMDateityp_mpeg", "mpeg"),
 
 	/**
 	 * The '<em><b>ENUM Dateityp pdf</b></em>' literal object.
@@ -53,7 +63,7 @@ public enum ENUMDateityp implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_DATEITYP_PDF(2, "ENUMDateityp_pdf", "pdf"),
+	ENUM_DATEITYP_PDF(3, "ENUMDateityp_pdf", "pdf"),
 
 	/**
 	 * The '<em><b>ENUM Dateityp png</b></em>' literal object.
@@ -63,7 +73,7 @@ public enum ENUMDateityp implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_DATEITYP_PNG(3, "ENUMDateityp_png", "png"),
+	ENUM_DATEITYP_PNG(4, "ENUMDateityp_png", "png"),
 
 	/**
 	 * The '<em><b>ENUM Dateityp tif</b></em>' literal object.
@@ -73,7 +83,7 @@ public enum ENUMDateityp implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_DATEITYP_TIF(4, "ENUMDateityp_tif", "tif");
+	ENUM_DATEITYP_TIF(5, "ENUMDateityp_tif", "tif");
 
 	/**
 	 * The '<em><b>ENUM Dateityp jpg</b></em>' literal value.
@@ -87,6 +97,17 @@ public enum ENUMDateityp implements Enumerator {
 	public static final int ENUM_DATEITYP_JPG_VALUE = 0;
 
 	/**
+	 * The '<em><b>ENUM Dateityp mp4</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_DATEITYP_MP4
+	 * @model name="ENUMDateityp_mp4" literal="mp4"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_DATEITYP_MP4_VALUE = 1;
+
+	/**
 	 * The '<em><b>ENUM Dateityp mpeg</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -95,7 +116,7 @@ public enum ENUMDateityp implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_DATEITYP_MPEG_VALUE = 1;
+	public static final int ENUM_DATEITYP_MPEG_VALUE = 2;
 
 	/**
 	 * The '<em><b>ENUM Dateityp pdf</b></em>' literal value.
@@ -106,7 +127,7 @@ public enum ENUMDateityp implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_DATEITYP_PDF_VALUE = 2;
+	public static final int ENUM_DATEITYP_PDF_VALUE = 3;
 
 	/**
 	 * The '<em><b>ENUM Dateityp png</b></em>' literal value.
@@ -117,7 +138,7 @@ public enum ENUMDateityp implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_DATEITYP_PNG_VALUE = 3;
+	public static final int ENUM_DATEITYP_PNG_VALUE = 4;
 
 	/**
 	 * The '<em><b>ENUM Dateityp tif</b></em>' literal value.
@@ -128,7 +149,7 @@ public enum ENUMDateityp implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_DATEITYP_TIF_VALUE = 4;
+	public static final int ENUM_DATEITYP_TIF_VALUE = 5;
 
 	/**
 	 * An array of all the '<em><b>ENUM Dateityp</b></em>' enumerators.
@@ -139,6 +160,7 @@ public enum ENUMDateityp implements Enumerator {
 	private static final ENUMDateityp[] VALUES_ARRAY =
 		new ENUMDateityp[] {
 			ENUM_DATEITYP_JPG,
+			ENUM_DATEITYP_MP4,
 			ENUM_DATEITYP_MPEG,
 			ENUM_DATEITYP_PDF,
 			ENUM_DATEITYP_PNG,
@@ -200,12 +222,13 @@ public enum ENUMDateityp implements Enumerator {
 	public static ENUMDateityp get(int value) {
 		switch (value) {
 			case ENUM_DATEITYP_JPG_VALUE: return ENUM_DATEITYP_JPG;
+			case ENUM_DATEITYP_MP4_VALUE: return ENUM_DATEITYP_MP4;
 			case ENUM_DATEITYP_MPEG_VALUE: return ENUM_DATEITYP_MPEG;
 			case ENUM_DATEITYP_PDF_VALUE: return ENUM_DATEITYP_PDF;
 			case ENUM_DATEITYP_PNG_VALUE: return ENUM_DATEITYP_PNG;
 			case ENUM_DATEITYP_TIF_VALUE: return ENUM_DATEITYP_TIF;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

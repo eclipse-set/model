@@ -138,10 +138,8 @@ public class Akustikdauer_Anb_Ann_TypeClassItemProvider extends BasisAttribut_At
 			case ZugnummernmeldeanlagePackage.AKUSTIKDAUER_ANB_ANN_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

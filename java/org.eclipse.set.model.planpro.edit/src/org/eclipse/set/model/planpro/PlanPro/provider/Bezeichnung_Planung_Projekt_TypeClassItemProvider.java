@@ -134,10 +134,8 @@ public class Bezeichnung_Planung_Projekt_TypeClassItemProvider extends BasisAttr
 			case PlanProPackage.BEZEICHNUNG_PLANUNG_PROJEKT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

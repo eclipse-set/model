@@ -136,10 +136,8 @@ public class Fahrbahn_Befestigung_Gleis_TypeClassItemProvider extends BasisAttri
 			case BahnuebergangPackage.FAHRBAHN_BEFESTIGUNG_GLEIS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

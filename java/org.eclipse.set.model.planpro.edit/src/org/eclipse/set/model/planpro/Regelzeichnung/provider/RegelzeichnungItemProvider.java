@@ -141,10 +141,8 @@ public class RegelzeichnungItemProvider extends Basis_ObjektItemProvider {
 			case RegelzeichnungPackage.REGELZEICHNUNG__REGELZEICHNUNG_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

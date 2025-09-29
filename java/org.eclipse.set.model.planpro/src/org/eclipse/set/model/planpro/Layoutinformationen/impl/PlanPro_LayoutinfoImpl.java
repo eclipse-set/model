@@ -21,6 +21,8 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.eclipse.set.model.planpro.Basisobjekte.Bearbeitungsvermerk;
+
 import org.eclipse.set.model.planpro.Basisobjekte.impl.Ur_ObjektImpl;
 
 import org.eclipse.set.model.planpro.Layoutinformationen.Element_Position;
@@ -39,6 +41,7 @@ import org.eclipse.set.model.planpro.Layoutinformationen.PlanPro_Layoutinfo;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.PlanPro_LayoutinfoImpl#getBearbeitungsvermerk <em>Bearbeitungsvermerk</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.PlanPro_LayoutinfoImpl#getElementPosition <em>Element Position</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.PlanPro_LayoutinfoImpl#getElementStil <em>Element Stil</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.PlanPro_LayoutinfoImpl#getLageplan <em>Lageplan</em>}</li>
@@ -49,6 +52,16 @@ import org.eclipse.set.model.planpro.Layoutinformationen.PlanPro_Layoutinfo;
  * @generated
  */
 public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Layoutinfo {
+	/**
+	 * The cached value of the '{@link #getBearbeitungsvermerk() <em>Bearbeitungsvermerk</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBearbeitungsvermerk()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Bearbeitungsvermerk> bearbeitungsvermerk;
+
 	/**
 	 * The cached value of the '{@link #getElementPosition() <em>Element Position</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -124,6 +137,19 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 	 * @generated
 	 */
 	@Override
+	public EList<Bearbeitungsvermerk> getBearbeitungsvermerk() {
+		if (bearbeitungsvermerk == null) {
+			bearbeitungsvermerk = new EObjectContainmentEList<Bearbeitungsvermerk>(Bearbeitungsvermerk.class, this, LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__BEARBEITUNGSVERMERK);
+		}
+		return bearbeitungsvermerk;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EList<Element_Position> getElementPosition() {
 		if (elementPosition == null) {
 			elementPosition = new EObjectContainmentEList<Element_Position>(Element_Position.class, this, LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__ELEMENT_POSITION);
@@ -191,6 +217,8 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__BEARBEITUNGSVERMERK:
+				return ((InternalEList<?>)getBearbeitungsvermerk()).basicRemove(otherEnd, msgs);
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__ELEMENT_POSITION:
 				return ((InternalEList<?>)getElementPosition()).basicRemove(otherEnd, msgs);
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__ELEMENT_STIL:
@@ -201,9 +229,8 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 				return ((InternalEList<?>)getLageplanBlattschnitt()).basicRemove(otherEnd, msgs);
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__LAGEPLAN_ZUSTAND:
 				return ((InternalEList<?>)getLageplanZustand()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -214,6 +241,8 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__BEARBEITUNGSVERMERK:
+				return getBearbeitungsvermerk();
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__ELEMENT_POSITION:
 				return getElementPosition();
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__ELEMENT_STIL:
@@ -224,9 +253,8 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 				return getLageplanBlattschnitt();
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__LAGEPLAN_ZUSTAND:
 				return getLageplanZustand();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -238,6 +266,10 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__BEARBEITUNGSVERMERK:
+				getBearbeitungsvermerk().clear();
+				getBearbeitungsvermerk().addAll((Collection<? extends Bearbeitungsvermerk>)newValue);
+				return;
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__ELEMENT_POSITION:
 				getElementPosition().clear();
 				getElementPosition().addAll((Collection<? extends Element_Position>)newValue);
@@ -258,10 +290,8 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 				getLageplanZustand().clear();
 				getLageplanZustand().addAll((Collection<? extends Lageplan_Zustand>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -272,6 +302,9 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__BEARBEITUNGSVERMERK:
+				getBearbeitungsvermerk().clear();
+				return;
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__ELEMENT_POSITION:
 				getElementPosition().clear();
 				return;
@@ -287,10 +320,8 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__LAGEPLAN_ZUSTAND:
 				getLageplanZustand().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -301,6 +332,8 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__BEARBEITUNGSVERMERK:
+				return bearbeitungsvermerk != null && !bearbeitungsvermerk.isEmpty();
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__ELEMENT_POSITION:
 				return elementPosition != null && !elementPosition.isEmpty();
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__ELEMENT_STIL:
@@ -311,9 +344,8 @@ public class PlanPro_LayoutinfoImpl extends Ur_ObjektImpl implements PlanPro_Lay
 				return lageplanBlattschnitt != null && !lageplanBlattschnitt.isEmpty();
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__LAGEPLAN_ZUSTAND:
 				return lageplanZustand != null && !lageplanZustand.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //PlanPro_LayoutinfoImpl

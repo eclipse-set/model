@@ -139,10 +139,8 @@ public class Wirkrichtung_In_Datenpunkt_TypeClassItemProvider extends BasisAttri
 			case Balisentechnik_ETCSPackage.WIRKRICHTUNG_IN_DATENPUNKT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

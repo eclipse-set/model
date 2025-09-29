@@ -158,8 +158,8 @@ public enum ENUMLFUEImpuls implements Enumerator {
 			case ENUMLFUE_IMPULS_1ZU_40_VALUE: return ENUMLFUE_IMPULS_1ZU_40;
 			case ENUMLFUE_IMPULS_DAUERIMPULS_VALUE: return ENUMLFUE_IMPULS_DAUERIMPULS;
 			case ENUMLFUE_IMPULS_SONSTIGE_VALUE: return ENUMLFUE_IMPULS_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

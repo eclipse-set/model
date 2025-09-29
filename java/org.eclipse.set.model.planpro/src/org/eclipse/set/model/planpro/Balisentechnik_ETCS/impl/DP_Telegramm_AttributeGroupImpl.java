@@ -241,9 +241,8 @@ public class DP_Telegramm_AttributeGroupImpl extends EObjectImpl implements DP_T
 				return ((InternalEList<?>)getIDFTAnschaltbedingung()).basicRemove(otherEnd, msgs);
 			case Balisentechnik_ETCSPackage.DP_TELEGRAMM_ATTRIBUTE_GROUP__SRS_VERSION:
 				return basicSetSRSVersion(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -262,9 +261,8 @@ public class DP_Telegramm_AttributeGroupImpl extends EObjectImpl implements DP_T
 				return getIDFTAnschaltbedingung();
 			case Balisentechnik_ETCSPackage.DP_TELEGRAMM_ATTRIBUTE_GROUP__SRS_VERSION:
 				return getSRSVersion();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -290,10 +288,8 @@ public class DP_Telegramm_AttributeGroupImpl extends EObjectImpl implements DP_T
 			case Balisentechnik_ETCSPackage.DP_TELEGRAMM_ATTRIBUTE_GROUP__SRS_VERSION:
 				setSRSVersion((SRS_Version_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -316,10 +312,8 @@ public class DP_Telegramm_AttributeGroupImpl extends EObjectImpl implements DP_T
 			case Balisentechnik_ETCSPackage.DP_TELEGRAMM_ATTRIBUTE_GROUP__SRS_VERSION:
 				setSRSVersion((SRS_Version_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -338,9 +332,8 @@ public class DP_Telegramm_AttributeGroupImpl extends EObjectImpl implements DP_T
 				return iDFTAnschaltbedingung != null && !iDFTAnschaltbedingung.isEmpty();
 			case Balisentechnik_ETCSPackage.DP_TELEGRAMM_ATTRIBUTE_GROUP__SRS_VERSION:
 				return sRSVersion != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //DP_Telegramm_AttributeGroupImpl

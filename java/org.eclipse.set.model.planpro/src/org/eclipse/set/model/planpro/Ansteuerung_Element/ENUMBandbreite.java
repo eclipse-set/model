@@ -204,8 +204,8 @@ public enum ENUMBandbreite implements Enumerator {
 			case ENUM_BANDBREITE_2MBIT_S_VALUE: return ENUM_BANDBREITE_2MBIT_S;
 			case ENUM_BANDBREITE_64KBIT_S_VALUE: return ENUM_BANDBREITE_64KBIT_S;
 			case ENUM_BANDBREITE_SONSTIGE_VALUE: return ENUM_BANDBREITE_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

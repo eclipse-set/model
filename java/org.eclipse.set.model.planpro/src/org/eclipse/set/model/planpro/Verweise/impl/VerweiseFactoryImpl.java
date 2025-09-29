@@ -89,6 +89,7 @@ public class VerweiseFactoryImpl extends EFactoryImpl implements VerweiseFactory
 			case VerweisePackage.ID_BEFESTIGUNG_BAUWERK_TYPE_CLASS: return createID_Befestigung_Bauwerk_TypeClass();
 			case VerweisePackage.ID_BEGINN_BEREICH_TYPE_CLASS: return createID_Beginn_Bereich_TypeClass();
 			case VerweisePackage.ID_BEZUGSPUNKT_POSITIONIERUNG_TYPE_CLASS: return createID_Bezugspunkt_Positionierung_TypeClass();
+			case VerweisePackage.ID_BEZUGSPUNKT_TYPE_CLASS: return createID_Bezugspunkt_TypeClass();
 			case VerweisePackage.ID_BINAERDATEN_OHNE_PROXY_TYPE_CLASS: return createID_Binaerdaten_ohne_Proxy_TypeClass();
 			case VerweisePackage.ID_BLOCK_ANLAGE_TYPE_CLASS: return createID_Block_Anlage_TypeClass();
 			case VerweisePackage.ID_BLOCK_ELEMENT_TYPE_CLASS: return createID_Block_Element_TypeClass();
@@ -516,6 +517,17 @@ public class VerweiseFactoryImpl extends EFactoryImpl implements VerweiseFactory
 	public ID_Bezugspunkt_Positionierung_TypeClass createID_Bezugspunkt_Positionierung_TypeClass() {
 		ID_Bezugspunkt_Positionierung_TypeClassImpl iD_Bezugspunkt_Positionierung_TypeClass = new ID_Bezugspunkt_Positionierung_TypeClassImpl();
 		return iD_Bezugspunkt_Positionierung_TypeClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ID_Bezugspunkt_TypeClass createID_Bezugspunkt_TypeClass() {
+		ID_Bezugspunkt_TypeClassImpl iD_Bezugspunkt_TypeClass = new ID_Bezugspunkt_TypeClassImpl();
+		return iD_Bezugspunkt_TypeClass;
 	}
 
 	/**

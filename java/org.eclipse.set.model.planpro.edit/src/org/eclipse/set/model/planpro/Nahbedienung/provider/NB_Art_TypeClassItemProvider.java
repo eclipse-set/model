@@ -138,10 +138,8 @@ public class NB_Art_TypeClassItemProvider extends BasisAttribut_AttributeGroupIt
 			case NahbedienungPackage.NB_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -154,10 +154,8 @@ public class PZB_Element_GM_AttributeGroupItemProvider
 			case PZBPackage.PZB_ELEMENT_GM_ATTRIBUTE_GROUP__PZBINA:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

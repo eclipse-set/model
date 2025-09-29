@@ -9,8 +9,11 @@
  */
 package org.eclipse.set.model.planpro.Geodaten;
 
+import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
 
+import org.eclipse.set.model.planpro.Verweise.ID_TOP_Kante_ohne_Proxy_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_Ueberhoehung_TypeClass;
 
 /**
@@ -26,6 +29,7 @@ import org.eclipse.set.model.planpro.Verweise.ID_Ueberhoehung_TypeClass;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link org.eclipse.set.model.planpro.Geodaten.Ueberhoehungslinie#getIDTOPKantePfad <em>IDTOP Kante Pfad</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Geodaten.Ueberhoehungslinie#getIDUeberhoehungA <em>ID Ueberhoehung A</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Geodaten.Ueberhoehungslinie#getIDUeberhoehungB <em>ID Ueberhoehung B</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Geodaten.Ueberhoehungslinie#getUeberhoehungslinieAllg <em>Ueberhoehungslinie Allg</em>}</li>
@@ -36,6 +40,22 @@ import org.eclipse.set.model.planpro.Verweise.ID_Ueberhoehung_TypeClass;
  * @generated
  */
 public interface Ueberhoehungslinie extends Basis_Objekt {
+	/**
+	 * Returns the value of the '<em><b>IDTOP Kante Pfad</b></em>' containment reference list.
+	 * The list contents are of type {@link org.eclipse.set.model.planpro.Verweise.ID_TOP_Kante_ohne_Proxy_TypeClass}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Verweis auf vollständig von der Ueberhoehungslinie überdeckte TOP-Kanten. Sind die begrenzenden Höhenpunkte A und B auf einer oder zwei aneinander angrenzenden TOP-Kanten verortet, ist keine Angabe erforderlich.
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>IDTOP Kante Pfad</em>' containment reference list.
+	 * @see org.eclipse.set.model.planpro.Geodaten.GeodatenPackage#getUeberhoehungslinie_IDTOPKantePfad()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='ID_TOP_Kante_Pfad'"
+	 * @generated
+	 */
+	EList<ID_TOP_Kante_ohne_Proxy_TypeClass> getIDTOPKantePfad();
+
 	/**
 	 * Returns the value of the '<em><b>ID Ueberhoehung A</b></em>' containment reference.
 	 * <!-- begin-user-doc -->

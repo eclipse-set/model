@@ -137,10 +137,8 @@ public class Erlaubnis_Staendig_Vorhanden_TypeClassItemProvider extends BasisAtt
 			case BlockPackage.ERLAUBNIS_STAENDIG_VORHANDEN_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

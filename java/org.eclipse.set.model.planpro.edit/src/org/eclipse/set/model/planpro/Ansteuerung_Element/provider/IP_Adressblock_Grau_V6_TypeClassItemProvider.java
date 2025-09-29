@@ -136,10 +136,8 @@ public class IP_Adressblock_Grau_V6_TypeClassItemProvider extends BasisAttribut_
 			case Ansteuerung_ElementPackage.IP_ADRESSBLOCK_GRAU_V6_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -149,10 +149,8 @@ public class SchrankenantriebItemProvider extends Punkt_ObjektItemProvider {
 			case BahnuebergangPackage.SCHRANKENANTRIEB__SCHRANKENANTRIEB_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

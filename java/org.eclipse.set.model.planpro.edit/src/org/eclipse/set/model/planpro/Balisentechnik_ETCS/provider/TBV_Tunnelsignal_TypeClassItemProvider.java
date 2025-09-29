@@ -137,10 +137,8 @@ public class TBV_Tunnelsignal_TypeClassItemProvider extends BasisAttribut_Attrib
 			case Balisentechnik_ETCSPackage.TBV_TUNNELSIGNAL_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

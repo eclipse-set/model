@@ -158,10 +158,8 @@ public class Kreuzung_AttributeGroupItemProvider
 			case Weichen_und_GleissperrenPackage.KREUZUNG_ATTRIBUTE_GROUP__GESCHWINDIGKEIT_R:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

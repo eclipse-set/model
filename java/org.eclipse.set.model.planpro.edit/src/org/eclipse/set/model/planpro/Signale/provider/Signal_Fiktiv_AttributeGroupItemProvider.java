@@ -154,10 +154,8 @@ public class Signal_Fiktiv_AttributeGroupItemProvider
 			case SignalePackage.SIGNAL_FIKTIV_ATTRIBUTE_GROUP__FIKTIVES_SIGNAL_FUNKTION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -618,8 +618,8 @@ public enum ENUMSymbolZs2 implements Enumerator {
 			case ENUM_SYMBOL_ZS_2W_VALUE: return ENUM_SYMBOL_ZS_2W;
 			case ENUM_SYMBOL_ZS_2X_VALUE: return ENUM_SYMBOL_ZS_2X;
 			case ENUM_SYMBOL_ZS_2Z_VALUE: return ENUM_SYMBOL_ZS_2Z;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

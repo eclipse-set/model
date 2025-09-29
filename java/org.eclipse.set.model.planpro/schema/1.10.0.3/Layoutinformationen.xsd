@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:nsLayoutinformationen="http://www.plan-pro.org/modell/Layoutinformationen/1.10.0.3"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
+           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
+           xmlns:nsGeodaten="http://www.plan-pro.org/modell/Geodaten/1.10.0.3"
+           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           targetNamespace="http://www.plan-pro.org/modell/Layoutinformationen/1.10.0.3">
+	  <xs:annotation>
+		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+
+Weitere Informationen zur Lizenz finden Sie auf
+http://www.dbinfrago.com/planpro
+
+Inhalt der Datei:
+XML Schema für PlanPro Schnittstelle.
+
+Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+
+--------------------------------------------------------------------------------
+
+This Document is licensed under the open source license RailPL V1.1.
+
+More information about the license can be found on
+http://www.dbinfrago.com/planpro
+
+Contents of the file:
+XML Schema for PlanPro interface.</xs:documentation>
+	  </xs:annotation>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+              schemaLocation="Verweise.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Geodaten/1.10.0.3"
+              schemaLocation="Geodaten.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
+              schemaLocation="Basisobjekte.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
+              schemaLocation="BasisTypen.xsd"/>
+	  <xs:element name="PlanPro_Layoutinfo" type="nsLayoutinformationen:CPlanPro_Layoutinfo">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Oberstes Objekt der Layout-XML. Bei jeder Erzeugung einer XML-Ausgabe für eine Planung muss eine neue GUID (Identitaet) erzeugt werden.</xs:documentation>
+      </xs:annotation>
+	  </xs:element>
+	  <xs:simpleType name="ENUMFuellung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="doppelte Schraffur"/>
+			      <xs:enumeration value="einfache Schraffur"/>
+			      <xs:enumeration value="einfache Schraffur gestrichelt"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMLageplan_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="BÜ Kreuzungsplan LST"/>
+			      <xs:enumeration value="BÜ Sicherungstechn. Lage- und Kabelübersichtsplan"/>
+			      <xs:enumeration value="Gleisfreimeldeplan für Gleisstromkreise"/>
+			      <xs:enumeration value="Kabellageplan"/>
+			      <xs:enumeration value="Kabelübersichtsplan"/>
+			      <xs:enumeration value="Sicherungstechnischer Lageplan"/>
+			      <xs:enumeration value="Sicherungstechnischer Übersichtsplan"/>
+			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration value="Stammkabelübersichtsplan"/>
+			      <xs:enumeration value="ZLV-Bus-Übersichtsplan"/>
+			      <xs:enumeration value="ZN-Übersichtsplan"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMLinie_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="Punktlinie"/>
+			      <xs:enumeration value="Strich-Dreipunktlinie"/>
+			      <xs:enumeration value="Strich-Punktlinie"/>
+			      <xs:enumeration value="Strich-Strichlinie"/>
+			      <xs:enumeration value="Strich-Zweipunktlinie"/>
+			      <xs:enumeration value="Strich-Zweistrichlinie"/>
+			      <xs:enumeration value="Strichlinie"/>
+			      <xs:enumeration value="Strichlinie lang"/>
+			      <xs:enumeration value="Volllinie"/>
+			      <xs:enumeration value="Zweistrich-Dreipunktlinie"/>
+			      <xs:enumeration value="Zweistrich-Punktlinie"/>
+			      <xs:enumeration value="Zweistrich-Zweipunktlinie"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMLinie_Subart">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="breit"/>
+			      <xs:enumeration value="extrabreit"/>
+			      <xs:enumeration value="schmal"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBez_Lageplan_Blattschnitt">
+		    <xs:restriction base="xs:integer"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBezeichnung_Lageplan">
+		    <xs:restriction base="nsBasisTypen:TText"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TDarstellung_Polygonzug">
+		    <xs:restriction base="nsBasisTypen:TFreiText"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TDarstellung_Richtungswinkel">
+		    <xs:restriction base="xs:decimal"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TDarstellung_Richtungswinkel_Bezeichnung">
+		    <xs:restriction base="xs:decimal"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TLinie_Farbwert">
+		    <xs:restriction base="nsBasisTypen:TText">
+			      <xs:pattern value="[a-fA-F0-9]{6}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TPolygonzug_Ausrichtung">
+		    <xs:restriction base="nsBasisTypen:TFreiText"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TPolygonzug_Blattschnitt">
+		    <xs:restriction base="nsBasisTypen:TFreiText"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TReferenz_LST_Zustand">
+		    <xs:restriction base="nsBasisTypen:TGUID"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TReferenz_Objekt_Darstellung">
+		    <xs:restriction base="nsBasisTypen:TGUID"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CElement_Position">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Angabe von Positionsinformationen für ein LST-Objekt bezogen auf einen Lageplan.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CUr_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Element_Position_Allg"
+                           type="nsLayoutinformationen:CElement_Position_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_Lageplan_Zustand" type="nsVerweise:TCID_Lageplan_Zustand"
+                           minOccurs="1"
+                           maxOccurs="2">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den Lageplan-Zustand, für den die Layoutinformation definiert wird.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Referenz_Objekt_Darstellung"
+                           type="nsLayoutinformationen:TCReferenz_Objekt_Darstellung"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">GUID des Fachobjekts, für dessen Darstellung die Layoutinformationen gegeben werden.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CElement_Position_Allg">
+		    <xs:sequence>
+			      <xs:element name="Darstellung_GEO_Punkt_Bezeichnung" type="nsGeodaten:CGEO_Punkt"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf einen GEO_Punkt zur Angabe der Position, an der die Bezeichnung für das Fachobjekt im referenzierten Lageplan dargestellt werden soll.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Darstellung_Richtungswinkel"
+                     type="nsLayoutinformationen:TCDarstellung_Richtungswinkel"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Richtungswinkel für die Darstellung in [gon]. Es gilt nachfolgende Zuordnung der Richtung: Nord = 0,0 gon Ost = 100,0 gon Süd = 200,0 gon West = 300,0 gon. Originale negative Werte werden durch Addition von 400.0 gon normalisiert.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Darstellung_Richtungswinkel_Bezeichnung"
+                     type="nsLayoutinformationen:TCDarstellung_Richtungswinkel_Bezeichnung"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Richtungswinkel für die Darstellung der Bezeichnung in [gon]. Es gilt nachfolgende Zuordnung der Richtung: Nord = 0,0 gon Ost = 100,0 gon Süd = 200,0 gon West = 300,0 gon. Originale negative Werte werden durch Addition von 400.0 gon normalisiert.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:choice minOccurs="1" maxOccurs="1">
+				        <xs:element name="Darstellung_GEO_Punkt" type="nsGeodaten:CGEO_Punkt" minOccurs="0"
+                        maxOccurs="unbounded">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf einen GEO_Punkt zur Angabe der Position, an der das Symbol für das Fachobjekt im referenzierten Lageplan dargestellt werden soll.</xs:documentation>
+                  <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                     <ppi:WorkflowInformation>
+                        <ppi:ProposedValue>GEO_Punkt</ppi:ProposedValue>
+                     </ppi:WorkflowInformation>
+                  </xs:appinfo>
+               </xs:annotation>
+				        </xs:element>
+				        <xs:element name="Darstellung_Polygonzug"
+                        type="nsLayoutinformationen:TCDarstellung_Polygonzug"
+                        minOccurs="0"
+                        maxOccurs="1">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Polygonzug zur Darstellung des Fachobjekts unter Nutzung des GML-Standards. Die Information wird nur gegeben, wenn kein Standard-Symbol zur Anwendung kommt und sich die Darstellung nicht einfach algorithmisch herleiten lässt (z. B. Grenzlinie NB_Zone).</xs:documentation>
+               </xs:annotation>
+				        </xs:element>
+			      </xs:choice>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CElement_Stil">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Angabe von Darstellungsvorgaben (z. B. Linienart) für ein LST-Objekt bezogen auf einen Lageplan.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CUr_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Element_Stil_Allg" type="nsLayoutinformationen:CElement_Stil_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_Lageplan_Zustand" type="nsVerweise:TCID_Lageplan_Zustand"
+                           minOccurs="1"
+                           maxOccurs="2">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den Lageplan-Zustand, für den die Layoutinformation definiert wird.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Referenz_Objekt_Darstellung"
+                           type="nsLayoutinformationen:TCReferenz_Objekt_Darstellung"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">GUID des Fachobjekts, für dessen Darstellung die Layoutinformationen gegeben werden.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CElement_Stil_Allg">
+		    <xs:sequence>
+			      <xs:element name="Fuellung" type="nsLayoutinformationen:TCFuellung" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Füllung der mittels Darstellung_Polygonzug beschriebenen Fläche. Ist keine Füllung vorgesehen, entfällt das Attribut.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Linie_Art" type="nsLayoutinformationen:TCLinie_Art" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art bzw. Ausführungform der Linie gemäß DIN EN ISO 128-2.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Linie_Farbwert" type="nsLayoutinformationen:TCLinie_Farbwert"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">RGB-Kodierung (hexadezimal) für den Farbton, in dem die Linie dargestellt werden soll.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[6], hexadezimal</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Linie_Subart" type="nsLayoutinformationen:TCLinie_Subart" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Subart bzw. Breite der Linie gemäß DIN EN ISO 128-2.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CLageplan">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Plan, der maßstäblich oder unmaßstäblich die Lage von LST-Objekten zeigt. Beispiel: Sicherungstechnischer Lageplan. Bei Planungen wird für Start- und Zielzustand je eine Instanz von Lageplan erzeugt. Zu einem Lageplan ist mindestens ein Blattschnitt zu definieren.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CUr_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsLayoutinformationen:CLageplan_Bezeichnung"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_Lageplan_Blattschnitt" type="nsVerweise:TCID_Lageplan_Blattschnitt"
+                           minOccurs="1"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den zum Lageplan gehörenden Blattschnitt.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Lageplan_Art" type="nsLayoutinformationen:TCLageplan_Art" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Art des Ausgabeformats (Plan), dem die Layoutinformationen zugeordnet werden. Beispiel: Sicherungstechnischer Lageplan.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CLageplan_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="Bezeichnung_Lageplan" type="nsLayoutinformationen:TCBezeichnung_Lageplan"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichnung des Lageplans, sofern eine Differenzierung über Stellbereiche nicht möglich bzw. ausreichend ist.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CLageplan_Blattschnitt">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Teil des Lageplans, der auf einem Blatt dargestellt wird.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CUr_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung"
+                           type="nsLayoutinformationen:CLageplan_Blattschnitt_Bezeichnung"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="Polygonzug_Ausrichtung"
+                           type="nsLayoutinformationen:TCPolygonzug_Ausrichtung"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Polygonzug zur Ausrichtung des Blattschnitts unter Nutzung des GML-Standards. Es sind nur zwei Stützpunkte anzugeben. Die damit beschriebene Linie dient der Ausrichtung des Blattschnitts an der waagerechten Blattkante. Die Reihenfolge der Stützpunkte bestimmt die Richtung der Darstellung.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Polygonzug_Blattschnitt"
+                           type="nsLayoutinformationen:TCPolygonzug_Blattschnitt"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Polygonzug zur Beschreibung des Blattschnitts unter Nutzung des GML-Standards.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CLageplan_Blattschnitt_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="Bez_Lageplan_Blattschnitt"
+                     type="nsLayoutinformationen:TCBez_Lageplan_Blattschnitt"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Numerierung des Blattschnitts.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CLageplan_Zustand">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Abbildung der zustandsbezogenen Layoutinformationen zu einem Lageplan.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CUr_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Lageplan" type="nsVerweise:TCID_Lageplan" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf den Lageplan, zu dem der Lageplan-Zustand definiert wird.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Referenz_LST_Zustand" type="nsLayoutinformationen:TCReferenz_LST_Zustand"
+                           minOccurs="1"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">GUID des LST-Zustand, der für die Erstellung des Lageplans ausgewertet wird. Werden LST-Zustände einer Planung referenziert, müssen Sie einheitlich entweder den Start- oder den Zielzustand beschreiben. Eine Mischung von Start- und Zielzuständen ist nicht zulässig.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CPlanPro_Layoutinfo">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Oberstes Objekt der Layout-XML. Bei jeder Erzeugung einer XML-Ausgabe für eine Planung muss eine neue GUID (Identitaet) erzeugt werden.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CUr_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bearbeitungsvermerk" type="nsBasisobjekte:CBearbeitungsvermerk"
+                           minOccurs="0"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anhang in Form von Datei oder Text zu einem Objekt oder Attribut. Jeder zugelassene Projektbeteiligte kann zu einem Objekt oder Attribut einen Bearbeitungsvermerk anfügen, sofern er die entsprechend notwendige Berechtigung besitzt. Dies gilt für fachliche wie organisatorische Objekte und Attribute. Für ENUM-Attribute ist bei Auswahl des Werts \"sonstige\" zwingend ein Bearbeitungsvermerk anzufügen. Eine Dokumentenbeigabe ist dabei optional. Zu einem Objekt oder Attribut können mehrere Bearbeitungsvermerke erstellt werden. Der Bearbeitungsvermerk enthält vorläufig eine GUID zur Identifikation des Bearbeiters sowie eine GUID für die Signatur. Im Attribut „Bearbeitungsvermerk Rolle“ kann die fachliche Rolle des Bearbeiters abgelegt werden. Kommentare des Bearbeiters werden als Freitext im Attribut „Kommentar“ hinterlegt. Der Bearbeitungsvermerk kann einen Anhang aufnehmen. Um mehrere Anhänge zu einem Objekt zuzuordnen, müssen mehrere Bearbeitungsvermerke erstellt werden.</xs:documentation>
+                     <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                        <ppi:WorkflowInformation>
+                           <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+                           <ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN</ppi:Untergewerke>
+                        </ppi:WorkflowInformation>
+                     </xs:appinfo>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Element_Position" type="nsLayoutinformationen:CElement_Position"
+                           minOccurs="0"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Angabe von Positionsinformationen für ein LST-Objekt bezogen auf einen Lageplan.</xs:documentation>
+                     <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                        <ppi:WorkflowInformation>
+                           <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+                        </ppi:WorkflowInformation>
+                     </xs:appinfo>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Element_Stil" type="nsLayoutinformationen:CElement_Stil" minOccurs="0"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Angabe von Darstellungsvorgaben (z. B. Linienart) für ein LST-Objekt bezogen auf einen Lageplan.</xs:documentation>
+                     <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                        <ppi:WorkflowInformation>
+                           <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+                        </ppi:WorkflowInformation>
+                     </xs:appinfo>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Lageplan" type="nsLayoutinformationen:CLageplan" minOccurs="0"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Plan, der maßstäblich oder unmaßstäblich die Lage von LST-Objekten zeigt. Beispiel: Sicherungstechnischer Lageplan. Bei Planungen wird für Start- und Zielzustand je eine Instanz von Lageplan erzeugt. Zu einem Lageplan ist mindestens ein Blattschnitt zu definieren.</xs:documentation>
+                     <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                        <ppi:WorkflowInformation>
+                           <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+                        </ppi:WorkflowInformation>
+                     </xs:appinfo>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Lageplan_Blattschnitt"
+                           type="nsLayoutinformationen:CLageplan_Blattschnitt"
+                           minOccurs="0"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Teil des Lageplans, der auf einem Blatt dargestellt wird.</xs:documentation>
+                     <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                        <ppi:WorkflowInformation>
+                           <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+                        </ppi:WorkflowInformation>
+                     </xs:appinfo>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="Lageplan_Zustand" type="nsLayoutinformationen:CLageplan_Zustand"
+                           minOccurs="0"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Abbildung der zustandsbezogenen Layoutinformationen zu einem Lageplan.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBez_Lageplan_Blattschnitt">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsLayoutinformationen:TBez_Lageplan_Blattschnitt"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBezeichnung_Lageplan">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsLayoutinformationen:TBezeichnung_Lageplan" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCDarstellung_Polygonzug">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsLayoutinformationen:TDarstellung_Polygonzug" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCDarstellung_Richtungswinkel">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsLayoutinformationen:TDarstellung_Richtungswinkel"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCDarstellung_Richtungswinkel_Bezeichnung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert"
+                           type="nsLayoutinformationen:TDarstellung_Richtungswinkel_Bezeichnung"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFuellung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsLayoutinformationen:ENUMFuellung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCLageplan_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsLayoutinformationen:ENUMLageplan_Art" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCLinie_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsLayoutinformationen:ENUMLinie_Art" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCLinie_Farbwert">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsLayoutinformationen:TLinie_Farbwert" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCLinie_Subart">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsLayoutinformationen:ENUMLinie_Subart" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCPolygonzug_Ausrichtung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsLayoutinformationen:TPolygonzug_Ausrichtung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCPolygonzug_Blattschnitt">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsLayoutinformationen:TPolygonzug_Blattschnitt" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCReferenz_LST_Zustand">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsLayoutinformationen:TReferenz_LST_Zustand" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCReferenz_Objekt_Darstellung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsLayoutinformationen:TReferenz_Objekt_Darstellung"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+</xs:schema>

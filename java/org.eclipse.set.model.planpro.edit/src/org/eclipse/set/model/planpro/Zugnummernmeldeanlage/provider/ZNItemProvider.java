@@ -80,6 +80,7 @@ public class ZNItemProvider extends Basis_ObjektItemProvider {
 			childrenFeatures.add(ZugnummernmeldeanlagePackage.Literals.ZN__ID_ANHANG_ZN_PLAN_BEDIENRAUM);
 			childrenFeatures.add(ZugnummernmeldeanlagePackage.Literals.ZN__ID_ANHANG_ZN_PLAN_RECHNERRAUM);
 			childrenFeatures.add(ZugnummernmeldeanlagePackage.Literals.ZN__ID_OERTLICHKEIT);
+			childrenFeatures.add(ZugnummernmeldeanlagePackage.Literals.ZN__BEZEICHNUNG_STELLWERK);
 			childrenFeatures.add(ZugnummernmeldeanlagePackage.Literals.ZN__ID_STELLWERK);
 			childrenFeatures.add(ZugnummernmeldeanlagePackage.Literals.ZN__ID_UNTERBRINGUNG);
 			childrenFeatures.add(ZugnummernmeldeanlagePackage.Literals.ZN__IDZN_UNTERSTATION);
@@ -149,16 +150,15 @@ public class ZNItemProvider extends Basis_ObjektItemProvider {
 			case ZugnummernmeldeanlagePackage.ZN__ID_ANHANG_ZN_PLAN_BEDIENRAUM:
 			case ZugnummernmeldeanlagePackage.ZN__ID_ANHANG_ZN_PLAN_RECHNERRAUM:
 			case ZugnummernmeldeanlagePackage.ZN__ID_OERTLICHKEIT:
+			case ZugnummernmeldeanlagePackage.ZN__BEZEICHNUNG_STELLWERK:
 			case ZugnummernmeldeanlagePackage.ZN__ID_STELLWERK:
 			case ZugnummernmeldeanlagePackage.ZN__ID_UNTERBRINGUNG:
 			case ZugnummernmeldeanlagePackage.ZN__IDZN_UNTERSTATION:
 			case ZugnummernmeldeanlagePackage.ZN__ZN_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**
@@ -186,6 +186,11 @@ public class ZNItemProvider extends Basis_ObjektItemProvider {
 			(createChildParameter
 				(ZugnummernmeldeanlagePackage.Literals.ZN__ID_OERTLICHKEIT,
 				 VerweiseFactory.eINSTANCE.createID_Oertlichkeit_TypeClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ZugnummernmeldeanlagePackage.Literals.ZN__BEZEICHNUNG_STELLWERK,
+				 ZugnummernmeldeanlageFactory.eINSTANCE.createBezeichnung_Stellwerk_TypeClass()));
 
 		newChildDescriptors.add
 			(createChildParameter

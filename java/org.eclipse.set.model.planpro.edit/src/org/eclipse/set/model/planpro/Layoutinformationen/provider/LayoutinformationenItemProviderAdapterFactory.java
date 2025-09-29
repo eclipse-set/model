@@ -125,29 +125,6 @@ public class LayoutinformationenItemProviderAdapterFactory extends Layoutinforma
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_GEO_Punkt_TypeClass} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Darstellung_GEO_Punkt_TypeClassItemProvider darstellung_GEO_Punkt_TypeClassItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_GEO_Punkt_TypeClass}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createDarstellung_GEO_Punkt_TypeClassAdapter() {
-		if (darstellung_GEO_Punkt_TypeClassItemProvider == null) {
-			darstellung_GEO_Punkt_TypeClassItemProvider = new Darstellung_GEO_Punkt_TypeClassItemProvider(this);
-		}
-
-		return darstellung_GEO_Punkt_TypeClassItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Polygonzug_TypeClass} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -168,6 +145,29 @@ public class LayoutinformationenItemProviderAdapterFactory extends Layoutinforma
 		}
 
 		return darstellung_Polygonzug_TypeClassItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Richtungswinkel_Bezeichnung_TypeClass} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Darstellung_Richtungswinkel_Bezeichnung_TypeClassItemProvider darstellung_Richtungswinkel_Bezeichnung_TypeClassItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Richtungswinkel_Bezeichnung_TypeClass}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDarstellung_Richtungswinkel_Bezeichnung_TypeClassAdapter() {
+		if (darstellung_Richtungswinkel_Bezeichnung_TypeClassItemProvider == null) {
+			darstellung_Richtungswinkel_Bezeichnung_TypeClassItemProvider = new Darstellung_Richtungswinkel_Bezeichnung_TypeClassItemProvider(this);
+		}
+
+		return darstellung_Richtungswinkel_Bezeichnung_TypeClassItemProvider;
 	}
 
 	/**
@@ -760,8 +760,8 @@ public class LayoutinformationenItemProviderAdapterFactory extends Layoutinforma
 	public void dispose() {
 		if (bez_Lageplan_Blattschnitt_TypeClassItemProvider != null) bez_Lageplan_Blattschnitt_TypeClassItemProvider.dispose();
 		if (bezeichnung_Lageplan_TypeClassItemProvider != null) bezeichnung_Lageplan_TypeClassItemProvider.dispose();
-		if (darstellung_GEO_Punkt_TypeClassItemProvider != null) darstellung_GEO_Punkt_TypeClassItemProvider.dispose();
 		if (darstellung_Polygonzug_TypeClassItemProvider != null) darstellung_Polygonzug_TypeClassItemProvider.dispose();
+		if (darstellung_Richtungswinkel_Bezeichnung_TypeClassItemProvider != null) darstellung_Richtungswinkel_Bezeichnung_TypeClassItemProvider.dispose();
 		if (darstellung_Richtungswinkel_TypeClassItemProvider != null) darstellung_Richtungswinkel_TypeClassItemProvider.dispose();
 		if (documentRootItemProvider != null) documentRootItemProvider.dispose();
 		if (element_PositionItemProvider != null) element_PositionItemProvider.dispose();

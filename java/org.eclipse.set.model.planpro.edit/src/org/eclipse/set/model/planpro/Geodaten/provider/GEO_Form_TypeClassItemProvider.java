@@ -138,10 +138,8 @@ public class GEO_Form_TypeClassItemProvider extends BasisAttribut_AttributeGroup
 			case GeodatenPackage.GEO_FORM_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -159,10 +159,8 @@ public class ID_Element_Unterbringung_TypeClassItemProvider extends Zeiger_TypeC
 			case VerweisePackage.ID_ELEMENT_UNTERBRINGUNG_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

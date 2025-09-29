@@ -159,10 +159,8 @@ public class ID_Schalter_TypeClassItemProvider extends Zeiger_TypeClassItemProvi
 			case VerweisePackage.ID_SCHALTER_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

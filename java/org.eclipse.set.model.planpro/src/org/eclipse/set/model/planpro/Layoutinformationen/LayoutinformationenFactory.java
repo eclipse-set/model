@@ -47,15 +47,6 @@ public interface LayoutinformationenFactory extends EFactory {
 	Bezeichnung_Lageplan_TypeClass createBezeichnung_Lageplan_TypeClass();
 
 	/**
-	 * Returns a new object of class '<em>Darstellung GEO Punkt Type Class</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Darstellung GEO Punkt Type Class</em>'.
-	 * @generated
-	 */
-	Darstellung_GEO_Punkt_TypeClass createDarstellung_GEO_Punkt_TypeClass();
-
-	/**
 	 * Returns a new object of class '<em>Darstellung Polygonzug Type Class</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -63,6 +54,15 @@ public interface LayoutinformationenFactory extends EFactory {
 	 * @generated
 	 */
 	Darstellung_Polygonzug_TypeClass createDarstellung_Polygonzug_TypeClass();
+
+	/**
+	 * Returns a new object of class '<em>Darstellung Richtungswinkel Bezeichnung Type Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Darstellung Richtungswinkel Bezeichnung Type Class</em>'.
+	 * @generated
+	 */
+	Darstellung_Richtungswinkel_Bezeichnung_TypeClass createDarstellung_Richtungswinkel_Bezeichnung_TypeClass();
 
 	/**
 	 * Returns a new object of class '<em>Darstellung Richtungswinkel Type Class</em>'.

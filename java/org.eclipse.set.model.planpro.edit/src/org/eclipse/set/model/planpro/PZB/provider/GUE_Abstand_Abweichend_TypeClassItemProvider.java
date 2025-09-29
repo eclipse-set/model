@@ -139,10 +139,8 @@ public class GUE_Abstand_Abweichend_TypeClassItemProvider extends BasisAttribut_
 			case PZBPackage.GUE_ABSTAND_ABWEICHEND_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

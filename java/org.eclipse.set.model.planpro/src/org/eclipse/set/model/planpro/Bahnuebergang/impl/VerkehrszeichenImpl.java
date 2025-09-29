@@ -451,9 +451,8 @@ public class VerkehrszeichenImpl extends Basis_ObjektImpl implements Verkehrszei
 				return basicSetVerkehrszeichenLz(null, msgs);
 			case BahnuebergangPackage.VERKEHRSZEICHEN__VZ_SPERRSTRECKE:
 				return basicSetVzSperrstrecke(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -478,9 +477,8 @@ public class VerkehrszeichenImpl extends Basis_ObjektImpl implements Verkehrszei
 				return getVerkehrszeichenLz();
 			case BahnuebergangPackage.VERKEHRSZEICHEN__VZ_SPERRSTRECKE:
 				return getVzSperrstrecke();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -514,10 +512,8 @@ public class VerkehrszeichenImpl extends Basis_ObjektImpl implements Verkehrszei
 			case BahnuebergangPackage.VERKEHRSZEICHEN__VZ_SPERRSTRECKE:
 				setVzSperrstrecke((Vz_Sperrstrecke_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -549,10 +545,8 @@ public class VerkehrszeichenImpl extends Basis_ObjektImpl implements Verkehrszei
 			case BahnuebergangPackage.VERKEHRSZEICHEN__VZ_SPERRSTRECKE:
 				setVzSperrstrecke((Vz_Sperrstrecke_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -577,9 +571,8 @@ public class VerkehrszeichenImpl extends Basis_ObjektImpl implements Verkehrszei
 				return verkehrszeichenLz != null;
 			case BahnuebergangPackage.VERKEHRSZEICHEN__VZ_SPERRSTRECKE:
 				return vzSperrstrecke != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //VerkehrszeichenImpl

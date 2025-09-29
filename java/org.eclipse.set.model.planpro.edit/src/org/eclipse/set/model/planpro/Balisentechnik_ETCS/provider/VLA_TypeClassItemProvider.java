@@ -139,10 +139,8 @@ public class VLA_TypeClassItemProvider extends BasisAttribut_AttributeGroupItemP
 			case Balisentechnik_ETCSPackage.VLA_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

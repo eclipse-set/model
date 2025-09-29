@@ -158,8 +158,8 @@ public enum ENUMNBArt implements Enumerator {
 			case ENUMNB_ART_NB_G_VALUE: return ENUMNB_ART_NB_G;
 			case ENUMNB_ART_NB_R_VALUE: return ENUMNB_ART_NB_R;
 			case ENUMNB_ART_NB_W_VALUE: return ENUMNB_ART_NB_W;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

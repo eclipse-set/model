@@ -154,9 +154,8 @@ public class Polygone_Planungsbereich_AttributeGroupImpl extends EObjectImpl imp
 				return basicSetKoordinatensystemPB(null, msgs);
 			case PlanProPackage.POLYGONE_PLANUNGSBEREICH_ATTRIBUTE_GROUP__POLYGONZUG_PLANUNGSBEREICH:
 				return ((InternalEList<?>)getPolygonzugPlanungsbereich()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -171,9 +170,8 @@ public class Polygone_Planungsbereich_AttributeGroupImpl extends EObjectImpl imp
 				return getKoordinatensystemPB();
 			case PlanProPackage.POLYGONE_PLANUNGSBEREICH_ATTRIBUTE_GROUP__POLYGONZUG_PLANUNGSBEREICH:
 				return getPolygonzugPlanungsbereich();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -192,10 +190,8 @@ public class Polygone_Planungsbereich_AttributeGroupImpl extends EObjectImpl imp
 				getPolygonzugPlanungsbereich().clear();
 				getPolygonzugPlanungsbereich().addAll((Collection<? extends Polygonzug_Planungsbereich_TypeClass>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -212,10 +208,8 @@ public class Polygone_Planungsbereich_AttributeGroupImpl extends EObjectImpl imp
 			case PlanProPackage.POLYGONE_PLANUNGSBEREICH_ATTRIBUTE_GROUP__POLYGONZUG_PLANUNGSBEREICH:
 				getPolygonzugPlanungsbereich().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -230,9 +224,8 @@ public class Polygone_Planungsbereich_AttributeGroupImpl extends EObjectImpl imp
 				return koordinatensystemPB != null;
 			case PlanProPackage.POLYGONE_PLANUNGSBEREICH_ATTRIBUTE_GROUP__POLYGONZUG_PLANUNGSBEREICH:
 				return polygonzugPlanungsbereich != null && !polygonzugPlanungsbereich.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Polygone_Planungsbereich_AttributeGroupImpl

@@ -216,16 +216,6 @@ public enum ENUMDPTypZBS implements Enumerator {
 	ENUMDP_TYP_ZBS_ZRV(18, "ENUMDP_Typ_ZBS_ZRV", "ZRV"),
 
 	/**
-	 * The '<em><b>ENUMDP Typ ZBS ZU</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUMDP_TYP_ZBS_ZU_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ENUMDP_TYP_ZBS_ZU(19, "ENUMDP_Typ_ZBS_ZU", "Z\u00dc"),
-
-	/**
 	 * The '<em><b>ENUMDP Typ ZBS ZV</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -233,7 +223,17 @@ public enum ENUMDPTypZBS implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMDP_TYP_ZBS_ZV(20, "ENUMDP_Typ_ZBS_ZV", "ZV");
+	ENUMDP_TYP_ZBS_ZV(19, "ENUMDP_Typ_ZBS_ZV", "ZV"),
+
+	/**
+	 * The '<em><b>ENUMDP Typ ZBS ZU</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMDP_TYP_ZBS_ZU_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMDP_TYP_ZBS_ZU(20, "ENUMDP_Typ_ZBS_ZU", "Z\u00dc");
 
 	/**
 	 * The '<em><b>ENUMDP Typ ZBS RBE</b></em>' literal value.
@@ -445,17 +445,6 @@ public enum ENUMDPTypZBS implements Enumerator {
 	public static final int ENUMDP_TYP_ZBS_ZRV_VALUE = 18;
 
 	/**
-	 * The '<em><b>ENUMDP Typ ZBS ZU</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUMDP_TYP_ZBS_ZU
-	 * @model name="ENUMDP_Typ_ZBS_ZU" literal="Z\334"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ENUMDP_TYP_ZBS_ZU_VALUE = 19;
-
-	/**
 	 * The '<em><b>ENUMDP Typ ZBS ZV</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -464,7 +453,18 @@ public enum ENUMDPTypZBS implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMDP_TYP_ZBS_ZV_VALUE = 20;
+	public static final int ENUMDP_TYP_ZBS_ZV_VALUE = 19;
+
+	/**
+	 * The '<em><b>ENUMDP Typ ZBS ZU</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMDP_TYP_ZBS_ZU
+	 * @model name="ENUMDP_Typ_ZBS_ZU" literal="Z\334"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMDP_TYP_ZBS_ZU_VALUE = 20;
 
 	/**
 	 * An array of all the '<em><b>ENUMDP Typ ZBS</b></em>' enumerators.
@@ -493,8 +493,8 @@ public enum ENUMDPTypZBS implements Enumerator {
 			ENUMDP_TYP_ZBS_ZRHF,
 			ENUMDP_TYP_ZBS_ZR_LA,
 			ENUMDP_TYP_ZBS_ZRV,
-			ENUMDP_TYP_ZBS_ZU,
 			ENUMDP_TYP_ZBS_ZV,
+			ENUMDP_TYP_ZBS_ZU,
 		};
 
 	/**
@@ -570,10 +570,10 @@ public enum ENUMDPTypZBS implements Enumerator {
 			case ENUMDP_TYP_ZBS_ZRHF_VALUE: return ENUMDP_TYP_ZBS_ZRHF;
 			case ENUMDP_TYP_ZBS_ZR_LA_VALUE: return ENUMDP_TYP_ZBS_ZR_LA;
 			case ENUMDP_TYP_ZBS_ZRV_VALUE: return ENUMDP_TYP_ZBS_ZRV;
-			case ENUMDP_TYP_ZBS_ZU_VALUE: return ENUMDP_TYP_ZBS_ZU;
 			case ENUMDP_TYP_ZBS_ZV_VALUE: return ENUMDP_TYP_ZBS_ZV;
-			default: return null;
+			case ENUMDP_TYP_ZBS_ZU_VALUE: return ENUMDP_TYP_ZBS_ZU;
 		}
+		return null;
 	}
 
 	/**

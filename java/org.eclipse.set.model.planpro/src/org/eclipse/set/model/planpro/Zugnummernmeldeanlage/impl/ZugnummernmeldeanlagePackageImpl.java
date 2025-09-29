@@ -141,6 +141,7 @@ import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Ausfahrdruck_TypeClas
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bedienbarkeit_Anzeigefeld_TypeClass;
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Besonderes_Schaltkriterium_TypeClass;
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bezeichnung_Besondere_Anlage_TypeClass;
+import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bezeichnung_Stellwerk_TypeClass;
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bf_Kennung_TypeClass;
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bf_Nr_ANB_TypeClass;
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bf_Nr_TypeClass;
@@ -294,6 +295,13 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 	 * @generated
 	 */
 	private EClass bezeichnung_Besondere_Anlage_TypeClassEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass bezeichnung_Stellwerk_TypeClassEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -888,6 +896,13 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EDataType bezeichnung_Stellwerk_TypeEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EDataType bf_Nr_TypeEDataType = null;
 
 	/**
@@ -1381,6 +1396,26 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 	@Override
 	public EAttribute getBezeichnung_Besondere_Anlage_TypeClass_Wert() {
 		return (EAttribute)bezeichnung_Besondere_Anlage_TypeClassEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getBezeichnung_Stellwerk_TypeClass() {
+		return bezeichnung_Stellwerk_TypeClassEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBezeichnung_Stellwerk_TypeClass_Wert() {
+		return (EAttribute)bezeichnung_Stellwerk_TypeClassEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -2299,6 +2334,16 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 	 * @generated
 	 */
 	@Override
+	public EReference getZLV_Bus_Besondere_Anlage_UnterstationNr() {
+		return (EReference)zlV_Bus_Besondere_AnlageEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup() {
 		return zlV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroupEClass;
 	}
@@ -2549,7 +2594,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 	 * @generated
 	 */
 	@Override
-	public EReference getZN_IDStellwerk() {
+	public EReference getZN_BezeichnungStellwerk() {
 		return (EReference)znEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -2559,7 +2604,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 	 * @generated
 	 */
 	@Override
-	public EReference getZN_IDUnterbringung() {
+	public EReference getZN_IDStellwerk() {
 		return (EReference)znEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -2569,7 +2614,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 	 * @generated
 	 */
 	@Override
-	public EReference getZN_IDZNUnterstation() {
+	public EReference getZN_IDUnterbringung() {
 		return (EReference)znEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -2579,8 +2624,18 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 	 * @generated
 	 */
 	@Override
-	public EReference getZN_ZNAllg() {
+	public EReference getZN_IDZNUnterstation() {
 		return (EReference)znEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getZN_ZNAllg() {
+		return (EReference)znEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -3669,6 +3724,16 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 	 * @generated
 	 */
 	@Override
+	public EDataType getBezeichnung_Stellwerk_Type() {
+		return bezeichnung_Stellwerk_TypeEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EDataType getBf_Nr_Type() {
 		return bf_Nr_TypeEDataType;
 	}
@@ -3909,6 +3974,9 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		bezeichnung_Besondere_Anlage_TypeClassEClass = createEClass(BEZEICHNUNG_BESONDERE_ANLAGE_TYPE_CLASS);
 		createEAttribute(bezeichnung_Besondere_Anlage_TypeClassEClass, BEZEICHNUNG_BESONDERE_ANLAGE_TYPE_CLASS__WERT);
 
+		bezeichnung_Stellwerk_TypeClassEClass = createEClass(BEZEICHNUNG_STELLWERK_TYPE_CLASS);
+		createEAttribute(bezeichnung_Stellwerk_TypeClassEClass, BEZEICHNUNG_STELLWERK_TYPE_CLASS__WERT);
+
 		bf_Kennung_TypeClassEClass = createEClass(BF_KENNUNG_TYPE_CLASS);
 		createEAttribute(bf_Kennung_TypeClassEClass, BF_KENNUNG_TYPE_CLASS__WERT);
 
@@ -4041,6 +4109,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		zlV_Bus_Besondere_AnlageEClass = createEClass(ZLV_BUS_BESONDERE_ANLAGE);
 		createEReference(zlV_Bus_Besondere_AnlageEClass, ZLV_BUS_BESONDERE_ANLAGE__BEZEICHNUNG);
 		createEReference(zlV_Bus_Besondere_AnlageEClass, ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS);
+		createEReference(zlV_Bus_Besondere_AnlageEClass, ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR);
 
 		zlV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroupEClass = createEClass(ZLV_BUS_BESONDERE_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP);
 		createEReference(zlV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroupEClass, ZLV_BUS_BESONDERE_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BESONDERE_ANLAGE);
@@ -4073,6 +4142,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		createEReference(znEClass, ZN__ID_ANHANG_ZN_PLAN_BEDIENRAUM);
 		createEReference(znEClass, ZN__ID_ANHANG_ZN_PLAN_RECHNERRAUM);
 		createEReference(znEClass, ZN__ID_OERTLICHKEIT);
+		createEReference(znEClass, ZN__BEZEICHNUNG_STELLWERK);
 		createEReference(znEClass, ZN__ID_STELLWERK);
 		createEReference(znEClass, ZN__ID_UNTERBRINGUNG);
 		createEReference(znEClass, ZN__IDZN_UNTERSTATION);
@@ -4212,6 +4282,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		anschlussnummer_TypeEDataType = createEDataType(ANSCHLUSSNUMMER_TYPE);
 		besonderes_Schaltkriterium_TypeEDataType = createEDataType(BESONDERES_SCHALTKRITERIUM_TYPE);
 		bezeichnung_Besondere_Anlage_TypeEDataType = createEDataType(BEZEICHNUNG_BESONDERE_ANLAGE_TYPE);
+		bezeichnung_Stellwerk_TypeEDataType = createEDataType(BEZEICHNUNG_STELLWERK_TYPE);
 		bf_Nr_TypeEDataType = createEDataType(BF_NR_TYPE);
 		enumAkustikAnbAnnObjectEDataType = createEDataType(ENUM_AKUSTIK_ANB_ANN_OBJECT);
 		enumAkustikSonstObjectEDataType = createEDataType(ENUM_AKUSTIK_SONST_OBJECT);
@@ -4276,6 +4347,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		bedienbarkeit_Anzeigefeld_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getBasisAttribut_AttributeGroup());
 		besonderes_Schaltkriterium_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getBasisAttribut_AttributeGroup());
 		bezeichnung_Besondere_Anlage_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getBasisAttribut_AttributeGroup());
+		bezeichnung_Stellwerk_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getBasisAttribut_AttributeGroup());
 		bf_Kennung_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getBasisAttribut_AttributeGroup());
 		bf_Nr_ANB_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getBasisAttribut_AttributeGroup());
 		bf_Nr_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getBasisAttribut_AttributeGroup());
@@ -4359,6 +4431,9 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 
 		initEClass(bezeichnung_Besondere_Anlage_TypeClassEClass, Bezeichnung_Besondere_Anlage_TypeClass.class, "Bezeichnung_Besondere_Anlage_TypeClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getBezeichnung_Besondere_Anlage_TypeClass_Wert(), this.getBezeichnung_Besondere_Anlage_Type(), "wert", null, 1, 1, Bezeichnung_Besondere_Anlage_TypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(bezeichnung_Stellwerk_TypeClassEClass, Bezeichnung_Stellwerk_TypeClass.class, "Bezeichnung_Stellwerk_TypeClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBezeichnung_Stellwerk_TypeClass_Wert(), this.getBezeichnung_Stellwerk_Type(), "wert", null, 1, 1, Bezeichnung_Stellwerk_TypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(bf_Kennung_TypeClassEClass, Bf_Kennung_TypeClass.class, "Bf_Kennung_TypeClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getBf_Kennung_TypeClass_Wert(), this.getENUMBfKennungObject(), "wert", null, 1, 1, Bf_Kennung_TypeClass.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4491,7 +4566,8 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 
 		initEClass(zlV_Bus_Besondere_AnlageEClass, ZLV_Bus_Besondere_Anlage.class, "ZLV_Bus_Besondere_Anlage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getZLV_Bus_Besondere_Anlage_Bezeichnung(), this.getZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup(), null, "bezeichnung", null, 1, 1, ZLV_Bus_Besondere_Anlage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getZLV_Bus_Besondere_Anlage_IDZLVBus(), theVerweisePackage.getID_ZLV_Bus_ohne_Proxy_TypeClass(), null, "iDZLVBus", null, 1, 1, ZLV_Bus_Besondere_Anlage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getZLV_Bus_Besondere_Anlage_IDZLVBus(), theVerweisePackage.getID_ZLV_Bus_ohne_Proxy_TypeClass(), null, "iDZLVBus", null, 1, -1, ZLV_Bus_Besondere_Anlage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getZLV_Bus_Besondere_Anlage_UnterstationNr(), this.getUnterstation_Nr_TypeClass(), null, "unterstationNr", null, 0, 1, ZLV_Bus_Besondere_Anlage.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(zlV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroupEClass, ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup.class, "ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup_BezeichnungBesondereAnlage(), this.getBezeichnung_Besondere_Anlage_TypeClass(), null, "bezeichnungBesondereAnlage", null, 1, 1, ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4524,6 +4600,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		initEReference(getZN_IDAnhangZNPlanBedienraum(), theVerweisePackage.getID_Anhang_TypeClass(), null, "iDAnhangZNPlanBedienraum", null, 0, 1, org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getZN_IDAnhangZNPlanRechnerraum(), theVerweisePackage.getID_Anhang_TypeClass(), null, "iDAnhangZNPlanRechnerraum", null, 0, 1, org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getZN_IDOertlichkeit(), theVerweisePackage.getID_Oertlichkeit_TypeClass(), null, "iDOertlichkeit", null, 1, 1, org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getZN_BezeichnungStellwerk(), this.getBezeichnung_Stellwerk_TypeClass(), null, "bezeichnungStellwerk", null, 0, 1, org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getZN_IDStellwerk(), theVerweisePackage.getID_Stellwerk_TypeClass(), null, "iDStellwerk", null, 0, 1, org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getZN_IDUnterbringung(), theVerweisePackage.getID_Unterbringung_TypeClass(), null, "iDUnterbringung", null, 0, 1, org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getZN_IDZNUnterstation(), theVerweisePackage.getID_ZN_Unterstation_TypeClass(), null, "iDZNUnterstation", null, 1, 1, org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4721,6 +4798,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		initEDataType(anschlussnummer_TypeEDataType, BigInteger.class, "Anschlussnummer_Type", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 		initEDataType(besonderes_Schaltkriterium_TypeEDataType, String.class, "Besonderes_Schaltkriterium_Type", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 		initEDataType(bezeichnung_Besondere_Anlage_TypeEDataType, String.class, "Bezeichnung_Besondere_Anlage_Type", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
+		initEDataType(bezeichnung_Stellwerk_TypeEDataType, String.class, "Bezeichnung_Stellwerk_Type", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 		initEDataType(bf_Nr_TypeEDataType, BigInteger.class, "Bf_Nr_Type", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 		initEDataType(enumAkustikAnbAnnObjectEDataType, ENUMAkustikAnbAnn.class, "ENUMAkustikAnbAnnObject", IS_SERIALIZABLE, IS_GENERATED_INSTANCE_CLASS);
 		initEDataType(enumAkustikSonstObjectEDataType, ENUMAkustikSonst.class, "ENUMAkustikSonstObject", IS_SERIALIZABLE, IS_GENERATED_INSTANCE_CLASS);
@@ -4765,7 +4843,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 		addAnnotation
 		  (getTelegramm_84_Alle_Fstr_AttributeGroup_IDZLVBus(),
@@ -4843,7 +4921,13 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		  (getZLV_Bus_Besondere_Anlage_IDZLVBus(),
 		   source,
 		   new String[] {
-			   "documentation", "Verweis auf den ZLV-Bus, an den die Besondere Anlage angeschlossen ist."
+			   "documentation", "Verweis auf den ZLV-Bus, an den die Besondere Anlage angeschlossen ist. Mehrere Anschl\u00fcsse sind m\u00f6glich, z. B. f\u00fcr Zugnummern-Dekoder."
+		   });
+		addAnnotation
+		  (getZLV_Bus_Besondere_Anlage_UnterstationNr(),
+		   source,
+		   new String[] {
+			   "documentation", "Angabe der Unterstationsnummer auf diesem ZLV-Bus. Es wird empfohlen, auf einem ZLV-Bus nur gerade Nummern im Bereich 02..20 oder ungerade Nummern im Bereich 01..19 zu verwenden. DB-Regelwerk 819.0731 5 (12)"
 		   });
 		addAnnotation
 		  (getZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup_BezeichnungBesondereAnlage(),
@@ -4954,10 +5038,16 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 			   "documentation", "\u00d6rtlichkeit, die f\u00fcr die ZN-Anlage namensgebend ist. Es ist der Wert \u201eOertlichkeit_Langname\u201c zu verwenden. "
 		   });
 		addAnnotation
+		  (getZN_BezeichnungStellwerk(),
+		   source,
+		   new String[] {
+			   "documentation", "Bezeichnung des Stellwerks, sofern kein Verweis auf eine ESTW-Zentraleinheit m\u00f6glich ist (z. B. \\\"Relaisstellwerk xyz\\\")."
+		   });
+		addAnnotation
 		  (getZN_IDStellwerk(),
 		   source,
 		   new String[] {
-			   "documentation", "Verweis auf die ESTW-Zentraleinheit oder ein Relaisstellwerk, zu der diese ZN oder f\u00fcr die eine ZN-Einwahlstelle geplant wurde. Der Verweis ist optional, da im Plaungswerkzeug ZN/ZL keine Bef\u00fcllung aller f\u00fcr die ESTW-ZE vorgesehenen Attribute m\u00f6glich ist."
+			   "documentation", "Verweis auf die ESTW-Zentraleinheit, zu der diese ZN oder f\u00fcr die eine ZN-Einwahlstelle geplant wurde. Der Verweis ist optional, da im Plaungswerkzeug ZN/ZL keine Bef\u00fcllung aller f\u00fcr die ESTW-ZE vorgesehenen Attribute m\u00f6glich ist. Der Verweis auf Aussenelementansteuerung soll nicht mehr genutzt werden. Zur Angabe der Bezeichnung eines Relaisstellwerks wird mit Version 1.11 eine Modellerweiterung erfolgen."
 		   });
 		addAnnotation
 		  (getZN_IDUnterbringung(),
@@ -5457,7 +5547,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		   source,
 		   new String[] {
 			   "name", "TBesonderes_Schaltkriterium",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (besonderes_Schaltkriterium_TypeClassEClass,
@@ -5478,7 +5568,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		   source,
 		   new String[] {
 			   "name", "TBezeichnung_Besondere_Anlage",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
 		   });
 		addAnnotation
 		  (bezeichnung_Besondere_Anlage_TypeClassEClass,
@@ -5489,6 +5579,27 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		   });
 		addAnnotation
 		  (getBezeichnung_Besondere_Anlage_TypeClass_Wert(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Wert"
+		   });
+		addAnnotation
+		  (bezeichnung_Stellwerk_TypeEDataType,
+		   source,
+		   new String[] {
+			   "name", "TBezeichnung_Stellwerk",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"
+		   });
+		addAnnotation
+		  (bezeichnung_Stellwerk_TypeClassEClass,
+		   source,
+		   new String[] {
+			   "name", "TCBezeichnung_Stellwerk",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (getBezeichnung_Stellwerk_TypeClass_Wert(),
 		   source,
 		   new String[] {
 			   "kind", "element",
@@ -5764,7 +5875,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		   source,
 		   new String[] {
 			   "name", "TIP_Adresse",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", "([0-9]{1,3}\\.){3}[0-9]{1,3}"
 		   });
 		addAnnotation
@@ -6123,7 +6234,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		   source,
 		   new String[] {
 			   "name", "TUnterstation_Nr",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette",
 			   "pattern", "0[1-9]|[1-3][0-9]|40"
 		   });
 		addAnnotation
@@ -6145,7 +6256,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		   source,
 		   new String[] {
 			   "name", "TVerzoegerung_Manuell_Loeschung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"
 		   });
 		addAnnotation
 		  (verzoegerung_Manuell_Loeschung_TypeClassEClass,
@@ -6180,7 +6291,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		   source,
 		   new String[] {
 			   "name", "TZBS_Adresse",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", "[A-F][0-9]|[C-F][A-F]|[AB][C-F]|AB|BA"
 		   });
 		addAnnotation
@@ -6301,6 +6412,13 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		   new String[] {
 			   "kind", "element",
 			   "name", "ID_ZLV_Bus"
+		   });
+		addAnnotation
+		  (getZLV_Bus_Besondere_Anlage_UnterstationNr(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Unterstation_Nr"
 		   });
 		addAnnotation
 		  (zlV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroupEClass,
@@ -6486,6 +6604,13 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 			   "name", "ID_Oertlichkeit"
 		   });
 		addAnnotation
+		  (getZN_BezeichnungStellwerk(),
+		   source,
+		   new String[] {
+			   "kind", "element",
+			   "name", "Bezeichnung_Stellwerk"
+		   });
+		addAnnotation
 		  (getZN_IDStellwerk(),
 		   source,
 		   new String[] {
@@ -6518,7 +6643,7 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		   source,
 		   new String[] {
 			   "name", "TZN_A_Bedienbezeichner_Frei",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{4,7}"
 		   });
 		addAnnotation
@@ -7214,169 +7339,169 @@ public class ZugnummernmeldeanlagePackageImpl extends EPackageImpl implements Zu
 		  (zlV_BusEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZLV-Bus</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZLV-Bus</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZLV_Bus_Allg_AttributeGroup_UnterstationMax(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1..40] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..40] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (zlV_Bus_Besondere_AnlageEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZLV-Bus</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZLV-Bus</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZLV_Bus_Bezeichnung_AttributeGroup_ZLVBusNr(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1..9999] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..9999] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (zlV_Bus_US_ZuordnungEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZLV-Bus</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZLV-Bus</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZLV_Bus_Zuordnung_Allg_AttributeGroup_UnterstationNr(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [01..40] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [01..40] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (znEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZLV-Bus</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZLV-Bus</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (zN_AkustikEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZN|ZLV-Bus</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZN|ZLV-Bus</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZN_Allg_AttributeGroup_Einwahlstelle(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>false</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>false</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (zN_AnzeigefeldEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZN</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZN</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZN_Anzeigefeld_Allg_AttributeGroup_BedienbarkeitAnzeigefeld(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>true</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>true</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZN_Anzeigefeld_Allg_AttributeGroup_SichtbarkeitAnzeigefeld(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>true</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>true</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZN_Anzeigefeld_Allg_AttributeGroup_VerzoegerungManuellLoeschung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>300</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>300</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZN_Anzeigefeld_Allg_AttributeGroup_ZNFeldOhneAnzeige(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>false</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>false</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZN_Anzeigefeld_Allg_AttributeGroup_Zugvorbereitungsmeldung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>false</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>false</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZN_Anzeigefeld_Bezeichnung_AttributeGroup_ZNABedienbezeichnerFrei(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[4..7]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[4..7]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZN_Fortschalt_Krit_Schalt_AttributeGroup_Telegrammwiederholung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>false</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>false</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (zN_Fortschalt_KriteriumEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZN</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZN</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (zN_Telegramm_84_ZuordnungEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZN</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZN</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZN_Telegramm_84_Zuordnung_Telegramm84Verzicht(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                             \n  <ppi:WorkflowInformation>\n                                  \n    <ppi:ProposedValue>false</ppi:ProposedValue>\n                               \n  </ppi:WorkflowInformation>\n                          \n"
+			   "appinfo", "\r\n                             \r\n  <ppi:WorkflowInformation>\r\n                                  \r\n    <ppi:ProposedValue>false</ppi:ProposedValue>\r\n                               \r\n  </ppi:WorkflowInformation>\r\n                          \r\n"
 		   });
 		addAnnotation
 		  (zN_Telegramm_85_ZuordnungEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZN</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZN</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (zN_UnterstationEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZLV-Bus</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZLV-Bus</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZN_Unterstation_Allg_AttributeGroup_BfKennung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [0..4] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [0..4] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZN_Unterstation_Allg_AttributeGroup_ZBSAdresse(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [A0..FF] hexadezimal, ohne AA und BB </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [A0..FF] hexadezimal, ohne AA und BB </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZN_Unterstation_Allg_AttributeGroup_ZeitsynchronisationFunkuhr(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>true</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>true</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getZN_Unterstation_Bf_Nr_AttributeGroup_BfNr(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[01..99]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[01..99]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (zN_ZBSEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ZLV-Bus</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ZLV-Bus</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZN_ZBS_IPAdresse(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                             \n  <ppi:WorkflowInformation>\n                                  \n    <ppi:Patternbeschreibung> [7..15] gebildet aus vier maximal dreistelligen Zahlen, getrennt durch Punkte </ppi:Patternbeschreibung>\n                               \n  </ppi:WorkflowInformation>\n                          \n"
+			   "appinfo", "\r\n                             \r\n  <ppi:WorkflowInformation>\r\n                                  \r\n    <ppi:Patternbeschreibung> [7..15] gebildet aus vier maximal dreistelligen Zahlen, getrennt durch Punkte </ppi:Patternbeschreibung>\r\n                               \r\n  </ppi:WorkflowInformation>\r\n                          \r\n"
 		   });
 	}
 

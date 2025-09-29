@@ -65,9 +65,7 @@ public interface GEO_Punkt extends Basis_Objekt {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Verweis auf eine GEO_Kante, wenn der GEO_Punkt als Stützpunkt einer Polylinie fungiert. Eine Polylinie kann durch bis zu 999
-	 * GEO_Punkte beschrieben werden. Es ist jedoch auch zulässig, eine virtuelle Polylinie ohne GEO_Punkte
-	 * darzustellen.
+	 * Verweis auf eine GEO_Kante, wenn der GEO_Punkt als Stützpunkt einer Polylinie fungiert. GEO_Punkte der begrenzenden GEO_Knoten erhaten keinen Verweis auf die GEO_Kante. Eine Polylinie kann durch bis zu 999 GEO_Punkte beschrieben werden. Es ist jedoch auch zulässig, eine virtuelle Polylinie ohne GEO_Punkte darzustellen.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>IDGEO Kante</em>' containment reference.
 	 * @see #setIDGEOKante(ID_GEO_Kante_TypeClass)

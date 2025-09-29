@@ -156,10 +156,8 @@ public class Fla_Schutz_Signal_AttributeGroupItemProvider
 			case FlankenschutzPackage.FLA_SCHUTZ_SIGNAL_ATTRIBUTE_GROUP__ID_FLA_SIGNAL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

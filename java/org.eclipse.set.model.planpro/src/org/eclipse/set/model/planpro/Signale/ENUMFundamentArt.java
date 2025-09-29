@@ -26,6 +26,26 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ENUMFundamentArt implements Enumerator {
 	/**
+	 * The '<em><b>ENUM Fundament Art Betonmonolith groß</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FUNDAMENT_ART_BETONMONOLITH_GROSS_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FUNDAMENT_ART_BETONMONOLITH_GROSS(0, "ENUMFundament_Art_Betonmonolith_groß", "Betonmonolith gro\u00df"),
+
+	/**
+	 * The '<em><b>ENUM Fundament Art Betonmonolith klein</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FUNDAMENT_ART_BETONMONOLITH_KLEIN_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FUNDAMENT_ART_BETONMONOLITH_KLEIN(1, "ENUMFundament_Art_Betonmonolith_klein", "Betonmonolith klein"),
+
+	/**
 	 * The '<em><b>ENUM Fundament Art groß</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -33,7 +53,7 @@ public enum ENUMFundamentArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_FUNDAMENT_ART_GROSS(0, "ENUMFundament_Art_groß", "gro\u00df"),
+	ENUM_FUNDAMENT_ART_GROSS(2, "ENUMFundament_Art_groß", "gro\u00df"),
 
 	/**
 	 * The '<em><b>ENUM Fundament Art klein</b></em>' literal object.
@@ -43,7 +63,27 @@ public enum ENUMFundamentArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_FUNDAMENT_ART_KLEIN(1, "ENUMFundament_Art_klein", "klein"),
+	ENUM_FUNDAMENT_ART_KLEIN(3, "ENUMFundament_Art_klein", "klein"),
+
+	/**
+	 * The '<em><b>ENUM Fundament Art Rammrohr groß</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FUNDAMENT_ART_RAMMROHR_GROSS_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FUNDAMENT_ART_RAMMROHR_GROSS(4, "ENUMFundament_Art_Rammrohr_groß", "Rammrohr gro\u00df"),
+
+	/**
+	 * The '<em><b>ENUM Fundament Art Rammrohr klein</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FUNDAMENT_ART_RAMMROHR_KLEIN_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FUNDAMENT_ART_RAMMROHR_KLEIN(5, "ENUMFundament_Art_Rammrohr_klein", "Rammrohr klein"),
 
 	/**
 	 * The '<em><b>ENUM Fundament Art sonstige</b></em>' literal object.
@@ -53,7 +93,29 @@ public enum ENUMFundamentArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_FUNDAMENT_ART_SONSTIGE(2, "ENUMFundament_Art_sonstige", "sonstige");
+	ENUM_FUNDAMENT_ART_SONSTIGE(6, "ENUMFundament_Art_sonstige", "sonstige");
+
+	/**
+	 * The '<em><b>ENUM Fundament Art Betonmonolith groß</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FUNDAMENT_ART_BETONMONOLITH_GROSS
+	 * @model name="ENUMFundament_Art_Betonmonolith_groß" literal="Betonmonolith gro\337"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FUNDAMENT_ART_BETONMONOLITH_GROSS_VALUE = 0;
+
+	/**
+	 * The '<em><b>ENUM Fundament Art Betonmonolith klein</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FUNDAMENT_ART_BETONMONOLITH_KLEIN
+	 * @model name="ENUMFundament_Art_Betonmonolith_klein" literal="Betonmonolith klein"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FUNDAMENT_ART_BETONMONOLITH_KLEIN_VALUE = 1;
 
 	/**
 	 * The '<em><b>ENUM Fundament Art groß</b></em>' literal value.
@@ -64,7 +126,7 @@ public enum ENUMFundamentArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_FUNDAMENT_ART_GROSS_VALUE = 0;
+	public static final int ENUM_FUNDAMENT_ART_GROSS_VALUE = 2;
 
 	/**
 	 * The '<em><b>ENUM Fundament Art klein</b></em>' literal value.
@@ -75,7 +137,29 @@ public enum ENUMFundamentArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_FUNDAMENT_ART_KLEIN_VALUE = 1;
+	public static final int ENUM_FUNDAMENT_ART_KLEIN_VALUE = 3;
+
+	/**
+	 * The '<em><b>ENUM Fundament Art Rammrohr groß</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FUNDAMENT_ART_RAMMROHR_GROSS
+	 * @model name="ENUMFundament_Art_Rammrohr_groß" literal="Rammrohr gro\337"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FUNDAMENT_ART_RAMMROHR_GROSS_VALUE = 4;
+
+	/**
+	 * The '<em><b>ENUM Fundament Art Rammrohr klein</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FUNDAMENT_ART_RAMMROHR_KLEIN
+	 * @model name="ENUMFundament_Art_Rammrohr_klein" literal="Rammrohr klein"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FUNDAMENT_ART_RAMMROHR_KLEIN_VALUE = 5;
 
 	/**
 	 * The '<em><b>ENUM Fundament Art sonstige</b></em>' literal value.
@@ -86,7 +170,7 @@ public enum ENUMFundamentArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_FUNDAMENT_ART_SONSTIGE_VALUE = 2;
+	public static final int ENUM_FUNDAMENT_ART_SONSTIGE_VALUE = 6;
 
 	/**
 	 * An array of all the '<em><b>ENUM Fundament Art</b></em>' enumerators.
@@ -96,8 +180,12 @@ public enum ENUMFundamentArt implements Enumerator {
 	 */
 	private static final ENUMFundamentArt[] VALUES_ARRAY =
 		new ENUMFundamentArt[] {
+			ENUM_FUNDAMENT_ART_BETONMONOLITH_GROSS,
+			ENUM_FUNDAMENT_ART_BETONMONOLITH_KLEIN,
 			ENUM_FUNDAMENT_ART_GROSS,
 			ENUM_FUNDAMENT_ART_KLEIN,
+			ENUM_FUNDAMENT_ART_RAMMROHR_GROSS,
+			ENUM_FUNDAMENT_ART_RAMMROHR_KLEIN,
 			ENUM_FUNDAMENT_ART_SONSTIGE,
 		};
 
@@ -155,11 +243,15 @@ public enum ENUMFundamentArt implements Enumerator {
 	 */
 	public static ENUMFundamentArt get(int value) {
 		switch (value) {
+			case ENUM_FUNDAMENT_ART_BETONMONOLITH_GROSS_VALUE: return ENUM_FUNDAMENT_ART_BETONMONOLITH_GROSS;
+			case ENUM_FUNDAMENT_ART_BETONMONOLITH_KLEIN_VALUE: return ENUM_FUNDAMENT_ART_BETONMONOLITH_KLEIN;
 			case ENUM_FUNDAMENT_ART_GROSS_VALUE: return ENUM_FUNDAMENT_ART_GROSS;
 			case ENUM_FUNDAMENT_ART_KLEIN_VALUE: return ENUM_FUNDAMENT_ART_KLEIN;
+			case ENUM_FUNDAMENT_ART_RAMMROHR_GROSS_VALUE: return ENUM_FUNDAMENT_ART_RAMMROHR_GROSS;
+			case ENUM_FUNDAMENT_ART_RAMMROHR_KLEIN_VALUE: return ENUM_FUNDAMENT_ART_RAMMROHR_KLEIN;
 			case ENUM_FUNDAMENT_ART_SONSTIGE_VALUE: return ENUM_FUNDAMENT_ART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -359,9 +359,8 @@ public class ETCS_KanteImpl extends Basis_ObjektImpl implements ETCS_Kante {
 				return basicSetIDStrecke(null, msgs);
 			case Balisentechnik_ETCSPackage.ETCS_KANTE__IDTOP_KANTE:
 				return ((InternalEList<?>)getIDTOPKante()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -384,9 +383,8 @@ public class ETCS_KanteImpl extends Basis_ObjektImpl implements ETCS_Kante {
 				return getIDStrecke();
 			case Balisentechnik_ETCSPackage.ETCS_KANTE__IDTOP_KANTE:
 				return getIDTOPKante();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -418,10 +416,8 @@ public class ETCS_KanteImpl extends Basis_ObjektImpl implements ETCS_Kante {
 				getIDTOPKante().clear();
 				getIDTOPKante().addAll((Collection<? extends ID_TOP_Kante_ohne_Proxy_TypeClass>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -450,10 +446,8 @@ public class ETCS_KanteImpl extends Basis_ObjektImpl implements ETCS_Kante {
 			case Balisentechnik_ETCSPackage.ETCS_KANTE__IDTOP_KANTE:
 				getIDTOPKante().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -476,9 +470,8 @@ public class ETCS_KanteImpl extends Basis_ObjektImpl implements ETCS_Kante {
 				return iDStrecke != null;
 			case Balisentechnik_ETCSPackage.ETCS_KANTE__IDTOP_KANTE:
 				return iDTOPKante != null && !iDTOPKante.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ETCS_KanteImpl

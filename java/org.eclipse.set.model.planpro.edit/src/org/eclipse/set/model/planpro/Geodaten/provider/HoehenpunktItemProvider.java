@@ -141,10 +141,8 @@ public class HoehenpunktItemProvider extends Punkt_ObjektItemProvider {
 			case GeodatenPackage.HOEHENPUNKT__HOEHENPUNKT_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

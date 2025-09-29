@@ -154,10 +154,8 @@ public class Objektreferenzen_AttributeGroupItemProvider
 			case BasisobjektePackage.OBJEKTREFERENZEN_ATTRIBUTE_GROUP__TECHNISCHER_PLATZ:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

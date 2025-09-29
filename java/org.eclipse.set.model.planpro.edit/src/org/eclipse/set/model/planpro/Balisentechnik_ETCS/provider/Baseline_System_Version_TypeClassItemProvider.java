@@ -136,10 +136,8 @@ public class Baseline_System_Version_TypeClassItemProvider extends BasisAttribut
 			case Balisentechnik_ETCSPackage.BASELINE_SYSTEM_VERSION_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

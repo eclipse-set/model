@@ -145,10 +145,8 @@ public class Gleis_SchaltgruppeItemProvider extends Bereich_ObjektItemProvider {
 			case GleisPackage.GLEIS_SCHALTGRUPPE__FAHRSTROM:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

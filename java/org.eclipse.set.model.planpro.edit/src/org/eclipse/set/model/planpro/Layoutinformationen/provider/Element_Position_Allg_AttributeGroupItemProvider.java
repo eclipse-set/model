@@ -88,7 +88,9 @@ public class Element_Position_Allg_AttributeGroupItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
+			childrenFeatures.add(LayoutinformationenPackage.Literals.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_GEO_PUNKT_BEZEICHNUNG);
 			childrenFeatures.add(LayoutinformationenPackage.Literals.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_RICHTUNGSWINKEL);
+			childrenFeatures.add(LayoutinformationenPackage.Literals.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG);
 			childrenFeatures.add(LayoutinformationenPackage.Literals.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_GEO_PUNKT);
 			childrenFeatures.add(LayoutinformationenPackage.Literals.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_POLYGONZUG);
 		}
@@ -153,15 +155,15 @@ public class Element_Position_Allg_AttributeGroupItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Element_Position_Allg_AttributeGroup.class)) {
+			case LayoutinformationenPackage.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_GEO_PUNKT_BEZEICHNUNG:
 			case LayoutinformationenPackage.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_RICHTUNGSWINKEL:
+			case LayoutinformationenPackage.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG:
 			case LayoutinformationenPackage.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_GEO_PUNKT:
 			case LayoutinformationenPackage.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_POLYGONZUG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**
@@ -177,8 +179,18 @@ public class Element_Position_Allg_AttributeGroupItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
+				(LayoutinformationenPackage.Literals.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_GEO_PUNKT_BEZEICHNUNG,
+				 GeodatenFactory.eINSTANCE.createGEO_Punkt()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(LayoutinformationenPackage.Literals.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_RICHTUNGSWINKEL,
 				 LayoutinformationenFactory.eINSTANCE.createDarstellung_Richtungswinkel_TypeClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(LayoutinformationenPackage.Literals.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG,
+				 LayoutinformationenFactory.eINSTANCE.createDarstellung_Richtungswinkel_Bezeichnung_TypeClass()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -189,6 +201,29 @@ public class Element_Position_Allg_AttributeGroupItemProvider
 			(createChildParameter
 				(LayoutinformationenPackage.Literals.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_POLYGONZUG,
 				 LayoutinformationenFactory.eINSTANCE.createDarstellung_Polygonzug_TypeClass()));
+	}
+
+	/**
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
+		Object childFeature = feature;
+		Object childObject = child;
+
+		boolean qualify =
+			childFeature == LayoutinformationenPackage.Literals.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_GEO_PUNKT_BEZEICHNUNG ||
+			childFeature == LayoutinformationenPackage.Literals.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_GEO_PUNKT;
+
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
 	}
 
 	/**

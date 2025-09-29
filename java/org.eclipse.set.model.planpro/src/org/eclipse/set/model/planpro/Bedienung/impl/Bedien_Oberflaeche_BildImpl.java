@@ -240,9 +240,8 @@ public class Bedien_Oberflaeche_BildImpl extends Basis_ObjektImpl implements Bed
 				return basicSetIDBedienOberflaeche(null, msgs);
 			case BedienungPackage.BEDIEN_OBERFLAECHE_BILD__ID_OERTLICHKEIT:
 				return basicSetIDOertlichkeit(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -259,9 +258,8 @@ public class Bedien_Oberflaeche_BildImpl extends Basis_ObjektImpl implements Bed
 				return getIDBedienOberflaeche();
 			case BedienungPackage.BEDIEN_OBERFLAECHE_BILD__ID_OERTLICHKEIT:
 				return getIDOertlichkeit();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -281,10 +279,8 @@ public class Bedien_Oberflaeche_BildImpl extends Basis_ObjektImpl implements Bed
 			case BedienungPackage.BEDIEN_OBERFLAECHE_BILD__ID_OERTLICHKEIT:
 				setIDOertlichkeit((ID_Oertlichkeit_Proxy_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -304,10 +300,8 @@ public class Bedien_Oberflaeche_BildImpl extends Basis_ObjektImpl implements Bed
 			case BedienungPackage.BEDIEN_OBERFLAECHE_BILD__ID_OERTLICHKEIT:
 				setIDOertlichkeit((ID_Oertlichkeit_Proxy_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -324,9 +318,8 @@ public class Bedien_Oberflaeche_BildImpl extends Basis_ObjektImpl implements Bed
 				return iDBedienOberflaeche != null;
 			case BedienungPackage.BEDIEN_OBERFLAECHE_BILD__ID_OERTLICHKEIT:
 				return iDOertlichkeit != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Oberflaeche_BildImpl

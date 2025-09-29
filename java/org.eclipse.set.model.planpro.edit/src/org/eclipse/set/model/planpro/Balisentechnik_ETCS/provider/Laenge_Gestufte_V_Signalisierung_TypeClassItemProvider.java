@@ -139,10 +139,8 @@ public class Laenge_Gestufte_V_Signalisierung_TypeClassItemProvider extends Basi
 			case Balisentechnik_ETCSPackage.LAENGE_GESTUFTE_VSIGNALISIERUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

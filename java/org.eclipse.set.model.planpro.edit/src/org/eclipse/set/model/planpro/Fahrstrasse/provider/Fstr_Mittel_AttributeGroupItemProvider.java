@@ -154,10 +154,8 @@ public class Fstr_Mittel_AttributeGroupItemProvider
 			case FahrstrassePackage.FSTR_MITTEL_ATTRIBUTE_GROUP__FSTR_MITTEL_VAUFWERTUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

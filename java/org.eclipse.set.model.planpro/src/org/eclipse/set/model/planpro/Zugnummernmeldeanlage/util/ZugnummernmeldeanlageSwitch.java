@@ -141,6 +141,13 @@ public class ZugnummernmeldeanlageSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case ZugnummernmeldeanlagePackage.BEZEICHNUNG_STELLWERK_TYPE_CLASS: {
+				Bezeichnung_Stellwerk_TypeClass bezeichnung_Stellwerk_TypeClass = (Bezeichnung_Stellwerk_TypeClass)theEObject;
+				T result = caseBezeichnung_Stellwerk_TypeClass(bezeichnung_Stellwerk_TypeClass);
+				if (result == null) result = caseBasisAttribut_AttributeGroup(bezeichnung_Stellwerk_TypeClass);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case ZugnummernmeldeanlagePackage.BF_KENNUNG_TYPE_CLASS: {
 				Bf_Kennung_TypeClass bf_Kennung_TypeClass = (Bf_Kennung_TypeClass)theEObject;
 				T result = caseBf_Kennung_TypeClass(bf_Kennung_TypeClass);
@@ -775,6 +782,21 @@ public class ZugnummernmeldeanlageSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseBezeichnung_Besondere_Anlage_TypeClass(Bezeichnung_Besondere_Anlage_TypeClass object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Bezeichnung Stellwerk Type Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Bezeichnung Stellwerk Type Class</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBezeichnung_Stellwerk_TypeClass(Bezeichnung_Stellwerk_TypeClass object) {
 		return null;
 	}
 

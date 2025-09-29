@@ -143,9 +143,8 @@ public class FMA_Komponente_Schienenprofil_TypeClassImpl extends BasisAttribut_A
 		switch (featureID) {
 			case OrtungPackage.FMA_KOMPONENTE_SCHIENENPROFIL_TYPE_CLASS__WERT:
 				return getWert();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -159,10 +158,8 @@ public class FMA_Komponente_Schienenprofil_TypeClassImpl extends BasisAttribut_A
 			case OrtungPackage.FMA_KOMPONENTE_SCHIENENPROFIL_TYPE_CLASS__WERT:
 				setWert((ENUMSchienenprofil)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -176,10 +173,8 @@ public class FMA_Komponente_Schienenprofil_TypeClassImpl extends BasisAttribut_A
 			case OrtungPackage.FMA_KOMPONENTE_SCHIENENPROFIL_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -192,9 +187,8 @@ public class FMA_Komponente_Schienenprofil_TypeClassImpl extends BasisAttribut_A
 		switch (featureID) {
 			case OrtungPackage.FMA_KOMPONENTE_SCHIENENPROFIL_TYPE_CLASS__WERT:
 				return isSetWert();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

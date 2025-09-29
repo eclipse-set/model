@@ -147,10 +147,8 @@ public class Bahnsteig_KanteItemProvider extends Bereich_ObjektItemProvider {
 			case BahnsteigPackage.BAHNSTEIG_KANTE__ID_BAHNSTEIG_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

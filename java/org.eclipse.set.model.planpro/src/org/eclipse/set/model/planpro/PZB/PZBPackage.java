@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +128,7 @@ public interface PZBPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/PZB/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/PZB/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -2354,7 +2354,7 @@ public interface PZBPackage extends EPackage {
 	 * @return the meta object for data type '<em>GUE Abstand Abweichend Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TGUE_Abstand_Abweichend' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TGUE_Abstand_Abweichend' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getGUE_Abstand_Abweichend_Type();
@@ -2366,7 +2366,7 @@ public interface PZBPackage extends EPackage {
 	 * @return the meta object for data type '<em>GUE Messstrecke Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TGUE_Messstrecke' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='5\\.[89][0-9]|([6-9]|[1-6][0-9]|7[0-4])\\.[0-9]{2}|75\\.00'"
+	 *        extendedMetaData="name='TGUE_Messstrecke' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='5\\.[89][0-9]|([6-9]|[1-6][0-9]|7[0-4])\\.[0-9]{2}|75\\.00'"
 	 * @generated
 	 */
 	EDataType getGUE_Messstrecke_Type();
@@ -2390,7 +2390,7 @@ public interface PZBPackage extends EPackage {
 	 * @return the meta object for data type '<em>Pruefgeschwindigkeit Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TPruefgeschwindigkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit' pattern='[1-9][0-9]|1[0-4][0-9]|150'"
+	 *        extendedMetaData="name='TPruefgeschwindigkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit' pattern='[1-9][0-9]|1[0-4][0-9]|150'"
 	 * @generated
 	 */
 	EDataType getPruefgeschwindigkeit_Type();
@@ -2402,7 +2402,7 @@ public interface PZBPackage extends EPackage {
 	 * @return the meta object for data type '<em>Pruefzeit Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TPruefzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='(0|[1-9][0-9]{0,1})\\.[0-9]{2}'"
+	 *        extendedMetaData="name='TPruefzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='(0|[1-9][0-9]{0,1})\\.[0-9]{2}'"
 	 * @generated
 	 */
 	EDataType getPruefzeit_Type();
@@ -2414,7 +2414,7 @@ public interface PZBPackage extends EPackage {
 	 * @return the meta object for data type '<em>PZB Abstand GM Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TPZB_Abstand_GM' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='\\-[1-6]|[0-9]|[1-9][0-9]|[12][0-9]{2}|300'"
+	 *        extendedMetaData="name='TPZB_Abstand_GM' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='\\-[1-6]|[0-9]|[1-9][0-9]|[12][0-9]{2}|300'"
 	 * @generated
 	 */
 	EDataType getPZB_Abstand_GM_Type();

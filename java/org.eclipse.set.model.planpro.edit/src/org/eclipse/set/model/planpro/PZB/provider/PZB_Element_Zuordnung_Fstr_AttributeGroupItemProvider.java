@@ -156,10 +156,8 @@ public class PZB_Element_Zuordnung_Fstr_AttributeGroupItemProvider
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG_FSTR_ATTRIBUTE_GROUP__WIRKSAMKEIT_FSTR:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

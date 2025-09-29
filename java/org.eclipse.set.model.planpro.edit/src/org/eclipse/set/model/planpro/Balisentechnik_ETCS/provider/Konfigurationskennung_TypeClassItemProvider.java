@@ -136,10 +136,8 @@ public class Konfigurationskennung_TypeClassItemProvider extends BasisAttribut_A
 			case Balisentechnik_ETCSPackage.KONFIGURATIONSKENNUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

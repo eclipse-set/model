@@ -157,10 +157,8 @@ public class FachtelegrammItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.FACHTELEGRAMM__FTZBS_MERKMALE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

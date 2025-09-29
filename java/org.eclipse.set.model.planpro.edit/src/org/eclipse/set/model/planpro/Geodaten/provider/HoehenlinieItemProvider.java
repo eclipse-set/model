@@ -80,6 +80,7 @@ public class HoehenlinieItemProvider extends Basis_ObjektItemProvider {
 			childrenFeatures.add(GeodatenPackage.Literals.HOEHENLINIE__HOEHENLINIE_ALLG);
 			childrenFeatures.add(GeodatenPackage.Literals.HOEHENLINIE__ID_HOEHENPUNKT_A);
 			childrenFeatures.add(GeodatenPackage.Literals.HOEHENLINIE__ID_HOEHENPUNKT_B);
+			childrenFeatures.add(GeodatenPackage.Literals.HOEHENLINIE__IDTOP_KANTE_PFAD);
 		}
 		return childrenFeatures;
 	}
@@ -145,12 +146,11 @@ public class HoehenlinieItemProvider extends Basis_ObjektItemProvider {
 			case GeodatenPackage.HOEHENLINIE__HOEHENLINIE_ALLG:
 			case GeodatenPackage.HOEHENLINIE__ID_HOEHENPUNKT_A:
 			case GeodatenPackage.HOEHENLINIE__ID_HOEHENPUNKT_B:
+			case GeodatenPackage.HOEHENLINIE__IDTOP_KANTE_PFAD:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**
@@ -178,6 +178,11 @@ public class HoehenlinieItemProvider extends Basis_ObjektItemProvider {
 			(createChildParameter
 				(GeodatenPackage.Literals.HOEHENLINIE__ID_HOEHENPUNKT_B,
 				 VerweiseFactory.eINSTANCE.createID_Hoehenpunkt_TypeClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(GeodatenPackage.Literals.HOEHENLINIE__IDTOP_KANTE_PFAD,
+				 VerweiseFactory.eINSTANCE.createID_TOP_Kante_ohne_Proxy_TypeClass()));
 	}
 
 	/**

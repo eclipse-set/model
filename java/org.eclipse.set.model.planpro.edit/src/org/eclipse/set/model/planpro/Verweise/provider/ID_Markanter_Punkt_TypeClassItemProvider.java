@@ -159,10 +159,8 @@ public class ID_Markanter_Punkt_TypeClassItemProvider extends Zeiger_TypeClassIt
 			case VerweisePackage.ID_MARKANTER_PUNKT_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

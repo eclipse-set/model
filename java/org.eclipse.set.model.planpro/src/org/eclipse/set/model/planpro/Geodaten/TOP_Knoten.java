@@ -66,7 +66,7 @@ public interface TOP_Knoten extends Basis_Objekt {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Bezeichnung für den Knoten. Die Bezeichnung wird aus dem DB-GIS System übernommen um die Referenz sicherzustellen. Bei Neutrassierung kann diese Bezeichnung leer bleiben. 
+	 * Bezeichnung für den Knoten. Die Bezeichnung wird aus AVANI übernommen um die Referenz sicherzustellen. Führende Leerzeichen sind bei der Datenübernahme zu erhalten. Bei Neutrassierung kann diese Bezeichnung leer bleiben. 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Knotenname</em>' containment reference.
 	 * @see #setKnotenname(Knotenname_TypeClass)

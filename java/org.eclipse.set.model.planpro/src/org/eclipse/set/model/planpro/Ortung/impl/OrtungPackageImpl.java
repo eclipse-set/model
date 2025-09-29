@@ -2878,7 +2878,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 
 		initEClass(fmA_KomponenteEClass, FMA_Komponente.class, "FMA_Komponente", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFMA_Komponente_Bezeichnung(), theBasisTypenPackage.getBezeichnung_Element_AttributeGroup(), null, "bezeichnung", null, 0, 1, FMA_Komponente.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getFMA_Komponente_IDBezugspunkt(), theVerweisePackage.getID_Markanter_Punkt_TypeClass(), null, "iDBezugspunkt", null, 0, 1, FMA_Komponente.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFMA_Komponente_IDBezugspunkt(), theVerweisePackage.getID_Bezugspunkt_TypeClass(), null, "iDBezugspunkt", null, 0, 1, FMA_Komponente.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFMA_Komponente_IDFMAgrenze(), theVerweisePackage.getID_FMA_Anlage_TypeClass(), null, "iDFMAgrenze", null, 1, 4, FMA_Komponente.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFMA_Komponente_FMAKomponenteAchszaehlpunkt(), this.getFMA_Komponente_Achszaehlpunkt_AttributeGroup(), null, "fMAKomponenteAchszaehlpunkt", null, 0, 1, FMA_Komponente.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFMA_Komponente_FMAKomponenteArt(), this.getFMA_Komponente_Art_TypeClass(), null, "fMAKomponenteArt", null, 0, 1, FMA_Komponente.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2939,7 +2939,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 
 		initEClass(zugeinwirkungEClass, Zugeinwirkung.class, "Zugeinwirkung", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getZugeinwirkung_Bezeichnung(), theBasisTypenPackage.getBezeichnung_Element_AttributeGroup(), null, "bezeichnung", null, 1, 1, Zugeinwirkung.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getZugeinwirkung_IDBezugspunkt(), theVerweisePackage.getID_Markanter_Punkt_TypeClass(), null, "iDBezugspunkt", null, 1, 1, Zugeinwirkung.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getZugeinwirkung_IDBezugspunkt(), theVerweisePackage.getID_Bezugspunkt_TypeClass(), null, "iDBezugspunkt", null, 1, 1, Zugeinwirkung.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getZugeinwirkung_ZugeinwirkungAllg(), this.getZugeinwirkung_Allg_AttributeGroup(), null, "zugeinwirkungAllg", null, 1, 1, Zugeinwirkung.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(zugeinwirkung_Allg_AttributeGroupEClass, Zugeinwirkung_Allg_AttributeGroup.class, "Zugeinwirkung_Allg_AttributeGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -3000,6 +3000,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 
 		initEEnum(enumSchaltmittelFunktionEEnum, ENUMSchaltmittelFunktion.class, "ENUMSchaltmittelFunktion");
 		addEEnumLiteral(enumSchaltmittelFunktionEEnum, ENUMSchaltmittelFunktion.ENUM_SCHALTMITTEL_FUNKTION_ARM);
+		addEEnumLiteral(enumSchaltmittelFunktionEEnum, ENUMSchaltmittelFunktion.ENUM_SCHALTMITTEL_FUNKTION_ARV);
 		addEEnumLiteral(enumSchaltmittelFunktionEEnum, ENUMSchaltmittelFunktion.ENUM_SCHALTMITTEL_FUNKTION_AUS_BUE);
 		addEEnumLiteral(enumSchaltmittelFunktionEEnum, ENUMSchaltmittelFunktion.ENUM_SCHALTMITTEL_FUNKTION_AWANST);
 		addEEnumLiteral(enumSchaltmittelFunktionEEnum, ENUMSchaltmittelFunktion.ENUM_SCHALTMITTEL_FUNKTION_EIN_BUE);
@@ -3082,7 +3083,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 		addAnnotation
 		  (fmA_AnlageEClass,
@@ -3292,7 +3293,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		  (getFMA_Komponente_Achszaehlpunkt_AttributeGroup_FMAKomponenteStromversorgung(),
 		   source,
 		   new String[] {
-			   "documentation", "Kennzeichnet den Weg der Stromversorgung im Vergleich mit dem Weg der Informations\u00fcbertragung. Die Angabe ist nur bei Achsz\u00e4hlpunkten erforderlich. Wertezuordnung: true - entspricht dem Eintrag \\\"fern\\\" im bisherigen PT 1 (Stromversorgung in separaten Adern), hierbei m\u00fcssen ID Energie und ID Information auf unterschiedliche Au\u00dfenelementansteuerungen verweisen, false - entspricht den Eintr\u00e4gen \\\"eigen\\\" und \\\"fremd\\\" im bisherigen PT 1 (Stromversorgung und Informations\u00fcbertragung \u00fcber die selben Adern), die weitere Unterscheidung zwischen \\\"eigen\\\" und \\\"fremd\\\" geht aus dem Vergleich von ID Energie und ID Information hervor. DB-Regelwerk Achsz\u00e4hltabelle, Spalte 3 "
+			   "documentation", "Angabe, ob f\u00fcr die Stromversorgung im Vergleich mit der Informations\u00fcbertragung separate Adern genutzt werden (true) oder nicht (false). Die Angabe ist nur bei Achsz\u00e4hlpunkten erforderlich. Wertezuordnung: false - entspricht dem Eintrag \\\"eigen\\\" im bisherigen PT 1 (Stromversorgung in gemeinsamen Adern), true - entspricht den Eintr\u00e4gen \\\"fern\\\" und \\\"fremd\\\" im bisherigen PT 1 (Stromversorgung und Informations\u00fcbertragung \u00fcber unterschiedliche Adern), die weitere Unterscheidung zwischen \\\"fern\\\" und \\\"fremd\\\" geht aus dem Vergleich von ID Energie und ID Information hervor. Die Signalbauindustrie benutzt die Begriffe u. U. mit abweichender Bedeutung. DB-Regelwerk Achsz\u00e4hltabelle, Spalte 3 "
 		   });
 		addAnnotation
 		  (getFMA_Komponente_Achszaehlpunkt_AttributeGroup_FMAKomponenteTyp(),
@@ -3770,7 +3771,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		   source,
 		   new String[] {
 			   "name", "TFMA_Anschluss_Bezeichnung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{2,8}"
 		   });
 		addAnnotation
@@ -3925,7 +3926,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		   source,
 		   new String[] {
 			   "name", "TFMA_Element_Seiltyp",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{2,6}"
 		   });
 		addAnnotation
@@ -3975,7 +3976,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		   source,
 		   new String[] {
 			   "name", "TFMA_Kaskade_Bezeichnung",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", "[a-z]|[A-Z]|(I)|(II)|(III)|(IV)|(V)|(VI)|(VII)|(VIII)|(IX)|(X)|(XI)|(XII)|(\\.[1-9])"
 		   });
 		addAnnotation
@@ -4137,7 +4138,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		   source,
 		   new String[] {
 			   "name", "TFMA_Komponente_Typ",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{1,16}"
 		   });
 		addAnnotation
@@ -4159,7 +4160,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		   source,
 		   new String[] {
 			   "name", "TFMA_Laenge_Beeinflusst",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "[1-9][0-9]{0,2}|1[0-4][0-9]{2}|1500"
 		   });
 		addAnnotation
@@ -4181,7 +4182,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		   source,
 		   new String[] {
 			   "name", "TFMA_Laenge_E1",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "[1-9][0-9]{0,2}|1[0-4][0-9]{2}"
 		   });
 		addAnnotation
@@ -4203,7 +4204,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		   source,
 		   new String[] {
 			   "name", "TFMA_Laenge_E2",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "[1-9][0-9]{0,2}|1[0-4][0-9]{2}"
 		   });
 		addAnnotation
@@ -4225,7 +4226,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		   source,
 		   new String[] {
 			   "name", "TFMA_Laenge_E3",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "[1-9][0-9]{0,2}|1[0-4][0-9]{2}"
 		   });
 		addAnnotation
@@ -4247,7 +4248,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		   source,
 		   new String[] {
 			   "name", "TFMA_Laenge_S",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "[1-9][0-9]{0,2}|1[0-4][0-9]{2}"
 		   });
 		addAnnotation
@@ -4269,7 +4270,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		   source,
 		   new String[] {
 			   "name", "TFMA_Laenge",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "[1-9][0-9]{0,2}|1[0-4][0-9]{2}|1500"
 		   });
 		addAnnotation
@@ -4291,7 +4292,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		   source,
 		   new String[] {
 			   "name", "TFMA_Typ",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{1,16}"
 		   });
 		addAnnotation
@@ -4369,7 +4370,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		   source,
 		   new String[] {
 			   "name", "TUebertragung_FMinfo_Typ",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{1,16}"
 		   });
 		addAnnotation
@@ -4454,7 +4455,7 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		   source,
 		   new String[] {
 			   "name", "TZugeinwirkung_Typ",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText",
 			   "pattern", ".{1,16}"
 		   });
 		addAnnotation
@@ -4485,139 +4486,139 @@ public class OrtungPackageImpl extends EPackageImpl implements OrtungPackage {
 		  (fmA_AnlageEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Anlage_Allg_AttributeGroup_FMAHilffreimeldung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>false</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>false</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Anlage_Allg_AttributeGroup_FMATyp(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Anlage_Elektr_Merkmale_AttributeGroup_Bettungswiderstand(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [0.00..5.00], 2 Nachkommastellen </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [0.00..5.00], 2 Nachkommastellen </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Anlage_Elektr_Merkmale_AttributeGroup_FMALaenge(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1..1500] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..1500] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Anlage_Elektr_Merkmale_AttributeGroup_FMALaengeBeeinflusst(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1..1500] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..1500] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Anlage_Elektr_Merkmale_AttributeGroup_FMALaengeE1(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1..1499] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..1499] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Anlage_Elektr_Merkmale_AttributeGroup_FMALaengeE2(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1..1499] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..1499] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Anlage_Elektr_Merkmale_AttributeGroup_FMALaengeE3(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1..1499] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..1499] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Anlage_Elektr_Merkmale_AttributeGroup_FMALaengeS(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1..1499] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..1499] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Anlage_Kaskade_AttributeGroup_FMAKaskadeBezeichnung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[a-z]|[A-Z]|[I-XII]| [.1-.9]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[a-z]|[A-Z]|[I-XII]| [.1-.9]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Anlage_Kaskade_AttributeGroup_FMAKaskadeEinzelauswertung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>false</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>false</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Anlage_Uebertragung_FMinfo_AttributeGroup_UebertragungFMinfoTyp(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (fmA_ElementEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Element_Allg_AttributeGroup_FMAElementSeilanzahl(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1|2|4] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1|2|4] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Element_Allg_AttributeGroup_FMAElementSeiltyp(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [2..6] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [2..6] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Element_Anschluss_AttributeGroup_FMAAnschlussBezeichnung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[2..8]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[2..8]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (fmA_KomponenteEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Komponente_Achszaehlpunkt_AttributeGroup_FMAKomponenteStromversorgung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>true</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>true</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getFMA_Komponente_Achszaehlpunkt_AttributeGroup_FMAKomponenteTyp(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [1..16] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [1..16] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (schaltmittel_ZuordnungEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (zugeinwirkungEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getZugeinwirkung_Allg_AttributeGroup_ZugeinwirkungTyp(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[1..16]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 	}
 

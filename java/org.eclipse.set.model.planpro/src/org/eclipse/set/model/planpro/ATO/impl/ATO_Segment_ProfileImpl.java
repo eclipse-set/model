@@ -392,9 +392,8 @@ public class ATO_Segment_ProfileImpl extends Basis_ObjektImpl implements ATO_Seg
 				return basicSetIDETCSKante(null, msgs);
 			case ATOPackage.ATO_SEGMENT_PROFILE__ID_OERTLICHKEIT:
 				return ((InternalEList<?>)getIDOertlichkeit()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -417,9 +416,8 @@ public class ATO_Segment_ProfileImpl extends Basis_ObjektImpl implements ATO_Seg
 				return getIDETCSKante();
 			case ATOPackage.ATO_SEGMENT_PROFILE__ID_OERTLICHKEIT:
 				return getIDOertlichkeit();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -450,10 +448,8 @@ public class ATO_Segment_ProfileImpl extends Basis_ObjektImpl implements ATO_Seg
 				getIDOertlichkeit().clear();
 				getIDOertlichkeit().addAll((Collection<? extends ID_Oertlichkeit_Proxy_TypeClass>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -482,10 +478,8 @@ public class ATO_Segment_ProfileImpl extends Basis_ObjektImpl implements ATO_Seg
 			case ATOPackage.ATO_SEGMENT_PROFILE__ID_OERTLICHKEIT:
 				getIDOertlichkeit().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -508,9 +502,8 @@ public class ATO_Segment_ProfileImpl extends Basis_ObjektImpl implements ATO_Seg
 				return iDETCSKante != null;
 			case ATOPackage.ATO_SEGMENT_PROFILE__ID_OERTLICHKEIT:
 				return iDOertlichkeit != null && !iDOertlichkeit.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ATO_Segment_ProfileImpl

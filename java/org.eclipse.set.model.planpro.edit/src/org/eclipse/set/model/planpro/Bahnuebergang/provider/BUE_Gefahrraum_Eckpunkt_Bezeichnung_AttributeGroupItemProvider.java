@@ -152,10 +152,8 @@ public class BUE_Gefahrraum_Eckpunkt_Bezeichnung_AttributeGroupItemProvider
 			case BahnuebergangPackage.BUE_GEFAHRRAUM_ECKPUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BUEGFR_ECKPUNKT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

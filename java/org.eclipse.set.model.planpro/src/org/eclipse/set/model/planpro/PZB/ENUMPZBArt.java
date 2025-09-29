@@ -181,8 +181,8 @@ public enum ENUMPZBArt implements Enumerator {
 			case ENUMPZB_ART_1000_HZ_VALUE: return ENUMPZB_ART_1000_HZ;
 			case ENUMPZB_ART_2000_HZ_VALUE: return ENUMPZB_ART_2000_HZ;
 			case ENUMPZB_ART_500_HZ_VALUE: return ENUMPZB_ART_500_HZ;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

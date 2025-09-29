@@ -139,10 +139,8 @@ public class Abstand_Einmesspunkt_TypeClassItemProvider extends BasisAttribut_At
 			case Balisentechnik_ETCSPackage.ABSTAND_EINMESSPUNKT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

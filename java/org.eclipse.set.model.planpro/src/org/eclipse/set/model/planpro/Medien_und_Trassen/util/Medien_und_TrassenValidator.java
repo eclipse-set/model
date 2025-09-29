@@ -623,7 +623,7 @@ public class Medien_und_TrassenValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] BEZEICHNUNG_KABEL_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("[1-9]|1[0-6]")
+				XMLTypeUtil.createPatternMatcher(".{1,16}")
 			},
 			new PatternMatcher [] {
 				XMLTypeUtil.createPatternMatcher(".{1,250}")
@@ -659,7 +659,7 @@ public class Medien_und_TrassenValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] BEZEICHNUNG_KABEL_VERTEILPUNKT_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("[1-9]|1[0-9]|20")
+				XMLTypeUtil.createPatternMatcher(".{1,20}")
 			},
 			new PatternMatcher [] {
 				XMLTypeUtil.createPatternMatcher(".{1,250}")
@@ -749,7 +749,7 @@ public class Medien_und_TrassenValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] KABEL_LAENGE_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("(-?[1-9][0-9]{0,})|0")
+				XMLTypeUtil.createPatternMatcher("[1-9][0-9]{0,4}")
 			}
 		};
 

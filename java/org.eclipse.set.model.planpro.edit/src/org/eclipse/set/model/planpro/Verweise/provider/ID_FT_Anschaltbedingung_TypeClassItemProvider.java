@@ -159,10 +159,8 @@ public class ID_FT_Anschaltbedingung_TypeClassItemProvider extends Zeiger_TypeCl
 			case VerweisePackage.ID_FT_ANSCHALTBEDINGUNG_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

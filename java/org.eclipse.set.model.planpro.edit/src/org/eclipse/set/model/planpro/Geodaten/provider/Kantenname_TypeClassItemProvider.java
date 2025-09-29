@@ -136,10 +136,8 @@ public class Kantenname_TypeClassItemProvider extends BasisAttribut_AttributeGro
 			case GeodatenPackage.KANTENNAME_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

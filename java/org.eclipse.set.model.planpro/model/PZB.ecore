@@ -4,49 +4,70 @@
                 xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
                 xmi:version="2.0"
                 name="PZB"
-                nsURI="http://www.plan-pro.org/modell/PZB/1.10.0.1"
+                nsURI="http://www.plan-pro.org/modell/PZB/1.10.0.3"
                 nsPrefix="nsPZB">
    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+               value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
    </eAnnotations>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMGUEAnordnung">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMGUEAnordnung">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGUE_Anordnung"/>
+         <details key="name"
+                  value="ENUMGUE_Anordnung"/>
       </eAnnotations>
-      <eLiterals name="ENUMGUE_Anordnung_1_EA" literal="1_EA"/>
-      <eLiterals name="ENUMGUE_Anordnung_2_AE" value="1" literal="2_AE"/>
+      <eLiterals name="ENUMGUE_Anordnung_1_EA"
+                 literal="1_EA"/>
+      <eLiterals name="ENUMGUE_Anordnung_2_AE"
+                 value="1"
+                 literal="2_AE"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMGUEAnordnungObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGUE_Anordnung:Object"/>
-         <details key="baseType" value="ENUMGUE_Anordnung"/>
+         <details key="name"
+                  value="ENUMGUE_Anordnung:Object"/>
+         <details key="baseType"
+                  value="ENUMGUE_Anordnung"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMGUEBauart">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMGUEBauart">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGUE_Bauart"/>
+         <details key="name"
+                  value="ENUMGUE_Bauart"/>
       </eAnnotations>
-      <eLiterals name="ENUMGUE_Bauart_GPE_90R" literal="GPE_90R"/>
-      <eLiterals name="ENUMGUE_Bauart_GUE_60" value="1" literal="GUE_60"/>
-      <eLiterals name="ENUMGUE_Bauart_PZ_80" value="2" literal="PZ_80"/>
-      <eLiterals name="ENUMGUE_Bauart_sonstige" value="3" literal="sonstige"/>
+      <eLiterals name="ENUMGUE_Bauart_GPE_90R"
+                 literal="GPE_90R"/>
+      <eLiterals name="ENUMGUE_Bauart_GUE_60"
+                 value="1"
+                 literal="GUE_60"/>
+      <eLiterals name="ENUMGUE_Bauart_PZ_80"
+                 value="2"
+                 literal="PZ_80"/>
+      <eLiterals name="ENUMGUE_Bauart_sonstige"
+                 value="3"
+                 literal="sonstige"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMGUEBauartObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGUE_Bauart:Object"/>
-         <details key="baseType" value="ENUMGUE_Bauart"/>
+         <details key="name"
+                  value="ENUMGUE_Bauart:Object"/>
+         <details key="baseType"
+                  value="ENUMGUE_Bauart"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMGUEEnergieversorgung">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMGUEEnergieversorgung">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGUE_Energieversorgung"/>
+         <details key="name"
+                  value="ENUMGUE_Energieversorgung"/>
       </eAnnotations>
-      <eLiterals name="ENUMGUE_Energieversorgung_Solar" literal="Solar"/>
+      <eLiterals name="ENUMGUE_Energieversorgung_Solar"
+                 literal="Solar"/>
       <eLiterals name="ENUMGUE_Energieversorgung_sonstige"
                  value="1"
                  literal="sonstige"/>
@@ -58,61 +79,94 @@
                  name="ENUMGUEEnergieversorgungObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGUE_Energieversorgung:Object"/>
-         <details key="baseType" value="ENUMGUE_Energieversorgung"/>
+         <details key="name"
+                  value="ENUMGUE_Energieversorgung:Object"/>
+         <details key="baseType"
+                  value="ENUMGUE_Energieversorgung"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMMessfehler">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMMessfehler">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMMessfehler"/>
+         <details key="name"
+                  value="ENUMMessfehler"/>
       </eAnnotations>
-      <eLiterals name="ENUMMessfehler_2_bis_3" literal="2_bis_3"/>
-      <eLiterals name="ENUMMessfehler_3_bis_5" value="1" literal="3_bis_5"/>
-      <eLiterals name="ENUMMessfehler_5_bis_7" value="2" literal="5_bis_7"/>
-      <eLiterals name="ENUMMessfehler_kleiner_4" value="3" literal="kleiner_4"/>
-      <eLiterals name="ENUMMessfehler_kleiner_5" value="4" literal="kleiner_5"/>
+      <eLiterals name="ENUMMessfehler_2_bis_3"
+                 literal="2_bis_3"/>
+      <eLiterals name="ENUMMessfehler_3_bis_5"
+                 value="1"
+                 literal="3_bis_5"/>
+      <eLiterals name="ENUMMessfehler_5_bis_7"
+                 value="2"
+                 literal="5_bis_7"/>
+      <eLiterals name="ENUMMessfehler_kleiner_4"
+                 value="3"
+                 literal="kleiner_4"/>
+      <eLiterals name="ENUMMessfehler_kleiner_5"
+                 value="4"
+                 literal="kleiner_5"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMMessfehlerObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMMessfehler:Object"/>
-         <details key="baseType" value="ENUMMessfehler"/>
+         <details key="name"
+                  value="ENUMMessfehler:Object"/>
+         <details key="baseType"
+                  value="ENUMMessfehler"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMPZBArt">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMPZBArt">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMPZB_Art"/>
+         <details key="name"
+                  value="ENUMPZB_Art"/>
       </eAnnotations>
-      <eLiterals name="ENUMPZB_Art_1000_2000_Hz" literal="1000_2000_Hz"/>
-      <eLiterals name="ENUMPZB_Art_1000_Hz" value="1" literal="1000_Hz"/>
-      <eLiterals name="ENUMPZB_Art_2000_Hz" value="2" literal="2000_Hz"/>
-      <eLiterals name="ENUMPZB_Art_500_Hz" value="3" literal="500_Hz"/>
+      <eLiterals name="ENUMPZB_Art_1000_2000_Hz"
+                 literal="1000_2000_Hz"/>
+      <eLiterals name="ENUMPZB_Art_1000_Hz"
+                 value="1"
+                 literal="1000_Hz"/>
+      <eLiterals name="ENUMPZB_Art_2000_Hz"
+                 value="2"
+                 literal="2000_Hz"/>
+      <eLiterals name="ENUMPZB_Art_500_Hz"
+                 value="3"
+                 literal="500_Hz"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMPZBArtObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMPZB_Art:Object"/>
-         <details key="baseType" value="ENUMPZB_Art"/>
+         <details key="name"
+                  value="ENUMPZB_Art:Object"/>
+         <details key="baseType"
+                  value="ENUMPZB_Art"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMWirksamkeit">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMWirksamkeit">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMWirksamkeit"/>
+         <details key="name"
+                  value="ENUMWirksamkeit"/>
       </eAnnotations>
       <eLiterals name="ENUMWirksamkeit_schaltbar_von_Signal"
                  literal="schaltbar_von_Signal"/>
-      <eLiterals name="ENUMWirksamkeit_sonstige" value="1" literal="sonstige"/>
+      <eLiterals name="ENUMWirksamkeit_sonstige"
+                 value="1"
+                 literal="sonstige"/>
       <eLiterals name="ENUMWirksamkeit_staendig_wirksam"
                  value="2"
                  literal="staendig_wirksam"/>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMWirksamkeitFstr">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMWirksamkeitFstr">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMWirksamkeit_Fstr"/>
+         <details key="name"
+                  value="ENUMWirksamkeit_Fstr"/>
       </eAnnotations>
-      <eLiterals name="ENUMWirksamkeit_Fstr_sonstige" literal="sonstige"/>
+      <eLiterals name="ENUMWirksamkeit_Fstr_sonstige"
+                 literal="sonstige"/>
       <eLiterals name="ENUMWirksamkeit_Fstr_staendig_wirksam_wenn_Fahrstrasse_eingestellt"
                  value="1"
                  literal="staendig_wirksam_wenn_Fahrstrasse_eingestellt"/>
@@ -124,33 +178,40 @@
                  name="ENUMWirksamkeitFstrObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMWirksamkeit_Fstr:Object"/>
-         <details key="baseType" value="ENUMWirksamkeit_Fstr"/>
+         <details key="name"
+                  value="ENUMWirksamkeit_Fstr:Object"/>
+         <details key="baseType"
+                  value="ENUMWirksamkeit_Fstr"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMWirksamkeitObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMWirksamkeit:Object"/>
-         <details key="baseType" value="ENUMWirksamkeit"/>
+         <details key="name"
+                  value="ENUMWirksamkeit:Object"/>
+         <details key="baseType"
+                  value="ENUMWirksamkeit"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="GUE_Abstand_Abweichend_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGUE_Abstand_Abweichend"/>
+         <details key="name"
+                  value="TGUE_Abstand_Abweichend"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="GUE_Abstand_Abweichend_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGUE_Abstand_Abweichend"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGUE_Abstand_Abweichend"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -158,8 +219,10 @@
                            eType="#//GUE_Abstand_Abweichend_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -167,8 +230,10 @@
                  name="GUE_Anordnung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGUE_Anordnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGUE_Anordnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -176,8 +241,10 @@
                            eType="#//ENUMGUEAnordnungObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -185,8 +252,10 @@
                  name="GUE_Bauart_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGUE_Bauart"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGUE_Bauart"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -194,8 +263,10 @@
                            eType="#//ENUMGUEBauartObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -203,8 +274,10 @@
                  name="GUE_Energieversorgung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGUE_Energieversorgung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGUE_Energieversorgung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -212,8 +285,10 @@
                            eType="#//ENUMGUEEnergieversorgungObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -221,9 +296,10 @@
                  name="GUE_Messstrecke_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGUE_Messstrecke"/>
+         <details key="name"
+                  value="TGUE_Messstrecke"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
          <details key="pattern"
                   value="5\.[89][0-9]|([6-9]|[1-6][0-9]|7[0-4])\.[0-9]{2}|75\.00"/>
       </eAnnotations>
@@ -232,8 +308,10 @@
                  name="GUE_Messstrecke_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGUE_Messstrecke"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGUE_Messstrecke"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -241,15 +319,20 @@
                            eType="#//GUE_Messstrecke_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="INA_Gefahrstelle_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="INA_Gefahrstelle_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CINA_Gefahrstelle"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CINA_Gefahrstelle"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDMarkanterPunkt"
@@ -262,8 +345,10 @@
                      value="Verweis auf einen Markanten Punkt zur Angabe einer Gefahrstelle für die INA-Berechnung. Die Unterscheidung in  maßgebende und schützenswertere Gefahrstelle erfolgt über das Attribut Prioritaet_Gefahrstelle. DB-Regelwerk 819.1311V00"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Markanter_Punkt"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Markanter_Punkt"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -277,8 +362,10 @@
                      value="Priorität der Gefahrstelle für die INA-Berechnung. Die maßgebende Gefahrstelle wird durch den Wert 1 gekennzeichnet, schützenswertere Gefahrstellen erhalten entsprechend höhere Werte."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Prioritaet_Gefahrstelle"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Prioritaet_Gefahrstelle"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -286,8 +373,10 @@
                  name="Messfehler_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCMessfehler"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCMessfehler"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -295,8 +384,10 @@
                            eType="#//ENUMMessfehlerObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -304,16 +395,20 @@
                  name="Prioritaet_Gefahrstelle_Type"
                  instanceClassName="java.math.BigInteger">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TPrioritaet_Gefahrstelle"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+         <details key="name"
+                  value="TPrioritaet_Gefahrstelle"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Prioritaet_Gefahrstelle_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCPrioritaet_Gefahrstelle"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCPrioritaet_Gefahrstelle"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -321,8 +416,10 @@
                            eType="#//Prioritaet_Gefahrstelle_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -330,18 +427,22 @@
                  name="Pruefgeschwindigkeit_Type"
                  instanceClassName="java.math.BigInteger">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TPruefgeschwindigkeit"/>
+         <details key="name"
+                  value="TPruefgeschwindigkeit"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"/>
-         <details key="pattern" value="[1-9][0-9]|1[0-4][0-9]|150"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit"/>
+         <details key="pattern"
+                  value="[1-9][0-9]|1[0-4][0-9]|150"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Pruefgeschwindigkeit_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCPruefgeschwindigkeit"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCPruefgeschwindigkeit"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -349,8 +450,10 @@
                            eType="#//Pruefgeschwindigkeit_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -358,18 +461,22 @@
                  name="Pruefzeit_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TPruefzeit"/>
+         <details key="name"
+                  value="TPruefzeit"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde"/>
-         <details key="pattern" value="(0|[1-9][0-9]{0,1})\.[0-9]{2}"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde"/>
+         <details key="pattern"
+                  value="(0|[1-9][0-9]{0,1})\.[0-9]{2}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Pruefzeit_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCPruefzeit"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCPruefzeit"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -377,8 +484,10 @@
                            eType="#//Pruefzeit_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -386,18 +495,22 @@
                  name="PZB_Abstand_GM_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TPZB_Abstand_GM"/>
+         <details key="name"
+                  value="TPZB_Abstand_GM"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
-         <details key="pattern" value="\-[1-6]|[0-9]|[1-9][0-9]|[12][0-9]{2}|300"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
+         <details key="pattern"
+                  value="\-[1-6]|[0-9]|[1-9][0-9]|[12][0-9]{2}|300"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="PZB_Abstand_GM_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCPZB_Abstand_GM"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCPZB_Abstand_GM"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -405,8 +518,10 @@
                            eType="#//PZB_Abstand_GM_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -414,8 +529,10 @@
                  name="PZB_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCPZB_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCPZB_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -423,8 +540,10 @@
                            eType="#//ENUMPZBArtObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -437,11 +556,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CPZB_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CPZB_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDPZBElementZuordnung"
@@ -454,8 +575,10 @@
                      value="Verweis auf das Objekt PZB_Element_Zuordnung zur Angabe des Bezugspunkts bzw. der Bezugspunkte und ggf. bestehender Fahrstraßen-Abhängigkeiten."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_PZB_Element_Zuordnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_PZB_Element_Zuordnung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -465,11 +588,14 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="Art des PZB-Elementes."/>
+            <details key="documentation"
+                     value="Art des PZB-Elementes."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="PZB_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="PZB_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -482,8 +608,10 @@
                      value="Verweis auf das Objekt Stellelement zur Zusammenfassung von Eigenschaften der Objekte BUE Schnittstelle, PZB Element, Schluesselsperre, Signal, W Kr Gsp Element. Das Stellelement enthält Informationen über den energetischen und logischen Anschluss der Objekte. Für das PZB Element ist der Verweis nicht zu füllen, wenn damit eine GÜ oder ein ständig wirksamer Gleismagnet abgebildet wird. DB-Regelwerk Bisher ohne eindeutige Darstellung "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Stellelement"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Stellelement"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -496,8 +624,10 @@
                      value="Verweis auf den physischen Ort der Unterbringung von Aussenelementansteuerung, Bedien Einrichtung Oertlich, Bedien Platz, ESTW Zentraleinheit, PZB Element, Schlosskombination, Schluesselsperre und ZN. Für das PZB Element wird der Verweis nur für eine GÜ gefüllt - mit der Bedeutung: GÜ-Schaltkasten. Für die ZN ist der Verweis optional, da im Planungswerkzeug ZN/ZL keine Befüllung aller der für die Unterbringung notwendigen Attribute möglich ist. DB-Regelwerk Darstellung des Gebäudes, der Bediensäule bzw. des Schaltkastens im sicherungstechnischen Lageplan nach Ril 819.9002 oder Beschreibung im Erläuterungsbericht."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Unterbringung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Unterbringung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -506,8 +636,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="PZB_Element_GM"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="PZB_Element_GM"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -516,15 +648,20 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="PZB_Element_GUE"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="PZB_Element_GUE"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="PZB_Element_GM_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="PZB_Element_GM_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CPZB_Element_GM"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CPZB_Element_GM"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="pZBAbstandGM"
@@ -537,11 +674,13 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[-6..300]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[-6..300]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="PZB_Abstand_GM"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="PZB_Abstand_GM"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -556,18 +695,23 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;false&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;false&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="PZB_INA"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="PZB_INA"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="PZB_Element_GUE_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="PZB_Element_GUE_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CPZB_Element_GUE"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CPZB_Element_GUE"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="gUEAbstandAbweichend"
@@ -579,8 +723,10 @@
                      value="Angabe des von der Regelanordnung abweichenden Abstandes einer GÜ zum Signal. Das Attribut wird nur befüllt, wenn der Abstand der GUE zum Signal gemäß Ril 819.1310 Anhang 01 aus baulichen Gründen nicht realisiert werden kann. Es ist dann der Abstand zwischen GUE und Signal anzugeben. Dann sind die Toleranzen gemäß Ril 819.1310 Abschnitt 9, Absatz (4) einzuhalten. DB-Regelwerk 819.1310A01 in Verbindung mit 819.1310 9 (4) "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GUE_Abstand_Abweichend"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GUE_Abstand_Abweichend"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -595,11 +741,13 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;1_EA&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;1_EA&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GUE_Anordnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GUE_Anordnung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -613,8 +761,10 @@
                      value="Bauart der GÜ, von der weitere Planungsparameter wie Messfehler oder Pruefzeit abhängen. DB-Regelwerk Ril 819.1310A01"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GUE_Bauart"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GUE_Bauart"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -629,11 +779,13 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;Stellwerk&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;Stellwerk&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GUE_Energieversorgung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GUE_Energieversorgung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -648,11 +800,13 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt; [5.80..75.00] &lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [5.80..75.00] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="GUE_Messstrecke"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="GUE_Messstrecke"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -665,8 +819,10 @@
                      value="Mit Ausnahme von GÜ bei Lf-Signalisierung werden bei der Anordnung von GÜ unmittelbar am Signal (meist im Zusammenhang mit geschwindigkeitsmindernden Zusatzanzeigern) der Wirkmagnet der GÜ und der PZB-Magnet des Signals zu einem PZB-Magneten zusammengefasst. DB-Regelwerk Der Sachverhalt ist in der Ril 819.1310 zwar nicht eindeutig beschrieben, geht jedoch aus den Tabelleneinträgen im Anhang 01 hervor."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_PZB_Element_Mitnutzung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_PZB_Element_Mitnutzung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -679,8 +835,10 @@
                      value="Messfehlerbereich der GÜ in Abhängigkeit von der Bauart DB-Regelwerk Ril 819.1310A01"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Messfehler"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Messfehler"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -695,11 +853,13 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt; [10..150] &lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [10..150] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Pruefgeschwindigkeit"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Pruefgeschwindigkeit"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -713,11 +873,13 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[0.00..99.99]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0.00..99.99]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Pruefzeit"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Pruefzeit"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -730,11 +892,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CPZB_Element_Zuordnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CPZB_Element_Zuordnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="pZBElementZuordnungBP"
@@ -744,8 +908,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="PZB_Element_Zuordnung_BP"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="PZB_Element_Zuordnung_BP"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -755,15 +921,20 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="PZB_Element_Zuordnung_Fstr"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="PZB_Element_Zuordnung_Fstr"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="PZB_Element_Zuordnung_BP_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="PZB_Element_Zuordnung_BP_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CPZB_Element_Zuordnung_BP"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CPZB_Element_Zuordnung_BP"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDPZBElementBezugspunkt"
@@ -776,8 +947,10 @@
                      value="Verweis auf das Signal bzw. die Weiche, in dessen Abhängigkeit das PZB Element angeordnet werden muss. Während bei PZB-Element-GM im Regelfall das Signal anzugeben ist, können PZB-Element-GUE auch in Abhängigkeit einer Weiche angeordnet werden (z.B. Spätablenkung). DB-Regelwerk Gleismagnettabelle 1 "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_PZB_Element_Bezugspunkt"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_PZB_Element_Bezugspunkt"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -787,8 +960,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="INA_Gefahrstelle"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="INA_Gefahrstelle"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -797,8 +972,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="PZB_Element_Zuordnung_INA"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="PZB_Element_Zuordnung_INA"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -813,19 +990,23 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:ProposedValue&gt;schaltbar_von_Signal&lt;/ppi:ProposedValue&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;schaltbar_von_Signal&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wirksamkeit"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wirksamkeit"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="PZB_Element_Zuordnung_Fstr_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CPZB_Element_Zuordnung_Fstr"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CPZB_Element_Zuordnung_Fstr"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDFstrZugRangier"
@@ -838,8 +1019,10 @@
                      value="Verlinkung, zu welcher Fahrstraße der PZB-Gleismagnet gehört (wird nur angegeben, wenn Ziel der Fahrstraße nicht identisch mit zugeordneten Signal ist oder Umfahrwege existieren). Dabei ist festgelegt, dass der Fahrweg der Fahrstraße über den PZB-Gleismagneten führt. Gleismagnete ohne Zuordnung zu einem Signal oder einer Fahrstraße sind ständig wirksam. Zur Verdeutlichung dienen die folgenden Beispiele: Media:Skizze PZB.pdf, Media:Tabellen PZB.pdf. In den Beipielen ist das PZB Element ein Gleismagnet 500 Hz; diese Verfahrensweise kann analog auch für alle anderen PZB_Elemente, z.B. GÜ, angewandt werden. DB-Regelwerk Gleismagnettabelle 1 mittels Fußnote "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Fstr_Zug_Rangier"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Fstr_Zug_Rangier"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -853,15 +1036,20 @@
                      value="Angabe, ob der Gleismagnet/ die GÜ bei Einstellung der referenzierten Fahrstraße wirksam ist oder nicht. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Gleismagnettabelle"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wirksamkeit_Fstr"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wirksamkeit_Fstr"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="PZB_Element_Zuordnung_INA_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="PZB_Element_Zuordnung_INA_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CPZB_Element_Zuordnung_INA"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CPZB_Element_Zuordnung_INA"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDAnhangINA"
@@ -875,8 +1063,10 @@
                      value="Verweis auf die zugehörigen Dokumente zur INA-Berechnung. Dazu gehören Erhebungsbogen, Wirkbereichsbogen und ggf. die Berechnungsblätter selbst. Diese werden für jedes Signal gesondert erstellt. DB-Regelwerk 819.1310A02 "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Anhang_INA"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Anhang_INA"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -890,8 +1080,10 @@
                      value="ID der zugehörigen Bahnsteigkante bezogen auf ein Signal mit INA-Berechnung. Der Fall, dass zwei separate Bahnsteige zwischen Vor- und Hauptsignal angeordnet sind, wird nicht angenommen. Aus der bisherigen Praxis sind keine solchen Fälle bekannt. DB-Regelwerk 819.1310A02 2 (1) "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Bahnsteig_Kante"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Bahnsteig_Kante"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -899,8 +1091,10 @@
                  name="PZB_INA_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCPZB_INA"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCPZB_INA"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -908,8 +1102,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -922,11 +1118,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CPZB_Zuordnung_Signal"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CPZB_Zuordnung_Signal"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDPZBElementZuordnung"
@@ -939,8 +1137,10 @@
                      value="Verweis auf das Objekt PZB_Element_Zuordnung, zur Angabe des zugehörigen Signals. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_PZB_Element_Zuordnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_PZB_Element_Zuordnung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -954,8 +1154,10 @@
                      value="ID des zugeordneten Signals (Vorsignal, Vorsignalwiederholer, H-Tafel), welches im Rahmen der INA-Berechnung dem Hauptsignal zugeordet wird und damit mit diesem im festen Zusammenhang steht."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Signal"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Signal"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -963,8 +1165,10 @@
                  name="Wirksamkeit_Fstr_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCWirksamkeit_Fstr"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCWirksamkeit_Fstr"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -972,8 +1176,10 @@
                            eType="#//ENUMWirksamkeitFstrObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -981,8 +1187,10 @@
                  name="Wirksamkeit_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCWirksamkeit"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCWirksamkeit"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -990,8 +1198,10 @@
                            eType="#//ENUMWirksamkeitObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>

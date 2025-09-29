@@ -136,10 +136,8 @@ public class System_Vor_Grenze_Besonders_TypeClassItemProvider extends BasisAttr
 			case Balisentechnik_ETCSPackage.SYSTEM_VOR_GRENZE_BESONDERS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

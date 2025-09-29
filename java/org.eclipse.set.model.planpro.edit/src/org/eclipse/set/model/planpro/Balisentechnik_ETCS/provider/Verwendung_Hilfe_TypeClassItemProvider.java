@@ -136,10 +136,8 @@ public class Verwendung_Hilfe_TypeClassItemProvider extends BasisAttribut_Attrib
 			case Balisentechnik_ETCSPackage.VERWENDUNG_HILFE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

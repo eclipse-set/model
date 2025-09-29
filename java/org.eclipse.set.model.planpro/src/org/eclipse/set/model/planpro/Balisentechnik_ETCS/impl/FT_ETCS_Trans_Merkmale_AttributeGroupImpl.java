@@ -120,9 +120,8 @@ public class FT_ETCS_Trans_Merkmale_AttributeGroupImpl extends EObjectImpl imple
 				return ((InternalEList<?>)getFTETCSTransPaket41()).basicRemove(otherEnd, msgs);
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_MERKMALE_ATTRIBUTE_GROUP__FTETCS_TRANS_PAKET_N:
 				return ((InternalEList<?>)getFTETCSTransPaketN()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -137,9 +136,8 @@ public class FT_ETCS_Trans_Merkmale_AttributeGroupImpl extends EObjectImpl imple
 				return getFTETCSTransPaket41();
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_MERKMALE_ATTRIBUTE_GROUP__FTETCS_TRANS_PAKET_N:
 				return getFTETCSTransPaketN();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -159,10 +157,8 @@ public class FT_ETCS_Trans_Merkmale_AttributeGroupImpl extends EObjectImpl imple
 				getFTETCSTransPaketN().clear();
 				getFTETCSTransPaketN().addAll((Collection<? extends FT_ETCS_Trans_Paket_N_AttributeGroup>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -179,10 +175,8 @@ public class FT_ETCS_Trans_Merkmale_AttributeGroupImpl extends EObjectImpl imple
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_MERKMALE_ATTRIBUTE_GROUP__FTETCS_TRANS_PAKET_N:
 				getFTETCSTransPaketN().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -197,9 +191,8 @@ public class FT_ETCS_Trans_Merkmale_AttributeGroupImpl extends EObjectImpl imple
 				return fTETCSTransPaket41 != null && !fTETCSTransPaket41.isEmpty();
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_MERKMALE_ATTRIBUTE_GROUP__FTETCS_TRANS_PAKET_N:
 				return fTETCSTransPaketN != null && !fTETCSTransPaketN.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //FT_ETCS_Trans_Merkmale_AttributeGroupImpl

@@ -179,9 +179,8 @@ public class Objektreferenzen_AttributeGroupImpl extends EObjectImpl implements 
 				return basicSetDBGDIReferenz(null, msgs);
 			case BasisobjektePackage.OBJEKTREFERENZEN_ATTRIBUTE_GROUP__TECHNISCHER_PLATZ:
 				return basicSetTechnischerPlatz(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class Objektreferenzen_AttributeGroupImpl extends EObjectImpl implements 
 				return getDBGDIReferenz();
 			case BasisobjektePackage.OBJEKTREFERENZEN_ATTRIBUTE_GROUP__TECHNISCHER_PLATZ:
 				return getTechnischerPlatz();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class Objektreferenzen_AttributeGroupImpl extends EObjectImpl implements 
 			case BasisobjektePackage.OBJEKTREFERENZEN_ATTRIBUTE_GROUP__TECHNISCHER_PLATZ:
 				setTechnischerPlatz((Technischer_Platz_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class Objektreferenzen_AttributeGroupImpl extends EObjectImpl implements 
 			case BasisobjektePackage.OBJEKTREFERENZEN_ATTRIBUTE_GROUP__TECHNISCHER_PLATZ:
 				setTechnischerPlatz((Technischer_Platz_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class Objektreferenzen_AttributeGroupImpl extends EObjectImpl implements 
 				return dBGDIReferenz != null;
 			case BasisobjektePackage.OBJEKTREFERENZEN_ATTRIBUTE_GROUP__TECHNISCHER_PLATZ:
 				return technischerPlatz != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Objektreferenzen_AttributeGroupImpl

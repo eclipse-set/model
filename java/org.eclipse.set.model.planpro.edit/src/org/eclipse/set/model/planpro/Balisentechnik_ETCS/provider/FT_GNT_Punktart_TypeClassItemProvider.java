@@ -138,10 +138,8 @@ public class FT_GNT_Punktart_TypeClassItemProvider extends BasisAttribut_Attribu
 			case Balisentechnik_ETCSPackage.FT_GNT_PUNKTART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

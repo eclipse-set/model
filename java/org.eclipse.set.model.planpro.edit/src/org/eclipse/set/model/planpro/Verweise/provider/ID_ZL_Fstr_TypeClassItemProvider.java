@@ -159,10 +159,8 @@ public class ID_ZL_Fstr_TypeClassItemProvider extends Zeiger_TypeClassItemProvid
 			case VerweisePackage.ID_ZL_FSTR_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

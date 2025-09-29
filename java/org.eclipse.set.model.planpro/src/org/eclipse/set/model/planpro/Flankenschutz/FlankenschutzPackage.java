@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +128,7 @@ public interface FlankenschutzPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Flankenschutz/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Flankenschutz/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -1679,7 +1679,7 @@ public interface FlankenschutzPackage extends EPackage {
 	 * @return the meta object for data type '<em>Fla WLage Type</em>'.
 	 * @see org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts
 	 * @model instanceClass="org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts"
-	 *        extendedMetaData="name='TFla_W_Lage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts'"
+	 *        extendedMetaData="name='TFla_W_Lage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts'"
 	 * @generated
 	 */
 	EDataType getFla_W_Lage_Type();

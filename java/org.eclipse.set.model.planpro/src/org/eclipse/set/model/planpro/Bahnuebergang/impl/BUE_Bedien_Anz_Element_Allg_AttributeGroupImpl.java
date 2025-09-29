@@ -239,9 +239,8 @@ public class BUE_Bedien_Anz_Element_Allg_AttributeGroupImpl extends EObjectImpl 
 				return basicSetIDBedienAnzeigeElement(null, msgs);
 			case BahnuebergangPackage.BUE_BEDIEN_ANZ_ELEMENT_ALLG_ATTRIBUTE_GROUP__ID_HANDSCHALT_WIRKFUNKTION:
 				return basicSetIDHandschaltWirkfunktion(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +257,8 @@ public class BUE_Bedien_Anz_Element_Allg_AttributeGroupImpl extends EObjectImpl 
 				return getIDBedienAnzeigeElement();
 			case BahnuebergangPackage.BUE_BEDIEN_ANZ_ELEMENT_ALLG_ATTRIBUTE_GROUP__ID_HANDSCHALT_WIRKFUNKTION:
 				return getIDHandschaltWirkfunktion();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +278,8 @@ public class BUE_Bedien_Anz_Element_Allg_AttributeGroupImpl extends EObjectImpl 
 			case BahnuebergangPackage.BUE_BEDIEN_ANZ_ELEMENT_ALLG_ATTRIBUTE_GROUP__ID_HANDSCHALT_WIRKFUNKTION:
 				setIDHandschaltWirkfunktion((ID_Handschalt_Wirkfunktion_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +299,8 @@ public class BUE_Bedien_Anz_Element_Allg_AttributeGroupImpl extends EObjectImpl 
 			case BahnuebergangPackage.BUE_BEDIEN_ANZ_ELEMENT_ALLG_ATTRIBUTE_GROUP__ID_HANDSCHALT_WIRKFUNKTION:
 				setIDHandschaltWirkfunktion((ID_Handschalt_Wirkfunktion_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +317,8 @@ public class BUE_Bedien_Anz_Element_Allg_AttributeGroupImpl extends EObjectImpl 
 				return iDBedienAnzeigeElement != null;
 			case BahnuebergangPackage.BUE_BEDIEN_ANZ_ELEMENT_ALLG_ATTRIBUTE_GROUP__ID_HANDSCHALT_WIRKFUNKTION:
 				return iDHandschaltWirkfunktion != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //BUE_Bedien_Anz_Element_Allg_AttributeGroupImpl

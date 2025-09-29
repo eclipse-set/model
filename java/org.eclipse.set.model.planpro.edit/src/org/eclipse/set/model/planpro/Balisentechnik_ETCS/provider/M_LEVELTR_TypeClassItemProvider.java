@@ -138,10 +138,8 @@ public class M_LEVELTR_TypeClassItemProvider extends BasisAttribut_AttributeGrou
 			case Balisentechnik_ETCSPackage.MLEVELTR_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

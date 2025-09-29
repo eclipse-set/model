@@ -139,10 +139,8 @@ public class NID_ATOTS_TypeClassItemProvider extends BasisAttribut_AttributeGrou
 			case ATOPackage.NID_ATOTS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

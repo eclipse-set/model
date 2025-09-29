@@ -179,9 +179,8 @@ public class Bedien_Einricht_Oertlich_Allg_AttributeGroupImpl extends EObjectImp
 				return basicSetBedienEinrichtBauart(null, msgs);
 			case BedienungPackage.BEDIEN_EINRICHT_OERTLICH_ALLG_ATTRIBUTE_GROUP__HUPE_ANSCHALTZEIT:
 				return basicSetHupeAnschaltzeit(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class Bedien_Einricht_Oertlich_Allg_AttributeGroupImpl extends EObjectImp
 				return getBedienEinrichtBauart();
 			case BedienungPackage.BEDIEN_EINRICHT_OERTLICH_ALLG_ATTRIBUTE_GROUP__HUPE_ANSCHALTZEIT:
 				return getHupeAnschaltzeit();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class Bedien_Einricht_Oertlich_Allg_AttributeGroupImpl extends EObjectImp
 			case BedienungPackage.BEDIEN_EINRICHT_OERTLICH_ALLG_ATTRIBUTE_GROUP__HUPE_ANSCHALTZEIT:
 				setHupeAnschaltzeit((Hupe_Anschaltzeit_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class Bedien_Einricht_Oertlich_Allg_AttributeGroupImpl extends EObjectImp
 			case BedienungPackage.BEDIEN_EINRICHT_OERTLICH_ALLG_ATTRIBUTE_GROUP__HUPE_ANSCHALTZEIT:
 				setHupeAnschaltzeit((Hupe_Anschaltzeit_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class Bedien_Einricht_Oertlich_Allg_AttributeGroupImpl extends EObjectImp
 				return bedienEinrichtBauart != null;
 			case BedienungPackage.BEDIEN_EINRICHT_OERTLICH_ALLG_ATTRIBUTE_GROUP__HUPE_ANSCHALTZEIT:
 				return hupeAnschaltzeit != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Einricht_Oertlich_Allg_AttributeGroupImpl

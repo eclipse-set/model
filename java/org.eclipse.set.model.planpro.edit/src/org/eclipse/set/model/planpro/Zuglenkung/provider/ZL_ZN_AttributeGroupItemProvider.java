@@ -154,10 +154,8 @@ public class ZL_ZN_AttributeGroupItemProvider
 			case ZuglenkungPackage.ZL_ZN_ATTRIBUTE_GROUP__ZN_STELLEN:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

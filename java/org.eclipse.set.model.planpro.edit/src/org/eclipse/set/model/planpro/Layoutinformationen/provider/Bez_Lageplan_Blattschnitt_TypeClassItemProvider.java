@@ -139,10 +139,8 @@ public class Bez_Lageplan_Blattschnitt_TypeClassItemProvider extends BasisAttrib
 			case LayoutinformationenPackage.BEZ_LAGEPLAN_BLATTSCHNITT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

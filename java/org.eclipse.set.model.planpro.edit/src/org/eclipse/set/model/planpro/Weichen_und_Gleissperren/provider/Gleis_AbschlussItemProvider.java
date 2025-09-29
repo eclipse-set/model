@@ -141,10 +141,8 @@ public class Gleis_AbschlussItemProvider extends Punkt_ObjektItemProvider {
 			case Weichen_und_GleissperrenPackage.GLEIS_ABSCHLUSS__GLEIS_ABSCHLUSS_ART:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

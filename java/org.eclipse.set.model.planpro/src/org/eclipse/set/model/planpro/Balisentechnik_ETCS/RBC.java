@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.set.model.planpro.Basisobjekte.Basis_Objekt;
 
 import org.eclipse.set.model.planpro.Verweise.ID_ESTW_Zentraleinheit_TypeClass;
+import org.eclipse.set.model.planpro.Verweise.ID_Oertlichkeit_Proxy_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_Unterbringung_TypeClass;
 
 /**
@@ -29,8 +30,10 @@ import org.eclipse.set.model.planpro.Verweise.ID_Unterbringung_TypeClass;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getBezeichnung <em>Bezeichnung</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getETCSAdresse <em>ETCS Adresse</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getIDESTWZentraleinheit <em>IDESTW Zentraleinheit</em>}</li>
+ *   <li>{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getIDOertlichkeitNamensgebend <em>ID Oertlichkeit Namensgebend</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getIDUnterbringung <em>ID Unterbringung</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getRBCAllg <em>RBC Allg</em>}</li>
  * </ul>
@@ -40,6 +43,29 @@ import org.eclipse.set.model.planpro.Verweise.ID_Unterbringung_TypeClass;
  * @generated
  */
 public interface RBC extends Basis_Objekt {
+	/**
+	 * Returns the value of the '<em><b>Bezeichnung</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Bezeichnung</em>' containment reference.
+	 * @see #setBezeichnung(RBC_Bezeichnung_AttributeGroup)
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage#getRBC_Bezeichnung()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='Bezeichnung'"
+	 * @generated
+	 */
+	RBC_Bezeichnung_AttributeGroup getBezeichnung();
+
+	/**
+	 * Sets the value of the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getBezeichnung <em>Bezeichnung</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Bezeichnung</em>' containment reference.
+	 * @see #getBezeichnung()
+	 * @generated
+	 */
+	void setBezeichnung(RBC_Bezeichnung_AttributeGroup value);
+
 	/**
 	 * Returns the value of the '<em><b>ETCS Adresse</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
@@ -78,6 +104,32 @@ public interface RBC extends Basis_Objekt {
 	 * @generated
 	 */
 	EList<ID_ESTW_Zentraleinheit_TypeClass> getIDESTWZentraleinheit();
+
+	/**
+	 * Returns the value of the '<em><b>ID Oertlichkeit Namensgebend</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Örtlichkeit, die für das RBC namensgebend ist.
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>ID Oertlichkeit Namensgebend</em>' containment reference.
+	 * @see #setIDOertlichkeitNamensgebend(ID_Oertlichkeit_Proxy_TypeClass)
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage#getRBC_IDOertlichkeitNamensgebend()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='ID_Oertlichkeit_Namensgebend'"
+	 * @generated
+	 */
+	ID_Oertlichkeit_Proxy_TypeClass getIDOertlichkeitNamensgebend();
+
+	/**
+	 * Sets the value of the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getIDOertlichkeitNamensgebend <em>ID Oertlichkeit Namensgebend</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>ID Oertlichkeit Namensgebend</em>' containment reference.
+	 * @see #getIDOertlichkeitNamensgebend()
+	 * @generated
+	 */
+	void setIDOertlichkeitNamensgebend(ID_Oertlichkeit_Proxy_TypeClass value);
 
 	/**
 	 * Returns the value of the '<em><b>ID Unterbringung</b></em>' containment reference.

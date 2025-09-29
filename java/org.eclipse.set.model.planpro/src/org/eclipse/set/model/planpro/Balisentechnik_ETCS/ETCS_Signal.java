@@ -81,7 +81,7 @@ public interface ETCS_Signal extends Basis_Objekt {
 	 * @return the value of the '<em>ETCS Signal Allg</em>' containment reference.
 	 * @see #setETCSSignalAllg(ETCS_Signal_Allg_AttributeGroup)
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage#getETCS_Signal_ETCSSignalAllg()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='ETCS_Signal_Allg'"
 	 * @generated
 	 */
@@ -227,7 +227,7 @@ public interface ETCS_Signal extends Basis_Objekt {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Verweis auf das RBC, dem das Signal zugeordnet ist. Die Angabe ist bei vereinfachter ETCS-Ausrüstung nicht erforderlich. Signale die keinem RBC zugeordnet sind (aber ein Ne 14 haben), bekommen in der MUKA Signale die Fußnote \"Signal nicht in RBC-Anschaltung\".
+	 * Verweis auf das RBC, dem das Signal zugeordnet ist. Die Angabe ist bei vereinfachter ETCS-Ausrüstung nicht erforderlich. Signale, die keinem RBC zugeordnet sind (aber ein Ne 14 haben), erhalten in der MUKA Signale die Kennzeichnung, dass keine Übertragung an die ETCS-Zentrale erfolgt.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>IDRBC</em>' containment reference list.
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage#getETCS_Signal_IDRBC()

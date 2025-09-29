@@ -357,9 +357,8 @@ public class Schloss_W_AttributeGroupImpl extends EObjectImpl implements Schloss
 				return basicSetWAnbaulage(null, msgs);
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_WATTRIBUTE_GROUP__WLAGE:
 				return basicSetWLage(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -380,9 +379,8 @@ public class Schloss_W_AttributeGroupImpl extends EObjectImpl implements Schloss
 				return getWAnbaulage();
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_WATTRIBUTE_GROUP__WLAGE:
 				return getWLage();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -408,10 +406,8 @@ public class Schloss_W_AttributeGroupImpl extends EObjectImpl implements Schloss
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_WATTRIBUTE_GROUP__WLAGE:
 				setWLage((W_Lage_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -437,10 +433,8 @@ public class Schloss_W_AttributeGroupImpl extends EObjectImpl implements Schloss
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_WATTRIBUTE_GROUP__WLAGE:
 				setWLage((W_Lage_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -461,9 +455,8 @@ public class Schloss_W_AttributeGroupImpl extends EObjectImpl implements Schloss
 				return wAnbaulage != null;
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_WATTRIBUTE_GROUP__WLAGE:
 				return wLage != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Schloss_W_AttributeGroupImpl

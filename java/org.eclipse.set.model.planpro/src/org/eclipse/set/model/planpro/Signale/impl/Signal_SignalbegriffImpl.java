@@ -241,9 +241,8 @@ public class Signal_SignalbegriffImpl extends Basis_ObjektImpl implements Signal
 				return basicSetSignalSignalbegriffAllg(null, msgs);
 			case SignalePackage.SIGNAL_SIGNALBEGRIFF__SIGNALBEGRIFF_ID:
 				return basicSetSignalbegriffID(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -260,9 +259,8 @@ public class Signal_SignalbegriffImpl extends Basis_ObjektImpl implements Signal
 				return getSignalSignalbegriffAllg();
 			case SignalePackage.SIGNAL_SIGNALBEGRIFF__SIGNALBEGRIFF_ID:
 				return getSignalbegriffID();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -282,10 +280,8 @@ public class Signal_SignalbegriffImpl extends Basis_ObjektImpl implements Signal
 			case SignalePackage.SIGNAL_SIGNALBEGRIFF__SIGNALBEGRIFF_ID:
 				setSignalbegriffID((Signalbegriff_ID_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -305,10 +301,8 @@ public class Signal_SignalbegriffImpl extends Basis_ObjektImpl implements Signal
 			case SignalePackage.SIGNAL_SIGNALBEGRIFF__SIGNALBEGRIFF_ID:
 				setSignalbegriffID((Signalbegriff_ID_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -325,9 +319,8 @@ public class Signal_SignalbegriffImpl extends Basis_ObjektImpl implements Signal
 				return signalSignalbegriffAllg != null;
 			case SignalePackage.SIGNAL_SIGNALBEGRIFF__SIGNALBEGRIFF_ID:
 				return signalbegriffID != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Signal_SignalbegriffImpl

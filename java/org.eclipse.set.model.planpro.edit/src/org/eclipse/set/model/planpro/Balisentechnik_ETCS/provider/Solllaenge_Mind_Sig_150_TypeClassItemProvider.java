@@ -139,10 +139,8 @@ public class Solllaenge_Mind_Sig_150_TypeClassItemProvider extends BasisAttribut
 			case Balisentechnik_ETCSPackage.SOLLLAENGE_MIND_SIG_150_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

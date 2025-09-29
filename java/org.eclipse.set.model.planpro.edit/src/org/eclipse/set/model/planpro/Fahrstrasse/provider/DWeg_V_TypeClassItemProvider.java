@@ -139,10 +139,8 @@ public class DWeg_V_TypeClassItemProvider extends BasisAttribut_AttributeGroupIt
 			case FahrstrassePackage.DWEG_VTYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

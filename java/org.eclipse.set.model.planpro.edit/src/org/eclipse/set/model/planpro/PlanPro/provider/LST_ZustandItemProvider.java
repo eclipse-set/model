@@ -143,10 +143,8 @@ public class LST_ZustandItemProvider extends Ur_ObjektItemProvider {
 			case PlanProPackage.LST_ZUSTAND__CONTAINER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

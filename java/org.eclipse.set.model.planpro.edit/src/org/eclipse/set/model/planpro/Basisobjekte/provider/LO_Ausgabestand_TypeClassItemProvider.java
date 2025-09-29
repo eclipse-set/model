@@ -136,10 +136,8 @@ public class LO_Ausgabestand_TypeClassItemProvider extends BasisAttribut_Attribu
 			case BasisobjektePackage.LO_AUSGABESTAND_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

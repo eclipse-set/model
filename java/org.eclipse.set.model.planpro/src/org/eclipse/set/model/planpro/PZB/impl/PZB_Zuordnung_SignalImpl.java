@@ -181,9 +181,8 @@ public class PZB_Zuordnung_SignalImpl extends Basis_ObjektImpl implements PZB_Zu
 				return basicSetIDPZBElementZuordnung(null, msgs);
 			case PZBPackage.PZB_ZUORDNUNG_SIGNAL__ID_SIGNAL:
 				return basicSetIDSignal(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -198,9 +197,8 @@ public class PZB_Zuordnung_SignalImpl extends Basis_ObjektImpl implements PZB_Zu
 				return getIDPZBElementZuordnung();
 			case PZBPackage.PZB_ZUORDNUNG_SIGNAL__ID_SIGNAL:
 				return getIDSignal();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -217,10 +215,8 @@ public class PZB_Zuordnung_SignalImpl extends Basis_ObjektImpl implements PZB_Zu
 			case PZBPackage.PZB_ZUORDNUNG_SIGNAL__ID_SIGNAL:
 				setIDSignal((ID_Signal_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -237,10 +233,8 @@ public class PZB_Zuordnung_SignalImpl extends Basis_ObjektImpl implements PZB_Zu
 			case PZBPackage.PZB_ZUORDNUNG_SIGNAL__ID_SIGNAL:
 				setIDSignal((ID_Signal_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -255,9 +249,8 @@ public class PZB_Zuordnung_SignalImpl extends Basis_ObjektImpl implements PZB_Zu
 				return iDPZBElementZuordnung != null;
 			case PZBPackage.PZB_ZUORDNUNG_SIGNAL__ID_SIGNAL:
 				return iDSignal != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //PZB_Zuordnung_SignalImpl

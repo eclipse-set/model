@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsSignalbegriffe_Struktur="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1"
-           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-           ecore:nsPrefix="nsSignalbegriffe_Struktur"
-           ecore:package="org.eclipse.set.model.planpro.Signalbegriffe_Struktur"
            targetNamespace="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1">
-   <xs:annotation>
-      <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+	  <xs:annotation>
+		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
 
 Weitere Informationen zur Lizenz finden Sie auf
 http://www.dbnetze.com/planpro
@@ -25,11 +22,9 @@ http://www.dbnetze.com/planpro
 
 Contents of the file:
 XML Schema for PlanPro interface.</xs:documentation>
-   </xs:annotation>
-   <xs:complexType ecore:name="Signalbegriff_ID_TypeClass"
-                   name="TCSignalbegriff_ID"
-                   abstract="true">
-      <xs:annotation>
+	  </xs:annotation>
+	  <xs:complexType name="TCSignalbegriff_ID" abstract="true">
+		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Signalbegriff gemäß Ril 301 (Signalbuch).
 
 Für jeden Signalbegriff wird eine eigene Instanz des Objektes angelegt. Die Attribute \"Kurzbezeichnung_DS\", \"Kurzbezeichnung_DV\", \"Langbezeichnung\", \"Beschreibung\", \"Geltungsbereich_DS\", \"Geltungsbereich_DV\",\"Geltungsbereich_SBahn_Berlin\", \"Geltungsbereich_SBahn_Hamburg\" sowie \"Gueltig_Ab\", \"Gueltig_Bis\", \"Beleuchtbar\", \"Schaltbar\", \"Zusatz_Moeglich\" und \"Anmerkungen\" sind dabei modellseitig fixierte Eigenschaften. Mittels des Attributs \"Symbol\" können planungsseitig in einigen Fällen Wertangaben erfolgen.
@@ -65,9 +60,9 @@ DB-Regelwerk
             </ppi:WorkflowInformation>
          </xs:appinfo>
       </xs:annotation>
-      <xs:sequence>
-         <xs:element name="Symbol" type="xs:string" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
+		    <xs:sequence>
+			      <xs:element name="Symbol" type="xs:string" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
                <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bedeutung 1: Anzuzeigendes Symbol des Signalbegriffs. 
 
 Das Signalbuch (Ril 301) schränkt nicht in allen Fällen den Wertevorrat ausreichend ein, sodass direkt ENUM-Werte abgeleitet werden können. Eine Angabe als Text ist jedoch ebenfalls nicht zielführend. Die ENUM-Werte wurden daher unter Berücksichtigung der Vorgaben der Ril 301 nach ingenieurmäßigem Ermessen festgelegt, sodass alle denkbaren Konstellationen abbildbar sind.
@@ -76,16 +71,16 @@ Bedeutung 2: Zusatzangabe bzw. Aufschrift eines Zusatzschildes.
 
 Im Fall des Signalbegriffs </xs:documentation>
             </xs:annotation>
-         </xs:element>
-      </xs:sequence>
-      <xs:attribute name="Anmerkungen" use="optional" type="xs:string">
-         <xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+		    <xs:attribute name="Anmerkungen" use="optional" type="xs:string">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschreibung von Besonderheiten des Signalbegriffs gemäß Ril 301 (Signalbuch). Das Attribut ist nicht durch den Planer veränderbar.
 </xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="Beleuchtbar" use="optional" type="xs:boolean">
-         <xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="Beleuchtbar" use="optional" type="xs:boolean">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob der Signalbegriff gemäß Ril 301 (Signalbuch) prinzipiell beleuchtbar ist. 
 
 Ein positiver Eintrag erfolgt auch dann, wenn ein Signalbegriff nur in einer Ausführungsform (Lichtsignal, Formsignal etc.) die entsprechende Eigenschaft besitzt. Ob der Signalbegriff tatsächlich beleuchtet werden soll, ist im Objekt Signal Signalbegriff im Attribut Beleuchtet hinterlegt. 
@@ -104,59 +99,59 @@ Sh 1: Beleuchtete Formsignale Sh 1 werden aufgrund der geringen Auftrittswahrsch
 
 Sh 2 (Sh_2): Beleuchtbar == </xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="Beschreibung" use="optional" type="xs:string">
-         <xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="Beschreibung" use="optional" type="xs:string">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Erscheinungsbild des Signalbegriffs gemäß Ril 301 (Signalbuch). Das Attribut ist nicht durch den Planer veränderbar.</xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="Geltungsbereich_DS" use="optional" type="xs:boolean">
-         <xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="Geltungsbereich_DS" use="optional" type="xs:boolean">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob der Signalbegriff gemäß Ril 301 (Signalbuch) im Geltungsbereich DS gültig ist (true) oder nicht (false). Das Attribut ist nicht durch den Planer veränderbar.</xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="Geltungsbereich_DV" use="optional" type="xs:boolean">
-         <xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="Geltungsbereich_DV" use="optional" type="xs:boolean">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob der Signalbegriff gemäß Ril 301 (Signalbuch) im Geltungsbereich DV gültig ist (true) oder nicht (false). Das Attribut ist nicht durch den Planer veränderbar.</xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="Geltungsbereich_SBahn_B" use="optional" type="xs:boolean">
-         <xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="Geltungsbereich_SBahn_B" use="optional" type="xs:boolean">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob der Signalbegriff gemäß Ril 301 (Signalbuch) im Geltungsbereich der S-Bahn Berlin gültig ist (true) oder nicht (false). Das Attribut ist nicht durch den Planer veränderbar.</xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="Geltungsbereich_SBahn_HH" use="optional" type="xs:boolean">
-         <xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="Geltungsbereich_SBahn_HH" use="optional" type="xs:boolean">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob der Signalbegriff gemäß Ril 301 (Signalbuch) im Geltungsbereich der S-Bahn Hamburg gültig ist (true) oder nicht (false). Das Attribut ist nicht durch den Planer veränderbar.</xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="Gueltig_Ab" use="optional" type="xs:date">
-         <xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="Gueltig_Ab" use="optional" type="xs:date">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zeitlicher Beginn der Gültigkeit eines Signalbegriffs gemäß Ril 301 (Signalbuch). Das Attribut ist nicht durch den Planer veränderbar.</xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="Gueltig_Bis" use="optional" type="xs:date">
-         <xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="Gueltig_Bis" use="optional" type="xs:date">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zeitliches Ende der Gültigkeit eines Signalbegriffs gemäß Ril 301 (Signalbuch). Das Attribut ist nicht durch den Planer veränderbar.</xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="Kurzbezeichnung_DS" use="optional" type="xs:string">
-         <xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="Kurzbezeichnung_DS" use="optional" type="xs:string">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kurzbezeichnung des Signalbegriffs gemäß Ril 301 (Signalbuch) im Geltungsbereich DS. Das Attribut ist nicht durch den Planer veränderbar.</xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="Kurzbezeichnung_DV" use="optional" type="xs:string">
-         <xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="Kurzbezeichnung_DV" use="optional" type="xs:string">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Kurzbezeichnung des Signalbegriffs gemäß Ril 301 (Signalbuch) im Geltungsbereich DV. Das Attribut ist nicht durch den Planer veränderbar.</xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="Langbezeichnung" use="optional" type="xs:string">
-         <xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="Langbezeichnung" use="optional" type="xs:string">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Langbezeichnung des Signalbegriffs gemäß Ril 301 (Signalbuch). Das Attribut ist nicht durch den Planer veränderbar.</xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="Schaltbar" use="optional" type="xs:boolean">
-         <xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="Schaltbar" use="optional" type="xs:boolean">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob der Signalbegriff gemäß Ril 301 (Signalbuch) prinzipiell schaltbar ist.
 
 Ein positiver Eintrag erfolgt auch dann, wenn ein Signalbegriff nur in einer Ausführungsform (Lichtsignal, Formsignal etc.) die entsprechende Eigenschaft besitzt. 
@@ -174,11 +169,11 @@ Wertzuordnung:
 Das Attribut ist nicht durch den Planer veränderbar.
 </xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-      <xs:attribute name="Zusatz_Moeglich" use="optional" type="xs:boolean">
-         <xs:annotation>
+		    </xs:attribute>
+		    <xs:attribute name="Zusatz_Moeglich" use="optional" type="xs:boolean">
+			      <xs:annotation>
             <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, ob für den Signalbegriff gemäß Ril 301 (Signalbuch) eine Zusatzinformation bzw. ein Zusatzschild möglich ist (true) oder nicht (false). Das Attribut ist nicht durch den Planer veränderbar.</xs:documentation>
          </xs:annotation>
-      </xs:attribute>
-   </xs:complexType>
+		    </xs:attribute>
+	  </xs:complexType>
 </xs:schema>

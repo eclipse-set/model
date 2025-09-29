@@ -137,10 +137,8 @@ public class Element_Verschluss_TypeClassItemProvider extends BasisAttribut_Attr
 			case FahrstrassePackage.ELEMENT_VERSCHLUSS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

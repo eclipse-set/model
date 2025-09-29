@@ -135,8 +135,8 @@ public enum ENUMAkustikSonst implements Enumerator {
 		switch (value) {
 			case ENUM_AKUSTIK_SONST_5S_VALUE: return ENUM_AKUSTIK_SONST_5S;
 			case ENUM_AKUSTIK_SONST_KEINE_VALUE: return ENUM_AKUSTIK_SONST_KEINE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

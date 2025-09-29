@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:nsZuglenkung="http://www.plan-pro.org/modell/Zuglenkung/1.10.0.3"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
+           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
+           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           targetNamespace="http://www.plan-pro.org/modell/Zuglenkung/1.10.0.3">
+	  <xs:annotation>
+		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+
+Weitere Informationen zur Lizenz finden Sie auf
+http://www.dbinfrago.com/planpro
+
+Inhalt der Datei:
+XML Schema für PlanPro Schnittstelle.
+
+Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+
+--------------------------------------------------------------------------------
+
+This Document is licensed under the open source license RailPL V1.1.
+
+More information about the license can be found on
+http://www.dbinfrago.com/planpro
+
+Contents of the file:
+XML Schema for PlanPro interface.</xs:documentation>
+	  </xs:annotation>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+              schemaLocation="Verweise.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
+              schemaLocation="Basisobjekte.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
+              schemaLocation="BasisTypen.xsd"/>
+	  <xs:simpleType name="ENUMLenkziffernstellen">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="0"/>
+			      <xs:enumeration value="1"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMZN_Stellen">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="5"/>
+			      <xs:enumeration value="6"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TAnnaeherungsgeschwindigkeit">
+		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit">
+			      <xs:pattern value="[4-9][0-9]|1[0-5][0-9]|160"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TAnzahl_Wiederhol_ZL_Anstoesse">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="[1-9]|10"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TDWeg_Prio">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="[0-4]"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TEinstellkontrollzeit">
+		    <xs:restriction base="nsBasisTypen:TSekunde">
+			      <xs:pattern value="[1-9][0-9]{0,1}|1[0-9]{2}|200"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TFstr_Bildezeit">
+		    <xs:restriction base="nsBasisTypen:TSekunde">
+			      <xs:pattern value="0|[1-9][0-9]{0,1}|[1-8][0-9]{2}|900"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TGK">
+		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit">
+			      <xs:pattern value="[4-9][0-9]|1[0-5][0-9]|160"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TLenkabbruchzeit">
+		    <xs:restriction base="nsBasisTypen:TSekunde">
+			      <xs:pattern value="0|[1-9][0-9]{0,2}|1[01][0-9]{2}|1200"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TPersonal_Reaktionszeit">
+		    <xs:restriction base="nsBasisTypen:TSekunde">
+			      <xs:pattern value="1[5-9]|[23][0-9]|4[0-5]"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TSichtzeit_Vorsignal">
+		    <xs:restriction base="nsBasisTypen:TSekunde">
+			      <xs:pattern value="0|1[0-9]|20"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TSignalgruppe_Bezeichner">
+		    <xs:restriction base="nsBasisTypen:TZeichenkette"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TTv_GK">
+		    <xs:restriction base="nsBasisTypen:TSekunde">
+			      <xs:pattern value="0|[1-9][0-9]{0,1}|[1-2][0-9]{2}|300"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TVmax_Annaeherung">
+		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
+	  </xs:simpleType>
+	  <xs:simpleType name="TZL_Fstr_Zuschlag">
+		    <xs:restriction base="nsBasisTypen:TSekunde"/>
+	  </xs:simpleType>
+	  <xs:complexType name="CZL">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anlage zur automatischen Einstellung von Fahrstraßen aufgrund von Zuglaufinformationen. Die Zuglenkung ist eine Anlage, die der Unterstützung des Betriebsablaufes dient. Aufgabe der Zuglenkung ist es, auf der Basis von Zuglaufinformationen und zugbezogenen Vorgaben für die Benutzung von Strecken- und Bahnhofsgleisen ohne unmittelbare Mitwirkung des Bedieners Stellkommandos an das zuständige Stellwerk auszugeben, ihre Ausführung zu überwachen und sich aus Meldungen des Stellwerkes ergebenden Handlungsbedarf an den Bediener weiterzugeben. Zuglaufinformationen erhält die Zuglenkung von der Zuglaufverfolgung (ZLV), die vorgesehene Benutzung der Strecken- und Bahnhofsgleise sowie Wartebedingungen einschließlich besonderer Bedingungen für die Regelung der Reihenfolge der Züge aus einem sogenannten Lenkplan, der in Form einer Gleisbenutzungstabelle (GBT) darstellbar ist. DB-Regelwerk 819.0732 Gleisbenutzungstabelle Weitere Angaben finden sich im Lastenheft, das dem LST-Fachplaner nicht zur Verfügung steht.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ZL</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_ESTW_Zentraleinheit" type="nsVerweise:TCID_ESTW_Zentraleinheit"
+                           minOccurs="0"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ESTW-Zentraleinheit, zu der diese ZL geplant wurde. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZN" type="nsVerweise:TCID_ZN" minOccurs="0" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ZN, die zu dieser ZL gehört. ZL und ZN müssen planerisch eine Einheit bilden, da die ZN-Anzeigefelder immer definierte Einschaltpunkte für die ZL sind. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ZL_Allg" type="nsZuglenkung:CZL_Allg" minOccurs="1" maxOccurs="1"/>
+					          <xs:element name="ZL_ZN" type="nsZuglenkung:CZL_ZN" minOccurs="1" maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZL_Allg">
+		    <xs:sequence>
+			      <xs:element name="Anzahl_Wiederhol_ZL_Anstoesse"
+                     type="nsZuglenkung:TCAnzahl_Wiederhol_ZL_Anstoesse"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anzahl erneuter Stellversuche nach negativer Stw-Quittung im Warteintervall von Standard 3-5 s nach positiver Stellbarkeitsprüfung der ZL. DB-Regelwerk 819.0732 5 (2) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>1</ppi:ProposedValue>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                     <ppi:Patternbeschreibung> [1..10] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Deadlockpruefung" type="nsZuglenkung:TCDeadlockpruefung" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">In der Zuglenkung ist eine Deadlockprüfung (DLP) zu projektieren. Die Angabe, welche Gleisabschnitte in die Prüfung einzubeziehen sind, erfolgt über ein gesondertes Objekt. Die Objekt-Instanzen, die in die DLP einbezogen werden müssen, werden mit den Objekten ZL DLP Fstr und ZL DLP Abschnitt festgelegt. DB-Regelwerk TM 2011-024 I.NVT3 (Fa. Thales) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Einstellkontrollzeit" type="nsZuglenkung:TCEinstellkontrollzeit"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Prüfung auf Fahrtstellung Signal nach Anstoß innerhalb einer Zeit, bei Nicht-Fahrtstellung Lenkabbruch, Angabe in Sekunden, Standard 120 s. Der gewählte Wert muss größer sein als die Summe aus Anstoßverzögerung und Fahrstraßenbildungszeit. DB-Regelwerk 819.0732 5 (5) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>120</ppi:ProposedValue>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                     <ppi:Patternbeschreibung> [1..200] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Lenkabbruchzeit" type="nsZuglenkung:TCLenkabbruchzeit" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zeit bis zum Lenkabbruch, wenn die zyklische Stellbarkeitsprüfung der ZL bis dahin negativ war. Der Standard-Wert beträgt 600 s. Die Angabe in den Tools muss in Minuten erfolgen. DB-Regelwerk 819.0732 5 (5) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>600</ppi:ProposedValue>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                     <ppi:Patternbeschreibung> [0..1200] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Personal_Reaktionszeit" type="nsZuglenkung:TCPersonal_Reaktionszeit"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Personalreaktionszeit, Angabe in Sekunden. Der Standardwert auf Hauptbahnen beträgt 45 Sekunden, der Standardwert auf Nebenbahnen 15 Sekunden. Abweichungen sind möglich, bedürfen jedoch der betrieblichen Bestätigung.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>45</ppi:ProposedValue>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                     <ppi:Patternbeschreibung> [15..45] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CZL_DLP_Abschnitt">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Sammlung der Gleisabschnitte, die in ZL DLP Fstr eingebunden werden und für die eine Prüfung auf Deadlock erfolgen muss. DB-Regelwerk TM 2011-024 I.NVT 3 </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ZL</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Gleis_Abschnitt" type="nsVerweise:TCID_Gleis_Abschnitt" minOccurs="1"
+                           maxOccurs="unbounded">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe, welche Freimeldeabschnitte geprüft werden müssen.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZL_DLP_Fstr" type="nsVerweise:TCID_ZL_DLP_Fstr" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der ZL DLP Fstr, für welche die Gleisabschnitte UND-verknüpft werden müssen. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZL_DLP_Fstr">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung von ZL-DLP-Abschnitten zur ZL-Fahrstraße. DB-Regelwerk TM 2011-024 I.NVT 3 </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ZL</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_ZL_Fstr" type="nsVerweise:TCID_ZL_Fstr" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der ZL_Fstr, für welche die DLP erfolgen soll. Die Angabe, zu welcher Betriebsstelle die ZL_Fstr gehört, ist über die Zuordnung der Fstr_Zug_Rangier zur Örtlichkeit indirekt möglich. Mehrere Instanzen mit der gleichen ZL_Fstr müssen dann für die eigentliche systematische Prüfung in der DLP ODER-verknüpft werden. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZL_Fstr">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Aufnahme verschiedener Anstosspunkte (mittels ZL Fstr Anstoss) abhängig von den zugehörigen Vorsignalen und den Geschwindigkeitsklassen für die ZL. Über den Verweis zur Fstr Zug Rangier ist die Verbindung zur Fstr des ESTW hergestellt. Für eine Fstr des ESTW kann es mehrere ZL_Fstr geben, umgekehrt gilt dies nicht. DB-Regelwerk 819.0732 6 (1)b In der Tabelle der Zuglenkanstöße entspricht eine Zeile einer ZL-Fahrstraße. </xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ZL</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Fstr_Zug_Rangier" type="nsVerweise:TCID_Fstr_Zug_Rangier"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verlinkung, zu welcher Fahrstraße die ZL-Fahrstraße gehört. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZL" type="nsVerweise:TCID_ZL" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die zugehörige ZL, dessen Bestandteil die ZL-Fahrstraße ist. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZL_Fstr" type="nsVerweise:TCID_ZL_Fstr" minOccurs="0" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf eine ZL_Fstr, die als Alternative für die ursprünglich vorgesehene ZL_Fstr verwendet werden kann (in Tabelle ZL „D-Weg_Prio“). </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ZL_Fstr_Allg" type="nsZuglenkung:CZL_Fstr_Allg" minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZL_Fstr_Allg">
+		    <xs:sequence>
+			      <xs:element name="Annaeherungsgeschwindigkeit"
+                     type="nsZuglenkung:TCAnnaeherungsgeschwindigkeit"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Geschwindigkeit, die der Berechnung des Anstoßzeitpunktes einer Fahrstraße zugrunde liegt. Die genaue Verwendung des Begriffes ist momentan in der Abstimmung mit den Experten der ZL, da dort in den verschiedenen Bauformen unterschiedliche Philosophien umgesetzt wurden und die Lastenheft-Vorgabe nicht eindeutig ist. DB-Regelwerk Ermittlung gemäß 819.0732 15</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [40..160] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="DWeg_Prio" type="nsZuglenkung:TCDWeg_Prio" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">D-Weg-Priorität für die vorgesehene ZL-Fahrstraße, wenn diese aus betrieblichen Gründen gefordert wird. Es ist ein Zahlenwert von 0..4 einzutragen.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>[0..4]</ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Fstr_Bildezeit" type="nsZuglenkung:TCFstr_Bildezeit" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für die Ermittlung des rechtzeitigen Fahrstraßenanstoßes notwendige Fahrstraßenbildezeit. DB-Regelwerk Ril 819.0732</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [0..900] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FUEM_Auswertung" type="nsZuglenkung:TCFUEM_Auswertung" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Auswertung der FUEM bei der Einstellung der ZL-Fahrstraße. Die FÜM-Auswertung (blinkend) ist notwendig, wenn bei der vorhergehenden Fstr. ein BÜ enthalten ist, der zum Zeitpunkt des Fstr.-Anstoßes noch nicht geschlossen ist. DB-Regelwerk 819.0732 8 (3) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>false</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Sichtzeit_Vorsignal" type="nsZuglenkung:TCSichtzeit_Vorsignal"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe der Sichtzeit auf das Vorsignal in Sekunden, Standard 15 Sekunden. Der Wert kann projektabhängig verändert werden. Für ZL-Fahrstraßen, die kein Vorsignal haben (LZB-Blockkennzeichen) ist der Wert „0“ anzugeben. DB-Regelwerk 819.0732 5 (2) 819.0732 11 (3) </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>15</ppi:ProposedValue>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                     <ppi:Patternbeschreibung>0,[10..20] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CZL_Fstr_Anstoss">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Mit ZL_Fstr_Anstoss wird für eine Fahrstrasse der Zuglenkung der Anstosspunkt gebildet. Die für diese ZL-Fahrstraße relevante(n) Geschwindigkeitsklasse(n) (GK) wird/werden über die entsprechende Attributgruppe zugeordnet. DB-Regelwerk 819.0732 11 In der Tabelle der Zuglenkanstöße findet sich die Angabe in der Spalte \"EP-MO\".</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ZL</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Vorsignal" type="nsVerweise:TCID_Signal" minOccurs="0" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Standort der Vorsignalisierung des zu lenkenden Hauptsignals. Die Angabe ist notwendig für die Ermittlung des Sichtpunkts bei vorgegebener Sichtzeit. Es wird aus dem Objekt der Standort (km, Stationierung) benötigt. Der Verweis kann entfallen, wenn der Zug erst am zu lenkenden Hauptsignal startet oder das Startsignal ein LZB-Blockkennzeichen ist.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZL_Fstr" type="nsVerweise:TCID_ZL_Fstr" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verlinkung, zu welcher ZL_Fstr dieser Anstoß gehört. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ZL_Fstr_Anstoss_Allg" type="nsZuglenkung:CZL_Fstr_Anstoss_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ZL_Fstr_Anstoss_GK" type="nsZuglenkung:CZL_Fstr_Anstoss_GK" minOccurs="0"
+                           maxOccurs="unbounded"/>
+					          <xs:choice minOccurs="1" maxOccurs="1">
+						            <xs:element name="ID_Einschaltpunkt" type="nsVerweise:TCID_Einschaltpunkt" minOccurs="1"
+                              maxOccurs="1">
+							              <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein Schaltmittel, welches als Anstoß für die ZL-Fahrstraße ausgewertet wird. Der Standort bzw. die Stationierung geht in die Berechnung einer Verzögerungszeit ein. Das Attribut ist optional, da nicht für jede ZL-Fahrstraße ein Schaltmittel ausgewählt werden kann (z. B. an Stellbereichsgrenzen). In dem Fall ist ein ZN_Anzeigefeld als Anstoßkriterium festzulegen. Einer von beiden Verweisen (ID_Einschaltpunkt oder ID ZN Anzeigefeld Anstoss) muss immer gefüllt sein.</xs:documentation>
+                     </xs:annotation>
+						            </xs:element>
+						            <xs:element name="ID_ZN_Anzeigefeld_Anstoss" type="nsVerweise:TCID_ZN_Anzeigefeld_Anstoss"
+                              minOccurs="1"
+                              maxOccurs="1">
+							              <xs:annotation>
+                        <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das ZN Anzeigefeld, aus dem der Anstoß der ZL ausgelöst wird. Das Attribut ist optional, falls für einen ZL-Anstoß kein geeignetes ZN-Anzeigefeld zur Verfügung steht. In dem Fall ist ein Schaltmittel als Anstoßkriterium festzulegen. Einer von beiden Verweisen (ID Einschaltpunkt oder ID_ZN_Anzeigefeld_Anstoss) muss immer gefüllt sein.</xs:documentation>
+                     </xs:annotation>
+						            </xs:element>
+					          </xs:choice>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZL_Fstr_Anstoss_Allg">
+		    <xs:sequence>
+			      <xs:element name="GKZSS" type="nsZuglenkung:TCGKZSS" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Der Anstoß aus einem Zugbeeinflussungssystem (ETCS, LZB) ist möglich. DB-Regelwerk 819.0732 13 </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Vmax_Annaeherung" type="nsZuglenkung:TCVmax_Annaeherung" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zulässige Höchstgeschwindigkeit zwischen Vorsignal und berechnetem Einschaltpunkt.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ZL_Fstr_Zuschlag" type="nsZuglenkung:TCZL_Fstr_Zuschlag" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zeitzuschlag für die Berechnung des Anstoßpunktes der ZL. Es kann sich die Notwendigkeit ergeben, eine Zeitspanne auf die bisher errechneten Zeiten (Sichtzeit Vorsignal, Fahrstraßenbildungszeit ...) aufzuschlagen, damit der ZL-Anstoß früher erfolgt, als nach der allgemeinen Berechnungsregel vorgesehen. In einem Bearbeitungsvermerk ist dafür eine Begründung anzugeben. Falls kein Zeitzuschlag erforderlich wird, ist das Attribut nicht zu befüllen.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CZL_Fstr_Anstoss_GK">
+		    <xs:sequence>
+			      <xs:element name="GK" type="nsZuglenkung:TCGK" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Geschwindigkeitsklasse, für die die in Tv GK angegebene Geschwindigkeit gilt. Für jede Geschwindigkeitsklasse (GK) ist eine Instanz der Attributgruppe ZL_Fstr_Anstoss_GK anzulegen. Bei der Festlegung von Geschwindigkeitsklassen sind herstellerspezifische Unterschiede zu beachten. DB-Regelwerk 819.0732 14 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [40..160] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Tv_GK" type="nsZuglenkung:TCTv_GK" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verzögerungszeit für den ZL-Anstoß. Ist keine tv erforderlich, ist \"0\" anzugeben. DB-Regelwerk 819.0732 8 (3) 819.0732 11 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [0..300] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CZL_Signalgruppe">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gruppe von Signalen (Haupt-, Sperrsignale), die von der Zug- bzw. Rangierlenkung für die Vorzugregelung benötigt wird. DB-Regelwerk 819.0732 A06 Im PT1 erfolgt die Angabe in einer gesonderten Tabelle, für die es im Regelwerk z. Zt. keine Vorgabe gibt.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ZL</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_ZL" type="nsVerweise:TCID_ZL" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die zugehörige ZL, der die Signalgruppe zugeordnet ist. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ZL_Signalgruppe_Allg" type="nsZuglenkung:CZL_Signalgruppe_Allg"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZL_Signalgruppe_Allg">
+		    <xs:sequence>
+			      <xs:element name="Signalgruppe_Bezeichner" type="nsZuglenkung:TCSignalgruppe_Bezeichner"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bezeichner der Signalgruppe für ZL und GBT. Die Bezeichnung ist mit dem Besteller abzustimmen.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:PlanningStage>PT1</ppi:PlanningStage>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CZL_Signalgruppe_Zuordnung">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung von Signalen zur ZL Signalgruppe. DB-Regelwerk 819.0732 A06 Im PT1 erfolgt die Angabe in einer gesonderten Tabelle, für die es im Regelwerk z. Zt. keine Vorgabe gibt.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ZL</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Signal" type="nsVerweise:TCID_Signal" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf ein Signal, das der ZL_Signalgruppe zugeordnet wird.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_ZL_Signalgruppe" type="nsVerweise:TCID_ZL_Signalgruppe" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ZL_Signalgruppe, zu der das zugeordnete Signal gehört.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CZL_ZN">
+		    <xs:sequence>
+			      <xs:element name="Lenkziffernstellen" type="nsZuglenkung:TCLenkziffernstellen"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Stellen der Lenkziffern. Die Angabe ist notwendig, wenn die ZN bereits vorhanden ist und nicht neu geplant wird. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>0</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="ZN_Stellen" type="nsZuglenkung:TCZN_Stellen" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Stellen der ZN. Die Angabe ist notwendig, wenn die ZN bereits vorhanden ist und nicht neu geplant wird. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht zu finden. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>5</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCAnnaeherungsgeschwindigkeit">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:TAnnaeherungsgeschwindigkeit" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCAnzahl_Wiederhol_ZL_Anstoesse">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:TAnzahl_Wiederhol_ZL_Anstoesse" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCDeadlockpruefung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCDWeg_Prio">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:TDWeg_Prio" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCEinstellkontrollzeit">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:TEinstellkontrollzeit" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFstr_Bildezeit">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:TFstr_Bildezeit" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFUEM_Auswertung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCGK">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:TGK" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCGKZSS">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCLenkabbruchzeit">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:TLenkabbruchzeit" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCLenkziffernstellen">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:ENUMLenkziffernstellen" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCPersonal_Reaktionszeit">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:TPersonal_Reaktionszeit" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSichtzeit_Vorsignal">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:TSichtzeit_Vorsignal" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSignalgruppe_Bezeichner">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:TSignalgruppe_Bezeichner" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTv_GK">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:TTv_GK" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCVmax_Annaeherung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:TVmax_Annaeherung" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZL_Fstr_Zuschlag">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:TZL_Fstr_Zuschlag" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCZN_Stellen">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsZuglenkung:ENUMZN_Stellen" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+</xs:schema>

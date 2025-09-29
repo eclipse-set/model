@@ -159,10 +159,8 @@ public class ID_BUE_Einschaltung_TypeClassItemProvider extends Zeiger_TypeClassI
 			case VerweisePackage.ID_BUE_EINSCHALTUNG_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

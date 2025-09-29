@@ -136,10 +136,8 @@ public class LEU_Modul_Typ_TypeClassItemProvider extends BasisAttribut_Attribute
 			case Balisentechnik_ETCSPackage.LEU_MODUL_TYP_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

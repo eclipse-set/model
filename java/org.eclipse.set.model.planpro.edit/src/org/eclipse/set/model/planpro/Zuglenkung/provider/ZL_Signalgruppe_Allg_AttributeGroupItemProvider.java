@@ -152,10 +152,8 @@ public class ZL_Signalgruppe_Allg_AttributeGroupItemProvider
 			case ZuglenkungPackage.ZL_SIGNALGRUPPE_ALLG_ATTRIBUTE_GROUP__SIGNALGRUPPE_BEZEICHNER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

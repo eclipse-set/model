@@ -154,10 +154,8 @@ public class FMA_Anlage_Kaskade_AttributeGroupItemProvider
 			case OrtungPackage.FMA_ANLAGE_KASKADE_ATTRIBUTE_GROUP__FMA_KASKADE_EINZELAUSWERTUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -138,10 +138,8 @@ public class Unterbringung_Befestigung_TypeClassItemProvider extends BasisAttrib
 			case Ansteuerung_ElementPackage.UNTERBRINGUNG_BEFESTIGUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

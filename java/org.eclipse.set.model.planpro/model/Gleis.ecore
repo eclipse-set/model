@@ -4,18 +4,20 @@
                 xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
                 xmi:version="2.0"
                 name="Gleis"
-                nsURI="http://www.plan-pro.org/modell/Gleis/1.10.0.1"
+                nsURI="http://www.plan-pro.org/modell/Gleis/1.10.0.3"
                 nsPrefix="nsGleis">
    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+               value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
    </eAnnotations>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Baubereich_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCBaubereich_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCBaubereich_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -23,8 +25,10 @@
                            eType="#//ENUMBaubereichArtObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -32,17 +36,20 @@
                  name="Bez_Gleis_Bezeichnung_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TBez_Gleis_Bezeichnung"/>
+         <details key="name"
+                  value="TBez_Gleis_Bezeichnung"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Bez_Gleis_Bezeichnung_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCBez_Gleis_Bezeichnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCBez_Gleis_Bezeichnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -50,107 +57,152 @@
                            eType="#//Bez_Gleis_Bezeichnung_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMBaubereichArt">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMBaubereichArt">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMBaubereich_Art"/>
+         <details key="name"
+                  value="ENUMBaubereich_Art"/>
       </eAnnotations>
-      <eLiterals name="ENUMBaubereich_Art_ausgebaut" literal="ausgebaut"/>
-      <eLiterals name="ENUMBaubereich_Art_Baugleis" value="1" literal="Baugleis"/>
-      <eLiterals name="ENUMBaubereich_Art_gesperrt" value="2" literal="gesperrt"/>
-      <eLiterals name="ENUMBaubereich_Art_sonstige" value="3" literal="sonstige"/>
+      <eLiterals name="ENUMBaubereich_Art_ausgebaut"
+                 literal="ausgebaut"/>
+      <eLiterals name="ENUMBaubereich_Art_Baugleis"
+                 value="1"
+                 literal="Baugleis"/>
+      <eLiterals name="ENUMBaubereich_Art_gesperrt"
+                 value="2"
+                 literal="gesperrt"/>
+      <eLiterals name="ENUMBaubereich_Art_sonstige"
+                 value="3"
+                 literal="sonstige"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMBaubereichArtObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMBaubereich_Art:Object"/>
-         <details key="baseType" value="ENUMBaubereich_Art"/>
+         <details key="name"
+                  value="ENUMBaubereich_Art:Object"/>
+         <details key="baseType"
+                  value="ENUMBaubereich_Art"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMGleisart">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMGleisart">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGleisart"/>
+         <details key="name"
+                  value="ENUMGleisart"/>
       </eAnnotations>
-      <eLiterals name="ENUMGleisart_Anschlussgleis" literal="Anschlussgleis"/>
+      <eLiterals name="ENUMGleisart_Anschlussgleis"
+                 literal="Anschlussgleis"/>
       <eLiterals name="ENUMGleisart_Durchgehendes_Hauptgleis"
                  value="1"
                  literal="Durchgehendes_Hauptgleis"/>
-      <eLiterals name="ENUMGleisart_Hauptgleis" value="2" literal="Hauptgleis"/>
-      <eLiterals name="ENUMGleisart_Nebengleis" value="3" literal="Nebengleis"/>
-      <eLiterals name="ENUMGleisart_sonstige" value="4" literal="sonstige"/>
-      <eLiterals name="ENUMGleisart_Streckengleis" value="5" literal="Streckengleis"/>
+      <eLiterals name="ENUMGleisart_Hauptgleis"
+                 value="2"
+                 literal="Hauptgleis"/>
+      <eLiterals name="ENUMGleisart_Nebengleis"
+                 value="3"
+                 literal="Nebengleis"/>
+      <eLiterals name="ENUMGleisart_sonstige"
+                 value="4"
+                 literal="sonstige"/>
+      <eLiterals name="ENUMGleisart_Streckengleis"
+                 value="5"
+                 literal="Streckengleis"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMGleisartObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMGleisart:Object"/>
-         <details key="baseType" value="ENUMGleisart"/>
+         <details key="name"
+                  value="ENUMGleisart:Object"/>
+         <details key="baseType"
+                  value="ENUMGleisart"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMKonstruktion">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMKonstruktion">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMKonstruktion"/>
+         <details key="name"
+                  value="ENUMKonstruktion"/>
       </eAnnotations>
-      <eLiterals name="ENUMKonstruktion_Feste_Fahrbahn" literal="Feste_Fahrbahn"/>
+      <eLiterals name="ENUMKonstruktion_Feste_Fahrbahn"
+                 literal="Feste_Fahrbahn"/>
       <eLiterals name="ENUMKonstruktion_Schutzschiene_links"
                  value="1"
                  literal="Schutzschiene_links"/>
       <eLiterals name="ENUMKonstruktion_Schutzschiene_rechts"
                  value="2"
                  literal="Schutzschiene_rechts"/>
-      <eLiterals name="ENUMKonstruktion_sonstige" value="3" literal="sonstige"/>
+      <eLiterals name="ENUMKonstruktion_sonstige"
+                 value="3"
+                 literal="sonstige"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMKonstruktionObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMKonstruktion:Object"/>
-         <details key="baseType" value="ENUMKonstruktion"/>
+         <details key="name"
+                  value="ENUMKonstruktion:Object"/>
+         <details key="baseType"
+                  value="ENUMKonstruktion"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMLichtraumprofil">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMLichtraumprofil">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMLichtraumprofil"/>
+         <details key="name"
+                  value="ENUMLichtraumprofil"/>
       </eAnnotations>
-      <eLiterals name="ENUMLichtraumprofil_1SMDR" literal="1SMDR"/>
-      <eLiterals name="ENUMLichtraumprofil_GC" value="1" literal="GC"/>
+      <eLiterals name="ENUMLichtraumprofil_1SMDR"
+                 literal="1SMDR"/>
+      <eLiterals name="ENUMLichtraumprofil_GC"
+                 value="1"
+                 literal="GC"/>
       <eLiterals name="ENUMLichtraumprofil_SBahn_80003"
                  value="2"
                  literal="SBahn_80003"/>
       <eLiterals name="ENUMLichtraumprofil_SBahn_Berlin"
                  value="3"
                  literal="SBahn_Berlin"/>
-      <eLiterals name="ENUMLichtraumprofil_sonstige" value="4" literal="sonstige"/>
+      <eLiterals name="ENUMLichtraumprofil_sonstige"
+                 value="4"
+                 literal="sonstige"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMLichtraumprofilObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMLichtraumprofil:Object"/>
-         <details key="baseType" value="ENUMLichtraumprofil"/>
+         <details key="name"
+                  value="ENUMLichtraumprofil:Object"/>
+         <details key="baseType"
+                  value="ENUMLichtraumprofil"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="Fahrstrom_Type"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TFahrstrom"/>
+         <details key="name"
+                  value="TFahrstrom"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFahrstrom"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFahrstrom"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Fahrstrom_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCFahrstrom"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCFahrstrom"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -158,8 +210,10 @@
                            eType="#//Fahrstrom_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -167,17 +221,20 @@
                  name="Geschwindigkeit_Type"
                  instanceClassName="java.math.BigInteger">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TGeschwindigkeit"/>
+         <details key="name"
+                  value="TGeschwindigkeit"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Geschwindigkeit_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGeschwindigkeit"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGeschwindigkeit"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -185,8 +242,10 @@
                            eType="#//Geschwindigkeit_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -199,11 +258,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGleis_Abschnitt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGleis_Abschnitt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bezeichnung"
@@ -216,8 +277,10 @@
                      value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bezeichnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bezeichnung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -230,8 +293,10 @@
                      value="Geschwindigkeit, die für einen Gleisabschnitt festgelegt wird, um die Signalisierung für Zugfahrten zu beeinflussen. Das Attribut wird nur dann verwendet, wenn die zu signalisierende Geschwindigkeit nicht über andere Objekte (z. B. Weichen) abgebildet werden kann. Die Geschwindigkeit ist nicht richtungsabhängig und nicht die VzG-Geschwindigkeit. Siehe auch Bildung der Signalbegriffe. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Geschwindigkeit"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Geschwindigkeit"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -244,11 +309,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGleis_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGleis_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="gleisart"
@@ -261,8 +328,10 @@
                      value="Betriebliche Einordnung des Gleises. Aus einer Liste erfolgt die Auswahl der Gleisart. Falls eine abweichende Gleisart vorhanden ist, ist \&#34;sonstige\&#34; auszuwählen und mit einem Bearbeitungsvermerk zu erläutern."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Gleisart"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Gleisart"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -275,11 +344,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGleis_Baubereich"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGleis_Baubereich"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="baubereichArt"
@@ -292,8 +363,10 @@
                      value="Kennzeichnung der Art des Baubereichs zur Darstellung in der Planung. ausgebaut: Temporär ausgebautes Gleis, das aus Zweckmäßigkeitsgründen (z. B. für Verortung von Objekten) noch in den Planungs- bzw. Bestandsdaten mitgeführt werden muss. Baugleis: Umsetzung der durch die Baubetriebsplanung vorgegebene besondere Eigenschaft eines Gleises oder Teil eines Gleises als Baugleis im PT 1. Die Eigenschaft ~ ist genau und nur dann anzuwenden, wenn daraus folgend oder in Zusammenhang damit stehend Maßnahmen resultieren, die in sicherungstechnischen Planungen dargestellt werden müssen. Die Erklärung zum Baugleis kann in diesem Fall auch nicht ohne Änderung des sicherungstechnischen Zustands zurückgenommen werden. Erklärung und Rücknahme der Erklärung zum Baugleis mit rein betrieblichen Konsequenzen, insbesondere in Zeiträumen kleiner als die zugehörigen sicherungstechnischen Bauzustände, sind hingegen in PlanPro nicht abzubilden. [gemäß Ril 408.0471, Ril 408.1471, Ril 408.1488] gesperrt: Sicherungstechnisch gesperrtes Gleis mit definierter Begrenzung. Ergänzende Beschreibung für PlanPro: Die betreffenden Gleise müssen im Rahmen der AP PT 1 (oder Bestandsdigitalisierung) als gesperrt markiert werden. Eine Aufhebung der Sperrung des Gleises kann nur mit einer neuen Planung (AP PT 1) erfolgen. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Baubereich_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Baubereich_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -306,11 +379,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGleis_Bezeichnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGleis_Bezeichnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bezeichnung"
@@ -323,16 +398,20 @@
                      value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bezeichnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bezeichnung"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Gleis_Bezeichnung_Bezeichnung_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGleis_Bezeichnung_Bezeichnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGleis_Bezeichnung_Bezeichnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bezGleisBezeichnung"
@@ -345,8 +424,10 @@
                      value="Bezeichnung des Gleises entsprechend der betrieblichen Vorgaben (üblicherweise Ziffern bzw. Zahlen)."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bez_Gleis_Bezeichnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bez_Gleis_Bezeichnung"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -359,11 +440,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGleis_Fahrbahn"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGleis_Fahrbahn"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="konstruktion"
@@ -376,8 +459,10 @@
                      value="LST-relevante Fahrbahneigenschaft (z. B. Feste Fahrbahn)."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Konstruktion"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Konstruktion"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -390,11 +475,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGleis_Lichtraum"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGleis_Lichtraum"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="lichtraumprofil"
@@ -407,8 +494,10 @@
                      value="Bezeichnung des von der EBO abweichenden Lichtraumprofils. Bei Auswahl des ENUM-Werts \&#34;sonstige\&#34; ist mittels Bearbeitungsvermerk eine Profilzeichnung als Anhang beizulegen. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Lichtraumprofil"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Lichtraumprofil"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -421,11 +510,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CGleis_Schaltgruppe"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CGleis_Schaltgruppe"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bezeichnung"
@@ -438,8 +529,10 @@
                      value="Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bezeichnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bezeichnung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -454,11 +547,13 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                               &#xA;    &lt;ppi:ProposedValue&gt;15kV_16_7Hz&lt;/ppi:ProposedValue&gt;&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                       &#xA;"/>
+                     value="&#xD;&#xA;                          &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                               &#xD;&#xA;    &lt;ppi:ProposedValue&gt;15kV_16_7Hz&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                            &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                       &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Fahrstrom"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Fahrstrom"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -466,8 +561,10 @@
                  name="Gleisart_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCGleisart"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCGleisart"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -475,8 +572,10 @@
                            eType="#//ENUMGleisartObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -484,8 +583,10 @@
                  name="Konstruktion_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCKonstruktion"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCKonstruktion"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -493,8 +594,10 @@
                            eType="#//ENUMKonstruktionObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -502,8 +605,10 @@
                  name="Lichtraumprofil_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCLichtraumprofil"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCLichtraumprofil"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -511,8 +616,10 @@
                            eType="#//ENUMLichtraumprofilObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>

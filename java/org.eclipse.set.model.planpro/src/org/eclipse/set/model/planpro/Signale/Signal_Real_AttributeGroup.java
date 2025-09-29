@@ -9,6 +9,8 @@
  */
 package org.eclipse.set.model.planpro.Signale;
 
+import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -90,30 +92,20 @@ public interface Signal_Real_AttributeGroup extends EObject {
 	void setFunktionOhneSignal(Funktion_Ohne_Signal_TypeClass value);
 
 	/**
-	 * Returns the value of the '<em><b>Geltungsbereich</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Geltungsbereich</b></em>' containment reference list.
+	 * The list contents are of type {@link org.eclipse.set.model.planpro.Signale.Geltungsbereich_TypeClass}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Geltungsbereich, dem das Signal zugeordnet wird (DS/DV). Die Angabe wird zunächst nur zur Unterscheidung Sh 1/Ra 12 vorgesehen.
+	 * Geltungsbereich, dem das Signal zugeordnet wird (DS/DV). Die Angabe wird u. a. zur Unterscheidung Sh 1/Ra 12 vorgesehen. Eine Mehrfachangabe ist bei Mischbetrieb Fernbahn/S-Bahn erforderlich.
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Geltungsbereich</em>' containment reference.
-	 * @see #setGeltungsbereich(Geltungsbereich_TypeClass)
+	 * @return the value of the '<em>Geltungsbereich</em>' containment reference list.
 	 * @see org.eclipse.set.model.planpro.Signale.SignalePackage#getSignal_Real_AttributeGroup_Geltungsbereich()
-	 * @model containment="true"
+	 * @model containment="true" upper="2"
 	 *        extendedMetaData="kind='element' name='Geltungsbereich'"
 	 * @generated
 	 */
-	Geltungsbereich_TypeClass getGeltungsbereich();
-
-	/**
-	 * Sets the value of the '{@link org.eclipse.set.model.planpro.Signale.Signal_Real_AttributeGroup#getGeltungsbereich <em>Geltungsbereich</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Geltungsbereich</em>' containment reference.
-	 * @see #getGeltungsbereich()
-	 * @generated
-	 */
-	void setGeltungsbereich(Geltungsbereich_TypeClass value);
+	EList<Geltungsbereich_TypeClass> getGeltungsbereich();
 
 	/**
 	 * Returns the value of the '<em><b>Signal Befestigungsart</b></em>' containment reference.
@@ -146,12 +138,12 @@ public interface Signal_Real_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Angabe der betrieblichen Funktion eines Aktiven Signals für Zugfahrten. Aktive Signale sind Signale, an denen mindestens ein Signalbegriff schaltbar ist. Hauptsignale und Mehrabschnittssignale werden dabei detailliert in Einfahr-, Ausfahr-, Zwischen-, Nachrück-, Block-, Deckungs-, Zugdeckungs- oder Gruppensignale bzw. Kombinationen aus diesen betrieblichen Funktionen unterteilt. Von den anderen aktiven Signalen wird nur noch das Zugzielsignal (z.B. hohes Sperrsignal als Zielsignal bei Zugfahrten) mit einem eigenen Attribut hervorgehoben, alle weiteren Aktiven Signale werden unter \"andere\" zusammengefasst. DB-Regelwerk 301, 819.20, Planungsdaten: im bisherigen PT 1 nur bei Signalen im Geltungsbereich der Ril 819.20, Tabelle für Signalabstände und Schutzstrecken, sonst ohne eindeutige Darstellung. 
+	 * Angabe der betrieblichen Funktion eines realen Signals für Zugfahrten. Hauptsignale und Mehrabschnittssignale bzw. entsprechende Tafeln werden dabei detailliert in Einfahr-, Ausfahr-, Zwischen-, Nachrück-, Block-, Deckungs-, Zugdeckungs- oder Gruppensignale bzw. Kombinationen aus diesen betrieblichen Funktionen unterteilt. Von den anderen aktiven Signalen wird nur noch das Zugzielsignal (z.B. hohes Sperrsignal als Zielsignal bei Zugfahrten) sowie das alleinstehende Zusatzsignal mit einem eigenen Attributwert hervorgehoben, alle weiteren aktiven Signale werden unter \"andere\" zusammengefasst. Für Gz, Tafeln und Vorsignalbaken etc. ist die Angabe nicht erforderlich. DB-Regelwerk 301, 819.20, Planungsdaten: im bisherigen PT 1 nur bei Signalen im Geltungsbereich der Ril 819.20, Tabelle für Signalabstände und Schutzstrecken, sonst ohne eindeutige Darstellung. 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Signal Funktion</em>' containment reference.
 	 * @see #setSignalFunktion(Signal_Funktion_TypeClass)
 	 * @see org.eclipse.set.model.planpro.Signale.SignalePackage#getSignal_Real_AttributeGroup_SignalFunktion()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Signal_Funktion'"
 	 * @generated
 	 */

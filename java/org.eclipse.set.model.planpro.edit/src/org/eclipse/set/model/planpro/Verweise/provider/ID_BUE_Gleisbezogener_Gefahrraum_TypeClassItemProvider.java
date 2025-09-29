@@ -159,10 +159,8 @@ public class ID_BUE_Gleisbezogener_Gefahrraum_TypeClassItemProvider extends Zeig
 			case VerweisePackage.ID_BUE_GLEISBEZOGENER_GEFAHRRAUM_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

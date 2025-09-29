@@ -75,8 +75,8 @@ public class LayoutinformationenFactoryImpl extends EFactoryImpl implements Layo
 		switch (eClass.getClassifierID()) {
 			case LayoutinformationenPackage.BEZ_LAGEPLAN_BLATTSCHNITT_TYPE_CLASS: return createBez_Lageplan_Blattschnitt_TypeClass();
 			case LayoutinformationenPackage.BEZEICHNUNG_LAGEPLAN_TYPE_CLASS: return createBezeichnung_Lageplan_TypeClass();
-			case LayoutinformationenPackage.DARSTELLUNG_GEO_PUNKT_TYPE_CLASS: return createDarstellung_GEO_Punkt_TypeClass();
 			case LayoutinformationenPackage.DARSTELLUNG_POLYGONZUG_TYPE_CLASS: return createDarstellung_Polygonzug_TypeClass();
+			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS: return createDarstellung_Richtungswinkel_Bezeichnung_TypeClass();
 			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_TYPE_CLASS: return createDarstellung_Richtungswinkel_TypeClass();
 			case LayoutinformationenPackage.DOCUMENT_ROOT: return createDocumentRoot();
 			case LayoutinformationenPackage.ELEMENT_POSITION: return createElement_Position();
@@ -123,10 +123,10 @@ public class LayoutinformationenFactoryImpl extends EFactoryImpl implements Layo
 				return createBez_Lageplan_Blattschnitt_TypeFromString(eDataType, initialValue);
 			case LayoutinformationenPackage.BEZEICHNUNG_LAGEPLAN_TYPE:
 				return createBezeichnung_Lageplan_TypeFromString(eDataType, initialValue);
-			case LayoutinformationenPackage.DARSTELLUNG_GEO_PUNKT_TYPE:
-				return createDarstellung_GEO_Punkt_TypeFromString(eDataType, initialValue);
 			case LayoutinformationenPackage.DARSTELLUNG_POLYGONZUG_TYPE:
 				return createDarstellung_Polygonzug_TypeFromString(eDataType, initialValue);
+			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE:
+				return createDarstellung_Richtungswinkel_Bezeichnung_TypeFromString(eDataType, initialValue);
 			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_TYPE:
 				return createDarstellung_Richtungswinkel_TypeFromString(eDataType, initialValue);
 			case LayoutinformationenPackage.ENUM_FUELLUNG_OBJECT:
@@ -172,10 +172,10 @@ public class LayoutinformationenFactoryImpl extends EFactoryImpl implements Layo
 				return convertBez_Lageplan_Blattschnitt_TypeToString(eDataType, instanceValue);
 			case LayoutinformationenPackage.BEZEICHNUNG_LAGEPLAN_TYPE:
 				return convertBezeichnung_Lageplan_TypeToString(eDataType, instanceValue);
-			case LayoutinformationenPackage.DARSTELLUNG_GEO_PUNKT_TYPE:
-				return convertDarstellung_GEO_Punkt_TypeToString(eDataType, instanceValue);
 			case LayoutinformationenPackage.DARSTELLUNG_POLYGONZUG_TYPE:
 				return convertDarstellung_Polygonzug_TypeToString(eDataType, instanceValue);
+			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE:
+				return convertDarstellung_Richtungswinkel_Bezeichnung_TypeToString(eDataType, instanceValue);
 			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_TYPE:
 				return convertDarstellung_Richtungswinkel_TypeToString(eDataType, instanceValue);
 			case LayoutinformationenPackage.ENUM_FUELLUNG_OBJECT:
@@ -229,9 +229,9 @@ public class LayoutinformationenFactoryImpl extends EFactoryImpl implements Layo
 	 * @generated
 	 */
 	@Override
-	public Darstellung_GEO_Punkt_TypeClass createDarstellung_GEO_Punkt_TypeClass() {
-		Darstellung_GEO_Punkt_TypeClassImpl darstellung_GEO_Punkt_TypeClass = new Darstellung_GEO_Punkt_TypeClassImpl();
-		return darstellung_GEO_Punkt_TypeClass;
+	public Darstellung_Polygonzug_TypeClass createDarstellung_Polygonzug_TypeClass() {
+		Darstellung_Polygonzug_TypeClassImpl darstellung_Polygonzug_TypeClass = new Darstellung_Polygonzug_TypeClassImpl();
+		return darstellung_Polygonzug_TypeClass;
 	}
 
 	/**
@@ -240,9 +240,9 @@ public class LayoutinformationenFactoryImpl extends EFactoryImpl implements Layo
 	 * @generated
 	 */
 	@Override
-	public Darstellung_Polygonzug_TypeClass createDarstellung_Polygonzug_TypeClass() {
-		Darstellung_Polygonzug_TypeClassImpl darstellung_Polygonzug_TypeClass = new Darstellung_Polygonzug_TypeClassImpl();
-		return darstellung_Polygonzug_TypeClass;
+	public Darstellung_Richtungswinkel_Bezeichnung_TypeClass createDarstellung_Richtungswinkel_Bezeichnung_TypeClass() {
+		Darstellung_Richtungswinkel_Bezeichnung_TypeClassImpl darstellung_Richtungswinkel_Bezeichnung_TypeClass = new Darstellung_Richtungswinkel_Bezeichnung_TypeClassImpl();
+		return darstellung_Richtungswinkel_Bezeichnung_TypeClass;
 	}
 
 	/**
@@ -597,24 +597,6 @@ public class LayoutinformationenFactoryImpl extends EFactoryImpl implements Layo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String createDarstellung_GEO_Punkt_TypeFromString(EDataType eDataType, String initialValue) {
-		return (String)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.STRING, initialValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertDarstellung_GEO_Punkt_TypeToString(EDataType eDataType, Object instanceValue) {
-		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.STRING, instanceValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String createDarstellung_Polygonzug_TypeFromString(EDataType eDataType, String initialValue) {
 		return (String)BasisTypenFactory.eINSTANCE.createFromString(BasisTypenPackage.Literals.FREI_TEXT_TYPE, initialValue);
 	}
@@ -626,6 +608,24 @@ public class LayoutinformationenFactoryImpl extends EFactoryImpl implements Layo
 	 */
 	public String convertDarstellung_Polygonzug_TypeToString(EDataType eDataType, Object instanceValue) {
 		return BasisTypenFactory.eINSTANCE.convertToString(BasisTypenPackage.Literals.FREI_TEXT_TYPE, instanceValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BigDecimal createDarstellung_Richtungswinkel_Bezeichnung_TypeFromString(EDataType eDataType, String initialValue) {
+		return (BigDecimal)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.DECIMAL, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertDarstellung_Richtungswinkel_Bezeichnung_TypeToString(EDataType eDataType, Object instanceValue) {
+		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.DECIMAL, instanceValue);
 	}
 
 	/**

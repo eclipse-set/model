@@ -299,9 +299,8 @@ public class ZN_Telegramm_84_ZuordnungImpl extends Basis_ObjektImpl implements Z
 				return basicSetTelegramm84EinzelneFstr(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN_TELEGRAMM_84_ZUORDNUNG__TELEGRAMM84_VERZICHT:
 				return basicSetTelegramm84Verzicht(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -320,9 +319,8 @@ public class ZN_Telegramm_84_ZuordnungImpl extends Basis_ObjektImpl implements Z
 				return getTelegramm84EinzelneFstr();
 			case ZugnummernmeldeanlagePackage.ZN_TELEGRAMM_84_ZUORDNUNG__TELEGRAMM84_VERZICHT:
 				return getTelegramm84Verzicht();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -345,10 +343,8 @@ public class ZN_Telegramm_84_ZuordnungImpl extends Basis_ObjektImpl implements Z
 			case ZugnummernmeldeanlagePackage.ZN_TELEGRAMM_84_ZUORDNUNG__TELEGRAMM84_VERZICHT:
 				setTelegramm84Verzicht((Telegramm_84_Verzicht_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -371,10 +367,8 @@ public class ZN_Telegramm_84_ZuordnungImpl extends Basis_ObjektImpl implements Z
 			case ZugnummernmeldeanlagePackage.ZN_TELEGRAMM_84_ZUORDNUNG__TELEGRAMM84_VERZICHT:
 				setTelegramm84Verzicht((Telegramm_84_Verzicht_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -393,9 +387,8 @@ public class ZN_Telegramm_84_ZuordnungImpl extends Basis_ObjektImpl implements Z
 				return telegramm84EinzelneFstr != null;
 			case ZugnummernmeldeanlagePackage.ZN_TELEGRAMM_84_ZUORDNUNG__TELEGRAMM84_VERZICHT:
 				return telegramm84Verzicht != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZN_Telegramm_84_ZuordnungImpl

@@ -138,10 +138,8 @@ public class GUE_Energieversorgung_TypeClassItemProvider extends BasisAttribut_A
 			case PZBPackage.GUE_ENERGIEVERSORGUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

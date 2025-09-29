@@ -11,6 +11,7 @@ package org.eclipse.set.model.planpro.Layoutinformationen;
 
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.set.model.planpro.Basisobjekte.Bearbeitungsvermerk;
 import org.eclipse.set.model.planpro.Basisobjekte.Ur_Objekt;
 
 /**
@@ -26,6 +27,7 @@ import org.eclipse.set.model.planpro.Basisobjekte.Ur_Objekt;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.PlanPro_Layoutinfo#getBearbeitungsvermerk <em>Bearbeitungsvermerk</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.PlanPro_Layoutinfo#getElementPosition <em>Element Position</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.PlanPro_Layoutinfo#getElementStil <em>Element Stil</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.PlanPro_Layoutinfo#getLageplan <em>Lageplan</em>}</li>
@@ -38,6 +40,22 @@ import org.eclipse.set.model.planpro.Basisobjekte.Ur_Objekt;
  * @generated
  */
 public interface PlanPro_Layoutinfo extends Ur_Objekt {
+	/**
+	 * Returns the value of the '<em><b>Bearbeitungsvermerk</b></em>' containment reference list.
+	 * The list contents are of type {@link org.eclipse.set.model.planpro.Basisobjekte.Bearbeitungsvermerk}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Anhang in Form von Datei oder Text zu einem Objekt oder Attribut. Jeder zugelassene Projektbeteiligte kann zu einem Objekt oder Attribut einen Bearbeitungsvermerk anfügen, sofern er die entsprechend notwendige Berechtigung besitzt. Dies gilt für fachliche wie organisatorische Objekte und Attribute. Für ENUM-Attribute ist bei Auswahl des Werts \"sonstige\" zwingend ein Bearbeitungsvermerk anzufügen. Eine Dokumentenbeigabe ist dabei optional. Zu einem Objekt oder Attribut können mehrere Bearbeitungsvermerke erstellt werden. Der Bearbeitungsvermerk enthält vorläufig eine GUID zur Identifikation des Bearbeiters sowie eine GUID für die Signatur. Im Attribut „Bearbeitungsvermerk Rolle“ kann die fachliche Rolle des Bearbeiters abgelegt werden. Kommentare des Bearbeiters werden als Freitext im Attribut „Kommentar“ hinterlegt. Der Bearbeitungsvermerk kann einen Anhang aufnehmen. Um mehrere Anhänge zu einem Objekt zuzuordnen, müssen mehrere Bearbeitungsvermerke erstellt werden.
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Bearbeitungsvermerk</em>' containment reference list.
+	 * @see org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenPackage#getPlanPro_Layoutinfo_Bearbeitungsvermerk()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='Bearbeitungsvermerk'"
+	 * @generated
+	 */
+	EList<Bearbeitungsvermerk> getBearbeitungsvermerk();
+
 	/**
 	 * Returns the value of the '<em><b>Element Position</b></em>' containment reference list.
 	 * The list contents are of type {@link org.eclipse.set.model.planpro.Layoutinformationen.Element_Position}.

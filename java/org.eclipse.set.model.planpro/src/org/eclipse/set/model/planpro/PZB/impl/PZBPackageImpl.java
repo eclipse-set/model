@@ -1909,7 +1909,7 @@ public class PZBPackageImpl extends EPackageImpl implements PZBPackage {
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 		addAnnotation
 		  (getINA_Gefahrstelle_AttributeGroup_IDMarkanterPunkt(),
@@ -2185,7 +2185,7 @@ public class PZBPackageImpl extends EPackageImpl implements PZBPackage {
 		   source,
 		   new String[] {
 			   "name", "TGUE_Abstand_Abweichend",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"
 		   });
 		addAnnotation
 		  (guE_Abstand_Abweichend_TypeClassEClass,
@@ -2248,7 +2248,7 @@ public class PZBPackageImpl extends EPackageImpl implements PZBPackage {
 		   source,
 		   new String[] {
 			   "name", "TGUE_Messstrecke",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "5\\.[89][0-9]|([6-9]|[1-6][0-9]|7[0-4])\\.[0-9]{2}|75\\.00"
 		   });
 		addAnnotation
@@ -2326,7 +2326,7 @@ public class PZBPackageImpl extends EPackageImpl implements PZBPackage {
 		   source,
 		   new String[] {
 			   "name", "TPruefgeschwindigkeit",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit",
 			   "pattern", "[1-9][0-9]|1[0-4][0-9]|150"
 		   });
 		addAnnotation
@@ -2348,7 +2348,7 @@ public class PZBPackageImpl extends EPackageImpl implements PZBPackage {
 		   source,
 		   new String[] {
 			   "name", "TPruefzeit",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde",
 			   "pattern", "(0|[1-9][0-9]{0,1})\\.[0-9]{2}"
 		   });
 		addAnnotation
@@ -2370,7 +2370,7 @@ public class PZBPackageImpl extends EPackageImpl implements PZBPackage {
 		   source,
 		   new String[] {
 			   "name", "TPZB_Abstand_GM",
-			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter",
+			   "baseType", "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter",
 			   "pattern", "\\-[1-6]|[0-9]|[1-9][0-9]|[12][0-9]{2}|300"
 		   });
 		addAnnotation
@@ -2716,67 +2716,67 @@ public class PZBPackageImpl extends EPackageImpl implements PZBPackage {
 		  (pzB_ElementEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getPZB_Element_GM_AttributeGroup_PZBAbstandGM(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[-6..300]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[-6..300]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getPZB_Element_GM_AttributeGroup_PZBINA(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>false</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>false</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getPZB_Element_GUE_AttributeGroup_GUEAnordnung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>1_EA</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>1_EA</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getPZB_Element_GUE_AttributeGroup_GUEEnergieversorgung(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>Stellwerk</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>Stellwerk</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getPZB_Element_GUE_AttributeGroup_GUEMessstrecke(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [5.80..75.00] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [5.80..75.00] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getPZB_Element_GUE_AttributeGroup_Pruefgeschwindigkeit(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung> [10..150] </ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung> [10..150] </ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (getPZB_Element_GUE_AttributeGroup_Pruefzeit(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:Patternbeschreibung>[0.00..99.99]</ppi:Patternbeschreibung>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:Patternbeschreibung>[0.00..99.99]</ppi:Patternbeschreibung>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (pzB_Element_ZuordnungEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>B\u00dc|ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 		addAnnotation
 		  (getPZB_Element_Zuordnung_BP_AttributeGroup_Wirksamkeit(),
 		   source,
 		   new String[] {
-			   "appinfo", "\n                    \n  <ppi:WorkflowInformation>\n                         \n    <ppi:ProposedValue>schaltbar_von_Signal</ppi:ProposedValue>\n                      \n  </ppi:WorkflowInformation>\n                 \n"
+			   "appinfo", "\r\n                    \r\n  <ppi:WorkflowInformation>\r\n                         \r\n    <ppi:ProposedValue>schaltbar_von_Signal</ppi:ProposedValue>\r\n                      \r\n  </ppi:WorkflowInformation>\r\n                 \r\n"
 		   });
 		addAnnotation
 		  (pzB_Zuordnung_SignalEClass,
 		   source,
 		   new String[] {
-			   "appinfo", "\n              \n  <ppi:WorkflowInformation>\n                   \n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\n                   \n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\n                \n  </ppi:WorkflowInformation>\n           \n"
+			   "appinfo", "\r\n              \r\n  <ppi:WorkflowInformation>\r\n                   \r\n    <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>\r\n                   \r\n    <ppi:Untergewerke>ESTW</ppi:Untergewerke>\r\n                \r\n  </ppi:WorkflowInformation>\r\n           \r\n"
 		   });
 	}
 

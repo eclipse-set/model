@@ -204,8 +204,8 @@ public enum ENUMEnergieEingangArt implements Enumerator {
 			case ENUM_ENERGIE_EINGANG_ART_LANDESNETZ_VALUE: return ENUM_ENERGIE_EINGANG_ART_LANDESNETZ;
 			case ENUM_ENERGIE_EINGANG_ART_SOLAR_VALUE: return ENUM_ENERGIE_EINGANG_ART_SOLAR;
 			case ENUM_ENERGIE_EINGANG_ART_SONSTIGE_VALUE: return ENUM_ENERGIE_EINGANG_ART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

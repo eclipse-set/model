@@ -179,9 +179,8 @@ public class ESTW_Zentraleinheit_Allg_AttributeGroupImpl extends EObjectImpl imp
 				return basicSetBauart(null, msgs);
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT_ALLG_ATTRIBUTE_GROUP__HERSTELLER:
 				return basicSetHersteller(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class ESTW_Zentraleinheit_Allg_AttributeGroupImpl extends EObjectImpl imp
 				return getBauart();
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT_ALLG_ATTRIBUTE_GROUP__HERSTELLER:
 				return getHersteller();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class ESTW_Zentraleinheit_Allg_AttributeGroupImpl extends EObjectImpl imp
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT_ALLG_ATTRIBUTE_GROUP__HERSTELLER:
 				setHersteller((Hersteller_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class ESTW_Zentraleinheit_Allg_AttributeGroupImpl extends EObjectImpl imp
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT_ALLG_ATTRIBUTE_GROUP__HERSTELLER:
 				setHersteller((Hersteller_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class ESTW_Zentraleinheit_Allg_AttributeGroupImpl extends EObjectImpl imp
 				return bauart != null;
 			case Ansteuerung_ElementPackage.ESTW_ZENTRALEINHEIT_ALLG_ATTRIBUTE_GROUP__HERSTELLER:
 				return hersteller != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ESTW_Zentraleinheit_Allg_AttributeGroupImpl

@@ -415,9 +415,8 @@ public class ZLV_Bus_US_Zuordnung_Telegramm_AttributeGroupImpl extends EObjectIm
 				return basicSetTelegramm21(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG_TELEGRAMM_ATTRIBUTE_GROUP__TELEGRAMM30:
 				return basicSetTelegramm30(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -440,9 +439,8 @@ public class ZLV_Bus_US_Zuordnung_Telegramm_AttributeGroupImpl extends EObjectIm
 				return getTelegramm21();
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG_TELEGRAMM_ATTRIBUTE_GROUP__TELEGRAMM30:
 				return getTelegramm30();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -471,10 +469,8 @@ public class ZLV_Bus_US_Zuordnung_Telegramm_AttributeGroupImpl extends EObjectIm
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG_TELEGRAMM_ATTRIBUTE_GROUP__TELEGRAMM30:
 				setTelegramm30((Telegramm_30_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -503,10 +499,8 @@ public class ZLV_Bus_US_Zuordnung_Telegramm_AttributeGroupImpl extends EObjectIm
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG_TELEGRAMM_ATTRIBUTE_GROUP__TELEGRAMM30:
 				setTelegramm30((Telegramm_30_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -529,9 +523,8 @@ public class ZLV_Bus_US_Zuordnung_Telegramm_AttributeGroupImpl extends EObjectIm
 				return telegramm21 != null;
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG_TELEGRAMM_ATTRIBUTE_GROUP__TELEGRAMM30:
 				return telegramm30 != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZLV_Bus_US_Zuordnung_Telegramm_AttributeGroupImpl

@@ -147,10 +147,8 @@ public class Fstr_AbhaengigkeitItemProvider extends Basis_ObjektItemProvider {
 			case FahrstrassePackage.FSTR_ABHAENGIGKEIT__ID_BEDIEN_ANZEIGE_ELEMENT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:nsNahbedienung="http://www.plan-pro.org/modell/Nahbedienung/1.10.0.3"
+           xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
+           xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
+           xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           targetNamespace="http://www.plan-pro.org/modell/Nahbedienung/1.10.0.3">
+	  <xs:annotation>
+		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+
+Weitere Informationen zur Lizenz finden Sie auf
+http://www.dbinfrago.com/planpro
+
+Inhalt der Datei:
+XML Schema für PlanPro Schnittstelle.
+
+Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+
+--------------------------------------------------------------------------------
+
+This Document is licensed under the open source license RailPL V1.1.
+
+More information about the license can be found on
+http://www.dbinfrago.com/planpro
+
+Contents of the file:
+XML Schema for PlanPro interface.</xs:documentation>
+	  </xs:annotation>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+              schemaLocation="Verweise.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
+              schemaLocation="Basisobjekte.xsd"/>
+	  <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
+              schemaLocation="BasisTypen.xsd"/>
+	  <xs:simpleType name="ENUMNB_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="NB_G"/>
+			      <xs:enumeration value="NB_R"/>
+			      <xs:enumeration value="NB_W"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMNB_Grenze_Art">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="ESTW_Bereich"/>
+			      <xs:enumeration value="NB_Zone"/>
+			      <xs:enumeration value="Ortsstellbereich"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMNB_Rueckgabevoraussetzung">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="abgelegt"/>
+			      <xs:enumeration value="aufgelegt"/>
+			      <xs:enumeration value="Hp_0"/>
+			      <xs:enumeration value="keine"/>
+			      <xs:enumeration value="Kennlicht"/>
+			      <xs:enumeration value="links"/>
+			      <xs:enumeration value="rechts"/>
+			      <xs:enumeration value="Schluessel_eingeschlossen"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMNB_Verhaeltnis_Besonders">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="ueberlappend"/>
+			      <xs:enumeration value="vereinigt"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="ENUMW_Gsp_Lage">
+		    <xs:restriction base="xs:string">
+			      <xs:enumeration value="abgelegt"/>
+			      <xs:enumeration value="aufgelegt"/>
+			      <xs:enumeration value="links"/>
+			      <xs:enumeration value="rechts"/>
+			      <xs:enumeration value="sonstige"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBezeichnung_NB">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="[1-9][0-9]?"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TBezeichnung_NB_Zone">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="[1-9][0-9]?"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TNB_Zone_Allg">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="[1-9][0-9]*"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:simpleType name="TRang">
+		    <xs:restriction base="xs:integer">
+			      <xs:pattern value="[1-9][0-9]{0,}"/>
+		    </xs:restriction>
+	  </xs:simpleType>
+	  <xs:complexType name="CNB">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Nahstellbereich. Teilbereich innerhalb eines ESTW-Stellbereichs, für den zeitweise die Zuständigkeit vom Fahrdienstleiter an einen örtlichen Bediener zur Durchführung von Rangierbewegungen abgegeben werden kann. Die Kommunikation zwischen Fahrdienstleiter und Bediener erfolgt über entsprechende Bedieneinrichtung(en). Mit Abgabe der Nahbedienung hat der Fahrdienstleiter auf diesen Bereich keinen Zugriff; die Verantwortung liegt beim örtlichen Bediener. Mit Rückgabe der Nahbedienung geht die Verantwortung vom Bediener wieder an den Fahrdienstleiter. Für die Rückgabe der Nahbedienung können bestimmte Voraussetzungen erforderlich sein. Für die Abgabe bzw. Rückgabe der Nahbedienung werden in der Literatur auch die Begriffe \"Einschalten\" und \"Ausschalten\" verwendet. Der Nahstellbereich muss vom übrigen Stellwerksbereich durch Flankenschutzmaßnahmen abgegrenzt werden. Jeder Nahstellbereich hat immer mindestens eine NB Zone. Bei einem Nahstellbereich mit der Funktionalität eines abgesetzten \"Rangierstellwerkes\" (NB-R) können Weichen mit elektrischem Antrieb umgestellt und innerhalb des NB Fahrten mit Rangierstraßen durchgeführt werden. DB-Regelwerk Für die Planung von Nahstellbereichen exisitert bei der DB AG kein Regelwerk.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsNahbedienung:CNB_Bezeichnung" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Attributgruppe zur Bezeichnung von Stell- und sonstigen Elementen. Sofern ausreichend, wird an dieser Stelle über Vererbung die Basisattributgruppe Bezeichnung Element eingebunden. Ist die Abbildung mit den Attributen der Basisattributgruppe nicht möglich (z. B. wegen spezieller Patternvorgabe) oder nicht sinnvoll (z. B. weil eine Unterscheidung nach Bezeichnung_Lageplan_..., Bezeichnung_Tabelle und Bezeichnung_Aussenanlage (Pflichtattribute!) nicht notwendig ist), werden in der Attributgruppe Bezeichnung entsprechende objektspezifische Bezeichnungsattribute modelliert. Diese sind nach dem Schema Bezeichnung_[Objektname] zu benennen. Zudem ist es möglich, gleichzeitig die Basisattributgruppe Bezeichnung Element und objektspezifische Attribute einzubinden. Siehe auch Bildung der Bezeichnungen. DB-Regelwerk Sicherungstechnischer Lage- und Übersichtsplan, BÜ-Lageplan Planungstabellen </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="NB_Art" type="nsNahbedienung:TCNB_Art" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Festlegung der innerhalb des Nahstellbereiches möglichen Bedienhandlungen. Die Art des Nahstellbereiches (NB) entscheidet über die innerhalb des NB möglichen Funktionalitäten: G: Signale zeigen Kl/Sh1; nur ortsbediente Weichen umstellbar; BÜ-Bedienung mit Rangierschalter; W: wie G, zusätzlich Umstellung von mit Antrieben ausgerüsteter Weichen möglich; R: wie W, zusätzlich Fahren mit Rangierstraßen innerhalb des NB. In Abhängigkeit der gewählten Art des Nahstellbereiches werden Funktionalitäten und physische Ausbildung von NB Bedien Anzeige Element festgelegt. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es geht aus dem zugehörigen Lastenheft hervor, dass dem LST-Fachplaner jedoch nicht zur Verfügung steht.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="NB_Funktionalitaet_NB_R" type="nsNahbedienung:CNB_Funktionalitaet_NB_R"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CNB_Bedien_Anzeige_Element">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung von Bedienfunktionen zur Bedieneinrichtung einer oder mehrerer NB_Zonen, über die Fahrdienstleiter und örtlichen Bediener miteinander kommunizieren. Falls sich bedienbare Elemente innerhalb der NB_Zone befinden, sind diese durch eine entsprechende Bedieneinrichtung (um)stellbar, sofern eine (Um-)Stellbarkeit vorgesehen wurde. Der Umfang hängt von der gewählten NB Art ab. Weiterhin sind in der Bedieneinrichtung Elemente für die Kommunikation zwischen Fahrdienstleiter und Bediener untergebracht. In diesem Objekt wird die Logik der Bedieneinrichtung abgebildet. Falls eine Bedieneinrichtung Elemente aus mindestens zwei verschiedenen NB_Zonen enthält, ist eine Zuordnung der Bedieneinrichtung zu den betreffenden NB_Zonen erforderlich. Der Verweis auf Bedien Anzeige Element führt zur Zuordnung der physischen Unterbringung. DB-Regelwerk Für die Planung exisitert bei der DB AG kein Regelwerk. Die Angaben finden sich meist im Erläuterungsbericht zum PT1.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Bedien_Anzeige_Element" type="nsVerweise:TCID_Bedien_Anzeige_Element"
+                           minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf das Bedien Anzeige Element, welches die Zuordnung zur Bedien Einrichtung Oertlich und damit zur physischen Unterbringung der Tasten herstellt. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_NB_Zone" type="nsVerweise:TCID_NB_Zone" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die NB_Zone, der das geplante Bedien_Anzeige_Element zugeordnet wird. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="NB_Bedien_Anzeige_Funktionen"
+                           type="nsNahbedienung:CNB_Bedien_Anzeige_Funktionen"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CNB_Bedien_Anzeige_Funktionen">
+		    <xs:sequence>
+			      <xs:choice minOccurs="1" maxOccurs="1">
+				        <xs:element name="Taste_ANF" type="nsNahbedienung:TCTaste_ANF" minOccurs="1" maxOccurs="1">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anforderungstaste. Eine Anforderungstaste ist vorzusehen, mit der der örtliche Bediener beim Fahrdienstleiter die Nahbedienung anfordert. DB-Regelwerk Für die Planung von Nahstellbereichen exisitert bei der DB AG kein Regelwerk. Es gibt ein Lastenheft sowie firmenspezifische Projektierungshinweise, die jedoch dem LST-Fachplaner nicht zur Verfügung stehen.</xs:documentation>
+               </xs:annotation>
+				        </xs:element>
+				        <xs:element name="Taste_FGT" type="nsNahbedienung:TCTaste_FGT" minOccurs="1" maxOccurs="1">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Fertigmeldetaste. Eine Fertigmeldetaste ist vorzusehen, mit der der Bediener dem Fahrdienstleiter den NB fertig meldet, bevor die Nahbedienung zurückgenommen werden kann. DB-Regelwerk Für die Planung von Nahstellbereichen exisitert bei der DB AG kein Regelwerk. Es gibt ein Lastenheft sowie firmenspezifische Projektierungshinweise, die jedoch dem LST-Fachplaner nicht zur Verfügung stehen.</xs:documentation>
+               </xs:annotation>
+				        </xs:element>
+				        <xs:element name="Taste_WGT" type="nsNahbedienung:TCTaste_WGT" minOccurs="1" maxOccurs="1">
+					          <xs:annotation>
+                  <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Weichengruppentaste. Eine Weichengruppentaste für die Zwei-Tasten-Bedienung ist vorzusehen. Damit können innerhalb eines Nahstellbereiches ferngestellte Weichen, die ans ESTW angebunden sind, während der abgegebenen Nahbedienung durch den örtlichen Bediener umgestellt werden. DB-Regelwerk Für die Planung von Nahstellbereichen exisitert bei der DB AG kein Regelwerk. Es gibt ein Lastenheft sowie firmenspezifische Projektierungshinweise, die jedoch dem LST-Fachplaner nicht zur Verfügung stehen.</xs:documentation>
+               </xs:annotation>
+				        </xs:element>
+			      </xs:choice>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CNB_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="Bezeichnung_NB" type="nsNahbedienung:TCBezeichnung_NB" minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Numerische Bezeichnung des Nahstellbereichs. Die Bezeichnung des Nahstellbereichs gemäß Ril 819.9001 (z. B. 99NB1) wird aus der Kennzahl von Bezeichnung Element, dem Kürzel NB (generiert aus der Anlegung der Instanz „NB“) und der NB_Bezeichnung zusammengesetzt. Das Attribut NB_Bezeichnung wurde trotz Nutzung der Basisattributgruppe Bezeichnung geschaffen, da die numerische Bezeichnung des NB (z. B. \"1\") kein örtlicher Elementbezeichner ist. DB-Regelwerk 819.9001 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..99] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Kennzahl" type="nsNahbedienung:TCKennzahl" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Eindeutige Kennzahl der operativen Sicherungstechnik innerhalb eines Bedienbezirks für eine Betriebsstelle.
+
+Die ESTW-Kennzahl kennzeichnet eine Betriebsstelle oder einen Betriebsstellenteil. Es handelt sich nicht um die Bahnhofsnummer der Zugnummernmeldeanlage (Ril 819.0731)!
+
+Eine Betriebsstelle kann mehrere Kennzahlen erhalten. Z.B. dann, wenn in einem Gebäude zwei ESTW-Zentraleinheiten untergebracht sind (Beispiel Hannover Hbf mit den ESTW-Zentraleinheiten „HH Kennzahl 06“ und „HHZX Kennzahl 30“).
+
+Eine Kennzahl kann aber auch mehrere Betriebsstellen beinhalten. Z. B dann, wenn eine ESTW-Zentraleinheit zwei Überleitstellen steuert (Beispiel ESTW-Zentraleinheit Giften HGIF Kennzahl 71 mit „Üst Giften HGIF“ und „Üst Ritterkamp HRIT“.
+
+In Stellbereichen von Bedienbezirken werden für Betriebsstellen (z. B. Bahnhöfe, Abzweigstellen, Anschlussstellen) Kennzahlen von 01 bis 99 vergeben. Diese Kennzahl muss im Bedienbezirk eindeutig sein.
+
+Eindeutigkeit der Kennzahlen bei angrenzenden Bedienbezirken entlang einer Strecke:
+
+Innerhalb eines Bedienbezirks und für benachbarte Betriebsstellen eines angrenzenden Bedienbezirks entlang einer Strecke darf eine Kennzahl nur einmal verwendet werden. Beispiel: Media:Bedien Oertlichkeit Kennzahl 131121.pdf
+
+Für alle im jeweiligen Bereich befindlichen Stellelemente der Betriebsstellen und Strecken wird die Kennzahl Bestandteil der ausführlichen Elementbezeichnung. Hierdurch erübrigt sich in einem größeren Bereich der Infrastruktur die Mitführung eines Ortsbezeichners.
+
+Zentrale Vergabe von Kennzahlen auch ohne Anbindung an Bedien_Zentralen:
+
+Unabnhängig ob eine ESTW-Zentraleinheit aus einer Bedien_Zentrale gesteuert wird oder nur örtlich eingerichtet ist, soll die Kennzahlenvergabe zentral im Sinne einer möglichen Konzentration von ESTW-Zentraleinheiten in Bedienbezirken geplant und vergeben werden. 
+
+DB-Regelwerk
+• Kennzahltabelle oder Kennzahelnübersichtsplan im PT 1, 
+• 819.0603 2, 
+• 819.9001 1 (5).
+</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CNB_Funktionalitaet_NB_R">
+		    <xs:sequence>
+			      <xs:element name="AWU" type="nsNahbedienung:TCAWU" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für den Bediener soll das Bedienkommando „Aufgefahrene Weiche umstellen“ im freigegebenen NB-Bereich möglich sein. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es ist nur im Lastenheft zu finden, das dem LST-Fachplaner nicht zur Verfügung steht.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="F_ST_Z" type="nsNahbedienung:TCF_ST_Z" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für den Bediener soll das Bedienkommando „Fahrstraße in ein Gleis ohne Oberleitung einstellen“ im freigegebenen NB-Bereich möglich sein (nur beim Übergang in nicht überspannte Bereiche relevant). DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es ist nur im Lastenheft zu finden, das dem LST-Fachplaner nicht zur Verfügung steht.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="FA_FAE" type="nsNahbedienung:TCFA_FAE" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für den Bediener soll das Bedienkommando „Fahrstraße auflösen“ und „Fahrwegelement einzeln auflösen“ im freigegebenen NB-Bereich möglich sein. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es ist nur im Lastenheft zu finden, das dem LST-Fachplaner nicht zur Verfügung steht.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="SBUE" type="nsNahbedienung:TCSBUE" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für den Bediener soll das Bedienkommando \"SBUE\" (Schließen eines BÜ, der innerhalb des NB liegt, dessen reguläre Einschaltung aber außerhalb des NB angeordnet ist) im freigegebenen NB-Bereich möglich sein. DB-Regelwerk Das Planungsdatum ist im Regelewrk der DB AG nicht enthalten. Es findet sich im Lastenheft, das dem LST-Fachplaner nicht zur Verfügung steht.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="SLE_SLS" type="nsNahbedienung:TCSLE_SLS" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für den Bediener soll das Bedienkommando „Schlüsselsperre entsperren“ (freigeben) und „Schlüsselsperre sperren“ (Freigabe zurücknehmen) im freigegebenen NB-Bereich möglich sein. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es findet sich im Lastenheft, das dem LST-Fachplaner nicht zur Verfügung steht.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="WHU" type="nsNahbedienung:TCWHU" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für den Bediener soll das Bedienkommando „Weiche hilfsweise umstellen“ im freigegebenen NB-Bereich möglich sein. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es ist nur im Lastenheft zu finden, das dem LST-Fachplaner nicht zur Verfügung steht. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="WUS" type="nsNahbedienung:TCWUS" minOccurs="1" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Für den Bediener soll das Bedienkommando „Weiche gegen umstellen sperren“ im freigegebenen NB-Bereich möglich sein. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht enthalten. Es ist nur im Lastenheft zu finden, das dem LST-Fachplaner nicht zur Verfügung steht. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CNB_Zone">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Nahstellbereichszone. Jeder Nahstellbereich hat mindestens eine Zone; es sind auch mehrere Zonen möglich. Die Zonen können voneinander unabhängig nebeneinander liegen, sich überlappen oder eine Zone kann eine kleinere \"Teilmenge\" einer größeren Zone sein. Als spezieller Fall ist auch die Vereinigung von zwei nebeneinander liegenden Zonen möglich. Für jede Zone werden eigene Grenzen zum angrenzenden Bereich (ESTW, NB, Ortstellbereich) festgelegt. DB-Regelwerk Für die Planung von Nahbedienzonen exisitert bei der DB AG kein Regelwerk. Die Angabe findet sich in der Nahbedienungstabelle, Spalte 1.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="Bezeichnung" type="nsNahbedienung:CNB_Zone_Bezeichnung" minOccurs="1"
+                           maxOccurs="1"/>
+					          <xs:element name="ID_NB" type="nsVerweise:TCID_NB" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis von der NB Zone auf den zugehörigen Nahstellbereich. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_NB_Zone" type="nsVerweise:TCID_NB_Zone" minOccurs="0" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die übergeordnete NB_Zone (die betrachtete NB_Zone ist damit untergeordnet). In der untergeordneten Zone muss die Nahbedienung zuerst zurückgegeben werden, bevor die Nahbedienung in der übergeordneten Zone zurückgegeben werden kann.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="NB_Zone_Allg" type="nsNahbedienung:CNB_Zone_Allg" minOccurs="0"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CNB_Zone_Allg">
+		    <xs:sequence>
+			      <xs:element name="NB_Verhaeltnis_Besonders"
+                     type="nsNahbedienung:TCNB_Verhaeltnis_Besonders"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Besonderes Verhältnis der betrachteten NB-Zone in Bezug auf die unter ID_NB_Zone angegebene. überlappend: zwei Zonen überlappen sich, das heißt einige Elemente gehören sowohl zur einen als auch zur anderen Zone. vereinigt: zwei nebeneinander liegende Zonen werden zu einer großen Zone zusammengeführt. Die Über- bzw. Unterordnung ergibt sich aus dem Verweis ID_NB_Zone. DB-Regelwerk Für die Planung von Nahstellbereichen exisitert bei der DB AG kein Regelwerk. Dieses Planungsdatum findet sich in der Nahbedienungstabelle.</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="Rang" type="nsNahbedienung:TCRang" minOccurs="0" maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Festlegung, an welcher Stelle die NB_Zone in der Reihe(nfolge) steht. Ist bei mehreren Zonen, die einer \"Haupt\"zone untergeordnet sind, eine Reihenfolge der Zonen für die Ein- bzw. Ausschaltung als notwendig festgelegt worden, muss für jede Zone ein Rang in dieser Reihe festgelegt werden. DB-Regelwerk Für die Planung von Nahstellbereichen existiert bei der DB AG kein Regelwerk. Dieses Planungsdatum findet sich nur im Lastenheft, das dem LST-Fachplaner nicht zur Verfügung steht.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>  [1..n] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CNB_Zone_Bezeichnung">
+		    <xs:sequence>
+			      <xs:element name="Bezeichnung_NB_Zone" type="nsNahbedienung:TCBezeichnung_NB_Zone"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Numerische Ordnungsnummer der NB_Zone innerhalb des Nahstellbereiches. Aus der Bezeichnung des NB und diesem Attribut wird die Angabe gemäß Ril 819.9001 (z. B. 99NB1/2 bzw. 99NB12) zusammengesetzt - auf dem Lageplan getrennt durch einen Schrägstrich. DB-Regelwerk 819.9001 </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung> [1..99] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CNB_Zone_Element">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung der ESTW-Elemente (Signale, Weichen, Gleissperren, Schlüsselsperren) zur NB_Zone, in der sie sich befinden. Für diese Elemente sind in Abhängigkeit der vorgesehenen NB Art Eigenschaften zur Stellbarkeit und Rückgabevoraussetzung festzulegen. DB-Regelwerk Die Angaben finden sich in der Nahbedienungstabelle, Spalten 5, 8 und 9.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_NB_Element" type="nsVerweise:TCID_NB_Element" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die ID des Elementes, welches innerhalb der NB Zone angeordnet ist.</xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_NB_Zone" type="nsVerweise:TCID_NB_Zone" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die NB_Zone, zu der das NB_Zone_Element gehört. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="NB_Zone_Element_Allg" type="nsNahbedienung:CNB_Zone_Element_Allg"
+                           minOccurs="0"
+                           maxOccurs="1"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CNB_Zone_Element_Allg">
+		    <xs:sequence>
+			      <xs:element name="Freie_Stellbarkeit" type="nsNahbedienung:TCFreie_Stellbarkeit"
+                     minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Das betreffende Element (Signal, Weiche oder Gleissperre) ist innerhalb des Nahstellbereiches frei stellbar. </xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:ProposedValue>true</ppi:ProposedValue>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="NB_Rueckgabevoraussetzung"
+                     type="nsNahbedienung:TCNB_Rueckgabevoraussetzung"
+                     minOccurs="1"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Voraussetzung, die für ein stellbares Element (Signal, Weiche, Gleissperre, Schlüsselsperre) innerhalb eines Nahstellbereiches erfüllt sein muss, bevor die Nahbedienung zurückgegeben werden kann. Kann der örtliche Bediener bei abgegebener Nahbedienung in Abhängigkeit der vorgesehenen NB Art Weichen und Gleissperren um- bzw. Signale stellen, müssen diese vor Rückgabe der Nahbedienung ggf. wieder in eine bestimmte Lage / Stellung gebracht werden. Daher ist für jedes NB Zone Element festzulegen, welche Rückgabevoraussetzung besteht. DB-Regelwerk Für die Planung von Nahstellbereichen existiert bei der DB AG kein Regelwerk. Das Planungsdatum findet sich in der Nahbedienungstabelle. </xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+			      <xs:element name="W_Gsp_Lage" type="nsNahbedienung:TCW_Gsp_Lage" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Lage der W/Gsp, sofern diese unabhängig von der Flankenschutzbetrachtung innerhalb des NB in einer Lage verschlossen werden soll. DB-Regelwerk Ril 819.0512</xs:documentation>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="CNB_Zone_Grenze">
+		    <xs:annotation>
+         <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Grenze der NB Zone gegenüber dem der Zone angrenzenden Bereich. Die NB Zone wird mittels (technischem) Flankenschutz gegenüber dem benachbarten Bereich (ESTW oder einer weiteren Zone) abgegrenzt. Grenzelemente bilden Signale, Weichen oder Gleissperren, welche in jeweiliger Flankenschutzlage verschlossen werden. Auch die Angabe eines Achzählpunkts ist möglich. Bei an die NB Zone angrenzendem Ortstellbereich ist die TM 2010-388 I.NVT 3 \"Planungsregeln Bedienbereiche - Schnittstellen Stellwerksbereiche\" zu beachten. DB-Regelwerk TM 2010-388 I.NVT 3 Die Angabe von Grenzelementen außerhalb der NB-Zone finden sich in der Nahbedienungstabelle, Spalte 7.</xs:documentation>
+         <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+            <ppi:WorkflowInformation>
+               <ppi:ObjectType>LST_OBJECT</ppi:ObjectType>
+               <ppi:Untergewerke>ESTW</ppi:Untergewerke>
+            </ppi:WorkflowInformation>
+         </xs:appinfo>
+      </xs:annotation>
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisobjekte:CBasis_Objekt">
+				        <xs:sequence>
+					          <xs:element name="ID_Markanter_Punkt" type="nsVerweise:TCID_Markanter_Punkt" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf einen Markanten Punkt (Signal, Weichen- bzw. Gleissperrenkomponente, Azp), der die Grenze der NB_Zone darstellt. DB-Regelwerk Zur Planung von Nahstellbereichen gibt es bei der DB AG kein Regelwerk. Dieses Planungsdatum findet sich in der Nahbedienungstabelle Flankenschutztabelle </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="ID_NB_Zone" type="nsVerweise:TCID_NB_Zone" minOccurs="1" maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verweis auf die NB_Zone, für die die Grenze festgelegt wird. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+					          <xs:element name="NB_Grenze_Art" type="nsNahbedienung:TCNB_Grenze_Art" minOccurs="1"
+                           maxOccurs="1">
+						            <xs:annotation>
+                     <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angrenzender Nachbar der NB Zone. Von der Art des angrenzenden Bereiches hängt der zu planende (technische) Flankenschutz ab. </xs:documentation>
+                  </xs:annotation>
+					          </xs:element>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="CNB_Zone_Reihenfolgezwang">
+		    <xs:sequence>
+			      <xs:element name="NB_Zone_Allg" type="nsNahbedienung:TCNB_Zone_Allg" minOccurs="0"
+                     maxOccurs="1">
+				        <xs:annotation>
+               <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Festlegung, an welcher Stelle die NB_Zone in der Reihe(nfolge) steht. Ist bei mehreren Zonen, die einer \"Haupt\"zone untergeordnet sind, eine Reihenfolge der Zonen für die Ein- bzw. Ausschaltung als notwendig festgelegt worden, muss für jede Zone ein Rang in dieser Reihe festgelegt werden. DB-Regelwerk Für die Planung von Nahstellbereichen existiert bei der DB AG kein Regelwerk. Dieses Planungsdatum findet sich nur im Lastenheft, das dem LST-Fachplaner nicht zur Verfügung steht.</xs:documentation>
+               <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
+                  <ppi:WorkflowInformation>
+                     <ppi:Patternbeschreibung>  [1..n] </ppi:Patternbeschreibung>
+                  </ppi:WorkflowInformation>
+               </xs:appinfo>
+            </xs:annotation>
+			      </xs:element>
+		    </xs:sequence>
+	  </xs:complexType>
+	  <xs:complexType name="TCAWU">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBezeichnung_NB">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsNahbedienung:TBezeichnung_NB" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCBezeichnung_NB_Zone">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsNahbedienung:TBezeichnung_NB_Zone" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCF_ST_Z">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFA_FAE">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCFreie_Stellbarkeit">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCKennzahl">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsBasisTypen:TKennzahl" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCNB_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsNahbedienung:ENUMNB_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCNB_Grenze_Art">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsNahbedienung:ENUMNB_Grenze_Art" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCNB_Rueckgabevoraussetzung">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsNahbedienung:ENUMNB_Rueckgabevoraussetzung" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCNB_Verhaeltnis_Besonders">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsNahbedienung:ENUMNB_Verhaeltnis_Besonders" minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCNB_Zone_Allg">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsNahbedienung:TNB_Zone_Allg" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCRang">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsNahbedienung:TRang" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSBUE">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCSLE_SLS">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTaste_ANF">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTaste_FGT">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCTaste_WGT">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCW_Gsp_Lage">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="nsNahbedienung:ENUMW_Gsp_Lage" minOccurs="1" maxOccurs="1"
+                           nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCWHU">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+	  <xs:complexType name="TCWUS">
+		    <xs:complexContent>
+			      <xs:extension base="nsBasisTypen:CBasisAttribut">
+				        <xs:sequence>
+					          <xs:element name="Wert" type="xs:boolean" minOccurs="1" maxOccurs="1" nillable="true"/>
+				        </xs:sequence>
+			      </xs:extension>
+		    </xs:complexContent>
+	  </xs:complexType>
+</xs:schema>

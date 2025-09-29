@@ -162,10 +162,8 @@ public class LEU_Schaltkasten_Energie_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.LEU_SCHALTKASTEN_ENERGIE_ATTRIBUTE_GROUP__UEBERBRUECKUNG_EV_UNTERBRECHUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

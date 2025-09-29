@@ -274,9 +274,8 @@ public class Akteur_ZuordnungImpl extends Ur_ObjektImpl implements Akteur_Zuordn
 				return basicSetHandelnder(null, msgs);
 			case PlanProPackage.AKTEUR_ZUORDNUNG__IDENT_ROLLE:
 				return basicSetIdentRolle(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -295,9 +294,8 @@ public class Akteur_ZuordnungImpl extends Ur_ObjektImpl implements Akteur_Zuordn
 				return getHandelnder();
 			case PlanProPackage.AKTEUR_ZUORDNUNG__IDENT_ROLLE:
 				return getIdentRolle();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -322,10 +320,8 @@ public class Akteur_ZuordnungImpl extends Ur_ObjektImpl implements Akteur_Zuordn
 			case PlanProPackage.AKTEUR_ZUORDNUNG__IDENT_ROLLE:
 				setIdentRolle((Ident_Rolle_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -348,10 +344,8 @@ public class Akteur_ZuordnungImpl extends Ur_ObjektImpl implements Akteur_Zuordn
 			case PlanProPackage.AKTEUR_ZUORDNUNG__IDENT_ROLLE:
 				setIdentRolle((Ident_Rolle_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -370,9 +364,8 @@ public class Akteur_ZuordnungImpl extends Ur_ObjektImpl implements Akteur_Zuordn
 				return handelnder != null;
 			case PlanProPackage.AKTEUR_ZUORDNUNG__IDENT_ROLLE:
 				return identRolle != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Akteur_ZuordnungImpl

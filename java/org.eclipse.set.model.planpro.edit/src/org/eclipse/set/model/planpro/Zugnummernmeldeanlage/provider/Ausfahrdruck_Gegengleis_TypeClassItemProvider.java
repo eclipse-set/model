@@ -139,10 +139,8 @@ public class Ausfahrdruck_Gegengleis_TypeClassItemProvider extends BasisAttribut
 			case ZugnummernmeldeanlagePackage.AUSFAHRDRUCK_GEGENGLEIS_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

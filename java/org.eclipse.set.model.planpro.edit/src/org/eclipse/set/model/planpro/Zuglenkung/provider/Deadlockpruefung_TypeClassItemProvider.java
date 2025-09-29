@@ -137,10 +137,8 @@ public class Deadlockpruefung_TypeClassItemProvider extends BasisAttribut_Attrib
 			case ZuglenkungPackage.DEADLOCKPRUEFUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

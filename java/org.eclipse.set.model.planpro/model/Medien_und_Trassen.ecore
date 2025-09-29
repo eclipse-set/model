@@ -4,27 +4,32 @@
                 xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
                 xmi:version="2.0"
                 name="Medien_und_Trassen"
-                nsURI="http://www.plan-pro.org/modell/Medien_und_Trassen/1.10.0.1"
+                nsURI="http://www.plan-pro.org/modell/Medien_und_Trassen/1.10.0.3"
                 nsPrefix="nsMedien_und_Trassen">
    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
+               value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
    </eAnnotations>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="Ader_Durchmesser_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TAder_Durchmesser"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
-         <details key="pattern" value="[01][.][1-8]|[0][.][9]|[1][.][0]"/>
+         <details key="name"
+                  value="TAder_Durchmesser"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+         <details key="pattern"
+                  value="[01][.][1-8]|[0][.][9]|[1][.][0]"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Ader_Durchmesser_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCAder_Durchmesser"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCAder_Durchmesser"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -32,8 +37,10 @@
                            eType="#//Ader_Durchmesser_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -41,17 +48,22 @@
                  name="Ader_Querschnitt_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TAder_Querschnitt"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
-         <details key="pattern" value="[1-9][0-9]?([.][1-9])?"/>
+         <details key="name"
+                  value="TAder_Querschnitt"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#decimal"/>
+         <details key="pattern"
+                  value="[1-9][0-9]?([.][1-9])?"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Ader_Querschnitt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCAder_Querschnitt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCAder_Querschnitt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -59,8 +71,10 @@
                            eType="#//Ader_Querschnitt_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -68,17 +82,22 @@
                  name="Ader_Reserve_Type"
                  instanceClassName="java.math.BigInteger">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TAder_Reserve"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
-         <details key="pattern" value="[1-9][0-9]{0,1}|[1][0-9]{2}|200"/>
+         <details key="name"
+                  value="TAder_Reserve"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+         <details key="pattern"
+                  value="[1-9][0-9]{0,1}|[1][0-9]{2}|200"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Ader_Reserve_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCAder_Reserve"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCAder_Reserve"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -86,8 +105,10 @@
                            eType="#//Ader_Reserve_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -95,17 +116,22 @@
                  name="Anzahl_Verseilelemente_Type"
                  instanceClassName="java.math.BigInteger">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TAnzahl_Verseilelemente"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
-         <details key="pattern" value="[1-9][0-9]{0,1}|[1][0-9]{2}|200"/>
+         <details key="name"
+                  value="TAnzahl_Verseilelemente"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+         <details key="pattern"
+                  value="[1-9][0-9]{0,1}|[1][0-9]{2}|200"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Anzahl_Verseilelemente_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCAnzahl_Verseilelemente"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCAnzahl_Verseilelemente"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -113,8 +139,10 @@
                            eType="#//Anzahl_Verseilelemente_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -122,18 +150,22 @@
                  name="Bezeichnung_Kabel_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TBezeichnung_Kabel"/>
+         <details key="name"
+                  value="TBezeichnung_Kabel"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
-         <details key="pattern" value="[1-9]|1[0-6]"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
+         <details key="pattern"
+                  value=".{1,16}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Bezeichnung_Kabel_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCBezeichnung_Kabel"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCBezeichnung_Kabel"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -141,8 +173,10 @@
                            eType="#//Bezeichnung_Kabel_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -150,18 +184,22 @@
                  name="Bezeichnung_Kabel_Verteilpunkt_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TBezeichnung_Kabel_Verteilpunkt"/>
+         <details key="name"
+                  value="TBezeichnung_Kabel_Verteilpunkt"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
-         <details key="pattern" value="[1-9]|1[0-9]|20"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
+         <details key="pattern"
+                  value=".{1,20}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Bezeichnung_Kabel_Verteilpunkt_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCBezeichnung_Kabel_Verteilpunkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCBezeichnung_Kabel_Verteilpunkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -169,23 +207,30 @@
                            eType="#//Bezeichnung_Kabel_Verteilpunkt_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMKabelArt">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMKabelArt">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMKabel_Art"/>
+         <details key="name"
+                  value="ENUMKabel_Art"/>
       </eAnnotations>
-      <eLiterals name="ENUMKabel_Art_Balisenkabel" literal="Balisenkabel"/>
+      <eLiterals name="ENUMKabel_Art_Balisenkabel"
+                 literal="Balisenkabel"/>
       <eLiterals name="ENUMKabel_Art_Energie_400V_AC"
                  value="1"
                  literal="Energie 400V AC"/>
       <eLiterals name="ENUMKabel_Art_Energie_750V_DC"
                  value="2"
                  literal="Energie 750V DC"/>
-      <eLiterals name="ENUMKabel_Art_LWL" value="3" literal="LWL"/>
+      <eLiterals name="ENUMKabel_Art_LWL"
+                 value="3"
+                 literal="LWL"/>
       <eLiterals name="ENUMKabel_Art_Signalkabel_adrig"
                  value="4"
                  literal="Signalkabel adrig"/>
@@ -195,21 +240,28 @@
       <eLiterals name="ENUMKabel_Art_Signalkabel_Sternvierer"
                  value="6"
                  literal="Signalkabel Sternvierer"/>
-      <eLiterals name="ENUMKabel_Art_sonstige" value="7" literal="sonstige"/>
+      <eLiterals name="ENUMKabel_Art_sonstige"
+                 value="7"
+                 literal="sonstige"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMKabelArtObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMKabel_Art:Object"/>
-         <details key="baseType" value="ENUMKabel_Art"/>
+         <details key="name"
+                  value="ENUMKabel_Art:Object"/>
+         <details key="baseType"
+                  value="ENUMKabel_Art"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMKabelVerteilpunktArt">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMKabelVerteilpunktArt">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMKabel_Verteilpunkt_Art"/>
+         <details key="name"
+                  value="ENUMKabel_Verteilpunkt_Art"/>
       </eAnnotations>
-      <eLiterals name="ENUMKabel_Verteilpunkt_Art_Kabelschrank" literal="Kabelschrank"/>
+      <eLiterals name="ENUMKabel_Verteilpunkt_Art_Kabelschrank"
+                 literal="Kabelschrank"/>
       <eLiterals name="ENUMKabel_Verteilpunkt_Art_Kabelverteiler"
                  value="1"
                  literal="Kabelverteiler"/>
@@ -221,20 +273,27 @@
                  name="ENUMKabelVerteilpunktArtObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMKabel_Verteilpunkt_Art:Object"/>
-         <details key="baseType" value="ENUMKabel_Verteilpunkt_Art"/>
+         <details key="name"
+                  value="ENUMKabel_Verteilpunkt_Art:Object"/>
+         <details key="baseType"
+                  value="ENUMKabel_Verteilpunkt_Art"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMTrasseKanteArt">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMTrasseKanteArt">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
          <details key="documentation"
                   value="\&#34;frei\&#34;==Kabelverlegung ohne Kabeltiefbau (z. B. Verlegung auf Schotter, Verbindung benachbarter Schaltschränke)"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMTrasse_Kante_Art"/>
+         <details key="name"
+                  value="ENUMTrasse_Kante_Art"/>
       </eAnnotations>
-      <eLiterals name="ENUMTrasse_Kante_Art_Erdtrasse" literal="Erdtrasse"/>
-      <eLiterals name="ENUMTrasse_Kante_Art_frei" value="1" literal="frei"/>
+      <eLiterals name="ENUMTrasse_Kante_Art_Erdtrasse"
+                 literal="Erdtrasse"/>
+      <eLiterals name="ENUMTrasse_Kante_Art_frei"
+                 value="1"
+                 literal="frei"/>
       <eLiterals name="ENUMTrasse_Kante_Art_Kabelgestell_Tunnel"
                  value="2"
                  literal="Kabelgestell_Tunnel"/>
@@ -244,7 +303,9 @@
       <eLiterals name="ENUMTrasse_Kante_Art_Rohrtrasse"
                  value="4"
                  literal="Rohrtrasse"/>
-      <eLiterals name="ENUMTrasse_Kante_Art_sonstige" value="5" literal="sonstige"/>
+      <eLiterals name="ENUMTrasse_Kante_Art_sonstige"
+                 value="5"
+                 literal="sonstige"/>
       <eLiterals name="ENUMTrasse_Kante_Art_Trogtrasse"
                  value="6"
                  literal="Trogtrasse"/>
@@ -259,20 +320,27 @@
                  name="ENUMTrasseKanteArtObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMTrasse_Kante_Art:Object"/>
-         <details key="baseType" value="ENUMTrasse_Kante_Art"/>
+         <details key="name"
+                  value="ENUMTrasse_Kante_Art:Object"/>
+         <details key="baseType"
+                  value="ENUMTrasse_Kante_Art"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMTrasseKnotenArt">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMTrasseKnotenArt">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
          <details key="documentation"
                   value="\&#34;Schacht, Trassenabzweig\&#34;==Abzweig beliebig vieler Trassen;&#xA;\&#34;Trassenauslass\&#34;==Auslass von Kabeln (z. B. zu einem Kabelverteiler), wobei die Verbindung Trasse - Verteiler nicht als eigene Trasse abgebildet wird "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMTrasse_Knoten_Art"/>
+         <details key="name"
+                  value="ENUMTrasse_Knoten_Art"/>
       </eAnnotations>
-      <eLiterals name="ENUMTrasse_Knoten_Art_Schacht" literal="Schacht"/>
-      <eLiterals name="ENUMTrasse_Knoten_Art_sonstige" value="1" literal="sonstige"/>
+      <eLiterals name="ENUMTrasse_Knoten_Art_Schacht"
+                 literal="Schacht"/>
+      <eLiterals name="ENUMTrasse_Knoten_Art_sonstige"
+                 value="1"
+                 literal="sonstige"/>
       <eLiterals name="ENUMTrasse_Knoten_Art_Trassenabzweig"
                  value="2"
                  literal="Trassenabzweig"/>
@@ -290,44 +358,73 @@
                  name="ENUMTrasseKnotenArtObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMTrasse_Knoten_Art:Object"/>
-         <details key="baseType" value="ENUMTrasse_Knoten_Art"/>
+         <details key="name"
+                  value="ENUMTrasse_Knoten_Art:Object"/>
+         <details key="baseType"
+                  value="ENUMTrasse_Knoten_Art"/>
       </eAnnotations>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EEnum" name="ENUMTrasseNutzer">
+   <eClassifiers xsi:type="ecore:EEnum"
+                 name="ENUMTrasseNutzer">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMTrasse_Nutzer"/>
+         <details key="name"
+                  value="ENUMTrasse_Nutzer"/>
       </eAnnotations>
-      <eLiterals name="ENUMTrasse_Nutzer_DB_Energie" literal="DB_Energie"/>
-      <eLiterals name="ENUMTrasse_Nutzer_DB_KT" value="1" literal="DB_KT"/>
-      <eLiterals name="ENUMTrasse_Nutzer_DB_Netz" value="2" literal="DB_Netz"/>
-      <eLiterals name="ENUMTrasse_Nutzer_DB_StuS" value="3" literal="DB_StuS"/>
-      <eLiterals name="ENUMTrasse_Nutzer_Dritte" value="4" literal="Dritte"/>
-      <eLiterals name="ENUMTrasse_Nutzer_sonstige" value="5" literal="sonstige"/>
-      <eLiterals name="ENUMTrasse_Nutzer_unbekannt" value="6" literal="unbekannt"/>
+      <eLiterals name="ENUMTrasse_Nutzer_DB_Energie"
+                 literal="DB_Energie"/>
+      <eLiterals name="ENUMTrasse_Nutzer_DB_InfraGO_Fahrweg"
+                 value="1"
+                 literal="DB_InfraGO_Fahrweg"/>
+      <eLiterals name="ENUMTrasse_Nutzer_DB_InfraGO_Personenbahnhoefe"
+                 value="2"
+                 literal="DB_InfraGO_Personenbahnhoefe"/>
+      <eLiterals name="ENUMTrasse_Nutzer_DB_KT"
+                 value="3"
+                 literal="DB_KT"/>
+      <eLiterals name="ENUMTrasse_Nutzer_DB_Netz"
+                 value="4"
+                 literal="DB_Netz"/>
+      <eLiterals name="ENUMTrasse_Nutzer_DB_StuS"
+                 value="5"
+                 literal="DB_StuS"/>
+      <eLiterals name="ENUMTrasse_Nutzer_Dritte"
+                 value="6"
+                 literal="Dritte"/>
+      <eLiterals name="ENUMTrasse_Nutzer_sonstige"
+                 value="7"
+                 literal="sonstige"/>
+      <eLiterals name="ENUMTrasse_Nutzer_unbekannt"
+                 value="8"
+                 literal="unbekannt"/>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="ENUMTrasseNutzerObject"
                  instanceClassName="org.eclipse.emf.common.util.Enumerator">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="ENUMTrasse_Nutzer:Object"/>
-         <details key="baseType" value="ENUMTrasse_Nutzer"/>
+         <details key="name"
+                  value="ENUMTrasse_Nutzer:Object"/>
+         <details key="baseType"
+                  value="ENUMTrasse_Nutzer"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EDataType"
                  name="Induktionsschutz_Type"
                  instanceClassName="java.math.BigInteger">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TInduktionsschutz"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+         <details key="name"
+                  value="TInduktionsschutz"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Induktionsschutz_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCInduktionsschutz"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCInduktionsschutz"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -335,8 +432,10 @@
                            eType="#//Induktionsschutz_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -349,11 +448,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW|BÜ&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW|BÜ&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CKabel"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CKabel"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bezeichnung"
@@ -362,8 +463,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bezeichnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bezeichnung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -377,8 +480,10 @@
                      value="Verweis auf die Trassen-Kante des Kabel-Gefäßsystems, in dem das Kabel verlegt werden soll bzw. ist. Kurze Verbindungen sind auch ohne Kabelgefäßsystem möglich, z. B. zwischen zwei benachbarten Schaltkästen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Trasse_Kante"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Trasse_Kante"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -388,8 +493,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Kabel_Allg"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Kabel_Allg"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -404,15 +511,20 @@
                      value="Attributgruppe zur Angabe der Kabeleigenschaften je Verseilart. Bei kombinierten Signalkabeln wird die Attributgruppe zweimal instanziiert, sonst einmal."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Kabel_Element"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Kabel_Element"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Kabel_Allg_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Kabel_Allg_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CKabel_Allg"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CKabel_Allg"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="induktionsschutz"
@@ -420,11 +532,14 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="Induktionsschutz-Klasse rx (16,7 Hz)."/>
+            <details key="documentation"
+                     value="Induktionsschutz-Klasse rx (16,7 Hz)."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Induktionsschutz"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Induktionsschutz"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -438,8 +553,10 @@
                      value="Art des Kabels, z. B. Signalkabel oder Lichtwellenleiter (LWL)."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Kabel_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Kabel_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -449,15 +566,18 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="Länge des Kabels in m."/>
+            <details key="documentation"
+                     value="Länge des Kabels in m."/>
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[ganzzahliger Wert]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..99999]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Kabel_Laenge"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Kabel_Laenge"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -471,8 +591,10 @@
                      value="Typ des Kabels. Eine Liste der zugelassenen Kabeltypen soll über Planungswerkzeug vorgegeben werden."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Kabel_Typ"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Kabel_Typ"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -485,8 +607,10 @@
                      value="Angabe, ob das Kabel mit einem Nagetierschutz zu versehen ist (true). Der Wert false wird nicht verwendet."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Nagetierschutz"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Nagetierschutz"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -494,8 +618,10 @@
                  name="Kabel_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCKabel_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCKabel_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -503,15 +629,20 @@
                            eType="#//ENUMKabelArtObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Kabel_Bezeichnung_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Kabel_Bezeichnung_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CKabel_Bezeichnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CKabel_Bezeichnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bezeichnungKabel"
@@ -520,22 +651,28 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="Bezeichnung des Kabels."/>
+            <details key="documentation"
+                     value="Bezeichnung des Kabels."/>
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[1..16]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..16]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bezeichnung_Kabel"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bezeichnung_Kabel"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
-   <eClassifiers xsi:type="ecore:EClass" name="Kabel_Element_AttributeGroup">
+   <eClassifiers xsi:type="ecore:EClass"
+                 name="Kabel_Element_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CKabel_Element"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CKabel_Element"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="aderReserve"
@@ -549,11 +686,13 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[1..200]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..200]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Ader_Reserve"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Ader_Reserve"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -563,15 +702,18 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="Anzahl der Verseilelemente. Bsp.: 3x4x1,4."/>
+            <details key="documentation"
+                     value="Anzahl der Verseilelemente. Bsp.: 3x4x1,4."/>
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[1..200]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..200]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Anzahl_Verseilelemente"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Anzahl_Verseilelemente"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -585,11 +727,13 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[1,4]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1,4]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Verseilart"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Verseilart"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -603,11 +747,13 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                       &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                            &#xA;    &lt;ppi:Patternbeschreibung&gt;[0.1..1.8]&lt;/ppi:Patternbeschreibung&gt;&#xA;                         &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                    &#xA;"/>
+                     value="&#xD;&#xA;                       &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                            &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0.1..1.8]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                         &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                    &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Ader_Durchmesser"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Ader_Durchmesser"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -621,11 +767,13 @@
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                       &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                            &#xA;    &lt;ppi:Patternbeschreibung&gt;[1..99, optional eine Nachkommastelle]&lt;/ppi:Patternbeschreibung&gt;&#xA;                         &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                    &#xA;"/>
+                     value="&#xD;&#xA;                       &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                            &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..99, optional eine Nachkommastelle]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                         &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                    &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Ader_Querschnitt"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Ader_Querschnitt"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -633,18 +781,22 @@
                  name="Kabel_Laenge_Type"
                  instanceClassName="java.math.BigDecimal">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TKabel_Laenge"/>
+         <details key="name"
+                  value="TKabel_Laenge"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter"/>
-         <details key="pattern" value="(-?[1-9][0-9]{0,})|0"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter"/>
+         <details key="pattern"
+                  value="[1-9][0-9]{0,4}"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Kabel_Laenge_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCKabel_Laenge"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCKabel_Laenge"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -652,8 +804,10 @@
                            eType="#//Kabel_Laenge_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -661,17 +815,20 @@
                  name="Kabel_Typ_Type"
                  instanceClassName="java.lang.String">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TKabel_Typ"/>
+         <details key="name"
+                  value="TKabel_Typ"/>
          <details key="baseType"
-                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText"/>
+                  value="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Kabel_Typ_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCKabel_Typ"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCKabel_Typ"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -679,8 +836,10 @@
                            eType="#//Kabel_Typ_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -693,11 +852,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW|BÜ&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW|BÜ&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CKabel_Verteilpunkt"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CKabel_Verteilpunkt"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bezeichnung"
@@ -706,8 +867,10 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bezeichnung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bezeichnung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -717,11 +880,14 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="Art des Kabel-Verteilpunkts."/>
+            <details key="documentation"
+                     value="Art des Kabel-Verteilpunkts."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Unterbringung"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Unterbringung"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -735,8 +901,10 @@
                      value="Verweis auf die Unterbringung des Kabel-Verteilpunkts. Als Art der Unterbringung ist dabei immer \&#34;keine\&#34; auszuwählen, da der Kabel-Verteilpunkt selbst die physische Unterbringung definiert."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Kabel_Verteilpunkt_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Kabel_Verteilpunkt_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -744,8 +912,10 @@
                  name="Kabel_Verteilpunkt_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCKabel_Verteilpunkt_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCKabel_Verteilpunkt_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -753,16 +923,20 @@
                            eType="#//ENUMKabelVerteilpunktArtObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Kabel_Verteilpunkt_Bezeichnung_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CKabel_Verteilpunkt_Bezeichnung"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CKabel_Verteilpunkt_Bezeichnung"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="bezeichnungKabelVerteilpunkt"
@@ -771,15 +945,18 @@
                            containment="true"
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-            <details key="documentation" value="Bezeichnung des Kabel-Verteilpunkts."/>
+            <details key="documentation"
+                     value="Bezeichnung des Kabel-Verteilpunkts."/>
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                    &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                         &#xA;    &lt;ppi:Patternbeschreibung&gt;[1..20]&lt;/ppi:Patternbeschreibung&gt;&#xA;                      &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                 &#xA;"/>
+                     value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..20]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Bezeichnung_Kabel_Verteilpunkt"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Bezeichnung_Kabel_Verteilpunkt"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -787,8 +964,10 @@
                  name="Nagetierschutz_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCNagetierschutz"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCNagetierschutz"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -796,8 +975,10 @@
                            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//BooleanObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -810,11 +991,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW|BÜ&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW|BÜ&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CTrasse_Kante"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CTrasse_Kante"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDTrasseKnotenA"
@@ -827,8 +1010,10 @@
                      value="Verweis auf den Trasse Knoten am Anfang der Kante."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Trasse_Knoten_A"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Trasse_Knoten_A"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -842,8 +1027,10 @@
                      value="Verweis auf den Trasse Knoten am Ende der Kante."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Trasse_Knoten_B"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Trasse_Knoten_B"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -857,8 +1044,10 @@
                      value="Art der Medientrasse (z. B. Luft- oder Trogtrasse)."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Trasse_Kante_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Trasse_Kante_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -870,15 +1059,17 @@
                            resolveProxies="false">
          <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation"
-                     value="Nutzer der Medientrasse, z. B. DB Netz. Eine Trasse kann von mehreren Nutzern beansprucht werden."/>
+                     value="Nutzer der Medientrasse, z. B. DB InfraGO. Eine Trasse kann von mehreren Nutzern beansprucht werden."/>
          </eAnnotations>
          <eAnnotations>
             <details key="appinfo"
-                     value="&#xA;                          &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                               &#xA;    &lt;ppi:ProposedValue&gt;DB_Netz&lt;/ppi:ProposedValue&gt;&#xA;                            &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;                       &#xA;"/>
+                     value="&#xD;&#xA;                          &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                               &#xD;&#xA;    &lt;ppi:ProposedValue&gt;DB_InfraGO_Fahrweg&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                            &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                       &#xD;&#xA;"/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Trasse_Nutzer"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Trasse_Nutzer"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -886,8 +1077,10 @@
                  name="Trasse_Kante_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCTrasse_Kante_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCTrasse_Kante_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -895,8 +1088,10 @@
                            eType="#//ENUMTrasseKanteArtObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -909,11 +1104,13 @@
       </eAnnotations>
       <eAnnotations>
          <details key="appinfo"
-                  value="&#xA;              &#xA;  &lt;ppi:WorkflowInformation&gt;&#xA;                   &#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xA;                   &#xA;    &lt;ppi:Untergewerke&gt;ESTW|BÜ&lt;/ppi:Untergewerke&gt;&#xA;                &#xA;  &lt;/ppi:WorkflowInformation&gt;&#xA;           &#xA;"/>
+                  value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW|BÜ&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="CTrasse_Knoten"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="CTrasse_Knoten"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference"
                            name="iDAnschlussElement"
@@ -926,8 +1123,10 @@
                      value="Verweis auf das Anschluss-Element, das durch den Trassen-Knoten repräsentiert wird. Der Verweis wird nicht gefüllt bei Schacht, Trassenabzweig, Trassenänderung, ggf. auch nicht bei Trassenende. Die Medientrasse kann ggf.wenige Meter vor dem Anschlusselement enden, wenn für den Weg bis zum Anschlusselement eine freie Verlegung (z. B. im Schotter) vorgesehen ist. "/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_Anschluss_Element"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_Anschluss_Element"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -941,8 +1140,10 @@
                      value="Verweis auf den zugehörigen GEO_Knoten, über den mittelbar (GEO_Punkt) auch eine Verortung erfolgen kann."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="ID_GEO_Knoten"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="ID_GEO_Knoten"/>
          </eAnnotations>
       </eStructuralFeatures>
       <eStructuralFeatures xsi:type="ecore:EReference"
@@ -956,8 +1157,10 @@
                      value="Art des Trassenknotens, z. B. Trassenende oder -abzweig. Beim Wechsel der Trassen(kanten)art ist ein Trassenknoten der Art \&#34;Trassenaenderung\&#34; vorzusehen."/>
          </eAnnotations>
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Trasse_Knoten_Art"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Trasse_Knoten_Art"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -965,8 +1168,10 @@
                  name="Trasse_Knoten_Art_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCTrasse_Knoten_Art"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCTrasse_Knoten_Art"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -974,8 +1179,10 @@
                            eType="#//ENUMTrasseKnotenArtObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -983,8 +1190,10 @@
                  name="Trasse_Nutzer_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCTrasse_Nutzer"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCTrasse_Nutzer"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -992,8 +1201,10 @@
                            eType="#//ENUMTrasseNutzerObject"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>
@@ -1001,17 +1212,22 @@
                  name="Verseilart_Type"
                  instanceClassName="java.math.BigInteger">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TVerseilart"/>
-         <details key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
-         <details key="pattern" value="[1|4]"/>
+         <details key="name"
+                  value="TVerseilart"/>
+         <details key="baseType"
+                  value="http://www.eclipse.org/emf/2003/XMLType#integer"/>
+         <details key="pattern"
+                  value="[1|4]"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Verseilart_TypeClass"
                  eSuperTypes="BasisTypen.ecore#//BasisAttribut_AttributeGroup">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-         <details key="name" value="TCVerseilart"/>
-         <details key="kind" value="elementOnly"/>
+         <details key="name"
+                  value="TCVerseilart"/>
+         <details key="kind"
+                  value="elementOnly"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EAttribute"
                            name="wert"
@@ -1019,8 +1235,10 @@
                            eType="#//Verseilart_Type"
                            unsettable="true">
          <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind" value="element"/>
-            <details key="name" value="Wert"/>
+            <details key="kind"
+                     value="element"/>
+            <details key="name"
+                     value="Wert"/>
          </eAnnotations>
       </eStructuralFeatures>
    </eClassifiers>

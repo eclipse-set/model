@@ -138,10 +138,8 @@ public class Wirksamkeit_TypeClassItemProvider extends BasisAttribut_AttributeGr
 			case PZBPackage.WIRKSAMKEIT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

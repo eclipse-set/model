@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +128,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Balisentechnik_ETCS/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Balisentechnik_ETCS/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -1569,6 +1569,43 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	int BEZEICHNUNG_LEU_ANLAGE_TYPE_CLASS_FEATURE_COUNT = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Bezeichnung_RBC_TypeClassImpl <em>Bezeichnung RBC Type Class</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Bezeichnung_RBC_TypeClassImpl
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBezeichnung_RBC_TypeClass()
+	 * @generated
+	 */
+	int BEZEICHNUNG_RBC_TYPE_CLASS = 36;
+
+	/**
+	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEZEICHNUNG_RBC_TYPE_CLASS__ID_BEARBEITUNGSVERMERK = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP__ID_BEARBEITUNGSVERMERK;
+
+	/**
+	 * The feature id for the '<em><b>Wert</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEZEICHNUNG_RBC_TYPE_CLASS__WERT = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Bezeichnung RBC Type Class</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEZEICHNUNG_RBC_TYPE_CLASS_FEATURE_COUNT = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP_FEATURE_COUNT + 1;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Bezeichnung_ZUB_SE_TypeClassImpl <em>Bezeichnung ZUB SE Type Class</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1576,7 +1613,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBezeichnung_ZUB_SE_TypeClass()
 	 * @generated
 	 */
-	int BEZEICHNUNG_ZUB_SE_TYPE_CLASS = 36;
+	int BEZEICHNUNG_ZUB_SE_TYPE_CLASS = 37;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1613,7 +1650,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBezeichnung_ZUB_TypeClass()
 	 * @generated
 	 */
-	int BEZEICHNUNG_ZUB_TYPE_CLASS = 37;
+	int BEZEICHNUNG_ZUB_TYPE_CLASS = 38;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1650,7 +1687,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBgrenze_Nach_ESG_Bed_Ausstieg_AttributeGroup()
 	 * @generated
 	 */
-	int BGRENZE_NACH_ESG_BED_AUSSTIEG_ATTRIBUTE_GROUP = 38;
+	int BGRENZE_NACH_ESG_BED_AUSSTIEG_ATTRIBUTE_GROUP = 39;
 
 	/**
 	 * The feature id for the '<em><b>IDW Element</b></em>' containment reference.
@@ -1687,7 +1724,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBgrenze_Nach_L2_Bed_Einstieg_AttributeGroup()
 	 * @generated
 	 */
-	int BGRENZE_NACH_L2_BED_EINSTIEG_ATTRIBUTE_GROUP = 39;
+	int BGRENZE_NACH_L2_BED_EINSTIEG_ATTRIBUTE_GROUP = 40;
 
 	/**
 	 * The feature id for the '<em><b>IDW Element</b></em>' containment reference.
@@ -1724,7 +1761,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBgrenze_Nach_LZB_Bed_Einstieg_AttributeGroup()
 	 * @generated
 	 */
-	int BGRENZE_NACH_LZB_BED_EINSTIEG_ATTRIBUTE_GROUP = 40;
+	int BGRENZE_NACH_LZB_BED_EINSTIEG_ATTRIBUTE_GROUP = 41;
 
 	/**
 	 * The feature id for the '<em><b>IDW Element</b></em>' containment reference.
@@ -1761,7 +1798,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBgrenze_Nach_Ohne_Bed_Einstieg_AttributeGroup()
 	 * @generated
 	 */
-	int BGRENZE_NACH_OHNE_BED_EINSTIEG_ATTRIBUTE_GROUP = 41;
+	int BGRENZE_NACH_OHNE_BED_EINSTIEG_ATTRIBUTE_GROUP = 42;
 
 	/**
 	 * The feature id for the '<em><b>IDW Element</b></em>' containment reference.
@@ -1798,7 +1835,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBgrenze_Nach_PZB_Bed_Einstieg_AttributeGroup()
 	 * @generated
 	 */
-	int BGRENZE_NACH_PZB_BED_EINSTIEG_ATTRIBUTE_GROUP = 42;
+	int BGRENZE_NACH_PZB_BED_EINSTIEG_ATTRIBUTE_GROUP = 43;
 
 	/**
 	 * The feature id for the '<em><b>IDW Element</b></em>' containment reference.
@@ -1835,7 +1872,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBgrenze_Nach_ZBS_Bed_Einstieg_AttributeGroup()
 	 * @generated
 	 */
-	int BGRENZE_NACH_ZBS_BED_EINSTIEG_ATTRIBUTE_GROUP = 43;
+	int BGRENZE_NACH_ZBS_BED_EINSTIEG_ATTRIBUTE_GROUP = 44;
 
 	/**
 	 * The feature id for the '<em><b>IDW Element</b></em>' containment reference.
@@ -1872,7 +1909,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBgrenze_RBC_Wechsel_BTS_Kette_AttributeGroup()
 	 * @generated
 	 */
-	int BGRENZE_RBC_WECHSEL_BTS_KETTE_ATTRIBUTE_GROUP = 44;
+	int BGRENZE_RBC_WECHSEL_BTS_KETTE_ATTRIBUTE_GROUP = 45;
 
 	/**
 	 * The feature id for the '<em><b>Bez Strecke BTS1</b></em>' containment reference.
@@ -1945,7 +1982,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBinaerdaten()
 	 * @generated
 	 */
-	int BINAERDATEN = 45;
+	int BINAERDATEN = 46;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -2027,7 +2064,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBinaerdaten_Datei_AttributeGroup()
 	 * @generated
 	 */
-	int BINAERDATEN_DATEI_ATTRIBUTE_GROUP = 46;
+	int BINAERDATEN_DATEI_ATTRIBUTE_GROUP = 47;
 
 	/**
 	 * The feature id for the '<em><b>Dateiname</b></em>' containment reference.
@@ -2064,7 +2101,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getD_LEVELTR_TypeClass()
 	 * @generated
 	 */
-	int DLEVELTR_TYPE_CLASS = 47;
+	int DLEVELTR_TYPE_CLASS = 48;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2101,7 +2138,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDateiname_TypeClass()
 	 * @generated
 	 */
-	int DATEINAME_TYPE_CLASS = 48;
+	int DATEINAME_TYPE_CLASS = 49;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2138,7 +2175,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDateityp_Binaerdatei_TypeClass()
 	 * @generated
 	 */
-	int DATEITYP_BINAERDATEI_TYPE_CLASS = 49;
+	int DATEITYP_BINAERDATEI_TYPE_CLASS = 50;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2175,7 +2212,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDaten_TypeClass()
 	 * @generated
 	 */
-	int DATEN_TYPE_CLASS = 50;
+	int DATEN_TYPE_CLASS = 51;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2212,7 +2249,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDatenpunkt()
 	 * @generated
 	 */
-	int DATENPUNKT = 51;
+	int DATENPUNKT = 52;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -2375,7 +2412,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDatenpunkt_Allg_AttributeGroup()
 	 * @generated
 	 */
-	int DATENPUNKT_ALLG_ATTRIBUTE_GROUP = 52;
+	int DATENPUNKT_ALLG_ATTRIBUTE_GROUP = 53;
 
 	/**
 	 * The feature id for the '<em><b>Anwendungssystem</b></em>' containment reference.
@@ -2448,7 +2485,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDatenpunkt_Beschreibung_TypeClass()
 	 * @generated
 	 */
-	int DATENPUNKT_BESCHREIBUNG_TYPE_CLASS = 53;
+	int DATENPUNKT_BESCHREIBUNG_TYPE_CLASS = 54;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2485,7 +2522,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDatenpunkt_Einmesspunkt_AttributeGroup()
 	 * @generated
 	 */
-	int DATENPUNKT_EINMESSPUNKT_ATTRIBUTE_GROUP = 54;
+	int DATENPUNKT_EINMESSPUNKT_ATTRIBUTE_GROUP = 55;
 
 	/**
 	 * The feature id for the '<em><b>Abstand Einmesspunkt</b></em>' containment reference.
@@ -2522,7 +2559,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDatenpunkt_Laenge_TypeClass()
 	 * @generated
 	 */
-	int DATENPUNKT_LAENGE_TYPE_CLASS = 55;
+	int DATENPUNKT_LAENGE_TYPE_CLASS = 56;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2559,7 +2596,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDatenpunkt_Link()
 	 * @generated
 	 */
-	int DATENPUNKT_LINK = 56;
+	int DATENPUNKT_LINK = 57;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -2695,7 +2732,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDelta_VGES_TypeClass()
 	 * @generated
 	 */
-	int DELTA_VGES_TYPE_CLASS = 57;
+	int DELTA_VGES_TYPE_CLASS = 58;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2732,7 +2769,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDelta_VLES_TypeClass()
 	 * @generated
 	 */
-	int DELTA_VLES_TYPE_CLASS = 58;
+	int DELTA_VLES_TYPE_CLASS = 59;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2769,7 +2806,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDelta_VZES_TypeClass()
 	 * @generated
 	 */
-	int DELTA_VZES_TYPE_CLASS = 59;
+	int DELTA_VZES_TYPE_CLASS = 60;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2806,7 +2843,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_ATO_TypeClass()
 	 * @generated
 	 */
-	int DP_ATO_TYPE_CLASS = 60;
+	int DP_ATO_TYPE_CLASS = 61;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2843,7 +2880,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Bezug_Funktional_Art_TypeClass()
 	 * @generated
 	 */
-	int DP_BEZUG_FUNKTIONAL_ART_TYPE_CLASS = 61;
+	int DP_BEZUG_FUNKTIONAL_ART_TYPE_CLASS = 62;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2880,7 +2917,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Bezug_Funktional_AttributeGroup()
 	 * @generated
 	 */
-	int DP_BEZUG_FUNKTIONAL_ATTRIBUTE_GROUP = 62;
+	int DP_BEZUG_FUNKTIONAL_ATTRIBUTE_GROUP = 63;
 
 	/**
 	 * The feature id for the '<em><b>DP Bezug Funktional Art</b></em>' containment reference.
@@ -2917,7 +2954,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_ETCS_Adresse_AttributeGroup()
 	 * @generated
 	 */
-	int DP_ETCS_ADRESSE_ATTRIBUTE_GROUP = 63;
+	int DP_ETCS_ADRESSE_ATTRIBUTE_GROUP = 64;
 
 	/**
 	 * The feature id for the '<em><b>NIDBG</b></em>' containment reference.
@@ -2954,7 +2991,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Link_Art_TypeClass()
 	 * @generated
 	 */
-	int DP_LINK_ART_TYPE_CLASS = 64;
+	int DP_LINK_ART_TYPE_CLASS = 65;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2991,7 +3028,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Telegramm_AttributeGroup()
 	 * @generated
 	 */
-	int DP_TELEGRAMM_ATTRIBUTE_GROUP = 65;
+	int DP_TELEGRAMM_ATTRIBUTE_GROUP = 66;
 
 	/**
 	 * The feature id for the '<em><b>ETCS System Version</b></em>' containment reference.
@@ -3046,7 +3083,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Telegramm_ESG_AttributeGroup()
 	 * @generated
 	 */
-	int DP_TELEGRAMM_ESG_ATTRIBUTE_GROUP = 66;
+	int DP_TELEGRAMM_ESG_ATTRIBUTE_GROUP = 67;
 
 	/**
 	 * The feature id for the '<em><b>ETCS System Version</b></em>' containment reference.
@@ -3110,7 +3147,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_Art_TypeClass()
 	 * @generated
 	 */
-	int DP_TYP_ART_TYPE_CLASS = 67;
+	int DP_TYP_ART_TYPE_CLASS = 68;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3147,7 +3184,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_AttributeGroup()
 	 * @generated
 	 */
-	int DP_TYP_ATTRIBUTE_GROUP = 68;
+	int DP_TYP_ATTRIBUTE_GROUP = 69;
 
 	/**
 	 * The feature id for the '<em><b>DP Typ Art</b></em>' containment reference.
@@ -3229,7 +3266,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_ESG_TypeClass()
 	 * @generated
 	 */
-	int DP_TYP_ESG_TYPE_CLASS = 69;
+	int DP_TYP_ESG_TYPE_CLASS = 70;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3266,7 +3303,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_ETCS_TypeClass()
 	 * @generated
 	 */
-	int DP_TYP_ETCS_TYPE_CLASS = 70;
+	int DP_TYP_ETCS_TYPE_CLASS = 71;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3303,7 +3340,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_GESG_AttributeGroup()
 	 * @generated
 	 */
-	int DP_TYP_GESG_ATTRIBUTE_GROUP = 71;
+	int DP_TYP_GESG_ATTRIBUTE_GROUP = 72;
 
 	/**
 	 * The feature id for the '<em><b>DP Typ ESG</b></em>' containment reference.
@@ -3349,7 +3386,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_GETCS_AttributeGroup()
 	 * @generated
 	 */
-	int DP_TYP_GETCS_ATTRIBUTE_GROUP = 72;
+	int DP_TYP_GETCS_ATTRIBUTE_GROUP = 73;
 
 	/**
 	 * The feature id for the '<em><b>DPATO</b></em>' containment reference.
@@ -3404,7 +3441,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_GGNT_AttributeGroup()
 	 * @generated
 	 */
-	int DP_TYP_GGNT_ATTRIBUTE_GROUP = 73;
+	int DP_TYP_GGNT_ATTRIBUTE_GROUP = 74;
 
 	/**
 	 * The feature id for the '<em><b>DP Typ GNT</b></em>' containment reference.
@@ -3432,7 +3469,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_GNT_TypeClass()
 	 * @generated
 	 */
-	int DP_TYP_GNT_TYPE_CLASS = 74;
+	int DP_TYP_GNT_TYPE_CLASS = 75;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3469,7 +3506,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_GSonst_AttributeGroup()
 	 * @generated
 	 */
-	int DP_TYP_GSONST_ATTRIBUTE_GROUP = 75;
+	int DP_TYP_GSONST_ATTRIBUTE_GROUP = 76;
 
 	/**
 	 * The feature id for the '<em><b>Anwendung Sonst</b></em>' containment reference.
@@ -3506,7 +3543,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_GTrans_AttributeGroup()
 	 * @generated
 	 */
-	int DP_TYP_GTRANS_ATTRIBUTE_GROUP = 76;
+	int DP_TYP_GTRANS_ATTRIBUTE_GROUP = 77;
 
 	/**
 	 * The feature id for the '<em><b>DP Typ Trans</b></em>' containment reference.
@@ -3534,7 +3571,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_GZBS_AttributeGroup()
 	 * @generated
 	 */
-	int DP_TYP_GZBS_ATTRIBUTE_GROUP = 77;
+	int DP_TYP_GZBS_ATTRIBUTE_GROUP = 78;
 
 	/**
 	 * The feature id for the '<em><b>DP Typ ZBS</b></em>' containment reference.
@@ -3562,7 +3599,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_Sonst_TypeClass()
 	 * @generated
 	 */
-	int DP_TYP_SONST_TYPE_CLASS = 78;
+	int DP_TYP_SONST_TYPE_CLASS = 79;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3599,7 +3636,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_Trans_TypeClass()
 	 * @generated
 	 */
-	int DP_TYP_TRANS_TYPE_CLASS = 79;
+	int DP_TYP_TRANS_TYPE_CLASS = 80;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3636,7 +3673,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_V_La_TypeClass()
 	 * @generated
 	 */
-	int DP_TYP_VLA_TYPE_CLASS = 80;
+	int DP_TYP_VLA_TYPE_CLASS = 81;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3673,7 +3710,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_ZBS_TypeClass()
 	 * @generated
 	 */
-	int DP_TYP_ZBS_TYPE_CLASS = 81;
+	int DP_TYP_ZBS_TYPE_CLASS = 82;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3710,7 +3747,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Verlinkt_TypeClass()
 	 * @generated
 	 */
-	int DP_VERLINKT_TYPE_CLASS = 82;
+	int DP_VERLINKT_TYPE_CLASS = 83;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3747,7 +3784,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDunkelschaltanstoss_TypeClass()
 	 * @generated
 	 */
-	int DUNKELSCHALTANSTOSS_TYPE_CLASS = 83;
+	int DUNKELSCHALTANSTOSS_TYPE_CLASS = 84;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3784,7 +3821,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDWeg_Intervall_200_TypeClass()
 	 * @generated
 	 */
-	int DWEG_INTERVALL_200_TYPE_CLASS = 84;
+	int DWEG_INTERVALL_200_TYPE_CLASS = 85;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3821,7 +3858,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDWeg_Intervall_50_200_TypeClass()
 	 * @generated
 	 */
-	int DWEG_INTERVALL_50_200_TYPE_CLASS = 85;
+	int DWEG_INTERVALL_50_200_TYPE_CLASS = 86;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3858,7 +3895,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDWeg_Intervall_50_TypeClass()
 	 * @generated
 	 */
-	int DWEG_INTERVALL_50_TYPE_CLASS = 86;
+	int DWEG_INTERVALL_50_TYPE_CLASS = 87;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3895,7 +3932,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getEingang_Gepuffert_TypeClass()
 	 * @generated
 	 */
-	int EINGANG_GEPUFFERT_TYPE_CLASS = 87;
+	int EINGANG_GEPUFFERT_TYPE_CLASS = 88;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3932,7 +3969,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getEinstieg_Erlaubt_TypeClass()
 	 * @generated
 	 */
-	int EINSTIEG_ERLAUBT_TYPE_CLASS = 88;
+	int EINSTIEG_ERLAUBT_TYPE_CLASS = 89;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3969,7 +4006,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getEinstieg_Ohne_Rueckw_Sig_TypeClass()
 	 * @generated
 	 */
-	int EINSTIEG_OHNE_RUECKW_SIG_TYPE_CLASS = 89;
+	int EINSTIEG_OHNE_RUECKW_SIG_TYPE_CLASS = 90;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4006,7 +4043,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getEinzeldatei_Art_TypeClass()
 	 * @generated
 	 */
-	int EINZELDATEI_ART_TYPE_CLASS = 90;
+	int EINZELDATEI_ART_TYPE_CLASS = 91;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4043,7 +4080,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getEnergie_Eingang_Art_TypeClass()
 	 * @generated
 	 */
-	int ENERGIE_EINGANG_ART_TYPE_CLASS = 91;
+	int ENERGIE_EINGANG_ART_TYPE_CLASS = 92;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4080,7 +4117,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getESG_Ind_Erlaeuterung_TypeClass()
 	 * @generated
 	 */
-	int ESG_IND_ERLAEUTERUNG_TYPE_CLASS = 92;
+	int ESG_IND_ERLAEUTERUNG_TYPE_CLASS = 93;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4117,7 +4154,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getESG_Ind_Parameter_TypeClass()
 	 * @generated
 	 */
-	int ESG_IND_PARAMETER_TYPE_CLASS = 93;
+	int ESG_IND_PARAMETER_TYPE_CLASS = 94;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4154,7 +4191,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getESG_Ind_Parameterwert_TypeClass()
 	 * @generated
 	 */
-	int ESG_IND_PARAMETERWERT_TYPE_CLASS = 94;
+	int ESG_IND_PARAMETERWERT_TYPE_CLASS = 95;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4191,7 +4228,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getESG_Individuelle_Merkmale_AttributeGroup()
 	 * @generated
 	 */
-	int ESG_INDIVIDUELLE_MERKMALE_ATTRIBUTE_GROUP = 95;
+	int ESG_INDIVIDUELLE_MERKMALE_ATTRIBUTE_GROUP = 96;
 
 	/**
 	 * The feature id for the '<em><b>ESG Ind Erlaeuterung</b></em>' containment reference.
@@ -4246,7 +4283,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getESG_Spezifische_Merkmale_AttributeGroup()
 	 * @generated
 	 */
-	int ESG_SPEZIFISCHE_MERKMALE_ATTRIBUTE_GROUP = 96;
+	int ESG_SPEZIFISCHE_MERKMALE_ATTRIBUTE_GROUP = 97;
 
 	/**
 	 * The feature id for the '<em><b>ETCS Paketnummer</b></em>' containment reference.
@@ -4319,7 +4356,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Adresse_AttributeGroup()
 	 * @generated
 	 */
-	int ETCS_ADRESSE_ATTRIBUTE_GROUP = 97;
+	int ETCS_ADRESSE_ATTRIBUTE_GROUP = 98;
 
 	/**
 	 * The feature id for the '<em><b>NIDC</b></em>' containment reference.
@@ -4356,7 +4393,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Gefahrpunktabstand_Abweichend_TypeClass()
 	 * @generated
 	 */
-	int ETCS_GEFAHRPUNKTABSTAND_ABWEICHEND_TYPE_CLASS = 98;
+	int ETCS_GEFAHRPUNKTABSTAND_ABWEICHEND_TYPE_CLASS = 99;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4393,7 +4430,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Kante()
 	 * @generated
 	 */
-	int ETCS_KANTE = 99;
+	int ETCS_KANTE = 100;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -4511,7 +4548,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Kante_Bezeichnung_AttributeGroup()
 	 * @generated
 	 */
-	int ETCS_KANTE_BEZEICHNUNG_ATTRIBUTE_GROUP = 100;
+	int ETCS_KANTE_BEZEICHNUNG_ATTRIBUTE_GROUP = 101;
 
 	/**
 	 * The feature id for the '<em><b>Bezeichnung ETCS Kante</b></em>' containment reference.
@@ -4539,7 +4576,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Knoten()
 	 * @generated
 	 */
-	int ETCS_KNOTEN = 101;
+	int ETCS_KNOTEN = 102;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -4621,7 +4658,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Knoten_Art_Sonstige_TypeClass()
 	 * @generated
 	 */
-	int ETCS_KNOTEN_ART_SONSTIGE_TYPE_CLASS = 102;
+	int ETCS_KNOTEN_ART_SONSTIGE_TYPE_CLASS = 103;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4658,7 +4695,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Paketnummer_TypeClass()
 	 * @generated
 	 */
-	int ETCS_PAKETNUMMER_TYPE_CLASS = 103;
+	int ETCS_PAKETNUMMER_TYPE_CLASS = 104;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4695,7 +4732,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Par_Erlaeuterung_TypeClass()
 	 * @generated
 	 */
-	int ETCS_PAR_ERLAEUTERUNG_TYPE_CLASS = 104;
+	int ETCS_PAR_ERLAEUTERUNG_TYPE_CLASS = 105;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4732,7 +4769,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Parametername_TypeClass()
 	 * @generated
 	 */
-	int ETCS_PARAMETERNAME_TYPE_CLASS = 105;
+	int ETCS_PARAMETERNAME_TYPE_CLASS = 106;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4769,7 +4806,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Parameterwert_TypeClass()
 	 * @generated
 	 */
-	int ETCS_PARAMETERWERT_TYPE_CLASS = 106;
+	int ETCS_PARAMETERWERT_TYPE_CLASS = 107;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4806,7 +4843,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Richtungsanzeige()
 	 * @generated
 	 */
-	int ETCS_RICHTUNGSANZEIGE = 107;
+	int ETCS_RICHTUNGSANZEIGE = 108;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -4897,7 +4934,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Signal()
 	 * @generated
 	 */
-	int ETCS_SIGNAL = 108;
+	int ETCS_SIGNAL = 109;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -5042,7 +5079,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Signal_Allg_AttributeGroup()
 	 * @generated
 	 */
-	int ETCS_SIGNAL_ALLG_ATTRIBUTE_GROUP = 109;
+	int ETCS_SIGNAL_ALLG_ATTRIBUTE_GROUP = 110;
 
 	/**
 	 * The feature id for the '<em><b>Ausstieg ETCS Sperre</b></em>' containment reference.
@@ -5106,7 +5143,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Signal_DWeg_AttributeGroup()
 	 * @generated
 	 */
-	int ETCS_SIGNAL_DWEG_ATTRIBUTE_GROUP = 110;
+	int ETCS_SIGNAL_DWEG_ATTRIBUTE_GROUP = 111;
 
 	/**
 	 * The feature id for the '<em><b>DWeg Intervall200</b></em>' containment reference.
@@ -5152,7 +5189,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Signal_TBV_AttributeGroup()
 	 * @generated
 	 */
-	int ETCS_SIGNAL_TBV_ATTRIBUTE_GROUP = 111;
+	int ETCS_SIGNAL_TBV_ATTRIBUTE_GROUP = 112;
 
 	/**
 	 * The feature id for the '<em><b>TBV Meldepunkt</b></em>' containment reference.
@@ -5198,7 +5235,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_System_Version_TypeClass()
 	 * @generated
 	 */
-	int ETCS_SYSTEM_VERSION_TYPE_CLASS = 112;
+	int ETCS_SYSTEM_VERSION_TYPE_CLASS = 113;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5235,7 +5272,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_W_Kr()
 	 * @generated
 	 */
-	int ETCS_WKR = 113;
+	int ETCS_WKR = 114;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -5344,7 +5381,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_W_Kr_MUKA_AttributeGroup()
 	 * @generated
 	 */
-	int ETCS_WKR_MUKA_ATTRIBUTE_GROUP = 114;
+	int ETCS_WKR_MUKA_ATTRIBUTE_GROUP = 115;
 
 	/**
 	 * The feature id for the '<em><b>Gruppen ID</b></em>' containment reference.
@@ -5381,7 +5418,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getEV_Modul()
 	 * @generated
 	 */
-	int EV_MODUL = 115;
+	int EV_MODUL = 116;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -5472,7 +5509,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getEV_Modul_Art_TypeClass()
 	 * @generated
 	 */
-	int EV_MODUL_ART_TYPE_CLASS = 116;
+	int EV_MODUL_ART_TYPE_CLASS = 117;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5509,7 +5546,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getEV_Modul_Ausgang_AttributeGroup()
 	 * @generated
 	 */
-	int EV_MODUL_AUSGANG_ATTRIBUTE_GROUP = 117;
+	int EV_MODUL_AUSGANG_ATTRIBUTE_GROUP = 118;
 
 	/**
 	 * The feature id for the '<em><b>Ausgang Nr</b></em>' containment reference.
@@ -5582,7 +5619,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getEV_Modul_Eingang_AttributeGroup()
 	 * @generated
 	 */
-	int EV_MODUL_EINGANG_ATTRIBUTE_GROUP = 118;
+	int EV_MODUL_EINGANG_ATTRIBUTE_GROUP = 119;
 
 	/**
 	 * The feature id for the '<em><b>Eingang Gepuffert</b></em>' containment reference.
@@ -5637,7 +5674,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getEV_Modul_Physisch_AttributeGroup()
 	 * @generated
 	 */
-	int EV_MODUL_PHYSISCH_ATTRIBUTE_GROUP = 119;
+	int EV_MODUL_PHYSISCH_ATTRIBUTE_GROUP = 120;
 
 	/**
 	 * The feature id for the '<em><b>EV Modul Art</b></em>' containment reference.
@@ -5701,7 +5738,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getEV_Modul_Typ_TypeClass()
 	 * @generated
 	 */
-	int EV_MODUL_TYP_TYPE_CLASS = 120;
+	int EV_MODUL_TYP_TYPE_CLASS = 121;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5738,7 +5775,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getEV_Modul_Virtuell_AttributeGroup()
 	 * @generated
 	 */
-	int EV_MODUL_VIRTUELL_ATTRIBUTE_GROUP = 121;
+	int EV_MODUL_VIRTUELL_ATTRIBUTE_GROUP = 122;
 
 	/**
 	 * The feature id for the '<em><b>ID Quellelement</b></em>' containment reference.
@@ -5766,7 +5803,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFabrikat_TypeClass()
 	 * @generated
 	 */
-	int FABRIKAT_TYPE_CLASS = 122;
+	int FABRIKAT_TYPE_CLASS = 123;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -5803,7 +5840,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFachtelegramm()
 	 * @generated
 	 */
-	int FACHTELEGRAMM = 123;
+	int FACHTELEGRAMM = 124;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -5939,7 +5976,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_Anschaltbedingung()
 	 * @generated
 	 */
-	int FT_ANSCHALTBEDINGUNG = 124;
+	int FT_ANSCHALTBEDINGUNG = 125;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -6048,7 +6085,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ESG_Merkmale_AttributeGroup()
 	 * @generated
 	 */
-	int FT_ESG_MERKMALE_ATTRIBUTE_GROUP = 125;
+	int FT_ESG_MERKMALE_ATTRIBUTE_GROUP = 126;
 
 	/**
 	 * The feature id for the '<em><b>Abstand Bes Langer Einfahrweg</b></em>' containment reference.
@@ -6193,7 +6230,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ESG_Subtyp_TypeClass()
 	 * @generated
 	 */
-	int FT_ESG_SUBTYP_TYPE_CLASS = 126;
+	int FT_ESG_SUBTYP_TYPE_CLASS = 127;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6230,7 +6267,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ESG_Typ_TypeClass()
 	 * @generated
 	 */
-	int FT_ESG_TYP_TYPE_CLASS = 127;
+	int FT_ESG_TYP_TYPE_CLASS = 128;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6267,7 +6304,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ETCS_L2_Merkmale_AttributeGroup()
 	 * @generated
 	 */
-	int FT_ETCS_L2_MERKMALE_ATTRIBUTE_GROUP = 128;
+	int FT_ETCS_L2_MERKMALE_ATTRIBUTE_GROUP = 129;
 
 	/**
 	 * The feature id for the '<em><b>FTETCSL2 Typ</b></em>' containment reference.
@@ -6331,7 +6368,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ETCS_L2_Typ_TypeClass()
 	 * @generated
 	 */
-	int FT_ETCS_L2_TYP_TYPE_CLASS = 129;
+	int FT_ETCS_L2_TYP_TYPE_CLASS = 130;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6368,7 +6405,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ETCS_Trans_Merkmale_AttributeGroup()
 	 * @generated
 	 */
-	int FT_ETCS_TRANS_MERKMALE_ATTRIBUTE_GROUP = 130;
+	int FT_ETCS_TRANS_MERKMALE_ATTRIBUTE_GROUP = 131;
 
 	/**
 	 * The feature id for the '<em><b>FTETCS Trans Paket41</b></em>' containment reference list.
@@ -6405,7 +6442,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ETCS_Trans_Paket_41_AttributeGroup()
 	 * @generated
 	 */
-	int FT_ETCS_TRANS_PAKET_41_ATTRIBUTE_GROUP = 131;
+	int FT_ETCS_TRANS_PAKET_41_ATTRIBUTE_GROUP = 132;
 
 	/**
 	 * The feature id for the '<em><b>DLEVELTR</b></em>' containment reference.
@@ -6460,7 +6497,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ETCS_Trans_Paket_N_AttributeGroup()
 	 * @generated
 	 */
-	int FT_ETCS_TRANS_PAKET_NATTRIBUTE_GROUP = 132;
+	int FT_ETCS_TRANS_PAKET_NATTRIBUTE_GROUP = 133;
 
 	/**
 	 * The feature id for the '<em><b>ETCS Paketnummer</b></em>' containment reference.
@@ -6533,7 +6570,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_Fahrweg_Teil()
 	 * @generated
 	 */
-	int FT_FAHRWEG_TEIL = 133;
+	int FT_FAHRWEG_TEIL = 134;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -6660,7 +6697,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_Fahrweg_Teil_Allg_AttributeGroup()
 	 * @generated
 	 */
-	int FT_FAHRWEG_TEIL_ALLG_ATTRIBUTE_GROUP = 134;
+	int FT_FAHRWEG_TEIL_ALLG_ATTRIBUTE_GROUP = 135;
 
 	/**
 	 * The feature id for the '<em><b>FW Teil Nummer</b></em>' containment reference.
@@ -6706,7 +6743,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_Fahrweg_Teile_AttributeGroup()
 	 * @generated
 	 */
-	int FT_FAHRWEG_TEILE_ATTRIBUTE_GROUP = 135;
+	int FT_FAHRWEG_TEILE_ATTRIBUTE_GROUP = 136;
 
 	/**
 	 * The feature id for the '<em><b>IDFT Fahrweg Teil</b></em>' containment reference.
@@ -6743,7 +6780,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_GNT_Merkmale_AttributeGroup()
 	 * @generated
 	 */
-	int FT_GNT_MERKMALE_ATTRIBUTE_GROUP = 136;
+	int FT_GNT_MERKMALE_ATTRIBUTE_GROUP = 137;
 
 	/**
 	 * The feature id for the '<em><b>Delta VGES</b></em>' containment reference.
@@ -6870,7 +6907,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_GNT_Punktart_TypeClass()
 	 * @generated
 	 */
-	int FT_GNT_PUNKTART_TYPE_CLASS = 137;
+	int FT_GNT_PUNKTART_TYPE_CLASS = 138;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6907,7 +6944,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_Hinweis_Funktion_TypeClass()
 	 * @generated
 	 */
-	int FT_HINWEIS_FUNKTION_TYPE_CLASS = 138;
+	int FT_HINWEIS_FUNKTION_TYPE_CLASS = 139;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -6944,7 +6981,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ZBS_Merkmale_AttributeGroup()
 	 * @generated
 	 */
-	int FT_ZBS_MERKMALE_ATTRIBUTE_GROUP = 139;
+	int FT_ZBS_MERKMALE_ATTRIBUTE_GROUP = 140;
 
 	/**
 	 * The feature id for the '<em><b>FT Hinweis Funktion</b></em>' containment reference.
@@ -7125,7 +7162,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ZBS_Merkmale_La_AttributeGroup()
 	 * @generated
 	 */
-	int FT_ZBS_MERKMALE_LA_ATTRIBUTE_GROUP = 140;
+	int FT_ZBS_MERKMALE_LA_ATTRIBUTE_GROUP = 141;
 
 	/**
 	 * The feature id for the '<em><b>ZBS La Bereich Distanz</b></em>' containment reference.
@@ -7180,7 +7217,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ZBS_Typ_TypeClass()
 	 * @generated
 	 */
-	int FT_ZBS_TYP_TYPE_CLASS = 141;
+	int FT_ZBS_TYP_TYPE_CLASS = 142;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7217,7 +7254,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFW_Teil_Nummer_TypeClass()
 	 * @generated
 	 */
-	int FW_TEIL_NUMMER_TYPE_CLASS = 142;
+	int FW_TEIL_NUMMER_TYPE_CLASS = 143;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7254,7 +7291,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getGruppen_ID_TypeClass()
 	 * @generated
 	 */
-	int GRUPPEN_ID_TYPE_CLASS = 143;
+	int GRUPPEN_ID_TYPE_CLASS = 144;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7291,7 +7328,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getHarter_Ausstieg_Aus_L2_TypeClass()
 	 * @generated
 	 */
-	int HARTER_AUSSTIEG_AUS_L2_TYPE_CLASS = 144;
+	int HARTER_AUSSTIEG_AUS_L2_TYPE_CLASS = 145;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7328,7 +7365,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getHersteller_TypeClass()
 	 * @generated
 	 */
-	int HERSTELLER_TYPE_CLASS = 145;
+	int HERSTELLER_TYPE_CLASS = 146;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7365,7 +7402,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getHinweis_Balisenbefestigung_TypeClass()
 	 * @generated
 	 */
-	int HINWEIS_BALISENBEFESTIGUNG_TYPE_CLASS = 146;
+	int HINWEIS_BALISENBEFESTIGUNG_TYPE_CLASS = 147;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7402,7 +7439,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getIndividualisierung_Weitere_TypeClass()
 	 * @generated
 	 */
-	int INDIVIDUALISIERUNG_WEITERE_TYPE_CLASS = 147;
+	int INDIVIDUALISIERUNG_WEITERE_TYPE_CLASS = 148;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7439,7 +7476,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getIst_Befahren_TypeClass()
 	 * @generated
 	 */
-	int IST_BEFAHREN_TYPE_CLASS = 148;
+	int IST_BEFAHREN_TYPE_CLASS = 149;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7476,7 +7513,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getKm_BTS_1_TypeClass()
 	 * @generated
 	 */
-	int KM_BTS_1TYPE_CLASS = 149;
+	int KM_BTS_1TYPE_CLASS = 150;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7513,7 +7550,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getKm_BTS_2_TypeClass()
 	 * @generated
 	 */
-	int KM_BTS_2TYPE_CLASS = 150;
+	int KM_BTS_2TYPE_CLASS = 151;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7550,7 +7587,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getKm_BTS_3_TypeClass()
 	 * @generated
 	 */
-	int KM_BTS_3TYPE_CLASS = 151;
+	int KM_BTS_3TYPE_CLASS = 152;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7587,7 +7624,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getKnoten_Auf_TOP_Kante_AttributeGroup()
 	 * @generated
 	 */
-	int KNOTEN_AUF_TOP_KANTE_ATTRIBUTE_GROUP = 152;
+	int KNOTEN_AUF_TOP_KANTE_ATTRIBUTE_GROUP = 153;
 
 	/**
 	 * The feature id for the '<em><b>ETCS Knoten Art Sonstige</b></em>' containment reference.
@@ -7624,7 +7661,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getKonfigurationskennung_TypeClass()
 	 * @generated
 	 */
-	int KONFIGURATIONSKENNUNG_TYPE_CLASS = 153;
+	int KONFIGURATIONSKENNUNG_TYPE_CLASS = 154;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7661,7 +7698,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getL_ACKLEVELTR_TypeClass()
 	 * @generated
 	 */
-	int LACKLEVELTR_TYPE_CLASS = 154;
+	int LACKLEVELTR_TYPE_CLASS = 155;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7698,7 +7735,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLaenge_1_TypeClass()
 	 * @generated
 	 */
-	int LAENGE_1TYPE_CLASS = 155;
+	int LAENGE_1TYPE_CLASS = 156;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7735,7 +7772,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLaenge_Ausfuehrungsbereich_TypeClass()
 	 * @generated
 	 */
-	int LAENGE_AUSFUEHRUNGSBEREICH_TYPE_CLASS = 156;
+	int LAENGE_AUSFUEHRUNGSBEREICH_TYPE_CLASS = 157;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7772,7 +7809,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLaenge_Gestufte_V_Signalisierung_TypeClass()
 	 * @generated
 	 */
-	int LAENGE_GESTUFTE_VSIGNALISIERUNG_TYPE_CLASS = 157;
+	int LAENGE_GESTUFTE_VSIGNALISIERUNG_TYPE_CLASS = 158;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7809,7 +7846,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLaenge_Soll_Mind_150_TypeClass()
 	 * @generated
 	 */
-	int LAENGE_SOLL_MIND_150_TYPE_CLASS = 158;
+	int LAENGE_SOLL_MIND_150_TYPE_CLASS = 159;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7846,7 +7883,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLeistungsbedarf_TypeClass()
 	 * @generated
 	 */
-	int LEISTUNGSBEDARF_TYPE_CLASS = 159;
+	int LEISTUNGSBEDARF_TYPE_CLASS = 160;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -7883,7 +7920,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Anlage()
 	 * @generated
 	 */
-	int LEU_ANLAGE = 160;
+	int LEU_ANLAGE = 161;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -7974,7 +8011,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Anlage_Allg_AttributeGroup()
 	 * @generated
 	 */
-	int LEU_ANLAGE_ALLG_ATTRIBUTE_GROUP = 161;
+	int LEU_ANLAGE_ALLG_ATTRIBUTE_GROUP = 162;
 
 	/**
 	 * The feature id for the '<em><b>Leistungsbedarf</b></em>' containment reference.
@@ -8011,7 +8048,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Anlage_Art_TypeClass()
 	 * @generated
 	 */
-	int LEU_ANLAGE_ART_TYPE_CLASS = 162;
+	int LEU_ANLAGE_ART_TYPE_CLASS = 163;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8048,7 +8085,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Anlage_Bezeichnung_AttributeGroup()
 	 * @generated
 	 */
-	int LEU_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP = 163;
+	int LEU_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP = 164;
 
 	/**
 	 * The feature id for the '<em><b>Bezeichnung LEU Anlage</b></em>' containment reference.
@@ -8076,7 +8113,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Ausgang_Nr_TypeClass()
 	 * @generated
 	 */
-	int LEU_AUSGANG_NR_TYPE_CLASS = 164;
+	int LEU_AUSGANG_NR_TYPE_CLASS = 165;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8113,7 +8150,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Modul()
 	 * @generated
 	 */
-	int LEU_MODUL = 165;
+	int LEU_MODUL = 166;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -8231,7 +8268,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Modul_Allg_AttributeGroup()
 	 * @generated
 	 */
-	int LEU_MODUL_ALLG_ATTRIBUTE_GROUP = 166;
+	int LEU_MODUL_ALLG_ATTRIBUTE_GROUP = 167;
 
 	/**
 	 * The feature id for the '<em><b>Hersteller</b></em>' containment reference.
@@ -8286,7 +8323,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Modul_Art_TypeClass()
 	 * @generated
 	 */
-	int LEU_MODUL_ART_TYPE_CLASS = 167;
+	int LEU_MODUL_ART_TYPE_CLASS = 168;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8323,7 +8360,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Modul_Ausgang_AttributeGroup()
 	 * @generated
 	 */
-	int LEU_MODUL_AUSGANG_ATTRIBUTE_GROUP = 168;
+	int LEU_MODUL_AUSGANG_ATTRIBUTE_GROUP = 169;
 
 	/**
 	 * The feature id for the '<em><b>ID Balise</b></em>' containment reference.
@@ -8369,7 +8406,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Modul_Bezeichnung_AttributeGroup()
 	 * @generated
 	 */
-	int LEU_MODUL_BEZEICHNUNG_ATTRIBUTE_GROUP = 169;
+	int LEU_MODUL_BEZEICHNUNG_ATTRIBUTE_GROUP = 170;
 
 	/**
 	 * The feature id for the '<em><b>Modulnummer</b></em>' containment reference.
@@ -8397,7 +8434,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Modul_Geraetestand_TypeClass()
 	 * @generated
 	 */
-	int LEU_MODUL_GERAETESTAND_TYPE_CLASS = 170;
+	int LEU_MODUL_GERAETESTAND_TYPE_CLASS = 171;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8434,7 +8471,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Modul_Typ_TypeClass()
 	 * @generated
 	 */
-	int LEU_MODUL_TYP_TYPE_CLASS = 171;
+	int LEU_MODUL_TYP_TYPE_CLASS = 172;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8471,7 +8508,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Schaltkasten()
 	 * @generated
 	 */
-	int LEU_SCHALTKASTEN = 172;
+	int LEU_SCHALTKASTEN = 173;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -8580,7 +8617,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Schaltkasten_Bezeichnung_AttributeGroup()
 	 * @generated
 	 */
-	int LEU_SCHALTKASTEN_BEZEICHNUNG_ATTRIBUTE_GROUP = 173;
+	int LEU_SCHALTKASTEN_BEZEICHNUNG_ATTRIBUTE_GROUP = 174;
 
 	/**
 	 * The feature id for the '<em><b>Nummer Schaltkasten</b></em>' containment reference.
@@ -8608,7 +8645,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Schaltkasten_Energie_AttributeGroup()
 	 * @generated
 	 */
-	int LEU_SCHALTKASTEN_ENERGIE_ATTRIBUTE_GROUP = 174;
+	int LEU_SCHALTKASTEN_ENERGIE_ATTRIBUTE_GROUP = 175;
 
 	/**
 	 * The feature id for the '<em><b>Anzahl Voll LEU Kalkuliert</b></em>' containment reference.
@@ -8672,7 +8709,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Schaltkasten_Position_AttributeGroup()
 	 * @generated
 	 */
-	int LEU_SCHALTKASTEN_POSITION_ATTRIBUTE_GROUP = 175;
+	int LEU_SCHALTKASTEN_POSITION_ATTRIBUTE_GROUP = 176;
 
 	/**
 	 * The feature id for the '<em><b>ID Bezugspunkt Positionierung</b></em>' containment reference.
@@ -8718,7 +8755,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Schaltkasten_Typ_TypeClass()
 	 * @generated
 	 */
-	int LEU_SCHALTKASTEN_TYP_TYPE_CLASS = 176;
+	int LEU_SCHALTKASTEN_TYP_TYPE_CLASS = 177;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8755,7 +8792,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Steuernde_AttributeGroup()
 	 * @generated
 	 */
-	int LEU_STEUERNDE_ATTRIBUTE_GROUP = 177;
+	int LEU_STEUERNDE_ATTRIBUTE_GROUP = 178;
 
 	/**
 	 * The feature id for the '<em><b>IDLEU Anlage</b></em>' containment reference.
@@ -8792,7 +8829,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLfd_Nr_Am_Bezugspunkt_TypeClass()
 	 * @generated
 	 */
-	int LFD_NR_AM_BEZUGSPUNKT_TYPE_CLASS = 178;
+	int LFD_NR_AM_BEZUGSPUNKT_TYPE_CLASS = 179;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8829,7 +8866,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLink_Distanz_TypeClass()
 	 * @generated
 	 */
-	int LINK_DISTANZ_TYPE_CLASS = 179;
+	int LINK_DISTANZ_TYPE_CLASS = 180;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8866,7 +8903,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLLA_TypeClass()
 	 * @generated
 	 */
-	int LLA_TYPE_CLASS = 180;
+	int LLA_TYPE_CLASS = 181;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8903,7 +8940,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLM_G_TypeClass()
 	 * @generated
 	 */
-	int LM_GTYPE_CLASS = 181;
+	int LM_GTYPE_CLASS = 182;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -8940,7 +8977,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLT_Binaerdatei_Hilfe_AttributeGroup()
 	 * @generated
 	 */
-	int LT_BINAERDATEI_HILFE_ATTRIBUTE_GROUP = 182;
+	int LT_BINAERDATEI_HILFE_ATTRIBUTE_GROUP = 183;
 
 	/**
 	 * The feature id for the '<em><b>ID Binaerdatei Hilfe</b></em>' containment reference.
@@ -8986,7 +9023,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLT_Binaerdaten_AttributeGroup()
 	 * @generated
 	 */
-	int LT_BINAERDATEN_ATTRIBUTE_GROUP = 183;
+	int LT_BINAERDATEN_ATTRIBUTE_GROUP = 184;
 
 	/**
 	 * The feature id for the '<em><b>ID Anhang EA Doku</b></em>' containment reference.
@@ -9032,7 +9069,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLuft_Telegramm()
 	 * @generated
 	 */
-	int LUFT_TELEGRAMM = 184;
+	int LUFT_TELEGRAMM = 185;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -9089,7 +9126,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	int LUFT_TELEGRAMM__ID_BALISE_UEBERTRAGUNG = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>ID Fachtelegramm</b></em>' containment reference.
+	 * The feature id for the '<em><b>ID Fachtelegramm</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -9141,7 +9178,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getM_LEVELTR_TypeClass()
 	 * @generated
 	 */
-	int MLEVELTR_TYPE_CLASS = 185;
+	int MLEVELTR_TYPE_CLASS = 186;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9178,7 +9215,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMassgebende_Neig_1_TypeClass()
 	 * @generated
 	 */
-	int MASSGEBENDE_NEIG_1TYPE_CLASS = 186;
+	int MASSGEBENDE_NEIG_1TYPE_CLASS = 187;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9215,7 +9252,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMassgebende_Neig_Schutzstrecke_TypeClass()
 	 * @generated
 	 */
-	int MASSGEBENDE_NEIG_SCHUTZSTRECKE_TYPE_CLASS = 187;
+	int MASSGEBENDE_NEIG_SCHUTZSTRECKE_TYPE_CLASS = 188;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9252,7 +9289,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMassgebende_Neigung_Mind_150_TypeClass()
 	 * @generated
 	 */
-	int MASSGEBENDE_NEIGUNG_MIND_150_TYPE_CLASS = 188;
+	int MASSGEBENDE_NEIGUNG_MIND_150_TYPE_CLASS = 189;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9289,7 +9326,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMassgebende_Neigung_Mind_Sig_150_TypeClass()
 	 * @generated
 	 */
-	int MASSGEBENDE_NEIGUNG_MIND_SIG_150_TYPE_CLASS = 189;
+	int MASSGEBENDE_NEIGUNG_MIND_SIG_150_TYPE_CLASS = 190;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9326,7 +9363,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMassgebende_Neigung_Mind_Sig_TypeClass()
 	 * @generated
 	 */
-	int MASSGEBENDE_NEIGUNG_MIND_SIG_TYPE_CLASS = 190;
+	int MASSGEBENDE_NEIGUNG_MIND_SIG_TYPE_CLASS = 191;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9363,7 +9400,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMastschild_TypeClass()
 	 * @generated
 	 */
-	int MASTSCHILD_TYPE_CLASS = 191;
+	int MASTSCHILD_TYPE_CLASS = 192;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9400,7 +9437,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMax_Leistung_TypeClass()
 	 * @generated
 	 */
-	int MAX_LEISTUNG_TYPE_CLASS = 192;
+	int MAX_LEISTUNG_TYPE_CLASS = 193;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9437,7 +9474,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMax_Unterbrechungszeit_TypeClass()
 	 * @generated
 	 */
-	int MAX_UNTERBRECHUNGSZEIT_TYPE_CLASS = 193;
+	int MAX_UNTERBRECHUNGSZEIT_TYPE_CLASS = 194;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9474,7 +9511,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMetallteil_AttributeGroup()
 	 * @generated
 	 */
-	int METALLTEIL_ATTRIBUTE_GROUP = 194;
+	int METALLTEIL_ATTRIBUTE_GROUP = 195;
 
 	/**
 	 * The feature id for the '<em><b>Metallteil Kategorie</b></em>' containment reference.
@@ -9511,7 +9548,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMetallteil_Kategorie_TypeClass()
 	 * @generated
 	 */
-	int METALLTEIL_KATEGORIE_TYPE_CLASS = 195;
+	int METALLTEIL_KATEGORIE_TYPE_CLASS = 196;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9548,7 +9585,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMetallteil_Laenge_TypeClass()
 	 * @generated
 	 */
-	int METALLTEIL_LAENGE_TYPE_CLASS = 196;
+	int METALLTEIL_LAENGE_TYPE_CLASS = 197;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9585,7 +9622,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getModulnummer_TypeClass()
 	 * @generated
 	 */
-	int MODULNUMMER_TYPE_CLASS = 197;
+	int MODULNUMMER_TYPE_CLASS = 198;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9622,7 +9659,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMontageabweichung_TypeClass()
 	 * @generated
 	 */
-	int MONTAGEABWEICHUNG_TYPE_CLASS = 198;
+	int MONTAGEABWEICHUNG_TYPE_CLASS = 199;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9659,7 +9696,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNeigung_TypeClass()
 	 * @generated
 	 */
-	int NEIGUNG_TYPE_CLASS = 199;
+	int NEIGUNG_TYPE_CLASS = 200;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9696,7 +9733,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNennleistung_TypeClass()
 	 * @generated
 	 */
-	int NENNLEISTUNG_TYPE_CLASS = 200;
+	int NENNLEISTUNG_TYPE_CLASS = 201;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9733,7 +9770,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNID_BG_TypeClass()
 	 * @generated
 	 */
-	int NID_BG_TYPE_CLASS = 201;
+	int NID_BG_TYPE_CLASS = 202;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9770,7 +9807,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNID_C_TypeClass()
 	 * @generated
 	 */
-	int NID_CTYPE_CLASS = 202;
+	int NID_CTYPE_CLASS = 203;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9807,7 +9844,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNID_RBC_TypeClass()
 	 * @generated
 	 */
-	int NID_RBC_TYPE_CLASS = 203;
+	int NID_RBC_TYPE_CLASS = 204;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9844,7 +9881,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNID_STM_TypeClass()
 	 * @generated
 	 */
-	int NID_STM_TYPE_CLASS = 204;
+	int NID_STM_TYPE_CLASS = 205;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9881,7 +9918,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNID_TSR_TypeClass()
 	 * @generated
 	 */
-	int NID_TSR_TYPE_CLASS = 205;
+	int NID_TSR_TYPE_CLASS = 206;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9918,7 +9955,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNummer_Schaltkasten_TypeClass()
 	 * @generated
 	 */
-	int NUMMER_SCHALTKASTEN_TYPE_CLASS = 206;
+	int NUMMER_SCHALTKASTEN_TYPE_CLASS = 207;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9955,7 +9992,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getOberstrombegrenzung_Gueterzug_TypeClass()
 	 * @generated
 	 */
-	int OBERSTROMBEGRENZUNG_GUETERZUG_TYPE_CLASS = 207;
+	int OBERSTROMBEGRENZUNG_GUETERZUG_TYPE_CLASS = 208;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -9992,7 +10029,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getOberstrombegrenzung_Reisezug_TypeClass()
 	 * @generated
 	 */
-	int OBERSTROMBEGRENZUNG_REISEZUG_TYPE_CLASS = 208;
+	int OBERSTROMBEGRENZUNG_REISEZUG_TYPE_CLASS = 209;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10029,7 +10066,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getPort_Nr_Ausg_Physisch_TypeClass()
 	 * @generated
 	 */
-	int PORT_NR_AUSG_PHYSISCH_TYPE_CLASS = 209;
+	int PORT_NR_AUSG_PHYSISCH_TYPE_CLASS = 210;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10066,7 +10103,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getPosition_Sonstige_TypeClass()
 	 * @generated
 	 */
-	int POSITION_SONSTIGE_TYPE_CLASS = 210;
+	int POSITION_SONSTIGE_TYPE_CLASS = 211;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10103,7 +10140,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getPosition_TypeClass()
 	 * @generated
 	 */
-	int POSITION_TYPE_CLASS = 211;
+	int POSITION_TYPE_CLASS = 212;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10140,7 +10177,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getPrimaerquelle_TypeClass()
 	 * @generated
 	 */
-	int PRIMAERQUELLE_TYPE_CLASS = 212;
+	int PRIMAERQUELLE_TYPE_CLASS = 213;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10177,7 +10214,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getPrioritaet_TypeClass()
 	 * @generated
 	 */
-	int PRIORITAET_TYPE_CLASS = 213;
+	int PRIORITAET_TYPE_CLASS = 214;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10214,7 +10251,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getProg_Datei_Einzel_AttributeGroup()
 	 * @generated
 	 */
-	int PROG_DATEI_EINZEL_ATTRIBUTE_GROUP = 214;
+	int PROG_DATEI_EINZEL_ATTRIBUTE_GROUP = 215;
 
 	/**
 	 * The feature id for the '<em><b>Anzeigetext</b></em>' containment reference.
@@ -10296,7 +10333,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getProg_Datei_Gruppe()
 	 * @generated
 	 */
-	int PROG_DATEI_GRUPPE = 215;
+	int PROG_DATEI_GRUPPE = 216;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -10378,7 +10415,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getProjektierungsfall_TypeClass()
 	 * @generated
 	 */
-	int PROJEKTIERUNGSFALL_TYPE_CLASS = 216;
+	int PROJEKTIERUNGSFALL_TYPE_CLASS = 217;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10415,7 +10452,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getRBC()
 	 * @generated
 	 */
-	int RBC = 217;
+	int RBC = 218;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -10463,13 +10500,22 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	int RBC__OBJEKTREFERENZEN = BasisobjektePackage.BASIS_OBJEKT__OBJEKTREFERENZEN;
 
 	/**
+	 * The feature id for the '<em><b>Bezeichnung</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RBC__BEZEICHNUNG = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>ETCS Adresse</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RBC__ETCS_ADRESSE = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 0;
+	int RBC__ETCS_ADRESSE = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>IDESTW Zentraleinheit</b></em>' containment reference list.
@@ -10478,7 +10524,16 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RBC__IDESTW_ZENTRALEINHEIT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 1;
+	int RBC__IDESTW_ZENTRALEINHEIT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>ID Oertlichkeit Namensgebend</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RBC__ID_OERTLICHKEIT_NAMENSGEBEND = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>ID Unterbringung</b></em>' containment reference.
@@ -10487,7 +10542,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RBC__ID_UNTERBRINGUNG = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 2;
+	int RBC__ID_UNTERBRINGUNG = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>RBC Allg</b></em>' containment reference.
@@ -10496,7 +10551,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RBC__RBC_ALLG = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 3;
+	int RBC__RBC_ALLG = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>RBC</em>' class.
@@ -10505,7 +10560,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RBC_FEATURE_COUNT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 4;
+	int RBC_FEATURE_COUNT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.RBC_Allg_AttributeGroupImpl <em>RBC Allg Attribute Group</em>}' class.
@@ -10515,7 +10570,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getRBC_Allg_AttributeGroup()
 	 * @generated
 	 */
-	int RBC_ALLG_ATTRIBUTE_GROUP = 218;
+	int RBC_ALLG_ATTRIBUTE_GROUP = 219;
 
 	/**
 	 * The feature id for the '<em><b>RBCETCS System Version</b></em>' containment reference.
@@ -10554,6 +10609,34 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	int RBC_ALLG_ATTRIBUTE_GROUP_FEATURE_COUNT = 3;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.RBC_Bezeichnung_AttributeGroupImpl <em>RBC Bezeichnung Attribute Group</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.RBC_Bezeichnung_AttributeGroupImpl
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getRBC_Bezeichnung_AttributeGroup()
+	 * @generated
+	 */
+	int RBC_BEZEICHNUNG_ATTRIBUTE_GROUP = 220;
+
+	/**
+	 * The feature id for the '<em><b>Bezeichnung RBC</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RBC_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_RBC = 0;
+
+	/**
+	 * The number of structural features of the '<em>RBC Bezeichnung Attribute Group</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RBC_BEZEICHNUNG_ATTRIBUTE_GROUP_FEATURE_COUNT = 1;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.RBC_ETCS_System_Version_TypeClassImpl <em>RBC ETCS System Version Type Class</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -10561,7 +10644,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getRBC_ETCS_System_Version_TypeClass()
 	 * @generated
 	 */
-	int RBC_ETCS_SYSTEM_VERSION_TYPE_CLASS = 219;
+	int RBC_ETCS_SYSTEM_VERSION_TYPE_CLASS = 221;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10598,7 +10681,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getRBC_SRS_Version_TypeClass()
 	 * @generated
 	 */
-	int RBC_SRS_VERSION_TYPE_CLASS = 220;
+	int RBC_SRS_VERSION_TYPE_CLASS = 222;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10635,7 +10718,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getRekursion_2_Nr_TypeClass()
 	 * @generated
 	 */
-	int REKURSION_2NR_TYPE_CLASS = 221;
+	int REKURSION_2NR_TYPE_CLASS = 223;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10672,7 +10755,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getRekursion_Nr_TypeClass()
 	 * @generated
 	 */
-	int REKURSION_NR_TYPE_CLASS = 222;
+	int REKURSION_NR_TYPE_CLASS = 224;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10709,7 +10792,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getRufnummer_TypeClass()
 	 * @generated
 	 */
-	int RUFNUMMER_TYPE_CLASS = 223;
+	int RUFNUMMER_TYPE_CLASS = 225;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10746,7 +10829,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSBE_TypeClass()
 	 * @generated
 	 */
-	int SBE_TYPE_CLASS = 224;
+	int SBE_TYPE_CLASS = 226;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10783,7 +10866,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSchutzstrecke_Erforderlich_TypeClass()
 	 * @generated
 	 */
-	int SCHUTZSTRECKE_ERFORDERLICH_TYPE_CLASS = 225;
+	int SCHUTZSTRECKE_ERFORDERLICH_TYPE_CLASS = 227;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10820,7 +10903,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSchutzstrecke_Vorhanden_TypeClass()
 	 * @generated
 	 */
-	int SCHUTZSTRECKE_VORHANDEN_TYPE_CLASS = 226;
+	int SCHUTZSTRECKE_VORHANDEN_TYPE_CLASS = 228;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10857,7 +10940,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSolllaenge_Mind_Sig_150_TypeClass()
 	 * @generated
 	 */
-	int SOLLLAENGE_MIND_SIG_150_TYPE_CLASS = 227;
+	int SOLLLAENGE_MIND_SIG_150_TYPE_CLASS = 229;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10894,7 +10977,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSolllaenge_Mind_Sig_TypeClass()
 	 * @generated
 	 */
-	int SOLLLAENGE_MIND_SIG_TYPE_CLASS = 228;
+	int SOLLLAENGE_MIND_SIG_TYPE_CLASS = 230;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10931,7 +11014,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSonstige_Standortangabe_TypeClass()
 	 * @generated
 	 */
-	int SONSTIGE_STANDORTANGABE_TYPE_CLASS = 229;
+	int SONSTIGE_STANDORTANGABE_TYPE_CLASS = 231;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -10968,7 +11051,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSpannung_Art_TypeClass()
 	 * @generated
 	 */
-	int SPANNUNG_ART_TYPE_CLASS = 230;
+	int SPANNUNG_ART_TYPE_CLASS = 232;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11005,7 +11088,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSpannung_Toleranz_Obere_TypeClass()
 	 * @generated
 	 */
-	int SPANNUNG_TOLERANZ_OBERE_TYPE_CLASS = 231;
+	int SPANNUNG_TOLERANZ_OBERE_TYPE_CLASS = 233;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11042,7 +11125,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSpannung_Toleranz_Untere_TypeClass()
 	 * @generated
 	 */
-	int SPANNUNG_TOLERANZ_UNTERE_TYPE_CLASS = 232;
+	int SPANNUNG_TOLERANZ_UNTERE_TYPE_CLASS = 234;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11079,7 +11162,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSRS_Version_TypeClass()
 	 * @generated
 	 */
-	int SRS_VERSION_TYPE_CLASS = 233;
+	int SRS_VERSION_TYPE_CLASS = 235;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11116,7 +11199,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getStandortangabe_Balisenschild_TypeClass()
 	 * @generated
 	 */
-	int STANDORTANGABE_BALISENSCHILD_TYPE_CLASS = 234;
+	int STANDORTANGABE_BALISENSCHILD_TYPE_CLASS = 236;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11153,7 +11236,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getStart_W_Element_AttributeGroup()
 	 * @generated
 	 */
-	int START_WELEMENT_ATTRIBUTE_GROUP = 235;
+	int START_WELEMENT_ATTRIBUTE_GROUP = 237;
 
 	/**
 	 * The feature id for the '<em><b>ID Start WElement</b></em>' containment reference.
@@ -11190,7 +11273,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSTZ_TypeClass()
 	 * @generated
 	 */
-	int STZ_TYPE_CLASS = 236;
+	int STZ_TYPE_CLASS = 238;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11227,7 +11310,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSystem_Vor_Grenze_Besonders_TypeClass()
 	 * @generated
 	 */
-	int SYSTEM_VOR_GRENZE_BESONDERS_TYPE_CLASS = 237;
+	int SYSTEM_VOR_GRENZE_BESONDERS_TYPE_CLASS = 239;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11264,7 +11347,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSystem_Vor_Grenze_TypeClass()
 	 * @generated
 	 */
-	int SYSTEM_VOR_GRENZE_TYPE_CLASS = 238;
+	int SYSTEM_VOR_GRENZE_TYPE_CLASS = 240;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11301,7 +11384,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getTBV_Meldepunkt_TypeClass()
 	 * @generated
 	 */
-	int TBV_MELDEPUNKT_TYPE_CLASS = 239;
+	int TBV_MELDEPUNKT_TYPE_CLASS = 241;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11338,7 +11421,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getTBV_Tunnelbereich_Laenge_TypeClass()
 	 * @generated
 	 */
-	int TBV_TUNNELBEREICH_LAENGE_TYPE_CLASS = 240;
+	int TBV_TUNNELBEREICH_LAENGE_TYPE_CLASS = 242;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11375,7 +11458,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getTBV_Tunnelsignal_TypeClass()
 	 * @generated
 	 */
-	int TBV_TUNNELSIGNAL_TYPE_CLASS = 241;
+	int TBV_TUNNELSIGNAL_TYPE_CLASS = 243;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11412,7 +11495,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getTelegramm_Index_TypeClass()
 	 * @generated
 	 */
-	int TELEGRAMM_INDEX_TYPE_CLASS = 242;
+	int TELEGRAMM_INDEX_TYPE_CLASS = 244;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11449,7 +11532,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getTelegrammnummer_TypeClass()
 	 * @generated
 	 */
-	int TELEGRAMMNUMMER_TYPE_CLASS = 243;
+	int TELEGRAMMNUMMER_TYPE_CLASS = 245;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11486,7 +11569,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getText_Bedingung_TypeClass()
 	 * @generated
 	 */
-	int TEXT_BEDINGUNG_TYPE_CLASS = 244;
+	int TEXT_BEDINGUNG_TYPE_CLASS = 246;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11523,7 +11606,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getTextmeldung_TypeClass()
 	 * @generated
 	 */
-	int TEXTMELDUNG_TYPE_CLASS = 245;
+	int TEXTMELDUNG_TYPE_CLASS = 247;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11560,7 +11643,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getUeberbrueckung_EV_Unterbrechung_TypeClass()
 	 * @generated
 	 */
-	int UEBERBRUECKUNG_EV_UNTERBRECHUNG_TYPE_CLASS = 246;
+	int UEBERBRUECKUNG_EV_UNTERBRECHUNG_TYPE_CLASS = 248;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11597,7 +11680,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getUeberwachung_Laenge_TypeClass()
 	 * @generated
 	 */
-	int UEBERWACHUNG_LAENGE_TYPE_CLASS = 247;
+	int UEBERWACHUNG_LAENGE_TYPE_CLASS = 249;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11634,7 +11717,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getUmfahrstrasse_TypeClass()
 	 * @generated
 	 */
-	int UMFAHRSTRASSE_TYPE_CLASS = 248;
+	int UMFAHRSTRASSE_TYPE_CLASS = 250;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11671,7 +11754,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getUntergruppen_ID_TypeClass()
 	 * @generated
 	 */
-	int UNTERGRUPPEN_ID_TYPE_CLASS = 249;
+	int UNTERGRUPPEN_ID_TYPE_CLASS = 251;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11708,7 +11791,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getV_Befehl_R_TypeClass()
 	 * @generated
 	 */
-	int VBEFEHL_RTYPE_CLASS = 250;
+	int VBEFEHL_RTYPE_CLASS = 252;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11745,7 +11828,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getV_Befehl_Z_TypeClass()
 	 * @generated
 	 */
-	int VBEFEHL_ZTYPE_CLASS = 251;
+	int VBEFEHL_ZTYPE_CLASS = 253;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11782,7 +11865,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getV_Frei_TypeClass()
 	 * @generated
 	 */
-	int VFREI_TYPE_CLASS = 252;
+	int VFREI_TYPE_CLASS = 254;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11819,7 +11902,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getV_Start_TypeClass()
 	 * @generated
 	 */
-	int VSTART_TYPE_CLASS = 253;
+	int VSTART_TYPE_CLASS = 255;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11856,7 +11939,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getV_Ziel_TypeClass()
 	 * @generated
 	 */
-	int VZIEL_TYPE_CLASS = 254;
+	int VZIEL_TYPE_CLASS = 256;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11893,7 +11976,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getV_Zul_Strecke_TypeClass()
 	 * @generated
 	 */
-	int VZUL_STRECKE_TYPE_CLASS = 255;
+	int VZUL_STRECKE_TYPE_CLASS = 257;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11930,7 +12013,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVBC_Kennung_TypeClass()
 	 * @generated
 	 */
-	int VBC_KENNUNG_TYPE_CLASS = 256;
+	int VBC_KENNUNG_TYPE_CLASS = 258;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -11967,7 +12050,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVBC_NID_C_TypeClass()
 	 * @generated
 	 */
-	int VBC_NID_CTYPE_CLASS = 257;
+	int VBC_NID_CTYPE_CLASS = 259;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12004,7 +12087,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVBC_Setzen_TypeClass()
 	 * @generated
 	 */
-	int VBC_SETZEN_TYPE_CLASS = 258;
+	int VBC_SETZEN_TYPE_CLASS = 260;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12041,7 +12124,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVBC_Timer_TypeClass()
 	 * @generated
 	 */
-	int VBC_TIMER_TYPE_CLASS = 259;
+	int VBC_TIMER_TYPE_CLASS = 261;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12078,7 +12161,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVerbot_Anhalten_TypeClass()
 	 * @generated
 	 */
-	int VERBOT_ANHALTEN_TYPE_CLASS = 260;
+	int VERBOT_ANHALTEN_TYPE_CLASS = 262;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12115,7 +12198,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVerbot_Regenerative_Bremse_TypeClass()
 	 * @generated
 	 */
-	int VERBOT_REGENERATIVE_BREMSE_TYPE_CLASS = 261;
+	int VERBOT_REGENERATIVE_BREMSE_TYPE_CLASS = 263;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12152,7 +12235,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVerbot_WB_Art_TypeClass()
 	 * @generated
 	 */
-	int VERBOT_WB_ART_TYPE_CLASS = 262;
+	int VERBOT_WB_ART_TYPE_CLASS = 264;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12189,7 +12272,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVerkuerzter_Abstand_TypeClass()
 	 * @generated
 	 */
-	int VERKUERZTER_ABSTAND_TYPE_CLASS = 263;
+	int VERKUERZTER_ABSTAND_TYPE_CLASS = 265;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12226,7 +12309,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVerwendung_Als_Rueckfall_TypeClass()
 	 * @generated
 	 */
-	int VERWENDUNG_ALS_RUECKFALL_TYPE_CLASS = 264;
+	int VERWENDUNG_ALS_RUECKFALL_TYPE_CLASS = 266;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12263,7 +12346,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVerwendung_Hilfe_TypeClass()
 	 * @generated
 	 */
-	int VERWENDUNG_HILFE_TYPE_CLASS = 265;
+	int VERWENDUNG_HILFE_TYPE_CLASS = 267;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12300,7 +12383,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVerwendung_TypeClass()
 	 * @generated
 	 */
-	int VERWENDUNG_TYPE_CLASS = 266;
+	int VERWENDUNG_TYPE_CLASS = 268;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12337,7 +12420,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVGR_1_TypeClass()
 	 * @generated
 	 */
-	int VGR_1TYPE_CLASS = 267;
+	int VGR_1TYPE_CLASS = 269;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12374,7 +12457,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVGR_2_TypeClass()
 	 * @generated
 	 */
-	int VGR_2TYPE_CLASS = 268;
+	int VGR_2TYPE_CLASS = 270;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12411,7 +12494,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVGR_TypeClass()
 	 * @generated
 	 */
-	int VGR_TYPE_CLASS = 269;
+	int VGR_TYPE_CLASS = 271;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12448,7 +12531,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVLA_TypeClass()
 	 * @generated
 	 */
-	int VLA_TYPE_CLASS = 270;
+	int VLA_TYPE_CLASS = 272;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12485,7 +12568,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVorsignalabstand_TypeClass()
 	 * @generated
 	 */
-	int VORSIGNALABSTAND_TYPE_CLASS = 271;
+	int VORSIGNALABSTAND_TYPE_CLASS = 273;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12522,7 +12605,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVZ_TypeClass()
 	 * @generated
 	 */
-	int VZ_TYPE_CLASS = 272;
+	int VZ_TYPE_CLASS = 274;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12559,7 +12642,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getW_Anschluss_TypeClass()
 	 * @generated
 	 */
-	int WANSCHLUSS_TYPE_CLASS = 273;
+	int WANSCHLUSS_TYPE_CLASS = 275;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12596,7 +12679,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getW_Lage_TypeClass()
 	 * @generated
 	 */
-	int WLAGE_TYPE_CLASS = 274;
+	int WLAGE_TYPE_CLASS = 276;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12633,7 +12716,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getWirkrichtung_In_Datenpunkt_TypeClass()
 	 * @generated
 	 */
-	int WIRKRICHTUNG_IN_DATENPUNKT_TYPE_CLASS = 275;
+	int WIRKRICHTUNG_IN_DATENPUNKT_TYPE_CLASS = 277;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12670,7 +12753,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getWirksam_TypeClass()
 	 * @generated
 	 */
-	int WIRKSAM_TYPE_CLASS = 276;
+	int WIRKSAM_TYPE_CLASS = 278;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12707,7 +12790,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_La_Bereich_Distanz_TypeClass()
 	 * @generated
 	 */
-	int ZBS_LA_BEREICH_DISTANZ_TYPE_CLASS = 277;
+	int ZBS_LA_BEREICH_DISTANZ_TYPE_CLASS = 279;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12744,7 +12827,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_La_Bereich_Geschwindigkeit_TypeClass()
 	 * @generated
 	 */
-	int ZBS_LA_BEREICH_GESCHWINDIGKEIT_TYPE_CLASS = 278;
+	int ZBS_LA_BEREICH_GESCHWINDIGKEIT_TYPE_CLASS = 280;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12781,7 +12864,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_La_Bereich_Laenge_TypeClass()
 	 * @generated
 	 */
-	int ZBS_LA_BEREICH_LAENGE_TYPE_CLASS = 279;
+	int ZBS_LA_BEREICH_LAENGE_TYPE_CLASS = 281;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12818,7 +12901,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_La_Bereich_Neigung_TypeClass()
 	 * @generated
 	 */
-	int ZBS_LA_BEREICH_NEIGUNG_TYPE_CLASS = 280;
+	int ZBS_LA_BEREICH_NEIGUNG_TYPE_CLASS = 282;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12855,7 +12938,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_Merkmale_AttributeGroup()
 	 * @generated
 	 */
-	int ZBS_MERKMALE_ATTRIBUTE_GROUP = 281;
+	int ZBS_MERKMALE_ATTRIBUTE_GROUP = 283;
 
 	/**
 	 * The feature id for the '<em><b>DP Link Art</b></em>' containment reference.
@@ -12892,7 +12975,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_Reaktion_TypeClass()
 	 * @generated
 	 */
-	int ZBS_REAKTION_TYPE_CLASS = 282;
+	int ZBS_REAKTION_TYPE_CLASS = 284;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -12929,7 +13012,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_Schutzstrecke()
 	 * @generated
 	 */
-	int ZBS_SCHUTZSTRECKE = 283;
+	int ZBS_SCHUTZSTRECKE = 285;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -13011,7 +13094,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_Schutzstrecke_Allg_AttributeGroup()
 	 * @generated
 	 */
-	int ZBS_SCHUTZSTRECKE_ALLG_ATTRIBUTE_GROUP = 284;
+	int ZBS_SCHUTZSTRECKE_ALLG_ATTRIBUTE_GROUP = 286;
 
 	/**
 	 * The feature id for the '<em><b>Laenge Soll Mind150</b></em>' containment reference.
@@ -13057,7 +13140,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_Signal()
 	 * @generated
 	 */
-	int ZBS_SIGNAL = 285;
+	int ZBS_SIGNAL = 287;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -13139,7 +13222,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_Signal_Signalabstand_AttributeGroup()
 	 * @generated
 	 */
-	int ZBS_SIGNAL_SIGNALABSTAND_ATTRIBUTE_GROUP = 286;
+	int ZBS_SIGNAL_SIGNALABSTAND_ATTRIBUTE_GROUP = 288;
 
 	/**
 	 * The feature id for the '<em><b>Abstand Reduziert</b></em>' containment reference.
@@ -13203,7 +13286,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZiel_DP_Ausrichtung_TypeClass()
 	 * @generated
 	 */
-	int ZIEL_DP_AUSRICHTUNG_TYPE_CLASS = 287;
+	int ZIEL_DP_AUSRICHTUNG_TYPE_CLASS = 289;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -13240,7 +13323,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZiel_Ist_Fahrwegende_TypeClass()
 	 * @generated
 	 */
-	int ZIEL_IST_FAHRWEGENDE_TYPE_CLASS = 288;
+	int ZIEL_IST_FAHRWEGENDE_TYPE_CLASS = 290;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -13277,7 +13360,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZiel_W_Element_AttributeGroup()
 	 * @generated
 	 */
-	int ZIEL_WELEMENT_ATTRIBUTE_GROUP = 289;
+	int ZIEL_WELEMENT_ATTRIBUTE_GROUP = 291;
 
 	/**
 	 * The feature id for the '<em><b>ID Ziel WElement</b></em>' containment reference.
@@ -13314,7 +13397,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZLA_TypeClass()
 	 * @generated
 	 */
-	int ZLA_TYPE_CLASS = 290;
+	int ZLA_TYPE_CLASS = 292;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -13351,7 +13434,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Bereichsgrenze()
 	 * @generated
 	 */
-	int ZUB_BEREICHSGRENZE = 291;
+	int ZUB_BEREICHSGRENZE = 293;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -13541,7 +13624,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Bereichsgrenze_Allg_AttributeGroup()
 	 * @generated
 	 */
-	int ZUB_BEREICHSGRENZE_ALLG_ATTRIBUTE_GROUP = 292;
+	int ZUB_BEREICHSGRENZE_ALLG_ATTRIBUTE_GROUP = 294;
 
 	/**
 	 * The feature id for the '<em><b>ID Element Grenze</b></em>' containment reference list.
@@ -13596,7 +13679,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Bereichsgrenze_Bezeichnung_AttributeGroup()
 	 * @generated
 	 */
-	int ZUB_BEREICHSGRENZE_BEZEICHNUNG_ATTRIBUTE_GROUP = 293;
+	int ZUB_BEREICHSGRENZE_BEZEICHNUNG_ATTRIBUTE_GROUP = 295;
 
 	/**
 	 * The feature id for the '<em><b>Bez ZUB Bereichsgrenze</b></em>' containment reference.
@@ -13624,7 +13707,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Bereichsgrenze_Nach_ESG_AttributeGroup()
 	 * @generated
 	 */
-	int ZUB_BEREICHSGRENZE_NACH_ESG_ATTRIBUTE_GROUP = 294;
+	int ZUB_BEREICHSGRENZE_NACH_ESG_ATTRIBUTE_GROUP = 296;
 
 	/**
 	 * The feature id for the '<em><b>Bgrenze Nach ESG Bed Ausstieg</b></em>' containment reference list.
@@ -13670,7 +13753,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Bereichsgrenze_Nach_GNT_TypeClass()
 	 * @generated
 	 */
-	int ZUB_BEREICHSGRENZE_NACH_GNT_TYPE_CLASS = 295;
+	int ZUB_BEREICHSGRENZE_NACH_GNT_TYPE_CLASS = 297;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -13707,7 +13790,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Bereichsgrenze_Nach_L2_AttributeGroup()
 	 * @generated
 	 */
-	int ZUB_BEREICHSGRENZE_NACH_L2_ATTRIBUTE_GROUP = 296;
+	int ZUB_BEREICHSGRENZE_NACH_L2_ATTRIBUTE_GROUP = 298;
 
 	/**
 	 * The feature id for the '<em><b>Abstand Grenze Bereich C</b></em>' containment reference.
@@ -13798,7 +13881,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Bereichsgrenze_Nach_L2_Von_ESG_AttributeGroup()
 	 * @generated
 	 */
-	int ZUB_BEREICHSGRENZE_NACH_L2_VON_ESG_ATTRIBUTE_GROUP = 297;
+	int ZUB_BEREICHSGRENZE_NACH_L2_VON_ESG_ATTRIBUTE_GROUP = 299;
 
 	/**
 	 * The feature id for the '<em><b>Abstand Datenpunkt EHEM Folgesignal</b></em>' containment reference.
@@ -13862,7 +13945,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Bereichsgrenze_Nach_LZB_AttributeGroup()
 	 * @generated
 	 */
-	int ZUB_BEREICHSGRENZE_NACH_LZB_ATTRIBUTE_GROUP = 298;
+	int ZUB_BEREICHSGRENZE_NACH_LZB_ATTRIBUTE_GROUP = 300;
 
 	/**
 	 * The feature id for the '<em><b>Bgrenze Nach LZB Bed Einstieg</b></em>' containment reference list.
@@ -13908,7 +13991,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Bereichsgrenze_Nach_Ohne_AttributeGroup()
 	 * @generated
 	 */
-	int ZUB_BEREICHSGRENZE_NACH_OHNE_ATTRIBUTE_GROUP = 299;
+	int ZUB_BEREICHSGRENZE_NACH_OHNE_ATTRIBUTE_GROUP = 301;
 
 	/**
 	 * The feature id for the '<em><b>Bgrenze Nach Ohne Bed Einstieg</b></em>' containment reference list.
@@ -13936,7 +14019,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Bereichsgrenze_Nach_PZB_AttributeGroup()
 	 * @generated
 	 */
-	int ZUB_BEREICHSGRENZE_NACH_PZB_ATTRIBUTE_GROUP = 300;
+	int ZUB_BEREICHSGRENZE_NACH_PZB_ATTRIBUTE_GROUP = 302;
 
 	/**
 	 * The feature id for the '<em><b>Bgrenze Nach PZB Bed Einstieg</b></em>' containment reference list.
@@ -13982,7 +14065,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Bereichsgrenze_Nach_Sonstige_AttributeGroup()
 	 * @generated
 	 */
-	int ZUB_BEREICHSGRENZE_NACH_SONSTIGE_ATTRIBUTE_GROUP = 301;
+	int ZUB_BEREICHSGRENZE_NACH_SONSTIGE_ATTRIBUTE_GROUP = 303;
 
 	/**
 	 * The feature id for the '<em><b>Bezeichnung ZUB</b></em>' containment reference.
@@ -14019,7 +14102,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Bereichsgrenze_Nach_ZBS_AttributeGroup()
 	 * @generated
 	 */
-	int ZUB_BEREICHSGRENZE_NACH_ZBS_ATTRIBUTE_GROUP = 302;
+	int ZUB_BEREICHSGRENZE_NACH_ZBS_ATTRIBUTE_GROUP = 304;
 
 	/**
 	 * The feature id for the '<em><b>Bgrenze Nach ZBS Bed Einstieg</b></em>' containment reference list.
@@ -14047,7 +14130,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Bgrenze_RBC_Wechsel_AttributeGroup()
 	 * @generated
 	 */
-	int ZUB_BGRENZE_RBC_WECHSEL_ATTRIBUTE_GROUP = 303;
+	int ZUB_BGRENZE_RBC_WECHSEL_ATTRIBUTE_GROUP = 305;
 
 	/**
 	 * The feature id for the '<em><b>Bgrenze RBC Wechsel BTS Kette</b></em>' containment reference list.
@@ -14084,7 +14167,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_SE_Ausruestung_AttributeGroup()
 	 * @generated
 	 */
-	int ZUB_SE_AUSRUESTUNG_ATTRIBUTE_GROUP = 304;
+	int ZUB_SE_AUSRUESTUNG_ATTRIBUTE_GROUP = 306;
 
 	/**
 	 * The feature id for the '<em><b>Anwendungssystem</b></em>' containment reference list.
@@ -14121,7 +14204,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Streckeneigenschaft()
 	 * @generated
 	 */
-	int ZUB_STRECKENEIGENSCHAFT = 305;
+	int ZUB_STRECKENEIGENSCHAFT = 307;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -14266,7 +14349,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZUB_Streckeneigenschaft_Bezeichnung_AttributeGroup()
 	 * @generated
 	 */
-	int ZUB_STRECKENEIGENSCHAFT_BEZEICHNUNG_ATTRIBUTE_GROUP = 306;
+	int ZUB_STRECKENEIGENSCHAFT_BEZEICHNUNG_ATTRIBUTE_GROUP = 308;
 
 	/**
 	 * The feature id for the '<em><b>Bezeichnung ZUBSE</b></em>' containment reference.
@@ -14294,7 +14377,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMArtBedingung()
 	 * @generated
 	 */
-	int ENUM_ART_BEDINGUNG = 307;
+	int ENUM_ART_BEDINGUNG = 309;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMAusstiegETCSSperre <em>ENUM Ausstieg ETCS Sperre</em>}' enum.
@@ -14304,7 +14387,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMAusstiegETCSSperre()
 	 * @generated
 	 */
-	int ENUM_AUSSTIEG_ETCS_SPERRE = 308;
+	int ENUM_AUSSTIEG_ETCS_SPERRE = 310;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMBalisenhalter <em>ENUM Balisenhalter</em>}' enum.
@@ -14314,7 +14397,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMBalisenhalter()
 	 * @generated
 	 */
-	int ENUM_BALISENHALTER = 309;
+	int ENUM_BALISENHALTER = 311;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMDPATO <em>ENUMDPATO</em>}' enum.
@@ -14324,7 +14407,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPATO()
 	 * @generated
 	 */
-	int ENUMDPATO = 310;
+	int ENUMDPATO = 312;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMDPBezugFunktionalArt <em>ENUMDP Bezug Funktional Art</em>}' enum.
@@ -14334,7 +14417,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPBezugFunktionalArt()
 	 * @generated
 	 */
-	int ENUMDP_BEZUG_FUNKTIONAL_ART = 311;
+	int ENUMDP_BEZUG_FUNKTIONAL_ART = 313;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMDPLinkArt <em>ENUMDP Link Art</em>}' enum.
@@ -14344,7 +14427,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPLinkArt()
 	 * @generated
 	 */
-	int ENUMDP_LINK_ART = 312;
+	int ENUMDP_LINK_ART = 314;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMDPTypArt <em>ENUMDP Typ Art</em>}' enum.
@@ -14354,7 +14437,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPTypArt()
 	 * @generated
 	 */
-	int ENUMDP_TYP_ART = 313;
+	int ENUMDP_TYP_ART = 315;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMDPTypESG <em>ENUMDP Typ ESG</em>}' enum.
@@ -14364,7 +14447,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPTypESG()
 	 * @generated
 	 */
-	int ENUMDP_TYP_ESG = 314;
+	int ENUMDP_TYP_ESG = 316;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMDPTypGNT <em>ENUMDP Typ GNT</em>}' enum.
@@ -14374,7 +14457,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPTypGNT()
 	 * @generated
 	 */
-	int ENUMDP_TYP_GNT = 315;
+	int ENUMDP_TYP_GNT = 317;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMDPTypTrans <em>ENUMDP Typ Trans</em>}' enum.
@@ -14384,7 +14467,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPTypTrans()
 	 * @generated
 	 */
-	int ENUMDP_TYP_TRANS = 316;
+	int ENUMDP_TYP_TRANS = 318;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMDPTypZBS <em>ENUMDP Typ ZBS</em>}' enum.
@@ -14394,7 +14477,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPTypZBS()
 	 * @generated
 	 */
-	int ENUMDP_TYP_ZBS = 317;
+	int ENUMDP_TYP_ZBS = 319;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMEinzeldateiArt <em>ENUM Einzeldatei Art</em>}' enum.
@@ -14404,7 +14487,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMEinzeldateiArt()
 	 * @generated
 	 */
-	int ENUM_EINZELDATEI_ART = 318;
+	int ENUM_EINZELDATEI_ART = 320;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMEnergieEingangArt <em>ENUM Energie Eingang Art</em>}' enum.
@@ -14414,7 +14497,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMEnergieEingangArt()
 	 * @generated
 	 */
-	int ENUM_ENERGIE_EINGANG_ART = 319;
+	int ENUM_ENERGIE_EINGANG_ART = 321;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMETCSKnotenArtSonstige <em>ENUMETCS Knoten Art Sonstige</em>}' enum.
@@ -14424,7 +14507,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMETCSKnotenArtSonstige()
 	 * @generated
 	 */
-	int ENUMETCS_KNOTEN_ART_SONSTIGE = 320;
+	int ENUMETCS_KNOTEN_ART_SONSTIGE = 322;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMEVModulArt <em>ENUMEV Modul Art</em>}' enum.
@@ -14434,7 +14517,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMEVModulArt()
 	 * @generated
 	 */
-	int ENUMEV_MODUL_ART = 321;
+	int ENUMEV_MODUL_ART = 323;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMFTGNTPunktart <em>ENUMFTGNT Punktart</em>}' enum.
@@ -14444,7 +14527,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMFTGNTPunktart()
 	 * @generated
 	 */
-	int ENUMFTGNT_PUNKTART = 322;
+	int ENUMFTGNT_PUNKTART = 324;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMFTHinweisFunktion <em>ENUMFT Hinweis Funktion</em>}' enum.
@@ -14454,7 +14537,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMFTHinweisFunktion()
 	 * @generated
 	 */
-	int ENUMFT_HINWEIS_FUNKTION = 323;
+	int ENUMFT_HINWEIS_FUNKTION = 325;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMFTZBSTyp <em>ENUMFTZBS Typ</em>}' enum.
@@ -14464,7 +14547,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMFTZBSTyp()
 	 * @generated
 	 */
-	int ENUMFTZBS_TYP = 324;
+	int ENUMFTZBS_TYP = 326;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMLEUArt <em>ENUMLEU Art</em>}' enum.
@@ -14474,7 +14557,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMLEUArt()
 	 * @generated
 	 */
-	int ENUMLEU_ART = 325;
+	int ENUMLEU_ART = 327;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMMLEVELTR <em>ENUMMLEVELTR</em>}' enum.
@@ -14484,7 +14567,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMMLEVELTR()
 	 * @generated
 	 */
-	int ENUMMLEVELTR = 326;
+	int ENUMMLEVELTR = 328;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMNIDSTM <em>ENUMNIDSTM</em>}' enum.
@@ -14494,7 +14577,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMNIDSTM()
 	 * @generated
 	 */
-	int ENUMNIDSTM = 327;
+	int ENUMNIDSTM = 329;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMPosition <em>ENUM Position</em>}' enum.
@@ -14504,7 +14587,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMPosition()
 	 * @generated
 	 */
-	int ENUM_POSITION = 328;
+	int ENUM_POSITION = 330;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMSBE <em>ENUMSBE</em>}' enum.
@@ -14514,7 +14597,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMSBE()
 	 * @generated
 	 */
-	int ENUMSBE = 329;
+	int ENUMSBE = 331;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMSpannungArt <em>ENUM Spannung Art</em>}' enum.
@@ -14524,7 +14607,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMSpannungArt()
 	 * @generated
 	 */
-	int ENUM_SPANNUNG_ART = 330;
+	int ENUM_SPANNUNG_ART = 332;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMStandortangabeBalisenschild <em>ENUM Standortangabe Balisenschild</em>}' enum.
@@ -14534,7 +14617,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMStandortangabeBalisenschild()
 	 * @generated
 	 */
-	int ENUM_STANDORTANGABE_BALISENSCHILD = 331;
+	int ENUM_STANDORTANGABE_BALISENSCHILD = 333;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMSTZ <em>ENUMSTZ</em>}' enum.
@@ -14544,7 +14627,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMSTZ()
 	 * @generated
 	 */
-	int ENUMSTZ = 332;
+	int ENUMSTZ = 334;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMVerbotWBArt <em>ENUM Verbot WB Art</em>}' enum.
@@ -14554,7 +14637,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMVerbotWBArt()
 	 * @generated
 	 */
-	int ENUM_VERBOT_WB_ART = 333;
+	int ENUM_VERBOT_WB_ART = 335;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMVerwendungAlsRueckfall <em>ENUM Verwendung Als Rueckfall</em>}' enum.
@@ -14564,7 +14647,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMVerwendungAlsRueckfall()
 	 * @generated
 	 */
-	int ENUM_VERWENDUNG_ALS_RUECKFALL = 334;
+	int ENUM_VERWENDUNG_ALS_RUECKFALL = 336;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMWAnschluss <em>ENUMW Anschluss</em>}' enum.
@@ -14574,7 +14657,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMWAnschluss()
 	 * @generated
 	 */
-	int ENUMW_ANSCHLUSS = 335;
+	int ENUMW_ANSCHLUSS = 337;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.ENUMZBSReaktion <em>ENUMZBS Reaktion</em>}' enum.
@@ -14584,7 +14667,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMZBSReaktion()
 	 * @generated
 	 */
-	int ENUMZBS_REAKTION = 336;
+	int ENUMZBS_REAKTION = 338;
 
 	/**
 	 * The meta object id for the '<em>Abstand Bes Langer Einfahrweg Type</em>' data type.
@@ -14594,7 +14677,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getAbstand_Bes_Langer_Einfahrweg_Type()
 	 * @generated
 	 */
-	int ABSTAND_BES_LANGER_EINFAHRWEG_TYPE = 337;
+	int ABSTAND_BES_LANGER_EINFAHRWEG_TYPE = 339;
 
 	/**
 	 * The meta object id for the '<em>Abstand Datenpunkt EH EM Folgesignal Type</em>' data type.
@@ -14604,7 +14687,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getAbstand_Datenpunkt_EH_EM_Folgesignal_Type()
 	 * @generated
 	 */
-	int ABSTAND_DATENPUNKT_EH_EM_FOLGESIGNAL_TYPE = 338;
+	int ABSTAND_DATENPUNKT_EH_EM_FOLGESIGNAL_TYPE = 340;
 
 	/**
 	 * The meta object id for the '<em>Abstand Datenpunkt EP TPI Type</em>' data type.
@@ -14614,7 +14697,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getAbstand_Datenpunkt_EP_TPI_Type()
 	 * @generated
 	 */
-	int ABSTAND_DATENPUNKT_EP_TPI_TYPE = 339;
+	int ABSTAND_DATENPUNKT_EP_TPI_TYPE = 341;
 
 	/**
 	 * The meta object id for the '<em>Abstand Datenpunkt TPI Folgesignal Type</em>' data type.
@@ -14624,7 +14707,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getAbstand_Datenpunkt_TPI_Folgesignal_Type()
 	 * @generated
 	 */
-	int ABSTAND_DATENPUNKT_TPI_FOLGESIGNAL_TYPE = 340;
+	int ABSTAND_DATENPUNKT_TPI_FOLGESIGNAL_TYPE = 342;
 
 	/**
 	 * The meta object id for the '<em>Abstand Einmesspunkt Type</em>' data type.
@@ -14634,7 +14717,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getAbstand_Einmesspunkt_Type()
 	 * @generated
 	 */
-	int ABSTAND_EINMESSPUNKT_TYPE = 341;
+	int ABSTAND_EINMESSPUNKT_TYPE = 343;
 
 	/**
 	 * The meta object id for the '<em>Abstand Grenze Bereich CType</em>' data type.
@@ -14644,7 +14727,17 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getAbstand_Grenze_Bereich_C_Type()
 	 * @generated
 	 */
-	int ABSTAND_GRENZE_BEREICH_CTYPE = 342;
+	int ABSTAND_GRENZE_BEREICH_CTYPE = 344;
+
+	/**
+	 * The meta object id for the '<em>Abstand Zu Referenzbalise Type</em>' data type.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see java.math.BigDecimal
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getAbstand_Zu_Referenzbalise_Type()
+	 * @generated
+	 */
+	int ABSTAND_ZU_REFERENZBALISE_TYPE = 345;
 
 	/**
 	 * The meta object id for the '<em>Anlagenteil Sonstige Type</em>' data type.
@@ -14654,7 +14747,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getAnlagenteil_Sonstige_Type()
 	 * @generated
 	 */
-	int ANLAGENTEIL_SONSTIGE_TYPE = 343;
+	int ANLAGENTEIL_SONSTIGE_TYPE = 346;
 
 	/**
 	 * The meta object id for the '<em>Anordnung Im DP Type</em>' data type.
@@ -14664,7 +14757,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getAnordnung_Im_DP_Type()
 	 * @generated
 	 */
-	int ANORDNUNG_IM_DP_TYPE = 344;
+	int ANORDNUNG_IM_DP_TYPE = 347;
 
 	/**
 	 * The meta object id for the '<em>Anwendung Sonst Type</em>' data type.
@@ -14674,7 +14767,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getAnwendung_Sonst_Type()
 	 * @generated
 	 */
-	int ANWENDUNG_SONST_TYPE = 345;
+	int ANWENDUNG_SONST_TYPE = 348;
 
 	/**
 	 * The meta object id for the '<em>Anzahl Voll LEU Kalkuliert Type</em>' data type.
@@ -14684,7 +14777,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getAnzahl_Voll_LEU_Kalkuliert_Type()
 	 * @generated
 	 */
-	int ANZAHL_VOLL_LEU_KALKULIERT_TYPE = 346;
+	int ANZAHL_VOLL_LEU_KALKULIERT_TYPE = 349;
 
 	/**
 	 * The meta object id for the '<em>Anzeigetext Type</em>' data type.
@@ -14694,7 +14787,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getAnzeigetext_Type()
 	 * @generated
 	 */
-	int ANZEIGETEXT_TYPE = 347;
+	int ANZEIGETEXT_TYPE = 350;
 
 	/**
 	 * The meta object id for the '<em>Ausgang Nr Type</em>' data type.
@@ -14704,7 +14797,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getAusgang_Nr_Type()
 	 * @generated
 	 */
-	int AUSGANG_NR_TYPE = 348;
+	int AUSGANG_NR_TYPE = 351;
 
 	/**
 	 * The meta object id for the '<em>Balise Geraetestand Type</em>' data type.
@@ -14714,7 +14807,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBalise_Geraetestand_Type()
 	 * @generated
 	 */
-	int BALISE_GERAETESTAND_TYPE = 349;
+	int BALISE_GERAETESTAND_TYPE = 352;
 
 	/**
 	 * The meta object id for the '<em>Baseline System Version Type</em>' data type.
@@ -14724,7 +14817,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBaseline_System_Version_Type()
 	 * @generated
 	 */
-	int BASELINE_SYSTEM_VERSION_TYPE = 350;
+	int BASELINE_SYSTEM_VERSION_TYPE = 353;
 
 	/**
 	 * The meta object id for the '<em>Bedingung Weichenlage Type</em>' data type.
@@ -14734,7 +14827,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBedingung_Weichenlage_Type()
 	 * @generated
 	 */
-	int BEDINGUNG_WEICHENLAGE_TYPE = 351;
+	int BEDINGUNG_WEICHENLAGE_TYPE = 354;
 
 	/**
 	 * The meta object id for the '<em>Bez Strecke BTS 1Type</em>' data type.
@@ -14744,7 +14837,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBez_Strecke_BTS_1_Type()
 	 * @generated
 	 */
-	int BEZ_STRECKE_BTS_1TYPE = 352;
+	int BEZ_STRECKE_BTS_1TYPE = 355;
 
 	/**
 	 * The meta object id for the '<em>Bez Strecke BTS 2Type</em>' data type.
@@ -14754,7 +14847,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBez_Strecke_BTS_2_Type()
 	 * @generated
 	 */
-	int BEZ_STRECKE_BTS_2TYPE = 353;
+	int BEZ_STRECKE_BTS_2TYPE = 356;
 
 	/**
 	 * The meta object id for the '<em>Bez Strecke BTS 3Type</em>' data type.
@@ -14764,7 +14857,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBez_Strecke_BTS_3_Type()
 	 * @generated
 	 */
-	int BEZ_STRECKE_BTS_3TYPE = 354;
+	int BEZ_STRECKE_BTS_3TYPE = 357;
 
 	/**
 	 * The meta object id for the '<em>Bez ZUB Bereichsgrenze Type</em>' data type.
@@ -14774,7 +14867,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBez_ZUB_Bereichsgrenze_Type()
 	 * @generated
 	 */
-	int BEZ_ZUB_BEREICHSGRENZE_TYPE = 355;
+	int BEZ_ZUB_BEREICHSGRENZE_TYPE = 358;
 
 	/**
 	 * The meta object id for the '<em>Bezeichnung ETCS Kante Type</em>' data type.
@@ -14784,7 +14877,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBezeichnung_ETCS_Kante_Type()
 	 * @generated
 	 */
-	int BEZEICHNUNG_ETCS_KANTE_TYPE = 356;
+	int BEZEICHNUNG_ETCS_KANTE_TYPE = 359;
 
 	/**
 	 * The meta object id for the '<em>Bezeichnung LEU Anlage Type</em>' data type.
@@ -14794,7 +14887,17 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBezeichnung_LEU_Anlage_Type()
 	 * @generated
 	 */
-	int BEZEICHNUNG_LEU_ANLAGE_TYPE = 357;
+	int BEZEICHNUNG_LEU_ANLAGE_TYPE = 360;
+
+	/**
+	 * The meta object id for the '<em>Bezeichnung RBC Type</em>' data type.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see java.lang.String
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBezeichnung_RBC_Type()
+	 * @generated
+	 */
+	int BEZEICHNUNG_RBC_TYPE = 361;
 
 	/**
 	 * The meta object id for the '<em>Bezeichnung ZUB SE Type</em>' data type.
@@ -14804,7 +14907,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBezeichnung_ZUB_SE_Type()
 	 * @generated
 	 */
-	int BEZEICHNUNG_ZUB_SE_TYPE = 358;
+	int BEZEICHNUNG_ZUB_SE_TYPE = 362;
 
 	/**
 	 * The meta object id for the '<em>Bezeichnung ZUB Type</em>' data type.
@@ -14814,7 +14917,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getBezeichnung_ZUB_Type()
 	 * @generated
 	 */
-	int BEZEICHNUNG_ZUB_TYPE = 359;
+	int BEZEICHNUNG_ZUB_TYPE = 363;
 
 	/**
 	 * The meta object id for the '<em>DLEVELTR Type</em>' data type.
@@ -14824,7 +14927,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getD_LEVELTR_Type()
 	 * @generated
 	 */
-	int DLEVELTR_TYPE = 360;
+	int DLEVELTR_TYPE = 364;
 
 	/**
 	 * The meta object id for the '<em>Dateityp Binaerdatei Type</em>' data type.
@@ -14834,7 +14937,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDateityp_Binaerdatei_Type()
 	 * @generated
 	 */
-	int DATEITYP_BINAERDATEI_TYPE = 361;
+	int DATEITYP_BINAERDATEI_TYPE = 365;
 
 	/**
 	 * The meta object id for the '<em>Datenpunkt Beschreibung Type</em>' data type.
@@ -14844,7 +14947,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDatenpunkt_Beschreibung_Type()
 	 * @generated
 	 */
-	int DATENPUNKT_BESCHREIBUNG_TYPE = 362;
+	int DATENPUNKT_BESCHREIBUNG_TYPE = 366;
 
 	/**
 	 * The meta object id for the '<em>Datenpunkt Laenge Type</em>' data type.
@@ -14854,7 +14957,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDatenpunkt_Laenge_Type()
 	 * @generated
 	 */
-	int DATENPUNKT_LAENGE_TYPE = 363;
+	int DATENPUNKT_LAENGE_TYPE = 367;
 
 	/**
 	 * The meta object id for the '<em>Delta VGES Type</em>' data type.
@@ -14864,7 +14967,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDelta_VGES_Type()
 	 * @generated
 	 */
-	int DELTA_VGES_TYPE = 364;
+	int DELTA_VGES_TYPE = 368;
 
 	/**
 	 * The meta object id for the '<em>Delta VLES Type</em>' data type.
@@ -14874,7 +14977,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDelta_VLES_Type()
 	 * @generated
 	 */
-	int DELTA_VLES_TYPE = 365;
+	int DELTA_VLES_TYPE = 369;
 
 	/**
 	 * The meta object id for the '<em>Delta VZES Type</em>' data type.
@@ -14884,7 +14987,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDelta_VZES_Type()
 	 * @generated
 	 */
-	int DELTA_VZES_TYPE = 366;
+	int DELTA_VZES_TYPE = 370;
 
 	/**
 	 * The meta object id for the '<em>DP Typ ETCS Type</em>' data type.
@@ -14894,7 +14997,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_ETCS_Type()
 	 * @generated
 	 */
-	int DP_TYP_ETCS_TYPE = 367;
+	int DP_TYP_ETCS_TYPE = 371;
 
 	/**
 	 * The meta object id for the '<em>DP Typ Sonst Type</em>' data type.
@@ -14904,7 +15007,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_Sonst_Type()
 	 * @generated
 	 */
-	int DP_TYP_SONST_TYPE = 368;
+	int DP_TYP_SONST_TYPE = 372;
 
 	/**
 	 * The meta object id for the '<em>DP Typ VLa Type</em>' data type.
@@ -14914,7 +15017,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDP_Typ_V_La_Type()
 	 * @generated
 	 */
-	int DP_TYP_VLA_TYPE = 369;
+	int DP_TYP_VLA_TYPE = 373;
 
 	/**
 	 * The meta object id for the '<em>DWeg Intervall 200 Type</em>' data type.
@@ -14924,7 +15027,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDWeg_Intervall_200_Type()
 	 * @generated
 	 */
-	int DWEG_INTERVALL_200_TYPE = 370;
+	int DWEG_INTERVALL_200_TYPE = 374;
 
 	/**
 	 * The meta object id for the '<em>DWeg Intervall 50 200 Type</em>' data type.
@@ -14934,7 +15037,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDWeg_Intervall_50_200_Type()
 	 * @generated
 	 */
-	int DWEG_INTERVALL_50_200_TYPE = 371;
+	int DWEG_INTERVALL_50_200_TYPE = 375;
 
 	/**
 	 * The meta object id for the '<em>DWeg Intervall 50 Type</em>' data type.
@@ -14944,7 +15047,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getDWeg_Intervall_50_Type()
 	 * @generated
 	 */
-	int DWEG_INTERVALL_50_TYPE = 372;
+	int DWEG_INTERVALL_50_TYPE = 376;
 
 	/**
 	 * The meta object id for the '<em>ENUM Art Bedingung Object</em>' data type.
@@ -14954,7 +15057,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMArtBedingungObject()
 	 * @generated
 	 */
-	int ENUM_ART_BEDINGUNG_OBJECT = 373;
+	int ENUM_ART_BEDINGUNG_OBJECT = 377;
 
 	/**
 	 * The meta object id for the '<em>ENUM Ausstieg ETCS Sperre Object</em>' data type.
@@ -14964,7 +15067,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMAusstiegETCSSperreObject()
 	 * @generated
 	 */
-	int ENUM_AUSSTIEG_ETCS_SPERRE_OBJECT = 374;
+	int ENUM_AUSSTIEG_ETCS_SPERRE_OBJECT = 378;
 
 	/**
 	 * The meta object id for the '<em>ENUM Balisenhalter Object</em>' data type.
@@ -14974,7 +15077,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMBalisenhalterObject()
 	 * @generated
 	 */
-	int ENUM_BALISENHALTER_OBJECT = 375;
+	int ENUM_BALISENHALTER_OBJECT = 379;
 
 	/**
 	 * The meta object id for the '<em>ENUMDPATO Object</em>' data type.
@@ -14984,7 +15087,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPATOObject()
 	 * @generated
 	 */
-	int ENUMDPATO_OBJECT = 376;
+	int ENUMDPATO_OBJECT = 380;
 
 	/**
 	 * The meta object id for the '<em>ENUMDP Bezug Funktional Art Object</em>' data type.
@@ -14994,7 +15097,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPBezugFunktionalArtObject()
 	 * @generated
 	 */
-	int ENUMDP_BEZUG_FUNKTIONAL_ART_OBJECT = 377;
+	int ENUMDP_BEZUG_FUNKTIONAL_ART_OBJECT = 381;
 
 	/**
 	 * The meta object id for the '<em>ENUMDP Link Art Object</em>' data type.
@@ -15004,7 +15107,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPLinkArtObject()
 	 * @generated
 	 */
-	int ENUMDP_LINK_ART_OBJECT = 378;
+	int ENUMDP_LINK_ART_OBJECT = 382;
 
 	/**
 	 * The meta object id for the '<em>ENUMDP Typ Art Object</em>' data type.
@@ -15014,7 +15117,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPTypArtObject()
 	 * @generated
 	 */
-	int ENUMDP_TYP_ART_OBJECT = 379;
+	int ENUMDP_TYP_ART_OBJECT = 383;
 
 	/**
 	 * The meta object id for the '<em>ENUMDP Typ ESG Object</em>' data type.
@@ -15024,7 +15127,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPTypESGObject()
 	 * @generated
 	 */
-	int ENUMDP_TYP_ESG_OBJECT = 380;
+	int ENUMDP_TYP_ESG_OBJECT = 384;
 
 	/**
 	 * The meta object id for the '<em>ENUMDP Typ GNT Object</em>' data type.
@@ -15034,7 +15137,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPTypGNTObject()
 	 * @generated
 	 */
-	int ENUMDP_TYP_GNT_OBJECT = 381;
+	int ENUMDP_TYP_GNT_OBJECT = 385;
 
 	/**
 	 * The meta object id for the '<em>ENUMDP Typ Trans Object</em>' data type.
@@ -15044,7 +15147,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPTypTransObject()
 	 * @generated
 	 */
-	int ENUMDP_TYP_TRANS_OBJECT = 382;
+	int ENUMDP_TYP_TRANS_OBJECT = 386;
 
 	/**
 	 * The meta object id for the '<em>ENUMDP Typ ZBS Object</em>' data type.
@@ -15054,7 +15157,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMDPTypZBSObject()
 	 * @generated
 	 */
-	int ENUMDP_TYP_ZBS_OBJECT = 383;
+	int ENUMDP_TYP_ZBS_OBJECT = 387;
 
 	/**
 	 * The meta object id for the '<em>ENUM Einzeldatei Art Object</em>' data type.
@@ -15064,7 +15167,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMEinzeldateiArtObject()
 	 * @generated
 	 */
-	int ENUM_EINZELDATEI_ART_OBJECT = 384;
+	int ENUM_EINZELDATEI_ART_OBJECT = 388;
 
 	/**
 	 * The meta object id for the '<em>ENUM Energie Eingang Art Object</em>' data type.
@@ -15074,7 +15177,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMEnergieEingangArtObject()
 	 * @generated
 	 */
-	int ENUM_ENERGIE_EINGANG_ART_OBJECT = 385;
+	int ENUM_ENERGIE_EINGANG_ART_OBJECT = 389;
 
 	/**
 	 * The meta object id for the '<em>ENUMETCS Knoten Art Sonstige Object</em>' data type.
@@ -15084,7 +15187,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMETCSKnotenArtSonstigeObject()
 	 * @generated
 	 */
-	int ENUMETCS_KNOTEN_ART_SONSTIGE_OBJECT = 386;
+	int ENUMETCS_KNOTEN_ART_SONSTIGE_OBJECT = 390;
 
 	/**
 	 * The meta object id for the '<em>ENUMEV Modul Art Object</em>' data type.
@@ -15094,7 +15197,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMEVModulArtObject()
 	 * @generated
 	 */
-	int ENUMEV_MODUL_ART_OBJECT = 387;
+	int ENUMEV_MODUL_ART_OBJECT = 391;
 
 	/**
 	 * The meta object id for the '<em>ENUMFTGNT Punktart Object</em>' data type.
@@ -15104,7 +15207,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMFTGNTPunktartObject()
 	 * @generated
 	 */
-	int ENUMFTGNT_PUNKTART_OBJECT = 388;
+	int ENUMFTGNT_PUNKTART_OBJECT = 392;
 
 	/**
 	 * The meta object id for the '<em>ENUMFT Hinweis Funktion Object</em>' data type.
@@ -15114,7 +15217,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMFTHinweisFunktionObject()
 	 * @generated
 	 */
-	int ENUMFT_HINWEIS_FUNKTION_OBJECT = 389;
+	int ENUMFT_HINWEIS_FUNKTION_OBJECT = 393;
 
 	/**
 	 * The meta object id for the '<em>ENUMFTZBS Typ Object</em>' data type.
@@ -15124,7 +15227,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMFTZBSTypObject()
 	 * @generated
 	 */
-	int ENUMFTZBS_TYP_OBJECT = 390;
+	int ENUMFTZBS_TYP_OBJECT = 394;
 
 	/**
 	 * The meta object id for the '<em>ENUMLEU Art Object</em>' data type.
@@ -15134,7 +15237,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMLEUArtObject()
 	 * @generated
 	 */
-	int ENUMLEU_ART_OBJECT = 391;
+	int ENUMLEU_ART_OBJECT = 395;
 
 	/**
 	 * The meta object id for the '<em>ENUMMLEVELTR Object</em>' data type.
@@ -15144,7 +15247,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMMLEVELTRObject()
 	 * @generated
 	 */
-	int ENUMMLEVELTR_OBJECT = 392;
+	int ENUMMLEVELTR_OBJECT = 396;
 
 	/**
 	 * The meta object id for the '<em>ENUMNIDSTM Object</em>' data type.
@@ -15154,7 +15257,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMNIDSTMObject()
 	 * @generated
 	 */
-	int ENUMNIDSTM_OBJECT = 393;
+	int ENUMNIDSTM_OBJECT = 397;
 
 	/**
 	 * The meta object id for the '<em>ENUM Position Object</em>' data type.
@@ -15164,7 +15267,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMPositionObject()
 	 * @generated
 	 */
-	int ENUM_POSITION_OBJECT = 394;
+	int ENUM_POSITION_OBJECT = 398;
 
 	/**
 	 * The meta object id for the '<em>ENUMSBE Object</em>' data type.
@@ -15174,7 +15277,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMSBEObject()
 	 * @generated
 	 */
-	int ENUMSBE_OBJECT = 395;
+	int ENUMSBE_OBJECT = 399;
 
 	/**
 	 * The meta object id for the '<em>ENUM Spannung Art Object</em>' data type.
@@ -15184,7 +15287,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMSpannungArtObject()
 	 * @generated
 	 */
-	int ENUM_SPANNUNG_ART_OBJECT = 396;
+	int ENUM_SPANNUNG_ART_OBJECT = 400;
 
 	/**
 	 * The meta object id for the '<em>ENUM Standortangabe Balisenschild Object</em>' data type.
@@ -15194,7 +15297,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMStandortangabeBalisenschildObject()
 	 * @generated
 	 */
-	int ENUM_STANDORTANGABE_BALISENSCHILD_OBJECT = 397;
+	int ENUM_STANDORTANGABE_BALISENSCHILD_OBJECT = 401;
 
 	/**
 	 * The meta object id for the '<em>ENUMSTZ Object</em>' data type.
@@ -15204,7 +15307,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMSTZObject()
 	 * @generated
 	 */
-	int ENUMSTZ_OBJECT = 398;
+	int ENUMSTZ_OBJECT = 402;
 
 	/**
 	 * The meta object id for the '<em>ENUM Verbot WB Art Object</em>' data type.
@@ -15214,7 +15317,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMVerbotWBArtObject()
 	 * @generated
 	 */
-	int ENUM_VERBOT_WB_ART_OBJECT = 399;
+	int ENUM_VERBOT_WB_ART_OBJECT = 403;
 
 	/**
 	 * The meta object id for the '<em>ENUM Verwendung Als Rueckfall Object</em>' data type.
@@ -15224,7 +15327,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMVerwendungAlsRueckfallObject()
 	 * @generated
 	 */
-	int ENUM_VERWENDUNG_ALS_RUECKFALL_OBJECT = 400;
+	int ENUM_VERWENDUNG_ALS_RUECKFALL_OBJECT = 404;
 
 	/**
 	 * The meta object id for the '<em>ENUMW Anschluss Object</em>' data type.
@@ -15234,7 +15337,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMWAnschlussObject()
 	 * @generated
 	 */
-	int ENUMW_ANSCHLUSS_OBJECT = 401;
+	int ENUMW_ANSCHLUSS_OBJECT = 405;
 
 	/**
 	 * The meta object id for the '<em>ENUMZBS Reaktion Object</em>' data type.
@@ -15244,7 +15347,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getENUMZBSReaktionObject()
 	 * @generated
 	 */
-	int ENUMZBS_REAKTION_OBJECT = 402;
+	int ENUMZBS_REAKTION_OBJECT = 406;
 
 	/**
 	 * The meta object id for the '<em>ESG Ind Erlaeuterung Type</em>' data type.
@@ -15254,7 +15357,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getESG_Ind_Erlaeuterung_Type()
 	 * @generated
 	 */
-	int ESG_IND_ERLAEUTERUNG_TYPE = 403;
+	int ESG_IND_ERLAEUTERUNG_TYPE = 407;
 
 	/**
 	 * The meta object id for the '<em>ESG Ind Parameter Type</em>' data type.
@@ -15264,7 +15367,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getESG_Ind_Parameter_Type()
 	 * @generated
 	 */
-	int ESG_IND_PARAMETER_TYPE = 404;
+	int ESG_IND_PARAMETER_TYPE = 408;
 
 	/**
 	 * The meta object id for the '<em>ESG Ind Parameterwert Type</em>' data type.
@@ -15274,7 +15377,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getESG_Ind_Parameterwert_Type()
 	 * @generated
 	 */
-	int ESG_IND_PARAMETERWERT_TYPE = 405;
+	int ESG_IND_PARAMETERWERT_TYPE = 409;
 
 	/**
 	 * The meta object id for the '<em>ETCS Gefahrpunktabstand Abweichend Type</em>' data type.
@@ -15284,7 +15387,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Gefahrpunktabstand_Abweichend_Type()
 	 * @generated
 	 */
-	int ETCS_GEFAHRPUNKTABSTAND_ABWEICHEND_TYPE = 406;
+	int ETCS_GEFAHRPUNKTABSTAND_ABWEICHEND_TYPE = 410;
 
 	/**
 	 * The meta object id for the '<em>ETCS Paketnummer Type</em>' data type.
@@ -15294,7 +15397,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Paketnummer_Type()
 	 * @generated
 	 */
-	int ETCS_PAKETNUMMER_TYPE = 407;
+	int ETCS_PAKETNUMMER_TYPE = 411;
 
 	/**
 	 * The meta object id for the '<em>ETCS Par Erlaeuterung Type</em>' data type.
@@ -15304,7 +15407,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Par_Erlaeuterung_Type()
 	 * @generated
 	 */
-	int ETCS_PAR_ERLAEUTERUNG_TYPE = 408;
+	int ETCS_PAR_ERLAEUTERUNG_TYPE = 412;
 
 	/**
 	 * The meta object id for the '<em>ETCS Parametername Type</em>' data type.
@@ -15314,7 +15417,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Parametername_Type()
 	 * @generated
 	 */
-	int ETCS_PARAMETERNAME_TYPE = 409;
+	int ETCS_PARAMETERNAME_TYPE = 413;
 
 	/**
 	 * The meta object id for the '<em>ETCS Parameterwert Type</em>' data type.
@@ -15324,7 +15427,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_Parameterwert_Type()
 	 * @generated
 	 */
-	int ETCS_PARAMETERWERT_TYPE = 410;
+	int ETCS_PARAMETERWERT_TYPE = 414;
 
 	/**
 	 * The meta object id for the '<em>ETCS System Version Type</em>' data type.
@@ -15334,7 +15437,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getETCS_System_Version_Type()
 	 * @generated
 	 */
-	int ETCS_SYSTEM_VERSION_TYPE = 411;
+	int ETCS_SYSTEM_VERSION_TYPE = 415;
 
 	/**
 	 * The meta object id for the '<em>EV Modul Typ Type</em>' data type.
@@ -15344,7 +15447,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getEV_Modul_Typ_Type()
 	 * @generated
 	 */
-	int EV_MODUL_TYP_TYPE = 412;
+	int EV_MODUL_TYP_TYPE = 416;
 
 	/**
 	 * The meta object id for the '<em>Fabrikat Type</em>' data type.
@@ -15354,7 +15457,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFabrikat_Type()
 	 * @generated
 	 */
-	int FABRIKAT_TYPE = 413;
+	int FABRIKAT_TYPE = 417;
 
 	/**
 	 * The meta object id for the '<em>FT ESG Subtyp Type</em>' data type.
@@ -15364,7 +15467,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ESG_Subtyp_Type()
 	 * @generated
 	 */
-	int FT_ESG_SUBTYP_TYPE = 414;
+	int FT_ESG_SUBTYP_TYPE = 418;
 
 	/**
 	 * The meta object id for the '<em>FT ESG Typ Type</em>' data type.
@@ -15374,7 +15477,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ESG_Typ_Type()
 	 * @generated
 	 */
-	int FT_ESG_TYP_TYPE = 415;
+	int FT_ESG_TYP_TYPE = 419;
 
 	/**
 	 * The meta object id for the '<em>FT ETCS L2 Typ Type</em>' data type.
@@ -15384,7 +15487,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFT_ETCS_L2_Typ_Type()
 	 * @generated
 	 */
-	int FT_ETCS_L2_TYP_TYPE = 416;
+	int FT_ETCS_L2_TYP_TYPE = 420;
 
 	/**
 	 * The meta object id for the '<em>FW Teil Nummer Type</em>' data type.
@@ -15394,7 +15497,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getFW_Teil_Nummer_Type()
 	 * @generated
 	 */
-	int FW_TEIL_NUMMER_TYPE = 417;
+	int FW_TEIL_NUMMER_TYPE = 421;
 
 	/**
 	 * The meta object id for the '<em>Gruppen ID Type</em>' data type.
@@ -15404,7 +15507,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getGruppen_ID_Type()
 	 * @generated
 	 */
-	int GRUPPEN_ID_TYPE = 418;
+	int GRUPPEN_ID_TYPE = 422;
 
 	/**
 	 * The meta object id for the '<em>Hinweis Balisenbefestigung Type</em>' data type.
@@ -15414,7 +15517,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getHinweis_Balisenbefestigung_Type()
 	 * @generated
 	 */
-	int HINWEIS_BALISENBEFESTIGUNG_TYPE = 419;
+	int HINWEIS_BALISENBEFESTIGUNG_TYPE = 423;
 
 	/**
 	 * The meta object id for the '<em>Individualisierung Weitere Type</em>' data type.
@@ -15424,7 +15527,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getIndividualisierung_Weitere_Type()
 	 * @generated
 	 */
-	int INDIVIDUALISIERUNG_WEITERE_TYPE = 420;
+	int INDIVIDUALISIERUNG_WEITERE_TYPE = 424;
 
 	/**
 	 * The meta object id for the '<em>Km BTS 1Type</em>' data type.
@@ -15434,7 +15537,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getKm_BTS_1_Type()
 	 * @generated
 	 */
-	int KM_BTS_1TYPE = 421;
+	int KM_BTS_1TYPE = 425;
 
 	/**
 	 * The meta object id for the '<em>Km BTS 2Type</em>' data type.
@@ -15444,7 +15547,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getKm_BTS_2_Type()
 	 * @generated
 	 */
-	int KM_BTS_2TYPE = 422;
+	int KM_BTS_2TYPE = 426;
 
 	/**
 	 * The meta object id for the '<em>Km BTS 3Type</em>' data type.
@@ -15454,7 +15557,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getKm_BTS_3_Type()
 	 * @generated
 	 */
-	int KM_BTS_3TYPE = 423;
+	int KM_BTS_3TYPE = 427;
 
 	/**
 	 * The meta object id for the '<em>Konfigurationskennung Type</em>' data type.
@@ -15464,7 +15567,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getKonfigurationskennung_Type()
 	 * @generated
 	 */
-	int KONFIGURATIONSKENNUNG_TYPE = 424;
+	int KONFIGURATIONSKENNUNG_TYPE = 428;
 
 	/**
 	 * The meta object id for the '<em>LACKLEVELTR Type</em>' data type.
@@ -15474,7 +15577,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getL_ACKLEVELTR_Type()
 	 * @generated
 	 */
-	int LACKLEVELTR_TYPE = 425;
+	int LACKLEVELTR_TYPE = 429;
 
 	/**
 	 * The meta object id for the '<em>Laenge 1Type</em>' data type.
@@ -15484,7 +15587,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLaenge_1_Type()
 	 * @generated
 	 */
-	int LAENGE_1TYPE = 426;
+	int LAENGE_1TYPE = 430;
 
 	/**
 	 * The meta object id for the '<em>Laenge Ausfuehrungsbereich Type</em>' data type.
@@ -15494,7 +15597,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLaenge_Ausfuehrungsbereich_Type()
 	 * @generated
 	 */
-	int LAENGE_AUSFUEHRUNGSBEREICH_TYPE = 427;
+	int LAENGE_AUSFUEHRUNGSBEREICH_TYPE = 431;
 
 	/**
 	 * The meta object id for the '<em>Laenge Gestufte VSignalisierung Type</em>' data type.
@@ -15504,7 +15607,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLaenge_Gestufte_V_Signalisierung_Type()
 	 * @generated
 	 */
-	int LAENGE_GESTUFTE_VSIGNALISIERUNG_TYPE = 428;
+	int LAENGE_GESTUFTE_VSIGNALISIERUNG_TYPE = 432;
 
 	/**
 	 * The meta object id for the '<em>Laenge Soll Mind 150 Type</em>' data type.
@@ -15514,7 +15617,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLaenge_Soll_Mind_150_Type()
 	 * @generated
 	 */
-	int LAENGE_SOLL_MIND_150_TYPE = 429;
+	int LAENGE_SOLL_MIND_150_TYPE = 433;
 
 	/**
 	 * The meta object id for the '<em>Leistungsbedarf Type</em>' data type.
@@ -15524,7 +15627,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLeistungsbedarf_Type()
 	 * @generated
 	 */
-	int LEISTUNGSBEDARF_TYPE = 430;
+	int LEISTUNGSBEDARF_TYPE = 434;
 
 	/**
 	 * The meta object id for the '<em>LEU Ausgang Nr Type</em>' data type.
@@ -15534,7 +15637,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Ausgang_Nr_Type()
 	 * @generated
 	 */
-	int LEU_AUSGANG_NR_TYPE = 431;
+	int LEU_AUSGANG_NR_TYPE = 435;
 
 	/**
 	 * The meta object id for the '<em>LEU Modul Geraetestand Type</em>' data type.
@@ -15544,7 +15647,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Modul_Geraetestand_Type()
 	 * @generated
 	 */
-	int LEU_MODUL_GERAETESTAND_TYPE = 432;
+	int LEU_MODUL_GERAETESTAND_TYPE = 436;
 
 	/**
 	 * The meta object id for the '<em>LEU Modul Typ Type</em>' data type.
@@ -15554,7 +15657,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Modul_Typ_Type()
 	 * @generated
 	 */
-	int LEU_MODUL_TYP_TYPE = 433;
+	int LEU_MODUL_TYP_TYPE = 437;
 
 	/**
 	 * The meta object id for the '<em>LEU Schaltkasten Typ Type</em>' data type.
@@ -15564,7 +15667,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLEU_Schaltkasten_Typ_Type()
 	 * @generated
 	 */
-	int LEU_SCHALTKASTEN_TYP_TYPE = 434;
+	int LEU_SCHALTKASTEN_TYP_TYPE = 438;
 
 	/**
 	 * The meta object id for the '<em>Lfd Nr Am Bezugspunkt Type</em>' data type.
@@ -15574,7 +15677,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLfd_Nr_Am_Bezugspunkt_Type()
 	 * @generated
 	 */
-	int LFD_NR_AM_BEZUGSPUNKT_TYPE = 435;
+	int LFD_NR_AM_BEZUGSPUNKT_TYPE = 439;
 
 	/**
 	 * The meta object id for the '<em>Link Distanz Type</em>' data type.
@@ -15584,7 +15687,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLink_Distanz_Type()
 	 * @generated
 	 */
-	int LINK_DISTANZ_TYPE = 436;
+	int LINK_DISTANZ_TYPE = 440;
 
 	/**
 	 * The meta object id for the '<em>LLA Type</em>' data type.
@@ -15594,7 +15697,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getLLA_Type()
 	 * @generated
 	 */
-	int LLA_TYPE = 437;
+	int LLA_TYPE = 441;
 
 	/**
 	 * The meta object id for the '<em>Massgebende Neig 1Type</em>' data type.
@@ -15604,7 +15707,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMassgebende_Neig_1_Type()
 	 * @generated
 	 */
-	int MASSGEBENDE_NEIG_1TYPE = 438;
+	int MASSGEBENDE_NEIG_1TYPE = 442;
 
 	/**
 	 * The meta object id for the '<em>Massgebende Neig Schutzstrecke Type</em>' data type.
@@ -15614,7 +15717,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMassgebende_Neig_Schutzstrecke_Type()
 	 * @generated
 	 */
-	int MASSGEBENDE_NEIG_SCHUTZSTRECKE_TYPE = 439;
+	int MASSGEBENDE_NEIG_SCHUTZSTRECKE_TYPE = 443;
 
 	/**
 	 * The meta object id for the '<em>Massgebende Neigung Mind 150 Type</em>' data type.
@@ -15624,7 +15727,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMassgebende_Neigung_Mind_150_Type()
 	 * @generated
 	 */
-	int MASSGEBENDE_NEIGUNG_MIND_150_TYPE = 440;
+	int MASSGEBENDE_NEIGUNG_MIND_150_TYPE = 444;
 
 	/**
 	 * The meta object id for the '<em>Massgebende Neigung Mind Sig 150 Type</em>' data type.
@@ -15634,7 +15737,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMassgebende_Neigung_Mind_Sig_150_Type()
 	 * @generated
 	 */
-	int MASSGEBENDE_NEIGUNG_MIND_SIG_150_TYPE = 441;
+	int MASSGEBENDE_NEIGUNG_MIND_SIG_150_TYPE = 445;
 
 	/**
 	 * The meta object id for the '<em>Massgebende Neigung Mind Sig Type</em>' data type.
@@ -15644,7 +15747,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMassgebende_Neigung_Mind_Sig_Type()
 	 * @generated
 	 */
-	int MASSGEBENDE_NEIGUNG_MIND_SIG_TYPE = 442;
+	int MASSGEBENDE_NEIGUNG_MIND_SIG_TYPE = 446;
 
 	/**
 	 * The meta object id for the '<em>Max Leistung Type</em>' data type.
@@ -15654,7 +15757,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMax_Leistung_Type()
 	 * @generated
 	 */
-	int MAX_LEISTUNG_TYPE = 443;
+	int MAX_LEISTUNG_TYPE = 447;
 
 	/**
 	 * The meta object id for the '<em>Max Unterbrechungszeit Type</em>' data type.
@@ -15664,7 +15767,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMax_Unterbrechungszeit_Type()
 	 * @generated
 	 */
-	int MAX_UNTERBRECHUNGSZEIT_TYPE = 444;
+	int MAX_UNTERBRECHUNGSZEIT_TYPE = 448;
 
 	/**
 	 * The meta object id for the '<em>Metallteil Kategorie Type</em>' data type.
@@ -15674,7 +15777,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMetallteil_Kategorie_Type()
 	 * @generated
 	 */
-	int METALLTEIL_KATEGORIE_TYPE = 445;
+	int METALLTEIL_KATEGORIE_TYPE = 449;
 
 	/**
 	 * The meta object id for the '<em>Metallteil Laenge Type</em>' data type.
@@ -15684,7 +15787,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMetallteil_Laenge_Type()
 	 * @generated
 	 */
-	int METALLTEIL_LAENGE_TYPE = 446;
+	int METALLTEIL_LAENGE_TYPE = 450;
 
 	/**
 	 * The meta object id for the '<em>Modulnummer Type</em>' data type.
@@ -15694,7 +15797,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getModulnummer_Type()
 	 * @generated
 	 */
-	int MODULNUMMER_TYPE = 447;
+	int MODULNUMMER_TYPE = 451;
 
 	/**
 	 * The meta object id for the '<em>Montageabweichung Type</em>' data type.
@@ -15704,7 +15807,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getMontageabweichung_Type()
 	 * @generated
 	 */
-	int MONTAGEABWEICHUNG_TYPE = 448;
+	int MONTAGEABWEICHUNG_TYPE = 452;
 
 	/**
 	 * The meta object id for the '<em>Neigung Type</em>' data type.
@@ -15714,7 +15817,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNeigung_Type()
 	 * @generated
 	 */
-	int NEIGUNG_TYPE = 449;
+	int NEIGUNG_TYPE = 453;
 
 	/**
 	 * The meta object id for the '<em>Nennleistung Type</em>' data type.
@@ -15724,7 +15827,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNennleistung_Type()
 	 * @generated
 	 */
-	int NENNLEISTUNG_TYPE = 450;
+	int NENNLEISTUNG_TYPE = 454;
 
 	/**
 	 * The meta object id for the '<em>NID BG Type</em>' data type.
@@ -15734,7 +15837,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNID_BG_Type()
 	 * @generated
 	 */
-	int NID_BG_TYPE = 451;
+	int NID_BG_TYPE = 455;
 
 	/**
 	 * The meta object id for the '<em>NID CType</em>' data type.
@@ -15744,7 +15847,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNID_C_Type()
 	 * @generated
 	 */
-	int NID_CTYPE = 452;
+	int NID_CTYPE = 456;
 
 	/**
 	 * The meta object id for the '<em>NID RBC Type</em>' data type.
@@ -15754,7 +15857,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNID_RBC_Type()
 	 * @generated
 	 */
-	int NID_RBC_TYPE = 453;
+	int NID_RBC_TYPE = 457;
 
 	/**
 	 * The meta object id for the '<em>NID TSR Type</em>' data type.
@@ -15764,7 +15867,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNID_TSR_Type()
 	 * @generated
 	 */
-	int NID_TSR_TYPE = 454;
+	int NID_TSR_TYPE = 458;
 
 	/**
 	 * The meta object id for the '<em>Nummer Schaltkasten Type</em>' data type.
@@ -15774,7 +15877,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getNummer_Schaltkasten_Type()
 	 * @generated
 	 */
-	int NUMMER_SCHALTKASTEN_TYPE = 455;
+	int NUMMER_SCHALTKASTEN_TYPE = 459;
 
 	/**
 	 * The meta object id for the '<em>Oberstrombegrenzung Gueterzug Type</em>' data type.
@@ -15784,7 +15887,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getOberstrombegrenzung_Gueterzug_Type()
 	 * @generated
 	 */
-	int OBERSTROMBEGRENZUNG_GUETERZUG_TYPE = 456;
+	int OBERSTROMBEGRENZUNG_GUETERZUG_TYPE = 460;
 
 	/**
 	 * The meta object id for the '<em>Oberstrombegrenzung Reisezug Type</em>' data type.
@@ -15794,7 +15897,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getOberstrombegrenzung_Reisezug_Type()
 	 * @generated
 	 */
-	int OBERSTROMBEGRENZUNG_REISEZUG_TYPE = 457;
+	int OBERSTROMBEGRENZUNG_REISEZUG_TYPE = 461;
 
 	/**
 	 * The meta object id for the '<em>Port Nr Ausg Physisch Type</em>' data type.
@@ -15804,7 +15907,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getPort_Nr_Ausg_Physisch_Type()
 	 * @generated
 	 */
-	int PORT_NR_AUSG_PHYSISCH_TYPE = 458;
+	int PORT_NR_AUSG_PHYSISCH_TYPE = 462;
 
 	/**
 	 * The meta object id for the '<em>Position Sonstige Type</em>' data type.
@@ -15814,7 +15917,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getPosition_Sonstige_Type()
 	 * @generated
 	 */
-	int POSITION_SONSTIGE_TYPE = 459;
+	int POSITION_SONSTIGE_TYPE = 463;
 
 	/**
 	 * The meta object id for the '<em>Prioritaet Type</em>' data type.
@@ -15824,7 +15927,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getPrioritaet_Type()
 	 * @generated
 	 */
-	int PRIORITAET_TYPE = 460;
+	int PRIORITAET_TYPE = 464;
 
 	/**
 	 * The meta object id for the '<em>Projektierungsfall Type</em>' data type.
@@ -15834,17 +15937,17 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getProjektierungsfall_Type()
 	 * @generated
 	 */
-	int PROJEKTIERUNGSFALL_TYPE = 461;
+	int PROJEKTIERUNGSFALL_TYPE = 465;
 
 	/**
 	 * The meta object id for the '<em>RBC ETCS System Version Type</em>' data type.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see java.math.BigInteger
+	 * @see java.lang.String
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getRBC_ETCS_System_Version_Type()
 	 * @generated
 	 */
-	int RBC_ETCS_SYSTEM_VERSION_TYPE = 462;
+	int RBC_ETCS_SYSTEM_VERSION_TYPE = 466;
 
 	/**
 	 * The meta object id for the '<em>RBC SRS Version Type</em>' data type.
@@ -15854,7 +15957,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getRBC_SRS_Version_Type()
 	 * @generated
 	 */
-	int RBC_SRS_VERSION_TYPE = 463;
+	int RBC_SRS_VERSION_TYPE = 467;
 
 	/**
 	 * The meta object id for the '<em>Rekursion 2Nr Type</em>' data type.
@@ -15864,7 +15967,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getRekursion_2_Nr_Type()
 	 * @generated
 	 */
-	int REKURSION_2NR_TYPE = 464;
+	int REKURSION_2NR_TYPE = 468;
 
 	/**
 	 * The meta object id for the '<em>Rekursion Nr Type</em>' data type.
@@ -15874,7 +15977,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getRekursion_Nr_Type()
 	 * @generated
 	 */
-	int REKURSION_NR_TYPE = 465;
+	int REKURSION_NR_TYPE = 469;
 
 	/**
 	 * The meta object id for the '<em>Rufnummer Type</em>' data type.
@@ -15884,7 +15987,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getRufnummer_Type()
 	 * @generated
 	 */
-	int RUFNUMMER_TYPE = 466;
+	int RUFNUMMER_TYPE = 470;
 
 	/**
 	 * The meta object id for the '<em>Schutzstrecke Erforderlich Type</em>' data type.
@@ -15894,7 +15997,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSchutzstrecke_Erforderlich_Type()
 	 * @generated
 	 */
-	int SCHUTZSTRECKE_ERFORDERLICH_TYPE = 467;
+	int SCHUTZSTRECKE_ERFORDERLICH_TYPE = 471;
 
 	/**
 	 * The meta object id for the '<em>Schutzstrecke Vorhanden Type</em>' data type.
@@ -15904,7 +16007,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSchutzstrecke_Vorhanden_Type()
 	 * @generated
 	 */
-	int SCHUTZSTRECKE_VORHANDEN_TYPE = 468;
+	int SCHUTZSTRECKE_VORHANDEN_TYPE = 472;
 
 	/**
 	 * The meta object id for the '<em>Solllaenge Mind Sig 150 Type</em>' data type.
@@ -15914,7 +16017,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSolllaenge_Mind_Sig_150_Type()
 	 * @generated
 	 */
-	int SOLLLAENGE_MIND_SIG_150_TYPE = 469;
+	int SOLLLAENGE_MIND_SIG_150_TYPE = 473;
 
 	/**
 	 * The meta object id for the '<em>Solllaenge Mind Sig Type</em>' data type.
@@ -15924,7 +16027,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSolllaenge_Mind_Sig_Type()
 	 * @generated
 	 */
-	int SOLLLAENGE_MIND_SIG_TYPE = 470;
+	int SOLLLAENGE_MIND_SIG_TYPE = 474;
 
 	/**
 	 * The meta object id for the '<em>Sonstige Standortangabe Type</em>' data type.
@@ -15934,7 +16037,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSonstige_Standortangabe_Type()
 	 * @generated
 	 */
-	int SONSTIGE_STANDORTANGABE_TYPE = 471;
+	int SONSTIGE_STANDORTANGABE_TYPE = 475;
 
 	/**
 	 * The meta object id for the '<em>Spannung Toleranz Obere Type</em>' data type.
@@ -15944,7 +16047,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSpannung_Toleranz_Obere_Type()
 	 * @generated
 	 */
-	int SPANNUNG_TOLERANZ_OBERE_TYPE = 472;
+	int SPANNUNG_TOLERANZ_OBERE_TYPE = 476;
 
 	/**
 	 * The meta object id for the '<em>Spannung Toleranz Untere Type</em>' data type.
@@ -15954,7 +16057,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSpannung_Toleranz_Untere_Type()
 	 * @generated
 	 */
-	int SPANNUNG_TOLERANZ_UNTERE_TYPE = 473;
+	int SPANNUNG_TOLERANZ_UNTERE_TYPE = 477;
 
 	/**
 	 * The meta object id for the '<em>SRS Version Type</em>' data type.
@@ -15964,7 +16067,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSRS_Version_Type()
 	 * @generated
 	 */
-	int SRS_VERSION_TYPE = 474;
+	int SRS_VERSION_TYPE = 478;
 
 	/**
 	 * The meta object id for the '<em>System Vor Grenze Besonders Type</em>' data type.
@@ -15974,7 +16077,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getSystem_Vor_Grenze_Besonders_Type()
 	 * @generated
 	 */
-	int SYSTEM_VOR_GRENZE_BESONDERS_TYPE = 475;
+	int SYSTEM_VOR_GRENZE_BESONDERS_TYPE = 479;
 
 	/**
 	 * The meta object id for the '<em>TBV Tunnelbereich Laenge Type</em>' data type.
@@ -15984,7 +16087,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getTBV_Tunnelbereich_Laenge_Type()
 	 * @generated
 	 */
-	int TBV_TUNNELBEREICH_LAENGE_TYPE = 476;
+	int TBV_TUNNELBEREICH_LAENGE_TYPE = 480;
 
 	/**
 	 * The meta object id for the '<em>Telegramm Index Type</em>' data type.
@@ -15994,7 +16097,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getTelegramm_Index_Type()
 	 * @generated
 	 */
-	int TELEGRAMM_INDEX_TYPE = 477;
+	int TELEGRAMM_INDEX_TYPE = 481;
 
 	/**
 	 * The meta object id for the '<em>Telegrammnummer Type</em>' data type.
@@ -16004,7 +16107,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getTelegrammnummer_Type()
 	 * @generated
 	 */
-	int TELEGRAMMNUMMER_TYPE = 478;
+	int TELEGRAMMNUMMER_TYPE = 482;
 
 	/**
 	 * The meta object id for the '<em>Text Bedingung Type</em>' data type.
@@ -16014,7 +16117,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getText_Bedingung_Type()
 	 * @generated
 	 */
-	int TEXT_BEDINGUNG_TYPE = 479;
+	int TEXT_BEDINGUNG_TYPE = 483;
 
 	/**
 	 * The meta object id for the '<em>Textmeldung Type</em>' data type.
@@ -16024,7 +16127,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getTextmeldung_Type()
 	 * @generated
 	 */
-	int TEXTMELDUNG_TYPE = 480;
+	int TEXTMELDUNG_TYPE = 484;
 
 	/**
 	 * The meta object id for the '<em>Ueberbrueckung EV Unterbrechung Type</em>' data type.
@@ -16034,7 +16137,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getUeberbrueckung_EV_Unterbrechung_Type()
 	 * @generated
 	 */
-	int UEBERBRUECKUNG_EV_UNTERBRECHUNG_TYPE = 481;
+	int UEBERBRUECKUNG_EV_UNTERBRECHUNG_TYPE = 485;
 
 	/**
 	 * The meta object id for the '<em>Ueberwachung Laenge Type</em>' data type.
@@ -16044,7 +16147,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getUeberwachung_Laenge_Type()
 	 * @generated
 	 */
-	int UEBERWACHUNG_LAENGE_TYPE = 482;
+	int UEBERWACHUNG_LAENGE_TYPE = 486;
 
 	/**
 	 * The meta object id for the '<em>Untergruppen ID Type</em>' data type.
@@ -16054,7 +16157,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getUntergruppen_ID_Type()
 	 * @generated
 	 */
-	int UNTERGRUPPEN_ID_TYPE = 483;
+	int UNTERGRUPPEN_ID_TYPE = 487;
 
 	/**
 	 * The meta object id for the '<em>VBefehl RType</em>' data type.
@@ -16064,7 +16167,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getV_Befehl_R_Type()
 	 * @generated
 	 */
-	int VBEFEHL_RTYPE = 484;
+	int VBEFEHL_RTYPE = 488;
 
 	/**
 	 * The meta object id for the '<em>VBefehl ZType</em>' data type.
@@ -16074,7 +16177,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getV_Befehl_Z_Type()
 	 * @generated
 	 */
-	int VBEFEHL_ZTYPE = 485;
+	int VBEFEHL_ZTYPE = 489;
 
 	/**
 	 * The meta object id for the '<em>VFrei Type</em>' data type.
@@ -16084,7 +16187,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getV_Frei_Type()
 	 * @generated
 	 */
-	int VFREI_TYPE = 486;
+	int VFREI_TYPE = 490;
 
 	/**
 	 * The meta object id for the '<em>VStart Type</em>' data type.
@@ -16094,7 +16197,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getV_Start_Type()
 	 * @generated
 	 */
-	int VSTART_TYPE = 487;
+	int VSTART_TYPE = 491;
 
 	/**
 	 * The meta object id for the '<em>VZiel Type</em>' data type.
@@ -16104,7 +16207,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getV_Ziel_Type()
 	 * @generated
 	 */
-	int VZIEL_TYPE = 488;
+	int VZIEL_TYPE = 492;
 
 	/**
 	 * The meta object id for the '<em>VZul Strecke Type</em>' data type.
@@ -16114,7 +16217,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getV_Zul_Strecke_Type()
 	 * @generated
 	 */
-	int VZUL_STRECKE_TYPE = 489;
+	int VZUL_STRECKE_TYPE = 493;
 
 	/**
 	 * The meta object id for the '<em>VBC Kennung Type</em>' data type.
@@ -16124,7 +16227,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVBC_Kennung_Type()
 	 * @generated
 	 */
-	int VBC_KENNUNG_TYPE = 490;
+	int VBC_KENNUNG_TYPE = 494;
 
 	/**
 	 * The meta object id for the '<em>VBC NID CType</em>' data type.
@@ -16134,7 +16237,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVBC_NID_C_Type()
 	 * @generated
 	 */
-	int VBC_NID_CTYPE = 491;
+	int VBC_NID_CTYPE = 495;
 
 	/**
 	 * The meta object id for the '<em>VBC Timer Type</em>' data type.
@@ -16144,7 +16247,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVBC_Timer_Type()
 	 * @generated
 	 */
-	int VBC_TIMER_TYPE = 492;
+	int VBC_TIMER_TYPE = 496;
 
 	/**
 	 * The meta object id for the '<em>Verbot Anhalten Type</em>' data type.
@@ -16154,7 +16257,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVerbot_Anhalten_Type()
 	 * @generated
 	 */
-	int VERBOT_ANHALTEN_TYPE = 493;
+	int VERBOT_ANHALTEN_TYPE = 497;
 
 	/**
 	 * The meta object id for the '<em>Verkuerzter Abstand Type</em>' data type.
@@ -16164,7 +16267,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVerkuerzter_Abstand_Type()
 	 * @generated
 	 */
-	int VERKUERZTER_ABSTAND_TYPE = 494;
+	int VERKUERZTER_ABSTAND_TYPE = 498;
 
 	/**
 	 * The meta object id for the '<em>Verwendung Hilfe Type</em>' data type.
@@ -16174,7 +16277,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVerwendung_Hilfe_Type()
 	 * @generated
 	 */
-	int VERWENDUNG_HILFE_TYPE = 495;
+	int VERWENDUNG_HILFE_TYPE = 499;
 
 	/**
 	 * The meta object id for the '<em>Verwendung Type</em>' data type.
@@ -16184,7 +16287,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVerwendung_Type()
 	 * @generated
 	 */
-	int VERWENDUNG_TYPE = 496;
+	int VERWENDUNG_TYPE = 500;
 
 	/**
 	 * The meta object id for the '<em>VGR 1Type</em>' data type.
@@ -16194,7 +16297,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVGR_1_Type()
 	 * @generated
 	 */
-	int VGR_1TYPE = 497;
+	int VGR_1TYPE = 501;
 
 	/**
 	 * The meta object id for the '<em>VGR 2Type</em>' data type.
@@ -16204,7 +16307,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVGR_2_Type()
 	 * @generated
 	 */
-	int VGR_2TYPE = 498;
+	int VGR_2TYPE = 502;
 
 	/**
 	 * The meta object id for the '<em>VGR Type</em>' data type.
@@ -16214,7 +16317,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVGR_Type()
 	 * @generated
 	 */
-	int VGR_TYPE = 499;
+	int VGR_TYPE = 503;
 
 	/**
 	 * The meta object id for the '<em>VLA Type</em>' data type.
@@ -16224,7 +16327,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVLA_Type()
 	 * @generated
 	 */
-	int VLA_TYPE = 500;
+	int VLA_TYPE = 504;
 
 	/**
 	 * The meta object id for the '<em>Vorsignalabstand Type</em>' data type.
@@ -16234,7 +16337,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVorsignalabstand_Type()
 	 * @generated
 	 */
-	int VORSIGNALABSTAND_TYPE = 501;
+	int VORSIGNALABSTAND_TYPE = 505;
 
 	/**
 	 * The meta object id for the '<em>VZ Type</em>' data type.
@@ -16244,7 +16347,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getVZ_Type()
 	 * @generated
 	 */
-	int VZ_TYPE = 502;
+	int VZ_TYPE = 506;
 
 	/**
 	 * The meta object id for the '<em>Wirkrichtung In Datenpunkt Type</em>' data type.
@@ -16254,7 +16357,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getWirkrichtung_In_Datenpunkt_Type()
 	 * @generated
 	 */
-	int WIRKRICHTUNG_IN_DATENPUNKT_TYPE = 503;
+	int WIRKRICHTUNG_IN_DATENPUNKT_TYPE = 507;
 
 	/**
 	 * The meta object id for the '<em>ZBS La Bereich Distanz Type</em>' data type.
@@ -16264,7 +16367,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_La_Bereich_Distanz_Type()
 	 * @generated
 	 */
-	int ZBS_LA_BEREICH_DISTANZ_TYPE = 504;
+	int ZBS_LA_BEREICH_DISTANZ_TYPE = 508;
 
 	/**
 	 * The meta object id for the '<em>ZBS La Bereich Geschwindigkeit Type</em>' data type.
@@ -16274,7 +16377,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_La_Bereich_Geschwindigkeit_Type()
 	 * @generated
 	 */
-	int ZBS_LA_BEREICH_GESCHWINDIGKEIT_TYPE = 505;
+	int ZBS_LA_BEREICH_GESCHWINDIGKEIT_TYPE = 509;
 
 	/**
 	 * The meta object id for the '<em>ZBS La Bereich Laenge Type</em>' data type.
@@ -16284,7 +16387,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_La_Bereich_Laenge_Type()
 	 * @generated
 	 */
-	int ZBS_LA_BEREICH_LAENGE_TYPE = 506;
+	int ZBS_LA_BEREICH_LAENGE_TYPE = 510;
 
 	/**
 	 * The meta object id for the '<em>ZBS La Bereich Neigung Type</em>' data type.
@@ -16294,7 +16397,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZBS_La_Bereich_Neigung_Type()
 	 * @generated
 	 */
-	int ZBS_LA_BEREICH_NEIGUNG_TYPE = 507;
+	int ZBS_LA_BEREICH_NEIGUNG_TYPE = 511;
 
 	/**
 	 * The meta object id for the '<em>ZLA Type</em>' data type.
@@ -16304,7 +16407,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl.Balisentechnik_ETCSPackageImpl#getZLA_Type()
 	 * @generated
 	 */
-	int ZLA_TYPE = 508;
+	int ZLA_TYPE = 512;
 
 
 	/**
@@ -17194,6 +17297,27 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getBezeichnung_LEU_Anlage_TypeClass_Wert();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.Bezeichnung_RBC_TypeClass <em>Bezeichnung RBC Type Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Bezeichnung RBC Type Class</em>'.
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.Bezeichnung_RBC_TypeClass
+	 * @generated
+	 */
+	EClass getBezeichnung_RBC_TypeClass();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.Bezeichnung_RBC_TypeClass#getWert <em>Wert</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Wert</em>'.
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.Bezeichnung_RBC_TypeClass#getWert()
+	 * @see #getBezeichnung_RBC_TypeClass()
+	 * @generated
+	 */
+	EAttribute getBezeichnung_RBC_TypeClass_Wert();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.Bezeichnung_ZUB_SE_TypeClass <em>Bezeichnung ZUB SE Type Class</em>}'.
@@ -22668,10 +22792,10 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	EReference getLuft_Telegramm_IDBaliseUebertragung();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.Luft_Telegramm#getIDFachtelegramm <em>ID Fachtelegramm</em>}'.
+	 * Returns the meta object for the containment reference list '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.Luft_Telegramm#getIDFachtelegramm <em>ID Fachtelegramm</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>ID Fachtelegramm</em>'.
+	 * @return the meta object for the containment reference list '<em>ID Fachtelegramm</em>'.
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.Luft_Telegramm#getIDFachtelegramm()
 	 * @see #getLuft_Telegramm()
 	 * @generated
@@ -23482,6 +23606,17 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	EClass getRBC();
 
 	/**
+	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getBezeichnung <em>Bezeichnung</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Bezeichnung</em>'.
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getBezeichnung()
+	 * @see #getRBC()
+	 * @generated
+	 */
+	EReference getRBC_Bezeichnung();
+
+	/**
 	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getETCSAdresse <em>ETCS Adresse</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -23502,6 +23637,17 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getRBC_IDESTWZentraleinheit();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getIDOertlichkeitNamensgebend <em>ID Oertlichkeit Namensgebend</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>ID Oertlichkeit Namensgebend</em>'.
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getIDOertlichkeitNamensgebend()
+	 * @see #getRBC()
+	 * @generated
+	 */
+	EReference getRBC_IDOertlichkeitNamensgebend();
 
 	/**
 	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC#getIDUnterbringung <em>ID Unterbringung</em>}'.
@@ -23567,6 +23713,27 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getRBC_Allg_AttributeGroup_Rufnummer();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_Bezeichnung_AttributeGroup <em>RBC Bezeichnung Attribute Group</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>RBC Bezeichnung Attribute Group</em>'.
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_Bezeichnung_AttributeGroup
+	 * @generated
+	 */
+	EClass getRBC_Bezeichnung_AttributeGroup();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_Bezeichnung_AttributeGroup#getBezeichnungRBC <em>Bezeichnung RBC</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Bezeichnung RBC</em>'.
+	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_Bezeichnung_AttributeGroup#getBezeichnungRBC()
+	 * @see #getRBC_Bezeichnung_AttributeGroup()
+	 * @generated
+	 */
+	EReference getRBC_Bezeichnung_AttributeGroup_BezeichnungRBC();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.RBC_ETCS_System_Version_TypeClass <em>RBC ETCS System Version Type Class</em>}'.
@@ -26295,7 +26462,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Abstand Bes Langer Einfahrweg Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TAbstand_Bes_Langer_Einfahrweg' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TAbstand_Bes_Langer_Einfahrweg' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getAbstand_Bes_Langer_Einfahrweg_Type();
@@ -26307,7 +26474,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Abstand Datenpunkt EH EM Folgesignal Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TAbstand_Datenpunkt_EH_EM_Folgesignal' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TAbstand_Datenpunkt_EH_EM_Folgesignal' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getAbstand_Datenpunkt_EH_EM_Folgesignal_Type();
@@ -26319,7 +26486,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Abstand Datenpunkt EP TPI Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TAbstand_Datenpunkt_EP_TPI' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TAbstand_Datenpunkt_EP_TPI' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getAbstand_Datenpunkt_EP_TPI_Type();
@@ -26331,7 +26498,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Abstand Datenpunkt TPI Folgesignal Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TAbstand_Datenpunkt_TPI_Folgesignal' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TAbstand_Datenpunkt_TPI_Folgesignal' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getAbstand_Datenpunkt_TPI_Folgesignal_Type();
@@ -26343,7 +26510,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Abstand Einmesspunkt Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TAbstand_Einmesspunkt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TAbstand_Einmesspunkt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getAbstand_Einmesspunkt_Type();
@@ -26355,10 +26522,22 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Abstand Grenze Bereich CType</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TAbstand_Grenze_Bereich_C' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='[1-9]|[1-9][0-9]|[1-9][0-9][0-9]'"
+	 *        extendedMetaData="name='TAbstand_Grenze_Bereich_C' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='[1-9]|[1-9][0-9]|[1-9][0-9][0-9]'"
 	 * @generated
 	 */
 	EDataType getAbstand_Grenze_Bereich_C_Type();
+
+	/**
+	 * Returns the meta object for data type '{@link java.math.BigDecimal <em>Abstand Zu Referenzbalise Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for data type '<em>Abstand Zu Referenzbalise Type</em>'.
+	 * @see java.math.BigDecimal
+	 * @model instanceClass="java.math.BigDecimal"
+	 *        extendedMetaData="name='TAbstand_Zu_Referenzbalise' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
+	 * @generated
+	 */
+	EDataType getAbstand_Zu_Referenzbalise_Type();
 
 	/**
 	 * Returns the meta object for data type '{@link java.lang.String <em>Anlagenteil Sonstige Type</em>}'.
@@ -26367,7 +26546,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Anlagenteil Sonstige Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TAnlagenteil_Sonstige' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TAnlagenteil_Sonstige' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getAnlagenteil_Sonstige_Type();
@@ -26391,7 +26570,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Anwendung Sonst Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TAnwendung_Sonst' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TAnwendung_Sonst' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getAnwendung_Sonst_Type();
@@ -26415,7 +26594,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Anzeigetext Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TAnzeigetext' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TAnzeigetext' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getAnzeigetext_Type();
@@ -26439,7 +26618,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Balise Geraetestand Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBalise_Geraetestand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBalise_Geraetestand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBalise_Geraetestand_Type();
@@ -26451,7 +26630,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Baseline System Version Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBaseline_System_Version' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='[0-9]'"
+	 *        extendedMetaData="name='TBaseline_System_Version' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,9}'"
 	 * @generated
 	 */
 	EDataType getBaseline_System_Version_Type();
@@ -26463,7 +26642,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bedingung Weichenlage Type</em>'.
 	 * @see org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts
 	 * @model instanceClass="org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts"
-	 *        extendedMetaData="name='TBedingung_Weichenlage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts'"
+	 *        extendedMetaData="name='TBedingung_Weichenlage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts'"
 	 * @generated
 	 */
 	EDataType getBedingung_Weichenlage_Type();
@@ -26475,7 +26654,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bez Strecke BTS 1Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBez_Strecke_BTS_1' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette'"
+	 *        extendedMetaData="name='TBez_Strecke_BTS_1' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette'"
 	 * @generated
 	 */
 	EDataType getBez_Strecke_BTS_1_Type();
@@ -26487,7 +26666,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bez Strecke BTS 2Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBez_Strecke_BTS_2' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette'"
+	 *        extendedMetaData="name='TBez_Strecke_BTS_2' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette'"
 	 * @generated
 	 */
 	EDataType getBez_Strecke_BTS_2_Type();
@@ -26499,7 +26678,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bez Strecke BTS 3Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBez_Strecke_BTS_3' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette'"
+	 *        extendedMetaData="name='TBez_Strecke_BTS_3' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette'"
 	 * @generated
 	 */
 	EDataType getBez_Strecke_BTS_3_Type();
@@ -26511,7 +26690,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bez ZUB Bereichsgrenze Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBez_ZUB_Bereichsgrenze' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,50}'"
+	 *        extendedMetaData="name='TBez_ZUB_Bereichsgrenze' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,50}'"
 	 * @generated
 	 */
 	EDataType getBez_ZUB_Bereichsgrenze_Type();
@@ -26523,7 +26702,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung ETCS Kante Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_ETCS_Kante' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette' pattern='.{1,10}'"
+	 *        extendedMetaData="name='TBezeichnung_ETCS_Kante' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette' pattern='.{1,10}'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_ETCS_Kante_Type();
@@ -26535,10 +26714,22 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung LEU Anlage Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_LEU_Anlage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBezeichnung_LEU_Anlage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_LEU_Anlage_Type();
+
+	/**
+	 * Returns the meta object for data type '{@link java.lang.String <em>Bezeichnung RBC Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for data type '<em>Bezeichnung RBC Type</em>'.
+	 * @see java.lang.String
+	 * @model instanceClass="java.lang.String"
+	 *        extendedMetaData="name='TBezeichnung_RBC' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
+	 * @generated
+	 */
+	EDataType getBezeichnung_RBC_Type();
 
 	/**
 	 * Returns the meta object for data type '{@link java.lang.String <em>Bezeichnung ZUB SE Type</em>}'.
@@ -26547,7 +26738,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung ZUB SE Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_ZUB_SE' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBezeichnung_ZUB_SE' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_ZUB_SE_Type();
@@ -26559,7 +26750,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung ZUB Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_ZUB' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBezeichnung_ZUB' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_ZUB_Type();
@@ -26571,7 +26762,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>DLEVELTR Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TD_LEVELTR' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TD_LEVELTR' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getD_LEVELTR_Type();
@@ -26583,7 +26774,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Dateityp Binaerdatei Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TDateityp_Binaerdatei' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette' pattern='.{3,5}'"
+	 *        extendedMetaData="name='TDateityp_Binaerdatei' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette' pattern='.{3,5}'"
 	 * @generated
 	 */
 	EDataType getDateityp_Binaerdatei_Type();
@@ -26595,7 +26786,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Datenpunkt Beschreibung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TDatenpunkt_Beschreibung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TDatenpunkt_Beschreibung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getDatenpunkt_Beschreibung_Type();
@@ -26607,7 +26798,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Datenpunkt Laenge Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TDatenpunkt_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='(([0-9]|[1-7][0-9]|8[0-3])\\.[0-9])|84\\.0'"
+	 *        extendedMetaData="name='TDatenpunkt_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='(([0-9]|[1-7][0-9]|8[0-3])\\.[0-9])|84\\.0'"
 	 * @generated
 	 */
 	EDataType getDatenpunkt_Laenge_Type();
@@ -26619,7 +26810,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Delta VGES Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TDelta_VGES' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TDelta_VGES' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getDelta_VGES_Type();
@@ -26631,7 +26822,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Delta VLES Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TDelta_VLES' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TDelta_VLES' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getDelta_VLES_Type();
@@ -26643,7 +26834,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Delta VZES Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TDelta_VZES' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TDelta_VZES' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getDelta_VZES_Type();
@@ -26655,7 +26846,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>DP Typ ETCS Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TDP_Typ_ETCS' baseType='http://www.eclipse.org/emf/2003/XMLType#integer' pattern='[1-9]|[1-6][0-9]'"
+	 *        extendedMetaData="name='TDP_Typ_ETCS' baseType='http://www.eclipse.org/emf/2003/XMLType#integer' pattern='[1-9]|[1-9][0-9]'"
 	 * @generated
 	 */
 	EDataType getDP_Typ_ETCS_Type();
@@ -26667,7 +26858,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>DP Typ Sonst Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TDP_Typ_Sonst' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TDP_Typ_Sonst' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getDP_Typ_Sonst_Type();
@@ -26679,7 +26870,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>DP Typ VLa Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TDP_Typ_V_La' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit' pattern='[1-9][0-9]|1[0-3][0-9]|140'"
+	 *        extendedMetaData="name='TDP_Typ_V_La' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit' pattern='[1-9][0-9]|1[0-3][0-9]|140'"
 	 * @generated
 	 */
 	EDataType getDP_Typ_V_La_Type();
@@ -26691,7 +26882,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>DWeg Intervall 200 Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TDWeg_Intervall_200' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TDWeg_Intervall_200' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getDWeg_Intervall_200_Type();
@@ -26703,7 +26894,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>DWeg Intervall 50 200 Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TDWeg_Intervall_50_200' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TDWeg_Intervall_50_200' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getDWeg_Intervall_50_200_Type();
@@ -26715,7 +26906,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>DWeg Intervall 50 Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TDWeg_Intervall_50' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TDWeg_Intervall_50' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getDWeg_Intervall_50_Type();
@@ -27087,7 +27278,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>ESG Ind Erlaeuterung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TESG_Ind_Erlaeuterung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TESG_Ind_Erlaeuterung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getESG_Ind_Erlaeuterung_Type();
@@ -27099,7 +27290,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>ESG Ind Parameter Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TESG_Ind_Parameter' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,15}'"
+	 *        extendedMetaData="name='TESG_Ind_Parameter' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,15}'"
 	 * @generated
 	 */
 	EDataType getESG_Ind_Parameter_Type();
@@ -27123,7 +27314,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>ETCS Gefahrpunktabstand Abweichend Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TETCS_Gefahrpunktabstand_Abweichend' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TETCS_Gefahrpunktabstand_Abweichend' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getETCS_Gefahrpunktabstand_Abweichend_Type();
@@ -27147,7 +27338,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>ETCS Par Erlaeuterung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TETCS_Par_Erlaeuterung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TETCS_Par_Erlaeuterung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getETCS_Par_Erlaeuterung_Type();
@@ -27159,7 +27350,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>ETCS Parametername Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TETCS_Parametername' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TETCS_Parametername' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getETCS_Parametername_Type();
@@ -27183,7 +27374,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>ETCS System Version Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TETCS_System_Version' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TETCS_System_Version' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getETCS_System_Version_Type();
@@ -27195,7 +27386,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>EV Modul Typ Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TEV_Modul_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TEV_Modul_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getEV_Modul_Typ_Type();
@@ -27207,7 +27398,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Fabrikat Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TFabrikat' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TFabrikat' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getFabrikat_Type();
@@ -27219,7 +27410,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>FT ESG Subtyp Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TFT_ESG_Subtyp' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{5}'"
+	 *        extendedMetaData="name='TFT_ESG_Subtyp' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{5}'"
 	 * @generated
 	 */
 	EDataType getFT_ESG_Subtyp_Type();
@@ -27231,7 +27422,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>FT ESG Typ Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TFT_ESG_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette' pattern='.{2}'"
+	 *        extendedMetaData="name='TFT_ESG_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette' pattern='.{2}'"
 	 * @generated
 	 */
 	EDataType getFT_ESG_Typ_Type();
@@ -27267,7 +27458,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Gruppen ID Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TGruppen_ID' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TGruppen_ID' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getGruppen_ID_Type();
@@ -27279,7 +27470,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Hinweis Balisenbefestigung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='THinweis_Balisenbefestigung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='THinweis_Balisenbefestigung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getHinweis_Balisenbefestigung_Type();
@@ -27291,7 +27482,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Individualisierung Weitere Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIndividualisierung_Weitere' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TIndividualisierung_Weitere' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getIndividualisierung_Weitere_Type();
@@ -27303,7 +27494,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Km BTS 1Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TKm_BTS_1' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TKilometrierung'"
+	 *        extendedMetaData="name='TKm_BTS_1' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TKilometrierung'"
 	 * @generated
 	 */
 	EDataType getKm_BTS_1_Type();
@@ -27315,7 +27506,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Km BTS 2Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TKm_BTS_2' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TKilometrierung'"
+	 *        extendedMetaData="name='TKm_BTS_2' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TKilometrierung'"
 	 * @generated
 	 */
 	EDataType getKm_BTS_2_Type();
@@ -27327,7 +27518,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Km BTS 3Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TKm_BTS_3' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TKilometrierung'"
+	 *        extendedMetaData="name='TKm_BTS_3' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TKilometrierung'"
 	 * @generated
 	 */
 	EDataType getKm_BTS_3_Type();
@@ -27339,7 +27530,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Konfigurationskennung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TKonfigurationskennung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TKonfigurationskennung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getKonfigurationskennung_Type();
@@ -27351,7 +27542,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>LACKLEVELTR Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TL_ACKLEVELTR' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TL_ACKLEVELTR' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getL_ACKLEVELTR_Type();
@@ -27363,7 +27554,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Laenge 1Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TLaenge_1' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TLaenge_1' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getLaenge_1_Type();
@@ -27375,7 +27566,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Laenge Ausfuehrungsbereich Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TLaenge_Ausfuehrungsbereich' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='[1-9][0-9]{0,2}'"
+	 *        extendedMetaData="name='TLaenge_Ausfuehrungsbereich' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='[1-9][0-9]{0,2}'"
 	 * @generated
 	 */
 	EDataType getLaenge_Ausfuehrungsbereich_Type();
@@ -27387,7 +27578,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Laenge Gestufte VSignalisierung Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TLaenge_Gestufte_V_Signalisierung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TLaenge_Gestufte_V_Signalisierung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getLaenge_Gestufte_V_Signalisierung_Type();
@@ -27399,7 +27590,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Laenge Soll Mind 150 Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TLaenge_Soll_Mind_150' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TLaenge_Soll_Mind_150' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getLaenge_Soll_Mind_150_Type();
@@ -27435,7 +27626,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>LEU Modul Geraetestand Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TLEU_Modul_Geraetestand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TLEU_Modul_Geraetestand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getLEU_Modul_Geraetestand_Type();
@@ -27447,7 +27638,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>LEU Modul Typ Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TLEU_Modul_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TLEU_Modul_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getLEU_Modul_Typ_Type();
@@ -27459,7 +27650,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>LEU Schaltkasten Typ Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TLEU_Schaltkasten_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TLEU_Schaltkasten_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getLEU_Schaltkasten_Typ_Type();
@@ -27483,7 +27674,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Link Distanz Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TLink_Distanz' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TLink_Distanz' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getLink_Distanz_Type();
@@ -27495,7 +27686,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>LLA Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TLLA' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TLLA' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getLLA_Type();
@@ -27579,7 +27770,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Max Unterbrechungszeit Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TMax_Unterbrechungszeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='(([0-9]|[1-2][0-9])\\.[0-9]{2})|(30\\.00)'"
+	 *        extendedMetaData="name='TMax_Unterbrechungszeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='(([0-9]|[1-2][0-9])\\.[0-9]{2})|(30\\.00)'"
 	 * @generated
 	 */
 	EDataType getMax_Unterbrechungszeit_Type();
@@ -27603,7 +27794,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Metallteil Laenge Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TMetallteil_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TMetallteil_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getMetallteil_Laenge_Type();
@@ -27627,7 +27818,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Montageabweichung Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TMontageabweichung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TMontageabweichung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getMontageabweichung_Type();
@@ -27759,7 +27950,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Position Sonstige Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TPosition_Sonstige' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TPosition_Sonstige' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getPosition_Sonstige_Type();
@@ -27789,13 +27980,13 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	EDataType getProjektierungsfall_Type();
 
 	/**
-	 * Returns the meta object for data type '{@link java.math.BigInteger <em>RBC ETCS System Version Type</em>}'.
+	 * Returns the meta object for data type '{@link java.lang.String <em>RBC ETCS System Version Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for data type '<em>RBC ETCS System Version Type</em>'.
-	 * @see java.math.BigInteger
-	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TRBC_ETCS_System_Version' baseType='http://www.eclipse.org/emf/2003/XMLType#integer'"
+	 * @see java.lang.String
+	 * @model instanceClass="java.lang.String"
+	 *        extendedMetaData="name='TRBC_ETCS_System_Version' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getRBC_ETCS_System_Version_Type();
@@ -27807,7 +27998,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>RBC SRS Version Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TRBC_SRS_Version' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette' pattern='.{1}'"
+	 *        extendedMetaData="name='TRBC_SRS_Version' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getRBC_SRS_Version_Type();
@@ -27843,7 +28034,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Rufnummer Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TRufnummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TRufnummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getRufnummer_Type();
@@ -27855,7 +28046,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Schutzstrecke Erforderlich Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSchutzstrecke_Erforderlich' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TSchutzstrecke_Erforderlich' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getSchutzstrecke_Erforderlich_Type();
@@ -27867,7 +28058,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Schutzstrecke Vorhanden Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSchutzstrecke_Vorhanden' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TSchutzstrecke_Vorhanden' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getSchutzstrecke_Vorhanden_Type();
@@ -27879,7 +28070,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Solllaenge Mind Sig 150 Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSolllaenge_Mind_Sig_150' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TSolllaenge_Mind_Sig_150' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getSolllaenge_Mind_Sig_150_Type();
@@ -27891,7 +28082,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Solllaenge Mind Sig Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSolllaenge_Mind_Sig' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TSolllaenge_Mind_Sig' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getSolllaenge_Mind_Sig_Type();
@@ -27903,7 +28094,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Sonstige Standortangabe Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TSonstige_Standortangabe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TSonstige_Standortangabe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getSonstige_Standortangabe_Type();
@@ -27939,7 +28130,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>SRS Version Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TSRS_Version' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette'"
+	 *        extendedMetaData="name='TSRS_Version' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getSRS_Version_Type();
@@ -27951,7 +28142,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>System Vor Grenze Besonders Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TSystem_Vor_Grenze_Besonders' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,30}'"
+	 *        extendedMetaData="name='TSystem_Vor_Grenze_Besonders' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,30}'"
 	 * @generated
 	 */
 	EDataType getSystem_Vor_Grenze_Besonders_Type();
@@ -27963,7 +28154,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>TBV Tunnelbereich Laenge Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TTBV_Tunnelbereich_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TTBV_Tunnelbereich_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getTBV_Tunnelbereich_Laenge_Type();
@@ -27975,7 +28166,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Telegramm Index Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TTelegramm_Index' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TTelegramm_Index' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getTelegramm_Index_Type();
@@ -27999,7 +28190,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Text Bedingung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TText_Bedingung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TText_Bedingung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getText_Bedingung_Type();
@@ -28011,7 +28202,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Textmeldung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TTextmeldung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TTextmeldung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getTextmeldung_Type();
@@ -28023,7 +28214,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Ueberbrueckung EV Unterbrechung Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TUeberbrueckung_EV_Unterbrechung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='([0-1]\\.[0-9]{2})|(2\\.[0-4][0-9])|(2\\.50)'"
+	 *        extendedMetaData="name='TUeberbrueckung_EV_Unterbrechung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='([0-1]\\.[0-9]{2})|(2\\.[0-4][0-9])|(2\\.50)'"
 	 * @generated
 	 */
 	EDataType getUeberbrueckung_EV_Unterbrechung_Type();
@@ -28035,7 +28226,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Ueberwachung Laenge Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TUeberwachung_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TUeberwachung_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getUeberwachung_Laenge_Type();
@@ -28047,7 +28238,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Untergruppen ID Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TUntergruppen_ID' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TUntergruppen_ID' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getUntergruppen_ID_Type();
@@ -28059,7 +28250,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>VBefehl RType</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TV_Befehl_R' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TV_Befehl_R' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getV_Befehl_R_Type();
@@ -28071,7 +28262,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>VBefehl ZType</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TV_Befehl_Z' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TV_Befehl_Z' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getV_Befehl_Z_Type();
@@ -28083,7 +28274,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>VFrei Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TV_Frei' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TV_Frei' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getV_Frei_Type();
@@ -28095,7 +28286,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>VStart Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TV_Start' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TV_Start' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getV_Start_Type();
@@ -28107,7 +28298,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>VZiel Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TV_Ziel' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TV_Ziel' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getV_Ziel_Type();
@@ -28119,7 +28310,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>VZul Strecke Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TV_Zul_Strecke' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TV_Zul_Strecke' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getV_Zul_Strecke_Type();
@@ -28167,7 +28358,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Verbot Anhalten Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TVerbot_Anhalten' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TVerbot_Anhalten' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getVerbot_Anhalten_Type();
@@ -28191,7 +28382,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Verwendung Hilfe Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TVerwendung_Hilfe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette'"
+	 *        extendedMetaData="name='TVerwendung_Hilfe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette'"
 	 * @generated
 	 */
 	EDataType getVerwendung_Hilfe_Type();
@@ -28203,7 +28394,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Verwendung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TVerwendung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette'"
+	 *        extendedMetaData="name='TVerwendung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette'"
 	 * @generated
 	 */
 	EDataType getVerwendung_Type();
@@ -28215,7 +28406,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>VGR 1Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TVGR_1' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TVGR_1' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getVGR_1_Type();
@@ -28227,7 +28418,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>VGR 2Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TVGR_2' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TVGR_2' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getVGR_2_Type();
@@ -28239,7 +28430,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>VGR Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TVGR' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TVGR' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getVGR_Type();
@@ -28251,7 +28442,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>VLA Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TVLA' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TVLA' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getVLA_Type();
@@ -28263,7 +28454,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Vorsignalabstand Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TVorsignalabstand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TVorsignalabstand' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getVorsignalabstand_Type();
@@ -28275,7 +28466,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>VZ Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TVZ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TVZ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getVZ_Type();
@@ -28287,7 +28478,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>Wirkrichtung In Datenpunkt Type</em>'.
 	 * @see org.eclipse.set.model.planpro.BasisTypen.ENUMWirkrichtung
 	 * @model instanceClass="org.eclipse.set.model.planpro.BasisTypen.ENUMWirkrichtung"
-	 *        extendedMetaData="name='TWirkrichtung_In_Datenpunkt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TWirkrichtung'"
+	 *        extendedMetaData="name='TWirkrichtung_In_Datenpunkt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TWirkrichtung'"
 	 * @generated
 	 */
 	EDataType getWirkrichtung_In_Datenpunkt_Type();
@@ -28299,7 +28490,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>ZBS La Bereich Distanz Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TZBS_La_Bereich_Distanz' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TZBS_La_Bereich_Distanz' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getZBS_La_Bereich_Distanz_Type();
@@ -28311,7 +28502,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>ZBS La Bereich Geschwindigkeit Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TZBS_La_Bereich_Geschwindigkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TZBS_La_Bereich_Geschwindigkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getZBS_La_Bereich_Geschwindigkeit_Type();
@@ -28323,7 +28514,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>ZBS La Bereich Laenge Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TZBS_La_Bereich_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TZBS_La_Bereich_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getZBS_La_Bereich_Laenge_Type();
@@ -28347,7 +28538,7 @@ public interface Balisentechnik_ETCSPackage extends EPackage {
 	 * @return the meta object for data type '<em>ZLA Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TZLA' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter'"
+	 *        extendedMetaData="name='TZLA' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter'"
 	 * @generated
 	 */
 	EDataType getZLA_Type();

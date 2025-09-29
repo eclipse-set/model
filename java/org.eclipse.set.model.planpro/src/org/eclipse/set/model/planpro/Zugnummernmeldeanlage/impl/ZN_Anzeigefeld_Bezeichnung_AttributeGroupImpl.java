@@ -179,9 +179,8 @@ public class ZN_Anzeigefeld_Bezeichnung_AttributeGroupImpl extends EObjectImpl i
 				return basicSetZNABedienbezeichnerFrei(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN_ANZEIGEFELD_BEZEICHNUNG_ATTRIBUTE_GROUP__ZNA_BEZEICHNER:
 				return basicSetZNABezeichner(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class ZN_Anzeigefeld_Bezeichnung_AttributeGroupImpl extends EObjectImpl i
 				return getZNABedienbezeichnerFrei();
 			case ZugnummernmeldeanlagePackage.ZN_ANZEIGEFELD_BEZEICHNUNG_ATTRIBUTE_GROUP__ZNA_BEZEICHNER:
 				return getZNABezeichner();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class ZN_Anzeigefeld_Bezeichnung_AttributeGroupImpl extends EObjectImpl i
 			case ZugnummernmeldeanlagePackage.ZN_ANZEIGEFELD_BEZEICHNUNG_ATTRIBUTE_GROUP__ZNA_BEZEICHNER:
 				setZNABezeichner((ZN_A_Bezeichner_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class ZN_Anzeigefeld_Bezeichnung_AttributeGroupImpl extends EObjectImpl i
 			case ZugnummernmeldeanlagePackage.ZN_ANZEIGEFELD_BEZEICHNUNG_ATTRIBUTE_GROUP__ZNA_BEZEICHNER:
 				setZNABezeichner((ZN_A_Bezeichner_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class ZN_Anzeigefeld_Bezeichnung_AttributeGroupImpl extends EObjectImpl i
 				return zNABedienbezeichnerFrei != null;
 			case ZugnummernmeldeanlagePackage.ZN_ANZEIGEFELD_BEZEICHNUNG_ATTRIBUTE_GROUP__ZNA_BEZEICHNER:
 				return zNABezeichner != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZN_Anzeigefeld_Bezeichnung_AttributeGroupImpl

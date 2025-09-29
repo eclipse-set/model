@@ -138,10 +138,8 @@ public class FMA_Element_Seilanzahl_TypeClassItemProvider extends BasisAttribut_
 			case OrtungPackage.FMA_ELEMENT_SEILANZAHL_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

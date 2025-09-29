@@ -97,12 +97,12 @@ public interface ETCS_W_Kr extends Basis_Objekt {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Verweis auf den ETCS_Knoten, der die Weiche bzw. Kreuzung repräsentiert. ETCS benutzt bei abzweigendem Fahrweg ersatzhalber die Geo-/Topo-Daten der Fahrwegabschnitte über den Kreuzungsmittelpunkt. Der auftretende Fehler wird vernachlässigt.
+	 * Nur bei Weichen: Verweis auf den ETCS_Knoten, der die Weiche repräsentiert. ETCS benutzt bei abzweigendem Fahrweg von Kreuzungsweichen ersatzhalber die Geo-/Topo-Daten der Fahrwegabschnitte über den Kreuzungsmittelpunkt. Der auftretende Fehler wird vernachlässigt.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>IDETCS Knoten</em>' containment reference.
 	 * @see #setIDETCSKnoten(ID_ETCS_Knoten_ohne_Proxy_TypeClass)
 	 * @see org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage#getETCS_W_Kr_IDETCSKnoten()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='ID_ETCS_Knoten'"
 	 * @generated
 	 */

@@ -493,8 +493,6 @@ public class ZuglenkungEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
-						default:
-							break;
 					}
 				}
 				else {

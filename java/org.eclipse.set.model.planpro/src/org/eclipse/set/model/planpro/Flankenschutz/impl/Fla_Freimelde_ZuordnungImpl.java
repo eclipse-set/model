@@ -240,9 +240,8 @@ public class Fla_Freimelde_ZuordnungImpl extends Basis_ObjektImpl implements Fla
 				return basicSetIDFlaSchutz(null, msgs);
 			case FlankenschutzPackage.FLA_FREIMELDE_ZUORDNUNG__IDFMA_ANLAGE:
 				return basicSetIDFMAAnlage(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -259,9 +258,8 @@ public class Fla_Freimelde_ZuordnungImpl extends Basis_ObjektImpl implements Fla
 				return getIDFlaSchutz();
 			case FlankenschutzPackage.FLA_FREIMELDE_ZUORDNUNG__IDFMA_ANLAGE:
 				return getIDFMAAnlage();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -281,10 +279,8 @@ public class Fla_Freimelde_ZuordnungImpl extends Basis_ObjektImpl implements Fla
 			case FlankenschutzPackage.FLA_FREIMELDE_ZUORDNUNG__IDFMA_ANLAGE:
 				setIDFMAAnlage((ID_FMA_Anlage_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -304,10 +300,8 @@ public class Fla_Freimelde_ZuordnungImpl extends Basis_ObjektImpl implements Fla
 			case FlankenschutzPackage.FLA_FREIMELDE_ZUORDNUNG__IDFMA_ANLAGE:
 				setIDFMAAnlage((ID_FMA_Anlage_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -324,9 +318,8 @@ public class Fla_Freimelde_ZuordnungImpl extends Basis_ObjektImpl implements Fla
 				return iDFlaSchutz != null;
 			case FlankenschutzPackage.FLA_FREIMELDE_ZUORDNUNG__IDFMA_ANLAGE:
 				return iDFMAAnlage != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Fla_Freimelde_ZuordnungImpl

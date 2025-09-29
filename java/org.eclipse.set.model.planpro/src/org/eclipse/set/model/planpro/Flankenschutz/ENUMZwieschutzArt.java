@@ -158,8 +158,8 @@ public enum ENUMZwieschutzArt implements Enumerator {
 			case ENUM_ZWIESCHUTZ_ART_ECHT_VALUE: return ENUM_ZWIESCHUTZ_ART_ECHT;
 			case ENUM_ZWIESCHUTZ_ART_ECHT_EIGEN_VALUE: return ENUM_ZWIESCHUTZ_ART_ECHT_EIGEN;
 			case ENUM_ZWIESCHUTZ_ART_EIGEN_VALUE: return ENUM_ZWIESCHUTZ_ART_EIGEN;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

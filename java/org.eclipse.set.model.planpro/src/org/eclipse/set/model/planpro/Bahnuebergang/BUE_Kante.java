@@ -19,7 +19,7 @@ import org.eclipse.set.model.planpro.Verweise.ID_BUE_Anlage_ohne_Proxy_TypeClass
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * Gleisbezogene Abbildung der BÜ-Kante zur Berechnung des Sicherheitsabstands bei Hp-gedeckten Bahnübergängen.
+ * Gleisbezogene Abbildung der BÜ-Kante zur Berechnung des Sicherheitsabstands bei Hp-gedeckten Bahnübergängen. Es ist nur eine punktförmige Verortung auf einer Gleiskante anzugeben.
  * <!-- end-model-doc -->
  *
  * <p>

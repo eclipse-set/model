@@ -145,10 +145,8 @@ public class Bedien_OberflaecheItemProvider extends Basis_ObjektItemProvider {
 			case BedienungPackage.BEDIEN_OBERFLAECHE__ID_BEDIEN_BEZIRK:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

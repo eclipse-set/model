@@ -15,8 +15,8 @@ import org.eclipse.set.model.planpro.BasisTypen.Bezeichnung_Element_AttributeGro
 
 import org.eclipse.set.model.planpro.Basisobjekte.Punkt_Objekt;
 
+import org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_FMA_Anlage_TypeClass;
-import org.eclipse.set.model.planpro.Verweise.ID_Markanter_Punkt_TypeClass;
 
 /**
  * <!-- begin-user-doc -->
@@ -77,13 +77,13 @@ public interface FMA_Komponente extends Punkt_Objekt {
 	 * Verweis auf das Punkt Objekt, dass für die Positionierung der Freimeldeabschnittsgrenze (FMA_Komponente) bzw. der Zugeinwirkung maßgebend ist. Für alle Arten von Freimeldeabschnittsgrenzen bzw. Zugeinwirkungen anzugeben, für die ein Bezugspunkt existiert, zu dem ein vorgeschriebener Abstand erforderlich ist. Typische Bezugspunkte sind Signal, Weichen-Komponente und Gleissperren-Komponente. DB-Regelwerk bei Achszählpunkten: Achszähltabelle, Spalte 17; bei anderen Freimeldeabschnittsgrenzen und Zugeinwirkungen: häufig aus einer Abstandsangabe im Sicherungstechnischen Lageplan / BÜ-Lageplan erkennbar. 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>ID Bezugspunkt</em>' containment reference.
-	 * @see #setIDBezugspunkt(ID_Markanter_Punkt_TypeClass)
+	 * @see #setIDBezugspunkt(ID_Bezugspunkt_TypeClass)
 	 * @see org.eclipse.set.model.planpro.Ortung.OrtungPackage#getFMA_Komponente_IDBezugspunkt()
 	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='ID_Bezugspunkt'"
 	 * @generated
 	 */
-	ID_Markanter_Punkt_TypeClass getIDBezugspunkt();
+	ID_Bezugspunkt_TypeClass getIDBezugspunkt();
 
 	/**
 	 * Sets the value of the '{@link org.eclipse.set.model.planpro.Ortung.FMA_Komponente#getIDBezugspunkt <em>ID Bezugspunkt</em>}' containment reference.
@@ -93,7 +93,7 @@ public interface FMA_Komponente extends Punkt_Objekt {
 	 * @see #getIDBezugspunkt()
 	 * @generated
 	 */
-	void setIDBezugspunkt(ID_Markanter_Punkt_TypeClass value);
+	void setIDBezugspunkt(ID_Bezugspunkt_TypeClass value);
 
 	/**
 	 * Returns the value of the '<em><b>IDFM Agrenze</b></em>' containment reference list.

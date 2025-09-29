@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +128,7 @@ public interface GleisPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Gleis/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Gleis/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -1520,7 +1520,7 @@ public interface GleisPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bez Gleis Bezeichnung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBez_Gleis_Bezeichnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBez_Gleis_Bezeichnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBez_Gleis_Bezeichnung_Type();
@@ -1580,7 +1580,7 @@ public interface GleisPackage extends EPackage {
 	 * @return the meta object for data type '<em>Fahrstrom Type</em>'.
 	 * @see org.eclipse.set.model.planpro.BasisTypen.ENUMFahrstrom
 	 * @model instanceClass="org.eclipse.set.model.planpro.BasisTypen.ENUMFahrstrom"
-	 *        extendedMetaData="name='TFahrstrom' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TFahrstrom'"
+	 *        extendedMetaData="name='TFahrstrom' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TFahrstrom'"
 	 * @generated
 	 */
 	EDataType getFahrstrom_Type();
@@ -1592,7 +1592,7 @@ public interface GleisPackage extends EPackage {
 	 * @return the meta object for data type '<em>Geschwindigkeit Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TGeschwindigkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TGeschwindigkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getGeschwindigkeit_Type();

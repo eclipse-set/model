@@ -144,10 +144,8 @@ public class BUE_Einschaltung_ZuordnungItemProvider extends Basis_ObjektItemProv
 			case BahnuebergangPackage.BUE_EINSCHALTUNG_ZUORDNUNG__IDBUE_GLEISBEZ_GEFAHRRAUM:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

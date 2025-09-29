@@ -239,9 +239,8 @@ public class Lageplan_BlattschnittImpl extends Ur_ObjektImpl implements Lageplan
 				return basicSetPolygonzugAusrichtung(null, msgs);
 			case LayoutinformationenPackage.LAGEPLAN_BLATTSCHNITT__POLYGONZUG_BLATTSCHNITT:
 				return basicSetPolygonzugBlattschnitt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +257,8 @@ public class Lageplan_BlattschnittImpl extends Ur_ObjektImpl implements Lageplan
 				return getPolygonzugAusrichtung();
 			case LayoutinformationenPackage.LAGEPLAN_BLATTSCHNITT__POLYGONZUG_BLATTSCHNITT:
 				return getPolygonzugBlattschnitt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +278,8 @@ public class Lageplan_BlattschnittImpl extends Ur_ObjektImpl implements Lageplan
 			case LayoutinformationenPackage.LAGEPLAN_BLATTSCHNITT__POLYGONZUG_BLATTSCHNITT:
 				setPolygonzugBlattschnitt((Polygonzug_Blattschnitt_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +299,8 @@ public class Lageplan_BlattschnittImpl extends Ur_ObjektImpl implements Lageplan
 			case LayoutinformationenPackage.LAGEPLAN_BLATTSCHNITT__POLYGONZUG_BLATTSCHNITT:
 				setPolygonzugBlattschnitt((Polygonzug_Blattschnitt_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +317,8 @@ public class Lageplan_BlattschnittImpl extends Ur_ObjektImpl implements Lageplan
 				return polygonzugAusrichtung != null;
 			case LayoutinformationenPackage.LAGEPLAN_BLATTSCHNITT__POLYGONZUG_BLATTSCHNITT:
 				return polygonzugBlattschnitt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Lageplan_BlattschnittImpl

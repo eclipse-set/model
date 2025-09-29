@@ -159,10 +159,8 @@ public class ID_ZN_Fortschalt_Kriterium_TypeClassItemProvider extends Zeiger_Typ
 			case VerweisePackage.ID_ZN_FORTSCHALT_KRITERIUM_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

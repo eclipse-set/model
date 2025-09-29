@@ -136,10 +136,8 @@ public class Planung_Phase_TypeClassItemProvider extends BasisAttribut_Attribute
 			case PlanProPackage.PLANUNG_PHASE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

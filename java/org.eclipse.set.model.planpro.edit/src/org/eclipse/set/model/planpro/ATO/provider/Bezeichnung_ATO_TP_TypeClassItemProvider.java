@@ -136,10 +136,8 @@ public class Bezeichnung_ATO_TP_TypeClassItemProvider extends BasisAttribut_Attr
 			case ATOPackage.BEZEICHNUNG_ATO_TP_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

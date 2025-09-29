@@ -159,10 +159,8 @@ public class ID_ZN_Anzeigefeld_TypeClassItemProvider extends Zeiger_TypeClassIte
 			case VerweisePackage.ID_ZN_ANZEIGEFELD_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

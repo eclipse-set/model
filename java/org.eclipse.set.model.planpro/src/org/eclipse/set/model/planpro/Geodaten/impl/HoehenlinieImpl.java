@@ -9,13 +9,20 @@
  */
 package org.eclipse.set.model.planpro.Geodaten.impl;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.eclipse.set.model.planpro.Basisobjekte.impl.Basis_ObjektImpl;
 
@@ -24,6 +31,7 @@ import org.eclipse.set.model.planpro.Geodaten.Hoehenlinie;
 import org.eclipse.set.model.planpro.Geodaten.Hoehenlinie_Allg_AttributeGroup;
 
 import org.eclipse.set.model.planpro.Verweise.ID_Hoehenpunkt_TypeClass;
+import org.eclipse.set.model.planpro.Verweise.ID_TOP_Kante_ohne_Proxy_TypeClass;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,6 +44,7 @@ import org.eclipse.set.model.planpro.Verweise.ID_Hoehenpunkt_TypeClass;
  *   <li>{@link org.eclipse.set.model.planpro.Geodaten.impl.HoehenlinieImpl#getHoehenlinieAllg <em>Hoehenlinie Allg</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Geodaten.impl.HoehenlinieImpl#getIDHoehenpunktA <em>ID Hoehenpunkt A</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Geodaten.impl.HoehenlinieImpl#getIDHoehenpunktB <em>ID Hoehenpunkt B</em>}</li>
+ *   <li>{@link org.eclipse.set.model.planpro.Geodaten.impl.HoehenlinieImpl#getIDTOPKantePfad <em>IDTOP Kante Pfad</em>}</li>
  * </ul>
  *
  * @generated
@@ -70,6 +79,16 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 	 * @ordered
 	 */
 	protected ID_Hoehenpunkt_TypeClass iDHoehenpunktB;
+
+	/**
+	 * The cached value of the '{@link #getIDTOPKantePfad() <em>IDTOP Kante Pfad</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getIDTOPKantePfad()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ID_TOP_Kante_ohne_Proxy_TypeClass> iDTOPKantePfad;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -231,6 +250,19 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 	 * @generated
 	 */
 	@Override
+	public EList<ID_TOP_Kante_ohne_Proxy_TypeClass> getIDTOPKantePfad() {
+		if (iDTOPKantePfad == null) {
+			iDTOPKantePfad = new EObjectContainmentEList<ID_TOP_Kante_ohne_Proxy_TypeClass>(ID_TOP_Kante_ohne_Proxy_TypeClass.class, this, GeodatenPackage.HOEHENLINIE__IDTOP_KANTE_PFAD);
+		}
+		return iDTOPKantePfad;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case GeodatenPackage.HOEHENLINIE__HOEHENLINIE_ALLG:
@@ -239,9 +271,10 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 				return basicSetIDHoehenpunktA(null, msgs);
 			case GeodatenPackage.HOEHENLINIE__ID_HOEHENPUNKT_B:
 				return basicSetIDHoehenpunktB(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
+			case GeodatenPackage.HOEHENLINIE__IDTOP_KANTE_PFAD:
+				return ((InternalEList<?>)getIDTOPKantePfad()).basicRemove(otherEnd, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +291,10 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 				return getIDHoehenpunktA();
 			case GeodatenPackage.HOEHENLINIE__ID_HOEHENPUNKT_B:
 				return getIDHoehenpunktB();
-			default:
-				return super.eGet(featureID, resolve, coreType);
+			case GeodatenPackage.HOEHENLINIE__IDTOP_KANTE_PFAD:
+				return getIDTOPKantePfad();
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -268,6 +302,7 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -280,10 +315,12 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 			case GeodatenPackage.HOEHENLINIE__ID_HOEHENPUNKT_B:
 				setIDHoehenpunktB((ID_Hoehenpunkt_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
+			case GeodatenPackage.HOEHENLINIE__IDTOP_KANTE_PFAD:
+				getIDTOPKantePfad().clear();
+				getIDTOPKantePfad().addAll((Collection<? extends ID_TOP_Kante_ohne_Proxy_TypeClass>)newValue);
 				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +340,11 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 			case GeodatenPackage.HOEHENLINIE__ID_HOEHENPUNKT_B:
 				setIDHoehenpunktB((ID_Hoehenpunkt_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
+			case GeodatenPackage.HOEHENLINIE__IDTOP_KANTE_PFAD:
+				getIDTOPKantePfad().clear();
 				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +361,10 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 				return iDHoehenpunktA != null;
 			case GeodatenPackage.HOEHENLINIE__ID_HOEHENPUNKT_B:
 				return iDHoehenpunktB != null;
-			default:
-				return super.eIsSet(featureID);
+			case GeodatenPackage.HOEHENLINIE__IDTOP_KANTE_PFAD:
+				return iDTOPKantePfad != null && !iDTOPKantePfad.isEmpty();
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //HoehenlinieImpl

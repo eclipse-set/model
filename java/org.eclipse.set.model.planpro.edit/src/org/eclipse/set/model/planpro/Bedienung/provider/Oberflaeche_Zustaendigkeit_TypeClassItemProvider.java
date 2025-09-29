@@ -136,10 +136,8 @@ public class Oberflaeche_Zustaendigkeit_TypeClassItemProvider extends BasisAttri
 			case BedienungPackage.OBERFLAECHE_ZUSTAENDIGKEIT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

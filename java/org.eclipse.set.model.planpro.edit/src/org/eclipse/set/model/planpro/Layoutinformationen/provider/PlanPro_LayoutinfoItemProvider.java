@@ -23,6 +23,8 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
+import org.eclipse.set.model.planpro.Basisobjekte.BasisobjekteFactory;
+
 import org.eclipse.set.model.planpro.Basisobjekte.provider.Ur_ObjektItemProvider;
 
 import org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenFactory;
@@ -75,6 +77,7 @@ public class PlanPro_LayoutinfoItemProvider extends Ur_ObjektItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
+			childrenFeatures.add(LayoutinformationenPackage.Literals.PLAN_PRO_LAYOUTINFO__BEARBEITUNGSVERMERK);
 			childrenFeatures.add(LayoutinformationenPackage.Literals.PLAN_PRO_LAYOUTINFO__ELEMENT_POSITION);
 			childrenFeatures.add(LayoutinformationenPackage.Literals.PLAN_PRO_LAYOUTINFO__ELEMENT_STIL);
 			childrenFeatures.add(LayoutinformationenPackage.Literals.PLAN_PRO_LAYOUTINFO__LAGEPLAN);
@@ -142,6 +145,7 @@ public class PlanPro_LayoutinfoItemProvider extends Ur_ObjektItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(PlanPro_Layoutinfo.class)) {
+			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__BEARBEITUNGSVERMERK:
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__ELEMENT_POSITION:
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__ELEMENT_STIL:
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__LAGEPLAN:
@@ -149,10 +153,8 @@ public class PlanPro_LayoutinfoItemProvider extends Ur_ObjektItemProvider {
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__LAGEPLAN_ZUSTAND:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**
@@ -165,6 +167,11 @@ public class PlanPro_LayoutinfoItemProvider extends Ur_ObjektItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(LayoutinformationenPackage.Literals.PLAN_PRO_LAYOUTINFO__BEARBEITUNGSVERMERK,
+				 BasisobjekteFactory.eINSTANCE.createBearbeitungsvermerk()));
 
 		newChildDescriptors.add
 			(createChildParameter

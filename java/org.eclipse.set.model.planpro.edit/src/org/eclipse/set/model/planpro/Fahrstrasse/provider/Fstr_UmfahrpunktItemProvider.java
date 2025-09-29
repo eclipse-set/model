@@ -144,10 +144,8 @@ public class Fstr_UmfahrpunktItemProvider extends Basis_ObjektItemProvider {
 			case FahrstrassePackage.FSTR_UMFAHRPUNKT__ID_UMFAHRPUNKT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

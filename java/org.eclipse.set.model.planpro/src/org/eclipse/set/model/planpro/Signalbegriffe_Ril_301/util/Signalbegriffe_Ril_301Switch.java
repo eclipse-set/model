@@ -277,6 +277,20 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Signalbegriffe_Ril_301Package.EL34_ZUSATZ: {
+				El34Zusatz el34Zusatz = (El34Zusatz)theEObject;
+				T result = caseEl34Zusatz(el34Zusatz);
+				if (result == null) result = caseSignalbegriff_ID_TypeClass(el34Zusatz);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Signalbegriffe_Ril_301Package.EL34_ZUSATZ_KOMBI: {
+				El34ZusatzKombi el34ZusatzKombi = (El34ZusatzKombi)theEObject;
+				T result = caseEl34ZusatzKombi(el34ZusatzKombi);
+				if (result == null) result = caseSignalbegriff_ID_TypeClass(el34ZusatzKombi);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case Signalbegriffe_Ril_301Package.EL4: {
 				El4 el4 = (El4)theEObject;
 				T result = caseEl4(el4);
@@ -466,6 +480,13 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Signalbegriffe_Ril_301Package.HP0_F: {
+				Hp0F hp0F = (Hp0F)theEObject;
+				T result = caseHp0F(hp0F);
+				if (result == null) result = caseSignalbegriff_ID_TypeClass(hp0F);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case Signalbegriffe_Ril_301Package.HP1: {
 				Hp1 hp1 = (Hp1)theEObject;
 				T result = caseHp1(hp1);
@@ -473,10 +494,24 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Signalbegriffe_Ril_301Package.HP1_F: {
+				Hp1F hp1F = (Hp1F)theEObject;
+				T result = caseHp1F(hp1F);
+				if (result == null) result = caseSignalbegriff_ID_TypeClass(hp1F);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case Signalbegriffe_Ril_301Package.HP2: {
 				Hp2 hp2 = (Hp2)theEObject;
 				T result = caseHp2(hp2);
 				if (result == null) result = caseSignalbegriff_ID_TypeClass(hp2);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Signalbegriffe_Ril_301Package.HP2_F: {
+				Hp2F hp2F = (Hp2F)theEObject;
+				T result = caseHp2F(hp2F);
+				if (result == null) result = caseSignalbegriff_ID_TypeClass(hp2F);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -864,6 +899,13 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Signalbegriffe_Ril_301Package.OZ_PZB2000_HZ: {
+				OzPZB2000Hz ozPZB2000Hz = (OzPZB2000Hz)theEObject;
+				T result = caseOzPZB2000Hz(ozPZB2000Hz);
+				if (result == null) result = caseSignalbegriff_ID_TypeClass(ozPZB2000Hz);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case Signalbegriffe_Ril_301Package.OZ_PZBBUE: {
 				OzPZBBUE ozPZBBUE = (OzPZBBUE)theEObject;
 				T result = caseOzPZBBUE(ozPZBBUE);
@@ -1108,6 +1150,13 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Signalbegriffe_Ril_301Package.VR0_F: {
+				Vr0F vr0F = (Vr0F)theEObject;
+				T result = caseVr0F(vr0F);
+				if (result == null) result = caseSignalbegriff_ID_TypeClass(vr0F);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case Signalbegriffe_Ril_301Package.VR1: {
 				Vr1 vr1 = (Vr1)theEObject;
 				T result = caseVr1(vr1);
@@ -1115,10 +1164,31 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Signalbegriffe_Ril_301Package.VR12_F: {
+				Vr12F vr12F = (Vr12F)theEObject;
+				T result = caseVr12F(vr12F);
+				if (result == null) result = caseSignalbegriff_ID_TypeClass(vr12F);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Signalbegriffe_Ril_301Package.VR1_F: {
+				Vr1F vr1F = (Vr1F)theEObject;
+				T result = caseVr1F(vr1F);
+				if (result == null) result = caseSignalbegriff_ID_TypeClass(vr1F);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case Signalbegriffe_Ril_301Package.VR2: {
 				Vr2 vr2 = (Vr2)theEObject;
 				T result = caseVr2(vr2);
 				if (result == null) result = caseSignalbegriff_ID_TypeClass(vr2);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Signalbegriffe_Ril_301Package.VR2_F: {
+				Vr2F vr2F = (Vr2F)theEObject;
+				T result = caseVr2F(vr2F);
+				if (result == null) result = caseSignalbegriff_ID_TypeClass(vr2F);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -1786,6 +1856,36 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>El34 Zusatz</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>El34 Zusatz</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEl34Zusatz(El34Zusatz object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>El34 Zusatz Kombi</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>El34 Zusatz Kombi</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEl34ZusatzKombi(El34ZusatzKombi object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>El4</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2191,6 +2291,21 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hp0 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hp0 F</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHp0F(Hp0F object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Hp1</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2206,6 +2321,21 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hp1 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hp1 F</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHp1F(Hp1F object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Hp2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -2217,6 +2347,21 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseHp2(Hp2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Hp2 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Hp2 F</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHp2F(Hp2F object) {
 		return null;
 	}
 
@@ -3046,6 +3191,21 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Oz PZB2000 Hz</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Oz PZB2000 Hz</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOzPZB2000Hz(OzPZB2000Hz object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Oz PZBBUE</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3571,6 +3731,21 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Vr0 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Vr0 F</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVr0F(Vr0F object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Vr1</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3586,6 +3761,36 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Vr12 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Vr12 F</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVr12F(Vr12F object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Vr1 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Vr1 F</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVr1F(Vr1F object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Vr2</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -3597,6 +3802,21 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseVr2(Vr2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Vr2 F</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Vr2 F</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVr2F(Vr2F object) {
 		return null;
 	}
 

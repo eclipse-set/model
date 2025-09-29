@@ -360,9 +360,8 @@ public class LEU_ModulImpl extends Basis_ObjektImpl implements LEU_Modul {
 				return basicSetLEUModulAllg(null, msgs);
 			case Balisentechnik_ETCSPackage.LEU_MODUL__LEU_MODUL_AUSGANG:
 				return ((InternalEList<?>)getLEUModulAusgang()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -385,9 +384,8 @@ public class LEU_ModulImpl extends Basis_ObjektImpl implements LEU_Modul {
 				return getLEUModulAllg();
 			case Balisentechnik_ETCSPackage.LEU_MODUL__LEU_MODUL_AUSGANG:
 				return getLEUModulAusgang();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -419,10 +417,8 @@ public class LEU_ModulImpl extends Basis_ObjektImpl implements LEU_Modul {
 				getLEUModulAusgang().clear();
 				getLEUModulAusgang().addAll((Collection<? extends LEU_Modul_Ausgang_AttributeGroup>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -451,10 +447,8 @@ public class LEU_ModulImpl extends Basis_ObjektImpl implements LEU_Modul {
 			case Balisentechnik_ETCSPackage.LEU_MODUL__LEU_MODUL_AUSGANG:
 				getLEUModulAusgang().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -477,9 +471,8 @@ public class LEU_ModulImpl extends Basis_ObjektImpl implements LEU_Modul {
 				return lEUModulAllg != null;
 			case Balisentechnik_ETCSPackage.LEU_MODUL__LEU_MODUL_AUSGANG:
 				return lEUModulAusgang != null && !lEUModulAusgang.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //LEU_ModulImpl

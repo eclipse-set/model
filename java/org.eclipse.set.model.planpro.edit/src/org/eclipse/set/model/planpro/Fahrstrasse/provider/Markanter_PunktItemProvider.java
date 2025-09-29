@@ -147,10 +147,8 @@ public class Markanter_PunktItemProvider extends Basis_ObjektItemProvider {
 			case FahrstrassePackage.MARKANTER_PUNKT__ID_MARKANTE_STELLE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

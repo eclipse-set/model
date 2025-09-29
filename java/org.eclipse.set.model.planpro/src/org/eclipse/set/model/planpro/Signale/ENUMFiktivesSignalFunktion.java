@@ -46,6 +46,16 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 	ENUM_FIKTIVES_SIGNAL_FUNKTION_FAP_ZIEL(1, "ENUMFiktives_Signal_Funktion_FAP_Ziel", "FAP_Ziel"),
 
 	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Rangier Start Ziel Ne 14</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_NE_14_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_NE_14(2, "ENUMFiktives_Signal_Funktion_Rangier_Start_Ziel_Ne_14", "Rangier_Start_Ziel_Ne_14"),
+
+	/**
 	 * The '<em><b>ENUM Fiktives Signal Funktion Rangier Start Ziel ohne Signal</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53,7 +63,7 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_OHNE_SIGNAL(2, "ENUMFiktives_Signal_Funktion_Rangier_Start_Ziel_ohne_Signal", "Rangier_Start_Ziel_ohne_Signal"),
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_OHNE_SIGNAL(3, "ENUMFiktives_Signal_Funktion_Rangier_Start_Ziel_ohne_Signal", "Rangier_Start_Ziel_ohne_Signal"),
 
 	/**
 	 * The '<em><b>ENUM Fiktives Signal Funktion sonstige</b></em>' literal object.
@@ -63,67 +73,7 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_FIKTIVES_SIGNAL_FUNKTION_SONSTIGE(3, "ENUMFiktives_Signal_Funktion_sonstige", "sonstige"),
-
-	/**
-	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Awanst</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_AWANST_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_AWANST(4, "ENUMFiktives_Signal_Funktion_Zug_Start_Awanst", "Zug_Start_Awanst"),
-
-	/**
-	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Mittelweiche</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_MITTELWEICHE_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_MITTELWEICHE(5, "ENUMFiktives_Signal_Funktion_Zug_Start_Mittelweiche", "Zug_Start_Mittelweiche"),
-
-	/**
-	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start ohne Signal</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_OHNE_SIGNAL_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_OHNE_SIGNAL(6, "ENUMFiktives_Signal_Funktion_Zug_Start_ohne_Signal", "Zug_Start_ohne_Signal"),
-
-	/**
-	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Ziel Awanst</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_AWANST_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_AWANST(7, "ENUMFiktives_Signal_Funktion_Zug_Ziel_Awanst", "Zug_Ziel_Awanst"),
-
-	/**
-	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Ziel ohne Signal</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_OHNE_SIGNAL_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_OHNE_SIGNAL(8, "ENUMFiktives_Signal_Funktion_Zug_Ziel_ohne_Signal", "Zug_Ziel_ohne_Signal"),
-
-	/**
-	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Ziel Strecke</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_STRECKE_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_STRECKE(9, "ENUMFiktives_Signal_Funktion_Zug_Ziel_Strecke", "Zug_Ziel_Strecke"),
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_SONSTIGE(4, "ENUMFiktives_Signal_Funktion_sonstige", "sonstige"),
 
 	/**
 	 * The '<em><b>ENUM Fiktives Signal Funktion Vsig virtuell</b></em>' literal object.
@@ -133,7 +83,87 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_FIKTIVES_SIGNAL_FUNKTION_VSIG_VIRTUELL(10, "ENUMFiktives_Signal_Funktion_Vsig_virtuell", "Vsig_virtuell"),
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_VSIG_VIRTUELL(5, "ENUMFiktives_Signal_Funktion_Vsig_virtuell", "Vsig_virtuell"),
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zentralblock Start</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_START_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_START(6, "ENUMFiktives_Signal_Funktion_Zentralblock_Start", "Zentralblock_Start"),
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zentralblock Ziel</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_ZIEL_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_ZIEL(7, "ENUMFiktives_Signal_Funktion_Zentralblock_Ziel", "Zentralblock_Ziel"),
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Awanst</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_AWANST_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_AWANST(8, "ENUMFiktives_Signal_Funktion_Zug_Start_Awanst", "Zug_Start_Awanst"),
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Mittelweiche</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_MITTELWEICHE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_MITTELWEICHE(9, "ENUMFiktives_Signal_Funktion_Zug_Start_Mittelweiche", "Zug_Start_Mittelweiche"),
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start ohne Signal</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_OHNE_SIGNAL_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_OHNE_SIGNAL(10, "ENUMFiktives_Signal_Funktion_Zug_Start_ohne_Signal", "Zug_Start_ohne_Signal"),
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Ziel Awanst</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_AWANST_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_AWANST(11, "ENUMFiktives_Signal_Funktion_Zug_Ziel_Awanst", "Zug_Ziel_Awanst"),
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Ziel ohne Signal</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_OHNE_SIGNAL_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_OHNE_SIGNAL(12, "ENUMFiktives_Signal_Funktion_Zug_Ziel_ohne_Signal", "Zug_Ziel_ohne_Signal"),
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Ziel Strecke</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_STRECKE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_STRECKE(13, "ENUMFiktives_Signal_Funktion_Zug_Ziel_Strecke", "Zug_Ziel_Strecke"),
 
 	/**
 	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Bk</b></em>' literal object.
@@ -143,7 +173,27 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK(11, "ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Bk", "Zug_Start_Ziel_Bk"),
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK(14, "ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Bk", "Zug_Start_Ziel_Bk"),
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Bk mit Zs 1</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_1_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_1(15, "ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Bk_mit_Zs_1", "Zug_Start_Ziel_Bk_mit_Zs_1"),
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Bk mit Zs 7</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_7_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_7(16, "ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Bk_mit_Zs_7", "Zug_Start_Ziel_Bk_mit_Zs_7"),
 
 	/**
 	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Ne 14</b></em>' literal object.
@@ -153,7 +203,37 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14(12, "ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14", "Zug_Start_Ziel_Ne_14");
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14(17, "ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14", "Zug_Start_Ziel_Ne_14"),
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Ne 14 mit Zs 1</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_1_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_1(18, "ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14_mit_Zs_1", "Zug_Start_Ziel_Ne_14_mit_Zs_1"),
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Ne 14 mit Zs 7</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_7_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_7(19, "ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14_mit_Zs_7", "Zug_Start_Ziel_Ne_14_mit_Zs_7"),
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Ne 14 mit Zs 8</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_8_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_8(20, "ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14_mit_Zs_8", "Zug_Start_Ziel_Ne_14_mit_Zs_8");
 
 	/**
 	 * The '<em><b>ENUM Fiktives Signal Funktion FAP Start</b></em>' literal value.
@@ -178,6 +258,17 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_FAP_ZIEL_VALUE = 1;
 
 	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Rangier Start Ziel Ne 14</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_NE_14
+	 * @model name="ENUMFiktives_Signal_Funktion_Rangier_Start_Ziel_Ne_14" literal="Rangier_Start_Ziel_Ne_14"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_NE_14_VALUE = 2;
+
+	/**
 	 * The '<em><b>ENUM Fiktives Signal Funktion Rangier Start Ziel ohne Signal</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -186,7 +277,7 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_OHNE_SIGNAL_VALUE = 2;
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_OHNE_SIGNAL_VALUE = 3;
 
 	/**
 	 * The '<em><b>ENUM Fiktives Signal Funktion sonstige</b></em>' literal value.
@@ -197,73 +288,7 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_SONSTIGE_VALUE = 3;
-
-	/**
-	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Awanst</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_AWANST
-	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Start_Awanst" literal="Zug_Start_Awanst"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_AWANST_VALUE = 4;
-
-	/**
-	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Mittelweiche</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_MITTELWEICHE
-	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Start_Mittelweiche" literal="Zug_Start_Mittelweiche"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_MITTELWEICHE_VALUE = 5;
-
-	/**
-	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start ohne Signal</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_OHNE_SIGNAL
-	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Start_ohne_Signal" literal="Zug_Start_ohne_Signal"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_OHNE_SIGNAL_VALUE = 6;
-
-	/**
-	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Ziel Awanst</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_AWANST
-	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Ziel_Awanst" literal="Zug_Ziel_Awanst"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_AWANST_VALUE = 7;
-
-	/**
-	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Ziel ohne Signal</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_OHNE_SIGNAL
-	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Ziel_ohne_Signal" literal="Zug_Ziel_ohne_Signal"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_OHNE_SIGNAL_VALUE = 8;
-
-	/**
-	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Ziel Strecke</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_STRECKE
-	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Ziel_Strecke" literal="Zug_Ziel_Strecke"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_STRECKE_VALUE = 9;
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_SONSTIGE_VALUE = 4;
 
 	/**
 	 * The '<em><b>ENUM Fiktives Signal Funktion Vsig virtuell</b></em>' literal value.
@@ -274,7 +299,95 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_VSIG_VIRTUELL_VALUE = 10;
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_VSIG_VIRTUELL_VALUE = 5;
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zentralblock Start</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_START
+	 * @model name="ENUMFiktives_Signal_Funktion_Zentralblock_Start" literal="Zentralblock_Start"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_START_VALUE = 6;
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zentralblock Ziel</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_ZIEL
+	 * @model name="ENUMFiktives_Signal_Funktion_Zentralblock_Ziel" literal="Zentralblock_Ziel"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_ZIEL_VALUE = 7;
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Awanst</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_AWANST
+	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Start_Awanst" literal="Zug_Start_Awanst"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_AWANST_VALUE = 8;
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Mittelweiche</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_MITTELWEICHE
+	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Start_Mittelweiche" literal="Zug_Start_Mittelweiche"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_MITTELWEICHE_VALUE = 9;
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start ohne Signal</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_OHNE_SIGNAL
+	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Start_ohne_Signal" literal="Zug_Start_ohne_Signal"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_OHNE_SIGNAL_VALUE = 10;
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Ziel Awanst</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_AWANST
+	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Ziel_Awanst" literal="Zug_Ziel_Awanst"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_AWANST_VALUE = 11;
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Ziel ohne Signal</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_OHNE_SIGNAL
+	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Ziel_ohne_Signal" literal="Zug_Ziel_ohne_Signal"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_OHNE_SIGNAL_VALUE = 12;
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Ziel Strecke</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_STRECKE
+	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Ziel_Strecke" literal="Zug_Ziel_Strecke"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_STRECKE_VALUE = 13;
 
 	/**
 	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Bk</b></em>' literal value.
@@ -285,7 +398,29 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_VALUE = 11;
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_VALUE = 14;
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Bk mit Zs 1</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_1
+	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Bk_mit_Zs_1" literal="Zug_Start_Ziel_Bk_mit_Zs_1"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_1_VALUE = 15;
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Bk mit Zs 7</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_7
+	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Bk_mit_Zs_7" literal="Zug_Start_Ziel_Bk_mit_Zs_7"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_7_VALUE = 16;
 
 	/**
 	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Ne 14</b></em>' literal value.
@@ -296,7 +431,40 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_VALUE = 12;
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_VALUE = 17;
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Ne 14 mit Zs 1</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_1
+	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14_mit_Zs_1" literal="Zug_Start_Ziel_Ne_14_mit_Zs_1"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_1_VALUE = 18;
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Ne 14 mit Zs 7</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_7
+	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14_mit_Zs_7" literal="Zug_Start_Ziel_Ne_14_mit_Zs_7"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_7_VALUE = 19;
+
+	/**
+	 * The '<em><b>ENUM Fiktives Signal Funktion Zug Start Ziel Ne 14 mit Zs 8</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_8
+	 * @model name="ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14_mit_Zs_8" literal="Zug_Start_Ziel_Ne_14_mit_Zs_8"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_8_VALUE = 20;
 
 	/**
 	 * An array of all the '<em><b>ENUM Fiktives Signal Funktion</b></em>' enumerators.
@@ -308,17 +476,25 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 		new ENUMFiktivesSignalFunktion[] {
 			ENUM_FIKTIVES_SIGNAL_FUNKTION_FAP_START,
 			ENUM_FIKTIVES_SIGNAL_FUNKTION_FAP_ZIEL,
+			ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_NE_14,
 			ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_OHNE_SIGNAL,
 			ENUM_FIKTIVES_SIGNAL_FUNKTION_SONSTIGE,
+			ENUM_FIKTIVES_SIGNAL_FUNKTION_VSIG_VIRTUELL,
+			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_START,
+			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_ZIEL,
 			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_AWANST,
 			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_MITTELWEICHE,
 			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_OHNE_SIGNAL,
 			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_AWANST,
 			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_OHNE_SIGNAL,
 			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_STRECKE,
-			ENUM_FIKTIVES_SIGNAL_FUNKTION_VSIG_VIRTUELL,
 			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK,
+			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_1,
+			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_7,
 			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14,
+			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_1,
+			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_7,
+			ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_8,
 		};
 
 	/**
@@ -377,19 +553,27 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 		switch (value) {
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_FAP_START_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_FAP_START;
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_FAP_ZIEL_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_FAP_ZIEL;
+			case ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_NE_14_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_NE_14;
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_OHNE_SIGNAL_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_RANGIER_START_ZIEL_OHNE_SIGNAL;
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_SONSTIGE_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_SONSTIGE;
+			case ENUM_FIKTIVES_SIGNAL_FUNKTION_VSIG_VIRTUELL_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_VSIG_VIRTUELL;
+			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_START_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_START;
+			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_ZIEL_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZENTRALBLOCK_ZIEL;
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_AWANST_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_AWANST;
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_MITTELWEICHE_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_MITTELWEICHE;
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_OHNE_SIGNAL_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_OHNE_SIGNAL;
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_AWANST_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_AWANST;
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_OHNE_SIGNAL_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_OHNE_SIGNAL;
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_STRECKE_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_ZIEL_STRECKE;
-			case ENUM_FIKTIVES_SIGNAL_FUNKTION_VSIG_VIRTUELL_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_VSIG_VIRTUELL;
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK;
+			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_1_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_1;
+			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_7_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_BK_MIT_ZS_7;
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14;
-			default: return null;
+			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_1_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_1;
+			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_7_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_7;
+			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_8_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_8;
 		}
+		return null;
 	}
 
 	/**

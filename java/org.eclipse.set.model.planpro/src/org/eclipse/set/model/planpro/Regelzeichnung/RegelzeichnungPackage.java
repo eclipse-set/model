@@ -31,10 +31,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -43,17 +43,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -62,17 +62,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -81,17 +81,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -100,10 +100,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -127,7 +127,7 @@ public interface RegelzeichnungPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Regelzeichnung/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Regelzeichnung/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -947,7 +947,7 @@ public interface RegelzeichnungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bild Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBild' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,20}'"
+	 *        extendedMetaData="name='TBild' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,20}'"
 	 * @generated
 	 */
 	EDataType getBild_Type();
@@ -959,7 +959,7 @@ public interface RegelzeichnungPackage extends EPackage {
 	 * @return the meta object for data type '<em>RZ Nummer Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TRZ_Nummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,20}'"
+	 *        extendedMetaData="name='TRZ_Nummer' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,20}'"
 	 * @generated
 	 */
 	EDataType getRZ_Nummer_Type();
@@ -971,7 +971,7 @@ public interface RegelzeichnungPackage extends EPackage {
 	 * @return the meta object for data type '<em>RZ Parameter Name Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TRZ_Parameter_Name' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,20}'"
+	 *        extendedMetaData="name='TRZ_Parameter_Name' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,20}'"
 	 * @generated
 	 */
 	EDataType getRZ_Parameter_Name_Type();
@@ -983,7 +983,7 @@ public interface RegelzeichnungPackage extends EPackage {
 	 * @return the meta object for data type '<em>RZ Parameter Wert Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TRZ_Parameter_Wert' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,20}'"
+	 *        extendedMetaData="name='TRZ_Parameter_Wert' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,20}'"
 	 * @generated
 	 */
 	EDataType getRZ_Parameter_Wert_Type();
@@ -995,7 +995,7 @@ public interface RegelzeichnungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Titel Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TTitel' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,200}'"
+	 *        extendedMetaData="name='TTitel' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,200}'"
 	 * @generated
 	 */
 	EDataType getTitel_Type();
@@ -1007,7 +1007,7 @@ public interface RegelzeichnungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Untertitel Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TUntertitel' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,200}'"
+	 *        extendedMetaData="name='TUntertitel' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,200}'"
 	 * @generated
 	 */
 	EDataType getUntertitel_Type();

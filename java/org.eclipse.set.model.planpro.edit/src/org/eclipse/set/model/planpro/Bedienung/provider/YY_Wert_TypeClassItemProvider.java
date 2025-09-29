@@ -139,10 +139,8 @@ public class YY_Wert_TypeClassItemProvider extends BasisAttribut_AttributeGroupI
 			case BedienungPackage.YY_WERT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

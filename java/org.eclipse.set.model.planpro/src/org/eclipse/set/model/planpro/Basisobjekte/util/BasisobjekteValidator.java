@@ -1047,34 +1047,8 @@ public class BasisobjekteValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateKurztext_Type(String kurztext_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		boolean result = validateKurztext_Type_Pattern(kurztext_Type, diagnostics, context);
+		boolean result = basisTypenValidator.validateText_Type_Pattern(kurztext_Type, diagnostics, context);
 		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @see #validateKurztext_Type_Pattern
-	 */
-	public static final  PatternMatcher [][] KURZTEXT_TYPE__PATTERN__VALUES =
-		new PatternMatcher [][] {
-			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher(".{1,100}")
-			},
-			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher(".{1,250}")
-			}
-		};
-
-	/**
-	 * Validates the Pattern constraint of '<em>Kurztext Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateKurztext_Type_Pattern(String kurztext_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validatePattern(BasisobjektePackage.Literals.KURZTEXT_TYPE, kurztext_Type, KURZTEXT_TYPE__PATTERN__VALUES, diagnostics, context);
 	}
 
 	/**
@@ -1151,31 +1125,7 @@ public class BasisobjekteValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSeitlicher_Abstand_Type(BigDecimal seitlicher_Abstand_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		boolean result = validateSeitlicher_Abstand_Type_Pattern(seitlicher_Abstand_Type, diagnostics, context);
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @see #validateSeitlicher_Abstand_Type_Pattern
-	 */
-	public static final  PatternMatcher [][] SEITLICHER_ABSTAND_TYPE__PATTERN__VALUES =
-		new PatternMatcher [][] {
-			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("(-?[1-9][0-9]{0,4}\\.[0-9]{3})|(-?0\\.[89][0-9]{2})|0.000")
-			}
-		};
-
-	/**
-	 * Validates the Pattern constraint of '<em>Seitlicher Abstand Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateSeitlicher_Abstand_Type_Pattern(BigDecimal seitlicher_Abstand_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validatePattern(BasisobjektePackage.Literals.SEITLICHER_ABSTAND_TYPE, seitlicher_Abstand_Type, SEITLICHER_ABSTAND_TYPE__PATTERN__VALUES, diagnostics, context);
+		return true;
 	}
 
 	/**
@@ -1194,34 +1144,8 @@ public class BasisobjekteValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateTechnischer_Platz_Type(String technischer_Platz_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		boolean result = validateTechnischer_Platz_Type_Pattern(technischer_Platz_Type, diagnostics, context);
+		boolean result = basisTypenValidator.validateText_Type_Pattern(technischer_Platz_Type, diagnostics, context);
 		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @see #validateTechnischer_Platz_Type_Pattern
-	 */
-	public static final  PatternMatcher [][] TECHNISCHER_PLATZ_TYPE__PATTERN__VALUES =
-		new PatternMatcher [][] {
-			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("[A-Z0-9\\-]{30}")
-			},
-			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher(".{1,250}")
-			}
-		};
-
-	/**
-	 * Validates the Pattern constraint of '<em>Technischer Platz Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateTechnischer_Platz_Type_Pattern(String technischer_Platz_Type, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validatePattern(BasisobjektePackage.Literals.TECHNISCHER_PLATZ_TYPE, technischer_Platz_Type, TECHNISCHER_PLATZ_TYPE__PATTERN__VALUES, diagnostics, context);
 	}
 
 	/**

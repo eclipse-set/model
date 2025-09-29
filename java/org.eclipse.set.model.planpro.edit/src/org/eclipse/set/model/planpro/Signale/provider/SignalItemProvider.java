@@ -155,10 +155,8 @@ public class SignalItemProvider extends Punkt_ObjektItemProvider {
 			case SignalePackage.SIGNAL__SIGNAL_REAL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

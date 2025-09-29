@@ -62,7 +62,7 @@ public interface FT_Fahrweg_Teile_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Angabe, ob der Fahrwegteil befahren wird (true) oder nicht (false).
+	 * Angabe, ob der Fahrwegteil befahren wird (true) oder nicht (false). Nicht befahrene Fahrwegteile werden auch als „nicht relevante Anteile“ des Fahrwegs bezeichnet und in der DP-Tabelle 3 außerhalb der Grundverkettung in eckigen Klammern angegeben.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Ist Befahren</em>' containment reference.
 	 * @see #setIstBefahren(Ist_Befahren_TypeClass)

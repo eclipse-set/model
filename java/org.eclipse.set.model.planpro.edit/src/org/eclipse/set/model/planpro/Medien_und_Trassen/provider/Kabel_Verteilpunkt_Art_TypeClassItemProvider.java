@@ -138,10 +138,8 @@ public class Kabel_Verteilpunkt_Art_TypeClassItemProvider extends BasisAttribut_
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

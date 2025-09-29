@@ -136,10 +136,8 @@ public class GFR_Typ_TypeClassItemProvider extends BasisAttribut_AttributeGroupI
 			case BahnuebergangPackage.GFR_TYP_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -493,8 +493,6 @@ public class OrtungEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
-						default:
-							break;
 					}
 				}
 				else {

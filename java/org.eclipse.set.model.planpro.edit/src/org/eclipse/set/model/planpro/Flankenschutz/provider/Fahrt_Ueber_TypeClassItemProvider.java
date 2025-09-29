@@ -138,10 +138,8 @@ public class Fahrt_Ueber_TypeClassItemProvider extends BasisAttribut_AttributeGr
 			case FlankenschutzPackage.FAHRT_UEBER_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

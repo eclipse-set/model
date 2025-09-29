@@ -151,10 +151,8 @@ public class SchluesselsperreItemProvider extends Basis_ObjektItemProvider {
 			case SchluesselabhaengigkeitenPackage.SCHLUESSELSPERRE__ID_UNTERBRINGUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

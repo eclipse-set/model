@@ -159,10 +159,8 @@ public class ID_NB_TypeClassItemProvider extends Zeiger_TypeClassItemProvider {
 			case VerweisePackage.ID_NB_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -36,7 +36,7 @@ public interface DP_Bezug_Funktional_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Angabe, ob die Zuordnung zum Signal mittelbar (z. B. Aufwerte-Datenpunkte) oder unmittelbar (z. B. Hauptsignal-DP) erfolgt.
+	 * Bei ZBS: Angabe, ob die Zuordnung zum Signal mittelbar (z. B. Aufwerte-Datenpunkte) oder unmittelbar (z. B. Hauptsignal-DP) erfolgt.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>DP Bezug Funktional Art</em>' containment reference.
 	 * @see #setDPBezugFunktionalArt(DP_Bezug_Funktional_Art_TypeClass)

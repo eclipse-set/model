@@ -204,8 +204,8 @@ public enum ENUMSystemhoehe implements Enumerator {
 			case ENUM_SYSTEMHOEHE_76_CM_VALUE: return ENUM_SYSTEMHOEHE_76_CM;
 			case ENUM_SYSTEMHOEHE_96_CM_VALUE: return ENUM_SYSTEMHOEHE_96_CM;
 			case ENUM_SYSTEMHOEHE_SONSTIGE_VALUE: return ENUM_SYSTEMHOEHE_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

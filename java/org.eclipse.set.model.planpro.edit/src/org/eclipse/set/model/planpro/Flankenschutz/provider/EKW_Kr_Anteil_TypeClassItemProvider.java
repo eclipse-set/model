@@ -137,10 +137,8 @@ public class EKW_Kr_Anteil_TypeClassItemProvider extends BasisAttribut_Attribute
 			case FlankenschutzPackage.EKW_KR_ANTEIL_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -139,10 +139,8 @@ public class Zeitueberschreitungsmeldung_TypeClassItemProvider extends BasisAttr
 			case BahnuebergangPackage.ZEITUEBERSCHREITUNGSMELDUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

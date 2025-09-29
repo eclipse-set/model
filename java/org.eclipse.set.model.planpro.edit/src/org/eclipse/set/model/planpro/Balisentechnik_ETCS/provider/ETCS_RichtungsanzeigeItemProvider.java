@@ -147,10 +147,8 @@ public class ETCS_RichtungsanzeigeItemProvider extends Basis_ObjektItemProvider 
 			case Balisentechnik_ETCSPackage.ETCS_RICHTUNGSANZEIGE__TEXTMELDUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

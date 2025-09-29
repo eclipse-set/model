@@ -240,9 +240,8 @@ public class GFR_TripelspiegelImpl extends Punkt_ObjektImpl implements GFR_Tripe
 				return basicSetGFRTripelspiegelAllg(null, msgs);
 			case BahnuebergangPackage.GFR_TRIPELSPIEGEL__IDGFR_ANLAGE:
 				return basicSetIDGFRAnlage(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -259,9 +258,8 @@ public class GFR_TripelspiegelImpl extends Punkt_ObjektImpl implements GFR_Tripe
 				return getGFRTripelspiegelAllg();
 			case BahnuebergangPackage.GFR_TRIPELSPIEGEL__IDGFR_ANLAGE:
 				return getIDGFRAnlage();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -281,10 +279,8 @@ public class GFR_TripelspiegelImpl extends Punkt_ObjektImpl implements GFR_Tripe
 			case BahnuebergangPackage.GFR_TRIPELSPIEGEL__IDGFR_ANLAGE:
 				setIDGFRAnlage((ID_GFR_Anlage_ohne_Proxy_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -304,10 +300,8 @@ public class GFR_TripelspiegelImpl extends Punkt_ObjektImpl implements GFR_Tripe
 			case BahnuebergangPackage.GFR_TRIPELSPIEGEL__IDGFR_ANLAGE:
 				setIDGFRAnlage((ID_GFR_Anlage_ohne_Proxy_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -324,9 +318,8 @@ public class GFR_TripelspiegelImpl extends Punkt_ObjektImpl implements GFR_Tripe
 				return gFRTripelspiegelAllg != null;
 			case BahnuebergangPackage.GFR_TRIPELSPIEGEL__IDGFR_ANLAGE:
 				return iDGFRAnlage != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //GFR_TripelspiegelImpl

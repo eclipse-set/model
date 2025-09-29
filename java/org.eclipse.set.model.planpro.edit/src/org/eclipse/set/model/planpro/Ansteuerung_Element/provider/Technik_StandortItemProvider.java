@@ -149,10 +149,8 @@ public class Technik_StandortItemProvider extends Basis_ObjektItemProvider {
 			case Ansteuerung_ElementPackage.TECHNIK_STANDORT__TSOIP_ADRESSBLOCK:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

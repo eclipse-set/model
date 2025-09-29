@@ -121,9 +121,8 @@ public class BUE_Bedien_Anzeige_ElementImpl extends Basis_ObjektImpl implements 
 		switch (featureID) {
 			case BahnuebergangPackage.BUE_BEDIEN_ANZEIGE_ELEMENT__BUE_BEDIEN_ANZ_ELEMENT_ALLG:
 				return basicSetBUEBedienAnzElementAllg(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,9 +135,8 @@ public class BUE_Bedien_Anzeige_ElementImpl extends Basis_ObjektImpl implements 
 		switch (featureID) {
 			case BahnuebergangPackage.BUE_BEDIEN_ANZEIGE_ELEMENT__BUE_BEDIEN_ANZ_ELEMENT_ALLG:
 				return getBUEBedienAnzElementAllg();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -152,10 +150,8 @@ public class BUE_Bedien_Anzeige_ElementImpl extends Basis_ObjektImpl implements 
 			case BahnuebergangPackage.BUE_BEDIEN_ANZEIGE_ELEMENT__BUE_BEDIEN_ANZ_ELEMENT_ALLG:
 				setBUEBedienAnzElementAllg((BUE_Bedien_Anz_Element_Allg_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -169,10 +165,8 @@ public class BUE_Bedien_Anzeige_ElementImpl extends Basis_ObjektImpl implements 
 			case BahnuebergangPackage.BUE_BEDIEN_ANZEIGE_ELEMENT__BUE_BEDIEN_ANZ_ELEMENT_ALLG:
 				setBUEBedienAnzElementAllg((BUE_Bedien_Anz_Element_Allg_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -185,9 +179,8 @@ public class BUE_Bedien_Anzeige_ElementImpl extends Basis_ObjektImpl implements 
 		switch (featureID) {
 			case BahnuebergangPackage.BUE_BEDIEN_ANZEIGE_ELEMENT__BUE_BEDIEN_ANZ_ELEMENT_ALLG:
 				return bUEBedienAnzElementAllg != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //BUE_Bedien_Anzeige_ElementImpl

@@ -123,7 +123,7 @@ public interface Trasse_Kante extends Basis_Objekt {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Nutzer der Medientrasse, z. B. DB Netz. Eine Trasse kann von mehreren Nutzern beansprucht werden.
+	 * Nutzer der Medientrasse, z. B. DB InfraGO. Eine Trasse kann von mehreren Nutzern beansprucht werden.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Trasse Nutzer</em>' containment reference list.
 	 * @see org.eclipse.set.model.planpro.Medien_und_Trassen.Medien_und_TrassenPackage#getTrasse_Kante_TrasseNutzer()

@@ -240,9 +240,8 @@ public class Kabel_VerteilpunktImpl extends Basis_ObjektImpl implements Kabel_Ve
 				return basicSetIDUnterbringung(null, msgs);
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT__KABEL_VERTEILPUNKT_ART:
 				return basicSetKabelVerteilpunktArt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -259,9 +258,8 @@ public class Kabel_VerteilpunktImpl extends Basis_ObjektImpl implements Kabel_Ve
 				return getIDUnterbringung();
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT__KABEL_VERTEILPUNKT_ART:
 				return getKabelVerteilpunktArt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -281,10 +279,8 @@ public class Kabel_VerteilpunktImpl extends Basis_ObjektImpl implements Kabel_Ve
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT__KABEL_VERTEILPUNKT_ART:
 				setKabelVerteilpunktArt((Kabel_Verteilpunkt_Art_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -304,10 +300,8 @@ public class Kabel_VerteilpunktImpl extends Basis_ObjektImpl implements Kabel_Ve
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT__KABEL_VERTEILPUNKT_ART:
 				setKabelVerteilpunktArt((Kabel_Verteilpunkt_Art_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -324,9 +318,8 @@ public class Kabel_VerteilpunktImpl extends Basis_ObjektImpl implements Kabel_Ve
 				return iDUnterbringung != null;
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT__KABEL_VERTEILPUNKT_ART:
 				return kabelVerteilpunktArt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Kabel_VerteilpunktImpl

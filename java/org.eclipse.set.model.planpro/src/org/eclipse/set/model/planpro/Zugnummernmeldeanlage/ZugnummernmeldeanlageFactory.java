@@ -110,6 +110,15 @@ public interface ZugnummernmeldeanlageFactory extends EFactory {
 	Bezeichnung_Besondere_Anlage_TypeClass createBezeichnung_Besondere_Anlage_TypeClass();
 
 	/**
+	 * Returns a new object of class '<em>Bezeichnung Stellwerk Type Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Bezeichnung Stellwerk Type Class</em>'.
+	 * @generated
+	 */
+	Bezeichnung_Stellwerk_TypeClass createBezeichnung_Stellwerk_TypeClass();
+
+	/**
 	 * Returns a new object of class '<em>Bf Kennung Type Class</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

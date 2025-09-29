@@ -457,8 +457,8 @@ public enum ENUMSymbolZs3 implements Enumerator {
 			case ENUM_SYMBOL_ZS_314_VALUE: return ENUM_SYMBOL_ZS_314;
 			case ENUM_SYMBOL_ZS_315_VALUE: return ENUM_SYMBOL_ZS_315;
 			case ENUM_SYMBOL_ZS_316_VALUE: return ENUM_SYMBOL_ZS_316;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

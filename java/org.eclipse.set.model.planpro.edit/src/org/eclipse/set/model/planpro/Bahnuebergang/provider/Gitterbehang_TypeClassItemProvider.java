@@ -137,10 +137,8 @@ public class Gitterbehang_TypeClassItemProvider extends BasisAttribut_AttributeG
 			case BahnuebergangPackage.GITTERBEHANG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

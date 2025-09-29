@@ -79,6 +79,7 @@ public class ZLV_Bus_Besondere_AnlageItemProvider extends Basis_ObjektItemProvid
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(ZugnummernmeldeanlagePackage.Literals.ZLV_BUS_BESONDERE_ANLAGE__BEZEICHNUNG);
 			childrenFeatures.add(ZugnummernmeldeanlagePackage.Literals.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS);
+			childrenFeatures.add(ZugnummernmeldeanlagePackage.Literals.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR);
 		}
 		return childrenFeatures;
 	}
@@ -143,12 +144,11 @@ public class ZLV_Bus_Besondere_AnlageItemProvider extends Basis_ObjektItemProvid
 		switch (notification.getFeatureID(ZLV_Bus_Besondere_Anlage.class)) {
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__BEZEICHNUNG:
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS:
+			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**
@@ -171,6 +171,11 @@ public class ZLV_Bus_Besondere_AnlageItemProvider extends Basis_ObjektItemProvid
 			(createChildParameter
 				(ZugnummernmeldeanlagePackage.Literals.ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS,
 				 VerweiseFactory.eINSTANCE.createID_ZLV_Bus_ohne_Proxy_TypeClass()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(ZugnummernmeldeanlagePackage.Literals.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR,
+				 ZugnummernmeldeanlageFactory.eINSTANCE.createUnterstation_Nr_TypeClass()));
 	}
 
 	/**

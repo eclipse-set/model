@@ -154,10 +154,8 @@ public class Bedien_Einricht_Oertlich_Allg_AttributeGroupItemProvider
 			case BedienungPackage.BEDIEN_EINRICHT_OERTLICH_ALLG_ATTRIBUTE_GROUP__HUPE_ANSCHALTZEIT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,10 +82,29 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -109,7 +128,7 @@ public interface Medien_und_TrassenPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Medien_und_Trassen/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Medien_und_Trassen/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -2293,7 +2312,7 @@ public interface Medien_und_TrassenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Kabel Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Kabel' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='[1-9]|1[0-6]'"
+	 *        extendedMetaData="name='TBezeichnung_Kabel' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,16}'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Kabel_Type();
@@ -2305,7 +2324,7 @@ public interface Medien_und_TrassenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Kabel Verteilpunkt Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Kabel_Verteilpunkt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='[1-9]|1[0-9]|20'"
+	 *        extendedMetaData="name='TBezeichnung_Kabel_Verteilpunkt' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,20}'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Kabel_Verteilpunkt_Type();
@@ -2389,7 +2408,7 @@ public interface Medien_und_TrassenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Kabel Laenge Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TKabel_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='(-?[1-9][0-9]{0,})|0'"
+	 *        extendedMetaData="name='TKabel_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='[1-9][0-9]{0,4}'"
 	 * @generated
 	 */
 	EDataType getKabel_Laenge_Type();
@@ -2401,7 +2420,7 @@ public interface Medien_und_TrassenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Kabel Typ Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TKabel_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TKabel_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getKabel_Typ_Type();

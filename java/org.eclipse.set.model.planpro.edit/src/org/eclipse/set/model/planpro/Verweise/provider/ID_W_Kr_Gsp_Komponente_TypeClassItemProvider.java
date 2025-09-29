@@ -159,10 +159,8 @@ public class ID_W_Kr_Gsp_Komponente_TypeClassItemProvider extends Zeiger_TypeCla
 			case VerweisePackage.ID_WKR_GSP_KOMPONENTE_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

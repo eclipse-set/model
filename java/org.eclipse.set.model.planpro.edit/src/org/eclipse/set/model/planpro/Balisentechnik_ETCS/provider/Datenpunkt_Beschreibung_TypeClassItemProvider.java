@@ -136,10 +136,8 @@ public class Datenpunkt_Beschreibung_TypeClassItemProvider extends BasisAttribut
 			case Balisentechnik_ETCSPackage.DATENPUNKT_BESCHREIBUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -138,10 +138,8 @@ public class FMA_Element_Art_TypeClassItemProvider extends BasisAttribut_Attribu
 			case OrtungPackage.FMA_ELEMENT_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

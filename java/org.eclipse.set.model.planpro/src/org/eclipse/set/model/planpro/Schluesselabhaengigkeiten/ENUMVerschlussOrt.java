@@ -181,8 +181,8 @@ public enum ENUMVerschlussOrt implements Enumerator {
 			case ENUM_VERSCHLUSS_ORT_MITTE_VALUE: return ENUM_VERSCHLUSS_ORT_MITTE;
 			case ENUM_VERSCHLUSS_ORT_SONSTIGE_VALUE: return ENUM_VERSCHLUSS_ORT_SONSTIGE;
 			case ENUM_VERSCHLUSS_ORT_SPITZE_VALUE: return ENUM_VERSCHLUSS_ORT_SPITZE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

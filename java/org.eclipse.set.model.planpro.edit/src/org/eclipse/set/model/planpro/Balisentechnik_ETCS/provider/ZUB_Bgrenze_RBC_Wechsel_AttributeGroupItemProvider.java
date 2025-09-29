@@ -156,10 +156,8 @@ public class ZUB_Bgrenze_RBC_Wechsel_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.ZUB_BGRENZE_RBC_WECHSEL_ATTRIBUTE_GROUP__IDRBC_NACH_GRENZE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

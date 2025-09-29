@@ -297,9 +297,8 @@ public class FT_ETCS_Trans_Paket_41_AttributeGroupImpl extends EObjectImpl imple
 				return basicSetMLEVELTR(null, msgs);
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_PAKET_41_ATTRIBUTE_GROUP__NIDSTM:
 				return basicSetNIDSTM(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -318,9 +317,8 @@ public class FT_ETCS_Trans_Paket_41_AttributeGroupImpl extends EObjectImpl imple
 				return getMLEVELTR();
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_PAKET_41_ATTRIBUTE_GROUP__NIDSTM:
 				return getNIDSTM();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -343,10 +341,8 @@ public class FT_ETCS_Trans_Paket_41_AttributeGroupImpl extends EObjectImpl imple
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_PAKET_41_ATTRIBUTE_GROUP__NIDSTM:
 				setNIDSTM((NID_STM_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -369,10 +365,8 @@ public class FT_ETCS_Trans_Paket_41_AttributeGroupImpl extends EObjectImpl imple
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_PAKET_41_ATTRIBUTE_GROUP__NIDSTM:
 				setNIDSTM((NID_STM_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -391,9 +385,8 @@ public class FT_ETCS_Trans_Paket_41_AttributeGroupImpl extends EObjectImpl imple
 				return mLEVELTR != null;
 			case Balisentechnik_ETCSPackage.FT_ETCS_TRANS_PAKET_41_ATTRIBUTE_GROUP__NIDSTM:
 				return nIDSTM != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //FT_ETCS_Trans_Paket_41_AttributeGroupImpl

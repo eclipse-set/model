@@ -139,10 +139,8 @@ public class Ausgang_Nr_TypeClassItemProvider extends BasisAttribut_AttributeGro
 			case Balisentechnik_ETCSPackage.AUSGANG_NR_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -120,9 +120,8 @@ public class Lageplan_Blattschnitt_Bezeichnung_AttributeGroupImpl extends EObjec
 		switch (featureID) {
 			case LayoutinformationenPackage.LAGEPLAN_BLATTSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_LAGEPLAN_BLATTSCHNITT:
 				return basicSetBezLageplanBlattschnitt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,9 +134,8 @@ public class Lageplan_Blattschnitt_Bezeichnung_AttributeGroupImpl extends EObjec
 		switch (featureID) {
 			case LayoutinformationenPackage.LAGEPLAN_BLATTSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_LAGEPLAN_BLATTSCHNITT:
 				return getBezLageplanBlattschnitt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,10 +149,8 @@ public class Lageplan_Blattschnitt_Bezeichnung_AttributeGroupImpl extends EObjec
 			case LayoutinformationenPackage.LAGEPLAN_BLATTSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_LAGEPLAN_BLATTSCHNITT:
 				setBezLageplanBlattschnitt((Bez_Lageplan_Blattschnitt_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -168,10 +164,8 @@ public class Lageplan_Blattschnitt_Bezeichnung_AttributeGroupImpl extends EObjec
 			case LayoutinformationenPackage.LAGEPLAN_BLATTSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_LAGEPLAN_BLATTSCHNITT:
 				setBezLageplanBlattschnitt((Bez_Lageplan_Blattschnitt_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -184,9 +178,8 @@ public class Lageplan_Blattschnitt_Bezeichnung_AttributeGroupImpl extends EObjec
 		switch (featureID) {
 			case LayoutinformationenPackage.LAGEPLAN_BLATTSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_LAGEPLAN_BLATTSCHNITT:
 				return bezLageplanBlattschnitt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Lageplan_Blattschnitt_Bezeichnung_AttributeGroupImpl

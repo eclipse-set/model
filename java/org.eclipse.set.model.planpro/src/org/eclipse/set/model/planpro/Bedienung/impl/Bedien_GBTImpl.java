@@ -240,9 +240,8 @@ public class Bedien_GBTImpl extends Basis_ObjektImpl implements Bedien_GBT {
 				return basicSetIDAnhangVorgabeGBT(null, msgs);
 			case BedienungPackage.BEDIEN_GBT__ID_BEDIEN_BEZIRK:
 				return basicSetIDBedienBezirk(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -259,9 +258,8 @@ public class Bedien_GBTImpl extends Basis_ObjektImpl implements Bedien_GBT {
 				return getIDAnhangVorgabeGBT();
 			case BedienungPackage.BEDIEN_GBT__ID_BEDIEN_BEZIRK:
 				return getIDBedienBezirk();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -281,10 +279,8 @@ public class Bedien_GBTImpl extends Basis_ObjektImpl implements Bedien_GBT {
 			case BedienungPackage.BEDIEN_GBT__ID_BEDIEN_BEZIRK:
 				setIDBedienBezirk((ID_Bedien_Bezirk_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -304,10 +300,8 @@ public class Bedien_GBTImpl extends Basis_ObjektImpl implements Bedien_GBT {
 			case BedienungPackage.BEDIEN_GBT__ID_BEDIEN_BEZIRK:
 				setIDBedienBezirk((ID_Bedien_Bezirk_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -324,9 +318,8 @@ public class Bedien_GBTImpl extends Basis_ObjektImpl implements Bedien_GBT {
 				return iDAnhangVorgabeGBT != null;
 			case BedienungPackage.BEDIEN_GBT__ID_BEDIEN_BEZIRK:
 				return iDBedienBezirk != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bedien_GBTImpl

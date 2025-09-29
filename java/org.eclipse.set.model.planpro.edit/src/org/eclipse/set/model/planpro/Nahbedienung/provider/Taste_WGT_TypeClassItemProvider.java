@@ -137,10 +137,8 @@ public class Taste_WGT_TypeClassItemProvider extends BasisAttribut_AttributeGrou
 			case NahbedienungPackage.TASTE_WGT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -117,7 +117,7 @@ public interface GEO_Kante_Allg_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Zugehörige Parameter für die GEO_Form Gerade: kein zusätzlicher Parameter erforderlich oder 0.00000 angeben; Bogen: GEO_Radius_A enthält den Radius (Anfangsradius = Endradius) in [m]; Richtgerade Knick am Ende: GEO_Radius_A enthält den Brechungswinkel am Ende in [gon]; Alle anderen Kanten: GEO_Radius_A enthält den Anfangsradius in [m]. In Abhängigkeit der Bogenrichtung am GEO_Knoten_A wird der Radius bei einem Linksbogen negativ und bei einem Rechtsbogen positiv angegeben. 
+	 * Zugehörige Parameter für die GEO_Form. Gerade: kein zusätzlicher Parameter erforderlich oder 0.00000 angeben; Bogen: GEO_Radius_A enthält den Radius (Anfangsradius = Endradius) in [m]; Richtgerade Knick am Ende 200 gon: kein Eintrag; Alle anderen Kanten: GEO_Radius_A enthält den Anfangsradius in [m]. In Abhängigkeit der Bogenrichtung am GEO_Knoten_A wird der Radius bei einem Linksbogen negativ und bei einem Rechtsbogen positiv angegeben. 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>GEO Radius A</em>' containment reference.
 	 * @see #setGEORadiusA(GEO_Radius_A_TypeClass)
@@ -143,7 +143,7 @@ public interface GEO_Kante_Allg_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Zugehörige Parameter für die GEO_Form Gerade: kein zusätzlicher Parameter; Bogen: kein zusätzlicher Parameter; Richtgerade Knick am Ende: kein zusätzlicher Parameter; Alle anderen Kanten: GEO_Bogen_B enthält den Endradius in [m]. In Abhängigkeit der Bogenrichtung am GEO_Knoten_A wird der Radius bei einem Linksbogen negativ und bei einem Rechtsbogen positiv angegeben. Die Bogenrichtung ist immer identisch zum GEO_Radius_A. 
+	 * Zugehörige Parameter für die GEO_Form. Gerade: kein zusätzlicher Parameter; Bogen: kein zusätzlicher Parameter; Richtgerade Knick am Ende: kein zusätzlicher Parameter; Alle anderen Kanten: GEO_Bogen_B enthält den Endradius in [m]. In Abhängigkeit der Bogenrichtung am GEO_Knoten_A wird der Radius bei einem Linksbogen negativ und bei einem Rechtsbogen positiv angegeben. Die Bogenrichtung ist immer identisch zum GEO_Radius_A. 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>GEO Radius B</em>' containment reference.
 	 * @see #setGEORadiusB(GEO_Radius_B_TypeClass)

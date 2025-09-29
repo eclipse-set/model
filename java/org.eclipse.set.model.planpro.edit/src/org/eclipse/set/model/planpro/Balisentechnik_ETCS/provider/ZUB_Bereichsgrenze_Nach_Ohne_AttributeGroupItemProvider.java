@@ -152,10 +152,8 @@ public class ZUB_Bereichsgrenze_Nach_Ohne_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_OHNE_ATTRIBUTE_GROUP__BGRENZE_NACH_OHNE_BED_EINSTIEG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

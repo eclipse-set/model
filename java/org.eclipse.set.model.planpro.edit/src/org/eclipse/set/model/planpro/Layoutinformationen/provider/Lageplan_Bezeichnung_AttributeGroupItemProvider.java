@@ -152,10 +152,8 @@ public class Lageplan_Bezeichnung_AttributeGroupItemProvider
 			case LayoutinformationenPackage.LAGEPLAN_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_LAGEPLAN:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

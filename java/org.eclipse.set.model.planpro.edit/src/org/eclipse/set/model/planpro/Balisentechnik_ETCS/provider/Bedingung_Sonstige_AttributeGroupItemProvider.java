@@ -154,10 +154,8 @@ public class Bedingung_Sonstige_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.BEDINGUNG_SONSTIGE_ATTRIBUTE_GROUP__TEXT_BEDINGUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

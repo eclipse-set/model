@@ -137,10 +137,8 @@ public class Auto_Erlaubnisholen_TypeClassItemProvider extends BasisAttribut_Att
 			case BlockPackage.AUTO_ERLAUBNISHOLEN_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

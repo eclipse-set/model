@@ -474,9 +474,8 @@ public class Balise_Allg_AttributeGroupImpl extends EObjectImpl implements Balis
 				return basicSetHinweisBalisenbefestigung(null, msgs);
 			case Balisentechnik_ETCSPackage.BALISE_ALLG_ATTRIBUTE_GROUP__MONTAGEABWEICHUNG:
 				return basicSetMontageabweichung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -501,9 +500,8 @@ public class Balise_Allg_AttributeGroupImpl extends EObjectImpl implements Balis
 				return getHinweisBalisenbefestigung();
 			case Balisentechnik_ETCSPackage.BALISE_ALLG_ATTRIBUTE_GROUP__MONTAGEABWEICHUNG:
 				return getMontageabweichung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -535,10 +533,8 @@ public class Balise_Allg_AttributeGroupImpl extends EObjectImpl implements Balis
 			case Balisentechnik_ETCSPackage.BALISE_ALLG_ATTRIBUTE_GROUP__MONTAGEABWEICHUNG:
 				setMontageabweichung((Montageabweichung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -570,10 +566,8 @@ public class Balise_Allg_AttributeGroupImpl extends EObjectImpl implements Balis
 			case Balisentechnik_ETCSPackage.BALISE_ALLG_ATTRIBUTE_GROUP__MONTAGEABWEICHUNG:
 				setMontageabweichung((Montageabweichung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -598,9 +592,8 @@ public class Balise_Allg_AttributeGroupImpl extends EObjectImpl implements Balis
 				return hinweisBalisenbefestigung != null;
 			case Balisentechnik_ETCSPackage.BALISE_ALLG_ATTRIBUTE_GROUP__MONTAGEABWEICHUNG:
 				return montageabweichung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Balise_Allg_AttributeGroupImpl

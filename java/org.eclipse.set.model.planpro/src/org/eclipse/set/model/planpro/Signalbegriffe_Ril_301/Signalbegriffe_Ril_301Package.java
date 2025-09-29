@@ -29,10 +29,10 @@ import org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriffe_Stru
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -41,10 +41,10 @@ import org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriffe_Stru
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -87,7 +87,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -4437,6 +4437,314 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	int EL3_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.El34ZusatzImpl <em>El34 Zusatz</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.El34ZusatzImpl
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getEl34Zusatz()
+	 * @generated
+	 */
+	int EL34_ZUSATZ = 29;
+
+	/**
+	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__SYMBOL = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SYMBOL;
+
+	/**
+	 * The feature id for the '<em><b>Anmerkungen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__ANMERKUNGEN = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ANMERKUNGEN;
+
+	/**
+	 * The feature id for the '<em><b>Beleuchtbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__BELEUCHTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BELEUCHTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Beschreibung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__BESCHREIBUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BESCHREIBUNG;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__GELTUNGSBEREICH_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DS;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__GELTUNGSBEREICH_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DV;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__GELTUNGSBEREICH_SBAHN_B = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_B;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn HH</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__GELTUNGSBEREICH_SBAHN_HH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_HH;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Ab</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__GUELTIG_AB = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_AB;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Bis</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__GUELTIG_BIS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_BIS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__KURZBEZEICHNUNG_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__KURZBEZEICHNUNG_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DV;
+
+	/**
+	 * The feature id for the '<em><b>Langbezeichnung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__LANGBEZEICHNUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__LANGBEZEICHNUNG;
+
+	/**
+	 * The feature id for the '<em><b>Schaltbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__SCHALTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SCHALTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Zusatz Moeglich</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ__ZUSATZ_MOEGLICH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH;
+
+	/**
+	 * The number of structural features of the '<em>El34 Zusatz</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.El34ZusatzKombiImpl <em>El34 Zusatz Kombi</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.El34ZusatzKombiImpl
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getEl34ZusatzKombi()
+	 * @generated
+	 */
+	int EL34_ZUSATZ_KOMBI = 30;
+
+	/**
+	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__SYMBOL = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SYMBOL;
+
+	/**
+	 * The feature id for the '<em><b>Anmerkungen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__ANMERKUNGEN = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ANMERKUNGEN;
+
+	/**
+	 * The feature id for the '<em><b>Beleuchtbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__BELEUCHTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BELEUCHTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Beschreibung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__BESCHREIBUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BESCHREIBUNG;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__GELTUNGSBEREICH_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DS;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__GELTUNGSBEREICH_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DV;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__GELTUNGSBEREICH_SBAHN_B = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_B;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn HH</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__GELTUNGSBEREICH_SBAHN_HH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_HH;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Ab</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__GUELTIG_AB = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_AB;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Bis</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__GUELTIG_BIS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_BIS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__KURZBEZEICHNUNG_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__KURZBEZEICHNUNG_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DV;
+
+	/**
+	 * The feature id for the '<em><b>Langbezeichnung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__LANGBEZEICHNUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__LANGBEZEICHNUNG;
+
+	/**
+	 * The feature id for the '<em><b>Schaltbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__SCHALTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SCHALTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Zusatz Moeglich</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI__ZUSATZ_MOEGLICH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH;
+
+	/**
+	 * The number of structural features of the '<em>El34 Zusatz Kombi</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EL34_ZUSATZ_KOMBI_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.El4Impl <em>El4</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4444,7 +4752,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getEl4()
 	 * @generated
 	 */
-	int EL4 = 29;
+	int EL4 = 31;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -4598,7 +4906,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getEl5()
 	 * @generated
 	 */
-	int EL5 = 30;
+	int EL5 = 32;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -4752,7 +5060,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getEl6()
 	 * @generated
 	 */
-	int EL6 = 31;
+	int EL6 = 33;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -4906,7 +5214,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getElPfB()
 	 * @generated
 	 */
-	int EL_PF_B = 32;
+	int EL_PF_B = 34;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -5060,7 +5368,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getElPfL()
 	 * @generated
 	 */
-	int EL_PF_L = 33;
+	int EL_PF_L = 35;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -5214,7 +5522,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getElPfO()
 	 * @generated
 	 */
-	int EL_PF_O = 34;
+	int EL_PF_O = 36;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -5368,7 +5676,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getElPfR()
 	 * @generated
 	 */
-	int EL_PF_R = 35;
+	int EL_PF_R = 37;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -5522,7 +5830,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getElTAC()
 	 * @generated
 	 */
-	int EL_TAC = 36;
+	int EL_TAC = 38;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -5676,7 +5984,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getElTDC()
 	 * @generated
 	 */
-	int EL_TDC = 37;
+	int EL_TDC = 39;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -5830,7 +6138,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl1()
 	 * @generated
 	 */
-	int HL1 = 38;
+	int HL1 = 40;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -5984,7 +6292,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl10()
 	 * @generated
 	 */
-	int HL10 = 39;
+	int HL10 = 41;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -6138,7 +6446,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl11()
 	 * @generated
 	 */
-	int HL11 = 40;
+	int HL11 = 42;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -6292,7 +6600,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl12a()
 	 * @generated
 	 */
-	int HL12A = 41;
+	int HL12A = 43;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -6446,7 +6754,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl12b()
 	 * @generated
 	 */
-	int HL12B = 42;
+	int HL12B = 44;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -6600,7 +6908,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl2()
 	 * @generated
 	 */
-	int HL2 = 43;
+	int HL2 = 45;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -6754,7 +7062,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl3a()
 	 * @generated
 	 */
-	int HL3A = 44;
+	int HL3A = 46;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -6908,7 +7216,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl3b()
 	 * @generated
 	 */
-	int HL3B = 45;
+	int HL3B = 47;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -7062,7 +7370,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl4()
 	 * @generated
 	 */
-	int HL4 = 46;
+	int HL4 = 48;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -7216,7 +7524,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl5()
 	 * @generated
 	 */
-	int HL5 = 47;
+	int HL5 = 49;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -7370,7 +7678,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl6a()
 	 * @generated
 	 */
-	int HL6A = 48;
+	int HL6A = 50;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -7524,7 +7832,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl6b()
 	 * @generated
 	 */
-	int HL6B = 49;
+	int HL6B = 51;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -7678,7 +7986,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl7()
 	 * @generated
 	 */
-	int HL7 = 50;
+	int HL7 = 52;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -7832,7 +8140,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl8()
 	 * @generated
 	 */
-	int HL8 = 51;
+	int HL8 = 53;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -7986,7 +8294,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl9a()
 	 * @generated
 	 */
-	int HL9A = 52;
+	int HL9A = 54;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -8140,7 +8448,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHl9b()
 	 * @generated
 	 */
-	int HL9B = 53;
+	int HL9B = 55;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -8294,7 +8602,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHp0()
 	 * @generated
 	 */
-	int HP0 = 54;
+	int HP0 = 56;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -8448,7 +8756,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHp02Lp()
 	 * @generated
 	 */
-	int HP02_LP = 55;
+	int HP02_LP = 57;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -8595,6 +8903,160 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	int HP02_LP_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Hp0FImpl <em>Hp0 F</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Hp0FImpl
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHp0F()
+	 * @generated
+	 */
+	int HP0_F = 58;
+
+	/**
+	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__SYMBOL = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SYMBOL;
+
+	/**
+	 * The feature id for the '<em><b>Anmerkungen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__ANMERKUNGEN = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ANMERKUNGEN;
+
+	/**
+	 * The feature id for the '<em><b>Beleuchtbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__BELEUCHTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BELEUCHTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Beschreibung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__BESCHREIBUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BESCHREIBUNG;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__GELTUNGSBEREICH_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DS;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__GELTUNGSBEREICH_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DV;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__GELTUNGSBEREICH_SBAHN_B = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_B;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn HH</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__GELTUNGSBEREICH_SBAHN_HH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_HH;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Ab</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__GUELTIG_AB = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_AB;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Bis</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__GUELTIG_BIS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_BIS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__KURZBEZEICHNUNG_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__KURZBEZEICHNUNG_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DV;
+
+	/**
+	 * The feature id for the '<em><b>Langbezeichnung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__LANGBEZEICHNUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__LANGBEZEICHNUNG;
+
+	/**
+	 * The feature id for the '<em><b>Schaltbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__SCHALTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SCHALTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Zusatz Moeglich</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F__ZUSATZ_MOEGLICH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH;
+
+	/**
+	 * The number of structural features of the '<em>Hp0 F</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP0_F_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Hp1Impl <em>Hp1</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8602,7 +9064,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHp1()
 	 * @generated
 	 */
-	int HP1 = 56;
+	int HP1 = 59;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -8749,6 +9211,160 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	int HP1_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Hp1FImpl <em>Hp1 F</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Hp1FImpl
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHp1F()
+	 * @generated
+	 */
+	int HP1_F = 60;
+
+	/**
+	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__SYMBOL = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SYMBOL;
+
+	/**
+	 * The feature id for the '<em><b>Anmerkungen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__ANMERKUNGEN = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ANMERKUNGEN;
+
+	/**
+	 * The feature id for the '<em><b>Beleuchtbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__BELEUCHTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BELEUCHTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Beschreibung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__BESCHREIBUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BESCHREIBUNG;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__GELTUNGSBEREICH_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DS;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__GELTUNGSBEREICH_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DV;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__GELTUNGSBEREICH_SBAHN_B = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_B;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn HH</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__GELTUNGSBEREICH_SBAHN_HH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_HH;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Ab</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__GUELTIG_AB = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_AB;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Bis</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__GUELTIG_BIS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_BIS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__KURZBEZEICHNUNG_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__KURZBEZEICHNUNG_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DV;
+
+	/**
+	 * The feature id for the '<em><b>Langbezeichnung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__LANGBEZEICHNUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__LANGBEZEICHNUNG;
+
+	/**
+	 * The feature id for the '<em><b>Schaltbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__SCHALTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SCHALTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Zusatz Moeglich</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F__ZUSATZ_MOEGLICH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH;
+
+	/**
+	 * The number of structural features of the '<em>Hp1 F</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP1_F_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Hp2Impl <em>Hp2</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8756,7 +9372,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHp2()
 	 * @generated
 	 */
-	int HP2 = 57;
+	int HP2 = 61;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -8903,6 +9519,160 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	int HP2_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Hp2FImpl <em>Hp2 F</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Hp2FImpl
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getHp2F()
+	 * @generated
+	 */
+	int HP2_F = 62;
+
+	/**
+	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__SYMBOL = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SYMBOL;
+
+	/**
+	 * The feature id for the '<em><b>Anmerkungen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__ANMERKUNGEN = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ANMERKUNGEN;
+
+	/**
+	 * The feature id for the '<em><b>Beleuchtbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__BELEUCHTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BELEUCHTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Beschreibung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__BESCHREIBUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BESCHREIBUNG;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__GELTUNGSBEREICH_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DS;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__GELTUNGSBEREICH_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DV;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__GELTUNGSBEREICH_SBAHN_B = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_B;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn HH</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__GELTUNGSBEREICH_SBAHN_HH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_HH;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Ab</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__GUELTIG_AB = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_AB;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Bis</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__GUELTIG_BIS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_BIS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__KURZBEZEICHNUNG_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__KURZBEZEICHNUNG_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DV;
+
+	/**
+	 * The feature id for the '<em><b>Langbezeichnung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__LANGBEZEICHNUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__LANGBEZEICHNUNG;
+
+	/**
+	 * The feature id for the '<em><b>Schaltbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__SCHALTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SCHALTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Zusatz Moeglich</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F__ZUSATZ_MOEGLICH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH;
+
+	/**
+	 * The number of structural features of the '<em>Hp2 F</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HP2_F_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.KlImpl <em>Kl</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8910,7 +9680,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getKl()
 	 * @generated
 	 */
-	int KL = 58;
+	int KL = 63;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -9064,7 +9834,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getKs1()
 	 * @generated
 	 */
-	int KS1 = 59;
+	int KS1 = 64;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -9218,7 +9988,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getKs2()
 	 * @generated
 	 */
-	int KS2 = 60;
+	int KS2 = 65;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -9372,7 +10142,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getLf1()
 	 * @generated
 	 */
-	int LF1 = 61;
+	int LF1 = 66;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -9526,7 +10296,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getLf12()
 	 * @generated
 	 */
-	int LF12 = 62;
+	int LF12 = 67;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -9680,7 +10450,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getLf1Wdh()
 	 * @generated
 	 */
-	int LF1_WDH = 63;
+	int LF1_WDH = 68;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -9834,7 +10604,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getLf2()
 	 * @generated
 	 */
-	int LF2 = 64;
+	int LF2 = 69;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -9988,7 +10758,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getLf3()
 	 * @generated
 	 */
-	int LF3 = 65;
+	int LF3 = 70;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -10142,7 +10912,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getLf4DS()
 	 * @generated
 	 */
-	int LF4_DS = 66;
+	int LF4_DS = 71;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -10296,7 +11066,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getLf4DV()
 	 * @generated
 	 */
-	int LF4_DV = 67;
+	int LF4_DV = 72;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -10450,7 +11220,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getLf5DS()
 	 * @generated
 	 */
-	int LF5_DS = 68;
+	int LF5_DS = 73;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -10604,7 +11374,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getLf5DV()
 	 * @generated
 	 */
-	int LF5_DV = 69;
+	int LF5_DV = 74;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -10758,7 +11528,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getLf6()
 	 * @generated
 	 */
-	int LF6 = 70;
+	int LF6 = 75;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -10912,7 +11682,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getLf7()
 	 * @generated
 	 */
-	int LF7 = 71;
+	int LF7 = 76;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -11066,7 +11836,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getLfPfL()
 	 * @generated
 	 */
-	int LF_PF_L = 72;
+	int LF_PF_L = 77;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -11220,7 +11990,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getLfPfR()
 	 * @generated
 	 */
-	int LF_PF_R = 73;
+	int LF_PF_R = 78;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -11374,7 +12144,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getMsGeD()
 	 * @generated
 	 */
-	int MS_GE_D = 74;
+	int MS_GE_D = 79;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -11528,7 +12298,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getMsRt()
 	 * @generated
 	 */
-	int MS_RT = 75;
+	int MS_RT = 80;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -11682,7 +12452,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getMsSkGe()
 	 * @generated
 	 */
-	int MS_SK_GE = 76;
+	int MS_SK_GE = 81;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -11836,7 +12606,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getMsSkRt()
 	 * @generated
 	 */
-	int MS_SK_RT = 77;
+	int MS_SK_RT = 82;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -11990,7 +12760,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getMsUESWdh()
 	 * @generated
 	 */
-	int MS_UES_WDH = 78;
+	int MS_UES_WDH = 83;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -12144,7 +12914,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getMsVw()
 	 * @generated
 	 */
-	int MS_VW = 79;
+	int MS_VW = 84;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -12298,7 +13068,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getMsWs2swP()
 	 * @generated
 	 */
-	int MS_WS2SW_P = 80;
+	int MS_WS2SW_P = 85;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -12452,7 +13222,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getMsWsGeWs()
 	 * @generated
 	 */
-	int MS_WS_GE_WS = 81;
+	int MS_WS_GE_WS = 86;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -12606,7 +13376,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getMsWsRtWs()
 	 * @generated
 	 */
-	int MS_WS_RT_WS = 82;
+	int MS_WS_RT_WS = 87;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -12760,7 +13530,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getMsWsSwWs()
 	 * @generated
 	 */
-	int MS_WS_SW_WS = 83;
+	int MS_WS_SW_WS = 88;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -12914,7 +13684,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe1()
 	 * @generated
 	 */
-	int NE1 = 84;
+	int NE1 = 89;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -13068,7 +13838,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe12()
 	 * @generated
 	 */
-	int NE12 = 85;
+	int NE12 = 90;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -13222,7 +13992,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe13a()
 	 * @generated
 	 */
-	int NE13A = 86;
+	int NE13A = 91;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -13376,7 +14146,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe13b()
 	 * @generated
 	 */
-	int NE13B = 87;
+	int NE13B = 92;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -13530,7 +14300,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe14()
 	 * @generated
 	 */
-	int NE14 = 88;
+	int NE14 = 93;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -13684,7 +14454,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe2()
 	 * @generated
 	 */
-	int NE2 = 89;
+	int NE2 = 94;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -13838,7 +14608,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe2VRVA()
 	 * @generated
 	 */
-	int NE2_VRVA = 90;
+	int NE2_VRVA = 95;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -13992,7 +14762,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe31str()
 	 * @generated
 	 */
-	int NE31STR = 91;
+	int NE31STR = 96;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -14146,7 +14916,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe32str()
 	 * @generated
 	 */
-	int NE32STR = 92;
+	int NE32STR = 97;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -14300,7 +15070,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe33str()
 	 * @generated
 	 */
-	int NE33STR = 93;
+	int NE33STR = 98;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -14454,7 +15224,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe34str()
 	 * @generated
 	 */
-	int NE34STR = 94;
+	int NE34STR = 99;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -14608,7 +15378,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe35str()
 	 * @generated
 	 */
-	int NE35STR = 95;
+	int NE35STR = 100;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -14762,7 +15532,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe4()
 	 * @generated
 	 */
-	int NE4 = 96;
+	int NE4 = 101;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -14916,7 +15686,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe5()
 	 * @generated
 	 */
-	int NE5 = 97;
+	int NE5 = 102;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -15070,7 +15840,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe6()
 	 * @generated
 	 */
-	int NE6 = 98;
+	int NE6 = 103;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -15224,7 +15994,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe7a()
 	 * @generated
 	 */
-	int NE7A = 99;
+	int NE7A = 104;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -15378,7 +16148,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getNe7b()
 	 * @generated
 	 */
-	int NE7B = 100;
+	int NE7B = 105;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -15532,7 +16302,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzAutoET()
 	 * @generated
 	 */
-	int OZ_AUTO_ET = 101;
+	int OZ_AUTO_ET = 106;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -15686,7 +16456,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzAutoHET()
 	 * @generated
 	 */
-	int OZ_AUTO_HET = 102;
+	int OZ_AUTO_HET = 107;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -15840,7 +16610,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzBk()
 	 * @generated
 	 */
-	int OZ_BK = 103;
+	int OZ_BK = 108;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -15994,7 +16764,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzET()
 	 * @generated
 	 */
-	int OZ_ET = 104;
+	int OZ_ET = 109;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -16148,7 +16918,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzFa()
 	 * @generated
 	 */
-	int OZ_FA = 105;
+	int OZ_FA = 110;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -16302,7 +17072,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzFak()
 	 * @generated
 	 */
-	int OZ_FAK = 106;
+	int OZ_FAK = 111;
 
 	/**
 	 * The number of structural features of the '<em>Oz Fak</em>' class.
@@ -16321,7 +17091,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzGSMR()
 	 * @generated
 	 */
-	int OZ_GSMR = 107;
+	int OZ_GSMR = 112;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -16475,7 +17245,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzHET()
 	 * @generated
 	 */
-	int OZ_HET = 108;
+	int OZ_HET = 113;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -16629,7 +17399,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzHM()
 	 * @generated
 	 */
-	int OZ_HM = 109;
+	int OZ_HM = 114;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -16783,7 +17553,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzICE()
 	 * @generated
 	 */
-	int OZ_ICE = 110;
+	int OZ_ICE = 115;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -16937,7 +17707,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzLZBBer()
 	 * @generated
 	 */
-	int OZ_LZB_BER = 111;
+	int OZ_LZB_BER = 116;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -17091,7 +17861,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzOBGrenze()
 	 * @generated
 	 */
-	int OZ_OB_GRENZE = 112;
+	int OZ_OB_GRENZE = 117;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -17238,6 +18008,160 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	int OZ_OB_GRENZE_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.OzPZB2000HzImpl <em>Oz PZB2000 Hz</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.OzPZB2000HzImpl
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzPZB2000Hz()
+	 * @generated
+	 */
+	int OZ_PZB2000_HZ = 118;
+
+	/**
+	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__SYMBOL = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SYMBOL;
+
+	/**
+	 * The feature id for the '<em><b>Anmerkungen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__ANMERKUNGEN = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ANMERKUNGEN;
+
+	/**
+	 * The feature id for the '<em><b>Beleuchtbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__BELEUCHTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BELEUCHTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Beschreibung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__BESCHREIBUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BESCHREIBUNG;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__GELTUNGSBEREICH_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DS;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__GELTUNGSBEREICH_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DV;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__GELTUNGSBEREICH_SBAHN_B = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_B;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn HH</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__GELTUNGSBEREICH_SBAHN_HH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_HH;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Ab</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__GUELTIG_AB = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_AB;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Bis</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__GUELTIG_BIS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_BIS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__KURZBEZEICHNUNG_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__KURZBEZEICHNUNG_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DV;
+
+	/**
+	 * The feature id for the '<em><b>Langbezeichnung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__LANGBEZEICHNUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__LANGBEZEICHNUNG;
+
+	/**
+	 * The feature id for the '<em><b>Schaltbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__SCHALTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SCHALTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Zusatz Moeglich</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ__ZUSATZ_MOEGLICH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH;
+
+	/**
+	 * The number of structural features of the '<em>Oz PZB2000 Hz</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_PZB2000_HZ_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.OzPZBBUEImpl <em>Oz PZBBUE</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -17245,7 +18169,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzPZBBUE()
 	 * @generated
 	 */
-	int OZ_PZBBUE = 113;
+	int OZ_PZBBUE = 119;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -17399,7 +18323,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzZf()
 	 * @generated
 	 */
-	int OZ_ZF = 114;
+	int OZ_ZF = 120;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -17553,7 +18477,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOzZugl()
 	 * @generated
 	 */
-	int OZ_ZUGL = 115;
+	int OZ_ZUGL = 121;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -17581,7 +18505,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getPf2()
 	 * @generated
 	 */
-	int PF2 = 116;
+	int PF2 = 122;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -17735,7 +18659,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getRa10()
 	 * @generated
 	 */
-	int RA10 = 117;
+	int RA10 = 123;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -17889,7 +18813,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getRa11()
 	 * @generated
 	 */
-	int RA11 = 118;
+	int RA11 = 124;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -18043,7 +18967,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getRa11b()
 	 * @generated
 	 */
-	int RA11B = 119;
+	int RA11B = 125;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -18197,7 +19121,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getRa12()
 	 * @generated
 	 */
-	int RA12 = 120;
+	int RA12 = 126;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -18351,7 +19275,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getRa13()
 	 * @generated
 	 */
-	int RA13 = 121;
+	int RA13 = 127;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -18505,7 +19429,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSh0()
 	 * @generated
 	 */
-	int SH0 = 122;
+	int SH0 = 128;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -18659,7 +19583,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSh1()
 	 * @generated
 	 */
-	int SH1 = 123;
+	int SH1 = 129;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -18813,7 +19737,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSh2()
 	 * @generated
 	 */
-	int SH2 = 124;
+	int SH2 = 130;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -18967,7 +19891,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSk1()
 	 * @generated
 	 */
-	int SK1 = 125;
+	int SK1 = 131;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -19121,7 +20045,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSk2()
 	 * @generated
 	 */
-	int SK2 = 126;
+	int SK2 = 132;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -19275,7 +20199,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSo1()
 	 * @generated
 	 */
-	int SO1 = 127;
+	int SO1 = 133;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -19429,7 +20353,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSo106()
 	 * @generated
 	 */
-	int SO106 = 128;
+	int SO106 = 134;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -19583,7 +20507,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSo14()
 	 * @generated
 	 */
-	int SO14 = 129;
+	int SO14 = 135;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -19737,7 +20661,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSo15()
 	 * @generated
 	 */
-	int SO15 = 130;
+	int SO15 = 136;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -19891,7 +20815,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSo191P()
 	 * @generated
 	 */
-	int SO191_P = 131;
+	int SO191_P = 137;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -20045,7 +20969,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSo192P()
 	 * @generated
 	 */
-	int SO192_P = 132;
+	int SO192_P = 138;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -20199,7 +21123,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSo193P()
 	 * @generated
 	 */
-	int SO193_P = 133;
+	int SO193_P = 139;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -20353,7 +21277,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSo20()
 	 * @generated
 	 */
-	int SO20 = 134;
+	int SO20 = 140;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -20507,7 +21431,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSv0()
 	 * @generated
 	 */
-	int SV0 = 135;
+	int SV0 = 141;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -20661,7 +21585,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSv1()
 	 * @generated
 	 */
-	int SV1 = 136;
+	int SV1 = 142;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -20815,7 +21739,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSv2()
 	 * @generated
 	 */
-	int SV2 = 137;
+	int SV2 = 143;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -20969,7 +21893,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSv3()
 	 * @generated
 	 */
-	int SV3 = 138;
+	int SV3 = 144;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -21123,7 +22047,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSv4()
 	 * @generated
 	 */
-	int SV4 = 139;
+	int SV4 = 145;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -21277,7 +22201,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSv5()
 	 * @generated
 	 */
-	int SV5 = 140;
+	int SV5 = 146;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -21431,7 +22355,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSv6()
 	 * @generated
 	 */
-	int SV6 = 141;
+	int SV6 = 147;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -21585,7 +22509,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getSvWPf()
 	 * @generated
 	 */
-	int SV_WPF = 142;
+	int SV_WPF = 148;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -21739,7 +22663,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getTs1()
 	 * @generated
 	 */
-	int TS1 = 143;
+	int TS1 = 149;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -21893,7 +22817,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getTs2()
 	 * @generated
 	 */
-	int TS2 = 144;
+	int TS2 = 150;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -22047,7 +22971,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getTs3()
 	 * @generated
 	 */
-	int TS3 = 145;
+	int TS3 = 151;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -22201,7 +23125,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getUkr()
 	 * @generated
 	 */
-	int UKR = 146;
+	int UKR = 152;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -22355,7 +23279,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getVr0()
 	 * @generated
 	 */
-	int VR0 = 147;
+	int VR0 = 153;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -22502,6 +23426,160 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	int VR0_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Vr0FImpl <em>Vr0 F</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Vr0FImpl
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getVr0F()
+	 * @generated
+	 */
+	int VR0_F = 154;
+
+	/**
+	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__SYMBOL = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SYMBOL;
+
+	/**
+	 * The feature id for the '<em><b>Anmerkungen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__ANMERKUNGEN = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ANMERKUNGEN;
+
+	/**
+	 * The feature id for the '<em><b>Beleuchtbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__BELEUCHTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BELEUCHTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Beschreibung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__BESCHREIBUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BESCHREIBUNG;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__GELTUNGSBEREICH_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DS;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__GELTUNGSBEREICH_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DV;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__GELTUNGSBEREICH_SBAHN_B = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_B;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn HH</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__GELTUNGSBEREICH_SBAHN_HH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_HH;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Ab</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__GUELTIG_AB = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_AB;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Bis</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__GUELTIG_BIS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_BIS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__KURZBEZEICHNUNG_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__KURZBEZEICHNUNG_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DV;
+
+	/**
+	 * The feature id for the '<em><b>Langbezeichnung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__LANGBEZEICHNUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__LANGBEZEICHNUNG;
+
+	/**
+	 * The feature id for the '<em><b>Schaltbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__SCHALTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SCHALTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Zusatz Moeglich</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F__ZUSATZ_MOEGLICH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH;
+
+	/**
+	 * The number of structural features of the '<em>Vr0 F</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR0_F_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Vr1Impl <em>Vr1</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22509,7 +23587,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getVr1()
 	 * @generated
 	 */
-	int VR1 = 148;
+	int VR1 = 155;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -22656,6 +23734,314 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	int VR1_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Vr12FImpl <em>Vr12 F</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Vr12FImpl
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getVr12F()
+	 * @generated
+	 */
+	int VR12_F = 156;
+
+	/**
+	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__SYMBOL = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SYMBOL;
+
+	/**
+	 * The feature id for the '<em><b>Anmerkungen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__ANMERKUNGEN = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ANMERKUNGEN;
+
+	/**
+	 * The feature id for the '<em><b>Beleuchtbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__BELEUCHTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BELEUCHTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Beschreibung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__BESCHREIBUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BESCHREIBUNG;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__GELTUNGSBEREICH_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DS;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__GELTUNGSBEREICH_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DV;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__GELTUNGSBEREICH_SBAHN_B = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_B;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn HH</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__GELTUNGSBEREICH_SBAHN_HH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_HH;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Ab</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__GUELTIG_AB = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_AB;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Bis</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__GUELTIG_BIS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_BIS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__KURZBEZEICHNUNG_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__KURZBEZEICHNUNG_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DV;
+
+	/**
+	 * The feature id for the '<em><b>Langbezeichnung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__LANGBEZEICHNUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__LANGBEZEICHNUNG;
+
+	/**
+	 * The feature id for the '<em><b>Schaltbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__SCHALTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SCHALTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Zusatz Moeglich</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F__ZUSATZ_MOEGLICH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH;
+
+	/**
+	 * The number of structural features of the '<em>Vr12 F</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR12_F_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Vr1FImpl <em>Vr1 F</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Vr1FImpl
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getVr1F()
+	 * @generated
+	 */
+	int VR1_F = 157;
+
+	/**
+	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__SYMBOL = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SYMBOL;
+
+	/**
+	 * The feature id for the '<em><b>Anmerkungen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__ANMERKUNGEN = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ANMERKUNGEN;
+
+	/**
+	 * The feature id for the '<em><b>Beleuchtbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__BELEUCHTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BELEUCHTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Beschreibung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__BESCHREIBUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BESCHREIBUNG;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__GELTUNGSBEREICH_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DS;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__GELTUNGSBEREICH_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DV;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__GELTUNGSBEREICH_SBAHN_B = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_B;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn HH</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__GELTUNGSBEREICH_SBAHN_HH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_HH;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Ab</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__GUELTIG_AB = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_AB;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Bis</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__GUELTIG_BIS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_BIS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__KURZBEZEICHNUNG_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__KURZBEZEICHNUNG_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DV;
+
+	/**
+	 * The feature id for the '<em><b>Langbezeichnung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__LANGBEZEICHNUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__LANGBEZEICHNUNG;
+
+	/**
+	 * The feature id for the '<em><b>Schaltbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__SCHALTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SCHALTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Zusatz Moeglich</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F__ZUSATZ_MOEGLICH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH;
+
+	/**
+	 * The number of structural features of the '<em>Vr1 F</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR1_F_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Vr2Impl <em>Vr2</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22663,7 +24049,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getVr2()
 	 * @generated
 	 */
-	int VR2 = 149;
+	int VR2 = 158;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -22810,6 +24196,160 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	int VR2_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Vr2FImpl <em>Vr2 F</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Vr2FImpl
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getVr2F()
+	 * @generated
+	 */
+	int VR2_F = 159;
+
+	/**
+	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__SYMBOL = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SYMBOL;
+
+	/**
+	 * The feature id for the '<em><b>Anmerkungen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__ANMERKUNGEN = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ANMERKUNGEN;
+
+	/**
+	 * The feature id for the '<em><b>Beleuchtbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__BELEUCHTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BELEUCHTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Beschreibung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__BESCHREIBUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BESCHREIBUNG;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__GELTUNGSBEREICH_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DS;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__GELTUNGSBEREICH_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DV;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__GELTUNGSBEREICH_SBAHN_B = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_B;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn HH</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__GELTUNGSBEREICH_SBAHN_HH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_HH;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Ab</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__GUELTIG_AB = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_AB;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Bis</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__GUELTIG_BIS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_BIS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__KURZBEZEICHNUNG_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__KURZBEZEICHNUNG_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DV;
+
+	/**
+	 * The feature id for the '<em><b>Langbezeichnung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__LANGBEZEICHNUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__LANGBEZEICHNUNG;
+
+	/**
+	 * The feature id for the '<em><b>Schaltbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__SCHALTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SCHALTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Zusatz Moeglich</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F__ZUSATZ_MOEGLICH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH;
+
+	/**
+	 * The number of structural features of the '<em>Vr2 F</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VR2_F_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Wn1Impl <em>Wn1</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22817,7 +24357,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getWn1()
 	 * @generated
 	 */
-	int WN1 = 150;
+	int WN1 = 160;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -22971,7 +24511,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getWn2()
 	 * @generated
 	 */
-	int WN2 = 151;
+	int WN2 = 161;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -23125,7 +24665,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getWn3()
 	 * @generated
 	 */
-	int WN3 = 152;
+	int WN3 = 162;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -23279,7 +24819,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getWn4()
 	 * @generated
 	 */
-	int WN4 = 153;
+	int WN4 = 163;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -23433,7 +24973,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getWn5()
 	 * @generated
 	 */
-	int WN5 = 154;
+	int WN5 = 164;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -23587,7 +25127,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getWn6()
 	 * @generated
 	 */
-	int WN6 = 155;
+	int WN6 = 165;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -23741,7 +25281,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getWn7()
 	 * @generated
 	 */
-	int WN7 = 156;
+	int WN7 = 166;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -23895,7 +25435,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getWvs()
 	 * @generated
 	 */
-	int WVS = 157;
+	int WVS = 167;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -24049,7 +25589,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZlO()
 	 * @generated
 	 */
-	int ZL_O = 158;
+	int ZL_O = 168;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -24203,7 +25743,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZlU()
 	 * @generated
 	 */
-	int ZL_U = 159;
+	int ZL_U = 169;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -24357,7 +25897,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZp10()
 	 * @generated
 	 */
-	int ZP10 = 160;
+	int ZP10 = 170;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -24511,7 +26051,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZp10Ls()
 	 * @generated
 	 */
-	int ZP10_LS = 161;
+	int ZP10_LS = 171;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -24665,7 +26205,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZp6()
 	 * @generated
 	 */
-	int ZP6 = 162;
+	int ZP6 = 172;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -24819,7 +26359,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZp7()
 	 * @generated
 	 */
-	int ZP7 = 163;
+	int ZP7 = 173;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -24973,7 +26513,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZp8()
 	 * @generated
 	 */
-	int ZP8 = 164;
+	int ZP8 = 174;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -25127,7 +26667,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZp9()
 	 * @generated
 	 */
-	int ZP9 = 165;
+	int ZP9 = 175;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -25281,7 +26821,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZp9Ls()
 	 * @generated
 	 */
-	int ZP9_LS = 166;
+	int ZP9_LS = 176;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -25435,7 +26975,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs1()
 	 * @generated
 	 */
-	int ZS1 = 167;
+	int ZS1 = 177;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -25589,7 +27129,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs10()
 	 * @generated
 	 */
-	int ZS10 = 168;
+	int ZS10 = 178;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -25743,7 +27283,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs103()
 	 * @generated
 	 */
-	int ZS103 = 169;
+	int ZS103 = 179;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -25897,7 +27437,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs12()
 	 * @generated
 	 */
-	int ZS12 = 170;
+	int ZS12 = 180;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -26051,7 +27591,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs13()
 	 * @generated
 	 */
-	int ZS13 = 171;
+	int ZS13 = 181;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -26205,7 +27745,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs1A()
 	 * @generated
 	 */
-	int ZS1_A = 172;
+	int ZS1_A = 182;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -26359,7 +27899,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs2()
 	 * @generated
 	 */
-	int ZS2 = 173;
+	int ZS2 = 183;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -26513,7 +28053,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs2v()
 	 * @generated
 	 */
-	int ZS2V = 174;
+	int ZS2V = 184;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -26667,7 +28207,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs3()
 	 * @generated
 	 */
-	int ZS3 = 175;
+	int ZS3 = 185;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -26821,7 +28361,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs3v()
 	 * @generated
 	 */
-	int ZS3V = 176;
+	int ZS3V = 186;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -26975,7 +28515,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs6()
 	 * @generated
 	 */
-	int ZS6 = 177;
+	int ZS6 = 187;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -27129,7 +28669,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs7()
 	 * @generated
 	 */
-	int ZS7 = 178;
+	int ZS7 = 188;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -27283,7 +28823,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs8()
 	 * @generated
 	 */
-	int ZS8 = 179;
+	int ZS8 = 189;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -27437,7 +28977,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs8A()
 	 * @generated
 	 */
-	int ZS8_A = 180;
+	int ZS8_A = 190;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -27591,7 +29131,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getZs9()
 	 * @generated
 	 */
-	int ZS9 = 181;
+	int ZS9 = 191;
 
 	/**
 	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
@@ -27738,6 +29278,16 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	int ZS9_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolEl34Zusatz <em>ENUM Symbol El34 Zusatz</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolEl34Zusatz
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolEl34Zusatz()
+	 * @generated
+	 */
+	int ENUM_SYMBOL_EL34_ZUSATZ = 192;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolLf1 <em>ENUM Symbol Lf1</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -27745,7 +29295,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf1()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF1 = 182;
+	int ENUM_SYMBOL_LF1 = 193;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolLf12 <em>ENUM Symbol Lf12</em>}' enum.
@@ -27755,7 +29305,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf12()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF12 = 183;
+	int ENUM_SYMBOL_LF12 = 194;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolLf1Wdh <em>ENUM Symbol Lf1 Wdh</em>}' enum.
@@ -27765,7 +29315,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf1Wdh()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF1_WDH = 184;
+	int ENUM_SYMBOL_LF1_WDH = 195;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolLf4DS <em>ENUM Symbol Lf4 DS</em>}' enum.
@@ -27775,7 +29325,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf4DS()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF4_DS = 185;
+	int ENUM_SYMBOL_LF4_DS = 196;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolLf4DV <em>ENUM Symbol Lf4 DV</em>}' enum.
@@ -27785,7 +29335,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf4DV()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF4_DV = 186;
+	int ENUM_SYMBOL_LF4_DV = 197;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolLf6 <em>ENUM Symbol Lf6</em>}' enum.
@@ -27795,7 +29345,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf6()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF6 = 187;
+	int ENUM_SYMBOL_LF6 = 198;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolLf7 <em>ENUM Symbol Lf7</em>}' enum.
@@ -27805,7 +29355,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf7()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF7 = 188;
+	int ENUM_SYMBOL_LF7 = 199;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolZs2 <em>ENUM Symbol Zs2</em>}' enum.
@@ -27815,7 +29365,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolZs2()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_ZS2 = 189;
+	int ENUM_SYMBOL_ZS2 = 200;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolZs2v <em>ENUM Symbol Zs2v</em>}' enum.
@@ -27825,7 +29375,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolZs2v()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_ZS2V = 190;
+	int ENUM_SYMBOL_ZS2V = 201;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolZs3 <em>ENUM Symbol Zs3</em>}' enum.
@@ -27835,7 +29385,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolZs3()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_ZS3 = 191;
+	int ENUM_SYMBOL_ZS3 = 202;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolZs3v <em>ENUM Symbol Zs3v</em>}' enum.
@@ -27845,7 +29395,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolZs3v()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_ZS3V = 192;
+	int ENUM_SYMBOL_ZS3V = 203;
 
 	/**
 	 * The meta object id for the '<em>BS Zusatz Symbol Type</em>' data type.
@@ -27855,7 +29405,17 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getBS_Zusatz_Symbol_Type()
 	 * @generated
 	 */
-	int BS_ZUSATZ_SYMBOL_TYPE = 193;
+	int BS_ZUSATZ_SYMBOL_TYPE = 204;
+
+	/**
+	 * The meta object id for the '<em>ENUM Symbol El34 Zusatz Object</em>' data type.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolEl34Zusatz
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolEl34ZusatzObject()
+	 * @generated
+	 */
+	int ENUM_SYMBOL_EL34_ZUSATZ_OBJECT = 205;
 
 	/**
 	 * The meta object id for the '<em>ENUM Symbol Lf12 Object</em>' data type.
@@ -27865,7 +29425,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf12Object()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF12_OBJECT = 194;
+	int ENUM_SYMBOL_LF12_OBJECT = 206;
 
 	/**
 	 * The meta object id for the '<em>ENUM Symbol Lf1 Object</em>' data type.
@@ -27875,7 +29435,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf1Object()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF1_OBJECT = 195;
+	int ENUM_SYMBOL_LF1_OBJECT = 207;
 
 	/**
 	 * The meta object id for the '<em>ENUM Symbol Lf1 Wdh Object</em>' data type.
@@ -27885,7 +29445,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf1WdhObject()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF1_WDH_OBJECT = 196;
+	int ENUM_SYMBOL_LF1_WDH_OBJECT = 208;
 
 	/**
 	 * The meta object id for the '<em>ENUM Symbol Lf4 DS Object</em>' data type.
@@ -27895,7 +29455,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf4DSObject()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF4_DS_OBJECT = 197;
+	int ENUM_SYMBOL_LF4_DS_OBJECT = 209;
 
 	/**
 	 * The meta object id for the '<em>ENUM Symbol Lf4 DV Object</em>' data type.
@@ -27905,7 +29465,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf4DVObject()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF4_DV_OBJECT = 198;
+	int ENUM_SYMBOL_LF4_DV_OBJECT = 210;
 
 	/**
 	 * The meta object id for the '<em>ENUM Symbol Lf6 Object</em>' data type.
@@ -27915,7 +29475,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf6Object()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF6_OBJECT = 199;
+	int ENUM_SYMBOL_LF6_OBJECT = 211;
 
 	/**
 	 * The meta object id for the '<em>ENUM Symbol Lf7 Object</em>' data type.
@@ -27925,7 +29485,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolLf7Object()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_LF7_OBJECT = 200;
+	int ENUM_SYMBOL_LF7_OBJECT = 212;
 
 	/**
 	 * The meta object id for the '<em>ENUM Symbol Zs2 Object</em>' data type.
@@ -27935,7 +29495,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolZs2Object()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_ZS2_OBJECT = 201;
+	int ENUM_SYMBOL_ZS2_OBJECT = 213;
 
 	/**
 	 * The meta object id for the '<em>ENUM Symbol Zs2v Object</em>' data type.
@@ -27945,7 +29505,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolZs2vObject()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_ZS2V_OBJECT = 202;
+	int ENUM_SYMBOL_ZS2V_OBJECT = 214;
 
 	/**
 	 * The meta object id for the '<em>ENUM Symbol Zs3 Object</em>' data type.
@@ -27955,7 +29515,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolZs3Object()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_ZS3_OBJECT = 203;
+	int ENUM_SYMBOL_ZS3_OBJECT = 215;
 
 	/**
 	 * The meta object id for the '<em>ENUM Symbol Zs3v Object</em>' data type.
@@ -27965,7 +29525,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getENUMSymbolZs3vObject()
 	 * @generated
 	 */
-	int ENUM_SYMBOL_ZS3V_OBJECT = 204;
+	int ENUM_SYMBOL_ZS3V_OBJECT = 216;
 
 	/**
 	 * The meta object id for the '<em>Oz Zugl Symbol Type</em>' data type.
@@ -27975,7 +29535,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Signalbegriffe_Ril_301PackageImpl#getOz_Zugl_Symbol_Type()
 	 * @generated
 	 */
-	int OZ_ZUGL_SYMBOL_TYPE = 205;
+	int OZ_ZUGL_SYMBOL_TYPE = 217;
 
 
 	/**
@@ -28269,6 +29829,26 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	EClass getEl3();
 
 	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El34Zusatz <em>El34 Zusatz</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>El34 Zusatz</em>'.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El34Zusatz
+	 * @generated
+	 */
+	EClass getEl34Zusatz();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El34ZusatzKombi <em>El34 Zusatz Kombi</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>El34 Zusatz Kombi</em>'.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El34ZusatzKombi
+	 * @generated
+	 */
+	EClass getEl34ZusatzKombi();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El4 <em>El4</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -28539,6 +30119,16 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	EClass getHp02Lp();
 
 	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp0F <em>Hp0 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Hp0 F</em>'.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp0F
+	 * @generated
+	 */
+	EClass getHp0F();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp1 <em>Hp1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -28549,6 +30139,16 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	EClass getHp1();
 
 	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp1F <em>Hp1 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Hp1 F</em>'.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp1F
+	 * @generated
+	 */
+	EClass getHp1F();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp2 <em>Hp2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -28557,6 +30157,16 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @generated
 	 */
 	EClass getHp2();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp2F <em>Hp2 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Hp2 F</em>'.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp2F
+	 * @generated
+	 */
+	EClass getHp2F();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Kl <em>Kl</em>}'.
@@ -29109,6 +30719,16 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	EClass getOzOBGrenze();
 
 	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.OzPZB2000Hz <em>Oz PZB2000 Hz</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Oz PZB2000 Hz</em>'.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.OzPZB2000Hz
+	 * @generated
+	 */
+	EClass getOzPZB2000Hz();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.OzPZBBUE <em>Oz PZBBUE</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -29470,6 +31090,16 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	EClass getVr0();
 
 	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr0F <em>Vr0 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Vr0 F</em>'.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr0F
+	 * @generated
+	 */
+	EClass getVr0F();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr1 <em>Vr1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -29480,6 +31110,26 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	EClass getVr1();
 
 	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr12F <em>Vr12 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Vr12 F</em>'.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr12F
+	 * @generated
+	 */
+	EClass getVr12F();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr1F <em>Vr1 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Vr1 F</em>'.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr1F
+	 * @generated
+	 */
+	EClass getVr1F();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr2 <em>Vr2</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -29488,6 +31138,16 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @generated
 	 */
 	EClass getVr2();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr2F <em>Vr2 F</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Vr2 F</em>'.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr2F
+	 * @generated
+	 */
+	EClass getVr2F();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Wn1 <em>Wn1</em>}'.
@@ -29810,6 +31470,16 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	EClass getZs9();
 
 	/**
+	 * Returns the meta object for enum '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolEl34Zusatz <em>ENUM Symbol El34 Zusatz</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>ENUM Symbol El34 Zusatz</em>'.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolEl34Zusatz
+	 * @generated
+	 */
+	EEnum getENUMSymbolEl34Zusatz();
+
+	/**
 	 * Returns the meta object for enum '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolLf1 <em>ENUM Symbol Lf1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -29930,6 +31600,18 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @generated
 	 */
 	EDataType getBS_Zusatz_Symbol_Type();
+
+	/**
+	 * Returns the meta object for data type '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolEl34Zusatz <em>ENUM Symbol El34 Zusatz Object</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for data type '<em>ENUM Symbol El34 Zusatz Object</em>'.
+	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolEl34Zusatz
+	 * @model instanceClass="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolEl34Zusatz"
+	 *        extendedMetaData="name='ENUMSymbol_El_3_4_Zusatz:Object' baseType='ENUMSymbol_El_3_4_Zusatz'"
+	 * @generated
+	 */
+	EDataType getENUMSymbolEl34ZusatzObject();
 
 	/**
 	 * Returns the meta object for data type '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.ENUMSymbolLf12 <em>ENUM Symbol Lf12 Object</em>}'.

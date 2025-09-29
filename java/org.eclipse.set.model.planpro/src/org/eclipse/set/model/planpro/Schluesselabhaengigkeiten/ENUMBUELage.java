@@ -135,8 +135,8 @@ public enum ENUMBUELage implements Enumerator {
 		switch (value) {
 			case ENUMBUE_LAGE_GEOEFFNET_VALUE: return ENUMBUE_LAGE_GEOEFFNET;
 			case ENUMBUE_LAGE_GESCHLOSSEN_VALUE: return ENUMBUE_LAGE_GESCHLOSSEN;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -121,9 +121,8 @@ public class Gleis_AbschlussImpl extends Punkt_ObjektImpl implements Gleis_Absch
 		switch (featureID) {
 			case Weichen_und_GleissperrenPackage.GLEIS_ABSCHLUSS__GLEIS_ABSCHLUSS_ART:
 				return basicSetGleisAbschlussArt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,9 +135,8 @@ public class Gleis_AbschlussImpl extends Punkt_ObjektImpl implements Gleis_Absch
 		switch (featureID) {
 			case Weichen_und_GleissperrenPackage.GLEIS_ABSCHLUSS__GLEIS_ABSCHLUSS_ART:
 				return getGleisAbschlussArt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -152,10 +150,8 @@ public class Gleis_AbschlussImpl extends Punkt_ObjektImpl implements Gleis_Absch
 			case Weichen_und_GleissperrenPackage.GLEIS_ABSCHLUSS__GLEIS_ABSCHLUSS_ART:
 				setGleisAbschlussArt((Gleis_Abschluss_Art_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -169,10 +165,8 @@ public class Gleis_AbschlussImpl extends Punkt_ObjektImpl implements Gleis_Absch
 			case Weichen_und_GleissperrenPackage.GLEIS_ABSCHLUSS__GLEIS_ABSCHLUSS_ART:
 				setGleisAbschlussArt((Gleis_Abschluss_Art_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -185,9 +179,8 @@ public class Gleis_AbschlussImpl extends Punkt_ObjektImpl implements Gleis_Absch
 		switch (featureID) {
 			case Weichen_und_GleissperrenPackage.GLEIS_ABSCHLUSS__GLEIS_ABSCHLUSS_ART:
 				return gleisAbschlussArt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Gleis_AbschlussImpl

@@ -137,10 +137,8 @@ public class ZUB_Bereichsgrenze_Nach_GNT_TypeClassItemProvider extends BasisAttr
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_GNT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

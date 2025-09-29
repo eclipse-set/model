@@ -158,10 +158,8 @@ public class FMA_Anlage_Allg_AttributeGroupItemProvider
 			case OrtungPackage.FMA_ANLAGE_ALLG_ATTRIBUTE_GROUP__FMA_TYP:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

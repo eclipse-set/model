@@ -785,7 +785,7 @@ public class FahrstrasseValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] AUFLOESUNG_VERZOEGERUNG_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("0|[1-9][0-9]{0,1}|1[0-1][0-9]|120")
+				XMLTypeUtil.createPatternMatcher("0|[1-9][0-9]{0,1}|1[0-4][0-9]|150")
 			},
 			new PatternMatcher [] {
 				XMLTypeUtil.createPatternMatcher("[0-9]{1,5}(\\.[0-9]{2})?")

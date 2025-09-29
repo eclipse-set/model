@@ -138,10 +138,8 @@ public class TP_Art_TypeClassItemProvider extends BasisAttribut_AttributeGroupIt
 			case GeodatenPackage.TP_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -137,10 +137,8 @@ public class FA_FAE_TypeClassItemProvider extends BasisAttribut_AttributeGroupIt
 			case NahbedienungPackage.FA_FAE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

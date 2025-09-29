@@ -137,10 +137,8 @@ public class Anwendung_ESG_TypeClassItemProvider extends BasisAttribut_Attribute
 			case Balisentechnik_ETCSPackage.ANWENDUNG_ESG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

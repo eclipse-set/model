@@ -120,9 +120,8 @@ public class Bahnsteig_Kante_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case BahnsteigPackage.BAHNSTEIG_KANTE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BAHNSTEIG_KANTE:
 				return basicSetBezeichnungBahnsteigKante(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,9 +134,8 @@ public class Bahnsteig_Kante_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case BahnsteigPackage.BAHNSTEIG_KANTE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BAHNSTEIG_KANTE:
 				return getBezeichnungBahnsteigKante();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,10 +149,8 @@ public class Bahnsteig_Kante_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 			case BahnsteigPackage.BAHNSTEIG_KANTE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BAHNSTEIG_KANTE:
 				setBezeichnungBahnsteigKante((Bezeichnung_Bahnsteig_Kante_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -168,10 +164,8 @@ public class Bahnsteig_Kante_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 			case BahnsteigPackage.BAHNSTEIG_KANTE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BAHNSTEIG_KANTE:
 				setBezeichnungBahnsteigKante((Bezeichnung_Bahnsteig_Kante_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -184,9 +178,8 @@ public class Bahnsteig_Kante_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case BahnsteigPackage.BAHNSTEIG_KANTE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BAHNSTEIG_KANTE:
 				return bezeichnungBahnsteigKante != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bahnsteig_Kante_Bezeichnung_AttributeGroupImpl

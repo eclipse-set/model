@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +128,7 @@ public interface SchluesselabhaengigkeitenPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Schluesselabhaengigkeiten/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Schluesselabhaengigkeiten/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -2786,7 +2786,7 @@ public interface SchluesselabhaengigkeitenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Beschreibung Sonderanlage Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBeschreibung_Sonderanlage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,50}'"
+	 *        extendedMetaData="name='TBeschreibung_Sonderanlage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,50}'"
 	 * @generated
 	 */
 	EDataType getBeschreibung_Sonderanlage_Type();
@@ -2798,7 +2798,7 @@ public interface SchluesselabhaengigkeitenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Schloss Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Schloss' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,20}'"
+	 *        extendedMetaData="name='TBezeichnung_Schloss' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,20}'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Schloss_Type();
@@ -2810,7 +2810,7 @@ public interface SchluesselabhaengigkeitenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Schluessel Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Schluessel' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,20}'"
+	 *        extendedMetaData="name='TBezeichnung_Schluessel' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,20}'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Schluessel_Type();
@@ -2822,7 +2822,7 @@ public interface SchluesselabhaengigkeitenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Sk Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Sk' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette'"
+	 *        extendedMetaData="name='TBezeichnung_Sk' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Sk_Type();
@@ -2930,7 +2930,7 @@ public interface SchluesselabhaengigkeitenPackage extends EPackage {
 	 * @return the meta object for data type '<em>WAnbaulage Type</em>'.
 	 * @see org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts
 	 * @model instanceClass="org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts"
-	 *        extendedMetaData="name='TW_Anbaulage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts'"
+	 *        extendedMetaData="name='TW_Anbaulage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts'"
 	 * @generated
 	 */
 	EDataType getW_Anbaulage_Type();
@@ -2942,7 +2942,7 @@ public interface SchluesselabhaengigkeitenPackage extends EPackage {
 	 * @return the meta object for data type '<em>WLage Type</em>'.
 	 * @see org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts
 	 * @model instanceClass="org.eclipse.set.model.planpro.BasisTypen.ENUMLinksRechts"
-	 *        extendedMetaData="name='TW_Lage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TLinksRechts'"
+	 *        extendedMetaData="name='TW_Lage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TLinksRechts'"
 	 * @generated
 	 */
 	EDataType getW_Lage_Type();

@@ -37,7 +37,7 @@ public interface Signal_Fiktiv_AttributeGroup extends EObject {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Art der automatischen Einstellung.
-	 * DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung; bei realen, aktiven Signalen mittelbar aus Angaben in der Zugstraßentabelle zu erkennen.
+	 * DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Auto Einstellung</em>' containment reference.
 	 * @see #setAutoEinstellung(Auto_Einstellung_TypeClass)

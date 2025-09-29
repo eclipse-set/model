@@ -137,10 +137,8 @@ public class Nagetierschutz_TypeClassItemProvider extends BasisAttribut_Attribut
 			case Medien_und_TrassenPackage.NAGETIERSCHUTZ_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

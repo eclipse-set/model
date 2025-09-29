@@ -154,10 +154,8 @@ public class ZUB_Bereichsgrenze_Nach_Sonstige_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_SONSTIGE_ATTRIBUTE_GROUP__LAENGE_AUSFUEHRUNGSBEREICH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -147,10 +147,8 @@ public class Bedien_AnrueckabschnittItemProvider extends Basis_ObjektItemProvide
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT__ID_GLEIS_ABSCHNITT_DARSTELLEN:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

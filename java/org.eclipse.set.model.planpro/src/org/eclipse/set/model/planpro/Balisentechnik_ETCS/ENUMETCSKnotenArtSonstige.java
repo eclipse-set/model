@@ -46,6 +46,16 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 	ENUMETCS_KNOTEN_ART_SONSTIGE_GRENZE_AUSRUESTUNGSBEREICH(1, "ENUMETCS_Knoten_Art_Sonstige_Grenze_Ausruestungsbereich", "Grenze_Ausruestungsbereich"),
 
 	/**
+	 * The '<em><b>ENUMETCS Knoten Art Sonstige Grenze LZB La Eingabe</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMETCS_KNOTEN_ART_SONSTIGE_GRENZE_LZB_LA_EINGABE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMETCS_KNOTEN_ART_SONSTIGE_GRENZE_LZB_LA_EINGABE(2, "ENUMETCS_Knoten_Art_Sonstige_Grenze_LZB_La_Eingabe", "Grenze_LZB_La_Eingabe"),
+
+	/**
 	 * The '<em><b>ENUMETCS Knoten Art Sonstige Km Sprung</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53,7 +63,17 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMETCS_KNOTEN_ART_SONSTIGE_KM_SPRUNG(2, "ENUMETCS_Knoten_Art_Sonstige_Km_Sprung", "Km_Sprung"),
+	ENUMETCS_KNOTEN_ART_SONSTIGE_KM_SPRUNG(3, "ENUMETCS_Knoten_Art_Sonstige_Km_Sprung", "Km_Sprung"),
+
+	/**
+	 * The '<em><b>ENUMETCS Knoten Art Sonstige Knotenverschmelzung</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMETCS_KNOTEN_ART_SONSTIGE_KNOTENVERSCHMELZUNG_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMETCS_KNOTEN_ART_SONSTIGE_KNOTENVERSCHMELZUNG(4, "ENUMETCS_Knoten_Art_Sonstige_Knotenverschmelzung", "Knotenverschmelzung"),
 
 	/**
 	 * The '<em><b>ENUMETCS Knoten Art Sonstige Kr W</b></em>' literal object.
@@ -63,7 +83,7 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMETCS_KNOTEN_ART_SONSTIGE_KR_W(3, "ENUMETCS_Knoten_Art_Sonstige_KrW", "KrW"),
+	ENUMETCS_KNOTEN_ART_SONSTIGE_KR_W(5, "ENUMETCS_Knoten_Art_Sonstige_KrW", "KrW"),
 
 	/**
 	 * The '<em><b>ENUMETCS Knoten Art Sonstige sonstige</b></em>' literal object.
@@ -73,7 +93,7 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMETCS_KNOTEN_ART_SONSTIGE_SONSTIGE(4, "ENUMETCS_Knoten_Art_Sonstige_sonstige", "sonstige"),
+	ENUMETCS_KNOTEN_ART_SONSTIGE_SONSTIGE(6, "ENUMETCS_Knoten_Art_Sonstige_sonstige", "sonstige"),
 
 	/**
 	 * The '<em><b>ENUMETCS Knoten Art Sonstige Streckenende</b></em>' literal object.
@@ -83,7 +103,7 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENENDE(5, "ENUMETCS_Knoten_Art_Sonstige_Streckenende", "Streckenende"),
+	ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENENDE(7, "ENUMETCS_Knoten_Art_Sonstige_Streckenende", "Streckenende"),
 
 	/**
 	 * The '<em><b>ENUMETCS Knoten Art Sonstige Streckenwechsel</b></em>' literal object.
@@ -93,7 +113,7 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENWECHSEL(6, "ENUMETCS_Knoten_Art_Sonstige_Streckenwechsel", "Streckenwechsel");
+	ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENWECHSEL(8, "ENUMETCS_Knoten_Art_Sonstige_Streckenwechsel", "Streckenwechsel");
 
 	/**
 	 * The '<em><b>ENUMETCS Knoten Art Sonstige Gleisabschluss</b></em>' literal value.
@@ -118,6 +138,17 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 	public static final int ENUMETCS_KNOTEN_ART_SONSTIGE_GRENZE_AUSRUESTUNGSBEREICH_VALUE = 1;
 
 	/**
+	 * The '<em><b>ENUMETCS Knoten Art Sonstige Grenze LZB La Eingabe</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMETCS_KNOTEN_ART_SONSTIGE_GRENZE_LZB_LA_EINGABE
+	 * @model name="ENUMETCS_Knoten_Art_Sonstige_Grenze_LZB_La_Eingabe" literal="Grenze_LZB_La_Eingabe"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMETCS_KNOTEN_ART_SONSTIGE_GRENZE_LZB_LA_EINGABE_VALUE = 2;
+
+	/**
 	 * The '<em><b>ENUMETCS Knoten Art Sonstige Km Sprung</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -126,7 +157,18 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMETCS_KNOTEN_ART_SONSTIGE_KM_SPRUNG_VALUE = 2;
+	public static final int ENUMETCS_KNOTEN_ART_SONSTIGE_KM_SPRUNG_VALUE = 3;
+
+	/**
+	 * The '<em><b>ENUMETCS Knoten Art Sonstige Knotenverschmelzung</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMETCS_KNOTEN_ART_SONSTIGE_KNOTENVERSCHMELZUNG
+	 * @model name="ENUMETCS_Knoten_Art_Sonstige_Knotenverschmelzung" literal="Knotenverschmelzung"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMETCS_KNOTEN_ART_SONSTIGE_KNOTENVERSCHMELZUNG_VALUE = 4;
 
 	/**
 	 * The '<em><b>ENUMETCS Knoten Art Sonstige Kr W</b></em>' literal value.
@@ -137,7 +179,7 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMETCS_KNOTEN_ART_SONSTIGE_KR_W_VALUE = 3;
+	public static final int ENUMETCS_KNOTEN_ART_SONSTIGE_KR_W_VALUE = 5;
 
 	/**
 	 * The '<em><b>ENUMETCS Knoten Art Sonstige sonstige</b></em>' literal value.
@@ -148,7 +190,7 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMETCS_KNOTEN_ART_SONSTIGE_SONSTIGE_VALUE = 4;
+	public static final int ENUMETCS_KNOTEN_ART_SONSTIGE_SONSTIGE_VALUE = 6;
 
 	/**
 	 * The '<em><b>ENUMETCS Knoten Art Sonstige Streckenende</b></em>' literal value.
@@ -159,7 +201,7 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENENDE_VALUE = 5;
+	public static final int ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENENDE_VALUE = 7;
 
 	/**
 	 * The '<em><b>ENUMETCS Knoten Art Sonstige Streckenwechsel</b></em>' literal value.
@@ -170,7 +212,7 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENWECHSEL_VALUE = 6;
+	public static final int ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENWECHSEL_VALUE = 8;
 
 	/**
 	 * An array of all the '<em><b>ENUMETCS Knoten Art Sonstige</b></em>' enumerators.
@@ -182,7 +224,9 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 		new ENUMETCSKnotenArtSonstige[] {
 			ENUMETCS_KNOTEN_ART_SONSTIGE_GLEISABSCHLUSS,
 			ENUMETCS_KNOTEN_ART_SONSTIGE_GRENZE_AUSRUESTUNGSBEREICH,
+			ENUMETCS_KNOTEN_ART_SONSTIGE_GRENZE_LZB_LA_EINGABE,
 			ENUMETCS_KNOTEN_ART_SONSTIGE_KM_SPRUNG,
+			ENUMETCS_KNOTEN_ART_SONSTIGE_KNOTENVERSCHMELZUNG,
 			ENUMETCS_KNOTEN_ART_SONSTIGE_KR_W,
 			ENUMETCS_KNOTEN_ART_SONSTIGE_SONSTIGE,
 			ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENENDE,
@@ -245,13 +289,15 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 		switch (value) {
 			case ENUMETCS_KNOTEN_ART_SONSTIGE_GLEISABSCHLUSS_VALUE: return ENUMETCS_KNOTEN_ART_SONSTIGE_GLEISABSCHLUSS;
 			case ENUMETCS_KNOTEN_ART_SONSTIGE_GRENZE_AUSRUESTUNGSBEREICH_VALUE: return ENUMETCS_KNOTEN_ART_SONSTIGE_GRENZE_AUSRUESTUNGSBEREICH;
+			case ENUMETCS_KNOTEN_ART_SONSTIGE_GRENZE_LZB_LA_EINGABE_VALUE: return ENUMETCS_KNOTEN_ART_SONSTIGE_GRENZE_LZB_LA_EINGABE;
 			case ENUMETCS_KNOTEN_ART_SONSTIGE_KM_SPRUNG_VALUE: return ENUMETCS_KNOTEN_ART_SONSTIGE_KM_SPRUNG;
+			case ENUMETCS_KNOTEN_ART_SONSTIGE_KNOTENVERSCHMELZUNG_VALUE: return ENUMETCS_KNOTEN_ART_SONSTIGE_KNOTENVERSCHMELZUNG;
 			case ENUMETCS_KNOTEN_ART_SONSTIGE_KR_W_VALUE: return ENUMETCS_KNOTEN_ART_SONSTIGE_KR_W;
 			case ENUMETCS_KNOTEN_ART_SONSTIGE_SONSTIGE_VALUE: return ENUMETCS_KNOTEN_ART_SONSTIGE_SONSTIGE;
 			case ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENENDE_VALUE: return ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENENDE;
 			case ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENWECHSEL_VALUE: return ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENWECHSEL;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

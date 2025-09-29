@@ -28,10 +28,10 @@ import org.eclipse.emf.ecore.EReference;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -40,10 +40,10 @@ import org.eclipse.emf.ecore.EReference;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -67,7 +67,7 @@ public interface BasisTypenPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/BasisTypen/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/BasisTypen/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -1892,7 +1892,7 @@ public interface BasisTypenPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
      * <!-- begin-model-doc -->
-     * Beschränkt die Befüllung auf eine 32-stellige GUID in der Form 8-4-4-4-12 Zeichen unter Verwendung der Zahlen 0-9 und der Groß- und Kleinbuchstaben A-F/a-f.
+     * Beschränkt die Befüllung auf eine 32-stellige GUID in der Form 8-4-4-4-12 Zeichen unter Verwendung der Zahlen 0-9 und der Großbuchstaben A-F.
      * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>GUID Type</em>'.
 	 * @see java.lang.String
@@ -2054,7 +2054,7 @@ public interface BasisTypenPackage extends EPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
      * <!-- begin-model-doc -->
-     * Regionalbereich der DB Netz AG, dem die Anlage zugewiesen ist.
+     * Regionalbereich der DB InfraGO AG, dem die Anlage zugewiesen ist.
      * 
      * <!-- end-model-doc -->
 	 * @return the meta object for data type '<em>Regionalbereich Type</em>'.

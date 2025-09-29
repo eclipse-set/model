@@ -332,9 +332,8 @@ public class OertlichkeitImpl extends Basis_ObjektImpl implements Oertlichkeit {
 				return ((InternalEList<?>)getIDStreckePunkt()).basicRemove(otherEnd, msgs);
 			case GeodatenPackage.OERTLICHKEIT__OERTLICHKEIT_ALLG:
 				return basicSetOertlichkeitAllg(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -355,9 +354,8 @@ public class OertlichkeitImpl extends Basis_ObjektImpl implements Oertlichkeit {
 				return getIDStreckePunkt();
 			case GeodatenPackage.OERTLICHKEIT__OERTLICHKEIT_ALLG:
 				return getOertlichkeitAllg();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -385,10 +383,8 @@ public class OertlichkeitImpl extends Basis_ObjektImpl implements Oertlichkeit {
 			case GeodatenPackage.OERTLICHKEIT__OERTLICHKEIT_ALLG:
 				setOertlichkeitAllg((Oertlichkeit_Allg_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -414,10 +410,8 @@ public class OertlichkeitImpl extends Basis_ObjektImpl implements Oertlichkeit {
 			case GeodatenPackage.OERTLICHKEIT__OERTLICHKEIT_ALLG:
 				setOertlichkeitAllg((Oertlichkeit_Allg_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -438,9 +432,8 @@ public class OertlichkeitImpl extends Basis_ObjektImpl implements Oertlichkeit {
 				return iDStreckePunkt != null && !iDStreckePunkt.isEmpty();
 			case GeodatenPackage.OERTLICHKEIT__OERTLICHKEIT_ALLG:
 				return oertlichkeitAllg != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //OertlichkeitImpl

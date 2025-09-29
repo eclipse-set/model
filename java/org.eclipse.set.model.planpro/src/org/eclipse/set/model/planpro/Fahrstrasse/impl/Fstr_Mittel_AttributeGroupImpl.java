@@ -179,9 +179,8 @@ public class Fstr_Mittel_AttributeGroupImpl extends EObjectImpl implements Fstr_
 				return basicSetFstrMittelArt(null, msgs);
 			case FahrstrassePackage.FSTR_MITTEL_ATTRIBUTE_GROUP__FSTR_MITTEL_VAUFWERTUNG:
 				return basicSetFstrMittelVAufwertung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class Fstr_Mittel_AttributeGroupImpl extends EObjectImpl implements Fstr_
 				return getFstrMittelArt();
 			case FahrstrassePackage.FSTR_MITTEL_ATTRIBUTE_GROUP__FSTR_MITTEL_VAUFWERTUNG:
 				return getFstrMittelVAufwertung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class Fstr_Mittel_AttributeGroupImpl extends EObjectImpl implements Fstr_
 			case FahrstrassePackage.FSTR_MITTEL_ATTRIBUTE_GROUP__FSTR_MITTEL_VAUFWERTUNG:
 				setFstrMittelVAufwertung((Fstr_Mittel_V_Aufwertung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class Fstr_Mittel_AttributeGroupImpl extends EObjectImpl implements Fstr_
 			case FahrstrassePackage.FSTR_MITTEL_ATTRIBUTE_GROUP__FSTR_MITTEL_VAUFWERTUNG:
 				setFstrMittelVAufwertung((Fstr_Mittel_V_Aufwertung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class Fstr_Mittel_AttributeGroupImpl extends EObjectImpl implements Fstr_
 				return fstrMittelArt != null;
 			case FahrstrassePackage.FSTR_MITTEL_ATTRIBUTE_GROUP__FSTR_MITTEL_VAUFWERTUNG:
 				return fstrMittelVAufwertung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Fstr_Mittel_AttributeGroupImpl

@@ -77,7 +77,7 @@ public interface Akteur_Zuordnung extends Ur_Objekt {
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Anhang Dokumentation</em>' containment reference list.
 	 * @see org.eclipse.set.model.planpro.PlanPro.PlanProPackage#getAkteur_Zuordnung_AnhangDokumentation()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='Anhang_Dokumentation'"
 	 * @generated
 	 */

@@ -33,6 +33,7 @@ import org.eclipse.set.model.planpro.Verweise.ID_ZN_Unterstation_TypeClass;
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN#getIDAnhangZNPlanBedienraum <em>ID Anhang ZN Plan Bedienraum</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN#getIDAnhangZNPlanRechnerraum <em>ID Anhang ZN Plan Rechnerraum</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN#getIDOertlichkeit <em>ID Oertlichkeit</em>}</li>
+ *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN#getBezeichnungStellwerk <em>Bezeichnung Stellwerk</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN#getIDStellwerk <em>ID Stellwerk</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN#getIDUnterbringung <em>ID Unterbringung</em>}</li>
  *   <li>{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN#getIDZNUnterstation <em>IDZN Unterstation</em>}</li>
@@ -123,11 +124,37 @@ public interface ZN extends Basis_Objekt {
 	void setIDOertlichkeit(ID_Oertlichkeit_TypeClass value);
 
 	/**
+	 * Returns the value of the '<em><b>Bezeichnung Stellwerk</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Bezeichnung des Stellwerks, sofern kein Verweis auf eine ESTW-Zentraleinheit möglich ist (z. B. \"Relaisstellwerk xyz\").
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Bezeichnung Stellwerk</em>' containment reference.
+	 * @see #setBezeichnungStellwerk(Bezeichnung_Stellwerk_TypeClass)
+	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZugnummernmeldeanlagePackage#getZN_BezeichnungStellwerk()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='Bezeichnung_Stellwerk'"
+	 * @generated
+	 */
+	Bezeichnung_Stellwerk_TypeClass getBezeichnungStellwerk();
+
+	/**
+	 * Sets the value of the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN#getBezeichnungStellwerk <em>Bezeichnung Stellwerk</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Bezeichnung Stellwerk</em>' containment reference.
+	 * @see #getBezeichnungStellwerk()
+	 * @generated
+	 */
+	void setBezeichnungStellwerk(Bezeichnung_Stellwerk_TypeClass value);
+
+	/**
 	 * Returns the value of the '<em><b>ID Stellwerk</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Verweis auf die ESTW-Zentraleinheit oder ein Relaisstellwerk, zu der diese ZN oder für die eine ZN-Einwahlstelle geplant wurde. Der Verweis ist optional, da im Plaungswerkzeug ZN/ZL keine Befüllung aller für die ESTW-ZE vorgesehenen Attribute möglich ist.
+	 * Verweis auf die ESTW-Zentraleinheit, zu der diese ZN oder für die eine ZN-Einwahlstelle geplant wurde. Der Verweis ist optional, da im Plaungswerkzeug ZN/ZL keine Befüllung aller für die ESTW-ZE vorgesehenen Attribute möglich ist. Der Verweis auf Aussenelementansteuerung soll nicht mehr genutzt werden. Zur Angabe der Bezeichnung eines Relaisstellwerks wird mit Version 1.11 eine Modellerweiterung erfolgen.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>ID Stellwerk</em>' containment reference.
 	 * @see #setIDStellwerk(ID_Stellwerk_TypeClass)

@@ -299,9 +299,8 @@ public class ZLV_Bus_US_ZuordnungImpl extends Basis_ObjektImpl implements ZLV_Bu
 				return basicSetZLVBusUSZuordnungTelegramm(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG__ZLV_BUS_ZUORDNUNG_ALLG:
 				return basicSetZLVBusZuordnungAllg(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -320,9 +319,8 @@ public class ZLV_Bus_US_ZuordnungImpl extends Basis_ObjektImpl implements ZLV_Bu
 				return getZLVBusUSZuordnungTelegramm();
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG__ZLV_BUS_ZUORDNUNG_ALLG:
 				return getZLVBusZuordnungAllg();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -345,10 +343,8 @@ public class ZLV_Bus_US_ZuordnungImpl extends Basis_ObjektImpl implements ZLV_Bu
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG__ZLV_BUS_ZUORDNUNG_ALLG:
 				setZLVBusZuordnungAllg((ZLV_Bus_Zuordnung_Allg_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -371,10 +367,8 @@ public class ZLV_Bus_US_ZuordnungImpl extends Basis_ObjektImpl implements ZLV_Bu
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG__ZLV_BUS_ZUORDNUNG_ALLG:
 				setZLVBusZuordnungAllg((ZLV_Bus_Zuordnung_Allg_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -393,9 +387,8 @@ public class ZLV_Bus_US_ZuordnungImpl extends Basis_ObjektImpl implements ZLV_Bu
 				return zLVBusUSZuordnungTelegramm != null;
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG__ZLV_BUS_ZUORDNUNG_ALLG:
 				return zLVBusZuordnungAllg != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZLV_Bus_US_ZuordnungImpl

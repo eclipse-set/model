@@ -388,8 +388,8 @@ public enum ENUMPlanQuelle implements Enumerator {
 			case ENUM_PLAN_QUELLE_PT_2_VALUE: return ENUM_PLAN_QUELLE_PT_2;
 			case ENUM_PLAN_QUELLE_SONSTIGE_VALUE: return ENUM_PLAN_QUELLE_SONSTIGE;
 			case ENUM_PLAN_QUELLE_VERMESSUNG_VALUE: return ENUM_PLAN_QUELLE_VERMESSUNG;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

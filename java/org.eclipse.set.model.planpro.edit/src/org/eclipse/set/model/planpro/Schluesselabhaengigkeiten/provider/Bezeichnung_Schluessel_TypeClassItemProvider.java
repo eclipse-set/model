@@ -136,10 +136,8 @@ public class Bezeichnung_Schluessel_TypeClassItemProvider extends BasisAttribut_
 			case SchluesselabhaengigkeitenPackage.BEZEICHNUNG_SCHLUESSEL_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

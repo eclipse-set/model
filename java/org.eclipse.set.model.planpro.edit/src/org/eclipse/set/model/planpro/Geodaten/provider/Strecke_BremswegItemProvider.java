@@ -143,10 +143,8 @@ public class Strecke_BremswegItemProvider extends Bereich_ObjektItemProvider {
 			case GeodatenPackage.STRECKE_BREMSWEG__STRECKE_RICHTUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

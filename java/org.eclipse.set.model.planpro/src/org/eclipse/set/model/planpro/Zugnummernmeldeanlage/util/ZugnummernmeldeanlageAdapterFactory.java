@@ -116,6 +116,10 @@ public class ZugnummernmeldeanlageAdapterFactory extends AdapterFactoryImpl {
 				return createBezeichnung_Besondere_Anlage_TypeClassAdapter();
 			}
 			@Override
+			public Adapter caseBezeichnung_Stellwerk_TypeClass(Bezeichnung_Stellwerk_TypeClass object) {
+				return createBezeichnung_Stellwerk_TypeClassAdapter();
+			}
+			@Override
 			public Adapter caseBf_Kennung_TypeClass(Bf_Kennung_TypeClass object) {
 				return createBf_Kennung_TypeClassAdapter();
 			}
@@ -558,6 +562,20 @@ public class ZugnummernmeldeanlageAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createBezeichnung_Besondere_Anlage_TypeClassAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bezeichnung_Stellwerk_TypeClass <em>Bezeichnung Stellwerk Type Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bezeichnung_Stellwerk_TypeClass
+	 * @generated
+	 */
+	public Adapter createBezeichnung_Stellwerk_TypeClassAdapter() {
 		return null;
 	}
 

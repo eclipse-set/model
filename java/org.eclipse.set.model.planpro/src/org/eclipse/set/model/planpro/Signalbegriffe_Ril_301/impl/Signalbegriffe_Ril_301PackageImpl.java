@@ -365,6 +365,20 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass el34ZusatzEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass el34ZusatzKombiEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass el4EClass = null;
 
 	/**
@@ -554,6 +568,13 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass hp0FEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass hp1EClass = null;
 
 	/**
@@ -561,7 +582,21 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass hp1FEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass hp2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass hp2FEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -953,6 +988,13 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass ozPZB2000HzEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass ozPZBBUEEClass = null;
 
 	/**
@@ -1198,6 +1240,13 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass vr0FEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass vr1EClass = null;
 
 	/**
@@ -1205,7 +1254,28 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass vr12FEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass vr1FEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass vr2EClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass vr2FEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1436,6 +1506,13 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EEnum enumSymbolEl34ZusatzEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EEnum enumSymbolLf1EEnum = null;
 
 	/**
@@ -1514,6 +1591,13 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * @generated
 	 */
 	private EDataType bS_Zusatz_Symbol_TypeEDataType = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EDataType enumSymbolEl34ZusatzObjectEDataType = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2164,9 +2248,35 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * @generated
 	 */
 	@Override
+	public EClass getEl34Zusatz() {
+		if (el34ZusatzEClass == null) {
+			el34ZusatzEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(30);
+		}
+		return el34ZusatzEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getEl34ZusatzKombi() {
+		if (el34ZusatzKombiEClass == null) {
+			el34ZusatzKombiEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(31);
+		}
+		return el34ZusatzKombiEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getEl4() {
 		if (el4EClass == null) {
-			el4EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(30);
+			el4EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(32);
 		}
 		return el4EClass;
 	}
@@ -2179,7 +2289,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getEl5() {
 		if (el5EClass == null) {
-			el5EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(31);
+			el5EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(33);
 		}
 		return el5EClass;
 	}
@@ -2192,7 +2302,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getEl6() {
 		if (el6EClass == null) {
-			el6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(32);
+			el6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(34);
 		}
 		return el6EClass;
 	}
@@ -2205,7 +2315,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getElPfB() {
 		if (elPfBEClass == null) {
-			elPfBEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(33);
+			elPfBEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(35);
 		}
 		return elPfBEClass;
 	}
@@ -2218,7 +2328,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getElPfL() {
 		if (elPfLEClass == null) {
-			elPfLEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(34);
+			elPfLEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(36);
 		}
 		return elPfLEClass;
 	}
@@ -2231,7 +2341,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getElPfO() {
 		if (elPfOEClass == null) {
-			elPfOEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(35);
+			elPfOEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(37);
 		}
 		return elPfOEClass;
 	}
@@ -2244,7 +2354,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getElPfR() {
 		if (elPfREClass == null) {
-			elPfREClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(36);
+			elPfREClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(38);
 		}
 		return elPfREClass;
 	}
@@ -2257,7 +2367,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getElTAC() {
 		if (elTACEClass == null) {
-			elTACEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(37);
+			elTACEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(39);
 		}
 		return elTACEClass;
 	}
@@ -2270,7 +2380,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getElTDC() {
 		if (elTDCEClass == null) {
-			elTDCEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(38);
+			elTDCEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(40);
 		}
 		return elTDCEClass;
 	}
@@ -2283,7 +2393,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl1() {
 		if (hl1EClass == null) {
-			hl1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(61);
+			hl1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(65);
 		}
 		return hl1EClass;
 	}
@@ -2296,7 +2406,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl10() {
 		if (hl10EClass == null) {
-			hl10EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(62);
+			hl10EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(66);
 		}
 		return hl10EClass;
 	}
@@ -2309,7 +2419,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl11() {
 		if (hl11EClass == null) {
-			hl11EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(63);
+			hl11EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(67);
 		}
 		return hl11EClass;
 	}
@@ -2322,7 +2432,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl12a() {
 		if (hl12aEClass == null) {
-			hl12aEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(64);
+			hl12aEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(68);
 		}
 		return hl12aEClass;
 	}
@@ -2335,7 +2445,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl12b() {
 		if (hl12bEClass == null) {
-			hl12bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(65);
+			hl12bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(69);
 		}
 		return hl12bEClass;
 	}
@@ -2348,7 +2458,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl2() {
 		if (hl2EClass == null) {
-			hl2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(66);
+			hl2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(70);
 		}
 		return hl2EClass;
 	}
@@ -2361,7 +2471,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl3a() {
 		if (hl3aEClass == null) {
-			hl3aEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(67);
+			hl3aEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(71);
 		}
 		return hl3aEClass;
 	}
@@ -2374,7 +2484,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl3b() {
 		if (hl3bEClass == null) {
-			hl3bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(68);
+			hl3bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(72);
 		}
 		return hl3bEClass;
 	}
@@ -2387,7 +2497,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl4() {
 		if (hl4EClass == null) {
-			hl4EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(69);
+			hl4EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(73);
 		}
 		return hl4EClass;
 	}
@@ -2400,7 +2510,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl5() {
 		if (hl5EClass == null) {
-			hl5EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(70);
+			hl5EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(74);
 		}
 		return hl5EClass;
 	}
@@ -2413,7 +2523,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl6a() {
 		if (hl6aEClass == null) {
-			hl6aEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(71);
+			hl6aEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(75);
 		}
 		return hl6aEClass;
 	}
@@ -2426,7 +2536,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl6b() {
 		if (hl6bEClass == null) {
-			hl6bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(72);
+			hl6bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(76);
 		}
 		return hl6bEClass;
 	}
@@ -2439,7 +2549,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl7() {
 		if (hl7EClass == null) {
-			hl7EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(73);
+			hl7EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(77);
 		}
 		return hl7EClass;
 	}
@@ -2452,7 +2562,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl8() {
 		if (hl8EClass == null) {
-			hl8EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(74);
+			hl8EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(78);
 		}
 		return hl8EClass;
 	}
@@ -2465,7 +2575,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl9a() {
 		if (hl9aEClass == null) {
-			hl9aEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(75);
+			hl9aEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(79);
 		}
 		return hl9aEClass;
 	}
@@ -2478,7 +2588,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHl9b() {
 		if (hl9bEClass == null) {
-			hl9bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(76);
+			hl9bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(80);
 		}
 		return hl9bEClass;
 	}
@@ -2491,7 +2601,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHp0() {
 		if (hp0EClass == null) {
-			hp0EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(77);
+			hp0EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(81);
 		}
 		return hp0EClass;
 	}
@@ -2504,7 +2614,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getHp02Lp() {
 		if (hp02LpEClass == null) {
-			hp02LpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(78);
+			hp02LpEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(82);
 		}
 		return hp02LpEClass;
 	}
@@ -2515,9 +2625,22 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * @generated
 	 */
 	@Override
+	public EClass getHp0F() {
+		if (hp0FEClass == null) {
+			hp0FEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(83);
+		}
+		return hp0FEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getHp1() {
 		if (hp1EClass == null) {
-			hp1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(79);
+			hp1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(84);
 		}
 		return hp1EClass;
 	}
@@ -2528,9 +2651,22 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * @generated
 	 */
 	@Override
+	public EClass getHp1F() {
+		if (hp1FEClass == null) {
+			hp1FEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(85);
+		}
+		return hp1FEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getHp2() {
 		if (hp2EClass == null) {
-			hp2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(80);
+			hp2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(86);
 		}
 		return hp2EClass;
 	}
@@ -2541,9 +2677,22 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * @generated
 	 */
 	@Override
+	public EClass getHp2F() {
+		if (hp2FEClass == null) {
+			hp2FEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(87);
+		}
+		return hp2FEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getKl() {
 		if (klEClass == null) {
-			klEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(81);
+			klEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(88);
 		}
 		return klEClass;
 	}
@@ -2556,7 +2705,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getKs1() {
 		if (ks1EClass == null) {
-			ks1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(82);
+			ks1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(89);
 		}
 		return ks1EClass;
 	}
@@ -2569,7 +2718,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getKs2() {
 		if (ks2EClass == null) {
-			ks2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(83);
+			ks2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(90);
 		}
 		return ks2EClass;
 	}
@@ -2582,7 +2731,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getLf1() {
 		if (lf1EClass == null) {
-			lf1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(84);
+			lf1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(91);
 		}
 		return lf1EClass;
 	}
@@ -2595,7 +2744,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getLf12() {
 		if (lf12EClass == null) {
-			lf12EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(85);
+			lf12EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(92);
 		}
 		return lf12EClass;
 	}
@@ -2608,7 +2757,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getLf1Wdh() {
 		if (lf1WdhEClass == null) {
-			lf1WdhEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(86);
+			lf1WdhEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(93);
 		}
 		return lf1WdhEClass;
 	}
@@ -2621,7 +2770,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getLf2() {
 		if (lf2EClass == null) {
-			lf2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(87);
+			lf2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(94);
 		}
 		return lf2EClass;
 	}
@@ -2634,7 +2783,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getLf3() {
 		if (lf3EClass == null) {
-			lf3EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(88);
+			lf3EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(95);
 		}
 		return lf3EClass;
 	}
@@ -2647,7 +2796,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getLf4DS() {
 		if (lf4DSEClass == null) {
-			lf4DSEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(89);
+			lf4DSEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(96);
 		}
 		return lf4DSEClass;
 	}
@@ -2660,7 +2809,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getLf4DV() {
 		if (lf4DVEClass == null) {
-			lf4DVEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(90);
+			lf4DVEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(97);
 		}
 		return lf4DVEClass;
 	}
@@ -2673,7 +2822,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getLf5DS() {
 		if (lf5DSEClass == null) {
-			lf5DSEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(91);
+			lf5DSEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(98);
 		}
 		return lf5DSEClass;
 	}
@@ -2686,7 +2835,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getLf5DV() {
 		if (lf5DVEClass == null) {
-			lf5DVEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(92);
+			lf5DVEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(99);
 		}
 		return lf5DVEClass;
 	}
@@ -2699,7 +2848,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getLf6() {
 		if (lf6EClass == null) {
-			lf6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(93);
+			lf6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(100);
 		}
 		return lf6EClass;
 	}
@@ -2712,7 +2861,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getLf7() {
 		if (lf7EClass == null) {
-			lf7EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(94);
+			lf7EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(101);
 		}
 		return lf7EClass;
 	}
@@ -2725,7 +2874,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getLfPfL() {
 		if (lfPfLEClass == null) {
-			lfPfLEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(95);
+			lfPfLEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(102);
 		}
 		return lfPfLEClass;
 	}
@@ -2738,7 +2887,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getLfPfR() {
 		if (lfPfREClass == null) {
-			lfPfREClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(96);
+			lfPfREClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(103);
 		}
 		return lfPfREClass;
 	}
@@ -2751,7 +2900,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getMsGeD() {
 		if (msGeDEClass == null) {
-			msGeDEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(97);
+			msGeDEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(104);
 		}
 		return msGeDEClass;
 	}
@@ -2764,7 +2913,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getMsRt() {
 		if (msRtEClass == null) {
-			msRtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(98);
+			msRtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(105);
 		}
 		return msRtEClass;
 	}
@@ -2777,7 +2926,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getMsSkGe() {
 		if (msSkGeEClass == null) {
-			msSkGeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(99);
+			msSkGeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(106);
 		}
 		return msSkGeEClass;
 	}
@@ -2790,7 +2939,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getMsSkRt() {
 		if (msSkRtEClass == null) {
-			msSkRtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(100);
+			msSkRtEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(107);
 		}
 		return msSkRtEClass;
 	}
@@ -2803,7 +2952,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getMsUESWdh() {
 		if (msUESWdhEClass == null) {
-			msUESWdhEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(101);
+			msUESWdhEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(108);
 		}
 		return msUESWdhEClass;
 	}
@@ -2816,7 +2965,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getMsVw() {
 		if (msVwEClass == null) {
-			msVwEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(102);
+			msVwEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(109);
 		}
 		return msVwEClass;
 	}
@@ -2829,7 +2978,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getMsWs2swP() {
 		if (msWs2swPEClass == null) {
-			msWs2swPEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(103);
+			msWs2swPEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(110);
 		}
 		return msWs2swPEClass;
 	}
@@ -2842,7 +2991,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getMsWsGeWs() {
 		if (msWsGeWsEClass == null) {
-			msWsGeWsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(104);
+			msWsGeWsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(111);
 		}
 		return msWsGeWsEClass;
 	}
@@ -2855,7 +3004,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getMsWsRtWs() {
 		if (msWsRtWsEClass == null) {
-			msWsRtWsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(105);
+			msWsRtWsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(112);
 		}
 		return msWsRtWsEClass;
 	}
@@ -2868,7 +3017,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getMsWsSwWs() {
 		if (msWsSwWsEClass == null) {
-			msWsSwWsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(106);
+			msWsSwWsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(113);
 		}
 		return msWsSwWsEClass;
 	}
@@ -2881,7 +3030,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe1() {
 		if (ne1EClass == null) {
-			ne1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(107);
+			ne1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(114);
 		}
 		return ne1EClass;
 	}
@@ -2894,7 +3043,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe12() {
 		if (ne12EClass == null) {
-			ne12EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(108);
+			ne12EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(115);
 		}
 		return ne12EClass;
 	}
@@ -2907,7 +3056,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe13a() {
 		if (ne13aEClass == null) {
-			ne13aEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(109);
+			ne13aEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(116);
 		}
 		return ne13aEClass;
 	}
@@ -2920,7 +3069,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe13b() {
 		if (ne13bEClass == null) {
-			ne13bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(110);
+			ne13bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(117);
 		}
 		return ne13bEClass;
 	}
@@ -2933,7 +3082,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe14() {
 		if (ne14EClass == null) {
-			ne14EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(111);
+			ne14EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(118);
 		}
 		return ne14EClass;
 	}
@@ -2946,7 +3095,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe2() {
 		if (ne2EClass == null) {
-			ne2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(112);
+			ne2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(119);
 		}
 		return ne2EClass;
 	}
@@ -2959,7 +3108,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe2VRVA() {
 		if (ne2VRVAEClass == null) {
-			ne2VRVAEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(113);
+			ne2VRVAEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(120);
 		}
 		return ne2VRVAEClass;
 	}
@@ -2972,7 +3121,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe31str() {
 		if (ne31strEClass == null) {
-			ne31strEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(114);
+			ne31strEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(121);
 		}
 		return ne31strEClass;
 	}
@@ -2985,7 +3134,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe32str() {
 		if (ne32strEClass == null) {
-			ne32strEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(115);
+			ne32strEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(122);
 		}
 		return ne32strEClass;
 	}
@@ -2998,7 +3147,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe33str() {
 		if (ne33strEClass == null) {
-			ne33strEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(116);
+			ne33strEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(123);
 		}
 		return ne33strEClass;
 	}
@@ -3011,7 +3160,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe34str() {
 		if (ne34strEClass == null) {
-			ne34strEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(117);
+			ne34strEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(124);
 		}
 		return ne34strEClass;
 	}
@@ -3024,7 +3173,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe35str() {
 		if (ne35strEClass == null) {
-			ne35strEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(118);
+			ne35strEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(125);
 		}
 		return ne35strEClass;
 	}
@@ -3037,7 +3186,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe4() {
 		if (ne4EClass == null) {
-			ne4EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(119);
+			ne4EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(126);
 		}
 		return ne4EClass;
 	}
@@ -3050,7 +3199,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe5() {
 		if (ne5EClass == null) {
-			ne5EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(120);
+			ne5EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(127);
 		}
 		return ne5EClass;
 	}
@@ -3063,7 +3212,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe6() {
 		if (ne6EClass == null) {
-			ne6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(121);
+			ne6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(128);
 		}
 		return ne6EClass;
 	}
@@ -3076,7 +3225,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe7a() {
 		if (ne7aEClass == null) {
-			ne7aEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(122);
+			ne7aEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(129);
 		}
 		return ne7aEClass;
 	}
@@ -3089,7 +3238,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getNe7b() {
 		if (ne7bEClass == null) {
-			ne7bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(123);
+			ne7bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(130);
 		}
 		return ne7bEClass;
 	}
@@ -3102,7 +3251,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzAutoET() {
 		if (ozAutoETEClass == null) {
-			ozAutoETEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(125);
+			ozAutoETEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(132);
 		}
 		return ozAutoETEClass;
 	}
@@ -3115,7 +3264,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzAutoHET() {
 		if (ozAutoHETEClass == null) {
-			ozAutoHETEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(126);
+			ozAutoHETEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(133);
 		}
 		return ozAutoHETEClass;
 	}
@@ -3128,7 +3277,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzBk() {
 		if (ozBkEClass == null) {
-			ozBkEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(127);
+			ozBkEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(134);
 		}
 		return ozBkEClass;
 	}
@@ -3141,7 +3290,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzET() {
 		if (ozETEClass == null) {
-			ozETEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(128);
+			ozETEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(135);
 		}
 		return ozETEClass;
 	}
@@ -3154,7 +3303,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzFa() {
 		if (ozFaEClass == null) {
-			ozFaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(129);
+			ozFaEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(136);
 		}
 		return ozFaEClass;
 	}
@@ -3167,7 +3316,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzFak() {
 		if (ozFakEClass == null) {
-			ozFakEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(130);
+			ozFakEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(137);
 		}
 		return ozFakEClass;
 	}
@@ -3180,7 +3329,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzGSMR() {
 		if (ozGSMREClass == null) {
-			ozGSMREClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(131);
+			ozGSMREClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(138);
 		}
 		return ozGSMREClass;
 	}
@@ -3193,7 +3342,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzHET() {
 		if (ozHETEClass == null) {
-			ozHETEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(132);
+			ozHETEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(139);
 		}
 		return ozHETEClass;
 	}
@@ -3206,7 +3355,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzHM() {
 		if (ozHMEClass == null) {
-			ozHMEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(133);
+			ozHMEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(140);
 		}
 		return ozHMEClass;
 	}
@@ -3219,7 +3368,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzICE() {
 		if (ozICEEClass == null) {
-			ozICEEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(134);
+			ozICEEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(141);
 		}
 		return ozICEEClass;
 	}
@@ -3232,7 +3381,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzLZBBer() {
 		if (ozLZBBerEClass == null) {
-			ozLZBBerEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(135);
+			ozLZBBerEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(142);
 		}
 		return ozLZBBerEClass;
 	}
@@ -3245,7 +3394,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzOBGrenze() {
 		if (ozOBGrenzeEClass == null) {
-			ozOBGrenzeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(136);
+			ozOBGrenzeEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(143);
 		}
 		return ozOBGrenzeEClass;
 	}
@@ -3256,9 +3405,22 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * @generated
 	 */
 	@Override
+	public EClass getOzPZB2000Hz() {
+		if (ozPZB2000HzEClass == null) {
+			ozPZB2000HzEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(144);
+		}
+		return ozPZB2000HzEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getOzPZBBUE() {
 		if (ozPZBBUEEClass == null) {
-			ozPZBBUEEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(137);
+			ozPZBBUEEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(145);
 		}
 		return ozPZBBUEEClass;
 	}
@@ -3271,7 +3433,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzZf() {
 		if (ozZfEClass == null) {
-			ozZfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(138);
+			ozZfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(146);
 		}
 		return ozZfEClass;
 	}
@@ -3284,7 +3446,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getOzZugl() {
 		if (ozZuglEClass == null) {
-			ozZuglEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(139);
+			ozZuglEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(147);
 		}
 		return ozZuglEClass;
 	}
@@ -3307,7 +3469,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getPf2() {
 		if (pf2EClass == null) {
-			pf2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(140);
+			pf2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(148);
 		}
 		return pf2EClass;
 	}
@@ -3320,7 +3482,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getRa10() {
 		if (ra10EClass == null) {
-			ra10EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(141);
+			ra10EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(149);
 		}
 		return ra10EClass;
 	}
@@ -3333,7 +3495,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getRa11() {
 		if (ra11EClass == null) {
-			ra11EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(142);
+			ra11EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(150);
 		}
 		return ra11EClass;
 	}
@@ -3346,7 +3508,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getRa11b() {
 		if (ra11bEClass == null) {
-			ra11bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(143);
+			ra11bEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(151);
 		}
 		return ra11bEClass;
 	}
@@ -3359,7 +3521,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getRa12() {
 		if (ra12EClass == null) {
-			ra12EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(144);
+			ra12EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(152);
 		}
 		return ra12EClass;
 	}
@@ -3372,7 +3534,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getRa13() {
 		if (ra13EClass == null) {
-			ra13EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(145);
+			ra13EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(153);
 		}
 		return ra13EClass;
 	}
@@ -3385,7 +3547,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSh0() {
 		if (sh0EClass == null) {
-			sh0EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(146);
+			sh0EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(154);
 		}
 		return sh0EClass;
 	}
@@ -3398,7 +3560,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSh1() {
 		if (sh1EClass == null) {
-			sh1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(147);
+			sh1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(155);
 		}
 		return sh1EClass;
 	}
@@ -3411,7 +3573,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSh2() {
 		if (sh2EClass == null) {
-			sh2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(148);
+			sh2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(156);
 		}
 		return sh2EClass;
 	}
@@ -3424,7 +3586,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSk1() {
 		if (sk1EClass == null) {
-			sk1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(149);
+			sk1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(157);
 		}
 		return sk1EClass;
 	}
@@ -3437,7 +3599,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSk2() {
 		if (sk2EClass == null) {
-			sk2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(150);
+			sk2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(158);
 		}
 		return sk2EClass;
 	}
@@ -3450,7 +3612,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSo1() {
 		if (so1EClass == null) {
-			so1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(151);
+			so1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(159);
 		}
 		return so1EClass;
 	}
@@ -3463,7 +3625,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSo106() {
 		if (so106EClass == null) {
-			so106EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(152);
+			so106EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(160);
 		}
 		return so106EClass;
 	}
@@ -3476,7 +3638,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSo14() {
 		if (so14EClass == null) {
-			so14EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(153);
+			so14EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(161);
 		}
 		return so14EClass;
 	}
@@ -3489,7 +3651,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSo15() {
 		if (so15EClass == null) {
-			so15EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(154);
+			so15EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(162);
 		}
 		return so15EClass;
 	}
@@ -3502,7 +3664,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSo191P() {
 		if (so191PEClass == null) {
-			so191PEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(155);
+			so191PEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(163);
 		}
 		return so191PEClass;
 	}
@@ -3515,7 +3677,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSo192P() {
 		if (so192PEClass == null) {
-			so192PEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(156);
+			so192PEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(164);
 		}
 		return so192PEClass;
 	}
@@ -3528,7 +3690,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSo193P() {
 		if (so193PEClass == null) {
-			so193PEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(157);
+			so193PEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(165);
 		}
 		return so193PEClass;
 	}
@@ -3541,7 +3703,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSo20() {
 		if (so20EClass == null) {
-			so20EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(158);
+			so20EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(166);
 		}
 		return so20EClass;
 	}
@@ -3554,7 +3716,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSv0() {
 		if (sv0EClass == null) {
-			sv0EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(159);
+			sv0EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(167);
 		}
 		return sv0EClass;
 	}
@@ -3567,7 +3729,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSv1() {
 		if (sv1EClass == null) {
-			sv1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(160);
+			sv1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(168);
 		}
 		return sv1EClass;
 	}
@@ -3580,7 +3742,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSv2() {
 		if (sv2EClass == null) {
-			sv2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(161);
+			sv2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(169);
 		}
 		return sv2EClass;
 	}
@@ -3593,7 +3755,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSv3() {
 		if (sv3EClass == null) {
-			sv3EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(162);
+			sv3EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(170);
 		}
 		return sv3EClass;
 	}
@@ -3606,7 +3768,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSv4() {
 		if (sv4EClass == null) {
-			sv4EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(163);
+			sv4EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(171);
 		}
 		return sv4EClass;
 	}
@@ -3619,7 +3781,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSv5() {
 		if (sv5EClass == null) {
-			sv5EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(164);
+			sv5EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(172);
 		}
 		return sv5EClass;
 	}
@@ -3632,7 +3794,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSv6() {
 		if (sv6EClass == null) {
-			sv6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(165);
+			sv6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(173);
 		}
 		return sv6EClass;
 	}
@@ -3645,7 +3807,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getSvWPf() {
 		if (svWPfEClass == null) {
-			svWPfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(166);
+			svWPfEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(174);
 		}
 		return svWPfEClass;
 	}
@@ -3658,7 +3820,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getTs1() {
 		if (ts1EClass == null) {
-			ts1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(167);
+			ts1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(175);
 		}
 		return ts1EClass;
 	}
@@ -3671,7 +3833,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getTs2() {
 		if (ts2EClass == null) {
-			ts2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(168);
+			ts2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(176);
 		}
 		return ts2EClass;
 	}
@@ -3684,7 +3846,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getTs3() {
 		if (ts3EClass == null) {
-			ts3EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(169);
+			ts3EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(177);
 		}
 		return ts3EClass;
 	}
@@ -3697,7 +3859,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getUkr() {
 		if (ukrEClass == null) {
-			ukrEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(170);
+			ukrEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(178);
 		}
 		return ukrEClass;
 	}
@@ -3710,7 +3872,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getVr0() {
 		if (vr0EClass == null) {
-			vr0EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(171);
+			vr0EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(179);
 		}
 		return vr0EClass;
 	}
@@ -3721,9 +3883,22 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * @generated
 	 */
 	@Override
+	public EClass getVr0F() {
+		if (vr0FEClass == null) {
+			vr0FEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(180);
+		}
+		return vr0FEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getVr1() {
 		if (vr1EClass == null) {
-			vr1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(172);
+			vr1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(181);
 		}
 		return vr1EClass;
 	}
@@ -3734,9 +3909,35 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * @generated
 	 */
 	@Override
+	public EClass getVr12F() {
+		if (vr12FEClass == null) {
+			vr12FEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(182);
+		}
+		return vr12FEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getVr1F() {
+		if (vr1FEClass == null) {
+			vr1FEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(183);
+		}
+		return vr1FEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getVr2() {
 		if (vr2EClass == null) {
-			vr2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(173);
+			vr2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(184);
 		}
 		return vr2EClass;
 	}
@@ -3747,9 +3948,22 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * @generated
 	 */
 	@Override
+	public EClass getVr2F() {
+		if (vr2FEClass == null) {
+			vr2FEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(185);
+		}
+		return vr2FEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getWn1() {
 		if (wn1EClass == null) {
-			wn1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(174);
+			wn1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(186);
 		}
 		return wn1EClass;
 	}
@@ -3762,7 +3976,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getWn2() {
 		if (wn2EClass == null) {
-			wn2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(175);
+			wn2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(187);
 		}
 		return wn2EClass;
 	}
@@ -3775,7 +3989,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getWn3() {
 		if (wn3EClass == null) {
-			wn3EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(176);
+			wn3EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(188);
 		}
 		return wn3EClass;
 	}
@@ -3788,7 +4002,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getWn4() {
 		if (wn4EClass == null) {
-			wn4EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(177);
+			wn4EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(189);
 		}
 		return wn4EClass;
 	}
@@ -3801,7 +4015,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getWn5() {
 		if (wn5EClass == null) {
-			wn5EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(178);
+			wn5EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(190);
 		}
 		return wn5EClass;
 	}
@@ -3814,7 +4028,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getWn6() {
 		if (wn6EClass == null) {
-			wn6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(179);
+			wn6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(191);
 		}
 		return wn6EClass;
 	}
@@ -3827,7 +4041,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getWn7() {
 		if (wn7EClass == null) {
-			wn7EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(180);
+			wn7EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(192);
 		}
 		return wn7EClass;
 	}
@@ -3840,7 +4054,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getWvs() {
 		if (wvsEClass == null) {
-			wvsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(181);
+			wvsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(193);
 		}
 		return wvsEClass;
 	}
@@ -3853,7 +4067,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZlO() {
 		if (zlOEClass == null) {
-			zlOEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(182);
+			zlOEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(194);
 		}
 		return zlOEClass;
 	}
@@ -3866,7 +4080,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZlU() {
 		if (zlUEClass == null) {
-			zlUEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(183);
+			zlUEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(195);
 		}
 		return zlUEClass;
 	}
@@ -3879,7 +4093,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZp10() {
 		if (zp10EClass == null) {
-			zp10EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(184);
+			zp10EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(196);
 		}
 		return zp10EClass;
 	}
@@ -3892,7 +4106,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZp10Ls() {
 		if (zp10LsEClass == null) {
-			zp10LsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(185);
+			zp10LsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(197);
 		}
 		return zp10LsEClass;
 	}
@@ -3905,7 +4119,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZp6() {
 		if (zp6EClass == null) {
-			zp6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(186);
+			zp6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(198);
 		}
 		return zp6EClass;
 	}
@@ -3918,7 +4132,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZp7() {
 		if (zp7EClass == null) {
-			zp7EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(187);
+			zp7EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(199);
 		}
 		return zp7EClass;
 	}
@@ -3931,7 +4145,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZp8() {
 		if (zp8EClass == null) {
-			zp8EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(188);
+			zp8EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(200);
 		}
 		return zp8EClass;
 	}
@@ -3944,7 +4158,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZp9() {
 		if (zp9EClass == null) {
-			zp9EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(189);
+			zp9EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(201);
 		}
 		return zp9EClass;
 	}
@@ -3957,7 +4171,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZp9Ls() {
 		if (zp9LsEClass == null) {
-			zp9LsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(190);
+			zp9LsEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(202);
 		}
 		return zp9LsEClass;
 	}
@@ -3970,7 +4184,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs1() {
 		if (zs1EClass == null) {
-			zs1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(191);
+			zs1EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(203);
 		}
 		return zs1EClass;
 	}
@@ -3983,7 +4197,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs10() {
 		if (zs10EClass == null) {
-			zs10EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(192);
+			zs10EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(204);
 		}
 		return zs10EClass;
 	}
@@ -3996,7 +4210,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs103() {
 		if (zs103EClass == null) {
-			zs103EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(193);
+			zs103EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(205);
 		}
 		return zs103EClass;
 	}
@@ -4009,7 +4223,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs12() {
 		if (zs12EClass == null) {
-			zs12EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(194);
+			zs12EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(206);
 		}
 		return zs12EClass;
 	}
@@ -4022,7 +4236,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs13() {
 		if (zs13EClass == null) {
-			zs13EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(195);
+			zs13EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(207);
 		}
 		return zs13EClass;
 	}
@@ -4035,7 +4249,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs1A() {
 		if (zs1AEClass == null) {
-			zs1AEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(196);
+			zs1AEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(208);
 		}
 		return zs1AEClass;
 	}
@@ -4048,7 +4262,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs2() {
 		if (zs2EClass == null) {
-			zs2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(197);
+			zs2EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(209);
 		}
 		return zs2EClass;
 	}
@@ -4061,7 +4275,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs2v() {
 		if (zs2vEClass == null) {
-			zs2vEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(198);
+			zs2vEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(210);
 		}
 		return zs2vEClass;
 	}
@@ -4074,7 +4288,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs3() {
 		if (zs3EClass == null) {
-			zs3EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(199);
+			zs3EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(211);
 		}
 		return zs3EClass;
 	}
@@ -4087,7 +4301,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs3v() {
 		if (zs3vEClass == null) {
-			zs3vEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(200);
+			zs3vEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(212);
 		}
 		return zs3vEClass;
 	}
@@ -4100,7 +4314,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs6() {
 		if (zs6EClass == null) {
-			zs6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(201);
+			zs6EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(213);
 		}
 		return zs6EClass;
 	}
@@ -4113,7 +4327,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs7() {
 		if (zs7EClass == null) {
-			zs7EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(202);
+			zs7EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(214);
 		}
 		return zs7EClass;
 	}
@@ -4126,7 +4340,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs8() {
 		if (zs8EClass == null) {
-			zs8EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(203);
+			zs8EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(215);
 		}
 		return zs8EClass;
 	}
@@ -4139,7 +4353,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs8A() {
 		if (zs8AEClass == null) {
-			zs8AEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(204);
+			zs8AEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(216);
 		}
 		return zs8AEClass;
 	}
@@ -4152,7 +4366,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EClass getZs9() {
 		if (zs9EClass == null) {
-			zs9EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(205);
+			zs9EClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(217);
 		}
 		return zs9EClass;
 	}
@@ -4163,9 +4377,22 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * @generated
 	 */
 	@Override
+	public EEnum getENUMSymbolEl34Zusatz() {
+		if (enumSymbolEl34ZusatzEEnum == null) {
+			enumSymbolEl34ZusatzEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(41);
+		}
+		return enumSymbolEl34ZusatzEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EEnum getENUMSymbolLf1() {
 		if (enumSymbolLf1EEnum == null) {
-			enumSymbolLf1EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(39);
+			enumSymbolLf1EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(43);
 		}
 		return enumSymbolLf1EEnum;
 	}
@@ -4178,7 +4405,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EEnum getENUMSymbolLf12() {
 		if (enumSymbolLf12EEnum == null) {
-			enumSymbolLf12EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(40);
+			enumSymbolLf12EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(44);
 		}
 		return enumSymbolLf12EEnum;
 	}
@@ -4191,7 +4418,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EEnum getENUMSymbolLf1Wdh() {
 		if (enumSymbolLf1WdhEEnum == null) {
-			enumSymbolLf1WdhEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(43);
+			enumSymbolLf1WdhEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(47);
 		}
 		return enumSymbolLf1WdhEEnum;
 	}
@@ -4204,7 +4431,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EEnum getENUMSymbolLf4DS() {
 		if (enumSymbolLf4DSEEnum == null) {
-			enumSymbolLf4DSEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(45);
+			enumSymbolLf4DSEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(49);
 		}
 		return enumSymbolLf4DSEEnum;
 	}
@@ -4217,7 +4444,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EEnum getENUMSymbolLf4DV() {
 		if (enumSymbolLf4DVEEnum == null) {
-			enumSymbolLf4DVEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(47);
+			enumSymbolLf4DVEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(51);
 		}
 		return enumSymbolLf4DVEEnum;
 	}
@@ -4230,7 +4457,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EEnum getENUMSymbolLf6() {
 		if (enumSymbolLf6EEnum == null) {
-			enumSymbolLf6EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(49);
+			enumSymbolLf6EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(53);
 		}
 		return enumSymbolLf6EEnum;
 	}
@@ -4243,7 +4470,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EEnum getENUMSymbolLf7() {
 		if (enumSymbolLf7EEnum == null) {
-			enumSymbolLf7EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(51);
+			enumSymbolLf7EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(55);
 		}
 		return enumSymbolLf7EEnum;
 	}
@@ -4256,7 +4483,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EEnum getENUMSymbolZs2() {
 		if (enumSymbolZs2EEnum == null) {
-			enumSymbolZs2EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(53);
+			enumSymbolZs2EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(57);
 		}
 		return enumSymbolZs2EEnum;
 	}
@@ -4269,7 +4496,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EEnum getENUMSymbolZs2v() {
 		if (enumSymbolZs2vEEnum == null) {
-			enumSymbolZs2vEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(55);
+			enumSymbolZs2vEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(59);
 		}
 		return enumSymbolZs2vEEnum;
 	}
@@ -4282,7 +4509,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EEnum getENUMSymbolZs3() {
 		if (enumSymbolZs3EEnum == null) {
-			enumSymbolZs3EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(57);
+			enumSymbolZs3EEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(61);
 		}
 		return enumSymbolZs3EEnum;
 	}
@@ -4295,7 +4522,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EEnum getENUMSymbolZs3v() {
 		if (enumSymbolZs3vEEnum == null) {
-			enumSymbolZs3vEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(59);
+			enumSymbolZs3vEEnum = (EEnum)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(63);
 		}
 		return enumSymbolZs3vEEnum;
 	}
@@ -4319,9 +4546,22 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	 * @generated
 	 */
 	@Override
+	public EDataType getENUMSymbolEl34ZusatzObject() {
+		if (enumSymbolEl34ZusatzObjectEDataType == null) {
+			enumSymbolEl34ZusatzObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(42);
+		}
+		return enumSymbolEl34ZusatzObjectEDataType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EDataType getENUMSymbolLf12Object() {
 		if (enumSymbolLf12ObjectEDataType == null) {
-			enumSymbolLf12ObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(41);
+			enumSymbolLf12ObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(45);
 		}
 		return enumSymbolLf12ObjectEDataType;
 	}
@@ -4334,7 +4574,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EDataType getENUMSymbolLf1Object() {
 		if (enumSymbolLf1ObjectEDataType == null) {
-			enumSymbolLf1ObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(42);
+			enumSymbolLf1ObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(46);
 		}
 		return enumSymbolLf1ObjectEDataType;
 	}
@@ -4347,7 +4587,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EDataType getENUMSymbolLf1WdhObject() {
 		if (enumSymbolLf1WdhObjectEDataType == null) {
-			enumSymbolLf1WdhObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(44);
+			enumSymbolLf1WdhObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(48);
 		}
 		return enumSymbolLf1WdhObjectEDataType;
 	}
@@ -4360,7 +4600,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EDataType getENUMSymbolLf4DSObject() {
 		if (enumSymbolLf4DSObjectEDataType == null) {
-			enumSymbolLf4DSObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(46);
+			enumSymbolLf4DSObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(50);
 		}
 		return enumSymbolLf4DSObjectEDataType;
 	}
@@ -4373,7 +4613,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EDataType getENUMSymbolLf4DVObject() {
 		if (enumSymbolLf4DVObjectEDataType == null) {
-			enumSymbolLf4DVObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(48);
+			enumSymbolLf4DVObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(52);
 		}
 		return enumSymbolLf4DVObjectEDataType;
 	}
@@ -4386,7 +4626,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EDataType getENUMSymbolLf6Object() {
 		if (enumSymbolLf6ObjectEDataType == null) {
-			enumSymbolLf6ObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(50);
+			enumSymbolLf6ObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(54);
 		}
 		return enumSymbolLf6ObjectEDataType;
 	}
@@ -4399,7 +4639,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EDataType getENUMSymbolLf7Object() {
 		if (enumSymbolLf7ObjectEDataType == null) {
-			enumSymbolLf7ObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(52);
+			enumSymbolLf7ObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(56);
 		}
 		return enumSymbolLf7ObjectEDataType;
 	}
@@ -4412,7 +4652,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EDataType getENUMSymbolZs2Object() {
 		if (enumSymbolZs2ObjectEDataType == null) {
-			enumSymbolZs2ObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(54);
+			enumSymbolZs2ObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(58);
 		}
 		return enumSymbolZs2ObjectEDataType;
 	}
@@ -4425,7 +4665,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EDataType getENUMSymbolZs2vObject() {
 		if (enumSymbolZs2vObjectEDataType == null) {
-			enumSymbolZs2vObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(56);
+			enumSymbolZs2vObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(60);
 		}
 		return enumSymbolZs2vObjectEDataType;
 	}
@@ -4438,7 +4678,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EDataType getENUMSymbolZs3Object() {
 		if (enumSymbolZs3ObjectEDataType == null) {
-			enumSymbolZs3ObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(58);
+			enumSymbolZs3ObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(62);
 		}
 		return enumSymbolZs3ObjectEDataType;
 	}
@@ -4451,7 +4691,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EDataType getENUMSymbolZs3vObject() {
 		if (enumSymbolZs3vObjectEDataType == null) {
-			enumSymbolZs3vObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(60);
+			enumSymbolZs3vObjectEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(64);
 		}
 		return enumSymbolZs3vObjectEDataType;
 	}
@@ -4464,7 +4704,7 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 	@Override
 	public EDataType getOz_Zugl_Symbol_Type() {
 		if (oz_Zugl_Symbol_TypeEDataType == null) {
-			oz_Zugl_Symbol_TypeEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(124);
+			oz_Zugl_Symbol_TypeEDataType = (EDataType)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(131);
 		}
 		return oz_Zugl_Symbol_TypeEDataType;
 	}

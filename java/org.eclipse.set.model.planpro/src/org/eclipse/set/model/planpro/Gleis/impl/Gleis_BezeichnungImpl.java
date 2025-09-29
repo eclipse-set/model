@@ -121,9 +121,8 @@ public class Gleis_BezeichnungImpl extends Bereich_ObjektImpl implements Gleis_B
 		switch (featureID) {
 			case GleisPackage.GLEIS_BEZEICHNUNG__BEZEICHNUNG:
 				return basicSetBezeichnung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,9 +135,8 @@ public class Gleis_BezeichnungImpl extends Bereich_ObjektImpl implements Gleis_B
 		switch (featureID) {
 			case GleisPackage.GLEIS_BEZEICHNUNG__BEZEICHNUNG:
 				return getBezeichnung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -152,10 +150,8 @@ public class Gleis_BezeichnungImpl extends Bereich_ObjektImpl implements Gleis_B
 			case GleisPackage.GLEIS_BEZEICHNUNG__BEZEICHNUNG:
 				setBezeichnung((Gleis_Bezeichnung_Bezeichnung_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -169,10 +165,8 @@ public class Gleis_BezeichnungImpl extends Bereich_ObjektImpl implements Gleis_B
 			case GleisPackage.GLEIS_BEZEICHNUNG__BEZEICHNUNG:
 				setBezeichnung((Gleis_Bezeichnung_Bezeichnung_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -185,9 +179,8 @@ public class Gleis_BezeichnungImpl extends Bereich_ObjektImpl implements Gleis_B
 		switch (featureID) {
 			case GleisPackage.GLEIS_BEZEICHNUNG__BEZEICHNUNG:
 				return bezeichnung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Gleis_BezeichnungImpl

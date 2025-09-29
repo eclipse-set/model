@@ -226,6 +226,16 @@ public enum ENUMAnhangArt implements Enumerator {
 	ENUM_ANHANG_ART_MONITORAUFTEILUNG(19, "ENUMAnhang_Art_Monitoraufteilung", "Monitoraufteilung"),
 
 	/**
+	 * The '<em><b>ENUM Anhang Art Planungsbuero Logo</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_ANHANG_ART_PLANUNGSBUERO_LOGO_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_ANHANG_ART_PLANUNGSBUERO_LOGO(20, "ENUMAnhang_Art_Planungsbuero_Logo", "Planungsbuero_Logo"),
+
+	/**
 	 * The '<em><b>ENUM Anhang Art Planverzeichnis</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -233,7 +243,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_PLANVERZEICHNIS(20, "ENUMAnhang_Art_Planverzeichnis", "Planverzeichnis"),
+	ENUM_ANHANG_ART_PLANVERZEICHNIS(21, "ENUMAnhang_Art_Planverzeichnis", "Planverzeichnis"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Pruefbericht</b></em>' literal object.
@@ -243,7 +253,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_PRUEFBERICHT(21, "ENUMAnhang_Art_Pruefbericht", "Pruefbericht"),
+	ENUM_ANHANG_ART_PRUEFBERICHT(22, "ENUMAnhang_Art_Pruefbericht", "Pruefbericht"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Raumplan Bedienraeume</b></em>' literal object.
@@ -253,7 +263,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_RAUMPLAN_BEDIENRAEUME(22, "ENUMAnhang_Art_Raumplan_Bedienraeume", "Raumplan_Bedienraeume"),
+	ENUM_ANHANG_ART_RAUMPLAN_BEDIENRAEUME(23, "ENUMAnhang_Art_Raumplan_Bedienraeume", "Raumplan_Bedienraeume"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Raumplan Rechnerraeume</b></em>' literal object.
@@ -263,7 +273,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_RAUMPLAN_RECHNERRAEUME(23, "ENUMAnhang_Art_Raumplan_Rechnerraeume", "Raumplan_Rechnerraeume"),
+	ENUM_ANHANG_ART_RAUMPLAN_RECHNERRAEUME(24, "ENUMAnhang_Art_Raumplan_Rechnerraeume", "Raumplan_Rechnerraeume"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Regelwerksstand Besonders</b></em>' literal object.
@@ -273,7 +283,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_REGELWERKSSTAND_BESONDERS(24, "ENUMAnhang_Art_Regelwerksstand_Besonders", "Regelwerksstand_Besonders"),
+	ENUM_ANHANG_ART_REGELWERKSSTAND_BESONDERS(25, "ENUMAnhang_Art_Regelwerksstand_Besonders", "Regelwerksstand_Besonders"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Richtungssinn</b></em>' literal object.
@@ -283,7 +293,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_RICHTUNGSSINN(25, "ENUMAnhang_Art_Richtungssinn", "Richtungssinn"),
+	ENUM_ANHANG_ART_RICHTUNGSSINN(26, "ENUMAnhang_Art_Richtungssinn", "Richtungssinn"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art sonstige</b></em>' literal object.
@@ -293,7 +303,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_SONSTIGE(26, "ENUMAnhang_Art_sonstige", "sonstige"),
+	ENUM_ANHANG_ART_SONSTIGE(27, "ENUMAnhang_Art_sonstige", "sonstige"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Steuerbezirksuebersicht</b></em>' literal object.
@@ -303,7 +313,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_STEUERBEZIRKSUEBERSICHT(27, "ENUMAnhang_Art_Steuerbezirksuebersicht", "Steuerbezirksuebersicht"),
+	ENUM_ANHANG_ART_STEUERBEZIRKSUEBERSICHT(28, "ENUMAnhang_Art_Steuerbezirksuebersicht", "Steuerbezirksuebersicht"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Ui G</b></em>' literal object.
@@ -313,7 +323,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_UI_G(28, "ENUMAnhang_Art_UiG", "UiG"),
+	ENUM_ANHANG_ART_UI_G(29, "ENUMAnhang_Art_UiG", "UiG"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Vorgabe</b></em>' literal object.
@@ -323,7 +333,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_VORGABE(29, "ENUMAnhang_Art_Vorgabe", "Vorgabe"),
+	ENUM_ANHANG_ART_VORGABE(30, "ENUMAnhang_Art_Vorgabe", "Vorgabe"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Vorgabe GBT</b></em>' literal object.
@@ -333,7 +343,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_VORGABE_GBT(30, "ENUMAnhang_Art_Vorgabe_GBT", "Vorgabe_GBT"),
+	ENUM_ANHANG_ART_VORGABE_GBT(31, "ENUMAnhang_Art_Vorgabe_GBT", "Vorgabe_GBT"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Vz G</b></em>' literal object.
@@ -343,7 +353,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_VZ_G(31, "ENUMAnhang_Art_VzG", "VzG"),
+	ENUM_ANHANG_ART_VZ_G(32, "ENUMAnhang_Art_VzG", "VzG"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Zi E</b></em>' literal object.
@@ -353,7 +363,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_ZI_E(32, "ENUMAnhang_Art_ZiE", "ZiE"),
+	ENUM_ANHANG_ART_ZI_E(33, "ENUMAnhang_Art_ZiE", "ZiE"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art ZN Raumplan Bedienraum</b></em>' literal object.
@@ -363,7 +373,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_ZN_RAUMPLAN_BEDIENRAUM(33, "ENUMAnhang_Art_ZN_Raumplan_Bedienraum", "ZN_Raumplan_Bedienraum"),
+	ENUM_ANHANG_ART_ZN_RAUMPLAN_BEDIENRAUM(34, "ENUMAnhang_Art_ZN_Raumplan_Bedienraum", "ZN_Raumplan_Bedienraum"),
 
 	/**
 	 * The '<em><b>ENUM Anhang Art ZN Raumplan Rechnerraum</b></em>' literal object.
@@ -373,7 +383,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ANHANG_ART_ZN_RAUMPLAN_RECHNERRAUM(34, "ENUMAnhang_Art_ZN_Raumplan_Rechnerraum", "ZN_Raumplan_Rechnerraum");
+	ENUM_ANHANG_ART_ZN_RAUMPLAN_RECHNERRAUM(35, "ENUMAnhang_Art_ZN_Raumplan_Rechnerraum", "ZN_Raumplan_Rechnerraum");
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Abnahmeniederschrift</b></em>' literal value.
@@ -596,6 +606,17 @@ public enum ENUMAnhangArt implements Enumerator {
 	public static final int ENUM_ANHANG_ART_MONITORAUFTEILUNG_VALUE = 19;
 
 	/**
+	 * The '<em><b>ENUM Anhang Art Planungsbuero Logo</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_ANHANG_ART_PLANUNGSBUERO_LOGO
+	 * @model name="ENUMAnhang_Art_Planungsbuero_Logo" literal="Planungsbuero_Logo"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_ANHANG_ART_PLANUNGSBUERO_LOGO_VALUE = 20;
+
+	/**
 	 * The '<em><b>ENUM Anhang Art Planverzeichnis</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -604,7 +625,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_PLANVERZEICHNIS_VALUE = 20;
+	public static final int ENUM_ANHANG_ART_PLANVERZEICHNIS_VALUE = 21;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Pruefbericht</b></em>' literal value.
@@ -615,7 +636,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_PRUEFBERICHT_VALUE = 21;
+	public static final int ENUM_ANHANG_ART_PRUEFBERICHT_VALUE = 22;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Raumplan Bedienraeume</b></em>' literal value.
@@ -626,7 +647,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_RAUMPLAN_BEDIENRAEUME_VALUE = 22;
+	public static final int ENUM_ANHANG_ART_RAUMPLAN_BEDIENRAEUME_VALUE = 23;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Raumplan Rechnerraeume</b></em>' literal value.
@@ -637,7 +658,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_RAUMPLAN_RECHNERRAEUME_VALUE = 23;
+	public static final int ENUM_ANHANG_ART_RAUMPLAN_RECHNERRAEUME_VALUE = 24;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Regelwerksstand Besonders</b></em>' literal value.
@@ -648,7 +669,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_REGELWERKSSTAND_BESONDERS_VALUE = 24;
+	public static final int ENUM_ANHANG_ART_REGELWERKSSTAND_BESONDERS_VALUE = 25;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Richtungssinn</b></em>' literal value.
@@ -659,7 +680,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_RICHTUNGSSINN_VALUE = 25;
+	public static final int ENUM_ANHANG_ART_RICHTUNGSSINN_VALUE = 26;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art sonstige</b></em>' literal value.
@@ -670,7 +691,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_SONSTIGE_VALUE = 26;
+	public static final int ENUM_ANHANG_ART_SONSTIGE_VALUE = 27;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Steuerbezirksuebersicht</b></em>' literal value.
@@ -681,7 +702,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_STEUERBEZIRKSUEBERSICHT_VALUE = 27;
+	public static final int ENUM_ANHANG_ART_STEUERBEZIRKSUEBERSICHT_VALUE = 28;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Ui G</b></em>' literal value.
@@ -692,7 +713,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_UI_G_VALUE = 28;
+	public static final int ENUM_ANHANG_ART_UI_G_VALUE = 29;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Vorgabe</b></em>' literal value.
@@ -703,7 +724,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_VORGABE_VALUE = 29;
+	public static final int ENUM_ANHANG_ART_VORGABE_VALUE = 30;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Vorgabe GBT</b></em>' literal value.
@@ -714,7 +735,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_VORGABE_GBT_VALUE = 30;
+	public static final int ENUM_ANHANG_ART_VORGABE_GBT_VALUE = 31;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Vz G</b></em>' literal value.
@@ -725,7 +746,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_VZ_G_VALUE = 31;
+	public static final int ENUM_ANHANG_ART_VZ_G_VALUE = 32;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art Zi E</b></em>' literal value.
@@ -736,7 +757,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_ZI_E_VALUE = 32;
+	public static final int ENUM_ANHANG_ART_ZI_E_VALUE = 33;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art ZN Raumplan Bedienraum</b></em>' literal value.
@@ -747,7 +768,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_ZN_RAUMPLAN_BEDIENRAUM_VALUE = 33;
+	public static final int ENUM_ANHANG_ART_ZN_RAUMPLAN_BEDIENRAUM_VALUE = 34;
 
 	/**
 	 * The '<em><b>ENUM Anhang Art ZN Raumplan Rechnerraum</b></em>' literal value.
@@ -758,7 +779,7 @@ public enum ENUMAnhangArt implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ANHANG_ART_ZN_RAUMPLAN_RECHNERRAUM_VALUE = 34;
+	public static final int ENUM_ANHANG_ART_ZN_RAUMPLAN_RECHNERRAUM_VALUE = 35;
 
 	/**
 	 * An array of all the '<em><b>ENUM Anhang Art</b></em>' enumerators.
@@ -788,6 +809,7 @@ public enum ENUMAnhangArt implements Enumerator {
 			ENUM_ANHANG_ART_MOEBELAUFSTELLPLAN_AUFRISS,
 			ENUM_ANHANG_ART_MOEBELAUFSTELLPLAN_GRUNDRISS,
 			ENUM_ANHANG_ART_MONITORAUFTEILUNG,
+			ENUM_ANHANG_ART_PLANUNGSBUERO_LOGO,
 			ENUM_ANHANG_ART_PLANVERZEICHNIS,
 			ENUM_ANHANG_ART_PRUEFBERICHT,
 			ENUM_ANHANG_ART_RAUMPLAN_BEDIENRAEUME,
@@ -879,6 +901,7 @@ public enum ENUMAnhangArt implements Enumerator {
 			case ENUM_ANHANG_ART_MOEBELAUFSTELLPLAN_AUFRISS_VALUE: return ENUM_ANHANG_ART_MOEBELAUFSTELLPLAN_AUFRISS;
 			case ENUM_ANHANG_ART_MOEBELAUFSTELLPLAN_GRUNDRISS_VALUE: return ENUM_ANHANG_ART_MOEBELAUFSTELLPLAN_GRUNDRISS;
 			case ENUM_ANHANG_ART_MONITORAUFTEILUNG_VALUE: return ENUM_ANHANG_ART_MONITORAUFTEILUNG;
+			case ENUM_ANHANG_ART_PLANUNGSBUERO_LOGO_VALUE: return ENUM_ANHANG_ART_PLANUNGSBUERO_LOGO;
 			case ENUM_ANHANG_ART_PLANVERZEICHNIS_VALUE: return ENUM_ANHANG_ART_PLANVERZEICHNIS;
 			case ENUM_ANHANG_ART_PRUEFBERICHT_VALUE: return ENUM_ANHANG_ART_PRUEFBERICHT;
 			case ENUM_ANHANG_ART_RAUMPLAN_BEDIENRAEUME_VALUE: return ENUM_ANHANG_ART_RAUMPLAN_BEDIENRAEUME;
@@ -894,8 +917,8 @@ public enum ENUMAnhangArt implements Enumerator {
 			case ENUM_ANHANG_ART_ZI_E_VALUE: return ENUM_ANHANG_ART_ZI_E;
 			case ENUM_ANHANG_ART_ZN_RAUMPLAN_BEDIENRAUM_VALUE: return ENUM_ANHANG_ART_ZN_RAUMPLAN_BEDIENRAUM;
 			case ENUM_ANHANG_ART_ZN_RAUMPLAN_RECHNERRAUM_VALUE: return ENUM_ANHANG_ART_ZN_RAUMPLAN_RECHNERRAUM;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

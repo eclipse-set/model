@@ -159,10 +159,8 @@ public class ID_Signal_ohne_Proxy_TypeClassItemProvider extends Zeiger_TypeClass
 			case VerweisePackage.ID_SIGNAL_OHNE_PROXY_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

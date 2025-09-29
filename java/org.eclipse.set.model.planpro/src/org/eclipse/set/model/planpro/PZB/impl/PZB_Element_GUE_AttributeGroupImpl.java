@@ -593,9 +593,8 @@ public class PZB_Element_GUE_AttributeGroupImpl extends EObjectImpl implements P
 				return basicSetPruefgeschwindigkeit(null, msgs);
 			case PZBPackage.PZB_ELEMENT_GUE_ATTRIBUTE_GROUP__PRUEFZEIT:
 				return basicSetPruefzeit(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -624,9 +623,8 @@ public class PZB_Element_GUE_AttributeGroupImpl extends EObjectImpl implements P
 				return getPruefgeschwindigkeit();
 			case PZBPackage.PZB_ELEMENT_GUE_ATTRIBUTE_GROUP__PRUEFZEIT:
 				return getPruefzeit();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -664,10 +662,8 @@ public class PZB_Element_GUE_AttributeGroupImpl extends EObjectImpl implements P
 			case PZBPackage.PZB_ELEMENT_GUE_ATTRIBUTE_GROUP__PRUEFZEIT:
 				setPruefzeit((Pruefzeit_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -705,10 +701,8 @@ public class PZB_Element_GUE_AttributeGroupImpl extends EObjectImpl implements P
 			case PZBPackage.PZB_ELEMENT_GUE_ATTRIBUTE_GROUP__PRUEFZEIT:
 				setPruefzeit((Pruefzeit_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -737,9 +731,8 @@ public class PZB_Element_GUE_AttributeGroupImpl extends EObjectImpl implements P
 				return pruefgeschwindigkeit != null;
 			case PZBPackage.PZB_ELEMENT_GUE_ATTRIBUTE_GROUP__PRUEFZEIT:
 				return pruefzeit != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //PZB_Element_GUE_AttributeGroupImpl

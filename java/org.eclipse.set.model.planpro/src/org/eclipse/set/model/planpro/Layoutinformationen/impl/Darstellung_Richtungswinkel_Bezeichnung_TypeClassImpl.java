@@ -9,6 +9,8 @@
  */
 package org.eclipse.set.model.planpro.Layoutinformationen.impl;
 
+import java.math.BigDecimal;
+
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
@@ -17,23 +19,23 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.set.model.planpro.BasisTypen.impl.BasisAttribut_AttributeGroupImpl;
 
-import org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_GEO_Punkt_TypeClass;
+import org.eclipse.set.model.planpro.Layoutinformationen.Darstellung_Richtungswinkel_Bezeichnung_TypeClass;
 import org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenPackage;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Darstellung GEO Punkt Type Class</b></em>'.
+ * An implementation of the model object '<em><b>Darstellung Richtungswinkel Bezeichnung Type Class</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_GEO_Punkt_TypeClassImpl#getWert <em>Wert</em>}</li>
+ *   <li>{@link org.eclipse.set.model.planpro.Layoutinformationen.impl.Darstellung_Richtungswinkel_Bezeichnung_TypeClassImpl#getWert <em>Wert</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class Darstellung_GEO_Punkt_TypeClassImpl extends BasisAttribut_AttributeGroupImpl implements Darstellung_GEO_Punkt_TypeClass {
+public class Darstellung_Richtungswinkel_Bezeichnung_TypeClassImpl extends BasisAttribut_AttributeGroupImpl implements Darstellung_Richtungswinkel_Bezeichnung_TypeClass {
 	/**
 	 * The default value of the '{@link #getWert() <em>Wert</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -42,7 +44,7 @@ public class Darstellung_GEO_Punkt_TypeClassImpl extends BasisAttribut_Attribute
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String WERT_EDEFAULT = null;
+	protected static final BigDecimal WERT_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getWert() <em>Wert</em>}' attribute.
@@ -52,7 +54,7 @@ public class Darstellung_GEO_Punkt_TypeClassImpl extends BasisAttribut_Attribute
 	 * @generated
 	 * @ordered
 	 */
-	protected String wert = WERT_EDEFAULT;
+	protected BigDecimal wert = WERT_EDEFAULT;
 
 	/**
 	 * This is true if the Wert attribute has been set.
@@ -68,7 +70,7 @@ public class Darstellung_GEO_Punkt_TypeClassImpl extends BasisAttribut_Attribute
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected Darstellung_GEO_Punkt_TypeClassImpl() {
+	protected Darstellung_Richtungswinkel_Bezeichnung_TypeClassImpl() {
 		super();
 	}
 
@@ -79,7 +81,7 @@ public class Darstellung_GEO_Punkt_TypeClassImpl extends BasisAttribut_Attribute
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return LayoutinformationenPackage.Literals.DARSTELLUNG_GEO_PUNKT_TYPE_CLASS;
+		return LayoutinformationenPackage.Literals.DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS;
 	}
 
 	/**
@@ -88,7 +90,7 @@ public class Darstellung_GEO_Punkt_TypeClassImpl extends BasisAttribut_Attribute
 	 * @generated
 	 */
 	@Override
-	public String getWert() {
+	public BigDecimal getWert() {
 		return wert;
 	}
 
@@ -98,13 +100,13 @@ public class Darstellung_GEO_Punkt_TypeClassImpl extends BasisAttribut_Attribute
 	 * @generated
 	 */
 	@Override
-	public void setWert(String newWert) {
-		String oldWert = wert;
+	public void setWert(BigDecimal newWert) {
+		BigDecimal oldWert = wert;
 		wert = newWert;
 		boolean oldWertESet = wertESet;
 		wertESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, LayoutinformationenPackage.DARSTELLUNG_GEO_PUNKT_TYPE_CLASS__WERT, oldWert, wert, !oldWertESet));
+			eNotify(new ENotificationImpl(this, Notification.SET, LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS__WERT, oldWert, wert, !oldWertESet));
 	}
 
 	/**
@@ -114,12 +116,12 @@ public class Darstellung_GEO_Punkt_TypeClassImpl extends BasisAttribut_Attribute
 	 */
 	@Override
 	public void unsetWert() {
-		String oldWert = wert;
+		BigDecimal oldWert = wert;
 		boolean oldWertESet = wertESet;
 		wert = WERT_EDEFAULT;
 		wertESet = false;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.UNSET, LayoutinformationenPackage.DARSTELLUNG_GEO_PUNKT_TYPE_CLASS__WERT, oldWert, WERT_EDEFAULT, oldWertESet));
+			eNotify(new ENotificationImpl(this, Notification.UNSET, LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS__WERT, oldWert, WERT_EDEFAULT, oldWertESet));
 	}
 
 	/**
@@ -140,11 +142,10 @@ public class Darstellung_GEO_Punkt_TypeClassImpl extends BasisAttribut_Attribute
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case LayoutinformationenPackage.DARSTELLUNG_GEO_PUNKT_TYPE_CLASS__WERT:
+			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS__WERT:
 				return getWert();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -155,13 +156,11 @@ public class Darstellung_GEO_Punkt_TypeClassImpl extends BasisAttribut_Attribute
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case LayoutinformationenPackage.DARSTELLUNG_GEO_PUNKT_TYPE_CLASS__WERT:
-				setWert((String)newValue);
-				return;
-			default:
-				super.eSet(featureID, newValue);
+			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS__WERT:
+				setWert((BigDecimal)newValue);
 				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -172,13 +171,11 @@ public class Darstellung_GEO_Punkt_TypeClassImpl extends BasisAttribut_Attribute
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case LayoutinformationenPackage.DARSTELLUNG_GEO_PUNKT_TYPE_CLASS__WERT:
+			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -189,11 +186,10 @@ public class Darstellung_GEO_Punkt_TypeClassImpl extends BasisAttribut_Attribute
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case LayoutinformationenPackage.DARSTELLUNG_GEO_PUNKT_TYPE_CLASS__WERT:
+			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS__WERT:
 				return isSetWert();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**
@@ -212,4 +208,4 @@ public class Darstellung_GEO_Punkt_TypeClassImpl extends BasisAttribut_Attribute
 		return result.toString();
 	}
 
-} //Darstellung_GEO_Punkt_TypeClassImpl
+} //Darstellung_Richtungswinkel_Bezeichnung_TypeClassImpl

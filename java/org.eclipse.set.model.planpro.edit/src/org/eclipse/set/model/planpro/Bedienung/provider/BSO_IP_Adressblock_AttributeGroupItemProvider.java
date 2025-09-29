@@ -162,10 +162,8 @@ public class BSO_IP_Adressblock_AttributeGroupItemProvider
 			case BedienungPackage.BSO_IP_ADRESSBLOCK_ATTRIBUTE_GROUP__REGIONALBEREICH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -155,10 +155,8 @@ public class UnterbringungItemProvider extends Basis_ObjektItemProvider {
 			case Ansteuerung_ElementPackage.UNTERBRINGUNG__UNTERBRINGUNG_POLYGONZUG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

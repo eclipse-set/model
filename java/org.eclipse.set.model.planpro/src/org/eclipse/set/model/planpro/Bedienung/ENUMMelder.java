@@ -365,8 +365,8 @@ public enum ENUMMelder implements Enumerator {
 			case ENUM_MELDER_VORBEREITUNGSMELDUNG_VALUE: return ENUM_MELDER_VORBEREITUNGSMELDUNG;
 			case ENUM_MELDER_WEICHENMELDER_VALUE: return ENUM_MELDER_WEICHENMELDER;
 			case ENUM_MELDER_ZIELMELDER_VALUE: return ENUM_MELDER_ZIELMELDER;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

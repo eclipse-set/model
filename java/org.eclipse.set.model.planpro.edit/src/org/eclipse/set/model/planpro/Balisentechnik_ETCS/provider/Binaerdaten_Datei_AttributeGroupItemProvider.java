@@ -154,10 +154,8 @@ public class Binaerdaten_Datei_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.BINAERDATEN_DATEI_ATTRIBUTE_GROUP__DATEITYP_BINAERDATEI:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

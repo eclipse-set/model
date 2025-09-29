@@ -159,10 +159,8 @@ public class ID_Fla_Schutz_TypeClassItemProvider extends Zeiger_TypeClassItemPro
 			case VerweisePackage.ID_FLA_SCHUTZ_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

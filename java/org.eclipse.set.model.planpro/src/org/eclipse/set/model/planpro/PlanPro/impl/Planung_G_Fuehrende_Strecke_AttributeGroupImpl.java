@@ -238,9 +238,8 @@ public class Planung_G_Fuehrende_Strecke_AttributeGroupImpl extends EObjectImpl 
 				return basicSetStreckeKm(null, msgs);
 			case PlanProPackage.PLANUNG_GFUEHRENDE_STRECKE_ATTRIBUTE_GROUP__STRECKE_NUMMER:
 				return basicSetStreckeNummer(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -257,9 +256,8 @@ public class Planung_G_Fuehrende_Strecke_AttributeGroupImpl extends EObjectImpl 
 				return getStreckeKm();
 			case PlanProPackage.PLANUNG_GFUEHRENDE_STRECKE_ATTRIBUTE_GROUP__STRECKE_NUMMER:
 				return getStreckeNummer();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -279,10 +277,8 @@ public class Planung_G_Fuehrende_Strecke_AttributeGroupImpl extends EObjectImpl 
 			case PlanProPackage.PLANUNG_GFUEHRENDE_STRECKE_ATTRIBUTE_GROUP__STRECKE_NUMMER:
 				setStreckeNummer((Strecke_Nummer_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -302,10 +298,8 @@ public class Planung_G_Fuehrende_Strecke_AttributeGroupImpl extends EObjectImpl 
 			case PlanProPackage.PLANUNG_GFUEHRENDE_STRECKE_ATTRIBUTE_GROUP__STRECKE_NUMMER:
 				setStreckeNummer((Strecke_Nummer_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -322,9 +316,8 @@ public class Planung_G_Fuehrende_Strecke_AttributeGroupImpl extends EObjectImpl 
 				return streckeKm != null;
 			case PlanProPackage.PLANUNG_GFUEHRENDE_STRECKE_ATTRIBUTE_GROUP__STRECKE_NUMMER:
 				return streckeNummer != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Planung_G_Fuehrende_Strecke_AttributeGroupImpl

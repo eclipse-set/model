@@ -139,10 +139,8 @@ public class Abstand_Gehweg_Fahrbahn_TypeClassItemProvider extends BasisAttribut
 			case BahnuebergangPackage.ABSTAND_GEHWEG_FAHRBAHN_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

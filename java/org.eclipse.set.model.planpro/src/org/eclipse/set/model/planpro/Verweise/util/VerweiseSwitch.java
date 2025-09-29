@@ -284,6 +284,14 @@ public class VerweiseSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case VerweisePackage.ID_BEZUGSPUNKT_TYPE_CLASS: {
+				ID_Bezugspunkt_TypeClass iD_Bezugspunkt_TypeClass = (ID_Bezugspunkt_TypeClass)theEObject;
+				T result = caseID_Bezugspunkt_TypeClass(iD_Bezugspunkt_TypeClass);
+				if (result == null) result = caseZeiger_TypeClass(iD_Bezugspunkt_TypeClass);
+				if (result == null) result = caseBasisAttribut_AttributeGroup(iD_Bezugspunkt_TypeClass);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case VerweisePackage.ID_BINAERDATEN_OHNE_PROXY_TYPE_CLASS: {
 				ID_Binaerdaten_ohne_Proxy_TypeClass iD_Binaerdaten_ohne_Proxy_TypeClass = (ID_Binaerdaten_ohne_Proxy_TypeClass)theEObject;
 				T result = caseID_Binaerdaten_ohne_Proxy_TypeClass(iD_Binaerdaten_ohne_Proxy_TypeClass);
@@ -1779,6 +1787,21 @@ public class VerweiseSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseID_Bezugspunkt_Positionierung_TypeClass(ID_Bezugspunkt_Positionierung_TypeClass object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>ID Bezugspunkt Type Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>ID Bezugspunkt Type Class</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseID_Bezugspunkt_TypeClass(ID_Bezugspunkt_TypeClass object) {
 		return null;
 	}
 

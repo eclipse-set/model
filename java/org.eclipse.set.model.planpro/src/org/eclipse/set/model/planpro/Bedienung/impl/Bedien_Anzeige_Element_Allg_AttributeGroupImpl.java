@@ -238,9 +238,8 @@ public class Bedien_Anzeige_Element_Allg_AttributeGroupImpl extends EObjectImpl 
 				return basicSetSchalter(null, msgs);
 			case BedienungPackage.BEDIEN_ANZEIGE_ELEMENT_ALLG_ATTRIBUTE_GROUP__TASTE:
 				return basicSetTaste(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -257,9 +256,8 @@ public class Bedien_Anzeige_Element_Allg_AttributeGroupImpl extends EObjectImpl 
 				return getSchalter();
 			case BedienungPackage.BEDIEN_ANZEIGE_ELEMENT_ALLG_ATTRIBUTE_GROUP__TASTE:
 				return getTaste();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -279,10 +277,8 @@ public class Bedien_Anzeige_Element_Allg_AttributeGroupImpl extends EObjectImpl 
 			case BedienungPackage.BEDIEN_ANZEIGE_ELEMENT_ALLG_ATTRIBUTE_GROUP__TASTE:
 				setTaste((Taste_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -302,10 +298,8 @@ public class Bedien_Anzeige_Element_Allg_AttributeGroupImpl extends EObjectImpl 
 			case BedienungPackage.BEDIEN_ANZEIGE_ELEMENT_ALLG_ATTRIBUTE_GROUP__TASTE:
 				setTaste((Taste_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -322,9 +316,8 @@ public class Bedien_Anzeige_Element_Allg_AttributeGroupImpl extends EObjectImpl 
 				return schalter != null;
 			case BedienungPackage.BEDIEN_ANZEIGE_ELEMENT_ALLG_ATTRIBUTE_GROUP__TASTE:
 				return taste != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Anzeige_Element_Allg_AttributeGroupImpl

@@ -156,10 +156,8 @@ public class GZ_Freimeldung_R_AttributeGroupItemProvider
 			case Weichen_und_GleissperrenPackage.GZ_FREIMELDUNG_RATTRIBUTE_GROUP__ID_ELEMENT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

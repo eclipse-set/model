@@ -136,10 +136,8 @@ public class Isolierfall_TypeClassItemProvider extends BasisAttribut_AttributeGr
 			case Weichen_und_GleissperrenPackage.ISOLIERFALL_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

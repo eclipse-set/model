@@ -240,9 +240,8 @@ public class FMA_ElementImpl extends Punkt_ObjektImpl implements FMA_Element {
 				return basicSetFMAElementAnschluss(null, msgs);
 			case OrtungPackage.FMA_ELEMENT__IDFMA_ANLAGE:
 				return basicSetIDFMAAnlage(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -259,9 +258,8 @@ public class FMA_ElementImpl extends Punkt_ObjektImpl implements FMA_Element {
 				return getFMAElementAnschluss();
 			case OrtungPackage.FMA_ELEMENT__IDFMA_ANLAGE:
 				return getIDFMAAnlage();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -281,10 +279,8 @@ public class FMA_ElementImpl extends Punkt_ObjektImpl implements FMA_Element {
 			case OrtungPackage.FMA_ELEMENT__IDFMA_ANLAGE:
 				setIDFMAAnlage((ID_FMA_Anlage_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -304,10 +300,8 @@ public class FMA_ElementImpl extends Punkt_ObjektImpl implements FMA_Element {
 			case OrtungPackage.FMA_ELEMENT__IDFMA_ANLAGE:
 				setIDFMAAnlage((ID_FMA_Anlage_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -324,9 +318,8 @@ public class FMA_ElementImpl extends Punkt_ObjektImpl implements FMA_Element {
 				return fMAElementAnschluss != null;
 			case OrtungPackage.FMA_ELEMENT__IDFMA_ANLAGE:
 				return iDFMAAnlage != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //FMA_ElementImpl

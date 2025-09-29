@@ -9,14 +9,21 @@
  */
 package org.eclipse.set.model.planpro.Signale.impl;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.eclipse.set.model.planpro.Signale.Dunkelschaltung_TypeClass;
 import org.eclipse.set.model.planpro.Signale.Funktion_Ohne_Signal_TypeClass;
@@ -75,14 +82,14 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 	protected Funktion_Ohne_Signal_TypeClass funktionOhneSignal;
 
 	/**
-	 * The cached value of the '{@link #getGeltungsbereich() <em>Geltungsbereich</em>}' containment reference.
+	 * The cached value of the '{@link #getGeltungsbereich() <em>Geltungsbereich</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getGeltungsbereich()
 	 * @generated
 	 * @ordered
 	 */
-	protected Geltungsbereich_TypeClass geltungsbereich;
+	protected EList<Geltungsbereich_TypeClass> geltungsbereich;
 
 	/**
 	 * The cached value of the '{@link #getSignalBefestigungsart() <em>Signal Befestigungsart</em>}' containment reference.
@@ -269,43 +276,11 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 	 * @generated
 	 */
 	@Override
-	public Geltungsbereich_TypeClass getGeltungsbereich() {
+	public EList<Geltungsbereich_TypeClass> getGeltungsbereich() {
+		if (geltungsbereich == null) {
+			geltungsbereich = new EObjectContainmentEList<Geltungsbereich_TypeClass>(Geltungsbereich_TypeClass.class, this, SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__GELTUNGSBEREICH);
+		}
 		return geltungsbereich;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetGeltungsbereich(Geltungsbereich_TypeClass newGeltungsbereich, NotificationChain msgs) {
-		Geltungsbereich_TypeClass oldGeltungsbereich = geltungsbereich;
-		geltungsbereich = newGeltungsbereich;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__GELTUNGSBEREICH, oldGeltungsbereich, newGeltungsbereich);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setGeltungsbereich(Geltungsbereich_TypeClass newGeltungsbereich) {
-		if (newGeltungsbereich != geltungsbereich) {
-			NotificationChain msgs = null;
-			if (geltungsbereich != null)
-				msgs = ((InternalEObject)geltungsbereich).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__GELTUNGSBEREICH, null, msgs);
-			if (newGeltungsbereich != null)
-				msgs = ((InternalEObject)newGeltungsbereich).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__GELTUNGSBEREICH, null, msgs);
-			msgs = basicSetGeltungsbereich(newGeltungsbereich, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__GELTUNGSBEREICH, newGeltungsbereich, newGeltungsbereich));
 	}
 
 	/**
@@ -636,7 +611,7 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__FUNKTION_OHNE_SIGNAL:
 				return basicSetFunktionOhneSignal(null, msgs);
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__GELTUNGSBEREICH:
-				return basicSetGeltungsbereich(null, msgs);
+				return ((InternalEList<?>)getGeltungsbereich()).basicRemove(otherEnd, msgs);
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNAL_BEFESTIGUNGSART:
 				return basicSetSignalBefestigungsart(null, msgs);
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNAL_FUNKTION:
@@ -651,9 +626,8 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 				return basicSetSignalsichtMindest(null, msgs);
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNALSICHT_SOLL:
 				return basicSetSignalsichtSoll(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -684,9 +658,8 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 				return getSignalsichtMindest();
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNALSICHT_SOLL:
 				return getSignalsichtSoll();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -694,6 +667,7 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -704,7 +678,8 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 				setFunktionOhneSignal((Funktion_Ohne_Signal_TypeClass)newValue);
 				return;
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__GELTUNGSBEREICH:
-				setGeltungsbereich((Geltungsbereich_TypeClass)newValue);
+				getGeltungsbereich().clear();
+				getGeltungsbereich().addAll((Collection<? extends Geltungsbereich_TypeClass>)newValue);
 				return;
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNAL_BEFESTIGUNGSART:
 				setSignalBefestigungsart((Signal_Befestigungsart_TypeClass)newValue);
@@ -727,10 +702,8 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNALSICHT_SOLL:
 				setSignalsichtSoll((Signalsicht_Soll_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -748,7 +721,7 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 				setFunktionOhneSignal((Funktion_Ohne_Signal_TypeClass)null);
 				return;
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__GELTUNGSBEREICH:
-				setGeltungsbereich((Geltungsbereich_TypeClass)null);
+				getGeltungsbereich().clear();
 				return;
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNAL_BEFESTIGUNGSART:
 				setSignalBefestigungsart((Signal_Befestigungsart_TypeClass)null);
@@ -771,10 +744,8 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNALSICHT_SOLL:
 				setSignalsichtSoll((Signalsicht_Soll_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -790,7 +761,7 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__FUNKTION_OHNE_SIGNAL:
 				return funktionOhneSignal != null;
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__GELTUNGSBEREICH:
-				return geltungsbereich != null;
+				return geltungsbereich != null && !geltungsbereich.isEmpty();
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNAL_BEFESTIGUNGSART:
 				return signalBefestigungsart != null;
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNAL_FUNKTION:
@@ -805,9 +776,8 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 				return signalsichtMindest != null;
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNALSICHT_SOLL:
 				return signalsichtSoll != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Signal_Real_AttributeGroupImpl

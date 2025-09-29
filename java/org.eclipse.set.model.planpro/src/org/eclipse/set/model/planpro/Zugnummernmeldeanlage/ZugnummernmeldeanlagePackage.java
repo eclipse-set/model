@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +128,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Zugnummernmeldeanlage/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Zugnummernmeldeanlage/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -480,6 +480,43 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	int BEZEICHNUNG_BESONDERE_ANLAGE_TYPE_CLASS_FEATURE_COUNT = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.Bezeichnung_Stellwerk_TypeClassImpl <em>Bezeichnung Stellwerk Type Class</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.Bezeichnung_Stellwerk_TypeClassImpl
+	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getBezeichnung_Stellwerk_TypeClass()
+	 * @generated
+	 */
+	int BEZEICHNUNG_STELLWERK_TYPE_CLASS = 9;
+
+	/**
+	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEZEICHNUNG_STELLWERK_TYPE_CLASS__ID_BEARBEITUNGSVERMERK = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP__ID_BEARBEITUNGSVERMERK;
+
+	/**
+	 * The feature id for the '<em><b>Wert</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEZEICHNUNG_STELLWERK_TYPE_CLASS__WERT = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Bezeichnung Stellwerk Type Class</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BEZEICHNUNG_STELLWERK_TYPE_CLASS_FEATURE_COUNT = BasisTypenPackage.BASIS_ATTRIBUT_ATTRIBUTE_GROUP_FEATURE_COUNT + 1;
+
+	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.Bf_Kennung_TypeClassImpl <em>Bf Kennung Type Class</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -487,7 +524,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getBf_Kennung_TypeClass()
 	 * @generated
 	 */
-	int BF_KENNUNG_TYPE_CLASS = 9;
+	int BF_KENNUNG_TYPE_CLASS = 10;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -524,7 +561,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getBf_Nr_ANB_TypeClass()
 	 * @generated
 	 */
-	int BF_NR_ANB_TYPE_CLASS = 10;
+	int BF_NR_ANB_TYPE_CLASS = 11;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -561,7 +598,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getBf_Nr_TypeClass()
 	 * @generated
 	 */
-	int BF_NR_TYPE_CLASS = 11;
+	int BF_NR_TYPE_CLASS = 12;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -598,7 +635,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getBf_Nr_ZN_A_TypeClass()
 	 * @generated
 	 */
-	int BF_NR_ZN_ATYPE_CLASS = 12;
+	int BF_NR_ZN_ATYPE_CLASS = 13;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -635,7 +672,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getDurchfahrdruck_TypeClass()
 	 * @generated
 	 */
-	int DURCHFAHRDRUCK_TYPE_CLASS = 13;
+	int DURCHFAHRDRUCK_TYPE_CLASS = 14;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -672,7 +709,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getEinfahrdruck_Gegengleis_TypeClass()
 	 * @generated
 	 */
-	int EINFAHRDRUCK_GEGENGLEIS_TYPE_CLASS = 14;
+	int EINFAHRDRUCK_GEGENGLEIS_TYPE_CLASS = 15;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -709,7 +746,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getEinfahrdruck_TypeClass()
 	 * @generated
 	 */
-	int EINFAHRDRUCK_TYPE_CLASS = 15;
+	int EINFAHRDRUCK_TYPE_CLASS = 16;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -746,7 +783,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getEinwahlstelle_TypeClass()
 	 * @generated
 	 */
-	int EINWAHLSTELLE_TYPE_CLASS = 16;
+	int EINWAHLSTELLE_TYPE_CLASS = 17;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -783,7 +820,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getFunktionalitaet_Anzeigefeld_TypeClass()
 	 * @generated
 	 */
-	int FUNKTIONALITAET_ANZEIGEFELD_TYPE_CLASS = 17;
+	int FUNKTIONALITAET_ANZEIGEFELD_TYPE_CLASS = 18;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -820,7 +857,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getHOA_TypeClass()
 	 * @generated
 	 */
-	int HOA_TYPE_CLASS = 18;
+	int HOA_TYPE_CLASS = 19;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -857,7 +894,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getIP_Adresse_TypeClass()
 	 * @generated
 	 */
-	int IP_ADRESSE_TYPE_CLASS = 19;
+	int IP_ADRESSE_TYPE_CLASS = 20;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -894,7 +931,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getKoppelunterstation_TypeClass()
 	 * @generated
 	 */
-	int KOPPELUNTERSTATION_TYPE_CLASS = 20;
+	int KOPPELUNTERSTATION_TYPE_CLASS = 21;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -931,7 +968,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getKUs_Zeittelegramm_TypeClass()
 	 * @generated
 	 */
-	int KUS_ZEITTELEGRAMM_TYPE_CLASS = 21;
+	int KUS_ZEITTELEGRAMM_TYPE_CLASS = 22;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -968,7 +1005,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getMeldedruck_TypeClass()
 	 * @generated
 	 */
-	int MELDEDRUCK_TYPE_CLASS = 22;
+	int MELDEDRUCK_TYPE_CLASS = 23;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1005,7 +1042,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getPrioritaet_TypeClass()
 	 * @generated
 	 */
-	int PRIORITAET_TYPE_CLASS = 23;
+	int PRIORITAET_TYPE_CLASS = 24;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1042,7 +1079,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getReaktivierungsfunktion_TypeClass()
 	 * @generated
 	 */
-	int REAKTIVIERUNGSFUNKTION_TYPE_CLASS = 24;
+	int REAKTIVIERUNGSFUNKTION_TYPE_CLASS = 25;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1079,7 +1116,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getSichtbarkeit_Anzeigefeld_TypeClass()
 	 * @generated
 	 */
-	int SICHTBARKEIT_ANZEIGEFELD_TYPE_CLASS = 25;
+	int SICHTBARKEIT_ANZEIGEFELD_TYPE_CLASS = 26;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1116,7 +1153,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegramm_02_TypeClass()
 	 * @generated
 	 */
-	int TELEGRAMM_02_TYPE_CLASS = 26;
+	int TELEGRAMM_02_TYPE_CLASS = 27;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1153,7 +1190,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegramm_03_TypeClass()
 	 * @generated
 	 */
-	int TELEGRAMM_03_TYPE_CLASS = 27;
+	int TELEGRAMM_03_TYPE_CLASS = 28;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1190,7 +1227,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegramm_04_TypeClass()
 	 * @generated
 	 */
-	int TELEGRAMM_04_TYPE_CLASS = 28;
+	int TELEGRAMM_04_TYPE_CLASS = 29;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1227,7 +1264,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegramm_10_TypeClass()
 	 * @generated
 	 */
-	int TELEGRAMM_10_TYPE_CLASS = 29;
+	int TELEGRAMM_10_TYPE_CLASS = 30;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1264,7 +1301,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegramm_21_TypeClass()
 	 * @generated
 	 */
-	int TELEGRAMM_21_TYPE_CLASS = 30;
+	int TELEGRAMM_21_TYPE_CLASS = 31;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1301,7 +1338,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegramm_30_TypeClass()
 	 * @generated
 	 */
-	int TELEGRAMM_30_TYPE_CLASS = 31;
+	int TELEGRAMM_30_TYPE_CLASS = 32;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1338,7 +1375,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegramm_84_Alle_Fstr_AttributeGroup()
 	 * @generated
 	 */
-	int TELEGRAMM_84_ALLE_FSTR_ATTRIBUTE_GROUP = 32;
+	int TELEGRAMM_84_ALLE_FSTR_ATTRIBUTE_GROUP = 33;
 
 	/**
 	 * The feature id for the '<em><b>IDZLV Bus</b></em>' containment reference.
@@ -1375,7 +1412,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegramm_84_Einzelne_Fstr_AttributeGroup()
 	 * @generated
 	 */
-	int TELEGRAMM_84_EINZELNE_FSTR_ATTRIBUTE_GROUP = 33;
+	int TELEGRAMM_84_EINZELNE_FSTR_ATTRIBUTE_GROUP = 34;
 
 	/**
 	 * The feature id for the '<em><b>ID Fstr Zug Rangier</b></em>' containment reference.
@@ -1412,7 +1449,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegramm_84_Fuer_Alle_Fstr_TypeClass()
 	 * @generated
 	 */
-	int TELEGRAMM_84_FUER_ALLE_FSTR_TYPE_CLASS = 34;
+	int TELEGRAMM_84_FUER_ALLE_FSTR_TYPE_CLASS = 35;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1449,7 +1486,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegramm_84_Verzicht_TypeClass()
 	 * @generated
 	 */
-	int TELEGRAMM_84_VERZICHT_TYPE_CLASS = 35;
+	int TELEGRAMM_84_VERZICHT_TYPE_CLASS = 36;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1486,7 +1523,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegramm_85_Alle_Fstr_AttributeGroup()
 	 * @generated
 	 */
-	int TELEGRAMM_85_ALLE_FSTR_ATTRIBUTE_GROUP = 36;
+	int TELEGRAMM_85_ALLE_FSTR_ATTRIBUTE_GROUP = 37;
 
 	/**
 	 * The feature id for the '<em><b>IDZLV Bus</b></em>' containment reference.
@@ -1523,7 +1560,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegramm_85_Einzelne_Fstr_AttributeGroup()
 	 * @generated
 	 */
-	int TELEGRAMM_85_EINZELNE_FSTR_ATTRIBUTE_GROUP = 37;
+	int TELEGRAMM_85_EINZELNE_FSTR_ATTRIBUTE_GROUP = 38;
 
 	/**
 	 * The feature id for the '<em><b>ID Fstr Zug Rangier</b></em>' containment reference.
@@ -1560,7 +1597,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegramm_85_Fuer_Alle_Fstr_TypeClass()
 	 * @generated
 	 */
-	int TELEGRAMM_85_FUER_ALLE_FSTR_TYPE_CLASS = 38;
+	int TELEGRAMM_85_FUER_ALLE_FSTR_TYPE_CLASS = 39;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1597,7 +1634,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getTelegrammwiederholung_TypeClass()
 	 * @generated
 	 */
-	int TELEGRAMMWIEDERHOLUNG_TYPE_CLASS = 39;
+	int TELEGRAMMWIEDERHOLUNG_TYPE_CLASS = 40;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1634,7 +1671,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getUnterstation_Max_TypeClass()
 	 * @generated
 	 */
-	int UNTERSTATION_MAX_TYPE_CLASS = 40;
+	int UNTERSTATION_MAX_TYPE_CLASS = 41;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1671,7 +1708,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getUnterstation_Nr_TypeClass()
 	 * @generated
 	 */
-	int UNTERSTATION_NR_TYPE_CLASS = 41;
+	int UNTERSTATION_NR_TYPE_CLASS = 42;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1708,7 +1745,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getVerzoegerung_Manuell_Loeschung_TypeClass()
 	 * @generated
 	 */
-	int VERZOEGERUNG_MANUELL_LOESCHUNG_TYPE_CLASS = 42;
+	int VERZOEGERUNG_MANUELL_LOESCHUNG_TYPE_CLASS = 43;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1745,7 +1782,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getVormeldestart_TypeClass()
 	 * @generated
 	 */
-	int VORMELDESTART_TYPE_CLASS = 43;
+	int VORMELDESTART_TYPE_CLASS = 44;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1782,7 +1819,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZBS_Adresse_TypeClass()
 	 * @generated
 	 */
-	int ZBS_ADRESSE_TYPE_CLASS = 44;
+	int ZBS_ADRESSE_TYPE_CLASS = 45;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1819,7 +1856,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZBS_Anbindung_TypeClass()
 	 * @generated
 	 */
-	int ZBS_ANBINDUNG_TYPE_CLASS = 45;
+	int ZBS_ANBINDUNG_TYPE_CLASS = 46;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1856,7 +1893,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZBS_Schnittstelle_TypeClass()
 	 * @generated
 	 */
-	int ZBS_SCHNITTSTELLE_TYPE_CLASS = 46;
+	int ZBS_SCHNITTSTELLE_TYPE_CLASS = 47;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1893,7 +1930,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZeitsynchronisation_Funkuhr_TypeClass()
 	 * @generated
 	 */
-	int ZEITSYNCHRONISATION_FUNKUHR_TYPE_CLASS = 47;
+	int ZEITSYNCHRONISATION_FUNKUHR_TYPE_CLASS = 48;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -1930,7 +1967,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZLV_Bus()
 	 * @generated
 	 */
-	int ZLV_BUS = 48;
+	int ZLV_BUS = 49;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -2012,7 +2049,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZLV_Bus_Allg_AttributeGroup()
 	 * @generated
 	 */
-	int ZLV_BUS_ALLG_ATTRIBUTE_GROUP = 49;
+	int ZLV_BUS_ALLG_ATTRIBUTE_GROUP = 50;
 
 	/**
 	 * The feature id for the '<em><b>Unterstation Max</b></em>' containment reference.
@@ -2049,7 +2086,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZLV_Bus_Besondere_Anlage()
 	 * @generated
 	 */
-	int ZLV_BUS_BESONDERE_ANLAGE = 50;
+	int ZLV_BUS_BESONDERE_ANLAGE = 51;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -2106,7 +2143,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	int ZLV_BUS_BESONDERE_ANLAGE__BEZEICHNUNG = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>IDZLV Bus</b></em>' containment reference.
+	 * The feature id for the '<em><b>IDZLV Bus</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2115,13 +2152,22 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	int ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Unterstation Nr</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>ZLV Bus Besondere Anlage</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ZLV_BUS_BESONDERE_ANLAGE_FEATURE_COUNT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 2;
+	int ZLV_BUS_BESONDERE_ANLAGE_FEATURE_COUNT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroupImpl <em>ZLV Bus Besondere Anlage Bezeichnung Attribute Group</em>}' class.
@@ -2131,7 +2177,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup()
 	 * @generated
 	 */
-	int ZLV_BUS_BESONDERE_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP = 51;
+	int ZLV_BUS_BESONDERE_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP = 52;
 
 	/**
 	 * The feature id for the '<em><b>Bezeichnung Besondere Anlage</b></em>' containment reference.
@@ -2159,7 +2205,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZLV_Bus_Bezeichnung_AttributeGroup()
 	 * @generated
 	 */
-	int ZLV_BUS_BEZEICHNUNG_ATTRIBUTE_GROUP = 52;
+	int ZLV_BUS_BEZEICHNUNG_ATTRIBUTE_GROUP = 53;
 
 	/**
 	 * The feature id for the '<em><b>ZLV Bus Nr</b></em>' containment reference.
@@ -2187,7 +2233,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZLV_Bus_Nr_TypeClass()
 	 * @generated
 	 */
-	int ZLV_BUS_NR_TYPE_CLASS = 53;
+	int ZLV_BUS_NR_TYPE_CLASS = 54;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2224,7 +2270,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZLV_Bus_US_Zuordnung()
 	 * @generated
 	 */
-	int ZLV_BUS_US_ZUORDNUNG = 54;
+	int ZLV_BUS_US_ZUORDNUNG = 55;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -2324,7 +2370,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZLV_Bus_US_Zuordnung_Telegramm_AttributeGroup()
 	 * @generated
 	 */
-	int ZLV_BUS_US_ZUORDNUNG_TELEGRAMM_ATTRIBUTE_GROUP = 55;
+	int ZLV_BUS_US_ZUORDNUNG_TELEGRAMM_ATTRIBUTE_GROUP = 56;
 
 	/**
 	 * The feature id for the '<em><b>Telegramm02</b></em>' containment reference.
@@ -2397,7 +2443,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZLV_Bus_Zuordnung_Allg_AttributeGroup()
 	 * @generated
 	 */
-	int ZLV_BUS_ZUORDNUNG_ALLG_ATTRIBUTE_GROUP = 56;
+	int ZLV_BUS_ZUORDNUNG_ALLG_ATTRIBUTE_GROUP = 57;
 
 	/**
 	 * The feature id for the '<em><b>Anschlussnummer</b></em>' containment reference.
@@ -2434,7 +2480,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN()
 	 * @generated
 	 */
-	int ZN = 57;
+	int ZN = 58;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -2509,13 +2555,22 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	int ZN__ID_OERTLICHKEIT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Bezeichnung Stellwerk</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ZN__BEZEICHNUNG_STELLWERK = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 3;
+
+	/**
 	 * The feature id for the '<em><b>ID Stellwerk</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ZN__ID_STELLWERK = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 3;
+	int ZN__ID_STELLWERK = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>ID Unterbringung</b></em>' containment reference.
@@ -2524,7 +2579,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZN__ID_UNTERBRINGUNG = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 4;
+	int ZN__ID_UNTERBRINGUNG = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>IDZN Unterstation</b></em>' containment reference.
@@ -2533,7 +2588,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZN__IDZN_UNTERSTATION = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 5;
+	int ZN__IDZN_UNTERSTATION = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>ZN Allg</b></em>' containment reference.
@@ -2542,7 +2597,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZN__ZN_ALLG = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 6;
+	int ZN__ZN_ALLG = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>ZN</em>' class.
@@ -2551,7 +2606,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZN_FEATURE_COUNT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 7;
+	int ZN_FEATURE_COUNT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZN_A_Bedienbezeichner_Frei_TypeClassImpl <em>ZN ABedienbezeichner Frei Type Class</em>}' class.
@@ -2561,7 +2616,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_A_Bedienbezeichner_Frei_TypeClass()
 	 * @generated
 	 */
-	int ZN_ABEDIENBEZEICHNER_FREI_TYPE_CLASS = 58;
+	int ZN_ABEDIENBEZEICHNER_FREI_TYPE_CLASS = 59;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2598,7 +2653,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_A_Bezeichner_TypeClass()
 	 * @generated
 	 */
-	int ZN_ABEZEICHNER_TYPE_CLASS = 59;
+	int ZN_ABEZEICHNER_TYPE_CLASS = 60;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2635,7 +2690,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Akustik()
 	 * @generated
 	 */
-	int ZN_AKUSTIK = 60;
+	int ZN_AKUSTIK = 61;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -2726,7 +2781,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Akustik_Anzeigefeld_AttributeGroup()
 	 * @generated
 	 */
-	int ZN_AKUSTIK_ANZEIGEFELD_ATTRIBUTE_GROUP = 61;
+	int ZN_AKUSTIK_ANZEIGEFELD_ATTRIBUTE_GROUP = 62;
 
 	/**
 	 * The feature id for the '<em><b>Akustikdauer Anb Ann</b></em>' containment reference.
@@ -2772,7 +2827,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Allg_AttributeGroup()
 	 * @generated
 	 */
-	int ZN_ALLG_ATTRIBUTE_GROUP = 62;
+	int ZN_ALLG_ATTRIBUTE_GROUP = 63;
 
 	/**
 	 * The feature id for the '<em><b>Einwahlstelle</b></em>' containment reference.
@@ -2818,7 +2873,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Anlagentyp_TypeClass()
 	 * @generated
 	 */
-	int ZN_ANLAGENTYP_TYPE_CLASS = 63;
+	int ZN_ANLAGENTYP_TYPE_CLASS = 64;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -2855,7 +2910,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Anzeigefeld()
 	 * @generated
 	 */
-	int ZN_ANZEIGEFELD = 64;
+	int ZN_ANZEIGEFELD = 65;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -2973,7 +3028,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Anzeigefeld_Allg_AttributeGroup()
 	 * @generated
 	 */
-	int ZN_ANZEIGEFELD_ALLG_ATTRIBUTE_GROUP = 65;
+	int ZN_ANZEIGEFELD_ALLG_ATTRIBUTE_GROUP = 66;
 
 	/**
 	 * The feature id for the '<em><b>Bedienbarkeit Anzeigefeld</b></em>' containment reference.
@@ -3091,7 +3146,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Anzeigefeld_Bezeichnung_AttributeGroup()
 	 * @generated
 	 */
-	int ZN_ANZEIGEFELD_BEZEICHNUNG_ATTRIBUTE_GROUP = 66;
+	int ZN_ANZEIGEFELD_BEZEICHNUNG_ATTRIBUTE_GROUP = 67;
 
 	/**
 	 * The feature id for the '<em><b>ZNA Bedienbezeichner Frei</b></em>' containment reference.
@@ -3128,7 +3183,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Anzeigefeld_Loeschkriterium_TypeClass()
 	 * @generated
 	 */
-	int ZN_ANZEIGEFELD_LOESCHKRITERIUM_TYPE_CLASS = 67;
+	int ZN_ANZEIGEFELD_LOESCHKRITERIUM_TYPE_CLASS = 68;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3165,7 +3220,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Feld_Ohne_Anzeige_TypeClass()
 	 * @generated
 	 */
-	int ZN_FELD_OHNE_ANZEIGE_TYPE_CLASS = 68;
+	int ZN_FELD_OHNE_ANZEIGE_TYPE_CLASS = 69;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3202,7 +3257,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Fortschalt_Krit_Druck_AttributeGroup()
 	 * @generated
 	 */
-	int ZN_FORTSCHALT_KRIT_DRUCK_ATTRIBUTE_GROUP = 69;
+	int ZN_FORTSCHALT_KRIT_DRUCK_ATTRIBUTE_GROUP = 70;
 
 	/**
 	 * The feature id for the '<em><b>Ausfahrdruck</b></em>' containment reference.
@@ -3275,7 +3330,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Fortschalt_Krit_Schalt_AttributeGroup()
 	 * @generated
 	 */
-	int ZN_FORTSCHALT_KRIT_SCHALT_ATTRIBUTE_GROUP = 70;
+	int ZN_FORTSCHALT_KRIT_SCHALT_ATTRIBUTE_GROUP = 71;
 
 	/**
 	 * The feature id for the '<em><b>Besonderes Schaltkriterium</b></em>' containment reference.
@@ -3330,7 +3385,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Fortschalt_Kriterium()
 	 * @generated
 	 */
-	int ZN_FORTSCHALT_KRITERIUM = 71;
+	int ZN_FORTSCHALT_KRITERIUM = 72;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -3439,7 +3494,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Modem_TypeClass()
 	 * @generated
 	 */
-	int ZN_MODEM_TYPE_CLASS = 72;
+	int ZN_MODEM_TYPE_CLASS = 73;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3476,7 +3531,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Schaltkriterium_TypeClass()
 	 * @generated
 	 */
-	int ZN_SCHALTKRITERIUM_TYPE_CLASS = 73;
+	int ZN_SCHALTKRITERIUM_TYPE_CLASS = 74;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -3513,7 +3568,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Telegramm_84_Zuordnung()
 	 * @generated
 	 */
-	int ZN_TELEGRAMM_84_ZUORDNUNG = 74;
+	int ZN_TELEGRAMM_84_ZUORDNUNG = 75;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -3613,7 +3668,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Telegramm_85_Zuordnung()
 	 * @generated
 	 */
-	int ZN_TELEGRAMM_85_ZUORDNUNG = 75;
+	int ZN_TELEGRAMM_85_ZUORDNUNG = 76;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -3704,7 +3759,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Unterstation()
 	 * @generated
 	 */
-	int ZN_UNTERSTATION = 76;
+	int ZN_UNTERSTATION = 77;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -3786,7 +3841,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Unterstation_Allg_AttributeGroup()
 	 * @generated
 	 */
-	int ZN_UNTERSTATION_ALLG_ATTRIBUTE_GROUP = 77;
+	int ZN_UNTERSTATION_ALLG_ATTRIBUTE_GROUP = 78;
 
 	/**
 	 * The feature id for the '<em><b>Bf Kennung</b></em>' containment reference.
@@ -3868,7 +3923,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_Unterstation_Bf_Nr_AttributeGroup()
 	 * @generated
 	 */
-	int ZN_UNTERSTATION_BF_NR_ATTRIBUTE_GROUP = 78;
+	int ZN_UNTERSTATION_BF_NR_ATTRIBUTE_GROUP = 79;
 
 	/**
 	 * The feature id for the '<em><b>Bf Nr</b></em>' containment reference.
@@ -3914,7 +3969,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_ZBS()
 	 * @generated
 	 */
-	int ZN_ZBS = 79;
+	int ZN_ZBS = 80;
 
 	/**
 	 * The feature id for the '<em><b>Identitaet</b></em>' containment reference.
@@ -4005,7 +4060,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZugvorbereitungsmeldung_TypeClass()
 	 * @generated
 	 */
-	int ZUGVORBEREITUNGSMELDUNG_TYPE_CLASS = 80;
+	int ZUGVORBEREITUNGSMELDUNG_TYPE_CLASS = 81;
 
 	/**
 	 * The feature id for the '<em><b>ID Bearbeitungsvermerk</b></em>' containment reference list.
@@ -4042,7 +4097,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMAkustikAnbAnn()
 	 * @generated
 	 */
-	int ENUM_AKUSTIK_ANB_ANN = 81;
+	int ENUM_AKUSTIK_ANB_ANN = 82;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ENUMAkustikSonst <em>ENUM Akustik Sonst</em>}' enum.
@@ -4052,7 +4107,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMAkustikSonst()
 	 * @generated
 	 */
-	int ENUM_AKUSTIK_SONST = 82;
+	int ENUM_AKUSTIK_SONST = 83;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ENUMBfKennung <em>ENUM Bf Kennung</em>}' enum.
@@ -4062,7 +4117,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMBfKennung()
 	 * @generated
 	 */
-	int ENUM_BF_KENNUNG = 83;
+	int ENUM_BF_KENNUNG = 84;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ENUMFunktionalitaetAnzeigefeld <em>ENUM Funktionalitaet Anzeigefeld</em>}' enum.
@@ -4072,7 +4127,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMFunktionalitaetAnzeigefeld()
 	 * @generated
 	 */
-	int ENUM_FUNKTIONALITAET_ANZEIGEFELD = 84;
+	int ENUM_FUNKTIONALITAET_ANZEIGEFELD = 85;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ENUMZBSSchnittstelle <em>ENUMZBS Schnittstelle</em>}' enum.
@@ -4082,7 +4137,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMZBSSchnittstelle()
 	 * @generated
 	 */
-	int ENUMZBS_SCHNITTSTELLE = 85;
+	int ENUMZBS_SCHNITTSTELLE = 86;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ENUMZNAnlagentyp <em>ENUMZN Anlagentyp</em>}' enum.
@@ -4092,7 +4147,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMZNAnlagentyp()
 	 * @generated
 	 */
-	int ENUMZN_ANLAGENTYP = 86;
+	int ENUMZN_ANLAGENTYP = 87;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ENUMZNAnzeigefeldLoeschkriterium <em>ENUMZN Anzeigefeld Loeschkriterium</em>}' enum.
@@ -4102,7 +4157,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMZNAnzeigefeldLoeschkriterium()
 	 * @generated
 	 */
-	int ENUMZN_ANZEIGEFELD_LOESCHKRITERIUM = 87;
+	int ENUMZN_ANZEIGEFELD_LOESCHKRITERIUM = 88;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ENUMZNModem <em>ENUMZN Modem</em>}' enum.
@@ -4112,7 +4167,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMZNModem()
 	 * @generated
 	 */
-	int ENUMZN_MODEM = 88;
+	int ENUMZN_MODEM = 89;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ENUMZNSchaltkriterium <em>ENUMZN Schaltkriterium</em>}' enum.
@@ -4122,7 +4177,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMZNSchaltkriterium()
 	 * @generated
 	 */
-	int ENUMZN_SCHALTKRITERIUM = 89;
+	int ENUMZN_SCHALTKRITERIUM = 90;
 
 	/**
 	 * The meta object id for the '<em>Anschlussnummer Type</em>' data type.
@@ -4132,7 +4187,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getAnschlussnummer_Type()
 	 * @generated
 	 */
-	int ANSCHLUSSNUMMER_TYPE = 90;
+	int ANSCHLUSSNUMMER_TYPE = 91;
 
 	/**
 	 * The meta object id for the '<em>Besonderes Schaltkriterium Type</em>' data type.
@@ -4142,7 +4197,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getBesonderes_Schaltkriterium_Type()
 	 * @generated
 	 */
-	int BESONDERES_SCHALTKRITERIUM_TYPE = 91;
+	int BESONDERES_SCHALTKRITERIUM_TYPE = 92;
 
 	/**
 	 * The meta object id for the '<em>Bezeichnung Besondere Anlage Type</em>' data type.
@@ -4152,7 +4207,17 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getBezeichnung_Besondere_Anlage_Type()
 	 * @generated
 	 */
-	int BEZEICHNUNG_BESONDERE_ANLAGE_TYPE = 92;
+	int BEZEICHNUNG_BESONDERE_ANLAGE_TYPE = 93;
+
+	/**
+	 * The meta object id for the '<em>Bezeichnung Stellwerk Type</em>' data type.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see java.lang.String
+	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getBezeichnung_Stellwerk_Type()
+	 * @generated
+	 */
+	int BEZEICHNUNG_STELLWERK_TYPE = 94;
 
 	/**
 	 * The meta object id for the '<em>Bf Nr Type</em>' data type.
@@ -4162,7 +4227,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getBf_Nr_Type()
 	 * @generated
 	 */
-	int BF_NR_TYPE = 93;
+	int BF_NR_TYPE = 95;
 
 	/**
 	 * The meta object id for the '<em>ENUM Akustik Anb Ann Object</em>' data type.
@@ -4172,7 +4237,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMAkustikAnbAnnObject()
 	 * @generated
 	 */
-	int ENUM_AKUSTIK_ANB_ANN_OBJECT = 94;
+	int ENUM_AKUSTIK_ANB_ANN_OBJECT = 96;
 
 	/**
 	 * The meta object id for the '<em>ENUM Akustik Sonst Object</em>' data type.
@@ -4182,7 +4247,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMAkustikSonstObject()
 	 * @generated
 	 */
-	int ENUM_AKUSTIK_SONST_OBJECT = 95;
+	int ENUM_AKUSTIK_SONST_OBJECT = 97;
 
 	/**
 	 * The meta object id for the '<em>ENUM Bf Kennung Object</em>' data type.
@@ -4192,7 +4257,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMBfKennungObject()
 	 * @generated
 	 */
-	int ENUM_BF_KENNUNG_OBJECT = 96;
+	int ENUM_BF_KENNUNG_OBJECT = 98;
 
 	/**
 	 * The meta object id for the '<em>ENUM Funktionalitaet Anzeigefeld Object</em>' data type.
@@ -4202,7 +4267,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMFunktionalitaetAnzeigefeldObject()
 	 * @generated
 	 */
-	int ENUM_FUNKTIONALITAET_ANZEIGEFELD_OBJECT = 97;
+	int ENUM_FUNKTIONALITAET_ANZEIGEFELD_OBJECT = 99;
 
 	/**
 	 * The meta object id for the '<em>ENUMZBS Schnittstelle Object</em>' data type.
@@ -4212,7 +4277,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMZBSSchnittstelleObject()
 	 * @generated
 	 */
-	int ENUMZBS_SCHNITTSTELLE_OBJECT = 98;
+	int ENUMZBS_SCHNITTSTELLE_OBJECT = 100;
 
 	/**
 	 * The meta object id for the '<em>ENUMZN Anlagentyp Object</em>' data type.
@@ -4222,7 +4287,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMZNAnlagentypObject()
 	 * @generated
 	 */
-	int ENUMZN_ANLAGENTYP_OBJECT = 99;
+	int ENUMZN_ANLAGENTYP_OBJECT = 101;
 
 	/**
 	 * The meta object id for the '<em>ENUMZN Anzeigefeld Loeschkriterium Object</em>' data type.
@@ -4232,7 +4297,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMZNAnzeigefeldLoeschkriteriumObject()
 	 * @generated
 	 */
-	int ENUMZN_ANZEIGEFELD_LOESCHKRITERIUM_OBJECT = 100;
+	int ENUMZN_ANZEIGEFELD_LOESCHKRITERIUM_OBJECT = 102;
 
 	/**
 	 * The meta object id for the '<em>ENUMZN Modem Object</em>' data type.
@@ -4242,7 +4307,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMZNModemObject()
 	 * @generated
 	 */
-	int ENUMZN_MODEM_OBJECT = 101;
+	int ENUMZN_MODEM_OBJECT = 103;
 
 	/**
 	 * The meta object id for the '<em>ENUMZN Schaltkriterium Object</em>' data type.
@@ -4252,7 +4317,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getENUMZNSchaltkriteriumObject()
 	 * @generated
 	 */
-	int ENUMZN_SCHALTKRITERIUM_OBJECT = 102;
+	int ENUMZN_SCHALTKRITERIUM_OBJECT = 104;
 
 	/**
 	 * The meta object id for the '<em>IP Adresse Type</em>' data type.
@@ -4262,7 +4327,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getIP_Adresse_Type()
 	 * @generated
 	 */
-	int IP_ADRESSE_TYPE = 103;
+	int IP_ADRESSE_TYPE = 105;
 
 	/**
 	 * The meta object id for the '<em>Prioritaet Type</em>' data type.
@@ -4272,7 +4337,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getPrioritaet_Type()
 	 * @generated
 	 */
-	int PRIORITAET_TYPE = 104;
+	int PRIORITAET_TYPE = 106;
 
 	/**
 	 * The meta object id for the '<em>Unterstation Max Type</em>' data type.
@@ -4282,7 +4347,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getUnterstation_Max_Type()
 	 * @generated
 	 */
-	int UNTERSTATION_MAX_TYPE = 105;
+	int UNTERSTATION_MAX_TYPE = 107;
 
 	/**
 	 * The meta object id for the '<em>Unterstation Nr Type</em>' data type.
@@ -4292,7 +4357,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getUnterstation_Nr_Type()
 	 * @generated
 	 */
-	int UNTERSTATION_NR_TYPE = 106;
+	int UNTERSTATION_NR_TYPE = 108;
 
 	/**
 	 * The meta object id for the '<em>Verzoegerung Manuell Loeschung Type</em>' data type.
@@ -4302,7 +4367,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getVerzoegerung_Manuell_Loeschung_Type()
 	 * @generated
 	 */
-	int VERZOEGERUNG_MANUELL_LOESCHUNG_TYPE = 107;
+	int VERZOEGERUNG_MANUELL_LOESCHUNG_TYPE = 109;
 
 	/**
 	 * The meta object id for the '<em>ZBS Adresse Type</em>' data type.
@@ -4312,7 +4377,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZBS_Adresse_Type()
 	 * @generated
 	 */
-	int ZBS_ADRESSE_TYPE = 108;
+	int ZBS_ADRESSE_TYPE = 110;
 
 	/**
 	 * The meta object id for the '<em>ZLV Bus Nr Type</em>' data type.
@@ -4322,7 +4387,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZLV_Bus_Nr_Type()
 	 * @generated
 	 */
-	int ZLV_BUS_NR_TYPE = 109;
+	int ZLV_BUS_NR_TYPE = 111;
 
 	/**
 	 * The meta object id for the '<em>ZN ABedienbezeichner Frei Type</em>' data type.
@@ -4332,7 +4397,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_A_Bedienbezeichner_Frei_Type()
 	 * @generated
 	 */
-	int ZN_ABEDIENBEZEICHNER_FREI_TYPE = 110;
+	int ZN_ABEDIENBEZEICHNER_FREI_TYPE = 112;
 
 	/**
 	 * The meta object id for the '<em>ZN ABezeichner Type</em>' data type.
@@ -4342,7 +4407,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getZN_A_Bezeichner_Type()
 	 * @generated
 	 */
-	int ZN_ABEZEICHNER_TYPE = 111;
+	int ZN_ABEZEICHNER_TYPE = 113;
 
 
 	/**
@@ -4533,6 +4598,27 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getBezeichnung_Besondere_Anlage_TypeClass_Wert();
+
+	/**
+	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bezeichnung_Stellwerk_TypeClass <em>Bezeichnung Stellwerk Type Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Bezeichnung Stellwerk Type Class</em>'.
+	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bezeichnung_Stellwerk_TypeClass
+	 * @generated
+	 */
+	EClass getBezeichnung_Stellwerk_TypeClass();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bezeichnung_Stellwerk_TypeClass#getWert <em>Wert</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Wert</em>'.
+	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bezeichnung_Stellwerk_TypeClass#getWert()
+	 * @see #getBezeichnung_Stellwerk_TypeClass()
+	 * @generated
+	 */
+	EAttribute getBezeichnung_Stellwerk_TypeClass_Wert();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Bf_Kennung_TypeClass <em>Bf Kennung Type Class</em>}'.
@@ -5483,15 +5569,26 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	EReference getZLV_Bus_Besondere_Anlage_Bezeichnung();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZLV_Bus_Besondere_Anlage#getIDZLVBus <em>IDZLV Bus</em>}'.
+	 * Returns the meta object for the containment reference list '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZLV_Bus_Besondere_Anlage#getIDZLVBus <em>IDZLV Bus</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>IDZLV Bus</em>'.
+	 * @return the meta object for the containment reference list '<em>IDZLV Bus</em>'.
 	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZLV_Bus_Besondere_Anlage#getIDZLVBus()
 	 * @see #getZLV_Bus_Besondere_Anlage()
 	 * @generated
 	 */
 	EReference getZLV_Bus_Besondere_Anlage_IDZLVBus();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZLV_Bus_Besondere_Anlage#getUnterstationNr <em>Unterstation Nr</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Unterstation Nr</em>'.
+	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZLV_Bus_Besondere_Anlage#getUnterstationNr()
+	 * @see #getZLV_Bus_Besondere_Anlage()
+	 * @generated
+	 */
+	EReference getZLV_Bus_Besondere_Anlage_UnterstationNr();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup <em>ZLV Bus Besondere Anlage Bezeichnung Attribute Group</em>}'.
@@ -5760,6 +5857,17 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getZN_IDOertlichkeit();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN#getBezeichnungStellwerk <em>Bezeichnung Stellwerk</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Bezeichnung Stellwerk</em>'.
+	 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN#getBezeichnungStellwerk()
+	 * @see #getZN()
+	 * @generated
+	 */
+	EReference getZN_BezeichnungStellwerk();
 
 	/**
 	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZN#getIDStellwerk <em>ID Stellwerk</em>}'.
@@ -6947,7 +7055,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @return the meta object for data type '<em>Besonderes Schaltkriterium Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBesonderes_Schaltkriterium' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBesonderes_Schaltkriterium' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBesonderes_Schaltkriterium_Type();
@@ -6959,10 +7067,22 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Besondere Anlage Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Besondere_Anlage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TBezeichnung_Besondere_Anlage' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Besondere_Anlage_Type();
+
+	/**
+	 * Returns the meta object for data type '{@link java.lang.String <em>Bezeichnung Stellwerk Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for data type '<em>Bezeichnung Stellwerk Type</em>'.
+	 * @see java.lang.String
+	 * @model instanceClass="java.lang.String"
+	 *        extendedMetaData="name='TBezeichnung_Stellwerk' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
+	 * @generated
+	 */
+	EDataType getBezeichnung_Stellwerk_Type();
 
 	/**
 	 * Returns the meta object for data type '{@link java.math.BigInteger <em>Bf Nr Type</em>}'.
@@ -7091,7 +7211,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @return the meta object for data type '<em>IP Adresse Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TIP_Adresse' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='([0-9]{1,3}\\.){3}[0-9]{1,3}'"
+	 *        extendedMetaData="name='TIP_Adresse' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='([0-9]{1,3}\\.){3}[0-9]{1,3}'"
 	 * @generated
 	 */
 	EDataType getIP_Adresse_Type();
@@ -7127,7 +7247,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @return the meta object for data type '<em>Unterstation Nr Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TUnterstation_Nr' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette' pattern='0[1-9]|[1-3][0-9]|40'"
+	 *        extendedMetaData="name='TUnterstation_Nr' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette' pattern='0[1-9]|[1-3][0-9]|40'"
 	 * @generated
 	 */
 	EDataType getUnterstation_Nr_Type();
@@ -7139,7 +7259,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @return the meta object for data type '<em>Verzoegerung Manuell Loeschung Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TVerzoegerung_Manuell_Loeschung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde'"
+	 *        extendedMetaData="name='TVerzoegerung_Manuell_Loeschung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde'"
 	 * @generated
 	 */
 	EDataType getVerzoegerung_Manuell_Loeschung_Type();
@@ -7151,7 +7271,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @return the meta object for data type '<em>ZBS Adresse Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TZBS_Adresse' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='[A-F][0-9]|[C-F][A-F]|[AB][C-F]|AB|BA'"
+	 *        extendedMetaData="name='TZBS_Adresse' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='[A-F][0-9]|[C-F][A-F]|[AB][C-F]|AB|BA'"
 	 * @generated
 	 */
 	EDataType getZBS_Adresse_Type();
@@ -7175,7 +7295,7 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 	 * @return the meta object for data type '<em>ZN ABedienbezeichner Frei Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TZN_A_Bedienbezeichner_Frei' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{4,7}'"
+	 *        extendedMetaData="name='TZN_A_Bedienbezeichner_Frei' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{4,7}'"
 	 * @generated
 	 */
 	EDataType getZN_A_Bedienbezeichner_Frei_Type();
@@ -7375,6 +7495,24 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute BEZEICHNUNG_BESONDERE_ANLAGE_TYPE_CLASS__WERT = eINSTANCE.getBezeichnung_Besondere_Anlage_TypeClass_Wert();
+
+		/**
+		 * The meta object literal for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.Bezeichnung_Stellwerk_TypeClassImpl <em>Bezeichnung Stellwerk Type Class</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.Bezeichnung_Stellwerk_TypeClassImpl
+		 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getBezeichnung_Stellwerk_TypeClass()
+		 * @generated
+		 */
+		EClass BEZEICHNUNG_STELLWERK_TYPE_CLASS = eINSTANCE.getBezeichnung_Stellwerk_TypeClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Wert</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BEZEICHNUNG_STELLWERK_TYPE_CLASS__WERT = eINSTANCE.getBezeichnung_Stellwerk_TypeClass_Wert();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.Bf_Kennung_TypeClassImpl <em>Bf Kennung Type Class</em>}' class.
@@ -8181,12 +8319,20 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 		EReference ZLV_BUS_BESONDERE_ANLAGE__BEZEICHNUNG = eINSTANCE.getZLV_Bus_Besondere_Anlage_Bezeichnung();
 
 		/**
-		 * The meta object literal for the '<em><b>IDZLV Bus</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>IDZLV Bus</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference ZLV_BUS_BESONDERE_ANLAGE__IDZLV_BUS = eINSTANCE.getZLV_Bus_Besondere_Anlage_IDZLVBus();
+
+		/**
+		 * The meta object literal for the '<em><b>Unterstation Nr</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR = eINSTANCE.getZLV_Bus_Besondere_Anlage_UnterstationNr();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroupImpl <em>ZLV Bus Besondere Anlage Bezeichnung Attribute Group</em>}' class.
@@ -8401,6 +8547,14 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 		 * @generated
 		 */
 		EReference ZN__ID_OERTLICHKEIT = eINSTANCE.getZN_IDOertlichkeit();
+
+		/**
+		 * The meta object literal for the '<em><b>Bezeichnung Stellwerk</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ZN__BEZEICHNUNG_STELLWERK = eINSTANCE.getZN_BezeichnungStellwerk();
 
 		/**
 		 * The meta object literal for the '<em><b>ID Stellwerk</b></em>' containment reference feature.
@@ -9367,6 +9521,16 @@ public interface ZugnummernmeldeanlagePackage extends EPackage {
 		 * @generated
 		 */
 		EDataType BEZEICHNUNG_BESONDERE_ANLAGE_TYPE = eINSTANCE.getBezeichnung_Besondere_Anlage_Type();
+
+		/**
+		 * The meta object literal for the '<em>Bezeichnung Stellwerk Type</em>' data type.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see java.lang.String
+		 * @see org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl.ZugnummernmeldeanlagePackageImpl#getBezeichnung_Stellwerk_Type()
+		 * @generated
+		 */
+		EDataType BEZEICHNUNG_STELLWERK_TYPE = eINSTANCE.getBezeichnung_Stellwerk_Type();
 
 		/**
 		 * The meta object literal for the '<em>Bf Nr Type</em>' data type.

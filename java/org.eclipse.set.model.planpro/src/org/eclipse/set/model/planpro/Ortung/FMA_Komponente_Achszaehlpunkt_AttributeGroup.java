@@ -67,7 +67,7 @@ public interface FMA_Komponente_Achszaehlpunkt_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Kennzeichnet den Weg der Stromversorgung im Vergleich mit dem Weg der Informationsübertragung. Die Angabe ist nur bei Achszählpunkten erforderlich. Wertezuordnung: true - entspricht dem Eintrag \"fern\" im bisherigen PT 1 (Stromversorgung in separaten Adern), hierbei müssen ID Energie und ID Information auf unterschiedliche Außenelementansteuerungen verweisen, false - entspricht den Einträgen \"eigen\" und \"fremd\" im bisherigen PT 1 (Stromversorgung und Informationsübertragung über die selben Adern), die weitere Unterscheidung zwischen \"eigen\" und \"fremd\" geht aus dem Vergleich von ID Energie und ID Information hervor. DB-Regelwerk Achszähltabelle, Spalte 3 
+	 * Angabe, ob für die Stromversorgung im Vergleich mit der Informationsübertragung separate Adern genutzt werden (true) oder nicht (false). Die Angabe ist nur bei Achszählpunkten erforderlich. Wertezuordnung: false - entspricht dem Eintrag \"eigen\" im bisherigen PT 1 (Stromversorgung in gemeinsamen Adern), true - entspricht den Einträgen \"fern\" und \"fremd\" im bisherigen PT 1 (Stromversorgung und Informationsübertragung über unterschiedliche Adern), die weitere Unterscheidung zwischen \"fern\" und \"fremd\" geht aus dem Vergleich von ID Energie und ID Information hervor. Die Signalbauindustrie benutzt die Begriffe u. U. mit abweichender Bedeutung. DB-Regelwerk Achszähltabelle, Spalte 3 
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>FMA Komponente Stromversorgung</em>' containment reference.
 	 * @see #setFMAKomponenteStromversorgung(FMA_Komponente_Stromversorgung_TypeClass)

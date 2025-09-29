@@ -137,10 +137,8 @@ public class Harter_Ausstieg_Aus_L2_TypeClassItemProvider extends BasisAttribut_
 			case Balisentechnik_ETCSPackage.HARTER_AUSSTIEG_AUS_L2_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -135,8 +135,8 @@ public enum ENUMDPTypArt implements Enumerator {
 		switch (value) {
 			case ENUMDP_TYP_ART_PRIMAER_VALUE: return ENUMDP_TYP_ART_PRIMAER;
 			case ENUMDP_TYP_ART_SEKUNDAER_VALUE: return ENUMDP_TYP_ART_SEKUNDAER;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

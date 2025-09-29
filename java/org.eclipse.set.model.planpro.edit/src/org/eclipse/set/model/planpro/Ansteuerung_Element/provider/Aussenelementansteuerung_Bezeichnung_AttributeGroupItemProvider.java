@@ -152,10 +152,8 @@ public class Aussenelementansteuerung_Bezeichnung_AttributeGroupItemProvider
 			case Ansteuerung_ElementPackage.AUSSENELEMENTANSTEUERUNG_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_AEA:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

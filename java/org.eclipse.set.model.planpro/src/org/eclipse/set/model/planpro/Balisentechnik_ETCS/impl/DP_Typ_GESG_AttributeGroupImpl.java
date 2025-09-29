@@ -238,9 +238,8 @@ public class DP_Typ_GESG_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 				return basicSetDPVerlinkt(null, msgs);
 			case Balisentechnik_ETCSPackage.DP_TYP_GESG_ATTRIBUTE_GROUP__LFD_NR_AM_BEZUGSPUNKT:
 				return basicSetLfdNrAmBezugspunkt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -257,9 +256,8 @@ public class DP_Typ_GESG_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 				return getDPVerlinkt();
 			case Balisentechnik_ETCSPackage.DP_TYP_GESG_ATTRIBUTE_GROUP__LFD_NR_AM_BEZUGSPUNKT:
 				return getLfdNrAmBezugspunkt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -279,10 +277,8 @@ public class DP_Typ_GESG_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 			case Balisentechnik_ETCSPackage.DP_TYP_GESG_ATTRIBUTE_GROUP__LFD_NR_AM_BEZUGSPUNKT:
 				setLfdNrAmBezugspunkt((Lfd_Nr_Am_Bezugspunkt_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -302,10 +298,8 @@ public class DP_Typ_GESG_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 			case Balisentechnik_ETCSPackage.DP_TYP_GESG_ATTRIBUTE_GROUP__LFD_NR_AM_BEZUGSPUNKT:
 				setLfdNrAmBezugspunkt((Lfd_Nr_Am_Bezugspunkt_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -322,9 +316,8 @@ public class DP_Typ_GESG_AttributeGroupImpl extends EObjectImpl implements DP_Ty
 				return dPVerlinkt != null;
 			case Balisentechnik_ETCSPackage.DP_TYP_GESG_ATTRIBUTE_GROUP__LFD_NR_AM_BEZUGSPUNKT:
 				return lfdNrAmBezugspunkt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //DP_Typ_GESG_AttributeGroupImpl

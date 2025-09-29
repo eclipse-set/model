@@ -120,9 +120,8 @@ public class Kabel_Bezeichnung_AttributeGroupImpl extends EObjectImpl implements
 		switch (featureID) {
 			case Medien_und_TrassenPackage.KABEL_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_KABEL:
 				return basicSetBezeichnungKabel(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,9 +134,8 @@ public class Kabel_Bezeichnung_AttributeGroupImpl extends EObjectImpl implements
 		switch (featureID) {
 			case Medien_und_TrassenPackage.KABEL_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_KABEL:
 				return getBezeichnungKabel();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,10 +149,8 @@ public class Kabel_Bezeichnung_AttributeGroupImpl extends EObjectImpl implements
 			case Medien_und_TrassenPackage.KABEL_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_KABEL:
 				setBezeichnungKabel((Bezeichnung_Kabel_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -168,10 +164,8 @@ public class Kabel_Bezeichnung_AttributeGroupImpl extends EObjectImpl implements
 			case Medien_und_TrassenPackage.KABEL_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_KABEL:
 				setBezeichnungKabel((Bezeichnung_Kabel_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -184,9 +178,8 @@ public class Kabel_Bezeichnung_AttributeGroupImpl extends EObjectImpl implements
 		switch (featureID) {
 			case Medien_und_TrassenPackage.KABEL_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_KABEL:
 				return bezeichnungKabel != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Kabel_Bezeichnung_AttributeGroupImpl

@@ -135,8 +135,8 @@ public enum ENUMStreckeArt implements Enumerator {
 		switch (value) {
 			case ENUM_STRECKE_ART_HAUPTBAHN_VALUE: return ENUM_STRECKE_ART_HAUPTBAHN;
 			case ENUM_STRECKE_ART_NEBENBAHN_VALUE: return ENUM_STRECKE_ART_NEBENBAHN;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

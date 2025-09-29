@@ -147,10 +147,8 @@ public class NB_Zone_ElementItemProvider extends Basis_ObjektItemProvider {
 			case NahbedienungPackage.NB_ZONE_ELEMENT__NB_ZONE_ELEMENT_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

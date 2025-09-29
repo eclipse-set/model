@@ -359,9 +359,8 @@ public class UebertragungswegImpl extends Basis_ObjektImpl implements Uebertragu
 				return basicSetUebertragungswegArt(null, msgs);
 			case Ansteuerung_ElementPackage.UEBERTRAGUNGSWEG__UEBERTRAGUNGSWEG_TECHNIK:
 				return basicSetUebertragungswegTechnik(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -384,9 +383,8 @@ public class UebertragungswegImpl extends Basis_ObjektImpl implements Uebertragu
 				return getUebertragungswegArt();
 			case Ansteuerung_ElementPackage.UEBERTRAGUNGSWEG__UEBERTRAGUNGSWEG_TECHNIK:
 				return getUebertragungswegTechnik();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -418,10 +416,8 @@ public class UebertragungswegImpl extends Basis_ObjektImpl implements Uebertragu
 			case Ansteuerung_ElementPackage.UEBERTRAGUNGSWEG__UEBERTRAGUNGSWEG_TECHNIK:
 				setUebertragungswegTechnik((Uebertragungsweg_Technik_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -450,10 +446,8 @@ public class UebertragungswegImpl extends Basis_ObjektImpl implements Uebertragu
 			case Ansteuerung_ElementPackage.UEBERTRAGUNGSWEG__UEBERTRAGUNGSWEG_TECHNIK:
 				setUebertragungswegTechnik((Uebertragungsweg_Technik_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -476,9 +470,8 @@ public class UebertragungswegImpl extends Basis_ObjektImpl implements Uebertragu
 				return uebertragungswegArt != null;
 			case Ansteuerung_ElementPackage.UEBERTRAGUNGSWEG__UEBERTRAGUNGSWEG_TECHNIK:
 				return uebertragungswegTechnik != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //UebertragungswegImpl

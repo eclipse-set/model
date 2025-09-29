@@ -139,10 +139,8 @@ public class Signalsicht_Mindest_TypeClassItemProvider extends BasisAttribut_Att
 			case SignalePackage.SIGNALSICHT_MINDEST_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

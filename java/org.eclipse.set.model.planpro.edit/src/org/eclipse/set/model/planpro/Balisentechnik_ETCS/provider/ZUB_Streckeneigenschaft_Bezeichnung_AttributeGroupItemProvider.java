@@ -152,10 +152,8 @@ public class ZUB_Streckeneigenschaft_Bezeichnung_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.ZUB_STRECKENEIGENSCHAFT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ZUBSE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

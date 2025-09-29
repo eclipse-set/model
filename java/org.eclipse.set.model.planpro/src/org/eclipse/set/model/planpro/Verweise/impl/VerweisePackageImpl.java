@@ -10,6 +10,7 @@
 package org.eclipse.set.model.planpro.Verweise.impl;
 
 import org.eclipse.emf.common.util.URI;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -147,6 +148,7 @@ import org.eclipse.set.model.planpro.Verweise.ID_Bedien_Zentrale_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_Befestigung_Bauwerk_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_Beginn_Bereich_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_Positionierung_TypeClass;
+import org.eclipse.set.model.planpro.Verweise.ID_Bezugspunkt_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_Binaerdaten_ohne_Proxy_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_Block_Anlage_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.ID_Block_Element_TypeClass;
@@ -481,6 +483,13 @@ public class VerweisePackageImpl extends EPackageImpl implements VerweisePackage
 	 * @generated
 	 */
 	private EClass iD_Bezugspunkt_Positionierung_TypeClassEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass iD_Bezugspunkt_TypeClassEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2403,6 +2412,36 @@ public class VerweisePackageImpl extends EPackageImpl implements VerweisePackage
 	@Override
 	public EAttribute getID_Bezugspunkt_Positionierung_TypeClass_InvalidReference() {
 		return (EAttribute)iD_Bezugspunkt_Positionierung_TypeClassEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getID_Bezugspunkt_TypeClass() {
+		return iD_Bezugspunkt_TypeClassEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getID_Bezugspunkt_TypeClass_Value() {
+		return (EReference)iD_Bezugspunkt_TypeClassEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getID_Bezugspunkt_TypeClass_InvalidReference() {
+		return (EAttribute)iD_Bezugspunkt_TypeClassEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -6678,6 +6717,10 @@ public class VerweisePackageImpl extends EPackageImpl implements VerweisePackage
 		createEReference(iD_Bezugspunkt_Positionierung_TypeClassEClass, ID_BEZUGSPUNKT_POSITIONIERUNG_TYPE_CLASS__VALUE);
 		createEAttribute(iD_Bezugspunkt_Positionierung_TypeClassEClass, ID_BEZUGSPUNKT_POSITIONIERUNG_TYPE_CLASS__INVALID_REFERENCE);
 
+		iD_Bezugspunkt_TypeClassEClass = createEClass(ID_BEZUGSPUNKT_TYPE_CLASS);
+		createEReference(iD_Bezugspunkt_TypeClassEClass, ID_BEZUGSPUNKT_TYPE_CLASS__VALUE);
+		createEAttribute(iD_Bezugspunkt_TypeClassEClass, ID_BEZUGSPUNKT_TYPE_CLASS__INVALID_REFERENCE);
+
 		iD_Binaerdaten_ohne_Proxy_TypeClassEClass = createEClass(ID_BINAERDATEN_OHNE_PROXY_TYPE_CLASS);
 		createEReference(iD_Binaerdaten_ohne_Proxy_TypeClassEClass, ID_BINAERDATEN_OHNE_PROXY_TYPE_CLASS__VALUE);
 		createEAttribute(iD_Binaerdaten_ohne_Proxy_TypeClassEClass, ID_BINAERDATEN_OHNE_PROXY_TYPE_CLASS__INVALID_REFERENCE);
@@ -7313,6 +7356,7 @@ public class VerweisePackageImpl extends EPackageImpl implements VerweisePackage
 		iD_Befestigung_Bauwerk_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getZeiger_TypeClass());
 		iD_Beginn_Bereich_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getZeiger_TypeClass());
 		iD_Bezugspunkt_Positionierung_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getZeiger_TypeClass());
+		iD_Bezugspunkt_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getZeiger_TypeClass());
 		iD_Binaerdaten_ohne_Proxy_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getZeiger_TypeClass());
 		iD_Block_Anlage_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getZeiger_TypeClass());
 		iD_Block_Element_TypeClassEClass.getESuperTypes().add(theBasisTypenPackage.getZeiger_TypeClass());
@@ -7556,6 +7600,10 @@ public class VerweisePackageImpl extends EPackageImpl implements VerweisePackage
 		initEClass(iD_Bezugspunkt_Positionierung_TypeClassEClass, ID_Bezugspunkt_Positionierung_TypeClass.class, "ID_Bezugspunkt_Positionierung_TypeClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getID_Bezugspunkt_Positionierung_TypeClass_Value(), theBasisobjektePackage.getBasis_Objekt(), null, "value", null, 0, 1, ID_Bezugspunkt_Positionierung_TypeClass.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getID_Bezugspunkt_Positionierung_TypeClass_InvalidReference(), theXMLTypePackage.getBoolean(), "invalidReference", "false", 0, 1, ID_Bezugspunkt_Positionierung_TypeClass.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(iD_Bezugspunkt_TypeClassEClass, ID_Bezugspunkt_TypeClass.class, "ID_Bezugspunkt_TypeClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getID_Bezugspunkt_TypeClass_Value(), theBasisobjektePackage.getBasis_Objekt(), null, "value", null, 0, 1, ID_Bezugspunkt_TypeClass.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getID_Bezugspunkt_TypeClass_InvalidReference(), theXMLTypePackage.getBoolean(), "invalidReference", "false", 0, 1, ID_Bezugspunkt_TypeClass.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(iD_Binaerdaten_ohne_Proxy_TypeClassEClass, ID_Binaerdaten_ohne_Proxy_TypeClass.class, "ID_Binaerdaten_ohne_Proxy_TypeClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getID_Binaerdaten_ohne_Proxy_TypeClass_Value(), theBalisentechnik_ETCSPackage.getBinaerdaten(), null, "value", null, 0, 1, ID_Binaerdaten_ohne_Proxy_TypeClass.class, IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -8133,7 +8181,7 @@ public class VerweisePackageImpl extends EPackageImpl implements VerweisePackage
 		  (this,
 		   source,
 		   new String[] {
-			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbnetze.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.0.\n\nMore information about the license can be found on\nhttp://www.dbnetze.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
+			   "documentation", "Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface.\r\nDieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.\n\nWeitere Informationen zur Lizenz finden Sie auf\nhttp://www.dbinfrago.com/planpro\n\nInhalt der Datei:\nXML Schema f\u00fcr PlanPro Schnittstelle.\n\nBei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com\n\n--------------------------------------------------------------------------------\n\nThis Document is licensed under the open source license RailPL V1.1.\n\nMore information about the license can be found on\nhttp://www.dbinfrago.com/planpro\n\nContents of the file:\nXML Schema for PlanPro interface."
 		   });
 	}
 
@@ -8325,6 +8373,13 @@ public class VerweisePackageImpl extends EPackageImpl implements VerweisePackage
 		   source,
 		   new String[] {
 			   "name", "TCID_Bezugspunkt_Positionierung",
+			   "kind", "elementOnly"
+		   });
+		addAnnotation
+		  (iD_Bezugspunkt_TypeClassEClass,
+		   source,
+		   new String[] {
+			   "name", "TCID_Bezugspunkt",
 			   "kind", "elementOnly"
 		   });
 		addAnnotation
@@ -9375,6 +9430,16 @@ public class VerweisePackageImpl extends EPackageImpl implements VerweisePackage
 		   new URI[] {
 			 URI.createURI(SignalePackage.eNS_URI).appendFragment("//Signal"),
 			 URI.createURI(GeodatenPackage.eNS_URI).appendFragment("//Technischer_Punkt")
+		   });
+		addAnnotation
+		  (iD_Bezugspunkt_TypeClassEClass,
+		   source,
+		   new String[] {
+		   },
+		   new URI[] {
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Anlage"),
+			 URI.createURI(BahnuebergangPackage.eNS_URI).appendFragment("//BUE_Kante"),
+			 URI.createURI(FahrstrassePackage.eNS_URI).appendFragment("//Markanter_Punkt")
 		   });
 		addAnnotation
 		  (iD_DP_Bezug_Funktional_TypeClassEClass,

@@ -138,10 +138,8 @@ public class Verschluss_Ort_TypeClassItemProvider extends BasisAttribut_Attribut
 			case SchluesselabhaengigkeitenPackage.VERSCHLUSS_ORT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

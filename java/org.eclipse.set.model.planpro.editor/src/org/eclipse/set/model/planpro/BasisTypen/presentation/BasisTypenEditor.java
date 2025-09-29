@@ -493,8 +493,6 @@ public class BasisTypenEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
-						default:
-							break;
 					}
 				}
 				else {

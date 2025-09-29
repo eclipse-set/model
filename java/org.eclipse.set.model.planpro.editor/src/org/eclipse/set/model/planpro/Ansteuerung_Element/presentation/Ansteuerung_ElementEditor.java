@@ -493,8 +493,6 @@ public class Ansteuerung_ElementEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
-						default:
-							break;
 					}
 				}
 				else {

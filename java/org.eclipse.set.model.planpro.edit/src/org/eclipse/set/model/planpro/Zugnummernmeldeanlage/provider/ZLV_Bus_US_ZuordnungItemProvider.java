@@ -149,10 +149,8 @@ public class ZLV_Bus_US_ZuordnungItemProvider extends Basis_ObjektItemProvider {
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG__ZLV_BUS_ZUORDNUNG_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

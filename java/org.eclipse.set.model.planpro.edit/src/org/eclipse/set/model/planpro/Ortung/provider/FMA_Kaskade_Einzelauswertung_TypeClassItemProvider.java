@@ -137,10 +137,8 @@ public class FMA_Kaskade_Einzelauswertung_TypeClassItemProvider extends BasisAtt
 			case OrtungPackage.FMA_KASKADE_EINZELAUSWERTUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

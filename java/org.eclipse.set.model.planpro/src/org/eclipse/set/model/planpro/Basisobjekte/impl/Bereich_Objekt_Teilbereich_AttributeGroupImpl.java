@@ -298,9 +298,8 @@ public class Bereich_Objekt_Teilbereich_AttributeGroupImpl extends EObjectImpl i
 				return basicSetIDTOPKante(null, msgs);
 			case BasisobjektePackage.BEREICH_OBJEKT_TEILBEREICH_ATTRIBUTE_GROUP__RICHTUNGSBEZUG:
 				return basicSetRichtungsbezug(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -319,9 +318,8 @@ public class Bereich_Objekt_Teilbereich_AttributeGroupImpl extends EObjectImpl i
 				return getIDTOPKante();
 			case BasisobjektePackage.BEREICH_OBJEKT_TEILBEREICH_ATTRIBUTE_GROUP__RICHTUNGSBEZUG:
 				return getRichtungsbezug();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -344,10 +342,8 @@ public class Bereich_Objekt_Teilbereich_AttributeGroupImpl extends EObjectImpl i
 			case BasisobjektePackage.BEREICH_OBJEKT_TEILBEREICH_ATTRIBUTE_GROUP__RICHTUNGSBEZUG:
 				setRichtungsbezug((Richtungsbezug_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -370,10 +366,8 @@ public class Bereich_Objekt_Teilbereich_AttributeGroupImpl extends EObjectImpl i
 			case BasisobjektePackage.BEREICH_OBJEKT_TEILBEREICH_ATTRIBUTE_GROUP__RICHTUNGSBEZUG:
 				setRichtungsbezug((Richtungsbezug_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -392,9 +386,8 @@ public class Bereich_Objekt_Teilbereich_AttributeGroupImpl extends EObjectImpl i
 				return iDTOPKante != null;
 			case BasisobjektePackage.BEREICH_OBJEKT_TEILBEREICH_ATTRIBUTE_GROUP__RICHTUNGSBEZUG:
 				return richtungsbezug != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bereich_Objekt_Teilbereich_AttributeGroupImpl

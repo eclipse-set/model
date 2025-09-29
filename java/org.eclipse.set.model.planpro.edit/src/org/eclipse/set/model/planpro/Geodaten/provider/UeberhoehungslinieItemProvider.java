@@ -77,6 +77,7 @@ public class UeberhoehungslinieItemProvider extends Basis_ObjektItemProvider {
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
+			childrenFeatures.add(GeodatenPackage.Literals.UEBERHOEHUNGSLINIE__IDTOP_KANTE_PFAD);
 			childrenFeatures.add(GeodatenPackage.Literals.UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_A);
 			childrenFeatures.add(GeodatenPackage.Literals.UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_B);
 			childrenFeatures.add(GeodatenPackage.Literals.UEBERHOEHUNGSLINIE__UEBERHOEHUNGSLINIE_ALLG);
@@ -142,15 +143,14 @@ public class UeberhoehungslinieItemProvider extends Basis_ObjektItemProvider {
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Ueberhoehungslinie.class)) {
+			case GeodatenPackage.UEBERHOEHUNGSLINIE__IDTOP_KANTE_PFAD:
 			case GeodatenPackage.UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_A:
 			case GeodatenPackage.UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_B:
 			case GeodatenPackage.UEBERHOEHUNGSLINIE__UEBERHOEHUNGSLINIE_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**
@@ -163,6 +163,11 @@ public class UeberhoehungslinieItemProvider extends Basis_ObjektItemProvider {
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(GeodatenPackage.Literals.UEBERHOEHUNGSLINIE__IDTOP_KANTE_PFAD,
+				 VerweiseFactory.eINSTANCE.createID_TOP_Kante_ohne_Proxy_TypeClass()));
 
 		newChildDescriptors.add
 			(createChildParameter

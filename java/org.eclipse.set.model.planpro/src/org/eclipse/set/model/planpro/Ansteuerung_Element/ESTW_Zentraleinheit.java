@@ -98,7 +98,7 @@ public interface ESTW_Zentraleinheit extends Basis_Objekt {
 	 * @return the value of the '<em>ESTW Zentraleinheit Allg</em>' containment reference.
 	 * @see #setESTWZentraleinheitAllg(ESTW_Zentraleinheit_Allg_AttributeGroup)
 	 * @see org.eclipse.set.model.planpro.Ansteuerung_Element.Ansteuerung_ElementPackage#getESTW_Zentraleinheit_ESTWZentraleinheitAllg()
-	 * @model containment="true" required="true"
+	 * @model containment="true"
 	 *        extendedMetaData="kind='element' name='ESTW_Zentraleinheit_Allg'"
 	 * @generated
 	 */

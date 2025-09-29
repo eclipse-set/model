@@ -35,7 +35,7 @@ public interface Geschwindigkeitsprofil_Allg_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Kategorie für Geschwindigkeitsprofile der Art \"anzeigefeführt ES\", z. B. Gültigkeit für Reise- oder Güterzüge.
+	 * Kategorie für Geschwindigkeitsprofile der Art \"anzeigegeführt ES\", z. B. Gültigkeit für Reise- oder Güterzüge. \"ES\" steht dabei für erhöhte Seitenbeschleunigung.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>Anzeigegefuehrt ES Kategorie</em>' containment reference.
 	 * @see #setAnzeigegefuehrtESKategorie(Anzeigegefuehrt_ES_Kategorie_TypeClass)
@@ -87,7 +87,7 @@ public interface Geschwindigkeitsprofil_Allg_AttributeGroup extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * Art des Geschwindigkeitsprofils.
+	 * Art des Geschwindigkeitsprofils. \"ES\" steht dabei für erhöhte Seitenbeschleunigung.
 	 * <!-- end-model-doc -->
 	 * @return the value of the '<em>VProfil Art</em>' containment reference.
 	 * @see #setVProfilArt(V_Profil_Art_TypeClass)

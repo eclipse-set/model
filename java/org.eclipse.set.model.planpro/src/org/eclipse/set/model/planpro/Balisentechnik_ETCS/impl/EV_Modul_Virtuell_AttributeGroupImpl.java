@@ -121,9 +121,8 @@ public class EV_Modul_Virtuell_AttributeGroupImpl extends EObjectImpl implements
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.EV_MODUL_VIRTUELL_ATTRIBUTE_GROUP__ID_QUELLELEMENT:
 				return basicSetIDQuellelement(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,9 +135,8 @@ public class EV_Modul_Virtuell_AttributeGroupImpl extends EObjectImpl implements
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.EV_MODUL_VIRTUELL_ATTRIBUTE_GROUP__ID_QUELLELEMENT:
 				return getIDQuellelement();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -152,10 +150,8 @@ public class EV_Modul_Virtuell_AttributeGroupImpl extends EObjectImpl implements
 			case Balisentechnik_ETCSPackage.EV_MODUL_VIRTUELL_ATTRIBUTE_GROUP__ID_QUELLELEMENT:
 				setIDQuellelement((ID_Quellelement_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -169,10 +165,8 @@ public class EV_Modul_Virtuell_AttributeGroupImpl extends EObjectImpl implements
 			case Balisentechnik_ETCSPackage.EV_MODUL_VIRTUELL_ATTRIBUTE_GROUP__ID_QUELLELEMENT:
 				setIDQuellelement((ID_Quellelement_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -185,9 +179,8 @@ public class EV_Modul_Virtuell_AttributeGroupImpl extends EObjectImpl implements
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.EV_MODUL_VIRTUELL_ATTRIBUTE_GROUP__ID_QUELLELEMENT:
 				return iDQuellelement != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //EV_Modul_Virtuell_AttributeGroupImpl

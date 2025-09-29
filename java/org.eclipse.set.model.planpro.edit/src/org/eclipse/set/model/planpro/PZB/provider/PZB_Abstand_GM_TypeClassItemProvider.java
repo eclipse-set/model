@@ -139,10 +139,8 @@ public class PZB_Abstand_GM_TypeClassItemProvider extends BasisAttribut_Attribut
 			case PZBPackage.PZB_ABSTAND_GM_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

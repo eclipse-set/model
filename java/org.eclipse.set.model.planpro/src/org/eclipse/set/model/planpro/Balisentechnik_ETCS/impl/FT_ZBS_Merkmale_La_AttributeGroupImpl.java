@@ -297,9 +297,8 @@ public class FT_ZBS_Merkmale_La_AttributeGroupImpl extends EObjectImpl implement
 				return basicSetZBSLaBereichLaenge(null, msgs);
 			case Balisentechnik_ETCSPackage.FT_ZBS_MERKMALE_LA_ATTRIBUTE_GROUP__ZBS_LA_BEREICH_NEIGUNG:
 				return basicSetZBSLaBereichNeigung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -318,9 +317,8 @@ public class FT_ZBS_Merkmale_La_AttributeGroupImpl extends EObjectImpl implement
 				return getZBSLaBereichLaenge();
 			case Balisentechnik_ETCSPackage.FT_ZBS_MERKMALE_LA_ATTRIBUTE_GROUP__ZBS_LA_BEREICH_NEIGUNG:
 				return getZBSLaBereichNeigung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -343,10 +341,8 @@ public class FT_ZBS_Merkmale_La_AttributeGroupImpl extends EObjectImpl implement
 			case Balisentechnik_ETCSPackage.FT_ZBS_MERKMALE_LA_ATTRIBUTE_GROUP__ZBS_LA_BEREICH_NEIGUNG:
 				setZBSLaBereichNeigung((ZBS_La_Bereich_Neigung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -369,10 +365,8 @@ public class FT_ZBS_Merkmale_La_AttributeGroupImpl extends EObjectImpl implement
 			case Balisentechnik_ETCSPackage.FT_ZBS_MERKMALE_LA_ATTRIBUTE_GROUP__ZBS_LA_BEREICH_NEIGUNG:
 				setZBSLaBereichNeigung((ZBS_La_Bereich_Neigung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -391,9 +385,8 @@ public class FT_ZBS_Merkmale_La_AttributeGroupImpl extends EObjectImpl implement
 				return zBSLaBereichLaenge != null;
 			case Balisentechnik_ETCSPackage.FT_ZBS_MERKMALE_LA_ATTRIBUTE_GROUP__ZBS_LA_BEREICH_NEIGUNG:
 				return zBSLaBereichNeigung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //FT_ZBS_Merkmale_La_AttributeGroupImpl

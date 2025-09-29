@@ -154,10 +154,8 @@ public class Zugeinwirkung_Allg_AttributeGroupItemProvider
 			case OrtungPackage.ZUGEINWIRKUNG_ALLG_ATTRIBUTE_GROUP__ZUGEINWIRKUNG_TYP:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

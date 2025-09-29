@@ -141,10 +141,8 @@ public class Gleis_LichtraumItemProvider extends Bereich_ObjektItemProvider {
 			case GleisPackage.GLEIS_LICHTRAUM__LICHTRAUMPROFIL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -56,6 +56,16 @@ public enum ENUMRolle implements Enumerator {
 	ENUM_ROLLE_LST_FACHPLANER(2, "ENUMRolle_LST_Fachplaner", "LST_Fachplaner"),
 
 	/**
+	 * The '<em><b>ENUM Rolle ODB2 Plan Pro</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_ROLLE_ODB2_PLAN_PRO_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_ROLLE_ODB2_PLAN_PRO(3, "ENUMRolle_ODB2PlanPro", "ODB2PlanPro"),
+
+	/**
 	 * The '<em><b>ENUM Rolle sonstige</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -63,7 +73,7 @@ public enum ENUMRolle implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_ROLLE_SONSTIGE(3, "ENUMRolle_sonstige", "sonstige");
+	ENUM_ROLLE_SONSTIGE(4, "ENUMRolle_sonstige", "sonstige");
 
 	/**
 	 * The '<em><b>ENUM Rolle GEO Planer</b></em>' literal value.
@@ -99,6 +109,17 @@ public enum ENUMRolle implements Enumerator {
 	public static final int ENUM_ROLLE_LST_FACHPLANER_VALUE = 2;
 
 	/**
+	 * The '<em><b>ENUM Rolle ODB2 Plan Pro</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_ROLLE_ODB2_PLAN_PRO
+	 * @model name="ENUMRolle_ODB2PlanPro" literal="ODB2PlanPro"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_ROLLE_ODB2_PLAN_PRO_VALUE = 3;
+
+	/**
 	 * The '<em><b>ENUM Rolle sonstige</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -107,7 +128,7 @@ public enum ENUMRolle implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_ROLLE_SONSTIGE_VALUE = 3;
+	public static final int ENUM_ROLLE_SONSTIGE_VALUE = 4;
 
 	/**
 	 * An array of all the '<em><b>ENUM Rolle</b></em>' enumerators.
@@ -120,6 +141,7 @@ public enum ENUMRolle implements Enumerator {
 			ENUM_ROLLE_GEO_PLANER,
 			ENUM_ROLLE_GIS_DATEN,
 			ENUM_ROLLE_LST_FACHPLANER,
+			ENUM_ROLLE_ODB2_PLAN_PRO,
 			ENUM_ROLLE_SONSTIGE,
 		};
 
@@ -180,9 +202,10 @@ public enum ENUMRolle implements Enumerator {
 			case ENUM_ROLLE_GEO_PLANER_VALUE: return ENUM_ROLLE_GEO_PLANER;
 			case ENUM_ROLLE_GIS_DATEN_VALUE: return ENUM_ROLLE_GIS_DATEN;
 			case ENUM_ROLLE_LST_FACHPLANER_VALUE: return ENUM_ROLLE_LST_FACHPLANER;
+			case ENUM_ROLLE_ODB2_PLAN_PRO_VALUE: return ENUM_ROLLE_ODB2_PLAN_PRO;
 			case ENUM_ROLLE_SONSTIGE_VALUE: return ENUM_ROLLE_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

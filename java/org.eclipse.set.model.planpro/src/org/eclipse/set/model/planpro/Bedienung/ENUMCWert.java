@@ -181,8 +181,8 @@ public enum ENUMCWert implements Enumerator {
 			case ENUMC_WERT_64_VALUE: return ENUMC_WERT_64;
 			case ENUMC_WERT_128_VALUE: return ENUMC_WERT_128;
 			case ENUMC_WERT_192_VALUE: return ENUMC_WERT_192;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

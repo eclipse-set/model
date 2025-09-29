@@ -297,9 +297,8 @@ public class BUE_Schnittstelle_Allg_AttributeGroupImpl extends EObjectImpl imple
 				return basicSetHpErsatzstecker(null, msgs);
 			case BahnuebergangPackage.BUE_SCHNITTSTELLE_ALLG_ATTRIBUTE_GROUP__LFUE_IMPULS:
 				return basicSetLFUEImpuls(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -318,9 +317,8 @@ public class BUE_Schnittstelle_Allg_AttributeGroupImpl extends EObjectImpl imple
 				return getHpErsatzstecker();
 			case BahnuebergangPackage.BUE_SCHNITTSTELLE_ALLG_ATTRIBUTE_GROUP__LFUE_IMPULS:
 				return getLFUEImpuls();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -343,10 +341,8 @@ public class BUE_Schnittstelle_Allg_AttributeGroupImpl extends EObjectImpl imple
 			case BahnuebergangPackage.BUE_SCHNITTSTELLE_ALLG_ATTRIBUTE_GROUP__LFUE_IMPULS:
 				setLFUEImpuls((LFUE_Impuls_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -369,10 +365,8 @@ public class BUE_Schnittstelle_Allg_AttributeGroupImpl extends EObjectImpl imple
 			case BahnuebergangPackage.BUE_SCHNITTSTELLE_ALLG_ATTRIBUTE_GROUP__LFUE_IMPULS:
 				setLFUEImpuls((LFUE_Impuls_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -391,9 +385,8 @@ public class BUE_Schnittstelle_Allg_AttributeGroupImpl extends EObjectImpl imple
 				return hpErsatzstecker != null;
 			case BahnuebergangPackage.BUE_SCHNITTSTELLE_ALLG_ATTRIBUTE_GROUP__LFUE_IMPULS:
 				return lFUEImpuls != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //BUE_Schnittstelle_Allg_AttributeGroupImpl

@@ -34,10 +34,10 @@ import org.eclipse.set.model.planpro.Medien_und_Trassen.Medien_und_TrassenPackag
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -46,17 +46,17 @@ import org.eclipse.set.model.planpro.Medien_und_Trassen.Medien_und_TrassenPackag
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -65,17 +65,17 @@ import org.eclipse.set.model.planpro.Medien_und_Trassen.Medien_und_TrassenPackag
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -84,17 +84,17 @@ import org.eclipse.set.model.planpro.Medien_und_Trassen.Medien_und_TrassenPackag
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -103,10 +103,29 @@ import org.eclipse.set.model.planpro.Medien_und_Trassen.Medien_und_TrassenPackag
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * 
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
+ * 
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 
+ * --------------------------------------------------------------------------------
+ * 
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -130,7 +149,7 @@ public interface GeodatenPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Geodaten/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Geodaten/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -1324,13 +1343,22 @@ public interface GeodatenPackage extends EPackage {
 	int HOEHENLINIE__ID_HOEHENPUNKT_B = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>IDTOP Kante Pfad</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOEHENLINIE__IDTOP_KANTE_PFAD = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Hoehenlinie</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOEHENLINIE_FEATURE_COUNT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 3;
+	int HOEHENLINIE_FEATURE_COUNT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 4;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Geodaten.impl.Hoehenlinie_Allg_AttributeGroupImpl <em>Hoehenlinie Allg Attribute Group</em>}' class.
@@ -3718,13 +3746,22 @@ public interface GeodatenPackage extends EPackage {
 	int UEBERHOEHUNGSLINIE__OBJEKTREFERENZEN = BasisobjektePackage.BASIS_OBJEKT__OBJEKTREFERENZEN;
 
 	/**
+	 * The feature id for the '<em><b>IDTOP Kante Pfad</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UEBERHOEHUNGSLINIE__IDTOP_KANTE_PFAD = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>ID Ueberhoehung A</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_A = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 0;
+	int UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_A = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>ID Ueberhoehung B</b></em>' containment reference.
@@ -3733,7 +3770,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_B = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 1;
+	int UEBERHOEHUNGSLINIE__ID_UEBERHOEHUNG_B = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Ueberhoehungslinie Allg</b></em>' containment reference.
@@ -3742,7 +3779,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UEBERHOEHUNGSLINIE__UEBERHOEHUNGSLINIE_ALLG = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 2;
+	int UEBERHOEHUNGSLINIE__UEBERHOEHUNGSLINIE_ALLG = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Ueberhoehungslinie</em>' class.
@@ -3751,7 +3788,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UEBERHOEHUNGSLINIE_FEATURE_COUNT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 3;
+	int UEBERHOEHUNGSLINIE_FEATURE_COUNT = BasisobjektePackage.BASIS_OBJEKT_FEATURE_COUNT + 4;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Geodaten.impl.Ueberhoehungslinie_Allg_AttributeGroupImpl <em>Ueberhoehungslinie Allg Attribute Group</em>}' class.
@@ -5114,6 +5151,17 @@ public interface GeodatenPackage extends EPackage {
 	EReference getHoehenlinie_IDHoehenpunktB();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link org.eclipse.set.model.planpro.Geodaten.Hoehenlinie#getIDTOPKantePfad <em>IDTOP Kante Pfad</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>IDTOP Kante Pfad</em>'.
+	 * @see org.eclipse.set.model.planpro.Geodaten.Hoehenlinie#getIDTOPKantePfad()
+	 * @see #getHoehenlinie()
+	 * @generated
+	 */
+	EReference getHoehenlinie_IDTOPKantePfad();
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Geodaten.Hoehenlinie_Allg_AttributeGroup <em>Hoehenlinie Allg Attribute Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6356,6 +6404,17 @@ public interface GeodatenPackage extends EPackage {
 	EClass getUeberhoehungslinie();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link org.eclipse.set.model.planpro.Geodaten.Ueberhoehungslinie#getIDTOPKantePfad <em>IDTOP Kante Pfad</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>IDTOP Kante Pfad</em>'.
+	 * @see org.eclipse.set.model.planpro.Geodaten.Ueberhoehungslinie#getIDTOPKantePfad()
+	 * @see #getUeberhoehungslinie()
+	 * @generated
+	 */
+	EReference getUeberhoehungslinie_IDTOPKantePfad();
+
+	/**
 	 * Returns the meta object for the containment reference '{@link org.eclipse.set.model.planpro.Geodaten.Ueberhoehungslinie#getIDUeberhoehungA <em>ID Ueberhoehung A</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6621,7 +6680,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Anzeigegefuehrt ES Kategorie Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TAnzeigegefuehrt_ES_Kategorie' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TAnzeigegefuehrt_ES_Kategorie' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getAnzeigegefuehrt_ES_Kategorie_Type();
@@ -6633,7 +6692,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Bezeichnung Strecke Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TBezeichnung_Strecke' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='[0-9]{4}(\\-[a-zA-Z0-9])?'"
+	 *        extendedMetaData="name='TBezeichnung_Strecke' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='[0-9]{4}(\\-[a-zA-Z0-9])?'"
 	 * @generated
 	 */
 	EDataType getBezeichnung_Strecke_Type();
@@ -6801,7 +6860,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>GEO KAD Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TGEO_KAD' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TGEO_KAD' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getGEO_KAD_Type();
@@ -6813,7 +6872,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>GEO Laenge Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TGEO_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='-?(0|[1-9][0-9]{0,3})\\.[0-9]{5}'"
+	 *        extendedMetaData="name='TGEO_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='-?(0|[1-9][0-9]{0,3})\\.[0-9]{5}'"
 	 * @generated
 	 */
 	EDataType getGEO_Laenge_Type();
@@ -6825,7 +6884,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>GEO PAD Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TGEO_PAD' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,20}'"
+	 *        extendedMetaData="name='TGEO_PAD' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,20}'"
 	 * @generated
 	 */
 	EDataType getGEO_PAD_Type();
@@ -6837,7 +6896,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>GEO Radius AType</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TGEO_Radius_A' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='0\\.00000|(-?[1-9][0-9]{1,4}\\.[0-9]{5})'"
+	 *        extendedMetaData="name='TGEO_Radius_A' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='0\\.00000|(-?[1-9][0-9]{1,4}\\.[0-9]{5})'"
 	 * @generated
 	 */
 	EDataType getGEO_Radius_A_Type();
@@ -6849,7 +6908,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>GEO Radius BType</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TGEO_Radius_B' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='0\\.00000|(-?[1-9][0-9]{1,4}\\.[0-9]{5})'"
+	 *        extendedMetaData="name='TGEO_Radius_B' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='0\\.00000|(-?[1-9][0-9]{1,4}\\.[0-9]{5})'"
 	 * @generated
 	 */
 	EDataType getGEO_Radius_B_Type();
@@ -6873,7 +6932,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Geschwindigkeit Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TGeschwindigkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TGeschwindigkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getGeschwindigkeit_Type();
@@ -6921,7 +6980,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Hoehenlinie Laenge Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='THoehenlinie_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{3}'"
+	 *        extendedMetaData="name='THoehenlinie_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{3}|(0|[1-9][0-9]{0,4})\\.[0-9]{5}'"
 	 * @generated
 	 */
 	EDataType getHoehenlinie_Laenge_Type();
@@ -6933,7 +6992,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Hoehenpunkt Hoehe Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='THoehenpunkt_Hoehe' baseType='http://www.eclipse.org/emf/2003/XMLType#decimal' pattern='-100\\.000|-([1-9][0-9]{0,1}\\.[0-9]{3})|(-0\\.[1-9][0-9]{2}|-0\\.0[1-9][0-9]|-0\\.0[0-9][1-9])|((0|[1-9][0-9]{0,2}|[1-2][0-9]{3})\\.[0-9]{3})|3000\\.000'"
+	 *        extendedMetaData="name='THoehenpunkt_Hoehe' baseType='http://www.eclipse.org/emf/2003/XMLType#decimal' pattern='(-100\\.000|-([1-9][0-9]{0,1}\\.[0-9]{3})|(-0\\.[1-9][0-9]{2}|-0\\.0[1-9][0-9]|-0\\.0[0-9][1-9])|((0|[1-9][0-9]{0,2}|[1-2][0-9]{3})\\.[0-9]{3})|3000\\.000)|(-100\\.00000|-([1-9][0-9]{0,1}\\.[0-9]{5})|(-0\\.[1-9][0-9]{4}|-0\\.0[1-9][0-9]{3}|-0\\.0[0-9][1-9][0-9]{2}|-0\\.0[0-9]{2}[1-9][0-9]|-0\\.0[0-9]{3}[1-9])|((0|[1-9][0-9]{0,2}|[1-2][0-9]{3})\\.[0-9]{5})|3000\\.00000)'"
 	 * @generated
 	 */
 	EDataType getHoehenpunkt_Hoehe_Type();
@@ -6945,7 +7004,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Kantenname Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TKantenname' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TKantenname' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getKantenname_Type();
@@ -6957,7 +7016,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Knotenname Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TKnotenname' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,20}'"
+	 *        extendedMetaData="name='TKnotenname' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,20}'"
 	 * @generated
 	 */
 	EDataType getKnotenname_Type();
@@ -6969,7 +7028,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Neigung Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TNeigung' baseType='http://www.eclipse.org/emf/2003/XMLType#decimal' pattern='0\\.000|([1-9][0-9]{0,1}\\.[0-9]{3})|(0\\.[1-9][0-9]{2}|0\\.0[1-9][0-9]|0\\.0[0-9][1-9])|((0|[1-9][0-9]{0,1})\\.[0-9]{3})|100\\.000'"
+	 *        extendedMetaData="name='TNeigung' baseType='http://www.eclipse.org/emf/2003/XMLType#decimal' pattern='((0\\.[0-9]{3})|((0|[1-9][0-9]{0,1})\\.[0-9]{3})|100\\.000)|((0\\.[0-9]{5})|((0|[1-9][0-9]{0,1})\\.[0-9]{5})|100\\.00000)'"
 	 * @generated
 	 */
 	EDataType getNeigung_Type();
@@ -6981,7 +7040,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Oertlichkeit Abkuerzung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TOertlichkeit_Abkuerzung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='[A-Z][A-Z0-9%20]{1,4}'"
+	 *        extendedMetaData="name='TOertlichkeit_Abkuerzung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='[A-Z][A-Z0-9%20]{1,4}'"
 	 * @generated
 	 */
 	EDataType getOertlichkeit_Abkuerzung_Type();
@@ -6993,7 +7052,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Oertlichkeit Kurzname Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TOertlichkeit_Kurzname' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,16}'"
+	 *        extendedMetaData="name='TOertlichkeit_Kurzname' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,16}'"
 	 * @generated
 	 */
 	EDataType getOertlichkeit_Kurzname_Type();
@@ -7005,7 +7064,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Oertlichkeit Langname Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TOertlichkeit_Langname' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,40}'"
+	 *        extendedMetaData="name='TOertlichkeit_Langname' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,40}'"
 	 * @generated
 	 */
 	EDataType getOertlichkeit_Langname_Type();
@@ -7017,7 +7076,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Strecke Meter Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TStrecke_Meter' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='-?(0|[1-9][0-9]{0,5})\\.[0-9]{3}'"
+	 *        extendedMetaData="name='TStrecke_Meter' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='-?(0|[1-9][0-9]{0,5})\\.[0-9]{3}'"
 	 * @generated
 	 */
 	EDataType getStrecke_Meter_Type();
@@ -7029,7 +7088,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>TB Beschreibung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TTB_Beschreibung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TTB_Beschreibung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getTB_Beschreibung_Type();
@@ -7041,7 +7100,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>TOP Laenge Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TTOP_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{3}'"
+	 *        extendedMetaData="name='TTOP_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{3}|(0|[1-9][0-9]{0,4})\\.[0-9]{5}'"
 	 * @generated
 	 */
 	EDataType getTOP_Laenge_Type();
@@ -7053,7 +7112,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>TP Beschreibung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TTP_Beschreibung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText'"
+	 *        extendedMetaData="name='TTP_Beschreibung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText'"
 	 * @generated
 	 */
 	EDataType getTP_Beschreibung_Type();
@@ -7065,7 +7124,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Ueberhoehung Hoehe Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TUeberhoehung_Hoehe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='-?(0\\.[01][0-9][0-9]|0\\.200)'"
+	 *        extendedMetaData="name='TUeberhoehung_Hoehe' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='-?(0\\.[01][0-9][0-9]|0\\.200)'"
 	 * @generated
 	 */
 	EDataType getUeberhoehung_Hoehe_Type();
@@ -7077,7 +7136,7 @@ public interface GeodatenPackage extends EPackage {
 	 * @return the meta object for data type '<em>Ueberhoehungslinie Laenge Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TUeberhoehungslinie_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{3}'"
+	 *        extendedMetaData="name='TUeberhoehungslinie_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='(0|[1-9][0-9]{0,4})\\.[0-9]{3}|(0|[1-9][0-9]{0,4})\\.[0-9]{5}'"
 	 * @generated
 	 */
 	EDataType getUeberhoehungslinie_Laenge_Type();
@@ -7669,6 +7728,14 @@ public interface GeodatenPackage extends EPackage {
 		 * @generated
 		 */
 		EReference HOEHENLINIE__ID_HOEHENPUNKT_B = eINSTANCE.getHoehenlinie_IDHoehenpunktB();
+
+		/**
+		 * The meta object literal for the '<em><b>IDTOP Kante Pfad</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference HOEHENLINIE__IDTOP_KANTE_PFAD = eINSTANCE.getHoehenlinie_IDTOPKantePfad();
 
 		/**
 		 * The meta object literal for the '{@link org.eclipse.set.model.planpro.Geodaten.impl.Hoehenlinie_Allg_AttributeGroupImpl <em>Hoehenlinie Allg Attribute Group</em>}' class.
@@ -8695,6 +8762,14 @@ public interface GeodatenPackage extends EPackage {
 		 * @generated
 		 */
 		EClass UEBERHOEHUNGSLINIE = eINSTANCE.getUeberhoehungslinie();
+
+		/**
+		 * The meta object literal for the '<em><b>IDTOP Kante Pfad</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UEBERHOEHUNGSLINIE__IDTOP_KANTE_PFAD = eINSTANCE.getUeberhoehungslinie_IDTOPKantePfad();
 
 		/**
 		 * The meta object literal for the '<em><b>ID Ueberhoehung A</b></em>' containment reference feature.

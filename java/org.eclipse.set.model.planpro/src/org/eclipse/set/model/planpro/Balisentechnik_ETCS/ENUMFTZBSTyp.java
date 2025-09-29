@@ -216,16 +216,6 @@ public enum ENUMFTZBSTyp implements Enumerator {
 	ENUMFT_ZBS_TYP_ZRV(18, "ENUMFT_ZBS_Typ_ZRV", "ZRV"),
 
 	/**
-	 * The '<em><b>ENUMFT ZBS Typ ZU</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUMFT_ZBS_TYP_ZU_VALUE
-	 * @generated
-	 * @ordered
-	 */
-	ENUMFT_ZBS_TYP_ZU(19, "ENUMFT_ZBS_Typ_ZU", "Z\u00dc"),
-
-	/**
 	 * The '<em><b>ENUMFT ZBS Typ ZV</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -233,7 +223,17 @@ public enum ENUMFTZBSTyp implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMFT_ZBS_TYP_ZV(20, "ENUMFT_ZBS_Typ_ZV", "ZV");
+	ENUMFT_ZBS_TYP_ZV(19, "ENUMFT_ZBS_Typ_ZV", "ZV"),
+
+	/**
+	 * The '<em><b>ENUMFT ZBS Typ ZU</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_ZBS_TYP_ZU_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMFT_ZBS_TYP_ZU(20, "ENUMFT_ZBS_Typ_ZU", "Z\u00dc");
 
 	/**
 	 * The '<em><b>ENUMFT ZBS Typ Null</b></em>' literal value.
@@ -445,17 +445,6 @@ public enum ENUMFTZBSTyp implements Enumerator {
 	public static final int ENUMFT_ZBS_TYP_ZRV_VALUE = 18;
 
 	/**
-	 * The '<em><b>ENUMFT ZBS Typ ZU</b></em>' literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #ENUMFT_ZBS_TYP_ZU
-	 * @model name="ENUMFT_ZBS_Typ_ZU" literal="Z\334"
-	 * @generated
-	 * @ordered
-	 */
-	public static final int ENUMFT_ZBS_TYP_ZU_VALUE = 19;
-
-	/**
 	 * The '<em><b>ENUMFT ZBS Typ ZV</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -464,7 +453,18 @@ public enum ENUMFTZBSTyp implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMFT_ZBS_TYP_ZV_VALUE = 20;
+	public static final int ENUMFT_ZBS_TYP_ZV_VALUE = 19;
+
+	/**
+	 * The '<em><b>ENUMFT ZBS Typ ZU</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMFT_ZBS_TYP_ZU
+	 * @model name="ENUMFT_ZBS_Typ_ZU" literal="Z\334"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMFT_ZBS_TYP_ZU_VALUE = 20;
 
 	/**
 	 * An array of all the '<em><b>ENUMFTZBS Typ</b></em>' enumerators.
@@ -493,8 +493,8 @@ public enum ENUMFTZBSTyp implements Enumerator {
 			ENUMFT_ZBS_TYP_ZRHF,
 			ENUMFT_ZBS_TYP_ZR_LA,
 			ENUMFT_ZBS_TYP_ZRV,
-			ENUMFT_ZBS_TYP_ZU,
 			ENUMFT_ZBS_TYP_ZV,
+			ENUMFT_ZBS_TYP_ZU,
 		};
 
 	/**
@@ -570,10 +570,10 @@ public enum ENUMFTZBSTyp implements Enumerator {
 			case ENUMFT_ZBS_TYP_ZRHF_VALUE: return ENUMFT_ZBS_TYP_ZRHF;
 			case ENUMFT_ZBS_TYP_ZR_LA_VALUE: return ENUMFT_ZBS_TYP_ZR_LA;
 			case ENUMFT_ZBS_TYP_ZRV_VALUE: return ENUMFT_ZBS_TYP_ZRV;
-			case ENUMFT_ZBS_TYP_ZU_VALUE: return ENUMFT_ZBS_TYP_ZU;
 			case ENUMFT_ZBS_TYP_ZV_VALUE: return ENUMFT_ZBS_TYP_ZV;
-			default: return null;
+			case ENUMFT_ZBS_TYP_ZU_VALUE: return ENUMFT_ZBS_TYP_ZU;
 		}
+		return null;
 	}
 
 	/**

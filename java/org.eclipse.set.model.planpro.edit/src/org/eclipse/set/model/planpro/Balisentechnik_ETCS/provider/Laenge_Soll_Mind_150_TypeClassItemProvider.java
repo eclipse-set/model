@@ -139,10 +139,8 @@ public class Laenge_Soll_Mind_150_TypeClassItemProvider extends BasisAttribut_At
 			case Balisentechnik_ETCSPackage.LAENGE_SOLL_MIND_150_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

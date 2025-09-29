@@ -1594,7 +1594,7 @@ public class GeodatenValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] HOEHENLINIE_LAENGE_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("(0|[1-9][0-9]{0,4})\\.[0-9]{3}")
+				XMLTypeUtil.createPatternMatcher("(0|[1-9][0-9]{0,4})\\.[0-9]{3}|(0|[1-9][0-9]{0,4})\\.[0-9]{5}")
 			}
 		};
 
@@ -1627,7 +1627,7 @@ public class GeodatenValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] HOEHENPUNKT_HOEHE_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("-100\\.000|-([1-9][0-9]{0,1}\\.[0-9]{3})|(-0\\.[1-9][0-9]{2}|-0\\.0[1-9][0-9]|-0\\.0[0-9][1-9])|((0|[1-9][0-9]{0,2}|[1-2][0-9]{3})\\.[0-9]{3})|3000\\.000")
+				XMLTypeUtil.createPatternMatcher("(-100\\.000|-([1-9][0-9]{0,1}\\.[0-9]{3})|(-0\\.[1-9][0-9]{2}|-0\\.0[1-9][0-9]|-0\\.0[0-9][1-9])|((0|[1-9][0-9]{0,2}|[1-2][0-9]{3})\\.[0-9]{3})|3000\\.000)|(-100\\.00000|-([1-9][0-9]{0,1}\\.[0-9]{5})|(-0\\.[1-9][0-9]{4}|-0\\.0[1-9][0-9]{3}|-0\\.0[0-9][1-9][0-9]{2}|-0\\.0[0-9]{2}[1-9][0-9]|-0\\.0[0-9]{3}[1-9])|((0|[1-9][0-9]{0,2}|[1-2][0-9]{3})\\.[0-9]{5})|3000\\.00000)")
 			}
 		};
 
@@ -1706,7 +1706,7 @@ public class GeodatenValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] NEIGUNG_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("0\\.000|([1-9][0-9]{0,1}\\.[0-9]{3})|(0\\.[1-9][0-9]{2}|0\\.0[1-9][0-9]|0\\.0[0-9][1-9])|((0|[1-9][0-9]{0,1})\\.[0-9]{3})|100\\.000")
+				XMLTypeUtil.createPatternMatcher("((0\\.[0-9]{3})|((0|[1-9][0-9]{0,1})\\.[0-9]{3})|100\\.000)|((0\\.[0-9]{5})|((0|[1-9][0-9]{0,1})\\.[0-9]{5})|100\\.00000)")
 			}
 		};
 
@@ -1890,7 +1890,7 @@ public class GeodatenValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] TOP_LAENGE_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("(0|[1-9][0-9]{0,4})\\.[0-9]{3}")
+				XMLTypeUtil.createPatternMatcher("(0|[1-9][0-9]{0,4})\\.[0-9]{3}|(0|[1-9][0-9]{0,4})\\.[0-9]{5}")
 			}
 		};
 
@@ -1966,7 +1966,7 @@ public class GeodatenValidator extends EObjectValidator {
 	public static final  PatternMatcher [][] UEBERHOEHUNGSLINIE_LAENGE_TYPE__PATTERN__VALUES =
 		new PatternMatcher [][] {
 			new PatternMatcher [] {
-				XMLTypeUtil.createPatternMatcher("(0|[1-9][0-9]{0,4})\\.[0-9]{3}")
+				XMLTypeUtil.createPatternMatcher("(0|[1-9][0-9]{0,4})\\.[0-9]{3}|(0|[1-9][0-9]{0,4})\\.[0-9]{5}")
 			}
 		};
 

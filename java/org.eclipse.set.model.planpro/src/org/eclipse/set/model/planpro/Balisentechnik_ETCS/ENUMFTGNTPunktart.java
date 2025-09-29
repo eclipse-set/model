@@ -158,8 +158,8 @@ public enum ENUMFTGNTPunktart implements Enumerator {
 			case ENUMFT_GNT_PUNKTART_1_VALUE: return ENUMFT_GNT_PUNKTART_1;
 			case ENUMFT_GNT_PUNKTART_2_VALUE: return ENUMFT_GNT_PUNKTART_2;
 			case ENUMFT_GNT_PUNKTART_3_VALUE: return ENUMFT_GNT_PUNKTART_3;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

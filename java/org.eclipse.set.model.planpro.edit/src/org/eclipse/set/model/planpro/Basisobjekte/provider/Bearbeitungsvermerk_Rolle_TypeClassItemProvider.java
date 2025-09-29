@@ -138,10 +138,8 @@ public class Bearbeitungsvermerk_Rolle_TypeClassItemProvider extends BasisAttrib
 			case BasisobjektePackage.BEARBEITUNGSVERMERK_ROLLE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

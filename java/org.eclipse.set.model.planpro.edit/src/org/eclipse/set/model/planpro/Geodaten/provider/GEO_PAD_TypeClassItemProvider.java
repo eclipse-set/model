@@ -136,10 +136,8 @@ public class GEO_PAD_TypeClassItemProvider extends BasisAttribut_AttributeGroupI
 			case GeodatenPackage.GEO_PAD_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

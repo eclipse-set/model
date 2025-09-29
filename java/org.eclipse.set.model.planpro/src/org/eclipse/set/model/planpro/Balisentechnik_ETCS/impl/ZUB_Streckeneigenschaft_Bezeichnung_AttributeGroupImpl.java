@@ -120,9 +120,8 @@ public class ZUB_Streckeneigenschaft_Bezeichnung_AttributeGroupImpl extends EObj
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ZUB_STRECKENEIGENSCHAFT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ZUBSE:
 				return basicSetBezeichnungZUBSE(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,9 +134,8 @@ public class ZUB_Streckeneigenschaft_Bezeichnung_AttributeGroupImpl extends EObj
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ZUB_STRECKENEIGENSCHAFT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ZUBSE:
 				return getBezeichnungZUBSE();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,10 +149,8 @@ public class ZUB_Streckeneigenschaft_Bezeichnung_AttributeGroupImpl extends EObj
 			case Balisentechnik_ETCSPackage.ZUB_STRECKENEIGENSCHAFT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ZUBSE:
 				setBezeichnungZUBSE((Bezeichnung_ZUB_SE_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -168,10 +164,8 @@ public class ZUB_Streckeneigenschaft_Bezeichnung_AttributeGroupImpl extends EObj
 			case Balisentechnik_ETCSPackage.ZUB_STRECKENEIGENSCHAFT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ZUBSE:
 				setBezeichnungZUBSE((Bezeichnung_ZUB_SE_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -184,9 +178,8 @@ public class ZUB_Streckeneigenschaft_Bezeichnung_AttributeGroupImpl extends EObj
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ZUB_STRECKENEIGENSCHAFT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_ZUBSE:
 				return bezeichnungZUBSE != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZUB_Streckeneigenschaft_Bezeichnung_AttributeGroupImpl

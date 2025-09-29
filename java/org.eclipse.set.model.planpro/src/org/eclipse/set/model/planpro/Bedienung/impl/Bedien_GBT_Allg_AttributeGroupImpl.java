@@ -179,9 +179,8 @@ public class Bedien_GBT_Allg_AttributeGroupImpl extends EObjectImpl implements B
 				return basicSetRueckschauzeit(null, msgs);
 			case BedienungPackage.BEDIEN_GBT_ALLG_ATTRIBUTE_GROUP__VORSCHAUZEIT:
 				return basicSetVorschauzeit(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,9 +195,8 @@ public class Bedien_GBT_Allg_AttributeGroupImpl extends EObjectImpl implements B
 				return getRueckschauzeit();
 			case BedienungPackage.BEDIEN_GBT_ALLG_ATTRIBUTE_GROUP__VORSCHAUZEIT:
 				return getVorschauzeit();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,10 +213,8 @@ public class Bedien_GBT_Allg_AttributeGroupImpl extends EObjectImpl implements B
 			case BedienungPackage.BEDIEN_GBT_ALLG_ATTRIBUTE_GROUP__VORSCHAUZEIT:
 				setVorschauzeit((Vorschauzeit_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -235,10 +231,8 @@ public class Bedien_GBT_Allg_AttributeGroupImpl extends EObjectImpl implements B
 			case BedienungPackage.BEDIEN_GBT_ALLG_ATTRIBUTE_GROUP__VORSCHAUZEIT:
 				setVorschauzeit((Vorschauzeit_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -253,9 +247,8 @@ public class Bedien_GBT_Allg_AttributeGroupImpl extends EObjectImpl implements B
 				return rueckschauzeit != null;
 			case BedienungPackage.BEDIEN_GBT_ALLG_ATTRIBUTE_GROUP__VORSCHAUZEIT:
 				return vorschauzeit != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bedien_GBT_Allg_AttributeGroupImpl

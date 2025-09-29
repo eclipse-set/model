@@ -122,9 +122,8 @@ public class WeichenlaufketteImpl extends Basis_ObjektImpl implements Weichenlau
 		switch (featureID) {
 			case Weichen_und_GleissperrenPackage.WEICHENLAUFKETTE__BEZEICHNUNG:
 				return basicSetBezeichnung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -137,9 +136,8 @@ public class WeichenlaufketteImpl extends Basis_ObjektImpl implements Weichenlau
 		switch (featureID) {
 			case Weichen_und_GleissperrenPackage.WEICHENLAUFKETTE__BEZEICHNUNG:
 				return getBezeichnung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -153,10 +151,8 @@ public class WeichenlaufketteImpl extends Basis_ObjektImpl implements Weichenlau
 			case Weichen_und_GleissperrenPackage.WEICHENLAUFKETTE__BEZEICHNUNG:
 				setBezeichnung((Bezeichnung_Element_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -170,10 +166,8 @@ public class WeichenlaufketteImpl extends Basis_ObjektImpl implements Weichenlau
 			case Weichen_und_GleissperrenPackage.WEICHENLAUFKETTE__BEZEICHNUNG:
 				setBezeichnung((Bezeichnung_Element_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -186,9 +180,8 @@ public class WeichenlaufketteImpl extends Basis_ObjektImpl implements Weichenlau
 		switch (featureID) {
 			case Weichen_und_GleissperrenPackage.WEICHENLAUFKETTE__BEZEICHNUNG:
 				return bezeichnung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //WeichenlaufketteImpl

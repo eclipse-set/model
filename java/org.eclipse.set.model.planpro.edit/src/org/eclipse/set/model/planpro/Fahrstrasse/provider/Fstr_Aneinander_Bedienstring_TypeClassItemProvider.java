@@ -136,10 +136,8 @@ public class Fstr_Aneinander_Bedienstring_TypeClassItemProvider extends BasisAtt
 			case FahrstrassePackage.FSTR_ANEINANDER_BEDIENSTRING_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

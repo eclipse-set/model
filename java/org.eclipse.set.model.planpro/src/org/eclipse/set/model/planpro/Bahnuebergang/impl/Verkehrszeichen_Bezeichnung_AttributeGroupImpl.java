@@ -120,9 +120,8 @@ public class Verkehrszeichen_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case BahnuebergangPackage.VERKEHRSZEICHEN_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_VERKEHRSZEICHEN:
 				return basicSetBezeichnungVerkehrszeichen(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,9 +134,8 @@ public class Verkehrszeichen_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case BahnuebergangPackage.VERKEHRSZEICHEN_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_VERKEHRSZEICHEN:
 				return getBezeichnungVerkehrszeichen();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -151,10 +149,8 @@ public class Verkehrszeichen_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 			case BahnuebergangPackage.VERKEHRSZEICHEN_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_VERKEHRSZEICHEN:
 				setBezeichnungVerkehrszeichen((Bezeichnung_Verkehrszeichen_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -168,10 +164,8 @@ public class Verkehrszeichen_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 			case BahnuebergangPackage.VERKEHRSZEICHEN_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_VERKEHRSZEICHEN:
 				setBezeichnungVerkehrszeichen((Bezeichnung_Verkehrszeichen_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -184,9 +178,8 @@ public class Verkehrszeichen_Bezeichnung_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case BahnuebergangPackage.VERKEHRSZEICHEN_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_VERKEHRSZEICHEN:
 				return bezeichnungVerkehrszeichen != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Verkehrszeichen_Bezeichnung_AttributeGroupImpl

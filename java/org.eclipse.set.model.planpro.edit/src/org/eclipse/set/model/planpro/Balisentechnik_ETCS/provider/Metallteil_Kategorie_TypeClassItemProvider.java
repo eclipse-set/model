@@ -139,10 +139,8 @@ public class Metallteil_Kategorie_TypeClassItemProvider extends BasisAttribut_At
 			case Balisentechnik_ETCSPackage.METALLTEIL_KATEGORIE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -149,10 +149,8 @@ public class ZugeinwirkungItemProvider extends Punkt_ObjektItemProvider {
 			case OrtungPackage.ZUGEINWIRKUNG__ZUGEINWIRKUNG_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**
@@ -174,7 +172,7 @@ public class ZugeinwirkungItemProvider extends Punkt_ObjektItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(OrtungPackage.Literals.ZUGEINWIRKUNG__ID_BEZUGSPUNKT,
-				 VerweiseFactory.eINSTANCE.createID_Markanter_Punkt_TypeClass()));
+				 VerweiseFactory.eINSTANCE.createID_Bezugspunkt_TypeClass()));
 
 		newChildDescriptors.add
 			(createChildParameter

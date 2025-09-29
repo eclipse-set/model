@@ -158,8 +158,8 @@ public enum ENUMAutoEinstellung implements Enumerator {
 			case ENUM_AUTO_EINSTELLUNG_SB_VALUE: return ENUM_AUTO_EINSTELLUNG_SB;
 			case ENUM_AUTO_EINSTELLUNG_SONSTIGE_VALUE: return ENUM_AUTO_EINSTELLUNG_SONSTIGE;
 			case ENUM_AUTO_EINSTELLUNG_ZL_VALUE: return ENUM_AUTO_EINSTELLUNG_ZL;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

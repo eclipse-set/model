@@ -746,6 +746,52 @@ public class Signalbegriffe_Ril_301ItemProviderAdapterFactory extends Signalbegr
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El34Zusatz} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected El34ZusatzItemProvider el34ZusatzItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El34Zusatz}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createEl34ZusatzAdapter() {
+		if (el34ZusatzItemProvider == null) {
+			el34ZusatzItemProvider = new El34ZusatzItemProvider(this);
+		}
+
+		return el34ZusatzItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El34ZusatzKombi} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected El34ZusatzKombiItemProvider el34ZusatzKombiItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El34ZusatzKombi}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createEl34ZusatzKombiAdapter() {
+		if (el34ZusatzKombiItemProvider == null) {
+			el34ZusatzKombiItemProvider = new El34ZusatzKombiItemProvider(this);
+		}
+
+		return el34ZusatzKombiItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.El4} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1367,6 +1413,29 @@ public class Signalbegriffe_Ril_301ItemProviderAdapterFactory extends Signalbegr
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp0F} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Hp0FItemProvider hp0FItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp0F}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createHp0FAdapter() {
+		if (hp0FItemProvider == null) {
+			hp0FItemProvider = new Hp0FItemProvider(this);
+		}
+
+		return hp0FItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp1} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1390,6 +1459,29 @@ public class Signalbegriffe_Ril_301ItemProviderAdapterFactory extends Signalbegr
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp1F} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Hp1FItemProvider hp1FItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp1F}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createHp1FAdapter() {
+		if (hp1FItemProvider == null) {
+			hp1FItemProvider = new Hp1FItemProvider(this);
+		}
+
+		return hp1FItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp2} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1410,6 +1502,29 @@ public class Signalbegriffe_Ril_301ItemProviderAdapterFactory extends Signalbegr
 		}
 
 		return hp2ItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp2F} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Hp2FItemProvider hp2FItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Hp2F}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createHp2FAdapter() {
+		if (hp2FItemProvider == null) {
+			hp2FItemProvider = new Hp2FItemProvider(this);
+		}
+
+		return hp2FItemProvider;
 	}
 
 	/**
@@ -2678,6 +2793,29 @@ public class Signalbegriffe_Ril_301ItemProviderAdapterFactory extends Signalbegr
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.OzPZB2000Hz} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected OzPZB2000HzItemProvider ozPZB2000HzItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.OzPZB2000Hz}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createOzPZB2000HzAdapter() {
+		if (ozPZB2000HzItemProvider == null) {
+			ozPZB2000HzItemProvider = new OzPZB2000HzItemProvider(this);
+		}
+
+		return ozPZB2000HzItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.OzPZBBUE} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3483,6 +3621,29 @@ public class Signalbegriffe_Ril_301ItemProviderAdapterFactory extends Signalbegr
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr0F} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Vr0FItemProvider vr0FItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr0F}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createVr0FAdapter() {
+		if (vr0FItemProvider == null) {
+			vr0FItemProvider = new Vr0FItemProvider(this);
+		}
+
+		return vr0FItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr1} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3506,6 +3667,52 @@ public class Signalbegriffe_Ril_301ItemProviderAdapterFactory extends Signalbegr
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr12F} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Vr12FItemProvider vr12FItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr12F}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createVr12FAdapter() {
+		if (vr12FItemProvider == null) {
+			vr12FItemProvider = new Vr12FItemProvider(this);
+		}
+
+		return vr12FItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr1F} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Vr1FItemProvider vr1FItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr1F}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createVr1FAdapter() {
+		if (vr1FItemProvider == null) {
+			vr1FItemProvider = new Vr1FItemProvider(this);
+		}
+
+		return vr1FItemProvider;
+	}
+
+	/**
 	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr2} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3526,6 +3733,29 @@ public class Signalbegriffe_Ril_301ItemProviderAdapterFactory extends Signalbegr
 		}
 
 		return vr2ItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr2F} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected Vr2FItemProvider vr2FItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Vr2F}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createVr2FAdapter() {
+		if (vr2FItemProvider == null) {
+			vr2FItemProvider = new Vr2FItemProvider(this);
+		}
+
+		return vr2FItemProvider;
 	}
 
 	/**
@@ -4398,6 +4628,8 @@ public class Signalbegriffe_Ril_301ItemProviderAdapterFactory extends Signalbegr
 		if (el1vItemProvider != null) el1vItemProvider.dispose();
 		if (el2ItemProvider != null) el2ItemProvider.dispose();
 		if (el3ItemProvider != null) el3ItemProvider.dispose();
+		if (el34ZusatzItemProvider != null) el34ZusatzItemProvider.dispose();
+		if (el34ZusatzKombiItemProvider != null) el34ZusatzKombiItemProvider.dispose();
 		if (el4ItemProvider != null) el4ItemProvider.dispose();
 		if (el5ItemProvider != null) el5ItemProvider.dispose();
 		if (el6ItemProvider != null) el6ItemProvider.dispose();
@@ -4425,8 +4657,11 @@ public class Signalbegriffe_Ril_301ItemProviderAdapterFactory extends Signalbegr
 		if (hl9bItemProvider != null) hl9bItemProvider.dispose();
 		if (hp0ItemProvider != null) hp0ItemProvider.dispose();
 		if (hp02LpItemProvider != null) hp02LpItemProvider.dispose();
+		if (hp0FItemProvider != null) hp0FItemProvider.dispose();
 		if (hp1ItemProvider != null) hp1ItemProvider.dispose();
+		if (hp1FItemProvider != null) hp1FItemProvider.dispose();
 		if (hp2ItemProvider != null) hp2ItemProvider.dispose();
+		if (hp2FItemProvider != null) hp2FItemProvider.dispose();
 		if (klItemProvider != null) klItemProvider.dispose();
 		if (ks1ItemProvider != null) ks1ItemProvider.dispose();
 		if (ks2ItemProvider != null) ks2ItemProvider.dispose();
@@ -4482,6 +4717,7 @@ public class Signalbegriffe_Ril_301ItemProviderAdapterFactory extends Signalbegr
 		if (ozICEItemProvider != null) ozICEItemProvider.dispose();
 		if (ozLZBBerItemProvider != null) ozLZBBerItemProvider.dispose();
 		if (ozOBGrenzeItemProvider != null) ozOBGrenzeItemProvider.dispose();
+		if (ozPZB2000HzItemProvider != null) ozPZB2000HzItemProvider.dispose();
 		if (ozPZBBUEItemProvider != null) ozPZBBUEItemProvider.dispose();
 		if (ozZfItemProvider != null) ozZfItemProvider.dispose();
 		if (ozZuglItemProvider != null) ozZuglItemProvider.dispose();
@@ -4517,8 +4753,12 @@ public class Signalbegriffe_Ril_301ItemProviderAdapterFactory extends Signalbegr
 		if (ts3ItemProvider != null) ts3ItemProvider.dispose();
 		if (ukrItemProvider != null) ukrItemProvider.dispose();
 		if (vr0ItemProvider != null) vr0ItemProvider.dispose();
+		if (vr0FItemProvider != null) vr0FItemProvider.dispose();
 		if (vr1ItemProvider != null) vr1ItemProvider.dispose();
+		if (vr12FItemProvider != null) vr12FItemProvider.dispose();
+		if (vr1FItemProvider != null) vr1FItemProvider.dispose();
 		if (vr2ItemProvider != null) vr2ItemProvider.dispose();
+		if (vr2FItemProvider != null) vr2FItemProvider.dispose();
 		if (wn1ItemProvider != null) wn1ItemProvider.dispose();
 		if (wn2ItemProvider != null) wn2ItemProvider.dispose();
 		if (wn3ItemProvider != null) wn3ItemProvider.dispose();

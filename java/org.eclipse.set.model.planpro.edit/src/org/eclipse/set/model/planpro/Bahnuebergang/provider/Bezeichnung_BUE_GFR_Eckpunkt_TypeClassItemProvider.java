@@ -136,10 +136,8 @@ public class Bezeichnung_BUE_GFR_Eckpunkt_TypeClassItemProvider extends BasisAtt
 			case BahnuebergangPackage.BEZEICHNUNG_BUE_GFR_ECKPUNKT_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

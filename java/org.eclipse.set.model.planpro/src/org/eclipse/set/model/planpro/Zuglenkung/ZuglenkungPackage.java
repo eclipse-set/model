@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +128,7 @@ public interface ZuglenkungPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Zuglenkung/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Zuglenkung/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -2860,7 +2860,7 @@ public interface ZuglenkungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Annaeherungsgeschwindigkeit Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TAnnaeherungsgeschwindigkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit' pattern='[4-9][0-9]|1[0-5][0-9]|160'"
+	 *        extendedMetaData="name='TAnnaeherungsgeschwindigkeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit' pattern='[4-9][0-9]|1[0-5][0-9]|160'"
 	 * @generated
 	 */
 	EDataType getAnnaeherungsgeschwindigkeit_Type();
@@ -2896,7 +2896,7 @@ public interface ZuglenkungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Einstellkontrollzeit Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TEinstellkontrollzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='[1-9][0-9]{0,1}|1[0-9]{2}|200'"
+	 *        extendedMetaData="name='TEinstellkontrollzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='[1-9][0-9]{0,1}|1[0-9]{2}|200'"
 	 * @generated
 	 */
 	EDataType getEinstellkontrollzeit_Type();
@@ -2932,7 +2932,7 @@ public interface ZuglenkungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Fstr Bildezeit Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TFstr_Bildezeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='0|[1-9][0-9]{0,1}|[1-8][0-9]{2}|900'"
+	 *        extendedMetaData="name='TFstr_Bildezeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='0|[1-9][0-9]{0,1}|[1-8][0-9]{2}|900'"
 	 * @generated
 	 */
 	EDataType getFstr_Bildezeit_Type();
@@ -2944,7 +2944,7 @@ public interface ZuglenkungPackage extends EPackage {
 	 * @return the meta object for data type '<em>GK Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TGK' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit' pattern='[4-9][0-9]|1[0-5][0-9]|160'"
+	 *        extendedMetaData="name='TGK' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit' pattern='[4-9][0-9]|1[0-5][0-9]|160'"
 	 * @generated
 	 */
 	EDataType getGK_Type();
@@ -2956,7 +2956,7 @@ public interface ZuglenkungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Lenkabbruchzeit Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TLenkabbruchzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='0|[1-9][0-9]{0,2}|1[01][0-9]{2}|1200'"
+	 *        extendedMetaData="name='TLenkabbruchzeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='0|[1-9][0-9]{0,2}|1[01][0-9]{2}|1200'"
 	 * @generated
 	 */
 	EDataType getLenkabbruchzeit_Type();
@@ -2968,7 +2968,7 @@ public interface ZuglenkungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Personal Reaktionszeit Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TPersonal_Reaktionszeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='1[5-9]|[23][0-9]|4[0-5]'"
+	 *        extendedMetaData="name='TPersonal_Reaktionszeit' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='1[5-9]|[23][0-9]|4[0-5]'"
 	 * @generated
 	 */
 	EDataType getPersonal_Reaktionszeit_Type();
@@ -2980,7 +2980,7 @@ public interface ZuglenkungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Sichtzeit Vorsignal Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TSichtzeit_Vorsignal' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='0|1[0-9]|20'"
+	 *        extendedMetaData="name='TSichtzeit_Vorsignal' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='0|1[0-9]|20'"
 	 * @generated
 	 */
 	EDataType getSichtzeit_Vorsignal_Type();
@@ -2992,7 +2992,7 @@ public interface ZuglenkungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Signalgruppe Bezeichner Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TSignalgruppe_Bezeichner' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TZeichenkette'"
+	 *        extendedMetaData="name='TSignalgruppe_Bezeichner' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TZeichenkette'"
 	 * @generated
 	 */
 	EDataType getSignalgruppe_Bezeichner_Type();
@@ -3004,7 +3004,7 @@ public interface ZuglenkungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Tv GK Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TTv_GK' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde' pattern='0|[1-9][0-9]{0,1}|[1-2][0-9]{2}|300'"
+	 *        extendedMetaData="name='TTv_GK' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde' pattern='0|[1-9][0-9]{0,1}|[1-2][0-9]{2}|300'"
 	 * @generated
 	 */
 	EDataType getTv_GK_Type();
@@ -3016,7 +3016,7 @@ public interface ZuglenkungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Vmax Annaeherung Type</em>'.
 	 * @see java.math.BigInteger
 	 * @model instanceClass="java.math.BigInteger"
-	 *        extendedMetaData="name='TVmax_Annaeherung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TGeschwindigkeit'"
+	 *        extendedMetaData="name='TVmax_Annaeherung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TGeschwindigkeit'"
 	 * @generated
 	 */
 	EDataType getVmax_Annaeherung_Type();
@@ -3028,7 +3028,7 @@ public interface ZuglenkungPackage extends EPackage {
 	 * @return the meta object for data type '<em>ZL Fstr Zuschlag Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TZL_Fstr_Zuschlag' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TSekunde'"
+	 *        extendedMetaData="name='TZL_Fstr_Zuschlag' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TSekunde'"
 	 * @generated
 	 */
 	EDataType getZL_Fstr_Zuschlag_Type();

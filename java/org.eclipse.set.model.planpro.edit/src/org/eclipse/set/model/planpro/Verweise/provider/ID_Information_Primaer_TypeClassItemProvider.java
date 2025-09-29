@@ -159,10 +159,8 @@ public class ID_Information_Primaer_TypeClassItemProvider extends Zeiger_TypeCla
 			case VerweisePackage.ID_INFORMATION_PRIMAER_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

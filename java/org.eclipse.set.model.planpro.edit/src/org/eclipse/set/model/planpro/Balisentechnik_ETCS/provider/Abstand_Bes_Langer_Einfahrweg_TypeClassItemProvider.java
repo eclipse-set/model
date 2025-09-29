@@ -139,10 +139,8 @@ public class Abstand_Bes_Langer_Einfahrweg_TypeClassItemProvider extends BasisAt
 			case Balisentechnik_ETCSPackage.ABSTAND_BES_LANGER_EINFAHRWEG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

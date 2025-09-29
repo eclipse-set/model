@@ -204,8 +204,8 @@ public enum ENUMMessfehler implements Enumerator {
 			case ENUM_MESSFEHLER_5BIS_7_VALUE: return ENUM_MESSFEHLER_5BIS_7;
 			case ENUM_MESSFEHLER_KLEINER_4_VALUE: return ENUM_MESSFEHLER_KLEINER_4;
 			case ENUM_MESSFEHLER_KLEINER_5_VALUE: return ENUM_MESSFEHLER_KLEINER_5;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

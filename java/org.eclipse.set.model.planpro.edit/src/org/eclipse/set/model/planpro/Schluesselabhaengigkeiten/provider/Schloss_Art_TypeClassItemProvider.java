@@ -138,10 +138,8 @@ public class Schloss_Art_TypeClassItemProvider extends BasisAttribut_AttributeGr
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

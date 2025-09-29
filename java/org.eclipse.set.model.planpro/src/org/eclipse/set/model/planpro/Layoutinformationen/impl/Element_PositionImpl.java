@@ -215,9 +215,8 @@ public class Element_PositionImpl extends Ur_ObjektImpl implements Element_Posit
 				return ((InternalEList<?>)getIDLageplanZustand()).basicRemove(otherEnd, msgs);
 			case LayoutinformationenPackage.ELEMENT_POSITION__REFERENZ_OBJEKT_DARSTELLUNG:
 				return basicSetReferenzObjektDarstellung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -234,9 +233,8 @@ public class Element_PositionImpl extends Ur_ObjektImpl implements Element_Posit
 				return getIDLageplanZustand();
 			case LayoutinformationenPackage.ELEMENT_POSITION__REFERENZ_OBJEKT_DARSTELLUNG:
 				return getReferenzObjektDarstellung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -258,10 +256,8 @@ public class Element_PositionImpl extends Ur_ObjektImpl implements Element_Posit
 			case LayoutinformationenPackage.ELEMENT_POSITION__REFERENZ_OBJEKT_DARSTELLUNG:
 				setReferenzObjektDarstellung((Referenz_Objekt_Darstellung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -281,10 +277,8 @@ public class Element_PositionImpl extends Ur_ObjektImpl implements Element_Posit
 			case LayoutinformationenPackage.ELEMENT_POSITION__REFERENZ_OBJEKT_DARSTELLUNG:
 				setReferenzObjektDarstellung((Referenz_Objekt_Darstellung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -301,9 +295,8 @@ public class Element_PositionImpl extends Ur_ObjektImpl implements Element_Posit
 				return iDLageplanZustand != null && !iDLageplanZustand.isEmpty();
 			case LayoutinformationenPackage.ELEMENT_POSITION__REFERENZ_OBJEKT_DARSTELLUNG:
 				return referenzObjektDarstellung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Element_PositionImpl

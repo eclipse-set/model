@@ -32,10 +32,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -44,17 +44,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -63,17 +63,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -82,17 +82,17 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Inhalt der Datei:
  * XML Schema für PlanPro Schnittstelle.
@@ -101,10 +101,10 @@ import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
  * 
  * --------------------------------------------------------------------------------
  * 
- * This Document is licensed under the open source license RailPL V1.0.
+ * This Document is licensed under the open source license RailPL V1.1.
  * 
  * More information about the license can be found on
- * http://www.dbnetze.com/planpro
+ * http://www.dbinfrago.com/planpro
  * 
  * Contents of the file:
  * XML Schema for PlanPro interface.
@@ -128,7 +128,7 @@ public interface OrtungPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Ortung/1.10.0.1";
+	String eNS_URI = "http://www.plan-pro.org/modell/Ortung/1.10.0.3";
 
 	/**
 	 * The package namespace name.
@@ -4077,7 +4077,7 @@ public interface OrtungPackage extends EPackage {
 	 * @return the meta object for data type '<em>FMA Anschluss Bezeichnung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TFMA_Anschluss_Bezeichnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{2,8}'"
+	 *        extendedMetaData="name='TFMA_Anschluss_Bezeichnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{2,8}'"
 	 * @generated
 	 */
 	EDataType getFMA_Anschluss_Bezeichnung_Type();
@@ -4089,7 +4089,7 @@ public interface OrtungPackage extends EPackage {
 	 * @return the meta object for data type '<em>FMA Element Seiltyp Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TFMA_Element_Seiltyp' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{2,6}'"
+	 *        extendedMetaData="name='TFMA_Element_Seiltyp' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{2,6}'"
 	 * @generated
 	 */
 	EDataType getFMA_Element_Seiltyp_Type();
@@ -4101,7 +4101,7 @@ public interface OrtungPackage extends EPackage {
 	 * @return the meta object for data type '<em>FMA Kaskade Bezeichnung Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TFMA_Kaskade_Bezeichnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='[a-z]|[A-Z]|(I)|(II)|(III)|(IV)|(V)|(VI)|(VII)|(VIII)|(IX)|(X)|(XI)|(XII)|(\\.[1-9])'"
+	 *        extendedMetaData="name='TFMA_Kaskade_Bezeichnung' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='[a-z]|[A-Z]|(I)|(II)|(III)|(IV)|(V)|(VI)|(VII)|(VIII)|(IX)|(X)|(XI)|(XII)|(\\.[1-9])'"
 	 * @generated
 	 */
 	EDataType getFMA_Kaskade_Bezeichnung_Type();
@@ -4113,7 +4113,7 @@ public interface OrtungPackage extends EPackage {
 	 * @return the meta object for data type '<em>FMA Komponente Typ Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TFMA_Komponente_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,16}'"
+	 *        extendedMetaData="name='TFMA_Komponente_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,16}'"
 	 * @generated
 	 */
 	EDataType getFMA_Komponente_Typ_Type();
@@ -4125,7 +4125,7 @@ public interface OrtungPackage extends EPackage {
 	 * @return the meta object for data type '<em>FMA Laenge Beeinflusst Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TFMA_Laenge_Beeinflusst' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='[1-9][0-9]{0,2}|1[0-4][0-9]{2}|1500'"
+	 *        extendedMetaData="name='TFMA_Laenge_Beeinflusst' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='[1-9][0-9]{0,2}|1[0-4][0-9]{2}|1500'"
 	 * @generated
 	 */
 	EDataType getFMA_Laenge_Beeinflusst_Type();
@@ -4137,7 +4137,7 @@ public interface OrtungPackage extends EPackage {
 	 * @return the meta object for data type '<em>FMA Laenge E1 Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TFMA_Laenge_E1' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='[1-9][0-9]{0,2}|1[0-4][0-9]{2}'"
+	 *        extendedMetaData="name='TFMA_Laenge_E1' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='[1-9][0-9]{0,2}|1[0-4][0-9]{2}'"
 	 * @generated
 	 */
 	EDataType getFMA_Laenge_E1_Type();
@@ -4149,7 +4149,7 @@ public interface OrtungPackage extends EPackage {
 	 * @return the meta object for data type '<em>FMA Laenge E2 Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TFMA_Laenge_E2' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='[1-9][0-9]{0,2}|1[0-4][0-9]{2}'"
+	 *        extendedMetaData="name='TFMA_Laenge_E2' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='[1-9][0-9]{0,2}|1[0-4][0-9]{2}'"
 	 * @generated
 	 */
 	EDataType getFMA_Laenge_E2_Type();
@@ -4161,7 +4161,7 @@ public interface OrtungPackage extends EPackage {
 	 * @return the meta object for data type '<em>FMA Laenge E3 Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TFMA_Laenge_E3' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='[1-9][0-9]{0,2}|1[0-4][0-9]{2}'"
+	 *        extendedMetaData="name='TFMA_Laenge_E3' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='[1-9][0-9]{0,2}|1[0-4][0-9]{2}'"
 	 * @generated
 	 */
 	EDataType getFMA_Laenge_E3_Type();
@@ -4173,7 +4173,7 @@ public interface OrtungPackage extends EPackage {
 	 * @return the meta object for data type '<em>FMA Laenge SType</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TFMA_Laenge_S' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='[1-9][0-9]{0,2}|1[0-4][0-9]{2}'"
+	 *        extendedMetaData="name='TFMA_Laenge_S' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='[1-9][0-9]{0,2}|1[0-4][0-9]{2}'"
 	 * @generated
 	 */
 	EDataType getFMA_Laenge_S_Type();
@@ -4185,7 +4185,7 @@ public interface OrtungPackage extends EPackage {
 	 * @return the meta object for data type '<em>FMA Laenge Type</em>'.
 	 * @see java.math.BigDecimal
 	 * @model instanceClass="java.math.BigDecimal"
-	 *        extendedMetaData="name='TFMA_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TMeter' pattern='[1-9][0-9]{0,2}|1[0-4][0-9]{2}|1500'"
+	 *        extendedMetaData="name='TFMA_Laenge' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TMeter' pattern='[1-9][0-9]{0,2}|1[0-4][0-9]{2}|1500'"
 	 * @generated
 	 */
 	EDataType getFMA_Laenge_Type();
@@ -4197,7 +4197,7 @@ public interface OrtungPackage extends EPackage {
 	 * @return the meta object for data type '<em>FMA Typ Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TFMA_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,16}'"
+	 *        extendedMetaData="name='TFMA_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,16}'"
 	 * @generated
 	 */
 	EDataType getFMA_Typ_Type();
@@ -4209,7 +4209,7 @@ public interface OrtungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Uebertragung FMinfo Typ Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TUebertragung_FMinfo_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,16}'"
+	 *        extendedMetaData="name='TUebertragung_FMinfo_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,16}'"
 	 * @generated
 	 */
 	EDataType getUebertragung_FMinfo_Typ_Type();
@@ -4221,7 +4221,7 @@ public interface OrtungPackage extends EPackage {
 	 * @return the meta object for data type '<em>Zugeinwirkung Typ Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='TZugeinwirkung_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.1#TText' pattern='.{1,16}'"
+	 *        extendedMetaData="name='TZugeinwirkung_Typ' baseType='http://www.plan-pro.org/modell/BasisTypen/1.10.0.3#TText' pattern='.{1,16}'"
 	 * @generated
 	 */
 	EDataType getZugeinwirkung_Typ_Type();

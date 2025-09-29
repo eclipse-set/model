@@ -154,10 +154,8 @@ public class BUE_Anlage_Fuss_Rad_AttributeGroupItemProvider
 			case BahnuebergangPackage.BUE_ANLAGE_FUSS_RAD_ATTRIBUTE_GROUP__FUSS_RADWEG_SEITE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -135,8 +135,8 @@ public enum ENUMLEUArt implements Enumerator {
 		switch (value) {
 			case ENUMLEU_ART_LEU_P_VALUE: return ENUMLEU_ART_LEU_P;
 			case ENUMLEU_ART_VOLL_LEU_VALUE: return ENUMLEU_ART_VOLL_LEU;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

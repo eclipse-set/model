@@ -111,6 +111,7 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 			case Balisentechnik_ETCSPackage.BEZ_ZUB_BEREICHSGRENZE_TYPE_CLASS: return createBez_ZUB_Bereichsgrenze_TypeClass();
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_ETCS_KANTE_TYPE_CLASS: return createBezeichnung_ETCS_Kante_TypeClass();
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_LEU_ANLAGE_TYPE_CLASS: return createBezeichnung_LEU_Anlage_TypeClass();
+			case Balisentechnik_ETCSPackage.BEZEICHNUNG_RBC_TYPE_CLASS: return createBezeichnung_RBC_TypeClass();
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_ZUB_SE_TYPE_CLASS: return createBezeichnung_ZUB_SE_TypeClass();
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_ZUB_TYPE_CLASS: return createBezeichnung_ZUB_TypeClass();
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_ESG_BED_AUSSTIEG_ATTRIBUTE_GROUP: return createBgrenze_Nach_ESG_Bed_Ausstieg_AttributeGroup();
@@ -294,6 +295,7 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 			case Balisentechnik_ETCSPackage.PROJEKTIERUNGSFALL_TYPE_CLASS: return createProjektierungsfall_TypeClass();
 			case Balisentechnik_ETCSPackage.RBC: return createRBC();
 			case Balisentechnik_ETCSPackage.RBC_ALLG_ATTRIBUTE_GROUP: return createRBC_Allg_AttributeGroup();
+			case Balisentechnik_ETCSPackage.RBC_BEZEICHNUNG_ATTRIBUTE_GROUP: return createRBC_Bezeichnung_AttributeGroup();
 			case Balisentechnik_ETCSPackage.RBC_ETCS_SYSTEM_VERSION_TYPE_CLASS: return createRBC_ETCS_System_Version_TypeClass();
 			case Balisentechnik_ETCSPackage.RBC_SRS_VERSION_TYPE_CLASS: return createRBC_SRS_Version_TypeClass();
 			case Balisentechnik_ETCSPackage.REKURSION_2NR_TYPE_CLASS: return createRekursion_2_Nr_TypeClass();
@@ -467,6 +469,8 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 				return createAbstand_Einmesspunkt_TypeFromString(eDataType, initialValue);
 			case Balisentechnik_ETCSPackage.ABSTAND_GRENZE_BEREICH_CTYPE:
 				return createAbstand_Grenze_Bereich_C_TypeFromString(eDataType, initialValue);
+			case Balisentechnik_ETCSPackage.ABSTAND_ZU_REFERENZBALISE_TYPE:
+				return createAbstand_Zu_Referenzbalise_TypeFromString(eDataType, initialValue);
 			case Balisentechnik_ETCSPackage.ANLAGENTEIL_SONSTIGE_TYPE:
 				return createAnlagenteil_Sonstige_TypeFromString(eDataType, initialValue);
 			case Balisentechnik_ETCSPackage.ANORDNUNG_IM_DP_TYPE:
@@ -497,6 +501,8 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 				return createBezeichnung_ETCS_Kante_TypeFromString(eDataType, initialValue);
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_LEU_ANLAGE_TYPE:
 				return createBezeichnung_LEU_Anlage_TypeFromString(eDataType, initialValue);
+			case Balisentechnik_ETCSPackage.BEZEICHNUNG_RBC_TYPE:
+				return createBezeichnung_RBC_TypeFromString(eDataType, initialValue);
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_ZUB_SE_TYPE:
 				return createBezeichnung_ZUB_SE_TypeFromString(eDataType, initialValue);
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_ZUB_TYPE:
@@ -884,6 +890,8 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 				return convertAbstand_Einmesspunkt_TypeToString(eDataType, instanceValue);
 			case Balisentechnik_ETCSPackage.ABSTAND_GRENZE_BEREICH_CTYPE:
 				return convertAbstand_Grenze_Bereich_C_TypeToString(eDataType, instanceValue);
+			case Balisentechnik_ETCSPackage.ABSTAND_ZU_REFERENZBALISE_TYPE:
+				return convertAbstand_Zu_Referenzbalise_TypeToString(eDataType, instanceValue);
 			case Balisentechnik_ETCSPackage.ANLAGENTEIL_SONSTIGE_TYPE:
 				return convertAnlagenteil_Sonstige_TypeToString(eDataType, instanceValue);
 			case Balisentechnik_ETCSPackage.ANORDNUNG_IM_DP_TYPE:
@@ -914,6 +922,8 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 				return convertBezeichnung_ETCS_Kante_TypeToString(eDataType, instanceValue);
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_LEU_ANLAGE_TYPE:
 				return convertBezeichnung_LEU_Anlage_TypeToString(eDataType, instanceValue);
+			case Balisentechnik_ETCSPackage.BEZEICHNUNG_RBC_TYPE:
+				return convertBezeichnung_RBC_TypeToString(eDataType, instanceValue);
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_ZUB_SE_TYPE:
 				return convertBezeichnung_ZUB_SE_TypeToString(eDataType, instanceValue);
 			case Balisentechnik_ETCSPackage.BEZEICHNUNG_ZUB_TYPE:
@@ -1615,6 +1625,17 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 	public Bezeichnung_LEU_Anlage_TypeClass createBezeichnung_LEU_Anlage_TypeClass() {
 		Bezeichnung_LEU_Anlage_TypeClassImpl bezeichnung_LEU_Anlage_TypeClass = new Bezeichnung_LEU_Anlage_TypeClassImpl();
 		return bezeichnung_LEU_Anlage_TypeClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Bezeichnung_RBC_TypeClass createBezeichnung_RBC_TypeClass() {
+		Bezeichnung_RBC_TypeClassImpl bezeichnung_RBC_TypeClass = new Bezeichnung_RBC_TypeClassImpl();
+		return bezeichnung_RBC_TypeClass;
 	}
 
 	/**
@@ -3636,6 +3657,17 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 	 * @generated
 	 */
 	@Override
+	public RBC_Bezeichnung_AttributeGroup createRBC_Bezeichnung_AttributeGroup() {
+		RBC_Bezeichnung_AttributeGroupImpl rbC_Bezeichnung_AttributeGroup = new RBC_Bezeichnung_AttributeGroupImpl();
+		return rbC_Bezeichnung_AttributeGroup;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public RBC_ETCS_System_Version_TypeClass createRBC_ETCS_System_Version_TypeClass() {
 		RBC_ETCS_System_Version_TypeClassImpl rbC_ETCS_System_Version_TypeClass = new RBC_ETCS_System_Version_TypeClassImpl();
 		return rbC_ETCS_System_Version_TypeClass;
@@ -5311,6 +5343,24 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public BigDecimal createAbstand_Zu_Referenzbalise_TypeFromString(EDataType eDataType, String initialValue) {
+		return (BigDecimal)BasisTypenFactory.eINSTANCE.createFromString(BasisTypenPackage.Literals.METER_TYPE, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertAbstand_Zu_Referenzbalise_TypeToString(EDataType eDataType, Object instanceValue) {
+		return BasisTypenFactory.eINSTANCE.convertToString(BasisTypenPackage.Literals.METER_TYPE, instanceValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public String createAnlagenteil_Sonstige_TypeFromString(EDataType eDataType, String initialValue) {
 		return (String)BasisTypenFactory.eINSTANCE.createFromString(BasisTypenPackage.Literals.TEXT_TYPE, initialValue);
 	}
@@ -5573,6 +5623,24 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 	 * @generated
 	 */
 	public String convertBezeichnung_LEU_Anlage_TypeToString(EDataType eDataType, Object instanceValue) {
+		return BasisTypenFactory.eINSTANCE.convertToString(BasisTypenPackage.Literals.TEXT_TYPE, instanceValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String createBezeichnung_RBC_TypeFromString(EDataType eDataType, String initialValue) {
+		return (String)BasisTypenFactory.eINSTANCE.createFromString(BasisTypenPackage.Literals.TEXT_TYPE, initialValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertBezeichnung_RBC_TypeToString(EDataType eDataType, Object instanceValue) {
 		return BasisTypenFactory.eINSTANCE.convertToString(BasisTypenPackage.Literals.TEXT_TYPE, instanceValue);
 	}
 
@@ -7453,8 +7521,8 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BigInteger createRBC_ETCS_System_Version_TypeFromString(EDataType eDataType, String initialValue) {
-		return (BigInteger)XMLTypeFactory.eINSTANCE.createFromString(XMLTypePackage.Literals.INTEGER, initialValue);
+	public String createRBC_ETCS_System_Version_TypeFromString(EDataType eDataType, String initialValue) {
+		return (String)BasisTypenFactory.eINSTANCE.createFromString(BasisTypenPackage.Literals.TEXT_TYPE, initialValue);
 	}
 
 	/**
@@ -7463,7 +7531,7 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 	 * @generated
 	 */
 	public String convertRBC_ETCS_System_Version_TypeToString(EDataType eDataType, Object instanceValue) {
-		return XMLTypeFactory.eINSTANCE.convertToString(XMLTypePackage.Literals.INTEGER, instanceValue);
+		return BasisTypenFactory.eINSTANCE.convertToString(BasisTypenPackage.Literals.TEXT_TYPE, instanceValue);
 	}
 
 	/**
@@ -7472,7 +7540,7 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 	 * @generated
 	 */
 	public String createRBC_SRS_Version_TypeFromString(EDataType eDataType, String initialValue) {
-		return (String)BasisTypenFactory.eINSTANCE.createFromString(BasisTypenPackage.Literals.ZEICHENKETTE_TYPE, initialValue);
+		return (String)BasisTypenFactory.eINSTANCE.createFromString(BasisTypenPackage.Literals.TEXT_TYPE, initialValue);
 	}
 
 	/**
@@ -7481,7 +7549,7 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 	 * @generated
 	 */
 	public String convertRBC_SRS_Version_TypeToString(EDataType eDataType, Object instanceValue) {
-		return BasisTypenFactory.eINSTANCE.convertToString(BasisTypenPackage.Literals.ZEICHENKETTE_TYPE, instanceValue);
+		return BasisTypenFactory.eINSTANCE.convertToString(BasisTypenPackage.Literals.TEXT_TYPE, instanceValue);
 	}
 
 	/**
@@ -7670,7 +7738,7 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 	 * @generated
 	 */
 	public String createSRS_Version_TypeFromString(EDataType eDataType, String initialValue) {
-		return (String)BasisTypenFactory.eINSTANCE.createFromString(BasisTypenPackage.Literals.ZEICHENKETTE_TYPE, initialValue);
+		return (String)BasisTypenFactory.eINSTANCE.createFromString(BasisTypenPackage.Literals.TEXT_TYPE, initialValue);
 	}
 
 	/**
@@ -7679,7 +7747,7 @@ public class Balisentechnik_ETCSFactoryImpl extends EFactoryImpl implements Bali
 	 * @generated
 	 */
 	public String convertSRS_Version_TypeToString(EDataType eDataType, Object instanceValue) {
-		return BasisTypenFactory.eINSTANCE.convertToString(BasisTypenPackage.Literals.ZEICHENKETTE_TYPE, instanceValue);
+		return BasisTypenFactory.eINSTANCE.convertToString(BasisTypenPackage.Literals.TEXT_TYPE, instanceValue);
 	}
 
 	/**

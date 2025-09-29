@@ -298,9 +298,8 @@ public class Basis_Objekt_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return basicSetDatumRegelwerk(null, msgs);
 			case BasisobjektePackage.BASIS_OBJEKT_ALLG_ATTRIBUTE_GROUP__ID_ANHANG_REGELWERK_BESONDERS:
 				return basicSetIDAnhangRegelwerkBesonders(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -319,9 +318,8 @@ public class Basis_Objekt_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return getDatumRegelwerk();
 			case BasisobjektePackage.BASIS_OBJEKT_ALLG_ATTRIBUTE_GROUP__ID_ANHANG_REGELWERK_BESONDERS:
 				return getIDAnhangRegelwerkBesonders();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -344,10 +342,8 @@ public class Basis_Objekt_Allg_AttributeGroupImpl extends EObjectImpl implements
 			case BasisobjektePackage.BASIS_OBJEKT_ALLG_ATTRIBUTE_GROUP__ID_ANHANG_REGELWERK_BESONDERS:
 				setIDAnhangRegelwerkBesonders((ID_Anhang_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -370,10 +366,8 @@ public class Basis_Objekt_Allg_AttributeGroupImpl extends EObjectImpl implements
 			case BasisobjektePackage.BASIS_OBJEKT_ALLG_ATTRIBUTE_GROUP__ID_ANHANG_REGELWERK_BESONDERS:
 				setIDAnhangRegelwerkBesonders((ID_Anhang_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -392,9 +386,8 @@ public class Basis_Objekt_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return datumRegelwerk != null;
 			case BasisobjektePackage.BASIS_OBJEKT_ALLG_ATTRIBUTE_GROUP__ID_ANHANG_REGELWERK_BESONDERS:
 				return iDAnhangRegelwerkBesonders != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Basis_Objekt_Allg_AttributeGroupImpl

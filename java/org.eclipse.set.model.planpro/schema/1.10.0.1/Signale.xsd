@@ -31,7 +31,7 @@ Contents of the file:
 XML Schema for PlanPro interface.</xs:documentation>
    </xs:annotation>
    <xs:import namespace="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1"
-              schemaLocation="Signalbegriffe_Struktur.xsd"/>
+              schemaLocation="../1.6.0.1/Signalbegriffe_Struktur.xsd"/>
    <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.10.0.1"
               schemaLocation="Verweise.xsd"/>
    <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.10.0.1"

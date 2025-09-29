@@ -154,10 +154,8 @@ public class AEA_Allg_AttributeGroupItemProvider
 			case Ansteuerung_ElementPackage.AEA_ALLG_ATTRIBUTE_GROUP__BAUART:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

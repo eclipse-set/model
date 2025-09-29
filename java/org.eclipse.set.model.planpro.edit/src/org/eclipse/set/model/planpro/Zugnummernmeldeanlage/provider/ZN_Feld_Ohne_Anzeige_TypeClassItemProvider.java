@@ -137,10 +137,8 @@ public class ZN_Feld_Ohne_Anzeige_TypeClassItemProvider extends BasisAttribut_At
 			case ZugnummernmeldeanlagePackage.ZN_FELD_OHNE_ANZEIGE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

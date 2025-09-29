@@ -159,10 +159,8 @@ public class ID_Lageplan_TypeClassItemProvider extends Zeiger_TypeClassItemProvi
 			case VerweisePackage.ID_LAGEPLAN_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

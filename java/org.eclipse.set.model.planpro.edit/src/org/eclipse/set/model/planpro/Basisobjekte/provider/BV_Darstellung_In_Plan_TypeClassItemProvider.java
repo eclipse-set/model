@@ -138,10 +138,8 @@ public class BV_Darstellung_In_Plan_TypeClassItemProvider extends BasisAttribut_
 			case BasisobjektePackage.BV_DARSTELLUNG_IN_PLAN_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

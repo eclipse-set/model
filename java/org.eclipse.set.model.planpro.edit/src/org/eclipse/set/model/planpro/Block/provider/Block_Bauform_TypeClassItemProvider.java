@@ -138,10 +138,8 @@ public class Block_Bauform_TypeClassItemProvider extends BasisAttribut_Attribute
 			case BlockPackage.BLOCK_BAUFORM_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

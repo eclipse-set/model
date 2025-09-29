@@ -181,8 +181,8 @@ public enum ENUMElementLage implements Enumerator {
 			case ENUM_ELEMENT_LAGE_WEICHE_VALUE: return ENUM_ELEMENT_LAGE_WEICHE;
 			case ENUM_ELEMENT_LAGE_WEICHE_L_VALUE: return ENUM_ELEMENT_LAGE_WEICHE_L;
 			case ENUM_ELEMENT_LAGE_WEICHE_R_VALUE: return ENUM_ELEMENT_LAGE_WEICHE_R;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

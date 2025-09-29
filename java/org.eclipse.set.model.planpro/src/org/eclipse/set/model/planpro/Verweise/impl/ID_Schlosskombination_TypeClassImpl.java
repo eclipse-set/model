@@ -158,9 +158,8 @@ public class ID_Schlosskombination_TypeClassImpl extends Zeiger_TypeClassImpl im
 				return basicGetValue();
 			case VerweisePackage.ID_SCHLOSSKOMBINATION_TYPE_CLASS__INVALID_REFERENCE:
 				return isInvalidReference();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -177,10 +176,8 @@ public class ID_Schlosskombination_TypeClassImpl extends Zeiger_TypeClassImpl im
 			case VerweisePackage.ID_SCHLOSSKOMBINATION_TYPE_CLASS__INVALID_REFERENCE:
 				setInvalidReference((Boolean)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -197,10 +194,8 @@ public class ID_Schlosskombination_TypeClassImpl extends Zeiger_TypeClassImpl im
 			case VerweisePackage.ID_SCHLOSSKOMBINATION_TYPE_CLASS__INVALID_REFERENCE:
 				setInvalidReference(INVALID_REFERENCE_EDEFAULT);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -215,9 +210,8 @@ public class ID_Schlosskombination_TypeClassImpl extends Zeiger_TypeClassImpl im
 				return value != null;
 			case VerweisePackage.ID_SCHLOSSKOMBINATION_TYPE_CLASS__INVALID_REFERENCE:
 				return invalidReference != INVALID_REFERENCE_EDEFAULT;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

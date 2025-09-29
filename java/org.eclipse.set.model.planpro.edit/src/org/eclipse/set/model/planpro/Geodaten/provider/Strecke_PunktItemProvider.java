@@ -147,10 +147,8 @@ public class Strecke_PunktItemProvider extends Basis_ObjektItemProvider {
 			case GeodatenPackage.STRECKE_PUNKT__STRECKE_METER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

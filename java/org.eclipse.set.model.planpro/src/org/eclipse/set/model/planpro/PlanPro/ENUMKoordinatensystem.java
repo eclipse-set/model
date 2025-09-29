@@ -158,8 +158,8 @@ public enum ENUMKoordinatensystem implements Enumerator {
 			case ENUM_KOORDINATENSYSTEM_DB_REF_VALUE: return ENUM_KOORDINATENSYSTEM_DB_REF;
 			case ENUM_KOORDINATENSYSTEM_SONSTIGE_VALUE: return ENUM_KOORDINATENSYSTEM_SONSTIGE;
 			case ENUM_KOORDINATENSYSTEM_WGS84_VALUE: return ENUM_KOORDINATENSYSTEM_WGS84;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

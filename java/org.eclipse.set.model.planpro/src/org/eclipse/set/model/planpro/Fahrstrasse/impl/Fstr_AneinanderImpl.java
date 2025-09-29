@@ -121,9 +121,8 @@ public class Fstr_AneinanderImpl extends Basis_ObjektImpl implements Fstr_Aneina
 		switch (featureID) {
 			case FahrstrassePackage.FSTR_ANEINANDER__FSTR_ANEINANDER_BEDIENSTRING:
 				return basicSetFstrAneinanderBedienstring(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,9 +135,8 @@ public class Fstr_AneinanderImpl extends Basis_ObjektImpl implements Fstr_Aneina
 		switch (featureID) {
 			case FahrstrassePackage.FSTR_ANEINANDER__FSTR_ANEINANDER_BEDIENSTRING:
 				return getFstrAneinanderBedienstring();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -152,10 +150,8 @@ public class Fstr_AneinanderImpl extends Basis_ObjektImpl implements Fstr_Aneina
 			case FahrstrassePackage.FSTR_ANEINANDER__FSTR_ANEINANDER_BEDIENSTRING:
 				setFstrAneinanderBedienstring((Fstr_Aneinander_Bedienstring_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -169,10 +165,8 @@ public class Fstr_AneinanderImpl extends Basis_ObjektImpl implements Fstr_Aneina
 			case FahrstrassePackage.FSTR_ANEINANDER__FSTR_ANEINANDER_BEDIENSTRING:
 				setFstrAneinanderBedienstring((Fstr_Aneinander_Bedienstring_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -185,9 +179,8 @@ public class Fstr_AneinanderImpl extends Basis_ObjektImpl implements Fstr_Aneina
 		switch (featureID) {
 			case FahrstrassePackage.FSTR_ANEINANDER__FSTR_ANEINANDER_BEDIENSTRING:
 				return fstrAneinanderBedienstring != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Fstr_AneinanderImpl

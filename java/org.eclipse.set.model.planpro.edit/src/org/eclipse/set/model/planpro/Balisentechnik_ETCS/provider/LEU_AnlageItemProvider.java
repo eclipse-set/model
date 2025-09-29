@@ -147,10 +147,8 @@ public class LEU_AnlageItemProvider extends Basis_ObjektItemProvider {
 			case Balisentechnik_ETCSPackage.LEU_ANLAGE__LEU_ANLAGE_ALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

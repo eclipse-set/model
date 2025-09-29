@@ -239,9 +239,8 @@ public class Bedien_AnrueckabschnittImpl extends Basis_ObjektImpl implements Bed
 				return basicSetBezeichnung(null, msgs);
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT__ID_GLEIS_ABSCHNITT_DARSTELLEN:
 				return basicSetIDGleisAbschnittDarstellen(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +257,8 @@ public class Bedien_AnrueckabschnittImpl extends Basis_ObjektImpl implements Bed
 				return getBezeichnung();
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT__ID_GLEIS_ABSCHNITT_DARSTELLEN:
 				return getIDGleisAbschnittDarstellen();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +278,8 @@ public class Bedien_AnrueckabschnittImpl extends Basis_ObjektImpl implements Bed
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT__ID_GLEIS_ABSCHNITT_DARSTELLEN:
 				setIDGleisAbschnittDarstellen((ID_Gleis_Abschnitt_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +299,8 @@ public class Bedien_AnrueckabschnittImpl extends Basis_ObjektImpl implements Bed
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT__ID_GLEIS_ABSCHNITT_DARSTELLEN:
 				setIDGleisAbschnittDarstellen((ID_Gleis_Abschnitt_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +317,8 @@ public class Bedien_AnrueckabschnittImpl extends Basis_ObjektImpl implements Bed
 				return bezeichnung != null;
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT__ID_GLEIS_ABSCHNITT_DARSTELLEN:
 				return iDGleisAbschnittDarstellen != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bedien_AnrueckabschnittImpl

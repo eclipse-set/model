@@ -138,10 +138,8 @@ public class DP_Bezug_Funktional_Art_TypeClassItemProvider extends BasisAttribut
 			case Balisentechnik_ETCSPackage.DP_BEZUG_FUNKTIONAL_ART_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

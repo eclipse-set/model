@@ -36,6 +36,26 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	ENUM_TRASSE_NUTZER_DB_ENERGIE(0, "ENUMTrasse_Nutzer_DB_Energie", "DB_Energie"),
 
 	/**
+	 * The '<em><b>ENUM Trasse Nutzer DB Infra GO Fahrweg</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_TRASSE_NUTZER_DB_INFRA_GO_FAHRWEG_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_TRASSE_NUTZER_DB_INFRA_GO_FAHRWEG(1, "ENUMTrasse_Nutzer_DB_InfraGO_Fahrweg", "DB_InfraGO_Fahrweg"),
+
+	/**
+	 * The '<em><b>ENUM Trasse Nutzer DB Infra GO Personenbahnhoefe</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_TRASSE_NUTZER_DB_INFRA_GO_PERSONENBAHNHOEFE_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUM_TRASSE_NUTZER_DB_INFRA_GO_PERSONENBAHNHOEFE(2, "ENUMTrasse_Nutzer_DB_InfraGO_Personenbahnhoefe", "DB_InfraGO_Personenbahnhoefe"),
+
+	/**
 	 * The '<em><b>ENUM Trasse Nutzer DB KT</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -43,7 +63,7 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_TRASSE_NUTZER_DB_KT(1, "ENUMTrasse_Nutzer_DB_KT", "DB_KT"),
+	ENUM_TRASSE_NUTZER_DB_KT(3, "ENUMTrasse_Nutzer_DB_KT", "DB_KT"),
 
 	/**
 	 * The '<em><b>ENUM Trasse Nutzer DB Netz</b></em>' literal object.
@@ -53,7 +73,7 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_TRASSE_NUTZER_DB_NETZ(2, "ENUMTrasse_Nutzer_DB_Netz", "DB_Netz"),
+	ENUM_TRASSE_NUTZER_DB_NETZ(4, "ENUMTrasse_Nutzer_DB_Netz", "DB_Netz"),
 
 	/**
 	 * The '<em><b>ENUM Trasse Nutzer DB Stu S</b></em>' literal object.
@@ -63,7 +83,7 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_TRASSE_NUTZER_DB_STU_S(3, "ENUMTrasse_Nutzer_DB_StuS", "DB_StuS"),
+	ENUM_TRASSE_NUTZER_DB_STU_S(5, "ENUMTrasse_Nutzer_DB_StuS", "DB_StuS"),
 
 	/**
 	 * The '<em><b>ENUM Trasse Nutzer Dritte</b></em>' literal object.
@@ -73,7 +93,7 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_TRASSE_NUTZER_DRITTE(4, "ENUMTrasse_Nutzer_Dritte", "Dritte"),
+	ENUM_TRASSE_NUTZER_DRITTE(6, "ENUMTrasse_Nutzer_Dritte", "Dritte"),
 
 	/**
 	 * The '<em><b>ENUM Trasse Nutzer sonstige</b></em>' literal object.
@@ -83,7 +103,7 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_TRASSE_NUTZER_SONSTIGE(5, "ENUMTrasse_Nutzer_sonstige", "sonstige"),
+	ENUM_TRASSE_NUTZER_SONSTIGE(7, "ENUMTrasse_Nutzer_sonstige", "sonstige"),
 
 	/**
 	 * The '<em><b>ENUM Trasse Nutzer unbekannt</b></em>' literal object.
@@ -93,7 +113,7 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_TRASSE_NUTZER_UNBEKANNT(6, "ENUMTrasse_Nutzer_unbekannt", "unbekannt");
+	ENUM_TRASSE_NUTZER_UNBEKANNT(8, "ENUMTrasse_Nutzer_unbekannt", "unbekannt");
 
 	/**
 	 * The '<em><b>ENUM Trasse Nutzer DB Energie</b></em>' literal value.
@@ -107,6 +127,28 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	public static final int ENUM_TRASSE_NUTZER_DB_ENERGIE_VALUE = 0;
 
 	/**
+	 * The '<em><b>ENUM Trasse Nutzer DB Infra GO Fahrweg</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_TRASSE_NUTZER_DB_INFRA_GO_FAHRWEG
+	 * @model name="ENUMTrasse_Nutzer_DB_InfraGO_Fahrweg" literal="DB_InfraGO_Fahrweg"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_TRASSE_NUTZER_DB_INFRA_GO_FAHRWEG_VALUE = 1;
+
+	/**
+	 * The '<em><b>ENUM Trasse Nutzer DB Infra GO Personenbahnhoefe</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUM_TRASSE_NUTZER_DB_INFRA_GO_PERSONENBAHNHOEFE
+	 * @model name="ENUMTrasse_Nutzer_DB_InfraGO_Personenbahnhoefe" literal="DB_InfraGO_Personenbahnhoefe"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUM_TRASSE_NUTZER_DB_INFRA_GO_PERSONENBAHNHOEFE_VALUE = 2;
+
+	/**
 	 * The '<em><b>ENUM Trasse Nutzer DB KT</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -115,7 +157,7 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_TRASSE_NUTZER_DB_KT_VALUE = 1;
+	public static final int ENUM_TRASSE_NUTZER_DB_KT_VALUE = 3;
 
 	/**
 	 * The '<em><b>ENUM Trasse Nutzer DB Netz</b></em>' literal value.
@@ -126,7 +168,7 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_TRASSE_NUTZER_DB_NETZ_VALUE = 2;
+	public static final int ENUM_TRASSE_NUTZER_DB_NETZ_VALUE = 4;
 
 	/**
 	 * The '<em><b>ENUM Trasse Nutzer DB Stu S</b></em>' literal value.
@@ -137,7 +179,7 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_TRASSE_NUTZER_DB_STU_S_VALUE = 3;
+	public static final int ENUM_TRASSE_NUTZER_DB_STU_S_VALUE = 5;
 
 	/**
 	 * The '<em><b>ENUM Trasse Nutzer Dritte</b></em>' literal value.
@@ -148,7 +190,7 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_TRASSE_NUTZER_DRITTE_VALUE = 4;
+	public static final int ENUM_TRASSE_NUTZER_DRITTE_VALUE = 6;
 
 	/**
 	 * The '<em><b>ENUM Trasse Nutzer sonstige</b></em>' literal value.
@@ -159,7 +201,7 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_TRASSE_NUTZER_SONSTIGE_VALUE = 5;
+	public static final int ENUM_TRASSE_NUTZER_SONSTIGE_VALUE = 7;
 
 	/**
 	 * The '<em><b>ENUM Trasse Nutzer unbekannt</b></em>' literal value.
@@ -170,7 +212,7 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_TRASSE_NUTZER_UNBEKANNT_VALUE = 6;
+	public static final int ENUM_TRASSE_NUTZER_UNBEKANNT_VALUE = 8;
 
 	/**
 	 * An array of all the '<em><b>ENUM Trasse Nutzer</b></em>' enumerators.
@@ -181,6 +223,8 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	private static final ENUMTrasseNutzer[] VALUES_ARRAY =
 		new ENUMTrasseNutzer[] {
 			ENUM_TRASSE_NUTZER_DB_ENERGIE,
+			ENUM_TRASSE_NUTZER_DB_INFRA_GO_FAHRWEG,
+			ENUM_TRASSE_NUTZER_DB_INFRA_GO_PERSONENBAHNHOEFE,
 			ENUM_TRASSE_NUTZER_DB_KT,
 			ENUM_TRASSE_NUTZER_DB_NETZ,
 			ENUM_TRASSE_NUTZER_DB_STU_S,
@@ -244,14 +288,16 @@ public enum ENUMTrasseNutzer implements Enumerator {
 	public static ENUMTrasseNutzer get(int value) {
 		switch (value) {
 			case ENUM_TRASSE_NUTZER_DB_ENERGIE_VALUE: return ENUM_TRASSE_NUTZER_DB_ENERGIE;
+			case ENUM_TRASSE_NUTZER_DB_INFRA_GO_FAHRWEG_VALUE: return ENUM_TRASSE_NUTZER_DB_INFRA_GO_FAHRWEG;
+			case ENUM_TRASSE_NUTZER_DB_INFRA_GO_PERSONENBAHNHOEFE_VALUE: return ENUM_TRASSE_NUTZER_DB_INFRA_GO_PERSONENBAHNHOEFE;
 			case ENUM_TRASSE_NUTZER_DB_KT_VALUE: return ENUM_TRASSE_NUTZER_DB_KT;
 			case ENUM_TRASSE_NUTZER_DB_NETZ_VALUE: return ENUM_TRASSE_NUTZER_DB_NETZ;
 			case ENUM_TRASSE_NUTZER_DB_STU_S_VALUE: return ENUM_TRASSE_NUTZER_DB_STU_S;
 			case ENUM_TRASSE_NUTZER_DRITTE_VALUE: return ENUM_TRASSE_NUTZER_DRITTE;
 			case ENUM_TRASSE_NUTZER_SONSTIGE_VALUE: return ENUM_TRASSE_NUTZER_SONSTIGE;
 			case ENUM_TRASSE_NUTZER_UNBEKANNT_VALUE: return ENUM_TRASSE_NUTZER_UNBEKANNT;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

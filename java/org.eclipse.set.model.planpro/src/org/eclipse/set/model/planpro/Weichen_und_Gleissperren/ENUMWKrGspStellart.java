@@ -123,7 +123,17 @@ public enum ENUMWKrGspStellart implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	ENUMW_KR_GSP_STELLART_UNBESTIMMT(9, "ENUMW_Kr_Gsp_Stellart_unbestimmt", "unbestimmt");
+	ENUMW_KR_GSP_STELLART_UNBESTIMMT(9, "ENUMW_Kr_Gsp_Stellart_unbestimmt", "unbestimmt"),
+
+	/**
+	 * The '<em><b>ENUMW Kr Gsp Stellart ZHA</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMW_KR_GSP_STELLART_ZHA_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ENUMW_KR_GSP_STELLART_ZHA(10, "ENUMW_Kr_Gsp_Stellart_ZHA", "ZHA");
 
 	/**
 	 * The '<em><b>ENUMW Kr Gsp Stellart elektrisch ferngestellt</b></em>' literal value.
@@ -236,6 +246,17 @@ public enum ENUMWKrGspStellart implements Enumerator {
 	public static final int ENUMW_KR_GSP_STELLART_UNBESTIMMT_VALUE = 9;
 
 	/**
+	 * The '<em><b>ENUMW Kr Gsp Stellart ZHA</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ENUMW_KR_GSP_STELLART_ZHA
+	 * @model name="ENUMW_Kr_Gsp_Stellart_ZHA" literal="ZHA"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ENUMW_KR_GSP_STELLART_ZHA_VALUE = 10;
+
+	/**
 	 * An array of all the '<em><b>ENUMW Kr Gsp Stellart</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -253,6 +274,7 @@ public enum ENUMWKrGspStellart implements Enumerator {
 			ENUMW_KR_GSP_STELLART_STILLGELEGT_LINKS,
 			ENUMW_KR_GSP_STELLART_STILLGELEGT_RECHTS,
 			ENUMW_KR_GSP_STELLART_UNBESTIMMT,
+			ENUMW_KR_GSP_STELLART_ZHA,
 		};
 
 	/**
@@ -319,8 +341,9 @@ public enum ENUMWKrGspStellart implements Enumerator {
 			case ENUMW_KR_GSP_STELLART_STILLGELEGT_LINKS_VALUE: return ENUMW_KR_GSP_STELLART_STILLGELEGT_LINKS;
 			case ENUMW_KR_GSP_STELLART_STILLGELEGT_RECHTS_VALUE: return ENUMW_KR_GSP_STELLART_STILLGELEGT_RECHTS;
 			case ENUMW_KR_GSP_STELLART_UNBESTIMMT_VALUE: return ENUMW_KR_GSP_STELLART_UNBESTIMMT;
-			default: return null;
+			case ENUMW_KR_GSP_STELLART_ZHA_VALUE: return ENUMW_KR_GSP_STELLART_ZHA;
 		}
+		return null;
 	}
 
 	/**

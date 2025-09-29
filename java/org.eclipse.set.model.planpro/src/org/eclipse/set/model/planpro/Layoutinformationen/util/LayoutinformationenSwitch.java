@@ -91,17 +91,17 @@ public class LayoutinformationenSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case LayoutinformationenPackage.DARSTELLUNG_GEO_PUNKT_TYPE_CLASS: {
-				Darstellung_GEO_Punkt_TypeClass darstellung_GEO_Punkt_TypeClass = (Darstellung_GEO_Punkt_TypeClass)theEObject;
-				T result = caseDarstellung_GEO_Punkt_TypeClass(darstellung_GEO_Punkt_TypeClass);
-				if (result == null) result = caseBasisAttribut_AttributeGroup(darstellung_GEO_Punkt_TypeClass);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case LayoutinformationenPackage.DARSTELLUNG_POLYGONZUG_TYPE_CLASS: {
 				Darstellung_Polygonzug_TypeClass darstellung_Polygonzug_TypeClass = (Darstellung_Polygonzug_TypeClass)theEObject;
 				T result = caseDarstellung_Polygonzug_TypeClass(darstellung_Polygonzug_TypeClass);
 				if (result == null) result = caseBasisAttribut_AttributeGroup(darstellung_Polygonzug_TypeClass);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case LayoutinformationenPackage.DARSTELLUNG_RICHTUNGSWINKEL_BEZEICHNUNG_TYPE_CLASS: {
+				Darstellung_Richtungswinkel_Bezeichnung_TypeClass darstellung_Richtungswinkel_Bezeichnung_TypeClass = (Darstellung_Richtungswinkel_Bezeichnung_TypeClass)theEObject;
+				T result = caseDarstellung_Richtungswinkel_Bezeichnung_TypeClass(darstellung_Richtungswinkel_Bezeichnung_TypeClass);
+				if (result == null) result = caseBasisAttribut_AttributeGroup(darstellung_Richtungswinkel_Bezeichnung_TypeClass);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -282,21 +282,6 @@ public class LayoutinformationenSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Darstellung GEO Punkt Type Class</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Darstellung GEO Punkt Type Class</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseDarstellung_GEO_Punkt_TypeClass(Darstellung_GEO_Punkt_TypeClass object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Darstellung Polygonzug Type Class</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -308,6 +293,21 @@ public class LayoutinformationenSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseDarstellung_Polygonzug_TypeClass(Darstellung_Polygonzug_TypeClass object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Darstellung Richtungswinkel Bezeichnung Type Class</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Darstellung Richtungswinkel Bezeichnung Type Class</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseDarstellung_Richtungswinkel_Bezeichnung_TypeClass(Darstellung_Richtungswinkel_Bezeichnung_TypeClass object) {
 		return null;
 	}
 
