@@ -7,6 +7,9 @@ on:
       version:
         description: 'Release version. Format: <major>.<minor>'
         required: true
+      next-version:
+        description: 'Next release version. Format <major>.<minor>. Default is next minor version'
+        required: false 
       citag:
         description: 'Optional tag to identify runs via the API. Displayed in run name.'
         required: false
@@ -15,9 +18,11 @@ on:
 jobs:
   release-branch:
     uses: eclipse-set/build/.github/workflows/release-branch.yml@main
+    secrets: inherit
     permissions:
       contents: write
     with:
       version: ${{ inputs.version }}
       target: "java/org.eclipse.set.model.releng.target/org.eclipse.set.model.releng.target.target"
       pom: 'java/pom.xml'
+      development-version: ${{ inputs.next-version }}
