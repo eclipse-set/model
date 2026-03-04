@@ -4,7 +4,7 @@
                 xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
                 xmi:version="2.0"
                 name="Signalbegriffe_Ril_301"
-                nsURI="http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.3"
+                nsURI="http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.4"
                 nsPrefix="nsSignalbegriffe_Ril_301">
    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
@@ -253,12 +253,13 @@
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
-                 name="BueATZusatz">
+                 name="BueATZusatz"
+                 eSuperTypes="Signalbegriffe_Struktur.ecore#//Signalbegriff_ID_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
          <details key="name"
                   value="Bue_AT_Zusatz"/>
          <details key="kind"
-                  value="empty"/>
+                  value="elementOnly"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -1966,12 +1967,13 @@
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
-                 name="OzFak">
+                 name="OzFak"
+                 eSuperTypes="Signalbegriffe_Struktur.ecore#//Signalbegriff_ID_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
          <details key="name"
                   value="Oz_Fak"/>
          <details key="kind"
-                  value="empty"/>
+                  value="elementOnly"/>
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
@@ -2065,24 +2067,14 @@
       </eAnnotations>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
-                 name="OzZugl">
+                 name="OzZugl"
+                 eSuperTypes="Signalbegriffe_Struktur.ecore#//Signalbegriff_ID_TypeClass">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
          <details key="name"
                   value="Oz_Zugl"/>
          <details key="kind"
                   value="elementOnly"/>
       </eAnnotations>
-      <eStructuralFeatures xsi:type="ecore:EAttribute"
-                           name="symbol"
-                           lowerBound="1"
-                           eType="#//Oz_Zugl_Symbol_Type">
-         <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-            <details key="kind"
-                     value="element"/>
-            <details key="name"
-                     value="Symbol"/>
-         </eAnnotations>
-      </eStructuralFeatures>
    </eClassifiers>
    <eClassifiers xsi:type="ecore:EClass"
                  name="Pf2"

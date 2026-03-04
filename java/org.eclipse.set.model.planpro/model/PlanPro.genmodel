@@ -15908,10 +15908,7 @@
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//OzPZB2000Hz"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//OzPZBBUE"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//OzZf"/>
-    <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//OzZugl">
-      <genFeatures createChild="false"
-                   ecoreFeature="ecore:EAttribute Signalbegriffe_Ril_301.ecore#//OzZugl/symbol"/>
-    </genClasses>
+    <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//OzZugl"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Pf2"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Ra10"/>
     <genClasses ecoreClass="Signalbegriffe_Ril_301.ecore#//Ra11"/>
