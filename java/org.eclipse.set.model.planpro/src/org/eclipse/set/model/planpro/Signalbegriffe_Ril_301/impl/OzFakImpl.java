@@ -11,10 +11,10 @@ package org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.OzFak;
 import org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Signalbegriffe_Ril_301Package;
+
+import org.eclipse.set.model.planpro.Signalbegriffe_Struktur.impl.Signalbegriff_ID_TypeClassImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +23,7 @@ import org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Signalbegriffe_Ril_3
  *
  * @generated
  */
-public class OzFakImpl extends EObjectImpl implements OzFak {
+public class OzFakImpl extends Signalbegriff_ID_TypeClassImpl implements OzFak {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

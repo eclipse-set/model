@@ -239,6 +239,7 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 			case Signalbegriffe_Ril_301Package.BUE_AT_ZUSATZ: {
 				BueATZusatz bueATZusatz = (BueATZusatz)theEObject;
 				T result = caseBueATZusatz(bueATZusatz);
+				if (result == null) result = caseSignalbegriff_ID_TypeClass(bueATZusatz);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -854,6 +855,7 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 			case Signalbegriffe_Ril_301Package.OZ_FAK: {
 				OzFak ozFak = (OzFak)theEObject;
 				T result = caseOzFak(ozFak);
+				if (result == null) result = caseSignalbegriff_ID_TypeClass(ozFak);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -923,6 +925,7 @@ public class Signalbegriffe_Ril_301Switch<T> extends Switch<T> {
 			case Signalbegriffe_Ril_301Package.OZ_ZUGL: {
 				OzZugl ozZugl = (OzZugl)theEObject;
 				T result = caseOzZugl(ozZugl);
+				if (result == null) result = caseSignalbegriff_ID_TypeClass(ozZugl);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
