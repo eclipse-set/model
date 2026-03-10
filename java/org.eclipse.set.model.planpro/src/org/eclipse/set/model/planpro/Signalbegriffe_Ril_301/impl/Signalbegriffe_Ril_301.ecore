@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Signalbegriffe_Ril_301" nsURI="http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.3"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Signalbegriffe_Ril_301" nsURI="http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.4"
     nsPrefix="nsSignalbegriffe_Ril_301">
   <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
     <details key="documentation" value="Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.1.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbinfrago.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface.&#xD;&#xA;Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.&#xA;&#xA;Weitere Informationen zur Lizenz finden Sie auf&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Inhalt der Datei:&#xA;XML Schema für PlanPro Schnittstelle.&#xA;&#xA;Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com&#xA;&#xA;--------------------------------------------------------------------------------&#xA;&#xA;This Document is licensed under the open source license RailPL V1.0.&#xA;&#xA;More information about the license can be found on&#xA;http://www.dbnetze.com/planpro&#xA;&#xA;Contents of the file:&#xA;XML Schema for PlanPro interface."/>
@@ -150,10 +150,10 @@
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BueATZusatz">
+  <eClassifiers xsi:type="ecore:EClass" name="BueATZusatz" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Bue_AT_Zusatz"/>
-      <details key="kind" value="empty"/>
+      <details key="kind" value="elementOnly"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BueKT" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
@@ -1027,10 +1027,10 @@
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="OzFak">
+  <eClassifiers xsi:type="ecore:EClass" name="OzFak" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Oz_Fak"/>
-      <details key="kind" value="empty"/>
+      <details key="kind" value="elementOnly"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OzGSMR" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
@@ -1087,18 +1087,11 @@
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="OzZugl">
+  <eClassifiers xsi:type="ecore:EClass" name="OzZugl" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="Oz_Zugl"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="symbol" lowerBound="1"
-        eType="#//Oz_Zugl_Symbol_Type">
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="element"/>
-        <details key="name" value="Symbol"/>
-      </eAnnotations>
-    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Pf2" eSuperTypes="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1#//Signalbegriff_ID_TypeClass">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">

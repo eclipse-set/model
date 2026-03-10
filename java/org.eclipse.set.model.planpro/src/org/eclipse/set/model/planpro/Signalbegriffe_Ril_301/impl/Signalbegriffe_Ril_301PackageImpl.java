@@ -16,7 +16,6 @@ import java.net.URL;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.common.util.WrappedException;
 
-import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EDataType;
@@ -3449,16 +3448,6 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 			ozZuglEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI).getEClassifiers().get(147);
 		}
 		return ozZuglEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getOzZugl_Symbol() {
-        return (EAttribute)getOzZugl().getEStructuralFeatures().get(0);
 	}
 
 	/**

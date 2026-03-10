@@ -9,7 +9,6 @@
  */
 package org.eclipse.set.model.planpro.Signalbegriffe_Ril_301;
 
-import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
@@ -87,7 +86,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.3";
+	String eNS_URI = "http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.4";
 
 	/**
 	 * The package namespace name.
@@ -3658,13 +3657,148 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	int BUE_AT_ZUSATZ = 23;
 
 	/**
+	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__SYMBOL = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SYMBOL;
+
+	/**
+	 * The feature id for the '<em><b>Anmerkungen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__ANMERKUNGEN = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ANMERKUNGEN;
+
+	/**
+	 * The feature id for the '<em><b>Beleuchtbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__BELEUCHTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BELEUCHTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Beschreibung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__BESCHREIBUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BESCHREIBUNG;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__GELTUNGSBEREICH_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DS;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__GELTUNGSBEREICH_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DV;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__GELTUNGSBEREICH_SBAHN_B = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_B;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn HH</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__GELTUNGSBEREICH_SBAHN_HH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_HH;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Ab</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__GUELTIG_AB = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_AB;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Bis</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__GUELTIG_BIS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_BIS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__KURZBEZEICHNUNG_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__KURZBEZEICHNUNG_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DV;
+
+	/**
+	 * The feature id for the '<em><b>Langbezeichnung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__LANGBEZEICHNUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__LANGBEZEICHNUNG;
+
+	/**
+	 * The feature id for the '<em><b>Schaltbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__SCHALTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SCHALTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Zusatz Moeglich</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUE_AT_ZUSATZ__ZUSATZ_MOEGLICH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH;
+
+	/**
 	 * The number of structural features of the '<em>Bue AT Zusatz</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BUE_AT_ZUSATZ_FEATURE_COUNT = 0;
+	int BUE_AT_ZUSATZ_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.BueKTImpl <em>Bue KT</em>}' class.
@@ -17075,13 +17209,148 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	int OZ_FAK = 111;
 
 	/**
+	 * The feature id for the '<em><b>Symbol</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__SYMBOL = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SYMBOL;
+
+	/**
+	 * The feature id for the '<em><b>Anmerkungen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__ANMERKUNGEN = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ANMERKUNGEN;
+
+	/**
+	 * The feature id for the '<em><b>Beleuchtbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__BELEUCHTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BELEUCHTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Beschreibung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__BESCHREIBUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BESCHREIBUNG;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__GELTUNGSBEREICH_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DS;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__GELTUNGSBEREICH_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DV;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__GELTUNGSBEREICH_SBAHN_B = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_B;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn HH</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__GELTUNGSBEREICH_SBAHN_HH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_HH;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Ab</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__GUELTIG_AB = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_AB;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Bis</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__GUELTIG_BIS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_BIS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__KURZBEZEICHNUNG_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__KURZBEZEICHNUNG_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DV;
+
+	/**
+	 * The feature id for the '<em><b>Langbezeichnung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__LANGBEZEICHNUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__LANGBEZEICHNUNG;
+
+	/**
+	 * The feature id for the '<em><b>Schaltbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__SCHALTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SCHALTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Zusatz Moeglich</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_FAK__ZUSATZ_MOEGLICH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH;
+
+	/**
 	 * The number of structural features of the '<em>Oz Fak</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int OZ_FAK_FEATURE_COUNT = 0;
+	int OZ_FAK_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.OzGSMRImpl <em>Oz GSMR</em>}' class.
@@ -18486,7 +18755,133 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OZ_ZUGL__SYMBOL = 0;
+	int OZ_ZUGL__SYMBOL = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SYMBOL;
+
+	/**
+	 * The feature id for the '<em><b>Anmerkungen</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__ANMERKUNGEN = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ANMERKUNGEN;
+
+	/**
+	 * The feature id for the '<em><b>Beleuchtbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__BELEUCHTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BELEUCHTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Beschreibung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__BESCHREIBUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__BESCHREIBUNG;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__GELTUNGSBEREICH_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DS;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__GELTUNGSBEREICH_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_DV;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn B</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__GELTUNGSBEREICH_SBAHN_B = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_B;
+
+	/**
+	 * The feature id for the '<em><b>Geltungsbereich SBahn HH</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__GELTUNGSBEREICH_SBAHN_HH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GELTUNGSBEREICH_SBAHN_HH;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Ab</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__GUELTIG_AB = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_AB;
+
+	/**
+	 * The feature id for the '<em><b>Gueltig Bis</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__GUELTIG_BIS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__GUELTIG_BIS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DS</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__KURZBEZEICHNUNG_DS = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DS;
+
+	/**
+	 * The feature id for the '<em><b>Kurzbezeichnung DV</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__KURZBEZEICHNUNG_DV = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__KURZBEZEICHNUNG_DV;
+
+	/**
+	 * The feature id for the '<em><b>Langbezeichnung</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__LANGBEZEICHNUNG = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__LANGBEZEICHNUNG;
+
+	/**
+	 * The feature id for the '<em><b>Schaltbar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__SCHALTBAR = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__SCHALTBAR;
+
+	/**
+	 * The feature id for the '<em><b>Zusatz Moeglich</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OZ_ZUGL__ZUSATZ_MOEGLICH = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS__ZUSATZ_MOEGLICH;
 
 	/**
 	 * The number of structural features of the '<em>Oz Zugl</em>' class.
@@ -18495,7 +18890,7 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OZ_ZUGL_FEATURE_COUNT = 1;
+	int OZ_ZUGL_FEATURE_COUNT = Signalbegriffe_StrukturPackage.SIGNALBEGRIFF_ID_TYPE_CLASS_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl.Pf2Impl <em>Pf2</em>}' class.
@@ -30757,17 +31152,6 @@ public interface Signalbegriffe_Ril_301Package extends EPackage {
 	 * @generated
 	 */
 	EClass getOzZugl();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.OzZugl#getSymbol <em>Symbol</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Symbol</em>'.
-	 * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.OzZugl#getSymbol()
-	 * @see #getOzZugl()
-	 * @generated
-	 */
-	EAttribute getOzZugl_Symbol();
 
 	/**
 	 * Returns the meta object for class '{@link org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Pf2 <em>Pf2</em>}'.

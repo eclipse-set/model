@@ -9,7 +9,7 @@
  */
 package org.eclipse.set.model.planpro.Signalbegriffe_Ril_301;
 
-import org.eclipse.emf.ecore.EObject;
+import org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriff_ID_TypeClass;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,8 +18,8 @@ import org.eclipse.emf.ecore.EObject;
  *
  *
  * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Signalbegriffe_Ril_301Package#getOzFak()
- * @model extendedMetaData="name='Oz_Fak' kind='empty'"
+ * @model extendedMetaData="name='Oz_Fak' kind='elementOnly'"
  * @generated
  */
-public interface OzFak extends EObject {
+public interface OzFak extends Signalbegriff_ID_TypeClass {
 } // OzFak

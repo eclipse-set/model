@@ -11,10 +11,10 @@ package org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.impl;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.impl.EObjectImpl;
-
 import org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.BueATZusatz;
 import org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Signalbegriffe_Ril_301Package;
+
+import org.eclipse.set.model.planpro.Signalbegriffe_Struktur.impl.Signalbegriff_ID_TypeClassImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +23,7 @@ import org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Signalbegriffe_Ril_3
  *
  * @generated
  */
-public class BueATZusatzImpl extends EObjectImpl implements BueATZusatz {
+public class BueATZusatzImpl extends Signalbegriff_ID_TypeClassImpl implements BueATZusatz {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

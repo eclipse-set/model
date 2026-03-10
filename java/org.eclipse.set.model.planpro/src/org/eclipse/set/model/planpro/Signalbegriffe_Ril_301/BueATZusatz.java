@@ -9,7 +9,7 @@
  */
 package org.eclipse.set.model.planpro.Signalbegriffe_Ril_301;
 
-import org.eclipse.emf.ecore.EObject;
+import org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriff_ID_TypeClass;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,8 +18,8 @@ import org.eclipse.emf.ecore.EObject;
  *
  *
  * @see org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Signalbegriffe_Ril_301Package#getBueATZusatz()
- * @model extendedMetaData="name='Bue_AT_Zusatz' kind='empty'"
+ * @model extendedMetaData="name='Bue_AT_Zusatz' kind='elementOnly'"
  * @generated
  */
-public interface BueATZusatz extends EObject {
+public interface BueATZusatz extends Signalbegriff_ID_TypeClass {
 } // BueATZusatz

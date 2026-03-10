@@ -292,6 +292,11 @@ public class Signal_SignalbegriffItemProvider extends Basis_ObjektItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(SignalePackage.Literals.SIGNAL_SIGNALBEGRIFF__SIGNALBEGRIFF_ID,
+				 Signalbegriffe_Ril_301Factory.eINSTANCE.createBueATZusatz()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(SignalePackage.Literals.SIGNAL_SIGNALBEGRIFF__SIGNALBEGRIFF_ID,
 				 Signalbegriffe_Ril_301Factory.eINSTANCE.createBueKT()));
 
 		newChildDescriptors.add
@@ -727,6 +732,11 @@ public class Signal_SignalbegriffItemProvider extends Basis_ObjektItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(SignalePackage.Literals.SIGNAL_SIGNALBEGRIFF__SIGNALBEGRIFF_ID,
+				 Signalbegriffe_Ril_301Factory.eINSTANCE.createOzFak()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(SignalePackage.Literals.SIGNAL_SIGNALBEGRIFF__SIGNALBEGRIFF_ID,
 				 Signalbegriffe_Ril_301Factory.eINSTANCE.createOzGSMR()));
 
 		newChildDescriptors.add
@@ -768,6 +778,11 @@ public class Signal_SignalbegriffItemProvider extends Basis_ObjektItemProvider {
 			(createChildParameter
 				(SignalePackage.Literals.SIGNAL_SIGNALBEGRIFF__SIGNALBEGRIFF_ID,
 				 Signalbegriffe_Ril_301Factory.eINSTANCE.createOzZf()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(SignalePackage.Literals.SIGNAL_SIGNALBEGRIFF__SIGNALBEGRIFF_ID,
+				 Signalbegriffe_Ril_301Factory.eINSTANCE.createOzZugl()));
 
 		newChildDescriptors.add
 			(createChildParameter
