@@ -22,4 +22,94 @@ import org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriff_ID_Ty
  * @generated
  */
 public interface So192P extends Signalbegriff_ID_TypeClass {
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isBeleuchtbar();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return \"viereckige orangefarbene Tafel mit zwei wei\337en Kreisfl\344chen\";'"
+	 * @generated
+	 */
+	String getBeschreibung();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichDS();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return true;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichDV();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return true;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichSBahnB();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichSBahnHH();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return \"So 19\";'"
+	 * @generated
+	 */
+	String getKurzbezeichnungDV();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return \"Hauptsignalbake\";'"
+	 * @generated
+	 */
+	String getLangbezeichnung();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isSchaltbar();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isZusatzMoeglich();
 } // So192P

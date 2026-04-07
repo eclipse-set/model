@@ -22,4 +22,85 @@ import org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriff_ID_Ty
  * @generated
  */
 public interface Wvs extends Signalbegriff_ID_TypeClass {
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isBeleuchtbar();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return \"senkrechte runde Scheibe wie bei ortsfesten Formvorsignalen, jedoch unbeweglich und ohne Fl\374gel\";'"
+	 * @generated
+	 */
+	String getBeschreibung();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return true;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichDS();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return true;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichDV();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return true;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichSBahnB();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return true;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichSBahnHH();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return \"W\344rtervorsignal\";'"
+	 * @generated
+	 */
+	String getLangbezeichnung();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isSchaltbar();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isZusatzMoeglich();
 } // Wvs

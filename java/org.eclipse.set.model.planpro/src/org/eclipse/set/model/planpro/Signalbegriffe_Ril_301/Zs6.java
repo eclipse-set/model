@@ -22,4 +22,103 @@ import org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriff_ID_Ty
  * @generated
  */
 public interface Zs6 extends Signalbegriff_ID_TypeClass {
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isBeleuchtbar();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return \"wei\337 leuchtender schr\344ger Lichtstreifen (Enden k\366nnen abgewinkelt sein) oder rechteckige schwarze Scheibe mit wei\337em Rand und einem wei\337en von\nrechts nach links steigenden Streifen, dessen Enden senkrecht abgewinkelt\nsind\";'"
+	 * @generated
+	 */
+	String getBeschreibung();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return true;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichDS();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return true;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichDV();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return true;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichSBahnB();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return true;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichSBahnHH();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return \"Zs 6\";'"
+	 * @generated
+	 */
+	String getKurzbezeichnungDS();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return \"Zs 6\";'"
+	 * @generated
+	 */
+	String getKurzbezeichnungDV();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return \"Gegengleisanzeiger\";'"
+	 * @generated
+	 */
+	String getLangbezeichnung();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return true;'"
+	 * @generated
+	 */
+	boolean isSchaltbar();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isZusatzMoeglich();
 } // Zs6

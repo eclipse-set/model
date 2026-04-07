@@ -22,4 +22,85 @@ import org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriff_ID_Ty
  * @generated
  */
 public interface Bue11LpBli extends Signalbegriff_ID_TypeClass {
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isBeleuchtbar();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return \"ein blinkendes wei\337es Licht \374ber einem gelben Lichtpunkt und einem oder zwei schwarz-wei\337 schr\344g gestreiften Mastschildern\";'"
+	 * @generated
+	 */
+	String getBeschreibung();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return true;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichDS();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichDV();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichSBahnB();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isGeltungsbereichSBahnHH();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return \"B\374 1\";'"
+	 * @generated
+	 */
+	String getKurzbezeichnungDS();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return true;'"
+	 * @generated
+	 */
+	boolean isSchaltbar();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.emf.ecore.xml.type.Boolean"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return false;'"
+	 * @generated
+	 */
+	boolean isZusatzMoeglich();
 } // Bue11LpBli

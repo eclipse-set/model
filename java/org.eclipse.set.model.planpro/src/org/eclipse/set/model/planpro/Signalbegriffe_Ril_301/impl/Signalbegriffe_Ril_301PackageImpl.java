@@ -29,6 +29,7 @@ import org.eclipse.emf.ecore.resource.Resource;
 
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 
+import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
 import org.eclipse.set.model.planpro.ATO.ATOPackage;
 
 import org.eclipse.set.model.planpro.ATO.impl.ATOPackageImpl;
@@ -1725,6 +1726,9 @@ public class Signalbegriffe_Ril_301PackageImpl extends EPackageImpl implements S
 		Signalbegriffe_Ril_301PackageImpl theSignalbegriffe_Ril_301Package = registeredSignalbegriffe_Ril_301Package instanceof Signalbegriffe_Ril_301PackageImpl ? (Signalbegriffe_Ril_301PackageImpl)registeredSignalbegriffe_Ril_301Package : new Signalbegriffe_Ril_301PackageImpl();
 
 		isInited = true;
+
+		// Initialize simple dependencies
+		XMLTypePackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PlanProPackage.eNS_URI);
