@@ -48,7 +48,6 @@ public class Zs9Impl extends Signalbegriff_ID_TypeClassImpl implements Zs9 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class Zs9Impl extends Signalbegriff_ID_TypeClassImpl implements Zs9 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "dreieckige, weiße Tafel mit rotem Rand und schwarzem Gatter; bei Gültigkeit für mehrere Bahnübergänge mit Angabe der Anzahl als schwarzer Zahl";
 	}
@@ -68,7 +66,6 @@ public class Zs9Impl extends Signalbegriff_ID_TypeClassImpl implements Zs9 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return false;
 	}
@@ -78,7 +75,6 @@ public class Zs9Impl extends Signalbegriff_ID_TypeClassImpl implements Zs9 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class Zs9Impl extends Signalbegriff_ID_TypeClassImpl implements Zs9 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return true;
 	}
@@ -98,7 +93,6 @@ public class Zs9Impl extends Signalbegriff_ID_TypeClassImpl implements Zs9 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return false;
 	}
@@ -108,7 +102,6 @@ public class Zs9Impl extends Signalbegriff_ID_TypeClassImpl implements Zs9 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDV() {
 		return "Zs 9";
 	}
@@ -118,7 +111,6 @@ public class Zs9Impl extends Signalbegriff_ID_TypeClassImpl implements Zs9 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "Bahnübergangstafel";
 	}
@@ -128,7 +120,6 @@ public class Zs9Impl extends Signalbegriff_ID_TypeClassImpl implements Zs9 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -138,7 +129,6 @@ public class Zs9Impl extends Signalbegriff_ID_TypeClassImpl implements Zs9 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return true;
 	}

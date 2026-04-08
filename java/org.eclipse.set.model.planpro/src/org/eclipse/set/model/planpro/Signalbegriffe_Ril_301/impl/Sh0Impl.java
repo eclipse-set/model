@@ -48,7 +48,6 @@ public class Sh0Impl extends Signalbegriff_ID_TypeClassImpl implements Sh0 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return true;
 	}
@@ -58,7 +57,6 @@ public class Sh0Impl extends Signalbegriff_ID_TypeClassImpl implements Sh0 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "waagerechter schwarzer Streifen in runder weißer Scheibe auf schwarzem Grund";
 	}
@@ -68,7 +66,6 @@ public class Sh0Impl extends Signalbegriff_ID_TypeClassImpl implements Sh0 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class Sh0Impl extends Signalbegriff_ID_TypeClassImpl implements Sh0 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class Sh0Impl extends Signalbegriff_ID_TypeClassImpl implements Sh0 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return true;
 	}
@@ -98,7 +93,6 @@ public class Sh0Impl extends Signalbegriff_ID_TypeClassImpl implements Sh0 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return true;
 	}
@@ -108,7 +102,6 @@ public class Sh0Impl extends Signalbegriff_ID_TypeClassImpl implements Sh0 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "Sh 0";
 	}
@@ -118,7 +111,6 @@ public class Sh0Impl extends Signalbegriff_ID_TypeClassImpl implements Sh0 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDV() {
 		return "Sh 0";
 	}
@@ -128,7 +120,6 @@ public class Sh0Impl extends Signalbegriff_ID_TypeClassImpl implements Sh0 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -138,7 +129,6 @@ public class Sh0Impl extends Signalbegriff_ID_TypeClassImpl implements Sh0 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

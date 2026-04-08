@@ -48,7 +48,6 @@ public class OzPZB2000HzImpl extends Signalbegriff_ID_TypeClassImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class OzPZB2000HzImpl extends Signalbegriff_ID_TypeClassImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "schwarz umrandete Tafel mit einem weißen Feld mit der Aufschrift „PZB“, unter dem sich ein weißes Feld mit der Aufschrift „2000 Hz“ befindet";
 	}
@@ -68,7 +66,6 @@ public class OzPZB2000HzImpl extends Signalbegriff_ID_TypeClassImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class OzPZB2000HzImpl extends Signalbegriff_ID_TypeClassImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class OzPZB2000HzImpl extends Signalbegriff_ID_TypeClassImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return true;
 	}
@@ -98,7 +93,6 @@ public class OzPZB2000HzImpl extends Signalbegriff_ID_TypeClassImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return true;
 	}
@@ -108,7 +102,6 @@ public class OzPZB2000HzImpl extends Signalbegriff_ID_TypeClassImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "PZB 2000 Hz";
 	}
@@ -118,7 +111,6 @@ public class OzPZB2000HzImpl extends Signalbegriff_ID_TypeClassImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -128,7 +120,6 @@ public class OzPZB2000HzImpl extends Signalbegriff_ID_TypeClassImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

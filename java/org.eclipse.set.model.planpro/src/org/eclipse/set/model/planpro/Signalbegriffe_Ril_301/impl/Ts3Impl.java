@@ -48,7 +48,6 @@ public class Ts3Impl extends Signalbegriff_ID_TypeClassImpl implements Ts3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return true;
 	}
@@ -58,7 +57,6 @@ public class Ts3Impl extends Signalbegriff_ID_TypeClassImpl implements Ts3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "Weiterfahrt für zurückkehrende Schiebelokomotiven und Sperrfahrten, auf Signal Ts 2 ein schwarzer nach rechts steigender Streifen";
 	}
@@ -68,7 +66,6 @@ public class Ts3Impl extends Signalbegriff_ID_TypeClassImpl implements Ts3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return false;
 	}
@@ -78,7 +75,6 @@ public class Ts3Impl extends Signalbegriff_ID_TypeClassImpl implements Ts3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return false;
 	}
@@ -88,7 +84,6 @@ public class Ts3Impl extends Signalbegriff_ID_TypeClassImpl implements Ts3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return false;
 	}
@@ -98,7 +93,6 @@ public class Ts3Impl extends Signalbegriff_ID_TypeClassImpl implements Ts3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return false;
 	}
@@ -108,7 +102,6 @@ public class Ts3Impl extends Signalbegriff_ID_TypeClassImpl implements Ts3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "Ts 3";
 	}
@@ -118,7 +111,6 @@ public class Ts3Impl extends Signalbegriff_ID_TypeClassImpl implements Ts3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDV() {
 		return "Ts 3";
 	}
@@ -128,7 +120,6 @@ public class Ts3Impl extends Signalbegriff_ID_TypeClassImpl implements Ts3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -138,7 +129,6 @@ public class Ts3Impl extends Signalbegriff_ID_TypeClassImpl implements Ts3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

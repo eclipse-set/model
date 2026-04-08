@@ -48,7 +48,6 @@ public class Bue11SBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bue
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class Bue11SBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bue
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "ein blinkendes weißes Licht über einer runden gelben Scheibe in einer gelben Umrahmung über einem oder zwei schwarz-weiß schräg gestreiften Mastschildern";
 	}
@@ -68,7 +66,6 @@ public class Bue11SBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bue
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class Bue11SBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bue
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class Bue11SBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bue
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return true;
 	}
@@ -98,7 +93,6 @@ public class Bue11SBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bue
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return true;
 	}
@@ -108,7 +102,6 @@ public class Bue11SBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bue
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "Bü 1";
 	}
@@ -118,7 +111,6 @@ public class Bue11SBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bue
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDV() {
 		return "Bü 1";
 	}
@@ -128,7 +120,6 @@ public class Bue11SBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bue
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return true;
 	}
@@ -138,7 +129,6 @@ public class Bue11SBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bue
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

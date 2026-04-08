@@ -48,7 +48,6 @@ public class Sv1Impl extends Signalbegriff_ID_TypeClassImpl implements Sv1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class Sv1Impl extends Signalbegriff_ID_TypeClassImpl implements Sv1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "Fahrt, Fahrt erwarten; zwei grüne Lichter waagerecht nebeneinander";
 	}
@@ -68,7 +66,6 @@ public class Sv1Impl extends Signalbegriff_ID_TypeClassImpl implements Sv1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return false;
 	}
@@ -78,7 +75,6 @@ public class Sv1Impl extends Signalbegriff_ID_TypeClassImpl implements Sv1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return false;
 	}
@@ -88,7 +84,6 @@ public class Sv1Impl extends Signalbegriff_ID_TypeClassImpl implements Sv1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return false;
 	}
@@ -98,7 +93,6 @@ public class Sv1Impl extends Signalbegriff_ID_TypeClassImpl implements Sv1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return true;
 	}
@@ -108,7 +102,6 @@ public class Sv1Impl extends Signalbegriff_ID_TypeClassImpl implements Sv1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "Sv 1";
 	}
@@ -118,7 +111,6 @@ public class Sv1Impl extends Signalbegriff_ID_TypeClassImpl implements Sv1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return true;
 	}
@@ -128,7 +120,6 @@ public class Sv1Impl extends Signalbegriff_ID_TypeClassImpl implements Sv1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

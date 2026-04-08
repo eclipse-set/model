@@ -48,7 +48,6 @@ public class Sv5Impl extends Signalbegriff_ID_TypeClassImpl implements Sv5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class Sv5Impl extends Signalbegriff_ID_TypeClassImpl implements Sv5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "Langsamfahrt, Langsamfahrt erwarten; links ein grünes und senkrecht darunter ein gelbes Licht, rechts daneben in gleicher Höhe die gleichen Lichter";
 	}
@@ -68,7 +66,6 @@ public class Sv5Impl extends Signalbegriff_ID_TypeClassImpl implements Sv5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return false;
 	}
@@ -78,7 +75,6 @@ public class Sv5Impl extends Signalbegriff_ID_TypeClassImpl implements Sv5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return false;
 	}
@@ -88,7 +84,6 @@ public class Sv5Impl extends Signalbegriff_ID_TypeClassImpl implements Sv5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return false;
 	}
@@ -98,7 +93,6 @@ public class Sv5Impl extends Signalbegriff_ID_TypeClassImpl implements Sv5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return true;
 	}
@@ -108,7 +102,6 @@ public class Sv5Impl extends Signalbegriff_ID_TypeClassImpl implements Sv5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "Sv 5";
 	}
@@ -118,7 +111,6 @@ public class Sv5Impl extends Signalbegriff_ID_TypeClassImpl implements Sv5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return true;
 	}
@@ -128,7 +120,6 @@ public class Sv5Impl extends Signalbegriff_ID_TypeClassImpl implements Sv5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

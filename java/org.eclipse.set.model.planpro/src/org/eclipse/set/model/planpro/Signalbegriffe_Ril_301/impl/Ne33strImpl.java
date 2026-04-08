@@ -48,7 +48,6 @@ public class Ne33strImpl extends Signalbegriff_ID_TypeClassImpl implements Ne33s
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return true;
 	}
@@ -58,7 +57,6 @@ public class Ne33strImpl extends Signalbegriff_ID_TypeClassImpl implements Ne33s
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "weiße Tafel mit drei nach rechts steigenden schwarzen Streifen";
 	}
@@ -68,7 +66,6 @@ public class Ne33strImpl extends Signalbegriff_ID_TypeClassImpl implements Ne33s
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class Ne33strImpl extends Signalbegriff_ID_TypeClassImpl implements Ne33s
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class Ne33strImpl extends Signalbegriff_ID_TypeClassImpl implements Ne33s
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return true;
 	}
@@ -98,7 +93,6 @@ public class Ne33strImpl extends Signalbegriff_ID_TypeClassImpl implements Ne33s
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return true;
 	}
@@ -108,7 +102,6 @@ public class Ne33strImpl extends Signalbegriff_ID_TypeClassImpl implements Ne33s
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "Vorsignalbake";
 	}
@@ -118,7 +111,6 @@ public class Ne33strImpl extends Signalbegriff_ID_TypeClassImpl implements Ne33s
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -128,7 +120,6 @@ public class Ne33strImpl extends Signalbegriff_ID_TypeClassImpl implements Ne33s
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

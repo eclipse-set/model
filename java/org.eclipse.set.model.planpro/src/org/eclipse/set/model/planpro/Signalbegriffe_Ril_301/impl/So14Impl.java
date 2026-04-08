@@ -48,7 +48,6 @@ public class So14Impl extends Signalbegriff_ID_TypeClassImpl implements So14 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class So14Impl extends Signalbegriff_ID_TypeClassImpl implements So14 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "schwarz-weiß waagerecht gestreifter Pfahl";
 	}
@@ -68,7 +66,6 @@ public class So14Impl extends Signalbegriff_ID_TypeClassImpl implements So14 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return false;
 	}
@@ -78,7 +75,6 @@ public class So14Impl extends Signalbegriff_ID_TypeClassImpl implements So14 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class So14Impl extends Signalbegriff_ID_TypeClassImpl implements So14 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return true;
 	}
@@ -98,7 +93,6 @@ public class So14Impl extends Signalbegriff_ID_TypeClassImpl implements So14 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return false;
 	}
@@ -108,7 +102,6 @@ public class So14Impl extends Signalbegriff_ID_TypeClassImpl implements So14 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDV() {
 		return "So 14";
 	}
@@ -118,7 +111,6 @@ public class So14Impl extends Signalbegriff_ID_TypeClassImpl implements So14 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "Merkpfahl";
 	}
@@ -128,7 +120,6 @@ public class So14Impl extends Signalbegriff_ID_TypeClassImpl implements So14 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -138,7 +129,6 @@ public class So14Impl extends Signalbegriff_ID_TypeClassImpl implements So14 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

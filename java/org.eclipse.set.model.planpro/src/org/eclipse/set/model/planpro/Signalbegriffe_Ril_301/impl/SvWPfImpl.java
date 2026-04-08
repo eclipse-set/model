@@ -48,7 +48,6 @@ public class SvWPfImpl extends Signalbegriff_ID_TypeClassImpl implements SvWPf {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class SvWPfImpl extends Signalbegriff_ID_TypeClassImpl implements SvWPf {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "Signal im verkürzten Abstand des Bremsweges, weißleuchtender Pfeil über den Signalbildern";
 	}
@@ -68,7 +66,6 @@ public class SvWPfImpl extends Signalbegriff_ID_TypeClassImpl implements SvWPf {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return false;
 	}
@@ -78,7 +75,6 @@ public class SvWPfImpl extends Signalbegriff_ID_TypeClassImpl implements SvWPf {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return false;
 	}
@@ -88,7 +84,6 @@ public class SvWPfImpl extends Signalbegriff_ID_TypeClassImpl implements SvWPf {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return false;
 	}
@@ -98,7 +93,6 @@ public class SvWPfImpl extends Signalbegriff_ID_TypeClassImpl implements SvWPf {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return false;
 	}
@@ -108,7 +102,6 @@ public class SvWPfImpl extends Signalbegriff_ID_TypeClassImpl implements SvWPf {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return true;
 	}
@@ -118,7 +111,6 @@ public class SvWPfImpl extends Signalbegriff_ID_TypeClassImpl implements SvWPf {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

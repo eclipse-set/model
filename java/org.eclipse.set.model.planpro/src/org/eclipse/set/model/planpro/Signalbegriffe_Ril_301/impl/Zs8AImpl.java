@@ -48,7 +48,6 @@ public class Zs8AImpl extends Signalbegriff_ID_TypeClassImpl implements Zs8A {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class Zs8AImpl extends Signalbegriff_ID_TypeClassImpl implements Zs8A {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "drei blinkende Lichter in Form eines A";
 	}
@@ -68,7 +66,6 @@ public class Zs8AImpl extends Signalbegriff_ID_TypeClassImpl implements Zs8A {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return false;
 	}
@@ -78,7 +75,6 @@ public class Zs8AImpl extends Signalbegriff_ID_TypeClassImpl implements Zs8A {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return false;
 	}
@@ -88,7 +84,6 @@ public class Zs8AImpl extends Signalbegriff_ID_TypeClassImpl implements Zs8A {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return false;
 	}
@@ -98,7 +93,6 @@ public class Zs8AImpl extends Signalbegriff_ID_TypeClassImpl implements Zs8A {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return false;
 	}
@@ -108,7 +102,6 @@ public class Zs8AImpl extends Signalbegriff_ID_TypeClassImpl implements Zs8A {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "Zs 8";
 	}
@@ -118,7 +111,6 @@ public class Zs8AImpl extends Signalbegriff_ID_TypeClassImpl implements Zs8A {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDV() {
 		return "Zs 8";
 	}
@@ -128,7 +120,6 @@ public class Zs8AImpl extends Signalbegriff_ID_TypeClassImpl implements Zs8A {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "Gegengleisfahrt-Ersatzsignal";
 	}
@@ -138,7 +129,6 @@ public class Zs8AImpl extends Signalbegriff_ID_TypeClassImpl implements Zs8A {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return true;
 	}
@@ -148,7 +138,6 @@ public class Zs8AImpl extends Signalbegriff_ID_TypeClassImpl implements Zs8A {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

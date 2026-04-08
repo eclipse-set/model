@@ -847,7 +847,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 				<xs:sequence/>
 				<xs:attribute name="Anmerkungen" use="prohibited" type="xs:string"/>
 				<xs:attribute name="Beleuchtbar" use="prohibited" fixed="false" type="xs:boolean"/>
-				<xs:attribute name="Beschreibung" use="prohibited" fixed="Fahrt, Langsamfahrt erwarten; links ein grünes Licht, rechts in gleicher Höhe ein grünes&#xA;und senkrecht darunter ein gelbes Licht" type="xs:string"/>
+				<xs:attribute name="Beschreibung" use="prohibited" fixed="Fahrt, Langsamfahrt erwarten; links ein grünes Licht, rechts in gleicher Höhe ein grünes und senkrecht darunter ein gelbes Licht" type="xs:string"/>
 				<xs:attribute name="Geltungsbereich_DS" use="prohibited" fixed="false" type="xs:boolean"/>
 				<xs:attribute name="Geltungsbereich_DV" use="prohibited" fixed="false" type="xs:boolean"/>
 				<xs:attribute name="Geltungsbereich_SBahn_B" use="prohibited" fixed="false" type="xs:boolean"/>
@@ -868,7 +868,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 				<xs:sequence/>
 				<xs:attribute name="Anmerkungen" use="prohibited" type="xs:string"/>
 				<xs:attribute name="Beleuchtbar" use="prohibited" fixed="false" type="xs:boolean"/>
-				<xs:attribute name="Beschreibung" use="prohibited" fixed="Langsamfahrt, Fahrt erwarten; links ein grünes und senkrecht darunter ein gelbes Licht;&#xA;rechts in Höhe des oberen linken Lichtes ein grünes Licht" type="xs:string"/>
+				<xs:attribute name="Beschreibung" use="prohibited" fixed="Langsamfahrt, Fahrt erwarten; links ein grünes und senkrecht darunter ein gelbes Licht; rechts in Höhe des oberen linken Lichtes ein grünes Licht" type="xs:string"/>
 				<xs:attribute name="Geltungsbereich_DS" use="prohibited" fixed="false" type="xs:boolean"/>
 				<xs:attribute name="Geltungsbereich_DV" use="prohibited" fixed="false" type="xs:boolean"/>
 				<xs:attribute name="Geltungsbereich_SBahn_B" use="prohibited" fixed="false" type="xs:boolean"/>
@@ -1139,7 +1139,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 		<xs:complexContent>
 			<xs:restriction base="nsSignalbegriffe_Struktur:TCSignalbegriff_ID">
 				<xs:sequence/>
-				<xs:attribute name="Anmerkungen" use="prohibited" fixed="819.0204 2 (3): An Ks-Hauptsignalen ist das Ersatzsignal in Form eines&#xA;weißen Blinklichtes anzuwenden.&#xA;&#xA;819.0204 2 (5): An Hl-Lichtsignalen sowie an Formsignalen im Geltungsbereich der DV 301 ist ein weißes Blinklicht anzuwenden." type="xs:string"/>
+				<xs:attribute name="Anmerkungen" use="prohibited" fixed="819.0204 2 (3): An Ks-Hauptsignalen ist das Ersatzsignal in Form eines weißen Blinklichtes anzuwenden.  819.0204 2 (5): An Hl-Lichtsignalen sowie an Formsignalen im Geltungsbereich der DV 301 ist ein weißes Blinklicht anzuwenden." type="xs:string"/>
 				<xs:attribute name="Beleuchtbar" use="prohibited" fixed="false" type="xs:boolean"/>
 				<xs:attribute name="Beschreibung" use="prohibited" fixed="ein weißes Blinklicht" type="xs:string"/>
 				<xs:attribute name="Geltungsbereich_DS" use="prohibited" fixed="true" type="xs:boolean"/>
@@ -1160,7 +1160,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 		<xs:complexContent>
 			<xs:restriction base="nsSignalbegriffe_Struktur:TCSignalbegriff_ID">
 				<xs:sequence/>
-				<xs:attribute name="Anmerkungen" use="prohibited" fixed="819.0204 2 (4): An H/V-Licht- und Formsignalen im Geltungsbereich der&#xA;DS 301 sind in der Regel drei weiße Lichter in Form eines&#xA;A anzuwenden." type="xs:string"/>
+				<xs:attribute name="Anmerkungen" use="prohibited" fixed="819.0204 2 (4): An H/V-Licht- und Formsignalen im Geltungsbereich der DS 301 sind in der Regel drei weiße Lichter in Form eines A anzuwenden." type="xs:string"/>
 				<xs:attribute name="Beleuchtbar" use="prohibited" fixed="false" type="xs:boolean"/>
 				<xs:attribute name="Beschreibung" use="prohibited" fixed="drei weiße Lichter in Form eines A" type="xs:string"/>
 				<xs:attribute name="Geltungsbereich_DS" use="prohibited" fixed="true" type="xs:boolean"/>
@@ -1183,7 +1183,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 				<xs:sequence>
 					<xs:element name="Symbol" type="nsSignalbegriffe_Ril_301:ENUMSymbol_Zs_2" minOccurs="1" maxOccurs="1"/>
 				</xs:sequence>
-				<xs:attribute name="Anmerkungen" use="prohibited" fixed="Kennbuchstabe T nicht bei S-Bahnen im Bereich der DS 301; Buchstaben O oder D nicht&#xA;gleichzeitig an einem Signal" type="xs:string"/>
+				<xs:attribute name="Anmerkungen" use="prohibited" fixed="Kennbuchstabe T nicht bei S-Bahnen im Bereich der DS 301; Buchstaben O oder D nicht gleichzeitig an einem Signal" type="xs:string"/>
 				<xs:attribute name="Beleuchtbar" use="prohibited" fixed="false" type="xs:boolean"/>
 				<xs:attribute name="Beschreibung" use="prohibited" fixed="ein weiß leuchtender Buchstabe" type="xs:string"/>
 				<xs:attribute name="Geltungsbereich_DS" use="prohibited" fixed="true" type="xs:boolean"/>
@@ -1233,7 +1233,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 				<xs:sequence>
 					<xs:element name="Symbol" type="nsSignalbegriffe_Ril_301:ENUMSymbol_Zs_2v" minOccurs="1" maxOccurs="1"/>
 				</xs:sequence>
-				<xs:attribute name="Anmerkungen" use="prohibited" fixed="Kennbuchstabe T nicht bei S-Bahnen im Bereich der DS 301; Buchstaben O oder D nicht&#xA;gleichzeitig an einem Signal" type="xs:string"/>
+				<xs:attribute name="Anmerkungen" use="prohibited" fixed="Kennbuchstabe T nicht bei S-Bahnen im Bereich der DS 301; Buchstaben O oder D nicht gleichzeitig an einem Signal" type="xs:string"/>
 				<xs:attribute name="Beleuchtbar" use="prohibited" fixed="false" type="xs:boolean"/>
 				<xs:attribute name="Beschreibung" use="prohibited" fixed="ein gelb oder weiß leuchtender Buchstabe" type="xs:string"/>
 				<xs:attribute name="Geltungsbereich_DS" use="prohibited" fixed="true" type="xs:boolean"/>
@@ -1367,7 +1367,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 				<xs:sequence/>
 				<xs:attribute name="Anmerkungen" use="prohibited" type="xs:string"/>
 				<xs:attribute name="Beleuchtbar" use="prohibited" fixed="false" type="xs:boolean"/>
-				<xs:attribute name="Beschreibung" use="prohibited" fixed="weiß leuchtender schräger Lichtstreifen (Enden können abgewinkelt sein) oder rechteckige schwarze Scheibe mit weißem Rand und einem weißen von&#xA;rechts nach links steigenden Streifen, dessen Enden senkrecht abgewinkelt&#xA;sind" type="xs:string"/>
+				<xs:attribute name="Beschreibung" use="prohibited" fixed="weiß leuchtender schräger Lichtstreifen (Enden können abgewinkelt sein) oder rechteckige schwarze Scheibe mit weißem Rand und einem weißen von rechts nach links steigenden Streifen, dessen Enden senkrecht abgewinkelt sind" type="xs:string"/>
 				<xs:attribute name="Geltungsbereich_DS" use="prohibited" fixed="true" type="xs:boolean"/>
 				<xs:attribute name="Geltungsbereich_DV" use="prohibited" fixed="true" type="xs:boolean"/>
 				<xs:attribute name="Geltungsbereich_SBahn_B" use="prohibited" fixed="true" type="xs:boolean"/>
@@ -2000,7 +2000,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 		<xs:complexContent>
 			<xs:restriction base="nsSignalbegriffe_Struktur:TCSignalbegriff_ID">
 				<xs:sequence/>
-				<xs:attribute name="Anmerkungen" use="prohibited" fixed="Beleuchtung im Sinne der Anstrahlung wird bei Neuplanungen nicht mehr angewendet,&#xA;Verwendung &quot;Innenbeleuchtet&quot; für Nachtzeichen " type="xs:string"/>
+				<xs:attribute name="Anmerkungen" use="prohibited" fixed="Beleuchtung im Sinne der Anstrahlung wird bei Neuplanungen nicht mehr angewendet, Verwendung &quot;Innenbeleuchtet&quot; für Nachtzeichen " type="xs:string"/>
 				<xs:attribute name="Beleuchtbar" use="prohibited" fixed="true" type="xs:boolean"/>
 				<xs:attribute name="Beschreibung" use="prohibited" fixed="rechteckige rote Scheibe mit weißem Rand und ggf. rotem Lichtpunkt" type="xs:string"/>
 				<xs:attribute name="Geltungsbereich_DS" use="prohibited" fixed="true" type="xs:boolean"/>
@@ -3724,7 +3724,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 				<xs:sequence/>
 				<xs:attribute name="Anmerkungen" use="prohibited" type="xs:string"/>
 				<xs:attribute name="Beleuchtbar" use="prohibited" fixed="false" type="xs:boolean"/>
-				<xs:attribute name="Beschreibung" use="prohibited" fixed="verkürzter Abstand des Überwachungssignals, ein rückstrahlendes, auf der Spitze stehendes weißes&#xA;Dreieck mit schwarzem Rand" type="xs:string"/>
+				<xs:attribute name="Beschreibung" use="prohibited" fixed="verkürzter Abstand des Überwachungssignals, ein rückstrahlendes, auf der Spitze stehendes weißes Dreieck mit schwarzem Rand" type="xs:string"/>
 				<xs:attribute name="Geltungsbereich_DS" use="prohibited" fixed="true" type="xs:boolean"/>
 				<xs:attribute name="Geltungsbereich_DV" use="prohibited" fixed="true" type="xs:boolean"/>
 				<xs:attribute name="Geltungsbereich_SBahn_B" use="prohibited" fixed="true" type="xs:boolean"/>
@@ -3745,7 +3745,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 				<xs:sequence/>
 				<xs:attribute name="Anmerkungen" use="prohibited" type="xs:string"/>
 				<xs:attribute name="Beleuchtbar" use="prohibited" fixed="false" type="xs:boolean"/>
-				<xs:attribute name="Beschreibung" use="prohibited" fixed="Signal Bü 4 oder Pf 2 gilt nur für die vor dem Bahnübergang&#xA;nicht haltenden Züge, rechteckige, weiße Tafel mit zwei senkrechten,&#xA;schwarzen Streifen" type="xs:string"/>
+				<xs:attribute name="Beschreibung" use="prohibited" fixed="Signal Bü 4 oder Pf 2 gilt nur für die vor dem Bahnübergang nicht haltenden Züge, rechteckige, weiße Tafel mit zwei senkrechten, schwarzen Streifen" type="xs:string"/>
 				<xs:attribute name="Geltungsbereich_DS" use="prohibited" fixed="true" type="xs:boolean"/>
 				<xs:attribute name="Geltungsbereich_DV" use="prohibited" fixed="true" type="xs:boolean"/>
 				<xs:attribute name="Geltungsbereich_SBahn_B" use="prohibited" fixed="true" type="xs:boolean"/>
@@ -3766,7 +3766,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 				<xs:sequence>
 					<xs:element name="Symbol" type="nsSignalbegriffe_Ril_301:TBS_Zusatz_Symbol" minOccurs="1" maxOccurs="1"/>
 				</xs:sequence>
-				<xs:attribute name="Anmerkungen" use="prohibited" fixed="Bei Verwendung mit Ne_1 gilt:&#xA;Symbol == &quot;true&quot;, wenn Trapeztafel (Ne_1) mit Zuatzschild;&#xA;Symbol == &quot;false&quot;, wenn Trapeztafel (Ne_1) ohne Zusatzschild" type="xs:string"/>
+				<xs:attribute name="Anmerkungen" use="prohibited" fixed="Bei Verwendung mit Ne_1 gilt: Symbol == &quot;true&quot;, wenn Trapeztafel (Ne_1) mit Zuatzschild; Symbol == &quot;false&quot;, wenn Trapeztafel (Ne_1) ohne Zusatzschild" type="xs:string"/>
 				<xs:attribute name="Beleuchtbar" use="prohibited" fixed="false" type="xs:boolean"/>
 				<xs:attribute name="Beschreibung" use="prohibited" fixed="Zusatzinformation (teilw. als eigenes Schild) zur Präzisierung eines Signalbegriffs" type="xs:string"/>
 				<xs:attribute name="Geltungsbereich_DS" use="prohibited" fixed="true" type="xs:boolean"/>
@@ -3871,7 +3871,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 		<xs:complexContent>
 			<xs:restriction base="nsSignalbegriffe_Struktur:TCSignalbegriff_ID">
 				<xs:sequence/>
-				<xs:attribute name="Anmerkungen" use="prohibited" fixed="Mastschild für Sk–Vorsignale und Sk–Vorsignalwiederholer, Anwendung nur auf der Strecke Augsburg –&#xA;Donauwörth zwischen Bf Gersthofen (einschließlich) und Bf Mertingen (einschließlich)" type="xs:string"/>
+				<xs:attribute name="Anmerkungen" use="prohibited" fixed="Mastschild für Sk–Vorsignale und Sk–Vorsignalwiederholer, Anwendung nur auf der Strecke Augsburg – Donauwörth zwischen Bf Gersthofen (einschließlich) und Bf Mertingen (einschließlich)" type="xs:string"/>
 				<xs:attribute name="Beleuchtbar" use="prohibited" fixed="false" type="xs:boolean"/>
 				<xs:attribute name="Beschreibung" use="prohibited" fixed="Mastschild gelb" type="xs:string"/>
 				<xs:attribute name="Geltungsbereich_DS" use="prohibited" fixed="true" type="xs:boolean"/>
@@ -3969,7 +3969,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 				</xs:sequence>
 				<xs:attribute name="Anmerkungen" use="prohibited" fixed="An Bahnsteigen ohne Haltetafel (Ne 5)  Kennzeichnung des verkehrlich günstigsten Halteplatzes. Aufnahme in Ril 301 mit Aktualisierung 10 (12/2017)." type="xs:string"/>
 				<xs:attribute name="Beleuchtbar" use="prohibited" fixed="false" type="xs:boolean"/>
-				<xs:attribute name="Beschreibung" use="prohibited" fixed="&quot;Ein weißes rechteckiges Schild mit schwarzem Rand und einer Längenangabe&#xA;in Metern.&quot;" type="xs:string"/>
+				<xs:attribute name="Beschreibung" use="prohibited" fixed="&quot;Ein weißes rechteckiges Schild mit schwarzem Rand und einer Längenangabe in Metern.&quot;" type="xs:string"/>
 				<xs:attribute name="Geltungsbereich_DS" use="prohibited" fixed="true" type="xs:boolean"/>
 				<xs:attribute name="Geltungsbereich_DV" use="prohibited" fixed="true" type="xs:boolean"/>
 				<xs:attribute name="Geltungsbereich_SBahn_B" use="prohibited" fixed="true" type="xs:boolean"/>

@@ -48,7 +48,6 @@ public class Ne1Impl extends Signalbegriff_ID_TypeClassImpl implements Ne1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return true;
 	}
@@ -58,7 +57,6 @@ public class Ne1Impl extends Signalbegriff_ID_TypeClassImpl implements Ne1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "weiße Trapeztafel mit schwarzem Rand (ggf. mit Zusatzschild mit der metergenauen km-Angabe ihres Signalstandortes)";
 	}
@@ -68,7 +66,6 @@ public class Ne1Impl extends Signalbegriff_ID_TypeClassImpl implements Ne1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class Ne1Impl extends Signalbegriff_ID_TypeClassImpl implements Ne1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class Ne1Impl extends Signalbegriff_ID_TypeClassImpl implements Ne1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return false;
 	}
@@ -98,7 +93,6 @@ public class Ne1Impl extends Signalbegriff_ID_TypeClassImpl implements Ne1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return false;
 	}
@@ -108,7 +102,6 @@ public class Ne1Impl extends Signalbegriff_ID_TypeClassImpl implements Ne1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "Ne 1";
 	}
@@ -118,7 +111,6 @@ public class Ne1Impl extends Signalbegriff_ID_TypeClassImpl implements Ne1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDV() {
 		return "Ne 1";
 	}
@@ -128,7 +120,6 @@ public class Ne1Impl extends Signalbegriff_ID_TypeClassImpl implements Ne1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "Trapeztafel";
 	}
@@ -138,7 +129,6 @@ public class Ne1Impl extends Signalbegriff_ID_TypeClassImpl implements Ne1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -148,7 +138,6 @@ public class Ne1Impl extends Signalbegriff_ID_TypeClassImpl implements Ne1 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return true;
 	}

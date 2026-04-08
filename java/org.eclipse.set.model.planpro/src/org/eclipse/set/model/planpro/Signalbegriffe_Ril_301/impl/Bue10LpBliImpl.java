@@ -48,7 +48,6 @@ public class Bue10LpBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class Bue10LpBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "ein blinkendes weißes Licht über einem oder zwei schwarz-weiß schräg gestreiften Mastschildern";
 	}
@@ -68,7 +66,6 @@ public class Bue10LpBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class Bue10LpBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return false;
 	}
@@ -88,7 +84,6 @@ public class Bue10LpBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return false;
 	}
@@ -98,7 +93,6 @@ public class Bue10LpBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return false;
 	}
@@ -108,7 +102,6 @@ public class Bue10LpBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "Bü 1";
 	}
@@ -118,7 +111,6 @@ public class Bue10LpBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return true;
 	}
@@ -128,7 +120,6 @@ public class Bue10LpBliImpl extends Signalbegriff_ID_TypeClassImpl implements Bu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

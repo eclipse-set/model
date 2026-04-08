@@ -28,25 +28,24 @@ import org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriffe_Stru
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL
+ * 			V1.1.
  * 
- * Weitere Informationen zur Lizenz finden Sie auf
- * http://www.dbinfrago.com/planpro
+ * 			Weitere Informationen zur Lizenz finden Sie auf
+ * 			http://www.dbinfrago.com/planpro
  * 
- * Inhalt der Datei:
- * XML Schema für PlanPro Schnittstelle.
+ * 			Inhalt der Datei:
+ * 			XML Schema für PlanPro Schnittstelle.
  * 
- * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 			Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
+ * 			--------------------------------------------------------------------------------
+ * 			This Document is licensed under the open source license RailPL V1.1.
  * 
- * --------------------------------------------------------------------------------
+ * 			More information about the license can be found on
+ * 			http://www.dbinfrago.com/planpro
  * 
- * This Document is licensed under the open source license RailPL V1.1.
- * 
- * More information about the license can be found on
- * http://www.dbinfrago.com/planpro
- * 
- * Contents of the file:
- * XML Schema for PlanPro interface.
+ * 			Contents of the file:
+ * 			XML Schema for PlanPro interface.
  * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf

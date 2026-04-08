@@ -48,7 +48,6 @@ public class Bue4Impl extends Signalbegriff_ID_TypeClassImpl implements Bue4 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return true;
 	}
@@ -58,7 +57,6 @@ public class Bue4Impl extends Signalbegriff_ID_TypeClassImpl implements Bue4 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "rechteckige weiße Tafel mit schwarzem P oder rechteckige schwarze Tafel mit weißem Rand und weißem P";
 	}
@@ -68,7 +66,6 @@ public class Bue4Impl extends Signalbegriff_ID_TypeClassImpl implements Bue4 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class Bue4Impl extends Signalbegriff_ID_TypeClassImpl implements Bue4 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class Bue4Impl extends Signalbegriff_ID_TypeClassImpl implements Bue4 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return true;
 	}
@@ -98,7 +93,6 @@ public class Bue4Impl extends Signalbegriff_ID_TypeClassImpl implements Bue4 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return true;
 	}
@@ -108,7 +102,6 @@ public class Bue4Impl extends Signalbegriff_ID_TypeClassImpl implements Bue4 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "Bü 4";
 	}
@@ -118,7 +111,6 @@ public class Bue4Impl extends Signalbegriff_ID_TypeClassImpl implements Bue4 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDV() {
 		return "Bü 4";
 	}
@@ -128,7 +120,6 @@ public class Bue4Impl extends Signalbegriff_ID_TypeClassImpl implements Bue4 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "Pfeiftafel";
 	}
@@ -138,7 +129,6 @@ public class Bue4Impl extends Signalbegriff_ID_TypeClassImpl implements Bue4 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -148,7 +138,6 @@ public class Bue4Impl extends Signalbegriff_ID_TypeClassImpl implements Bue4 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

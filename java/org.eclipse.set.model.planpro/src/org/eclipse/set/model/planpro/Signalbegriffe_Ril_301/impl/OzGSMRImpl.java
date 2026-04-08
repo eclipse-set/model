@@ -48,7 +48,6 @@ public class OzGSMRImpl extends Signalbegriff_ID_TypeClassImpl implements OzGSMR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class OzGSMRImpl extends Signalbegriff_ID_TypeClassImpl implements OzGSMR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "weiße rechteckige Tafel mit schwarzem Rand, Telefonhörersymbol, Aufschrift “GSM-R” und Landeskennzeichen “D”";
 	}
@@ -68,7 +66,6 @@ public class OzGSMRImpl extends Signalbegriff_ID_TypeClassImpl implements OzGSMR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class OzGSMRImpl extends Signalbegriff_ID_TypeClassImpl implements OzGSMR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class OzGSMRImpl extends Signalbegriff_ID_TypeClassImpl implements OzGSMR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return false;
 	}
@@ -98,7 +93,6 @@ public class OzGSMRImpl extends Signalbegriff_ID_TypeClassImpl implements OzGSMR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return false;
 	}
@@ -108,7 +102,6 @@ public class OzGSMRImpl extends Signalbegriff_ID_TypeClassImpl implements OzGSMR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "GSM-R-Funknetztafel";
 	}
@@ -118,7 +111,6 @@ public class OzGSMRImpl extends Signalbegriff_ID_TypeClassImpl implements OzGSMR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -128,7 +120,6 @@ public class OzGSMRImpl extends Signalbegriff_ID_TypeClassImpl implements OzGSMR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

@@ -48,7 +48,6 @@ public class Hl5Impl extends Signalbegriff_ID_TypeClassImpl implements Hl5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class Hl5Impl extends Signalbegriff_ID_TypeClassImpl implements Hl5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "ein gelbes Licht mit einem grünen Lichtstreifen, darüber ein grünes Blinklicht";
 	}
@@ -68,7 +66,6 @@ public class Hl5Impl extends Signalbegriff_ID_TypeClassImpl implements Hl5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return false;
 	}
@@ -78,7 +75,6 @@ public class Hl5Impl extends Signalbegriff_ID_TypeClassImpl implements Hl5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class Hl5Impl extends Signalbegriff_ID_TypeClassImpl implements Hl5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return true;
 	}
@@ -98,7 +93,6 @@ public class Hl5Impl extends Signalbegriff_ID_TypeClassImpl implements Hl5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return false;
 	}
@@ -108,7 +102,6 @@ public class Hl5Impl extends Signalbegriff_ID_TypeClassImpl implements Hl5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDV() {
 		return "Hl 5";
 	}
@@ -118,7 +111,6 @@ public class Hl5Impl extends Signalbegriff_ID_TypeClassImpl implements Hl5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return true;
 	}
@@ -128,7 +120,6 @@ public class Hl5Impl extends Signalbegriff_ID_TypeClassImpl implements Hl5 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

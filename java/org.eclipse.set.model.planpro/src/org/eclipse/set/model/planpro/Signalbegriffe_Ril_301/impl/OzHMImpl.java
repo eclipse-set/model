@@ -48,7 +48,6 @@ public class OzHMImpl extends Signalbegriff_ID_TypeClassImpl implements OzHM {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class OzHMImpl extends Signalbegriff_ID_TypeClassImpl implements OzHM {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "Der Melder zeigt ein stilisiertes Formhauptsignal in Haltstellung in der Regel in Form eines Zusatzanzeigers";
 	}
@@ -68,7 +66,6 @@ public class OzHMImpl extends Signalbegriff_ID_TypeClassImpl implements OzHM {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class OzHMImpl extends Signalbegriff_ID_TypeClassImpl implements OzHM {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class OzHMImpl extends Signalbegriff_ID_TypeClassImpl implements OzHM {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return false;
 	}
@@ -98,7 +93,6 @@ public class OzHMImpl extends Signalbegriff_ID_TypeClassImpl implements OzHM {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return false;
 	}
@@ -108,7 +102,6 @@ public class OzHMImpl extends Signalbegriff_ID_TypeClassImpl implements OzHM {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "HM";
 	}
@@ -118,7 +111,6 @@ public class OzHMImpl extends Signalbegriff_ID_TypeClassImpl implements OzHM {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDV() {
 		return "HM";
 	}
@@ -128,7 +120,6 @@ public class OzHMImpl extends Signalbegriff_ID_TypeClassImpl implements OzHM {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "Signalhaltmelder";
 	}
@@ -138,7 +129,6 @@ public class OzHMImpl extends Signalbegriff_ID_TypeClassImpl implements OzHM {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return true;
 	}
@@ -148,7 +138,6 @@ public class OzHMImpl extends Signalbegriff_ID_TypeClassImpl implements OzHM {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

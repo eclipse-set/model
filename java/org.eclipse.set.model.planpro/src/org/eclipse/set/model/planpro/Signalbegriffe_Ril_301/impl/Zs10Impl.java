@@ -48,7 +48,6 @@ public class Zs10Impl extends Signalbegriff_ID_TypeClassImpl implements Zs10 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class Zs10Impl extends Signalbegriff_ID_TypeClassImpl implements Zs10 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "weißer Pfeil mit Spitze nach oben auf pfeilförmiger, schwarzer Tafel bzw. weißleuchtender Pfeil mit Spitze nach oben";
 	}
@@ -68,7 +66,6 @@ public class Zs10Impl extends Signalbegriff_ID_TypeClassImpl implements Zs10 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class Zs10Impl extends Signalbegriff_ID_TypeClassImpl implements Zs10 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return false;
 	}
@@ -88,7 +84,6 @@ public class Zs10Impl extends Signalbegriff_ID_TypeClassImpl implements Zs10 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return false;
 	}
@@ -98,7 +93,6 @@ public class Zs10Impl extends Signalbegriff_ID_TypeClassImpl implements Zs10 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return true;
 	}
@@ -108,7 +102,6 @@ public class Zs10Impl extends Signalbegriff_ID_TypeClassImpl implements Zs10 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "Zs 10";
 	}
@@ -118,7 +111,6 @@ public class Zs10Impl extends Signalbegriff_ID_TypeClassImpl implements Zs10 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "Endesignal";
 	}
@@ -128,7 +120,6 @@ public class Zs10Impl extends Signalbegriff_ID_TypeClassImpl implements Zs10 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -138,7 +129,6 @@ public class Zs10Impl extends Signalbegriff_ID_TypeClassImpl implements Zs10 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

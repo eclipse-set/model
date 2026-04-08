@@ -48,7 +48,6 @@ public class Ra11bImpl extends Signalbegriff_ID_TypeClassImpl implements Ra11b {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return true;
 	}
@@ -58,7 +57,6 @@ public class Ra11bImpl extends Signalbegriff_ID_TypeClassImpl implements Ra11b {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "weißes W mit schwarzem Rand";
 	}
@@ -68,7 +66,6 @@ public class Ra11bImpl extends Signalbegriff_ID_TypeClassImpl implements Ra11b {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return false;
 	}
@@ -78,7 +75,6 @@ public class Ra11bImpl extends Signalbegriff_ID_TypeClassImpl implements Ra11b {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class Ra11bImpl extends Signalbegriff_ID_TypeClassImpl implements Ra11b {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return true;
 	}
@@ -98,7 +93,6 @@ public class Ra11bImpl extends Signalbegriff_ID_TypeClassImpl implements Ra11b {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return false;
 	}
@@ -108,7 +102,6 @@ public class Ra11bImpl extends Signalbegriff_ID_TypeClassImpl implements Ra11b {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDV() {
 		return "Ra 11b";
 	}
@@ -118,7 +111,6 @@ public class Ra11bImpl extends Signalbegriff_ID_TypeClassImpl implements Ra11b {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "Wartezeichen";
 	}
@@ -128,7 +120,6 @@ public class Ra11bImpl extends Signalbegriff_ID_TypeClassImpl implements Ra11b {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -138,7 +129,6 @@ public class Ra11bImpl extends Signalbegriff_ID_TypeClassImpl implements Ra11b {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

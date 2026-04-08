@@ -48,7 +48,6 @@ public class Bue3Impl extends Signalbegriff_ID_TypeClassImpl implements Bue3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class Bue3Impl extends Signalbegriff_ID_TypeClassImpl implements Bue3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "schwarz-weiß waagerecht gestreifte rückstrahlende Tafel";
 	}
@@ -68,7 +66,6 @@ public class Bue3Impl extends Signalbegriff_ID_TypeClassImpl implements Bue3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class Bue3Impl extends Signalbegriff_ID_TypeClassImpl implements Bue3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return false;
 	}
@@ -88,7 +84,6 @@ public class Bue3Impl extends Signalbegriff_ID_TypeClassImpl implements Bue3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return false;
 	}
@@ -98,7 +93,6 @@ public class Bue3Impl extends Signalbegriff_ID_TypeClassImpl implements Bue3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return true;
 	}
@@ -108,7 +102,6 @@ public class Bue3Impl extends Signalbegriff_ID_TypeClassImpl implements Bue3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "Bü 3";
 	}
@@ -118,7 +111,6 @@ public class Bue3Impl extends Signalbegriff_ID_TypeClassImpl implements Bue3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "Merktafel";
 	}
@@ -128,7 +120,6 @@ public class Bue3Impl extends Signalbegriff_ID_TypeClassImpl implements Bue3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -138,7 +129,6 @@ public class Bue3Impl extends Signalbegriff_ID_TypeClassImpl implements Bue3 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

@@ -48,7 +48,6 @@ public class El34ZusatzImpl extends Signalbegriff_ID_TypeClassImpl implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return true;
 	}
@@ -58,7 +57,6 @@ public class El34ZusatzImpl extends Signalbegriff_ID_TypeClassImpl implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "Zusatztafel, auf der ein weißer Kennbuchstabe gezeigt wird";
 	}
@@ -68,7 +66,6 @@ public class El34ZusatzImpl extends Signalbegriff_ID_TypeClassImpl implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class El34ZusatzImpl extends Signalbegriff_ID_TypeClassImpl implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class El34ZusatzImpl extends Signalbegriff_ID_TypeClassImpl implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return false;
 	}
@@ -98,7 +93,6 @@ public class El34ZusatzImpl extends Signalbegriff_ID_TypeClassImpl implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return false;
 	}
@@ -108,7 +102,6 @@ public class El34ZusatzImpl extends Signalbegriff_ID_TypeClassImpl implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "Zusatztafel “Richtungsangabe“";
 	}
@@ -118,7 +111,6 @@ public class El34ZusatzImpl extends Signalbegriff_ID_TypeClassImpl implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -128,7 +120,6 @@ public class El34ZusatzImpl extends Signalbegriff_ID_TypeClassImpl implements El
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

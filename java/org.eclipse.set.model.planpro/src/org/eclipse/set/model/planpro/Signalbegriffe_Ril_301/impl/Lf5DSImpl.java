@@ -48,7 +48,6 @@ public class Lf5DSImpl extends Signalbegriff_ID_TypeClassImpl implements Lf5DS {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class Lf5DSImpl extends Signalbegriff_ID_TypeClassImpl implements Lf5DS {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "rechteckige, auf der Schmalseite stehende weiße Tafel mit schwarzem A";
 	}
@@ -68,7 +66,6 @@ public class Lf5DSImpl extends Signalbegriff_ID_TypeClassImpl implements Lf5DS {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return false;
 	}
@@ -78,7 +75,6 @@ public class Lf5DSImpl extends Signalbegriff_ID_TypeClassImpl implements Lf5DS {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return false;
 	}
@@ -88,7 +84,6 @@ public class Lf5DSImpl extends Signalbegriff_ID_TypeClassImpl implements Lf5DS {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return false;
 	}
@@ -98,7 +93,6 @@ public class Lf5DSImpl extends Signalbegriff_ID_TypeClassImpl implements Lf5DS {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return false;
 	}
@@ -108,7 +102,6 @@ public class Lf5DSImpl extends Signalbegriff_ID_TypeClassImpl implements Lf5DS {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "Lf 5";
 	}
@@ -118,7 +111,6 @@ public class Lf5DSImpl extends Signalbegriff_ID_TypeClassImpl implements Lf5DS {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "Anfangtafel";
 	}
@@ -128,7 +120,6 @@ public class Lf5DSImpl extends Signalbegriff_ID_TypeClassImpl implements Lf5DS {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -138,7 +129,6 @@ public class Lf5DSImpl extends Signalbegriff_ID_TypeClassImpl implements Lf5DS {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

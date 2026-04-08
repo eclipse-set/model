@@ -48,7 +48,6 @@ public class Lf1WdhImpl extends Signalbegriff_ID_TypeClassImpl implements Lf1Wdh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return true;
 	}
@@ -58,7 +57,6 @@ public class Lf1WdhImpl extends Signalbegriff_ID_TypeClassImpl implements Lf1Wdh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "zweites Signal Lf 1 (Wiederholer)";
 	}
@@ -68,7 +66,6 @@ public class Lf1WdhImpl extends Signalbegriff_ID_TypeClassImpl implements Lf1Wdh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class Lf1WdhImpl extends Signalbegriff_ID_TypeClassImpl implements Lf1Wdh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class Lf1WdhImpl extends Signalbegriff_ID_TypeClassImpl implements Lf1Wdh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return true;
 	}
@@ -98,7 +93,6 @@ public class Lf1WdhImpl extends Signalbegriff_ID_TypeClassImpl implements Lf1Wdh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return true;
 	}
@@ -108,7 +102,6 @@ public class Lf1WdhImpl extends Signalbegriff_ID_TypeClassImpl implements Lf1Wdh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -118,7 +111,6 @@ public class Lf1WdhImpl extends Signalbegriff_ID_TypeClassImpl implements Lf1Wdh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}

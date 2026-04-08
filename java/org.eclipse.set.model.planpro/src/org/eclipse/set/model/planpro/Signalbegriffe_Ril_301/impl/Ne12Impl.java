@@ -48,7 +48,6 @@ public class Ne12Impl extends Signalbegriff_ID_TypeClassImpl implements Ne12 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isBeleuchtbar() {
 		return false;
 	}
@@ -58,7 +57,6 @@ public class Ne12Impl extends Signalbegriff_ID_TypeClassImpl implements Ne12 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getBeschreibung() {
 		return "rechteckige orangefarbene Tafel mit zwei waagerechten weißen Streifen";
 	}
@@ -68,7 +66,6 @@ public class Ne12Impl extends Signalbegriff_ID_TypeClassImpl implements Ne12 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDS() {
 		return true;
 	}
@@ -78,7 +75,6 @@ public class Ne12Impl extends Signalbegriff_ID_TypeClassImpl implements Ne12 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichDV() {
 		return true;
 	}
@@ -88,7 +84,6 @@ public class Ne12Impl extends Signalbegriff_ID_TypeClassImpl implements Ne12 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnB() {
 		return true;
 	}
@@ -98,7 +93,6 @@ public class Ne12Impl extends Signalbegriff_ID_TypeClassImpl implements Ne12 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isGeltungsbereichSBahnHH() {
 		return true;
 	}
@@ -108,7 +102,6 @@ public class Ne12Impl extends Signalbegriff_ID_TypeClassImpl implements Ne12 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDS() {
 		return "Ne 12";
 	}
@@ -118,7 +111,6 @@ public class Ne12Impl extends Signalbegriff_ID_TypeClassImpl implements Ne12 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getKurzbezeichnungDV() {
 		return "Ne 12";
 	}
@@ -128,7 +120,6 @@ public class Ne12Impl extends Signalbegriff_ID_TypeClassImpl implements Ne12 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public String getLangbezeichnung() {
 		return "Ankündigungsbake";
 	}
@@ -138,7 +129,6 @@ public class Ne12Impl extends Signalbegriff_ID_TypeClassImpl implements Ne12 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isSchaltbar() {
 		return false;
 	}
@@ -148,7 +138,6 @@ public class Ne12Impl extends Signalbegriff_ID_TypeClassImpl implements Ne12 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public boolean isZusatzMoeglich() {
 		return false;
 	}
