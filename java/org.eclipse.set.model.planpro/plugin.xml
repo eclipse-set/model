@@ -406,7 +406,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated PlanPro -->
       <package
-            uri="http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.3"
+            uri="http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.4"
             class="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Signalbegriffe_Ril_301Package"
             genModel="model/PlanPro.genmodel"/>
    </extension>
