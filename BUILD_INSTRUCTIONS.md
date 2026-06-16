@@ -6,8 +6,8 @@ First, instructions on how to work on the component locally using the Eclipse ID
 ## Prerequisites
 
 - A Java Development Kit 21
-- Maven (3.9.6) 
-- Eclipse IDE (2023-12)
+- Maven (3.9.9) 
+- Eclipse IDE (2025-12)
 
 # Development
 
