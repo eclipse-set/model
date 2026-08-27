@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Layoutinformationen.impl;
 
@@ -156,8 +157,9 @@ public class Lageplan_ZustandImpl extends Ur_ObjektImpl implements Lageplan_Zust
 				return basicSetIDLageplan(null, msgs);
 			case LayoutinformationenPackage.LAGEPLAN_ZUSTAND__REFERENZ_LST_ZUSTAND:
 				return ((InternalEList<?>)getReferenzLSTZustand()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -172,8 +174,9 @@ public class Lageplan_ZustandImpl extends Ur_ObjektImpl implements Lageplan_Zust
 				return getIDLageplan();
 			case LayoutinformationenPackage.LAGEPLAN_ZUSTAND__REFERENZ_LST_ZUSTAND:
 				return getReferenzLSTZustand();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -192,8 +195,10 @@ public class Lageplan_ZustandImpl extends Ur_ObjektImpl implements Lageplan_Zust
 				getReferenzLSTZustand().clear();
 				getReferenzLSTZustand().addAll((Collection<? extends Referenz_LST_Zustand_TypeClass>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -210,8 +215,10 @@ public class Lageplan_ZustandImpl extends Ur_ObjektImpl implements Lageplan_Zust
 			case LayoutinformationenPackage.LAGEPLAN_ZUSTAND__REFERENZ_LST_ZUSTAND:
 				getReferenzLSTZustand().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -226,8 +233,9 @@ public class Lageplan_ZustandImpl extends Ur_ObjektImpl implements Lageplan_Zust
 				return iDLageplan != null;
 			case LayoutinformationenPackage.LAGEPLAN_ZUSTAND__REFERENZ_LST_ZUSTAND:
 				return referenzLSTZustand != null && !referenzLSTZustand.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Lageplan_ZustandImpl

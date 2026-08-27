@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Nahbedienung;
 
@@ -158,8 +159,8 @@ public enum ENUMNBArt implements Enumerator {
 			case ENUMNB_ART_NB_G_VALUE: return ENUMNB_ART_NB_G;
 			case ENUMNB_ART_NB_R_VALUE: return ENUMNB_ART_NB_R;
 			case ENUMNB_ART_NB_W_VALUE: return ENUMNB_ART_NB_W;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

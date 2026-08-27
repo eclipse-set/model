@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Weichen_und_Gleissperren;
 
@@ -181,8 +182,8 @@ public enum ENUMBesonderesFahrwegelement implements Enumerator {
 			case ENUM_BESONDERES_FAHRWEGELEMENT_BEWEGLICHE_BRÜCKE_VALUE: return ENUM_BESONDERES_FAHRWEGELEMENT_BEWEGLICHE_BRÜCKE;
 			case ENUM_BESONDERES_FAHRWEGELEMENT_SONSTIGE_VALUE: return ENUM_BESONDERES_FAHRWEGELEMENT_SONSTIGE;
 			case ENUM_BESONDERES_FAHRWEGELEMENT_WEHRKAMMERTOR_VALUE: return ENUM_BESONDERES_FAHRWEGELEMENT_WEHRKAMMERTOR;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

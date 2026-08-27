@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Zuglenkung;
 
@@ -135,8 +136,8 @@ public enum ENUMLenkziffernstellen implements Enumerator {
 		switch (value) {
 			case ENUM_LENKZIFFERNSTELLEN_0_VALUE: return ENUM_LENKZIFFERNSTELLEN_0;
 			case ENUM_LENKZIFFERNSTELLEN_1_VALUE: return ENUM_LENKZIFFERNSTELLEN_1;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

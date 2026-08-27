@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl;
 
@@ -240,8 +241,9 @@ public class ZN_ZBSImpl extends Basis_ObjektImpl implements ZN_ZBS {
 				return basicSetIPAdresse(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN_ZBS__ZBS_SCHNITTSTELLE:
 				return basicSetZBSSchnittstelle(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,8 +260,9 @@ public class ZN_ZBSImpl extends Basis_ObjektImpl implements ZN_ZBS {
 				return getIPAdresse();
 			case ZugnummernmeldeanlagePackage.ZN_ZBS__ZBS_SCHNITTSTELLE:
 				return getZBSSchnittstelle();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -279,8 +282,10 @@ public class ZN_ZBSImpl extends Basis_ObjektImpl implements ZN_ZBS {
 			case ZugnummernmeldeanlagePackage.ZN_ZBS__ZBS_SCHNITTSTELLE:
 				setZBSSchnittstelle((ZBS_Schnittstelle_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -300,8 +305,10 @@ public class ZN_ZBSImpl extends Basis_ObjektImpl implements ZN_ZBS {
 			case ZugnummernmeldeanlagePackage.ZN_ZBS__ZBS_SCHNITTSTELLE:
 				setZBSSchnittstelle((ZBS_Schnittstelle_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -318,8 +325,9 @@ public class ZN_ZBSImpl extends Basis_ObjektImpl implements ZN_ZBS {
 				return iPAdresse != null;
 			case ZugnummernmeldeanlagePackage.ZN_ZBS__ZBS_SCHNITTSTELLE:
 				return zBSSchnittstelle != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZN_ZBSImpl

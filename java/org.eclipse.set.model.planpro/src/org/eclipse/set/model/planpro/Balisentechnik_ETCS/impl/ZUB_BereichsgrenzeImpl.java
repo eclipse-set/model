@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -490,8 +491,9 @@ public class ZUB_BereichsgrenzeImpl extends Punkt_ObjektImpl implements ZUB_Bere
 				return ((InternalEList<?>)getZUBBereichsgrenzeNachZBS()).basicRemove(otherEnd, msgs);
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE__ZUB_BGRENZE_RBC_WECHSEL:
 				return ((InternalEList<?>)getZUBBgrenzeRBCWechsel()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -526,8 +528,9 @@ public class ZUB_BereichsgrenzeImpl extends Punkt_ObjektImpl implements ZUB_Bere
 				return getZUBBereichsgrenzeNachZBS();
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE__ZUB_BGRENZE_RBC_WECHSEL:
 				return getZUBBgrenzeRBCWechsel();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -584,8 +587,10 @@ public class ZUB_BereichsgrenzeImpl extends Punkt_ObjektImpl implements ZUB_Bere
 				getZUBBgrenzeRBCWechsel().clear();
 				getZUBBgrenzeRBCWechsel().addAll((Collection<? extends ZUB_Bgrenze_RBC_Wechsel_AttributeGroup>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -632,8 +637,10 @@ public class ZUB_BereichsgrenzeImpl extends Punkt_ObjektImpl implements ZUB_Bere
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE__ZUB_BGRENZE_RBC_WECHSEL:
 				getZUBBgrenzeRBCWechsel().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -668,8 +675,9 @@ public class ZUB_BereichsgrenzeImpl extends Punkt_ObjektImpl implements ZUB_Bere
 				return zUBBereichsgrenzeNachZBS != null && !zUBBereichsgrenzeNachZBS.isEmpty();
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE__ZUB_BGRENZE_RBC_WECHSEL:
 				return zUBBgrenzeRBCWechsel != null && !zUBBgrenzeRBCWechsel.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZUB_BereichsgrenzeImpl

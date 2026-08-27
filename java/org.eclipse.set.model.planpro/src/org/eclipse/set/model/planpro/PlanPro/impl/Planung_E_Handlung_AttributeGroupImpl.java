@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.PlanPro.impl;
 
@@ -301,8 +302,9 @@ public class Planung_E_Handlung_AttributeGroupImpl extends EObjectImpl implement
 				return ((InternalEList<?>)getPlanungESonstige()).basicRemove(otherEnd, msgs);
 			case PlanProPackage.PLANUNG_EHANDLUNG_ATTRIBUTE_GROUP__PLANUNG_EUEBERNAHME:
 				return ((InternalEList<?>)getPlanungEUebernahme()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -331,8 +333,9 @@ public class Planung_E_Handlung_AttributeGroupImpl extends EObjectImpl implement
 				return getPlanungESonstige();
 			case PlanProPackage.PLANUNG_EHANDLUNG_ATTRIBUTE_GROUP__PLANUNG_EUEBERNAHME:
 				return getPlanungEUebernahme();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -380,8 +383,10 @@ public class Planung_E_Handlung_AttributeGroupImpl extends EObjectImpl implement
 				getPlanungEUebernahme().clear();
 				getPlanungEUebernahme().addAll((Collection<? extends Akteur_Zuordnung>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -419,8 +424,10 @@ public class Planung_E_Handlung_AttributeGroupImpl extends EObjectImpl implement
 			case PlanProPackage.PLANUNG_EHANDLUNG_ATTRIBUTE_GROUP__PLANUNG_EUEBERNAHME:
 				getPlanungEUebernahme().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -449,8 +456,9 @@ public class Planung_E_Handlung_AttributeGroupImpl extends EObjectImpl implement
 				return planungESonstige != null && !planungESonstige.isEmpty();
 			case PlanProPackage.PLANUNG_EHANDLUNG_ATTRIBUTE_GROUP__PLANUNG_EUEBERNAHME:
 				return planungEUebernahme != null && !planungEUebernahme.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Planung_E_Handlung_AttributeGroupImpl

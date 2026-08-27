@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.PlanPro.impl;
 
@@ -651,8 +652,9 @@ public class Planung_E_Allg_AttributeGroupImpl extends EObjectImpl implements Pl
 				return basicSetPlanungEArt(null, msgs);
 			case PlanProPackage.PLANUNG_EALLG_ATTRIBUTE_GROUP__PLANUNG_PHASE:
 				return basicSetPlanungPhase(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -683,8 +685,9 @@ public class Planung_E_Allg_AttributeGroupImpl extends EObjectImpl implements Pl
 				return getPlanungEArt();
 			case PlanProPackage.PLANUNG_EALLG_ATTRIBUTE_GROUP__PLANUNG_PHASE:
 				return getPlanungPhase();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -725,8 +728,10 @@ public class Planung_E_Allg_AttributeGroupImpl extends EObjectImpl implements Pl
 			case PlanProPackage.PLANUNG_EALLG_ATTRIBUTE_GROUP__PLANUNG_PHASE:
 				setPlanungPhase((Planung_Phase_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -767,8 +772,10 @@ public class Planung_E_Allg_AttributeGroupImpl extends EObjectImpl implements Pl
 			case PlanProPackage.PLANUNG_EALLG_ATTRIBUTE_GROUP__PLANUNG_PHASE:
 				setPlanungPhase((Planung_Phase_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -799,8 +806,9 @@ public class Planung_E_Allg_AttributeGroupImpl extends EObjectImpl implements Pl
 				return planungEArt != null;
 			case PlanProPackage.PLANUNG_EALLG_ATTRIBUTE_GROUP__PLANUNG_PHASE:
 				return planungPhase != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Planung_E_Allg_AttributeGroupImpl

@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Block.impl;
 
@@ -179,8 +180,9 @@ public class Block_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return basicSetSchaltung(null, msgs);
 			case BlockPackage.BLOCK_ANLAGE_ALLG_ATTRIBUTE_GROUP__SCHUTZUEBERTRAGER:
 				return basicSetSchutzuebertrager(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -195,8 +197,9 @@ public class Block_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return getSchaltung();
 			case BlockPackage.BLOCK_ANLAGE_ALLG_ATTRIBUTE_GROUP__SCHUTZUEBERTRAGER:
 				return getSchutzuebertrager();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -213,8 +216,10 @@ public class Block_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements
 			case BlockPackage.BLOCK_ANLAGE_ALLG_ATTRIBUTE_GROUP__SCHUTZUEBERTRAGER:
 				setSchutzuebertrager((Schutzuebertrager_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -231,8 +236,10 @@ public class Block_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements
 			case BlockPackage.BLOCK_ANLAGE_ALLG_ATTRIBUTE_GROUP__SCHUTZUEBERTRAGER:
 				setSchutzuebertrager((Schutzuebertrager_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -247,8 +254,9 @@ public class Block_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements
 				return schaltung != null;
 			case BlockPackage.BLOCK_ANLAGE_ALLG_ATTRIBUTE_GROUP__SCHUTZUEBERTRAGER:
 				return schutzuebertrager != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Block_Anlage_Allg_AttributeGroupImpl

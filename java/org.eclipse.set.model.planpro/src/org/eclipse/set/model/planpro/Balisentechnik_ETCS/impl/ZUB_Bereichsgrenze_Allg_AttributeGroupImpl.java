@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -209,8 +210,9 @@ public class ZUB_Bereichsgrenze_Allg_AttributeGroupImpl extends EObjectImpl impl
 				return ((InternalEList<?>)getSystemVorGrenze()).basicRemove(otherEnd, msgs);
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_ALLG_ATTRIBUTE_GROUP__SYSTEM_VOR_GRENZE_BESONDERS:
 				return ((InternalEList<?>)getSystemVorGrenzeBesonders()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -229,8 +231,9 @@ public class ZUB_Bereichsgrenze_Allg_AttributeGroupImpl extends EObjectImpl impl
 				return getSystemVorGrenze();
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_ALLG_ATTRIBUTE_GROUP__SYSTEM_VOR_GRENZE_BESONDERS:
 				return getSystemVorGrenzeBesonders();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -257,8 +260,10 @@ public class ZUB_Bereichsgrenze_Allg_AttributeGroupImpl extends EObjectImpl impl
 				getSystemVorGrenzeBesonders().clear();
 				getSystemVorGrenzeBesonders().addAll((Collection<? extends System_Vor_Grenze_Besonders_TypeClass>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -281,8 +286,10 @@ public class ZUB_Bereichsgrenze_Allg_AttributeGroupImpl extends EObjectImpl impl
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_ALLG_ATTRIBUTE_GROUP__SYSTEM_VOR_GRENZE_BESONDERS:
 				getSystemVorGrenzeBesonders().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -301,8 +308,9 @@ public class ZUB_Bereichsgrenze_Allg_AttributeGroupImpl extends EObjectImpl impl
 				return systemVorGrenze != null && !systemVorGrenze.isEmpty();
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_ALLG_ATTRIBUTE_GROUP__SYSTEM_VOR_GRENZE_BESONDERS:
 				return systemVorGrenzeBesonders != null && !systemVorGrenzeBesonders.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZUB_Bereichsgrenze_Allg_AttributeGroupImpl

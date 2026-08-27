@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Signale.impl;
 
@@ -120,8 +121,9 @@ public class Signal_Fstr_Aus_Inselgleis_AttributeGroupImpl extends EObjectImpl i
 				return ((InternalEList<?>)getIDRaFahrtGleichzeitigVerbot()).basicRemove(otherEnd, msgs);
 			case SignalePackage.SIGNAL_FSTR_AUS_INSELGLEIS_ATTRIBUTE_GROUP__ID_ZG_FAHRT_GLEICHZEITIG_VERBOT:
 				return ((InternalEList<?>)getIDZgFahrtGleichzeitigVerbot()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,8 +138,9 @@ public class Signal_Fstr_Aus_Inselgleis_AttributeGroupImpl extends EObjectImpl i
 				return getIDRaFahrtGleichzeitigVerbot();
 			case SignalePackage.SIGNAL_FSTR_AUS_INSELGLEIS_ATTRIBUTE_GROUP__ID_ZG_FAHRT_GLEICHZEITIG_VERBOT:
 				return getIDZgFahrtGleichzeitigVerbot();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -157,8 +160,10 @@ public class Signal_Fstr_Aus_Inselgleis_AttributeGroupImpl extends EObjectImpl i
 				getIDZgFahrtGleichzeitigVerbot().clear();
 				getIDZgFahrtGleichzeitigVerbot().addAll((Collection<? extends ID_Signal_Gleisbezechnung_TypeClass>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -175,8 +180,10 @@ public class Signal_Fstr_Aus_Inselgleis_AttributeGroupImpl extends EObjectImpl i
 			case SignalePackage.SIGNAL_FSTR_AUS_INSELGLEIS_ATTRIBUTE_GROUP__ID_ZG_FAHRT_GLEICHZEITIG_VERBOT:
 				getIDZgFahrtGleichzeitigVerbot().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -191,8 +198,9 @@ public class Signal_Fstr_Aus_Inselgleis_AttributeGroupImpl extends EObjectImpl i
 				return iDRaFahrtGleichzeitigVerbot != null && !iDRaFahrtGleichzeitigVerbot.isEmpty();
 			case SignalePackage.SIGNAL_FSTR_AUS_INSELGLEIS_ATTRIBUTE_GROUP__ID_ZG_FAHRT_GLEICHZEITIG_VERBOT:
 				return iDZgFahrtGleichzeitigVerbot != null && !iDZgFahrtGleichzeitigVerbot.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Signal_Fstr_Aus_Inselgleis_AttributeGroupImpl

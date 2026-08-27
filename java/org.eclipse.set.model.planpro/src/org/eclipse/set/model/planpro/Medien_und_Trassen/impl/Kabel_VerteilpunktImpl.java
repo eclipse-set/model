@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Medien_und_Trassen.impl;
 
@@ -240,8 +241,9 @@ public class Kabel_VerteilpunktImpl extends Basis_ObjektImpl implements Kabel_Ve
 				return basicSetIDUnterbringung(null, msgs);
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT__KABEL_VERTEILPUNKT_ART:
 				return basicSetKabelVerteilpunktArt(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,8 +260,9 @@ public class Kabel_VerteilpunktImpl extends Basis_ObjektImpl implements Kabel_Ve
 				return getIDUnterbringung();
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT__KABEL_VERTEILPUNKT_ART:
 				return getKabelVerteilpunktArt();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -279,8 +282,10 @@ public class Kabel_VerteilpunktImpl extends Basis_ObjektImpl implements Kabel_Ve
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT__KABEL_VERTEILPUNKT_ART:
 				setKabelVerteilpunktArt((Kabel_Verteilpunkt_Art_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -300,8 +305,10 @@ public class Kabel_VerteilpunktImpl extends Basis_ObjektImpl implements Kabel_Ve
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT__KABEL_VERTEILPUNKT_ART:
 				setKabelVerteilpunktArt((Kabel_Verteilpunkt_Art_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -318,8 +325,9 @@ public class Kabel_VerteilpunktImpl extends Basis_ObjektImpl implements Kabel_Ve
 				return iDUnterbringung != null;
 			case Medien_und_TrassenPackage.KABEL_VERTEILPUNKT__KABEL_VERTEILPUNKT_ART:
 				return kabelVerteilpunktArt != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Kabel_VerteilpunktImpl

@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.PZB.impl;
 
@@ -417,8 +418,9 @@ public class PZB_ElementImpl extends Punkt_ObjektImpl implements PZB_Element {
 				return basicSetPZBElementGM(null, msgs);
 			case PZBPackage.PZB_ELEMENT__PZB_ELEMENT_GUE:
 				return basicSetPZBElementGUE(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -441,8 +443,9 @@ public class PZB_ElementImpl extends Punkt_ObjektImpl implements PZB_Element {
 				return getPZBElementGM();
 			case PZBPackage.PZB_ELEMENT__PZB_ELEMENT_GUE:
 				return getPZBElementGUE();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -471,8 +474,10 @@ public class PZB_ElementImpl extends Punkt_ObjektImpl implements PZB_Element {
 			case PZBPackage.PZB_ELEMENT__PZB_ELEMENT_GUE:
 				setPZBElementGUE((PZB_Element_GUE_AttributeGroup)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -501,8 +506,10 @@ public class PZB_ElementImpl extends Punkt_ObjektImpl implements PZB_Element {
 			case PZBPackage.PZB_ELEMENT__PZB_ELEMENT_GUE:
 				setPZBElementGUE((PZB_Element_GUE_AttributeGroup)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -525,8 +532,9 @@ public class PZB_ElementImpl extends Punkt_ObjektImpl implements PZB_Element {
 				return pZBElementGM != null;
 			case PZBPackage.PZB_ELEMENT__PZB_ELEMENT_GUE:
 				return pZBElementGUE != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //PZB_ElementImpl

@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -155,8 +156,9 @@ public class ZUB_Bgrenze_RBC_Wechsel_AttributeGroupImpl extends EObjectImpl impl
 				return ((InternalEList<?>)getBgrenzeRBCWechselBTSKette()).basicRemove(otherEnd, msgs);
 			case Balisentechnik_ETCSPackage.ZUB_BGRENZE_RBC_WECHSEL_ATTRIBUTE_GROUP__IDRBC_NACH_GRENZE:
 				return basicSetIDRBCNachGrenze(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -171,8 +173,9 @@ public class ZUB_Bgrenze_RBC_Wechsel_AttributeGroupImpl extends EObjectImpl impl
 				return getBgrenzeRBCWechselBTSKette();
 			case Balisentechnik_ETCSPackage.ZUB_BGRENZE_RBC_WECHSEL_ATTRIBUTE_GROUP__IDRBC_NACH_GRENZE:
 				return getIDRBCNachGrenze();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -191,8 +194,10 @@ public class ZUB_Bgrenze_RBC_Wechsel_AttributeGroupImpl extends EObjectImpl impl
 			case Balisentechnik_ETCSPackage.ZUB_BGRENZE_RBC_WECHSEL_ATTRIBUTE_GROUP__IDRBC_NACH_GRENZE:
 				setIDRBCNachGrenze((ID_RBC_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -209,8 +214,10 @@ public class ZUB_Bgrenze_RBC_Wechsel_AttributeGroupImpl extends EObjectImpl impl
 			case Balisentechnik_ETCSPackage.ZUB_BGRENZE_RBC_WECHSEL_ATTRIBUTE_GROUP__IDRBC_NACH_GRENZE:
 				setIDRBCNachGrenze((ID_RBC_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -225,8 +232,9 @@ public class ZUB_Bgrenze_RBC_Wechsel_AttributeGroupImpl extends EObjectImpl impl
 				return bgrenzeRBCWechselBTSKette != null && !bgrenzeRBCWechselBTSKette.isEmpty();
 			case Balisentechnik_ETCSPackage.ZUB_BGRENZE_RBC_WECHSEL_ATTRIBUTE_GROUP__IDRBC_NACH_GRENZE:
 				return iDRBCNachGrenze != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZUB_Bgrenze_RBC_Wechsel_AttributeGroupImpl

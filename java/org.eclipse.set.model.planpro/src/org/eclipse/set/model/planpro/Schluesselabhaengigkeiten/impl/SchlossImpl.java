@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Schluesselabhaengigkeiten.impl;
 
@@ -653,8 +654,9 @@ public class SchlossImpl extends Basis_ObjektImpl implements Schloss {
 				return basicSetSchlossW(null, msgs);
 			case SchluesselabhaengigkeitenPackage.SCHLOSS__TECHNISCH_BERECHTIGTER:
 				return basicSetTechnischBerechtigter(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -685,8 +687,9 @@ public class SchlossImpl extends Basis_ObjektImpl implements Schloss {
 				return getSchlossW();
 			case SchluesselabhaengigkeitenPackage.SCHLOSS__TECHNISCH_BERECHTIGTER:
 				return getTechnischBerechtigter();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -727,8 +730,10 @@ public class SchlossImpl extends Basis_ObjektImpl implements Schloss {
 			case SchluesselabhaengigkeitenPackage.SCHLOSS__TECHNISCH_BERECHTIGTER:
 				setTechnischBerechtigter((Technisch_Berechtigter_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -769,8 +774,10 @@ public class SchlossImpl extends Basis_ObjektImpl implements Schloss {
 			case SchluesselabhaengigkeitenPackage.SCHLOSS__TECHNISCH_BERECHTIGTER:
 				setTechnischBerechtigter((Technisch_Berechtigter_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -801,8 +808,9 @@ public class SchlossImpl extends Basis_ObjektImpl implements Schloss {
 				return schlossW != null;
 			case SchluesselabhaengigkeitenPackage.SCHLOSS__TECHNISCH_BERECHTIGTER:
 				return technischBerechtigter != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //SchlossImpl

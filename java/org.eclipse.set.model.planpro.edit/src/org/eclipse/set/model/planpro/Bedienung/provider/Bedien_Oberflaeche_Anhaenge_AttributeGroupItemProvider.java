@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Bedienung.provider;
 
@@ -29,10 +30,10 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
+import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
+
 import org.eclipse.set.model.planpro.Bedienung.Bedien_Oberflaeche_Anhaenge_AttributeGroup;
 import org.eclipse.set.model.planpro.Bedienung.BedienungPackage;
-
-import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Verweise.VerweiseFactory;
 
@@ -157,8 +158,10 @@ public class Bedien_Oberflaeche_Anhaenge_AttributeGroupItemProvider
 			case BedienungPackage.BEDIEN_OBERFLAECHE_ANHAENGE_ATTRIBUTE_GROUP__ID_ANHANG_VORGABE_BELU:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

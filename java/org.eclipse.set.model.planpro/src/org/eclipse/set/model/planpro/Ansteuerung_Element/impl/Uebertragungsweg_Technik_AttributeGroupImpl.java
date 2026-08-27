@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Ansteuerung_Element.impl;
 
@@ -356,8 +357,9 @@ public class Uebertragungsweg_Technik_AttributeGroupImpl extends EObjectImpl imp
 				return basicSetTechnikArt(null, msgs);
 			case Ansteuerung_ElementPackage.UEBERTRAGUNGSWEG_TECHNIK_ATTRIBUTE_GROUP__TECHNIK_BESCHREIBUNG:
 				return basicSetTechnikBeschreibung(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -378,8 +380,9 @@ public class Uebertragungsweg_Technik_AttributeGroupImpl extends EObjectImpl imp
 				return getTechnikArt();
 			case Ansteuerung_ElementPackage.UEBERTRAGUNGSWEG_TECHNIK_ATTRIBUTE_GROUP__TECHNIK_BESCHREIBUNG:
 				return getTechnikBeschreibung();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -405,8 +408,10 @@ public class Uebertragungsweg_Technik_AttributeGroupImpl extends EObjectImpl imp
 			case Ansteuerung_ElementPackage.UEBERTRAGUNGSWEG_TECHNIK_ATTRIBUTE_GROUP__TECHNIK_BESCHREIBUNG:
 				setTechnikBeschreibung((Technik_Beschreibung_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -432,8 +437,10 @@ public class Uebertragungsweg_Technik_AttributeGroupImpl extends EObjectImpl imp
 			case Ansteuerung_ElementPackage.UEBERTRAGUNGSWEG_TECHNIK_ATTRIBUTE_GROUP__TECHNIK_BESCHREIBUNG:
 				setTechnikBeschreibung((Technik_Beschreibung_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -454,8 +461,9 @@ public class Uebertragungsweg_Technik_AttributeGroupImpl extends EObjectImpl imp
 				return technikArt != null;
 			case Ansteuerung_ElementPackage.UEBERTRAGUNGSWEG_TECHNIK_ATTRIBUTE_GROUP__TECHNIK_BESCHREIBUNG:
 				return technikBeschreibung != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Uebertragungsweg_Technik_AttributeGroupImpl

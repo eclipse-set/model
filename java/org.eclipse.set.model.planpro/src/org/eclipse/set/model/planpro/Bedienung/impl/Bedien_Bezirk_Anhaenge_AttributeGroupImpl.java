@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Bedienung.impl;
 
@@ -237,8 +238,9 @@ public class Bedien_Bezirk_Anhaenge_AttributeGroupImpl extends EObjectImpl imple
 				return basicSetIDAnhangAnbindungIB3(null, msgs);
 			case BedienungPackage.BEDIEN_BEZIRK_ANHAENGE_ATTRIBUTE_GROUP__ID_ANHANG_STEUERBEZ_UEBERSICHT:
 				return basicSetIDAnhangSteuerbezUebersicht(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -255,8 +257,9 @@ public class Bedien_Bezirk_Anhaenge_AttributeGroupImpl extends EObjectImpl imple
 				return getIDAnhangAnbindungIB3();
 			case BedienungPackage.BEDIEN_BEZIRK_ANHAENGE_ATTRIBUTE_GROUP__ID_ANHANG_STEUERBEZ_UEBERSICHT:
 				return getIDAnhangSteuerbezUebersicht();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -276,8 +279,10 @@ public class Bedien_Bezirk_Anhaenge_AttributeGroupImpl extends EObjectImpl imple
 			case BedienungPackage.BEDIEN_BEZIRK_ANHAENGE_ATTRIBUTE_GROUP__ID_ANHANG_STEUERBEZ_UEBERSICHT:
 				setIDAnhangSteuerbezUebersicht((ID_Anhang_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -297,8 +302,10 @@ public class Bedien_Bezirk_Anhaenge_AttributeGroupImpl extends EObjectImpl imple
 			case BedienungPackage.BEDIEN_BEZIRK_ANHAENGE_ATTRIBUTE_GROUP__ID_ANHANG_STEUERBEZ_UEBERSICHT:
 				setIDAnhangSteuerbezUebersicht((ID_Anhang_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -315,8 +322,9 @@ public class Bedien_Bezirk_Anhaenge_AttributeGroupImpl extends EObjectImpl imple
 				return iDAnhangAnbindungIB3 != null;
 			case BedienungPackage.BEDIEN_BEZIRK_ANHAENGE_ATTRIBUTE_GROUP__ID_ANHANG_STEUERBEZ_UEBERSICHT:
 				return iDAnhangSteuerbezUebersicht != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Bezirk_Anhaenge_AttributeGroupImpl

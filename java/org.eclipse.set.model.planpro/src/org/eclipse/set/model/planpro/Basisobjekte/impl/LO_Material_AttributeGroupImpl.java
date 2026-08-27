@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte.impl;
 
@@ -415,8 +416,9 @@ public class LO_Material_AttributeGroupImpl extends EObjectImpl implements LO_Ma
 				return basicSetLOFirmensachnummer(null, msgs);
 			case BasisobjektePackage.LO_MATERIAL_ATTRIBUTE_GROUP__LO_SERIENNUMMER:
 				return basicSetLOSeriennummer(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -439,8 +441,9 @@ public class LO_Material_AttributeGroupImpl extends EObjectImpl implements LO_Ma
 				return getLOFirmensachnummer();
 			case BasisobjektePackage.LO_MATERIAL_ATTRIBUTE_GROUP__LO_SERIENNUMMER:
 				return getLOSeriennummer();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -469,8 +472,10 @@ public class LO_Material_AttributeGroupImpl extends EObjectImpl implements LO_Ma
 			case BasisobjektePackage.LO_MATERIAL_ATTRIBUTE_GROUP__LO_SERIENNUMMER:
 				setLOSeriennummer((LO_Seriennummer_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -499,8 +504,10 @@ public class LO_Material_AttributeGroupImpl extends EObjectImpl implements LO_Ma
 			case BasisobjektePackage.LO_MATERIAL_ATTRIBUTE_GROUP__LO_SERIENNUMMER:
 				setLOSeriennummer((LO_Seriennummer_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -523,8 +530,9 @@ public class LO_Material_AttributeGroupImpl extends EObjectImpl implements LO_Ma
 				return lOFirmensachnummer != null;
 			case BasisobjektePackage.LO_MATERIAL_ATTRIBUTE_GROUP__LO_SERIENNUMMER:
 				return lOSeriennummer != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //LO_Material_AttributeGroupImpl

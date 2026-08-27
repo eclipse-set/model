@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.ATO.impl;
 
@@ -179,8 +180,9 @@ public class ATO_TS_Instanz_Adresse_AttributeGroupImpl extends EObjectImpl imple
 				return basicSetNIDATOTS(null, msgs);
 			case ATOPackage.ATO_TS_INSTANZ_ADRESSE_ATTRIBUTE_GROUP__NIDCATOTS:
 				return basicSetNIDCATOTS(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -195,8 +197,9 @@ public class ATO_TS_Instanz_Adresse_AttributeGroupImpl extends EObjectImpl imple
 				return getNIDATOTS();
 			case ATOPackage.ATO_TS_INSTANZ_ADRESSE_ATTRIBUTE_GROUP__NIDCATOTS:
 				return getNIDCATOTS();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -213,8 +216,10 @@ public class ATO_TS_Instanz_Adresse_AttributeGroupImpl extends EObjectImpl imple
 			case ATOPackage.ATO_TS_INSTANZ_ADRESSE_ATTRIBUTE_GROUP__NIDCATOTS:
 				setNIDCATOTS((NID_C_ATOTS_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -231,8 +236,10 @@ public class ATO_TS_Instanz_Adresse_AttributeGroupImpl extends EObjectImpl imple
 			case ATOPackage.ATO_TS_INSTANZ_ADRESSE_ATTRIBUTE_GROUP__NIDCATOTS:
 				setNIDCATOTS((NID_C_ATOTS_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -247,8 +254,9 @@ public class ATO_TS_Instanz_Adresse_AttributeGroupImpl extends EObjectImpl imple
 				return nIDATOTS != null;
 			case ATOPackage.ATO_TS_INSTANZ_ADRESSE_ATTRIBUTE_GROUP__NIDCATOTS:
 				return nIDCATOTS != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ATO_TS_Instanz_Adresse_AttributeGroupImpl

@@ -1,22 +1,26 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Verweise.impl;
 
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import org.eclipse.set.model.planpro.BasisTypen.impl.Zeiger_TypeClassImpl;
 
 import org.eclipse.set.model.planpro.Regelzeichnung.Regelzeichnung;
+
 import org.eclipse.set.model.planpro.Verweise.ID_Regelzeichnung_ohne_Proxy_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.VerweisePackage;
 
@@ -44,6 +48,7 @@ public class ID_Regelzeichnung_ohne_Proxy_TypeClassImpl extends Zeiger_TypeClass
 	 * @ordered
 	 */
 	protected Regelzeichnung value;
+
 	/**
 	 * The default value of the '{@link #isInvalidReference() <em>Invalid Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -53,6 +58,7 @@ public class ID_Regelzeichnung_ohne_Proxy_TypeClassImpl extends Zeiger_TypeClass
 	 * @ordered
 	 */
 	protected static final boolean INVALID_REFERENCE_EDEFAULT = false;
+
 	/**
 	 * The cached value of the '{@link #isInvalidReference() <em>Invalid Reference</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -158,8 +164,9 @@ public class ID_Regelzeichnung_ohne_Proxy_TypeClassImpl extends Zeiger_TypeClass
 				return basicGetValue();
 			case VerweisePackage.ID_REGELZEICHNUNG_OHNE_PROXY_TYPE_CLASS__INVALID_REFERENCE:
 				return isInvalidReference();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -176,8 +183,10 @@ public class ID_Regelzeichnung_ohne_Proxy_TypeClassImpl extends Zeiger_TypeClass
 			case VerweisePackage.ID_REGELZEICHNUNG_OHNE_PROXY_TYPE_CLASS__INVALID_REFERENCE:
 				setInvalidReference((Boolean)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -194,8 +203,10 @@ public class ID_Regelzeichnung_ohne_Proxy_TypeClassImpl extends Zeiger_TypeClass
 			case VerweisePackage.ID_REGELZEICHNUNG_OHNE_PROXY_TYPE_CLASS__INVALID_REFERENCE:
 				setInvalidReference(INVALID_REFERENCE_EDEFAULT);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -210,8 +221,9 @@ public class ID_Regelzeichnung_ohne_Proxy_TypeClassImpl extends Zeiger_TypeClass
 				return value != null;
 			case VerweisePackage.ID_REGELZEICHNUNG_OHNE_PROXY_TYPE_CLASS__INVALID_REFERENCE:
 				return invalidReference != INVALID_REFERENCE_EDEFAULT;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 	/**

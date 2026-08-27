@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.PZB;
 
@@ -181,8 +182,8 @@ public enum ENUMPZBArt implements Enumerator {
 			case ENUMPZB_ART_1000_HZ_VALUE: return ENUMPZB_ART_1000_HZ;
 			case ENUMPZB_ART_2000_HZ_VALUE: return ENUMPZB_ART_2000_HZ;
 			case ENUMPZB_ART_500_HZ_VALUE: return ENUMPZB_ART_500_HZ;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

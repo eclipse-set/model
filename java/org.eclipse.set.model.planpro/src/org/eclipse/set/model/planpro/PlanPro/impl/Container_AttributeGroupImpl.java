@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.PlanPro.impl;
 
@@ -4597,8 +4598,9 @@ public class Container_AttributeGroupImpl extends EObjectImpl implements Contain
 				return ((InternalEList<?>)getZUBStreckeneigenschaft()).basicRemove(otherEnd, msgs);
 			case PlanProPackage.CONTAINER_ATTRIBUTE_GROUP__ZUGEINWIRKUNG:
 				return ((InternalEList<?>)getZugeinwirkung()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -4943,8 +4945,9 @@ public class Container_AttributeGroupImpl extends EObjectImpl implements Contain
 				return getZUBStreckeneigenschaft();
 			case PlanProPackage.CONTAINER_ATTRIBUTE_GROUP__ZUGEINWIRKUNG:
 				return getZugeinwirkung();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -5624,8 +5627,10 @@ public class Container_AttributeGroupImpl extends EObjectImpl implements Contain
 				getZugeinwirkung().clear();
 				getZugeinwirkung().addAll((Collection<? extends Zugeinwirkung>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -6137,8 +6142,10 @@ public class Container_AttributeGroupImpl extends EObjectImpl implements Contain
 			case PlanProPackage.CONTAINER_ATTRIBUTE_GROUP__ZUGEINWIRKUNG:
 				getZugeinwirkung().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -6483,8 +6490,9 @@ public class Container_AttributeGroupImpl extends EObjectImpl implements Contain
 				return zUBStreckeneigenschaft != null && !zUBStreckeneigenschaft.isEmpty();
 			case PlanProPackage.CONTAINER_ATTRIBUTE_GROUP__ZUGEINWIRKUNG:
 				return zugeinwirkung != null && !zugeinwirkung.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Container_AttributeGroupImpl

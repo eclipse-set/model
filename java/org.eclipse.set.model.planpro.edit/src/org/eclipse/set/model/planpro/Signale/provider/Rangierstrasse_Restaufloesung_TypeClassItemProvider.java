@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Signale.provider;
 
@@ -23,9 +24,9 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.BasisTypen.provider.BasisAttribut_AttributeGroupItemProvider;
+import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
 
-import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
+import org.eclipse.set.model.planpro.BasisTypen.provider.BasisAttribut_AttributeGroupItemProvider;
 
 import org.eclipse.set.model.planpro.Signale.Rangierstrasse_Restaufloesung_TypeClass;
 import org.eclipse.set.model.planpro.Signale.SignalePackage;
@@ -137,8 +138,10 @@ public class Rangierstrasse_Restaufloesung_TypeClassItemProvider extends BasisAt
 			case SignalePackage.RANGIERSTRASSE_RESTAUFLOESUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

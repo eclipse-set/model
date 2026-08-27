@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang.impl;
 
@@ -120,8 +121,9 @@ public class BUE_Gefahrraum_Eckpunkt_Bezeichnung_AttributeGroupImpl extends EObj
 		switch (featureID) {
 			case BahnuebergangPackage.BUE_GEFAHRRAUM_ECKPUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BUEGFR_ECKPUNKT:
 				return basicSetBezeichnungBUEGFREckpunkt(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +136,9 @@ public class BUE_Gefahrraum_Eckpunkt_Bezeichnung_AttributeGroupImpl extends EObj
 		switch (featureID) {
 			case BahnuebergangPackage.BUE_GEFAHRRAUM_ECKPUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BUEGFR_ECKPUNKT:
 				return getBezeichnungBUEGFREckpunkt();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +152,10 @@ public class BUE_Gefahrraum_Eckpunkt_Bezeichnung_AttributeGroupImpl extends EObj
 			case BahnuebergangPackage.BUE_GEFAHRRAUM_ECKPUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BUEGFR_ECKPUNKT:
 				setBezeichnungBUEGFREckpunkt((Bezeichnung_BUE_GFR_Eckpunkt_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +169,10 @@ public class BUE_Gefahrraum_Eckpunkt_Bezeichnung_AttributeGroupImpl extends EObj
 			case BahnuebergangPackage.BUE_GEFAHRRAUM_ECKPUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BUEGFR_ECKPUNKT:
 				setBezeichnungBUEGFREckpunkt((Bezeichnung_BUE_GFR_Eckpunkt_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +185,9 @@ public class BUE_Gefahrraum_Eckpunkt_Bezeichnung_AttributeGroupImpl extends EObj
 		switch (featureID) {
 			case BahnuebergangPackage.BUE_GEFAHRRAUM_ECKPUNKT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BUEGFR_ECKPUNKT:
 				return bezeichnungBUEGFREckpunkt != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //BUE_Gefahrraum_Eckpunkt_Bezeichnung_AttributeGroupImpl

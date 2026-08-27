@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Weichen_und_Gleissperren.impl;
 
@@ -181,8 +182,9 @@ public class Weichenlaufkette_ZuordnungImpl extends Basis_ObjektImpl implements 
 				return basicSetIDSignal(null, msgs);
 			case Weichen_und_GleissperrenPackage.WEICHENLAUFKETTE_ZUORDNUNG__ID_WEICHENLAUFKETTE:
 				return basicSetIDWeichenlaufkette(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,8 +199,9 @@ public class Weichenlaufkette_ZuordnungImpl extends Basis_ObjektImpl implements 
 				return getIDSignal();
 			case Weichen_und_GleissperrenPackage.WEICHENLAUFKETTE_ZUORDNUNG__ID_WEICHENLAUFKETTE:
 				return getIDWeichenlaufkette();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,8 +218,10 @@ public class Weichenlaufkette_ZuordnungImpl extends Basis_ObjektImpl implements 
 			case Weichen_und_GleissperrenPackage.WEICHENLAUFKETTE_ZUORDNUNG__ID_WEICHENLAUFKETTE:
 				setIDWeichenlaufkette((ID_Weichenlaufkette_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -233,8 +238,10 @@ public class Weichenlaufkette_ZuordnungImpl extends Basis_ObjektImpl implements 
 			case Weichen_und_GleissperrenPackage.WEICHENLAUFKETTE_ZUORDNUNG__ID_WEICHENLAUFKETTE:
 				setIDWeichenlaufkette((ID_Weichenlaufkette_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -249,8 +256,9 @@ public class Weichenlaufkette_ZuordnungImpl extends Basis_ObjektImpl implements 
 				return iDSignal != null;
 			case Weichen_und_GleissperrenPackage.WEICHENLAUFKETTE_ZUORDNUNG__ID_WEICHENLAUFKETTE:
 				return iDWeichenlaufkette != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Weichenlaufkette_ZuordnungImpl

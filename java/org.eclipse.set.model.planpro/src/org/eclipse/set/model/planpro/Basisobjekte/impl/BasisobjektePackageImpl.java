@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte.impl;
 
@@ -833,123 +834,123 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		XMLTypePackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PlanProPackage.eNS_URI);
-		PlanProPackageImpl thePlanProPackage = (PlanProPackageImpl)(registeredPackage instanceof PlanProPackageImpl ? registeredPackage : PlanProPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BasisTypenPackage.eNS_URI);
-		BasisTypenPackageImpl theBasisTypenPackage = (BasisTypenPackageImpl)(registeredPackage instanceof BasisTypenPackageImpl ? registeredPackage : BasisTypenPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ATOPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ATOPackage.eNS_URI);
 		ATOPackageImpl theATOPackage = (ATOPackageImpl)(registeredPackage instanceof ATOPackageImpl ? registeredPackage : ATOPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(VerweisePackage.eNS_URI);
-		VerweisePackageImpl theVerweisePackage = (VerweisePackageImpl)(registeredPackage instanceof VerweisePackageImpl ? registeredPackage : VerweisePackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Ansteuerung_ElementPackage.eNS_URI);
 		Ansteuerung_ElementPackageImpl theAnsteuerung_ElementPackage = (Ansteuerung_ElementPackageImpl)(registeredPackage instanceof Ansteuerung_ElementPackageImpl ? registeredPackage : Ansteuerung_ElementPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BahnsteigPackage.eNS_URI);
 		BahnsteigPackageImpl theBahnsteigPackage = (BahnsteigPackageImpl)(registeredPackage instanceof BahnsteigPackageImpl ? registeredPackage : BahnsteigPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BahnuebergangPackage.eNS_URI);
+		BahnuebergangPackageImpl theBahnuebergangPackage = (BahnuebergangPackageImpl)(registeredPackage instanceof BahnuebergangPackageImpl ? registeredPackage : BahnuebergangPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Balisentechnik_ETCSPackage.eNS_URI);
 		Balisentechnik_ETCSPackageImpl theBalisentechnik_ETCSPackage = (Balisentechnik_ETCSPackageImpl)(registeredPackage instanceof Balisentechnik_ETCSPackageImpl ? registeredPackage : Balisentechnik_ETCSPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BasisTypenPackage.eNS_URI);
+		BasisTypenPackageImpl theBasisTypenPackage = (BasisTypenPackageImpl)(registeredPackage instanceof BasisTypenPackageImpl ? registeredPackage : BasisTypenPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BedienungPackage.eNS_URI);
 		BedienungPackageImpl theBedienungPackage = (BedienungPackageImpl)(registeredPackage instanceof BedienungPackageImpl ? registeredPackage : BedienungPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BlockPackage.eNS_URI);
 		BlockPackageImpl theBlockPackage = (BlockPackageImpl)(registeredPackage instanceof BlockPackageImpl ? registeredPackage : BlockPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BahnuebergangPackage.eNS_URI);
-		BahnuebergangPackageImpl theBahnuebergangPackage = (BahnuebergangPackageImpl)(registeredPackage instanceof BahnuebergangPackageImpl ? registeredPackage : BahnuebergangPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(FlankenschutzPackage.eNS_URI);
-		FlankenschutzPackageImpl theFlankenschutzPackage = (FlankenschutzPackageImpl)(registeredPackage instanceof FlankenschutzPackageImpl ? registeredPackage : FlankenschutzPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(OrtungPackage.eNS_URI);
-		OrtungPackageImpl theOrtungPackage = (OrtungPackageImpl)(registeredPackage instanceof OrtungPackageImpl ? registeredPackage : OrtungPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(FahrstrassePackage.eNS_URI);
 		FahrstrassePackageImpl theFahrstrassePackage = (FahrstrassePackageImpl)(registeredPackage instanceof FahrstrassePackageImpl ? registeredPackage : FahrstrassePackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(FlankenschutzPackage.eNS_URI);
+		FlankenschutzPackageImpl theFlankenschutzPackage = (FlankenschutzPackageImpl)(registeredPackage instanceof FlankenschutzPackageImpl ? registeredPackage : FlankenschutzPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GeodatenPackage.eNS_URI);
 		GeodatenPackageImpl theGeodatenPackage = (GeodatenPackageImpl)(registeredPackage instanceof GeodatenPackageImpl ? registeredPackage : GeodatenPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Weichen_und_GleissperrenPackage.eNS_URI);
-		Weichen_und_GleissperrenPackageImpl theWeichen_und_GleissperrenPackage = (Weichen_und_GleissperrenPackageImpl)(registeredPackage instanceof Weichen_und_GleissperrenPackageImpl ? registeredPackage : Weichen_und_GleissperrenPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(GleisPackage.eNS_URI);
 		GleisPackageImpl theGleisPackage = (GleisPackageImpl)(registeredPackage instanceof GleisPackageImpl ? registeredPackage : GleisPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(LayoutinformationenPackage.eNS_URI);
+		LayoutinformationenPackageImpl theLayoutinformationenPackage = (LayoutinformationenPackageImpl)(registeredPackage instanceof LayoutinformationenPackageImpl ? registeredPackage : LayoutinformationenPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Medien_und_TrassenPackage.eNS_URI);
 		Medien_und_TrassenPackageImpl theMedien_und_TrassenPackage = (Medien_und_TrassenPackageImpl)(registeredPackage instanceof Medien_und_TrassenPackageImpl ? registeredPackage : Medien_und_TrassenPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(NahbedienungPackage.eNS_URI);
 		NahbedienungPackageImpl theNahbedienungPackage = (NahbedienungPackageImpl)(registeredPackage instanceof NahbedienungPackageImpl ? registeredPackage : NahbedienungPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(OrtungPackage.eNS_URI);
+		OrtungPackageImpl theOrtungPackage = (OrtungPackageImpl)(registeredPackage instanceof OrtungPackageImpl ? registeredPackage : OrtungPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PZBPackage.eNS_URI);
 		PZBPackageImpl thePZBPackage = (PZBPackageImpl)(registeredPackage instanceof PZBPackageImpl ? registeredPackage : PZBPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PlanProPackage.eNS_URI);
+		PlanProPackageImpl thePlanProPackage = (PlanProPackageImpl)(registeredPackage instanceof PlanProPackageImpl ? registeredPackage : PlanProPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(RegelzeichnungPackage.eNS_URI);
 		RegelzeichnungPackageImpl theRegelzeichnungPackage = (RegelzeichnungPackageImpl)(registeredPackage instanceof RegelzeichnungPackageImpl ? registeredPackage : RegelzeichnungPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(SchluesselabhaengigkeitenPackage.eNS_URI);
 		SchluesselabhaengigkeitenPackageImpl theSchluesselabhaengigkeitenPackage = (SchluesselabhaengigkeitenPackageImpl)(registeredPackage instanceof SchluesselabhaengigkeitenPackageImpl ? registeredPackage : SchluesselabhaengigkeitenPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(SignalePackage.eNS_URI);
-		SignalePackageImpl theSignalePackage = (SignalePackageImpl)(registeredPackage instanceof SignalePackageImpl ? registeredPackage : SignalePackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI);
+		Signalbegriffe_Ril_301PackageImpl theSignalbegriffe_Ril_301Package = (Signalbegriffe_Ril_301PackageImpl)(registeredPackage instanceof Signalbegriffe_Ril_301PackageImpl ? registeredPackage : Signalbegriffe_Ril_301Package.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_StrukturPackage.eNS_URI);
 		Signalbegriffe_StrukturPackageImpl theSignalbegriffe_StrukturPackage = (Signalbegriffe_StrukturPackageImpl)(registeredPackage instanceof Signalbegriffe_StrukturPackageImpl ? registeredPackage : Signalbegriffe_StrukturPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(SignalePackage.eNS_URI);
+		SignalePackageImpl theSignalePackage = (SignalePackageImpl)(registeredPackage instanceof SignalePackageImpl ? registeredPackage : SignalePackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(VerweisePackage.eNS_URI);
+		VerweisePackageImpl theVerweisePackage = (VerweisePackageImpl)(registeredPackage instanceof VerweisePackageImpl ? registeredPackage : VerweisePackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Weichen_und_GleissperrenPackage.eNS_URI);
+		Weichen_und_GleissperrenPackageImpl theWeichen_und_GleissperrenPackage = (Weichen_und_GleissperrenPackageImpl)(registeredPackage instanceof Weichen_und_GleissperrenPackageImpl ? registeredPackage : Weichen_und_GleissperrenPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ZuglenkungPackage.eNS_URI);
 		ZuglenkungPackageImpl theZuglenkungPackage = (ZuglenkungPackageImpl)(registeredPackage instanceof ZuglenkungPackageImpl ? registeredPackage : ZuglenkungPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ZugnummernmeldeanlagePackage.eNS_URI);
 		ZugnummernmeldeanlagePackageImpl theZugnummernmeldeanlagePackage = (ZugnummernmeldeanlagePackageImpl)(registeredPackage instanceof ZugnummernmeldeanlagePackageImpl ? registeredPackage : ZugnummernmeldeanlagePackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI);
-		Signalbegriffe_Ril_301PackageImpl theSignalbegriffe_Ril_301Package = (Signalbegriffe_Ril_301PackageImpl)(registeredPackage instanceof Signalbegriffe_Ril_301PackageImpl ? registeredPackage : Signalbegriffe_Ril_301Package.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(LayoutinformationenPackage.eNS_URI);
-		LayoutinformationenPackageImpl theLayoutinformationenPackage = (LayoutinformationenPackageImpl)(registeredPackage instanceof LayoutinformationenPackageImpl ? registeredPackage : LayoutinformationenPackage.eINSTANCE);
 
 		// Load packages
-		thePlanProPackage.loadPackage();
-		theBalisentechnik_ETCSPackage.loadPackage();
 		theBahnuebergangPackage.loadPackage();
+		theBalisentechnik_ETCSPackage.loadPackage();
+		thePlanProPackage.loadPackage();
 		theSignalbegriffe_Ril_301Package.loadPackage();
 
 		// Create package meta-data objects
 		theBasisobjektePackage.createPackageContents();
-		theBasisTypenPackage.createPackageContents();
 		theATOPackage.createPackageContents();
-		theVerweisePackage.createPackageContents();
 		theAnsteuerung_ElementPackage.createPackageContents();
 		theBahnsteigPackage.createPackageContents();
+		theBasisTypenPackage.createPackageContents();
 		theBedienungPackage.createPackageContents();
 		theBlockPackage.createPackageContents();
-		theFlankenschutzPackage.createPackageContents();
-		theOrtungPackage.createPackageContents();
 		theFahrstrassePackage.createPackageContents();
+		theFlankenschutzPackage.createPackageContents();
 		theGeodatenPackage.createPackageContents();
-		theWeichen_und_GleissperrenPackage.createPackageContents();
 		theGleisPackage.createPackageContents();
+		theLayoutinformationenPackage.createPackageContents();
 		theMedien_und_TrassenPackage.createPackageContents();
 		theNahbedienungPackage.createPackageContents();
+		theOrtungPackage.createPackageContents();
 		thePZBPackage.createPackageContents();
 		theRegelzeichnungPackage.createPackageContents();
 		theSchluesselabhaengigkeitenPackage.createPackageContents();
-		theSignalePackage.createPackageContents();
 		theSignalbegriffe_StrukturPackage.createPackageContents();
+		theSignalePackage.createPackageContents();
+		theVerweisePackage.createPackageContents();
+		theWeichen_und_GleissperrenPackage.createPackageContents();
 		theZuglenkungPackage.createPackageContents();
 		theZugnummernmeldeanlagePackage.createPackageContents();
-		theLayoutinformationenPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theBasisobjektePackage.initializePackageContents();
-		theBasisTypenPackage.initializePackageContents();
 		theATOPackage.initializePackageContents();
-		theVerweisePackage.initializePackageContents();
 		theAnsteuerung_ElementPackage.initializePackageContents();
 		theBahnsteigPackage.initializePackageContents();
+		theBasisTypenPackage.initializePackageContents();
 		theBedienungPackage.initializePackageContents();
 		theBlockPackage.initializePackageContents();
-		theFlankenschutzPackage.initializePackageContents();
-		theOrtungPackage.initializePackageContents();
 		theFahrstrassePackage.initializePackageContents();
+		theFlankenschutzPackage.initializePackageContents();
 		theGeodatenPackage.initializePackageContents();
-		theWeichen_und_GleissperrenPackage.initializePackageContents();
 		theGleisPackage.initializePackageContents();
+		theLayoutinformationenPackage.initializePackageContents();
 		theMedien_und_TrassenPackage.initializePackageContents();
 		theNahbedienungPackage.initializePackageContents();
+		theOrtungPackage.initializePackageContents();
 		thePZBPackage.initializePackageContents();
 		theRegelzeichnungPackage.initializePackageContents();
 		theSchluesselabhaengigkeitenPackage.initializePackageContents();
-		theSignalePackage.initializePackageContents();
 		theSignalbegriffe_StrukturPackage.initializePackageContents();
+		theSignalePackage.initializePackageContents();
+		theVerweisePackage.initializePackageContents();
+		theWeichen_und_GleissperrenPackage.initializePackageContents();
 		theZuglenkungPackage.initializePackageContents();
 		theZugnummernmeldeanlagePackage.initializePackageContents();
-		theLayoutinformationenPackage.initializePackageContents();
 
 		// Fix loaded packages
-		thePlanProPackage.fixPackageContents();
-		theBalisentechnik_ETCSPackage.fixPackageContents();
 		theBahnuebergangPackage.fixPackageContents();
+		theBalisentechnik_ETCSPackage.fixPackageContents();
+		thePlanProPackage.fixPackageContents();
 		theSignalbegriffe_Ril_301Package.fixPackageContents();
 
 		// Register package validator
@@ -3223,12 +3224,12 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		initEEnum(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.class, "ENUMBVDarstellungInPlan");
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_ANLAGENTABELLE_TRANSITION);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_BALISENPRÜFPROTOKOLL);
-		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_BEDIENEINRICHTUNGSTABELLE_BU);
+		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_BEDIENEINRICHTUNGSTABELLE_BUE);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_BEDIENEINRICHTUNGSTABELLE_STW);
-		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_BU_ABHÄNGIGKEITSTABELLE);
-		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_BU_KABELLAGE_UND_UBERSICHTSPLAN);
-		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_BU_KABELÜBERSICHTSPLAN);
-		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_BU_LAGEPLAN_NTG);
+		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_BUE_ABHÄNGIGKEITSTABELLE);
+		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_BUE_KABELLAGE_UND_UEBERSICHTSPLAN);
+		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_BUE_KABELÜBERSICHTSPLAN);
+		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_BUE_LAGEPLAN_NTG);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_DEADLOCK_TABELLE);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_DURCHRUTSCHWEG_UND_GEFAHRPUNKTTABELLE);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_ELEMENTANSTEUERTABELLE);
@@ -3254,8 +3255,8 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_SCHLOSSTABELLE);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_SICHERUNGSTECHNISCHER_KREUZUNGSPLAN);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_SICHERUNGSTECHNISCHER_LAGEPLAN);
-		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_SICHERUNGSTECHNISCHER_UBERSICHTSPLAN);
-		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_SICHERUNGSTECHNISCHER_UBERSICHTSPLAN_BU);
+		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_SICHERUNGSTECHNISCHER_UEBERSICHTSPLAN);
+		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_SICHERUNGSTECHNISCHER_UEBERSICHTSPLAN_BUE);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_SIGNAL_UND_SCHUTZSTRECKENTABELLE);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_SIGNALTABELLE);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_SONSTIGE);
@@ -3268,16 +3269,16 @@ public class BasisobjektePackageImpl extends EPackageImpl implements Basisobjekt
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_TABELLE_DER_ATO_TS_INSTANZEN);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_TABELLE_DER_EIN_UND_AUSSTIEGE);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_TABELLE_DER_TECHNIK_UND_BEDIENSTANDORTE);
-		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_UBERTRAGUNGSWEGTABELLE);
+		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_UEBERTRAGUNGSWEGTABELLE);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_WEICHENLAUFKETTENTABELLE);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_WEICHENTABELLE);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_ZBS_DATENPUNKTTABELLE_1);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_ZBS_DATENPUNKTTABELLE_2);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_ZBS_DATENPUNKTTABELLE_3);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_ZL_ANSTOSSTABELLE);
-		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_ZLV_BUS_UBERSICHTSPLAN);
+		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_ZLV_BUS_UEBERSICHTSPLAN);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_ZN_TABELLE);
-		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_ZN_UBERSICHTSPLAN);
+		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_ZN_UEBERSICHTSPLAN);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_ZUGSTRASSENTABELLE);
 		addEEnumLiteral(enumbvDarstellungInPlanEEnum, ENUMBVDarstellungInPlan.ENUMBV_DARSTELLUNG_IN_PLAN_ZWIESCHUTZWEICHENTABELLE);
 

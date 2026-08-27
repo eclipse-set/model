@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl;
 
@@ -415,8 +416,9 @@ public class ZLV_Bus_US_Zuordnung_Telegramm_AttributeGroupImpl extends EObjectIm
 				return basicSetTelegramm21(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG_TELEGRAMM_ATTRIBUTE_GROUP__TELEGRAMM30:
 				return basicSetTelegramm30(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -439,8 +441,9 @@ public class ZLV_Bus_US_Zuordnung_Telegramm_AttributeGroupImpl extends EObjectIm
 				return getTelegramm21();
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG_TELEGRAMM_ATTRIBUTE_GROUP__TELEGRAMM30:
 				return getTelegramm30();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -469,8 +472,10 @@ public class ZLV_Bus_US_Zuordnung_Telegramm_AttributeGroupImpl extends EObjectIm
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG_TELEGRAMM_ATTRIBUTE_GROUP__TELEGRAMM30:
 				setTelegramm30((Telegramm_30_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -499,8 +504,10 @@ public class ZLV_Bus_US_Zuordnung_Telegramm_AttributeGroupImpl extends EObjectIm
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG_TELEGRAMM_ATTRIBUTE_GROUP__TELEGRAMM30:
 				setTelegramm30((Telegramm_30_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -523,8 +530,9 @@ public class ZLV_Bus_US_Zuordnung_Telegramm_AttributeGroupImpl extends EObjectIm
 				return telegramm21 != null;
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_US_ZUORDNUNG_TELEGRAMM_ATTRIBUTE_GROUP__TELEGRAMM30:
 				return telegramm30 != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //ZLV_Bus_US_Zuordnung_Telegramm_AttributeGroupImpl

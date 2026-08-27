@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Schluesselabhaengigkeiten;
 
@@ -158,8 +159,8 @@ public enum ENUMBedienungArt implements Enumerator {
 			case ENUM_BEDIENUNG_ART_AUSSEN_VALUE: return ENUM_BEDIENUNG_ART_AUSSEN;
 			case ENUM_BEDIENUNG_ART_AUSSEN_AWANST_VALUE: return ENUM_BEDIENUNG_ART_AUSSEN_AWANST;
 			case ENUM_BEDIENUNG_ART_INNEN_VALUE: return ENUM_BEDIENUNG_ART_INNEN;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

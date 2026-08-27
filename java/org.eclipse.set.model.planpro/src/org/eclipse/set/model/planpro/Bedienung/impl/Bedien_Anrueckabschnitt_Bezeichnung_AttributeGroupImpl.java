@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Bedienung.impl;
 
@@ -120,8 +121,9 @@ public class Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroupImpl extends EObj
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANRUECKABSCHNITT:
 				return basicSetBezBedAnrueckabschnitt(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +136,9 @@ public class Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroupImpl extends EObj
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANRUECKABSCHNITT:
 				return getBezBedAnrueckabschnitt();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +152,10 @@ public class Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroupImpl extends EObj
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANRUECKABSCHNITT:
 				setBezBedAnrueckabschnitt((Bez_Bed_Anrueckabschnitt_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +169,10 @@ public class Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroupImpl extends EObj
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANRUECKABSCHNITT:
 				setBezBedAnrueckabschnitt((Bez_Bed_Anrueckabschnitt_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +185,9 @@ public class Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroupImpl extends EObj
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_ANRUECKABSCHNITT_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_BED_ANRUECKABSCHNITT:
 				return bezBedAnrueckabschnitt != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Anrueckabschnitt_Bezeichnung_AttributeGroupImpl

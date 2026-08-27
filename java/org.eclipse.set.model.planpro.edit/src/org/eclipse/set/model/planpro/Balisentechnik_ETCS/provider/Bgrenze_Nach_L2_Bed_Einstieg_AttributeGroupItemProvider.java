@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.provider;
 
@@ -29,11 +30,11 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
+import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
+
 import org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSFactory;
 import org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage;
 import org.eclipse.set.model.planpro.Balisentechnik_ETCS.Bgrenze_Nach_L2_Bed_Einstieg_AttributeGroup;
-
-import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Verweise.VerweiseFactory;
 
@@ -156,8 +157,10 @@ public class Bgrenze_Nach_L2_Bed_Einstieg_AttributeGroupItemProvider
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_L2_BED_EINSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte.impl;
 
@@ -120,8 +121,9 @@ public abstract class Ur_ObjektImpl extends EObjectImpl implements Ur_Objekt {
 		switch (featureID) {
 			case BasisobjektePackage.UR_OBJEKT__IDENTITAET:
 				return basicSetIdentitaet(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +136,9 @@ public abstract class Ur_ObjektImpl extends EObjectImpl implements Ur_Objekt {
 		switch (featureID) {
 			case BasisobjektePackage.UR_OBJEKT__IDENTITAET:
 				return getIdentitaet();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +152,10 @@ public abstract class Ur_ObjektImpl extends EObjectImpl implements Ur_Objekt {
 			case BasisobjektePackage.UR_OBJEKT__IDENTITAET:
 				setIdentitaet((Identitaet_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +169,10 @@ public abstract class Ur_ObjektImpl extends EObjectImpl implements Ur_Objekt {
 			case BasisobjektePackage.UR_OBJEKT__IDENTITAET:
 				setIdentitaet((Identitaet_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +185,9 @@ public abstract class Ur_ObjektImpl extends EObjectImpl implements Ur_Objekt {
 		switch (featureID) {
 			case BasisobjektePackage.UR_OBJEKT__IDENTITAET:
 				return identitaet != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Ur_ObjektImpl

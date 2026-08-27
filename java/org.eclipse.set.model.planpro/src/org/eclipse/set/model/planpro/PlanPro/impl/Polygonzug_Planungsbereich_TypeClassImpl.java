@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.PlanPro.impl;
 
@@ -55,6 +56,15 @@ public class Polygonzug_Planungsbereich_TypeClassImpl extends BasisAttribut_Attr
 	protected String wert = WERT_EDEFAULT;
 
 	/**
+	 * This is true if the Wert attribute has been set.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean wertESet;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -92,8 +102,35 @@ public class Polygonzug_Planungsbereich_TypeClassImpl extends BasisAttribut_Attr
 	public void setWert(String newWert) {
 		String oldWert = wert;
 		wert = newWert;
+		boolean oldWertESet = wertESet;
+		wertESet = true;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, PlanProPackage.POLYGONZUG_PLANUNGSBEREICH_TYPE_CLASS__WERT, oldWert, wert));
+			eNotify(new ENotificationImpl(this, Notification.SET, PlanProPackage.POLYGONZUG_PLANUNGSBEREICH_TYPE_CLASS__WERT, oldWert, wert, !oldWertESet));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void unsetWert() {
+		String oldWert = wert;
+		boolean oldWertESet = wertESet;
+		wert = WERT_EDEFAULT;
+		wertESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, PlanProPackage.POLYGONZUG_PLANUNGSBEREICH_TYPE_CLASS__WERT, oldWert, WERT_EDEFAULT, oldWertESet));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean isSetWert() {
+		return wertESet;
 	}
 
 	/**
@@ -106,8 +143,9 @@ public class Polygonzug_Planungsbereich_TypeClassImpl extends BasisAttribut_Attr
 		switch (featureID) {
 			case PlanProPackage.POLYGONZUG_PLANUNGSBEREICH_TYPE_CLASS__WERT:
 				return getWert();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -121,8 +159,10 @@ public class Polygonzug_Planungsbereich_TypeClassImpl extends BasisAttribut_Attr
 			case PlanProPackage.POLYGONZUG_PLANUNGSBEREICH_TYPE_CLASS__WERT:
 				setWert((String)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -134,10 +174,12 @@ public class Polygonzug_Planungsbereich_TypeClassImpl extends BasisAttribut_Attr
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case PlanProPackage.POLYGONZUG_PLANUNGSBEREICH_TYPE_CLASS__WERT:
-				setWert(WERT_EDEFAULT);
+				unsetWert();
+				return;
+			default:
+				super.eUnset(featureID);
 				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -149,9 +191,10 @@ public class Polygonzug_Planungsbereich_TypeClassImpl extends BasisAttribut_Attr
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case PlanProPackage.POLYGONZUG_PLANUNGSBEREICH_TYPE_CLASS__WERT:
-				return WERT_EDEFAULT == null ? wert != null : !WERT_EDEFAULT.equals(wert);
+				return isSetWert();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 	/**
@@ -165,7 +208,7 @@ public class Polygonzug_Planungsbereich_TypeClassImpl extends BasisAttribut_Attr
 
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (wert: ");
-		result.append(wert);
+		if (wertESet) result.append(wert); else result.append("<unset>");
 		result.append(')');
 		return result.toString();
 	}

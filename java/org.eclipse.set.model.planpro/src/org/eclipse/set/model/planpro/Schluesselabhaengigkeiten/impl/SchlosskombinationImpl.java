@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Schluesselabhaengigkeiten.impl;
 
@@ -181,8 +182,9 @@ public class SchlosskombinationImpl extends Basis_ObjektImpl implements Schlossk
 				return basicSetBezeichnung(null, msgs);
 			case SchluesselabhaengigkeitenPackage.SCHLOSSKOMBINATION__ID_UNTERBRINGUNG:
 				return basicSetIDUnterbringung(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,8 +199,9 @@ public class SchlosskombinationImpl extends Basis_ObjektImpl implements Schlossk
 				return getBezeichnung();
 			case SchluesselabhaengigkeitenPackage.SCHLOSSKOMBINATION__ID_UNTERBRINGUNG:
 				return getIDUnterbringung();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -215,8 +218,10 @@ public class SchlosskombinationImpl extends Basis_ObjektImpl implements Schlossk
 			case SchluesselabhaengigkeitenPackage.SCHLOSSKOMBINATION__ID_UNTERBRINGUNG:
 				setIDUnterbringung((ID_Unterbringung_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -233,8 +238,10 @@ public class SchlosskombinationImpl extends Basis_ObjektImpl implements Schlossk
 			case SchluesselabhaengigkeitenPackage.SCHLOSSKOMBINATION__ID_UNTERBRINGUNG:
 				setIDUnterbringung((ID_Unterbringung_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -249,8 +256,9 @@ public class SchlosskombinationImpl extends Basis_ObjektImpl implements Schlossk
 				return bezeichnung != null;
 			case SchluesselabhaengigkeitenPackage.SCHLOSSKOMBINATION__ID_UNTERBRINGUNG:
 				return iDUnterbringung != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //SchlosskombinationImpl

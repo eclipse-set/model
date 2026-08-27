@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Signalbegriffe_Ril_301;
 
@@ -28,24 +29,25 @@ import org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriffe_Stru
  * </ul>
  * <!-- end-user-doc -->
  * <!-- begin-model-doc -->
- * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL
- * 			V1.1.
+ * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
  * 
- * 			Weitere Informationen zur Lizenz finden Sie auf
- * 			http://www.dbinfrago.com/planpro
+ * Weitere Informationen zur Lizenz finden Sie auf
+ * http://www.dbinfrago.com/planpro
  * 
- * 			Inhalt der Datei:
- * 			XML Schema für PlanPro Schnittstelle.
+ * Inhalt der Datei:
+ * XML Schema für PlanPro Schnittstelle.
  * 
- * 			Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
- * 			--------------------------------------------------------------------------------
- * 			This Document is licensed under the open source license RailPL V1.1.
+ * Bei Fragen zum Schema wenden Sie sich bitte an planpro@deutschebahn.com
  * 
- * 			More information about the license can be found on
- * 			http://www.dbinfrago.com/planpro
+ * --------------------------------------------------------------------------------
  * 
- * 			Contents of the file:
- * 			XML Schema for PlanPro interface.
+ * This Document is licensed under the open source license RailPL V1.1.
+ * 
+ * More information about the license can be found on
+ * http://www.dbinfrago.com/planpro
+ * 
+ * Contents of the file:
+ * XML Schema for PlanPro interface.
  * Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
  * 
  * Weitere Informationen zur Lizenz finden Sie auf

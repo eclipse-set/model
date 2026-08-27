@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Layoutinformationen.presentation;
 
@@ -78,7 +79,7 @@ import org.eclipse.ui.part.ISetSelectionTarget;
 
 import org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenFactory;
 import org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenPackage;
-import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
+import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
 
 
 import org.eclipse.core.runtime.Path;
@@ -91,7 +92,7 @@ import org.eclipse.emf.ecore.util.ExtendedMetaData;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.StructuredSelection;
 
-import org.eclipse.set.model.planpro.PlanPro.presentation.PlanProEditorPlugin;
+import org.eclipse.set.model.planpro.ATO.presentation.PlanProEditorPlugin;
 
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchPart;
@@ -417,7 +418,8 @@ public class LayoutinformationenModelWizard extends Wizard implements INewWizard
 		 */
 		@Override
 		public void createControl(Composite parent) {
-			Composite composite = new Composite(parent, SWT.NONE); {
+			Composite composite = new Composite(parent, SWT.NONE);
+			{
 				GridLayout layout = new GridLayout();
 				layout.numColumns = 1;
 				layout.verticalSpacing = 12;

@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Verweise.provider;
 
@@ -20,12 +21,12 @@ import org.eclipse.emf.common.util.ResourceLocator;
 
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
-
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-import org.eclipse.set.model.planpro.BasisTypen.provider.Zeiger_TypeClassItemProvider;
 
-import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
+import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
+
+import org.eclipse.set.model.planpro.BasisTypen.provider.Zeiger_TypeClassItemProvider;
 
 import org.eclipse.set.model.planpro.Verweise.ID_TOP_Kante_TypeClass;
 import org.eclipse.set.model.planpro.Verweise.VerweisePackage;
@@ -159,8 +160,10 @@ public class ID_TOP_Kante_TypeClassItemProvider extends Zeiger_TypeClassItemProv
 			case VerweisePackage.ID_TOP_KANTE_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

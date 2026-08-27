@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ecore:EPackage xmlns:xmi="http://www.omg.org/XMI"
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+                xmlns:xmi="http://www.omg.org/XMI"
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-                xmi:version="2.0"
                 name="Bedienung"
                 nsURI="http://www.plan-pro.org/modell/Bedienung/1.10.0.3"
                 nsPrefix="nsBedienung">
@@ -119,7 +119,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;Bedienung Fdl ESTW-ZE&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>Bedienung Fdl ESTW-ZE&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -212,7 +212,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -297,7 +297,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Art des Melders für eine örtliche Bedieneinrichtung. Anwendungsbeispiele: Melder an Abfertigungssäulen, Zustimmungseinrichtungen für den Zugleitbetrieb, Bedieneinrichtungen von (temporär) örtlich bedienten stellwerksgesteuerten Stellelementen. Für Bedieneinrichtungen von Nahstellbereichen und Bahnübergängen werden die Melder im Objekt BUE Bedien Anzeige Element bzw. NB Bedien Anzeige Element geplant. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
+                 value="Art des Melders für eine örtliche Bedieneinrichtung. Anwendungsbeispiele: Melder an Abfertigungssäulen, Zustimmungseinrichtungen für den Zugleitbetrieb, Bedieneinrichtungen von (temporär) örtlich bedienten stellwerksgesteuerten Stellelementen. Für Bedieneinrichtungen von Nahstellbereichen und Bahnübergängen werden die Melder im Objekt BUE Bedien Anzeige Element bzw. NB Bedien Anzeige Element geplant. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -313,7 +313,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Art des Schalters für eine örtliche Bedieneinrichtung. Anwendungsbeispiele: Schalter an Abfertigungssäulen, Zustimmungseinrichtungen für den Zugleitbetrieb, Bedieneinrichtungen von (temporär) örtlich bedienten stellwerksgesteuerten Stellelementen. Für Bedieneinrichtungen von Nahstellbereichen und Bahnübergängen werden die Schalter im Objekt BUE Bedien Anzeige Element bzw. NB Bedien Anzeige Element geplant. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
+                 value="Art des Schalters für eine örtliche Bedieneinrichtung. Anwendungsbeispiele: Schalter an Abfertigungssäulen, Zustimmungseinrichtungen für den Zugleitbetrieb, Bedieneinrichtungen von (temporär) örtlich bedienten stellwerksgesteuerten Stellelementen. Für Bedieneinrichtungen von Nahstellbereichen und Bahnübergängen werden die Schalter im Objekt BUE Bedien Anzeige Element bzw. NB Bedien Anzeige Element geplant. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -329,7 +329,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Art der Taste für eine örtliche Bedieneinrichtung, außer solchen mit BÜ- und NB-Funktionen. Für Bedieneinrichtungen von Bahnübergängen und Nahstellbereichen werden die Tasten im Objekt BUE Bedien Anzeige Element bzw. NB Bedien Anzeige Element geplant. Anwendungsbeispiele: Tasten an Abfertigungssäulen, Zustimmungseinrichtungen für den Zugleitbetrieb, Bedieneinrichtungen von (temporär) örtlich bedienten stellwerksgesteuerten Stellelementen. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
+                 value="Art der Taste für eine örtliche Bedieneinrichtung, außer solchen mit BÜ- und NB-Funktionen. Für Bedieneinrichtungen von Bahnübergängen und Nahstellbereichen werden die Tasten im Objekt BUE Bedien Anzeige Element bzw. NB Bedien Anzeige Element geplant. Anwendungsbeispiele: Tasten an Abfertigungssäulen, Zustimmungseinrichtungen für den Zugleitbetrieb, Bedieneinrichtungen von (temporär) örtlich bedienten stellwerksgesteuerten Stellelementen. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -370,11 +370,11 @@
                 eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Bedienung von mehreren ESTW-Zentraleinheiten. Das Objekt Bedien_Bezirk ermöglicht den Anschluss mehrerer ESTW-Zentraleinheiten an einen Bedien_Bezirk z. B. in einer Bedien_Zentrale. Für einen Bedien_Bezirk gibt es zwei Modellierungen / Ausprägungen. 1.) Reell in einer Bedien_Zentrale, Regio-BZ oder sonstigem Technikstandort errichteter Bedien_Bezirk mit angeschalteten ESTW_Zentraleinheiten (mindestens einer) ==&gt; zentraler Bedien_Bezirk 2.) Geplante, auf die Streckeninfrastruktur bezogene, logische Zusammenfassung von betrieblich und geographisch zusammenhängenden Strecken. ==&gt; virtueller Bedien_Bezirk Beispiele: Siehe auch Anlage Media:Bedien Bezirk Typ.pdf 1.) Zentraler Bedien_Bezirk Das Konzept der zentralen Betriebsführung sieht vor, die Bedienung hochwertiger Strecken von ESTW, durch Bedien_Zentralen (Betriebszentralen) zu bündeln. Besonderheit dabei ist, dass in den Bedien_Zentralen selbst keine ESTW_Zentraleinheiten aus Verfügbarkeitsgründen aufgebaut werden dürfen. Das heißt, in den Betriebszentralen sind keine ESTW_Zentraleinheiten sondern nur Bedien_Plätze und Bedien_Bezirke errichtet. Diese Bedien_Bezirke, die die Bedienung hochwertiger Strecken bündeln, sind „zentrale Bedien_Bezirke“. Die Einschränkung, ESTW_Zentraleinheiten nicht im selben Gebäude wie ESTW_Bedien_Bezirke aufzubauen, gilt nicht für eine Regio-BZ oder sonstige Technikstandorte. Auch im Regionalnetz werden ESTW_Zentraleinheiten errichtet. Bisher sind diese örtlich besetzt. Unter anderem ist geplant bzw. in Realisierung, die Gebäude in denen bereits eine Regio-ESTW_Zentraleinheit errichtet ist, eine weitere Regio-ESTW_Zentraleinheit einzubauen. Um auch hier Redundanzen und Synergien nutzen zu können, ist geplant auch hier einen Bedien_Bezirk über die ESTW_Zentraleinheiten zu installieren. Der entscheidende Unterschied zur Bedienzentrale ist hier, dass Bedien_Bezirk und ESTW_Zentraleinheit in einem Gebäude untergebracht sind. Da Strecken sowohl das Regionalnetz und das Fern- und Ballungsnetz durchlaufen können, müssen die Kennzahlenplanungen ebenfalls Netzartübergreifend sein. Siehe auch Attribut „Kennzahl“. 2.) Virtueller Bedienbezirk Als Zweites ist die Option des virtuellen Bedien_Bezirks zu modellieren. Da ein Bedien_Bezirk ja nicht von Heute auf Morgen in ESTW-Technik da steht, müssen Übergangsregelungen geschaffen werden. Auch wenn Stellwerke in einem Bedien_Bezirk (noch) nicht in ESTW-Technik realisiert sind oder die Zuordnung zum Regionalnetz oder Fern- und Ballungsnetz noch offen ist gilt: Die Stw sind einem Bedien_Bezirk zuzuordnen um jegliche spätere Realisierungsform zu ermöglichen und so auch die Kennzahlenvergabe sicher zu gestalten. Siehe auch Attribut „Kennzahl“. Am Beispiel der Bedien_Bezirke 08 und 11 in der BZ Hannover sieht man, dass auch Stellwerke, die (noch) nicht an einen Bedien_Bezirk angebunden sind, eine Zuordnung erfahren müssen. Alle Stellwerke (HORX, HK, Sarstedt und Barnten) liegen in einem betrieblich zusammenhängenden Bezirk. Nämlich auf den Nord-Süd Strecken von Hannover Richtung Göttingen. Die Stellwerke HK, Sarstedt und Barnten sogar auf derselben Strecke 1732. Aktuell sind die Stellwerke Sarstedt und Barnten noch nicht an einen Bedien_Bezirk angebunden. In den Planungen und betrieblichen Vorgaben des Regionalbereichs aber für eine Zuordnung zum Bedien_Bezirk 11 vorgesehen. Daher muss schon jetzt der Bedienbezirk den Stw zugeordnet werden können, auch wenn sie ggf. trotz ESTW-Aufbau, örtlich besetzt werden. Durch die Darstellung in dem Verweis „zentral“ oder „virtuell“ lässt sich die aktuelle und geplante Anbindung darstellen. Im Verständnis der Betriebszentralen entspricht das Objekt Bedien_Bezirk dem Steuerbezirk. Das Objekt kann im LST-Datenmodell jedoch auch als virtueller Bedien_Bezirk vorkommen. Jeder ESTW-Zentraleinheit wird auch ein Bedien_Bezirk zugeordnet. In der Regel der, der in der Kennzahlenplanung vorgesehen ist. Also auch dann, wenn physisch kein Bedienbezirk (Steuerbezirk) oder eine vergleichbare Einheit vorhanden ist (z. B. Regionale Bedienzentrale mit nur einer ESTW-Zentraleinheit), aber bestimmte Eigenschaften mehrerer gemeinsam gesteuerter ESTW-Zentraleinheiten übergreifend geplant werden müssen (z.B. Richtungssinn und Kennzahlen). Gemäß Richtlinie 819.0603 müssen Kennzahlen und Betriebsstellenbezeichner im Steuerbezirk und an seinen Grenzen eindeutig (einmalig) sein. Diese Regel kann nicht über das Modell abgebildet werden, sondern muss in der Plausibilitäts- und Zulässigkeitsprüfung (PlaZ) abgefangen werden. Die Vorgabe für den Richtungssinn bezieht sich immer auf einen kompletten Steuerbezirk. Sie ist jedoch als Eigenschaft der Bedienoberfläche modelliert. Gegebenenfalls müssen hier Zulässigkeitsprüfungen ablaufen. Im Bedienbezirk werden außerdem die Angaben für die Datenkommunikation mit den zugeordneten ESTW-Zentraleinheiten geplant. Die Werte A, B und C werden nach Ril 819.0705A01 von der DB InfraGO festgelegt. Der Ansprechpartner findet sich in der Ril. Alle weiteren Werte lassen sich anhand dieser Unterlage bestimmen. Siehe Anlage Media:ipadr namensv ib1.pdf DB-Regelwerk 819.0603 819.0705A01 "/>
+               value="Bedienung von mehreren ESTW-Zentraleinheiten. Das Objekt Bedien_Bezirk ermöglicht den Anschluss mehrerer ESTW-Zentraleinheiten an einen Bedien_Bezirk z. B. in einer Bedien_Zentrale. Für einen Bedien_Bezirk gibt es zwei Modellierungen / Ausprägungen. 1.) Reell in einer Bedien_Zentrale, Regio-BZ oder sonstigem Technikstandort errichteter Bedien_Bezirk mit angeschalteten ESTW_Zentraleinheiten (mindestens einer) ==> zentraler Bedien_Bezirk 2.) Geplante, auf die Streckeninfrastruktur bezogene, logische Zusammenfassung von betrieblich und geographisch zusammenhängenden Strecken. ==> virtueller Bedien_Bezirk Beispiele: Siehe auch Anlage Media:Bedien Bezirk Typ.pdf 1.) Zentraler Bedien_Bezirk Das Konzept der zentralen Betriebsführung sieht vor, die Bedienung hochwertiger Strecken von ESTW, durch Bedien_Zentralen (Betriebszentralen) zu bündeln. Besonderheit dabei ist, dass in den Bedien_Zentralen selbst keine ESTW_Zentraleinheiten aus Verfügbarkeitsgründen aufgebaut werden dürfen. Das heißt, in den Betriebszentralen sind keine ESTW_Zentraleinheiten sondern nur Bedien_Plätze und Bedien_Bezirke errichtet. Diese Bedien_Bezirke, die die Bedienung hochwertiger Strecken bündeln, sind „zentrale Bedien_Bezirke“. Die Einschränkung, ESTW_Zentraleinheiten nicht im selben Gebäude wie ESTW_Bedien_Bezirke aufzubauen, gilt nicht für eine Regio-BZ oder sonstige Technikstandorte. Auch im Regionalnetz werden ESTW_Zentraleinheiten errichtet. Bisher sind diese örtlich besetzt. Unter anderem ist geplant bzw. in Realisierung, die Gebäude in denen bereits eine Regio-ESTW_Zentraleinheit errichtet ist, eine weitere Regio-ESTW_Zentraleinheit einzubauen. Um auch hier Redundanzen und Synergien nutzen zu können, ist geplant auch hier einen Bedien_Bezirk über die ESTW_Zentraleinheiten zu installieren. Der entscheidende Unterschied zur Bedienzentrale ist hier, dass Bedien_Bezirk und ESTW_Zentraleinheit in einem Gebäude untergebracht sind. Da Strecken sowohl das Regionalnetz und das Fern- und Ballungsnetz durchlaufen können, müssen die Kennzahlenplanungen ebenfalls Netzartübergreifend sein. Siehe auch Attribut „Kennzahl“. 2.) Virtueller Bedienbezirk Als Zweites ist die Option des virtuellen Bedien_Bezirks zu modellieren. Da ein Bedien_Bezirk ja nicht von Heute auf Morgen in ESTW-Technik da steht, müssen Übergangsregelungen geschaffen werden. Auch wenn Stellwerke in einem Bedien_Bezirk (noch) nicht in ESTW-Technik realisiert sind oder die Zuordnung zum Regionalnetz oder Fern- und Ballungsnetz noch offen ist gilt: Die Stw sind einem Bedien_Bezirk zuzuordnen um jegliche spätere Realisierungsform zu ermöglichen und so auch die Kennzahlenvergabe sicher zu gestalten. Siehe auch Attribut „Kennzahl“. Am Beispiel der Bedien_Bezirke 08 und 11 in der BZ Hannover sieht man, dass auch Stellwerke, die (noch) nicht an einen Bedien_Bezirk angebunden sind, eine Zuordnung erfahren müssen. Alle Stellwerke (HORX, HK, Sarstedt und Barnten) liegen in einem betrieblich zusammenhängenden Bezirk. Nämlich auf den Nord-Süd Strecken von Hannover Richtung Göttingen. Die Stellwerke HK, Sarstedt und Barnten sogar auf derselben Strecke 1732. Aktuell sind die Stellwerke Sarstedt und Barnten noch nicht an einen Bedien_Bezirk angebunden. In den Planungen und betrieblichen Vorgaben des Regionalbereichs aber für eine Zuordnung zum Bedien_Bezirk 11 vorgesehen. Daher muss schon jetzt der Bedienbezirk den Stw zugeordnet werden können, auch wenn sie ggf. trotz ESTW-Aufbau, örtlich besetzt werden. Durch die Darstellung in dem Verweis „zentral“ oder „virtuell“ lässt sich die aktuelle und geplante Anbindung darstellen. Im Verständnis der Betriebszentralen entspricht das Objekt Bedien_Bezirk dem Steuerbezirk. Das Objekt kann im LST-Datenmodell jedoch auch als virtueller Bedien_Bezirk vorkommen. Jeder ESTW-Zentraleinheit wird auch ein Bedien_Bezirk zugeordnet. In der Regel der, der in der Kennzahlenplanung vorgesehen ist. Also auch dann, wenn physisch kein Bedienbezirk (Steuerbezirk) oder eine vergleichbare Einheit vorhanden ist (z. B. Regionale Bedienzentrale mit nur einer ESTW-Zentraleinheit), aber bestimmte Eigenschaften mehrerer gemeinsam gesteuerter ESTW-Zentraleinheiten übergreifend geplant werden müssen (z.B. Richtungssinn und Kennzahlen). Gemäß Richtlinie 819.0603 müssen Kennzahlen und Betriebsstellenbezeichner im Steuerbezirk und an seinen Grenzen eindeutig (einmalig) sein. Diese Regel kann nicht über das Modell abgebildet werden, sondern muss in der Plausibilitäts- und Zulässigkeitsprüfung (PlaZ) abgefangen werden. Die Vorgabe für den Richtungssinn bezieht sich immer auf einen kompletten Steuerbezirk. Sie ist jedoch als Eigenschaft der Bedienoberfläche modelliert. Gegebenenfalls müssen hier Zulässigkeitsprüfungen ablaufen. Im Bedienbezirk werden außerdem die Angaben für die Datenkommunikation mit den zugeordneten ESTW-Zentraleinheiten geplant. Die Werte A, B und C werden nach Ril 819.0705A01 von der DB InfraGO festgelegt. Der Ansprechpartner findet sich in der Ril. Alle weiteren Werte lassen sich anhand dieser Unterlage bestimmen. Siehe Anlage Media:ipadr namensv ib1.pdf DB-Regelwerk 819.0603 819.0705A01 "/>
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;Bedienung Fdl BZ&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>Bedienung Fdl BZ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -476,7 +476,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..16] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..16] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -514,7 +514,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..10] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..10] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -552,7 +552,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..15] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..15] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -573,7 +573,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..15] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..15] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -602,7 +602,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;false&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage&gt;PT1&lt;/ppi:PlanningStage&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -622,7 +622,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;false&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -642,7 +642,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage&gt;PT2&lt;/ppi:PlanningStage&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage>PT2&lt;/ppi:PlanningStage>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -674,7 +674,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Angabe des regional übliche Namen des Bedienbezirks (Steuerbezirks) in der BZ-Planung (AP PT 1 BZ). Beispiele sind: \&#34;Rechter Rhein\&#34;, \&#34;Allgäu/Fichtelgebirge\&#34;, etc."/>
+                 value="Angabe des regional übliche Namen des Bedienbezirks (Steuerbezirks) in der BZ-Planung (AP PT 1 BZ). Beispiele sind: \&quot;Rechter Rhein\&quot;, \&quot;Allgäu/Fichtelgebirge\&quot;, etc."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -827,7 +827,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Bauart der Bedieneinrichtung. Je nach Art und Anzahl der bedienbaren Elemente werden die erforderlichen Bedieneinrichtungen ausgebildet. Für Nahbedienungen gilt außerdem: NB_Art W: Bedienpult oder Bediensäule; NB_Art R: Bedientablett, Stelltisch- oder -pult. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
+                 value="Bauart der Bedieneinrichtung. Je nach Art und Anzahl der bedienbaren Elemente werden die erforderlichen Bedieneinrichtungen ausgebildet. Für Nahbedienungen gilt außerdem: NB_Art W: Bedienpult oder Bediensäule; NB_Art R: Bedientablett, Stelltisch- oder -pult. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -847,7 +847,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0..65535]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0..65535]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -866,7 +866,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -988,7 +988,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;Bedienung Fdl ESTW-ZE&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>Bedienung Fdl ESTW-ZE&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1089,11 +1089,11 @@
                 eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Topologisches Abbild der für die Bedienung und Anzeige eines ESTW relevanten sicherungstechnischen Anlagen. Dies wird in Form von Meldebildern mit unterschiedlicher Informationstiefe dargestellt. Darüber hinaus gibt es weitere zum Bedienplatzsystem gehörende Meldebilder. Folgende Meldebildtypen stehen an einem Bedienplatzsystem (BPS) zur Verfügung: Bereichsübersicht (Berü), Bereichsübergreifende Berü, Lupe, Gleisbenutzungstabelle (GBT), Kommunikationsanzeige (KA), KA-Bild 1 (PSI-Spiegel), KA-Bild 2 (ESTW-Störungsmeldungen), Betriebsstatus (Rechnerstörungen), Sammelmelderbild (SM-Bild), Dokumentation (Doku), Integrierte Bedienerführung. An anderen Bedienplatzsystemen können andere Meldebildtypen möglich sein. Die Eigenschaften eines Bildes sind unter dem Objekt Bedien Oberflaeche Bild zusammengefasst. Mehrere Bilder verweisen auf das Objekt Bedien_Oberflaeche. Die Möglichkeiten der Aufschaltung der jeweiligen Bedienoberflächen auf den Bedienplätzen sind implizite Stellwerksfunktion. Die dazu notwendigen Berechtigungen sind Betriebsdaten der Instandhaltung. Diese Parameter werden im PT I nicht geplant und im Datenmodell nicht abgebildet. Sondern von der örtlichen Instandhaltung in die Systeme eingegeben. Die Bildbezeichnung des jeweiligen Oberflächenbildes nach der signifikanten (also der bedeutenstenten) Betriebsstelle entsprechend Richtlinie 819.0603 in der Form \&#34;(Bildart)_(Ril 100 Abk)\&#34; wird über die Attribute Oberflaeche Bildart und ID Oertlichkeit gebildet. "/>
+               value="Topologisches Abbild der für die Bedienung und Anzeige eines ESTW relevanten sicherungstechnischen Anlagen. Dies wird in Form von Meldebildern mit unterschiedlicher Informationstiefe dargestellt. Darüber hinaus gibt es weitere zum Bedienplatzsystem gehörende Meldebilder. Folgende Meldebildtypen stehen an einem Bedienplatzsystem (BPS) zur Verfügung: Bereichsübersicht (Berü), Bereichsübergreifende Berü, Lupe, Gleisbenutzungstabelle (GBT), Kommunikationsanzeige (KA), KA-Bild 1 (PSI-Spiegel), KA-Bild 2 (ESTW-Störungsmeldungen), Betriebsstatus (Rechnerstörungen), Sammelmelderbild (SM-Bild), Dokumentation (Doku), Integrierte Bedienerführung. An anderen Bedienplatzsystemen können andere Meldebildtypen möglich sein. Die Eigenschaften eines Bildes sind unter dem Objekt Bedien Oberflaeche Bild zusammengefasst. Mehrere Bilder verweisen auf das Objekt Bedien_Oberflaeche. Die Möglichkeiten der Aufschaltung der jeweiligen Bedienoberflächen auf den Bedienplätzen sind implizite Stellwerksfunktion. Die dazu notwendigen Berechtigungen sind Betriebsdaten der Instandhaltung. Diese Parameter werden im PT I nicht geplant und im Datenmodell nicht abgebildet. Sondern von der örtlichen Instandhaltung in die Systeme eingegeben. Die Bildbezeichnung des jeweiligen Oberflächenbildes nach der signifikanten (also der bedeutenstenten) Betriebsstelle entsprechend Richtlinie 819.0603 in der Form \&quot;(Bildart)_(Ril 100 Abk)\&quot; wird über die Attribute Oberflaeche Bildart und ID Oertlichkeit gebildet. "/>
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;Bedienung Fdl ESTW-ZE&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>Bedienung Fdl ESTW-ZE&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1198,7 +1198,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;Bedienung Fdl ESTW-ZE&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>Bedienung Fdl ESTW-ZE&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1227,7 +1227,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Zuordnung eines Bildes zur zugehörigen Bedienoberfläche. Die verschiedenen Bedienoberflächenbilder werden zu einem sogenannten \&#34;Aufschaltbereich\&#34; zusammengefasst. Dieser kann dann auf verschiedenen Bedienplätze aufgeschaltet werden. Die Aufschaltung ist Stellwerksfunktion und wird im LST-Datenmodell nicht abgebildet. "/>
+                 value="Zuordnung eines Bildes zur zugehörigen Bedienoberfläche. Die verschiedenen Bedienoberflächenbilder werden zu einem sogenannten \&quot;Aufschaltbereich\&quot; zusammengefasst. Dieser kann dann auf verschiedenen Bedienplätze aufgeschaltet werden. Die Aufschaltung ist Stellwerksfunktion und wird im LST-Datenmodell nicht abgebildet. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1244,7 +1244,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Verweis zur Ermittlung der Ril 100-Abkürzung für die Bildbezeichnung nach der signifikanten Betriebsstelle des jeweiligen Bildes. Signifikant deshalb, weil von einer ESTW Zentraleinheit, die einer Ril 100 zugeordnet ist, mehrere Aussenelementansteuerungen bedient werden können, die ggf. weitere Ril 100-Bezeichnungen haben. Siehe Beispiel Media:Lupen HBS1.pdf Über die Lupe \&#34;L_HBS1\&#34;, die zur ESTW-Zentraleinheit \&#34;ESTW Braunschweig HBS\&#34; gehört, werden Aussenelementansteuerungen in den Bereichen der Örtlichkeiten \&#34;HSMK\&#34; und \&#34;HBUH\&#34; mit bedient. Die Lupe trägt aber die Bezeichnung der signifikanten ESTW-Zentraleinheit ESTW Braunschweig. "/>
+                 value="Verweis zur Ermittlung der Ril 100-Abkürzung für die Bildbezeichnung nach der signifikanten Betriebsstelle des jeweiligen Bildes. Signifikant deshalb, weil von einer ESTW Zentraleinheit, die einer Ril 100 zugeordnet ist, mehrere Aussenelementansteuerungen bedient werden können, die ggf. weitere Ril 100-Bezeichnungen haben. Siehe Beispiel Media:Lupen HBS1.pdf Über die Lupe \&quot;L_HBS1\&quot;, die zur ESTW-Zentraleinheit \&quot;ESTW Braunschweig HBS\&quot; gehört, werden Aussenelementansteuerungen in den Bereichen der Örtlichkeiten \&quot;HSMK\&quot; und \&quot;HBUH\&quot; mit bedient. Die Lupe trägt aber die Bezeichnung der signifikanten ESTW-Zentraleinheit ESTW Braunschweig. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1300,11 +1300,11 @@
                 eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Zuordnung einer Oertlichkeit zum Bedien Bezirk, aus dem sie bedient wird. Dabei werden in diesem Zuordnungsobjekt die vorhandenen Angaben aus dem Objekt Örtlichkeit der jeweiligen Betriebsstelle um weitere Angaben wie beispielsweise die ESTW-Kennzahl oder den Betriebsstellenbezeichner (Streckenziel) planerisch angereichert. Gemäß Richtlinie 819.0603 müssen die ESTW-Kennzahlen und Betriebsstellenbezeichner im Steuerbezirk und an seinen Grenzen eindeutig (einmalig) sein. Diese Regel kann nicht über das Modell abgebildet werden, sondern muss in der Plausibilitäts- und Zulässigkeitsprüfung (PlaZ) abgefangen werden. Siehe Beispiel Media:Lupen HBS1.pdf \&#34;Bf Braunschweig Hbf (HBS) 30\&#34;: Betriebsstellenbezeichner ==\u0026gt; \&#34;Bf Braunschweig Hbf\&#34;, Oertlichkeit ==\u0026gt; \&#34;HBS\&#34;, Kennzahl ==\u0026gt; \&#34;30\&#34;. DB-Regelwerk 819.0603 "/>
+               value="Zuordnung einer Oertlichkeit zum Bedien Bezirk, aus dem sie bedient wird. Dabei werden in diesem Zuordnungsobjekt die vorhandenen Angaben aus dem Objekt Örtlichkeit der jeweiligen Betriebsstelle um weitere Angaben wie beispielsweise die ESTW-Kennzahl oder den Betriebsstellenbezeichner (Streckenziel) planerisch angereichert. Gemäß Richtlinie 819.0603 müssen die ESTW-Kennzahlen und Betriebsstellenbezeichner im Steuerbezirk und an seinen Grenzen eindeutig (einmalig) sein. Diese Regel kann nicht über das Modell abgebildet werden, sondern muss in der Plausibilitäts- und Zulässigkeitsprüfung (PlaZ) abgefangen werden. Siehe Beispiel Media:Lupen HBS1.pdf \&quot;Bf Braunschweig Hbf (HBS) 30\&quot;: Betriebsstellenbezeichner ==\u0026gt; \&quot;Bf Braunschweig Hbf\&quot;, Oertlichkeit ==\u0026gt; \&quot;HBS\&quot;, Kennzahl ==\u0026gt; \&quot;30\&quot;. DB-Regelwerk 819.0603 "/>
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;Bedienung Fdl BZ&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>Bedienung Fdl BZ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1380,7 +1380,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [2] Die Bezeichner für die Ausfahrziele (Betriebsstellenbezeichner) bestehen in der Regel aus den ersten beiden Buchstaben des Namens der nächsten Betriebsstelle. Sie sind so zu wählen, dass sie im Steuerbezirk einer BZ eindeutig sind. Dazu kann es notwendig sein, dass für den 2. Buchstaben ein anderer gewählt werden muss. Diese Vorgabe ist im PT 1 BZ niedergelegt und somit Planungsdatum des LST-Datenmodells. Auf der Bedienoberfläche werden duch den Hersteller entsprechend des gültigen Regelwerks folgende Ergänzungen vorgenommen: Eine Ziffer ist nur bei parallel geführten Gleisen/Strecken zwischen benachbarten Betriebsstellen (Bf, Abzw, Awanst) zu vergeben. Bei parallel geführten Strecken mit 3 Gleisen sind nur dann alle Gleise mittels Ziffern zu nummerieren, wenn die signaltechnische Ausrüstung aller Gleise gleich ist und alle Gleise gleichberechtigt betrieblich genutzt werden können. Bei parallel geführten Strecken mit mehr als 3 Gleisen sind alle Gleise mittels Ziffern zu bezeichnen. Bei 2 x zweigleisiger Streckenführung kann zusätzlich zur Nummerierung eine Gegengleiskennung mit „G“ sinnvoll sein. Bei 2 x zweigleisiger Streckenführung mit spezifischerNutzung, wie z.B. durch Fernbahn bzw. S-Bahn, kann es sinnvoll sein, die Ausfahrzielbezeichnungen für eine oder beide Strecken an Stelle der fortlaufenden Ziffer mit einem Buchstaben, wie z.B. „F“ bzw. „S“, zu bezeichnen. Diese Ergänzungen sind nicht Bestandteile des LST-Datenmodells.&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung_Abweichend&gt;[2] zwei Groß oder Kleinbuchstaben ohne Umlaute&lt;/ppi:Patternbeschreibung_Abweichend&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [2] Die Bezeichner für die Ausfahrziele (Betriebsstellenbezeichner) bestehen in der Regel aus den ersten beiden Buchstaben des Namens der nächsten Betriebsstelle. Sie sind so zu wählen, dass sie im Steuerbezirk einer BZ eindeutig sind. Dazu kann es notwendig sein, dass für den 2. Buchstaben ein anderer gewählt werden muss. Diese Vorgabe ist im PT 1 BZ niedergelegt und somit Planungsdatum des LST-Datenmodells. Auf der Bedienoberfläche werden duch den Hersteller entsprechend des gültigen Regelwerks folgende Ergänzungen vorgenommen: Eine Ziffer ist nur bei parallel geführten Gleisen/Strecken zwischen benachbarten Betriebsstellen (Bf, Abzw, Awanst) zu vergeben. Bei parallel geführten Strecken mit 3 Gleisen sind nur dann alle Gleise mittels Ziffern zu nummerieren, wenn die signaltechnische Ausrüstung aller Gleise gleich ist und alle Gleise gleichberechtigt betrieblich genutzt werden können. Bei parallel geführten Strecken mit mehr als 3 Gleisen sind alle Gleise mittels Ziffern zu bezeichnen. Bei 2 x zweigleisiger Streckenführung kann zusätzlich zur Nummerierung eine Gegengleiskennung mit „G“ sinnvoll sein. Bei 2 x zweigleisiger Streckenführung mit spezifischerNutzung, wie z.B. durch Fernbahn bzw. S-Bahn, kann es sinnvoll sein, die Ausfahrzielbezeichnungen für eine oder beide Strecken an Stelle der fortlaufenden Ziffer mit einem Buchstaben, wie z.B. „F“ bzw. „S“, zu bezeichnen. Diese Ergänzungen sind nicht Bestandteile des LST-Datenmodells.&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung_Abweichend>[2] zwei Groß oder Kleinbuchstaben ohne Umlaute&lt;/ppi:Patternbeschreibung_Abweichend>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1416,7 +1416,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;Bedienung Fdl ESTW-ZE|Bedienung Fdl BZ&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>Bedienung Fdl ESTW-ZE|Bedienung Fdl BZ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1624,7 +1624,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;Bedienung Fdl BZ&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>Bedienung Fdl BZ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1710,7 +1710,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;Bedienung Fdl BZ&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>Bedienung Fdl BZ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1815,7 +1815,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Bezeichnung einer Betriebszentrale, die nicht gemäß Richtlinie 100 bezeichnet ist (z. B. eine regionale Bedienzentrale) und deren Name somit nicht über den Verweis auf eine Örtlichkeit ermittelt werden kann. Derzeit wird noch geprüft, ob auch regionale Bedienzentralen gemäß Ril 100 bezeichnet werden müssen. Entsprechend kann dieses Attribut ggf. entfallen oder als \&#34;nicht Pflicht\&#34; anderweitig verwendet werden."/>
+                 value="Bezeichnung einer Betriebszentrale, die nicht gemäß Richtlinie 100 bezeichnet ist (z. B. eine regionale Bedienzentrale) und deren Name somit nicht über den Verweis auf eine Örtlichkeit ermittelt werden kann. Derzeit wird noch geprüft, ob auch regionale Bedienzentralen gemäß Ril 100 bezeichnet werden müssen. Entsprechend kann dieses Attribut ggf. entfallen oder als \&quot;nicht Pflicht\&quot; anderweitig verwendet werden."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"

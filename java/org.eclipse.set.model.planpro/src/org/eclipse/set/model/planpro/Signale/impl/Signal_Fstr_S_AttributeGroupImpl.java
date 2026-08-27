@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Signale.impl;
 
@@ -214,8 +215,9 @@ public class Signal_Fstr_S_AttributeGroupImpl extends EObjectImpl implements Sig
 				return ((InternalEList<?>)getIDAnrueckverschluss()).basicRemove(otherEnd, msgs);
 			case SignalePackage.SIGNAL_FSTR_SATTRIBUTE_GROUP__ID_ZWEITES_HALTFALLKRITERIUM:
 				return basicSetIDZweitesHaltfallkriterium(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -232,8 +234,9 @@ public class Signal_Fstr_S_AttributeGroupImpl extends EObjectImpl implements Sig
 				return getIDAnrueckverschluss();
 			case SignalePackage.SIGNAL_FSTR_SATTRIBUTE_GROUP__ID_ZWEITES_HALTFALLKRITERIUM:
 				return getIDZweitesHaltfallkriterium();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -255,8 +258,10 @@ public class Signal_Fstr_S_AttributeGroupImpl extends EObjectImpl implements Sig
 			case SignalePackage.SIGNAL_FSTR_SATTRIBUTE_GROUP__ID_ZWEITES_HALTFALLKRITERIUM:
 				setIDZweitesHaltfallkriterium((ID_Zweites_Haltfallkriterium_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -276,8 +281,10 @@ public class Signal_Fstr_S_AttributeGroupImpl extends EObjectImpl implements Sig
 			case SignalePackage.SIGNAL_FSTR_SATTRIBUTE_GROUP__ID_ZWEITES_HALTFALLKRITERIUM:
 				setIDZweitesHaltfallkriterium((ID_Zweites_Haltfallkriterium_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -294,8 +301,9 @@ public class Signal_Fstr_S_AttributeGroupImpl extends EObjectImpl implements Sig
 				return iDAnrueckverschluss != null && !iDAnrueckverschluss.isEmpty();
 			case SignalePackage.SIGNAL_FSTR_SATTRIBUTE_GROUP__ID_ZWEITES_HALTFALLKRITERIUM:
 				return iDZweitesHaltfallkriterium != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Signal_Fstr_S_AttributeGroupImpl

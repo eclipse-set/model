@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="C:/ws_intern/planpro/src/java/modelGenerator/out/org.eclipse.set.model.planpro.editor/src"/>
+	<classpathentry kind="src" path="C:/ws_intern/planpro/src/java/modelGenerator/out/org.eclipse.set.model.planpro.edit/src"/>
+	<classpathentry kind="src" path="C:/ws_intern/planpro/src/java/modelGenerator/out/org.eclipse.set.model.planpro/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl;
 
@@ -180,8 +181,9 @@ public class Telegramm_85_Alle_Fstr_AttributeGroupImpl extends EObjectImpl imple
 				return basicSetIDZLVBus(null, msgs);
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_85_ALLE_FSTR_ATTRIBUTE_GROUP__TELEGRAMM85_FUER_ALLE_FSTR:
 				return basicSetTelegramm85FuerAlleFstr(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,8 +198,9 @@ public class Telegramm_85_Alle_Fstr_AttributeGroupImpl extends EObjectImpl imple
 				return getIDZLVBus();
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_85_ALLE_FSTR_ATTRIBUTE_GROUP__TELEGRAMM85_FUER_ALLE_FSTR:
 				return getTelegramm85FuerAlleFstr();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -214,8 +217,10 @@ public class Telegramm_85_Alle_Fstr_AttributeGroupImpl extends EObjectImpl imple
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_85_ALLE_FSTR_ATTRIBUTE_GROUP__TELEGRAMM85_FUER_ALLE_FSTR:
 				setTelegramm85FuerAlleFstr((Telegramm_85_Fuer_Alle_Fstr_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -232,8 +237,10 @@ public class Telegramm_85_Alle_Fstr_AttributeGroupImpl extends EObjectImpl imple
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_85_ALLE_FSTR_ATTRIBUTE_GROUP__TELEGRAMM85_FUER_ALLE_FSTR:
 				setTelegramm85FuerAlleFstr((Telegramm_85_Fuer_Alle_Fstr_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -248,8 +255,9 @@ public class Telegramm_85_Alle_Fstr_AttributeGroupImpl extends EObjectImpl imple
 				return iDZLVBus != null;
 			case ZugnummernmeldeanlagePackage.TELEGRAMM_85_ALLE_FSTR_ATTRIBUTE_GROUP__TELEGRAMM85_FUER_ALLE_FSTR:
 				return telegramm85FuerAlleFstr != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Telegramm_85_Alle_Fstr_AttributeGroupImpl

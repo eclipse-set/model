@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Geodaten;
 
@@ -388,8 +389,8 @@ public enum ENUMPlanQuelle implements Enumerator {
 			case ENUM_PLAN_QUELLE_PT_2_VALUE: return ENUM_PLAN_QUELLE_PT_2;
 			case ENUM_PLAN_QUELLE_SONSTIGE_VALUE: return ENUM_PLAN_QUELLE_SONSTIGE;
 			case ENUM_PLAN_QUELLE_VERMESSUNG_VALUE: return ENUM_PLAN_QUELLE_VERMESSUNG;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

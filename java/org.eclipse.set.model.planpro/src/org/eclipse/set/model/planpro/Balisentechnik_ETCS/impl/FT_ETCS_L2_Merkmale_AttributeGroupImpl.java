@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -356,8 +357,9 @@ public class FT_ETCS_L2_Merkmale_AttributeGroupImpl extends EObjectImpl implemen
 				return basicSetVBCSetzen(null, msgs);
 			case Balisentechnik_ETCSPackage.FT_ETCS_L2_MERKMALE_ATTRIBUTE_GROUP__VBC_TIMER:
 				return basicSetVBCTimer(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -378,8 +380,9 @@ public class FT_ETCS_L2_Merkmale_AttributeGroupImpl extends EObjectImpl implemen
 				return getVBCSetzen();
 			case Balisentechnik_ETCSPackage.FT_ETCS_L2_MERKMALE_ATTRIBUTE_GROUP__VBC_TIMER:
 				return getVBCTimer();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -405,8 +408,10 @@ public class FT_ETCS_L2_Merkmale_AttributeGroupImpl extends EObjectImpl implemen
 			case Balisentechnik_ETCSPackage.FT_ETCS_L2_MERKMALE_ATTRIBUTE_GROUP__VBC_TIMER:
 				setVBCTimer((VBC_Timer_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -432,8 +437,10 @@ public class FT_ETCS_L2_Merkmale_AttributeGroupImpl extends EObjectImpl implemen
 			case Balisentechnik_ETCSPackage.FT_ETCS_L2_MERKMALE_ATTRIBUTE_GROUP__VBC_TIMER:
 				setVBCTimer((VBC_Timer_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -454,8 +461,9 @@ public class FT_ETCS_L2_Merkmale_AttributeGroupImpl extends EObjectImpl implemen
 				return vBCSetzen != null;
 			case Balisentechnik_ETCSPackage.FT_ETCS_L2_MERKMALE_ATTRIBUTE_GROUP__VBC_TIMER:
 				return vBCTimer != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //FT_ETCS_L2_Merkmale_AttributeGroupImpl

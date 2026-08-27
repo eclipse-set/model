@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Layoutinformationen.impl;
 
@@ -331,8 +332,9 @@ public class Element_Position_Allg_AttributeGroupImpl extends EObjectImpl implem
 				return ((InternalEList<?>)getDarstellungGEOPunkt()).basicRemove(otherEnd, msgs);
 			case LayoutinformationenPackage.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_POLYGONZUG:
 				return basicSetDarstellungPolygonzug(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -353,8 +355,9 @@ public class Element_Position_Allg_AttributeGroupImpl extends EObjectImpl implem
 				return getDarstellungGEOPunkt();
 			case LayoutinformationenPackage.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_POLYGONZUG:
 				return getDarstellungPolygonzug();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -382,8 +385,10 @@ public class Element_Position_Allg_AttributeGroupImpl extends EObjectImpl implem
 			case LayoutinformationenPackage.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_POLYGONZUG:
 				setDarstellungPolygonzug((Darstellung_Polygonzug_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -409,8 +414,10 @@ public class Element_Position_Allg_AttributeGroupImpl extends EObjectImpl implem
 			case LayoutinformationenPackage.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_POLYGONZUG:
 				setDarstellungPolygonzug((Darstellung_Polygonzug_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -431,8 +438,9 @@ public class Element_Position_Allg_AttributeGroupImpl extends EObjectImpl implem
 				return darstellungGEOPunkt != null && !darstellungGEOPunkt.isEmpty();
 			case LayoutinformationenPackage.ELEMENT_POSITION_ALLG_ATTRIBUTE_GROUP__DARSTELLUNG_POLYGONZUG:
 				return darstellungPolygonzug != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Element_Position_Allg_AttributeGroupImpl

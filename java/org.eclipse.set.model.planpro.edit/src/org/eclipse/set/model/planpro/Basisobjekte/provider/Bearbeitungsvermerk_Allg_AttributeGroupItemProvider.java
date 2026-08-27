@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte.provider;
 
@@ -29,11 +30,11 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
+import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
+
 import org.eclipse.set.model.planpro.Basisobjekte.BasisobjekteFactory;
 import org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage;
 import org.eclipse.set.model.planpro.Basisobjekte.Bearbeitungsvermerk_Allg_AttributeGroup;
-
-import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.Basisobjekte.Bearbeitungsvermerk_Allg_AttributeGroup} object.
@@ -164,8 +165,10 @@ public class Bearbeitungsvermerk_Allg_AttributeGroupItemProvider
 			case BasisobjektePackage.BEARBEITUNGSVERMERK_ALLG_ATTRIBUTE_GROUP__ZEIT_BEARBEITUNGSVERMERK:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

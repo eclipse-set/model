@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -227,8 +228,8 @@ public enum ENUMMLEVELTR implements Enumerator {
 			case ENUMM_LEVELTR_L3_VALUE: return ENUMM_LEVELTR_L3;
 			case ENUMM_LEVELTR_SONSTIGE_VALUE: return ENUMM_LEVELTR_SONSTIGE;
 			case ENUMM_LEVELTR_STM_VALUE: return ENUMM_LEVELTR_STM;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte.impl;
 
@@ -391,8 +392,9 @@ public class Punkt_Objekt_TOP_Kante_AttributeGroupImpl extends EObjectImpl imple
 				return basicSetSeitlicheLage(null, msgs);
 			case BasisobjektePackage.PUNKT_OBJEKT_TOP_KANTE_ATTRIBUTE_GROUP__SEITLICHER_ABSTAND:
 				return basicSetSeitlicherAbstand(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -415,8 +417,9 @@ public class Punkt_Objekt_TOP_Kante_AttributeGroupImpl extends EObjectImpl imple
 				return getSeitlicheLage();
 			case BasisobjektePackage.PUNKT_OBJEKT_TOP_KANTE_ATTRIBUTE_GROUP__SEITLICHER_ABSTAND:
 				return getSeitlicherAbstand();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -447,8 +450,10 @@ public class Punkt_Objekt_TOP_Kante_AttributeGroupImpl extends EObjectImpl imple
 			case BasisobjektePackage.PUNKT_OBJEKT_TOP_KANTE_ATTRIBUTE_GROUP__SEITLICHER_ABSTAND:
 				setSeitlicherAbstand((Seitlicher_Abstand_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -477,8 +482,10 @@ public class Punkt_Objekt_TOP_Kante_AttributeGroupImpl extends EObjectImpl imple
 			case BasisobjektePackage.PUNKT_OBJEKT_TOP_KANTE_ATTRIBUTE_GROUP__SEITLICHER_ABSTAND:
 				setSeitlicherAbstand((Seitlicher_Abstand_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -501,8 +508,9 @@ public class Punkt_Objekt_TOP_Kante_AttributeGroupImpl extends EObjectImpl imple
 				return seitlicheLage != null;
 			case BasisobjektePackage.PUNKT_OBJEKT_TOP_KANTE_ATTRIBUTE_GROUP__SEITLICHER_ABSTAND:
 				return seitlicherAbstand != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Punkt_Objekt_TOP_Kante_AttributeGroupImpl

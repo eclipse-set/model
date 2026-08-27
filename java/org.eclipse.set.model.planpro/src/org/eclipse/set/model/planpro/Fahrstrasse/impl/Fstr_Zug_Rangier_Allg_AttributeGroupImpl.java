@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Fahrstrasse.impl;
 
@@ -297,8 +298,9 @@ public class Fstr_Zug_Rangier_Allg_AttributeGroupImpl extends EObjectImpl implem
 				return basicSetFstrReihenfolge(null, msgs);
 			case FahrstrassePackage.FSTR_ZUG_RANGIER_ALLG_ATTRIBUTE_GROUP__FSTR_V:
 				return basicSetFstrV(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -317,8 +319,9 @@ public class Fstr_Zug_Rangier_Allg_AttributeGroupImpl extends EObjectImpl implem
 				return getFstrReihenfolge();
 			case FahrstrassePackage.FSTR_ZUG_RANGIER_ALLG_ATTRIBUTE_GROUP__FSTR_V:
 				return getFstrV();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -341,8 +344,10 @@ public class Fstr_Zug_Rangier_Allg_AttributeGroupImpl extends EObjectImpl implem
 			case FahrstrassePackage.FSTR_ZUG_RANGIER_ALLG_ATTRIBUTE_GROUP__FSTR_V:
 				setFstrV((Fstr_V_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -365,8 +370,10 @@ public class Fstr_Zug_Rangier_Allg_AttributeGroupImpl extends EObjectImpl implem
 			case FahrstrassePackage.FSTR_ZUG_RANGIER_ALLG_ATTRIBUTE_GROUP__FSTR_V:
 				setFstrV((Fstr_V_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -385,8 +392,9 @@ public class Fstr_Zug_Rangier_Allg_AttributeGroupImpl extends EObjectImpl implem
 				return fstrReihenfolge != null;
 			case FahrstrassePackage.FSTR_ZUG_RANGIER_ALLG_ATTRIBUTE_GROUP__FSTR_V:
 				return fstrV != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Fstr_Zug_Rangier_Allg_AttributeGroupImpl

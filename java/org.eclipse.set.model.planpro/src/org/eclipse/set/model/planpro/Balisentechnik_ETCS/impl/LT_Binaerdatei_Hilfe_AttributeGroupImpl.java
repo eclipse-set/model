@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -240,8 +241,9 @@ public class LT_Binaerdatei_Hilfe_AttributeGroupImpl extends EObjectImpl impleme
 				return basicSetPruefmerkmaleBinaerdateiHilfe(null, msgs);
 			case Balisentechnik_ETCSPackage.LT_BINAERDATEI_HILFE_ATTRIBUTE_GROUP__VERWENDUNG_HILFE:
 				return basicSetVerwendungHilfe(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,8 +260,9 @@ public class LT_Binaerdatei_Hilfe_AttributeGroupImpl extends EObjectImpl impleme
 				return getPruefmerkmaleBinaerdateiHilfe();
 			case Balisentechnik_ETCSPackage.LT_BINAERDATEI_HILFE_ATTRIBUTE_GROUP__VERWENDUNG_HILFE:
 				return getVerwendungHilfe();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -279,8 +282,10 @@ public class LT_Binaerdatei_Hilfe_AttributeGroupImpl extends EObjectImpl impleme
 			case Balisentechnik_ETCSPackage.LT_BINAERDATEI_HILFE_ATTRIBUTE_GROUP__VERWENDUNG_HILFE:
 				setVerwendungHilfe((Verwendung_Hilfe_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -300,8 +305,10 @@ public class LT_Binaerdatei_Hilfe_AttributeGroupImpl extends EObjectImpl impleme
 			case Balisentechnik_ETCSPackage.LT_BINAERDATEI_HILFE_ATTRIBUTE_GROUP__VERWENDUNG_HILFE:
 				setVerwendungHilfe((Verwendung_Hilfe_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -318,8 +325,9 @@ public class LT_Binaerdatei_Hilfe_AttributeGroupImpl extends EObjectImpl impleme
 				return pruefmerkmaleBinaerdateiHilfe != null;
 			case Balisentechnik_ETCSPackage.LT_BINAERDATEI_HILFE_ATTRIBUTE_GROUP__VERWENDUNG_HILFE:
 				return verwendungHilfe != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //LT_Binaerdatei_Hilfe_AttributeGroupImpl

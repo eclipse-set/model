@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Geodaten;
 
@@ -296,8 +297,8 @@ public enum ENUMHSystem implements Enumerator {
 			case ENUMH_SYSTEM_HN_56_VALUE: return ENUMH_SYSTEM_HN_56;
 			case ENUMH_SYSTEM_HN_76_VALUE: return ENUMH_SYSTEM_HN_76;
 			case ENUMH_SYSTEM_SONSTIGE_VALUE: return ENUMH_SYSTEM_SONSTIGE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

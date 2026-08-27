@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsSignale="http://www.plan-pro.org/modell/Signale/1.10.0.3"
            xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
            xmlns:nsSignalbegriffe_Struktur="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsSignale"
+           ecore:package="org.eclipse.set.model.planpro.Signale"
            targetNamespace="http://www.plan-pro.org/modell/Signale/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -28,7 +31,7 @@ Contents of the file:
 XML Schema for PlanPro interface.</xs:documentation>
 	  </xs:annotation>
 	  <xs:import namespace="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1"
-              schemaLocation="../1.6.0.1/Signalbegriffe_Struktur.xsd"/>
+              schemaLocation="Signalbegriffe_Struktur.xsd"/>
 	  <xs:import namespace="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
               schemaLocation="Verweise.xsd"/>
 	  <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
@@ -37,193 +40,232 @@ XML Schema for PlanPro interface.</xs:documentation>
               schemaLocation="Basisobjekte.xsd"/>
 	  <xs:simpleType name="ENUMAnschaltdauer">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="G"/>
-			      <xs:enumeration value="T"/>
-			      <xs:enumeration value="Z"/>
+			      <xs:enumeration ecore:name="ENUMAnschaltdauer_G" value="G"/>
+			      <xs:enumeration ecore:name="ENUMAnschaltdauer_T" value="T"/>
+			      <xs:enumeration ecore:name="ENUMAnschaltdauer_Z" value="Z"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMAuto_Einstellung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="SB"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="ZL"/>
+			      <xs:enumeration ecore:name="ENUMAuto_Einstellung_SB" value="SB"/>
+			      <xs:enumeration ecore:name="ENUMAuto_Einstellung_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMAuto_Einstellung_ZL" value="ZL"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMBefestigung_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="andere"/>
-			      <xs:enumeration value="andere Sonderkonstruktion"/>
-			      <xs:enumeration value="Arbeitsbuehne"/>
-			      <xs:enumeration value="Bahnsteig"/>
-			      <xs:enumeration value="Dach_Decke"/>
-			      <xs:enumeration value="Fundament"/>
-			      <xs:enumeration value="Konstruktionsteil"/>
-			      <xs:enumeration value="OL_Kettenwerk"/>
-			      <xs:enumeration value="OL_Mast"/>
-			      <xs:enumeration value="Pfahl"/>
-			      <xs:enumeration value="Pfosten_hoch"/>
-			      <xs:enumeration value="Pfosten_niedrig"/>
-			      <xs:enumeration value="Prellbock"/>
-			      <xs:enumeration value="Rahmen"/>
-			      <xs:enumeration value="Regelanordnung_Mast_hoch"/>
-			      <xs:enumeration value="Regelanordnung_Mast_niedrig"/>
-			      <xs:enumeration value="Regelanordnung_Sonstige_hoch"/>
-			      <xs:enumeration value="Regelanordnung_Sonstige_niedrig"/>
-			      <xs:enumeration value="Schienenfuss"/>
-			      <xs:enumeration value="Signalausleger"/>
-			      <xs:enumeration value="Signalbruecke"/>
-			      <xs:enumeration value="Sonderanordnung_Mast_hoch"/>
-			      <xs:enumeration value="Sonderanordnung_Mast_niedrig"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Wand"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_andere" value="andere"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_andere_Sonderkonstruktion"
+                         value="andere Sonderkonstruktion"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Arbeitsbuehne" value="Arbeitsbuehne"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Bahnsteig" value="Bahnsteig"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Dach_Decke" value="Dach_Decke"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Fundament" value="Fundament"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Konstruktionsteil" value="Konstruktionsteil"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_OL_Kettenwerk" value="OL_Kettenwerk"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_OL_Mast" value="OL_Mast"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Pfahl" value="Pfahl"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Pfosten_hoch" value="Pfosten_hoch"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Pfosten_niedrig" value="Pfosten_niedrig"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Prellbock" value="Prellbock"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Rahmen" value="Rahmen"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Regelanordnung_Mast_hoch"
+                         value="Regelanordnung_Mast_hoch"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Regelanordnung_Mast_niedrig"
+                         value="Regelanordnung_Mast_niedrig"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Regelanordnung_Sonstige_hoch"
+                         value="Regelanordnung_Sonstige_hoch"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Regelanordnung_Sonstige_niedrig"
+                         value="Regelanordnung_Sonstige_niedrig"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Schienenfuss" value="Schienenfuss"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Signalausleger" value="Signalausleger"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Signalbruecke" value="Signalbruecke"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Sonderanordnung_Mast_hoch"
+                         value="Sonderanordnung_Mast_hoch"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Sonderanordnung_Mast_niedrig"
+                         value="Sonderanordnung_Mast_niedrig"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMBefestigung_Art_Wand" value="Wand"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMBeleuchtet">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="angestrahlt"/>
-			      <xs:enumeration value="innenbeleuchtet"/>
-			      <xs:enumeration value="nein"/>
+			      <xs:enumeration ecore:name="ENUMBeleuchtet_angestrahlt" value="angestrahlt"/>
+			      <xs:enumeration ecore:name="ENUMBeleuchtet_innenbeleuchtet" value="innenbeleuchtet"/>
+			      <xs:enumeration ecore:name="ENUMBeleuchtet_nein" value="nein"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMDurchfahrt">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="erlaubt"/>
-			      <xs:enumeration value="nur_mit_Sh1"/>
-			      <xs:enumeration value="verboten"/>
+			      <xs:enumeration ecore:name="ENUMDurchfahrt_erlaubt" value="erlaubt"/>
+			      <xs:enumeration ecore:name="ENUMDurchfahrt_nur_mit_Sh1" value="nur_mit_Sh1"/>
+			      <xs:enumeration ecore:name="ENUMDurchfahrt_verboten" value="verboten"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMFiktives_Signal_Funktion">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="FAP_Start"/>
-			      <xs:enumeration value="FAP_Ziel"/>
-			      <xs:enumeration value="Rangier_Start_Ziel_Ne_14"/>
-			      <xs:enumeration value="Rangier_Start_Ziel_ohne_Signal"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Vsig_virtuell"/>
-			      <xs:enumeration value="Zentralblock_Start"/>
-			      <xs:enumeration value="Zentralblock_Ziel"/>
-			      <xs:enumeration value="Zug_Start_Awanst"/>
-			      <xs:enumeration value="Zug_Start_Mittelweiche"/>
-			      <xs:enumeration value="Zug_Start_ohne_Signal"/>
-			      <xs:enumeration value="Zug_Ziel_Awanst"/>
-			      <xs:enumeration value="Zug_Ziel_ohne_Signal"/>
-			      <xs:enumeration value="Zug_Ziel_Strecke"/>
-			      <xs:enumeration value="Zug_Start_Ziel_Bk"/>
-			      <xs:enumeration value="Zug_Start_Ziel_Bk_mit_Zs_1"/>
-			      <xs:enumeration value="Zug_Start_Ziel_Bk_mit_Zs_7"/>
-			      <xs:enumeration value="Zug_Start_Ziel_Ne_14"/>
-			      <xs:enumeration value="Zug_Start_Ziel_Ne_14_mit_Zs_1"/>
-			      <xs:enumeration value="Zug_Start_Ziel_Ne_14_mit_Zs_7"/>
-			      <xs:enumeration value="Zug_Start_Ziel_Ne_14_mit_Zs_8"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_FAP_Start" value="FAP_Start"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_FAP_Ziel" value="FAP_Ziel"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Rangier_Start_Ziel_Ne_14"
+                         value="Rangier_Start_Ziel_Ne_14"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Rangier_Start_Ziel_ohne_Signal"
+                         value="Rangier_Start_Ziel_ohne_Signal"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Vsig_virtuell" value="Vsig_virtuell"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zentralblock_Start"
+                         value="Zentralblock_Start"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zentralblock_Ziel"
+                         value="Zentralblock_Ziel"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zug_Start_Awanst"
+                         value="Zug_Start_Awanst"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zug_Start_Mittelweiche"
+                         value="Zug_Start_Mittelweiche"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zug_Start_ohne_Signal"
+                         value="Zug_Start_ohne_Signal"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zug_Ziel_Awanst"
+                         value="Zug_Ziel_Awanst"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zug_Ziel_ohne_Signal"
+                         value="Zug_Ziel_ohne_Signal"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zug_Ziel_Strecke"
+                         value="Zug_Ziel_Strecke"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Bk"
+                         value="Zug_Start_Ziel_Bk"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Bk_mit_Zs_1"
+                         value="Zug_Start_Ziel_Bk_mit_Zs_1"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Bk_mit_Zs_7"
+                         value="Zug_Start_Ziel_Bk_mit_Zs_7"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14"
+                         value="Zug_Start_Ziel_Ne_14"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14_mit_Zs_1"
+                         value="Zug_Start_Ziel_Ne_14_mit_Zs_1"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14_mit_Zs_7"
+                         value="Zug_Start_Ziel_Ne_14_mit_Zs_7"/>
+			      <xs:enumeration ecore:name="ENUMFiktives_Signal_Funktion_Zug_Start_Ziel_Ne_14_mit_Zs_8"
+                         value="Zug_Start_Ziel_Ne_14_mit_Zs_8"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMFundament_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Betonmonolith groß"/>
-			      <xs:enumeration value="Betonmonolith klein"/>
-			      <xs:enumeration value="groß"/>
-			      <xs:enumeration value="klein"/>
-			      <xs:enumeration value="Rammrohr groß"/>
-			      <xs:enumeration value="Rammrohr klein"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMFundament_Art_Betonmonolith_gross" value="Betonmonolith groß"/>
+			      <xs:enumeration ecore:name="ENUMFundament_Art_Betonmonolith_klein" value="Betonmonolith klein"/>
+			      <xs:enumeration ecore:name="ENUMFundament_Art_gross" value="groß"/>
+			      <xs:enumeration ecore:name="ENUMFundament_Art_klein" value="klein"/>
+			      <xs:enumeration ecore:name="ENUMFundament_Art_Rammrohr_gross" value="Rammrohr groß"/>
+			      <xs:enumeration ecore:name="ENUMFundament_Art_Rammrohr_klein" value="Rammrohr klein"/>
+			      <xs:enumeration ecore:name="ENUMFundament_Art_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMFunktion_Ohne_Signal">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="RS"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="ZS"/>
+			      <xs:enumeration ecore:name="ENUMFunktion_Ohne_Signal_RS" value="RS"/>
+			      <xs:enumeration ecore:name="ENUMFunktion_Ohne_Signal_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMFunktion_Ohne_Signal_ZS" value="ZS"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMGeltungsbereich">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="DS"/>
-			      <xs:enumeration value="DV"/>
-			      <xs:enumeration value="S-Bahn B"/>
-			      <xs:enumeration value="S-Bahn HH"/>
+			      <xs:enumeration ecore:name="ENUMGeltungsbereich_DS" value="DS"/>
+			      <xs:enumeration ecore:name="ENUMGeltungsbereich_DV" value="DV"/>
+			      <xs:enumeration ecore:name="ENUMGeltungsbereich_S_Bahn_B" value="S-Bahn B"/>
+			      <xs:enumeration ecore:name="ENUMGeltungsbereich_S_Bahn_HH" value="S-Bahn HH"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMRahmen_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Bezeichnungsschild"/>
-			      <xs:enumeration value="Blechtafel"/>
-			      <xs:enumeration value="Keramikkoerper"/>
-			      <xs:enumeration value="Schirm"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Zusatzanzeiger"/>
+			      <xs:enumeration ecore:name="ENUMRahmen_Art_Bezeichnungsschild" value="Bezeichnungsschild"/>
+			      <xs:enumeration ecore:name="ENUMRahmen_Art_Blechtafel" value="Blechtafel"/>
+			      <xs:enumeration ecore:name="ENUMRahmen_Art_Keramikkoerper" value="Keramikkoerper"/>
+			      <xs:enumeration ecore:name="ENUMRahmen_Art_Schirm" value="Schirm"/>
+			      <xs:enumeration ecore:name="ENUMRahmen_Art_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMRahmen_Art_Zusatzanzeiger" value="Zusatzanzeiger"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMSignal_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="andere"/>
-			      <xs:enumeration value="Hauptsignal"/>
-			      <xs:enumeration value="Hauptsperrsignal"/>
-			      <xs:enumeration value="Hauptsperrsignal Ne 14 Ls"/>
-			      <xs:enumeration value="Mehrabschnittssignal"/>
-			      <xs:enumeration value="Mehrabschnittssperrsignal"/>
-			      <xs:enumeration value="Sperrsignal"/>
-			      <xs:enumeration value="Vorsignal"/>
-			      <xs:enumeration value="Vorsignalwiederholer"/>
-			      <xs:enumeration value="Zugdeckungssignal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Art_andere" value="andere"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Art_Hauptsignal" value="Hauptsignal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Art_Hauptsperrsignal" value="Hauptsperrsignal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Art_Hauptsperrsignal_Ne_14_Ls"
+                         value="Hauptsperrsignal Ne 14 Ls"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Art_Mehrabschnittssignal" value="Mehrabschnittssignal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Art_Mehrabschnittssperrsignal"
+                         value="Mehrabschnittssperrsignal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Art_Sperrsignal" value="Sperrsignal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Art_Vorsignal" value="Vorsignal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Art_Vorsignalwiederholer" value="Vorsignalwiederholer"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Art_Zugdeckungssignal" value="Zugdeckungssignal"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMSignal_Befestigungsart">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="andere"/>
-			      <xs:enumeration value="Fundament"/>
-			      <xs:enumeration value="Mast"/>
-			      <xs:enumeration value="Signalausleger"/>
-			      <xs:enumeration value="Signalbruecke"/>
-			      <xs:enumeration value="Sonderkonstruktion"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Befestigungsart_andere" value="andere"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Befestigungsart_Fundament" value="Fundament"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Befestigungsart_Mast" value="Mast"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Befestigungsart_Signalausleger" value="Signalausleger"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Befestigungsart_Signalbruecke" value="Signalbruecke"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Befestigungsart_Sonderkonstruktion"
+                         value="Sonderkonstruktion"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMSignal_Funktion">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Alleinstehendes_Zusatzsignal"/>
-			      <xs:enumeration value="andere"/>
-			      <xs:enumeration value="Ausfahr_Signal"/>
-			      <xs:enumeration value="Ausfahr_Zwischen_Signal"/>
-			      <xs:enumeration value="Block_Signal"/>
-			      <xs:enumeration value="BUE_Ueberwachungssignal"/>
-			      <xs:enumeration value="Deckungs_Signal"/>
-			      <xs:enumeration value="Einfahr_Ausfahr_Signal"/>
-			      <xs:enumeration value="Einfahr_Block_Signal"/>
-			      <xs:enumeration value="Einfahr_Signal"/>
-			      <xs:enumeration value="Gruppenausfahr_Gruppenzwischen_Signal"/>
-			      <xs:enumeration value="Gruppenausfahr_Signal"/>
-			      <xs:enumeration value="Gruppenzwischen_Signal"/>
-			      <xs:enumeration value="Nachrueck_Signal"/>
-			      <xs:enumeration value="Vorsignal_Vorsignalwiederholer"/>
-			      <xs:enumeration value="Zugdeckungs_Signal"/>
-			      <xs:enumeration value="Zug_Ziel_Signal"/>
-			      <xs:enumeration value="Zwischen_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Alleinstehendes_Zusatzsignal"
+                         value="Alleinstehendes_Zusatzsignal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_andere" value="andere"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Ausfahr_Signal" value="Ausfahr_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Ausfahr_Zwischen_Signal"
+                         value="Ausfahr_Zwischen_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Block_Signal" value="Block_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_BUE_Ueberwachungssignal"
+                         value="BUE_Ueberwachungssignal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Deckungs_Signal" value="Deckungs_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Einfahr_Ausfahr_Signal"
+                         value="Einfahr_Ausfahr_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Einfahr_Block_Signal"
+                         value="Einfahr_Block_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Einfahr_Signal" value="Einfahr_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Gruppenausfahr_Gruppenzwischen_Signal"
+                         value="Gruppenausfahr_Gruppenzwischen_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Gruppenausfahr_Signal"
+                         value="Gruppenausfahr_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Gruppenzwischen_Signal"
+                         value="Gruppenzwischen_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Nachrueck_Signal" value="Nachrueck_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Vorsignal_Vorsignalwiederholer"
+                         value="Vorsignal_Vorsignalwiederholer"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Zugdeckungs_Signal" value="Zugdeckungs_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Zug_Ziel_Signal" value="Zug_Ziel_Signal"/>
+			      <xs:enumeration ecore:name="ENUMSignal_Funktion_Zwischen_Signal" value="Zwischen_Signal"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMSignalsystem">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Hl"/>
-			      <xs:enumeration value="HV"/>
-			      <xs:enumeration value="Ks"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="SV"/>
+			      <xs:enumeration ecore:name="ENUMSignalsystem_Hl" value="Hl"/>
+			      <xs:enumeration ecore:name="ENUMSignalsystem_HV" value="HV"/>
+			      <xs:enumeration ecore:name="ENUMSignalsystem_Ks" value="Ks"/>
+			      <xs:enumeration ecore:name="ENUMSignalsystem_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMSignalsystem_SV" value="SV"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMSonstige_Zulaessige_Anordnung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Anordnung_des_Signals_rechts_am_Gleis"/>
-			      <xs:enumeration value="Anordnung_des_Signals_rechts_am_Gleis_ohne_Schachbretttafel"/>
-			      <xs:enumeration value="Nichtgeltung_fuer_Fahrten_auf_dem_Gegengleis"/>
+			      <xs:enumeration ecore:name="ENUMSonstige_Zulaessige_Anordnung_Anordnung_des_Signals_rechts_am_Gleis"
+                         value="Anordnung_des_Signals_rechts_am_Gleis"/>
+			      <xs:enumeration ecore:name="ENUMSonstige_Zulaessige_Anordnung_Anordnung_des_Signals_rechts_am_Gleis_ohne_Schachbretttafel"
+                         value="Anordnung_des_Signals_rechts_am_Gleis_ohne_Schachbretttafel"/>
+			      <xs:enumeration ecore:name="ENUMSonstige_Zulaessige_Anordnung_Nichtgeltung_fuer_Fahrten_auf_dem_Gegengleis"
+                         value="Nichtgeltung_fuer_Fahrten_auf_dem_Gegengleis"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMStreuscheibe_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="HG"/>
-			      <xs:enumeration value="HN"/>
-			      <xs:enumeration value="HRL"/>
-			      <xs:enumeration value="LED"/>
-			      <xs:enumeration value="ORL"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="VRL"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Art_HG" value="HG"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Art_HN" value="HN"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Art_HRL" value="HRL"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Art_LED" value="LED"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Art_ORL" value="ORL"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Art_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Art_VRL" value="VRL"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMStreuscheibe_Betriebsstellung">
@@ -231,74 +273,76 @@ XML Schema for PlanPro interface.</xs:documentation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">HGx_gw=Ergänzung gewendete Streuscheiben (Information zunehmend von SBI gefordert)</xs:documentation>
       </xs:annotation>
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="HG1"/>
-			      <xs:enumeration value="HG1_gw"/>
-			      <xs:enumeration value="HG2"/>
-			      <xs:enumeration value="HG2_gw"/>
-			      <xs:enumeration value="HG3"/>
-			      <xs:enumeration value="HG3_gw"/>
-			      <xs:enumeration value="HG4"/>
-			      <xs:enumeration value="HG4_gw"/>
-			      <xs:enumeration value="HL"/>
-			      <xs:enumeration value="HR"/>
-			      <xs:enumeration value="OL"/>
-			      <xs:enumeration value="OR"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="VL"/>
-			      <xs:enumeration value="VR"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_HG1" value="HG1"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_HG1_gw" value="HG1_gw"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_HG2" value="HG2"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_HG2_gw" value="HG2_gw"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_HG3" value="HG3"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_HG3_gw" value="HG3_gw"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_HG4" value="HG4"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_HG4_gw" value="HG4_gw"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_HL" value="HL"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_HR" value="HR"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_OL" value="OL"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_OR" value="OR"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_VL" value="VL"/>
+			      <xs:enumeration ecore:name="ENUMStreuscheibe_Betriebsstellung_VR" value="VR"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMTunnelsignal">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="mit_Dauernachtschaltung"/>
-			      <xs:enumeration value="nein"/>
-			      <xs:enumeration value="ohne_Dauernachtschaltung"/>
+			      <xs:enumeration ecore:name="ENUMTunnelsignal_mit_Dauernachtschaltung"
+                         value="mit_Dauernachtschaltung"/>
+			      <xs:enumeration ecore:name="ENUMTunnelsignal_nein" value="nein"/>
+			      <xs:enumeration ecore:name="ENUMTunnelsignal_ohne_Dauernachtschaltung"
+                         value="ohne_Dauernachtschaltung"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="THoehe_Fundamentoberkante">
+	  <xs:simpleType ecore:name="Hoehe_Fundamentoberkante_Type" name="THoehe_Fundamentoberkante">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="(-?((1\.(250|2[0-4][0-9]|[01][0-9]{2}))|(0\.([1-9][0-9]{2}|0[0-9][1-9]|0[1-9]0))))|0\.000"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TObere_Lichtpunkthoehe">
+	  <xs:simpleType ecore:name="Obere_Lichtpunkthoehe_Type" name="TObere_Lichtpunkthoehe">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="0\.(22[5-9]|2[3-9][0-9]|[3-9][0-9]{2})|([1-9]|1[0-4])\.[0-9]{3}|15.000"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPZB_Schutzstrecke_Soll">
+	  <xs:simpleType ecore:name="PZB_Schutzstrecke_Soll_Type" name="TPZB_Schutzstrecke_Soll">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="2[0-9][0-9]|[34][0-9]{2}|5[0-4][0-9]|550"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TRahmen_Hoehe">
+	  <xs:simpleType ecore:name="Rahmen_Hoehe_Type" name="TRahmen_Hoehe">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TRichtpunkt">
+	  <xs:simpleType ecore:name="Richtpunkt_Type" name="TRichtpunkt">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,16}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TRichtpunktentfernung">
+	  <xs:simpleType ecore:name="Richtpunktentfernung_Type" name="TRichtpunktentfernung">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="[1-9][0-9]{0,1}|[1-4][0-9]{2}|500"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TSignalsicht_Erreichbar">
+	  <xs:simpleType ecore:name="Signalsicht_Erreichbar_Type" name="TSignalsicht_Erreichbar">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="[1-9][0-9]{0,1}|[1-4][0-9]{2}|500"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TSignalsicht_Mindest">
+	  <xs:simpleType ecore:name="Signalsicht_Mindest_Type" name="TSignalsicht_Mindest">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="[1-9][0-9]{0,1}|[1-2][0-9]{2}|300"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TSignalsicht_Soll">
+	  <xs:simpleType ecore:name="Signalsicht_Soll_Type" name="TSignalsicht_Soll">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="[1-9][0-9]{0,1}|[1-4][0-9]{2}|500"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:complexType name="CSignal">
+	  <xs:complexType ecore:name="Signal" name="CSignal">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Technische, punktförmig verortete Einrichtung der Eisenbahninfrastruktur, die als Teil der Außenanlage einer Außenelement-Ansteuerung mit statischen oder dynamischen Signalbildern Anweisungen zur Fahrweise oder andere Verhaltensvorschriften an den Triebfahrzeugführer übermittelt oder als Teil der Innenanlage einer Außenelement-Ansteuerung mittels eines Bedienpunkts zur Behandlung von Fahrwegen als Start- oder Zielsignal dient. Steht ein Signal an einer Grenze zweier Bereiche, so ist es dem Bereich zuzuordnen, dem der vom Signal gedeckte Gleisabschnitt angehört. Das Objekt Signal beinhaltet zentrale Eigenschaften, die bei Signalen der Außenanlage in Signal-Befestigungen bzgl. der Konstruktion und in Signal-Rahmen bzgl. der zugeordneten Signalbegriffe ergänzt werden. Je nach Ausführung eines Signals der Außenanlage können dafür mehrere Signal-Befestigungen erforderlich sein (z.B. \u0027Fundament\u0027 und \u0027Signalanordnung\u0027), dafür mehrere Signal-Rahmen erforderlich sein (z.B. \u0027Schirm\u0027, 2x\u0027Zusatzanzeiger\u0027 und \u0027Bezeichnungsschild\u0027) und / oder zeitgleich mehrere Signalbegriffe angezeigt werden, die zu diesem Zeitpunkt für ein Gleis - meist nur in einer Fahrtrichtung - an einem Punkt gültig sind und deren logische Überlagerung zur Handlungsanweisung für den Triebfahrzeugführer wird. Signalbilder, die zwar einem gemeinsamen Punkt zugeordnet sind, aber keiner gemeinsamen logischen Interpretation bedürfen, werden unterschiedlichen Signalen zugeordnet. Kann ein Signal mehrere Signalbilder anzeigen, so werden diese in Gruppen (analog zur Konstruktion) zusammengefasst, jede dieser Gruppen bildet einen Signal-Rahmen. Zur ausführliche Beschreibung der Modellierung eines Signals s. Modellierung Signal. Besonderheiten zur Verortung von Signalen sind unter Punkt Objekt beschrieben. DB-Regelwerk 301, 819.02, Planungsdaten: Sicherungstechnischer Lageplan, statische Eigenschaften: Signaltabelle 1, dynamische Eigenschaften: Signaltabelle 2, vereinzelt sind einzelne Angaben auch anderen Fundorten zugeordnet, dies ist den jeweiligen Einzelbeiträgen zu entnehmen. </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -344,7 +388,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CSignal_Befestigung">
+	  <xs:complexType ecore:name="Signal_Befestigung" name="CSignal_Befestigung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Konstruktionselement, das der baulichen Aufnahme eines oder mehrerer Signalrahmen dient. Die konkreten konstruktiven Merkmale sind in einer (oder im Bedarfsfall mehreren) Regelzeichnung(en) enthalten, auf die jeweils ein GUID-Verweis zeigt. Bei Sonderkonstruktionen wird die Regelzeichnung durch die zugehörigen Zulassungsdokumente ersetzt. Diese sind als Anhang mittels eines Bearbeitungsvermerks beizufügen. Signalbefestigungen können auch weitere Signalbefestigungen aufnehmen (z.B. trägt ein Signalausleger eine Arbeitsbühne). Einer Signalbefestigung ist mindestens ein Objekt Signal Rahmen oder Signal Befestigung zugeordnet. Ausführliche Beschreibung s. Modellierung Signal. DB-Regelwerk Regelzeichnungen </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -386,7 +430,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CSignal_Befestigung_Allg">
+	  <xs:complexType ecore:name="Signal_Befestigung_Allg_AttributeGroup"
+                   name="CSignal_Befestigung_Allg">
 		    <xs:sequence>
 			      <xs:element name="Befestigung_Art" type="nsSignale:TCBefestigung_Art" minOccurs="1"
                      maxOccurs="1">
@@ -427,7 +472,7 @@ Die Werte \"Regelanordnung_Mast_...\" bilden Regel-Signalanordnungen am Mast ab.
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSignal_Fank_Zuordnung">
+	  <xs:complexType ecore:name="Signal_Fank_Zuordnung" name="CSignal_Fank_Zuordnung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Abbildung des Fahrtankünders (Weißes Dreieck) sowie Zuordnung der Startsignale, für die eine Fahrtankündigung erfolgen soll. Ein physischer Fahrtankünder (Anzeiger) wird als Signal abgebildet, wobei hierbei nur die Attributgruppen Bezeichnung sowie Signal_Real zu nutzen sind (nicht: Signal_Real_Aktiv, da kein Anschluss mittels ID_Stellelement an ein Stellwerk). Erfolgt die Fahrtankündigung ausschließlich auf mobilen Endgeräten, so entfällt das Anlegen des Signals für den Fahrtankünder.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -456,7 +501,7 @@ Die Werte \"Regelanordnung_Mast_...\" bilden Regel-Signalanordnungen am Mast ab.
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CSignal_Fiktiv">
+	  <xs:complexType ecore:name="Signal_Fiktiv_AttributeGroup" name="CSignal_Fiktiv">
 		    <xs:sequence>
 			      <xs:element name="Auto_Einstellung" type="nsSignale:TCAuto_Einstellung" minOccurs="0"
                      maxOccurs="1">
@@ -474,7 +519,7 @@ DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSignal_Fstr">
+	  <xs:complexType ecore:name="Signal_Fstr_AttributeGroup" name="CSignal_Fstr">
 		    <xs:sequence>
 			      <xs:element name="Besetzte_Ausfahrt" type="nsSignale:TCBesetzte_Ausfahrt" minOccurs="0"
                      maxOccurs="1">
@@ -519,7 +564,8 @@ DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSignal_Fstr_Aus_Inselgleis">
+	  <xs:complexType ecore:name="Signal_Fstr_Aus_Inselgleis_AttributeGroup"
+                   name="CSignal_Fstr_Aus_Inselgleis">
 		    <xs:sequence>
 			      <xs:element name="ID_RaFahrt_Gleichzeitig_Verbot"
                      type="nsVerweise:TCID_Signal_Gleisbezechnung"
@@ -539,7 +585,7 @@ DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSignal_Fstr_S">
+	  <xs:complexType ecore:name="Signal_Fstr_S_AttributeGroup" name="CSignal_Fstr_S">
 		    <xs:sequence>
 			      <xs:element name="Gegengleis" type="nsSignale:TCGegengleis" minOccurs="0" maxOccurs="1">
 				        <xs:annotation>
@@ -563,7 +609,7 @@ DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSignal_Rahmen">
+	  <xs:complexType ecore:name="Signal_Rahmen" name="CSignal_Rahmen">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Fiktive Signale haben keinen Signalrahmen, da sie keinen Signalbegriff zeigen können. Reale Signale besitzen einen oder mehrere Signalrahmen. Die Gruppierung von Signalbegriffen innerhalb eines Signals zu Signalrahmen wird anhand der konstruktiven Gestaltung vorgenommen, z.B. werden alle Signalbegriffe des Hauptsignalschirms oder alle Signalbegriffe eines Zusatzanzeigers jeweils zu einem Signalrahmen zusammengefasst. Kann die Anzahl oder Art der Signalbegriffe eines Signalrahmens in Abhängigkeit vom betrieblichen Zustand geändert werden, so wird dieser als schaltbar bezeichnet, andernfalls als fest. Im LST-Datenmodell ist diese Eigenschaft als Attribut zu den Signalbegriffen definiert; ein Signalrahmen ist danach genau dann schaltbar, wenn mindestens eines der enthaltenen Signalbegriffe schaltbar ist. Typische schaltbare Signalrahmen sind der Signalschirm eines Mehrabschnittssignals, das Lichtsignal eines Zusatzanzeigers und das Form- oder Lichtsignal eines Weichensignals. Typische feste Signalrahmen sind das Mastschild eines Hauptsignals, das Formsignal eines Zusatzanzeigers und die Haltetafel. Über den Signalrahmen erfolgt, sofern dies geplant ist, die Zuordnung von Signalbegriffen eines nachgeordneten Signals zu einem anderen Signal ohne Bezug zur Fahrstraße, siehe dazu ID Signal Nachordnung Ausführliche Beschreibung s. Modellierung Signal. DB-Regelwerk Planungsdaten: im bisherigen PT1 ohne eindeutige Darstellung. In der Regel aus den Angaben in der Signaltabelle 1 zu erkennen. </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -615,7 +661,7 @@ DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CSignal_Real">
+	  <xs:complexType ecore:name="Signal_Real_AttributeGroup" name="CSignal_Real">
 		    <xs:sequence>
 			      <xs:element name="Dunkelschaltung" type="nsSignale:TCDunkelschaltung" minOccurs="0"
                      maxOccurs="1">
@@ -701,7 +747,7 @@ DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSignal_Real_Aktiv">
+	  <xs:complexType ecore:name="Signal_Real_Aktiv_AttributeGroup" name="CSignal_Real_Aktiv">
 		    <xs:sequence>
 			      <xs:element name="Auto_Einstellung" type="nsSignale:TCAuto_Einstellung" minOccurs="0"
                      maxOccurs="1">
@@ -731,7 +777,8 @@ DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung; bei realen, aktiven 
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSignal_Real_Aktiv_Schirm">
+	  <xs:complexType ecore:name="Signal_Real_Aktiv_Schirm_AttributeGroup"
+                   name="CSignal_Real_Aktiv_Schirm">
 		    <xs:sequence>
 			      <xs:element name="Richtpunkt" type="nsSignale:TCRichtpunkt" minOccurs="0" maxOccurs="1">
 				        <xs:annotation>
@@ -786,7 +833,7 @@ DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung; bei realen, aktiven 
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSignal_Signalbegriff">
+	  <xs:complexType ecore:name="Signal_Signalbegriff" name="CSignal_Signalbegriff">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Stellt eine Information optisch dar, die das Signal dem Triebfahrzeugführer übermitteln soll. Signalbegriffe werden im Signalbuch (Ril 301) durch eine Kurzbezeichnung (z. B. \"Zs 1\") und / oder durch eine Langbezeichnung (z. B. \"Ersatzsignal\") beschrieben. Diese und weitere feste Eigenschaften wie der Wertevorrat der anzeigbaren Symbole eines Signalbegriffs sind im Objekt Signalbegriff definiert, das mittels des Attributes Signalbegriff ID eingebunden wird. Anschaltdauer, Beleuchtung und Schaltbarkeit sind nicht fest, sondern wählbar an den Signalbegriff nach Signalbuch gekoppelt und so Eigenschaft des Objekts Signal_Signalbegriff. Ein Signal_Signalbegriff befindet sich immer in einem Signal Rahmen. Ausführliche Beschreibung s. Modellierung Signal DB-Regelwerk Ril 301, Planungsdaten: Sicherungstechnischer Lageplan, statische Eigenschaften: Signaltabelle 1, dynamische Eigenschaften: Signaltabelle 2. </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -819,7 +866,8 @@ DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung; bei realen, aktiven 
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CSignal_Signalbegriff_Allg">
+	  <xs:complexType ecore:name="Signal_Signalbegriff_Allg_AttributeGroup"
+                   name="CSignal_Signalbegriff_Allg">
 		    <xs:sequence>
 			      <xs:element name="Anschaltdauer" type="nsSignale:TCAnschaltdauer" minOccurs="0"
                      maxOccurs="1">
@@ -870,7 +918,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="TCAnschaltdauer">
+	  <xs:complexType ecore:name="Anschaltdauer_TypeClass" name="TCAnschaltdauer">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -880,7 +928,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAuto_Einstellung">
+	  <xs:complexType ecore:name="Auto_Einstellung_TypeClass" name="TCAuto_Einstellung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -890,7 +938,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBefestigung_Art">
+	  <xs:complexType ecore:name="Befestigung_Art_TypeClass" name="TCBefestigung_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -900,7 +948,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBeleuchtet">
+	  <xs:complexType ecore:name="Beleuchtet_TypeClass" name="TCBeleuchtet">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -910,7 +958,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBesetzte_Ausfahrt">
+	  <xs:complexType ecore:name="Besetzte_Ausfahrt_TypeClass" name="TCBesetzte_Ausfahrt">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -919,7 +967,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDA_Manuell">
+	  <xs:complexType ecore:name="DA_Manuell_TypeClass" name="TCDA_Manuell">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -928,7 +976,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDunkelschaltung">
+	  <xs:complexType ecore:name="Dunkelschaltung_TypeClass" name="TCDunkelschaltung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -937,7 +985,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDurchfahrt">
+	  <xs:complexType ecore:name="Durchfahrt_TypeClass" name="TCDurchfahrt">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -947,7 +995,8 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFiktives_Signal_Funktion">
+	  <xs:complexType ecore:name="Fiktives_Signal_Funktion_TypeClass"
+                   name="TCFiktives_Signal_Funktion">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -958,7 +1007,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFundament_Art">
+	  <xs:complexType ecore:name="Fundament_Art_TypeClass" name="TCFundament_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -968,7 +1017,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFunktion_Ohne_Signal">
+	  <xs:complexType ecore:name="Funktion_Ohne_Signal_TypeClass" name="TCFunktion_Ohne_Signal">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -979,7 +1028,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGegengleis">
+	  <xs:complexType ecore:name="Gegengleis_TypeClass" name="TCGegengleis">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -988,7 +1037,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGeltungsbereich">
+	  <xs:complexType ecore:name="Geltungsbereich_TypeClass" name="TCGeltungsbereich">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -998,7 +1047,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGeschaltet">
+	  <xs:complexType ecore:name="Geschaltet_TypeClass" name="TCGeschaltet">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1007,7 +1056,8 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCHoehe_Fundamentoberkante">
+	  <xs:complexType ecore:name="Hoehe_Fundamentoberkante_TypeClass"
+                   name="TCHoehe_Fundamentoberkante">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1018,7 +1068,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCObere_Lichtpunkthoehe">
+	  <xs:complexType ecore:name="Obere_Lichtpunkthoehe_TypeClass" name="TCObere_Lichtpunkthoehe">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1028,7 +1078,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPZB_Schutzstrecke_Soll">
+	  <xs:complexType ecore:name="PZB_Schutzstrecke_Soll_TypeClass" name="TCPZB_Schutzstrecke_Soll">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1039,7 +1089,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRahmen_Art">
+	  <xs:complexType ecore:name="Rahmen_Art_TypeClass" name="TCRahmen_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1049,7 +1099,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRahmen_Hoehe">
+	  <xs:complexType ecore:name="Rahmen_Hoehe_TypeClass" name="TCRahmen_Hoehe">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1059,7 +1109,8 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRangierstrasse_Restaufloesung">
+	  <xs:complexType ecore:name="Rangierstrasse_Restaufloesung_TypeClass"
+                   name="TCRangierstrasse_Restaufloesung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1068,7 +1119,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRichtpunkt">
+	  <xs:complexType ecore:name="Richtpunkt_TypeClass" name="TCRichtpunkt">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1078,7 +1129,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRichtpunktentfernung">
+	  <xs:complexType ecore:name="Richtpunktentfernung_TypeClass" name="TCRichtpunktentfernung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1088,7 +1139,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSignal_Art">
+	  <xs:complexType ecore:name="Signal_Art_TypeClass" name="TCSignal_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1098,7 +1149,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSignal_Befestigungsart">
+	  <xs:complexType ecore:name="Signal_Befestigungsart_TypeClass" name="TCSignal_Befestigungsart">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1109,7 +1160,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSignal_Funktion">
+	  <xs:complexType ecore:name="Signal_Funktion_TypeClass" name="TCSignal_Funktion">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1119,7 +1170,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSignalsicht_Erreichbar">
+	  <xs:complexType ecore:name="Signalsicht_Erreichbar_TypeClass" name="TCSignalsicht_Erreichbar">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1130,7 +1181,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSignalsicht_Mindest">
+	  <xs:complexType ecore:name="Signalsicht_Mindest_TypeClass" name="TCSignalsicht_Mindest">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1140,7 +1191,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSignalsicht_Soll">
+	  <xs:complexType ecore:name="Signalsicht_Soll_TypeClass" name="TCSignalsicht_Soll">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1150,7 +1201,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSignalsystem">
+	  <xs:complexType ecore:name="Signalsystem_TypeClass" name="TCSignalsystem">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1160,7 +1211,8 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSonstige_Zulaessige_Anordnung">
+	  <xs:complexType ecore:name="Sonstige_Zulaessige_Anordnung_TypeClass"
+                   name="TCSonstige_Zulaessige_Anordnung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1171,7 +1223,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCStreuscheibe_Art">
+	  <xs:complexType ecore:name="Streuscheibe_Art_TypeClass" name="TCStreuscheibe_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1181,7 +1233,8 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCStreuscheibe_Betriebsstellung">
+	  <xs:complexType ecore:name="Streuscheibe_Betriebsstellung_TypeClass"
+                   name="TCStreuscheibe_Betriebsstellung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1192,7 +1245,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTunnelsignal">
+	  <xs:complexType ecore:name="Tunnelsignal_TypeClass" name="TCTunnelsignal">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1202,7 +1255,7 @@ Ril 819.0204 3 (2) Richtungsanzeiger anwenden Zwang</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZs2_Ueberwacht">
+	  <xs:complexType ecore:name="Zs2_Ueberwacht_TypeClass" name="TCZs2_Ueberwacht">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>

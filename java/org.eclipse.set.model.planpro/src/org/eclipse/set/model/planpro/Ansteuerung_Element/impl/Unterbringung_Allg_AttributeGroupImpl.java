@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Ansteuerung_Element.impl;
 
@@ -297,8 +298,9 @@ public class Unterbringung_Allg_AttributeGroupImpl extends EObjectImpl implement
 				return basicSetUnterbringungArt(null, msgs);
 			case Ansteuerung_ElementPackage.UNTERBRINGUNG_ALLG_ATTRIBUTE_GROUP__UNTERBRINGUNG_BEFESTIGUNG:
 				return basicSetUnterbringungBefestigung(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -317,8 +319,9 @@ public class Unterbringung_Allg_AttributeGroupImpl extends EObjectImpl implement
 				return getUnterbringungArt();
 			case Ansteuerung_ElementPackage.UNTERBRINGUNG_ALLG_ATTRIBUTE_GROUP__UNTERBRINGUNG_BEFESTIGUNG:
 				return getUnterbringungBefestigung();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -341,8 +344,10 @@ public class Unterbringung_Allg_AttributeGroupImpl extends EObjectImpl implement
 			case Ansteuerung_ElementPackage.UNTERBRINGUNG_ALLG_ATTRIBUTE_GROUP__UNTERBRINGUNG_BEFESTIGUNG:
 				setUnterbringungBefestigung((Unterbringung_Befestigung_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -365,8 +370,10 @@ public class Unterbringung_Allg_AttributeGroupImpl extends EObjectImpl implement
 			case Ansteuerung_ElementPackage.UNTERBRINGUNG_ALLG_ATTRIBUTE_GROUP__UNTERBRINGUNG_BEFESTIGUNG:
 				setUnterbringungBefestigung((Unterbringung_Befestigung_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -385,8 +392,9 @@ public class Unterbringung_Allg_AttributeGroupImpl extends EObjectImpl implement
 				return unterbringungArt != null;
 			case Ansteuerung_ElementPackage.UNTERBRINGUNG_ALLG_ATTRIBUTE_GROUP__UNTERBRINGUNG_BEFESTIGUNG:
 				return unterbringungBefestigung != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Unterbringung_Allg_AttributeGroupImpl

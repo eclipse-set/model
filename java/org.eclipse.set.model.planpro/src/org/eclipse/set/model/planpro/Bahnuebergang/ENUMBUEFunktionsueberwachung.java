@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang;
 
@@ -76,24 +77,24 @@ public enum ENUMBUEFunktionsueberwachung implements Enumerator {
 	ENUMBUE_FUNKTIONSUEBERWACHUNG_HP(4, "ENUMBUE_Funktionsueberwachung_Hp", "Hp"),
 
 	/**
-	 * The '<em><b>ENUMBUE Funktionsueberwachung Us</b></em>' literal object.
+	 * The '<em><b>ENUMBUE Funktionsueberwachung Ues</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUMBUE_FUNKTIONSUEBERWACHUNG_US_VALUE
+	 * @see #ENUMBUE_FUNKTIONSUEBERWACHUNG_UES_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENUMBUE_FUNKTIONSUEBERWACHUNG_US(5, "ENUMBUE_Funktionsueberwachung_Us", "\u00dcs"),
+	ENUMBUE_FUNKTIONSUEBERWACHUNG_UES(5, "ENUMBUE_Funktionsueberwachung_Ues", "\u00dcs"),
 
 	/**
-	 * The '<em><b>ENUMBUE Funktionsueberwachung Us OE</b></em>' literal object.
+	 * The '<em><b>ENUMBUE Funktionsueberwachung Ues OE</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUMBUE_FUNKTIONSUEBERWACHUNG_US_OE_VALUE
+	 * @see #ENUMBUE_FUNKTIONSUEBERWACHUNG_UES_OE_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENUMBUE_FUNKTIONSUEBERWACHUNG_US_OE(6, "ENUMBUE_Funktionsueberwachung_UsOE", "\u00dcsOE");
+	ENUMBUE_FUNKTIONSUEBERWACHUNG_UES_OE(6, "ENUMBUE_Funktionsueberwachung_UesOE", "\u00dcsOE");
 
 	/**
 	 * The '<em><b>ENUMBUE Funktionsueberwachung FS Ue B</b></em>' literal value.
@@ -151,26 +152,26 @@ public enum ENUMBUEFunktionsueberwachung implements Enumerator {
 	public static final int ENUMBUE_FUNKTIONSUEBERWACHUNG_HP_VALUE = 4;
 
 	/**
-	 * The '<em><b>ENUMBUE Funktionsueberwachung Us</b></em>' literal value.
+	 * The '<em><b>ENUMBUE Funktionsueberwachung Ues</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUMBUE_FUNKTIONSUEBERWACHUNG_US
-	 * @model name="ENUMBUE_Funktionsueberwachung_Us" literal="\334s"
+	 * @see #ENUMBUE_FUNKTIONSUEBERWACHUNG_UES
+	 * @model name="ENUMBUE_Funktionsueberwachung_Ues" literal="\334s"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMBUE_FUNKTIONSUEBERWACHUNG_US_VALUE = 5;
+	public static final int ENUMBUE_FUNKTIONSUEBERWACHUNG_UES_VALUE = 5;
 
 	/**
-	 * The '<em><b>ENUMBUE Funktionsueberwachung Us OE</b></em>' literal value.
+	 * The '<em><b>ENUMBUE Funktionsueberwachung Ues OE</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUMBUE_FUNKTIONSUEBERWACHUNG_US_OE
-	 * @model name="ENUMBUE_Funktionsueberwachung_UsOE" literal="\334sOE"
+	 * @see #ENUMBUE_FUNKTIONSUEBERWACHUNG_UES_OE
+	 * @model name="ENUMBUE_Funktionsueberwachung_UesOE" literal="\334sOE"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMBUE_FUNKTIONSUEBERWACHUNG_US_OE_VALUE = 6;
+	public static final int ENUMBUE_FUNKTIONSUEBERWACHUNG_UES_OE_VALUE = 6;
 
 	/**
 	 * An array of all the '<em><b>ENUMBUE Funktionsueberwachung</b></em>' enumerators.
@@ -185,8 +186,8 @@ public enum ENUMBUEFunktionsueberwachung implements Enumerator {
 			ENUMBUE_FUNKTIONSUEBERWACHUNG_FS_UE_S,
 			ENUMBUE_FUNKTIONSUEBERWACHUNG_FÜ,
 			ENUMBUE_FUNKTIONSUEBERWACHUNG_HP,
-			ENUMBUE_FUNKTIONSUEBERWACHUNG_US,
-			ENUMBUE_FUNKTIONSUEBERWACHUNG_US_OE,
+			ENUMBUE_FUNKTIONSUEBERWACHUNG_UES,
+			ENUMBUE_FUNKTIONSUEBERWACHUNG_UES_OE,
 		};
 
 	/**
@@ -248,10 +249,10 @@ public enum ENUMBUEFunktionsueberwachung implements Enumerator {
 			case ENUMBUE_FUNKTIONSUEBERWACHUNG_FS_UE_S_VALUE: return ENUMBUE_FUNKTIONSUEBERWACHUNG_FS_UE_S;
 			case ENUMBUE_FUNKTIONSUEBERWACHUNG_FÜ_VALUE: return ENUMBUE_FUNKTIONSUEBERWACHUNG_FÜ;
 			case ENUMBUE_FUNKTIONSUEBERWACHUNG_HP_VALUE: return ENUMBUE_FUNKTIONSUEBERWACHUNG_HP;
-			case ENUMBUE_FUNKTIONSUEBERWACHUNG_US_VALUE: return ENUMBUE_FUNKTIONSUEBERWACHUNG_US;
-			case ENUMBUE_FUNKTIONSUEBERWACHUNG_US_OE_VALUE: return ENUMBUE_FUNKTIONSUEBERWACHUNG_US_OE;
+			case ENUMBUE_FUNKTIONSUEBERWACHUNG_UES_VALUE: return ENUMBUE_FUNKTIONSUEBERWACHUNG_UES;
+			case ENUMBUE_FUNKTIONSUEBERWACHUNG_UES_OE_VALUE: return ENUMBUE_FUNKTIONSUEBERWACHUNG_UES_OE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

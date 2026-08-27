@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Geodaten.impl;
 
@@ -238,8 +239,9 @@ public class Oertlichkeit_Bezeichnung_AttributeGroupImpl extends EObjectImpl imp
 				return basicSetOertlichkeitKurzname(null, msgs);
 			case GeodatenPackage.OERTLICHKEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__OERTLICHKEIT_LANGNAME:
 				return basicSetOertlichkeitLangname(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -256,8 +258,9 @@ public class Oertlichkeit_Bezeichnung_AttributeGroupImpl extends EObjectImpl imp
 				return getOertlichkeitKurzname();
 			case GeodatenPackage.OERTLICHKEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__OERTLICHKEIT_LANGNAME:
 				return getOertlichkeitLangname();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -277,8 +280,10 @@ public class Oertlichkeit_Bezeichnung_AttributeGroupImpl extends EObjectImpl imp
 			case GeodatenPackage.OERTLICHKEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__OERTLICHKEIT_LANGNAME:
 				setOertlichkeitLangname((Oertlichkeit_Langname_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -298,8 +303,10 @@ public class Oertlichkeit_Bezeichnung_AttributeGroupImpl extends EObjectImpl imp
 			case GeodatenPackage.OERTLICHKEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__OERTLICHKEIT_LANGNAME:
 				setOertlichkeitLangname((Oertlichkeit_Langname_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -316,8 +323,9 @@ public class Oertlichkeit_Bezeichnung_AttributeGroupImpl extends EObjectImpl imp
 				return oertlichkeitKurzname != null;
 			case GeodatenPackage.OERTLICHKEIT_BEZEICHNUNG_ATTRIBUTE_GROUP__OERTLICHKEIT_LANGNAME:
 				return oertlichkeitLangname != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Oertlichkeit_Bezeichnung_AttributeGroupImpl

@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Schluesselabhaengigkeiten.impl;
 
@@ -121,8 +122,9 @@ public class Schloss_Ssp_AttributeGroupImpl extends EObjectImpl implements Schlo
 		switch (featureID) {
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SSP_ATTRIBUTE_GROUP__ID_SCHLUESSELSPERRE:
 				return basicSetIDSchluesselsperre(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -135,8 +137,9 @@ public class Schloss_Ssp_AttributeGroupImpl extends EObjectImpl implements Schlo
 		switch (featureID) {
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SSP_ATTRIBUTE_GROUP__ID_SCHLUESSELSPERRE:
 				return getIDSchluesselsperre();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -150,8 +153,10 @@ public class Schloss_Ssp_AttributeGroupImpl extends EObjectImpl implements Schlo
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SSP_ATTRIBUTE_GROUP__ID_SCHLUESSELSPERRE:
 				setIDSchluesselsperre((ID_Schluesselsperre_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -165,8 +170,10 @@ public class Schloss_Ssp_AttributeGroupImpl extends EObjectImpl implements Schlo
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SSP_ATTRIBUTE_GROUP__ID_SCHLUESSELSPERRE:
 				setIDSchluesselsperre((ID_Schluesselsperre_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -179,8 +186,9 @@ public class Schloss_Ssp_AttributeGroupImpl extends EObjectImpl implements Schlo
 		switch (featureID) {
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SSP_ATTRIBUTE_GROUP__ID_SCHLUESSELSPERRE:
 				return iDSchluesselsperre != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Schloss_Ssp_AttributeGroupImpl

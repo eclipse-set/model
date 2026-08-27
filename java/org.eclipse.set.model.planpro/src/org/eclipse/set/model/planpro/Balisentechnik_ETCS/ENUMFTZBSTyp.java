@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -226,14 +227,14 @@ public enum ENUMFTZBSTyp implements Enumerator {
 	ENUMFT_ZBS_TYP_ZV(19, "ENUMFT_ZBS_Typ_ZV", "ZV"),
 
 	/**
-	 * The '<em><b>ENUMFT ZBS Typ ZU</b></em>' literal object.
+	 * The '<em><b>ENUMFT ZBS Typ ZUe</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUMFT_ZBS_TYP_ZU_VALUE
+	 * @see #ENUMFT_ZBS_TYP_ZUE_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENUMFT_ZBS_TYP_ZU(20, "ENUMFT_ZBS_Typ_ZU", "Z\u00dc");
+	ENUMFT_ZBS_TYP_ZUE(20, "ENUMFT_ZBS_Typ_ZUe", "Z\u00dc");
 
 	/**
 	 * The '<em><b>ENUMFT ZBS Typ Null</b></em>' literal value.
@@ -456,15 +457,15 @@ public enum ENUMFTZBSTyp implements Enumerator {
 	public static final int ENUMFT_ZBS_TYP_ZV_VALUE = 19;
 
 	/**
-	 * The '<em><b>ENUMFT ZBS Typ ZU</b></em>' literal value.
+	 * The '<em><b>ENUMFT ZBS Typ ZUe</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUMFT_ZBS_TYP_ZU
-	 * @model name="ENUMFT_ZBS_Typ_ZU" literal="Z\334"
+	 * @see #ENUMFT_ZBS_TYP_ZUE
+	 * @model name="ENUMFT_ZBS_Typ_ZUe" literal="Z\334"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUMFT_ZBS_TYP_ZU_VALUE = 20;
+	public static final int ENUMFT_ZBS_TYP_ZUE_VALUE = 20;
 
 	/**
 	 * An array of all the '<em><b>ENUMFTZBS Typ</b></em>' enumerators.
@@ -494,7 +495,7 @@ public enum ENUMFTZBSTyp implements Enumerator {
 			ENUMFT_ZBS_TYP_ZR_LA,
 			ENUMFT_ZBS_TYP_ZRV,
 			ENUMFT_ZBS_TYP_ZV,
-			ENUMFT_ZBS_TYP_ZU,
+			ENUMFT_ZBS_TYP_ZUE,
 		};
 
 	/**
@@ -571,9 +572,9 @@ public enum ENUMFTZBSTyp implements Enumerator {
 			case ENUMFT_ZBS_TYP_ZR_LA_VALUE: return ENUMFT_ZBS_TYP_ZR_LA;
 			case ENUMFT_ZBS_TYP_ZRV_VALUE: return ENUMFT_ZBS_TYP_ZRV;
 			case ENUMFT_ZBS_TYP_ZV_VALUE: return ENUMFT_ZBS_TYP_ZV;
-			case ENUMFT_ZBS_TYP_ZU_VALUE: return ENUMFT_ZBS_TYP_ZU;
+			case ENUMFT_ZBS_TYP_ZUE_VALUE: return ENUMFT_ZBS_TYP_ZUE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

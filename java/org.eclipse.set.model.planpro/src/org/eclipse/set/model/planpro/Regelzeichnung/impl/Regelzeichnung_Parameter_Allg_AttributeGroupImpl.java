@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Regelzeichnung.impl;
 
@@ -179,8 +180,9 @@ public class Regelzeichnung_Parameter_Allg_AttributeGroupImpl extends EObjectImp
 				return basicSetRZParameterName(null, msgs);
 			case RegelzeichnungPackage.REGELZEICHNUNG_PARAMETER_ALLG_ATTRIBUTE_GROUP__RZ_PARAMETER_WERT:
 				return basicSetRZParameterWert(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -195,8 +197,9 @@ public class Regelzeichnung_Parameter_Allg_AttributeGroupImpl extends EObjectImp
 				return getRZParameterName();
 			case RegelzeichnungPackage.REGELZEICHNUNG_PARAMETER_ALLG_ATTRIBUTE_GROUP__RZ_PARAMETER_WERT:
 				return getRZParameterWert();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -213,8 +216,10 @@ public class Regelzeichnung_Parameter_Allg_AttributeGroupImpl extends EObjectImp
 			case RegelzeichnungPackage.REGELZEICHNUNG_PARAMETER_ALLG_ATTRIBUTE_GROUP__RZ_PARAMETER_WERT:
 				setRZParameterWert((RZ_Parameter_Wert_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -231,8 +236,10 @@ public class Regelzeichnung_Parameter_Allg_AttributeGroupImpl extends EObjectImp
 			case RegelzeichnungPackage.REGELZEICHNUNG_PARAMETER_ALLG_ATTRIBUTE_GROUP__RZ_PARAMETER_WERT:
 				setRZParameterWert((RZ_Parameter_Wert_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -247,8 +254,9 @@ public class Regelzeichnung_Parameter_Allg_AttributeGroupImpl extends EObjectImp
 				return rZParameterName != null;
 			case RegelzeichnungPackage.REGELZEICHNUNG_PARAMETER_ALLG_ATTRIBUTE_GROUP__RZ_PARAMETER_WERT:
 				return rZParameterWert != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Regelzeichnung_Parameter_Allg_AttributeGroupImpl

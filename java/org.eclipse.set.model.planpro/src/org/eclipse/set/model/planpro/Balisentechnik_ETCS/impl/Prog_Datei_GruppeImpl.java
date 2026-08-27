@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -121,8 +122,9 @@ public class Prog_Datei_GruppeImpl extends Basis_ObjektImpl implements Prog_Date
 				return ((InternalEList<?>)getIDKomponenteProgrammiert()).basicRemove(otherEnd, msgs);
 			case Balisentechnik_ETCSPackage.PROG_DATEI_GRUPPE__PROG_DATEI_EINZEL:
 				return ((InternalEList<?>)getProgDateiEinzel()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -137,8 +139,9 @@ public class Prog_Datei_GruppeImpl extends Basis_ObjektImpl implements Prog_Date
 				return getIDKomponenteProgrammiert();
 			case Balisentechnik_ETCSPackage.PROG_DATEI_GRUPPE__PROG_DATEI_EINZEL:
 				return getProgDateiEinzel();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -158,8 +161,10 @@ public class Prog_Datei_GruppeImpl extends Basis_ObjektImpl implements Prog_Date
 				getProgDateiEinzel().clear();
 				getProgDateiEinzel().addAll((Collection<? extends Prog_Datei_Einzel_AttributeGroup>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -176,8 +181,10 @@ public class Prog_Datei_GruppeImpl extends Basis_ObjektImpl implements Prog_Date
 			case Balisentechnik_ETCSPackage.PROG_DATEI_GRUPPE__PROG_DATEI_EINZEL:
 				getProgDateiEinzel().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -192,8 +199,9 @@ public class Prog_Datei_GruppeImpl extends Basis_ObjektImpl implements Prog_Date
 				return iDKomponenteProgrammiert != null && !iDKomponenteProgrammiert.isEmpty();
 			case Balisentechnik_ETCSPackage.PROG_DATEI_GRUPPE__PROG_DATEI_EINZEL:
 				return progDateiEinzel != null && !progDateiEinzel.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Prog_Datei_GruppeImpl

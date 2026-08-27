@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -181,8 +182,8 @@ public enum ENUMArtBedingung implements Enumerator {
 			case ENUM_ART_BEDINGUNG_FESTDATEN_VALUE: return ENUM_ART_BEDINGUNG_FESTDATEN;
 			case ENUM_ART_BEDINGUNG_SONSTIGE_VALUE: return ENUM_ART_BEDINGUNG_SONSTIGE;
 			case ENUM_ART_BEDINGUNG_STÖRTELEGRAMM_VALUE: return ENUM_ART_BEDINGUNG_STÖRTELEGRAMM;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

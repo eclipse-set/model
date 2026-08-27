@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.PlanPro.provider;
 
@@ -22,6 +23,8 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Basisobjekte.provider.Ur_ObjektItemProvider;
 
@@ -141,8 +144,10 @@ public class Planung_ProjektItemProvider extends Ur_ObjektItemProvider {
 			case PlanProPackage.PLANUNG_PROJEKT__PLANUNG_PALLG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-		}
-		super.notifyChanged(notification);
+			default:
+				super.notifyChanged(notification);
+				return;
+			}
 	}
 
 	/**

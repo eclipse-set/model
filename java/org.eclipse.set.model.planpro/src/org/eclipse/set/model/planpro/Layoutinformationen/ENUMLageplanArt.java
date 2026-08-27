@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Layoutinformationen;
 
@@ -26,24 +27,24 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ENUMLageplanArt implements Enumerator {
 	/**
-	 * The '<em><b>ENUM Lageplan Art BU Kreuzungsplan LST</b></em>' literal object.
+	 * The '<em><b>ENUM Lageplan Art BUe Kreuzungsplan LST</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUM_LAGEPLAN_ART_BU_KREUZUNGSPLAN_LST_VALUE
+	 * @see #ENUM_LAGEPLAN_ART_BUE_KREUZUNGSPLAN_LST_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_LAGEPLAN_ART_BU_KREUZUNGSPLAN_LST(0, "ENUMLageplan_Art_BU_Kreuzungsplan_LST", "B\u00dc Kreuzungsplan LST"),
+	ENUM_LAGEPLAN_ART_BUE_KREUZUNGSPLAN_LST(0, "ENUMLageplan_Art_BUe_Kreuzungsplan_LST", "B\u00dc Kreuzungsplan LST"),
 
 	/**
-	 * The '<em><b>ENUM Lageplan Art BU Sicherungstechn Lage und Kabelübersichtsplan</b></em>' literal object.
+	 * The '<em><b>ENUM Lageplan Art BUe Sicherungstechn Lage und Kabelübersichtsplan</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUM_LAGEPLAN_ART_BU_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN_VALUE
+	 * @see #ENUM_LAGEPLAN_ART_BUE_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_LAGEPLAN_ART_BU_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN(1, "ENUMLageplan_Art_BU_Sicherungstechn__Lage__und_Kabelübersichtsplan", "B\u00dc Sicherungstechn. Lage- und Kabel\u00fcbersichtsplan"),
+	ENUM_LAGEPLAN_ART_BUE_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN(1, "ENUMLageplan_Art_BUe_Sicherungstechn__Lage__und_Kabelübersichtsplan", "B\u00dc Sicherungstechn. Lage- und Kabel\u00fcbersichtsplan"),
 
 	/**
 	 * The '<em><b>ENUM Lageplan Art Gleisfreimeldeplan für Gleisstromkreise</b></em>' literal object.
@@ -86,14 +87,14 @@ public enum ENUMLageplanArt implements Enumerator {
 	ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_LAGEPLAN(5, "ENUMLageplan_Art_Sicherungstechnischer_Lageplan", "Sicherungstechnischer Lageplan"),
 
 	/**
-	 * The '<em><b>ENUM Lageplan Art Sicherungstechnischer Ubersichtsplan</b></em>' literal object.
+	 * The '<em><b>ENUM Lageplan Art Sicherungstechnischer Uebersichtsplan</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UBERSICHTSPLAN_VALUE
+	 * @see #ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UEBERSICHTSPLAN_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UBERSICHTSPLAN(6, "ENUMLageplan_Art_Sicherungstechnischer_Ubersichtsplan", "Sicherungstechnischer \u00dcbersichtsplan"),
+	ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UEBERSICHTSPLAN(6, "ENUMLageplan_Art_Sicherungstechnischer_Uebersichtsplan", "Sicherungstechnischer \u00dcbersichtsplan"),
 
 	/**
 	 * The '<em><b>ENUM Lageplan Art sonstige</b></em>' literal object.
@@ -116,46 +117,46 @@ public enum ENUMLageplanArt implements Enumerator {
 	ENUM_LAGEPLAN_ART_STAMMKABELÜBERSICHTSPLAN(8, "ENUMLageplan_Art_Stammkabelübersichtsplan", "Stammkabel\u00fcbersichtsplan"),
 
 	/**
-	 * The '<em><b>ENUM Lageplan Art ZLV Bus Ubersichtsplan</b></em>' literal object.
+	 * The '<em><b>ENUM Lageplan Art ZLV Bus Uebersichtsplan</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN_VALUE
+	 * @see #ENUM_LAGEPLAN_ART_ZLV_BUS_UEBERSICHTSPLAN_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN(9, "ENUMLageplan_Art_ZLV_Bus_Ubersichtsplan", "ZLV-Bus-\u00dcbersichtsplan"),
+	ENUM_LAGEPLAN_ART_ZLV_BUS_UEBERSICHTSPLAN(9, "ENUMLageplan_Art_ZLV_Bus_Uebersichtsplan", "ZLV-Bus-\u00dcbersichtsplan"),
 
 	/**
-	 * The '<em><b>ENUM Lageplan Art ZN Ubersichtsplan</b></em>' literal object.
+	 * The '<em><b>ENUM Lageplan Art ZN Uebersichtsplan</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN_VALUE
+	 * @see #ENUM_LAGEPLAN_ART_ZN_UEBERSICHTSPLAN_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN(10, "ENUMLageplan_Art_ZN_Ubersichtsplan", "ZN-\u00dcbersichtsplan");
+	ENUM_LAGEPLAN_ART_ZN_UEBERSICHTSPLAN(10, "ENUMLageplan_Art_ZN_Uebersichtsplan", "ZN-\u00dcbersichtsplan");
 
 	/**
-	 * The '<em><b>ENUM Lageplan Art BU Kreuzungsplan LST</b></em>' literal value.
+	 * The '<em><b>ENUM Lageplan Art BUe Kreuzungsplan LST</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUM_LAGEPLAN_ART_BU_KREUZUNGSPLAN_LST
-	 * @model name="ENUMLageplan_Art_BU_Kreuzungsplan_LST" literal="B\334 Kreuzungsplan LST"
+	 * @see #ENUM_LAGEPLAN_ART_BUE_KREUZUNGSPLAN_LST
+	 * @model name="ENUMLageplan_Art_BUe_Kreuzungsplan_LST" literal="B\334 Kreuzungsplan LST"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_LAGEPLAN_ART_BU_KREUZUNGSPLAN_LST_VALUE = 0;
+	public static final int ENUM_LAGEPLAN_ART_BUE_KREUZUNGSPLAN_LST_VALUE = 0;
 
 	/**
-	 * The '<em><b>ENUM Lageplan Art BU Sicherungstechn Lage und Kabelübersichtsplan</b></em>' literal value.
+	 * The '<em><b>ENUM Lageplan Art BUe Sicherungstechn Lage und Kabelübersichtsplan</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUM_LAGEPLAN_ART_BU_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN
-	 * @model name="ENUMLageplan_Art_BU_Sicherungstechn__Lage__und_Kabelübersichtsplan" literal="B\334 Sicherungstechn. Lage- und Kabel\374bersichtsplan"
+	 * @see #ENUM_LAGEPLAN_ART_BUE_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN
+	 * @model name="ENUMLageplan_Art_BUe_Sicherungstechn__Lage__und_Kabelübersichtsplan" literal="B\334 Sicherungstechn. Lage- und Kabel\374bersichtsplan"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_LAGEPLAN_ART_BU_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN_VALUE = 1;
+	public static final int ENUM_LAGEPLAN_ART_BUE_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN_VALUE = 1;
 
 	/**
 	 * The '<em><b>ENUM Lageplan Art Gleisfreimeldeplan für Gleisstromkreise</b></em>' literal value.
@@ -202,15 +203,15 @@ public enum ENUMLageplanArt implements Enumerator {
 	public static final int ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_LAGEPLAN_VALUE = 5;
 
 	/**
-	 * The '<em><b>ENUM Lageplan Art Sicherungstechnischer Ubersichtsplan</b></em>' literal value.
+	 * The '<em><b>ENUM Lageplan Art Sicherungstechnischer Uebersichtsplan</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UBERSICHTSPLAN
-	 * @model name="ENUMLageplan_Art_Sicherungstechnischer_Ubersichtsplan" literal="Sicherungstechnischer \334bersichtsplan"
+	 * @see #ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UEBERSICHTSPLAN
+	 * @model name="ENUMLageplan_Art_Sicherungstechnischer_Uebersichtsplan" literal="Sicherungstechnischer \334bersichtsplan"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UBERSICHTSPLAN_VALUE = 6;
+	public static final int ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UEBERSICHTSPLAN_VALUE = 6;
 
 	/**
 	 * The '<em><b>ENUM Lageplan Art sonstige</b></em>' literal value.
@@ -235,26 +236,26 @@ public enum ENUMLageplanArt implements Enumerator {
 	public static final int ENUM_LAGEPLAN_ART_STAMMKABELÜBERSICHTSPLAN_VALUE = 8;
 
 	/**
-	 * The '<em><b>ENUM Lageplan Art ZLV Bus Ubersichtsplan</b></em>' literal value.
+	 * The '<em><b>ENUM Lageplan Art ZLV Bus Uebersichtsplan</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN
-	 * @model name="ENUMLageplan_Art_ZLV_Bus_Ubersichtsplan" literal="ZLV-Bus-\334bersichtsplan"
+	 * @see #ENUM_LAGEPLAN_ART_ZLV_BUS_UEBERSICHTSPLAN
+	 * @model name="ENUMLageplan_Art_ZLV_Bus_Uebersichtsplan" literal="ZLV-Bus-\334bersichtsplan"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN_VALUE = 9;
+	public static final int ENUM_LAGEPLAN_ART_ZLV_BUS_UEBERSICHTSPLAN_VALUE = 9;
 
 	/**
-	 * The '<em><b>ENUM Lageplan Art ZN Ubersichtsplan</b></em>' literal value.
+	 * The '<em><b>ENUM Lageplan Art ZN Uebersichtsplan</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN
-	 * @model name="ENUMLageplan_Art_ZN_Ubersichtsplan" literal="ZN-\334bersichtsplan"
+	 * @see #ENUM_LAGEPLAN_ART_ZN_UEBERSICHTSPLAN
+	 * @model name="ENUMLageplan_Art_ZN_Uebersichtsplan" literal="ZN-\334bersichtsplan"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN_VALUE = 10;
+	public static final int ENUM_LAGEPLAN_ART_ZN_UEBERSICHTSPLAN_VALUE = 10;
 
 	/**
 	 * An array of all the '<em><b>ENUM Lageplan Art</b></em>' enumerators.
@@ -264,17 +265,17 @@ public enum ENUMLageplanArt implements Enumerator {
 	 */
 	private static final ENUMLageplanArt[] VALUES_ARRAY =
 		new ENUMLageplanArt[] {
-			ENUM_LAGEPLAN_ART_BU_KREUZUNGSPLAN_LST,
-			ENUM_LAGEPLAN_ART_BU_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN,
+			ENUM_LAGEPLAN_ART_BUE_KREUZUNGSPLAN_LST,
+			ENUM_LAGEPLAN_ART_BUE_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN,
 			ENUM_LAGEPLAN_ART_GLEISFREIMELDEPLAN_FÜR_GLEISSTROMKREISE,
 			ENUM_LAGEPLAN_ART_KABELLAGEPLAN,
 			ENUM_LAGEPLAN_ART_KABELÜBERSICHTSPLAN,
 			ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_LAGEPLAN,
-			ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UBERSICHTSPLAN,
+			ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UEBERSICHTSPLAN,
 			ENUM_LAGEPLAN_ART_SONSTIGE,
 			ENUM_LAGEPLAN_ART_STAMMKABELÜBERSICHTSPLAN,
-			ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN,
-			ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN,
+			ENUM_LAGEPLAN_ART_ZLV_BUS_UEBERSICHTSPLAN,
+			ENUM_LAGEPLAN_ART_ZN_UEBERSICHTSPLAN,
 		};
 
 	/**
@@ -331,19 +332,19 @@ public enum ENUMLageplanArt implements Enumerator {
 	 */
 	public static ENUMLageplanArt get(int value) {
 		switch (value) {
-			case ENUM_LAGEPLAN_ART_BU_KREUZUNGSPLAN_LST_VALUE: return ENUM_LAGEPLAN_ART_BU_KREUZUNGSPLAN_LST;
-			case ENUM_LAGEPLAN_ART_BU_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_BU_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN;
+			case ENUM_LAGEPLAN_ART_BUE_KREUZUNGSPLAN_LST_VALUE: return ENUM_LAGEPLAN_ART_BUE_KREUZUNGSPLAN_LST;
+			case ENUM_LAGEPLAN_ART_BUE_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_BUE_SICHERUNGSTECHN_LAGE_UND_KABELÜBERSICHTSPLAN;
 			case ENUM_LAGEPLAN_ART_GLEISFREIMELDEPLAN_FÜR_GLEISSTROMKREISE_VALUE: return ENUM_LAGEPLAN_ART_GLEISFREIMELDEPLAN_FÜR_GLEISSTROMKREISE;
 			case ENUM_LAGEPLAN_ART_KABELLAGEPLAN_VALUE: return ENUM_LAGEPLAN_ART_KABELLAGEPLAN;
 			case ENUM_LAGEPLAN_ART_KABELÜBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_KABELÜBERSICHTSPLAN;
 			case ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_LAGEPLAN_VALUE: return ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_LAGEPLAN;
-			case ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UBERSICHTSPLAN;
+			case ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UEBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_SICHERUNGSTECHNISCHER_UEBERSICHTSPLAN;
 			case ENUM_LAGEPLAN_ART_SONSTIGE_VALUE: return ENUM_LAGEPLAN_ART_SONSTIGE;
 			case ENUM_LAGEPLAN_ART_STAMMKABELÜBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_STAMMKABELÜBERSICHTSPLAN;
-			case ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_ZLV_BUS_UBERSICHTSPLAN;
-			case ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_ZN_UBERSICHTSPLAN;
+			case ENUM_LAGEPLAN_ART_ZLV_BUS_UEBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_ZLV_BUS_UEBERSICHTSPLAN;
+			case ENUM_LAGEPLAN_ART_ZN_UEBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_ZN_UEBERSICHTSPLAN;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

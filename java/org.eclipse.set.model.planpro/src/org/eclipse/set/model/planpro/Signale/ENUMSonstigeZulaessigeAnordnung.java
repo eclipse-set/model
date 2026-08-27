@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Signale;
 
@@ -158,8 +159,8 @@ public enum ENUMSonstigeZulaessigeAnordnung implements Enumerator {
 			case ENUM_SONSTIGE_ZULAESSIGE_ANORDNUNG_ANORDNUNG_DES_SIGNALS_RECHTS_AM_GLEIS_VALUE: return ENUM_SONSTIGE_ZULAESSIGE_ANORDNUNG_ANORDNUNG_DES_SIGNALS_RECHTS_AM_GLEIS;
 			case ENUM_SONSTIGE_ZULAESSIGE_ANORDNUNG_ANORDNUNG_DES_SIGNALS_RECHTS_AM_GLEIS_OHNE_SCHACHBRETTTAFEL_VALUE: return ENUM_SONSTIGE_ZULAESSIGE_ANORDNUNG_ANORDNUNG_DES_SIGNALS_RECHTS_AM_GLEIS_OHNE_SCHACHBRETTTAFEL;
 			case ENUM_SONSTIGE_ZULAESSIGE_ANORDNUNG_NICHTGELTUNG_FUER_FAHRTEN_AUF_DEM_GEGENGLEIS_VALUE: return ENUM_SONSTIGE_ZULAESSIGE_ANORDNUNG_NICHTGELTUNG_FUER_FAHRTEN_AUF_DEM_GEGENGLEIS;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

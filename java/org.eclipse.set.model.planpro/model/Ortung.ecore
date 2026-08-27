@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ecore:EPackage xmlns:xmi="http://www.omg.org/XMI"
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+                xmlns:xmi="http://www.omg.org/XMI"
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-                xmi:version="2.0"
                 name="Ortung"
                 nsURI="http://www.plan-pro.org/modell/Ortung/1.10.0.3"
                 nsPrefix="nsOrtung">
@@ -422,7 +422,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -520,7 +520,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Verweis auf eine Aussenelementansteuerung, die die logische Aufbereitung der Daten der FMA Anlage (primär zur Information frei/belegt) übernimmt. Im Fall, dass der Achszählrechner direkt einem ESTW-A zugeordnet ist, wird auf eine Aussenelementansteuerung der Art \&#34;ESTW_A\&#34; verwiesen. Sofern ein separat stehender Achszählrechner vorgesehen ist, erfolgt der Verweis auf eine Aussenelementansteuerung der Art \&#34;Gleisfreimelde_Innennanlage\&#34;. Die Unterbringung dieser Außenelementansteuerung muss nicht zwingend identisch mit der Unterbringung der Außenelementansteuerung sein, die die Ergebnisse der Gleisfreimelde-Innenanlage verwertet. Bei Achszählanlagen gilt speziell: Zusätzlich muss auch noch die Außenelementansteuerung bekannt sein, an die die zugehörigen Achszähler angeschlossen sind, siehe dazu die Attribute des Objekts FMA Komponente. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. "/>
+                 value="Verweis auf eine Aussenelementansteuerung, die die logische Aufbereitung der Daten der FMA Anlage (primär zur Information frei/belegt) übernimmt. Im Fall, dass der Achszählrechner direkt einem ESTW-A zugeordnet ist, wird auf eine Aussenelementansteuerung der Art \&quot;ESTW_A\&quot; verwiesen. Sofern ein separat stehender Achszählrechner vorgesehen ist, erfolgt der Verweis auf eine Aussenelementansteuerung der Art \&quot;Gleisfreimelde_Innennanlage\&quot;. Die Unterbringung dieser Außenelementansteuerung muss nicht zwingend identisch mit der Unterbringung der Außenelementansteuerung sein, die die Ergebnisse der Gleisfreimelde-Innenanlage verwertet. Bei Achszählanlagen gilt speziell: Zusätzlich muss auch noch die Außenelementansteuerung bekannt sein, an die die zugehörigen Achszähler angeschlossen sind, siehe dazu die Attribute des Objekts FMA Komponente. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -567,7 +567,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;false&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -603,7 +603,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..16]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..16]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -629,7 +629,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Bestandteil der vollständigen Bezeichnung einer FMA Anlage. Die Bezeichnung eines Freimeldeabschnittes besteht aus Kennzahl, Kennbuchstaben und Örtlichem Elementbezeichner des Gleisabschnitts. Kennzahl und Bezeichnung des Gleisabschnitts können über ID Gleis Abschnitt ermittelt werden, die Attribute der Gruppe \&#34;Bezeichnung\&#34; werden für FMA_Anlagen nicht befüllt. Die Herleitung des Kennbuchstabens aus Attributen des Gleises und des Gleisabschnitts ist schwierig und in einigen Fällen unsicher, daher erfolgt im Unterschied zu anderen Objekten eine direkte Abspeicherung als Ergänzung innerhalb der Attributgruppe \&#34;Bezeichnung\&#34;. Ein Beispiel ist unter Modellierung Gleisfreimeldung zu finden. DB-Regelwerk Planungsdaten: Freimeldetabelle, Spalte 1 "/>
+                 value="Bestandteil der vollständigen Bezeichnung einer FMA Anlage. Die Bezeichnung eines Freimeldeabschnittes besteht aus Kennzahl, Kennbuchstaben und Örtlichem Elementbezeichner des Gleisabschnitts. Kennzahl und Bezeichnung des Gleisabschnitts können über ID Gleis Abschnitt ermittelt werden, die Attribute der Gruppe \&quot;Bezeichnung\&quot; werden für FMA_Anlagen nicht befüllt. Die Herleitung des Kennbuchstabens aus Attributen des Gleises und des Gleisabschnitts ist schwierig und in einigen Fällen unsicher, daher erfolgt im Unterschied zu anderen Objekten eine direkte Abspeicherung als Ergänzung innerhalb der Attributgruppe \&quot;Bezeichnung\&quot;. Ein Beispiel ist unter Modellierung Gleisfreimeldung zu finden. DB-Regelwerk Planungsdaten: Freimeldetabelle, Spalte 1 "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -658,7 +658,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [0.00..5.00], 2 Nachkommastellen &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [0.00..5.00], 2 Nachkommastellen &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -678,7 +678,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [1..1500] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [1..1500] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -698,7 +698,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [1..1500] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [1..1500] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -718,7 +718,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [1..1499] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [1..1499] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -738,7 +738,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [1..1499] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [1..1499] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -758,7 +758,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [1..1499] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [1..1499] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -778,7 +778,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [1..1499] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [1..1499] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -808,7 +808,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[a-z]|[A-Z]|[I-XII]| [.1-.9]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[a-z]|[A-Z]|[I-XII]| [.1-.9]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -829,7 +829,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;false&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -892,7 +892,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..16]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..16]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -989,7 +989,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1056,7 +1056,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Art, mit der die Ein- bzw. Ausspeisung in den Freimeldeabschnitt vorgenommen wird. Hinweis: Beim Wert \&#34;S_Verbinder\&#34; handelt es sich streng genommen nur um einen halben S-Verbinder, die jeweils andere Hälfte ist dem angrenzenden Freimeldeabschnitt zugeordnet. Bei der Ermittlung der Anzahl der S-Verbinder in einem Pool muss also die Anzahl der Instanzen FMA_Element mit FMA_Element_Art==S_Verbinder halbiert werden. DB-Regelwerk Bei allen Typen von FMA_Elementen: Sicherungstechnischer Lageplan, BÜ-Lageplan; Gleisfreimeldeplan. Bei FTGS: zusätzlich in der Freimeldetabelle, Spalte 17 links, dabei wird die Zuordnung (z.B. links/rechts) uneinheitlich gehandhabt. "/>
+                 value="Art, mit der die Ein- bzw. Ausspeisung in den Freimeldeabschnitt vorgenommen wird. Hinweis: Beim Wert \&quot;S_Verbinder\&quot; handelt es sich streng genommen nur um einen halben S-Verbinder, die jeweils andere Hälfte ist dem angrenzenden Freimeldeabschnitt zugeordnet. Bei der Ermittlung der Anzahl der S-Verbinder in einem Pool muss also die Anzahl der Instanzen FMA_Element mit FMA_Element_Art==S_Verbinder halbiert werden. DB-Regelwerk Bei allen Typen von FMA_Elementen: Sicherungstechnischer Lageplan, BÜ-Lageplan; Gleisfreimeldeplan. Bei FTGS: zusätzlich in der Freimeldetabelle, Spalte 17 links, dabei wird die Zuordnung (z.B. links/rechts) uneinheitlich gehandhabt. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1073,11 +1073,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Anzahl der Seile der Schienenverbinder entsprechend der Anwendungsrichtlinien. Die zugehörigen Baulängen ergeben sich aus den Anwendungsrichtlinien und dem Typ der angrenzenden FMA Anlage und werden nicht separat angegeben. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk bei FTGS: Freimeldetabelle, Spalte 17 rechts; bei anderen Arten von Gleisstromkreisen: Gleisfreimeldeplan. "/>
+                 value="Anzahl der Seile der Schienenverbinder entsprechend der Anwendungsrichtlinien. Die zugehörigen Baulängen ergeben sich aus den Anwendungsrichtlinien und dem Typ der angrenzenden FMA Anlage und werden nicht separat angegeben. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk bei FTGS: Freimeldetabelle, Spalte 17 rechts; bei anderen Arten von Gleisstromkreisen: Gleisfreimeldeplan. "/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [1|2|4] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [1|2|4] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1098,7 +1098,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [2..6] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [2..6] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1128,7 +1128,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[2..8]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[2..8]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1342,7 +1342,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1444,7 +1444,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Hinsichtlich der Befestigung zu berücksichtigendes Schienenprofil. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen."/>
+                 value="Hinsichtlich der Befestigung zu berücksichtigendes Schienenprofil. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1461,11 +1461,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Angabe, ob für die Stromversorgung im Vergleich mit der Informationsübertragung separate Adern genutzt werden (true) oder nicht (false). Die Angabe ist nur bei Achszählpunkten erforderlich. Wertezuordnung: false - entspricht dem Eintrag \&#34;eigen\&#34; im bisherigen PT 1 (Stromversorgung in gemeinsamen Adern), true - entspricht den Einträgen \&#34;fern\&#34; und \&#34;fremd\&#34; im bisherigen PT 1 (Stromversorgung und Informationsübertragung über unterschiedliche Adern), die weitere Unterscheidung zwischen \&#34;fern\&#34; und \&#34;fremd\&#34; geht aus dem Vergleich von ID Energie und ID Information hervor. Die Signalbauindustrie benutzt die Begriffe u. U. mit abweichender Bedeutung. DB-Regelwerk Achszähltabelle, Spalte 3 "/>
+                 value="Angabe, ob für die Stromversorgung im Vergleich mit der Informationsübertragung separate Adern genutzt werden (true) oder nicht (false). Die Angabe ist nur bei Achszählpunkten erforderlich. Wertezuordnung: false - entspricht dem Eintrag \&quot;eigen\&quot; im bisherigen PT 1 (Stromversorgung in gemeinsamen Adern), true - entspricht den Einträgen \&quot;fern\&quot; und \&quot;fremd\&quot; im bisherigen PT 1 (Stromversorgung und Informationsübertragung über unterschiedliche Adern), die weitere Unterscheidung zwischen \&quot;fern\&quot; und \&quot;fremd\&quot; geht aus dem Vergleich von ID Energie und ID Information hervor. Die Signalbauindustrie benutzt die Begriffe u. U. mit abweichender Bedeutung. DB-Regelwerk Achszähltabelle, Spalte 3 "/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1485,7 +1485,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [1..16] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [1..16] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1502,7 +1502,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Verweis auf die Aussenelementansteuerung, von der die Energieversorgung des Stellelements oder der FMA Komponente erfolgt. Objekte, die Stellelemente\&#34; href=\&#34;//Stellelement\&#34;\u003eStellelemente sind, enthalten keine eigenen Attribute ID_Energie und ID Information, sondern verweisen auf das Objekt Stellelement, das diese Attribute enthält. Nicht-Stellelemente (z. B. der Achszählpunkt als FMA Komponente) hingegen müssen diese Attribute selbst enthalten. DB-Regelwerk bei Achszählpunkten: Achszählpunkttabelle, Spalte 4 (und redundant dazu: Freimeldetabelle, Spalte 4); bei anderen Typen von Freimeldeanlagen: im bisherigen PT1 ohne eindeutige Darstellung, in der Regel mittelbar aus dem Sicherungstechnischen Lageplan/BÜ-Lageplan ermittelbar. "/>
+                 value="Verweis auf die Aussenelementansteuerung, von der die Energieversorgung des Stellelements oder der FMA Komponente erfolgt. Objekte, die Stellelemente\&quot; href=\&quot;//Stellelement\&quot;\u003eStellelemente sind, enthalten keine eigenen Attribute ID_Energie und ID Information, sondern verweisen auf das Objekt Stellelement, das diese Attribute enthält. Nicht-Stellelemente (z. B. der Achszählpunkt als FMA Komponente) hingegen müssen diese Attribute selbst enthalten. DB-Regelwerk bei Achszählpunkten: Achszählpunkttabelle, Spalte 4 (und redundant dazu: Freimeldetabelle, Spalte 4); bei anderen Typen von Freimeldeanlagen: im bisherigen PT1 ohne eindeutige Darstellung, in der Regel mittelbar aus dem Sicherungstechnischen Lageplan/BÜ-Lageplan ermittelbar. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1520,7 +1520,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Verweis auf die Aussenelementansteuerung, von der die Informationsversorgung des Stellelements bzw. die Informationsverarbeitung der FMA Komponente erfolgt. Objekte, die Stellelemente\&#34; href=\&#34;//Stellelement\&#34;\u003eStellelemente sind, enthalten keine eigenen Attribute ID Energie und ID_Information, sondern verweisen auf das Objekt Stellelement, das diese Attribute enthält. Nicht-Stellelemente (z.B. der Achszählpunkt als FMA Komponente) hingegen müssen diese Attribute selbst enthalten. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. "/>
+                 value="Verweis auf die Aussenelementansteuerung, von der die Informationsversorgung des Stellelements bzw. die Informationsverarbeitung der FMA Komponente erfolgt. Objekte, die Stellelemente\&quot; href=\&quot;//Stellelement\&quot;\u003eStellelemente sind, enthalten keine eigenen Attribute ID Energie und ID_Information, sondern verweisen auf das Objekt Stellelement, das diese Attribute enthält. Nicht-Stellelemente (z.B. der Achszählpunkt als FMA Komponente) hingegen müssen diese Attribute selbst enthalten. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1895,11 +1895,11 @@
                 eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Zuordnungsobjekt für die punktuelle Auslösung von Schaltvorgängen. Beispiel: BÜSA, Rangier- und Ablaufanlagen. Schaltmittel sind oftmals separate Zugeinwirkungen (z. B. Radsensoren), es können aber auch Freimeldeabschnitte (FMA_Anlagen) oder Achszählpunkte (FMA_Komponenten) für den Zweck eines Schaltmittels mitverwendet werden (Doppelausnutzung). Ein Schaltmittel wiederum kann für unterschiedliche Funktionen vorgesehen sein. Das Zuordnungsobjekt Schaltmittel erfasst jeweils eine konkrete Anforderung (Verweis, der auf das anfordernde Objekt gerichtet ist, z.B. Bahnübergang EIN, Bahnübergang AUS, Fahrstraße verschließen und ordnet diese Funktion dann einer konkreten Anlage (Zugeinwirkung, Freimeldeabschnitt oder Achszählpunkt) sowie eine Beschriftung dieser Anlage im sicherungstechnischen Lageplan zu. Die Funktion \&#34;Fahrstraße verschließen (ID_Anforderung = Fstr_Fahrweg)\&#34; ist vorgesehen für den Anrückverschluss von Zugstraßen. Weitere Anwendungen sind aktuell nicht im Modell verankert. Der Verweis auf die Anforderung ist nicht erforderlich, wenn sich die Zuordnung eindeutig aus der Topologie ergibt (Beispiel: separates Schaltmittel für die Funktion \&#34;Zweites Haltfallkriterium\&#34;). In diesem Fall wird nur der Verweis auf die Anlage sowie die Beschriftung im Lageplan angegeben. DB-Regelwerk Typspezifische Planungshinweise und Technische Mitteilungen; Planungsdaten: Sicherungstechnischer Lageplan, BÜ-Lageplan, Gleisfreimeldeplan."/>
+               value="Zuordnungsobjekt für die punktuelle Auslösung von Schaltvorgängen. Beispiel: BÜSA, Rangier- und Ablaufanlagen. Schaltmittel sind oftmals separate Zugeinwirkungen (z. B. Radsensoren), es können aber auch Freimeldeabschnitte (FMA_Anlagen) oder Achszählpunkte (FMA_Komponenten) für den Zweck eines Schaltmittels mitverwendet werden (Doppelausnutzung). Ein Schaltmittel wiederum kann für unterschiedliche Funktionen vorgesehen sein. Das Zuordnungsobjekt Schaltmittel erfasst jeweils eine konkrete Anforderung (Verweis, der auf das anfordernde Objekt gerichtet ist, z.B. Bahnübergang EIN, Bahnübergang AUS, Fahrstraße verschließen und ordnet diese Funktion dann einer konkreten Anlage (Zugeinwirkung, Freimeldeabschnitt oder Achszählpunkt) sowie eine Beschriftung dieser Anlage im sicherungstechnischen Lageplan zu. Die Funktion \&quot;Fahrstraße verschließen (ID_Anforderung = Fstr_Fahrweg)\&quot; ist vorgesehen für den Anrückverschluss von Zugstraßen. Weitere Anwendungen sind aktuell nicht im Modell verankert. Der Verweis auf die Anforderung ist nicht erforderlich, wenn sich die Zuordnung eindeutig aus der Topologie ergibt (Beispiel: separates Schaltmittel für die Funktion \&quot;Zweites Haltfallkriterium\&quot;). In diesem Fall wird nur der Verweis auf die Anlage sowie die Beschriftung im Lageplan angegeben. DB-Regelwerk Typspezifische Planungshinweise und Technische Mitteilungen; Planungsdaten: Sicherungstechnischer Lageplan, BÜ-Lageplan, Gleisfreimeldeplan."/>
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -2023,7 +2023,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -2095,7 +2095,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Art einer Zugeinwirkung. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Planungsdaten: Lageplan, Kreuzungsplan, Gleisfreimeldeplan. "/>
+                 value="Art einer Zugeinwirkung. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Planungsdaten: Lageplan, Kreuzungsplan, Gleisfreimeldeplan. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2115,7 +2115,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..16]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..16]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"

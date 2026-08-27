@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -180,8 +181,9 @@ public class Bgrenze_Nach_Ohne_Bed_Einstieg_AttributeGroupImpl extends EObjectIm
 				return basicSetIDWElement(null, msgs);
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_OHNE_BED_EINSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				return basicSetWLage(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -196,8 +198,9 @@ public class Bgrenze_Nach_Ohne_Bed_Einstieg_AttributeGroupImpl extends EObjectIm
 				return getIDWElement();
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_OHNE_BED_EINSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				return getWLage();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -214,8 +217,10 @@ public class Bgrenze_Nach_Ohne_Bed_Einstieg_AttributeGroupImpl extends EObjectIm
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_OHNE_BED_EINSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				setWLage((W_Lage_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -232,8 +237,10 @@ public class Bgrenze_Nach_Ohne_Bed_Einstieg_AttributeGroupImpl extends EObjectIm
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_OHNE_BED_EINSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				setWLage((W_Lage_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -248,8 +255,9 @@ public class Bgrenze_Nach_Ohne_Bed_Einstieg_AttributeGroupImpl extends EObjectIm
 				return iDWElement != null;
 			case Balisentechnik_ETCSPackage.BGRENZE_NACH_OHNE_BED_EINSTIEG_ATTRIBUTE_GROUP__WLAGE:
 				return wLage != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Bgrenze_Nach_Ohne_Bed_Einstieg_AttributeGroupImpl

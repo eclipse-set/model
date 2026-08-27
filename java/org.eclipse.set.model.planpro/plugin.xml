@@ -2,13 +2,15 @@
 <?eclipse version="3.0"?>
 
 <!--
- Copyright (c) 2024 DB InfraGO AG and others
+ Copyright (c) 2026 DB InfraGO AG and others
  
- This program and the accompanying materials are made available under the
- terms of the Eclipse Public License 2.0 which is available at
- https://www.eclipse.org/legal/epl-2.0.
-  
- SPDX-License-Identifier: EPL-2.0
+                     This program and the accompanying materials are made available
+                     under the
+                     terms of the Eclipse Public License 2.0 which is available at
+                     https://www.eclipse.org/legal/epl-2.0.
+ 
+                     SPDX-License-Identifier: EPL-2.0
+             
 -->
 
 <plugin>
@@ -31,16 +33,31 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated PlanPro -->
       <package
-            uri="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage"
+            uri="http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.4"
+            class="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Signalbegriffe_Ril_301Package"
             genModel="model/PlanPro.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
       <!-- @generated PlanPro -->
       <parser
-            type="basisobjekte"
-            class="org.eclipse.set.model.planpro.Basisobjekte.util.BasisobjekteResourceFactoryImpl"/>
+            type="signalbegriffe_ril_301"
+            class="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.util.Signalbegriffe_Ril_301ResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
+            uri="http://www.plan-pro.org/modell/Layoutinformationen/1.10.0.3"
+            class="org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenPackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="layoutinformationen"
+            class="org.eclipse.set.model.planpro.Layoutinformationen.util.LayoutinformationenResourceFactoryImpl"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
@@ -61,6 +78,21 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated PlanPro -->
       <package
+            uri="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
+            class="org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage"
+            genModel="model/PlanPro.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated PlanPro -->
+      <parser
+            type="basisobjekte"
+            class="org.eclipse.set.model.planpro.Basisobjekte.util.BasisobjekteResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PlanPro -->
+      <package
             uri="http://www.plan-pro.org/modell/ATO/1.10.0.3"
             class="org.eclipse.set.model.planpro.ATO.ATOPackage"
             genModel="model/PlanPro.genmodel"/>
@@ -71,21 +103,6 @@
       <parser
             type="ato"
             class="org.eclipse.set.model.planpro.ATO.util.ATOResourceFactoryImpl"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated PlanPro -->
-      <package
-            uri="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Verweise.VerweisePackage"
-            genModel="model/PlanPro.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.extension_parser">
-      <!-- @generated PlanPro -->
-      <parser
-            type="verweise"
-            class="org.eclipse.set.model.planpro.Verweise.util.VerweiseResourceFactoryImpl"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
@@ -361,21 +378,6 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated PlanPro -->
       <package
-            uri="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1"
-            class="org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriffe_StrukturPackage"
-            genModel="model/PlanPro.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.extension_parser">
-      <!-- @generated PlanPro -->
-      <parser
-            type="signalbegriffe_struktur"
-            class="org.eclipse.set.model.planpro.Signalbegriffe_Struktur.util.Signalbegriffe_StrukturResourceFactoryImpl"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated PlanPro -->
-      <package
             uri="http://www.plan-pro.org/modell/Zuglenkung/1.10.0.3"
             class="org.eclipse.set.model.planpro.Zuglenkung.ZuglenkungPackage"
             genModel="model/PlanPro.genmodel"/>
@@ -406,31 +408,31 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated PlanPro -->
       <package
-            uri="http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.4"
-            class="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Signalbegriffe_Ril_301Package"
+            uri="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+            class="org.eclipse.set.model.planpro.Verweise.VerweisePackage"
             genModel="model/PlanPro.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
       <!-- @generated PlanPro -->
       <parser
-            type="signalbegriffe_ril_301"
-            class="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.util.Signalbegriffe_Ril_301ResourceFactoryImpl"/>
+            type="verweise"
+            class="org.eclipse.set.model.planpro.Verweise.util.VerweiseResourceFactoryImpl"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated PlanPro -->
       <package
-            uri="http://www.plan-pro.org/modell/Layoutinformationen/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenPackage"
+            uri="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1"
+            class="org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriffe_StrukturPackage"
             genModel="model/PlanPro.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
       <!-- @generated PlanPro -->
       <parser
-            type="layoutinformationen"
-            class="org.eclipse.set.model.planpro.Layoutinformationen.util.LayoutinformationenResourceFactoryImpl"/>
+            type="signalbegriffe_struktur"
+            class="org.eclipse.set.model.planpro.Signalbegriffe_Struktur.util.Signalbegriffe_StrukturResourceFactoryImpl"/>
    </extension>
 
 </plugin>

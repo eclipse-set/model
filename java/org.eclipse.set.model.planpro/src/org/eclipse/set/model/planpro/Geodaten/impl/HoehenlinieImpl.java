@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Geodaten.impl;
 
@@ -273,8 +274,9 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 				return basicSetIDHoehenpunktB(null, msgs);
 			case GeodatenPackage.HOEHENLINIE__IDTOP_KANTE_PFAD:
 				return ((InternalEList<?>)getIDTOPKantePfad()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -293,8 +295,9 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 				return getIDHoehenpunktB();
 			case GeodatenPackage.HOEHENLINIE__IDTOP_KANTE_PFAD:
 				return getIDTOPKantePfad();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -319,8 +322,10 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 				getIDTOPKantePfad().clear();
 				getIDTOPKantePfad().addAll((Collection<? extends ID_TOP_Kante_ohne_Proxy_TypeClass>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -343,8 +348,10 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 			case GeodatenPackage.HOEHENLINIE__IDTOP_KANTE_PFAD:
 				getIDTOPKantePfad().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -363,8 +370,9 @@ public class HoehenlinieImpl extends Basis_ObjektImpl implements Hoehenlinie {
 				return iDHoehenpunktB != null;
 			case GeodatenPackage.HOEHENLINIE__IDTOP_KANTE_PFAD:
 				return iDTOPKantePfad != null && !iDTOPKantePfad.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //HoehenlinieImpl

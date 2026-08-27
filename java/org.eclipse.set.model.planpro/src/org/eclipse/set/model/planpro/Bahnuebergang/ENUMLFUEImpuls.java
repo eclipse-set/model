@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang;
 
@@ -158,8 +159,8 @@ public enum ENUMLFUEImpuls implements Enumerator {
 			case ENUMLFUE_IMPULS_1ZU_40_VALUE: return ENUMLFUE_IMPULS_1ZU_40;
 			case ENUMLFUE_IMPULS_DAUERIMPULS_VALUE: return ENUMLFUE_IMPULS_DAUERIMPULS;
 			case ENUMLFUE_IMPULS_SONSTIGE_VALUE: return ENUMLFUE_IMPULS_SONSTIGE;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

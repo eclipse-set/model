@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ecore:EPackage xmlns:xmi="http://www.omg.org/XMI"
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+                xmlns:xmi="http://www.omg.org/XMI"
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-                xmi:version="2.0"
                 name="Ansteuerung_Element"
                 nsURI="http://www.plan-pro.org/modell/Ansteuerung_Element/1.10.0.3"
                 nsPrefix="nsAnsteuerung_Element">
@@ -42,7 +42,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Herstellerbezogene Bauart der Steuerung. Das Attribut beschreibt im Gegensatz zu Aussenelementansteuerung Art bzw. Hersteller die herstellerbezogene Bauart der Steuerung. Es ist ein Rücklaufdatum der AP PT 2 und dient der Bestandsdatenverwaltung. Beispiel: Aussenelementansteuerung_Art == ESTW_A, Bauart == \&#34;Jüdel E8001\&#34;. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
+                 value="Herstellerbezogene Bauart der Steuerung. Das Attribut beschreibt im Gegensatz zu Aussenelementansteuerung Art bzw. Hersteller die herstellerbezogene Bauart der Steuerung. Es ist ein Rücklaufdatum der AP PT 2 und dient der Bestandsdatenverwaltung. Beispiel: Aussenelementansteuerung_Art == ESTW_A, Bauart == \&quot;Jüdel E8001\&quot;. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -67,7 +67,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Grundsätzliche Art der Ersatz-Energieversorgung. Wird für die Ersatz-Energieversorgung eine ESTW_Zentraleinheit, eine andere Aussenelementansteuerung oder ein BÜ verwendet, so kann dies in frühen Planungsphasen unspezifisch mit diesem Attribut angegeben werden. In späteren Planungsphasen wird dann alternativ die spezifische Quelle der Energie mit ID Energie Sekundaer angegeben. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk notwendig. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
+                 value="Grundsätzliche Art der Ersatz-Energieversorgung. Wird für die Ersatz-Energieversorgung eine ESTW_Zentraleinheit, eine andere Aussenelementansteuerung oder ein BÜ verwendet, so kann dies in frühen Planungsphasen unspezifisch mit diesem Attribut angegeben werden. In späteren Planungsphasen wird dann alternativ die spezifische Quelle der Energie mit ID Energie Sekundaer angegeben. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk notwendig. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -99,7 +99,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Grundsätzliche Art der Energieversorgung. Wird für die Energieversorgung eine ESTW_Zentraleinheit, eine andere Aussenelementansteuerung oder ein BÜ verwendet, so kann dies in frühen Planungsphasen unspezifisch mit diesem Attribut angegeben werden. In späteren Planungsphasen wird dann alternativ die spezifische Quelle der Energie mit ID Energie Primaer angegeben. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk notwendig. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
+                 value="Grundsätzliche Art der Energieversorgung. Wird für die Energieversorgung eine ESTW_Zentraleinheit, eine andere Aussenelementansteuerung oder ein BÜ verwendet, so kann dies in frühen Planungsphasen unspezifisch mit diesem Attribut angegeben werden. In späteren Planungsphasen wird dann alternativ die spezifische Quelle der Energie mit ID Energie Primaer angegeben. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk notwendig. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -245,7 +245,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -428,11 +428,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Bezeichnung der Aussenelementansteuerung. Beispiel: \&#34;ESTW-A Lummerland\&#34;. Bei Aussenelementansteuerungen der Art \&#34;FeAk\&#34; ist die Angabe nicht erforderlich, da eine 1:1-Beziehung zur Bezeichnung des Feldelements besteht."/>
+                 value="Bezeichnung der Aussenelementansteuerung. Beispiel: \&quot;ESTW-A Lummerland\&quot;. Bei Aussenelementansteuerungen der Art \&quot;FeAk\&quot; ist die Angabe nicht erforderlich, da eine 1:1-Beziehung zur Bezeichnung des Feldelements besteht."/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..30]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..30]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1150,7 +1150,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Grundsätzliche Art der Energieversorgung. Wird für die Energieversorgung eine ESTW_Zentraleinheit, eine andere Aussenelementansteuerung oder ein BÜ verwendet, so kann dies in frühen Planungsphasen unspezifisch mit diesem Attribut angegeben werden. In späteren Planungsphasen wird dann alternativ die spezifische Quelle der Energie mit ID Energie Primaer angegeben. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk notwendig. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
+                 value="Grundsätzliche Art der Energieversorgung. Wird für die Energieversorgung eine ESTW_Zentraleinheit, eine andere Aussenelementansteuerung oder ein BÜ verwendet, so kann dies in frühen Planungsphasen unspezifisch mit diesem Attribut angegeben werden. In späteren Planungsphasen wird dann alternativ die spezifische Quelle der Energie mit ID Energie Primaer angegeben. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk notwendig. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1178,7 +1178,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Grundsätzliche Art der Ersatz-Energieversorgung. Wird für die Ersatz-Energieversorgung eine ESTW_Zentraleinheit, eine andere Aussenelementansteuerung oder ein BÜ verwendet, so kann dies in frühen Planungsphasen unspezifisch mit diesem Attribut angegeben werden. In späteren Planungsphasen wird dann alternativ die spezifische Quelle der Energie mit ID Energie Sekundaer angegeben. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk notwendig. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
+                 value="Grundsätzliche Art der Ersatz-Energieversorgung. Wird für die Ersatz-Energieversorgung eine ESTW_Zentraleinheit, eine andere Aussenelementansteuerung oder ein BÜ verwendet, so kann dies in frühen Planungsphasen unspezifisch mit diesem Attribut angegeben werden. In späteren Planungsphasen wird dann alternativ die spezifische Quelle der Energie mit ID Energie Sekundaer angegeben. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk notwendig. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1209,7 +1209,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1340,7 +1340,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Herstellerbezogene Bauart der Steuerung. Das Attribut beschreibt im Gegensatz zu Aussenelementansteuerung Art bzw. Hersteller die herstellerbezogene Bauart der Steuerung. Es ist ein Rücklaufdatum der AP PT 2 und dient der Bestandsdatenverwaltung. Beispiel: Aussenelementansteuerung_Art == ESTW_A, Bauart == \&#34;Jüdel E8001\&#34;. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
+                 value="Herstellerbezogene Bauart der Steuerung. Das Attribut beschreibt im Gegensatz zu Aussenelementansteuerung Art bzw. Hersteller die herstellerbezogene Bauart der Steuerung. Es ist ein Rücklaufdatum der AP PT 2 und dient der Bestandsdatenverwaltung. Beispiel: Aussenelementansteuerung_Art == ESTW_A, Bauart == \&quot;Jüdel E8001\&quot;. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1382,7 +1382,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Bezeichnung der ESTW Zentraleinheit. Beispiel: \&#34;ESTW-UZ Waldhof\&#34;, \&#34;ESTW-Z Zellwald\&#34;."/>
+                 value="Bezeichnung der ESTW Zentraleinheit. Beispiel: \&quot;ESTW-UZ Waldhof\&quot;, \&quot;ESTW-Z Zellwald\&quot;."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1735,7 +1735,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1766,7 +1766,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Bezeichnung des Stellwerks, sofern kein Verweis auf eine Aussenelementansteuerung möglich ist (z. B. \&#34;Relaisstellwerk xyz\&#34;)."/>
+                 value="Bezeichnung des Stellwerks, sofern kein Verweis auf eine Aussenelementansteuerung möglich ist (z. B. \&quot;Relaisstellwerk xyz\&quot;)."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1801,7 +1801,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW|BÜ&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW|BÜ&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1817,7 +1817,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Verweis auf die Aussenelementansteuerung, von der die Energieversorgung des Stellelements oder der FMA Komponente erfolgt. Objekte, die Stellelemente\&#34; href=\&#34;//Stellelement\&#34;\u003eStellelemente sind, enthalten keine eigenen Attribute ID_Energie und ID Information, sondern verweisen auf das Objekt Stellelement, das diese Attribute enthält. Nicht-Stellelemente (z. B. der Achszählpunkt als FMA Komponente) hingegen müssen diese Attribute selbst enthalten. DB-Regelwerk bei Achszählpunkten: Achszählpunkttabelle, Spalte 4 (und redundant dazu: Freimeldetabelle, Spalte 4); bei anderen Typen von Freimeldeanlagen: im bisherigen PT1 ohne eindeutige Darstellung, in der Regel mittelbar aus dem Sicherungstechnischen Lageplan/BÜ-Lageplan ermittelbar. "/>
+                 value="Verweis auf die Aussenelementansteuerung, von der die Energieversorgung des Stellelements oder der FMA Komponente erfolgt. Objekte, die Stellelemente\&quot; href=\&quot;//Stellelement\&quot;\u003eStellelemente sind, enthalten keine eigenen Attribute ID_Energie und ID Information, sondern verweisen auf das Objekt Stellelement, das diese Attribute enthält. Nicht-Stellelemente (z. B. der Achszählpunkt als FMA Komponente) hingegen müssen diese Attribute selbst enthalten. DB-Regelwerk bei Achszählpunkten: Achszählpunkttabelle, Spalte 4 (und redundant dazu: Freimeldetabelle, Spalte 4); bei anderen Typen von Freimeldeanlagen: im bisherigen PT1 ohne eindeutige Darstellung, in der Regel mittelbar aus dem Sicherungstechnischen Lageplan/BÜ-Lageplan ermittelbar. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1834,7 +1834,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Verweis auf die Aussenelementansteuerung, von der die Informationsversorgung des Stellelements bzw. die Informationsverarbeitung der FMA Komponente erfolgt. Objekte, die Stellelemente\&#34; href=\&#34;//Stellelement\&#34;\u003eStellelemente sind, enthalten keine eigenen Attribute ID Energie und ID_Information, sondern verweisen auf das Objekt Stellelement, das diese Attribute enthält. Nicht-Stellelemente (z.B. der Achszählpunkt als FMA Komponente) hingegen müssen diese Attribute selbst enthalten. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. "/>
+                 value="Verweis auf die Aussenelementansteuerung, von der die Informationsversorgung des Stellelements bzw. die Informationsverarbeitung der FMA Komponente erfolgt. Objekte, die Stellelemente\&quot; href=\&quot;//Stellelement\&quot;\u003eStellelemente sind, enthalten keine eigenen Attribute ID Energie und ID_Information, sondern verweisen auf das Objekt Stellelement, das diese Attribute enthält. Nicht-Stellelemente (z.B. der Achszählpunkt als FMA Komponente) hingegen müssen diese Attribute selbst enthalten. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1907,7 +1907,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -2225,7 +2225,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW|BÜ|ZN&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW|BÜ|ZN&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -2449,11 +2449,11 @@
                 eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Ort der Anordnung von nicht an das Gleis gebundenen Komponenten. Die Verortung der U. erfolgt entweder analog zum Punkt Objekt, mit einem GEO Punkt, einem Polygonzug oder durch einen beschreibenden Text. Eine U. beschreibt in der Regel die Umhausung der Komponente. Ist sie nicht eingehaust, wird als Unterbringung Art \&#34;keine\&#34; angegeben. In diesen Fällen hat die Komponente dennoch eine Unterbringung Befestigung. Das ist z. B. der Fall, wenn eine wetterfeste Komponente (z. B. Schlüsselschalter) ohne Einhausung direkt an einem Pfosten befestigt ist. In einer U. können mehrere LST-Objekte untergebracht sein. Eine U. ist z. B. ein Betonschalthaus oder ein Schaltkasten. DB-Regelwerk Darstellung des Gebäudes im sicherungstechnischen Lageplan nach Ril 819.9002 oder Beschreibung im Erläuterungsbericht"/>
+               value="Ort der Anordnung von nicht an das Gleis gebundenen Komponenten. Die Verortung der U. erfolgt entweder analog zum Punkt Objekt, mit einem GEO Punkt, einem Polygonzug oder durch einen beschreibenden Text. Eine U. beschreibt in der Regel die Umhausung der Komponente. Ist sie nicht eingehaust, wird als Unterbringung Art \&quot;keine\&quot; angegeben. In diesen Fällen hat die Komponente dennoch eine Unterbringung Befestigung. Das ist z. B. der Fall, wenn eine wetterfeste Komponente (z. B. Schlüsselschalter) ohne Einhausung direkt an einem Pfosten befestigt ist. In einer U. können mehrere LST-Objekte untergebracht sein. Eine U. ist z. B. ein Betonschalthaus oder ein Schaltkasten. DB-Regelwerk Darstellung des Gebäudes im sicherungstechnischen Lageplan nach Ril 819.9002 oder Beschreibung im Erläuterungsbericht"/>
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ATO|Bedienung Fdl ESTW|Bedienung Fdl BZ|BÜ| ESTW|ETCS|ZN&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ATO|Bedienung Fdl ESTW|Bedienung Fdl BZ|BÜ| ESTW|ETCS|ZN&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -2605,7 +2605,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Art der Unterbringung. Die Arten werden nach eingehaust und nicht eingehaust unterschieden, was z. B. für das Symbol der Schlüsselsperre von Bedeutung ist: Eingehaust (Symbol auf dem Lageplan): Schalthaus, Gebaeude. Nicht eingehaust (kein Symbol auf dem Lageplan): Antrieb Schaltkasten/-schrank, Tafel, sonstige, keine. Schaltkasten/-schrank: Zur Vereinfachung und zur Reduktion von Interpretationsspielräumen wird zwischen Schaltschrank und Schaltkasten nicht unterschieden. Antrieb: Die Elemente sind in einem Schranken- oder Weichenantrieb untergebracht. Tafel: Quaderförmiger, flacher Körper (z. B. Brett oder Blech), der lediglich zur mechanischen Aufnahme der eigenständigen Elemente (z. B. Schloss) dient. Sie ist von der Bedientafel als Bauart einer Bedien Einrichtung Oertlich zu unterscheiden. sonstige: Es ist ein Bearbeitungsvermerk anzugeben. keine: Es gibt keine Unterbringung, z. B. wenn eine Komponente direkt an der Befestigung \&#34;Pfosten\&#34; angebracht ist. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
+                 value="Art der Unterbringung. Die Arten werden nach eingehaust und nicht eingehaust unterschieden, was z. B. für das Symbol der Schlüsselsperre von Bedeutung ist: Eingehaust (Symbol auf dem Lageplan): Schalthaus, Gebaeude. Nicht eingehaust (kein Symbol auf dem Lageplan): Antrieb Schaltkasten/-schrank, Tafel, sonstige, keine. Schaltkasten/-schrank: Zur Vereinfachung und zur Reduktion von Interpretationsspielräumen wird zwischen Schaltschrank und Schaltkasten nicht unterschieden. Antrieb: Die Elemente sind in einem Schranken- oder Weichenantrieb untergebracht. Tafel: Quaderförmiger, flacher Körper (z. B. Brett oder Blech), der lediglich zur mechanischen Aufnahme der eigenständigen Elemente (z. B. Schloss) dient. Sie ist von der Bedientafel als Bauart einer Bedien Einrichtung Oertlich zu unterscheiden. sonstige: Es ist ein Bearbeitungsvermerk anzugeben. keine: Es gibt keine Unterbringung, z. B. wenn eine Komponente direkt an der Befestigung \&quot;Pfosten\&quot; angebracht ist. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2622,7 +2622,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Art der Befestigung der Unterbringung. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk anzugeben. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
+                 value="Art der Befestigung der Unterbringung. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk anzugeben. DB-Regelwerk Beschreibung im Erläuterungsbericht"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"

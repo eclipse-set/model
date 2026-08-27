@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.PZB;
 
@@ -158,8 +159,8 @@ public enum ENUMGUEEnergieversorgung implements Enumerator {
 			case ENUMGUE_ENERGIEVERSORGUNG_SOLAR_VALUE: return ENUMGUE_ENERGIEVERSORGUNG_SOLAR;
 			case ENUMGUE_ENERGIEVERSORGUNG_SONSTIGE_VALUE: return ENUMGUE_ENERGIEVERSORGUNG_SONSTIGE;
 			case ENUMGUE_ENERGIEVERSORGUNG_STELLWERK_VALUE: return ENUMGUE_ENERGIEVERSORGUNG_STELLWERK;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

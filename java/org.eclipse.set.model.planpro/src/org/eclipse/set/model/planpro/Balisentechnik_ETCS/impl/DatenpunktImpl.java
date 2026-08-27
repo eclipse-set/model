@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -473,8 +474,9 @@ public class DatenpunktImpl extends Punkt_ObjektImpl implements Datenpunkt {
 				return ((InternalEList<?>)getDPTelegramm()).basicRemove(otherEnd, msgs);
 			case Balisentechnik_ETCSPackage.DATENPUNKT__DP_TELEGRAMM_ESG:
 				return ((InternalEList<?>)getDPTelegrammESG()).basicRemove(otherEnd, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -503,8 +505,9 @@ public class DatenpunktImpl extends Punkt_ObjektImpl implements Datenpunkt {
 				return getDPTelegramm();
 			case Balisentechnik_ETCSPackage.DATENPUNKT__DP_TELEGRAMM_ESG:
 				return getDPTelegrammESG();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -547,8 +550,10 @@ public class DatenpunktImpl extends Punkt_ObjektImpl implements Datenpunkt {
 				getDPTelegrammESG().clear();
 				getDPTelegrammESG().addAll((Collection<? extends DP_Telegramm_ESG_AttributeGroup>)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -586,8 +591,10 @@ public class DatenpunktImpl extends Punkt_ObjektImpl implements Datenpunkt {
 			case Balisentechnik_ETCSPackage.DATENPUNKT__DP_TELEGRAMM_ESG:
 				getDPTelegrammESG().clear();
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -616,8 +623,9 @@ public class DatenpunktImpl extends Punkt_ObjektImpl implements Datenpunkt {
 				return dPTelegramm != null && !dPTelegramm.isEmpty();
 			case Balisentechnik_ETCSPackage.DATENPUNKT__DP_TELEGRAMM_ESG:
 				return dPTelegrammESG != null && !dPTelegrammESG.isEmpty();
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //DatenpunktImpl

@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Fahrstrasse;
 
@@ -273,8 +274,8 @@ public enum ENUMFstrZugArt implements Enumerator {
 			case ENUM_FSTR_ZUG_ART_ZU_VALUE: return ENUM_FSTR_ZUG_ART_ZU;
 			case ENUM_FSTR_ZUG_ART_ZUH_VALUE: return ENUM_FSTR_ZUG_ART_ZUH;
 			case ENUM_FSTR_ZUG_ART_ZZ_VALUE: return ENUM_FSTR_ZUG_ART_ZZ;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

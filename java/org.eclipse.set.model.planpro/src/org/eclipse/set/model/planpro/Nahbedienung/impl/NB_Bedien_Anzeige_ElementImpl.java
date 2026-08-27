@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Nahbedienung.impl;
 
@@ -240,8 +241,9 @@ public class NB_Bedien_Anzeige_ElementImpl extends Basis_ObjektImpl implements N
 				return basicSetIDNBZone(null, msgs);
 			case NahbedienungPackage.NB_BEDIEN_ANZEIGE_ELEMENT__NB_BEDIEN_ANZEIGE_FUNKTIONEN:
 				return basicSetNBBedienAnzeigeFunktionen(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,8 +260,9 @@ public class NB_Bedien_Anzeige_ElementImpl extends Basis_ObjektImpl implements N
 				return getIDNBZone();
 			case NahbedienungPackage.NB_BEDIEN_ANZEIGE_ELEMENT__NB_BEDIEN_ANZEIGE_FUNKTIONEN:
 				return getNBBedienAnzeigeFunktionen();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -279,8 +282,10 @@ public class NB_Bedien_Anzeige_ElementImpl extends Basis_ObjektImpl implements N
 			case NahbedienungPackage.NB_BEDIEN_ANZEIGE_ELEMENT__NB_BEDIEN_ANZEIGE_FUNKTIONEN:
 				setNBBedienAnzeigeFunktionen((NB_Bedien_Anzeige_Funktionen_AttributeGroup)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -300,8 +305,10 @@ public class NB_Bedien_Anzeige_ElementImpl extends Basis_ObjektImpl implements N
 			case NahbedienungPackage.NB_BEDIEN_ANZEIGE_ELEMENT__NB_BEDIEN_ANZEIGE_FUNKTIONEN:
 				setNBBedienAnzeigeFunktionen((NB_Bedien_Anzeige_Funktionen_AttributeGroup)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -318,8 +325,9 @@ public class NB_Bedien_Anzeige_ElementImpl extends Basis_ObjektImpl implements N
 				return iDNBZone != null;
 			case NahbedienungPackage.NB_BEDIEN_ANZEIGE_ELEMENT__NB_BEDIEN_ANZEIGE_FUNKTIONEN:
 				return nBBedienAnzeigeFunktionen != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //NB_Bedien_Anzeige_ElementImpl

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsPlanPro="http://www.plan-pro.org/modell/PlanPro/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
@@ -25,6 +25,9 @@
            xmlns:nsZuglenkung="http://www.plan-pro.org/modell/Zuglenkung/1.10.0.3"
            xmlns:nsZugnummernmeldeanlage="http://www.plan-pro.org/modell/Zugnummernmeldeanlage/1.10.0.3"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsPlanPro"
+           ecore:package="org.eclipse.set.model.planpro.PlanPro"
            targetNamespace="http://www.plan-pro.org/modell/PlanPro/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -102,235 +105,249 @@ XML Schema for PlanPro interface.</xs:documentation>
 	  </xs:element>
 	  <xs:simpleType name="ENUMKoordinatensystem">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="DB_Ref"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="WGS84"/>
+			      <xs:enumeration ecore:name="ENUMKoordinatensystem_DB_Ref" value="DB_Ref"/>
+			      <xs:enumeration ecore:name="ENUMKoordinatensystem_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMKoordinatensystem_WGS84" value="WGS84"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMPlanung_E_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Bauzustand"/>
-			      <xs:enumeration value="Bestandsdigitalisierung_Geo_Topo"/>
-			      <xs:enumeration value="Bestandsdigitalisierung_LST"/>
-			      <xs:enumeration value="Bestandskorrektur"/>
-			      <xs:enumeration value="Geodaten"/>
-			      <xs:enumeration value="Revision"/>
-			      <xs:enumeration value="Revision_letzte_Planung_E"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Verbindungsknoten"/>
-			      <xs:enumeration value="Versionshebung"/>
-			      <xs:enumeration value="Voraussichtlich"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_E_Art_Bauzustand" value="Bauzustand"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_E_Art_Bestandsdigitalisierung_Geo_Topo"
+                         value="Bestandsdigitalisierung_Geo_Topo"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_E_Art_Bestandsdigitalisierung_LST"
+                         value="Bestandsdigitalisierung_LST"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_E_Art_Bestandskorrektur" value="Bestandskorrektur"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_E_Art_Geodaten" value="Geodaten"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_E_Art_Revision" value="Revision"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_E_Art_Revision_letzte_Planung_E"
+                         value="Revision_letzte_Planung_E"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_E_Art_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_E_Art_Verbindungsknoten" value="Verbindungsknoten"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_E_Art_Versionshebung" value="Versionshebung"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_E_Art_Voraussichtlich" value="Voraussichtlich"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMPlanung_G_Art_Besonders">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Bestandsdigitalisierung_Geo_Topo"/>
-			      <xs:enumeration value="Bestandsdigitalisierung_LST"/>
-			      <xs:enumeration value="Geodaten"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Verbindungsknoten"/>
-			      <xs:enumeration value="Versionshebung"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_G_Art_Besonders_Bestandsdigitalisierung_Geo_Topo"
+                         value="Bestandsdigitalisierung_Geo_Topo"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_G_Art_Besonders_Bestandsdigitalisierung_LST"
+                         value="Bestandsdigitalisierung_LST"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_G_Art_Besonders_Geodaten" value="Geodaten"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_G_Art_Besonders_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_G_Art_Besonders_Verbindungsknoten"
+                         value="Verbindungsknoten"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_G_Art_Besonders_Versionshebung" value="Versionshebung"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMPlanung_Phase">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="EP"/>
-			      <xs:enumeration value="PT_1"/>
-			      <xs:enumeration value="PT_2"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="VP"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_Phase_EP" value="EP"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_Phase_PT_1" value="PT_1"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_Phase_PT_2" value="PT_2"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_Phase_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMPlanung_Phase_VP" value="VP"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMUntergewerk_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="ATO"/>
-			      <xs:enumeration value="Bedienung ETCS"/>
-			      <xs:enumeration value="Bedienung Fdl BZ"/>
-			      <xs:enumeration value="Bedienung Fdl ESTW-ZE"/>
-			      <xs:enumeration value="BÜ"/>
-			      <xs:enumeration value="ESTW"/>
-			      <xs:enumeration value="ETCS"/>
-			      <xs:enumeration value="Geo"/>
-			      <xs:enumeration value="Kabel"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="ZL"/>
-			      <xs:enumeration value="ZLV-Bus"/>
-			      <xs:enumeration value="ZN"/>
+			      <xs:enumeration ecore:name="ENUMUntergewerk_Art_ATO" value="ATO"/>
+			      <xs:enumeration ecore:name="ENUMUntergewerk_Art_Bedienung_ETCS" value="Bedienung ETCS"/>
+			      <xs:enumeration ecore:name="ENUMUntergewerk_Art_Bedienung_Fdl_BZ" value="Bedienung Fdl BZ"/>
+			      <xs:enumeration ecore:name="ENUMUntergewerk_Art_Bedienung_Fdl_ESTW_ZE"
+                         value="Bedienung Fdl ESTW-ZE"/>
+			      <xs:enumeration ecore:name="ENUMUntergewerk_Art_BUe" value="BÜ"/>
+			      <xs:enumeration ecore:name="ENUMUntergewerk_Art_ESTW" value="ESTW"/>
+			      <xs:enumeration ecore:name="ENUMUntergewerk_Art_ETCS" value="ETCS"/>
+			      <xs:enumeration ecore:name="ENUMUntergewerk_Art_Geo" value="Geo"/>
+			      <xs:enumeration ecore:name="ENUMUntergewerk_Art_Kabel" value="Kabel"/>
+			      <xs:enumeration ecore:name="ENUMUntergewerk_Art_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMUntergewerk_Art_ZL" value="ZL"/>
+			      <xs:enumeration ecore:name="ENUMUntergewerk_Art_ZLV_Bus" value="ZLV-Bus"/>
+			      <xs:enumeration ecore:name="ENUMUntergewerk_Art_ZN" value="ZN"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMVergleichstyp_Besonders">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="AeM"/>
-			      <xs:enumeration value="AeP"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMVergleichstyp_Besonders_AeM" value="AeM"/>
+			      <xs:enumeration ecore:name="ENUMVergleichstyp_Besonders_AeP" value="AeP"/>
+			      <xs:enumeration ecore:name="ENUMVergleichstyp_Besonders_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TAdresse_PLZ_Ort">
+	  <xs:simpleType ecore:name="Adresse_PLZ_Ort_Type" name="TAdresse_PLZ_Ort">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,50}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TAdresse_Strasse_Nr">
+	  <xs:simpleType ecore:name="Adresse_Strasse_Nr_Type" name="TAdresse_Strasse_Nr">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,50}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBauabschnitt">
+	  <xs:simpleType ecore:name="Bauabschnitt_Type" name="TBauabschnitt">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,50}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBauphase">
+	  <xs:simpleType ecore:name="Bauphase_Type" name="TBauphase">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,50}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBauzustand_Kurzbezeichnung">
+	  <xs:simpleType ecore:name="Bauzustand_Kurzbezeichnung_Type" name="TBauzustand_Kurzbezeichnung">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value="[A-Z,a-z,äöüÄÖÜ0-9 _\-]{1,20}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBauzustand_Langbezeichnung">
+	  <xs:simpleType ecore:name="Bauzustand_Langbezeichnung_Type" name="TBauzustand_Langbezeichnung">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,50}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBemerkung">
+	  <xs:simpleType ecore:name="Bemerkung_Type" name="TBemerkung">
 		    <xs:restriction base="nsBasisTypen:TFreiText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_Anlage">
+	  <xs:simpleType ecore:name="Bezeichnung_Anlage_Type" name="TBezeichnung_Anlage">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,35}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_Planung_Gruppe">
+	  <xs:simpleType ecore:name="Bezeichnung_Planung_Gruppe_Type" name="TBezeichnung_Planung_Gruppe">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,50}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_Planung_Projekt">
+	  <xs:simpleType ecore:name="Bezeichnung_Planung_Projekt_Type"
+                  name="TBezeichnung_Planung_Projekt">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,150}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_Unteranlage">
+	  <xs:simpleType ecore:name="Bezeichnung_Unteranlage_Type" name="TBezeichnung_Unteranlage">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,35}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TE_Mail_Adresse">
+	  <xs:simpleType ecore:name="E_Mail_Adresse_Type" name="TE_Mail_Adresse">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,50}@.{1,50}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFuehrende_Oertlichkeit">
+	  <xs:simpleType ecore:name="Fuehrende_Oertlichkeit_Type" name="TFuehrende_Oertlichkeit">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value="[A-Z][A-Z0-9 ]{1,4}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TIdent_Rolle">
+	  <xs:simpleType ecore:name="Ident_Rolle_Type" name="TIdent_Rolle">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,20}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TIndex_Ausgabe">
+	  <xs:simpleType ecore:name="Index_Ausgabe_Type" ecore:instanceClass="java.lang.String"
+                  name="TIndex_Ausgabe">
 		    <xs:restriction base="xs:decimal">
 			      <xs:pattern value="[0-9]{2}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TLaufende_Nummer_Ausgabe">
+	  <xs:simpleType ecore:name="Laufende_Nummer_Ausgabe_Type"
+                  ecore:instanceClass="java.lang.String"
+                  name="TLaufende_Nummer_Ausgabe">
 		    <xs:restriction base="xs:decimal">
 			      <xs:pattern value="[0-9]{2}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TName_Akteur">
+	  <xs:simpleType ecore:name="Name_Akteur_Type" name="TName_Akteur">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,35}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TName_Akteur_10">
+	  <xs:simpleType ecore:name="Name_Akteur_10_Type" name="TName_Akteur_10">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,10}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TName_Akteur_5">
+	  <xs:simpleType ecore:name="Name_Akteur_5_Type" name="TName_Akteur_5">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,5}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TName_Organisation">
+	  <xs:simpleType ecore:name="Name_Organisation_Type" name="TName_Organisation">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,50}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TOrganisationseinheit">
+	  <xs:simpleType ecore:name="Organisationseinheit_Type" name="TOrganisationseinheit">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,50}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPlanPro_XSD_Version">
+	  <xs:simpleType ecore:name="PlanPro_XSD_Version_Type" name="TPlanPro_XSD_Version">
 		    <xs:restriction base="nsBasisTypen:TFreiText">
 			      <xs:pattern value="(0|([1-9][0-9]{0,}))\.(0|([1-9][0-9]{0,}))\.(0|([1-9][0-9]{0,}))(\.(0|([1-9][0-9]{0,})))?"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPolygonzug_Betrachtungsbereich">
+	  <xs:simpleType ecore:name="Polygonzug_Betrachtungsbereich_Type"
+                  name="TPolygonzug_Betrachtungsbereich">
 		    <xs:restriction base="nsBasisTypen:TFreiText">
-			      <xs:pattern value="((-?([1-9][0-9]{0,7}|0))(\.[0-9]{1,8})?)(\s(-?([1-9][0-9]{0,7}|0))(\.[0-9]{1,8})?){3,}"/>
+			      
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPolygonzug_Planungsbereich">
+	  <xs:simpleType ecore:name="Polygonzug_Planungsbereich_Type" name="TPolygonzug_Planungsbereich">
 		    <xs:restriction base="nsBasisTypen:TFreiText">
-			      <xs:pattern value="((-?([1-9][0-9]{0,7}|0))(\.[0-9]{1,8})?)(\s(-?([1-9][0-9]{0,7}|0))(\.[0-9]{1,8})?){3,}"/>
+			      
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TProjekt_Nummer">
+	  <xs:simpleType ecore:name="Projekt_Nummer_Type" name="TProjekt_Nummer">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,20}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TReferenz_Planung_Basis">
+	  <xs:simpleType ecore:name="Referenz_Planung_Basis_Type" name="TReferenz_Planung_Basis">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TReferenz_Vergleich_Besonders">
+	  <xs:simpleType ecore:name="Referenz_Vergleich_Besonders_Type"
+                  name="TReferenz_Vergleich_Besonders">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TStrecke_Abschnitt">
+	  <xs:simpleType ecore:name="Strecke_Abschnitt_Type" name="TStrecke_Abschnitt">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,50}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TStrecke_Km">
+	  <xs:simpleType ecore:name="Strecke_Km_Type" name="TStrecke_Km">
 		    <xs:restriction base="nsBasisTypen:TKilometrierung"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TStrecke_Nummer">
+	  <xs:simpleType ecore:name="Strecke_Nummer_Type" name="TStrecke_Nummer">
 		    <xs:restriction base="nsBasisTypen:TZeichenkette">
 			      <xs:pattern value="[0-9]{4}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TTelefonnummer">
+	  <xs:simpleType ecore:name="Telefonnummer_Type" name="TTelefonnummer">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,30}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TVerantwortliche_Stelle_DB">
+	  <xs:simpleType ecore:name="Verantwortliche_Stelle_DB_Type" name="TVerantwortliche_Stelle_DB">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TVergleich_Ausgabestand_Basis">
+	  <xs:simpleType ecore:name="Vergleich_Ausgabestand_Basis_Type"
+                  name="TVergleich_Ausgabestand_Basis">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,30}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TWerkzeug_Name">
+	  <xs:simpleType ecore:name="Werkzeug_Name_Type" name="TWerkzeug_Name">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,30}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TWerkzeug_Version">
+	  <xs:simpleType ecore:name="Werkzeug_Version_Type" name="TWerkzeug_Version">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,30}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:complexType name="CAkteur">
+	  <xs:complexType ecore:name="Akteur" name="CAkteur">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Am PlanPro-Planungsprozess beteiligter Akteur.
 In PlanPro werden der Name und Kontaktdaten des Akteurs erfasst. Einschränkungen hinsichtlich der zulässigen Rolle des Akteurs sind durch entsprechende Attributbezeichnungen und -beschreibungen ersichtlich.
@@ -356,7 +373,7 @@ Bisher keine Abbildung als Schriftfeldeintrag gemäß Ril 886.0102.</xs:document
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CAkteur_Allg">
+	  <xs:complexType ecore:name="Akteur_Allg_AttributeGroup" name="CAkteur_Allg">
 		    <xs:sequence>
 			      <xs:element name="Name_Akteur" type="nsPlanPro:TCName_Akteur" minOccurs="1" maxOccurs="1">
 				        <xs:annotation>
@@ -392,7 +409,7 @@ Bisher keine Abbildung als Schriftfeldeintrag gemäß Ril 886.0102.</xs:document
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CAkteur_Zuordnung">
+	  <xs:complexType ecore:name="Akteur_Zuordnung" name="CAkteur_Zuordnung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Basisattributgruppe zur Zuordnung von Akteur-spezifischen Daten in Abhängigkeit von der ausgeführten Rolle während der Lebensdauer einer Planung Einzel. Die Attributgruppe enthält allgemeine Attribute, die rollenspezifisch unterschiedliche Bedeutungen haben. DB-Regelwerk Schriftfeldeinträge gemäß Ril 886.0102.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -564,7 +581,7 @@ Sonstige Identifizierungsnummer.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CAusgabe_Fachdaten">
+	  <xs:complexType ecore:name="Ausgabe_Fachdaten" name="CAusgabe_Fachdaten">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ausgabe der Fachdaten einer Planung im PlanPro-Format.
 An dieser Stelle werden die LST-Fachinhalte getrennt von den Angaben des Objektmanagements eingebunden.
@@ -607,7 +624,7 @@ Bisher keine Abbildung, da Neuerung mit PlanPro.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CContainer">
+	  <xs:complexType ecore:name="Container_AttributeGroup" name="CContainer">
 		    <xs:sequence>
 			      <xs:element name="Anhang" type="nsBasisobjekte:CAnhang" minOccurs="0" maxOccurs="unbounded">
 				        <xs:annotation>
@@ -2695,7 +2712,7 @@ Hinweis für Planungswerkzeuge: Die Definition des Bereichsobjekts ZUB_Streckene
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CFachdaten">
+	  <xs:complexType ecore:name="Fachdaten_AttributeGroup" name="CFachdaten">
 		    <xs:sequence>
 			      <xs:element name="Ausgabe_Fachdaten" type="nsPlanPro:CAusgabe_Fachdaten" minOccurs="1"
                      maxOccurs="unbounded">
@@ -2707,7 +2724,8 @@ Bisher keine Abbildung, da Neuerung mit PlanPro-Planungsprozess.</xs:documentati
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CLST_Objekte_Planungsbereich">
+	  <xs:complexType ecore:name="LST_Objekte_Planungsbereich_AttributeGroup"
+                   name="CLST_Objekte_Planungsbereich">
 		    <xs:sequence>
 			      <xs:element name="ID_LST_Objekt_Planungsbereich" type="nsVerweise:TCID_Ur_Objekt"
                      minOccurs="1"
@@ -2721,7 +2739,7 @@ Implizite Zuordnung durch Blattzuschnitte der (gesperrten) Bestandspläne zur Er
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CLST_Planung">
+	  <xs:complexType ecore:name="LST_Planung_AttributeGroup" name="CLST_Planung">
 		    <xs:sequence>
 			      <xs:element name="Fachdaten" type="nsPlanPro:CFachdaten" minOccurs="1" maxOccurs="1">
 				        <xs:annotation>
@@ -2740,7 +2758,7 @@ Bisher keine Abbildung, da Neuerung mit PlanPro-Planungsprozess.</xs:documentati
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CLST_Zustand">
+	  <xs:complexType ecore:name="LST_Zustand" name="CLST_Zustand">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Konkreter Zustand der LST-Anlage.
 Bei der Verwendung des LST-Zustands wird unterschieden in:
@@ -2778,7 +2796,7 @@ Bisher keine Abbildung, da Neuerung mit PlanPro.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CObjektmanagement">
+	  <xs:complexType ecore:name="Objektmanagement_AttributeGroup" name="CObjektmanagement">
 		    <xs:sequence>
 			      <xs:element name="LST_Planung_Projekt" type="nsPlanPro:CPlanung_Projekt" minOccurs="1"
                      maxOccurs="unbounded">
@@ -2790,7 +2808,7 @@ Bisher keine Abbildung, da Neuerung mit PlanPro-Planungsprozess.</xs:documentati
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="COrganisation">
+	  <xs:complexType ecore:name="Organisation" name="COrganisation">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe einer am PlanPro-Planungsprozess beteiligten Organisation.
 Derzeit insbesondere verwendet zur Abbildung des beteiligten Ingenieurbüros.
@@ -2889,7 +2907,7 @@ Ggf. Bestandteil des Schriftfeldeintrages gemäß Ril 886.0102 zum mit der Planu
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CPlanPro_Schnittstelle">
+	  <xs:complexType ecore:name="PlanPro_Schnittstelle" name="CPlanPro_Schnittstelle">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Oberstes Objekt der Content-XML, das in jeder Datei vorhanden ist. Damit jede Ausgabe in Form einer XML-Datei über die Identität von ~ eindeutig zu identifizieren ist, muss bei jeder Erzeugung einer XML-Ausgabe für eine Planung eine neue GUID für das Objekt PlanPro_Schnittstelle vergeben werden.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -2920,7 +2938,8 @@ Ggf. Bestandteil des Schriftfeldeintrages gemäß Ril 886.0102 zum mit der Planu
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CPlanPro_Schnittstelle_Allg">
+	  <xs:complexType ecore:name="PlanPro_Schnittstelle_Allg_AttributeGroup"
+                   name="CPlanPro_Schnittstelle_Allg">
 		    <xs:sequence>
 			      <xs:element name="Bemerkung" type="nsPlanPro:TCBemerkung" minOccurs="0" maxOccurs="1">
 				        <xs:annotation>
@@ -2964,7 +2983,7 @@ Bisher keine Abbildung, da Neuerung mit PlanPro-Planungsprozess.</xs:documentati
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPlanung_E_Allg">
+	  <xs:complexType ecore:name="Planung_E_Allg_AttributeGroup" name="CPlanung_E_Allg">
 		    <xs:sequence>
 			      <xs:element name="Bauphase" type="nsPlanPro:TCBauphase" minOccurs="0" maxOccurs="1">
 				        <xs:annotation>
@@ -3089,7 +3108,8 @@ Ril 809.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPlanung_E_Ausgabe_Besonders">
+	  <xs:complexType ecore:name="Planung_E_Ausgabe_Besonders_AttributeGroup"
+                   name="CPlanung_E_Ausgabe_Besonders">
 		    <xs:sequence>
 			      <xs:element name="Referenz_Vergleich_Besonders"
                      type="nsPlanPro:TCReferenz_Vergleich_Besonders"
@@ -3129,7 +3149,7 @@ Bisher keine Abbildung, da Neuerung mit PlanPro-Planungsprozess.</xs:documentati
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPlanung_E_Handlung">
+	  <xs:complexType ecore:name="Planung_E_Handlung_AttributeGroup" name="CPlanung_E_Handlung">
 		    <xs:sequence>
 			      <xs:element name="Planung_E_Abnahme" type="nsPlanPro:CAkteur_Zuordnung" minOccurs="0"
                      maxOccurs="unbounded">
@@ -3189,7 +3209,7 @@ Bisher keine Abbildung, da Neuerung mit PlanPro-Planungsprozess.</xs:documentati
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPlanung_Einzel">
+	  <xs:complexType ecore:name="Planung_Einzel" name="CPlanung_Einzel">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angabe und Zuordnung von Daten, die für eine Einzelplanung innerhalb einer definierten Planungsgruppe gelten.
 Die Attribute des Objekts Planung_Einzel werden zum Teil während der Erstellung der beauftragten Planung befüllt. Mit der Weiterschaltung des jeweiligen Planungsstatus können im Rahmen nachfolgender Prozessschritte (z. B. Planprüfung) weitere Attribute befüllt werden.</xs:documentation>
@@ -3269,7 +3289,7 @@ Herleitbar aus Schriftfeldeinträgen gemäß Ril 886.0102 einschließlich Erläu
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CPlanung_G_Allg">
+	  <xs:complexType ecore:name="Planung_G_Allg_AttributeGroup" name="CPlanung_G_Allg">
 		    <xs:sequence>
 			      <xs:element name="Anhang_BAST" type="nsBasisobjekte:CAnhang" minOccurs="0"
                      maxOccurs="unbounded">
@@ -3331,7 +3351,8 @@ Schriftfeldeintrag gemäß Ril 886.0102, Feld 18 \"Name des Auftraggebers\" bzw.
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPlanung_G_Fuehrende_Strecke">
+	  <xs:complexType ecore:name="Planung_G_Fuehrende_Strecke_AttributeGroup"
+                   name="CPlanung_G_Fuehrende_Strecke">
 		    <xs:sequence>
 			      <xs:element name="Strecke_Abschnitt" type="nsPlanPro:TCStrecke_Abschnitt" minOccurs="1"
                      maxOccurs="1">
@@ -3368,7 +3389,7 @@ Bisher keine eindeutige Abbildung.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPlanung_G_Schriftfeld">
+	  <xs:complexType ecore:name="Planung_G_Schriftfeld_AttributeGroup" name="CPlanung_G_Schriftfeld">
 		    <xs:sequence>
 			      <xs:element name="Bauabschnitt" type="nsPlanPro:TCBauabschnitt" minOccurs="0" maxOccurs="1">
 				        <xs:annotation>
@@ -3442,7 +3463,7 @@ In Planungspraxis heute meist als Zusatzfeld auf Planungsunterlagen eingetragen.
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPlanung_Gruppe">
+	  <xs:complexType ecore:name="Planung_Gruppe" name="CPlanung_Gruppe">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ermöglicht die globale Angabe und Zuordnung von Daten, die für alle Einzelplanungen einer Planungsgruppe gleichermaßen gelten. Dabei können in organisatorische und inhaltliche Angaben unterschieden werden.
 Ergänzende Beschreibung zum Umgang im PlanPro-Planungsprozess
@@ -3505,7 +3526,7 @@ Bisher keine Abbildung, da Neuerung mit PlanPro.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CPlanung_P_Allg">
+	  <xs:complexType ecore:name="Planung_P_Allg_AttributeGroup" name="CPlanung_P_Allg">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_Planung_Projekt"
                      type="nsPlanPro:TCBezeichnung_Planung_Projekt"
@@ -3557,7 +3578,7 @@ Bisher ohne eindeutige Abbildung.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPlanung_Projekt">
+	  <xs:complexType ecore:name="Planung_Projekt" name="CPlanung_Projekt">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ermöglicht die globale Angabe und Zuordnung von organisatorischen und inhaltlichen Daten, die für alle Planungsgruppen eines Planungsprojekts gleichermaßen gelten.
 Ein ~ enthält mindestens eine Planungsgruppe.
@@ -3586,7 +3607,8 @@ Bisher keine Abbildung, da Neuerung mit PlanPro.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CPolygone_Betrachtungsbereich">
+	  <xs:complexType ecore:name="Polygone_Betrachtungsbereich_AttributeGroup"
+                   name="CPolygone_Betrachtungsbereich">
 		    <xs:sequence>
 			      <xs:element name="Koordinatensystem_BB" type="nsPlanPro:TCKoordinatensystem_BB"
                      minOccurs="1"
@@ -3618,7 +3640,8 @@ Ggf. planerspezifische Darstellungsformen (z. B. grau, gestrichelt).</xs:documen
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPolygone_Planungsbereich">
+	  <xs:complexType ecore:name="Polygone_Planungsbereich_AttributeGroup"
+                   name="CPolygone_Planungsbereich">
 		    <xs:sequence>
 			      <xs:element name="Koordinatensystem_PB" type="nsPlanPro:TCKoordinatensystem_PB"
                      minOccurs="1"
@@ -3649,7 +3672,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="TCAdresse_PLZ_Ort">
+	  <xs:complexType ecore:name="Adresse_PLZ_Ort_TypeClass" name="TCAdresse_PLZ_Ort">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3659,7 +3682,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAdresse_Strasse_Nr">
+	  <xs:complexType ecore:name="Adresse_Strasse_Nr_TypeClass" name="TCAdresse_Strasse_Nr">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3669,7 +3692,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBauabschnitt">
+	  <xs:complexType ecore:name="Bauabschnitt_TypeClass" name="TCBauabschnitt">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3679,7 +3702,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBauphase">
+	  <xs:complexType ecore:name="Bauphase_TypeClass" name="TCBauphase">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3689,7 +3712,8 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBauzustand_Kurzbezeichnung">
+	  <xs:complexType ecore:name="Bauzustand_Kurzbezeichnung_TypeClass"
+                   name="TCBauzustand_Kurzbezeichnung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3700,7 +3724,8 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBauzustand_Langbezeichnung">
+	  <xs:complexType ecore:name="Bauzustand_Langbezeichnung_TypeClass"
+                   name="TCBauzustand_Langbezeichnung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3711,7 +3736,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBemerkung">
+	  <xs:complexType ecore:name="Bemerkung_TypeClass" name="TCBemerkung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3721,7 +3746,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Anlage">
+	  <xs:complexType ecore:name="Bezeichnung_Anlage_TypeClass" name="TCBezeichnung_Anlage">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3731,7 +3756,8 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Planung_Gruppe">
+	  <xs:complexType ecore:name="Bezeichnung_Planung_Gruppe_TypeClass"
+                   name="TCBezeichnung_Planung_Gruppe">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3742,7 +3768,8 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Planung_Projekt">
+	  <xs:complexType ecore:name="Bezeichnung_Planung_Projekt_TypeClass"
+                   name="TCBezeichnung_Planung_Projekt">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3753,7 +3780,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Unteranlage">
+	  <xs:complexType ecore:name="Bezeichnung_Unteranlage_TypeClass" name="TCBezeichnung_Unteranlage">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3764,7 +3791,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDatum">
+	  <xs:complexType ecore:name="Datum_TypeClass" name="TCDatum">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3773,7 +3800,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDatum_Abschluss_Einzel">
+	  <xs:complexType ecore:name="Datum_Abschluss_Einzel_TypeClass" name="TCDatum_Abschluss_Einzel">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3782,7 +3809,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDatum_Abschluss_Gruppe">
+	  <xs:complexType ecore:name="Datum_Abschluss_Gruppe_TypeClass" name="TCDatum_Abschluss_Gruppe">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3791,7 +3818,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDatum_Abschluss_Projekt">
+	  <xs:complexType ecore:name="Datum_Abschluss_Projekt_TypeClass" name="TCDatum_Abschluss_Projekt">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3800,7 +3827,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDatum_Regelwerksstand">
+	  <xs:complexType ecore:name="Datum_Regelwerksstand_TypeClass" name="TCDatum_Regelwerksstand">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3809,7 +3836,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDatum_Uebernahme">
+	  <xs:complexType ecore:name="Datum_Uebernahme_TypeClass" name="TCDatum_Uebernahme">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3818,7 +3845,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCE_Mail_Adresse">
+	  <xs:complexType ecore:name="E_Mail_Adresse_TypeClass" name="TCE_Mail_Adresse">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3828,7 +3855,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCErzeugung_Zeitstempel">
+	  <xs:complexType ecore:name="Erzeugung_Zeitstempel_TypeClass" name="TCErzeugung_Zeitstempel">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3837,7 +3864,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFuehrende_Oertlichkeit">
+	  <xs:complexType ecore:name="Fuehrende_Oertlichkeit_TypeClass" name="TCFuehrende_Oertlichkeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3848,7 +3875,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCIdent_Rolle">
+	  <xs:complexType ecore:name="Ident_Rolle_TypeClass" name="TCIdent_Rolle">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3858,7 +3885,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCIndex_Ausgabe">
+	  <xs:complexType ecore:name="Index_Ausgabe_TypeClass" name="TCIndex_Ausgabe">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3868,7 +3895,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCInformativ">
+	  <xs:complexType ecore:name="Informativ_TypeClass" name="TCInformativ">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3877,7 +3904,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCKoordinatensystem_BB">
+	  <xs:complexType ecore:name="Koordinatensystem_BB_TypeClass" name="TCKoordinatensystem_BB">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3887,7 +3914,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCKoordinatensystem_PB">
+	  <xs:complexType ecore:name="Koordinatensystem_PB_TypeClass" name="TCKoordinatensystem_PB">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3897,7 +3924,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCLaufende_Nummer_Ausgabe">
+	  <xs:complexType ecore:name="Laufende_Nummer_Ausgabe_TypeClass" name="TCLaufende_Nummer_Ausgabe">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3908,7 +3935,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCName_Akteur">
+	  <xs:complexType ecore:name="Name_Akteur_TypeClass" name="TCName_Akteur">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3918,7 +3945,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCName_Akteur_10">
+	  <xs:complexType ecore:name="Name_Akteur_10_TypeClass" name="TCName_Akteur_10">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3928,7 +3955,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCName_Akteur_5">
+	  <xs:complexType ecore:name="Name_Akteur_5_TypeClass" name="TCName_Akteur_5">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3938,7 +3965,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCName_Organisation">
+	  <xs:complexType ecore:name="Name_Organisation_TypeClass" name="TCName_Organisation">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3948,7 +3975,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCOrganisationseinheit">
+	  <xs:complexType ecore:name="Organisationseinheit_TypeClass" name="TCOrganisationseinheit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3958,7 +3985,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPlanPro_XSD_Version">
+	  <xs:complexType ecore:name="PlanPro_XSD_Version_TypeClass" name="TCPlanPro_XSD_Version">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3968,7 +3995,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPlanung_E_Art">
+	  <xs:complexType ecore:name="Planung_E_Art_TypeClass" name="TCPlanung_E_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3978,7 +4005,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPlanung_G_Art_Besonders">
+	  <xs:complexType ecore:name="Planung_G_Art_Besonders_TypeClass" name="TCPlanung_G_Art_Besonders">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3989,7 +4016,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPlanung_Phase">
+	  <xs:complexType ecore:name="Planung_Phase_TypeClass" name="TCPlanung_Phase">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -3999,7 +4026,8 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPolygonzug_Betrachtungsbereich">
+	  <xs:complexType ecore:name="Polygonzug_Betrachtungsbereich_TypeClass"
+                   name="TCPolygonzug_Betrachtungsbereich">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4010,7 +4038,8 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPolygonzug_Planungsbereich">
+	  <xs:complexType ecore:name="Polygonzug_Planungsbereich_TypeClass"
+                   name="TCPolygonzug_Planungsbereich">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4021,7 +4050,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCProjekt_Nummer">
+	  <xs:complexType ecore:name="Projekt_Nummer_TypeClass" name="TCProjekt_Nummer">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4031,7 +4060,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCReferenz_Planung_Basis">
+	  <xs:complexType ecore:name="Referenz_Planung_Basis_TypeClass" name="TCReferenz_Planung_Basis">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4042,7 +4071,8 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCReferenz_Vergleich_Besonders">
+	  <xs:complexType ecore:name="Referenz_Vergleich_Besonders_TypeClass"
+                   name="TCReferenz_Vergleich_Besonders">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4053,7 +4083,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCStrecke_Abschnitt">
+	  <xs:complexType ecore:name="Strecke_Abschnitt_TypeClass" name="TCStrecke_Abschnitt">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4063,7 +4093,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCStrecke_Km">
+	  <xs:complexType ecore:name="Strecke_Km_TypeClass" name="TCStrecke_Km">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4073,7 +4103,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCStrecke_Nummer">
+	  <xs:complexType ecore:name="Strecke_Nummer_TypeClass" name="TCStrecke_Nummer">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4083,7 +4113,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTelefonnummer">
+	  <xs:complexType ecore:name="Telefonnummer_TypeClass" name="TCTelefonnummer">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4093,7 +4123,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCUntergewerk_Art">
+	  <xs:complexType ecore:name="Untergewerk_Art_TypeClass" name="TCUntergewerk_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4103,7 +4133,8 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCVerantwortliche_Stelle_DB">
+	  <xs:complexType ecore:name="Verantwortliche_Stelle_DB_TypeClass"
+                   name="TCVerantwortliche_Stelle_DB">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4114,7 +4145,8 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCVergleich_Ausgabestand_Basis">
+	  <xs:complexType ecore:name="Vergleich_Ausgabestand_Basis_TypeClass"
+                   name="TCVergleich_Ausgabestand_Basis">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4125,7 +4157,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCVergleichstyp_Besonders">
+	  <xs:complexType ecore:name="Vergleichstyp_Besonders_TypeClass" name="TCVergleichstyp_Besonders">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4136,7 +4168,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCWerkzeug_Name">
+	  <xs:complexType ecore:name="Werkzeug_Name_TypeClass" name="TCWerkzeug_Name">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -4146,7 +4178,7 @@ Prozessuale Definition indirekt durch Sperrung entsprechender Bestandspläne der
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCWerkzeug_Version">
+	  <xs:complexType ecore:name="Werkzeug_Version_TypeClass" name="TCWerkzeug_Version">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>

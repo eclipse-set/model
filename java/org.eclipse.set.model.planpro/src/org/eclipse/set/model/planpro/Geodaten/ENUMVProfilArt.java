@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Geodaten;
 
@@ -230,8 +231,8 @@ public enum ENUMVProfilArt implements Enumerator {
 			case ENUMV_PROFIL_ART_SIGNALGEFÜHRT_ES_VALUE: return ENUMV_PROFIL_ART_SIGNALGEFÜHRT_ES;
 			case ENUMV_PROFIL_ART_SONSTIGE_VALUE: return ENUMV_PROFIL_ART_SONSTIGE;
 			case ENUMV_PROFIL_ART_WINDABHÄNGIG_VALUE: return ENUMV_PROFIL_ART_WINDABHÄNGIG;
+			default: return null;
 		}
-		return null;
 	}
 
 	/**

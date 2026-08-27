@@ -1,11 +1,12 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
- * This program and the accompanying materials are made available under the
- * terms of the Eclipse Public License 2.0 which is available at
+ * This program and the accompanying materials are made available 
+ * under the terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
+ * 
  */
 package org.eclipse.set.model.planpro.Fahrstrasse.impl;
 
@@ -120,8 +121,9 @@ public class Fstr_DWeg_Bezeichnung_AttributeGroupImpl extends EObjectImpl implem
 		switch (featureID) {
 			case FahrstrassePackage.FSTR_DWEG_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_FSTR_DWEG:
 				return basicSetBezeichnungFstrDWeg(null, msgs);
+			default:
+				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -134,8 +136,9 @@ public class Fstr_DWeg_Bezeichnung_AttributeGroupImpl extends EObjectImpl implem
 		switch (featureID) {
 			case FahrstrassePackage.FSTR_DWEG_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_FSTR_DWEG:
 				return getBezeichnungFstrDWeg();
+			default:
+				return super.eGet(featureID, resolve, coreType);
 		}
-		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -149,8 +152,10 @@ public class Fstr_DWeg_Bezeichnung_AttributeGroupImpl extends EObjectImpl implem
 			case FahrstrassePackage.FSTR_DWEG_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_FSTR_DWEG:
 				setBezeichnungFstrDWeg((Bezeichnung_Fstr_DWeg_TypeClass)newValue);
 				return;
+			default:
+				super.eSet(featureID, newValue);
+				return;
 		}
-		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -164,8 +169,10 @@ public class Fstr_DWeg_Bezeichnung_AttributeGroupImpl extends EObjectImpl implem
 			case FahrstrassePackage.FSTR_DWEG_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_FSTR_DWEG:
 				setBezeichnungFstrDWeg((Bezeichnung_Fstr_DWeg_TypeClass)null);
 				return;
+			default:
+				super.eUnset(featureID);
+				return;
 		}
-		super.eUnset(featureID);
 	}
 
 	/**
@@ -178,8 +185,9 @@ public class Fstr_DWeg_Bezeichnung_AttributeGroupImpl extends EObjectImpl implem
 		switch (featureID) {
 			case FahrstrassePackage.FSTR_DWEG_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_FSTR_DWEG:
 				return bezeichnungFstrDWeg != null;
+			default:
+				return super.eIsSet(featureID);
 		}
-		return super.eIsSet(featureID);
 	}
 
 } //Fstr_DWeg_Bezeichnung_AttributeGroupImpl

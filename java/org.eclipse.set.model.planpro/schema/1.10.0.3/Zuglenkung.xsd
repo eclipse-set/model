@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsZuglenkung="http://www.plan-pro.org/modell/Zuglenkung/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
            xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsZuglenkung"
+           ecore:package="org.eclipse.set.model.planpro.Zuglenkung"
            targetNamespace="http://www.plan-pro.org/modell/Zuglenkung/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -34,76 +37,78 @@ XML Schema for PlanPro interface.</xs:documentation>
               schemaLocation="BasisTypen.xsd"/>
 	  <xs:simpleType name="ENUMLenkziffernstellen">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="0"/>
-			      <xs:enumeration value="1"/>
+			      <xs:enumeration ecore:name="ENUMLenkziffernstellen_0" value="0"/>
+			      <xs:enumeration ecore:name="ENUMLenkziffernstellen_1" value="1"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMZN_Stellen">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="5"/>
-			      <xs:enumeration value="6"/>
+			      <xs:enumeration ecore:name="ENUMZN_Stellen_5" value="5"/>
+			      <xs:enumeration ecore:name="ENUMZN_Stellen_6" value="6"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TAnnaeherungsgeschwindigkeit">
+	  <xs:simpleType ecore:name="Annaeherungsgeschwindigkeit_Type"
+                  name="TAnnaeherungsgeschwindigkeit">
 		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit">
 			      <xs:pattern value="[4-9][0-9]|1[0-5][0-9]|160"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TAnzahl_Wiederhol_ZL_Anstoesse">
+	  <xs:simpleType ecore:name="Anzahl_Wiederhol_ZL_Anstoesse_Type"
+                  name="TAnzahl_Wiederhol_ZL_Anstoesse">
 		    <xs:restriction base="xs:integer">
 			      <xs:pattern value="[1-9]|10"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TDWeg_Prio">
+	  <xs:simpleType ecore:name="DWeg_Prio_Type" name="TDWeg_Prio">
 		    <xs:restriction base="xs:integer">
 			      <xs:pattern value="[0-4]"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TEinstellkontrollzeit">
+	  <xs:simpleType ecore:name="Einstellkontrollzeit_Type" name="TEinstellkontrollzeit">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="[1-9][0-9]{0,1}|1[0-9]{2}|200"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFstr_Bildezeit">
+	  <xs:simpleType ecore:name="Fstr_Bildezeit_Type" name="TFstr_Bildezeit">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="0|[1-9][0-9]{0,1}|[1-8][0-9]{2}|900"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TGK">
+	  <xs:simpleType ecore:name="GK_Type" name="TGK">
 		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit">
 			      <xs:pattern value="[4-9][0-9]|1[0-5][0-9]|160"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TLenkabbruchzeit">
+	  <xs:simpleType ecore:name="Lenkabbruchzeit_Type" name="TLenkabbruchzeit">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="0|[1-9][0-9]{0,2}|1[01][0-9]{2}|1200"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPersonal_Reaktionszeit">
+	  <xs:simpleType ecore:name="Personal_Reaktionszeit_Type" name="TPersonal_Reaktionszeit">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="1[5-9]|[23][0-9]|4[0-5]"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TSichtzeit_Vorsignal">
+	  <xs:simpleType ecore:name="Sichtzeit_Vorsignal_Type" name="TSichtzeit_Vorsignal">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="0|1[0-9]|20"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TSignalgruppe_Bezeichner">
+	  <xs:simpleType ecore:name="Signalgruppe_Bezeichner_Type" name="TSignalgruppe_Bezeichner">
 		    <xs:restriction base="nsBasisTypen:TZeichenkette"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TTv_GK">
+	  <xs:simpleType ecore:name="Tv_GK_Type" name="TTv_GK">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="0|[1-9][0-9]{0,1}|[1-2][0-9]{2}|300"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TVmax_Annaeherung">
+	  <xs:simpleType ecore:name="Vmax_Annaeherung_Type" name="TVmax_Annaeherung">
 		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TZL_Fstr_Zuschlag">
+	  <xs:simpleType ecore:name="ZL_Fstr_Zuschlag_Type" name="TZL_Fstr_Zuschlag">
 		    <xs:restriction base="nsBasisTypen:TSekunde"/>
 	  </xs:simpleType>
-	  <xs:complexType name="CZL">
+	  <xs:complexType ecore:name="ZL" name="CZL">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Anlage zur automatischen Einstellung von Fahrstraßen aufgrund von Zuglaufinformationen. Die Zuglenkung ist eine Anlage, die der Unterstützung des Betriebsablaufes dient. Aufgabe der Zuglenkung ist es, auf der Basis von Zuglaufinformationen und zugbezogenen Vorgaben für die Benutzung von Strecken- und Bahnhofsgleisen ohne unmittelbare Mitwirkung des Bedieners Stellkommandos an das zuständige Stellwerk auszugeben, ihre Ausführung zu überwachen und sich aus Meldungen des Stellwerkes ergebenden Handlungsbedarf an den Bediener weiterzugeben. Zuglaufinformationen erhält die Zuglenkung von der Zuglaufverfolgung (ZLV), die vorgesehene Benutzung der Strecken- und Bahnhofsgleise sowie Wartebedingungen einschließlich besonderer Bedingungen für die Regelung der Reihenfolge der Züge aus einem sogenannten Lenkplan, der in Form einer Gleisbenutzungstabelle (GBT) darstellbar ist. DB-Regelwerk 819.0732 Gleisbenutzungstabelle Weitere Angaben finden sich im Lastenheft, das dem LST-Fachplaner nicht zur Verfügung steht.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -134,7 +139,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZL_Allg">
+	  <xs:complexType ecore:name="ZL_Allg_AttributeGroup" name="CZL_Allg">
 		    <xs:sequence>
 			      <xs:element name="Anzahl_Wiederhol_ZL_Anstoesse"
                      type="nsZuglenkung:TCAnzahl_Wiederhol_ZL_Anstoesse"
@@ -205,7 +210,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZL_DLP_Abschnitt">
+	  <xs:complexType ecore:name="ZL_DLP_Abschnitt" name="CZL_DLP_Abschnitt">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Sammlung der Gleisabschnitte, die in ZL DLP Fstr eingebunden werden und für die eine Prüfung auf Deadlock erfolgen muss. DB-Regelwerk TM 2011-024 I.NVT 3 </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -234,7 +239,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZL_DLP_Fstr">
+	  <xs:complexType ecore:name="ZL_DLP_Fstr" name="CZL_DLP_Fstr">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung von ZL-DLP-Abschnitten zur ZL-Fahrstraße. DB-Regelwerk TM 2011-024 I.NVT 3 </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -256,7 +261,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZL_Fstr">
+	  <xs:complexType ecore:name="ZL_Fstr" name="CZL_Fstr">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Aufnahme verschiedener Anstosspunkte (mittels ZL Fstr Anstoss) abhängig von den zugehörigen Vorsignalen und den Geschwindigkeitsklassen für die ZL. Über den Verweis zur Fstr Zug Rangier ist die Verbindung zur Fstr des ESTW hergestellt. Für eine Fstr des ESTW kann es mehrere ZL_Fstr geben, umgekehrt gilt dies nicht. DB-Regelwerk 819.0732 6 (1)b In der Tabelle der Zuglenkanstöße entspricht eine Zeile einer ZL-Fahrstraße. </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -292,7 +297,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZL_Fstr_Allg">
+	  <xs:complexType ecore:name="ZL_Fstr_Allg_AttributeGroup" name="CZL_Fstr_Allg">
 		    <xs:sequence>
 			      <xs:element name="Annaeherungsgeschwindigkeit"
                      type="nsZuglenkung:TCAnnaeherungsgeschwindigkeit"
@@ -355,7 +360,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZL_Fstr_Anstoss">
+	  <xs:complexType ecore:name="ZL_Fstr_Anstoss" name="CZL_Fstr_Anstoss">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Mit ZL_Fstr_Anstoss wird für eine Fahrstrasse der Zuglenkung der Anstosspunkt gebildet. Die für diese ZL-Fahrstraße relevante(n) Geschwindigkeitsklasse(n) (GK) wird/werden über die entsprechende Attributgruppe zugeordnet. DB-Regelwerk 819.0732 11 In der Tabelle der Zuglenkanstöße findet sich die Angabe in der Spalte \"EP-MO\".</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -402,7 +407,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZL_Fstr_Anstoss_Allg">
+	  <xs:complexType ecore:name="ZL_Fstr_Anstoss_Allg_AttributeGroup" name="CZL_Fstr_Anstoss_Allg">
 		    <xs:sequence>
 			      <xs:element name="GKZSS" type="nsZuglenkung:TCGKZSS" minOccurs="0" maxOccurs="1">
 				        <xs:annotation>
@@ -423,7 +428,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZL_Fstr_Anstoss_GK">
+	  <xs:complexType ecore:name="ZL_Fstr_Anstoss_GK_AttributeGroup" name="CZL_Fstr_Anstoss_GK">
 		    <xs:sequence>
 			      <xs:element name="GK" type="nsZuglenkung:TCGK" minOccurs="1" maxOccurs="1">
 				        <xs:annotation>
@@ -447,7 +452,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZL_Signalgruppe">
+	  <xs:complexType ecore:name="ZL_Signalgruppe" name="CZL_Signalgruppe">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gruppe von Signalen (Haupt-, Sperrsignale), die von der Zug- bzw. Rangierlenkung für die Vorzugregelung benötigt wird. DB-Regelwerk 819.0732 A06 Im PT1 erfolgt die Angabe in einer gesonderten Tabelle, für die es im Regelwerk z. Zt. keine Vorgabe gibt.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -472,7 +477,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZL_Signalgruppe_Allg">
+	  <xs:complexType ecore:name="ZL_Signalgruppe_Allg_AttributeGroup" name="CZL_Signalgruppe_Allg">
 		    <xs:sequence>
 			      <xs:element name="Signalgruppe_Bezeichner" type="nsZuglenkung:TCSignalgruppe_Bezeichner"
                      minOccurs="0"
@@ -488,7 +493,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZL_Signalgruppe_Zuordnung">
+	  <xs:complexType ecore:name="ZL_Signalgruppe_Zuordnung" name="CZL_Signalgruppe_Zuordnung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung von Signalen zur ZL Signalgruppe. DB-Regelwerk 819.0732 A06 Im PT1 erfolgt die Angabe in einer gesonderten Tabelle, für die es im Regelwerk z. Zt. keine Vorgabe gibt.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -516,7 +521,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZL_ZN">
+	  <xs:complexType ecore:name="ZL_ZN_AttributeGroup" name="CZL_ZN">
 		    <xs:sequence>
 			      <xs:element name="Lenkziffernstellen" type="nsZuglenkung:TCLenkziffernstellen"
                      minOccurs="0"
@@ -542,7 +547,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="TCAnnaeherungsgeschwindigkeit">
+	  <xs:complexType ecore:name="Annaeherungsgeschwindigkeit_TypeClass"
+                   name="TCAnnaeherungsgeschwindigkeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -553,7 +559,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAnzahl_Wiederhol_ZL_Anstoesse">
+	  <xs:complexType ecore:name="Anzahl_Wiederhol_ZL_Anstoesse_TypeClass"
+                   name="TCAnzahl_Wiederhol_ZL_Anstoesse">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -564,7 +571,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDeadlockpruefung">
+	  <xs:complexType ecore:name="Deadlockpruefung_TypeClass" name="TCDeadlockpruefung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -573,7 +580,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDWeg_Prio">
+	  <xs:complexType ecore:name="DWeg_Prio_TypeClass" name="TCDWeg_Prio">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -583,7 +590,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCEinstellkontrollzeit">
+	  <xs:complexType ecore:name="Einstellkontrollzeit_TypeClass" name="TCEinstellkontrollzeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -594,7 +601,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFstr_Bildezeit">
+	  <xs:complexType ecore:name="Fstr_Bildezeit_TypeClass" name="TCFstr_Bildezeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -604,7 +611,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFUEM_Auswertung">
+	  <xs:complexType ecore:name="FUEM_Auswertung_TypeClass" name="TCFUEM_Auswertung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -613,7 +620,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGK">
+	  <xs:complexType ecore:name="GK_TypeClass" name="TCGK">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -622,7 +629,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGKZSS">
+	  <xs:complexType ecore:name="GKZSS_TypeClass" name="TCGKZSS">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -631,7 +638,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCLenkabbruchzeit">
+	  <xs:complexType ecore:name="Lenkabbruchzeit_TypeClass" name="TCLenkabbruchzeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -641,7 +648,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCLenkziffernstellen">
+	  <xs:complexType ecore:name="Lenkziffernstellen_TypeClass" name="TCLenkziffernstellen">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -652,7 +659,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPersonal_Reaktionszeit">
+	  <xs:complexType ecore:name="Personal_Reaktionszeit_TypeClass" name="TCPersonal_Reaktionszeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -663,7 +670,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSichtzeit_Vorsignal">
+	  <xs:complexType ecore:name="Sichtzeit_Vorsignal_TypeClass" name="TCSichtzeit_Vorsignal">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -674,7 +681,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSignalgruppe_Bezeichner">
+	  <xs:complexType ecore:name="Signalgruppe_Bezeichner_TypeClass" name="TCSignalgruppe_Bezeichner">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -685,7 +692,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTv_GK">
+	  <xs:complexType ecore:name="Tv_GK_TypeClass" name="TCTv_GK">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -695,7 +702,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCVmax_Annaeherung">
+	  <xs:complexType ecore:name="Vmax_Annaeherung_TypeClass" name="TCVmax_Annaeherung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -705,7 +712,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZL_Fstr_Zuschlag">
+	  <xs:complexType ecore:name="ZL_Fstr_Zuschlag_TypeClass" name="TCZL_Fstr_Zuschlag">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -715,7 +722,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZN_Stellen">
+	  <xs:complexType ecore:name="ZN_Stellen_TypeClass" name="TCZN_Stellen">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
