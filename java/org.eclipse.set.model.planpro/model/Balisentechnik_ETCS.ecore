@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ecore:EPackage xmlns:xmi="http://www.omg.org/XMI"
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+                xmlns:xmi="http://www.omg.org/XMI"
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-                xmi:version="2.0"
                 name="Balisentechnik_ETCS"
                 nsURI="http://www.plan-pro.org/modell/Balisentechnik_ETCS/1.10.0.3"
                 nsPrefix="nsBalisentechnik_ETCS">
@@ -571,7 +571,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -630,7 +630,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..16]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..16]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -646,7 +646,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Gerätestand der Balise. Die Information ist im Zusammenhang mit der Typ-Angabe im Attribut \&#34;Fabrikat\&#34; zu interpretieren. Beispiel: 3, 12a."/>
+                 value="Gerätestand der Balise. Die Information ist im Zusammenhang mit der Typ-Angabe im Attribut \&quot;Fabrikat\&quot; zu interpretieren. Beispiel: 3, 12a."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -887,7 +887,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1740,7 +1740,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1815,7 +1815,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[3..5]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[3..5]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1940,11 +1940,11 @@
                 eSuperTypes="Basisobjekte.ecore#//Punkt_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Beeinflussungspunkt bestehend aus einer Einzelbalise oder Balisengruppe und ggf. einer LEU. In europäischen Spezifikationen wird der Begriff \&#34;Balisengruppe\&#34; auch synonym für \&#34;Datenpunkt\&#34; verwendet. Ein ungesteuerter Datenpunkt besteht ausschließlich aus ungesteuerten Balisen (Festdatenbalisen). Die Attributgruppe DP_Typ_GESG darf nur ausgewählt werden, wenn ausschließlich ESG-Telegramme enthalten sind."/>
+               value="Beeinflussungspunkt bestehend aus einer Einzelbalise oder Balisengruppe und ggf. einer LEU. In europäischen Spezifikationen wird der Begriff \&quot;Balisengruppe\&quot; auch synonym für \&quot;Datenpunkt\&quot; verwendet. Ein ungesteuerter Datenpunkt besteht ausschließlich aus ungesteuerten Balisen (Festdatenbalisen). Die Attributgruppe DP_Typ_GESG darf nur ausgewählt werden, wenn ausschließlich ESG-Telegramme enthalten sind."/>
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -2095,7 +2095,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Hauptanwendungssystem des Datenpunkts, aus dem die Angabe auf dem Balisenschild  (z. B. GNT, ESG, ETCS) abgeleitet wird. Bei Ausrüstung mit ETCS L2oS ist der Wert \&#34;L2\&#34; zu verwenden. Die Kennzeichnung von Datenpunkten im ETCS-Übersichtsplan wird nicht aus diesem Attribut abgeleitet, sondern aus den vorhandenen Attributgruppen DP_Typ_Gxxxx."/>
+                 value="Hauptanwendungssystem des Datenpunkts, aus dem die Angabe auf dem Balisenschild  (z. B. GNT, ESG, ETCS) abgeleitet wird. Bei Ausrüstung mit ETCS L2oS ist der Wert \&quot;L2\&quot; zu verwenden. Die Kennzeichnung von Datenpunkten im ETCS-Übersichtsplan wird nicht aus diesem Attribut abgeleitet, sondern aus den vorhandenen Attributgruppen DP_Typ_Gxxxx."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2112,7 +2112,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="(Physikalische) Ausrichtung der Balisengruppe in Bezug auf die Topologierichtung. Bei der Angabe \&#34;keine\&#34; handelt es sich um eine Einzelbalise. In diesem Fall kann dem Fahrzeuggerät die Ausrichtung über die Linking-Information von einem zurückliegenden Datenpunkt übermittelt werden."/>
+                 value="(Physikalische) Ausrichtung der Balisengruppe in Bezug auf die Topologierichtung. Bei der Angabe \&quot;keine\&quot; handelt es sich um eine Einzelbalise. In diesem Fall kann dem Fahrzeuggerät die Ausrichtung über die Linking-Information von einem zurückliegenden Datenpunkt übermittelt werden."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2148,7 +2148,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0.0..84.0]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0.0..84.0]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2164,7 +2164,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Sonstige Angabe des Balisenstandortes, sofern unter Standortangabe_Balisenschild die Option \&#34;Strecke sonstiger Standort\&#34; gewählt wurde. Beispiele: \&#34;60W32L\&#34;, \&#34;BGRU 023\&#34; (= Berlin-Grunewald Nr. 23)."/>
+                 value="Sonstige Angabe des Balisenstandortes, sofern unter Standortangabe_Balisenschild die Option \&quot;Strecke sonstiger Standort\&quot; gewählt wurde. Beispiele: \&quot;60W32L\&quot;, \&quot;BGRU 023\&quot; (= Berlin-Grunewald Nr. 23)."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2307,7 +2307,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -2323,7 +2323,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Datenpunkt, von dem das Linking ausgeht (Start). Sofern der Datenpunkt nur über ID_DP_Link_Start referenziert wird, erhält er die Kennung \&#34;A\&#34; (Anfang des Linkings). Bei Referenzierung über ID_DP_Link_Start wie auch ID_DP_Link_Ziel handelt es sich um einen Unterwegs-DP (Kennung \&#34;U\&#34;)."/>
+                 value="Datenpunkt, von dem das Linking ausgeht (Start). Sofern der Datenpunkt nur über ID_DP_Link_Start referenziert wird, erhält er die Kennung \&quot;A\&quot; (Anfang des Linkings). Bei Referenzierung über ID_DP_Link_Start wie auch ID_DP_Link_Ziel handelt es sich um einen Unterwegs-DP (Kennung \&quot;U\&quot;)."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2340,7 +2340,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Ziel-Datenpunkt des betreffenden Linkings. Sofern der Datenpunkt nur über ID_DP_Link_Ziel referenziert wird, erhält er die Kennung \&#34;E\&#34; (Ende des Linkings). Bei Referenzierung über ID_DP_Link_Start wie auch ID_DP_Link_Ziel handelt es sich um einen Unterwegs-DP (Kennung \&#34;U\&#34;)."/>
+                 value="Ziel-Datenpunkt des betreffenden Linkings. Sofern der Datenpunkt nur über ID_DP_Link_Ziel referenziert wird, erhält er die Kennung \&quot;E\&quot; (Ende des Linkings). Bei Referenzierung über ID_DP_Link_Start wie auch ID_DP_Link_Ziel handelt es sich um einen Unterwegs-DP (Kennung \&quot;U\&quot;)."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2407,11 +2407,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Das Linking wird für das Anwendungssystem ESG definiert (\&#34;true\&#34;). Der Wert \&#34;false\&#34; wird nicht verwendet."/>
+                 value="Das Linking wird für das Anwendungssystem ESG definiert (\&quot;true\&quot;). Der Wert \&quot;false\&quot; wird nicht verwendet."/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                             &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                                  &#xD;&#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                               &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                          &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                             &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                                  &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                               &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                          &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2427,11 +2427,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Das Linking wird für das Anwendungssystem GNT definiert (\&#34;true\&#34;). Der Wert \&#34;false\&#34; wird nicht verwendet."/>
+                 value="Das Linking wird für das Anwendungssystem GNT definiert (\&quot;true\&quot;). Der Wert \&quot;false\&quot; wird nicht verwendet."/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                             &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                                  &#xD;&#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                               &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                          &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                             &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                                  &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                               &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                          &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2654,7 +2654,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0..16383]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0..16383]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2675,7 +2675,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0..1023]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0..1023]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2917,7 +2917,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;sekundaer&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>sekundaer&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -3088,11 +3088,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Angabe, ob der Datenpunkt verlinkt ist (true). In jedem von diesem DP gesendeten Telegramm wird in diesem Fall Q_Link = 1 gesetzt.&#xA;DB-Regelwerk ESG-Datenpunkttabelle, Spalte \&#34;Linking\&#34;, Eintrag \&#34;L\&#34;"/>
+                 value="Angabe, ob der Datenpunkt verlinkt ist (true). In jedem von diesem DP gesendeten Telegramm wird in diesem Fall Q_Link = 1 gesetzt.&#xA;DB-Regelwerk ESG-Datenpunkttabelle, Spalte \&quot;Linking\&quot;, Eintrag \&quot;L\&quot;"/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -3133,7 +3133,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Verwendungsart des Datenpunkt(typ)s bei Nutzung für ATO. Das Attribut kann die Werte \&#34;Präzisionshalt\&#34;, \&#34;Präzisionshalt hochpräzise\&#34; (mit besonderen Anforderungen hinsichtlich Platzierung und Einmessung) und \&#34;sonstige\&#34; (sonstige Funktion für ATO, die mittels Bearbeitungsvermerk zu erläutern ist) annehmen. Hat der Datenpunkt(typ) für ATO keinerlei Funktion, entfällt das Attribut."/>
+                 value="Verwendungsart des Datenpunkt(typ)s bei Nutzung für ATO. Das Attribut kann die Werte \&quot;Präzisionshalt\&quot;, \&quot;Präzisionshalt hochpräzise\&quot; (mit besonderen Anforderungen hinsichtlich Platzierung und Einmessung) und \&quot;sonstige\&quot; (sonstige Funktion für ATO, die mittels Bearbeitungsvermerk zu erläutern ist) annehmen. Hat der Datenpunkt(typ) für ATO keinerlei Funktion, entfällt das Attribut."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -3154,7 +3154,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..99]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..99]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -4192,7 +4192,7 @@
     <eLiterals name="ENUMDP_Typ_ZBS_ZV"
                value="19"
                literal="ZV"/>
-    <eLiterals name="ENUMDP_Typ_ZBS_ZU"
+    <eLiterals name="ENUMDP_Typ_ZBS_ZUe"
                value="20"
                literal="ZÜ"/>
   </eClassifiers>
@@ -4469,7 +4469,7 @@
     <eLiterals name="ENUMFT_ZBS_Typ_ZV"
                value="19"
                literal="ZV"/>
-    <eLiterals name="ENUMFT_ZBS_Typ_ZU"
+    <eLiterals name="ENUMFT_ZBS_Typ_ZUe"
                value="20"
                literal="ZÜ"/>
   </eClassifiers>
@@ -4977,7 +4977,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..15]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..15]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -5037,7 +5037,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Paketnummer gemäß Dokument \&#34;Telegramme für Regelbremsweg xxxx m\&#34;."/>
+                 value="Paketnummer gemäß Dokument \&quot;Telegramme für Regelbremsweg xxxx m\&quot;."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -5070,7 +5070,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Parametername gemäß Dokument \&#34;Telegramme für Regelbremsweg xxxx m\&#34;. Wenn mehrere Parameter gleichen Namens im Paket auftauchen können (z. B. in Aufzählungen mit N_ITER), wird die Ordnungsnummer des individuellen Parameters in Klammern angegeben. Vgl. Subset 026-7. "/>
+                 value="Parametername gemäß Dokument \&quot;Telegramme für Regelbremsweg xxxx m\&quot;. Wenn mehrere Parameter gleichen Namens im Paket auftauchen können (z. B. in Aufzählungen mit N_ITER), wird die Ordnungsnummer des individuellen Parameters in Klammern angegeben. Vgl. Subset 026-7. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -5149,7 +5149,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0..1023]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0..1023]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -5170,7 +5170,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0..16383]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0..16383]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -5221,7 +5221,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -5349,7 +5349,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..10]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..10]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -5368,7 +5368,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -5564,7 +5564,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -5629,11 +5629,11 @@
                 eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Zusatzangaben für reale Signale im Zusammenhang mit ETCS L2.&#xA;Die Signalart \&#34;sonstiges Lichtsperrsignal\&#34; (sLs) für Lichtsperrsignale, an denen keine Zugstraßen beginnen oder enden, muss aus dem Fehlen entsprechender Zugstraßen abgeleitet werden."/>
+               value="Zusatzangaben für reale Signale im Zusammenhang mit ETCS L2.&#xA;Die Signalart \&quot;sonstiges Lichtsperrsignal\&quot; (sLs) für Lichtsperrsignale, an denen keine Zugstraßen beginnen oder enden, muss aus dem Fehlen entsprechender Zugstraßen abgeleitet werden."/>
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -5829,7 +5829,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -5947,7 +5947,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -5983,7 +5983,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -6034,7 +6034,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -6172,7 +6172,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -6277,7 +6277,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0.00..30.00]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0.00..30.00]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -6616,7 +6616,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -6665,7 +6665,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Richtung der betrieblichen Funktion in Bezug auf die physikalische oder durch Linking vorgegebene Ausrichtung des Datenpunkts. Der Wert \&#34;in\&#34; ist mit \&#34;nominal\&#34; gleichzusetzen, der Wert \&#34;gegen\&#34; mit \&#34;reverse\&#34;."/>
+                 value="Richtung der betrieblichen Funktion in Bezug auf die physikalische oder durch Linking vorgegebene Ausrichtung des Datenpunkts. Der Wert \&quot;in\&quot; ist mit \&quot;nominal\&quot; gleichzusetzen, der Wert \&quot;gegen\&quot; mit \&quot;reverse\&quot;."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -6744,7 +6744,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -6848,7 +6848,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[10..140]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[10..140]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -6898,7 +6898,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Signalbezeichnung des restriktivsten Falls \&#34;Länge Vorsignalüberwachung je Signalisierung\&#34;."/>
+                 value="Signalbezeichnung des restriktivsten Falls \&quot;Länge Vorsignalüberwachung je Signalisierung\&quot;."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -6946,7 +6946,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Nummer der Langsamfahrstelle (La). Bei Geschwindigkeitssignalisierung mittels Zs 3 erfolgt der Eintrag \&#34;0\&#34;. DB-Regelwerk ESG-Datenpunkttabelle 1, Spalte 21."/>
+                 value="Nummer der Langsamfahrstelle (La). Bei Geschwindigkeitssignalisierung mittels Zs 3 erfolgt der Eintrag \&quot;0\&quot;. DB-Regelwerk ESG-Datenpunkttabelle 1, Spalte 21."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -7141,7 +7141,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..99]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..99]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -7351,7 +7351,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Angabe des nationalen Zugsicherungssystems, auf das umgeschaltet wird. Das Attribut ist nur zu füllen, wenn M_LEVELTR == \&#34;STM\&#34; gesetzt ist."/>
+                 value="Angabe des nationalen Zugsicherungssystems, auf das umgeschaltet wird. Das Attribut ist nur zu füllen, wenn M_LEVELTR == \&quot;STM\&quot; gesetzt ist."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -7377,7 +7377,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Paketnummer gemäß Dokument \&#34;Telegramme für Regelbremsweg xxxx m\&#34;."/>
+                 value="Paketnummer gemäß Dokument \&quot;Telegramme für Regelbremsweg xxxx m\&quot;."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -7410,7 +7410,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Parametername gemäß Dokument \&#34;Telegramme für Regelbremsweg xxxx m\&#34;. Wenn mehrere Parameter gleichen Namens im Paket auftauchen können (z. B. in Aufzählungen mit N_ITER), wird die Ordnungsnummer des individuellen Parameters in Klammern angegeben. Vgl. Subset 026-7. "/>
+                 value="Parametername gemäß Dokument \&quot;Telegramme für Regelbremsweg xxxx m\&quot;. Wenn mehrere Parameter gleichen Namens im Paket auftauchen können (z. B. in Aufzählungen mit N_ITER), wird die Ordnungsnummer des individuellen Parameters in Klammern angegeben. Vgl. Subset 026-7. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -7478,7 +7478,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -7790,7 +7790,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[5..24]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[5..24]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -8046,7 +8046,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[-80.00..80.00]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[-80.00..80.00]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -8066,7 +8066,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[-80.00..80.00]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[-80.00..80.00]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -8325,7 +8325,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[-80.00..80.00]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[-80.00..80.00]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -8663,7 +8663,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Besondere Art des ETCS-Knotens bei Verortung auf einer TOP-Kante. Für die Knotenart \&#34;Streckenende\&#34; ist derzeit kein konkreter Anwendungsfall bekannt. Der Wert wird aber zur Erhaltung der Modellflexibilität vorerst beibehalten."/>
+                 value="Besondere Art des ETCS-Knotens bei Verortung auf einer TOP-Kante. Für die Knotenart \&quot;Streckenende\&quot; ist derzeit kein konkreter Anwendungsfall bekannt. Der Wert wird aber zur Erhaltung der Modellflexibilität vorerst beibehalten."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -8922,7 +8922,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -9103,7 +9103,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -9251,7 +9251,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Gerätestand des LEU-Moduls. Die Information ist im Zusammenhang mit der Angabe \&#34;LEU_Modul_Typ\&#34; zu interpretieren. Beispiel: 3, 12a."/>
+                 value="Gerätestand des LEU-Moduls. Die Information ist im Zusammenhang mit der Angabe \&quot;LEU_Modul_Typ\&quot; zu interpretieren. Beispiel: 3, 12a."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -9334,7 +9334,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..16]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..16]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -9459,7 +9459,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -9655,7 +9655,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0.00..2.50]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0.00..2.50]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -9713,7 +9713,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Sonstige Position des LEU-Schaltkastens, sofern das Attribut \&#34;Position\&#34; nicht verwendet werden kann."/>
+                 value="Sonstige Position des LEU-Schaltkastens, sofern das Attribut \&quot;Position\&quot; nicht verwendet werden kann."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -9792,7 +9792,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..16]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..16]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -10047,7 +10047,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -10422,11 +10422,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Kennzeichnung eines großen Metallobjekts gemäß Ril 819.1340, für das ein Metallwarnungs-Datenpunkt erforderlich ist. Die Angabe der Kategorie \&#34;0\&#34; entstammt der früheren Vorgabe in der Ril 819.1344. Andere Einträge sind nicht zulässig."/>
+                 value="Kennzeichnung eines großen Metallobjekts gemäß Ril 819.1340, für das ein Metallwarnungs-Datenpunkt erforderlich ist. Die Angabe der Kategorie \&quot;0\&quot; entstammt der früheren Vorgabe in der Ril 819.1344. Andere Einträge sind nicht zulässig."/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;0&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>0&lt;/ppi:ProposedValue>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -11179,7 +11179,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -11261,7 +11261,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -13367,7 +13367,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -13475,7 +13475,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -13533,7 +13533,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -13738,7 +13738,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -13809,11 +13809,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Übergang in einen Ausrüstungsbereich Geschwindigkeitsüberwachung Neigetechnik (GNT) (\&#34;true\&#34;). Der Wert \&#34;false\&#34; wird nicht verwendet."/>
+                 value="Übergang in einen Ausrüstungsbereich Geschwindigkeitsüberwachung Neigetechnik (GNT) (\&quot;true\&quot;). Der Wert \&quot;false\&quot; wird nicht verwendet."/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                             &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                                  &#xD;&#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                               &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                          &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                             &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                                  &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                               &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                          &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -13993,7 +13993,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                       &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                            &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..30]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                         &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                    &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                       &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                            &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..30]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                         &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                    &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -14019,11 +14019,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Bezeichnung der Bereichsgrenze (Ein-/Ausstiegspunkt), z. B. \&#34;Einstieg in Richtung Gleise 7-14\&#34;. Die Angabe ist bei Ein-/Ausstieg L2 Pflicht."/>
+                 value="Bezeichnung der Bereichsgrenze (Ein-/Ausstiegspunkt), z. B. \&quot;Einstieg in Richtung Gleise 7-14\&quot;. Die Angabe ist bei Ein-/Ausstieg L2 Pflicht."/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..50]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..50]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -14085,7 +14085,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..15]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..15]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -14133,11 +14133,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Abstand der Grenze des Bereichs (C) von der ZUB-Bereichsgrenze entgegengesetzt zu deren Wirkrichtung. Das Attribut bildet die maximale Zugänge ab (dmax_Zuglänge). Hinweis: Der beim Ausstieg benötigte Bremswegabstand wird über das Bereichsobjekt \&#34;Strecke_Bremsweg\&#34; ermittelt."/>
+                 value="Abstand der Grenze des Bereichs (C) von der ZUB-Bereichsgrenze entgegengesetzt zu deren Wirkrichtung. Das Attribut bildet die maximale Zugänge ab (dmax_Zuglänge). Hinweis: Der beim Ausstieg benötigte Bremswegabstand wird über das Bereichsobjekt \&quot;Strecke_Bremsweg\&quot; ermittelt."/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..999]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..999]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -14157,7 +14157,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..9]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..9]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -14244,7 +14244,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..15]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..15]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -14409,7 +14409,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..15]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..15]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -14489,7 +14489,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..15]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..15]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -14536,7 +14536,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..999]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..999]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -14649,7 +14649,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..9]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..9]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -14668,7 +14668,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW|ETCS&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW|ETCS&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -14711,7 +14711,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                             &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                                  &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0..2000]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                               &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                          &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                             &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                                  &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0..2000]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                               &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                          &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -14731,7 +14731,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                             &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                                  &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0..2000]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                               &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                          &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                             &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                                  &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0..2000]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                               &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                          &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"

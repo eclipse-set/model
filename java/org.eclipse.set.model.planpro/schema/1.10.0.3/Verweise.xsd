@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsVerweise"
+           ecore:package="org.eclipse.set.model.planpro.Verweise"
            targetNamespace="http://www.plan-pro.org/modell/Verweise/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -26,7 +29,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 	  </xs:annotation>
 	  <xs:import namespace="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
               schemaLocation="BasisTypen.xsd"/>
-	  <xs:complexType name="TCID_Anforderer_Element">
+	  <xs:complexType ecore:name="ID_Anforderer_Element_TypeClass" name="TCID_Anforderer_Element">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -46,7 +49,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Anforderung">
+	  <xs:complexType ecore:name="ID_Anforderung_TypeClass" name="TCID_Anforderung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -66,7 +69,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Anhang">
+	  <xs:complexType ecore:name="ID_Anhang_TypeClass" name="TCID_Anhang">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -85,7 +88,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Anhang_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Anhang_ohne_Proxy_TypeClass" name="TCID_Anhang_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -104,7 +107,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_AnhangBearbeitungsvermerk">
+	  <xs:complexType ecore:name="ID_AnhangBearbeitungsvermerk_TypeClass"
+                   name="TCID_AnhangBearbeitungsvermerk">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -124,7 +128,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Anschluss_Element">
+	  <xs:complexType ecore:name="ID_Anschluss_Element_TypeClass" name="TCID_Anschluss_Element">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -144,7 +148,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ATO_TS_Instanz">
+	  <xs:complexType ecore:name="ID_ATO_TS_Instanz_TypeClass" name="TCID_ATO_TS_Instanz">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -163,7 +167,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ATO_TS_Instanz_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_ATO_TS_Instanz_ohne_Proxy_TypeClass"
+                   name="TCID_ATO_TS_Instanz_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -182,7 +187,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Ausgabe_Fachdaten_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Ausgabe_Fachdaten_ohne_Proxy_TypeClass"
+                   name="TCID_Ausgabe_Fachdaten_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -201,7 +207,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Aussenelementansteuerung">
+	  <xs:complexType ecore:name="ID_Aussenelementansteuerung_TypeClass"
+                   name="TCID_Aussenelementansteuerung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -221,7 +228,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Aussenelementansteuerung_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Aussenelementansteuerung_ohne_Proxy_TypeClass"
+                   name="TCID_Aussenelementansteuerung_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -240,7 +248,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Bahnsteig_Anlage">
+	  <xs:complexType ecore:name="ID_Bahnsteig_Anlage_TypeClass" name="TCID_Bahnsteig_Anlage">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -259,7 +267,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Bahnsteig_Kante">
+	  <xs:complexType ecore:name="ID_Bahnsteig_Kante_TypeClass" name="TCID_Bahnsteig_Kante">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -278,7 +286,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Bahnsteig_Kante_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Bahnsteig_Kante_ohne_Proxy_TypeClass"
+                   name="TCID_Bahnsteig_Kante_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -297,7 +306,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Balise">
+	  <xs:complexType ecore:name="ID_Balise_TypeClass" name="TCID_Balise">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -316,7 +325,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Balise_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Balise_ohne_Proxy_TypeClass" name="TCID_Balise_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -335,7 +344,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Basis_Objekt">
+	  <xs:complexType ecore:name="ID_Basis_Objekt_TypeClass" name="TCID_Basis_Objekt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -354,7 +363,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Bedien_Anzeige_Element">
+	  <xs:complexType ecore:name="ID_Bedien_Anzeige_Element_TypeClass"
+                   name="TCID_Bedien_Anzeige_Element">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -373,7 +383,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Bedien_Bezirk">
+	  <xs:complexType ecore:name="ID_Bedien_Bezirk_TypeClass" name="TCID_Bedien_Bezirk">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -392,7 +402,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Bedien_Einrichtung_Oertlich">
+	  <xs:complexType ecore:name="ID_Bedien_Einrichtung_Oertlich_TypeClass"
+                   name="TCID_Bedien_Einrichtung_Oertlich">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -412,7 +423,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Bedien_Oberflaeche">
+	  <xs:complexType ecore:name="ID_Bedien_Oberflaeche_TypeClass" name="TCID_Bedien_Oberflaeche">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -431,7 +442,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Bedien_Standort">
+	  <xs:complexType ecore:name="ID_Bedien_Standort_TypeClass" name="TCID_Bedien_Standort">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -450,7 +461,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Bedien_Zentrale">
+	  <xs:complexType ecore:name="ID_Bedien_Zentrale_TypeClass" name="TCID_Bedien_Zentrale">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -469,7 +480,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Befestigung_Bauwerk">
+	  <xs:complexType ecore:name="ID_Befestigung_Bauwerk_TypeClass" name="TCID_Befestigung_Bauwerk">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -489,7 +500,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Beginn_Bereich">
+	  <xs:complexType ecore:name="ID_Beginn_Bereich_TypeClass" name="TCID_Beginn_Bereich">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -509,7 +520,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Bezugspunkt">
+	  <xs:complexType ecore:name="ID_Bezugspunkt_TypeClass" name="TCID_Bezugspunkt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -529,7 +540,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Bezugspunkt_Positionierung">
+	  <xs:complexType ecore:name="ID_Bezugspunkt_Positionierung_TypeClass"
+                   name="TCID_Bezugspunkt_Positionierung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -549,7 +561,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Binaerdaten_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Binaerdaten_ohne_Proxy_TypeClass"
+                   name="TCID_Binaerdaten_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -568,7 +581,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Block_Anlage">
+	  <xs:complexType ecore:name="ID_Block_Anlage_TypeClass" name="TCID_Block_Anlage">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -587,7 +600,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Block_Element">
+	  <xs:complexType ecore:name="ID_Block_Element_TypeClass" name="TCID_Block_Element">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -606,7 +619,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Block_Strecke">
+	  <xs:complexType ecore:name="ID_Block_Strecke_TypeClass" name="TCID_Block_Strecke">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -625,7 +638,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_BUE_Anlage">
+	  <xs:complexType ecore:name="ID_BUE_Anlage_TypeClass" name="TCID_BUE_Anlage">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -644,7 +657,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_BUE_Anlage_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_BUE_Anlage_ohne_Proxy_TypeClass"
+                   name="TCID_BUE_Anlage_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -663,7 +677,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_BUE_Bedien_Anzeige_Element">
+	  <xs:complexType ecore:name="ID_BUE_Bedien_Anzeige_Element_TypeClass"
+                   name="TCID_BUE_Bedien_Anzeige_Element">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -683,7 +698,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_BUE_Einschaltung">
+	  <xs:complexType ecore:name="ID_BUE_Einschaltung_TypeClass" name="TCID_BUE_Einschaltung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -702,7 +717,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_BUE_Gleisbezogener_Gefahrraum">
+	  <xs:complexType ecore:name="ID_BUE_Gleisbezogener_Gefahrraum_TypeClass"
+                   name="TCID_BUE_Gleisbezogener_Gefahrraum">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -722,7 +738,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_BUE_Schnittstelle">
+	  <xs:complexType ecore:name="ID_BUE_Schnittstelle_TypeClass" name="TCID_BUE_Schnittstelle">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -741,7 +757,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_BUE_WS_Fstr_Zuordnung">
+	  <xs:complexType ecore:name="ID_BUE_WS_Fstr_Zuordnung_TypeClass"
+                   name="TCID_BUE_WS_Fstr_Zuordnung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -760,7 +777,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Datenpunkt">
+	  <xs:complexType ecore:name="ID_Datenpunkt_TypeClass" name="TCID_Datenpunkt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -779,7 +796,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Datenpunkt_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Datenpunkt_ohne_Proxy_TypeClass"
+                   name="TCID_Datenpunkt_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -798,7 +816,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_DP_Bezug_Funktional">
+	  <xs:complexType ecore:name="ID_DP_Bezug_Funktional_TypeClass" name="TCID_DP_Bezug_Funktional">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -818,7 +836,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Einschaltpunkt">
+	  <xs:complexType ecore:name="ID_Einschaltpunkt_TypeClass" name="TCID_Einschaltpunkt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -837,7 +855,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Element">
+	  <xs:complexType ecore:name="ID_Element_TypeClass" name="TCID_Element">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -857,7 +875,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Element_Grenze">
+	  <xs:complexType ecore:name="ID_Element_Grenze_TypeClass" name="TCID_Element_Grenze">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -876,7 +894,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Element_Unterbringung">
+	  <xs:complexType ecore:name="ID_Element_Unterbringung_TypeClass"
+                   name="TCID_Element_Unterbringung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -896,7 +915,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Energie">
+	  <xs:complexType ecore:name="ID_Energie_TypeClass" name="TCID_Energie">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -916,7 +935,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Energie_Eingang">
+	  <xs:complexType ecore:name="ID_Energie_Eingang_TypeClass" name="TCID_Energie_Eingang">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -936,7 +955,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ESTW_Zentraleinheit">
+	  <xs:complexType ecore:name="ID_ESTW_Zentraleinheit_TypeClass" name="TCID_ESTW_Zentraleinheit">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -955,7 +974,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ETCS_Kante">
+	  <xs:complexType ecore:name="ID_ETCS_Kante_TypeClass" name="TCID_ETCS_Kante">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -974,7 +993,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ETCS_Knoten">
+	  <xs:complexType ecore:name="ID_ETCS_Knoten_TypeClass" name="TCID_ETCS_Knoten">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -993,7 +1012,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ETCS_Knoten_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_ETCS_Knoten_ohne_Proxy_TypeClass"
+                   name="TCID_ETCS_Knoten_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1012,7 +1032,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_EV_Modul">
+	  <xs:complexType ecore:name="ID_EV_Modul_TypeClass" name="TCID_EV_Modul">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1031,7 +1051,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Fachtelegramm">
+	  <xs:complexType ecore:name="ID_Fachtelegramm_TypeClass" name="TCID_Fachtelegramm">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1050,7 +1070,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Fachtelegramm_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Fachtelegramm_ohne_Proxy_TypeClass"
+                   name="TCID_Fachtelegramm_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1069,7 +1090,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Fla_Schutz">
+	  <xs:complexType ecore:name="ID_Fla_Schutz_TypeClass" name="TCID_Fla_Schutz">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1088,7 +1109,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_FMA_Anlage">
+	  <xs:complexType ecore:name="ID_FMA_Anlage_TypeClass" name="TCID_FMA_Anlage">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1107,7 +1128,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_FMA_Anlage_Rangier_Frei">
+	  <xs:complexType ecore:name="ID_FMA_Anlage_Rangier_Frei_TypeClass"
+                   name="TCID_FMA_Anlage_Rangier_Frei">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1126,7 +1148,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_FMA_Element">
+	  <xs:complexType ecore:name="ID_FMA_Element_TypeClass" name="TCID_FMA_Element">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1145,7 +1167,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_FMA_Komponente">
+	  <xs:complexType ecore:name="ID_FMA_Komponente_TypeClass" name="TCID_FMA_Komponente">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1164,7 +1186,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Fortschaltung_Start">
+	  <xs:complexType ecore:name="ID_Fortschaltung_Start_TypeClass" name="TCID_Fortschaltung_Start">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1183,7 +1205,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Fstr_Aneinander">
+	  <xs:complexType ecore:name="ID_Fstr_Aneinander_TypeClass" name="TCID_Fstr_Aneinander">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1202,7 +1224,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Fstr_Ausschluss_Besonders">
+	  <xs:complexType ecore:name="ID_Fstr_Ausschluss_Besonders_TypeClass"
+                   name="TCID_Fstr_Ausschluss_Besonders">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1221,7 +1244,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Fstr_DWeg">
+	  <xs:complexType ecore:name="ID_Fstr_DWeg_TypeClass" name="TCID_Fstr_DWeg">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1240,7 +1263,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Fstr_DWeg_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Fstr_DWeg_ohne_Proxy_TypeClass" name="TCID_Fstr_DWeg_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1259,7 +1282,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Fstr_Fahrweg">
+	  <xs:complexType ecore:name="ID_Fstr_Fahrweg_TypeClass" name="TCID_Fstr_Fahrweg">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1278,7 +1301,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Fstr_Fahrweg_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Fstr_Fahrweg_ohne_Proxy_TypeClass"
+                   name="TCID_Fstr_Fahrweg_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1297,7 +1321,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Fstr_Zug_Rangier">
+	  <xs:complexType ecore:name="ID_Fstr_Zug_Rangier_TypeClass" name="TCID_Fstr_Zug_Rangier">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1316,7 +1340,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_FT_Anschaltbedingung">
+	  <xs:complexType ecore:name="ID_FT_Anschaltbedingung_TypeClass" name="TCID_FT_Anschaltbedingung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1335,7 +1359,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_FT_Fahrweg_Teil">
+	  <xs:complexType ecore:name="ID_FT_Fahrweg_Teil_TypeClass" name="TCID_FT_Fahrweg_Teil">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1354,7 +1378,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_GEO_Art">
+	  <xs:complexType ecore:name="ID_GEO_Art_TypeClass" name="TCID_GEO_Art">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1374,7 +1398,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_GEO_Kante">
+	  <xs:complexType ecore:name="ID_GEO_Kante_TypeClass" name="TCID_GEO_Kante">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1393,7 +1417,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_GEO_Knoten">
+	  <xs:complexType ecore:name="ID_GEO_Knoten_TypeClass" name="TCID_GEO_Knoten">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1412,7 +1436,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_GEO_Punkt">
+	  <xs:complexType ecore:name="ID_GEO_Punkt_TypeClass" name="TCID_GEO_Punkt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1431,7 +1455,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_GEO_Punkt_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_GEO_Punkt_ohne_Proxy_TypeClass" name="TCID_GEO_Punkt_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1450,7 +1474,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_GFR_Anlage_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_GFR_Anlage_ohne_Proxy_TypeClass"
+                   name="TCID_GFR_Anlage_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1469,7 +1494,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Gleis_Abschnitt">
+	  <xs:complexType ecore:name="ID_Gleis_Abschnitt_TypeClass" name="TCID_Gleis_Abschnitt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1488,7 +1513,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Gleis_Bezeichnung">
+	  <xs:complexType ecore:name="ID_Gleis_Bezeichnung_TypeClass" name="TCID_Gleis_Bezeichnung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1507,7 +1532,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Grenzzeichen">
+	  <xs:complexType ecore:name="ID_Grenzzeichen_TypeClass" name="TCID_Grenzzeichen">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1526,7 +1551,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Handschalt_Wirkfunktion">
+	  <xs:complexType ecore:name="ID_Handschalt_Wirkfunktion_TypeClass"
+                   name="TCID_Handschalt_Wirkfunktion">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1546,7 +1572,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Hoehenpunkt">
+	  <xs:complexType ecore:name="ID_Hoehenpunkt_TypeClass" name="TCID_Hoehenpunkt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1565,7 +1591,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Information_Eingang">
+	  <xs:complexType ecore:name="ID_Information_Eingang_TypeClass" name="TCID_Information_Eingang">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1585,7 +1611,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Information_Primaer">
+	  <xs:complexType ecore:name="ID_Information_Primaer_TypeClass" name="TCID_Information_Primaer">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1605,7 +1631,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Komponente_Programmiert">
+	  <xs:complexType ecore:name="ID_Komponente_Programmiert_TypeClass"
+                   name="TCID_Komponente_Programmiert">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1624,7 +1651,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Lageplan">
+	  <xs:complexType ecore:name="ID_Lageplan_TypeClass" name="TCID_Lageplan">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1643,7 +1670,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Lageplan_Blattschnitt">
+	  <xs:complexType ecore:name="ID_Lageplan_Blattschnitt_TypeClass"
+                   name="TCID_Lageplan_Blattschnitt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1662,7 +1690,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Lageplan_Zustand">
+	  <xs:complexType ecore:name="ID_Lageplan_Zustand_TypeClass" name="TCID_Lageplan_Zustand">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1681,7 +1709,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_LEU_Anlage">
+	  <xs:complexType ecore:name="ID_LEU_Anlage_TypeClass" name="TCID_LEU_Anlage">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1700,7 +1728,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_LEU_Anlage_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_LEU_Anlage_ohne_Proxy_TypeClass"
+                   name="TCID_LEU_Anlage_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1719,7 +1748,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_LEU_Bezug_Funktional">
+	  <xs:complexType ecore:name="ID_LEU_Bezug_Funktional_TypeClass" name="TCID_LEU_Bezug_Funktional">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1738,7 +1767,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_LEU_Schaltkasten_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_LEU_Schaltkasten_ohne_Proxy_TypeClass"
+                   name="TCID_LEU_Schaltkasten_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1757,7 +1787,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_LO_Einbau">
+	  <xs:complexType ecore:name="ID_LO_Einbau_TypeClass" name="TCID_LO_Einbau">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1776,7 +1806,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Markante_Stelle">
+	  <xs:complexType ecore:name="ID_Markante_Stelle_TypeClass" name="TCID_Markante_Stelle">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1796,7 +1826,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Markanter_Punkt">
+	  <xs:complexType ecore:name="ID_Markanter_Punkt_TypeClass" name="TCID_Markanter_Punkt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1815,7 +1845,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Markanter_Punkt_Gleis_Abschluss">
+	  <xs:complexType ecore:name="ID_Markanter_Punkt_Gleis_Abschluss_TypeClass"
+                   name="TCID_Markanter_Punkt_Gleis_Abschluss">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1835,7 +1866,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_NB">
+	  <xs:complexType ecore:name="ID_NB_TypeClass" name="TCID_NB">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1854,7 +1885,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_NB_Element">
+	  <xs:complexType ecore:name="ID_NB_Element_TypeClass" name="TCID_NB_Element">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1874,7 +1905,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_NB_Zone">
+	  <xs:complexType ecore:name="ID_NB_Zone_TypeClass" name="TCID_NB_Zone">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1893,7 +1924,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Oertlichkeit">
+	  <xs:complexType ecore:name="ID_Oertlichkeit_TypeClass" name="TCID_Oertlichkeit">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1912,7 +1943,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Oertlichkeit_Ausgabe">
+	  <xs:complexType ecore:name="ID_Oertlichkeit_Ausgabe_TypeClass" name="TCID_Oertlichkeit_Ausgabe">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1931,7 +1962,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Oertlichkeit_Proxy">
+	  <xs:complexType ecore:name="ID_Oertlichkeit_Proxy_TypeClass" name="TCID_Oertlichkeit_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1950,7 +1981,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_PlanPro_Schnittstelle">
+	  <xs:complexType ecore:name="ID_PlanPro_Schnittstelle_TypeClass"
+                   name="TCID_PlanPro_Schnittstelle">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1969,7 +2001,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Planung_Einzel">
+	  <xs:complexType ecore:name="ID_Planung_Einzel_TypeClass" name="TCID_Planung_Einzel">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -1988,7 +2020,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Planungsgrundlage">
+	  <xs:complexType ecore:name="ID_Planungsgrundlage_TypeClass" name="TCID_Planungsgrundlage">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2007,7 +2039,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_PZB_Element">
+	  <xs:complexType ecore:name="ID_PZB_Element_TypeClass" name="TCID_PZB_Element">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2026,7 +2058,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_PZB_Element_Bezugspunkt">
+	  <xs:complexType ecore:name="ID_PZB_Element_Bezugspunkt_TypeClass"
+                   name="TCID_PZB_Element_Bezugspunkt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2045,7 +2078,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_PZB_Element_Mitnutzung">
+	  <xs:complexType ecore:name="ID_PZB_Element_Mitnutzung_TypeClass"
+                   name="TCID_PZB_Element_Mitnutzung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2064,7 +2098,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_PZB_Element_Zuordnung">
+	  <xs:complexType ecore:name="ID_PZB_Element_Zuordnung_TypeClass"
+                   name="TCID_PZB_Element_Zuordnung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2083,7 +2118,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Quellelement">
+	  <xs:complexType ecore:name="ID_Quellelement_TypeClass" name="TCID_Quellelement">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2103,7 +2138,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_RBC">
+	  <xs:complexType ecore:name="ID_RBC_TypeClass" name="TCID_RBC">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2122,7 +2157,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Regelzeichnung">
+	  <xs:complexType ecore:name="ID_Regelzeichnung_TypeClass" name="TCID_Regelzeichnung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2141,7 +2176,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Regelzeichnung_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Regelzeichnung_ohne_Proxy_TypeClass"
+                   name="TCID_Regelzeichnung_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2160,7 +2196,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Schalter">
+	  <xs:complexType ecore:name="ID_Schalter_TypeClass" name="TCID_Schalter">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2180,7 +2216,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Schaltmittel_Zuordnung">
+	  <xs:complexType ecore:name="ID_Schaltmittel_Zuordnung_TypeClass"
+                   name="TCID_Schaltmittel_Zuordnung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2199,7 +2236,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Schlosskombination">
+	  <xs:complexType ecore:name="ID_Schlosskombination_TypeClass" name="TCID_Schlosskombination">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2218,7 +2255,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Schluessel">
+	  <xs:complexType ecore:name="ID_Schluessel_TypeClass" name="TCID_Schluessel">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2237,7 +2274,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Schluesselsperre">
+	  <xs:complexType ecore:name="ID_Schluesselsperre_TypeClass" name="TCID_Schluesselsperre">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2256,7 +2293,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Signal">
+	  <xs:complexType ecore:name="ID_Signal_TypeClass" name="TCID_Signal">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2275,7 +2312,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Signal_Befestigung">
+	  <xs:complexType ecore:name="ID_Signal_Befestigung_TypeClass" name="TCID_Signal_Befestigung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2294,7 +2331,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Signal_Fank">
+	  <xs:complexType ecore:name="ID_Signal_Fank_TypeClass" name="TCID_Signal_Fank">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2313,7 +2350,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Signal_Gleisbezechnung">
+	  <xs:complexType ecore:name="ID_Signal_Gleisbezechnung_TypeClass"
+                   name="TCID_Signal_Gleisbezechnung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2332,7 +2370,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Signal_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Signal_ohne_Proxy_TypeClass" name="TCID_Signal_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2351,7 +2389,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Signal_Rahmen">
+	  <xs:complexType ecore:name="ID_Signal_Rahmen_TypeClass" name="TCID_Signal_Rahmen">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2370,7 +2408,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Signal_Signalbegriff">
+	  <xs:complexType ecore:name="ID_Signal_Signalbegriff_TypeClass" name="TCID_Signal_Signalbegriff">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2389,7 +2427,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Signal_Start">
+	  <xs:complexType ecore:name="ID_Signal_Start_TypeClass" name="TCID_Signal_Start">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2408,7 +2446,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Sonderanlage">
+	  <xs:complexType ecore:name="ID_Sonderanlage_TypeClass" name="TCID_Sonderanlage">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2427,7 +2465,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Stellelement">
+	  <xs:complexType ecore:name="ID_Stellelement_TypeClass" name="TCID_Stellelement">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2446,7 +2484,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Stellwerk">
+	  <xs:complexType ecore:name="ID_Stellwerk_TypeClass" name="TCID_Stellwerk">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2466,7 +2504,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Strecke">
+	  <xs:complexType ecore:name="ID_Strecke_TypeClass" name="TCID_Strecke">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2485,7 +2523,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Strecke_Bremsweg_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Strecke_Bremsweg_ohne_Proxy_TypeClass"
+                   name="TCID_Strecke_Bremsweg_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2504,7 +2543,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Strecke_Punkt">
+	  <xs:complexType ecore:name="ID_Strecke_Punkt_TypeClass" name="TCID_Strecke_Punkt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2523,7 +2562,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Technischer_Punkt">
+	  <xs:complexType ecore:name="ID_Technischer_Punkt_TypeClass" name="TCID_Technischer_Punkt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2542,7 +2581,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_TOP_Kante">
+	  <xs:complexType ecore:name="ID_TOP_Kante_TypeClass" name="TCID_TOP_Kante">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2561,7 +2600,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_TOP_Kante_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_TOP_Kante_ohne_Proxy_TypeClass" name="TCID_TOP_Kante_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2580,7 +2619,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_TOP_Knoten">
+	  <xs:complexType ecore:name="ID_TOP_Knoten_TypeClass" name="TCID_TOP_Knoten">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2599,7 +2638,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Trasse_Kante">
+	  <xs:complexType ecore:name="ID_Trasse_Kante_TypeClass" name="TCID_Trasse_Kante">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2618,7 +2657,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Trasse_Knoten">
+	  <xs:complexType ecore:name="ID_Trasse_Knoten_TypeClass" name="TCID_Trasse_Knoten">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2637,7 +2676,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Ueberhoehung">
+	  <xs:complexType ecore:name="ID_Ueberhoehung_TypeClass" name="TCID_Ueberhoehung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2656,7 +2695,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Uebertragungsweg_Nach">
+	  <xs:complexType ecore:name="ID_Uebertragungsweg_Nach_TypeClass"
+                   name="TCID_Uebertragungsweg_Nach">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2676,7 +2716,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Uebertragungsweg_Von">
+	  <xs:complexType ecore:name="ID_Uebertragungsweg_Von_TypeClass" name="TCID_Uebertragungsweg_Von">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2696,7 +2736,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Umfahrpunkt">
+	  <xs:complexType ecore:name="ID_Umfahrpunkt_TypeClass" name="TCID_Umfahrpunkt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2716,7 +2756,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Unterbringung">
+	  <xs:complexType ecore:name="ID_Unterbringung_TypeClass" name="TCID_Unterbringung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2735,7 +2775,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Unterbringung_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_Unterbringung_ohne_Proxy_TypeClass"
+                   name="TCID_Unterbringung_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2754,7 +2795,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Unterbringung_Technik">
+	  <xs:complexType ecore:name="ID_Unterbringung_Technik_TypeClass"
+                   name="TCID_Unterbringung_Technik">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2774,7 +2816,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Ur_Objekt">
+	  <xs:complexType ecore:name="ID_Ur_Objekt_TypeClass" name="TCID_Ur_Objekt">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2793,7 +2835,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Verknuepftes_Element">
+	  <xs:complexType ecore:name="ID_Verknuepftes_Element_TypeClass" name="TCID_Verknuepftes_Element">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2812,7 +2854,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_W_Kr_Anlage">
+	  <xs:complexType ecore:name="ID_W_Kr_Anlage_TypeClass" name="TCID_W_Kr_Anlage">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2831,7 +2873,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_W_Kr_Anlage_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_W_Kr_Anlage_ohne_Proxy_TypeClass"
+                   name="TCID_W_Kr_Anlage_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2850,7 +2893,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_W_Kr_Gsp_Element">
+	  <xs:complexType ecore:name="ID_W_Kr_Gsp_Element_TypeClass" name="TCID_W_Kr_Gsp_Element">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2869,7 +2912,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_W_Kr_Gsp_Komponente">
+	  <xs:complexType ecore:name="ID_W_Kr_Gsp_Komponente_TypeClass" name="TCID_W_Kr_Gsp_Komponente">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2888,7 +2931,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Weichenlaufkette">
+	  <xs:complexType ecore:name="ID_Weichenlaufkette_TypeClass" name="TCID_Weichenlaufkette">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2907,7 +2950,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Ziel">
+	  <xs:complexType ecore:name="ID_Ziel_TypeClass" name="TCID_Ziel">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2926,7 +2969,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ZL">
+	  <xs:complexType ecore:name="ID_ZL_TypeClass" name="TCID_ZL">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2945,7 +2988,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ZL_DLP_Fstr">
+	  <xs:complexType ecore:name="ID_ZL_DLP_Fstr_TypeClass" name="TCID_ZL_DLP_Fstr">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2964,7 +3007,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ZL_Fstr">
+	  <xs:complexType ecore:name="ID_ZL_Fstr_TypeClass" name="TCID_ZL_Fstr">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -2983,7 +3026,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ZL_Signalgruppe">
+	  <xs:complexType ecore:name="ID_ZL_Signalgruppe_TypeClass" name="TCID_ZL_Signalgruppe">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -3002,7 +3045,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ZLV_Bus">
+	  <xs:complexType ecore:name="ID_ZLV_Bus_TypeClass" name="TCID_ZLV_Bus">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -3021,7 +3064,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ZLV_Bus_ohne_Proxy">
+	  <xs:complexType ecore:name="ID_ZLV_Bus_ohne_Proxy_TypeClass" name="TCID_ZLV_Bus_ohne_Proxy">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -3040,7 +3083,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ZN">
+	  <xs:complexType ecore:name="ID_ZN_TypeClass" name="TCID_ZN">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -3059,7 +3102,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ZN_Anzeigefeld">
+	  <xs:complexType ecore:name="ID_ZN_Anzeigefeld_TypeClass" name="TCID_ZN_Anzeigefeld">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -3078,7 +3121,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ZN_Anzeigefeld_Anstoss">
+	  <xs:complexType ecore:name="ID_ZN_Anzeigefeld_Anstoss_TypeClass"
+                   name="TCID_ZN_Anzeigefeld_Anstoss">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -3097,7 +3141,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ZN_Fortschalt_Kriterium">
+	  <xs:complexType ecore:name="ID_ZN_Fortschalt_Kriterium_TypeClass"
+                   name="TCID_ZN_Fortschalt_Kriterium">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -3116,7 +3161,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ZN_Unterstation">
+	  <xs:complexType ecore:name="ID_ZN_Unterstation_TypeClass" name="TCID_ZN_Unterstation">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -3135,7 +3180,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_ZN_ZBS">
+	  <xs:complexType ecore:name="ID_ZN_ZBS_TypeClass" name="TCID_ZN_ZBS">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -3154,7 +3199,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Zugeinwirkung">
+	  <xs:complexType ecore:name="ID_Zugeinwirkung_TypeClass" name="TCID_Zugeinwirkung">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>
@@ -3173,7 +3218,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:restriction>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCID_Zweites_Haltfallkriterium">
+	  <xs:complexType ecore:name="ID_Zweites_Haltfallkriterium_TypeClass"
+                   name="TCID_Zweites_Haltfallkriterium">
 		    <xs:complexContent>
 			      <xs:restriction base="nsBasisTypen:TCZeiger">
 				        <xs:sequence>

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ecore:EPackage xmlns:xmi="http://www.omg.org/XMI"
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+                xmlns:xmi="http://www.omg.org/XMI"
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-                xmi:version="2.0"
                 name="Gleis"
                 nsURI="http://www.plan-pro.org/modell/Gleis/1.10.0.3"
                 nsPrefix="nsGleis">
@@ -258,7 +258,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -309,7 +309,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -325,7 +325,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Betriebliche Einordnung des Gleises. Aus einer Liste erfolgt die Auswahl der Gleisart. Falls eine abweichende Gleisart vorhanden ist, ist \&#34;sonstige\&#34; auszuwählen und mit einem Bearbeitungsvermerk zu erläutern."/>
+                 value="Betriebliche Einordnung des Gleises. Aus einer Liste erfolgt die Auswahl der Gleisart. Falls eine abweichende Gleisart vorhanden ist, ist \&quot;sonstige\&quot; auszuwählen und mit einem Bearbeitungsvermerk zu erläutern."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -344,7 +344,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -360,7 +360,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Kennzeichnung der Art des Baubereichs zur Darstellung in der Planung. ausgebaut: Temporär ausgebautes Gleis, das aus Zweckmäßigkeitsgründen (z. B. für Verortung von Objekten) noch in den Planungs- bzw. Bestandsdaten mitgeführt werden muss. Baugleis: Umsetzung der durch die Baubetriebsplanung vorgegebene besondere Eigenschaft eines Gleises oder Teil eines Gleises als Baugleis im PT 1. Die Eigenschaft ~ ist genau und nur dann anzuwenden, wenn daraus folgend oder in Zusammenhang damit stehend Maßnahmen resultieren, die in sicherungstechnischen Planungen dargestellt werden müssen. Die Erklärung zum Baugleis kann in diesem Fall auch nicht ohne Änderung des sicherungstechnischen Zustands zurückgenommen werden. Erklärung und Rücknahme der Erklärung zum Baugleis mit rein betrieblichen Konsequenzen, insbesondere in Zeiträumen kleiner als die zugehörigen sicherungstechnischen Bauzustände, sind hingegen in PlanPro nicht abzubilden. [gemäß Ril 408.0471, Ril 408.1471, Ril 408.1488] gesperrt: Sicherungstechnisch gesperrtes Gleis mit definierter Begrenzung. Ergänzende Beschreibung für PlanPro: Die betreffenden Gleise müssen im Rahmen der AP PT 1 (oder Bestandsdigitalisierung) als gesperrt markiert werden. Eine Aufhebung der Sperrung des Gleises kann nur mit einer neuen Planung (AP PT 1) erfolgen. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen."/>
+                 value="Kennzeichnung der Art des Baubereichs zur Darstellung in der Planung. ausgebaut: Temporär ausgebautes Gleis, das aus Zweckmäßigkeitsgründen (z. B. für Verortung von Objekten) noch in den Planungs- bzw. Bestandsdaten mitgeführt werden muss. Baugleis: Umsetzung der durch die Baubetriebsplanung vorgegebene besondere Eigenschaft eines Gleises oder Teil eines Gleises als Baugleis im PT 1. Die Eigenschaft ~ ist genau und nur dann anzuwenden, wenn daraus folgend oder in Zusammenhang damit stehend Maßnahmen resultieren, die in sicherungstechnischen Planungen dargestellt werden müssen. Die Erklärung zum Baugleis kann in diesem Fall auch nicht ohne Änderung des sicherungstechnischen Zustands zurückgenommen werden. Erklärung und Rücknahme der Erklärung zum Baugleis mit rein betrieblichen Konsequenzen, insbesondere in Zeiträumen kleiner als die zugehörigen sicherungstechnischen Bauzustände, sind hingegen in PlanPro nicht abzubilden. [gemäß Ril 408.0471, Ril 408.1471, Ril 408.1488] gesperrt: Sicherungstechnisch gesperrtes Gleis mit definierter Begrenzung. Ergänzende Beschreibung für PlanPro: Die betreffenden Gleise müssen im Rahmen der AP PT 1 (oder Bestandsdigitalisierung) als gesperrt markiert werden. Eine Aufhebung der Sperrung des Gleises kann nur mit einer neuen Planung (AP PT 1) erfolgen. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -379,7 +379,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -440,7 +440,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -475,7 +475,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -491,7 +491,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Bezeichnung des von der EBO abweichenden Lichtraumprofils. Bei Auswahl des ENUM-Werts \&#34;sonstige\&#34; ist mittels Bearbeitungsvermerk eine Profilzeichnung als Anhang beizulegen. "/>
+                 value="Bezeichnung des von der EBO abweichenden Lichtraumprofils. Bei Auswahl des ENUM-Werts \&quot;sonstige\&quot; ist mittels Bearbeitungsvermerk eine Profilzeichnung als Anhang beizulegen. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -510,7 +510,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -543,11 +543,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Angabe des für die Schaltgruppe verwendeten Fahrstromsystems. Falls als ENUM-Wert \&#34;sonstige\&#34; angegeben wird, ist das Fahrstromsystem mittels eines Bearbeitungsvermerks gesondert zu erläutern."/>
+                 value="Angabe des für die Schaltgruppe verwendeten Fahrstromsystems. Falls als ENUM-Wert \&quot;sonstige\&quot; angegeben wird, ist das Fahrstromsystem mittels eines Bearbeitungsvermerks gesondert zu erläutern."/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                          &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                               &#xD;&#xA;    &lt;ppi:ProposedValue&gt;15kV_16_7Hz&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                            &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                       &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                          &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                               &#xD;&#xA;    &lt;ppi:ProposedValue>15kV_16_7Hz&lt;/ppi:ProposedValue>&#xD;&#xA;                            &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                       &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"

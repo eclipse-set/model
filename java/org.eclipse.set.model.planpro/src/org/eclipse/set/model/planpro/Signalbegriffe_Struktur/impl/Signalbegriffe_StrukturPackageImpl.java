@@ -1,10 +1,10 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
  */
 package org.eclipse.set.model.planpro.Signalbegriffe_Struktur.impl;
@@ -195,14 +195,16 @@ public class Signalbegriffe_StrukturPackageImpl extends EPackageImpl implements 
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PlanProPackage.eNS_URI);
 		PlanProPackageImpl thePlanProPackage = (PlanProPackageImpl)(registeredPackage instanceof PlanProPackageImpl ? registeredPackage : PlanProPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BasisobjektePackage.eNS_URI);
-		BasisobjektePackageImpl theBasisobjektePackage = (BasisobjektePackageImpl)(registeredPackage instanceof BasisobjektePackageImpl ? registeredPackage : BasisobjektePackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI);
+		Signalbegriffe_Ril_301PackageImpl theSignalbegriffe_Ril_301Package = (Signalbegriffe_Ril_301PackageImpl)(registeredPackage instanceof Signalbegriffe_Ril_301PackageImpl ? registeredPackage : Signalbegriffe_Ril_301Package.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(LayoutinformationenPackage.eNS_URI);
+		LayoutinformationenPackageImpl theLayoutinformationenPackage = (LayoutinformationenPackageImpl)(registeredPackage instanceof LayoutinformationenPackageImpl ? registeredPackage : LayoutinformationenPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BasisTypenPackage.eNS_URI);
 		BasisTypenPackageImpl theBasisTypenPackage = (BasisTypenPackageImpl)(registeredPackage instanceof BasisTypenPackageImpl ? registeredPackage : BasisTypenPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BasisobjektePackage.eNS_URI);
+		BasisobjektePackageImpl theBasisobjektePackage = (BasisobjektePackageImpl)(registeredPackage instanceof BasisobjektePackageImpl ? registeredPackage : BasisobjektePackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ATOPackage.eNS_URI);
 		ATOPackageImpl theATOPackage = (ATOPackageImpl)(registeredPackage instanceof ATOPackageImpl ? registeredPackage : ATOPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(VerweisePackage.eNS_URI);
-		VerweisePackageImpl theVerweisePackage = (VerweisePackageImpl)(registeredPackage instanceof VerweisePackageImpl ? registeredPackage : VerweisePackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Ansteuerung_ElementPackage.eNS_URI);
 		Ansteuerung_ElementPackageImpl theAnsteuerung_ElementPackage = (Ansteuerung_ElementPackageImpl)(registeredPackage instanceof Ansteuerung_ElementPackageImpl ? registeredPackage : Ansteuerung_ElementPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BahnsteigPackage.eNS_URI);
@@ -243,23 +245,21 @@ public class Signalbegriffe_StrukturPackageImpl extends EPackageImpl implements 
 		ZuglenkungPackageImpl theZuglenkungPackage = (ZuglenkungPackageImpl)(registeredPackage instanceof ZuglenkungPackageImpl ? registeredPackage : ZuglenkungPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ZugnummernmeldeanlagePackage.eNS_URI);
 		ZugnummernmeldeanlagePackageImpl theZugnummernmeldeanlagePackage = (ZugnummernmeldeanlagePackageImpl)(registeredPackage instanceof ZugnummernmeldeanlagePackageImpl ? registeredPackage : ZugnummernmeldeanlagePackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI);
-		Signalbegriffe_Ril_301PackageImpl theSignalbegriffe_Ril_301Package = (Signalbegriffe_Ril_301PackageImpl)(registeredPackage instanceof Signalbegriffe_Ril_301PackageImpl ? registeredPackage : Signalbegriffe_Ril_301Package.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(LayoutinformationenPackage.eNS_URI);
-		LayoutinformationenPackageImpl theLayoutinformationenPackage = (LayoutinformationenPackageImpl)(registeredPackage instanceof LayoutinformationenPackageImpl ? registeredPackage : LayoutinformationenPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(VerweisePackage.eNS_URI);
+		VerweisePackageImpl theVerweisePackage = (VerweisePackageImpl)(registeredPackage instanceof VerweisePackageImpl ? registeredPackage : VerweisePackage.eINSTANCE);
 
 		// Load packages
 		thePlanProPackage.loadPackage();
+		theSignalbegriffe_Ril_301Package.loadPackage();
 		theBalisentechnik_ETCSPackage.loadPackage();
 		theBahnuebergangPackage.loadPackage();
-		theSignalbegriffe_Ril_301Package.loadPackage();
 
 		// Create package meta-data objects
 		theSignalbegriffe_StrukturPackage.createPackageContents();
-		theBasisobjektePackage.createPackageContents();
+		theLayoutinformationenPackage.createPackageContents();
 		theBasisTypenPackage.createPackageContents();
+		theBasisobjektePackage.createPackageContents();
 		theATOPackage.createPackageContents();
-		theVerweisePackage.createPackageContents();
 		theAnsteuerung_ElementPackage.createPackageContents();
 		theBahnsteigPackage.createPackageContents();
 		theBedienungPackage.createPackageContents();
@@ -278,14 +278,14 @@ public class Signalbegriffe_StrukturPackageImpl extends EPackageImpl implements 
 		theSignalePackage.createPackageContents();
 		theZuglenkungPackage.createPackageContents();
 		theZugnummernmeldeanlagePackage.createPackageContents();
-		theLayoutinformationenPackage.createPackageContents();
+		theVerweisePackage.createPackageContents();
 
 		// Initialize created meta-data
 		theSignalbegriffe_StrukturPackage.initializePackageContents();
-		theBasisobjektePackage.initializePackageContents();
+		theLayoutinformationenPackage.initializePackageContents();
 		theBasisTypenPackage.initializePackageContents();
+		theBasisobjektePackage.initializePackageContents();
 		theATOPackage.initializePackageContents();
-		theVerweisePackage.initializePackageContents();
 		theAnsteuerung_ElementPackage.initializePackageContents();
 		theBahnsteigPackage.initializePackageContents();
 		theBedienungPackage.initializePackageContents();
@@ -304,13 +304,13 @@ public class Signalbegriffe_StrukturPackageImpl extends EPackageImpl implements 
 		theSignalePackage.initializePackageContents();
 		theZuglenkungPackage.initializePackageContents();
 		theZugnummernmeldeanlagePackage.initializePackageContents();
-		theLayoutinformationenPackage.initializePackageContents();
+		theVerweisePackage.initializePackageContents();
 
 		// Fix loaded packages
 		thePlanProPackage.fixPackageContents();
+		theSignalbegriffe_Ril_301Package.fixPackageContents();
 		theBalisentechnik_ETCSPackage.fixPackageContents();
 		theBahnuebergangPackage.fixPackageContents();
-		theSignalbegriffe_Ril_301Package.fixPackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theSignalbegriffe_StrukturPackage.freeze();

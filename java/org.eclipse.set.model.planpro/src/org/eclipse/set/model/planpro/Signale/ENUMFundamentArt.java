@@ -1,10 +1,10 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
  */
 package org.eclipse.set.model.planpro.Signale;
@@ -26,14 +26,14 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum ENUMFundamentArt implements Enumerator {
 	/**
-	 * The '<em><b>ENUM Fundament Art Betonmonolith groß</b></em>' literal object.
+	 * The '<em><b>ENUM Fundament Art Betonmonolith gross</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #ENUM_FUNDAMENT_ART_BETONMONOLITH_GROSS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_FUNDAMENT_ART_BETONMONOLITH_GROSS(0, "ENUMFundament_Art_Betonmonolith_groß", "Betonmonolith gro\u00df"),
+	ENUM_FUNDAMENT_ART_BETONMONOLITH_GROSS(0, "ENUMFundament_Art_Betonmonolith_gross", "Betonmonolith gro\u00df"),
 
 	/**
 	 * The '<em><b>ENUM Fundament Art Betonmonolith klein</b></em>' literal object.
@@ -46,14 +46,14 @@ public enum ENUMFundamentArt implements Enumerator {
 	ENUM_FUNDAMENT_ART_BETONMONOLITH_KLEIN(1, "ENUMFundament_Art_Betonmonolith_klein", "Betonmonolith klein"),
 
 	/**
-	 * The '<em><b>ENUM Fundament Art groß</b></em>' literal object.
+	 * The '<em><b>ENUM Fundament Art gross</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #ENUM_FUNDAMENT_ART_GROSS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_FUNDAMENT_ART_GROSS(2, "ENUMFundament_Art_groß", "gro\u00df"),
+	ENUM_FUNDAMENT_ART_GROSS(2, "ENUMFundament_Art_gross", "gro\u00df"),
 
 	/**
 	 * The '<em><b>ENUM Fundament Art klein</b></em>' literal object.
@@ -66,14 +66,14 @@ public enum ENUMFundamentArt implements Enumerator {
 	ENUM_FUNDAMENT_ART_KLEIN(3, "ENUMFundament_Art_klein", "klein"),
 
 	/**
-	 * The '<em><b>ENUM Fundament Art Rammrohr groß</b></em>' literal object.
+	 * The '<em><b>ENUM Fundament Art Rammrohr gross</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #ENUM_FUNDAMENT_ART_RAMMROHR_GROSS_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_FUNDAMENT_ART_RAMMROHR_GROSS(4, "ENUMFundament_Art_Rammrohr_groß", "Rammrohr gro\u00df"),
+	ENUM_FUNDAMENT_ART_RAMMROHR_GROSS(4, "ENUMFundament_Art_Rammrohr_gross", "Rammrohr gro\u00df"),
 
 	/**
 	 * The '<em><b>ENUM Fundament Art Rammrohr klein</b></em>' literal object.
@@ -96,11 +96,11 @@ public enum ENUMFundamentArt implements Enumerator {
 	ENUM_FUNDAMENT_ART_SONSTIGE(6, "ENUMFundament_Art_sonstige", "sonstige");
 
 	/**
-	 * The '<em><b>ENUM Fundament Art Betonmonolith groß</b></em>' literal value.
+	 * The '<em><b>ENUM Fundament Art Betonmonolith gross</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #ENUM_FUNDAMENT_ART_BETONMONOLITH_GROSS
-	 * @model name="ENUMFundament_Art_Betonmonolith_groß" literal="Betonmonolith gro\337"
+	 * @model name="ENUMFundament_Art_Betonmonolith_gross" literal="Betonmonolith gro\337"
 	 * @generated
 	 * @ordered
 	 */
@@ -118,11 +118,11 @@ public enum ENUMFundamentArt implements Enumerator {
 	public static final int ENUM_FUNDAMENT_ART_BETONMONOLITH_KLEIN_VALUE = 1;
 
 	/**
-	 * The '<em><b>ENUM Fundament Art groß</b></em>' literal value.
+	 * The '<em><b>ENUM Fundament Art gross</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #ENUM_FUNDAMENT_ART_GROSS
-	 * @model name="ENUMFundament_Art_groß" literal="gro\337"
+	 * @model name="ENUMFundament_Art_gross" literal="gro\337"
 	 * @generated
 	 * @ordered
 	 */
@@ -140,11 +140,11 @@ public enum ENUMFundamentArt implements Enumerator {
 	public static final int ENUM_FUNDAMENT_ART_KLEIN_VALUE = 3;
 
 	/**
-	 * The '<em><b>ENUM Fundament Art Rammrohr groß</b></em>' literal value.
+	 * The '<em><b>ENUM Fundament Art Rammrohr gross</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #ENUM_FUNDAMENT_ART_RAMMROHR_GROSS
-	 * @model name="ENUMFundament_Art_Rammrohr_groß" literal="Rammrohr gro\337"
+	 * @model name="ENUMFundament_Art_Rammrohr_gross" literal="Rammrohr gro\337"
 	 * @generated
 	 * @ordered
 	 */

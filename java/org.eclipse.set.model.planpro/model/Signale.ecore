@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ecore:EPackage xmlns:xmi="http://www.omg.org/XMI"
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+                xmlns:xmi="http://www.omg.org/XMI"
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-                xmi:version="2.0"
                 name="Signale"
                 nsURI="http://www.plan-pro.org/modell/Signale/1.10.0.3"
                 nsPrefix="nsSignale">
@@ -462,18 +462,18 @@
       <details key="name"
                value="ENUMFundament_Art"/>
     </eAnnotations>
-    <eLiterals name="ENUMFundament_Art_Betonmonolith_groß"
+    <eLiterals name="ENUMFundament_Art_Betonmonolith_gross"
                literal="Betonmonolith groß"/>
     <eLiterals name="ENUMFundament_Art_Betonmonolith_klein"
                value="1"
                literal="Betonmonolith klein"/>
-    <eLiterals name="ENUMFundament_Art_groß"
+    <eLiterals name="ENUMFundament_Art_gross"
                value="2"
                literal="groß"/>
     <eLiterals name="ENUMFundament_Art_klein"
                value="3"
                literal="klein"/>
-    <eLiterals name="ENUMFundament_Art_Rammrohr_groß"
+    <eLiterals name="ENUMFundament_Art_Rammrohr_gross"
                value="4"
                literal="Rammrohr groß"/>
     <eLiterals name="ENUMFundament_Art_Rammrohr_klein"
@@ -1300,7 +1300,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1335,7 +1335,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                          &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                               &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [200..550]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                            &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                       &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                          &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                               &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [200..550]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                            &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                       &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1436,7 +1436,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1452,7 +1452,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Verweis auf ein Objekt Regelzeichnung. Für Signale werden in der Regel die Regelzeichnungen der Gruppe S800x,yy verwendet, die die grundsätzliche Anordnung am Gleis beschreiben. Die angegebene Regelzeichnung wird mittels Parametern (z. B.: \&#34;Bild\&#34;) weiter spezifiziert. Der Verweis kann mehrfach verwendet werden, wenn die Zuordnung mehrerer Regelzeichnungen explizit erforderlich ist. "/>
+                 value="Verweis auf ein Objekt Regelzeichnung. Für Signale werden in der Regel die Regelzeichnungen der Gruppe S800x,yy verwendet, die die grundsätzliche Anordnung am Gleis beschreiben. Die angegebene Regelzeichnung wird mittels Parametern (z. B.: \&quot;Bild\&quot;) weiter spezifiziert. Der Verweis kann mehrfach verwendet werden, wenn die Zuordnung mehrerer Regelzeichnungen explizit erforderlich ist. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1523,7 +1523,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Beschreibung der Signalbefestigung, um auch ohne Regelzeichnung die grundsätzliche Art erkennen zu können.&#xA;Die Werte \&#34;Regelanordnung_Mast_...\&#34; bilden Regel-Signalanordnungen am Mast ab. Mit den Werten \&#34;Regelanordnung_Sonstige_...\&#34; wird eine sonstige Regel-Anordnung beschrieben, z. B. am Pfosten (Lf). Sofern eine Sonderkonstruktion notwendig ist, sind die Werte \&#34;Sonderanordnung_Mast_...\&#34; und \&#34;Pfosten_...\&#34; zu nutzen. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Im bisherigen PT1 keine eindeutige Darstellung, in der Regel aus den Einträgen in der Signaltabelle 1 zu erkennen."/>
+                 value="Beschreibung der Signalbefestigung, um auch ohne Regelzeichnung die grundsätzliche Art erkennen zu können.&#xA;Die Werte \&quot;Regelanordnung_Mast_...\&quot; bilden Regel-Signalanordnungen am Mast ab. Mit den Werten \&quot;Regelanordnung_Sonstige_...\&quot; wird eine sonstige Regel-Anordnung beschrieben, z. B. am Pfosten (Lf). Sofern eine Sonderkonstruktion notwendig ist, sind die Werte \&quot;Sonderanordnung_Mast_...\&quot; und \&quot;Pfosten_...\&quot; zu nutzen. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Im bisherigen PT1 keine eindeutige Darstellung, in der Regel aus den Einträgen in der Signaltabelle 1 zu erkennen."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1559,7 +1559,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[-1.250..1.250], 3 Nachkommastellen&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[-1.250..1.250], 3 Nachkommastellen&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1579,7 +1579,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [0.225..15.000], immer drei Stellen nach dem Dezimaltrennzeichen &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [0.225..15.000], immer drei Stellen nach dem Dezimaltrennzeichen &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1620,7 +1620,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -1636,7 +1636,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Verweis auf den oder die Fahrtankünder (\&#34;Weißes Dreieck\&#34;), durch die eine Fahrtstellung der unter ID_Signal_Start angegebenen Startsignale angekündigt werden soll. Der Verweis entfällt, wenn die Anzeige ausschließlich auf mobilen Endgeräten erfolgt."/>
+                 value="Verweis auf den oder die Fahrtankünder (\&quot;Weißes Dreieck\&quot;), durch die eine Fahrtstellung der unter ID_Signal_Start angegebenen Startsignale angekündigt werden soll. Der Verweis entfällt, wenn die Anzeige ausschließlich auf mobilen Endgeräten erfolgt."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1722,11 +1722,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Angabe, ob für das Startsignal im Stumpfgleis eine Besetzte Ausfahrt geplant ist (true) oder nicht (false). Im Planungs- bzw. Projektierungsfall \&#34;Besetzte Ausfahrt\&#34; müssen die an das Stumpfgleis anschließenden Weichen oder Kreuzungen nicht freigemeldet sein, wenn sie durch die zuletzt in das Stumpfgleis eingestellte Fahrstraße kontinuierlich besetzt wurden und besetzt geblieben sind. DB Regelwerk Lastenheft ESTW F1, Abschnitt 4.3.3"/>
+                 value="Angabe, ob für das Startsignal im Stumpfgleis eine Besetzte Ausfahrt geplant ist (true) oder nicht (false). Im Planungs- bzw. Projektierungsfall \&quot;Besetzte Ausfahrt\&quot; müssen die an das Stumpfgleis anschließenden Weichen oder Kreuzungen nicht freigemeldet sein, wenn sie durch die zuletzt in das Stumpfgleis eingestellte Fahrstraße kontinuierlich besetzt wurden und besetzt geblieben sind. DB Regelwerk Lastenheft ESTW F1, Abschnitt 4.3.3"/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;false&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>false&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1758,11 +1758,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Gibt an, ob und wie Weiterfahren ohne Halt über das Zielsignal eines Fahrweges hinaus gestattet sind. Ist die Durchfahrt mittels aneinandergereihter Zugstraßen verboten, mittels einzeln angewählter Zugstraßen auf dieses Signal und von diesem Signal aber zu gestatten, so ist der Wert \&#34;erlaubt\&#34; zu verwenden. In diesem Fall wird allerdings kein Objekt Fstr Aneinander über dieses Signal angelegt. Ist betrieblich die Weiterfahrt einer Zugfahrt als Rangierfahrt zu gestatten (diese Änderung der Ril 408 ist noch nicht Bestandteil des Lastenheftes ESTW), so ist der Wert \&#34;nur_mit_Sh1\&#34; zu verwenden. Technisch schließt eine Zugfahrt mit Durchrutschweg D0 an, das Signal zeigt Hp 0 und Sh 1. DB-Regelwerk Im bisherigen PT 1 ohne eindeutige Darstellung. Die Symbolik im Sicherungstechnischen Lageplan gemäße 819.9002 (11) ist für diesen Sachverhalt nicht ausreichend."/>
+                 value="Gibt an, ob und wie Weiterfahren ohne Halt über das Zielsignal eines Fahrweges hinaus gestattet sind. Ist die Durchfahrt mittels aneinandergereihter Zugstraßen verboten, mittels einzeln angewählter Zugstraßen auf dieses Signal und von diesem Signal aber zu gestatten, so ist der Wert \&quot;erlaubt\&quot; zu verwenden. In diesem Fall wird allerdings kein Objekt Fstr Aneinander über dieses Signal angelegt. Ist betrieblich die Weiterfahrt einer Zugfahrt als Rangierfahrt zu gestatten (diese Änderung der Ril 408 ist noch nicht Bestandteil des Lastenheftes ESTW), so ist der Wert \&quot;nur_mit_Sh1\&quot; zu verwenden. Technisch schließt eine Zugfahrt mit Durchrutschweg D0 an, das Signal zeigt Hp 0 und Sh 1. DB-Regelwerk Im bisherigen PT 1 ohne eindeutige Darstellung. Die Symbolik im Sicherungstechnischen Lageplan gemäße 819.9002 (11) ist für diesen Sachverhalt nicht ausreichend."/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;erlaubt&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>erlaubt&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1862,7 +1862,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Signal steht am Gegengleis. Das Gleis, das auf zweigleisiger, freier Strecke entgegen der gewöhnlichen Fahrtrichtung befahren wird (bei den EdB das linke Gleis), wird als Gegengleis bezeichnet. Das Attribut wird nur für (reale und fiktive) Signale an den Streckengleisen mit der Betriebsform \&#34;zweigleisiger Betrieb\&#34; ausgefüllt. Erfüllt ein Ausfahrziel die Bedingung Gegengleis = true, ist für die Zulassung einer Zugfahrt auf dieses Gleis ein Gegengleisanzeiger erforderlich. Im Beispiel sind die (realen) Signale 13 und AA sowie die fiktiven Signale HIDOG und DOHIG Signale, die am Gegengleis stehen. Media:Signale am Gegengleis.svg Wertzuordnung: true - Signal steht an einem Gegengleis, false - Signal steht nicht an einem Gegengleis. Hinweis: Dieses Attribut darf nicht verwechselt werden mit dem Attribut Wirkrichtung, das sich auf die topologische Richtung des Gleises bezieht. DB-Regelwerk Planungsdaten: Sicherungstechnischer Lageplan / BÜ-Lageplan "/>
+                 value="Signal steht am Gegengleis. Das Gleis, das auf zweigleisiger, freier Strecke entgegen der gewöhnlichen Fahrtrichtung befahren wird (bei den EdB das linke Gleis), wird als Gegengleis bezeichnet. Das Attribut wird nur für (reale und fiktive) Signale an den Streckengleisen mit der Betriebsform \&quot;zweigleisiger Betrieb\&quot; ausgefüllt. Erfüllt ein Ausfahrziel die Bedingung Gegengleis = true, ist für die Zulassung einer Zugfahrt auf dieses Gleis ein Gegengleisanzeiger erforderlich. Im Beispiel sind die (realen) Signale 13 und AA sowie die fiktiven Signale HIDOG und DOHIG Signale, die am Gegengleis stehen. Media:Signale am Gegengleis.svg Wertzuordnung: true - Signal steht an einem Gegengleis, false - Signal steht nicht an einem Gegengleis. Hinweis: Dieses Attribut darf nicht verwechselt werden mit dem Attribut Wirkrichtung, das sich auf die topologische Richtung des Gleises bezieht. DB-Regelwerk Planungsdaten: Sicherungstechnischer Lageplan / BÜ-Lageplan "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1936,7 +1936,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -2017,7 +2017,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Beschreibung des Signalrahmens, um auch ohne Regelzeichnung die grundsätzliche Art erkennen zu können. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Im bisherigen PT 1 keine eindeutige Darstellung, in der Regel aus den Einträgen in der Signaltabelle1 zu erkennen. "/>
+                 value="Beschreibung des Signalrahmens, um auch ohne Regelzeichnung die grundsätzliche Art erkennen zu können. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Im bisherigen PT 1 keine eindeutige Darstellung, in der Regel aus den Einträgen in der Signaltabelle1 zu erkennen. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2136,7 +2136,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..16]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..16]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2157,7 +2157,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [1..500] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [1..500] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2174,7 +2174,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Ausbildung des Signalschirms eines Schirm-Signals im Sicherungstechnischen Lageplan und in der Außenanlage. Dieses Attribut ermöglicht bei allen Schirmsignalen (s. Modellierung Signal), die grundsätzliche Art des Signals zu erkennen, ohne die zugehörige Regelzeichnung zu lesen. Eine Ausnahme bildet der ENUM-Wert \&#34;andere\&#34;, hier muss die Art des Signals aus der Regelzeichnung entnommen werden. Dieser Wert wird bei allen realen Signalen verwendet, die keine Schirmsignale sind. Unter Mehrabschnittssignal wird dabei jegliche Kombination eines Hauptsignal- mit einem Vorsignalbegriff verstanden, unabhängig von der konkreten technischen Ausführung. So werden auch Signale des H/V-Signalsystems, die am Mast des Hauptsignals ein Vorsignal tragen, als Mehrabschnittssignale bezeichnet. Die Einfügung der Silbe -sperr- bei Haupt- und Mehrabschnittssignalen bedeutet, dass an diesen Signalen zusätzlich ein Rangierfahrtsignal angebracht ist. Dabei ist es irrelevant, ob dies in einem eigenen Bauteil am Signal erfolgt oder ob die Optiken im Signalschirm des Haupt- oder Mehrabschnittssignalen untergebracht sind. DB-Regelwerk Planungsdaten: Sicherungstechnischer Lageplan "/>
+                 value="Ausbildung des Signalschirms eines Schirm-Signals im Sicherungstechnischen Lageplan und in der Außenanlage. Dieses Attribut ermöglicht bei allen Schirmsignalen (s. Modellierung Signal), die grundsätzliche Art des Signals zu erkennen, ohne die zugehörige Regelzeichnung zu lesen. Eine Ausnahme bildet der ENUM-Wert \&quot;andere\&quot;, hier muss die Art des Signals aus der Regelzeichnung entnommen werden. Dieser Wert wird bei allen realen Signalen verwendet, die keine Schirmsignale sind. Unter Mehrabschnittssignal wird dabei jegliche Kombination eines Hauptsignal- mit einem Vorsignalbegriff verstanden, unabhängig von der konkreten technischen Ausführung. So werden auch Signale des H/V-Signalsystems, die am Mast des Hauptsignals ein Vorsignal tragen, als Mehrabschnittssignale bezeichnet. Die Einfügung der Silbe -sperr- bei Haupt- und Mehrabschnittssignalen bedeutet, dass an diesen Signalen zusätzlich ein Rangierfahrtsignal angebracht ist. Dabei ist es irrelevant, ob dies in einem eigenen Bauteil am Signal erfolgt oder ob die Optiken im Signalschirm des Haupt- oder Mehrabschnittssignalen untergebracht sind. DB-Regelwerk Planungsdaten: Sicherungstechnischer Lageplan "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2195,7 +2195,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage&gt;EP&lt;/ppi:PlanningStage&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage>EP&lt;/ppi:PlanningStage>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2227,7 +2227,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Bezeichnung der Stellung der Streuscheibe eines Schirm-Signals, die der Signalsichtbestimmung zugrunde liegt. Bei der Betriebsstellung \&#34;...gw\&#34; ist die jeweilige Streuscheibe gewendet. DB-Regelwerk Planungsdaten: Signaltabelle 1, Zeile 9 (zweiter Eintrag) "/>
+                 value="Bezeichnung der Stellung der Streuscheibe eines Schirm-Signals, die der Signalsichtbestimmung zugrunde liegt. Bei der Betriebsstellung \&quot;...gw\&quot; ist die jeweilige Streuscheibe gewendet. DB-Regelwerk Planungsdaten: Signaltabelle 1, Zeile 9 (zweiter Eintrag) "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2306,7 +2306,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage&gt;PT1&lt;/ppi:PlanningStage&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2322,11 +2322,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Angabe der betrieblichen Funktion eines realen Signals für Zugfahrten. Hauptsignale und Mehrabschnittssignale bzw. entsprechende Tafeln werden dabei detailliert in Einfahr-, Ausfahr-, Zwischen-, Nachrück-, Block-, Deckungs-, Zugdeckungs- oder Gruppensignale bzw. Kombinationen aus diesen betrieblichen Funktionen unterteilt. Von den anderen aktiven Signalen wird nur noch das Zugzielsignal (z.B. hohes Sperrsignal als Zielsignal bei Zugfahrten) sowie das alleinstehende Zusatzsignal mit einem eigenen Attributwert hervorgehoben, alle weiteren aktiven Signale werden unter \&#34;andere\&#34; zusammengefasst. Für Gz, Tafeln und Vorsignalbaken etc. ist die Angabe nicht erforderlich. DB-Regelwerk 301, 819.20, Planungsdaten: im bisherigen PT 1 nur bei Signalen im Geltungsbereich der Ril 819.20, Tabelle für Signalabstände und Schutzstrecken, sonst ohne eindeutige Darstellung. "/>
+                 value="Angabe der betrieblichen Funktion eines realen Signals für Zugfahrten. Hauptsignale und Mehrabschnittssignale bzw. entsprechende Tafeln werden dabei detailliert in Einfahr-, Ausfahr-, Zwischen-, Nachrück-, Block-, Deckungs-, Zugdeckungs- oder Gruppensignale bzw. Kombinationen aus diesen betrieblichen Funktionen unterteilt. Von den anderen aktiven Signalen wird nur noch das Zugzielsignal (z.B. hohes Sperrsignal als Zielsignal bei Zugfahrten) sowie das alleinstehende Zusatzsignal mit einem eigenen Attributwert hervorgehoben, alle weiteren aktiven Signale werden unter \&quot;andere\&quot; zusammengefasst. Für Gz, Tafeln und Vorsignalbaken etc. ist die Angabe nicht erforderlich. DB-Regelwerk 301, 819.20, Planungsdaten: im bisherigen PT 1 nur bei Signalen im Geltungsbereich der Ril 819.20, Tabelle für Signalabstände und Schutzstrecken, sonst ohne eindeutige Darstellung. "/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage&gt;EP&lt;/ppi:PlanningStage&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage>EP&lt;/ppi:PlanningStage>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2370,7 +2370,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [1..500] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [1..500] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2390,7 +2390,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [1..300] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [1..300] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2410,7 +2410,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage&gt;EP&lt;/ppi:PlanningStage&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [1..500] &lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage>EP&lt;/ppi:PlanningStage>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [1..500] &lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2425,11 +2425,11 @@
                 eSuperTypes="Basisobjekte.ecore#//Basis_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Stellt eine Information optisch dar, die das Signal dem Triebfahrzeugführer übermitteln soll. Signalbegriffe werden im Signalbuch (Ril 301) durch eine Kurzbezeichnung (z. B. \&#34;Zs 1\&#34;) und / oder durch eine Langbezeichnung (z. B. \&#34;Ersatzsignal\&#34;) beschrieben. Diese und weitere feste Eigenschaften wie der Wertevorrat der anzeigbaren Symbole eines Signalbegriffs sind im Objekt Signalbegriff definiert, das mittels des Attributes Signalbegriff ID eingebunden wird. Anschaltdauer, Beleuchtung und Schaltbarkeit sind nicht fest, sondern wählbar an den Signalbegriff nach Signalbuch gekoppelt und so Eigenschaft des Objekts Signal_Signalbegriff. Ein Signal_Signalbegriff befindet sich immer in einem Signal Rahmen. Ausführliche Beschreibung s. Modellierung Signal DB-Regelwerk Ril 301, Planungsdaten: Sicherungstechnischer Lageplan, statische Eigenschaften: Signaltabelle 1, dynamische Eigenschaften: Signaltabelle 2. "/>
+               value="Stellt eine Information optisch dar, die das Signal dem Triebfahrzeugführer übermitteln soll. Signalbegriffe werden im Signalbuch (Ril 301) durch eine Kurzbezeichnung (z. B. \&quot;Zs 1\&quot;) und / oder durch eine Langbezeichnung (z. B. \&quot;Ersatzsignal\&quot;) beschrieben. Diese und weitere feste Eigenschaften wie der Wertevorrat der anzeigbaren Symbole eines Signalbegriffs sind im Objekt Signalbegriff definiert, das mittels des Attributes Signalbegriff ID eingebunden wird. Anschaltdauer, Beleuchtung und Schaltbarkeit sind nicht fest, sondern wählbar an den Signalbegriff nach Signalbuch gekoppelt und so Eigenschaft des Objekts Signal_Signalbegriff. Ein Signal_Signalbegriff befindet sich immer in einem Signal Rahmen. Ausführliche Beschreibung s. Modellierung Signal DB-Regelwerk Ril 301, Planungsdaten: Sicherungstechnischer Lageplan, statische Eigenschaften: Signaltabelle 1, dynamische Eigenschaften: Signaltabelle 2. "/>
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;BÜ|ESTW&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>BÜ|ESTW&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -2474,7 +2474,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Identifikator des einzubindenden Signalbegriffs. Der Wert für dieses Attribut ist aus einer vorgegebenen Liste (Objektnamen aus TCSignalbegriff) auswählbar. Die Verknüpfung unterscheidet sich von den sonst im Modell üblichen GUID-Verweisen, daher wurde bei der Bildung des Attributnamens auch von der Form \&#34;ID_...\&#34; abgewichen. DB-Regelwerk Signaltabelle 1, ist aus den Einträgen in Zeilen 14-27 zu erkennen. "/>
+                 value="Identifikator des einzubindenden Signalbegriffs. Der Wert für dieses Attribut ist aus einer vorgegebenen Liste (Objektnamen aus TCSignalbegriff) auswählbar. Die Verknüpfung unterscheidet sich von den sonst im Modell üblichen GUID-Verweisen, daher wurde bei der Bildung des Attributnamens auch von der Form \&quot;ID_...\&quot; abgewichen. DB-Regelwerk Signaltabelle 1, ist aus den Einträgen in Zeilen 14-27 zu erkennen. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2499,11 +2499,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Anschaltdauer des Signalbegriffes. Eingetragen wird bei Ersatzsignal als Standardwert \&#34;Z\&#34; (zeitgesteuert - einheitlich 90 s); bei technisch abhängigen Signalbegriffen (z. B. Fahrtbegriffen) ein \&#34;T\&#34; sowie für Grundstellungsbegriffe ein \&#34;G\&#34;. Es ist dabei unerheblich, wodurch die Abschaltung erzielt wird, z.B. sind auch mechanische Vorgänge möglich. Deswegen ist die Ausrichtung des Signalbegriffs mit zu betrachten, so leuchtet zwar ein Weichenlagemelder (z. B. Wn 1) ständig, der Signalbegriff ist aber nur angeschaltet, wenn er in der Richtung des Weichenanfangs zeigt. Weichenlagemelder haben deshalb die Anschaltdauer \&#34;T\&#34;. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung."/>
+                 value="Anschaltdauer des Signalbegriffes. Eingetragen wird bei Ersatzsignal als Standardwert \&quot;Z\&quot; (zeitgesteuert - einheitlich 90 s); bei technisch abhängigen Signalbegriffen (z. B. Fahrtbegriffen) ein \&quot;T\&quot; sowie für Grundstellungsbegriffe ein \&quot;G\&quot;. Es ist dabei unerheblich, wodurch die Abschaltung erzielt wird, z.B. sind auch mechanische Vorgänge möglich. Deswegen ist die Ausrichtung des Signalbegriffs mit zu betrachten, so leuchtet zwar ein Weichenlagemelder (z. B. Wn 1) ständig, der Signalbegriff ist aber nur angeschaltet, wenn er in der Richtung des Weichenanfangs zeigt. Weichenlagemelder haben deshalb die Anschaltdauer \&quot;T\&quot;. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung."/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;T&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage&gt;PT1&lt;/ppi:PlanningStage&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>T&lt;/ppi:ProposedValue>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2519,11 +2519,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Gibt an, ob ein beleuchtbarer Signalbegriff beleuchtet wird. Als \&#34;Beleuchtet\&#34; gilt, wenn zur besseren Erkennbarkeit eines Signalbegriffs eine zusätzliche, signaltechnisch nicht überwachte Lichtquelle angebracht ist. Das Attribut ist dann und nur dann erforderlich, wenn das Attribut \&#34;Beleuchtbar\&#34; im zugehörigen Signalbegriff den Wert \&#34;true\&#34; hat. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung."/>
+                 value="Gibt an, ob ein beleuchtbarer Signalbegriff beleuchtet wird. Als \&quot;Beleuchtet\&quot; gilt, wenn zur besseren Erkennbarkeit eines Signalbegriffs eine zusätzliche, signaltechnisch nicht überwachte Lichtquelle angebracht ist. Das Attribut ist dann und nur dann erforderlich, wenn das Attribut \&quot;Beleuchtbar\&quot; im zugehörigen Signalbegriff den Wert \&quot;true\&quot; hat. DB-Regelwerk Im bisherigen PT1 ohne eindeutige Darstellung."/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;nein&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage&gt;PT1&lt;/ppi:PlanningStage&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>nein&lt;/ppi:ProposedValue>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2539,11 +2539,11 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Gibt an, ob ein schaltbarer Signalbegriff durch eine Außenelement-Ansteuerung den betrieblichen Erfordernissen am Signal aktiv angepasst werden kann. Das Attribut ist dann und nur dann erforderlich, wenn das Attribut \&#34;Schaltbar\&#34; im zugehörigen Signalbegriff den Wert \&#34;true\&#34; hat. Wertzuordnung: true - Signalbegriff ist (schaltbar und) geschaltet, false - Signalbegriff ist (schaltbar, aber) nicht geschaltet. Beispiel: Zs 3 ist grundsätzlich schaltbar (Schaltbar == \&#34;true\&#34;). Bei Ausführung aus Lichtsignal ist Geschaltet == \&#34;true\&#34;, bei Ausführung als Blechtafel ist Geschaltet == \&#34;false\&#34;. DB-Regelwerk Im bisherigen PT 1 ohne eindeutige Darstellung, oft aus dem Symbol des Signals im Sicherungstechnischen Lageplan / BÜ-Lageplan zu erkennen."/>
+                 value="Gibt an, ob ein schaltbarer Signalbegriff durch eine Außenelement-Ansteuerung den betrieblichen Erfordernissen am Signal aktiv angepasst werden kann. Das Attribut ist dann und nur dann erforderlich, wenn das Attribut \&quot;Schaltbar\&quot; im zugehörigen Signalbegriff den Wert \&quot;true\&quot; hat. Wertzuordnung: true - Signalbegriff ist (schaltbar und) geschaltet, false - Signalbegriff ist (schaltbar, aber) nicht geschaltet. Beispiel: Zs 3 ist grundsätzlich schaltbar (Schaltbar == \&quot;true\&quot;). Bei Ausführung aus Lichtsignal ist Geschaltet == \&quot;true\&quot;, bei Ausführung als Blechtafel ist Geschaltet == \&quot;false\&quot;. DB-Regelwerk Im bisherigen PT 1 ohne eindeutige Darstellung, oft aus dem Symbol des Signals im Sicherungstechnischen Lageplan / BÜ-Lageplan zu erkennen."/>
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage&gt;PT1&lt;/ppi:PlanningStage&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2563,7 +2563,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue&gt;true&lt;/ppi:ProposedValue&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:ProposedValue>true&lt;/ppi:ProposedValue>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"

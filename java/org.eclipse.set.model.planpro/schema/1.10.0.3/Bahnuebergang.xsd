@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsBahnuebergang="http://www.plan-pro.org/modell/Bahnuebergang/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
            xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsBahnuebergang"
+           ecore:package="org.eclipse.set.model.planpro.Bahnuebergang"
            targetNamespace="http://www.plan-pro.org/modell/Bahnuebergang/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -34,125 +37,130 @@ XML Schema for PlanPro interface.</xs:documentation>
               schemaLocation="BasisTypen.xsd"/>
 	  <xs:simpleType name="ENUMBaumprofil">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Rechteck"/>
-			      <xs:enumeration value="rund"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMBaumprofil_Rechteck" value="Rechteck"/>
+			      <xs:enumeration ecore:name="ENUMBaumprofil_rund" value="rund"/>
+			      <xs:enumeration ecore:name="ENUMBaumprofil_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMBUE_Bauart">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Bau_Bue"/>
-			      <xs:enumeration value="Bue"/>
-			      <xs:enumeration value="ntResi"/>
-			      <xs:enumeration value="tResi"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Bauart_Bau_Bue" value="Bau_Bue"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Bauart_Bue" value="Bue"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Bauart_ntResi" value="ntResi"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Bauart_tResi" value="tResi"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMBUE_Funktionsueberwachung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="FSUe_B"/>
-			      <xs:enumeration value="FSUe_E"/>
-			      <xs:enumeration value="FSUe_S"/>
-			      <xs:enumeration value="Fü"/>
-			      <xs:enumeration value="Hp"/>
-			      <xs:enumeration value="Üs"/>
-			      <xs:enumeration value="ÜsOE"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Funktionsueberwachung_FSUe_B" value="FSUe_B"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Funktionsueberwachung_FSUe_E" value="FSUe_E"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Funktionsueberwachung_FSUe_S" value="FSUe_S"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Funktionsueberwachung_Fü" value="Fü"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Funktionsueberwachung_Hp" value="Hp"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Funktionsueberwachung_Ues" value="Üs"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Funktionsueberwachung_UesOE" value="ÜsOE"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMBUE_Handschalteinrichtung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="AT"/>
-			      <xs:enumeration value="ET"/>
-			      <xs:enumeration value="HAT"/>
-			      <xs:enumeration value="HET"/>
-			      <xs:enumeration value="RS"/>
-			      <xs:enumeration value="RT_ein_aus"/>
-			      <xs:enumeration value="RT_ein_RT_aus"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="UT"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Handschalteinrichtung_AT" value="AT"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Handschalteinrichtung_ET" value="ET"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Handschalteinrichtung_HAT" value="HAT"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Handschalteinrichtung_HET" value="HET"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Handschalteinrichtung_RS" value="RS"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Handschalteinrichtung_RT_ein_aus" value="RT_ein_aus"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Handschalteinrichtung_RT_ein_RT_aus" value="RT_ein_RT_aus"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Handschalteinrichtung_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Handschalteinrichtung_UT" value="UT"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMBUE_Sicherungsart">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="A"/>
-			      <xs:enumeration value="A_und_Lf"/>
-			      <xs:enumeration value="A_und_Sprechverbindung"/>
-			      <xs:enumeration value="Anrufschranke_und_Sprechverbindung"/>
-			      <xs:enumeration value="bgBUe"/>
-			      <xs:enumeration value="Lz"/>
-			      <xs:enumeration value="LzF"/>
-			      <xs:enumeration value="LzH"/>
-			      <xs:enumeration value="LzH_2F"/>
-			      <xs:enumeration value="LzH_F"/>
-			      <xs:enumeration value="LzHH"/>
-			      <xs:enumeration value="LzHH_2F"/>
-			      <xs:enumeration value="LzHH_F"/>
-			      <xs:enumeration value="LzV"/>
-			      <xs:enumeration value="P"/>
-			      <xs:enumeration value="P_und_Lf"/>
-			      <xs:enumeration value="P_und_U"/>
-			      <xs:enumeration value="schluesselabhaengig"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Ue"/>
-			      <xs:enumeration value="Ue_und_A"/>
-			      <xs:enumeration value="Ue_und_P"/>
-			      <xs:enumeration value="Ue_und_U"/>
-			      <xs:enumeration value="Zugpersonal"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_A" value="A"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_A_und_Lf" value="A_und_Lf"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_A_und_Sprechverbindung"
+                         value="A_und_Sprechverbindung"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_Anrufschranke_und_Sprechverbindung"
+                         value="Anrufschranke_und_Sprechverbindung"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_bgBUe" value="bgBUe"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_Lz" value="Lz"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_LzF" value="LzF"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_LzH" value="LzH"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_LzH_2F" value="LzH_2F"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_LzH_F" value="LzH_F"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_LzHH" value="LzHH"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_LzHH_2F" value="LzHH_2F"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_LzHH_F" value="LzHH_F"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_LzV" value="LzV"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_P" value="P"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_P_und_Lf" value="P_und_Lf"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_P_und_U" value="P_und_U"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_schluesselabhaengig"
+                         value="schluesselabhaengig"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_Ue" value="Ue"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_Ue_und_A" value="Ue_und_A"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_Ue_und_P" value="Ue_und_P"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_Ue_und_U" value="Ue_und_U"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Sicherungsart_Zugpersonal" value="Zugpersonal"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMBUE_Technik">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Anrufschranke"/>
-			      <xs:enumeration value="BUEP_93"/>
-			      <xs:enumeration value="BUES2000"/>
-			      <xs:enumeration value="BUES_72D"/>
-			      <xs:enumeration value="BUES_72Z"/>
-			      <xs:enumeration value="EBUET_80"/>
-			      <xs:enumeration value="EBUET_80_VB"/>
-			      <xs:enumeration value="FUE_58"/>
-			      <xs:enumeration value="FUE_60"/>
-			      <xs:enumeration value="HL_64_B"/>
-			      <xs:enumeration value="HL_64_C"/>
-			      <xs:enumeration value="HS_64_B"/>
-			      <xs:enumeration value="HS_64_C"/>
-			      <xs:enumeration value="keine"/>
-			      <xs:enumeration value="LO1"/>
-			      <xs:enumeration value="LO1_57"/>
-			      <xs:enumeration value="NE_BUE_90"/>
-			      <xs:enumeration value="RBUEP"/>
-			      <xs:enumeration value="RBUET"/>
-			      <xs:enumeration value="SIMIS_LC"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_Anrufschranke" value="Anrufschranke"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_BUEP_93" value="BUEP_93"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_BUES2000" value="BUES2000"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_BUES_72D" value="BUES_72D"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_BUES_72Z" value="BUES_72Z"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_EBUET_80" value="EBUET_80"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_EBUET_80_VB" value="EBUET_80_VB"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_FUE_58" value="FUE_58"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_FUE_60" value="FUE_60"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_HL_64_B" value="HL_64_B"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_HL_64_C" value="HL_64_C"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_HS_64_B" value="HS_64_B"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_HS_64_C" value="HS_64_C"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_keine" value="keine"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_LO1" value="LO1"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_LO1_57" value="LO1_57"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_NE_BUE_90" value="NE_BUE_90"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_RBUEP" value="RBUEP"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_RBUET" value="RBUET"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_SIMIS_LC" value="SIMIS_LC"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Technik_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMFue_Schaltfall">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="12"/>
-			      <xs:enumeration value="2"/>
+			      <xs:enumeration ecore:name="ENUMFue_Schaltfall_12" value="12"/>
+			      <xs:enumeration ecore:name="ENUMFue_Schaltfall_2" value="2"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMFuss_Radweg_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Fuss_Radweg_abgesetzt"/>
-			      <xs:enumeration value="Fuss_Radweg_parallel"/>
-			      <xs:enumeration value="Fussweg_abgesetzt"/>
-			      <xs:enumeration value="Fussweg_parallel"/>
-			      <xs:enumeration value="Radweg_abgesetzt"/>
-			      <xs:enumeration value="Radweg_parallel"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMFuss_Radweg_Art_Fuss_Radweg_abgesetzt"
+                         value="Fuss_Radweg_abgesetzt"/>
+			      <xs:enumeration ecore:name="ENUMFuss_Radweg_Art_Fuss_Radweg_parallel"
+                         value="Fuss_Radweg_parallel"/>
+			      <xs:enumeration ecore:name="ENUMFuss_Radweg_Art_Fussweg_abgesetzt" value="Fussweg_abgesetzt"/>
+			      <xs:enumeration ecore:name="ENUMFuss_Radweg_Art_Fussweg_parallel" value="Fussweg_parallel"/>
+			      <xs:enumeration ecore:name="ENUMFuss_Radweg_Art_Radweg_abgesetzt" value="Radweg_abgesetzt"/>
+			      <xs:enumeration ecore:name="ENUMFuss_Radweg_Art_Radweg_parallel" value="Radweg_parallel"/>
+			      <xs:enumeration ecore:name="ENUMFuss_Radweg_Art_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMFuss_Radweg_Seite">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="beidseitig"/>
-			      <xs:enumeration value="Quadrant_1_2"/>
-			      <xs:enumeration value="Quadrant_3_4"/>
+			      <xs:enumeration ecore:name="ENUMFuss_Radweg_Seite_beidseitig" value="beidseitig"/>
+			      <xs:enumeration ecore:name="ENUMFuss_Radweg_Seite_Quadrant_1_2" value="Quadrant_1_2"/>
+			      <xs:enumeration ecore:name="ENUMFuss_Radweg_Seite_Quadrant_3_4" value="Quadrant_3_4"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMGFR_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="automatisch"/>
-			      <xs:enumeration value="mit_Bediener"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMGFR_Art_automatisch" value="automatisch"/>
+			      <xs:enumeration ecore:name="ENUMGFR_Art_mit_Bediener" value="mit_Bediener"/>
+			      <xs:enumeration ecore:name="ENUMGFR_Art_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMHp_Ersatzstecker">
@@ -160,278 +168,295 @@ XML Schema for PlanPro interface.</xs:documentation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">\"sonstige\"==nur BÜ-Ersatzstecker sollen abgebildet werden; \"Abhaengigkeit_aufgehoben\"==Ersatzstecker an der Hp-Schnittstelle im Stellwerk hebt die Hp-Abhängigkeit auf, sodass eine Fahrstraße über den BÜ eingestellt werden kann, ohne dass der BÜ dabei berücksichtigt wird</xs:documentation>
       </xs:annotation>
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Abhaengigkeit_aufgehoben"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMHp_Ersatzstecker_Abhaengigkeit_aufgehoben"
+                         value="Abhaengigkeit_aufgehoben"/>
+			      <xs:enumeration ecore:name="ENUMHp_Ersatzstecker_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMKlassifizierung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Bundestrasse_ausserorts"/>
-			      <xs:enumeration value="Bundestrasse_innerorts"/>
-			      <xs:enumeration value="Fussweg"/>
-			      <xs:enumeration value="Fussweg_Radweg"/>
-			      <xs:enumeration value="Gemeindestrasse_ausserorts"/>
-			      <xs:enumeration value="Gemeindestrasse_innerorts"/>
-			      <xs:enumeration value="Kreisstrasse_ausserorts"/>
-			      <xs:enumeration value="Kreisstrasse_innerorts"/>
-			      <xs:enumeration value="Landstrasse_ausserorts"/>
-			      <xs:enumeration value="Landstrasse_innerorts"/>
-			      <xs:enumeration value="Privatstrasse"/>
-			      <xs:enumeration value="Privatweg"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Weg_Forst_Land"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_Bundestrasse_ausserorts"
+                         value="Bundestrasse_ausserorts"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_Bundestrasse_innerorts"
+                         value="Bundestrasse_innerorts"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_Fussweg" value="Fussweg"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_Fussweg_Radweg" value="Fussweg_Radweg"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_Gemeindestrasse_ausserorts"
+                         value="Gemeindestrasse_ausserorts"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_Gemeindestrasse_innerorts"
+                         value="Gemeindestrasse_innerorts"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_Kreisstrasse_ausserorts"
+                         value="Kreisstrasse_ausserorts"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_Kreisstrasse_innerorts"
+                         value="Kreisstrasse_innerorts"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_Landstrasse_ausserorts"
+                         value="Landstrasse_ausserorts"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_Landstrasse_innerorts"
+                         value="Landstrasse_innerorts"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_Privatstrasse" value="Privatstrasse"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_Privatweg" value="Privatweg"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMKlassifizierung_Weg_Forst_Land" value="Weg_Forst_Land"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMLagerung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="beidseitig"/>
-			      <xs:enumeration value="einseitig"/>
+			      <xs:enumeration ecore:name="ENUMLagerung_beidseitig" value="beidseitig"/>
+			      <xs:enumeration ecore:name="ENUMLagerung_einseitig" value="einseitig"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMLFUE_Impuls">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="1_zu_40"/>
-			      <xs:enumeration value="Dauerimpuls"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMLFUE_Impuls_1_zu_40" value="1_zu_40"/>
+			      <xs:enumeration ecore:name="ENUMLFUE_Impuls_Dauerimpuls" value="Dauerimpuls"/>
+			      <xs:enumeration ecore:name="ENUMLFUE_Impuls_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMMontage_Ausgleichsgewichte">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="beidseitig"/>
-			      <xs:enumeration value="einseitig"/>
+			      <xs:enumeration ecore:name="ENUMMontage_Ausgleichsgewichte_beidseitig" value="beidseitig"/>
+			      <xs:enumeration ecore:name="ENUMMontage_Ausgleichsgewichte_einseitig" value="einseitig"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMOptik_Symbol">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Fussgaenger"/>
-			      <xs:enumeration value="Fussgaenger_Radfahrer"/>
-			      <xs:enumeration value="Pfeil_links"/>
-			      <xs:enumeration value="Pfeil_rechts"/>
-			      <xs:enumeration value="Radfahrer"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMOptik_Symbol_Fussgaenger" value="Fussgaenger"/>
+			      <xs:enumeration ecore:name="ENUMOptik_Symbol_Fussgaenger_Radfahrer"
+                         value="Fussgaenger_Radfahrer"/>
+			      <xs:enumeration ecore:name="ENUMOptik_Symbol_Pfeil_links" value="Pfeil_links"/>
+			      <xs:enumeration ecore:name="ENUMOptik_Symbol_Pfeil_rechts" value="Pfeil_rechts"/>
+			      <xs:enumeration ecore:name="ENUMOptik_Symbol_Radfahrer" value="Radfahrer"/>
+			      <xs:enumeration ecore:name="ENUMOptik_Symbol_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMRichtungspfeil">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="linksweisend"/>
-			      <xs:enumeration value="rechtsweisend"/>
-			      <xs:enumeration value="Richtung_Gefahrenstelle_links"/>
-			      <xs:enumeration value="Richtung_Gefahrenstelle_rechts"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMRichtungspfeil_linksweisend" value="linksweisend"/>
+			      <xs:enumeration ecore:name="ENUMRichtungspfeil_rechtsweisend" value="rechtsweisend"/>
+			      <xs:enumeration ecore:name="ENUMRichtungspfeil_Richtung_Gefahrenstelle_links"
+                         value="Richtung_Gefahrenstelle_links"/>
+			      <xs:enumeration ecore:name="ENUMRichtungspfeil_Richtung_Gefahrenstelle_rechts"
+                         value="Richtung_Gefahrenstelle_rechts"/>
+			      <xs:enumeration ecore:name="ENUMRichtungspfeil_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TAbstand_Gehweg_Fahrbahn">
+	  <xs:simpleType ecore:name="Abstand_Gehweg_Fahrbahn_Type" name="TAbstand_Gehweg_Fahrbahn">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TAkustik_Fussgaenger">
+	  <xs:simpleType ecore:name="Akustik_Fussgaenger_Type" name="TAkustik_Fussgaenger">
 		    <xs:restriction base="xs:boolean"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TAusrichtung_Winkel">
+	  <xs:simpleType ecore:name="Ausrichtung_Winkel_Type" name="TAusrichtung_Winkel">
 		    <xs:restriction base="xs:decimal">
 			      <xs:pattern value="-?([1-8]?[0-9]|90)"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBaulast">
+	  <xs:simpleType ecore:name="Baulast_Type" name="TBaulast">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBeeinflussung_Strassenverkehr">
+	  <xs:simpleType ecore:name="Beeinflussung_Strassenverkehr_Type"
+                  name="TBeeinflussung_Strassenverkehr">
 		    <xs:restriction base="nsBasisTypen:TSekunde"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBez_Schrankenantrieb">
+	  <xs:simpleType ecore:name="Bez_Schrankenantrieb_Type" name="TBez_Schrankenantrieb">
 		    <xs:restriction base="nsBasisTypen:TZeichenkette">
 			      <xs:pattern value=".{2,3}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_BUE_GFR_Eckpunkt">
+	  <xs:simpleType ecore:name="Bezeichnung_BUE_GFR_Eckpunkt_Type"
+                  name="TBezeichnung_BUE_GFR_Eckpunkt">
 		    <xs:restriction base="nsBasisTypen:TZeichenkette"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_GFR_Element">
+	  <xs:simpleType ecore:name="Bezeichnung_GFR_Element_Type" name="TBezeichnung_GFR_Element">
 		    <xs:restriction base="nsBasisTypen:TZeichenkette"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_GFR_Tripelspiegel">
+	  <xs:simpleType ecore:name="Bezeichnung_GFR_Tripelspiegel_Type"
+                  name="TBezeichnung_GFR_Tripelspiegel">
 		    <xs:restriction base="xs:integer">
 			      <xs:pattern value="[1-9]"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_Verkehrszeichen">
+	  <xs:simpleType ecore:name="Bezeichnung_Verkehrszeichen_Type"
+                  name="TBezeichnung_Verkehrszeichen">
 		    <xs:restriction base="nsBasisTypen:TZeichenkette"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBlitzpfeil">
+	  <xs:simpleType ecore:name="Blitzpfeil_Type" name="TBlitzpfeil">
 		    <xs:restriction base="xs:boolean"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBUE_Nachlaufzeit">
+	  <xs:simpleType ecore:name="BUE_Nachlaufzeit_Type" name="TBUE_Nachlaufzeit">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBUE_Neigung">
+	  <xs:simpleType ecore:name="BUE_Neigung_Type" name="TBUE_Neigung">
 		    <xs:restriction base="xs:decimal"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBUE_Sicherungszeit">
+	  <xs:simpleType ecore:name="BUE_Sicherungszeit_Type" name="TBUE_Sicherungszeit">
 		    <xs:restriction base="xs:integer"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBUE_Strasse">
+	  <xs:simpleType ecore:name="BUE_Strasse_Type" name="TBUE_Strasse">
 		    <xs:list itemType="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBUE_Vorlaufzeit">
+	  <xs:simpleType ecore:name="BUE_Vorlaufzeit_Type" name="TBUE_Vorlaufzeit">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TEinschaltverz_Errechnet">
+	  <xs:simpleType ecore:name="Einschaltverz_Errechnet_Type" name="TEinschaltverz_Errechnet">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TEinschaltverz_Gewaehlt">
+	  <xs:simpleType ecore:name="Einschaltverz_Gewaehlt_Type" name="TEinschaltverz_Gewaehlt">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFahrbahn_Befestigung">
+	  <xs:simpleType ecore:name="Fahrbahn_Befestigung_Type" name="TFahrbahn_Befestigung">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFahrbahn_Befestigung_Gleis">
+	  <xs:simpleType ecore:name="Fahrbahn_Befestigung_Gleis_Type" name="TFahrbahn_Befestigung_Gleis">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFahrbahn_Breite">
+	  <xs:simpleType ecore:name="Fahrbahn_Breite_Type" name="TFahrbahn_Breite">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TGFR_Neigung">
+	  <xs:simpleType ecore:name="GFR_Neigung_Type" name="TGFR_Neigung">
 		    <xs:restriction base="xs:decimal"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TGFR_Typ">
+	  <xs:simpleType ecore:name="GFR_Typ_Type" name="TGFR_Typ">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TGleis_Am_Bue">
+	  <xs:simpleType ecore:name="Gleis_Am_Bue_Type" name="TGleis_Am_Bue">
 		    <xs:restriction base="nsBasisTypen:TZeichenkette">
 			      <xs:pattern value="[a-z]"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="THaltezeit">
+	  <xs:simpleType ecore:name="Haltezeit_Type" name="THaltezeit">
 		    <xs:restriction base="nsBasisTypen:TSekunde"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TKontrastblende">
+	  <xs:simpleType ecore:name="Kontrastblende_Type" name="TKontrastblende">
 		    <xs:restriction base="xs:boolean"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TKreuzungswinkel">
+	  <xs:simpleType ecore:name="Kreuzungswinkel_Type" name="TKreuzungswinkel">
 		    <xs:restriction base="xs:integer"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TLieferlaenge">
+	  <xs:simpleType ecore:name="Lieferlaenge_Type" name="TLieferlaenge">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="1[0-9]|20|[1-9]"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TMontage_Besonders">
+	  <xs:simpleType ecore:name="Montage_Besonders_Type" name="TMontage_Besonders">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TMontagehoehe">
+	  <xs:simpleType ecore:name="Montagehoehe_Type" name="TMontagehoehe">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TOptik_Durchmesser">
+	  <xs:simpleType ecore:name="Optik_Durchmesser_Type" name="TOptik_Durchmesser">
 		    <xs:restriction base="xs:integer">
 			      <xs:pattern value="200|300"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPegel">
+	  <xs:simpleType ecore:name="Pegel_Type" name="TPegel">
 		    <xs:restriction base="xs:integer"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPixel_Koordinate_X">
+	  <xs:simpleType ecore:name="Pixel_Koordinate_X_Type" name="TPixel_Koordinate_X">
 		    <xs:restriction base="xs:integer"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPixel_Koordinate_Y">
+	  <xs:simpleType ecore:name="Pixel_Koordinate_Y_Type" name="TPixel_Koordinate_Y">
 		    <xs:restriction base="xs:integer"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TRaeumstrecke">
+	  <xs:simpleType ecore:name="Raeumstrecke_Type" name="TRaeumstrecke">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TRaeumstrecke_DAB">
+	  <xs:simpleType ecore:name="Raeumstrecke_DAB_Type" name="TRaeumstrecke_DAB">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TRaeumstrecke_DBK">
+	  <xs:simpleType ecore:name="Raeumstrecke_DBK_Type" name="TRaeumstrecke_DBK">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TRaeumstrecke_DCK">
+	  <xs:simpleType ecore:name="Raeumstrecke_DCK_Type" name="TRaeumstrecke_DCK">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TRaeumstrecke_DSK_Strich">
+	  <xs:simpleType ecore:name="Raeumstrecke_DSK_Strich_Type" name="TRaeumstrecke_DSK_Strich">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TSchaltgruppe">
+	  <xs:simpleType ecore:name="Schaltgruppe_Type" name="TSchaltgruppe">
 		    <xs:restriction base="xs:integer">
 			      <xs:pattern value="[1-9]|10"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TSchutzbuegel">
+	  <xs:simpleType ecore:name="Schutzbuegel_Type" name="TSchutzbuegel">
 		    <xs:restriction base="xs:boolean"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TSicherheitsabstand">
+	  <xs:simpleType ecore:name="Sicherheitsabstand_Type" name="TSicherheitsabstand">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TSignalverz_Errechnet">
+	  <xs:simpleType ecore:name="Signalverz_Errechnet_Type" name="TSignalverz_Errechnet">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TSignalverz_Gewaehlt">
+	  <xs:simpleType ecore:name="Signalverz_Gewaehlt_Type" name="TSignalverz_Gewaehlt">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="(0|[1-9][0-9]{0,4})\.[0-9]{2}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TSperrlaenge">
+	  <xs:simpleType ecore:name="Sperrlaenge_Type" name="TSperrlaenge">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="1[0-9]|20|[1-9]"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TSperrstrecke">
+	  <xs:simpleType ecore:name="Sperrstrecke_Type" name="TSperrstrecke">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TSperrstrecke_Fussgaenger">
+	  <xs:simpleType ecore:name="Sperrstrecke_Fussgaenger_Type" name="TSperrstrecke_Fussgaenger">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TTeilsperrstrecke">
+	  <xs:simpleType ecore:name="Teilsperrstrecke_Type" name="TTeilsperrstrecke">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TTeilvorgabezeit">
+	  <xs:simpleType ecore:name="Teilvorgabezeit_Type" name="TTeilvorgabezeit">
 		    <xs:restriction base="xs:integer"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TTragkopf_Verstellbar">
+	  <xs:simpleType ecore:name="Tragkopf_Verstellbar_Type" name="TTragkopf_Verstellbar">
 		    <xs:restriction base="xs:boolean"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TV_Max_Schiene">
+	  <xs:simpleType ecore:name="V_Max_Schiene_Type" name="TV_Max_Schiene">
 		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TV_Max_Strasse">
+	  <xs:simpleType ecore:name="V_Max_Strasse_Type" name="TV_Max_Strasse">
 		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TV_Min_Fussweg">
+	  <xs:simpleType ecore:name="V_Min_Fussweg_Type" name="TV_Min_Fussweg">
 		    <xs:restriction base="xs:decimal">
 			      <xs:pattern value="0\.[5-9]|1\.[0-5]"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TV_Min_Schiene">
+	  <xs:simpleType ecore:name="V_Min_Schiene_Type" name="TV_Min_Schiene">
 		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TV_Min_Strasse">
+	  <xs:simpleType ecore:name="V_Min_Strasse_Type" name="TV_Min_Strasse">
 		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit">
 			      <xs:pattern value="5|10"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TVorgeschaltet">
+	  <xs:simpleType ecore:name="Vorgeschaltet_Type" name="TVorgeschaltet">
 		    <xs:restriction base="xs:boolean"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TWinkel_Alpha">
+	  <xs:simpleType ecore:name="Winkel_Alpha_Type" name="TWinkel_Alpha">
 		    <xs:restriction base="xs:integer"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TZeitueberschreitungsmeldung">
+	  <xs:simpleType ecore:name="Zeitueberschreitungsmeldung_Type"
+                  name="TZeitueberschreitungsmeldung">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="[1-9][0-9]{0,4}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TZusatzschild">
+	  <xs:simpleType ecore:name="Zusatzschild_Type" name="TZusatzschild">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:complexType name="CBUE_Abhaengigkeit_Fue">
+	  <xs:complexType ecore:name="BUE_Abhaengigkeit_Fue_AttributeGroup" name="CBUE_Abhaengigkeit_Fue">
 		    <xs:sequence>
 			      <xs:element name="Auto_Het" type="nsBahnuebergang:TCAuto_Het" minOccurs="0" maxOccurs="1">
 				        <xs:annotation>
@@ -487,7 +512,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Anlage">
+	  <xs:complexType ecore:name="BUE_Anlage" name="CBUE_Anlage">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Beschreibung der baulichen Anlage des Bahnübergangs (BÜ) einschließlich der technischen Sicherung, sofern vorhanden. Das Objekt wird auf den Kreuzungspunkt gem. Ril 815.2000 verortet, wobei die punktförmige Verortung auf alle zum BÜ gehörigen Gleisachsen erfolgen soll. Damit ergibt sich die sogenannte BÜ-Mitte gemäß Einschaltstreckenberechnung. DB-Regelwerk Für die Planung von Bahnübergängen gelten folgende Regelwerke: 815, 819.12xx. Die konkreten Bezüge zum Regelwerk werden für die einzelnen Attributen angegeben.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -527,7 +552,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Anlage_Allg">
+	  <xs:complexType ecore:name="BUE_Anlage_Allg_AttributeGroup" name="CBUE_Anlage_Allg">
 		    <xs:sequence>
 			      <xs:element name="BUE_Bauart" type="nsBahnuebergang:TCBUE_Bauart" minOccurs="1"
                      maxOccurs="1">
@@ -583,7 +608,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Anlage_Fuss_Rad">
+	  <xs:complexType ecore:name="BUE_Anlage_Fuss_Rad_AttributeGroup" name="CBUE_Anlage_Fuss_Rad">
 		    <xs:sequence>
 			      <xs:element name="Fuss_Radweg_Art" type="nsBahnuebergang:TCFuss_Radweg_Art" minOccurs="1"
                      maxOccurs="1">
@@ -600,7 +625,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Anlage_Strasse">
+	  <xs:complexType ecore:name="BUE_Anlage_Strasse" name="CBUE_Anlage_Strasse">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Straßenbezogene Angaben zur BUE_Anlage, die im Wesentlichen im Rahmen der bautechnischen Planung benötigt werden. Die Themen Längsneigung und Ausrundungshalbmesser werden aufgrund der Vielzahl notwendiger Angaben nicht im Modell abgebildet (separate Betrachtung erforderlich).</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -629,7 +654,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Anlage_Strasse_Allg">
+	  <xs:complexType ecore:name="BUE_Anlage_Strasse_Allg_AttributeGroup"
+                   name="CBUE_Anlage_Strasse_Allg">
 		    <xs:sequence>
 			      <xs:element name="Baulast" type="nsBahnuebergang:TCBaulast" minOccurs="1" maxOccurs="1">
 				        <xs:annotation>
@@ -671,7 +697,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Anlage_V">
+	  <xs:complexType ecore:name="BUE_Anlage_V" name="CBUE_Anlage_V">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Angaben zu gleis- und straßenseitigen Mindest- und Höchstgeschwindigkeiten für die Einschaltstreckenberechnung.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -697,7 +723,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Anlage_V_Allg">
+	  <xs:complexType ecore:name="BUE_Anlage_V_Allg_AttributeGroup" name="CBUE_Anlage_V_Allg">
 		    <xs:sequence>
 			      <xs:element name="V_Max_Schiene" type="nsBahnuebergang:TCV_Max_Schiene" minOccurs="1"
                      maxOccurs="1">
@@ -741,7 +767,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Ausschaltung">
+	  <xs:complexType ecore:name="BUE_Ausschaltung" name="CBUE_Ausschaltung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Logisches Objekt, das alle Informationen zur Ausschaltung eines Bahnübergangs enthält. Über den Verweis auf BUE Gleisbezogener Gefahrraum findet eine Verortung am zugehörigen Gleis statt, für das der Ausschaltkontakt angeordnet wird. Der Ausschaltkontakt selbst ist über das Objekt Schaltmittel Zuordnung abgebildet. Für die BUE_Ausschaltung ist, in Fahrtrichtung Ausschaltkontakt weg vom BÜ gesehen, die RÜCKGELEGENE Grenze von BUE Gleisbezogener Gefahrraum für die Verortung maßgebend. Die Gefahrraum-Grenze liegt damit in Fahrtrichtung VOR dem Ausschaltkontakt. DB-Regelwerk 815.0032 4 (3) Die Planung der Ausschaltung erfolgt entsprechend der Projektierungshinweise der konkreten BÜ-Technik. Seitens der Ril 815 gibt es dazu keine konkreten Vorgaben. </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -766,7 +792,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Bedien_Anz_Element_Allg">
+	  <xs:complexType ecore:name="BUE_Bedien_Anz_Element_Allg_AttributeGroup"
+                   name="CBUE_Bedien_Anz_Element_Allg">
 		    <xs:sequence>
 			      <xs:element name="BUE_Handschalteinrichtung"
                      type="nsBahnuebergang:TCBUE_Handschalteinrichtung"
@@ -793,7 +820,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Bedien_Anzeige_Element">
+	  <xs:complexType ecore:name="BUE_Bedien_Anzeige_Element" name="CBUE_Bedien_Anzeige_Element">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Definition der logischen Bedienfunktionen, die über Taster auf den BÜ einwirken. Es dient der Zuordnung der ausgewählten Bedienfunktionen zum BÜ bzw. zu den Ein-/Ausschaltungen des zugehörigen Gleises. Die Zuordnung zur physischen Unterbringung erfolgt über den Verweis auf Bedien Anzeige Element. DB-Regelwerk 819.1204 8 TM 2012 - 001 I.NVT 3 </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -814,7 +841,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Deckendes_Signal_Zuordnung">
+	  <xs:complexType ecore:name="BUE_Deckendes_Signal_Zuordnung"
+                   name="CBUE_Deckendes_Signal_Zuordnung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Das Zuordnungsobjekt BUE_Deckendes_Signal bildet die diesbezügliche Angabe in der Signaltabelle 1 sowie in der Einschaltstreckenberechnung ab. Die Angaben in der Signaltabelle 1 sowie in der Einschaltstreckenberechnung beziehen sich auf das deckende Signal (Haupt-/LS-Signal) und nicht auf die den BÜ-Schließvorgang anstoßende Fahrstraße. DB-Regelwerk Signaltabelle 1, Zeile 33 und 34 Einschaltstreckenberechnung </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -850,7 +878,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Einschaltung">
+	  <xs:complexType ecore:name="BUE_Einschaltung" name="CBUE_Einschaltung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Logisches Objekt, das alle Informationen zur Einschaltung eines Bahnübergangs (BÜ) enthält. Über den Verweis auf BUE Gleisbezogener Gefahrraum findet eine Verortung am zugehörigen Gleis statt, für das der Einschaltkontakt angeordnet wird. Der Einschaltkontakt selbst ist über das Objekt Schaltmittel Zuordnung abgebildet. Für die BUE Einschaltung ist die in Fahrtrichtung von Anrückmelder / Einschaltkontakt in Richtung BÜ die VOR der BÜ-Mitte liegende Grenze von BUE Gleisbezogener Gefahrraum maßgebend, auf dem das Objekt verortet wird. Die Gefahrraum-Grenze liegt damit in Fahrtrichtung HINTER dem Anrückmelder / Einschaltkontakt. Bei Ausbildung des Einschaltpunktes als Doppelschleife gelten hinsichtlich des maßgebenden Einschaltpunktes gemäß Einschaltstreckenberechnung folgende Unterschiede: Hersteller PintschBamag: maßgebend ist die Mitte der in Fahrtrichtung BÜ liegenden ERSTEN Schleife Hersteller Scheidt\u0026amp;Bachmann: maßgebend ist die Mitte der in Fahrtrichtung BÜ liegenden ZWEITE Schleife DB-Regelwerk 815.0033 in Verbindung mit Einschaltstreckenberechnung Die Angaben zur BÜ-Einschaltung beschränken sich gegenwärtig auf die Planungswerte mit Auswirkungen auf das Stellwerk.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -878,7 +906,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Einschaltung_Hp">
+	  <xs:complexType ecore:name="BUE_Einschaltung_Hp_AttributeGroup" name="CBUE_Einschaltung_Hp">
 		    <xs:sequence>
 			      <xs:element name="Einschaltverz_Errechnet" type="nsBahnuebergang:TCEinschaltverz_Errechnet"
                      minOccurs="1"
@@ -961,7 +989,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Einschaltung_Zuordnung">
+	  <xs:complexType ecore:name="BUE_Einschaltung_Zuordnung" name="CBUE_Einschaltung_Zuordnung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Logisches Objekt zur Zuordnung zwischen BUE Einschaltung und zugehörigem BUE Gleisbezogener Gefahrraum. Im Regelfall wirkt eine BUE_Einschaltung direkt auf einen gleisbezogenen Gefahrraum; das Zuordnungsobjekt wäre nicht erforderlich. Liegt jedoch zwischen BUE_Einschaltung und dem BÜ eine Weichenverbindung, wird eine Zuordnung der BUE_Einschaltung auf mehrere gleisbezogene Gefahrräume notwendig. Diese Verbindung stellt das Zuordnungsobjekt her. Zur Vereinheitlichung wurde auf eine Choice zwischen direktem Verweis von BUE_Einschaltung auf BUE_Gleisbezogener_Gefahrraum und den Verweisen durch das Zuordnungsobjekt verzichtet. DB-Regelwerk Dieser Anwendungsfall ist im Regelwerk der DB AG nicht explizit beschrieben.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -993,7 +1021,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Gefahrraum_Eckpunkt">
+	  <xs:complexType ecore:name="BUE_Gefahrraum_Eckpunkt" name="CBUE_Gefahrraum_Eckpunkt">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Eckpunkt des BÜ-Gefahrraums.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1019,7 +1047,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Gefahrraum_Eckpunkt_Bezeichnung">
+	  <xs:complexType ecore:name="BUE_Gefahrraum_Eckpunkt_Bezeichnung_AttributeGroup"
+                   name="CBUE_Gefahrraum_Eckpunkt_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_BUE_GFR_Eckpunkt"
                      type="nsBahnuebergang:TCBezeichnung_BUE_GFR_Eckpunkt"
@@ -1031,7 +1060,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Gleisbezogener_Gefahrraum">
+	  <xs:complexType ecore:name="BUE_Gleisbezogener_Gefahrraum"
+                   name="CBUE_Gleisbezogener_Gefahrraum">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bereichsobjekt, das den Gefahrraum eines BÜ für ein Gleis abbildet. Die Grenzen des Bereichsobjektes liegen jeweils auf dem Schnittpunkt zwischen Gefahrraumkante und zugehörigem Gleis. Die zugehörigen Ein- und Ausschaltelemente verweisen auf die jeweilige Grenze des Bereichsobjektes. Für jedes Gleis am BÜ ist ein solches Objekt vorzusehen. Somit hat ein BÜ bzw. eine BUE Anlage immer genauso viele Instanzen von BUE_Gleisbezogener_Gefahrraum wie BÜ-Gleise. Zu einem späteren Zeitpunkt werden ggf. weitere, Gefahrraum-spezifische Angaben ergänzt. DB-Regelwerk 819.1210 7 (1)-(3) </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1075,7 +1105,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Kante">
+	  <xs:complexType ecore:name="BUE_Kante" name="CBUE_Kante">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gleisbezogene Abbildung der BÜ-Kante zur Berechnung des Sicherheitsabstands bei Hp-gedeckten Bahnübergängen. Es ist nur eine punktförmige Verortung auf einer Gleiskante anzugeben.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1098,7 +1128,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Kreuzungsplan">
+	  <xs:complexType ecore:name="BUE_Kreuzungsplan" name="CBUE_Kreuzungsplan">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verortungspunkte des für die BÜ-Planung verwendeten bautechnischen BÜ-Kreuzungsplans. Sofern der Anhang nicht als GeoTiff vorliegt, sind mindestens 2 Verortungspunkte anzugeben.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1132,7 +1162,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Kreuzungsplan_Koordinaten">
+	  <xs:complexType ecore:name="BUE_Kreuzungsplan_Koordinaten_AttributeGroup"
+                   name="CBUE_Kreuzungsplan_Koordinaten">
 		    <xs:sequence>
 			      <xs:element name="ID_GEO_Punkt" type="nsVerweise:TCID_GEO_Punkt_ohne_Proxy" minOccurs="1"
                      maxOccurs="unbounded">
@@ -1156,7 +1187,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Schnittstelle">
+	  <xs:complexType ecore:name="BUE_Schnittstelle" name="CBUE_Schnittstelle">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Schnittstelle zwischen dem Planer des ESTW und dem Planer der technischen Sicherung des Bahnübergangs. Im ESTW wird eine technische Schnittstelle für Hp-Abhängigkeiten zwischen ESTW und BÜ und/oder Fernüberwachung (FÜ) durch den özF vorgesehen. Bau-BÜ, die über eine Schlüsselsperre gesichert werden, sowie nichttechnisch gesicherte BÜ erhalten keine BUE_Schnittstelle. DB-Regelwerk Die betreffenden Angaben finden sich im \"Datenblatt für die Abhängigkeiten BÜ - Stw\".</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1185,7 +1216,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Schnittstelle_Allg">
+	  <xs:complexType ecore:name="BUE_Schnittstelle_Allg_AttributeGroup"
+                   name="CBUE_Schnittstelle_Allg">
 		    <xs:sequence>
 			      <xs:element name="BUE_Nachlaufzeit" type="nsBahnuebergang:TCBUE_Nachlaufzeit" minOccurs="0"
                      maxOccurs="1">
@@ -1230,7 +1262,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_Spezifisches_Signal">
+	  <xs:complexType ecore:name="BUE_Spezifisches_Signal" name="CBUE_Spezifisches_Signal">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Zuordnung von Signalen, die ausschließlich im Zusammenhang mit einem Bahnübergang (BÜ) angeordnet werden. Dazu gehören zum Beispiel Pfeiftafeln, Lf-Signale mit und ohne Zusatz \"BÜ\" oder Überwachungssignale für BÜ, Merktafeln oder Merkpfähle u.a. Die Anwendung von Pfeiftafeln und Lf-Signalen erfolgt zumeist bei nichttechnisch gesicherten BÜ; die Anwendung der Überwachungssignale bei Bahnübergängen der Funktionsüberwachung \"ÜS\". Für die vorgenannten Fälle ist der Verweis auf BUE Anlage zu befüllen. Wird zum Beispiel ein Merkpfahl zur Kennzeichnung eines Einschaltpunktes (Anwendung in besonderen Planungsfällen) vorgesehen, ist der Verweis auf BUE Einschaltung zu befüllen. Für die Bezeichnung von BÜ-spezifischen Signalen, insbesondere Überwachungssignale, sind Ausführungen auf der Seite Bezeichnung Signal vorhanden. DB-Regelwerk Formblatt zur Ermittlung der Sichtflächen für nichttechnisch gesicherte BÜ 819.1204 9 für ÜS SPU 24 für Merktafel /-pfahl BÜ-Kabellage- und -übersichtsplan </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1267,7 +1299,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBUE_WS_Fstr_Zuordnung">
+	  <xs:complexType ecore:name="BUE_WS_Fstr_Zuordnung" name="CBUE_WS_Fstr_Zuordnung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung zwischen BUE-Einschaltung und zugehörigen Fahrstraßen, für die die Wirksamkeitskontakte wirken sollen.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1298,7 +1330,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CGFR_Anlage">
+	  <xs:complexType ecore:name="GFR_Anlage" name="CGFR_Anlage">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Gerfahrraumfreimeldeanlage. Folgende Rahmenbedingungen sind für den Einsatz einer GFR zu beachten: max. Höhe der Bodenwellen des BÜ: 15 cm; max. Neigung des BÜ: 2°.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1323,7 +1355,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CGFR_Anlage_Allg">
+	  <xs:complexType ecore:name="GFR_Anlage_Allg_AttributeGroup" name="CGFR_Anlage_Allg">
 		    <xs:sequence>
 			      <xs:element name="BUE_Sicherungszeit" type="nsBahnuebergang:TCBUE_Sicherungszeit"
                      minOccurs="1"
@@ -1350,7 +1382,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CGFR_Element">
+	  <xs:complexType ecore:name="GFR_Element" name="CGFR_Element">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Detektor der GFR-Anlage (z. B. Radar). Elemente für eine Kamera-Überwachung sind  Bestandteil TK-Ausrüstung und werden daher nicht abgebildet.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1397,7 +1429,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CGFR_Element_Bezeichnung">
+	  <xs:complexType ecore:name="GFR_Element_Bezeichnung_AttributeGroup"
+                   name="CGFR_Element_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_GFR_Element" type="nsBahnuebergang:TCBezeichnung_GFR_Element"
                      minOccurs="1"
@@ -1408,7 +1441,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CGFR_Tripelspiegel">
+	  <xs:complexType ecore:name="GFR_Tripelspiegel" name="CGFR_Tripelspiegel">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ortungshilfe für GFR-Anlagen der Firma Honeywell.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1437,7 +1470,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CGFR_Tripelspiegel_Allg">
+	  <xs:complexType ecore:name="GFR_Tripelspiegel_Allg_AttributeGroup"
+                   name="CGFR_Tripelspiegel_Allg">
 		    <xs:sequence>
 			      <xs:element name="Montagehoehe" type="nsBahnuebergang:TCMontagehoehe" minOccurs="0"
                      maxOccurs="1">
@@ -1458,7 +1492,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CGFR_Tripelspiegel_Bezeichnung">
+	  <xs:complexType ecore:name="GFR_Tripelspiegel_Bezeichnung_AttributeGroup"
+                   name="CGFR_Tripelspiegel_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_GFR_Tripelspiegel"
                      type="nsBahnuebergang:TCBezeichnung_GFR_Tripelspiegel"
@@ -1475,7 +1510,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSA_Schrankenbaum">
+	  <xs:complexType ecore:name="SA_Schrankenbaum_AttributeGroup" name="CSA_Schrankenbaum">
 		    <xs:sequence>
 			      <xs:element name="Ausrichtung" type="nsBahnuebergang:TCAusrichtung" minOccurs="1"
                      maxOccurs="1">
@@ -1545,7 +1580,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSchaltmittel_Fstr_Zuordnung">
+	  <xs:complexType ecore:name="Schaltmittel_Fstr_Zuordnung" name="CSchaltmittel_Fstr_Zuordnung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verknüpft bei einem Bahnübergang mit der Funktionsüberwachung Fü die möglichen Fahrstraßen mit den Elementen für die Wirksamschaltung.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1576,7 +1611,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CSchrankenantrieb">
+	  <xs:complexType ecore:name="Schrankenantrieb" name="CSchrankenantrieb">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Abbildung von Schrankenantrieben für Bahnübergänge.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1607,7 +1642,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CSchrankenantrieb_Allg">
+	  <xs:complexType ecore:name="Schrankenantrieb_Allg_AttributeGroup" name="CSchrankenantrieb_Allg">
 		    <xs:sequence>
 			      <xs:element name="Abstand_Gehweg_Fahrbahn" type="nsBahnuebergang:TCAbstand_Gehweg_Fahrbahn"
                      minOccurs="1"
@@ -1635,7 +1670,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSchrankenantrieb_Bezeichnung">
+	  <xs:complexType ecore:name="Schrankenantrieb_Bezeichnung_AttributeGroup"
+                   name="CSchrankenantrieb_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bez_Schrankenantrieb" type="nsBahnuebergang:TCBez_Schrankenantrieb"
                      minOccurs="1"
@@ -1651,7 +1687,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CVerkehrszeichen">
+	  <xs:complexType ecore:name="Verkehrszeichen" name="CVerkehrszeichen">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Abbildung von Lichtzeichen und Andreaskreuzen im Rahmen der BÜ-Planung. Die Attributgruppe Verkehrszeichen_Lz entfällt bei nichttechnisch gesicherten BÜ oder beschrankten BÜ mit Läutewerk. Die Attributgruppe Verkehrszeichen_Andreaskreuz entfällt bei vorgeschalteten Lichtzeichen. Mehrere Andreaskreuze bei einmündenden Straßen sind möglich (i. d. R. max 3). Die Attributgruppe Vz_Sperrstrecke entfällt bei vorgeschalteten Lichtzeichen</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1696,7 +1732,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CVerkehrszeichen_Allg">
+	  <xs:complexType ecore:name="Verkehrszeichen_Allg_AttributeGroup" name="CVerkehrszeichen_Allg">
 		    <xs:sequence>
 			      <xs:element name="Abstand_Gehweg_Fahrbahn" type="nsBahnuebergang:TCAbstand_Gehweg_Fahrbahn"
                      minOccurs="1"
@@ -1725,7 +1761,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CVerkehrszeichen_Andreaskreuz">
+	  <xs:complexType ecore:name="Verkehrszeichen_Andreaskreuz_AttributeGroup"
+                   name="CVerkehrszeichen_Andreaskreuz">
 		    <xs:sequence>
 			      <xs:element name="Blitzpfeil" type="nsBahnuebergang:TCBlitzpfeil" minOccurs="0"
                      maxOccurs="1">
@@ -1760,7 +1797,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CVerkehrszeichen_Bezeichnung">
+	  <xs:complexType ecore:name="Verkehrszeichen_Bezeichnung_AttributeGroup"
+                   name="CVerkehrszeichen_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_Verkehrszeichen"
                      type="nsBahnuebergang:TCBezeichnung_Verkehrszeichen"
@@ -1772,7 +1810,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CVerkehrszeichen_Lz">
+	  <xs:complexType ecore:name="Verkehrszeichen_Lz_AttributeGroup" name="CVerkehrszeichen_Lz">
 		    <xs:sequence>
 			      <xs:element name="Akustik_Fussgaenger" type="nsBahnuebergang:TCAkustik_Fussgaenger"
                      minOccurs="0"
@@ -1838,7 +1876,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CVz_Sperrstrecke">
+	  <xs:complexType ecore:name="Vz_Sperrstrecke_AttributeGroup" name="CVz_Sperrstrecke">
 		    <xs:sequence>
 			      <xs:element name="Vz_Sperrstrecke_Vorgeschaltet"
                      type="nsBahnuebergang:CVz_Sperrstrecke_Vorgeschaltet"
@@ -1874,7 +1912,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:choice>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CVz_Sperrstrecke_Schranke">
+	  <xs:complexType ecore:name="Vz_Sperrstrecke_Schranke_AttributeGroup"
+                   name="CVz_Sperrstrecke_Schranke">
 		    <xs:sequence>
 			      <xs:element name="Raeumstrecke" type="nsBahnuebergang:TCRaeumstrecke" minOccurs="1"
                      maxOccurs="1">
@@ -1890,7 +1929,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CVz_Sperrstrecke_Vorgeschaltet">
+	  <xs:complexType ecore:name="Vz_Sperrstrecke_Vorgeschaltet_AttributeGroup"
+                   name="CVz_Sperrstrecke_Vorgeschaltet">
 		    <xs:sequence>
 			      <xs:element name="Beeinflussung_Strassenverkehr"
                      type="nsBahnuebergang:TCBeeinflussung_Strassenverkehr"
@@ -1927,7 +1967,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="TCAbstand_Gehweg_Fahrbahn">
+	  <xs:complexType ecore:name="Abstand_Gehweg_Fahrbahn_TypeClass" name="TCAbstand_Gehweg_Fahrbahn">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1938,7 +1978,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAkustik_Fussgaenger">
+	  <xs:complexType ecore:name="Akustik_Fussgaenger_TypeClass" name="TCAkustik_Fussgaenger">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1949,7 +1989,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAusrichtung">
+	  <xs:complexType ecore:name="Ausrichtung_TypeClass" name="TCAusrichtung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1959,7 +1999,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAusrichtung_Winkel">
+	  <xs:complexType ecore:name="Ausrichtung_Winkel_TypeClass" name="TCAusrichtung_Winkel">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1970,7 +2010,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAuto_Het">
+	  <xs:complexType ecore:name="Auto_Het_TypeClass" name="TCAuto_Het">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1979,7 +2019,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBaulast">
+	  <xs:complexType ecore:name="Baulast_TypeClass" name="TCBaulast">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1989,7 +2029,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBaumprofil">
+	  <xs:complexType ecore:name="Baumprofil_TypeClass" name="TCBaumprofil">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1999,7 +2039,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBeeinflussung_Strassenverkehr">
+	  <xs:complexType ecore:name="Beeinflussung_Strassenverkehr_TypeClass"
+                   name="TCBeeinflussung_Strassenverkehr">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2010,7 +2051,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBez_Schrankenantrieb">
+	  <xs:complexType ecore:name="Bez_Schrankenantrieb_TypeClass" name="TCBez_Schrankenantrieb">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2021,7 +2062,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_BUE_GFR_Eckpunkt">
+	  <xs:complexType ecore:name="Bezeichnung_BUE_GFR_Eckpunkt_TypeClass"
+                   name="TCBezeichnung_BUE_GFR_Eckpunkt">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2032,7 +2074,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_GFR_Element">
+	  <xs:complexType ecore:name="Bezeichnung_GFR_Element_TypeClass" name="TCBezeichnung_GFR_Element">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2043,7 +2085,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_GFR_Tripelspiegel">
+	  <xs:complexType ecore:name="Bezeichnung_GFR_Tripelspiegel_TypeClass"
+                   name="TCBezeichnung_GFR_Tripelspiegel">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2054,7 +2097,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Verkehrszeichen">
+	  <xs:complexType ecore:name="Bezeichnung_Verkehrszeichen_TypeClass"
+                   name="TCBezeichnung_Verkehrszeichen">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2065,7 +2109,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBlitzpfeil">
+	  <xs:complexType ecore:name="Blitzpfeil_TypeClass" name="TCBlitzpfeil">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2075,7 +2119,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBUE_Bauart">
+	  <xs:complexType ecore:name="BUE_Bauart_TypeClass" name="TCBUE_Bauart">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2085,7 +2129,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBUE_Buestra">
+	  <xs:complexType ecore:name="BUE_Buestra_TypeClass" name="TCBUE_Buestra">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2094,7 +2138,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBUE_Funktionsueberwachung">
+	  <xs:complexType ecore:name="BUE_Funktionsueberwachung_TypeClass"
+                   name="TCBUE_Funktionsueberwachung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2105,7 +2150,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBUE_Handschalteinrichtung">
+	  <xs:complexType ecore:name="BUE_Handschalteinrichtung_TypeClass"
+                   name="TCBUE_Handschalteinrichtung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2116,7 +2162,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBUE_Mit_GFR">
+	  <xs:complexType ecore:name="BUE_Mit_GFR_TypeClass" name="TCBUE_Mit_GFR">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2125,7 +2171,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBUE_Nachlaufzeit">
+	  <xs:complexType ecore:name="BUE_Nachlaufzeit_TypeClass" name="TCBUE_Nachlaufzeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2136,7 +2182,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBUE_Neigung">
+	  <xs:complexType ecore:name="BUE_Neigung_TypeClass" name="TCBUE_Neigung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2146,7 +2192,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBUE_Sicherungsart">
+	  <xs:complexType ecore:name="BUE_Sicherungsart_TypeClass" name="TCBUE_Sicherungsart">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2157,7 +2203,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBUE_Sicherungszeit">
+	  <xs:complexType ecore:name="BUE_Sicherungszeit_TypeClass" name="TCBUE_Sicherungszeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2168,7 +2214,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBUE_Strasse">
+	  <xs:complexType ecore:name="BUE_Strasse_TypeClass" name="TCBUE_Strasse">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2178,7 +2224,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBUE_Technik">
+	  <xs:complexType ecore:name="BUE_Technik_TypeClass" name="TCBUE_Technik">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2188,7 +2234,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBUE_Vorlaufzeit">
+	  <xs:complexType ecore:name="BUE_Vorlaufzeit_TypeClass" name="TCBUE_Vorlaufzeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2198,7 +2244,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCEinschaltverz_Errechnet">
+	  <xs:complexType ecore:name="Einschaltverz_Errechnet_TypeClass" name="TCEinschaltverz_Errechnet">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2209,7 +2255,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCEinschaltverz_Gewaehlt">
+	  <xs:complexType ecore:name="Einschaltverz_Gewaehlt_TypeClass" name="TCEinschaltverz_Gewaehlt">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2220,7 +2266,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCErsatzstecker_Gleisbezogen">
+	  <xs:complexType ecore:name="Ersatzstecker_Gleisbezogen_TypeClass"
+                   name="TCErsatzstecker_Gleisbezogen">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2229,7 +2276,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFahrbahn_Befestigung">
+	  <xs:complexType ecore:name="Fahrbahn_Befestigung_TypeClass" name="TCFahrbahn_Befestigung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2240,7 +2287,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFahrbahn_Befestigung_Gleis">
+	  <xs:complexType ecore:name="Fahrbahn_Befestigung_Gleis_TypeClass"
+                   name="TCFahrbahn_Befestigung_Gleis">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2251,7 +2299,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFahrbahn_Breite">
+	  <xs:complexType ecore:name="Fahrbahn_Breite_TypeClass" name="TCFahrbahn_Breite">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2261,7 +2309,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFue_Schaltfall">
+	  <xs:complexType ecore:name="Fue_Schaltfall_TypeClass" name="TCFue_Schaltfall">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2272,7 +2320,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFuss_Radweg_Art">
+	  <xs:complexType ecore:name="Fuss_Radweg_Art_TypeClass" name="TCFuss_Radweg_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2283,7 +2331,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFuss_Radweg_Seite">
+	  <xs:complexType ecore:name="Fuss_Radweg_Seite_TypeClass" name="TCFuss_Radweg_Seite">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2294,7 +2342,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGFR_Art">
+	  <xs:complexType ecore:name="GFR_Art_TypeClass" name="TCGFR_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2304,7 +2352,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGFR_Neigung">
+	  <xs:complexType ecore:name="GFR_Neigung_TypeClass" name="TCGFR_Neigung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2314,7 +2362,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGFR_Typ">
+	  <xs:complexType ecore:name="GFR_Typ_TypeClass" name="TCGFR_Typ">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2324,7 +2372,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGitterbehang">
+	  <xs:complexType ecore:name="Gitterbehang_TypeClass" name="TCGitterbehang">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2333,7 +2381,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGleis_Am_Bue">
+	  <xs:complexType ecore:name="Gleis_Am_Bue_TypeClass" name="TCGleis_Am_Bue">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2343,7 +2391,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCHaltezeit">
+	  <xs:complexType ecore:name="Haltezeit_TypeClass" name="TCHaltezeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2353,7 +2401,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCHersteller">
+	  <xs:complexType ecore:name="Hersteller_TypeClass" name="TCHersteller">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2363,7 +2411,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCHp_Ersatzstecker">
+	  <xs:complexType ecore:name="Hp_Ersatzstecker_TypeClass" name="TCHp_Ersatzstecker">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2374,7 +2422,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCKlassifizierung">
+	  <xs:complexType ecore:name="Klassifizierung_TypeClass" name="TCKlassifizierung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2385,7 +2433,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCKontrastblende">
+	  <xs:complexType ecore:name="Kontrastblende_TypeClass" name="TCKontrastblende">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2395,7 +2443,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCKreuzungswinkel">
+	  <xs:complexType ecore:name="Kreuzungswinkel_TypeClass" name="TCKreuzungswinkel">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2405,7 +2453,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCKurzzugschaltung">
+	  <xs:complexType ecore:name="Kurzzugschaltung_TypeClass" name="TCKurzzugschaltung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2414,7 +2462,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCLagerung_Art">
+	  <xs:complexType ecore:name="Lagerung_Art_TypeClass" name="TCLagerung_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2424,7 +2472,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCLFUE_Impuls">
+	  <xs:complexType ecore:name="LFUE_Impuls_TypeClass" name="TCLFUE_Impuls">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2434,7 +2482,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCLieferlaenge">
+	  <xs:complexType ecore:name="Lieferlaenge_TypeClass" name="TCLieferlaenge">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2444,7 +2492,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCMontage_Ausgleichsgewichte">
+	  <xs:complexType ecore:name="Montage_Ausgleichsgewichte_TypeClass"
+                   name="TCMontage_Ausgleichsgewichte">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2455,7 +2504,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCMontage_Besonders">
+	  <xs:complexType ecore:name="Montage_Besonders_TypeClass" name="TCMontage_Besonders">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2466,7 +2515,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCMontagehoehe">
+	  <xs:complexType ecore:name="Montagehoehe_TypeClass" name="TCMontagehoehe">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2476,7 +2525,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCOptik_Durchmesser">
+	  <xs:complexType ecore:name="Optik_Durchmesser_TypeClass" name="TCOptik_Durchmesser">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2487,7 +2536,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCOptik_Symbolmaske">
+	  <xs:complexType ecore:name="Optik_Symbolmaske_TypeClass" name="TCOptik_Symbolmaske">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2497,7 +2546,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPegel">
+	  <xs:complexType ecore:name="Pegel_TypeClass" name="TCPegel">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2507,7 +2556,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPixel_Koordinate_X">
+	  <xs:complexType ecore:name="Pixel_Koordinate_X_TypeClass" name="TCPixel_Koordinate_X">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2518,7 +2567,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPixel_Koordinate_Y">
+	  <xs:complexType ecore:name="Pixel_Koordinate_Y_TypeClass" name="TCPixel_Koordinate_Y">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2529,7 +2578,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRaeumstrecke">
+	  <xs:complexType ecore:name="Raeumstrecke_TypeClass" name="TCRaeumstrecke">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2539,7 +2588,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRaeumstrecke_DAB">
+	  <xs:complexType ecore:name="Raeumstrecke_DAB_TypeClass" name="TCRaeumstrecke_DAB">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2550,7 +2599,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRaeumstrecke_DBK">
+	  <xs:complexType ecore:name="Raeumstrecke_DBK_TypeClass" name="TCRaeumstrecke_DBK">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2561,7 +2610,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRaeumstrecke_DCK">
+	  <xs:complexType ecore:name="Raeumstrecke_DCK_TypeClass" name="TCRaeumstrecke_DCK">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2572,7 +2621,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRaeumstrecke_DSK_Strich">
+	  <xs:complexType ecore:name="Raeumstrecke_DSK_Strich_TypeClass" name="TCRaeumstrecke_DSK_Strich">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2583,7 +2632,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRichtungspfeil">
+	  <xs:complexType ecore:name="Richtungspfeil_TypeClass" name="TCRichtungspfeil">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2594,7 +2643,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSchaltgruppe">
+	  <xs:complexType ecore:name="Schaltgruppe_TypeClass" name="TCSchaltgruppe">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2604,7 +2653,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSchutzbuegel">
+	  <xs:complexType ecore:name="Schutzbuegel_TypeClass" name="TCSchutzbuegel">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2614,7 +2663,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSicherheitsabstand">
+	  <xs:complexType ecore:name="Sicherheitsabstand_TypeClass" name="TCSicherheitsabstand">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2625,7 +2674,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSignalverz_Errechnet">
+	  <xs:complexType ecore:name="Signalverz_Errechnet_TypeClass" name="TCSignalverz_Errechnet">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2636,7 +2685,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSignalverz_Gewaehlt">
+	  <xs:complexType ecore:name="Signalverz_Gewaehlt_TypeClass" name="TCSignalverz_Gewaehlt">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2647,7 +2696,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSperrlaenge">
+	  <xs:complexType ecore:name="Sperrlaenge_TypeClass" name="TCSperrlaenge">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2657,7 +2706,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSperrstrecke">
+	  <xs:complexType ecore:name="Sperrstrecke_TypeClass" name="TCSperrstrecke">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2667,7 +2716,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSperrstrecke_Fussgaenger">
+	  <xs:complexType ecore:name="Sperrstrecke_Fussgaenger_TypeClass"
+                   name="TCSperrstrecke_Fussgaenger">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2678,7 +2728,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCStoerhalt_Haltfall">
+	  <xs:complexType ecore:name="Stoerhalt_Haltfall_TypeClass" name="TCStoerhalt_Haltfall">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2687,7 +2737,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCStoerhalt_Merkhinweis">
+	  <xs:complexType ecore:name="Stoerhalt_Merkhinweis_TypeClass" name="TCStoerhalt_Merkhinweis">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2696,7 +2746,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTeilsperrstrecke">
+	  <xs:complexType ecore:name="Teilsperrstrecke_TypeClass" name="TCTeilsperrstrecke">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2707,7 +2757,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTeilvorgabezeit">
+	  <xs:complexType ecore:name="Teilvorgabezeit_TypeClass" name="TCTeilvorgabezeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2717,7 +2767,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTragkopf_Verstellbar">
+	  <xs:complexType ecore:name="Tragkopf_Verstellbar_TypeClass" name="TCTragkopf_Verstellbar">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2728,7 +2778,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCV_Max_Schiene">
+	  <xs:complexType ecore:name="V_Max_Schiene_TypeClass" name="TCV_Max_Schiene">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2738,7 +2788,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCV_Max_Strasse">
+	  <xs:complexType ecore:name="V_Max_Strasse_TypeClass" name="TCV_Max_Strasse">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2748,7 +2798,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCV_Min_Fussweg">
+	  <xs:complexType ecore:name="V_Min_Fussweg_TypeClass" name="TCV_Min_Fussweg">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2758,7 +2808,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCV_Min_Schiene">
+	  <xs:complexType ecore:name="V_Min_Schiene_TypeClass" name="TCV_Min_Schiene">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2768,7 +2818,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCV_Min_Strasse">
+	  <xs:complexType ecore:name="V_Min_Strasse_TypeClass" name="TCV_Min_Strasse">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2778,7 +2828,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCVorgeschaltet">
+	  <xs:complexType ecore:name="Vorgeschaltet_TypeClass" name="TCVorgeschaltet">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2788,7 +2838,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCWinkel_Alpha">
+	  <xs:complexType ecore:name="Winkel_Alpha_TypeClass" name="TCWinkel_Alpha">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2798,7 +2848,8 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZeitueberschreitungsmeldung">
+	  <xs:complexType ecore:name="Zeitueberschreitungsmeldung_TypeClass"
+                   name="TCZeitueberschreitungsmeldung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -2809,7 +2860,7 @@ Die Teilvorgabezeit ist die Summe aus Nachlaufzeit, erforderlicher Vorleuchtzeit
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZusatzschild">
+	  <xs:complexType ecore:name="Zusatzschild_TypeClass" name="TCZusatzschild">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
