@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -136,8 +135,8 @@ public enum ENUMVerbotWBArt implements Enumerator {
 		switch (value) {
 			case ENUM_VERBOT_WB_ART_BETRIEBSBREMSUNG_VALUE: return ENUM_VERBOT_WB_ART_BETRIEBSBREMSUNG;
 			case ENUM_VERBOT_WB_ART_VOLLSTÄNDIG_VALUE: return ENUM_VERBOT_WB_ART_VOLLSTÄNDIG;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

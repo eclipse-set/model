@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -136,8 +135,8 @@ public enum ENUMSBE implements Enumerator {
 		switch (value) {
 			case ENUMSBE_1_VALUE: return ENUMSBE_1;
 			case ENUMSBE_2_VALUE: return ENUMSBE_2;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

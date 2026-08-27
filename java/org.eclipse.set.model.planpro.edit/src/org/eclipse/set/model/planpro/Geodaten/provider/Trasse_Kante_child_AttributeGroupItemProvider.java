@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Geodaten.provider;
 
@@ -21,11 +20,11 @@ import org.eclipse.emf.common.util.ResourceLocator;
 
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.Medien_und_Trassen.Medien_und_TrassenPackage;
 
 import org.eclipse.set.model.planpro.Medien_und_Trassen.provider.Trasse_KanteItemProvider;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.Geodaten.Trasse_Kante_child_AttributeGroup} object.

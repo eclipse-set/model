@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ansteuerung_Element;
 
@@ -205,8 +204,8 @@ public enum ENUMBandbreite implements Enumerator {
 			case ENUM_BANDBREITE_2MBIT_S_VALUE: return ENUM_BANDBREITE_2MBIT_S;
 			case ENUM_BANDBREITE_64KBIT_S_VALUE: return ENUM_BANDBREITE_64KBIT_S;
 			case ENUM_BANDBREITE_SONSTIGE_VALUE: return ENUM_BANDBREITE_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

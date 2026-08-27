@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Zuglenkung.impl;
 
@@ -157,9 +156,8 @@ public class ZL_DLP_AbschnittImpl extends Basis_ObjektImpl implements ZL_DLP_Abs
 				return ((InternalEList<?>)getIDGleisAbschnitt()).basicRemove(otherEnd, msgs);
 			case ZuglenkungPackage.ZL_DLP_ABSCHNITT__IDZLDLP_FSTR:
 				return basicSetIDZLDLPFstr(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -174,9 +172,8 @@ public class ZL_DLP_AbschnittImpl extends Basis_ObjektImpl implements ZL_DLP_Abs
 				return getIDGleisAbschnitt();
 			case ZuglenkungPackage.ZL_DLP_ABSCHNITT__IDZLDLP_FSTR:
 				return getIDZLDLPFstr();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -195,10 +192,8 @@ public class ZL_DLP_AbschnittImpl extends Basis_ObjektImpl implements ZL_DLP_Abs
 			case ZuglenkungPackage.ZL_DLP_ABSCHNITT__IDZLDLP_FSTR:
 				setIDZLDLPFstr((ID_ZL_DLP_Fstr_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -215,10 +210,8 @@ public class ZL_DLP_AbschnittImpl extends Basis_ObjektImpl implements ZL_DLP_Abs
 			case ZuglenkungPackage.ZL_DLP_ABSCHNITT__IDZLDLP_FSTR:
 				setIDZLDLPFstr((ID_ZL_DLP_Fstr_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -233,9 +226,8 @@ public class ZL_DLP_AbschnittImpl extends Basis_ObjektImpl implements ZL_DLP_Abs
 				return iDGleisAbschnitt != null && !iDGleisAbschnitt.isEmpty();
 			case ZuglenkungPackage.ZL_DLP_ABSCHNITT__IDZLDLP_FSTR:
 				return iDZLDLPFstr != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZL_DLP_AbschnittImpl

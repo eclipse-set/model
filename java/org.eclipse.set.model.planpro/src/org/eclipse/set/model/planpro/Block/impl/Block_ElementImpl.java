@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Block.impl;
 
@@ -418,9 +417,8 @@ public class Block_ElementImpl extends Basis_ObjektImpl implements Block_Element
 				return basicSetIDSignal(null, msgs);
 			case BlockPackage.BLOCK_ELEMENT__ID_ZUGSCHLUSSMELDUNG:
 				return basicSetIDZugschlussmeldung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -443,9 +441,8 @@ public class Block_ElementImpl extends Basis_ObjektImpl implements Block_Element
 				return getIDSignal();
 			case BlockPackage.BLOCK_ELEMENT__ID_ZUGSCHLUSSMELDUNG:
 				return getIDZugschlussmeldung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -474,10 +471,8 @@ public class Block_ElementImpl extends Basis_ObjektImpl implements Block_Element
 			case BlockPackage.BLOCK_ELEMENT__ID_ZUGSCHLUSSMELDUNG:
 				setIDZugschlussmeldung((ID_Bedien_Anzeige_Element_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -506,10 +501,8 @@ public class Block_ElementImpl extends Basis_ObjektImpl implements Block_Element
 			case BlockPackage.BLOCK_ELEMENT__ID_ZUGSCHLUSSMELDUNG:
 				setIDZugschlussmeldung((ID_Bedien_Anzeige_Element_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -532,9 +525,8 @@ public class Block_ElementImpl extends Basis_ObjektImpl implements Block_Element
 				return iDSignal != null;
 			case BlockPackage.BLOCK_ELEMENT__ID_ZUGSCHLUSSMELDUNG:
 				return iDZugschlussmeldung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Block_ElementImpl

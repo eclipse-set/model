@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale.impl;
 
@@ -122,9 +121,8 @@ public class Signal_Fank_ZuordnungImpl extends Basis_ObjektImpl implements Signa
 				return ((InternalEList<?>)getIDSignalFank()).basicRemove(otherEnd, msgs);
 			case SignalePackage.SIGNAL_FANK_ZUORDNUNG__ID_SIGNAL_START:
 				return ((InternalEList<?>)getIDSignalStart()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -139,9 +137,8 @@ public class Signal_Fank_ZuordnungImpl extends Basis_ObjektImpl implements Signa
 				return getIDSignalFank();
 			case SignalePackage.SIGNAL_FANK_ZUORDNUNG__ID_SIGNAL_START:
 				return getIDSignalStart();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -161,10 +158,8 @@ public class Signal_Fank_ZuordnungImpl extends Basis_ObjektImpl implements Signa
 				getIDSignalStart().clear();
 				getIDSignalStart().addAll((Collection<? extends ID_Signal_Start_TypeClass>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -181,10 +176,8 @@ public class Signal_Fank_ZuordnungImpl extends Basis_ObjektImpl implements Signa
 			case SignalePackage.SIGNAL_FANK_ZUORDNUNG__ID_SIGNAL_START:
 				getIDSignalStart().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -199,9 +192,8 @@ public class Signal_Fank_ZuordnungImpl extends Basis_ObjektImpl implements Signa
 				return iDSignalFank != null && !iDSignalFank.isEmpty();
 			case SignalePackage.SIGNAL_FANK_ZUORDNUNG__ID_SIGNAL_START:
 				return iDSignalStart != null && !iDSignalStart.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Signal_Fank_ZuordnungImpl

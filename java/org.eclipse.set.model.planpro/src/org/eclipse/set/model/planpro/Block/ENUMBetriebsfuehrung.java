@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Block;
 
@@ -228,8 +227,8 @@ public enum ENUMBetriebsfuehrung implements Enumerator {
 			case ENUM_BETRIEBSFUEHRUNG_ZLB_VALUE: return ENUM_BETRIEBSFUEHRUNG_ZLB;
 			case ENUM_BETRIEBSFUEHRUNG_ZWEIGL_VALUE: return ENUM_BETRIEBSFUEHRUNG_ZWEIGL;
 			case ENUM_BETRIEBSFUEHRUNG_ZWEIGL_GWB_VALUE: return ENUM_BETRIEBSFUEHRUNG_ZWEIGL_GWB;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

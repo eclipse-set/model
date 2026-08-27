@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale.impl;
 
@@ -627,9 +626,8 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 				return basicSetSignalsichtMindest(null, msgs);
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNALSICHT_SOLL:
 				return basicSetSignalsichtSoll(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -660,9 +658,8 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 				return getSignalsichtMindest();
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNALSICHT_SOLL:
 				return getSignalsichtSoll();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -705,10 +702,8 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNALSICHT_SOLL:
 				setSignalsichtSoll((Signalsicht_Soll_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -749,10 +744,8 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNALSICHT_SOLL:
 				setSignalsichtSoll((Signalsicht_Soll_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -783,9 +776,8 @@ public class Signal_Real_AttributeGroupImpl extends EObjectImpl implements Signa
 				return signalsichtMindest != null;
 			case SignalePackage.SIGNAL_REAL_ATTRIBUTE_GROUP__SIGNALSICHT_SOLL:
 				return signalsichtSoll != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Signal_Real_AttributeGroupImpl

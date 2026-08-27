@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnsteig.impl;
 
@@ -121,9 +120,8 @@ public class Bahnsteig_Anlage_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case BahnsteigPackage.BAHNSTEIG_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BAHNSTEIG_ANLAGE:
 				return basicSetBezeichnungBahnsteigAnlage(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,9 +134,8 @@ public class Bahnsteig_Anlage_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case BahnsteigPackage.BAHNSTEIG_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BAHNSTEIG_ANLAGE:
 				return getBezeichnungBahnsteigAnlage();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -152,10 +149,8 @@ public class Bahnsteig_Anlage_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 			case BahnsteigPackage.BAHNSTEIG_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BAHNSTEIG_ANLAGE:
 				setBezeichnungBahnsteigAnlage((Bezeichnung_Bahnsteig_Anlage_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -169,10 +164,8 @@ public class Bahnsteig_Anlage_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 			case BahnsteigPackage.BAHNSTEIG_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BAHNSTEIG_ANLAGE:
 				setBezeichnungBahnsteigAnlage((Bezeichnung_Bahnsteig_Anlage_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -185,9 +178,8 @@ public class Bahnsteig_Anlage_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case BahnsteigPackage.BAHNSTEIG_ANLAGE_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZEICHNUNG_BAHNSTEIG_ANLAGE:
 				return bezeichnungBahnsteigAnlage != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bahnsteig_Anlage_Bezeichnung_AttributeGroupImpl

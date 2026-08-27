@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Geodaten;
 
@@ -1700,8 +1699,8 @@ public enum ENUMOertlichkeitArt implements Enumerator {
 			case ENUM_OERTLICHKEIT_ART_VP_HP_AWANST_VALUE: return ENUM_OERTLICHKEIT_ART_VP_HP_AWANST;
 			case ENUM_OERTLICHKEIT_ART_VP_LGR_VALUE: return ENUM_OERTLICHKEIT_ART_VP_LGR;
 			case ENUM_OERTLICHKEIT_ART_VP_RB_GR_VALUE: return ENUM_OERTLICHKEIT_ART_VP_RB_GR;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

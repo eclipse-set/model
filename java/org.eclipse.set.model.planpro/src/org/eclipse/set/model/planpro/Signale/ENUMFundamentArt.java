@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale;
 
@@ -251,8 +250,8 @@ public enum ENUMFundamentArt implements Enumerator {
 			case ENUM_FUNDAMENT_ART_RAMMROHR_GROSS_VALUE: return ENUM_FUNDAMENT_ART_RAMMROHR_GROSS;
 			case ENUM_FUNDAMENT_ART_RAMMROHR_KLEIN_VALUE: return ENUM_FUNDAMENT_ART_RAMMROHR_KLEIN;
 			case ENUM_FUNDAMENT_ART_SONSTIGE_VALUE: return ENUM_FUNDAMENT_ART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale.provider;
 
@@ -30,7 +29,7 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Signale.Signal_Fstr_S_AttributeGroup;
 import org.eclipse.set.model.planpro.Signale.SignaleFactory;
@@ -159,10 +158,8 @@ public class Signal_Fstr_S_AttributeGroupItemProvider
 			case SignalePackage.SIGNAL_FSTR_SATTRIBUTE_GROUP__ID_ZWEITES_HALTFALLKRITERIUM:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

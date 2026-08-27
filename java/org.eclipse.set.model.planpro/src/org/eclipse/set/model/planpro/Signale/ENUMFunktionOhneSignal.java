@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale;
 
@@ -159,8 +158,8 @@ public enum ENUMFunktionOhneSignal implements Enumerator {
 			case ENUM_FUNKTION_OHNE_SIGNAL_RS_VALUE: return ENUM_FUNKTION_OHNE_SIGNAL_RS;
 			case ENUM_FUNKTION_OHNE_SIGNAL_SONSTIGE_VALUE: return ENUM_FUNKTION_OHNE_SIGNAL_SONSTIGE;
 			case ENUM_FUNKTION_OHNE_SIGNAL_ZS_VALUE: return ENUM_FUNKTION_OHNE_SIGNAL_ZS;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

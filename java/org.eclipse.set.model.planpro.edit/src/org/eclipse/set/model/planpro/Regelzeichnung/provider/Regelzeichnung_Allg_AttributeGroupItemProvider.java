@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Regelzeichnung.provider;
 
@@ -30,7 +29,7 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Regelzeichnung.RegelzeichnungFactory;
 import org.eclipse.set.model.planpro.Regelzeichnung.RegelzeichnungPackage;
@@ -159,10 +158,8 @@ public class Regelzeichnung_Allg_AttributeGroupItemProvider
 			case RegelzeichnungPackage.REGELZEICHNUNG_ALLG_ATTRIBUTE_GROUP__UNTERTITEL:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

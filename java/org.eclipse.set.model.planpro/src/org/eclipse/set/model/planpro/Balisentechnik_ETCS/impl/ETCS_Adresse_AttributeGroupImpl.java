@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -180,9 +179,8 @@ public class ETCS_Adresse_AttributeGroupImpl extends EObjectImpl implements ETCS
 				return basicSetNIDC(null, msgs);
 			case Balisentechnik_ETCSPackage.ETCS_ADRESSE_ATTRIBUTE_GROUP__NIDRBC:
 				return basicSetNIDRBC(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,9 +195,8 @@ public class ETCS_Adresse_AttributeGroupImpl extends EObjectImpl implements ETCS
 				return getNIDC();
 			case Balisentechnik_ETCSPackage.ETCS_ADRESSE_ATTRIBUTE_GROUP__NIDRBC:
 				return getNIDRBC();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -216,10 +213,8 @@ public class ETCS_Adresse_AttributeGroupImpl extends EObjectImpl implements ETCS
 			case Balisentechnik_ETCSPackage.ETCS_ADRESSE_ATTRIBUTE_GROUP__NIDRBC:
 				setNIDRBC((NID_RBC_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -236,10 +231,8 @@ public class ETCS_Adresse_AttributeGroupImpl extends EObjectImpl implements ETCS
 			case Balisentechnik_ETCSPackage.ETCS_ADRESSE_ATTRIBUTE_GROUP__NIDRBC:
 				setNIDRBC((NID_RBC_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -254,9 +247,8 @@ public class ETCS_Adresse_AttributeGroupImpl extends EObjectImpl implements ETCS
 				return nIDC != null;
 			case Balisentechnik_ETCSPackage.ETCS_ADRESSE_ATTRIBUTE_GROUP__NIDRBC:
 				return nIDRBC != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ETCS_Adresse_AttributeGroupImpl

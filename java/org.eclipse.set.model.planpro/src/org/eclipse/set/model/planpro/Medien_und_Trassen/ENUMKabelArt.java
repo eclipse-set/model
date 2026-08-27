@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Medien_und_Trassen;
 
@@ -274,8 +273,8 @@ public enum ENUMKabelArt implements Enumerator {
 			case ENUM_KABEL_ART_SIGNALKABEL_KOMBINIERT_VALUE: return ENUM_KABEL_ART_SIGNALKABEL_KOMBINIERT;
 			case ENUM_KABEL_ART_SIGNALKABEL_STERNVIERER_VALUE: return ENUM_KABEL_ART_SIGNALKABEL_STERNVIERER;
 			case ENUM_KABEL_ART_SONSTIGE_VALUE: return ENUM_KABEL_ART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

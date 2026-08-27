@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -136,8 +135,8 @@ public enum ENUMEinzeldateiArt implements Enumerator {
 		switch (value) {
 			case ENUM_EINZELDATEI_ART_HILFSDATEI_VALUE: return ENUM_EINZELDATEI_ART_HILFSDATEI;
 			case ENUM_EINZELDATEI_ART_LADEDATEI_VALUE: return ENUM_EINZELDATEI_ART_LADEDATEI;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

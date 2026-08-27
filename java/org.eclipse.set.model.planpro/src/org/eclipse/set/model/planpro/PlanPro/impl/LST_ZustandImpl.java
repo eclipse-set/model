@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.PlanPro.impl;
 
@@ -157,9 +156,8 @@ public class LST_ZustandImpl extends Ur_ObjektImpl implements LST_Zustand {
 				return ((InternalEList<?>)getAnhangLSTZustand()).basicRemove(otherEnd, msgs);
 			case PlanProPackage.LST_ZUSTAND__CONTAINER:
 				return basicSetContainer(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -174,9 +172,8 @@ public class LST_ZustandImpl extends Ur_ObjektImpl implements LST_Zustand {
 				return getAnhangLSTZustand();
 			case PlanProPackage.LST_ZUSTAND__CONTAINER:
 				return getContainer();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -195,10 +192,8 @@ public class LST_ZustandImpl extends Ur_ObjektImpl implements LST_Zustand {
 			case PlanProPackage.LST_ZUSTAND__CONTAINER:
 				setContainer((Container_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -215,10 +210,8 @@ public class LST_ZustandImpl extends Ur_ObjektImpl implements LST_Zustand {
 			case PlanProPackage.LST_ZUSTAND__CONTAINER:
 				setContainer((Container_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -233,9 +226,8 @@ public class LST_ZustandImpl extends Ur_ObjektImpl implements LST_Zustand {
 				return anhangLSTZustand != null && !anhangLSTZustand.isEmpty();
 			case PlanProPackage.LST_ZUSTAND__CONTAINER:
 				return container != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //LST_ZustandImpl

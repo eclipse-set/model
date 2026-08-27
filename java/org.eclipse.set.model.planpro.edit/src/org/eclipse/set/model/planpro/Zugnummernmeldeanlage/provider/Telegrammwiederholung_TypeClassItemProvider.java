@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage.provider;
 
@@ -24,9 +23,9 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.BasisTypen.provider.BasisAttribut_AttributeGroupItemProvider;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.Telegrammwiederholung_TypeClass;
 import org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZugnummernmeldeanlagePackage;
@@ -138,10 +137,8 @@ public class Telegrammwiederholung_TypeClassItemProvider extends BasisAttribut_A
 			case ZugnummernmeldeanlagePackage.TELEGRAMMWIEDERHOLUNG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

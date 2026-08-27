@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale.impl;
 
@@ -417,9 +416,8 @@ public class Signal_RahmenImpl extends Basis_ObjektImpl implements Signal_Rahmen
 				return basicSetRahmenArt(null, msgs);
 			case SignalePackage.SIGNAL_RAHMEN__RAHMEN_HOEHE:
 				return basicSetRahmenHoehe(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -442,9 +440,8 @@ public class Signal_RahmenImpl extends Basis_ObjektImpl implements Signal_Rahmen
 				return getRahmenArt();
 			case SignalePackage.SIGNAL_RAHMEN__RAHMEN_HOEHE:
 				return getRahmenHoehe();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -473,10 +470,8 @@ public class Signal_RahmenImpl extends Basis_ObjektImpl implements Signal_Rahmen
 			case SignalePackage.SIGNAL_RAHMEN__RAHMEN_HOEHE:
 				setRahmenHoehe((Rahmen_Hoehe_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -505,10 +500,8 @@ public class Signal_RahmenImpl extends Basis_ObjektImpl implements Signal_Rahmen
 			case SignalePackage.SIGNAL_RAHMEN__RAHMEN_HOEHE:
 				setRahmenHoehe((Rahmen_Hoehe_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -531,9 +524,8 @@ public class Signal_RahmenImpl extends Basis_ObjektImpl implements Signal_Rahmen
 				return rahmenArt != null;
 			case SignalePackage.SIGNAL_RAHMEN__RAHMEN_HOEHE:
 				return rahmenHoehe != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Signal_RahmenImpl

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang.impl;
 
@@ -182,9 +181,8 @@ public class BUE_WS_Fstr_ZuordnungImpl extends Basis_ObjektImpl implements BUE_W
 				return basicSetIDBUEEinschaltung(null, msgs);
 			case BahnuebergangPackage.BUE_WS_FSTR_ZUORDNUNG__ID_FSTR_ZUG_RANGIER:
 				return basicSetIDFstrZugRangier(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -199,9 +197,8 @@ public class BUE_WS_Fstr_ZuordnungImpl extends Basis_ObjektImpl implements BUE_W
 				return getIDBUEEinschaltung();
 			case BahnuebergangPackage.BUE_WS_FSTR_ZUORDNUNG__ID_FSTR_ZUG_RANGIER:
 				return getIDFstrZugRangier();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -218,10 +215,8 @@ public class BUE_WS_Fstr_ZuordnungImpl extends Basis_ObjektImpl implements BUE_W
 			case BahnuebergangPackage.BUE_WS_FSTR_ZUORDNUNG__ID_FSTR_ZUG_RANGIER:
 				setIDFstrZugRangier((ID_Fstr_Zug_Rangier_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -238,10 +233,8 @@ public class BUE_WS_Fstr_ZuordnungImpl extends Basis_ObjektImpl implements BUE_W
 			case BahnuebergangPackage.BUE_WS_FSTR_ZUORDNUNG__ID_FSTR_ZUG_RANGIER:
 				setIDFstrZugRangier((ID_Fstr_Zug_Rangier_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -256,9 +249,8 @@ public class BUE_WS_Fstr_ZuordnungImpl extends Basis_ObjektImpl implements BUE_W
 				return iDBUEEinschaltung != null;
 			case BahnuebergangPackage.BUE_WS_FSTR_ZUORDNUNG__ID_FSTR_ZUG_RANGIER:
 				return iDFstrZugRangier != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //BUE_WS_Fstr_ZuordnungImpl

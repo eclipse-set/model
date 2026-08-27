@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Geodaten.impl;
 
@@ -239,9 +238,8 @@ public class Ueberhoehungslinie_Allg_AttributeGroupImpl extends EObjectImpl impl
 				return basicSetUeberhoehungslinieForm(null, msgs);
 			case GeodatenPackage.UEBERHOEHUNGSLINIE_ALLG_ATTRIBUTE_GROUP__UEBERHOEHUNGSLINIE_LAENGE:
 				return basicSetUeberhoehungslinieLaenge(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +256,8 @@ public class Ueberhoehungslinie_Allg_AttributeGroupImpl extends EObjectImpl impl
 				return getUeberhoehungslinieForm();
 			case GeodatenPackage.UEBERHOEHUNGSLINIE_ALLG_ATTRIBUTE_GROUP__UEBERHOEHUNGSLINIE_LAENGE:
 				return getUeberhoehungslinieLaenge();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +277,8 @@ public class Ueberhoehungslinie_Allg_AttributeGroupImpl extends EObjectImpl impl
 			case GeodatenPackage.UEBERHOEHUNGSLINIE_ALLG_ATTRIBUTE_GROUP__UEBERHOEHUNGSLINIE_LAENGE:
 				setUeberhoehungslinieLaenge((Ueberhoehungslinie_Laenge_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +298,8 @@ public class Ueberhoehungslinie_Allg_AttributeGroupImpl extends EObjectImpl impl
 			case GeodatenPackage.UEBERHOEHUNGSLINIE_ALLG_ATTRIBUTE_GROUP__UEBERHOEHUNGSLINIE_LAENGE:
 				setUeberhoehungslinieLaenge((Ueberhoehungslinie_Laenge_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +316,8 @@ public class Ueberhoehungslinie_Allg_AttributeGroupImpl extends EObjectImpl impl
 				return ueberhoehungslinieForm != null;
 			case GeodatenPackage.UEBERHOEHUNGSLINIE_ALLG_ATTRIBUTE_GROUP__UEBERHOEHUNGSLINIE_LAENGE:
 				return ueberhoehungslinieLaenge != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Ueberhoehungslinie_Allg_AttributeGroupImpl

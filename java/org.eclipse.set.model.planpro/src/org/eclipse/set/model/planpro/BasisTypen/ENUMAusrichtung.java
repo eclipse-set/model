@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.BasisTypen;
 
@@ -159,8 +158,8 @@ public enum ENUMAusrichtung implements Enumerator {
 			case ENUM_AUSRICHTUNG_GEGEN_VALUE: return ENUM_AUSRICHTUNG_GEGEN;
 			case ENUM_AUSRICHTUNG_IN_VALUE: return ENUM_AUSRICHTUNG_IN;
 			case ENUM_AUSRICHTUNG_KEINE_VALUE: return ENUM_AUSRICHTUNG_KEINE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

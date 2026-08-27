@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -334,9 +333,8 @@ public class ETCS_W_KrImpl extends Basis_ObjektImpl implements ETCS_W_Kr {
 				return ((InternalEList<?>)getIDRBC()).basicRemove(otherEnd, msgs);
 			case Balisentechnik_ETCSPackage.ETCS_WKR__IDW_KR_ANLAGE:
 				return basicSetIDWKrAnlage(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -357,9 +355,8 @@ public class ETCS_W_KrImpl extends Basis_ObjektImpl implements ETCS_W_Kr {
 				return getIDRBC();
 			case Balisentechnik_ETCSPackage.ETCS_WKR__IDW_KR_ANLAGE:
 				return getIDWKrAnlage();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -387,10 +384,8 @@ public class ETCS_W_KrImpl extends Basis_ObjektImpl implements ETCS_W_Kr {
 			case Balisentechnik_ETCSPackage.ETCS_WKR__IDW_KR_ANLAGE:
 				setIDWKrAnlage((ID_W_Kr_Anlage_ohne_Proxy_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -416,10 +411,8 @@ public class ETCS_W_KrImpl extends Basis_ObjektImpl implements ETCS_W_Kr {
 			case Balisentechnik_ETCSPackage.ETCS_WKR__IDW_KR_ANLAGE:
 				setIDWKrAnlage((ID_W_Kr_Anlage_ohne_Proxy_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -440,9 +433,8 @@ public class ETCS_W_KrImpl extends Basis_ObjektImpl implements ETCS_W_Kr {
 				return iDRBC != null && !iDRBC.isEmpty();
 			case Balisentechnik_ETCSPackage.ETCS_WKR__IDW_KR_ANLAGE:
 				return iDWKrAnlage != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ETCS_W_KrImpl

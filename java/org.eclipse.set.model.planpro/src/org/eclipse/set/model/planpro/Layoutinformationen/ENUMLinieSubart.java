@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Layoutinformationen;
 
@@ -159,8 +158,8 @@ public enum ENUMLinieSubart implements Enumerator {
 			case ENUM_LINIE_SUBART_BREIT_VALUE: return ENUM_LINIE_SUBART_BREIT;
 			case ENUM_LINIE_SUBART_EXTRABREIT_VALUE: return ENUM_LINIE_SUBART_EXTRABREIT;
 			case ENUM_LINIE_SUBART_SCHMAL_VALUE: return ENUM_LINIE_SUBART_SCHMAL;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

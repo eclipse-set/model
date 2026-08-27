@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Nahbedienung.provider;
 
@@ -24,13 +23,13 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.Basisobjekte.provider.Basis_ObjektItemProvider;
 
 import org.eclipse.set.model.planpro.Nahbedienung.NB_Zone_Grenze;
 import org.eclipse.set.model.planpro.Nahbedienung.NahbedienungFactory;
 import org.eclipse.set.model.planpro.Nahbedienung.NahbedienungPackage;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Verweise.VerweiseFactory;
 
@@ -148,10 +147,8 @@ public class NB_Zone_GrenzeItemProvider extends Basis_ObjektItemProvider {
 			case NahbedienungPackage.NB_ZONE_GRENZE__NB_GRENZE_ART:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

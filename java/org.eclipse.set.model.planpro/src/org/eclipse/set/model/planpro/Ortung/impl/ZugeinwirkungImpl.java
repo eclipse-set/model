@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ortung.impl;
 
@@ -242,9 +241,8 @@ public class ZugeinwirkungImpl extends Punkt_ObjektImpl implements Zugeinwirkung
 				return basicSetIDBezugspunkt(null, msgs);
 			case OrtungPackage.ZUGEINWIRKUNG__ZUGEINWIRKUNG_ALLG:
 				return basicSetZugeinwirkungAllg(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -261,9 +259,8 @@ public class ZugeinwirkungImpl extends Punkt_ObjektImpl implements Zugeinwirkung
 				return getIDBezugspunkt();
 			case OrtungPackage.ZUGEINWIRKUNG__ZUGEINWIRKUNG_ALLG:
 				return getZugeinwirkungAllg();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -283,10 +280,8 @@ public class ZugeinwirkungImpl extends Punkt_ObjektImpl implements Zugeinwirkung
 			case OrtungPackage.ZUGEINWIRKUNG__ZUGEINWIRKUNG_ALLG:
 				setZugeinwirkungAllg((Zugeinwirkung_Allg_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -306,10 +301,8 @@ public class ZugeinwirkungImpl extends Punkt_ObjektImpl implements Zugeinwirkung
 			case OrtungPackage.ZUGEINWIRKUNG__ZUGEINWIRKUNG_ALLG:
 				setZugeinwirkungAllg((Zugeinwirkung_Allg_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -326,9 +319,8 @@ public class ZugeinwirkungImpl extends Punkt_ObjektImpl implements Zugeinwirkung
 				return iDBezugspunkt != null;
 			case OrtungPackage.ZUGEINWIRKUNG__ZUGEINWIRKUNG_ALLG:
 				return zugeinwirkungAllg != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZugeinwirkungImpl

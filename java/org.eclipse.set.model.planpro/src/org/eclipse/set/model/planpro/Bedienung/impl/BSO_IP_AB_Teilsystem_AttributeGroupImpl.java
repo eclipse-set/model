@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bedienung.impl;
 
@@ -239,9 +238,8 @@ public class BSO_IP_AB_Teilsystem_AttributeGroupImpl extends EObjectImpl impleme
 				return basicSetIPAdressblockBlau(null, msgs);
 			case BedienungPackage.BSO_IP_AB_TEILSYSTEM_ATTRIBUTE_GROUP__IP_ADRESSBLOCK_GRAU:
 				return basicSetIPAdressblockGrau(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +256,8 @@ public class BSO_IP_AB_Teilsystem_AttributeGroupImpl extends EObjectImpl impleme
 				return getIPAdressblockBlau();
 			case BedienungPackage.BSO_IP_AB_TEILSYSTEM_ATTRIBUTE_GROUP__IP_ADRESSBLOCK_GRAU:
 				return getIPAdressblockGrau();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +277,8 @@ public class BSO_IP_AB_Teilsystem_AttributeGroupImpl extends EObjectImpl impleme
 			case BedienungPackage.BSO_IP_AB_TEILSYSTEM_ATTRIBUTE_GROUP__IP_ADRESSBLOCK_GRAU:
 				setIPAdressblockGrau((IP_Adressblock_Grau_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +298,8 @@ public class BSO_IP_AB_Teilsystem_AttributeGroupImpl extends EObjectImpl impleme
 			case BedienungPackage.BSO_IP_AB_TEILSYSTEM_ATTRIBUTE_GROUP__IP_ADRESSBLOCK_GRAU:
 				setIPAdressblockGrau((IP_Adressblock_Grau_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +316,8 @@ public class BSO_IP_AB_Teilsystem_AttributeGroupImpl extends EObjectImpl impleme
 				return iPAdressblockBlau != null;
 			case BedienungPackage.BSO_IP_AB_TEILSYSTEM_ATTRIBUTE_GROUP__IP_ADRESSBLOCK_GRAU:
 				return iPAdressblockGrau != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //BSO_IP_AB_Teilsystem_AttributeGroupImpl

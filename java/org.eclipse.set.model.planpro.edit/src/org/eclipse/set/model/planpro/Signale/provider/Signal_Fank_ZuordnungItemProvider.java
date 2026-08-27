@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale.provider;
 
@@ -24,9 +23,9 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.Basisobjekte.provider.Basis_ObjektItemProvider;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Signale.Signal_Fank_Zuordnung;
 import org.eclipse.set.model.planpro.Signale.SignalePackage;
@@ -145,10 +144,8 @@ public class Signal_Fank_ZuordnungItemProvider extends Basis_ObjektItemProvider 
 			case SignalePackage.SIGNAL_FANK_ZUORDNUNG__ID_SIGNAL_START:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

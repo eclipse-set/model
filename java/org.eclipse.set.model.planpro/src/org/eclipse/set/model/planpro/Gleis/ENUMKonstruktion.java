@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Gleis;
 
@@ -182,8 +181,8 @@ public enum ENUMKonstruktion implements Enumerator {
 			case ENUM_KONSTRUKTION_SCHUTZSCHIENE_LINKS_VALUE: return ENUM_KONSTRUKTION_SCHUTZSCHIENE_LINKS;
 			case ENUM_KONSTRUKTION_SCHUTZSCHIENE_RECHTS_VALUE: return ENUM_KONSTRUKTION_SCHUTZSCHIENE_RECHTS;
 			case ENUM_KONSTRUKTION_SONSTIGE_VALUE: return ENUM_KONSTRUKTION_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

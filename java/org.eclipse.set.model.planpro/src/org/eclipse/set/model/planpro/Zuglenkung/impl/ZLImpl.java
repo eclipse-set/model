@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Zuglenkung.impl;
 
@@ -300,9 +299,8 @@ public class ZLImpl extends Basis_ObjektImpl implements ZL {
 				return basicSetZLAllg(null, msgs);
 			case ZuglenkungPackage.ZL__ZLZN:
 				return basicSetZLZN(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -321,9 +319,8 @@ public class ZLImpl extends Basis_ObjektImpl implements ZL {
 				return getZLAllg();
 			case ZuglenkungPackage.ZL__ZLZN:
 				return getZLZN();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -346,10 +343,8 @@ public class ZLImpl extends Basis_ObjektImpl implements ZL {
 			case ZuglenkungPackage.ZL__ZLZN:
 				setZLZN((ZL_ZN_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -372,10 +367,8 @@ public class ZLImpl extends Basis_ObjektImpl implements ZL {
 			case ZuglenkungPackage.ZL__ZLZN:
 				setZLZN((ZL_ZN_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -394,9 +387,8 @@ public class ZLImpl extends Basis_ObjektImpl implements ZL {
 				return zLAllg != null;
 			case ZuglenkungPackage.ZL__ZLZN:
 				return zLZN != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZLImpl

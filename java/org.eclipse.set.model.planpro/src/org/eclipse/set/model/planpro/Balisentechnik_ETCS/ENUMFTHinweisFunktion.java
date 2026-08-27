@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -320,8 +319,8 @@ public enum ENUMFTHinweisFunktion implements Enumerator {
 			case ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_VALUE: return ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE;
 			case ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_1_VALUE: return ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_1;
 			case ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_2_VALUE: return ENUMFT_HINWEIS_FUNKTION_ZBS_ENDE_2;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Fahrstrasse;
 
@@ -205,8 +204,8 @@ public enum ENUMStartSignalCharakter implements Enumerator {
 			case ENUM_START_SIGNAL_CHARAKTER_BLOCK_SIGNAL_VALUE: return ENUM_START_SIGNAL_CHARAKTER_BLOCK_SIGNAL;
 			case ENUM_START_SIGNAL_CHARAKTER_EINFAHR_SIGNAL_VALUE: return ENUM_START_SIGNAL_CHARAKTER_EINFAHR_SIGNAL;
 			case ENUM_START_SIGNAL_CHARAKTER_NACHRUECK_SIGNAL_VALUE: return ENUM_START_SIGNAL_CHARAKTER_NACHRUECK_SIGNAL;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -94,9 +93,8 @@ public class ZUB_Bereichsgrenze_Nach_ZBS_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_ZBS_ATTRIBUTE_GROUP__BGRENZE_NACH_ZBS_BED_EINSTIEG:
 				return ((InternalEList<?>)getBgrenzeNachZBSBedEinstieg()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -109,9 +107,8 @@ public class ZUB_Bereichsgrenze_Nach_ZBS_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_ZBS_ATTRIBUTE_GROUP__BGRENZE_NACH_ZBS_BED_EINSTIEG:
 				return getBgrenzeNachZBSBedEinstieg();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -127,10 +124,8 @@ public class ZUB_Bereichsgrenze_Nach_ZBS_AttributeGroupImpl extends EObjectImpl 
 				getBgrenzeNachZBSBedEinstieg().clear();
 				getBgrenzeNachZBSBedEinstieg().addAll((Collection<? extends Bgrenze_Nach_ZBS_Bed_Einstieg_AttributeGroup>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -144,10 +139,8 @@ public class ZUB_Bereichsgrenze_Nach_ZBS_AttributeGroupImpl extends EObjectImpl 
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_ZBS_ATTRIBUTE_GROUP__BGRENZE_NACH_ZBS_BED_EINSTIEG:
 				getBgrenzeNachZBSBedEinstieg().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -160,9 +153,8 @@ public class ZUB_Bereichsgrenze_Nach_ZBS_AttributeGroupImpl extends EObjectImpl 
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_ZBS_ATTRIBUTE_GROUP__BGRENZE_NACH_ZBS_BED_EINSTIEG:
 				return bgrenzeNachZBSBedEinstieg != null && !bgrenzeNachZBSBedEinstieg.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZUB_Bereichsgrenze_Nach_ZBS_AttributeGroupImpl

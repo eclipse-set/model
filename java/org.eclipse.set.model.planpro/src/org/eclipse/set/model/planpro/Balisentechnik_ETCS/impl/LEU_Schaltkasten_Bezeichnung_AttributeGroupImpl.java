@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -121,9 +120,8 @@ public class LEU_Schaltkasten_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.LEU_SCHALTKASTEN_BEZEICHNUNG_ATTRIBUTE_GROUP__NUMMER_SCHALTKASTEN:
 				return basicSetNummerSchaltkasten(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,9 +134,8 @@ public class LEU_Schaltkasten_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.LEU_SCHALTKASTEN_BEZEICHNUNG_ATTRIBUTE_GROUP__NUMMER_SCHALTKASTEN:
 				return getNummerSchaltkasten();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -152,10 +149,8 @@ public class LEU_Schaltkasten_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 			case Balisentechnik_ETCSPackage.LEU_SCHALTKASTEN_BEZEICHNUNG_ATTRIBUTE_GROUP__NUMMER_SCHALTKASTEN:
 				setNummerSchaltkasten((Nummer_Schaltkasten_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -169,10 +164,8 @@ public class LEU_Schaltkasten_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 			case Balisentechnik_ETCSPackage.LEU_SCHALTKASTEN_BEZEICHNUNG_ATTRIBUTE_GROUP__NUMMER_SCHALTKASTEN:
 				setNummerSchaltkasten((Nummer_Schaltkasten_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -185,9 +178,8 @@ public class LEU_Schaltkasten_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case Balisentechnik_ETCSPackage.LEU_SCHALTKASTEN_BEZEICHNUNG_ATTRIBUTE_GROUP__NUMMER_SCHALTKASTEN:
 				return nummerSchaltkasten != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //LEU_Schaltkasten_Bezeichnung_AttributeGroupImpl

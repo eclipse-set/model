@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Block.impl;
 
@@ -357,9 +356,8 @@ public class Block_Element_Erlaubnis_AttributeGroupImpl extends EObjectImpl impl
 				return basicSetErlaubnisabgabespeicherung(null, msgs);
 			case BlockPackage.BLOCK_ELEMENT_ERLAUBNIS_ATTRIBUTE_GROUP__ERLAUBNISHOLEN:
 				return basicSetErlaubnisholen(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -380,9 +378,8 @@ public class Block_Element_Erlaubnis_AttributeGroupImpl extends EObjectImpl impl
 				return getErlaubnisabgabespeicherung();
 			case BlockPackage.BLOCK_ELEMENT_ERLAUBNIS_ATTRIBUTE_GROUP__ERLAUBNISHOLEN:
 				return getErlaubnisholen();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -408,10 +405,8 @@ public class Block_Element_Erlaubnis_AttributeGroupImpl extends EObjectImpl impl
 			case BlockPackage.BLOCK_ELEMENT_ERLAUBNIS_ATTRIBUTE_GROUP__ERLAUBNISHOLEN:
 				setErlaubnisholen((Erlaubnisholen_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -437,10 +432,8 @@ public class Block_Element_Erlaubnis_AttributeGroupImpl extends EObjectImpl impl
 			case BlockPackage.BLOCK_ELEMENT_ERLAUBNIS_ATTRIBUTE_GROUP__ERLAUBNISHOLEN:
 				setErlaubnisholen((Erlaubnisholen_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -461,9 +454,8 @@ public class Block_Element_Erlaubnis_AttributeGroupImpl extends EObjectImpl impl
 				return erlaubnisabgabespeicherung != null;
 			case BlockPackage.BLOCK_ELEMENT_ERLAUBNIS_ATTRIBUTE_GROUP__ERLAUBNISHOLEN:
 				return erlaubnisholen != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Block_Element_Erlaubnis_AttributeGroupImpl

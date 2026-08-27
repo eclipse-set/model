@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Nahbedienung;
 
@@ -159,8 +158,8 @@ public enum ENUMNBArt implements Enumerator {
 			case ENUMNB_ART_NB_G_VALUE: return ENUMNB_ART_NB_G;
 			case ENUMNB_ART_NB_R_VALUE: return ENUMNB_ART_NB_R;
 			case ENUMNB_ART_NB_W_VALUE: return ENUMNB_ART_NB_W;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

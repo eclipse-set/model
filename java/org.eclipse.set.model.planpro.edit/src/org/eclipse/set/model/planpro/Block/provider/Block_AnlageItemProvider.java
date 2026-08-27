@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Block.provider;
 
@@ -24,13 +23,13 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.Basisobjekte.provider.Basis_ObjektItemProvider;
 
 import org.eclipse.set.model.planpro.Block.BlockFactory;
 import org.eclipse.set.model.planpro.Block.BlockPackage;
 import org.eclipse.set.model.planpro.Block.Block_Anlage;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Verweise.VerweiseFactory;
 
@@ -150,10 +149,8 @@ public class Block_AnlageItemProvider extends Basis_ObjektItemProvider {
 			case BlockPackage.BLOCK_ANLAGE__ID_GLEIS_BEZEICHNUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

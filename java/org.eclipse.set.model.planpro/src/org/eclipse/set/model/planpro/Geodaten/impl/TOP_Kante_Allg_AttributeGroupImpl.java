@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Geodaten.impl;
 
@@ -298,9 +297,8 @@ public class TOP_Kante_Allg_AttributeGroupImpl extends EObjectImpl implements TO
 				return basicSetTOPAnschlussB(null, msgs);
 			case GeodatenPackage.TOP_KANTE_ALLG_ATTRIBUTE_GROUP__TOP_LAENGE:
 				return basicSetTOPLaenge(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -319,9 +317,8 @@ public class TOP_Kante_Allg_AttributeGroupImpl extends EObjectImpl implements TO
 				return getTOPAnschlussB();
 			case GeodatenPackage.TOP_KANTE_ALLG_ATTRIBUTE_GROUP__TOP_LAENGE:
 				return getTOPLaenge();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -344,10 +341,8 @@ public class TOP_Kante_Allg_AttributeGroupImpl extends EObjectImpl implements TO
 			case GeodatenPackage.TOP_KANTE_ALLG_ATTRIBUTE_GROUP__TOP_LAENGE:
 				setTOPLaenge((TOP_Laenge_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -370,10 +365,8 @@ public class TOP_Kante_Allg_AttributeGroupImpl extends EObjectImpl implements TO
 			case GeodatenPackage.TOP_KANTE_ALLG_ATTRIBUTE_GROUP__TOP_LAENGE:
 				setTOPLaenge((TOP_Laenge_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -392,9 +385,8 @@ public class TOP_Kante_Allg_AttributeGroupImpl extends EObjectImpl implements TO
 				return tOPAnschlussB != null;
 			case GeodatenPackage.TOP_KANTE_ALLG_ATTRIBUTE_GROUP__TOP_LAENGE:
 				return tOPLaenge != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //TOP_Kante_Allg_AttributeGroupImpl

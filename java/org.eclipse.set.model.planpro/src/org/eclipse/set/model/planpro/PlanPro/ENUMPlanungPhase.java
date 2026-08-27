@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.PlanPro;
 
@@ -205,8 +204,8 @@ public enum ENUMPlanungPhase implements Enumerator {
 			case ENUM_PLANUNG_PHASE_PT_2_VALUE: return ENUM_PLANUNG_PHASE_PT_2;
 			case ENUM_PLANUNG_PHASE_SONSTIGE_VALUE: return ENUM_PLANUNG_PHASE_SONSTIGE;
 			case ENUM_PLANUNG_PHASE_VP_VALUE: return ENUM_PLANUNG_PHASE_VP;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

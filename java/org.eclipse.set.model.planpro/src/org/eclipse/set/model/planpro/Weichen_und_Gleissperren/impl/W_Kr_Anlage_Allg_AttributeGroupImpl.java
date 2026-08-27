@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Weichen_und_Gleissperren.impl;
 
@@ -239,9 +238,8 @@ public class W_Kr_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements 
 				return basicSetWKrArt(null, msgs);
 			case Weichen_und_GleissperrenPackage.WKR_ANLAGE_ALLG_ATTRIBUTE_GROUP__WKR_GRUNDFORM:
 				return basicSetWKrGrundform(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +256,8 @@ public class W_Kr_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements 
 				return getWKrArt();
 			case Weichen_und_GleissperrenPackage.WKR_ANLAGE_ALLG_ATTRIBUTE_GROUP__WKR_GRUNDFORM:
 				return getWKrGrundform();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +277,8 @@ public class W_Kr_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements 
 			case Weichen_und_GleissperrenPackage.WKR_ANLAGE_ALLG_ATTRIBUTE_GROUP__WKR_GRUNDFORM:
 				setWKrGrundform((W_Kr_Grundform_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +298,8 @@ public class W_Kr_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements 
 			case Weichen_und_GleissperrenPackage.WKR_ANLAGE_ALLG_ATTRIBUTE_GROUP__WKR_GRUNDFORM:
 				setWKrGrundform((W_Kr_Grundform_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +316,8 @@ public class W_Kr_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements 
 				return wKrArt != null;
 			case Weichen_und_GleissperrenPackage.WKR_ANLAGE_ALLG_ATTRIBUTE_GROUP__WKR_GRUNDFORM:
 				return wKrGrundform != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //W_Kr_Anlage_Allg_AttributeGroupImpl

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ortung.provider;
 
@@ -24,13 +23,13 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.Basisobjekte.provider.Punkt_ObjektItemProvider;
 
 import org.eclipse.set.model.planpro.Ortung.FMA_Element;
 import org.eclipse.set.model.planpro.Ortung.OrtungFactory;
 import org.eclipse.set.model.planpro.Ortung.OrtungPackage;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Verweise.VerweiseFactory;
 
@@ -148,10 +147,8 @@ public class FMA_ElementItemProvider extends Punkt_ObjektItemProvider {
 			case OrtungPackage.FMA_ELEMENT__IDFMA_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

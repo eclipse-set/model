@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage;
 
@@ -182,8 +181,8 @@ public enum ENUMZBSSchnittstelle implements Enumerator {
 			case ENUMZBS_SCHNITTSTELLE_NOKIA_ECM_FAST_14400_VALUE: return ENUMZBS_SCHNITTSTELLE_NOKIA_ECM_FAST_14400;
 			case ENUMZBS_SCHNITTSTELLE_NOKIA_ECM_FAST_19200_VALUE: return ENUMZBS_SCHNITTSTELLE_NOKIA_ECM_FAST_19200;
 			case ENUMZBS_SCHNITTSTELLE_SONSTIGE_VALUE: return ENUMZBS_SCHNITTSTELLE_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

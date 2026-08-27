@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.BasisTypen.provider;
 
@@ -30,10 +29,10 @@ import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.BasisTypen.BasisTypenPackage;
 import org.eclipse.set.model.planpro.BasisTypen.ID_Bearbeitungsvermerk_TypeClass;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.BasisTypen.ID_Bearbeitungsvermerk_TypeClass} object.
@@ -195,10 +194,8 @@ public class ID_Bearbeitungsvermerk_TypeClassItemProvider
 			case BasisTypenPackage.ID_BEARBEITUNGSVERMERK_TYPE_CLASS__INVALID_REFERENCE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

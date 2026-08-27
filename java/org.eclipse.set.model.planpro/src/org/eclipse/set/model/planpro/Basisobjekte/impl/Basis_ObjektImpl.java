@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte.impl;
 
@@ -274,9 +273,8 @@ public abstract class Basis_ObjektImpl extends Ur_ObjektImpl implements Basis_Ob
 				return basicSetIDOertlichkeitAusgabe(null, msgs);
 			case BasisobjektePackage.BASIS_OBJEKT__OBJEKTREFERENZEN:
 				return basicSetObjektreferenzen(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -295,9 +293,8 @@ public abstract class Basis_ObjektImpl extends Ur_ObjektImpl implements Basis_Ob
 				return getIDOertlichkeitAusgabe();
 			case BasisobjektePackage.BASIS_OBJEKT__OBJEKTREFERENZEN:
 				return getObjektreferenzen();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -322,10 +319,8 @@ public abstract class Basis_ObjektImpl extends Ur_ObjektImpl implements Basis_Ob
 			case BasisobjektePackage.BASIS_OBJEKT__OBJEKTREFERENZEN:
 				setObjektreferenzen((Objektreferenzen_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -348,10 +343,8 @@ public abstract class Basis_ObjektImpl extends Ur_ObjektImpl implements Basis_Ob
 			case BasisobjektePackage.BASIS_OBJEKT__OBJEKTREFERENZEN:
 				setObjektreferenzen((Objektreferenzen_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -370,9 +363,8 @@ public abstract class Basis_ObjektImpl extends Ur_ObjektImpl implements Basis_Ob
 				return iDOertlichkeitAusgabe != null;
 			case BasisobjektePackage.BASIS_OBJEKT__OBJEKTREFERENZEN:
 				return objektreferenzen != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Basis_ObjektImpl

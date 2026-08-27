@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.BasisTypen;
 
@@ -297,8 +296,8 @@ public enum ENUMAnwendungssystem implements Enumerator {
 			case ENUM_ANWENDUNGSSYSTEM_PZB_VALUE: return ENUM_ANWENDUNGSSYSTEM_PZB;
 			case ENUM_ANWENDUNGSSYSTEM_SONSTIGE_VALUE: return ENUM_ANWENDUNGSSYSTEM_SONSTIGE;
 			case ENUM_ANWENDUNGSSYSTEM_ZBS_VALUE: return ENUM_ANWENDUNGSSYSTEM_ZBS;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

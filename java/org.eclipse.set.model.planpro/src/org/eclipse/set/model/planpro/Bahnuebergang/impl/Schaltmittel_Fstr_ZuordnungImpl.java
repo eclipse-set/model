@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang.impl;
 
@@ -182,9 +181,8 @@ public class Schaltmittel_Fstr_ZuordnungImpl extends Basis_ObjektImpl implements
 				return basicSetIDBUEWSFstrZuordnung(null, msgs);
 			case BahnuebergangPackage.SCHALTMITTEL_FSTR_ZUORDNUNG__ID_SCHALTMITTEL_ZUORDNUNG:
 				return basicSetIDSchaltmittelZuordnung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -199,9 +197,8 @@ public class Schaltmittel_Fstr_ZuordnungImpl extends Basis_ObjektImpl implements
 				return getIDBUEWSFstrZuordnung();
 			case BahnuebergangPackage.SCHALTMITTEL_FSTR_ZUORDNUNG__ID_SCHALTMITTEL_ZUORDNUNG:
 				return getIDSchaltmittelZuordnung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -218,10 +215,8 @@ public class Schaltmittel_Fstr_ZuordnungImpl extends Basis_ObjektImpl implements
 			case BahnuebergangPackage.SCHALTMITTEL_FSTR_ZUORDNUNG__ID_SCHALTMITTEL_ZUORDNUNG:
 				setIDSchaltmittelZuordnung((ID_Schaltmittel_Zuordnung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -238,10 +233,8 @@ public class Schaltmittel_Fstr_ZuordnungImpl extends Basis_ObjektImpl implements
 			case BahnuebergangPackage.SCHALTMITTEL_FSTR_ZUORDNUNG__ID_SCHALTMITTEL_ZUORDNUNG:
 				setIDSchaltmittelZuordnung((ID_Schaltmittel_Zuordnung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -256,9 +249,8 @@ public class Schaltmittel_Fstr_ZuordnungImpl extends Basis_ObjektImpl implements
 				return iDBUEWSFstrZuordnung != null;
 			case BahnuebergangPackage.SCHALTMITTEL_FSTR_ZUORDNUNG__ID_SCHALTMITTEL_ZUORDNUNG:
 				return iDSchaltmittelZuordnung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Schaltmittel_Fstr_ZuordnungImpl

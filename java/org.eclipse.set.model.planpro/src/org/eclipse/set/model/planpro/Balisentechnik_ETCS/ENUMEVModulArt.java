@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -205,8 +204,8 @@ public enum ENUMEVModulArt implements Enumerator {
 			case ENUMEV_MODUL_ART_NETZGEBUNDEN_VALUE: return ENUMEV_MODUL_ART_NETZGEBUNDEN;
 			case ENUMEV_MODUL_ART_PO_PV_VALUE: return ENUMEV_MODUL_ART_PO_PV;
 			case ENUMEV_MODUL_ART_SONSTIGE_VALUE: return ENUMEV_MODUL_ART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

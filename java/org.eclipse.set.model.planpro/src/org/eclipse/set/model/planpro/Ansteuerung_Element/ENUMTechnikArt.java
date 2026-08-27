@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ansteuerung_Element;
 
@@ -228,8 +227,8 @@ public enum ENUMTechnikArt implements Enumerator {
 			case ENUM_TECHNIK_ART_SBI_INTERN_KUPFERKABEL_VALUE: return ENUM_TECHNIK_ART_SBI_INTERN_KUPFERKABEL;
 			case ENUM_TECHNIK_ART_SBI_INTERN_LWL_FASER_VALUE: return ENUM_TECHNIK_ART_SBI_INTERN_LWL_FASER;
 			case ENUM_TECHNIK_ART_SONSTIGE_VALUE: return ENUM_TECHNIK_ART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

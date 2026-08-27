@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte;
 
@@ -182,8 +181,8 @@ public enum ENUMBestandsrelevanz implements Enumerator {
 			case ENUM_BESTANDSRELEVANZ_BESTANDSDOKUMENTATION_VALUE: return ENUM_BESTANDSRELEVANZ_BESTANDSDOKUMENTATION;
 			case ENUM_BESTANDSRELEVANZ_DAUERHAFT_VALUE: return ENUM_BESTANDSRELEVANZ_DAUERHAFT;
 			case ENUM_BESTANDSRELEVANZ_NEIN_VALUE: return ENUM_BESTANDSRELEVANZ_NEIN;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -181,9 +180,8 @@ public class Datenpunkt_Einmesspunkt_AttributeGroupImpl extends EObjectImpl impl
 				return basicSetAbstandEinmesspunkt(null, msgs);
 			case Balisentechnik_ETCSPackage.DATENPUNKT_EINMESSPUNKT_ATTRIBUTE_GROUP__ID_EINMESSPUNKT:
 				return basicSetIDEinmesspunkt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -198,9 +196,8 @@ public class Datenpunkt_Einmesspunkt_AttributeGroupImpl extends EObjectImpl impl
 				return getAbstandEinmesspunkt();
 			case Balisentechnik_ETCSPackage.DATENPUNKT_EINMESSPUNKT_ATTRIBUTE_GROUP__ID_EINMESSPUNKT:
 				return getIDEinmesspunkt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -217,10 +214,8 @@ public class Datenpunkt_Einmesspunkt_AttributeGroupImpl extends EObjectImpl impl
 			case Balisentechnik_ETCSPackage.DATENPUNKT_EINMESSPUNKT_ATTRIBUTE_GROUP__ID_EINMESSPUNKT:
 				setIDEinmesspunkt((ID_Markanter_Punkt_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -237,10 +232,8 @@ public class Datenpunkt_Einmesspunkt_AttributeGroupImpl extends EObjectImpl impl
 			case Balisentechnik_ETCSPackage.DATENPUNKT_EINMESSPUNKT_ATTRIBUTE_GROUP__ID_EINMESSPUNKT:
 				setIDEinmesspunkt((ID_Markanter_Punkt_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -255,9 +248,8 @@ public class Datenpunkt_Einmesspunkt_AttributeGroupImpl extends EObjectImpl impl
 				return abstandEinmesspunkt != null;
 			case Balisentechnik_ETCSPackage.DATENPUNKT_EINMESSPUNKT_ATTRIBUTE_GROUP__ID_EINMESSPUNKT:
 				return iDEinmesspunkt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Datenpunkt_Einmesspunkt_AttributeGroupImpl

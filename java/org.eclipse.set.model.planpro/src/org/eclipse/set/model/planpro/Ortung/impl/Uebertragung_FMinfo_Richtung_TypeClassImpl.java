@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ortung.impl;
 
@@ -144,9 +143,8 @@ public class Uebertragung_FMinfo_Richtung_TypeClassImpl extends BasisAttribut_At
 		switch (featureID) {
 			case OrtungPackage.UEBERTRAGUNG_FMINFO_RICHTUNG_TYPE_CLASS__WERT:
 				return getWert();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -160,10 +158,8 @@ public class Uebertragung_FMinfo_Richtung_TypeClassImpl extends BasisAttribut_At
 			case OrtungPackage.UEBERTRAGUNG_FMINFO_RICHTUNG_TYPE_CLASS__WERT:
 				setWert((ENUMUebertragungFMinfoRichtung)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -177,10 +173,8 @@ public class Uebertragung_FMinfo_Richtung_TypeClassImpl extends BasisAttribut_At
 			case OrtungPackage.UEBERTRAGUNG_FMINFO_RICHTUNG_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -193,9 +187,8 @@ public class Uebertragung_FMinfo_Richtung_TypeClassImpl extends BasisAttribut_At
 		switch (featureID) {
 			case OrtungPackage.UEBERTRAGUNG_FMINFO_RICHTUNG_TYPE_CLASS__WERT:
 				return isSetWert();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

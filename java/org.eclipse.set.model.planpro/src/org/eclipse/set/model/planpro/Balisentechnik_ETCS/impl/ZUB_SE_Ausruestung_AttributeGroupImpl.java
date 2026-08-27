@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -155,9 +154,8 @@ public class ZUB_SE_Ausruestung_AttributeGroupImpl extends EObjectImpl implement
 				return ((InternalEList<?>)getAnwendungssystem()).basicRemove(otherEnd, msgs);
 			case Balisentechnik_ETCSPackage.ZUB_SE_AUSRUESTUNG_ATTRIBUTE_GROUP__BASELINE_SYSTEM_VERSION:
 				return basicSetBaselineSystemVersion(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -172,9 +170,8 @@ public class ZUB_SE_Ausruestung_AttributeGroupImpl extends EObjectImpl implement
 				return getAnwendungssystem();
 			case Balisentechnik_ETCSPackage.ZUB_SE_AUSRUESTUNG_ATTRIBUTE_GROUP__BASELINE_SYSTEM_VERSION:
 				return getBaselineSystemVersion();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -193,10 +190,8 @@ public class ZUB_SE_Ausruestung_AttributeGroupImpl extends EObjectImpl implement
 			case Balisentechnik_ETCSPackage.ZUB_SE_AUSRUESTUNG_ATTRIBUTE_GROUP__BASELINE_SYSTEM_VERSION:
 				setBaselineSystemVersion((Baseline_System_Version_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -213,10 +208,8 @@ public class ZUB_SE_Ausruestung_AttributeGroupImpl extends EObjectImpl implement
 			case Balisentechnik_ETCSPackage.ZUB_SE_AUSRUESTUNG_ATTRIBUTE_GROUP__BASELINE_SYSTEM_VERSION:
 				setBaselineSystemVersion((Baseline_System_Version_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -231,9 +224,8 @@ public class ZUB_SE_Ausruestung_AttributeGroupImpl extends EObjectImpl implement
 				return anwendungssystem != null && !anwendungssystem.isEmpty();
 			case Balisentechnik_ETCSPackage.ZUB_SE_AUSRUESTUNG_ATTRIBUTE_GROUP__BASELINE_SYSTEM_VERSION:
 				return baselineSystemVersion != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZUB_SE_Ausruestung_AttributeGroupImpl

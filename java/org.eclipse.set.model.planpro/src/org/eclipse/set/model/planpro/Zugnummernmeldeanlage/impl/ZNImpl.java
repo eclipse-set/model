@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl;
 
@@ -535,9 +534,8 @@ public class ZNImpl extends Basis_ObjektImpl implements ZN {
 				return basicSetIDZNUnterstation(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN__ZN_ALLG:
 				return basicSetZNAllg(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -564,9 +562,8 @@ public class ZNImpl extends Basis_ObjektImpl implements ZN {
 				return getIDZNUnterstation();
 			case ZugnummernmeldeanlagePackage.ZN__ZN_ALLG:
 				return getZNAllg();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -601,10 +598,8 @@ public class ZNImpl extends Basis_ObjektImpl implements ZN {
 			case ZugnummernmeldeanlagePackage.ZN__ZN_ALLG:
 				setZNAllg((ZN_Allg_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -639,10 +634,8 @@ public class ZNImpl extends Basis_ObjektImpl implements ZN {
 			case ZugnummernmeldeanlagePackage.ZN__ZN_ALLG:
 				setZNAllg((ZN_Allg_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -669,9 +662,8 @@ public class ZNImpl extends Basis_ObjektImpl implements ZN {
 				return iDZNUnterstation != null;
 			case ZugnummernmeldeanlagePackage.ZN__ZN_ALLG:
 				return zNAllg != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZNImpl

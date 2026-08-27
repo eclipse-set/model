@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Schluesselabhaengigkeiten;
 
@@ -159,8 +158,8 @@ public enum ENUMSonderanlageLage implements Enumerator {
 			case ENUM_SONDERANLAGE_LAGE_BEFAHRBAR_VALUE: return ENUM_SONDERANLAGE_LAGE_BEFAHRBAR;
 			case ENUM_SONDERANLAGE_LAGE_NICHT_BEFAHRBAR_VALUE: return ENUM_SONDERANLAGE_LAGE_NICHT_BEFAHRBAR;
 			case ENUM_SONDERANLAGE_LAGE_SONSTIGE_VALUE: return ENUM_SONDERANLAGE_LAGE_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

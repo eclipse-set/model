@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -181,9 +180,8 @@ public class Ziel_W_Element_AttributeGroupImpl extends EObjectImpl implements Zi
 				return basicSetIDZielWElement(null, msgs);
 			case Balisentechnik_ETCSPackage.ZIEL_WELEMENT_ATTRIBUTE_GROUP__WANSCHLUSS:
 				return basicSetWAnschluss(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -198,9 +196,8 @@ public class Ziel_W_Element_AttributeGroupImpl extends EObjectImpl implements Zi
 				return getIDZielWElement();
 			case Balisentechnik_ETCSPackage.ZIEL_WELEMENT_ATTRIBUTE_GROUP__WANSCHLUSS:
 				return getWAnschluss();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -217,10 +214,8 @@ public class Ziel_W_Element_AttributeGroupImpl extends EObjectImpl implements Zi
 			case Balisentechnik_ETCSPackage.ZIEL_WELEMENT_ATTRIBUTE_GROUP__WANSCHLUSS:
 				setWAnschluss((W_Anschluss_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -237,10 +232,8 @@ public class Ziel_W_Element_AttributeGroupImpl extends EObjectImpl implements Zi
 			case Balisentechnik_ETCSPackage.ZIEL_WELEMENT_ATTRIBUTE_GROUP__WANSCHLUSS:
 				setWAnschluss((W_Anschluss_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -255,9 +248,8 @@ public class Ziel_W_Element_AttributeGroupImpl extends EObjectImpl implements Zi
 				return iDZielWElement != null;
 			case Balisentechnik_ETCSPackage.ZIEL_WELEMENT_ATTRIBUTE_GROUP__WANSCHLUSS:
 				return wAnschluss != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Ziel_W_Element_AttributeGroupImpl

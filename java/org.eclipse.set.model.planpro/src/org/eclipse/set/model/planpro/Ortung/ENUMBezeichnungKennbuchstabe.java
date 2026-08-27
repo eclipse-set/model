@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ortung;
 
@@ -182,8 +181,8 @@ public enum ENUMBezeichnungKennbuchstabe implements Enumerator {
 			case ENUM_BEZEICHNUNG_KENNBUCHSTABE_G_VALUE: return ENUM_BEZEICHNUNG_KENNBUCHSTABE_G;
 			case ENUM_BEZEICHNUNG_KENNBUCHSTABE_K_VALUE: return ENUM_BEZEICHNUNG_KENNBUCHSTABE_K;
 			case ENUM_BEZEICHNUNG_KENNBUCHSTABE_W_VALUE: return ENUM_BEZEICHNUNG_KENNBUCHSTABE_W;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bedienung;
 
@@ -435,8 +434,8 @@ public enum ENUMAWert implements Enumerator {
 			case ENUMA_WERT_208_VALUE: return ENUMA_WERT_208;
 			case ENUMA_WERT_224_VALUE: return ENUMA_WERT_224;
 			case ENUMA_WERT_240_VALUE: return ENUMA_WERT_240;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

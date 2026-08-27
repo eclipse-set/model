@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte;
 
@@ -228,8 +227,8 @@ public enum ENUMDateityp implements Enumerator {
 			case ENUM_DATEITYP_PDF_VALUE: return ENUM_DATEITYP_PDF;
 			case ENUM_DATEITYP_PNG_VALUE: return ENUM_DATEITYP_PNG;
 			case ENUM_DATEITYP_TIF_VALUE: return ENUM_DATEITYP_TIF;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

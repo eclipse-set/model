@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Regelzeichnung.impl;
 
@@ -298,9 +297,8 @@ public class Regelzeichnung_Allg_AttributeGroupImpl extends EObjectImpl implemen
 				return basicSetTitel(null, msgs);
 			case RegelzeichnungPackage.REGELZEICHNUNG_ALLG_ATTRIBUTE_GROUP__UNTERTITEL:
 				return basicSetUntertitel(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -319,9 +317,8 @@ public class Regelzeichnung_Allg_AttributeGroupImpl extends EObjectImpl implemen
 				return getTitel();
 			case RegelzeichnungPackage.REGELZEICHNUNG_ALLG_ATTRIBUTE_GROUP__UNTERTITEL:
 				return getUntertitel();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -344,10 +341,8 @@ public class Regelzeichnung_Allg_AttributeGroupImpl extends EObjectImpl implemen
 			case RegelzeichnungPackage.REGELZEICHNUNG_ALLG_ATTRIBUTE_GROUP__UNTERTITEL:
 				setUntertitel((Untertitel_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -370,10 +365,8 @@ public class Regelzeichnung_Allg_AttributeGroupImpl extends EObjectImpl implemen
 			case RegelzeichnungPackage.REGELZEICHNUNG_ALLG_ATTRIBUTE_GROUP__UNTERTITEL:
 				setUntertitel((Untertitel_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -392,9 +385,8 @@ public class Regelzeichnung_Allg_AttributeGroupImpl extends EObjectImpl implemen
 				return titel != null;
 			case RegelzeichnungPackage.REGELZEICHNUNG_ALLG_ATTRIBUTE_GROUP__UNTERTITEL:
 				return untertitel != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Regelzeichnung_Allg_AttributeGroupImpl

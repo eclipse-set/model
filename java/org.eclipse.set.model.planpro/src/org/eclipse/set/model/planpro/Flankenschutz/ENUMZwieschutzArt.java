@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Flankenschutz;
 
@@ -159,8 +158,8 @@ public enum ENUMZwieschutzArt implements Enumerator {
 			case ENUM_ZWIESCHUTZ_ART_ECHT_VALUE: return ENUM_ZWIESCHUTZ_ART_ECHT;
 			case ENUM_ZWIESCHUTZ_ART_ECHT_EIGEN_VALUE: return ENUM_ZWIESCHUTZ_ART_ECHT_EIGEN;
 			case ENUM_ZWIESCHUTZ_ART_EIGEN_VALUE: return ENUM_ZWIESCHUTZ_ART_EIGEN;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

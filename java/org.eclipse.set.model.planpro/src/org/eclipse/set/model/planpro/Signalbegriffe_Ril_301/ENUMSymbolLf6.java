@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signalbegriffe_Ril_301;
 
@@ -435,8 +434,8 @@ public enum ENUMSymbolLf6 implements Enumerator {
 			case ENUM_SYMBOL_LF_613_VALUE: return ENUM_SYMBOL_LF_613;
 			case ENUM_SYMBOL_LF_614_VALUE: return ENUM_SYMBOL_LF_614;
 			case ENUM_SYMBOL_LF_615_VALUE: return ENUM_SYMBOL_LF_615;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

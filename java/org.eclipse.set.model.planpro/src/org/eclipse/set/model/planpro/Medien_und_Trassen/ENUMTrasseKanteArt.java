@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Medien_und_Trassen;
 
@@ -300,8 +299,8 @@ public enum ENUMTrasseKanteArt implements Enumerator {
 			case ENUM_TRASSE_KANTE_ART_TROGTRASSE_VALUE: return ENUM_TRASSE_KANTE_ART_TROGTRASSE;
 			case ENUM_TRASSE_KANTE_ART_TROGTRASSE_AUFGESTAENDERT_VALUE: return ENUM_TRASSE_KANTE_ART_TROGTRASSE_AUFGESTAENDERT;
 			case ENUM_TRASSE_KANTE_ART_TROGTRASSE_BEHELF_VALUE: return ENUM_TRASSE_KANTE_ART_TROGTRASSE_BEHELF;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

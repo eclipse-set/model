@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Layoutinformationen;
 
@@ -343,8 +342,8 @@ public enum ENUMLageplanArt implements Enumerator {
 			case ENUM_LAGEPLAN_ART_STAMMKABELÜBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_STAMMKABELÜBERSICHTSPLAN;
 			case ENUM_LAGEPLAN_ART_ZLV_BUS_UEBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_ZLV_BUS_UEBERSICHTSPLAN;
 			case ENUM_LAGEPLAN_ART_ZN_UEBERSICHTSPLAN_VALUE: return ENUM_LAGEPLAN_ART_ZN_UEBERSICHTSPLAN;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

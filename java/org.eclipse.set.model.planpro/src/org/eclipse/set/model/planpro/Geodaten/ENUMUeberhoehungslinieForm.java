@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Geodaten;
 
@@ -251,8 +250,8 @@ public enum ENUMUeberhoehungslinieForm implements Enumerator {
 			case ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_BLOSS_VALUE: return ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_BLOSS;
 			case ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_S_VALUE: return ENUM_UEBERHOEHUNGSLINIE_FORM_SCHERE_S;
 			case ENUM_UEBERHOEHUNGSLINIE_FORM_SONSTIGE_VALUE: return ENUM_UEBERHOEHUNGSLINIE_FORM_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

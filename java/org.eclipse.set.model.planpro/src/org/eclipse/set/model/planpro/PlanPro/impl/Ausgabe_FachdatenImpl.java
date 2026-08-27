@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.PlanPro.impl;
 
@@ -239,9 +238,8 @@ public class Ausgabe_FachdatenImpl extends Ur_ObjektImpl implements Ausgabe_Fach
 				return basicSetLSTZustandZiel(null, msgs);
 			case PlanProPackage.AUSGABE_FACHDATEN__UNTERGEWERK_ART:
 				return basicSetUntergewerkArt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +256,8 @@ public class Ausgabe_FachdatenImpl extends Ur_ObjektImpl implements Ausgabe_Fach
 				return getLSTZustandZiel();
 			case PlanProPackage.AUSGABE_FACHDATEN__UNTERGEWERK_ART:
 				return getUntergewerkArt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +277,8 @@ public class Ausgabe_FachdatenImpl extends Ur_ObjektImpl implements Ausgabe_Fach
 			case PlanProPackage.AUSGABE_FACHDATEN__UNTERGEWERK_ART:
 				setUntergewerkArt((Untergewerk_Art_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +298,8 @@ public class Ausgabe_FachdatenImpl extends Ur_ObjektImpl implements Ausgabe_Fach
 			case PlanProPackage.AUSGABE_FACHDATEN__UNTERGEWERK_ART:
 				setUntergewerkArt((Untergewerk_Art_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +316,8 @@ public class Ausgabe_FachdatenImpl extends Ur_ObjektImpl implements Ausgabe_Fach
 				return lSTZustandZiel != null;
 			case PlanProPackage.AUSGABE_FACHDATEN__UNTERGEWERK_ART:
 				return untergewerkArt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Ausgabe_FachdatenImpl

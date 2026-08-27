@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale;
 
@@ -320,8 +319,8 @@ public enum ENUMSignalArt implements Enumerator {
 			case ENUM_SIGNAL_ART_VORSIGNAL_VALUE: return ENUM_SIGNAL_ART_VORSIGNAL;
 			case ENUM_SIGNAL_ART_VORSIGNALWIEDERHOLER_VALUE: return ENUM_SIGNAL_ART_VORSIGNALWIEDERHOLER;
 			case ENUM_SIGNAL_ART_ZUGDECKUNGSSIGNAL_VALUE: return ENUM_SIGNAL_ART_ZUGDECKUNGSSIGNAL;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnsteig.provider;
 
@@ -24,13 +23,13 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.Bahnsteig.BahnsteigFactory;
 import org.eclipse.set.model.planpro.Bahnsteig.BahnsteigPackage;
 import org.eclipse.set.model.planpro.Bahnsteig.Bahnsteig_Kante;
 
 import org.eclipse.set.model.planpro.Basisobjekte.provider.Bereich_ObjektItemProvider;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Verweise.VerweiseFactory;
 
@@ -148,10 +147,8 @@ public class Bahnsteig_KanteItemProvider extends Bereich_ObjektItemProvider {
 			case BahnsteigPackage.BAHNSTEIG_KANTE__ID_BAHNSTEIG_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -182,9 +181,8 @@ public class ZBS_SignalImpl extends Basis_ObjektImpl implements ZBS_Signal {
 				return basicSetIDSignal(null, msgs);
 			case Balisentechnik_ETCSPackage.ZBS_SIGNAL__ZBS_SIGNAL_SIGNALABSTAND:
 				return basicSetZBSSignalSignalabstand(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -199,9 +197,8 @@ public class ZBS_SignalImpl extends Basis_ObjektImpl implements ZBS_Signal {
 				return getIDSignal();
 			case Balisentechnik_ETCSPackage.ZBS_SIGNAL__ZBS_SIGNAL_SIGNALABSTAND:
 				return getZBSSignalSignalabstand();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -218,10 +215,8 @@ public class ZBS_SignalImpl extends Basis_ObjektImpl implements ZBS_Signal {
 			case Balisentechnik_ETCSPackage.ZBS_SIGNAL__ZBS_SIGNAL_SIGNALABSTAND:
 				setZBSSignalSignalabstand((ZBS_Signal_Signalabstand_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -238,10 +233,8 @@ public class ZBS_SignalImpl extends Basis_ObjektImpl implements ZBS_Signal {
 			case Balisentechnik_ETCSPackage.ZBS_SIGNAL__ZBS_SIGNAL_SIGNALABSTAND:
 				setZBSSignalSignalabstand((ZBS_Signal_Signalabstand_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -256,9 +249,8 @@ public class ZBS_SignalImpl extends Basis_ObjektImpl implements ZBS_Signal {
 				return iDSignal != null;
 			case Balisentechnik_ETCSPackage.ZBS_SIGNAL__ZBS_SIGNAL_SIGNALABSTAND:
 				return zBSSignalSignalabstand != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZBS_SignalImpl

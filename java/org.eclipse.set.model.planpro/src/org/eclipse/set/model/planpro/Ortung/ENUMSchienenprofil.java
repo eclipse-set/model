@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ortung;
 
@@ -205,8 +204,8 @@ public enum ENUMSchienenprofil implements Enumerator {
 			case ENUM_SCHIENENPROFIL_S54_VALUE: return ENUM_SCHIENENPROFIL_S54;
 			case ENUM_SCHIENENPROFIL_SONSTIGE_VALUE: return ENUM_SCHIENENPROFIL_SONSTIGE;
 			case ENUM_SCHIENENPROFIL_UIC60_VALUE: return ENUM_SCHIENENPROFIL_UIC60;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

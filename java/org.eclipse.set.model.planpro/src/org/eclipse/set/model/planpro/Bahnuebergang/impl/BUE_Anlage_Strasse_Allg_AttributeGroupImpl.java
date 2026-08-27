@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang.impl;
 
@@ -416,9 +415,8 @@ public class BUE_Anlage_Strasse_Allg_AttributeGroupImpl extends EObjectImpl impl
 				return basicSetKlassifizierung(null, msgs);
 			case BahnuebergangPackage.BUE_ANLAGE_STRASSE_ALLG_ATTRIBUTE_GROUP__KREUZUNGSWINKEL:
 				return basicSetKreuzungswinkel(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -441,9 +439,8 @@ public class BUE_Anlage_Strasse_Allg_AttributeGroupImpl extends EObjectImpl impl
 				return getKlassifizierung();
 			case BahnuebergangPackage.BUE_ANLAGE_STRASSE_ALLG_ATTRIBUTE_GROUP__KREUZUNGSWINKEL:
 				return getKreuzungswinkel();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -472,10 +469,8 @@ public class BUE_Anlage_Strasse_Allg_AttributeGroupImpl extends EObjectImpl impl
 			case BahnuebergangPackage.BUE_ANLAGE_STRASSE_ALLG_ATTRIBUTE_GROUP__KREUZUNGSWINKEL:
 				setKreuzungswinkel((Kreuzungswinkel_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -504,10 +499,8 @@ public class BUE_Anlage_Strasse_Allg_AttributeGroupImpl extends EObjectImpl impl
 			case BahnuebergangPackage.BUE_ANLAGE_STRASSE_ALLG_ATTRIBUTE_GROUP__KREUZUNGSWINKEL:
 				setKreuzungswinkel((Kreuzungswinkel_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -530,9 +523,8 @@ public class BUE_Anlage_Strasse_Allg_AttributeGroupImpl extends EObjectImpl impl
 				return klassifizierung != null;
 			case BahnuebergangPackage.BUE_ANLAGE_STRASSE_ALLG_ATTRIBUTE_GROUP__KREUZUNGSWINKEL:
 				return kreuzungswinkel != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //BUE_Anlage_Strasse_Allg_AttributeGroupImpl

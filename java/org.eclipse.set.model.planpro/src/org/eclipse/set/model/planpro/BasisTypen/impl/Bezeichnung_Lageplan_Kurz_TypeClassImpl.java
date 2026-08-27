@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.BasisTypen.impl;
 
@@ -141,9 +140,8 @@ public class Bezeichnung_Lageplan_Kurz_TypeClassImpl extends BasisAttribut_Attri
 		switch (featureID) {
 			case BasisTypenPackage.BEZEICHNUNG_LAGEPLAN_KURZ_TYPE_CLASS__WERT:
 				return getWert();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -157,10 +155,8 @@ public class Bezeichnung_Lageplan_Kurz_TypeClassImpl extends BasisAttribut_Attri
 			case BasisTypenPackage.BEZEICHNUNG_LAGEPLAN_KURZ_TYPE_CLASS__WERT:
 				setWert((String)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -174,10 +170,8 @@ public class Bezeichnung_Lageplan_Kurz_TypeClassImpl extends BasisAttribut_Attri
 			case BasisTypenPackage.BEZEICHNUNG_LAGEPLAN_KURZ_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -190,9 +184,8 @@ public class Bezeichnung_Lageplan_Kurz_TypeClassImpl extends BasisAttribut_Attri
 		switch (featureID) {
 			case BasisTypenPackage.BEZEICHNUNG_LAGEPLAN_KURZ_TYPE_CLASS__WERT:
 				return isSetWert();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

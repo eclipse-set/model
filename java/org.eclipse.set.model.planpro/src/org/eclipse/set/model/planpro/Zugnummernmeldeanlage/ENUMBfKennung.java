@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage;
 
@@ -251,8 +250,8 @@ public enum ENUMBfKennung implements Enumerator {
 			case ENUM_BF_KENNUNG_24_VALUE: return ENUM_BF_KENNUNG_24;
 			case ENUM_BF_KENNUNG_50_VALUE: return ENUM_BF_KENNUNG_50;
 			case ENUM_BF_KENNUNG_51_VALUE: return ENUM_BF_KENNUNG_51;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

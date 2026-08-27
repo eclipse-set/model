@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale;
 
@@ -228,8 +227,8 @@ public enum ENUMRahmenArt implements Enumerator {
 			case ENUM_RAHMEN_ART_SCHIRM_VALUE: return ENUM_RAHMEN_ART_SCHIRM;
 			case ENUM_RAHMEN_ART_SONSTIGE_VALUE: return ENUM_RAHMEN_ART_SONSTIGE;
 			case ENUM_RAHMEN_ART_ZUSATZANZEIGER_VALUE: return ENUM_RAHMEN_ART_ZUSATZANZEIGER;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Block;
 
@@ -182,8 +181,8 @@ public enum ENUMSchaltung implements Enumerator {
 			case ENUM_SCHALTUNG_6DRAHTSCHALTUNG_VALUE: return ENUM_SCHALTUNG_6DRAHTSCHALTUNG;
 			case ENUM_SCHALTUNG_9DRAHTSCHALTUNG_VALUE: return ENUM_SCHALTUNG_9DRAHTSCHALTUNG;
 			case ENUM_SCHALTUNG_SONSTIGE_VALUE: return ENUM_SCHALTUNG_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

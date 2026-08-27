@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte;
 
@@ -274,8 +273,8 @@ public enum ENUMObjektzustandBesonders implements Enumerator {
 			case ENUM_OBJEKTZUSTAND_BESONDERS_SONSTIGE_VALUE: return ENUM_OBJEKTZUSTAND_BESONDERS_SONSTIGE;
 			case ENUM_OBJEKTZUSTAND_BESONDERS_STANDORTFERN_ANGESTEUERT_UNGUELTIG_VALUE: return ENUM_OBJEKTZUSTAND_BESONDERS_STANDORTFERN_ANGESTEUERT_UNGUELTIG;
 			case ENUM_OBJEKTZUSTAND_BESONDERS_STANDORTFERN_NICHT_ANGESTEUERT_UNGUELTIG_VALUE: return ENUM_OBJEKTZUSTAND_BESONDERS_STANDORTFERN_NICHT_ANGESTEUERT_UNGUELTIG;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang.impl;
 
@@ -357,9 +356,8 @@ public class Verkehrszeichen_Andreaskreuz_AttributeGroupImpl extends EObjectImpl
 				return basicSetSchutzbuegel(null, msgs);
 			case BahnuebergangPackage.VERKEHRSZEICHEN_ANDREASKREUZ_ATTRIBUTE_GROUP__ZUSATZSCHILD:
 				return basicSetZusatzschild(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -380,9 +378,8 @@ public class Verkehrszeichen_Andreaskreuz_AttributeGroupImpl extends EObjectImpl
 				return getSchutzbuegel();
 			case BahnuebergangPackage.VERKEHRSZEICHEN_ANDREASKREUZ_ATTRIBUTE_GROUP__ZUSATZSCHILD:
 				return getZusatzschild();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -408,10 +405,8 @@ public class Verkehrszeichen_Andreaskreuz_AttributeGroupImpl extends EObjectImpl
 			case BahnuebergangPackage.VERKEHRSZEICHEN_ANDREASKREUZ_ATTRIBUTE_GROUP__ZUSATZSCHILD:
 				setZusatzschild((Zusatzschild_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -437,10 +432,8 @@ public class Verkehrszeichen_Andreaskreuz_AttributeGroupImpl extends EObjectImpl
 			case BahnuebergangPackage.VERKEHRSZEICHEN_ANDREASKREUZ_ATTRIBUTE_GROUP__ZUSATZSCHILD:
 				setZusatzschild((Zusatzschild_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -461,9 +454,8 @@ public class Verkehrszeichen_Andreaskreuz_AttributeGroupImpl extends EObjectImpl
 				return schutzbuegel != null;
 			case BahnuebergangPackage.VERKEHRSZEICHEN_ANDREASKREUZ_ATTRIBUTE_GROUP__ZUSATZSCHILD:
 				return zusatzschild != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Verkehrszeichen_Andreaskreuz_AttributeGroupImpl

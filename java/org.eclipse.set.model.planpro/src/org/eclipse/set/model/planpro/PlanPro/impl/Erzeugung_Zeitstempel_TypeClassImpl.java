@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.PlanPro.impl;
 
@@ -145,9 +144,8 @@ public class Erzeugung_Zeitstempel_TypeClassImpl extends BasisAttribut_Attribute
 		switch (featureID) {
 			case PlanProPackage.ERZEUGUNG_ZEITSTEMPEL_TYPE_CLASS__WERT:
 				return getWert();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -161,10 +159,8 @@ public class Erzeugung_Zeitstempel_TypeClassImpl extends BasisAttribut_Attribute
 			case PlanProPackage.ERZEUGUNG_ZEITSTEMPEL_TYPE_CLASS__WERT:
 				setWert((XMLGregorianCalendar)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -178,10 +174,8 @@ public class Erzeugung_Zeitstempel_TypeClassImpl extends BasisAttribut_Attribute
 			case PlanProPackage.ERZEUGUNG_ZEITSTEMPEL_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -194,9 +188,8 @@ public class Erzeugung_Zeitstempel_TypeClassImpl extends BasisAttribut_Attribute
 		switch (featureID) {
 			case PlanProPackage.ERZEUGUNG_ZEITSTEMPEL_TYPE_CLASS__WERT:
 				return isSetWert();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ortung.impl;
 
@@ -298,9 +297,8 @@ public class FMA_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements F
 				return basicSetFMAIsolierung(null, msgs);
 			case OrtungPackage.FMA_ANLAGE_ALLG_ATTRIBUTE_GROUP__FMA_TYP:
 				return basicSetFMATyp(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -319,9 +317,8 @@ public class FMA_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements F
 				return getFMAIsolierung();
 			case OrtungPackage.FMA_ANLAGE_ALLG_ATTRIBUTE_GROUP__FMA_TYP:
 				return getFMATyp();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -344,10 +341,8 @@ public class FMA_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements F
 			case OrtungPackage.FMA_ANLAGE_ALLG_ATTRIBUTE_GROUP__FMA_TYP:
 				setFMATyp((FMA_Typ_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -370,10 +365,8 @@ public class FMA_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements F
 			case OrtungPackage.FMA_ANLAGE_ALLG_ATTRIBUTE_GROUP__FMA_TYP:
 				setFMATyp((FMA_Typ_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -392,9 +385,8 @@ public class FMA_Anlage_Allg_AttributeGroupImpl extends EObjectImpl implements F
 				return fMAIsolierung != null;
 			case OrtungPackage.FMA_ANLAGE_ALLG_ATTRIBUTE_GROUP__FMA_TYP:
 				return fMATyp != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //FMA_Anlage_Allg_AttributeGroupImpl

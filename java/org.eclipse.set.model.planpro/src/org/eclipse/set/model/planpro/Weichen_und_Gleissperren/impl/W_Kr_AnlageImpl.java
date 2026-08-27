@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Weichen_und_Gleissperren.impl;
 
@@ -241,9 +240,8 @@ public class W_Kr_AnlageImpl extends Basis_ObjektImpl implements W_Kr_Anlage {
 				return basicSetIDSignal(null, msgs);
 			case Weichen_und_GleissperrenPackage.WKR_ANLAGE__WKR_ANLAGE_ALLG:
 				return basicSetWKrAnlageAllg(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -260,9 +258,8 @@ public class W_Kr_AnlageImpl extends Basis_ObjektImpl implements W_Kr_Anlage {
 				return getIDSignal();
 			case Weichen_und_GleissperrenPackage.WKR_ANLAGE__WKR_ANLAGE_ALLG:
 				return getWKrAnlageAllg();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -282,10 +279,8 @@ public class W_Kr_AnlageImpl extends Basis_ObjektImpl implements W_Kr_Anlage {
 			case Weichen_und_GleissperrenPackage.WKR_ANLAGE__WKR_ANLAGE_ALLG:
 				setWKrAnlageAllg((W_Kr_Anlage_Allg_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -305,10 +300,8 @@ public class W_Kr_AnlageImpl extends Basis_ObjektImpl implements W_Kr_Anlage {
 			case Weichen_und_GleissperrenPackage.WKR_ANLAGE__WKR_ANLAGE_ALLG:
 				setWKrAnlageAllg((W_Kr_Anlage_Allg_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -325,9 +318,8 @@ public class W_Kr_AnlageImpl extends Basis_ObjektImpl implements W_Kr_Anlage {
 				return iDSignal != null;
 			case Weichen_und_GleissperrenPackage.WKR_ANLAGE__WKR_ANLAGE_ALLG:
 				return wKrAnlageAllg != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //W_Kr_AnlageImpl

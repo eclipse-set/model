@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang;
 
@@ -182,8 +181,8 @@ public enum ENUMBUEBauart implements Enumerator {
 			case ENUMBUE_BAUART_BUE_VALUE: return ENUMBUE_BAUART_BUE;
 			case ENUMBUE_BAUART_NT_RESI_VALUE: return ENUMBUE_BAUART_NT_RESI;
 			case ENUMBUE_BAUART_TRESI_VALUE: return ENUMBUE_BAUART_TRESI;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

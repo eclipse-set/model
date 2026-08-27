@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl;
 
@@ -180,9 +179,8 @@ public class ZLV_Bus_Zuordnung_Allg_AttributeGroupImpl extends EObjectImpl imple
 				return basicSetAnschlussnummer(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_ZUORDNUNG_ALLG_ATTRIBUTE_GROUP__UNTERSTATION_NR:
 				return basicSetUnterstationNr(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,9 +195,8 @@ public class ZLV_Bus_Zuordnung_Allg_AttributeGroupImpl extends EObjectImpl imple
 				return getAnschlussnummer();
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_ZUORDNUNG_ALLG_ATTRIBUTE_GROUP__UNTERSTATION_NR:
 				return getUnterstationNr();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -216,10 +213,8 @@ public class ZLV_Bus_Zuordnung_Allg_AttributeGroupImpl extends EObjectImpl imple
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_ZUORDNUNG_ALLG_ATTRIBUTE_GROUP__UNTERSTATION_NR:
 				setUnterstationNr((Unterstation_Nr_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -236,10 +231,8 @@ public class ZLV_Bus_Zuordnung_Allg_AttributeGroupImpl extends EObjectImpl imple
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_ZUORDNUNG_ALLG_ATTRIBUTE_GROUP__UNTERSTATION_NR:
 				setUnterstationNr((Unterstation_Nr_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -254,9 +247,8 @@ public class ZLV_Bus_Zuordnung_Allg_AttributeGroupImpl extends EObjectImpl imple
 				return anschlussnummer != null;
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_ZUORDNUNG_ALLG_ATTRIBUTE_GROUP__UNTERSTATION_NR:
 				return unterstationNr != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZLV_Bus_Zuordnung_Allg_AttributeGroupImpl

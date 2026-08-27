@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Flankenschutz.impl;
 
@@ -180,9 +179,8 @@ public class Fla_Schutz_Weitergabe_AttributeGroupImpl extends EObjectImpl implem
 				return basicSetIDFlaWeitergabeL(null, msgs);
 			case FlankenschutzPackage.FLA_SCHUTZ_WEITERGABE_ATTRIBUTE_GROUP__ID_FLA_WEITERGABE_R:
 				return basicSetIDFlaWeitergabeR(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,9 +195,8 @@ public class Fla_Schutz_Weitergabe_AttributeGroupImpl extends EObjectImpl implem
 				return getIDFlaWeitergabeL();
 			case FlankenschutzPackage.FLA_SCHUTZ_WEITERGABE_ATTRIBUTE_GROUP__ID_FLA_WEITERGABE_R:
 				return getIDFlaWeitergabeR();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -216,10 +213,8 @@ public class Fla_Schutz_Weitergabe_AttributeGroupImpl extends EObjectImpl implem
 			case FlankenschutzPackage.FLA_SCHUTZ_WEITERGABE_ATTRIBUTE_GROUP__ID_FLA_WEITERGABE_R:
 				setIDFlaWeitergabeR((ID_Fla_Schutz_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -236,10 +231,8 @@ public class Fla_Schutz_Weitergabe_AttributeGroupImpl extends EObjectImpl implem
 			case FlankenschutzPackage.FLA_SCHUTZ_WEITERGABE_ATTRIBUTE_GROUP__ID_FLA_WEITERGABE_R:
 				setIDFlaWeitergabeR((ID_Fla_Schutz_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -254,9 +247,8 @@ public class Fla_Schutz_Weitergabe_AttributeGroupImpl extends EObjectImpl implem
 				return iDFlaWeitergabeL != null;
 			case FlankenschutzPackage.FLA_SCHUTZ_WEITERGABE_ATTRIBUTE_GROUP__ID_FLA_WEITERGABE_R:
 				return iDFlaWeitergabeR != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Fla_Schutz_Weitergabe_AttributeGroupImpl

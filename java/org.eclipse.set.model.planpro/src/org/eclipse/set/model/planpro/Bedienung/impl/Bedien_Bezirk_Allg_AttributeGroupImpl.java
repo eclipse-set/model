@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bedienung.impl;
 
@@ -416,9 +415,8 @@ public class Bedien_Bezirk_Allg_AttributeGroupImpl extends EObjectImpl implement
 				return basicSetSteuerbezirksname(null, msgs);
 			case BedienungPackage.BEDIEN_BEZIRK_ALLG_ATTRIBUTE_GROUP__STEUERBEZIRKSNUMMER:
 				return basicSetSteuerbezirksnummer(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -441,9 +439,8 @@ public class Bedien_Bezirk_Allg_AttributeGroupImpl extends EObjectImpl implement
 				return getSteuerbezirksname();
 			case BedienungPackage.BEDIEN_BEZIRK_ALLG_ATTRIBUTE_GROUP__STEUERBEZIRKSNUMMER:
 				return getSteuerbezirksnummer();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -472,10 +469,8 @@ public class Bedien_Bezirk_Allg_AttributeGroupImpl extends EObjectImpl implement
 			case BedienungPackage.BEDIEN_BEZIRK_ALLG_ATTRIBUTE_GROUP__STEUERBEZIRKSNUMMER:
 				setSteuerbezirksnummer((Steuerbezirksnummer_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -504,10 +499,8 @@ public class Bedien_Bezirk_Allg_AttributeGroupImpl extends EObjectImpl implement
 			case BedienungPackage.BEDIEN_BEZIRK_ALLG_ATTRIBUTE_GROUP__STEUERBEZIRKSNUMMER:
 				setSteuerbezirksnummer((Steuerbezirksnummer_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -530,9 +523,8 @@ public class Bedien_Bezirk_Allg_AttributeGroupImpl extends EObjectImpl implement
 				return steuerbezirksname != null;
 			case BedienungPackage.BEDIEN_BEZIRK_ALLG_ATTRIBUTE_GROUP__STEUERBEZIRKSNUMMER:
 				return steuerbezirksnummer != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Bezirk_Allg_AttributeGroupImpl

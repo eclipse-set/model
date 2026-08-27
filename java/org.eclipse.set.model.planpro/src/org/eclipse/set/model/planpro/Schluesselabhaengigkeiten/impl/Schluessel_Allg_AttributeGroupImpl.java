@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Schluesselabhaengigkeiten.impl;
 
@@ -180,9 +179,8 @@ public class Schluessel_Allg_AttributeGroupImpl extends EObjectImpl implements S
 				return basicSetSchluesselBartform(null, msgs);
 			case SchluesselabhaengigkeitenPackage.SCHLUESSEL_ALLG_ATTRIBUTE_GROUP__SCHLUESSEL_GRUPPE:
 				return basicSetSchluesselGruppe(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,9 +195,8 @@ public class Schluessel_Allg_AttributeGroupImpl extends EObjectImpl implements S
 				return getSchluesselBartform();
 			case SchluesselabhaengigkeitenPackage.SCHLUESSEL_ALLG_ATTRIBUTE_GROUP__SCHLUESSEL_GRUPPE:
 				return getSchluesselGruppe();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -216,10 +213,8 @@ public class Schluessel_Allg_AttributeGroupImpl extends EObjectImpl implements S
 			case SchluesselabhaengigkeitenPackage.SCHLUESSEL_ALLG_ATTRIBUTE_GROUP__SCHLUESSEL_GRUPPE:
 				setSchluesselGruppe((Schluessel_Gruppe_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -236,10 +231,8 @@ public class Schluessel_Allg_AttributeGroupImpl extends EObjectImpl implements S
 			case SchluesselabhaengigkeitenPackage.SCHLUESSEL_ALLG_ATTRIBUTE_GROUP__SCHLUESSEL_GRUPPE:
 				setSchluesselGruppe((Schluessel_Gruppe_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -254,9 +247,8 @@ public class Schluessel_Allg_AttributeGroupImpl extends EObjectImpl implements S
 				return schluesselBartform != null;
 			case SchluesselabhaengigkeitenPackage.SCHLUESSEL_ALLG_ATTRIBUTE_GROUP__SCHLUESSEL_GRUPPE:
 				return schluesselGruppe != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Schluessel_Allg_AttributeGroupImpl

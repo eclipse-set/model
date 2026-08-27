@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang;
 
@@ -251,8 +250,8 @@ public enum ENUMBUEFunktionsueberwachung implements Enumerator {
 			case ENUMBUE_FUNKTIONSUEBERWACHUNG_HP_VALUE: return ENUMBUE_FUNKTIONSUEBERWACHUNG_HP;
 			case ENUMBUE_FUNKTIONSUEBERWACHUNG_UES_VALUE: return ENUMBUE_FUNKTIONSUEBERWACHUNG_UES;
 			case ENUMBUE_FUNKTIONSUEBERWACHUNG_UES_OE_VALUE: return ENUMBUE_FUNKTIONSUEBERWACHUNG_UES_OE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

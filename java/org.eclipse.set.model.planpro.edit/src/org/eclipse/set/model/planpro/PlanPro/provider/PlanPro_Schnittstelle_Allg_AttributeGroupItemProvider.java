@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.PlanPro.provider;
 
@@ -29,8 +28,6 @@ import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.PlanPro.PlanProFactory;
 import org.eclipse.set.model.planpro.PlanPro.PlanProPackage;
@@ -159,10 +156,8 @@ public class PlanPro_Schnittstelle_Allg_AttributeGroupItemProvider
 			case PlanProPackage.PLAN_PRO_SCHNITTSTELLE_ALLG_ATTRIBUTE_GROUP__WERKZEUG_VERSION:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

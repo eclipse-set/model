@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -333,9 +332,8 @@ public class ZUB_Bereichsgrenze_Nach_L2_Von_ESG_AttributeGroupImpl extends EObje
 				return ((InternalEList<?>)getIDFachtelegramm()).basicRemove(otherEnd, msgs);
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_L2_VON_ESG_ATTRIBUTE_GROUP__ID_FOLGESIGNAL:
 				return basicSetIDFolgesignal(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -356,9 +354,8 @@ public class ZUB_Bereichsgrenze_Nach_L2_Von_ESG_AttributeGroupImpl extends EObje
 				return getIDFachtelegramm();
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_L2_VON_ESG_ATTRIBUTE_GROUP__ID_FOLGESIGNAL:
 				return getIDFolgesignal();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -386,10 +383,8 @@ public class ZUB_Bereichsgrenze_Nach_L2_Von_ESG_AttributeGroupImpl extends EObje
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_L2_VON_ESG_ATTRIBUTE_GROUP__ID_FOLGESIGNAL:
 				setIDFolgesignal((ID_Signal_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -415,10 +410,8 @@ public class ZUB_Bereichsgrenze_Nach_L2_Von_ESG_AttributeGroupImpl extends EObje
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_L2_VON_ESG_ATTRIBUTE_GROUP__ID_FOLGESIGNAL:
 				setIDFolgesignal((ID_Signal_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -439,9 +432,8 @@ public class ZUB_Bereichsgrenze_Nach_L2_Von_ESG_AttributeGroupImpl extends EObje
 				return iDFachtelegramm != null && !iDFachtelegramm.isEmpty();
 			case Balisentechnik_ETCSPackage.ZUB_BEREICHSGRENZE_NACH_L2_VON_ESG_ATTRIBUTE_GROUP__ID_FOLGESIGNAL:
 				return iDFolgesignal != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZUB_Bereichsgrenze_Nach_L2_Von_ESG_AttributeGroupImpl

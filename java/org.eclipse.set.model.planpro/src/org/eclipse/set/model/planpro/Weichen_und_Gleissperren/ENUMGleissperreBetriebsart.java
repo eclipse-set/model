@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Weichen_und_Gleissperren;
 
@@ -159,8 +158,8 @@ public enum ENUMGleissperreBetriebsart implements Enumerator {
 			case ENUM_GLEISSPERRE_BETRIEBSART_ABGELEGT_VALUE: return ENUM_GLEISSPERRE_BETRIEBSART_ABGELEGT;
 			case ENUM_GLEISSPERRE_BETRIEBSART_AUFGELEGT_VALUE: return ENUM_GLEISSPERRE_BETRIEBSART_AUFGELEGT;
 			case ENUM_GLEISSPERRE_BETRIEBSART_BETRIEB_VALUE: return ENUM_GLEISSPERRE_BETRIEBSART_BETRIEB;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

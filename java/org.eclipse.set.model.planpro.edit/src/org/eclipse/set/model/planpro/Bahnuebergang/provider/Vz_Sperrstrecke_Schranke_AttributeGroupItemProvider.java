@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang.provider;
 
@@ -30,11 +29,11 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.Bahnuebergang.BahnuebergangFactory;
 import org.eclipse.set.model.planpro.Bahnuebergang.BahnuebergangPackage;
 import org.eclipse.set.model.planpro.Bahnuebergang.Vz_Sperrstrecke_Schranke_AttributeGroup;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.Bahnuebergang.Vz_Sperrstrecke_Schranke_AttributeGroup} object.
@@ -155,10 +154,8 @@ public class Vz_Sperrstrecke_Schranke_AttributeGroupItemProvider
 			case BahnuebergangPackage.VZ_SPERRSTRECKE_SCHRANKE_ATTRIBUTE_GROUP__TEILSPERRSTRECKE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

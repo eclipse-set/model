@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Fahrstrasse;
 
@@ -136,8 +135,8 @@ public enum ENUMAutomatischeEinstellung implements Enumerator {
 		switch (value) {
 			case ENUM_AUTOMATISCHE_EINSTELLUNG_SB_VALUE: return ENUM_AUTOMATISCHE_EINSTELLUNG_SB;
 			case ENUM_AUTOMATISCHE_EINSTELLUNG_ZL_VALUE: return ENUM_AUTOMATISCHE_EINSTELLUNG_ZL;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

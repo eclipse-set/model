@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte.impl;
 
@@ -119,9 +118,8 @@ public abstract class Punkt_ObjektImpl extends Basis_ObjektImpl implements Punkt
 				return ((InternalEList<?>)getPunktObjektStrecke()).basicRemove(otherEnd, msgs);
 			case BasisobjektePackage.PUNKT_OBJEKT__PUNKT_OBJEKT_TOP_KANTE:
 				return ((InternalEList<?>)getPunktObjektTOPKante()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,9 +134,8 @@ public abstract class Punkt_ObjektImpl extends Basis_ObjektImpl implements Punkt
 				return getPunktObjektStrecke();
 			case BasisobjektePackage.PUNKT_OBJEKT__PUNKT_OBJEKT_TOP_KANTE:
 				return getPunktObjektTOPKante();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -158,10 +155,8 @@ public abstract class Punkt_ObjektImpl extends Basis_ObjektImpl implements Punkt
 				getPunktObjektTOPKante().clear();
 				getPunktObjektTOPKante().addAll((Collection<? extends Punkt_Objekt_TOP_Kante_AttributeGroup>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -178,10 +173,8 @@ public abstract class Punkt_ObjektImpl extends Basis_ObjektImpl implements Punkt
 			case BasisobjektePackage.PUNKT_OBJEKT__PUNKT_OBJEKT_TOP_KANTE:
 				getPunktObjektTOPKante().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -196,9 +189,8 @@ public abstract class Punkt_ObjektImpl extends Basis_ObjektImpl implements Punkt
 				return punktObjektStrecke != null && !punktObjektStrecke.isEmpty();
 			case BasisobjektePackage.PUNKT_OBJEKT__PUNKT_OBJEKT_TOP_KANTE:
 				return punktObjektTOPKante != null && !punktObjektTOPKante.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Punkt_ObjektImpl

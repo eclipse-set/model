@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.BasisTypen.provider;
 
@@ -131,10 +130,8 @@ public class Bezeichnung_Lageplan_Lang_TypeClassItemProvider extends BasisAttrib
 			case BasisTypenPackage.BEZEICHNUNG_LAGEPLAN_LANG_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

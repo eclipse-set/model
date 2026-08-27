@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.BasisTypen;
 
@@ -182,8 +181,8 @@ public enum ENUMBremsweg implements Enumerator {
 			case ENUM_BREMSWEG_400_VALUE: return ENUM_BREMSWEG_400;
 			case ENUM_BREMSWEG_700_VALUE: return ENUM_BREMSWEG_700;
 			case ENUM_BREMSWEG_SONSTIGE_VALUE: return ENUM_BREMSWEG_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

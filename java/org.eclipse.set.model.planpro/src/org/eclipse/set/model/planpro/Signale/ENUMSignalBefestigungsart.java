@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale;
 
@@ -228,8 +227,8 @@ public enum ENUMSignalBefestigungsart implements Enumerator {
 			case ENUM_SIGNAL_BEFESTIGUNGSART_SIGNALAUSLEGER_VALUE: return ENUM_SIGNAL_BEFESTIGUNGSART_SIGNALAUSLEGER;
 			case ENUM_SIGNAL_BEFESTIGUNGSART_SIGNALBRUECKE_VALUE: return ENUM_SIGNAL_BEFESTIGUNGSART_SIGNALBRUECKE;
 			case ENUM_SIGNAL_BEFESTIGUNGSART_SONDERKONSTRUKTION_VALUE: return ENUM_SIGNAL_BEFESTIGUNGSART_SONDERKONSTRUKTION;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

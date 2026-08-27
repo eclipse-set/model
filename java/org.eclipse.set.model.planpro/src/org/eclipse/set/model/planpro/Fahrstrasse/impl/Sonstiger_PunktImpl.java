@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Fahrstrasse.impl;
 
@@ -123,9 +122,8 @@ public class Sonstiger_PunktImpl extends Punkt_ObjektImpl implements Sonstiger_P
 		switch (featureID) {
 			case FahrstrassePackage.SONSTIGER_PUNKT__ID_BEGINN_BEREICH:
 				return basicSetIDBeginnBereich(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -138,9 +136,8 @@ public class Sonstiger_PunktImpl extends Punkt_ObjektImpl implements Sonstiger_P
 		switch (featureID) {
 			case FahrstrassePackage.SONSTIGER_PUNKT__ID_BEGINN_BEREICH:
 				return getIDBeginnBereich();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -154,10 +151,8 @@ public class Sonstiger_PunktImpl extends Punkt_ObjektImpl implements Sonstiger_P
 			case FahrstrassePackage.SONSTIGER_PUNKT__ID_BEGINN_BEREICH:
 				setIDBeginnBereich((ID_Beginn_Bereich_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -171,10 +166,8 @@ public class Sonstiger_PunktImpl extends Punkt_ObjektImpl implements Sonstiger_P
 			case FahrstrassePackage.SONSTIGER_PUNKT__ID_BEGINN_BEREICH:
 				setIDBeginnBereich((ID_Beginn_Bereich_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -187,9 +180,8 @@ public class Sonstiger_PunktImpl extends Punkt_ObjektImpl implements Sonstiger_P
 		switch (featureID) {
 			case FahrstrassePackage.SONSTIGER_PUNKT__ID_BEGINN_BEREICH:
 				return iDBeginnBereich != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Sonstiger_PunktImpl

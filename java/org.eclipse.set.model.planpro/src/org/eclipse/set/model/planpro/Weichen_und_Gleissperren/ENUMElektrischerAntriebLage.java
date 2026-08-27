@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Weichen_und_Gleissperren;
 
@@ -182,8 +181,8 @@ public enum ENUMElektrischerAntriebLage implements Enumerator {
 			case ENUM_ELEKTRISCHER_ANTRIEB_LAGE_MITTIG_VALUE: return ENUM_ELEKTRISCHER_ANTRIEB_LAGE_MITTIG;
 			case ENUM_ELEKTRISCHER_ANTRIEB_LAGE_RECHTS_VALUE: return ENUM_ELEKTRISCHER_ANTRIEB_LAGE_RECHTS;
 			case ENUM_ELEKTRISCHER_ANTRIEB_LAGE_SONSTIGE_VALUE: return ENUM_ELEKTRISCHER_ANTRIEB_LAGE_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

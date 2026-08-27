@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Layoutinformationen.provider;
 
@@ -24,8 +23,6 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.Basisobjekte.BasisobjekteFactory;
 
 import org.eclipse.set.model.planpro.Basisobjekte.provider.Ur_ObjektItemProvider;
@@ -33,6 +30,8 @@ import org.eclipse.set.model.planpro.Basisobjekte.provider.Ur_ObjektItemProvider
 import org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenFactory;
 import org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenPackage;
 import org.eclipse.set.model.planpro.Layoutinformationen.PlanPro_Layoutinfo;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.Layoutinformationen.PlanPro_Layoutinfo} object.
@@ -154,10 +153,8 @@ public class PlanPro_LayoutinfoItemProvider extends Ur_ObjektItemProvider {
 			case LayoutinformationenPackage.PLAN_PRO_LAYOUTINFO__LAGEPLAN_ZUSTAND:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

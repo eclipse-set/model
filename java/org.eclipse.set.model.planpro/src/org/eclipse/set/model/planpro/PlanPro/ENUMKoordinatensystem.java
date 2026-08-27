@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.PlanPro;
 
@@ -159,8 +158,8 @@ public enum ENUMKoordinatensystem implements Enumerator {
 			case ENUM_KOORDINATENSYSTEM_DB_REF_VALUE: return ENUM_KOORDINATENSYSTEM_DB_REF;
 			case ENUM_KOORDINATENSYSTEM_SONSTIGE_VALUE: return ENUM_KOORDINATENSYSTEM_SONSTIGE;
 			case ENUM_KOORDINATENSYSTEM_WGS84_VALUE: return ENUM_KOORDINATENSYSTEM_WGS84;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Fahrstrasse.impl;
 
@@ -241,9 +240,8 @@ public class Fstr_DWeg_W_KrImpl extends Basis_ObjektImpl implements Fstr_DWeg_W_
 				return basicSetIDFstrDWeg(null, msgs);
 			case FahrstrassePackage.FSTR_DWEG_WKR__IDW_KR_GSP_ELEMENT:
 				return basicSetIDWKrGspElement(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -260,9 +258,8 @@ public class Fstr_DWeg_W_KrImpl extends Basis_ObjektImpl implements Fstr_DWeg_W_
 				return getIDFstrDWeg();
 			case FahrstrassePackage.FSTR_DWEG_WKR__IDW_KR_GSP_ELEMENT:
 				return getIDWKrGspElement();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -282,10 +279,8 @@ public class Fstr_DWeg_W_KrImpl extends Basis_ObjektImpl implements Fstr_DWeg_W_
 			case FahrstrassePackage.FSTR_DWEG_WKR__IDW_KR_GSP_ELEMENT:
 				setIDWKrGspElement((ID_W_Kr_Gsp_Element_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -305,10 +300,8 @@ public class Fstr_DWeg_W_KrImpl extends Basis_ObjektImpl implements Fstr_DWeg_W_
 			case FahrstrassePackage.FSTR_DWEG_WKR__IDW_KR_GSP_ELEMENT:
 				setIDWKrGspElement((ID_W_Kr_Gsp_Element_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -325,9 +318,8 @@ public class Fstr_DWeg_W_KrImpl extends Basis_ObjektImpl implements Fstr_DWeg_W_
 				return iDFstrDWeg != null;
 			case FahrstrassePackage.FSTR_DWEG_WKR__IDW_KR_GSP_ELEMENT:
 				return iDWKrGspElement != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Fstr_DWeg_W_KrImpl

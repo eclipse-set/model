@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -159,8 +158,8 @@ public enum ENUMAusstiegETCSSperre implements Enumerator {
 			case ENUM_AUSSTIEG_ETCS_SPERRE_JA_VALUE: return ENUM_AUSSTIEG_ETCS_SPERRE_JA;
 			case ENUM_AUSSTIEG_ETCS_SPERRE_NEIN_VALUE: return ENUM_AUSSTIEG_ETCS_SPERRE_NEIN;
 			case ENUM_AUSSTIEG_ETCS_SPERRE_REGULAER_VALUE: return ENUM_AUSSTIEG_ETCS_SPERRE_REGULAER;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Block.provider;
 
@@ -30,11 +29,11 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.Block.BlockFactory;
 import org.eclipse.set.model.planpro.Block.BlockPackage;
 import org.eclipse.set.model.planpro.Block.Block_Anlage_Allg_AttributeGroup;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.Block.Block_Anlage_Allg_AttributeGroup} object.
@@ -155,10 +154,8 @@ public class Block_Anlage_Allg_AttributeGroupItemProvider
 			case BlockPackage.BLOCK_ANLAGE_ALLG_ATTRIBUTE_GROUP__SCHUTZUEBERTRAGER:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

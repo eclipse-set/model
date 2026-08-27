@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.PlanPro;
 
@@ -389,8 +388,8 @@ public enum ENUMUntergewerkArt implements Enumerator {
 			case ENUM_UNTERGEWERK_ART_ZL_VALUE: return ENUM_UNTERGEWERK_ART_ZL;
 			case ENUM_UNTERGEWERK_ART_ZLV_BUS_VALUE: return ENUM_UNTERGEWERK_ART_ZLV_BUS;
 			case ENUM_UNTERGEWERK_ART_ZN_VALUE: return ENUM_UNTERGEWERK_ART_ZN;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

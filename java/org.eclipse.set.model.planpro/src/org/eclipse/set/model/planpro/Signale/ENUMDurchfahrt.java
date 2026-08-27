@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale;
 
@@ -159,8 +158,8 @@ public enum ENUMDurchfahrt implements Enumerator {
 			case ENUM_DURCHFAHRT_ERLAUBT_VALUE: return ENUM_DURCHFAHRT_ERLAUBT;
 			case ENUM_DURCHFAHRT_NUR_MIT_SH1_VALUE: return ENUM_DURCHFAHRT_NUR_MIT_SH1;
 			case ENUM_DURCHFAHRT_VERBOTEN_VALUE: return ENUM_DURCHFAHRT_VERBOTEN;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

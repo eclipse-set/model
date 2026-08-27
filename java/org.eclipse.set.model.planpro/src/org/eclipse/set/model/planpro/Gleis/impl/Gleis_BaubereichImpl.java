@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Gleis.impl;
 
@@ -122,9 +121,8 @@ public class Gleis_BaubereichImpl extends Bereich_ObjektImpl implements Gleis_Ba
 		switch (featureID) {
 			case GleisPackage.GLEIS_BAUBEREICH__BAUBEREICH_ART:
 				return basicSetBaubereichArt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -137,9 +135,8 @@ public class Gleis_BaubereichImpl extends Bereich_ObjektImpl implements Gleis_Ba
 		switch (featureID) {
 			case GleisPackage.GLEIS_BAUBEREICH__BAUBEREICH_ART:
 				return getBaubereichArt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -153,10 +150,8 @@ public class Gleis_BaubereichImpl extends Bereich_ObjektImpl implements Gleis_Ba
 			case GleisPackage.GLEIS_BAUBEREICH__BAUBEREICH_ART:
 				setBaubereichArt((Baubereich_Art_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -170,10 +165,8 @@ public class Gleis_BaubereichImpl extends Bereich_ObjektImpl implements Gleis_Ba
 			case GleisPackage.GLEIS_BAUBEREICH__BAUBEREICH_ART:
 				setBaubereichArt((Baubereich_Art_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -186,9 +179,8 @@ public class Gleis_BaubereichImpl extends Bereich_ObjektImpl implements Gleis_Ba
 		switch (featureID) {
 			case GleisPackage.GLEIS_BAUBEREICH__BAUBEREICH_ART:
 				return baubereichArt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Gleis_BaubereichImpl

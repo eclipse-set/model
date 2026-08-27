@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnsteig;
 
@@ -251,8 +250,8 @@ public enum ENUMBahnsteigZugangArt implements Enumerator {
 			case ENUM_BAHNSTEIG_ZUGANG_ART_TREPPE_VALUE: return ENUM_BAHNSTEIG_ZUGANG_ART_TREPPE;
 			case ENUM_BAHNSTEIG_ZUGANG_ART_TRESI_VALUE: return ENUM_BAHNSTEIG_ZUGANG_ART_TRESI;
 			case ENUM_BAHNSTEIG_ZUGANG_ART_WEG_VALUE: return ENUM_BAHNSTEIG_ZUGANG_ART_WEG;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

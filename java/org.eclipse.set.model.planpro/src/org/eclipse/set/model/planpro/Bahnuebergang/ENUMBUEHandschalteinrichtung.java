@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang;
 
@@ -297,8 +296,8 @@ public enum ENUMBUEHandschalteinrichtung implements Enumerator {
 			case ENUMBUE_HANDSCHALTEINRICHTUNG_RT_EIN_RT_AUS_VALUE: return ENUMBUE_HANDSCHALTEINRICHTUNG_RT_EIN_RT_AUS;
 			case ENUMBUE_HANDSCHALTEINRICHTUNG_SONSTIGE_VALUE: return ENUMBUE_HANDSCHALTEINRICHTUNG_SONSTIGE;
 			case ENUMBUE_HANDSCHALTEINRICHTUNG_UT_VALUE: return ENUMBUE_HANDSCHALTEINRICHTUNG_UT;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

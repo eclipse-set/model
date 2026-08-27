@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -1099,9 +1098,8 @@ public class FT_ZBS_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 				return basicSetVGR1(null, msgs);
 			case Balisentechnik_ETCSPackage.FT_ZBS_MERKMALE_ATTRIBUTE_GROUP__VGR2:
 				return basicSetVGR2(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -1148,9 +1146,8 @@ public class FT_ZBS_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 				return getVGR1();
 			case Balisentechnik_ETCSPackage.FT_ZBS_MERKMALE_ATTRIBUTE_GROUP__VGR2:
 				return getVGR2();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -1217,10 +1214,8 @@ public class FT_ZBS_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 			case Balisentechnik_ETCSPackage.FT_ZBS_MERKMALE_ATTRIBUTE_GROUP__VGR2:
 				setVGR2((VGR_2_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -1285,10 +1280,8 @@ public class FT_ZBS_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 			case Balisentechnik_ETCSPackage.FT_ZBS_MERKMALE_ATTRIBUTE_GROUP__VGR2:
 				setVGR2((VGR_2_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -1335,9 +1328,8 @@ public class FT_ZBS_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 				return vGR1 != null;
 			case Balisentechnik_ETCSPackage.FT_ZBS_MERKMALE_ATTRIBUTE_GROUP__VGR2:
 				return vGR2 != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //FT_ZBS_Merkmale_AttributeGroupImpl

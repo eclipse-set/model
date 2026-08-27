@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Medien_und_Trassen;
 
@@ -297,8 +296,8 @@ public enum ENUMTrasseNutzer implements Enumerator {
 			case ENUM_TRASSE_NUTZER_DRITTE_VALUE: return ENUM_TRASSE_NUTZER_DRITTE;
 			case ENUM_TRASSE_NUTZER_SONSTIGE_VALUE: return ENUM_TRASSE_NUTZER_SONSTIGE;
 			case ENUM_TRASSE_NUTZER_UNBEKANNT_VALUE: return ENUM_TRASSE_NUTZER_UNBEKANNT;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

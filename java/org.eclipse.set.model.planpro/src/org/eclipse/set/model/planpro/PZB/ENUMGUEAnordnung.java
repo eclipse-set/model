@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.PZB;
 
@@ -136,8 +135,8 @@ public enum ENUMGUEAnordnung implements Enumerator {
 		switch (value) {
 			case ENUMGUE_ANORDNUNG_1EA_VALUE: return ENUMGUE_ANORDNUNG_1EA;
 			case ENUMGUE_ANORDNUNG_2AE_VALUE: return ENUMGUE_ANORDNUNG_2AE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

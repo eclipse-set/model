@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.ATO.provider;
 
@@ -33,6 +32,8 @@ import org.eclipse.emf.edit.provider.ViewerNotification;
 import org.eclipse.set.model.planpro.ATO.ATOFactory;
 import org.eclipse.set.model.planpro.ATO.ATOPackage;
 import org.eclipse.set.model.planpro.ATO.ATO_TS_Instanz_Adresse_AttributeGroup;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.ATO.ATO_TS_Instanz_Adresse_AttributeGroup} object.
@@ -153,10 +154,8 @@ public class ATO_TS_Instanz_Adresse_AttributeGroupItemProvider
 			case ATOPackage.ATO_TS_INSTANZ_ADRESSE_ATTRIBUTE_GROUP__NIDCATOTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

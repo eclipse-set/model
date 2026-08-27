@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Flankenschutz.impl;
 
@@ -358,9 +357,8 @@ public class Fla_SchutzImpl extends Basis_ObjektImpl implements Fla_Schutz {
 				return basicSetFlaSchutzWeitergabe(null, msgs);
 			case FlankenschutzPackage.FLA_SCHUTZ__FLA_VERZICHT:
 				return basicSetFlaVerzicht(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -381,9 +379,8 @@ public class Fla_SchutzImpl extends Basis_ObjektImpl implements Fla_Schutz {
 				return getFlaSchutzWeitergabe();
 			case FlankenschutzPackage.FLA_SCHUTZ__FLA_VERZICHT:
 				return getFlaVerzicht();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -409,10 +406,8 @@ public class Fla_SchutzImpl extends Basis_ObjektImpl implements Fla_Schutz {
 			case FlankenschutzPackage.FLA_SCHUTZ__FLA_VERZICHT:
 				setFlaVerzicht((Fla_Verzicht_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -438,10 +433,8 @@ public class Fla_SchutzImpl extends Basis_ObjektImpl implements Fla_Schutz {
 			case FlankenschutzPackage.FLA_SCHUTZ__FLA_VERZICHT:
 				setFlaVerzicht((Fla_Verzicht_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -462,9 +455,8 @@ public class Fla_SchutzImpl extends Basis_ObjektImpl implements Fla_Schutz {
 				return flaSchutzWeitergabe != null;
 			case FlankenschutzPackage.FLA_SCHUTZ__FLA_VERZICHT:
 				return flaVerzicht != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Fla_SchutzImpl

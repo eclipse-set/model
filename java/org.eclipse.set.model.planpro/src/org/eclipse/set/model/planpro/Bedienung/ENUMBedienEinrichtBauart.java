@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bedienung;
 
@@ -251,8 +250,8 @@ public enum ENUMBedienEinrichtBauart implements Enumerator {
 			case ENUM_BEDIEN_EINRICHT_BAUART_SONSTIGE_VALUE: return ENUM_BEDIEN_EINRICHT_BAUART_SONSTIGE;
 			case ENUM_BEDIEN_EINRICHT_BAUART_STELLPULT_VALUE: return ENUM_BEDIEN_EINRICHT_BAUART_STELLPULT;
 			case ENUM_BEDIEN_EINRICHT_BAUART_STELLTISCH_VALUE: return ENUM_BEDIEN_EINRICHT_BAUART_STELLTISCH;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

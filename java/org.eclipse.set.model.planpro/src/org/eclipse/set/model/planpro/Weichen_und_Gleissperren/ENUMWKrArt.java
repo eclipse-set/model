@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Weichen_und_Gleissperren;
 
@@ -642,8 +641,8 @@ public enum ENUMWKrArt implements Enumerator {
 			case ENUMW_KR_ART_ZHA_VALUE: return ENUMW_KR_ART_ZHA;
 			case ENUMW_KR_ART_ZHV_ABW_VALUE: return ENUMW_KR_ART_ZHV_ABW;
 			case ENUMW_KR_ART_ZHV_IBW_VALUE: return ENUMW_KR_ART_ZHV_IBW;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

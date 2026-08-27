@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Geodaten;
 
@@ -343,8 +342,8 @@ public enum ENUMGEOForm implements Enumerator {
 			case ENUMGEO_FORM_SONSTIGE_VALUE: return ENUMGEO_FORM_SONSTIGE;
 			case ENUMGEO_FORM_SFORM_EINFACH_GESCHWUNGEN_VALUE: return ENUMGEO_FORM_SFORM_EINFACH_GESCHWUNGEN;
 			case ENUMGEO_FORM_UEBERGANGSBOGEN_SFORM_VALUE: return ENUMGEO_FORM_UEBERGANGSBOGEN_SFORM;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

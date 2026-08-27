@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Flankenschutz.impl;
 
@@ -181,9 +180,8 @@ public class Fla_Schutz_W_Gsp_AttributeGroupImpl extends EObjectImpl implements 
 				return basicSetFlaWLage(null, msgs);
 			case FlankenschutzPackage.FLA_SCHUTZ_WGSP_ATTRIBUTE_GROUP__ID_FLA_WGSP_ELEMENT:
 				return basicSetIDFlaWGspElement(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -198,9 +196,8 @@ public class Fla_Schutz_W_Gsp_AttributeGroupImpl extends EObjectImpl implements 
 				return getFlaWLage();
 			case FlankenschutzPackage.FLA_SCHUTZ_WGSP_ATTRIBUTE_GROUP__ID_FLA_WGSP_ELEMENT:
 				return getIDFlaWGspElement();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -217,10 +214,8 @@ public class Fla_Schutz_W_Gsp_AttributeGroupImpl extends EObjectImpl implements 
 			case FlankenschutzPackage.FLA_SCHUTZ_WGSP_ATTRIBUTE_GROUP__ID_FLA_WGSP_ELEMENT:
 				setIDFlaWGspElement((ID_W_Kr_Gsp_Element_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -237,10 +232,8 @@ public class Fla_Schutz_W_Gsp_AttributeGroupImpl extends EObjectImpl implements 
 			case FlankenschutzPackage.FLA_SCHUTZ_WGSP_ATTRIBUTE_GROUP__ID_FLA_WGSP_ELEMENT:
 				setIDFlaWGspElement((ID_W_Kr_Gsp_Element_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -255,9 +248,8 @@ public class Fla_Schutz_W_Gsp_AttributeGroupImpl extends EObjectImpl implements 
 				return flaWLage != null;
 			case FlankenschutzPackage.FLA_SCHUTZ_WGSP_ATTRIBUTE_GROUP__ID_FLA_WGSP_ELEMENT:
 				return iDFlaWGspElement != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Fla_Schutz_W_Gsp_AttributeGroupImpl

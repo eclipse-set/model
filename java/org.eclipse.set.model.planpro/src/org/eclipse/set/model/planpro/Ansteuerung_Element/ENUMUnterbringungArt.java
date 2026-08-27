@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ansteuerung_Element;
 
@@ -251,8 +250,8 @@ public enum ENUMUnterbringungArt implements Enumerator {
 			case ENUM_UNTERBRINGUNG_ART_SCHALTSCHRANK_SCHALTKASTEN_VALUE: return ENUM_UNTERBRINGUNG_ART_SCHALTSCHRANK_SCHALTKASTEN;
 			case ENUM_UNTERBRINGUNG_ART_SONSTIGE_VALUE: return ENUM_UNTERBRINGUNG_ART_SONSTIGE;
 			case ENUM_UNTERBRINGUNG_ART_TAFEL_VALUE: return ENUM_UNTERBRINGUNG_ART_TAFEL;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

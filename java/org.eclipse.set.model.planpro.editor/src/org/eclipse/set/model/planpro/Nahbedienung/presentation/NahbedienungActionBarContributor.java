@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Nahbedienung.presentation;
 
@@ -44,7 +43,7 @@ import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.jface.viewers.SelectionChangedEvent;
 import org.eclipse.jface.viewers.Viewer;
 
-import org.eclipse.set.model.planpro.ATO.presentation.PlanProEditorPlugin;
+import org.eclipse.set.model.planpro.PlanPro.presentation.PlanProEditorPlugin;
 
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.PartInitException;

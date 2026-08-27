@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -481,8 +480,8 @@ public enum ENUMNIDSTM implements Enumerator {
 			case ENUMNID_STM_TVM_VALUE: return ENUMNID_STM_TVM;
 			case ENUMNID_STM_ZUB121_SIGNUM_VALUE: return ENUMNID_STM_ZUB121_SIGNUM;
 			case ENUMNID_STM_ZUB123_VALUE: return ENUMNID_STM_ZUB123;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

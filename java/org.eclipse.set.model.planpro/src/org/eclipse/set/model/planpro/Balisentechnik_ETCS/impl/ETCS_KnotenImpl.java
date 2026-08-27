@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -182,9 +181,8 @@ public class ETCS_KnotenImpl extends Basis_ObjektImpl implements ETCS_Knoten {
 				return basicSetIDTOPKnoten(null, msgs);
 			case Balisentechnik_ETCSPackage.ETCS_KNOTEN__KNOTEN_AUF_TOP_KANTE:
 				return basicSetKnotenAufTOPKante(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -199,9 +197,8 @@ public class ETCS_KnotenImpl extends Basis_ObjektImpl implements ETCS_Knoten {
 				return getIDTOPKnoten();
 			case Balisentechnik_ETCSPackage.ETCS_KNOTEN__KNOTEN_AUF_TOP_KANTE:
 				return getKnotenAufTOPKante();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -218,10 +215,8 @@ public class ETCS_KnotenImpl extends Basis_ObjektImpl implements ETCS_Knoten {
 			case Balisentechnik_ETCSPackage.ETCS_KNOTEN__KNOTEN_AUF_TOP_KANTE:
 				setKnotenAufTOPKante((Knoten_Auf_TOP_Kante_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -238,10 +233,8 @@ public class ETCS_KnotenImpl extends Basis_ObjektImpl implements ETCS_Knoten {
 			case Balisentechnik_ETCSPackage.ETCS_KNOTEN__KNOTEN_AUF_TOP_KANTE:
 				setKnotenAufTOPKante((Knoten_Auf_TOP_Kante_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -256,9 +249,8 @@ public class ETCS_KnotenImpl extends Basis_ObjektImpl implements ETCS_Knoten {
 				return iDTOPKnoten != null;
 			case Balisentechnik_ETCSPackage.ETCS_KNOTEN__KNOTEN_AUF_TOP_KANTE:
 				return knotenAufTOPKante != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ETCS_KnotenImpl

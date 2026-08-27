@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ortung;
 
@@ -159,8 +158,8 @@ public enum ENUMFMAKomponenteArt implements Enumerator {
 			case ENUMFMA_KOMPONENTE_ART_ELEKTRISCHER_TRENNSTOSS_VALUE: return ENUMFMA_KOMPONENTE_ART_ELEKTRISCHER_TRENNSTOSS;
 			case ENUMFMA_KOMPONENTE_ART_ISOLIERSTOSS_EINSCHIENIG_VALUE: return ENUMFMA_KOMPONENTE_ART_ISOLIERSTOSS_EINSCHIENIG;
 			case ENUMFMA_KOMPONENTE_ART_ISOLIERSTOSS_ZWEISCHIENIG_VALUE: return ENUMFMA_KOMPONENTE_ART_ISOLIERSTOSS_ZWEISCHIENIG;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -4,13 +4,11 @@
 <!--
  Copyright (c) 2026 DB InfraGO AG and others
  
-                     This program and the accompanying materials are made available
-                     under the
-                     terms of the Eclipse Public License 2.0 which is available at
-                     https://www.eclipse.org/legal/epl-2.0.
+ This program and the accompanying materials are made available 
+ under the terms of the Eclipse Public License 2.0 which is available at
+ https://www.eclipse.org/legal/epl-2.0.
  
-                     SPDX-License-Identifier: EPL-2.0
-             
+ SPDX-License-Identifier: EPL-2.0
 -->
 
 <plugin>
@@ -19,8 +17,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/PlanPro/1.10.0.3"
-            class="org.eclipse.set.model.planpro.PlanPro.PlanProPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.PlanPro.PlanProPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -34,8 +31,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Signalbegriffe_Ril_301/1.10.0.4"
-            class="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Signalbegriffe_Ril_301Package"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.Signalbegriffe_Ril_301Package"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -49,8 +45,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Layoutinformationen/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Layoutinformationen.LayoutinformationenPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -64,8 +59,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
-            class="org.eclipse.set.model.planpro.BasisTypen.BasisTypenPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.BasisTypen.BasisTypenPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -79,8 +73,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Basisobjekte.BasisobjektePackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -94,8 +87,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/ATO/1.10.0.3"
-            class="org.eclipse.set.model.planpro.ATO.ATOPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.ATO.ATOPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -109,8 +101,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Ansteuerung_Element/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Ansteuerung_Element.Ansteuerung_ElementPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Ansteuerung_Element.Ansteuerung_ElementPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -124,8 +115,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Bahnsteig/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Bahnsteig.BahnsteigPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Bahnsteig.BahnsteigPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -139,8 +129,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Balisentechnik_ETCS/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -154,8 +143,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Bedienung/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Bedienung.BedienungPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Bedienung.BedienungPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -169,8 +157,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Block/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Block.BlockPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Block.BlockPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -184,8 +171,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Bahnuebergang/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Bahnuebergang.BahnuebergangPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Bahnuebergang.BahnuebergangPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -199,8 +185,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Flankenschutz/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Flankenschutz.FlankenschutzPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Flankenschutz.FlankenschutzPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -214,8 +199,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Ortung/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Ortung.OrtungPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Ortung.OrtungPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -229,8 +213,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Fahrstrasse/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Fahrstrasse.FahrstrassePackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Fahrstrasse.FahrstrassePackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -244,8 +227,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Geodaten/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Geodaten.GeodatenPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Geodaten.GeodatenPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -259,8 +241,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Weichen_und_Gleissperren/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Weichen_und_Gleissperren.Weichen_und_GleissperrenPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Weichen_und_Gleissperren.Weichen_und_GleissperrenPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -274,8 +255,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Gleis/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Gleis.GleisPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Gleis.GleisPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -289,8 +269,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Medien_und_Trassen/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Medien_und_Trassen.Medien_und_TrassenPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Medien_und_Trassen.Medien_und_TrassenPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -304,8 +283,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Nahbedienung/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Nahbedienung.NahbedienungPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Nahbedienung.NahbedienungPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -319,8 +297,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/PZB/1.10.0.3"
-            class="org.eclipse.set.model.planpro.PZB.PZBPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.PZB.PZBPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -334,8 +311,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Regelzeichnung/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Regelzeichnung.RegelzeichnungPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Regelzeichnung.RegelzeichnungPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -349,8 +325,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Schluesselabhaengigkeiten/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Schluesselabhaengigkeiten.SchluesselabhaengigkeitenPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Schluesselabhaengigkeiten.SchluesselabhaengigkeitenPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -364,8 +339,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Signale/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Signale.SignalePackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Signale.SignalePackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -379,8 +353,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Zuglenkung/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Zuglenkung.ZuglenkungPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Zuglenkung.ZuglenkungPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -394,8 +367,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Zugnummernmeldeanlage/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZugnummernmeldeanlagePackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Zugnummernmeldeanlage.ZugnummernmeldeanlagePackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -409,8 +381,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
-            class="org.eclipse.set.model.planpro.Verweise.VerweisePackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Verweise.VerweisePackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
@@ -424,8 +395,7 @@
       <!-- @generated PlanPro -->
       <package
             uri="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1"
-            class="org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriffe_StrukturPackage"
-            genModel="model/PlanPro.genmodel"/>
+            class="org.eclipse.set.model.planpro.Signalbegriffe_Struktur.Signalbegriffe_StrukturPackage"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">

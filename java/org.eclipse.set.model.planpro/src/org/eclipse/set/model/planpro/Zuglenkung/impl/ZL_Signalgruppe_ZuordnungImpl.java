@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Zuglenkung.impl;
 
@@ -182,9 +181,8 @@ public class ZL_Signalgruppe_ZuordnungImpl extends Basis_ObjektImpl implements Z
 				return basicSetIDSignal(null, msgs);
 			case ZuglenkungPackage.ZL_SIGNALGRUPPE_ZUORDNUNG__IDZL_SIGNALGRUPPE:
 				return basicSetIDZLSignalgruppe(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -199,9 +197,8 @@ public class ZL_Signalgruppe_ZuordnungImpl extends Basis_ObjektImpl implements Z
 				return getIDSignal();
 			case ZuglenkungPackage.ZL_SIGNALGRUPPE_ZUORDNUNG__IDZL_SIGNALGRUPPE:
 				return getIDZLSignalgruppe();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -218,10 +215,8 @@ public class ZL_Signalgruppe_ZuordnungImpl extends Basis_ObjektImpl implements Z
 			case ZuglenkungPackage.ZL_SIGNALGRUPPE_ZUORDNUNG__IDZL_SIGNALGRUPPE:
 				setIDZLSignalgruppe((ID_ZL_Signalgruppe_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -238,10 +233,8 @@ public class ZL_Signalgruppe_ZuordnungImpl extends Basis_ObjektImpl implements Z
 			case ZuglenkungPackage.ZL_SIGNALGRUPPE_ZUORDNUNG__IDZL_SIGNALGRUPPE:
 				setIDZLSignalgruppe((ID_ZL_Signalgruppe_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -256,9 +249,8 @@ public class ZL_Signalgruppe_ZuordnungImpl extends Basis_ObjektImpl implements Z
 				return iDSignal != null;
 			case ZuglenkungPackage.ZL_SIGNALGRUPPE_ZUORDNUNG__IDZL_SIGNALGRUPPE:
 				return iDZLSignalgruppe != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZL_Signalgruppe_ZuordnungImpl

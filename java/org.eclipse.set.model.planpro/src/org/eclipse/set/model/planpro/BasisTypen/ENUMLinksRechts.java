@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.BasisTypen;
 
@@ -139,8 +138,8 @@ public enum ENUMLinksRechts implements Enumerator {
 		switch (value) {
 			case ENUM_LINKS_RECHTS_LINKS_VALUE: return ENUM_LINKS_RECHTS_LINKS;
 			case ENUM_LINKS_RECHTS_RECHTS_VALUE: return ENUM_LINKS_RECHTS_RECHTS;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Weichen_und_Gleissperren;
 
@@ -182,8 +181,8 @@ public enum ENUMGleissperrensignal implements Enumerator {
 			case ENUM_GLEISSPERRENSIGNAL_INNENBELEUCHTET_EINSEITIG_VALUE: return ENUM_GLEISSPERRENSIGNAL_INNENBELEUCHTET_EINSEITIG;
 			case ENUM_GLEISSPERRENSIGNAL_REFLEKTIEREND_BEIDSEITIG_VALUE: return ENUM_GLEISSPERRENSIGNAL_REFLEKTIEREND_BEIDSEITIG;
 			case ENUM_GLEISSPERRENSIGNAL_REFLEKTIEREND_EINSEITIG_VALUE: return ENUM_GLEISSPERRENSIGNAL_REFLEKTIEREND_EINSEITIG;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

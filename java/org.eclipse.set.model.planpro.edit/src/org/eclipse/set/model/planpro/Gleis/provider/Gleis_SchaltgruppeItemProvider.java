@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Gleis.provider;
 
@@ -24,8 +23,6 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.BasisTypen.BasisTypenFactory;
 
 import org.eclipse.set.model.planpro.Basisobjekte.provider.Bereich_ObjektItemProvider;
@@ -33,6 +30,8 @@ import org.eclipse.set.model.planpro.Basisobjekte.provider.Bereich_ObjektItemPro
 import org.eclipse.set.model.planpro.Gleis.GleisFactory;
 import org.eclipse.set.model.planpro.Gleis.GleisPackage;
 import org.eclipse.set.model.planpro.Gleis.Gleis_Schaltgruppe;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.Gleis.Gleis_Schaltgruppe} object.
@@ -146,10 +145,8 @@ public class Gleis_SchaltgruppeItemProvider extends Bereich_ObjektItemProvider {
 			case GleisPackage.GLEIS_SCHALTGRUPPE__FAHRSTROM:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

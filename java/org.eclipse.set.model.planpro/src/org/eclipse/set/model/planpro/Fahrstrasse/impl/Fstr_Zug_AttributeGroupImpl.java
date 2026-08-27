@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Fahrstrasse.impl;
 
@@ -392,9 +391,8 @@ public class Fstr_Zug_AttributeGroupImpl extends EObjectImpl implements Fstr_Zug
 				return ((InternalEList<?>)getIDBUEEinschaltung()).basicRemove(otherEnd, msgs);
 			case FahrstrassePackage.FSTR_ZUG_ATTRIBUTE_GROUP__ID_SIGNAL_GRUPPENAUSFAHRT:
 				return basicSetIDSignalGruppenausfahrt(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -417,9 +415,8 @@ public class Fstr_Zug_AttributeGroupImpl extends EObjectImpl implements Fstr_Zug
 				return getIDBUEEinschaltung();
 			case FahrstrassePackage.FSTR_ZUG_ATTRIBUTE_GROUP__ID_SIGNAL_GRUPPENAUSFAHRT:
 				return getIDSignalGruppenausfahrt();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -450,10 +447,8 @@ public class Fstr_Zug_AttributeGroupImpl extends EObjectImpl implements Fstr_Zug
 			case FahrstrassePackage.FSTR_ZUG_ATTRIBUTE_GROUP__ID_SIGNAL_GRUPPENAUSFAHRT:
 				setIDSignalGruppenausfahrt((ID_Signal_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -482,10 +477,8 @@ public class Fstr_Zug_AttributeGroupImpl extends EObjectImpl implements Fstr_Zug
 			case FahrstrassePackage.FSTR_ZUG_ATTRIBUTE_GROUP__ID_SIGNAL_GRUPPENAUSFAHRT:
 				setIDSignalGruppenausfahrt((ID_Signal_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -508,9 +501,8 @@ public class Fstr_Zug_AttributeGroupImpl extends EObjectImpl implements Fstr_Zug
 				return iDBUEEinschaltung != null && !iDBUEEinschaltung.isEmpty();
 			case FahrstrassePackage.FSTR_ZUG_ATTRIBUTE_GROUP__ID_SIGNAL_GRUPPENAUSFAHRT:
 				return iDSignalGruppenausfahrt != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Fstr_Zug_AttributeGroupImpl

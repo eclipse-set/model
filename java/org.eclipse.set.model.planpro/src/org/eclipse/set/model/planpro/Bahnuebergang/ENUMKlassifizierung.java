@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang;
 
@@ -412,8 +411,8 @@ public enum ENUMKlassifizierung implements Enumerator {
 			case ENUM_KLASSIFIZIERUNG_PRIVATWEG_VALUE: return ENUM_KLASSIFIZIERUNG_PRIVATWEG;
 			case ENUM_KLASSIFIZIERUNG_SONSTIGE_VALUE: return ENUM_KLASSIFIZIERUNG_SONSTIGE;
 			case ENUM_KLASSIFIZIERUNG_WEG_FORST_LAND_VALUE: return ENUM_KLASSIFIZIERUNG_WEG_FORST_LAND;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

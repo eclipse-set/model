@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.PZB.impl;
 
@@ -156,9 +155,8 @@ public class PZB_Element_Zuordnung_INA_AttributeGroupImpl extends EObjectImpl im
 				return ((InternalEList<?>)getIDAnhangINA()).basicRemove(otherEnd, msgs);
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG_INA_ATTRIBUTE_GROUP__ID_BAHNSTEIG_KANTE:
 				return basicSetIDBahnsteigKante(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -173,9 +171,8 @@ public class PZB_Element_Zuordnung_INA_AttributeGroupImpl extends EObjectImpl im
 				return getIDAnhangINA();
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG_INA_ATTRIBUTE_GROUP__ID_BAHNSTEIG_KANTE:
 				return getIDBahnsteigKante();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -194,10 +191,8 @@ public class PZB_Element_Zuordnung_INA_AttributeGroupImpl extends EObjectImpl im
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG_INA_ATTRIBUTE_GROUP__ID_BAHNSTEIG_KANTE:
 				setIDBahnsteigKante((ID_Bahnsteig_Kante_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -214,10 +209,8 @@ public class PZB_Element_Zuordnung_INA_AttributeGroupImpl extends EObjectImpl im
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG_INA_ATTRIBUTE_GROUP__ID_BAHNSTEIG_KANTE:
 				setIDBahnsteigKante((ID_Bahnsteig_Kante_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -232,9 +225,8 @@ public class PZB_Element_Zuordnung_INA_AttributeGroupImpl extends EObjectImpl im
 				return iDAnhangINA != null && !iDAnhangINA.isEmpty();
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG_INA_ATTRIBUTE_GROUP__ID_BAHNSTEIG_KANTE:
 				return iDBahnsteigKante != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //PZB_Element_Zuordnung_INA_AttributeGroupImpl

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale;
 
@@ -251,8 +250,8 @@ public enum ENUMStreuscheibeArt implements Enumerator {
 			case ENUM_STREUSCHEIBE_ART_ORL_VALUE: return ENUM_STREUSCHEIBE_ART_ORL;
 			case ENUM_STREUSCHEIBE_ART_SONSTIGE_VALUE: return ENUM_STREUSCHEIBE_ART_SONSTIGE;
 			case ENUM_STREUSCHEIBE_ART_VRL_VALUE: return ENUM_STREUSCHEIBE_ART_VRL;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

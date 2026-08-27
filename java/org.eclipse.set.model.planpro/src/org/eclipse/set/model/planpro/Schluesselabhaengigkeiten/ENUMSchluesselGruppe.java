@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Schluesselabhaengigkeiten;
 
@@ -228,8 +227,8 @@ public enum ENUMSchluesselGruppe implements Enumerator {
 			case ENUM_SCHLUESSEL_GRUPPE_3_VALUE: return ENUM_SCHLUESSEL_GRUPPE_3;
 			case ENUM_SCHLUESSEL_GRUPPE_4_VALUE: return ENUM_SCHLUESSEL_GRUPPE_4;
 			case ENUM_SCHLUESSEL_GRUPPE_5_VALUE: return ENUM_SCHLUESSEL_GRUPPE_5;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

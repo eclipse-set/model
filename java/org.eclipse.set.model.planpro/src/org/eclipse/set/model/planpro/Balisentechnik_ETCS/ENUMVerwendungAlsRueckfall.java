@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -159,8 +158,8 @@ public enum ENUMVerwendungAlsRueckfall implements Enumerator {
 			case ENUM_VERWENDUNG_ALS_RUECKFALL_NUR_RÜCKFALL_VALUE: return ENUM_VERWENDUNG_ALS_RUECKFALL_NUR_RÜCKFALL;
 			case ENUM_VERWENDUNG_ALS_RUECKFALL_RÜCKFALL_VALUE: return ENUM_VERWENDUNG_ALS_RUECKFALL_RÜCKFALL;
 			case ENUM_VERWENDUNG_ALS_RUECKFALL_SONSTIGE_VALUE: return ENUM_VERWENDUNG_ALS_RUECKFALL_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

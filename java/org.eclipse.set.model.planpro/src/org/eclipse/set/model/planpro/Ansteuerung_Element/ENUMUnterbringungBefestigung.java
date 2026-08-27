@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ansteuerung_Element;
 
@@ -274,8 +273,8 @@ public enum ENUMUnterbringungBefestigung implements Enumerator {
 			case ENUM_UNTERBRINGUNG_BEFESTIGUNG_SIGNALBRUECKE_VALUE: return ENUM_UNTERBRINGUNG_BEFESTIGUNG_SIGNALBRUECKE;
 			case ENUM_UNTERBRINGUNG_BEFESTIGUNG_SIGNALMAST_VALUE: return ENUM_UNTERBRINGUNG_BEFESTIGUNG_SIGNALMAST;
 			case ENUM_UNTERBRINGUNG_BEFESTIGUNG_SONSTIGE_VALUE: return ENUM_UNTERBRINGUNG_BEFESTIGUNG_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bedienung.impl;
 
@@ -144,9 +143,8 @@ public class A_Wert_TypeClassImpl extends BasisAttribut_AttributeGroupImpl imple
 		switch (featureID) {
 			case BedienungPackage.AWERT_TYPE_CLASS__WERT:
 				return getWert();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -160,10 +158,8 @@ public class A_Wert_TypeClassImpl extends BasisAttribut_AttributeGroupImpl imple
 			case BedienungPackage.AWERT_TYPE_CLASS__WERT:
 				setWert((ENUMAWert)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -177,10 +173,8 @@ public class A_Wert_TypeClassImpl extends BasisAttribut_AttributeGroupImpl imple
 			case BedienungPackage.AWERT_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -193,9 +187,8 @@ public class A_Wert_TypeClassImpl extends BasisAttribut_AttributeGroupImpl imple
 		switch (featureID) {
 			case BedienungPackage.AWERT_TYPE_CLASS__WERT:
 				return isSetWert();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

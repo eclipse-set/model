@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnsteig.impl;
 
@@ -182,9 +181,8 @@ public class Bahnsteig_ZugangImpl extends Punkt_ObjektImpl implements Bahnsteig_
 				return basicSetBahnsteigZugangAllg(null, msgs);
 			case BahnsteigPackage.BAHNSTEIG_ZUGANG__ID_BAHNSTEIG_ANLAGE:
 				return basicSetIDBahnsteigAnlage(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -199,9 +197,8 @@ public class Bahnsteig_ZugangImpl extends Punkt_ObjektImpl implements Bahnsteig_
 				return getBahnsteigZugangAllg();
 			case BahnsteigPackage.BAHNSTEIG_ZUGANG__ID_BAHNSTEIG_ANLAGE:
 				return getIDBahnsteigAnlage();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -218,10 +215,8 @@ public class Bahnsteig_ZugangImpl extends Punkt_ObjektImpl implements Bahnsteig_
 			case BahnsteigPackage.BAHNSTEIG_ZUGANG__ID_BAHNSTEIG_ANLAGE:
 				setIDBahnsteigAnlage((ID_Bahnsteig_Anlage_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -238,10 +233,8 @@ public class Bahnsteig_ZugangImpl extends Punkt_ObjektImpl implements Bahnsteig_
 			case BahnsteigPackage.BAHNSTEIG_ZUGANG__ID_BAHNSTEIG_ANLAGE:
 				setIDBahnsteigAnlage((ID_Bahnsteig_Anlage_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -256,9 +249,8 @@ public class Bahnsteig_ZugangImpl extends Punkt_ObjektImpl implements Bahnsteig_
 				return bahnsteigZugangAllg != null;
 			case BahnsteigPackage.BAHNSTEIG_ZUGANG__ID_BAHNSTEIG_ANLAGE:
 				return iDBahnsteigAnlage != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bahnsteig_ZugangImpl

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -297,8 +296,8 @@ public enum ENUMETCSKnotenArtSonstige implements Enumerator {
 			case ENUMETCS_KNOTEN_ART_SONSTIGE_SONSTIGE_VALUE: return ENUMETCS_KNOTEN_ART_SONSTIGE_SONSTIGE;
 			case ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENENDE_VALUE: return ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENENDE;
 			case ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENWECHSEL_VALUE: return ENUMETCS_KNOTEN_ART_SONSTIGE_STRECKENWECHSEL;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

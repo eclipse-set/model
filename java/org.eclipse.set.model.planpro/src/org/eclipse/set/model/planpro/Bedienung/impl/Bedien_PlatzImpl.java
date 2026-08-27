@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bedienung.impl;
 
@@ -417,9 +416,8 @@ public class Bedien_PlatzImpl extends Basis_ObjektImpl implements Bedien_Platz {
 				return basicSetIDBedienBezirk(null, msgs);
 			case BedienungPackage.BEDIEN_PLATZ__IDESTW_ZENTRALEINHEIT:
 				return basicSetIDESTWZentraleinheit(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -442,9 +440,8 @@ public class Bedien_PlatzImpl extends Basis_ObjektImpl implements Bedien_Platz {
 				return getIDBedienBezirk();
 			case BedienungPackage.BEDIEN_PLATZ__IDESTW_ZENTRALEINHEIT:
 				return getIDESTWZentraleinheit();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -473,10 +470,8 @@ public class Bedien_PlatzImpl extends Basis_ObjektImpl implements Bedien_Platz {
 			case BedienungPackage.BEDIEN_PLATZ__IDESTW_ZENTRALEINHEIT:
 				setIDESTWZentraleinheit((ID_ESTW_Zentraleinheit_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -505,10 +500,8 @@ public class Bedien_PlatzImpl extends Basis_ObjektImpl implements Bedien_Platz {
 			case BedienungPackage.BEDIEN_PLATZ__IDESTW_ZENTRALEINHEIT:
 				setIDESTWZentraleinheit((ID_ESTW_Zentraleinheit_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -531,9 +524,8 @@ public class Bedien_PlatzImpl extends Basis_ObjektImpl implements Bedien_Platz {
 				return iDBedienBezirk != null;
 			case BedienungPackage.BEDIEN_PLATZ__IDESTW_ZENTRALEINHEIT:
 				return iDESTWZentraleinheit != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bedien_PlatzImpl

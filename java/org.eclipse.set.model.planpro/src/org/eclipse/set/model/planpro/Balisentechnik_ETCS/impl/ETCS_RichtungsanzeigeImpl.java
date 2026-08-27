@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -241,9 +240,8 @@ public class ETCS_RichtungsanzeigeImpl extends Basis_ObjektImpl implements ETCS_
 				return basicSetIDOertlichkeitInRichtung(null, msgs);
 			case Balisentechnik_ETCSPackage.ETCS_RICHTUNGSANZEIGE__TEXTMELDUNG:
 				return basicSetTextmeldung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -260,9 +258,8 @@ public class ETCS_RichtungsanzeigeImpl extends Basis_ObjektImpl implements ETCS_
 				return getIDOertlichkeitInRichtung();
 			case Balisentechnik_ETCSPackage.ETCS_RICHTUNGSANZEIGE__TEXTMELDUNG:
 				return getTextmeldung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -282,10 +279,8 @@ public class ETCS_RichtungsanzeigeImpl extends Basis_ObjektImpl implements ETCS_
 			case Balisentechnik_ETCSPackage.ETCS_RICHTUNGSANZEIGE__TEXTMELDUNG:
 				setTextmeldung((Textmeldung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -305,10 +300,8 @@ public class ETCS_RichtungsanzeigeImpl extends Basis_ObjektImpl implements ETCS_
 			case Balisentechnik_ETCSPackage.ETCS_RICHTUNGSANZEIGE__TEXTMELDUNG:
 				setTextmeldung((Textmeldung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -325,9 +318,8 @@ public class ETCS_RichtungsanzeigeImpl extends Basis_ObjektImpl implements ETCS_
 				return iDOertlichkeitInRichtung != null;
 			case Balisentechnik_ETCSPackage.ETCS_RICHTUNGSANZEIGE__TEXTMELDUNG:
 				return textmeldung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ETCS_RichtungsanzeigeImpl

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage;
 
@@ -320,8 +319,8 @@ public enum ENUMZNAnlagentyp implements Enumerator {
 			case ENUMZN_ANLAGENTYP_ZNS_801_VALUE: return ENUMZN_ANLAGENTYP_ZNS_801;
 			case ENUMZN_ANLAGENTYP_ZNS_901_VALUE: return ENUMZN_ANLAGENTYP_ZNS_901;
 			case ENUMZN_ANLAGENTYP_ZNS_901R_VALUE: return ENUMZN_ANLAGENTYP_ZNS_901R;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

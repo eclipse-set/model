@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte.impl;
 
@@ -239,9 +238,8 @@ public class Anhang_Allg_AttributeGroupImpl extends EObjectImpl implements Anhan
 				return basicSetDateiname(null, msgs);
 			case BasisobjektePackage.ANHANG_ALLG_ATTRIBUTE_GROUP__DATEITYP:
 				return basicSetDateityp(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +256,8 @@ public class Anhang_Allg_AttributeGroupImpl extends EObjectImpl implements Anhan
 				return getDateiname();
 			case BasisobjektePackage.ANHANG_ALLG_ATTRIBUTE_GROUP__DATEITYP:
 				return getDateityp();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +277,8 @@ public class Anhang_Allg_AttributeGroupImpl extends EObjectImpl implements Anhan
 			case BasisobjektePackage.ANHANG_ALLG_ATTRIBUTE_GROUP__DATEITYP:
 				setDateityp((Dateityp_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +298,8 @@ public class Anhang_Allg_AttributeGroupImpl extends EObjectImpl implements Anhan
 			case BasisobjektePackage.ANHANG_ALLG_ATTRIBUTE_GROUP__DATEITYP:
 				setDateityp((Dateityp_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +316,8 @@ public class Anhang_Allg_AttributeGroupImpl extends EObjectImpl implements Anhan
 				return dateiname != null;
 			case BasisobjektePackage.ANHANG_ALLG_ATTRIBUTE_GROUP__DATEITYP:
 				return dateityp != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Anhang_Allg_AttributeGroupImpl

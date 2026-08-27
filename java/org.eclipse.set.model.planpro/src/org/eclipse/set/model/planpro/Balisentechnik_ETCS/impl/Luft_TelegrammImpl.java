@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -334,9 +333,8 @@ public class Luft_TelegrammImpl extends Basis_ObjektImpl implements Luft_Telegra
 				return basicSetLTBinaerdaten(null, msgs);
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__TELEGRAMM_INDEX:
 				return basicSetTelegrammIndex(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -357,9 +355,8 @@ public class Luft_TelegrammImpl extends Basis_ObjektImpl implements Luft_Telegra
 				return getLTBinaerdaten();
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__TELEGRAMM_INDEX:
 				return getTelegrammIndex();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -387,10 +384,8 @@ public class Luft_TelegrammImpl extends Basis_ObjektImpl implements Luft_Telegra
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__TELEGRAMM_INDEX:
 				setTelegrammIndex((Telegramm_Index_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -416,10 +411,8 @@ public class Luft_TelegrammImpl extends Basis_ObjektImpl implements Luft_Telegra
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__TELEGRAMM_INDEX:
 				setTelegrammIndex((Telegramm_Index_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -440,9 +433,8 @@ public class Luft_TelegrammImpl extends Basis_ObjektImpl implements Luft_Telegra
 				return lTBinaerdaten != null;
 			case Balisentechnik_ETCSPackage.LUFT_TELEGRAMM__TELEGRAMM_INDEX:
 				return telegrammIndex != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Luft_TelegrammImpl

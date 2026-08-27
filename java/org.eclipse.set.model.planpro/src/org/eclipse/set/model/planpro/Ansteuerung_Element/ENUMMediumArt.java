@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ansteuerung_Element;
 
@@ -274,8 +273,8 @@ public enum ENUMMediumArt implements Enumerator {
 			case ENUM_MEDIUM_ART_LWL_E2000_VALUE: return ENUM_MEDIUM_ART_LWL_E2000;
 			case ENUM_MEDIUM_ART_LWL_SC_LC_VALUE: return ENUM_MEDIUM_ART_LWL_SC_LC;
 			case ENUM_MEDIUM_ART_SONSTIGE_VALUE: return ENUM_MEDIUM_ART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

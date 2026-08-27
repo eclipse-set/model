@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Schluesselabhaengigkeiten;
 
@@ -642,8 +641,8 @@ public enum ENUMSchluesselBartform implements Enumerator {
 			case ENUM_SCHLUESSEL_BARTFORM_W_VALUE: return ENUM_SCHLUESSEL_BARTFORM_W;
 			case ENUM_SCHLUESSEL_BARTFORM_X_VALUE: return ENUM_SCHLUESSEL_BARTFORM_X;
 			case ENUM_SCHLUESSEL_BARTFORM_Z_VALUE: return ENUM_SCHLUESSEL_BARTFORM_Z;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bedienung;
 
@@ -136,8 +135,8 @@ public enum ENUMBSOTeilsystemArt implements Enumerator {
 		switch (value) {
 			case ENUMBSO_TEILSYSTEM_ART_IBS_VALUE: return ENUMBSO_TEILSYSTEM_ART_IBS;
 			case ENUMBSO_TEILSYSTEM_ART_TRANSFERNETZ_BEDIENUNG_VALUE: return ENUMBSO_TEILSYSTEM_ART_TRANSFERNETZ_BEDIENUNG;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.BasisTypen.provider;
 
@@ -131,10 +130,8 @@ public class Bezeichnung_Aussenanlage_TypeClassItemProvider extends BasisAttribu
 			case BasisTypenPackage.BEZEICHNUNG_AUSSENANLAGE_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.ATO.provider;
 
@@ -29,6 +28,8 @@ import org.eclipse.set.model.planpro.ATO.ATOPackage;
 import org.eclipse.set.model.planpro.ATO.ATO_TS_Instanz;
 
 import org.eclipse.set.model.planpro.Basisobjekte.provider.Basis_ObjektItemProvider;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Verweise.VerweiseFactory;
 
@@ -144,10 +145,8 @@ public class ATO_TS_InstanzItemProvider extends Basis_ObjektItemProvider {
 			case ATOPackage.ATO_TS_INSTANZ__ID_UNTERBRINGUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

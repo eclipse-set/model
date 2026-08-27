@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang.impl;
 
@@ -300,9 +299,8 @@ public class SchrankenantriebImpl extends Punkt_ObjektImpl implements Schrankena
 				return basicSetSASchrankenbaum(null, msgs);
 			case BahnuebergangPackage.SCHRANKENANTRIEB__SCHRANKENANTRIEB_ALLG:
 				return basicSetSchrankenantriebAllg(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -321,9 +319,8 @@ public class SchrankenantriebImpl extends Punkt_ObjektImpl implements Schrankena
 				return getSASchrankenbaum();
 			case BahnuebergangPackage.SCHRANKENANTRIEB__SCHRANKENANTRIEB_ALLG:
 				return getSchrankenantriebAllg();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -346,10 +343,8 @@ public class SchrankenantriebImpl extends Punkt_ObjektImpl implements Schrankena
 			case BahnuebergangPackage.SCHRANKENANTRIEB__SCHRANKENANTRIEB_ALLG:
 				setSchrankenantriebAllg((Schrankenantrieb_Allg_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -372,10 +367,8 @@ public class SchrankenantriebImpl extends Punkt_ObjektImpl implements Schrankena
 			case BahnuebergangPackage.SCHRANKENANTRIEB__SCHRANKENANTRIEB_ALLG:
 				setSchrankenantriebAllg((Schrankenantrieb_Allg_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -394,9 +387,8 @@ public class SchrankenantriebImpl extends Punkt_ObjektImpl implements Schrankena
 				return sASchrankenbaum != null;
 			case BahnuebergangPackage.SCHRANKENANTRIEB__SCHRANKENANTRIEB_ALLG:
 				return schrankenantriebAllg != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //SchrankenantriebImpl

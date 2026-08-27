@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale.presentation;
 
@@ -165,8 +164,6 @@ import org.eclipse.emf.edit.ui.view.ExtendedPropertySheetPage;
 
 import org.eclipse.set.model.planpro.Signale.provider.SignaleItemProviderAdapterFactory;
 
-import org.eclipse.set.model.planpro.ATO.presentation.PlanProEditorPlugin;
-
 import org.eclipse.set.model.planpro.ATO.provider.ATOItemProviderAdapterFactory;
 
 import org.eclipse.set.model.planpro.Ansteuerung_Element.provider.Ansteuerung_ElementItemProviderAdapterFactory;
@@ -202,6 +199,8 @@ import org.eclipse.set.model.planpro.Nahbedienung.provider.NahbedienungItemProvi
 import org.eclipse.set.model.planpro.Ortung.provider.OrtungItemProviderAdapterFactory;
 
 import org.eclipse.set.model.planpro.PZB.provider.PZBItemProviderAdapterFactory;
+
+import org.eclipse.set.model.planpro.PlanPro.presentation.PlanProEditorPlugin;
 
 import org.eclipse.set.model.planpro.PlanPro.provider.PlanProItemProviderAdapterFactory;
 
@@ -494,8 +493,6 @@ public class SignaleEditor
 							dispatchUpdateProblemIndication();
 							break;
 						}
-						default:
-							break;
 					}
 				}
 				else {
@@ -776,34 +773,34 @@ public class SignaleEditor
 		adapterFactory = new ComposedAdapterFactory(ComposedAdapterFactory.Descriptor.Registry.INSTANCE);
 
 		adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new PlanProItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new Signalbegriffe_Ril_301ItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new LayoutinformationenItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new BasisTypenItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new BasisobjekteItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ATOItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Ansteuerung_ElementItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new BahnsteigItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new BahnuebergangItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Balisentechnik_ETCSItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new BasisTypenItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new BasisobjekteItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new BedienungItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new BlockItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new FahrstrasseItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new BahnuebergangItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new FlankenschutzItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new OrtungItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new FahrstrasseItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new GeodatenItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new Weichen_und_GleissperrenItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new GleisItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new LayoutinformationenItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Medien_und_TrassenItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new NahbedienungItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new OrtungItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new PZBItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new PlanProItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new RegelzeichnungItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new SchluesselabhaengigkeitenItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new Signalbegriffe_Ril_301ItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new Signalbegriffe_StrukturItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new SignaleItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new VerweiseItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new Weichen_und_GleissperrenItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ZuglenkungItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ZugnummernmeldeanlageItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new VerweiseItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new Signalbegriffe_StrukturItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.

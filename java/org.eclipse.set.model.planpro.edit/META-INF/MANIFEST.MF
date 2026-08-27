@@ -3,9 +3,9 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.eclipse.set.model.planpro.edit;singleton:=true
 Automatic-Module-Name: org.eclipse.set.model.planpro.edit
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 2.7.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin$Implementation
+Bundle-Activator: org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-21

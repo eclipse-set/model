@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte;
 
@@ -205,8 +204,8 @@ public enum ENUMRolle implements Enumerator {
 			case ENUM_ROLLE_LST_FACHPLANER_VALUE: return ENUM_ROLLE_LST_FACHPLANER;
 			case ENUM_ROLLE_ODB2_PLAN_PRO_VALUE: return ENUM_ROLLE_ODB2_PLAN_PRO;
 			case ENUM_ROLLE_SONSTIGE_VALUE: return ENUM_ROLLE_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

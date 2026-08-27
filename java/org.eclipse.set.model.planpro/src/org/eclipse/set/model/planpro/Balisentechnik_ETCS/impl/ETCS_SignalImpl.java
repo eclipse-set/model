@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -569,9 +568,8 @@ public class ETCS_SignalImpl extends Basis_ObjektImpl implements ETCS_Signal {
 				return ((InternalEList<?>)getIDRBC()).basicRemove(otherEnd, msgs);
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL__ID_SIGNAL:
 				return basicSetIDSignal(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -600,9 +598,8 @@ public class ETCS_SignalImpl extends Basis_ObjektImpl implements ETCS_Signal {
 				return getIDRBC();
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL__ID_SIGNAL:
 				return getIDSignal();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -642,10 +639,8 @@ public class ETCS_SignalImpl extends Basis_ObjektImpl implements ETCS_Signal {
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL__ID_SIGNAL:
 				setIDSignal((ID_Signal_ohne_Proxy_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -683,10 +678,8 @@ public class ETCS_SignalImpl extends Basis_ObjektImpl implements ETCS_Signal {
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL__ID_SIGNAL:
 				setIDSignal((ID_Signal_ohne_Proxy_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -715,9 +708,8 @@ public class ETCS_SignalImpl extends Basis_ObjektImpl implements ETCS_Signal {
 				return iDRBC != null && !iDRBC.isEmpty();
 			case Balisentechnik_ETCSPackage.ETCS_SIGNAL__ID_SIGNAL:
 				return iDSignal != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ETCS_SignalImpl

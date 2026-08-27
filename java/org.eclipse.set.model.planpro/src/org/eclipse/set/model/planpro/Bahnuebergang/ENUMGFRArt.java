@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang;
 
@@ -159,8 +158,8 @@ public enum ENUMGFRArt implements Enumerator {
 			case ENUMGFR_ART_AUTOMATISCH_VALUE: return ENUMGFR_ART_AUTOMATISCH;
 			case ENUMGFR_ART_MIT_BEDIENER_VALUE: return ENUMGFR_ART_MIT_BEDIENER;
 			case ENUMGFR_ART_SONSTIGE_VALUE: return ENUMGFR_ART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

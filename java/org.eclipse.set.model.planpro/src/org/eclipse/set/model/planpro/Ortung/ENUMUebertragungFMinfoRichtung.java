@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ortung;
 
@@ -136,8 +135,8 @@ public enum ENUMUebertragungFMinfoRichtung implements Enumerator {
 		switch (value) {
 			case ENUM_UEBERTRAGUNG_FMINFO_RICHTUNG_GEHEND_VALUE: return ENUM_UEBERTRAGUNG_FMINFO_RICHTUNG_GEHEND;
 			case ENUM_UEBERTRAGUNG_FMINFO_RICHTUNG_KOMMEND_VALUE: return ENUM_UEBERTRAGUNG_FMINFO_RICHTUNG_KOMMEND;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

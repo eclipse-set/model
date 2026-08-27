@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang.impl;
 
@@ -182,9 +181,8 @@ public class BUE_Einschaltung_ZuordnungImpl extends Basis_ObjektImpl implements 
 				return basicSetIDBUEEinschaltung(null, msgs);
 			case BahnuebergangPackage.BUE_EINSCHALTUNG_ZUORDNUNG__IDBUE_GLEISBEZ_GEFAHRRAUM:
 				return basicSetIDBUEGleisbezGefahrraum(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -199,9 +197,8 @@ public class BUE_Einschaltung_ZuordnungImpl extends Basis_ObjektImpl implements 
 				return getIDBUEEinschaltung();
 			case BahnuebergangPackage.BUE_EINSCHALTUNG_ZUORDNUNG__IDBUE_GLEISBEZ_GEFAHRRAUM:
 				return getIDBUEGleisbezGefahrraum();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -218,10 +215,8 @@ public class BUE_Einschaltung_ZuordnungImpl extends Basis_ObjektImpl implements 
 			case BahnuebergangPackage.BUE_EINSCHALTUNG_ZUORDNUNG__IDBUE_GLEISBEZ_GEFAHRRAUM:
 				setIDBUEGleisbezGefahrraum((ID_BUE_Gleisbezogener_Gefahrraum_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -238,10 +233,8 @@ public class BUE_Einschaltung_ZuordnungImpl extends Basis_ObjektImpl implements 
 			case BahnuebergangPackage.BUE_EINSCHALTUNG_ZUORDNUNG__IDBUE_GLEISBEZ_GEFAHRRAUM:
 				setIDBUEGleisbezGefahrraum((ID_BUE_Gleisbezogener_Gefahrraum_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -256,9 +249,8 @@ public class BUE_Einschaltung_ZuordnungImpl extends Basis_ObjektImpl implements 
 				return iDBUEEinschaltung != null;
 			case BahnuebergangPackage.BUE_EINSCHALTUNG_ZUORDNUNG__IDBUE_GLEISBEZ_GEFAHRRAUM:
 				return iDBUEGleisbezGefahrraum != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //BUE_Einschaltung_ZuordnungImpl

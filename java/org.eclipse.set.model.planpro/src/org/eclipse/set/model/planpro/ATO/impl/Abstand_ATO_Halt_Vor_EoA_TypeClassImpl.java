@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.ATO.impl;
 
@@ -145,9 +144,8 @@ public class Abstand_ATO_Halt_Vor_EoA_TypeClassImpl extends BasisAttribut_Attrib
 		switch (featureID) {
 			case ATOPackage.ABSTAND_ATO_HALT_VOR_EO_ATYPE_CLASS__WERT:
 				return getWert();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -161,10 +159,8 @@ public class Abstand_ATO_Halt_Vor_EoA_TypeClassImpl extends BasisAttribut_Attrib
 			case ATOPackage.ABSTAND_ATO_HALT_VOR_EO_ATYPE_CLASS__WERT:
 				setWert((BigDecimal)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -178,10 +174,8 @@ public class Abstand_ATO_Halt_Vor_EoA_TypeClassImpl extends BasisAttribut_Attrib
 			case ATOPackage.ABSTAND_ATO_HALT_VOR_EO_ATYPE_CLASS__WERT:
 				unsetWert();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -194,9 +188,8 @@ public class Abstand_ATO_Halt_Vor_EoA_TypeClassImpl extends BasisAttribut_Attrib
 		switch (featureID) {
 			case ATOPackage.ABSTAND_ATO_HALT_VOR_EO_ATYPE_CLASS__WERT:
 				return isSetWert();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

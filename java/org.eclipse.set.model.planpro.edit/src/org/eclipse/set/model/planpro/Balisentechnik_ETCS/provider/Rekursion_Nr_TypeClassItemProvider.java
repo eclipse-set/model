@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.provider;
 
@@ -26,12 +25,12 @@ import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage;
 import org.eclipse.set.model.planpro.Balisentechnik_ETCS.Rekursion_Nr_TypeClass;
 
 import org.eclipse.set.model.planpro.BasisTypen.provider.BasisAttribut_AttributeGroupItemProvider;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.Balisentechnik_ETCS.Rekursion_Nr_TypeClass} object.
@@ -140,10 +139,8 @@ public class Rekursion_Nr_TypeClassItemProvider extends BasisAttribut_AttributeG
 			case Balisentechnik_ETCSPackage.REKURSION_NR_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

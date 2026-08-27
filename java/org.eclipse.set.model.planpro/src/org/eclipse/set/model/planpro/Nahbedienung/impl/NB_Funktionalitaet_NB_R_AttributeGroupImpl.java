@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Nahbedienung.impl;
 
@@ -475,9 +474,8 @@ public class NB_Funktionalitaet_NB_R_AttributeGroupImpl extends EObjectImpl impl
 				return basicSetWHU(null, msgs);
 			case NahbedienungPackage.NB_FUNKTIONALITAET_NB_RATTRIBUTE_GROUP__WUS:
 				return basicSetWUS(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -502,9 +500,8 @@ public class NB_Funktionalitaet_NB_R_AttributeGroupImpl extends EObjectImpl impl
 				return getWHU();
 			case NahbedienungPackage.NB_FUNKTIONALITAET_NB_RATTRIBUTE_GROUP__WUS:
 				return getWUS();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -536,10 +533,8 @@ public class NB_Funktionalitaet_NB_R_AttributeGroupImpl extends EObjectImpl impl
 			case NahbedienungPackage.NB_FUNKTIONALITAET_NB_RATTRIBUTE_GROUP__WUS:
 				setWUS((WUS_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -571,10 +566,8 @@ public class NB_Funktionalitaet_NB_R_AttributeGroupImpl extends EObjectImpl impl
 			case NahbedienungPackage.NB_FUNKTIONALITAET_NB_RATTRIBUTE_GROUP__WUS:
 				setWUS((WUS_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -599,9 +592,8 @@ public class NB_Funktionalitaet_NB_R_AttributeGroupImpl extends EObjectImpl impl
 				return wHU != null;
 			case NahbedienungPackage.NB_FUNKTIONALITAET_NB_RATTRIBUTE_GROUP__WUS:
 				return wUS != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //NB_Funktionalitaet_NB_R_AttributeGroupImpl

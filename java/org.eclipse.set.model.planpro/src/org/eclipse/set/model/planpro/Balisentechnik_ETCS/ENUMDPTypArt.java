@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -136,8 +135,8 @@ public enum ENUMDPTypArt implements Enumerator {
 		switch (value) {
 			case ENUMDP_TYP_ART_PRIMAER_VALUE: return ENUMDP_TYP_ART_PRIMAER;
 			case ENUMDP_TYP_ART_SEKUNDAER_VALUE: return ENUMDP_TYP_ART_SEKUNDAER;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

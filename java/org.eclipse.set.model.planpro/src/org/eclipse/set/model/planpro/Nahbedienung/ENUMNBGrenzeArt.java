@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Nahbedienung;
 
@@ -159,8 +158,8 @@ public enum ENUMNBGrenzeArt implements Enumerator {
 			case ENUMNB_GRENZE_ART_ESTW_BEREICH_VALUE: return ENUMNB_GRENZE_ART_ESTW_BEREICH;
 			case ENUMNB_GRENZE_ART_NB_ZONE_VALUE: return ENUMNB_GRENZE_ART_NB_ZONE;
 			case ENUMNB_GRENZE_ART_ORTSSTELLBEREICH_VALUE: return ENUMNB_GRENZE_ART_ORTSSTELLBEREICH;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

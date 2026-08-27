@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Fahrstrasse.impl;
 
@@ -241,9 +240,8 @@ public class Markanter_PunktImpl extends Basis_ObjektImpl implements Markanter_P
 				return basicSetIDDWegErlaubnisabhaengig(null, msgs);
 			case FahrstrassePackage.MARKANTER_PUNKT__ID_MARKANTE_STELLE:
 				return basicSetIDMarkanteStelle(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -260,9 +258,8 @@ public class Markanter_PunktImpl extends Basis_ObjektImpl implements Markanter_P
 				return getIDDWegErlaubnisabhaengig();
 			case FahrstrassePackage.MARKANTER_PUNKT__ID_MARKANTE_STELLE:
 				return getIDMarkanteStelle();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -282,10 +279,8 @@ public class Markanter_PunktImpl extends Basis_ObjektImpl implements Markanter_P
 			case FahrstrassePackage.MARKANTER_PUNKT__ID_MARKANTE_STELLE:
 				setIDMarkanteStelle((ID_Markante_Stelle_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -305,10 +300,8 @@ public class Markanter_PunktImpl extends Basis_ObjektImpl implements Markanter_P
 			case FahrstrassePackage.MARKANTER_PUNKT__ID_MARKANTE_STELLE:
 				setIDMarkanteStelle((ID_Markante_Stelle_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -325,9 +318,8 @@ public class Markanter_PunktImpl extends Basis_ObjektImpl implements Markanter_P
 				return iDDWegErlaubnisabhaengig != null;
 			case FahrstrassePackage.MARKANTER_PUNKT__ID_MARKANTE_STELLE:
 				return iDMarkanteStelle != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Markanter_PunktImpl

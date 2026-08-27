@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -573,8 +572,8 @@ public enum ENUMFTZBSTyp implements Enumerator {
 			case ENUMFT_ZBS_TYP_ZRV_VALUE: return ENUMFT_ZBS_TYP_ZRV;
 			case ENUMFT_ZBS_TYP_ZV_VALUE: return ENUMFT_ZBS_TYP_ZV;
 			case ENUMFT_ZBS_TYP_ZUE_VALUE: return ENUMFT_ZBS_TYP_ZUE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

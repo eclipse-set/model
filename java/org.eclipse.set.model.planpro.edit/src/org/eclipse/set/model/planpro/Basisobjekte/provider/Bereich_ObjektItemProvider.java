@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte.provider;
 
@@ -125,10 +124,8 @@ public class Bereich_ObjektItemProvider extends Basis_ObjektItemProvider {
 			case BasisobjektePackage.BEREICH_OBJEKT__BEREICH_OBJEKT_TEILBEREICH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

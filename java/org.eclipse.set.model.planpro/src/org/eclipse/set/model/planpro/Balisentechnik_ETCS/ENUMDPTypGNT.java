@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -182,8 +181,8 @@ public enum ENUMDPTypGNT implements Enumerator {
 			case ENUMDP_TYP_GNT_B2_VALUE: return ENUMDP_TYP_GNT_B2;
 			case ENUMDP_TYP_GNT_B3_VALUE: return ENUMDP_TYP_GNT_B3;
 			case ENUMDP_TYP_GNT_SONSTIGE_VALUE: return ENUMDP_TYP_GNT_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

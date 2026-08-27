@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Weichen_und_Gleissperren;
 
@@ -136,8 +135,8 @@ public enum ENUMGleissperreVorzugslage implements Enumerator {
 		switch (value) {
 			case ENUM_GLEISSPERRE_VORZUGSLAGE_ABGELEGT_VALUE: return ENUM_GLEISSPERRE_VORZUGSLAGE_ABGELEGT;
 			case ENUM_GLEISSPERRE_VORZUGSLAGE_AUFGELEGT_VALUE: return ENUM_GLEISSPERRE_VORZUGSLAGE_AUFGELEGT;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

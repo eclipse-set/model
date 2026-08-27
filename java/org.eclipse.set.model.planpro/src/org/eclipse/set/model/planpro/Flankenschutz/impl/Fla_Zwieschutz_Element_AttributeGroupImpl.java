@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Flankenschutz.impl;
 
@@ -356,9 +355,8 @@ public class Fla_Zwieschutz_Element_AttributeGroupImpl extends EObjectImpl imple
 				return basicSetMassnahmeR(null, msgs);
 			case FlankenschutzPackage.FLA_ZWIESCHUTZ_ELEMENT_ATTRIBUTE_GROUP__NACHLAUFVERHINDERUNG:
 				return basicSetNachlaufverhinderung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -379,9 +377,8 @@ public class Fla_Zwieschutz_Element_AttributeGroupImpl extends EObjectImpl imple
 				return getMassnahmeR();
 			case FlankenschutzPackage.FLA_ZWIESCHUTZ_ELEMENT_ATTRIBUTE_GROUP__NACHLAUFVERHINDERUNG:
 				return getNachlaufverhinderung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -407,10 +404,8 @@ public class Fla_Zwieschutz_Element_AttributeGroupImpl extends EObjectImpl imple
 			case FlankenschutzPackage.FLA_ZWIESCHUTZ_ELEMENT_ATTRIBUTE_GROUP__NACHLAUFVERHINDERUNG:
 				setNachlaufverhinderung((Nachlaufverhinderung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -436,10 +431,8 @@ public class Fla_Zwieschutz_Element_AttributeGroupImpl extends EObjectImpl imple
 			case FlankenschutzPackage.FLA_ZWIESCHUTZ_ELEMENT_ATTRIBUTE_GROUP__NACHLAUFVERHINDERUNG:
 				setNachlaufverhinderung((Nachlaufverhinderung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -460,9 +453,8 @@ public class Fla_Zwieschutz_Element_AttributeGroupImpl extends EObjectImpl imple
 				return massnahmeR != null;
 			case FlankenschutzPackage.FLA_ZWIESCHUTZ_ELEMENT_ATTRIBUTE_GROUP__NACHLAUFVERHINDERUNG:
 				return nachlaufverhinderung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Fla_Zwieschutz_Element_AttributeGroupImpl

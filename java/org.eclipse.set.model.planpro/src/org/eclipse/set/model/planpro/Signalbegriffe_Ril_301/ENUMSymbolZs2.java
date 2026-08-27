@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signalbegriffe_Ril_301;
 
@@ -619,8 +618,8 @@ public enum ENUMSymbolZs2 implements Enumerator {
 			case ENUM_SYMBOL_ZS_2W_VALUE: return ENUM_SYMBOL_ZS_2W;
 			case ENUM_SYMBOL_ZS_2X_VALUE: return ENUM_SYMBOL_ZS_2X;
 			case ENUM_SYMBOL_ZS_2Z_VALUE: return ENUM_SYMBOL_ZS_2Z;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

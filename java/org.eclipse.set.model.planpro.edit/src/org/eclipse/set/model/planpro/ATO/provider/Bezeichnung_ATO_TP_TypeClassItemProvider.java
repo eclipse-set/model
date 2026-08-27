@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.ATO.provider;
 
@@ -28,6 +27,8 @@ import org.eclipse.set.model.planpro.ATO.ATOPackage;
 import org.eclipse.set.model.planpro.ATO.Bezeichnung_ATO_TP_TypeClass;
 
 import org.eclipse.set.model.planpro.BasisTypen.provider.BasisAttribut_AttributeGroupItemProvider;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.ATO.Bezeichnung_ATO_TP_TypeClass} object.
@@ -135,10 +136,8 @@ public class Bezeichnung_ATO_TP_TypeClassItemProvider extends BasisAttribut_Attr
 			case ATOPackage.BEZEICHNUNG_ATO_TP_TYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -770,9 +769,8 @@ public class FT_GNT_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 				return basicSetVZ(null, msgs);
 			case Balisentechnik_ETCSPackage.FT_GNT_MERKMALE_ATTRIBUTE_GROUP__ZLA:
 				return basicSetZLA(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -807,9 +805,8 @@ public class FT_GNT_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 				return getVZ();
 			case Balisentechnik_ETCSPackage.FT_GNT_MERKMALE_ATTRIBUTE_GROUP__ZLA:
 				return getZLA();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -856,10 +853,8 @@ public class FT_GNT_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 			case Balisentechnik_ETCSPackage.FT_GNT_MERKMALE_ATTRIBUTE_GROUP__ZLA:
 				setZLA((ZLA_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -906,10 +901,8 @@ public class FT_GNT_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 			case Balisentechnik_ETCSPackage.FT_GNT_MERKMALE_ATTRIBUTE_GROUP__ZLA:
 				setZLA((ZLA_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -944,9 +937,8 @@ public class FT_GNT_Merkmale_AttributeGroupImpl extends EObjectImpl implements F
 				return vZ != null;
 			case Balisentechnik_ETCSPackage.FT_GNT_MERKMALE_ATTRIBUTE_GROUP__ZLA:
 				return zLA != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //FT_GNT_Merkmale_AttributeGroupImpl

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.ATO.provider;
 
@@ -30,6 +29,8 @@ import org.eclipse.set.model.planpro.ATO.ATOPackage;
 import org.eclipse.set.model.planpro.ATO.Abstand_ATO_Halt_Vor_EoA_TypeClass;
 
 import org.eclipse.set.model.planpro.BasisTypen.provider.BasisAttribut_AttributeGroupItemProvider;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.ATO.Abstand_ATO_Halt_Vor_EoA_TypeClass} object.
@@ -138,10 +139,8 @@ public class Abstand_ATO_Halt_Vor_EoA_TypeClassItemProvider extends BasisAttribu
 			case ATOPackage.ABSTAND_ATO_HALT_VOR_EO_ATYPE_CLASS__WERT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

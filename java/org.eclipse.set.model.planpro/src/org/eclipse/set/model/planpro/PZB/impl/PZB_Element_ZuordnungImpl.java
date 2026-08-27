@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.PZB.impl;
 
@@ -121,9 +120,8 @@ public class PZB_Element_ZuordnungImpl extends Basis_ObjektImpl implements PZB_E
 				return ((InternalEList<?>)getPZBElementZuordnungBP()).basicRemove(otherEnd, msgs);
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG__PZB_ELEMENT_ZUORDNUNG_FSTR:
 				return ((InternalEList<?>)getPZBElementZuordnungFstr()).basicRemove(otherEnd, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -138,9 +136,8 @@ public class PZB_Element_ZuordnungImpl extends Basis_ObjektImpl implements PZB_E
 				return getPZBElementZuordnungBP();
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG__PZB_ELEMENT_ZUORDNUNG_FSTR:
 				return getPZBElementZuordnungFstr();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -160,10 +157,8 @@ public class PZB_Element_ZuordnungImpl extends Basis_ObjektImpl implements PZB_E
 				getPZBElementZuordnungFstr().clear();
 				getPZBElementZuordnungFstr().addAll((Collection<? extends PZB_Element_Zuordnung_Fstr_AttributeGroup>)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -180,10 +175,8 @@ public class PZB_Element_ZuordnungImpl extends Basis_ObjektImpl implements PZB_E
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG__PZB_ELEMENT_ZUORDNUNG_FSTR:
 				getPZBElementZuordnungFstr().clear();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -198,9 +191,8 @@ public class PZB_Element_ZuordnungImpl extends Basis_ObjektImpl implements PZB_E
 				return pZBElementZuordnungBP != null && !pZBElementZuordnungBP.isEmpty();
 			case PZBPackage.PZB_ELEMENT_ZUORDNUNG__PZB_ELEMENT_ZUORDNUNG_FSTR:
 				return pZBElementZuordnungFstr != null && !pZBElementZuordnungFstr.isEmpty();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //PZB_Element_ZuordnungImpl

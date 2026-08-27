@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl;
 
@@ -216,9 +215,8 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 				return ((InternalEList<?>)getIDZLVBus()).basicRemove(otherEnd, msgs);
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR:
 				return basicSetUnterstationNr(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -235,9 +233,8 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 				return getIDZLVBus();
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR:
 				return getUnterstationNr();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -259,10 +256,8 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR:
 				setUnterstationNr((Unterstation_Nr_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -282,10 +277,8 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR:
 				setUnterstationNr((Unterstation_Nr_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -302,9 +295,8 @@ public class ZLV_Bus_Besondere_AnlageImpl extends Basis_ObjektImpl implements ZL
 				return iDZLVBus != null && !iDZLVBus.isEmpty();
 			case ZugnummernmeldeanlagePackage.ZLV_BUS_BESONDERE_ANLAGE__UNTERSTATION_NR:
 				return unterstationNr != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZLV_Bus_Besondere_AnlageImpl

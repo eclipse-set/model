@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte;
 
@@ -1447,8 +1446,8 @@ public enum ENUMBVDarstellungInPlan implements Enumerator {
 			case ENUMBV_DARSTELLUNG_IN_PLAN_ZN_UEBERSICHTSPLAN_VALUE: return ENUMBV_DARSTELLUNG_IN_PLAN_ZN_UEBERSICHTSPLAN;
 			case ENUMBV_DARSTELLUNG_IN_PLAN_ZUGSTRASSENTABELLE_VALUE: return ENUMBV_DARSTELLUNG_IN_PLAN_ZUGSTRASSENTABELLE;
 			case ENUMBV_DARSTELLUNG_IN_PLAN_ZWIESCHUTZWEICHENTABELLE_VALUE: return ENUMBV_DARSTELLUNG_IN_PLAN_ZWIESCHUTZWEICHENTABELLE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

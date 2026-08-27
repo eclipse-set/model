@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bedienung;
 
@@ -274,8 +273,8 @@ public enum ENUMSchalter implements Enumerator {
 			case ENUM_SCHALTER_SONSTIGE_VALUE: return ENUM_SCHALTER_SONSTIGE;
 			case ENUM_SCHALTER_VORBEREITUNGSMELDUNG_VALUE: return ENUM_SCHALTER_VORBEREITUNGSMELDUNG;
 			case ENUM_SCHALTER_ZUSTIMMUNGSTASTE_VALUE: return ENUM_SCHALTER_ZUSTIMMUNGSTASTE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

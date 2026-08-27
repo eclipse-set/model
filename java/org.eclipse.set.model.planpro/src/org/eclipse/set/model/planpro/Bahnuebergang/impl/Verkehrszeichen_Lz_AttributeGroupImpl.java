@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang.impl;
 
@@ -475,9 +474,8 @@ public class Verkehrszeichen_Lz_AttributeGroupImpl extends EObjectImpl implement
 				return basicSetTragkopfVerstellbar(null, msgs);
 			case BahnuebergangPackage.VERKEHRSZEICHEN_LZ_ATTRIBUTE_GROUP__VORGESCHALTET:
 				return basicSetVorgeschaltet(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -502,9 +500,8 @@ public class Verkehrszeichen_Lz_AttributeGroupImpl extends EObjectImpl implement
 				return getTragkopfVerstellbar();
 			case BahnuebergangPackage.VERKEHRSZEICHEN_LZ_ATTRIBUTE_GROUP__VORGESCHALTET:
 				return getVorgeschaltet();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -536,10 +533,8 @@ public class Verkehrszeichen_Lz_AttributeGroupImpl extends EObjectImpl implement
 			case BahnuebergangPackage.VERKEHRSZEICHEN_LZ_ATTRIBUTE_GROUP__VORGESCHALTET:
 				setVorgeschaltet((Vorgeschaltet_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -571,10 +566,8 @@ public class Verkehrszeichen_Lz_AttributeGroupImpl extends EObjectImpl implement
 			case BahnuebergangPackage.VERKEHRSZEICHEN_LZ_ATTRIBUTE_GROUP__VORGESCHALTET:
 				setVorgeschaltet((Vorgeschaltet_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -599,9 +592,8 @@ public class Verkehrszeichen_Lz_AttributeGroupImpl extends EObjectImpl implement
 				return tragkopfVerstellbar != null;
 			case BahnuebergangPackage.VERKEHRSZEICHEN_LZ_ATTRIBUTE_GROUP__VORGESCHALTET:
 				return vorgeschaltet != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Verkehrszeichen_Lz_AttributeGroupImpl

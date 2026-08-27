@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Nahbedienung;
 
@@ -205,8 +204,8 @@ public enum ENUMWGspLage implements Enumerator {
 			case ENUMW_GSP_LAGE_LINKS_VALUE: return ENUMW_GSP_LAGE_LINKS;
 			case ENUMW_GSP_LAGE_RECHTS_VALUE: return ENUMW_GSP_LAGE_RECHTS;
 			case ENUMW_GSP_LAGE_SONSTIGE_VALUE: return ENUMW_GSP_LAGE_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang.impl;
 
@@ -239,9 +238,8 @@ public class Verkehrszeichen_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return basicSetAusrichtung(null, msgs);
 			case BahnuebergangPackage.VERKEHRSZEICHEN_ALLG_ATTRIBUTE_GROUP__AUSRICHTUNG_WINKEL:
 				return basicSetAusrichtungWinkel(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +256,8 @@ public class Verkehrszeichen_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return getAusrichtung();
 			case BahnuebergangPackage.VERKEHRSZEICHEN_ALLG_ATTRIBUTE_GROUP__AUSRICHTUNG_WINKEL:
 				return getAusrichtungWinkel();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +277,8 @@ public class Verkehrszeichen_Allg_AttributeGroupImpl extends EObjectImpl impleme
 			case BahnuebergangPackage.VERKEHRSZEICHEN_ALLG_ATTRIBUTE_GROUP__AUSRICHTUNG_WINKEL:
 				setAusrichtungWinkel((Ausrichtung_Winkel_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +298,8 @@ public class Verkehrszeichen_Allg_AttributeGroupImpl extends EObjectImpl impleme
 			case BahnuebergangPackage.VERKEHRSZEICHEN_ALLG_ATTRIBUTE_GROUP__AUSRICHTUNG_WINKEL:
 				setAusrichtungWinkel((Ausrichtung_Winkel_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +316,8 @@ public class Verkehrszeichen_Allg_AttributeGroupImpl extends EObjectImpl impleme
 				return ausrichtung != null;
 			case BahnuebergangPackage.VERKEHRSZEICHEN_ALLG_ATTRIBUTE_GROUP__AUSRICHTUNG_WINKEL:
 				return ausrichtungWinkel != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Verkehrszeichen_Allg_AttributeGroupImpl

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Flankenschutz;
 
@@ -159,8 +158,8 @@ public enum ENUMFahrtUeber implements Enumerator {
 			case ENUM_FAHRT_UEBER_LINKS_VALUE: return ENUM_FAHRT_UEBER_LINKS;
 			case ENUM_FAHRT_UEBER_RECHTS_VALUE: return ENUM_FAHRT_UEBER_RECHTS;
 			case ENUM_FAHRT_UEBER_SPITZE_VALUE: return ENUM_FAHRT_UEBER_SPITZE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

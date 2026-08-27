@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte.impl;
 
@@ -300,9 +299,8 @@ public class LieferobjektImpl extends Basis_ObjektImpl implements Lieferobjekt {
 				return basicSetLOErsatz(null, msgs);
 			case BasisobjektePackage.LIEFEROBJEKT__LO_MATERIAL:
 				return basicSetLOMaterial(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -323,9 +321,8 @@ public class LieferobjektImpl extends Basis_ObjektImpl implements Lieferobjekt {
 				return getLOErsatz();
 			case BasisobjektePackage.LIEFEROBJEKT__LO_MATERIAL:
 				return getLOMaterial();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -354,10 +351,8 @@ public class LieferobjektImpl extends Basis_ObjektImpl implements Lieferobjekt {
 			case BasisobjektePackage.LIEFEROBJEKT__LO_MATERIAL:
 				setLOMaterial((LO_Material_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -383,10 +378,8 @@ public class LieferobjektImpl extends Basis_ObjektImpl implements Lieferobjekt {
 			case BasisobjektePackage.LIEFEROBJEKT__LO_MATERIAL:
 				setLOMaterial((LO_Material_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -407,9 +400,8 @@ public class LieferobjektImpl extends Basis_ObjektImpl implements Lieferobjekt {
 				return lOErsatz != null;
 			case BasisobjektePackage.LIEFEROBJEKT__LO_MATERIAL:
 				return lOMaterial != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //LieferobjektImpl

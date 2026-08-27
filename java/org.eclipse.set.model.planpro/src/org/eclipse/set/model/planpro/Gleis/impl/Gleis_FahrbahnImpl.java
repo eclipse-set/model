@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Gleis.impl;
 
@@ -122,9 +121,8 @@ public class Gleis_FahrbahnImpl extends Bereich_ObjektImpl implements Gleis_Fahr
 		switch (featureID) {
 			case GleisPackage.GLEIS_FAHRBAHN__KONSTRUKTION:
 				return basicSetKonstruktion(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -137,9 +135,8 @@ public class Gleis_FahrbahnImpl extends Bereich_ObjektImpl implements Gleis_Fahr
 		switch (featureID) {
 			case GleisPackage.GLEIS_FAHRBAHN__KONSTRUKTION:
 				return getKonstruktion();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -153,10 +150,8 @@ public class Gleis_FahrbahnImpl extends Bereich_ObjektImpl implements Gleis_Fahr
 			case GleisPackage.GLEIS_FAHRBAHN__KONSTRUKTION:
 				setKonstruktion((Konstruktion_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -170,10 +165,8 @@ public class Gleis_FahrbahnImpl extends Bereich_ObjektImpl implements Gleis_Fahr
 			case GleisPackage.GLEIS_FAHRBAHN__KONSTRUKTION:
 				setKonstruktion((Konstruktion_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -186,9 +179,8 @@ public class Gleis_FahrbahnImpl extends Bereich_ObjektImpl implements Gleis_Fahr
 		switch (featureID) {
 			case GleisPackage.GLEIS_FAHRBAHN__KONSTRUKTION:
 				return konstruktion != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Gleis_FahrbahnImpl

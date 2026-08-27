@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Fahrstrasse;
 
@@ -136,8 +135,8 @@ public enum ENUMAufloesungSspZielgleis implements Enumerator {
 		switch (value) {
 			case ENUM_AUFLOESUNG_SSP_ZIELGLEIS_BESETZT_VALUE: return ENUM_AUFLOESUNG_SSP_ZIELGLEIS_BESETZT;
 			case ENUM_AUFLOESUNG_SSP_ZIELGLEIS_FREI_VALUE: return ENUM_AUFLOESUNG_SSP_ZIELGLEIS_FREI;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

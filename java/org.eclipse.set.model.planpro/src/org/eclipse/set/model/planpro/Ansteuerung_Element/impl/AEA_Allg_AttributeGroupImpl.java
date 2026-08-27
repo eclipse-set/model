@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Ansteuerung_Element.impl;
 
@@ -180,9 +179,8 @@ public class AEA_Allg_AttributeGroupImpl extends EObjectImpl implements AEA_Allg
 				return basicSetAussenelementansteuerungArt(null, msgs);
 			case Ansteuerung_ElementPackage.AEA_ALLG_ATTRIBUTE_GROUP__BAUART:
 				return basicSetBauart(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -197,9 +195,8 @@ public class AEA_Allg_AttributeGroupImpl extends EObjectImpl implements AEA_Allg
 				return getAussenelementansteuerungArt();
 			case Ansteuerung_ElementPackage.AEA_ALLG_ATTRIBUTE_GROUP__BAUART:
 				return getBauart();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -216,10 +213,8 @@ public class AEA_Allg_AttributeGroupImpl extends EObjectImpl implements AEA_Allg
 			case Ansteuerung_ElementPackage.AEA_ALLG_ATTRIBUTE_GROUP__BAUART:
 				setBauart((Bauart_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -236,10 +231,8 @@ public class AEA_Allg_AttributeGroupImpl extends EObjectImpl implements AEA_Allg
 			case Ansteuerung_ElementPackage.AEA_ALLG_ATTRIBUTE_GROUP__BAUART:
 				setBauart((Bauart_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -254,9 +247,8 @@ public class AEA_Allg_AttributeGroupImpl extends EObjectImpl implements AEA_Allg
 				return aussenelementansteuerungArt != null;
 			case Ansteuerung_ElementPackage.AEA_ALLG_ATTRIBUTE_GROUP__BAUART:
 				return bauart != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //AEA_Allg_AttributeGroupImpl

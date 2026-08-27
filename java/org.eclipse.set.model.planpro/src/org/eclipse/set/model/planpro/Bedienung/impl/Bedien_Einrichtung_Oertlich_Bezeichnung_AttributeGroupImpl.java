@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bedienung.impl;
 
@@ -121,9 +120,8 @@ public class Bedien_Einrichtung_Oertlich_Bezeichnung_AttributeGroupImpl extends 
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_EINRICHTUNG_OERTLICH_BEZEICHNUNG_ATTRIBUTE_GROUP__BEDIEN_EINRICHT_OERTL_BEZ:
 				return basicSetBedienEinrichtOertlBez(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,9 +134,8 @@ public class Bedien_Einrichtung_Oertlich_Bezeichnung_AttributeGroupImpl extends 
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_EINRICHTUNG_OERTLICH_BEZEICHNUNG_ATTRIBUTE_GROUP__BEDIEN_EINRICHT_OERTL_BEZ:
 				return getBedienEinrichtOertlBez();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -152,10 +149,8 @@ public class Bedien_Einrichtung_Oertlich_Bezeichnung_AttributeGroupImpl extends 
 			case BedienungPackage.BEDIEN_EINRICHTUNG_OERTLICH_BEZEICHNUNG_ATTRIBUTE_GROUP__BEDIEN_EINRICHT_OERTL_BEZ:
 				setBedienEinrichtOertlBez((Bedien_Einricht_Oertl_Bez_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -169,10 +164,8 @@ public class Bedien_Einrichtung_Oertlich_Bezeichnung_AttributeGroupImpl extends 
 			case BedienungPackage.BEDIEN_EINRICHTUNG_OERTLICH_BEZEICHNUNG_ATTRIBUTE_GROUP__BEDIEN_EINRICHT_OERTL_BEZ:
 				setBedienEinrichtOertlBez((Bedien_Einricht_Oertl_Bez_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -185,9 +178,8 @@ public class Bedien_Einrichtung_Oertlich_Bezeichnung_AttributeGroupImpl extends 
 		switch (featureID) {
 			case BedienungPackage.BEDIEN_EINRICHTUNG_OERTLICH_BEZEICHNUNG_ATTRIBUTE_GROUP__BEDIEN_EINRICHT_OERTL_BEZ:
 				return bedienEinrichtOertlBez != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bedien_Einrichtung_Oertlich_Bezeichnung_AttributeGroupImpl

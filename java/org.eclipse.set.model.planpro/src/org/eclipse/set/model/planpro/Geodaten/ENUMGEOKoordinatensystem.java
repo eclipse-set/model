@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Geodaten;
 
@@ -205,8 +204,8 @@ public enum ENUMGEOKoordinatensystem implements Enumerator {
 			case ENUMGEO_KOORDINATENSYSTEM_ER0_VALUE: return ENUMGEO_KOORDINATENSYSTEM_ER0;
 			case ENUMGEO_KOORDINATENSYSTEM_FR0_VALUE: return ENUMGEO_KOORDINATENSYSTEM_FR0;
 			case ENUMGEO_KOORDINATENSYSTEM_SONSTIGE_VALUE: return ENUMGEO_KOORDINATENSYSTEM_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

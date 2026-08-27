@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage;
 
@@ -251,8 +250,8 @@ public enum ENUMFunktionalitaetAnzeigefeld implements Enumerator {
 			case ENUM_FUNKTIONALITAET_ANZEIGEFELD_STAPELFELD_VALUE: return ENUM_FUNKTIONALITAET_ANZEIGEFELD_STAPELFELD;
 			case ENUM_FUNKTIONALITAET_ANZEIGEFELD_VORANZEIGEFELD_VALUE: return ENUM_FUNKTIONALITAET_ANZEIGEFELD_VORANZEIGEFELD;
 			case ENUM_FUNKTIONALITAET_ANZEIGEFELD_WANDELFELD_VALUE: return ENUM_FUNKTIONALITAET_ANZEIGEFELD_WANDELFELD;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

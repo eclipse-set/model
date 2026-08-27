@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bedienung.impl;
 
@@ -182,9 +181,8 @@ public class Bedien_OberflaecheImpl extends Basis_ObjektImpl implements Bedien_O
 				return basicSetBedienOberflaecheAnhaenge(null, msgs);
 			case BedienungPackage.BEDIEN_OBERFLAECHE__ID_BEDIEN_BEZIRK:
 				return basicSetIDBedienBezirk(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -199,9 +197,8 @@ public class Bedien_OberflaecheImpl extends Basis_ObjektImpl implements Bedien_O
 				return getBedienOberflaecheAnhaenge();
 			case BedienungPackage.BEDIEN_OBERFLAECHE__ID_BEDIEN_BEZIRK:
 				return getIDBedienBezirk();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -218,10 +215,8 @@ public class Bedien_OberflaecheImpl extends Basis_ObjektImpl implements Bedien_O
 			case BedienungPackage.BEDIEN_OBERFLAECHE__ID_BEDIEN_BEZIRK:
 				setIDBedienBezirk((ID_Bedien_Bezirk_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -238,10 +233,8 @@ public class Bedien_OberflaecheImpl extends Basis_ObjektImpl implements Bedien_O
 			case BedienungPackage.BEDIEN_OBERFLAECHE__ID_BEDIEN_BEZIRK:
 				setIDBedienBezirk((ID_Bedien_Bezirk_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -256,9 +249,8 @@ public class Bedien_OberflaecheImpl extends Basis_ObjektImpl implements Bedien_O
 				return bedienOberflaecheAnhaenge != null;
 			case BedienungPackage.BEDIEN_OBERFLAECHE__ID_BEDIEN_BEZIRK:
 				return iDBedienBezirk != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Bedien_OberflaecheImpl

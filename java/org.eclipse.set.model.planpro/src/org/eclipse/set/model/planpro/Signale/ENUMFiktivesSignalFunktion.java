@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale;
 
@@ -573,8 +572,8 @@ public enum ENUMFiktivesSignalFunktion implements Enumerator {
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_1_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_1;
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_7_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_7;
 			case ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_8_VALUE: return ENUM_FIKTIVES_SIGNAL_FUNKTION_ZUG_START_ZIEL_NE_14_MIT_ZS_8;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

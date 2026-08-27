@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang.impl;
 
@@ -241,9 +240,8 @@ public class BUE_SchnittstelleImpl extends Basis_ObjektImpl implements BUE_Schni
 				return basicSetBUESchnittstelleAllg(null, msgs);
 			case BahnuebergangPackage.BUE_SCHNITTSTELLE__ID_STELLELEMENT:
 				return basicSetIDStellelement(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -260,9 +258,8 @@ public class BUE_SchnittstelleImpl extends Basis_ObjektImpl implements BUE_Schni
 				return getBUESchnittstelleAllg();
 			case BahnuebergangPackage.BUE_SCHNITTSTELLE__ID_STELLELEMENT:
 				return getIDStellelement();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -282,10 +279,8 @@ public class BUE_SchnittstelleImpl extends Basis_ObjektImpl implements BUE_Schni
 			case BahnuebergangPackage.BUE_SCHNITTSTELLE__ID_STELLELEMENT:
 				setIDStellelement((ID_Stellelement_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -305,10 +300,8 @@ public class BUE_SchnittstelleImpl extends Basis_ObjektImpl implements BUE_Schni
 			case BahnuebergangPackage.BUE_SCHNITTSTELLE__ID_STELLELEMENT:
 				setIDStellelement((ID_Stellelement_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -325,9 +318,8 @@ public class BUE_SchnittstelleImpl extends Basis_ObjektImpl implements BUE_Schni
 				return bUESchnittstelleAllg != null;
 			case BahnuebergangPackage.BUE_SCHNITTSTELLE__ID_STELLELEMENT:
 				return iDStellelement != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //BUE_SchnittstelleImpl

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Basisobjekte;
 
@@ -3908,8 +3907,8 @@ public enum ENUMLSTObjektArt implements Enumerator {
 			case ENUMLST_OBJEKT_ART_ZUB_BEREICHSGRENZE_VALUE: return ENUMLST_OBJEKT_ART_ZUB_BEREICHSGRENZE;
 			case ENUMLST_OBJEKT_ART_ZUB_STRECKENEIGENSCHAFT_VALUE: return ENUMLST_OBJEKT_ART_ZUB_STRECKENEIGENSCHAFT;
 			case ENUMLST_OBJEKT_ART_ZUGEINWIRKUNG_VALUE: return ENUMLST_OBJEKT_ART_ZUGEINWIRKUNG;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

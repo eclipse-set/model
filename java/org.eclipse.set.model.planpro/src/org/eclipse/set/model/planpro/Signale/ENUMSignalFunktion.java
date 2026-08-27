@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale;
 
@@ -504,8 +503,8 @@ public enum ENUMSignalFunktion implements Enumerator {
 			case ENUM_SIGNAL_FUNKTION_ZUGDECKUNGS_SIGNAL_VALUE: return ENUM_SIGNAL_FUNKTION_ZUGDECKUNGS_SIGNAL;
 			case ENUM_SIGNAL_FUNKTION_ZUG_ZIEL_SIGNAL_VALUE: return ENUM_SIGNAL_FUNKTION_ZUG_ZIEL_SIGNAL;
 			case ENUM_SIGNAL_FUNKTION_ZWISCHEN_SIGNAL_VALUE: return ENUM_SIGNAL_FUNKTION_ZWISCHEN_SIGNAL;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

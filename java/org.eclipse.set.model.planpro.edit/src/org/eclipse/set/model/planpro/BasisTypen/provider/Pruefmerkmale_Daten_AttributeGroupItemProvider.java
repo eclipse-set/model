@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.BasisTypen.provider;
 
@@ -30,11 +29,11 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.BasisTypen.BasisTypenFactory;
 import org.eclipse.set.model.planpro.BasisTypen.BasisTypenPackage;
 import org.eclipse.set.model.planpro.BasisTypen.Pruefmerkmale_Daten_AttributeGroup;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.BasisTypen.Pruefmerkmale_Daten_AttributeGroup} object.
@@ -159,10 +158,8 @@ public class Pruefmerkmale_Daten_AttributeGroupItemProvider
 			case BasisTypenPackage.PRUEFMERKMALE_DATEN_ATTRIBUTE_GROUP__VERSION_AUSLIEFERUNG:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

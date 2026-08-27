@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Gleis.impl;
 
@@ -182,9 +181,8 @@ public class Gleis_AbschnittImpl extends Bereich_ObjektImpl implements Gleis_Abs
 				return basicSetBezeichnung(null, msgs);
 			case GleisPackage.GLEIS_ABSCHNITT__GESCHWINDIGKEIT:
 				return basicSetGeschwindigkeit(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -199,9 +197,8 @@ public class Gleis_AbschnittImpl extends Bereich_ObjektImpl implements Gleis_Abs
 				return getBezeichnung();
 			case GleisPackage.GLEIS_ABSCHNITT__GESCHWINDIGKEIT:
 				return getGeschwindigkeit();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -218,10 +215,8 @@ public class Gleis_AbschnittImpl extends Bereich_ObjektImpl implements Gleis_Abs
 			case GleisPackage.GLEIS_ABSCHNITT__GESCHWINDIGKEIT:
 				setGeschwindigkeit((Geschwindigkeit_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -238,10 +233,8 @@ public class Gleis_AbschnittImpl extends Bereich_ObjektImpl implements Gleis_Abs
 			case GleisPackage.GLEIS_ABSCHNITT__GESCHWINDIGKEIT:
 				setGeschwindigkeit((Geschwindigkeit_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -256,9 +249,8 @@ public class Gleis_AbschnittImpl extends Bereich_ObjektImpl implements Gleis_Abs
 				return bezeichnung != null;
 			case GleisPackage.GLEIS_ABSCHNITT__GESCHWINDIGKEIT:
 				return geschwindigkeit != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Gleis_AbschnittImpl

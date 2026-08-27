@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Block.impl;
 
@@ -143,9 +142,8 @@ public class Auto_Erlaubnisruecklauf_TypeClassImpl extends BasisAttribut_Attribu
 		switch (featureID) {
 			case BlockPackage.AUTO_ERLAUBNISRUECKLAUF_TYPE_CLASS__WERT:
 				return getWert();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -159,10 +157,8 @@ public class Auto_Erlaubnisruecklauf_TypeClassImpl extends BasisAttribut_Attribu
 			case BlockPackage.AUTO_ERLAUBNISRUECKLAUF_TYPE_CLASS__WERT:
 				setWert((Boolean)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -176,10 +172,8 @@ public class Auto_Erlaubnisruecklauf_TypeClassImpl extends BasisAttribut_Attribu
 			case BlockPackage.AUTO_ERLAUBNISRUECKLAUF_TYPE_CLASS__WERT:
 				unsetWert();
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -192,9 +186,8 @@ public class Auto_Erlaubnisruecklauf_TypeClassImpl extends BasisAttribut_Attribu
 		switch (featureID) {
 			case BlockPackage.AUTO_ERLAUBNISRUECKLAUF_TYPE_CLASS__WERT:
 				return isSetWert();
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 	/**

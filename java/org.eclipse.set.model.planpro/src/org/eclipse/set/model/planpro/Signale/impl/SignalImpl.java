@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale.impl;
 
@@ -477,9 +476,8 @@ public class SignalImpl extends Punkt_ObjektImpl implements Signal {
 				return basicSetSignalFiktiv(null, msgs);
 			case SignalePackage.SIGNAL__SIGNAL_REAL:
 				return basicSetSignalReal(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -504,9 +502,8 @@ public class SignalImpl extends Punkt_ObjektImpl implements Signal {
 				return getSignalFiktiv();
 			case SignalePackage.SIGNAL__SIGNAL_REAL:
 				return getSignalReal();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -538,10 +535,8 @@ public class SignalImpl extends Punkt_ObjektImpl implements Signal {
 			case SignalePackage.SIGNAL__SIGNAL_REAL:
 				setSignalReal((Signal_Real_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -573,10 +568,8 @@ public class SignalImpl extends Punkt_ObjektImpl implements Signal {
 			case SignalePackage.SIGNAL__SIGNAL_REAL:
 				setSignalReal((Signal_Real_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -601,9 +594,8 @@ public class SignalImpl extends Punkt_ObjektImpl implements Signal {
 				return signalFiktiv != null;
 			case SignalePackage.SIGNAL__SIGNAL_REAL:
 				return signalReal != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //SignalImpl

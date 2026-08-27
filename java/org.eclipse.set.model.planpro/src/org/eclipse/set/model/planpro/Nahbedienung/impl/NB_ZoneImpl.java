@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Nahbedienung.impl;
 
@@ -300,9 +299,8 @@ public class NB_ZoneImpl extends Basis_ObjektImpl implements NB_Zone {
 				return basicSetIDNBZone(null, msgs);
 			case NahbedienungPackage.NB_ZONE__NB_ZONE_ALLG:
 				return basicSetNBZoneAllg(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -321,9 +319,8 @@ public class NB_ZoneImpl extends Basis_ObjektImpl implements NB_Zone {
 				return getIDNBZone();
 			case NahbedienungPackage.NB_ZONE__NB_ZONE_ALLG:
 				return getNBZoneAllg();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -346,10 +343,8 @@ public class NB_ZoneImpl extends Basis_ObjektImpl implements NB_Zone {
 			case NahbedienungPackage.NB_ZONE__NB_ZONE_ALLG:
 				setNBZoneAllg((NB_Zone_Allg_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -372,10 +367,8 @@ public class NB_ZoneImpl extends Basis_ObjektImpl implements NB_Zone {
 			case NahbedienungPackage.NB_ZONE__NB_ZONE_ALLG:
 				setNBZoneAllg((NB_Zone_Allg_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -394,9 +387,8 @@ public class NB_ZoneImpl extends Basis_ObjektImpl implements NB_Zone {
 				return iDNBZone != null;
 			case NahbedienungPackage.NB_ZONE__NB_ZONE_ALLG:
 				return nBZoneAllg != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //NB_ZoneImpl

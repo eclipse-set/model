@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Gleis;
 
@@ -205,8 +204,8 @@ public enum ENUMLichtraumprofil implements Enumerator {
 			case ENUM_LICHTRAUMPROFIL_SBAHN_80003_VALUE: return ENUM_LICHTRAUMPROFIL_SBAHN_80003;
 			case ENUM_LICHTRAUMPROFIL_SBAHN_BERLIN_VALUE: return ENUM_LICHTRAUMPROFIL_SBAHN_BERLIN;
 			case ENUM_LICHTRAUMPROFIL_SONSTIGE_VALUE: return ENUM_LICHTRAUMPROFIL_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

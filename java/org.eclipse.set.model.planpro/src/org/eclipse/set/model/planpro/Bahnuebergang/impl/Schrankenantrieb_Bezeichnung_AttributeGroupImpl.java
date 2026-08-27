@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang.impl;
 
@@ -121,9 +120,8 @@ public class Schrankenantrieb_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case BahnuebergangPackage.SCHRANKENANTRIEB_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_SCHRANKENANTRIEB:
 				return basicSetBezSchrankenantrieb(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -136,9 +134,8 @@ public class Schrankenantrieb_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case BahnuebergangPackage.SCHRANKENANTRIEB_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_SCHRANKENANTRIEB:
 				return getBezSchrankenantrieb();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -152,10 +149,8 @@ public class Schrankenantrieb_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 			case BahnuebergangPackage.SCHRANKENANTRIEB_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_SCHRANKENANTRIEB:
 				setBezSchrankenantrieb((Bez_Schrankenantrieb_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -169,10 +164,8 @@ public class Schrankenantrieb_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 			case BahnuebergangPackage.SCHRANKENANTRIEB_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_SCHRANKENANTRIEB:
 				setBezSchrankenantrieb((Bez_Schrankenantrieb_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -185,9 +178,8 @@ public class Schrankenantrieb_Bezeichnung_AttributeGroupImpl extends EObjectImpl
 		switch (featureID) {
 			case BahnuebergangPackage.SCHRANKENANTRIEB_BEZEICHNUNG_ATTRIBUTE_GROUP__BEZ_SCHRANKENANTRIEB:
 				return bezSchrankenantrieb != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Schrankenantrieb_Bezeichnung_AttributeGroupImpl

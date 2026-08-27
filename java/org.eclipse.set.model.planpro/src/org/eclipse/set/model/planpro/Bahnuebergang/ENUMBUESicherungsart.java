@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang;
 
@@ -642,8 +641,8 @@ public enum ENUMBUESicherungsart implements Enumerator {
 			case ENUMBUE_SICHERUNGSART_UE_UND_P_VALUE: return ENUMBUE_SICHERUNGSART_UE_UND_P;
 			case ENUMBUE_SICHERUNGSART_UE_UND_U_VALUE: return ENUMBUE_SICHERUNGSART_UE_UND_U;
 			case ENUMBUE_SICHERUNGSART_ZUGPERSONAL_VALUE: return ENUMBUE_SICHERUNGSART_ZUGPERSONAL;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

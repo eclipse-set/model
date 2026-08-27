@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale.impl;
 
@@ -358,9 +357,8 @@ public class Signal_Fstr_AttributeGroupImpl extends EObjectImpl implements Signa
 				return basicSetIDRaZielErlaubnisabhaengig(null, msgs);
 			case SignalePackage.SIGNAL_FSTR_ATTRIBUTE_GROUP__RANGIERSTRASSE_RESTAUFLOESUNG:
 				return basicSetRangierstrasseRestaufloesung(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -381,9 +379,8 @@ public class Signal_Fstr_AttributeGroupImpl extends EObjectImpl implements Signa
 				return getIDRaZielErlaubnisabhaengig();
 			case SignalePackage.SIGNAL_FSTR_ATTRIBUTE_GROUP__RANGIERSTRASSE_RESTAUFLOESUNG:
 				return getRangierstrasseRestaufloesung();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -409,10 +406,8 @@ public class Signal_Fstr_AttributeGroupImpl extends EObjectImpl implements Signa
 			case SignalePackage.SIGNAL_FSTR_ATTRIBUTE_GROUP__RANGIERSTRASSE_RESTAUFLOESUNG:
 				setRangierstrasseRestaufloesung((Rangierstrasse_Restaufloesung_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -438,10 +433,8 @@ public class Signal_Fstr_AttributeGroupImpl extends EObjectImpl implements Signa
 			case SignalePackage.SIGNAL_FSTR_ATTRIBUTE_GROUP__RANGIERSTRASSE_RESTAUFLOESUNG:
 				setRangierstrasseRestaufloesung((Rangierstrasse_Restaufloesung_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -462,9 +455,8 @@ public class Signal_Fstr_AttributeGroupImpl extends EObjectImpl implements Signa
 				return iDRaZielErlaubnisabhaengig != null;
 			case SignalePackage.SIGNAL_FSTR_ATTRIBUTE_GROUP__RANGIERSTRASSE_RESTAUFLOESUNG:
 				return rangierstrasseRestaufloesung != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Signal_Fstr_AttributeGroupImpl

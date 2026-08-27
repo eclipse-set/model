@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Medien_und_Trassen.provider;
 
@@ -30,11 +29,11 @@ import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.Medien_und_Trassen.Kabel_Element_AttributeGroup;
 import org.eclipse.set.model.planpro.Medien_und_Trassen.Medien_und_TrassenFactory;
 import org.eclipse.set.model.planpro.Medien_und_Trassen.Medien_und_TrassenPackage;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 /**
  * This is the item provider adapter for a {@link org.eclipse.set.model.planpro.Medien_und_Trassen.Kabel_Element_AttributeGroup} object.
@@ -161,10 +160,8 @@ public class Kabel_Element_AttributeGroupItemProvider
 			case Medien_und_TrassenPackage.KABEL_ELEMENT_ATTRIBUTE_GROUP__ADER_QUERSCHNITT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

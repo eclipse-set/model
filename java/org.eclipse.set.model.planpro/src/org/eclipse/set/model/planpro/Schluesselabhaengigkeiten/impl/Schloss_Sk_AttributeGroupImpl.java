@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Schluesselabhaengigkeiten.impl;
 
@@ -181,9 +180,8 @@ public class Schloss_Sk_AttributeGroupImpl extends EObjectImpl implements Schlos
 				return basicSetHauptschloss(null, msgs);
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SK_ATTRIBUTE_GROUP__ID_SCHLOSSKOMBINATION:
 				return basicSetIDSchlosskombination(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -198,9 +196,8 @@ public class Schloss_Sk_AttributeGroupImpl extends EObjectImpl implements Schlos
 				return getHauptschloss();
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SK_ATTRIBUTE_GROUP__ID_SCHLOSSKOMBINATION:
 				return getIDSchlosskombination();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -217,10 +214,8 @@ public class Schloss_Sk_AttributeGroupImpl extends EObjectImpl implements Schlos
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SK_ATTRIBUTE_GROUP__ID_SCHLOSSKOMBINATION:
 				setIDSchlosskombination((ID_Schlosskombination_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -237,10 +232,8 @@ public class Schloss_Sk_AttributeGroupImpl extends EObjectImpl implements Schlos
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SK_ATTRIBUTE_GROUP__ID_SCHLOSSKOMBINATION:
 				setIDSchlosskombination((ID_Schlosskombination_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -255,9 +248,8 @@ public class Schloss_Sk_AttributeGroupImpl extends EObjectImpl implements Schlos
 				return hauptschloss != null;
 			case SchluesselabhaengigkeitenPackage.SCHLOSS_SK_ATTRIBUTE_GROUP__ID_SCHLOSSKOMBINATION:
 				return iDSchlosskombination != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //Schloss_Sk_AttributeGroupImpl

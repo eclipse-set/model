@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Fahrstrasse;
 
@@ -136,8 +135,8 @@ public enum ENUMFstrMittelArt implements Enumerator {
 		switch (value) {
 			case ENUM_FSTR_MITTEL_ART_ZM_VALUE: return ENUM_FSTR_MITTEL_ART_ZM;
 			case ENUM_FSTR_MITTEL_ART_ZUM_VALUE: return ENUM_FSTR_MITTEL_ART_ZUM;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

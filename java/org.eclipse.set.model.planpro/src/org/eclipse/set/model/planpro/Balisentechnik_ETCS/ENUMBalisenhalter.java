@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS;
 
@@ -228,8 +227,8 @@ public enum ENUMBalisenhalter implements Enumerator {
 			case ENUM_BALISENHALTER_UNBEKANNT_VALUE: return ENUM_BALISENHALTER_UNBEKANNT;
 			case ENUM_BALISENHALTER_VORTOK_DOPPELT_VALUE: return ENUM_BALISENHALTER_VORTOK_DOPPELT;
 			case ENUM_BALISENHALTER_VORTOK_EINFACH_VALUE: return ENUM_BALISENHALTER_VORTOK_EINFACH;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Schluesselabhaengigkeiten;
 
@@ -136,8 +135,8 @@ public enum ENUMGspLage implements Enumerator {
 		switch (value) {
 			case ENUM_GSP_LAGE_ABGELEGT_VALUE: return ENUM_GSP_LAGE_ABGELEGT;
 			case ENUM_GSP_LAGE_AUFGELEGT_VALUE: return ENUM_GSP_LAGE_AUFGELEGT;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

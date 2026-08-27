@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage.impl;
 
@@ -239,9 +238,8 @@ public class ZN_Akustik_Anzeigefeld_AttributeGroupImpl extends EObjectImpl imple
 				return basicSetAkustikdauerSonst(null, msgs);
 			case ZugnummernmeldeanlagePackage.ZN_AKUSTIK_ANZEIGEFELD_ATTRIBUTE_GROUP__AKUSTIKDAUER_VORANZ:
 				return basicSetAkustikdauerVoranz(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -258,9 +256,8 @@ public class ZN_Akustik_Anzeigefeld_AttributeGroupImpl extends EObjectImpl imple
 				return getAkustikdauerSonst();
 			case ZugnummernmeldeanlagePackage.ZN_AKUSTIK_ANZEIGEFELD_ATTRIBUTE_GROUP__AKUSTIKDAUER_VORANZ:
 				return getAkustikdauerVoranz();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -280,10 +277,8 @@ public class ZN_Akustik_Anzeigefeld_AttributeGroupImpl extends EObjectImpl imple
 			case ZugnummernmeldeanlagePackage.ZN_AKUSTIK_ANZEIGEFELD_ATTRIBUTE_GROUP__AKUSTIKDAUER_VORANZ:
 				setAkustikdauerVoranz((Akustikdauer_Voranz_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -303,10 +298,8 @@ public class ZN_Akustik_Anzeigefeld_AttributeGroupImpl extends EObjectImpl imple
 			case ZugnummernmeldeanlagePackage.ZN_AKUSTIK_ANZEIGEFELD_ATTRIBUTE_GROUP__AKUSTIKDAUER_VORANZ:
 				setAkustikdauerVoranz((Akustikdauer_Voranz_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -323,9 +316,8 @@ public class ZN_Akustik_Anzeigefeld_AttributeGroupImpl extends EObjectImpl imple
 				return akustikdauerSonst != null;
 			case ZugnummernmeldeanlagePackage.ZN_AKUSTIK_ANZEIGEFELD_ATTRIBUTE_GROUP__AKUSTIKDAUER_VORANZ:
 				return akustikdauerVoranz != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ZN_Akustik_Anzeigefeld_AttributeGroupImpl

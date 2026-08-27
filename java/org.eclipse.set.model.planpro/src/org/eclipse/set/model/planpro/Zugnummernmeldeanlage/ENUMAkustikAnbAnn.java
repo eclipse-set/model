@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Zugnummernmeldeanlage;
 
@@ -136,8 +135,8 @@ public enum ENUMAkustikAnbAnn implements Enumerator {
 		switch (value) {
 			case ENUM_AKUSTIK_ANB_ANN_5S_VALUE: return ENUM_AKUSTIK_ANB_ANN_5S;
 			case ENUM_AKUSTIK_ANB_ANN_BIS_ANKUNFT_ZUG_VALUE: return ENUM_AKUSTIK_ANB_ANN_BIS_ANKUNFT_ZUG;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

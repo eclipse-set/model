@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signalbegriffe_Ril_301;
 
@@ -619,8 +618,8 @@ public enum ENUMSymbolEl34Zusatz implements Enumerator {
 			case ENUM_SYMBOL_EL_34ZUSATZ_W_VALUE: return ENUM_SYMBOL_EL_34ZUSATZ_W;
 			case ENUM_SYMBOL_EL_34ZUSATZ_X_VALUE: return ENUM_SYMBOL_EL_34ZUSATZ_X;
 			case ENUM_SYMBOL_EL_34ZUSATZ_Z_VALUE: return ENUM_SYMBOL_EL_34ZUSATZ_Z;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

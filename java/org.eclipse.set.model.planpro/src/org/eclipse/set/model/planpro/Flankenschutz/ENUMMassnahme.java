@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Flankenschutz;
 
@@ -182,8 +181,8 @@ public enum ENUMMassnahme implements Enumerator {
 			case ENUM_MASSNAHME_VERSCHLUSS_VALUE: return ENUM_MASSNAHME_VERSCHLUSS;
 			case ENUM_MASSNAHME_VERSCHLUSS_ERSATZSCHUTZ_VALUE: return ENUM_MASSNAHME_VERSCHLUSS_ERSATZSCHUTZ;
 			case ENUM_MASSNAHME_VERZICHT_VALUE: return ENUM_MASSNAHME_VERZICHT;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

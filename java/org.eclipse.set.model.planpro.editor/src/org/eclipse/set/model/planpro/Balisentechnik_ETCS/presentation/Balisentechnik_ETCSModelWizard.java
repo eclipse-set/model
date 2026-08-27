@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.presentation;
 
@@ -79,7 +78,7 @@ import org.eclipse.ui.part.ISetSelectionTarget;
 
 import org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSFactory;
 import org.eclipse.set.model.planpro.Balisentechnik_ETCS.Balisentechnik_ETCSPackage;
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 
 import org.eclipse.core.runtime.Path;
@@ -87,7 +86,7 @@ import org.eclipse.core.runtime.Path;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.StructuredSelection;
 
-import org.eclipse.set.model.planpro.ATO.presentation.PlanProEditorPlugin;
+import org.eclipse.set.model.planpro.PlanPro.presentation.PlanProEditorPlugin;
 
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchPart;

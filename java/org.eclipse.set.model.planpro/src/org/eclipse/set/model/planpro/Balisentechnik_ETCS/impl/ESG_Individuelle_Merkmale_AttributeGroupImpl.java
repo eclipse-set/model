@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Balisentechnik_ETCS.impl;
 
@@ -299,9 +298,8 @@ public class ESG_Individuelle_Merkmale_AttributeGroupImpl extends EObjectImpl im
 				return basicSetESGIndParameterwert(null, msgs);
 			case Balisentechnik_ETCSPackage.ESG_INDIVIDUELLE_MERKMALE_ATTRIBUTE_GROUP__ID_ANHANG_UI_G:
 				return basicSetIDAnhangUiG(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -320,9 +318,8 @@ public class ESG_Individuelle_Merkmale_AttributeGroupImpl extends EObjectImpl im
 				return getESGIndParameterwert();
 			case Balisentechnik_ETCSPackage.ESG_INDIVIDUELLE_MERKMALE_ATTRIBUTE_GROUP__ID_ANHANG_UI_G:
 				return getIDAnhangUiG();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -345,10 +342,8 @@ public class ESG_Individuelle_Merkmale_AttributeGroupImpl extends EObjectImpl im
 			case Balisentechnik_ETCSPackage.ESG_INDIVIDUELLE_MERKMALE_ATTRIBUTE_GROUP__ID_ANHANG_UI_G:
 				setIDAnhangUiG((ID_Anhang_ohne_Proxy_TypeClass)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -371,10 +366,8 @@ public class ESG_Individuelle_Merkmale_AttributeGroupImpl extends EObjectImpl im
 			case Balisentechnik_ETCSPackage.ESG_INDIVIDUELLE_MERKMALE_ATTRIBUTE_GROUP__ID_ANHANG_UI_G:
 				setIDAnhangUiG((ID_Anhang_ohne_Proxy_TypeClass)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -393,9 +386,8 @@ public class ESG_Individuelle_Merkmale_AttributeGroupImpl extends EObjectImpl im
 				return eSGIndParameterwert != null;
 			case Balisentechnik_ETCSPackage.ESG_INDIVIDUELLE_MERKMALE_ATTRIBUTE_GROUP__ID_ANHANG_UI_G:
 				return iDAnhangUiG != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //ESG_Individuelle_Merkmale_AttributeGroupImpl

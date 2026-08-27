@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.PlanPro;
 
@@ -343,8 +342,8 @@ public enum ENUMPlanungEArt implements Enumerator {
 			case ENUM_PLANUNG_EART_VERBINDUNGSKNOTEN_VALUE: return ENUM_PLANUNG_EART_VERBINDUNGSKNOTEN;
 			case ENUM_PLANUNG_EART_VERSIONSHEBUNG_VALUE: return ENUM_PLANUNG_EART_VERSIONSHEBUNG;
 			case ENUM_PLANUNG_EART_VORAUSSICHTLICH_VALUE: return ENUM_PLANUNG_EART_VORAUSSICHTLICH;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

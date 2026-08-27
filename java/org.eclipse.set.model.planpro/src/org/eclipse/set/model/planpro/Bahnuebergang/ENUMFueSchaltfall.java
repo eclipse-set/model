@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang;
 
@@ -136,8 +135,8 @@ public enum ENUMFueSchaltfall implements Enumerator {
 		switch (value) {
 			case ENUM_FUE_SCHALTFALL_12_VALUE: return ENUM_FUE_SCHALTFALL_12;
 			case ENUM_FUE_SCHALTFALL_2_VALUE: return ENUM_FUE_SCHALTFALL_2;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

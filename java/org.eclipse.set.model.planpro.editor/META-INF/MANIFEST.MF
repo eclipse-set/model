@@ -5,7 +5,7 @@ Bundle-SymbolicName: org.eclipse.set.model.planpro.editor;singleton:=true
 Automatic-Module-Name: org.eclipse.set.model.planpro.editor
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: org.eclipse.set.model.planpro.ATO.presentation.PlanProEditorPlugin$Implementation
+Bundle-Activator: org.eclipse.set.model.planpro.PlanPro.presentation.PlanProEditorPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-21

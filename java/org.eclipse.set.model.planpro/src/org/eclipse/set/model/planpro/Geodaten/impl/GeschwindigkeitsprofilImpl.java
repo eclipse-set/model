@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Geodaten.impl;
 
@@ -122,9 +121,8 @@ public class GeschwindigkeitsprofilImpl extends Bereich_ObjektImpl implements Ge
 		switch (featureID) {
 			case GeodatenPackage.GESCHWINDIGKEITSPROFIL__GESCHWINDIGKEITSPROFIL_ALLG:
 				return basicSetGeschwindigkeitsprofilAllg(null, msgs);
-			default:
-				return super.eInverseRemove(otherEnd, featureID, msgs);
 		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
@@ -137,9 +135,8 @@ public class GeschwindigkeitsprofilImpl extends Bereich_ObjektImpl implements Ge
 		switch (featureID) {
 			case GeodatenPackage.GESCHWINDIGKEITSPROFIL__GESCHWINDIGKEITSPROFIL_ALLG:
 				return getGeschwindigkeitsprofilAllg();
-			default:
-				return super.eGet(featureID, resolve, coreType);
 		}
+		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
@@ -153,10 +150,8 @@ public class GeschwindigkeitsprofilImpl extends Bereich_ObjektImpl implements Ge
 			case GeodatenPackage.GESCHWINDIGKEITSPROFIL__GESCHWINDIGKEITSPROFIL_ALLG:
 				setGeschwindigkeitsprofilAllg((Geschwindigkeitsprofil_Allg_AttributeGroup)newValue);
 				return;
-			default:
-				super.eSet(featureID, newValue);
-				return;
 		}
+		super.eSet(featureID, newValue);
 	}
 
 	/**
@@ -170,10 +165,8 @@ public class GeschwindigkeitsprofilImpl extends Bereich_ObjektImpl implements Ge
 			case GeodatenPackage.GESCHWINDIGKEITSPROFIL__GESCHWINDIGKEITSPROFIL_ALLG:
 				setGeschwindigkeitsprofilAllg((Geschwindigkeitsprofil_Allg_AttributeGroup)null);
 				return;
-			default:
-				super.eUnset(featureID);
-				return;
 		}
+		super.eUnset(featureID);
 	}
 
 	/**
@@ -186,9 +179,8 @@ public class GeschwindigkeitsprofilImpl extends Bereich_ObjektImpl implements Ge
 		switch (featureID) {
 			case GeodatenPackage.GESCHWINDIGKEITSPROFIL__GESCHWINDIGKEITSPROFIL_ALLG:
 				return geschwindigkeitsprofilAllg != null;
-			default:
-				return super.eIsSet(featureID);
 		}
+		return super.eIsSet(featureID);
 	}
 
 } //GeschwindigkeitsprofilImpl

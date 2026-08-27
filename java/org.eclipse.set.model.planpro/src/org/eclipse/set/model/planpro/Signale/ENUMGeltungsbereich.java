@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Signale;
 
@@ -182,8 +181,8 @@ public enum ENUMGeltungsbereich implements Enumerator {
 			case ENUM_GELTUNGSBEREICH_DV_VALUE: return ENUM_GELTUNGSBEREICH_DV;
 			case ENUM_GELTUNGSBEREICH_SBAHN_B_VALUE: return ENUM_GELTUNGSBEREICH_SBAHN_B;
 			case ENUM_GELTUNGSBEREICH_SBAHN_HH_VALUE: return ENUM_GELTUNGSBEREICH_SBAHN_HH;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

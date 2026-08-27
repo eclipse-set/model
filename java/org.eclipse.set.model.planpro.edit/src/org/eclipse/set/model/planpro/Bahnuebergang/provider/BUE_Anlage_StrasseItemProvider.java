@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang.provider;
 
@@ -24,13 +23,13 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
-
 import org.eclipse.set.model.planpro.Bahnuebergang.BUE_Anlage_Strasse;
 import org.eclipse.set.model.planpro.Bahnuebergang.BahnuebergangFactory;
 import org.eclipse.set.model.planpro.Bahnuebergang.BahnuebergangPackage;
 
 import org.eclipse.set.model.planpro.Basisobjekte.provider.Basis_ObjektItemProvider;
+
+import org.eclipse.set.model.planpro.PlanPro.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Verweise.VerweiseFactory;
 
@@ -148,10 +147,8 @@ public class BUE_Anlage_StrasseItemProvider extends Basis_ObjektItemProvider {
 			case BahnuebergangPackage.BUE_ANLAGE_STRASSE__IDBUE_ANLAGE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

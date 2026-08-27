@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang;
 
@@ -251,8 +250,8 @@ public enum ENUMFussRadwegArt implements Enumerator {
 			case ENUM_FUSS_RADWEG_ART_RADWEG_ABGESETZT_VALUE: return ENUM_FUSS_RADWEG_ART_RADWEG_ABGESETZT;
 			case ENUM_FUSS_RADWEG_ART_RADWEG_PARALLEL_VALUE: return ENUM_FUSS_RADWEG_ART_RADWEG_PARALLEL;
 			case ENUM_FUSS_RADWEG_ART_SONSTIGE_VALUE: return ENUM_FUSS_RADWEG_ART_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**

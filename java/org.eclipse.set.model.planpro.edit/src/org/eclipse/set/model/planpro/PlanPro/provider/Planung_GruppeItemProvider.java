@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.PlanPro.provider;
 
@@ -23,8 +22,6 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ViewerNotification;
-
-import org.eclipse.set.model.planpro.ATO.provider.PlanProEditPlugin;
 
 import org.eclipse.set.model.planpro.Basisobjekte.provider.Ur_ObjektItemProvider;
 
@@ -154,10 +151,8 @@ public class Planung_GruppeItemProvider extends Ur_ObjektItemProvider {
 			case PlanProPackage.PLANUNG_GRUPPE__POLYGONE_PLANUNGSBEREICH:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
-			default:
-				super.notifyChanged(notification);
-				return;
-			}
+		}
+		super.notifyChanged(notification);
 	}
 
 	/**

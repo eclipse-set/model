@@ -6,7 +6,6 @@
  * https://www.eclipse.org/legal/epl-2.0.
  * 
  * SPDX-License-Identifier: EPL-2.0
- * 
  */
 package org.eclipse.set.model.planpro.Bahnuebergang;
 
@@ -573,8 +572,8 @@ public enum ENUMBUETechnik implements Enumerator {
 			case ENUMBUE_TECHNIK_RBUET_VALUE: return ENUMBUE_TECHNIK_RBUET;
 			case ENUMBUE_TECHNIK_SIMIS_LC_VALUE: return ENUMBUE_TECHNIK_SIMIS_LC;
 			case ENUMBUE_TECHNIK_SONSTIGE_VALUE: return ENUMBUE_TECHNIK_SONSTIGE;
-			default: return null;
 		}
+		return null;
 	}
 
 	/**
