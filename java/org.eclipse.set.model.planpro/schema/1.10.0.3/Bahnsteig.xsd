@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsBahnsteig="http://www.plan-pro.org/modell/Bahnsteig/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
            xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsBahnsteig"
+           ecore:package="org.eclipse.set.model.planpro.Bahnsteig"
            targetNamespace="http://www.plan-pro.org/modell/Bahnsteig/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -34,37 +37,39 @@ XML Schema for PlanPro interface.</xs:documentation>
               schemaLocation="BasisTypen.xsd"/>
 	  <xs:simpleType name="ENUMBahnsteig_Zugang_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Aufzug"/>
-			      <xs:enumeration value="Empfangsgebäude"/>
-			      <xs:enumeration value="Rampe"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Treppe"/>
-			      <xs:enumeration value="tResi"/>
-			      <xs:enumeration value="Weg"/>
+			      <xs:enumeration ecore:name="ENUMBahnsteig_Zugang_Art_Aufzug" value="Aufzug"/>
+			      <xs:enumeration ecore:name="ENUMBahnsteig_Zugang_Art_Empfangsgebäude" value="Empfangsgebäude"/>
+			      <xs:enumeration ecore:name="ENUMBahnsteig_Zugang_Art_Rampe" value="Rampe"/>
+			      <xs:enumeration ecore:name="ENUMBahnsteig_Zugang_Art_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMBahnsteig_Zugang_Art_Treppe" value="Treppe"/>
+			      <xs:enumeration ecore:name="ENUMBahnsteig_Zugang_Art_tResi" value="tResi"/>
+			      <xs:enumeration ecore:name="ENUMBahnsteig_Zugang_Art_Weg" value="Weg"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMSystemhoehe">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="38_cm"/>
-			      <xs:enumeration value="55_cm"/>
-			      <xs:enumeration value="76_cm"/>
-			      <xs:enumeration value="96_cm"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMSystemhoehe_38_cm" value="38_cm"/>
+			      <xs:enumeration ecore:name="ENUMSystemhoehe_55_cm" value="55_cm"/>
+			      <xs:enumeration ecore:name="ENUMSystemhoehe_76_cm" value="76_cm"/>
+			      <xs:enumeration ecore:name="ENUMSystemhoehe_96_cm" value="96_cm"/>
+			      <xs:enumeration ecore:name="ENUMSystemhoehe_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_Bahnsteig_Anlage">
+	  <xs:simpleType ecore:name="Bezeichnung_Bahnsteig_Anlage_Type"
+                  name="TBezeichnung_Bahnsteig_Anlage">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_Bahnsteig_Kante">
+	  <xs:simpleType ecore:name="Bezeichnung_Bahnsteig_Kante_Type"
+                  name="TBezeichnung_Bahnsteig_Kante">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="THauptzugang">
+	  <xs:simpleType ecore:name="Hauptzugang_Type" name="THauptzugang">
 		    <xs:restriction base="xs:boolean"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TLage_Zum_Gleis">
+	  <xs:simpleType ecore:name="Lage_Zum_Gleis_Type" name="TLage_Zum_Gleis">
 		    <xs:restriction base="nsBasisTypen:TLinksRechts"/>
 	  </xs:simpleType>
-	  <xs:complexType name="CBahnsteig_Anlage">
+	  <xs:complexType ecore:name="Bahnsteig_Anlage" name="CBahnsteig_Anlage">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Parallel zum Gleis gelegenes Element des Tiefbaus mit befestigter Oberfläche zum Zwecke des Zugangs der Reisenden von bzw. zu den Zügen. Ein Bahnsteig kann eine oder mehrere Bahnsteigkanten besitzen. Mehr als zwei Bahnsteigkanten können dazugehören, wenn z. B. an einen Mittelbahnsteig noch ein Zungenbahnsteig anschließt. DB-Regelwerk Ril 813.0201 </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -88,7 +93,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBahnsteig_Anlage_Bezeichnung">
+	  <xs:complexType ecore:name="Bahnsteig_Anlage_Bezeichnung_AttributeGroup"
+                   name="CBahnsteig_Anlage_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_Bahnsteig_Anlage"
                      type="nsBahnsteig:TCBezeichnung_Bahnsteig_Anlage"
@@ -100,7 +106,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBahnsteig_Dach">
+	  <xs:complexType ecore:name="Bahnsteig_Dach" name="CBahnsteig_Dach">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Bahnsteigkanten-bezogene Abbildung der Bahnsteig-Überdachung. Die Angabe ist im INA-Erhebungsbogen erforderlich.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -124,7 +130,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBahnsteig_Kante">
+	  <xs:complexType ecore:name="Bahnsteig_Kante" name="CBahnsteig_Kante">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Parallel zum Gleis verlaufende Kante eines Bahnsteigs, die für den Fahrgastwechsel nutzbar ist (Nettobaulänge). Für die LST-Planung sind Beginn und Ende z. B. für die Zugbeeinflussung (PZB 90) sowie die Festlegung von Signalstandorten und Gefahrpunkten maßgebend. Die Nettobaulänge der Bahnsteigkante wird im Datenmodell durch die Länge des Bereichsobjekts Bahnsteig_Kante abgebildet. Eventuell daran anschließende Tiefbauobjekte (auch stillgelegte Bahnsteigbereiche) können als Ingenieurbauwerke (Technischer_Bereich) abgebildet werden. DB-Regelwerk Darstellung einer Doppellinie im sicherungstechnischen Lageplan, Ril 413.0507</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -158,7 +164,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBahnsteig_Kante_Allg">
+	  <xs:complexType ecore:name="Bahnsteig_Kante_Allg_AttributeGroup" name="CBahnsteig_Kante_Allg">
 		    <xs:sequence>
 			      <xs:element name="Lage_Zum_Gleis" type="nsBahnsteig:TCLage_Zum_Gleis" minOccurs="1"
                      maxOccurs="1">
@@ -178,7 +184,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBahnsteig_Kante_Bezeichnung">
+	  <xs:complexType ecore:name="Bahnsteig_Kante_Bezeichnung_AttributeGroup"
+                   name="CBahnsteig_Kante_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_Bahnsteig_Kante"
                      type="nsBahnsteig:TCBezeichnung_Bahnsteig_Kante"
@@ -190,7 +197,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBahnsteig_Zugang">
+	  <xs:complexType ecore:name="Bahnsteig_Zugang" name="CBahnsteig_Zugang">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zugangspunkt der Reisenden zum Bahnsteig, projiziert auf die Gleisachse. Es wird jeweils die Mitte der Linie zugrundegelegt, auf der der Zugangsweg auf den Bahnsteig stößt. Der Zugang ist in der LST-Planung für die INA-Berechnung relevant. Hierbei wird der Punkt auf der Bahnsteigkante benötigt, an der der Zustrom der Reisenden erfolgt. Dieser Punkt wird im Datenmodell nicht abgespeichert, er kann aus Bahnsteig_Zugang hergeleitet werden. DB-Regelwerk Nennung des Zugangs im INA-Erhebungsbogen, Verortung erfolgt bisher nicht.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -217,7 +224,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBahnsteig_Zugang_Allg">
+	  <xs:complexType ecore:name="Bahnsteig_Zugang_Allg_AttributeGroup" name="CBahnsteig_Zugang_Allg">
 		    <xs:sequence>
 			      <xs:element name="Bahnsteig_Zugang_Art" type="nsBahnsteig:TCBahnsteig_Zugang_Art"
                      minOccurs="1"
@@ -238,7 +245,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="TCBahnsteig_Zugang_Art">
+	  <xs:complexType ecore:name="Bahnsteig_Zugang_Art_TypeClass" name="TCBahnsteig_Zugang_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -249,7 +256,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Bahnsteig_Anlage">
+	  <xs:complexType ecore:name="Bezeichnung_Bahnsteig_Anlage_TypeClass"
+                   name="TCBezeichnung_Bahnsteig_Anlage">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -260,7 +268,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Bahnsteig_Kante">
+	  <xs:complexType ecore:name="Bezeichnung_Bahnsteig_Kante_TypeClass"
+                   name="TCBezeichnung_Bahnsteig_Kante">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -271,7 +280,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCHauptzugang">
+	  <xs:complexType ecore:name="Hauptzugang_TypeClass" name="TCHauptzugang">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -281,7 +290,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCLage_Zum_Gleis">
+	  <xs:complexType ecore:name="Lage_Zum_Gleis_TypeClass" name="TCLage_Zum_Gleis">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -291,7 +300,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSystemhoehe">
+	  <xs:complexType ecore:name="Systemhoehe_TypeClass" name="TCSystemhoehe">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>

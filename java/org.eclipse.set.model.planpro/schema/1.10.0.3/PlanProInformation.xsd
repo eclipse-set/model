@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsPlanProInformation="http://www.exampleURI.com/PlanProInformation"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="ns"
+           ecore:package="org.eclipse.set.model.planpro."
            targetNamespace="http://www.exampleURI.com/PlanProInformation">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -26,7 +29,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 	  <xs:element name="WorkflowInformation" type="nsPlanProInformation:WorkflowInformation"/>
 	  <xs:simpleType name="ENUMObjectType">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="LST_OBJECT"/>
+			      <xs:enumeration ecore:name="ENUMObjectType_LST_OBJECT" value="LST_OBJECT"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:complexType name="WorkflowInformation">

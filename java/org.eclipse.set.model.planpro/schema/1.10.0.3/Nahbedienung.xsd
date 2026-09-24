@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsNahbedienung="http://www.plan-pro.org/modell/Nahbedienung/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
            xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsNahbedienung"
+           ecore:package="org.eclipse.set.model.planpro.Nahbedienung"
            targetNamespace="http://www.plan-pro.org/modell/Nahbedienung/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -34,66 +37,67 @@ XML Schema for PlanPro interface.</xs:documentation>
               schemaLocation="BasisTypen.xsd"/>
 	  <xs:simpleType name="ENUMNB_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="NB_G"/>
-			      <xs:enumeration value="NB_R"/>
-			      <xs:enumeration value="NB_W"/>
+			      <xs:enumeration ecore:name="ENUMNB_Art_NB_G" value="NB_G"/>
+			      <xs:enumeration ecore:name="ENUMNB_Art_NB_R" value="NB_R"/>
+			      <xs:enumeration ecore:name="ENUMNB_Art_NB_W" value="NB_W"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMNB_Grenze_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="ESTW_Bereich"/>
-			      <xs:enumeration value="NB_Zone"/>
-			      <xs:enumeration value="Ortsstellbereich"/>
+			      <xs:enumeration ecore:name="ENUMNB_Grenze_Art_ESTW_Bereich" value="ESTW_Bereich"/>
+			      <xs:enumeration ecore:name="ENUMNB_Grenze_Art_NB_Zone" value="NB_Zone"/>
+			      <xs:enumeration ecore:name="ENUMNB_Grenze_Art_Ortsstellbereich" value="Ortsstellbereich"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMNB_Rueckgabevoraussetzung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="abgelegt"/>
-			      <xs:enumeration value="aufgelegt"/>
-			      <xs:enumeration value="Hp_0"/>
-			      <xs:enumeration value="keine"/>
-			      <xs:enumeration value="Kennlicht"/>
-			      <xs:enumeration value="links"/>
-			      <xs:enumeration value="rechts"/>
-			      <xs:enumeration value="Schluessel_eingeschlossen"/>
+			      <xs:enumeration ecore:name="ENUMNB_Rueckgabevoraussetzung_abgelegt" value="abgelegt"/>
+			      <xs:enumeration ecore:name="ENUMNB_Rueckgabevoraussetzung_aufgelegt" value="aufgelegt"/>
+			      <xs:enumeration ecore:name="ENUMNB_Rueckgabevoraussetzung_Hp_0" value="Hp_0"/>
+			      <xs:enumeration ecore:name="ENUMNB_Rueckgabevoraussetzung_keine" value="keine"/>
+			      <xs:enumeration ecore:name="ENUMNB_Rueckgabevoraussetzung_Kennlicht" value="Kennlicht"/>
+			      <xs:enumeration ecore:name="ENUMNB_Rueckgabevoraussetzung_links" value="links"/>
+			      <xs:enumeration ecore:name="ENUMNB_Rueckgabevoraussetzung_rechts" value="rechts"/>
+			      <xs:enumeration ecore:name="ENUMNB_Rueckgabevoraussetzung_Schluessel_eingeschlossen"
+                         value="Schluessel_eingeschlossen"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMNB_Verhaeltnis_Besonders">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="ueberlappend"/>
-			      <xs:enumeration value="vereinigt"/>
+			      <xs:enumeration ecore:name="ENUMNB_Verhaeltnis_Besonders_ueberlappend" value="ueberlappend"/>
+			      <xs:enumeration ecore:name="ENUMNB_Verhaeltnis_Besonders_vereinigt" value="vereinigt"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMW_Gsp_Lage">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="abgelegt"/>
-			      <xs:enumeration value="aufgelegt"/>
-			      <xs:enumeration value="links"/>
-			      <xs:enumeration value="rechts"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMW_Gsp_Lage_abgelegt" value="abgelegt"/>
+			      <xs:enumeration ecore:name="ENUMW_Gsp_Lage_aufgelegt" value="aufgelegt"/>
+			      <xs:enumeration ecore:name="ENUMW_Gsp_Lage_links" value="links"/>
+			      <xs:enumeration ecore:name="ENUMW_Gsp_Lage_rechts" value="rechts"/>
+			      <xs:enumeration ecore:name="ENUMW_Gsp_Lage_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_NB">
+	  <xs:simpleType ecore:name="Bezeichnung_NB_Type" name="TBezeichnung_NB">
 		    <xs:restriction base="xs:integer">
 			      <xs:pattern value="[1-9][0-9]?"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_NB_Zone">
+	  <xs:simpleType ecore:name="Bezeichnung_NB_Zone_Type" name="TBezeichnung_NB_Zone">
 		    <xs:restriction base="xs:integer">
 			      <xs:pattern value="[1-9][0-9]?"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TNB_Zone_Allg">
+	  <xs:simpleType ecore:name="NB_Zone_Allg_Type" name="TNB_Zone_Allg">
 		    <xs:restriction base="xs:integer">
 			      <xs:pattern value="[1-9][0-9]*"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TRang">
+	  <xs:simpleType ecore:name="Rang_Type" name="TRang">
 		    <xs:restriction base="xs:integer">
 			      <xs:pattern value="[1-9][0-9]{0,}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:complexType name="CNB">
+	  <xs:complexType ecore:name="NB" name="CNB">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Nahstellbereich. Teilbereich innerhalb eines ESTW-Stellbereichs, für den zeitweise die Zuständigkeit vom Fahrdienstleiter an einen örtlichen Bediener zur Durchführung von Rangierbewegungen abgegeben werden kann. Die Kommunikation zwischen Fahrdienstleiter und Bediener erfolgt über entsprechende Bedieneinrichtung(en). Mit Abgabe der Nahbedienung hat der Fahrdienstleiter auf diesen Bereich keinen Zugriff; die Verantwortung liegt beim örtlichen Bediener. Mit Rückgabe der Nahbedienung geht die Verantwortung vom Bediener wieder an den Fahrdienstleiter. Für die Rückgabe der Nahbedienung können bestimmte Voraussetzungen erforderlich sein. Für die Abgabe bzw. Rückgabe der Nahbedienung werden in der Literatur auch die Begriffe \"Einschalten\" und \"Ausschalten\" verwendet. Der Nahstellbereich muss vom übrigen Stellwerksbereich durch Flankenschutzmaßnahmen abgegrenzt werden. Jeder Nahstellbereich hat immer mindestens eine NB Zone. Bei einem Nahstellbereich mit der Funktionalität eines abgesetzten \"Rangierstellwerkes\" (NB-R) können Weichen mit elektrischem Antrieb umgestellt und innerhalb des NB Fahrten mit Rangierstraßen durchgeführt werden. DB-Regelwerk Für die Planung von Nahstellbereichen exisitert bei der DB AG kein Regelwerk.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -124,7 +128,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CNB_Bedien_Anzeige_Element">
+	  <xs:complexType ecore:name="NB_Bedien_Anzeige_Element" name="CNB_Bedien_Anzeige_Element">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung von Bedienfunktionen zur Bedieneinrichtung einer oder mehrerer NB_Zonen, über die Fahrdienstleiter und örtlichen Bediener miteinander kommunizieren. Falls sich bedienbare Elemente innerhalb der NB_Zone befinden, sind diese durch eine entsprechende Bedieneinrichtung (um)stellbar, sofern eine (Um-)Stellbarkeit vorgesehen wurde. Der Umfang hängt von der gewählten NB Art ab. Weiterhin sind in der Bedieneinrichtung Elemente für die Kommunikation zwischen Fahrdienstleiter und Bediener untergebracht. In diesem Objekt wird die Logik der Bedieneinrichtung abgebildet. Falls eine Bedieneinrichtung Elemente aus mindestens zwei verschiedenen NB_Zonen enthält, ist eine Zuordnung der Bedieneinrichtung zu den betreffenden NB_Zonen erforderlich. Der Verweis auf Bedien Anzeige Element führt zur Zuordnung der physischen Unterbringung. DB-Regelwerk Für die Planung exisitert bei der DB AG kein Regelwerk. Die Angaben finden sich meist im Erläuterungsbericht zum PT1.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -157,7 +161,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CNB_Bedien_Anzeige_Funktionen">
+	  <xs:complexType ecore:name="NB_Bedien_Anzeige_Funktionen_AttributeGroup"
+                   name="CNB_Bedien_Anzeige_Funktionen">
 		    <xs:sequence>
 			      <xs:choice minOccurs="1" maxOccurs="1">
 				        <xs:element name="Taste_ANF" type="nsNahbedienung:TCTaste_ANF" minOccurs="1" maxOccurs="1">
@@ -178,7 +183,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:choice>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CNB_Bezeichnung">
+	  <xs:complexType ecore:name="NB_Bezeichnung_AttributeGroup" name="CNB_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_NB" type="nsNahbedienung:TCBezeichnung_NB" minOccurs="1"
                      maxOccurs="1">
@@ -222,7 +227,8 @@ DB-Regelwerk
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CNB_Funktionalitaet_NB_R">
+	  <xs:complexType ecore:name="NB_Funktionalitaet_NB_R_AttributeGroup"
+                   name="CNB_Funktionalitaet_NB_R">
 		    <xs:sequence>
 			      <xs:element name="AWU" type="nsNahbedienung:TCAWU" minOccurs="1" maxOccurs="1">
 				        <xs:annotation>
@@ -261,7 +267,7 @@ DB-Regelwerk
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CNB_Zone">
+	  <xs:complexType ecore:name="NB_Zone" name="CNB_Zone">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Nahstellbereichszone. Jeder Nahstellbereich hat mindestens eine Zone; es sind auch mehrere Zonen möglich. Die Zonen können voneinander unabhängig nebeneinander liegen, sich überlappen oder eine Zone kann eine kleinere \"Teilmenge\" einer größeren Zone sein. Als spezieller Fall ist auch die Vereinigung von zwei nebeneinander liegenden Zonen möglich. Für jede Zone werden eigene Grenzen zum angrenzenden Bereich (ESTW, NB, Ortstellbereich) festgelegt. DB-Regelwerk Für die Planung von Nahbedienzonen exisitert bei der DB AG kein Regelwerk. Die Angabe findet sich in der Nahbedienungstabelle, Spalte 1.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -292,7 +298,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CNB_Zone_Allg">
+	  <xs:complexType ecore:name="NB_Zone_Allg_AttributeGroup" name="CNB_Zone_Allg">
 		    <xs:sequence>
 			      <xs:element name="NB_Verhaeltnis_Besonders"
                      type="nsNahbedienung:TCNB_Verhaeltnis_Besonders"
@@ -314,7 +320,7 @@ DB-Regelwerk
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CNB_Zone_Bezeichnung">
+	  <xs:complexType ecore:name="NB_Zone_Bezeichnung_AttributeGroup" name="CNB_Zone_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_NB_Zone" type="nsNahbedienung:TCBezeichnung_NB_Zone"
                      minOccurs="1"
@@ -330,7 +336,7 @@ DB-Regelwerk
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CNB_Zone_Element">
+	  <xs:complexType ecore:name="NB_Zone_Element" name="CNB_Zone_Element">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung der ESTW-Elemente (Signale, Weichen, Gleissperren, Schlüsselsperren) zur NB_Zone, in der sie sich befinden. Für diese Elemente sind in Abhängigkeit der vorgesehenen NB Art Eigenschaften zur Stellbarkeit und Rückgabevoraussetzung festzulegen. DB-Regelwerk Die Angaben finden sich in der Nahbedienungstabelle, Spalten 5, 8 und 9.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -361,7 +367,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CNB_Zone_Element_Allg">
+	  <xs:complexType ecore:name="NB_Zone_Element_Allg_AttributeGroup" name="CNB_Zone_Element_Allg">
 		    <xs:sequence>
 			      <xs:element name="Freie_Stellbarkeit" type="nsNahbedienung:TCFreie_Stellbarkeit"
                      minOccurs="0"
@@ -391,7 +397,7 @@ DB-Regelwerk
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CNB_Zone_Grenze">
+	  <xs:complexType ecore:name="NB_Zone_Grenze" name="CNB_Zone_Grenze">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Grenze der NB Zone gegenüber dem der Zone angrenzenden Bereich. Die NB Zone wird mittels (technischem) Flankenschutz gegenüber dem benachbarten Bereich (ESTW oder einer weiteren Zone) abgegrenzt. Grenzelemente bilden Signale, Weichen oder Gleissperren, welche in jeweiliger Flankenschutzlage verschlossen werden. Auch die Angabe eines Achzählpunkts ist möglich. Bei an die NB Zone angrenzendem Ortstellbereich ist die TM 2010-388 I.NVT 3 \"Planungsregeln Bedienbereiche - Schnittstellen Stellwerksbereiche\" zu beachten. DB-Regelwerk TM 2010-388 I.NVT 3 Die Angabe von Grenzelementen außerhalb der NB-Zone finden sich in der Nahbedienungstabelle, Spalte 7.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -425,7 +431,8 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CNB_Zone_Reihenfolgezwang">
+	  <xs:complexType ecore:name="NB_Zone_Reihenfolgezwang_AttributeGroup"
+                   name="CNB_Zone_Reihenfolgezwang">
 		    <xs:sequence>
 			      <xs:element name="NB_Zone_Allg" type="nsNahbedienung:TCNB_Zone_Allg" minOccurs="0"
                      maxOccurs="1">
@@ -440,7 +447,7 @@ DB-Regelwerk
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="TCAWU">
+	  <xs:complexType ecore:name="AWU_TypeClass" name="TCAWU">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -449,7 +456,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_NB">
+	  <xs:complexType ecore:name="Bezeichnung_NB_TypeClass" name="TCBezeichnung_NB">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -459,7 +466,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_NB_Zone">
+	  <xs:complexType ecore:name="Bezeichnung_NB_Zone_TypeClass" name="TCBezeichnung_NB_Zone">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -470,7 +477,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCF_ST_Z">
+	  <xs:complexType ecore:name="F_ST_Z_TypeClass" name="TCF_ST_Z">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -479,7 +486,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFA_FAE">
+	  <xs:complexType ecore:name="FA_FAE_TypeClass" name="TCFA_FAE">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -488,7 +495,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFreie_Stellbarkeit">
+	  <xs:complexType ecore:name="Freie_Stellbarkeit_TypeClass" name="TCFreie_Stellbarkeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -497,7 +504,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCKennzahl">
+	  <xs:complexType ecore:name="Kennzahl_TypeClass" name="TCKennzahl">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -507,7 +514,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCNB_Art">
+	  <xs:complexType ecore:name="NB_Art_TypeClass" name="TCNB_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -517,7 +524,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCNB_Grenze_Art">
+	  <xs:complexType ecore:name="NB_Grenze_Art_TypeClass" name="TCNB_Grenze_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -527,7 +534,8 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCNB_Rueckgabevoraussetzung">
+	  <xs:complexType ecore:name="NB_Rueckgabevoraussetzung_TypeClass"
+                   name="TCNB_Rueckgabevoraussetzung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -538,7 +546,8 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCNB_Verhaeltnis_Besonders">
+	  <xs:complexType ecore:name="NB_Verhaeltnis_Besonders_TypeClass"
+                   name="TCNB_Verhaeltnis_Besonders">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -549,7 +558,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCNB_Zone_Allg">
+	  <xs:complexType ecore:name="NB_Zone_Allg_TypeClass" name="TCNB_Zone_Allg">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -559,7 +568,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRang">
+	  <xs:complexType ecore:name="Rang_TypeClass" name="TCRang">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -569,7 +578,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSBUE">
+	  <xs:complexType ecore:name="SBUE_TypeClass" name="TCSBUE">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -578,7 +587,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSLE_SLS">
+	  <xs:complexType ecore:name="SLE_SLS_TypeClass" name="TCSLE_SLS">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -587,7 +596,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTaste_ANF">
+	  <xs:complexType ecore:name="Taste_ANF_TypeClass" name="TCTaste_ANF">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -596,7 +605,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTaste_FGT">
+	  <xs:complexType ecore:name="Taste_FGT_TypeClass" name="TCTaste_FGT">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -605,7 +614,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTaste_WGT">
+	  <xs:complexType ecore:name="Taste_WGT_TypeClass" name="TCTaste_WGT">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -614,7 +623,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCW_Gsp_Lage">
+	  <xs:complexType ecore:name="W_Gsp_Lage_TypeClass" name="TCW_Gsp_Lage">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -624,7 +633,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCWHU">
+	  <xs:complexType ecore:name="WHU_TypeClass" name="TCWHU">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -633,7 +642,7 @@ DB-Regelwerk
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCWUS">
+	  <xs:complexType ecore:name="WUS_TypeClass" name="TCWUS">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>

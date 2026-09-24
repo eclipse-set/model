@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsRegelzeichnung="http://www.plan-pro.org/modell/Regelzeichnung/1.10.0.3"
            xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsRegelzeichnung"
+           ecore:package="org.eclipse.set.model.planpro.Regelzeichnung"
            targetNamespace="http://www.plan-pro.org/modell/Regelzeichnung/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -32,37 +35,37 @@ XML Schema for PlanPro interface.</xs:documentation>
               schemaLocation="BasisTypen.xsd"/>
 	  <xs:import namespace="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
               schemaLocation="Basisobjekte.xsd"/>
-	  <xs:simpleType name="TBild">
+	  <xs:simpleType ecore:name="Bild_Type" name="TBild">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,20}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TRZ_Nummer">
+	  <xs:simpleType ecore:name="RZ_Nummer_Type" name="TRZ_Nummer">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,20}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TRZ_Parameter_Name">
+	  <xs:simpleType ecore:name="RZ_Parameter_Name_Type" name="TRZ_Parameter_Name">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,20}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TRZ_Parameter_Wert">
+	  <xs:simpleType ecore:name="RZ_Parameter_Wert_Type" name="TRZ_Parameter_Wert">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,20}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TTitel">
+	  <xs:simpleType ecore:name="Titel_Type" name="TTitel">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,200}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TUntertitel">
+	  <xs:simpleType ecore:name="Untertitel_Type" name="TUntertitel">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,200}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:complexType name="CRegelzeichnung">
+	  <xs:complexType ecore:name="Regelzeichnung" name="CRegelzeichnung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Regelzeichnungen werden verwendet, um einheitliche Bauausführungen für bestimmte Objekte sicherzustellen. Die für die LST-Anwendungen im Datenmodell benötigten Regelzeichnungen werden in einer Regelzeichnungstabelle aufgelistet. Regelzeichnungen können neben dem Bild eine beliebige Anzahl von Parametern haben, die die Bausausführung für einen konkreten Anwendungsfall genauer spezifizieren. Die Gültigkeit der Parameter für eine konkrete Anwendung in einer Regelzeichnung kann nur mit Hilfe der Plausibilitäts- und Zulässigkeitsprüfung (PlaZ) bestimmt werden. DB-Regelwerk Für die Anwendung der Regelzeichnugen für Weichen, Kreuzungen und Gleissperren ist das Regelwerk 819.0401Z01 bis 819.0401Z03 zu beachten.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -82,7 +85,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CRegelzeichnung_Allg">
+	  <xs:complexType ecore:name="Regelzeichnung_Allg_AttributeGroup" name="CRegelzeichnung_Allg">
 		    <xs:sequence>
 			      <xs:element name="Bild" type="nsRegelzeichnung:TCBild" minOccurs="0" maxOccurs="1">
 				        <xs:annotation>
@@ -128,7 +131,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CRegelzeichnung_Parameter">
+	  <xs:complexType ecore:name="Regelzeichnung_Parameter" name="CRegelzeichnung_Parameter">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Einer Regelzeichnung werden durch dieses Objekt weitere Parameter zugeordnet. Für eine Regelzeichnung können beliebig viele Parameter entsprechend der konkreten Anwendung angegeben werden. </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -155,7 +158,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CRegelzeichnung_Parameter_Allg">
+	  <xs:complexType ecore:name="Regelzeichnung_Parameter_Allg_AttributeGroup"
+                   name="CRegelzeichnung_Parameter_Allg">
 		    <xs:sequence>
 			      <xs:element name="RZ_Parameter_Name" type="nsRegelzeichnung:TCRZ_Parameter_Name"
                      minOccurs="1"
@@ -183,7 +187,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="TCBild">
+	  <xs:complexType ecore:name="Bild_TypeClass" name="TCBild">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -193,7 +197,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRZ_Nummer">
+	  <xs:complexType ecore:name="RZ_Nummer_TypeClass" name="TCRZ_Nummer">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -203,7 +207,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRZ_Parameter_Name">
+	  <xs:complexType ecore:name="RZ_Parameter_Name_TypeClass" name="TCRZ_Parameter_Name">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -214,7 +218,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRZ_Parameter_Wert">
+	  <xs:complexType ecore:name="RZ_Parameter_Wert_TypeClass" name="TCRZ_Parameter_Wert">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -225,7 +229,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTitel">
+	  <xs:complexType ecore:name="Titel_TypeClass" name="TCTitel">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -235,7 +239,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCUntertitel">
+	  <xs:complexType ecore:name="Untertitel_TypeClass" name="TCUntertitel">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>

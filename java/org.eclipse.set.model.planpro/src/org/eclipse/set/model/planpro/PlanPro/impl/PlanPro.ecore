@@ -2960,7 +2960,7 @@
     <eLiterals name="ENUMUntergewerk_Art_Bedienung_ETCS" value="1" literal="Bedienung ETCS"/>
     <eLiterals name="ENUMUntergewerk_Art_Bedienung_Fdl_BZ" value="2" literal="Bedienung Fdl BZ"/>
     <eLiterals name="ENUMUntergewerk_Art_Bedienung_Fdl_ESTW_ZE" value="3" literal="Bedienung Fdl ESTW-ZE"/>
-    <eLiterals name="ENUMUntergewerk_Art_BU" value="4" literal="BÜ"/>
+    <eLiterals name="ENUMUntergewerk_Art_BUe" value="4" literal="BÜ"/>
     <eLiterals name="ENUMUntergewerk_Art_ESTW" value="5" literal="ESTW"/>
     <eLiterals name="ENUMUntergewerk_Art_ETCS" value="6" literal="ETCS"/>
     <eLiterals name="ENUMUntergewerk_Art_Geo" value="7" literal="Geo"/>
@@ -4346,7 +4346,8 @@
       <details key="name" value="TCPolygonzug_Betrachtungsbereich"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Polygonzug_Betrachtungsbereich_Type">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Polygonzug_Betrachtungsbereich_Type"
+        unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="Wert"/>
@@ -4366,7 +4367,8 @@
       <details key="name" value="TCPolygonzug_Planungsbereich"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Polygonzug_Planungsbereich_Type">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="wert" lowerBound="1" eType="#//Polygonzug_Planungsbereich_Type"
+        unsettable="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
         <details key="name" value="Wert"/>

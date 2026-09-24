@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsLayoutinformationen="http://www.plan-pro.org/modell/Layoutinformationen/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
            xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
            xmlns:nsGeodaten="http://www.plan-pro.org/modell/Geodaten/1.10.0.3"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsLayoutinformationen"
+           ecore:package="org.eclipse.set.model.planpro.Layoutinformationen"
            targetNamespace="http://www.plan-pro.org/modell/Layoutinformationen/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -42,83 +45,97 @@ XML Schema for PlanPro interface.</xs:documentation>
 	  </xs:element>
 	  <xs:simpleType name="ENUMFuellung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="doppelte Schraffur"/>
-			      <xs:enumeration value="einfache Schraffur"/>
-			      <xs:enumeration value="einfache Schraffur gestrichelt"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMFuellung_doppelte_Schraffur" value="doppelte Schraffur"/>
+			      <xs:enumeration ecore:name="ENUMFuellung_einfache_Schraffur" value="einfache Schraffur"/>
+			      <xs:enumeration ecore:name="ENUMFuellung_einfache_Schraffur_gestrichelt"
+                         value="einfache Schraffur gestrichelt"/>
+			      <xs:enumeration ecore:name="ENUMFuellung_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMLageplan_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="BÜ Kreuzungsplan LST"/>
-			      <xs:enumeration value="BÜ Sicherungstechn. Lage- und Kabelübersichtsplan"/>
-			      <xs:enumeration value="Gleisfreimeldeplan für Gleisstromkreise"/>
-			      <xs:enumeration value="Kabellageplan"/>
-			      <xs:enumeration value="Kabelübersichtsplan"/>
-			      <xs:enumeration value="Sicherungstechnischer Lageplan"/>
-			      <xs:enumeration value="Sicherungstechnischer Übersichtsplan"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Stammkabelübersichtsplan"/>
-			      <xs:enumeration value="ZLV-Bus-Übersichtsplan"/>
-			      <xs:enumeration value="ZN-Übersichtsplan"/>
+			      <xs:enumeration ecore:name="ENUMLageplan_Art_BUe_Kreuzungsplan_LST"
+                         value="BÜ Kreuzungsplan LST"/>
+			      <xs:enumeration ecore:name="ENUMLageplan_Art_BUe_Sicherungstechn__Lage__und_Kabelübersichtsplan"
+                         value="BÜ Sicherungstechn. Lage- und Kabelübersichtsplan"/>
+			      <xs:enumeration ecore:name="ENUMLageplan_Art_Gleisfreimeldeplan_für_Gleisstromkreise"
+                         value="Gleisfreimeldeplan für Gleisstromkreise"/>
+			      <xs:enumeration ecore:name="ENUMLageplan_Art_Kabellageplan" value="Kabellageplan"/>
+			      <xs:enumeration ecore:name="ENUMLageplan_Art_Kabelübersichtsplan" value="Kabelübersichtsplan"/>
+			      <xs:enumeration ecore:name="ENUMLageplan_Art_Sicherungstechnischer_Lageplan"
+                         value="Sicherungstechnischer Lageplan"/>
+			      <xs:enumeration ecore:name="ENUMLageplan_Art_Sicherungstechnischer_Uebersichtsplan"
+                         value="Sicherungstechnischer Übersichtsplan"/>
+			      <xs:enumeration ecore:name="ENUMLageplan_Art_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMLageplan_Art_Stammkabelübersichtsplan"
+                         value="Stammkabelübersichtsplan"/>
+			      <xs:enumeration ecore:name="ENUMLageplan_Art_ZLV_Bus_Uebersichtsplan"
+                         value="ZLV-Bus-Übersichtsplan"/>
+			      <xs:enumeration ecore:name="ENUMLageplan_Art_ZN_Uebersichtsplan" value="ZN-Übersichtsplan"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMLinie_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Punktlinie"/>
-			      <xs:enumeration value="Strich-Dreipunktlinie"/>
-			      <xs:enumeration value="Strich-Punktlinie"/>
-			      <xs:enumeration value="Strich-Strichlinie"/>
-			      <xs:enumeration value="Strich-Zweipunktlinie"/>
-			      <xs:enumeration value="Strich-Zweistrichlinie"/>
-			      <xs:enumeration value="Strichlinie"/>
-			      <xs:enumeration value="Strichlinie lang"/>
-			      <xs:enumeration value="Volllinie"/>
-			      <xs:enumeration value="Zweistrich-Dreipunktlinie"/>
-			      <xs:enumeration value="Zweistrich-Punktlinie"/>
-			      <xs:enumeration value="Zweistrich-Zweipunktlinie"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Art_Punktlinie" value="Punktlinie"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Art_Strich_Dreipunktlinie" value="Strich-Dreipunktlinie"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Art_Strich_Punktlinie" value="Strich-Punktlinie"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Art_Strich_Strichlinie" value="Strich-Strichlinie"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Art_Strich_Zweipunktlinie" value="Strich-Zweipunktlinie"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Art_Strich_Zweistrichlinie"
+                         value="Strich-Zweistrichlinie"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Art_Strichlinie" value="Strichlinie"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Art_Strichlinie_lang" value="Strichlinie lang"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Art_Volllinie" value="Volllinie"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Art_Zweistrich_Dreipunktlinie"
+                         value="Zweistrich-Dreipunktlinie"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Art_Zweistrich_Punktlinie" value="Zweistrich-Punktlinie"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Art_Zweistrich_Zweipunktlinie"
+                         value="Zweistrich-Zweipunktlinie"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMLinie_Subart">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="breit"/>
-			      <xs:enumeration value="extrabreit"/>
-			      <xs:enumeration value="schmal"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Subart_breit" value="breit"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Subart_extrabreit" value="extrabreit"/>
+			      <xs:enumeration ecore:name="ENUMLinie_Subart_schmal" value="schmal"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBez_Lageplan_Blattschnitt">
+	  <xs:simpleType ecore:name="Bez_Lageplan_Blattschnitt_Type" name="TBez_Lageplan_Blattschnitt">
 		    <xs:restriction base="xs:integer"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_Lageplan">
+	  <xs:simpleType ecore:name="Bezeichnung_Lageplan_Type" name="TBezeichnung_Lageplan">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TDarstellung_Polygonzug">
+	  <xs:simpleType ecore:name="Darstellung_Polygonzug_Type" name="TDarstellung_Polygonzug">
 		    <xs:restriction base="nsBasisTypen:TFreiText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TDarstellung_Richtungswinkel">
+	  <xs:simpleType ecore:name="Darstellung_Richtungswinkel_Type"
+                  name="TDarstellung_Richtungswinkel">
 		    <xs:restriction base="xs:decimal"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TDarstellung_Richtungswinkel_Bezeichnung">
+	  <xs:simpleType ecore:name="Darstellung_Richtungswinkel_Bezeichnung_Type"
+                  name="TDarstellung_Richtungswinkel_Bezeichnung">
 		    <xs:restriction base="xs:decimal"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TLinie_Farbwert">
+	  <xs:simpleType ecore:name="Linie_Farbwert_Type" name="TLinie_Farbwert">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value="[a-fA-F0-9]{6}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPolygonzug_Ausrichtung">
+	  <xs:simpleType ecore:name="Polygonzug_Ausrichtung_Type" name="TPolygonzug_Ausrichtung">
 		    <xs:restriction base="nsBasisTypen:TFreiText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPolygonzug_Blattschnitt">
+	  <xs:simpleType ecore:name="Polygonzug_Blattschnitt_Type" name="TPolygonzug_Blattschnitt">
 		    <xs:restriction base="nsBasisTypen:TFreiText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TReferenz_LST_Zustand">
+	  <xs:simpleType ecore:name="Referenz_LST_Zustand_Type" name="TReferenz_LST_Zustand">
 		    <xs:restriction base="nsBasisTypen:TGUID"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TReferenz_Objekt_Darstellung">
+	  <xs:simpleType ecore:name="Referenz_Objekt_Darstellung_Type"
+                  name="TReferenz_Objekt_Darstellung">
 		    <xs:restriction base="nsBasisTypen:TGUID"/>
 	  </xs:simpleType>
-	  <xs:complexType name="CElement_Position">
+	  <xs:complexType ecore:name="Element_Position" name="CElement_Position">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Angabe von Positionsinformationen für ein LST-Objekt bezogen auf einen Lageplan.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -153,7 +170,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CElement_Position_Allg">
+	  <xs:complexType ecore:name="Element_Position_Allg_AttributeGroup" name="CElement_Position_Allg">
 		    <xs:sequence>
 			      <xs:element name="Darstellung_GEO_Punkt_Bezeichnung" type="nsGeodaten:CGEO_Punkt"
                      minOccurs="0"
@@ -201,7 +218,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:choice>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CElement_Stil">
+	  <xs:complexType ecore:name="Element_Stil" name="CElement_Stil">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Angabe von Darstellungsvorgaben (z. B. Linienart) für ein LST-Objekt bezogen auf einen Lageplan.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -235,7 +252,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CElement_Stil_Allg">
+	  <xs:complexType ecore:name="Element_Stil_Allg_AttributeGroup" name="CElement_Stil_Allg">
 		    <xs:sequence>
 			      <xs:element name="Fuellung" type="nsLayoutinformationen:TCFuellung" minOccurs="0"
                      maxOccurs="1">
@@ -269,7 +286,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CLageplan">
+	  <xs:complexType ecore:name="Lageplan" name="CLageplan">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Plan, der maßstäblich oder unmaßstäblich die Lage von LST-Objekten zeigt. Beispiel: Sicherungstechnischer Lageplan. Bei Planungen wird für Start- und Zielzustand je eine Instanz von Lageplan erzeugt. Zu einem Lageplan ist mindestens ein Blattschnitt zu definieren.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -301,7 +318,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CLageplan_Bezeichnung">
+	  <xs:complexType ecore:name="Lageplan_Bezeichnung_AttributeGroup" name="CLageplan_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_Lageplan" type="nsLayoutinformationen:TCBezeichnung_Lageplan"
                      minOccurs="1"
@@ -312,7 +329,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CLageplan_Blattschnitt">
+	  <xs:complexType ecore:name="Lageplan_Blattschnitt" name="CLageplan_Blattschnitt">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Teil des Lageplans, der auf einem Blatt dargestellt wird.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -348,7 +365,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CLageplan_Blattschnitt_Bezeichnung">
+	  <xs:complexType ecore:name="Lageplan_Blattschnitt_Bezeichnung_AttributeGroup"
+                   name="CLageplan_Blattschnitt_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bez_Lageplan_Blattschnitt"
                      type="nsLayoutinformationen:TCBez_Lageplan_Blattschnitt"
@@ -360,7 +378,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CLageplan_Zustand">
+	  <xs:complexType ecore:name="Lageplan_Zustand" name="CLageplan_Zustand">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt zur Abbildung der zustandsbezogenen Layoutinformationen zu einem Lageplan.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -388,7 +406,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CPlanPro_Layoutinfo">
+	  <xs:complexType ecore:name="PlanPro_Layoutinfo" name="CPlanPro_Layoutinfo">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Oberstes Objekt der Layout-XML. Bei jeder Erzeugung einer XML-Ausgabe für eine Planung muss eine neue GUID (Identitaet) erzeugt werden.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -471,7 +489,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBez_Lageplan_Blattschnitt">
+	  <xs:complexType ecore:name="Bez_Lageplan_Blattschnitt_TypeClass"
+                   name="TCBez_Lageplan_Blattschnitt">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -483,7 +502,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Lageplan">
+	  <xs:complexType ecore:name="Bezeichnung_Lageplan_TypeClass" name="TCBezeichnung_Lageplan">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -494,7 +513,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDarstellung_Polygonzug">
+	  <xs:complexType ecore:name="Darstellung_Polygonzug_TypeClass" name="TCDarstellung_Polygonzug">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -505,7 +524,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDarstellung_Richtungswinkel">
+	  <xs:complexType ecore:name="Darstellung_Richtungswinkel_TypeClass"
+                   name="TCDarstellung_Richtungswinkel">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -517,7 +537,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDarstellung_Richtungswinkel_Bezeichnung">
+	  <xs:complexType ecore:name="Darstellung_Richtungswinkel_Bezeichnung_TypeClass"
+                   name="TCDarstellung_Richtungswinkel_Bezeichnung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -530,7 +551,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFuellung">
+	  <xs:complexType ecore:name="Fuellung_TypeClass" name="TCFuellung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -541,7 +562,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCLageplan_Art">
+	  <xs:complexType ecore:name="Lageplan_Art_TypeClass" name="TCLageplan_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -552,7 +573,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCLinie_Art">
+	  <xs:complexType ecore:name="Linie_Art_TypeClass" name="TCLinie_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -563,7 +584,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCLinie_Farbwert">
+	  <xs:complexType ecore:name="Linie_Farbwert_TypeClass" name="TCLinie_Farbwert">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -574,7 +595,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCLinie_Subart">
+	  <xs:complexType ecore:name="Linie_Subart_TypeClass" name="TCLinie_Subart">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -585,7 +606,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPolygonzug_Ausrichtung">
+	  <xs:complexType ecore:name="Polygonzug_Ausrichtung_TypeClass" name="TCPolygonzug_Ausrichtung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -596,7 +617,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPolygonzug_Blattschnitt">
+	  <xs:complexType ecore:name="Polygonzug_Blattschnitt_TypeClass" name="TCPolygonzug_Blattschnitt">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -607,7 +628,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCReferenz_LST_Zustand">
+	  <xs:complexType ecore:name="Referenz_LST_Zustand_TypeClass" name="TCReferenz_LST_Zustand">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -618,7 +639,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCReferenz_Objekt_Darstellung">
+	  <xs:complexType ecore:name="Referenz_Objekt_Darstellung_TypeClass"
+                   name="TCReferenz_Objekt_Darstellung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>

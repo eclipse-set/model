@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsPZB="http://www.plan-pro.org/modell/PZB/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
            xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsPZB"
+           ecore:package="org.eclipse.set.model.planpro.PZB"
            targetNamespace="http://www.plan-pro.org/modell/PZB/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -34,83 +37,85 @@ XML Schema for PlanPro interface.</xs:documentation>
               schemaLocation="BasisTypen.xsd"/>
 	  <xs:simpleType name="ENUMGUE_Anordnung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="1_EA"/>
-			      <xs:enumeration value="2_AE"/>
+			      <xs:enumeration ecore:name="ENUMGUE_Anordnung_1_EA" value="1_EA"/>
+			      <xs:enumeration ecore:name="ENUMGUE_Anordnung_2_AE" value="2_AE"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMGUE_Bauart">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="GPE_90R"/>
-			      <xs:enumeration value="GUE_60"/>
-			      <xs:enumeration value="PZ_80"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMGUE_Bauart_GPE_90R" value="GPE_90R"/>
+			      <xs:enumeration ecore:name="ENUMGUE_Bauart_GUE_60" value="GUE_60"/>
+			      <xs:enumeration ecore:name="ENUMGUE_Bauart_PZ_80" value="PZ_80"/>
+			      <xs:enumeration ecore:name="ENUMGUE_Bauart_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMGUE_Energieversorgung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Solar"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Stellwerk"/>
+			      <xs:enumeration ecore:name="ENUMGUE_Energieversorgung_Solar" value="Solar"/>
+			      <xs:enumeration ecore:name="ENUMGUE_Energieversorgung_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMGUE_Energieversorgung_Stellwerk" value="Stellwerk"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMMessfehler">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="2_bis_3"/>
-			      <xs:enumeration value="3_bis_5"/>
-			      <xs:enumeration value="5_bis_7"/>
-			      <xs:enumeration value="kleiner_4"/>
-			      <xs:enumeration value="kleiner_5"/>
+			      <xs:enumeration ecore:name="ENUMMessfehler_2_bis_3" value="2_bis_3"/>
+			      <xs:enumeration ecore:name="ENUMMessfehler_3_bis_5" value="3_bis_5"/>
+			      <xs:enumeration ecore:name="ENUMMessfehler_5_bis_7" value="5_bis_7"/>
+			      <xs:enumeration ecore:name="ENUMMessfehler_kleiner_4" value="kleiner_4"/>
+			      <xs:enumeration ecore:name="ENUMMessfehler_kleiner_5" value="kleiner_5"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMPZB_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="1000_2000_Hz"/>
-			      <xs:enumeration value="1000_Hz"/>
-			      <xs:enumeration value="2000_Hz"/>
-			      <xs:enumeration value="500_Hz"/>
+			      <xs:enumeration ecore:name="ENUMPZB_Art_1000_2000_Hz" value="1000_2000_Hz"/>
+			      <xs:enumeration ecore:name="ENUMPZB_Art_1000_Hz" value="1000_Hz"/>
+			      <xs:enumeration ecore:name="ENUMPZB_Art_2000_Hz" value="2000_Hz"/>
+			      <xs:enumeration ecore:name="ENUMPZB_Art_500_Hz" value="500_Hz"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMWirksamkeit">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="schaltbar_von_Signal"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="staendig_wirksam"/>
+			      <xs:enumeration ecore:name="ENUMWirksamkeit_schaltbar_von_Signal" value="schaltbar_von_Signal"/>
+			      <xs:enumeration ecore:name="ENUMWirksamkeit_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMWirksamkeit_staendig_wirksam" value="staendig_wirksam"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMWirksamkeit_Fstr">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="staendig_wirksam_wenn_Fahrstrasse_eingestellt"/>
-			      <xs:enumeration value="unwirksam_wenn_Fahrstrasse_eingestellt"/>
+			      <xs:enumeration ecore:name="ENUMWirksamkeit_Fstr_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMWirksamkeit_Fstr_staendig_wirksam_wenn_Fahrstrasse_eingestellt"
+                         value="staendig_wirksam_wenn_Fahrstrasse_eingestellt"/>
+			      <xs:enumeration ecore:name="ENUMWirksamkeit_Fstr_unwirksam_wenn_Fahrstrasse_eingestellt"
+                         value="unwirksam_wenn_Fahrstrasse_eingestellt"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TGUE_Abstand_Abweichend">
+	  <xs:simpleType ecore:name="GUE_Abstand_Abweichend_Type" name="TGUE_Abstand_Abweichend">
 		    <xs:restriction base="nsBasisTypen:TMeter"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TGUE_Messstrecke">
+	  <xs:simpleType ecore:name="GUE_Messstrecke_Type" name="TGUE_Messstrecke">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="5\.[89][0-9]|([6-9]|[1-6][0-9]|7[0-4])\.[0-9]{2}|75\.00"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPrioritaet_Gefahrstelle">
+	  <xs:simpleType ecore:name="Prioritaet_Gefahrstelle_Type" name="TPrioritaet_Gefahrstelle">
 		    <xs:restriction base="xs:integer"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPruefgeschwindigkeit">
+	  <xs:simpleType ecore:name="Pruefgeschwindigkeit_Type" name="TPruefgeschwindigkeit">
 		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit">
 			      <xs:pattern value="[1-9][0-9]|1[0-4][0-9]|150"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPruefzeit">
+	  <xs:simpleType ecore:name="Pruefzeit_Type" name="TPruefzeit">
 		    <xs:restriction base="nsBasisTypen:TSekunde">
 			      <xs:pattern value="(0|[1-9][0-9]{0,1})\.[0-9]{2}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPZB_Abstand_GM">
+	  <xs:simpleType ecore:name="PZB_Abstand_GM_Type" name="TPZB_Abstand_GM">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="\-[1-6]|[0-9]|[1-9][0-9]|[12][0-9]{2}|300"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:complexType name="CINA_Gefahrstelle">
+	  <xs:complexType ecore:name="INA_Gefahrstelle_AttributeGroup" name="CINA_Gefahrstelle">
 		    <xs:sequence>
 			      <xs:element name="ID_Markanter_Punkt" type="nsVerweise:TCID_Markanter_Punkt" minOccurs="1"
                      maxOccurs="1">
@@ -127,7 +132,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPZB_Element">
+	  <xs:complexType ecore:name="PZB_Element" name="CPZB_Element">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">(Bau)Art, Umfang und Funktionen der punktförmigen Zugbeeinflussung. Unter dem PZB_Element werden sowohl einzelne Gleismagneten als auch die Geschwindigkeitsüberwachungseinrichtungen (GÜ - in der Literatur auch als Geschwindigkeitsprüfeinrichtungen - GPE bezeichnet) sowie dazugehörige Eigenschaften und Parameter zusammenfassend dargestellt. DB-Regelwerk 819.1310 8 für Gleismagnete 819.1310 9 für GÜ In der Gleismagenttabelle finden sich die Angaben in den Zeilen 16 und 17 sowie 33 bis 35 für GÜ und 29 bis 32 für Gleismagnete.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -178,7 +183,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CPZB_Element_GM">
+	  <xs:complexType ecore:name="PZB_Element_GM_AttributeGroup" name="CPZB_Element_GM">
 		    <xs:sequence>
 			      <xs:element name="PZB_Abstand_GM" type="nsPZB:TCPZB_Abstand_GM" minOccurs="0" maxOccurs="1">
 				        <xs:annotation>
@@ -202,7 +207,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPZB_Element_GUE">
+	  <xs:complexType ecore:name="PZB_Element_GUE_AttributeGroup" name="CPZB_Element_GUE">
 		    <xs:sequence>
 			      <xs:element name="GUE_Abstand_Abweichend" type="nsPZB:TCGUE_Abstand_Abweichend"
                      minOccurs="0"
@@ -283,7 +288,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPZB_Element_Zuordnung">
+	  <xs:complexType ecore:name="PZB_Element_Zuordnung" name="CPZB_Element_Zuordnung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung von PZB Element zu einem Signal, einer Fahrstraße oder auch anderen Objekten, die im Bezug zum PZB_Element stehen. Der Verweis von einem PZB Element über das Zuordnungsobjekt auf ein Signal ist dabei immer gefüllt. Die Verknüpfung mit einer Fahrstraße (nur Zugstraßen sind relevant) oder weiteren Objekten (INA-Berechnungsrelevante Objekte) ist fallbezogen notwendig. Beispiele für die Zuordnung sind unter ID Fstr Zug Rangier zu finden. DB-Regelwerk Eintrag in der Gleismagnettabelle; die Zuordnung zu einzelnen Fahrstraßen wird heute über Fußnoten gelöst.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -306,7 +311,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CPZB_Element_Zuordnung_BP">
+	  <xs:complexType ecore:name="PZB_Element_Zuordnung_BP_AttributeGroup"
+                   name="CPZB_Element_Zuordnung_BP">
 		    <xs:sequence>
 			      <xs:element name="ID_PZB_Element_Bezugspunkt"
                      type="nsVerweise:TCID_PZB_Element_Bezugspunkt"
@@ -333,7 +339,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPZB_Element_Zuordnung_Fstr">
+	  <xs:complexType ecore:name="PZB_Element_Zuordnung_Fstr_AttributeGroup"
+                   name="CPZB_Element_Zuordnung_Fstr">
 		    <xs:sequence>
 			      <xs:element name="ID_Fstr_Zug_Rangier" type="nsVerweise:TCID_Fstr_Zug_Rangier"
                      minOccurs="1"
@@ -350,7 +357,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPZB_Element_Zuordnung_INA">
+	  <xs:complexType ecore:name="PZB_Element_Zuordnung_INA_AttributeGroup"
+                   name="CPZB_Element_Zuordnung_INA">
 		    <xs:sequence>
 			      <xs:element name="ID_Anhang_INA" type="nsVerweise:TCID_Anhang" minOccurs="1"
                      maxOccurs="unbounded">
@@ -366,7 +374,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CPZB_Zuordnung_Signal">
+	  <xs:complexType ecore:name="PZB_Zuordnung_Signal" name="CPZB_Zuordnung_Signal">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Das Objekt dient der Zuordnung der Signale (Vorsignal, Vorsignalwiederholer, H-Tafel) zum maßgebenden Gleismagneten (GM) 2000 Hz des Hauptsignals. Die Unterscheidung zwischen den verschiedenen Signalen wird über die GUID des Signals hergestellt. Der angegebene Abstand bezieht sich beim Vorsignal auf den Abstand des GM 1000 Hz, bei Vorsignalwiederholer und H-Tafel auf den Abstand des Signals zum maßgebenden GM 2000 Hz des Hauptsignals. Es werden in der Regel bis zu vier H-Tafeln pro Hauptsignal geplant. DB-Regelwerk Gleismagnettabelle, Zeilen 19 sowie 21 bis 25 </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -395,7 +403,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGUE_Abstand_Abweichend">
+	  <xs:complexType ecore:name="GUE_Abstand_Abweichend_TypeClass" name="TCGUE_Abstand_Abweichend">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -405,7 +413,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGUE_Anordnung">
+	  <xs:complexType ecore:name="GUE_Anordnung_TypeClass" name="TCGUE_Anordnung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -415,7 +423,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGUE_Bauart">
+	  <xs:complexType ecore:name="GUE_Bauart_TypeClass" name="TCGUE_Bauart">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -425,7 +433,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGUE_Energieversorgung">
+	  <xs:complexType ecore:name="GUE_Energieversorgung_TypeClass" name="TCGUE_Energieversorgung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -435,7 +443,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGUE_Messstrecke">
+	  <xs:complexType ecore:name="GUE_Messstrecke_TypeClass" name="TCGUE_Messstrecke">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -445,7 +453,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCMessfehler">
+	  <xs:complexType ecore:name="Messfehler_TypeClass" name="TCMessfehler">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -455,7 +463,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPrioritaet_Gefahrstelle">
+	  <xs:complexType ecore:name="Prioritaet_Gefahrstelle_TypeClass" name="TCPrioritaet_Gefahrstelle">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -465,7 +473,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPruefgeschwindigkeit">
+	  <xs:complexType ecore:name="Pruefgeschwindigkeit_TypeClass" name="TCPruefgeschwindigkeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -475,7 +483,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPruefzeit">
+	  <xs:complexType ecore:name="Pruefzeit_TypeClass" name="TCPruefzeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -484,7 +492,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPZB_Abstand_GM">
+	  <xs:complexType ecore:name="PZB_Abstand_GM_TypeClass" name="TCPZB_Abstand_GM">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -494,7 +502,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPZB_Art">
+	  <xs:complexType ecore:name="PZB_Art_TypeClass" name="TCPZB_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -504,7 +512,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPZB_INA">
+	  <xs:complexType ecore:name="PZB_INA_TypeClass" name="TCPZB_INA">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -513,7 +521,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCWirksamkeit">
+	  <xs:complexType ecore:name="Wirksamkeit_TypeClass" name="TCWirksamkeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -523,7 +531,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCWirksamkeit_Fstr">
+	  <xs:complexType ecore:name="Wirksamkeit_Fstr_TypeClass" name="TCWirksamkeit_Fstr">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>

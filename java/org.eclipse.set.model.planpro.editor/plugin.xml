@@ -2,12 +2,12 @@
 <?eclipse version="3.0"?>
 
 <!--
- Copyright (c) 2024 DB InfraGO AG and others
+ Copyright (c) 2026 DB InfraGO AG and others
  
  This program and the accompanying materials are made available under the
  terms of the Eclipse Public License 2.0 which is available at
  https://www.eclipse.org/legal/epl-2.0.
-  
+ 
  SPDX-License-Identifier: EPL-2.0
 -->
 
@@ -47,12 +47,12 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="org.eclipse.set.model.planpro.Basisobjekte.presentation.BasisobjekteModelWizardID"
-            name="%_UI_BasisobjekteModelWizard_label"
-            class="org.eclipse.set.model.planpro.Basisobjekte.presentation.BasisobjekteModelWizard"
+            id="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.presentation.Signalbegriffe_Ril_301ModelWizardID"
+            name="%_UI_Signalbegriffe_Ril_301ModelWizard_label"
+            class="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.presentation.Signalbegriffe_Ril_301ModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/BasisobjekteModelFile.gif">
-         <description>%_UI_BasisobjekteModelWizard_description</description>
+            icon="icons/full/obj16/Signalbegriffe_Ril_301ModelFile.gif">
+         <description>%_UI_Signalbegriffe_Ril_301ModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
@@ -60,12 +60,40 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated PlanPro -->
       <editor
-            id="org.eclipse.set.model.planpro.Basisobjekte.presentation.BasisobjekteEditorID"
-            name="%_UI_BasisobjekteEditor_label"
-            icon="icons/full/obj16/BasisobjekteModelFile.gif"
-            extensions="basisobjekte"
-            class="org.eclipse.set.model.planpro.Basisobjekte.presentation.BasisobjekteEditor"
-            contributorClass="org.eclipse.set.model.planpro.Basisobjekte.presentation.BasisobjekteActionBarContributor">
+            id="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.presentation.Signalbegriffe_Ril_301EditorID"
+            name="%_UI_Signalbegriffe_Ril_301Editor_label"
+            icon="icons/full/obj16/Signalbegriffe_Ril_301ModelFile.gif"
+            extensions="signalbegriffe_ril_301"
+            class="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.presentation.Signalbegriffe_Ril_301Editor"
+            contributorClass="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.presentation.Signalbegriffe_Ril_301ActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated PlanPro -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.eclipse.set.model.planpro.Layoutinformationen.presentation.LayoutinformationenModelWizardID"
+            name="%_UI_LayoutinformationenModelWizard_label"
+            class="org.eclipse.set.model.planpro.Layoutinformationen.presentation.LayoutinformationenModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/LayoutinformationenModelFile.gif">
+         <description>%_UI_LayoutinformationenModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated PlanPro -->
+      <editor
+            id="org.eclipse.set.model.planpro.Layoutinformationen.presentation.LayoutinformationenEditorID"
+            name="%_UI_LayoutinformationenEditor_label"
+            icon="icons/full/obj16/LayoutinformationenModelFile.gif"
+            extensions="layoutinformationen"
+            class="org.eclipse.set.model.planpro.Layoutinformationen.presentation.LayoutinformationenEditor"
+            contributorClass="org.eclipse.set.model.planpro.Layoutinformationen.presentation.LayoutinformationenActionBarContributor">
       </editor>
    </extension>
 
@@ -103,6 +131,34 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
+            id="org.eclipse.set.model.planpro.Basisobjekte.presentation.BasisobjekteModelWizardID"
+            name="%_UI_BasisobjekteModelWizard_label"
+            class="org.eclipse.set.model.planpro.Basisobjekte.presentation.BasisobjekteModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BasisobjekteModelFile.gif">
+         <description>%_UI_BasisobjekteModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated PlanPro -->
+      <editor
+            id="org.eclipse.set.model.planpro.Basisobjekte.presentation.BasisobjekteEditorID"
+            name="%_UI_BasisobjekteEditor_label"
+            icon="icons/full/obj16/BasisobjekteModelFile.gif"
+            extensions="basisobjekte"
+            class="org.eclipse.set.model.planpro.Basisobjekte.presentation.BasisobjekteEditor"
+            contributorClass="org.eclipse.set.model.planpro.Basisobjekte.presentation.BasisobjekteActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated PlanPro -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
             id="org.eclipse.set.model.planpro.ATO.presentation.ATOModelWizardID"
             name="%_UI_ATOModelWizard_label"
             class="org.eclipse.set.model.planpro.ATO.presentation.ATOModelWizard"
@@ -122,34 +178,6 @@
             extensions="ato"
             class="org.eclipse.set.model.planpro.ATO.presentation.ATOEditor"
             contributorClass="org.eclipse.set.model.planpro.ATO.presentation.ATOActionBarContributor">
-      </editor>
-   </extension>
-
-   <extension point="org.eclipse.ui.newWizards">
-      <!-- @generated PlanPro -->
-      <category
-            id="org.eclipse.emf.ecore.Wizard.category.ID"
-            name="%_UI_Wizard_category"/>
-      <wizard
-            id="org.eclipse.set.model.planpro.Verweise.presentation.VerweiseModelWizardID"
-            name="%_UI_VerweiseModelWizard_label"
-            class="org.eclipse.set.model.planpro.Verweise.presentation.VerweiseModelWizard"
-            category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/VerweiseModelFile.gif">
-         <description>%_UI_VerweiseModelWizard_description</description>
-         <selection class="org.eclipse.core.resources.IResource"/>
-      </wizard>
-   </extension>
-
-   <extension point="org.eclipse.ui.editors">
-      <!-- @generated PlanPro -->
-      <editor
-            id="org.eclipse.set.model.planpro.Verweise.presentation.VerweiseEditorID"
-            name="%_UI_VerweiseEditor_label"
-            icon="icons/full/obj16/VerweiseModelFile.gif"
-            extensions="verweise"
-            class="org.eclipse.set.model.planpro.Verweise.presentation.VerweiseEditor"
-            contributorClass="org.eclipse.set.model.planpro.Verweise.presentation.VerweiseActionBarContributor">
       </editor>
    </extension>
 
@@ -719,12 +747,12 @@
             id="org.eclipse.emf.ecore.Wizard.category.ID"
             name="%_UI_Wizard_category"/>
       <wizard
-            id="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.presentation.Signalbegriffe_Ril_301ModelWizardID"
-            name="%_UI_Signalbegriffe_Ril_301ModelWizard_label"
-            class="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.presentation.Signalbegriffe_Ril_301ModelWizard"
+            id="org.eclipse.set.model.planpro.Verweise.presentation.VerweiseModelWizardID"
+            name="%_UI_VerweiseModelWizard_label"
+            class="org.eclipse.set.model.planpro.Verweise.presentation.VerweiseModelWizard"
             category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/Signalbegriffe_Ril_301ModelFile.gif">
-         <description>%_UI_Signalbegriffe_Ril_301ModelWizard_description</description>
+            icon="icons/full/obj16/VerweiseModelFile.gif">
+         <description>%_UI_VerweiseModelWizard_description</description>
          <selection class="org.eclipse.core.resources.IResource"/>
       </wizard>
    </extension>
@@ -732,40 +760,12 @@
    <extension point="org.eclipse.ui.editors">
       <!-- @generated PlanPro -->
       <editor
-            id="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.presentation.Signalbegriffe_Ril_301EditorID"
-            name="%_UI_Signalbegriffe_Ril_301Editor_label"
-            icon="icons/full/obj16/Signalbegriffe_Ril_301ModelFile.gif"
-            extensions="signalbegriffe_ril_301"
-            class="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.presentation.Signalbegriffe_Ril_301Editor"
-            contributorClass="org.eclipse.set.model.planpro.Signalbegriffe_Ril_301.presentation.Signalbegriffe_Ril_301ActionBarContributor">
-      </editor>
-   </extension>
-
-   <extension point="org.eclipse.ui.newWizards">
-      <!-- @generated PlanPro -->
-      <category
-            id="org.eclipse.emf.ecore.Wizard.category.ID"
-            name="%_UI_Wizard_category"/>
-      <wizard
-            id="org.eclipse.set.model.planpro.Layoutinformationen.presentation.LayoutinformationenModelWizardID"
-            name="%_UI_LayoutinformationenModelWizard_label"
-            class="org.eclipse.set.model.planpro.Layoutinformationen.presentation.LayoutinformationenModelWizard"
-            category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/LayoutinformationenModelFile.gif">
-         <description>%_UI_LayoutinformationenModelWizard_description</description>
-         <selection class="org.eclipse.core.resources.IResource"/>
-      </wizard>
-   </extension>
-
-   <extension point="org.eclipse.ui.editors">
-      <!-- @generated PlanPro -->
-      <editor
-            id="org.eclipse.set.model.planpro.Layoutinformationen.presentation.LayoutinformationenEditorID"
-            name="%_UI_LayoutinformationenEditor_label"
-            icon="icons/full/obj16/LayoutinformationenModelFile.gif"
-            extensions="layoutinformationen"
-            class="org.eclipse.set.model.planpro.Layoutinformationen.presentation.LayoutinformationenEditor"
-            contributorClass="org.eclipse.set.model.planpro.Layoutinformationen.presentation.LayoutinformationenActionBarContributor">
+            id="org.eclipse.set.model.planpro.Verweise.presentation.VerweiseEditorID"
+            name="%_UI_VerweiseEditor_label"
+            icon="icons/full/obj16/VerweiseModelFile.gif"
+            extensions="verweise"
+            class="org.eclipse.set.model.planpro.Verweise.presentation.VerweiseEditor"
+            contributorClass="org.eclipse.set.model.planpro.Verweise.presentation.VerweiseActionBarContributor">
       </editor>
    </extension>
 

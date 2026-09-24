@@ -1,10 +1,10 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
  */
 package org.eclipse.set.model.planpro.ATO.presentation;
@@ -774,10 +774,11 @@ public class ATOEditor
 
 		adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new PlanProItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new BasisobjekteItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new Signalbegriffe_Ril_301ItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new LayoutinformationenItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new BasisTypenItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new BasisobjekteItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ATOItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new VerweiseItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Ansteuerung_ElementItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new BahnsteigItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new Balisentechnik_ETCSItemProviderAdapterFactory());
@@ -796,11 +797,10 @@ public class ATOEditor
 		adapterFactory.addAdapterFactory(new RegelzeichnungItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new SchluesselabhaengigkeitenItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new SignaleItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new Signalbegriffe_StrukturItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ZuglenkungItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ZugnummernmeldeanlageItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new Signalbegriffe_Ril_301ItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new LayoutinformationenItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new VerweiseItemProviderAdapterFactory());
+		adapterFactory.addAdapterFactory(new Signalbegriffe_StrukturItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());
 
 		// Create the command stack that will notify this editor as commands are executed.

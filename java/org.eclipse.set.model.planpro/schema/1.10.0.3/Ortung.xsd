@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsOrtung="http://www.plan-pro.org/modell/Ortung/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
            xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsOrtung"
+           ecore:package="org.eclipse.set.model.planpro.Ortung"
            targetNamespace="http://www.plan-pro.org/modell/Ortung/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -34,176 +37,187 @@ XML Schema for PlanPro interface.</xs:documentation>
               schemaLocation="BasisTypen.xsd"/>
 	  <xs:simpleType name="ENUMBezeichnung_Kennbuchstabe">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="B"/>
-			      <xs:enumeration value="G"/>
-			      <xs:enumeration value="K"/>
-			      <xs:enumeration value="W"/>
+			      <xs:enumeration ecore:name="ENUMBezeichnung_Kennbuchstabe_B" value="B"/>
+			      <xs:enumeration ecore:name="ENUMBezeichnung_Kennbuchstabe_G" value="G"/>
+			      <xs:enumeration ecore:name="ENUMBezeichnung_Kennbuchstabe_K" value="K"/>
+			      <xs:enumeration ecore:name="ENUMBezeichnung_Kennbuchstabe_W" value="W"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMFMA_Anschluss_Speiserichtung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Ausspeisung"/>
-			      <xs:enumeration value="Einspeisung"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Anschluss_Speiserichtung_Ausspeisung" value="Ausspeisung"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Anschluss_Speiserichtung_Einspeisung" value="Einspeisung"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMFMA_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Achszaehlanlage"/>
-			      <xs:enumeration value="FTGS"/>
-			      <xs:enumeration value="NF_Gleisstromkreis"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="TF_Gleisstromkreis"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Art_Achszaehlanlage" value="Achszaehlanlage"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Art_FTGS" value="FTGS"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Art_NF_Gleisstromkreis" value="NF_Gleisstromkreis"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Art_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Art_TF_Gleisstromkreis" value="TF_Gleisstromkreis"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMFMA_Element_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Anschlussseile"/>
-			      <xs:enumeration value="Drosselspule"/>
-			      <xs:enumeration value="Endverbinder"/>
-			      <xs:enumeration value="Endverbinder_modifiziert"/>
-			      <xs:enumeration value="Kurzschlussverbinder"/>
-			      <xs:enumeration value="Potentialausgleichsverbinder"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="S_Verbinder"/>
-			      <xs:enumeration value="Ueberlagerungsverbinder"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Element_Art_Anschlussseile" value="Anschlussseile"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Element_Art_Drosselspule" value="Drosselspule"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Element_Art_Endverbinder" value="Endverbinder"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Element_Art_Endverbinder_modifiziert"
+                         value="Endverbinder_modifiziert"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Element_Art_Kurzschlussverbinder"
+                         value="Kurzschlussverbinder"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Element_Art_Potentialausgleichsverbinder"
+                         value="Potentialausgleichsverbinder"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Element_Art_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Element_Art_S_Verbinder" value="S_Verbinder"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Element_Art_Ueberlagerungsverbinder"
+                         value="Ueberlagerungsverbinder"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMFMA_Element_Seilanzahl">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="1"/>
-			      <xs:enumeration value="2"/>
-			      <xs:enumeration value="4"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Element_Seilanzahl_1" value="1"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Element_Seilanzahl_2" value="2"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Element_Seilanzahl_4" value="4"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Element_Seilanzahl_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMFMA_Komponente_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="elektrischer_Trennstoss"/>
-			      <xs:enumeration value="Isolierstoss_einschienig"/>
-			      <xs:enumeration value="Isolierstoss_zweischienig"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Komponente_Art_elektrischer_Trennstoss"
+                         value="elektrischer_Trennstoss"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Komponente_Art_Isolierstoss_einschienig"
+                         value="Isolierstoss_einschienig"/>
+			      <xs:enumeration ecore:name="ENUMFMA_Komponente_Art_Isolierstoss_zweischienig"
+                         value="Isolierstoss_zweischienig"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMIsolierung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="einschienig_L"/>
-			      <xs:enumeration value="einschienig_R"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="zweischienig"/>
+			      <xs:enumeration ecore:name="ENUMIsolierung_einschienig_L" value="einschienig_L"/>
+			      <xs:enumeration ecore:name="ENUMIsolierung_einschienig_R" value="einschienig_R"/>
+			      <xs:enumeration ecore:name="ENUMIsolierung_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMIsolierung_zweischienig" value="zweischienig"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMSchaltmittel_Funktion">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="ARM"/>
-			      <xs:enumeration value="ARV"/>
-			      <xs:enumeration value="Aus_BUE"/>
-			      <xs:enumeration value="Awanst"/>
-			      <xs:enumeration value="Ein_BUE"/>
-			      <xs:enumeration value="Haltfall"/>
-			      <xs:enumeration value="Raeumungspruefung"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="ZL_Anstoss"/>
+			      <xs:enumeration ecore:name="ENUMSchaltmittel_Funktion_ARM" value="ARM"/>
+			      <xs:enumeration ecore:name="ENUMSchaltmittel_Funktion_ARV" value="ARV"/>
+			      <xs:enumeration ecore:name="ENUMSchaltmittel_Funktion_Aus_BUE" value="Aus_BUE"/>
+			      <xs:enumeration ecore:name="ENUMSchaltmittel_Funktion_Awanst" value="Awanst"/>
+			      <xs:enumeration ecore:name="ENUMSchaltmittel_Funktion_Ein_BUE" value="Ein_BUE"/>
+			      <xs:enumeration ecore:name="ENUMSchaltmittel_Funktion_Haltfall" value="Haltfall"/>
+			      <xs:enumeration ecore:name="ENUMSchaltmittel_Funktion_Raeumungspruefung"
+                         value="Raeumungspruefung"/>
+			      <xs:enumeration ecore:name="ENUMSchaltmittel_Funktion_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMSchaltmittel_Funktion_ZL_Anstoss" value="ZL_Anstoss"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMSchienenprofil">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="R65"/>
-			      <xs:enumeration value="S49"/>
-			      <xs:enumeration value="S54"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="UIC60"/>
+			      <xs:enumeration ecore:name="ENUMSchienenprofil_R65" value="R65"/>
+			      <xs:enumeration ecore:name="ENUMSchienenprofil_S49" value="S49"/>
+			      <xs:enumeration ecore:name="ENUMSchienenprofil_S54" value="S54"/>
+			      <xs:enumeration ecore:name="ENUMSchienenprofil_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMSchienenprofil_UIC60" value="UIC60"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMUebertragung_FMinfo_Richtung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="gehend"/>
-			      <xs:enumeration value="kommend"/>
+			      <xs:enumeration ecore:name="ENUMUebertragung_FMinfo_Richtung_gehend" value="gehend"/>
+			      <xs:enumeration ecore:name="ENUMUebertragung_FMinfo_Richtung_kommend" value="kommend"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMZugeinwirkung_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Doppel_Schleife"/>
-			      <xs:enumeration value="Doppel_Sensor"/>
-			      <xs:enumeration value="Dreifach_Schleife"/>
-			      <xs:enumeration value="Einfach_Schleife"/>
-			      <xs:enumeration value="Einfach_Sensor"/>
-			      <xs:enumeration value="Einfach_Sensor_richtungsabhaengig"/>
-			      <xs:enumeration value="Isolierte_Schiene_alleinstehend"/>
-			      <xs:enumeration value="Isolierte_Schiene_FMA_Anlage_mitbenutzt"/>
-			      <xs:enumeration value="Schienenkontakt"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMZugeinwirkung_Art_Doppel_Schleife" value="Doppel_Schleife"/>
+			      <xs:enumeration ecore:name="ENUMZugeinwirkung_Art_Doppel_Sensor" value="Doppel_Sensor"/>
+			      <xs:enumeration ecore:name="ENUMZugeinwirkung_Art_Dreifach_Schleife" value="Dreifach_Schleife"/>
+			      <xs:enumeration ecore:name="ENUMZugeinwirkung_Art_Einfach_Schleife" value="Einfach_Schleife"/>
+			      <xs:enumeration ecore:name="ENUMZugeinwirkung_Art_Einfach_Sensor" value="Einfach_Sensor"/>
+			      <xs:enumeration ecore:name="ENUMZugeinwirkung_Art_Einfach_Sensor_richtungsabhaengig"
+                         value="Einfach_Sensor_richtungsabhaengig"/>
+			      <xs:enumeration ecore:name="ENUMZugeinwirkung_Art_Isolierte_Schiene_alleinstehend"
+                         value="Isolierte_Schiene_alleinstehend"/>
+			      <xs:enumeration ecore:name="ENUMZugeinwirkung_Art_Isolierte_Schiene_FMA_Anlage_mitbenutzt"
+                         value="Isolierte_Schiene_FMA_Anlage_mitbenutzt"/>
+			      <xs:enumeration ecore:name="ENUMZugeinwirkung_Art_Schienenkontakt" value="Schienenkontakt"/>
+			      <xs:enumeration ecore:name="ENUMZugeinwirkung_Art_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBettungswiderstand">
+	  <xs:simpleType ecore:name="Bettungswiderstand_Type" name="TBettungswiderstand">
 		    <xs:restriction base="xs:decimal">
 			      <xs:pattern value="([0-4]\.[0-9]{2})|(5\.00)"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFMA_Anschluss_Bezeichnung">
+	  <xs:simpleType ecore:name="FMA_Anschluss_Bezeichnung_Type" name="TFMA_Anschluss_Bezeichnung">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{2,8}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFMA_Element_Seiltyp">
+	  <xs:simpleType ecore:name="FMA_Element_Seiltyp_Type" name="TFMA_Element_Seiltyp">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{2,6}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFMA_Kaskade_Bezeichnung">
+	  <xs:simpleType ecore:name="FMA_Kaskade_Bezeichnung_Type" name="TFMA_Kaskade_Bezeichnung">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value="[a-z]|[A-Z]|(I)|(II)|(III)|(IV)|(V)|(VI)|(VII)|(VIII)|(IX)|(X)|(XI)|(XII)|(\.[1-9])"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFMA_Komponente_Typ">
+	  <xs:simpleType ecore:name="FMA_Komponente_Typ_Type" name="TFMA_Komponente_Typ">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,16}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFMA_Laenge">
+	  <xs:simpleType ecore:name="FMA_Laenge_Type" name="TFMA_Laenge">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="[1-9][0-9]{0,2}|1[0-4][0-9]{2}|1500"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFMA_Laenge_Beeinflusst">
+	  <xs:simpleType ecore:name="FMA_Laenge_Beeinflusst_Type" name="TFMA_Laenge_Beeinflusst">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="[1-9][0-9]{0,2}|1[0-4][0-9]{2}|1500"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFMA_Laenge_E1">
+	  <xs:simpleType ecore:name="FMA_Laenge_E1_Type" name="TFMA_Laenge_E1">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="[1-9][0-9]{0,2}|1[0-4][0-9]{2}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFMA_Laenge_E2">
+	  <xs:simpleType ecore:name="FMA_Laenge_E2_Type" name="TFMA_Laenge_E2">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="[1-9][0-9]{0,2}|1[0-4][0-9]{2}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFMA_Laenge_E3">
+	  <xs:simpleType ecore:name="FMA_Laenge_E3_Type" name="TFMA_Laenge_E3">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="[1-9][0-9]{0,2}|1[0-4][0-9]{2}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFMA_Laenge_S">
+	  <xs:simpleType ecore:name="FMA_Laenge_S_Type" name="TFMA_Laenge_S">
 		    <xs:restriction base="nsBasisTypen:TMeter">
 			      <xs:pattern value="[1-9][0-9]{0,2}|1[0-4][0-9]{2}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TFMA_Typ">
+	  <xs:simpleType ecore:name="FMA_Typ_Type" name="TFMA_Typ">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,16}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TUebertragung_FMinfo_Typ">
+	  <xs:simpleType ecore:name="Uebertragung_FMinfo_Typ_Type" name="TUebertragung_FMinfo_Typ">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,16}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TZugeinwirkung_Typ">
+	  <xs:simpleType ecore:name="Zugeinwirkung_Typ_Type" name="TZugeinwirkung_Typ">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,16}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:complexType name="CFMA_Anlage">
+	  <xs:complexType ecore:name="FMA_Anlage" name="CFMA_Anlage">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Technische Anlage, die einen Gleisabschnitt auf Freisein von Schienenfahrzeugen überwacht; entspricht im gewöhnlichen Sprachgebrauch dem Freimeldeabschnitt. Eine FMA_Anlage wird alleinstehend zur Fahrwegfreiprüfung bzw. zur Freiprüfung des Flankenschutzraumes genutzt sowie in Auswertung der Reihenfolge von Belegung und Wieder-Frei-Werden zur Erfassung einer Fahrt und damit zur Auflösung von Teilfahrstraßen. Auch andere Schaltvorgänge können durch eine FMA_Anlage ausgelöst werden. Die FMA_Anlage hat mindestens eine Außenanlage (z. B. Drosselspule, Achszählpunkt) und beansprucht Anteile an einer Gleisfreimelde-Innenanlage (z. B. Motorrelaisgruppe, Achszählrechner). DB-Regelwerk Typspezifische Planungshinweise und Technische Mitteilungen; Planungsdaten: Sicherungstechnischer Lageplan, BÜ-Lageplan; Gleisfreimeldepläne (Achszählübersichtsplan, Gleisisolierplan); Freimeldetabelle.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -251,7 +265,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CFMA_Anlage_Allg">
+	  <xs:complexType ecore:name="FMA_Anlage_Allg_AttributeGroup" name="CFMA_Anlage_Allg">
 		    <xs:sequence>
 			      <xs:element name="FMA_Art" type="nsOrtung:TCFMA_Art" minOccurs="1" maxOccurs="1">
 				        <xs:annotation>
@@ -287,7 +301,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CFMA_Anlage_Bezeichnung">
+	  <xs:complexType ecore:name="FMA_Anlage_Bezeichnung_AttributeGroup"
+                   name="CFMA_Anlage_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_Kennbuchstabe" type="nsOrtung:TCBezeichnung_Kennbuchstabe"
                      minOccurs="1"
@@ -298,7 +313,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CFMA_Anlage_Elektr_Merkmale">
+	  <xs:complexType ecore:name="FMA_Anlage_Elektr_Merkmale_AttributeGroup"
+                   name="CFMA_Anlage_Elektr_Merkmale">
 		    <xs:sequence>
 			      <xs:element name="Bettungswiderstand" type="nsOrtung:TCBettungswiderstand" minOccurs="0"
                      maxOccurs="1">
@@ -378,7 +394,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CFMA_Anlage_Kaskade">
+	  <xs:complexType ecore:name="FMA_Anlage_Kaskade_AttributeGroup" name="CFMA_Anlage_Kaskade">
 		    <xs:sequence>
 			      <xs:element name="FMA_Kaskade_Bezeichnung" type="nsOrtung:TCFMA_Kaskade_Bezeichnung"
                      minOccurs="1"
@@ -407,7 +423,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CFMA_Anlage_Uebertragung_FMinfo">
+	  <xs:complexType ecore:name="FMA_Anlage_Uebertragung_FMinfo_AttributeGroup"
+                   name="CFMA_Anlage_Uebertragung_FMinfo">
 		    <xs:sequence>
 			      <xs:element name="ID_Uebertragung_FMinfo" type="nsVerweise:TCID_Aussenelementansteuerung"
                      minOccurs="1"
@@ -438,7 +455,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CFMA_Element">
+	  <xs:complexType ecore:name="FMA_Element" name="CFMA_Element">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Ergänzung einer FMA Komponente bei Gleisstromkreisen um die Bauelemente zur Ein- und Ausspeisung. FMA_Elemente werden rechts und/oder links der FMA_Komponente direkt den angrenzenden FMA_Anlagen zugewiesen. Das Objekt ist bei Achszählpunkten nicht erforderlich. DB-Regelwerk Typspezifische Planungshinweise und Technische Mitteilungen; Planungsdaten: Sicherungstechnischer Lageplan, BÜ-Lageplan, Gleisisolierplan, Freimeldetabelle.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -466,7 +483,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CFMA_Element_Allg">
+	  <xs:complexType ecore:name="FMA_Element_Allg_AttributeGroup" name="CFMA_Element_Allg">
 		    <xs:sequence>
 			      <xs:element name="FMA_Element_Art" type="nsOrtung:TCFMA_Element_Art" minOccurs="1"
                      maxOccurs="1">
@@ -499,7 +516,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CFMA_Element_Anschluss">
+	  <xs:complexType ecore:name="FMA_Element_Anschluss_AttributeGroup" name="CFMA_Element_Anschluss">
 		    <xs:sequence>
 			      <xs:element name="FMA_Anschluss_Bezeichnung" type="nsOrtung:TCFMA_Anschluss_Bezeichnung"
                      minOccurs="1"
@@ -523,7 +540,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CFMA_Komponente">
+	  <xs:complexType ecore:name="FMA_Komponente" name="CFMA_Komponente">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Freimeldeabschnittsgrenze (Isolierstoß, elektrischer Stoß, Achszählpunkt). Die FMA_Komponente wird dem Punkt im Gleis zugeordnet, bis zu dem die Erkennung einer Belegung gemäß Anwendungsrichtlinien als gesichert gilt. Die zu den zugehörigen Gleisabschnitten gehörenden Bereichsobjekte Gleis Abschnitt müssen deshalb exakt an diesem Punktobjekt enden. Zur Ermittlung der seitlichen Lage einer FMA_Komponente siehe Modellierung Gleisfreimeldung. Eine FMA_Komponente kann nur an einer Seite mindestens einen Freimeldeabschnitt oder beidseitig jeweils mindestens einen Freimeldeabschnitt begrenzen. Bei überlappenden Freimeldeabschnittsgrenzen (z.B. am Übergang von FTGS- zu Achszähl- Gleisfreimeldeanlagen) ist jede Freimeldeabschnittsgrenze für sich als FMA_Komponente zu erfassen. Direkt auf Höhe, rechts und/oder links der Freimeldeabschnittsgrenze können sich technische Anlagen für die Gleisfreimeldung befinden, siehe dazu FMA Element. Das Befahren einer FMA_Komponente kann auch weitere Schaltvorgänge auslösen, siehe dazu Schaltmittel Zuordnung. DB-Regelwerk Typspezifische Planungshinweise und Technische Mitteilungen; Planungsdaten: Sicherungstechnischer Lageplan, BÜ-Lageplan; Achszählübersichtsplan; Freimeldetabelle; Achszähltabelle.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -570,7 +587,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CFMA_Komponente_Achszaehlpunkt">
+	  <xs:complexType ecore:name="FMA_Komponente_Achszaehlpunkt_AttributeGroup"
+                   name="CFMA_Komponente_Achszaehlpunkt">
 		    <xs:sequence>
 			      <xs:element name="FMA_Komponente_Schienenprofil"
                      type="nsOrtung:TCFMA_Komponente_Schienenprofil"
@@ -619,7 +637,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSchaltmittel_Zuordnung">
+	  <xs:complexType ecore:name="Schaltmittel_Zuordnung" name="CSchaltmittel_Zuordnung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnungsobjekt für die punktuelle Auslösung von Schaltvorgängen. Beispiel: BÜSA, Rangier- und Ablaufanlagen. Schaltmittel sind oftmals separate Zugeinwirkungen (z. B. Radsensoren), es können aber auch Freimeldeabschnitte (FMA_Anlagen) oder Achszählpunkte (FMA_Komponenten) für den Zweck eines Schaltmittels mitverwendet werden (Doppelausnutzung). Ein Schaltmittel wiederum kann für unterschiedliche Funktionen vorgesehen sein. Das Zuordnungsobjekt Schaltmittel erfasst jeweils eine konkrete Anforderung (Verweis, der auf das anfordernde Objekt gerichtet ist, z.B. Bahnübergang EIN, Bahnübergang AUS, Fahrstraße verschließen und ordnet diese Funktion dann einer konkreten Anlage (Zugeinwirkung, Freimeldeabschnitt oder Achszählpunkt) sowie eine Beschriftung dieser Anlage im sicherungstechnischen Lageplan zu. Die Funktion \"Fahrstraße verschließen (ID_Anforderung = Fstr_Fahrweg)\" ist vorgesehen für den Anrückverschluss von Zugstraßen. Weitere Anwendungen sind aktuell nicht im Modell verankert. Der Verweis auf die Anforderung ist nicht erforderlich, wenn sich die Zuordnung eindeutig aus der Topologie ergibt (Beispiel: separates Schaltmittel für die Funktion \"Zweites Haltfallkriterium\"). In diesem Fall wird nur der Verweis auf die Anlage sowie die Beschriftung im Lageplan angegeben. DB-Regelwerk Typspezifische Planungshinweise und Technische Mitteilungen; Planungsdaten: Sicherungstechnischer Lageplan, BÜ-Lageplan, Gleisfreimeldeplan.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -654,7 +672,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZugeinwirkung">
+	  <xs:complexType ecore:name="Zugeinwirkung" name="CZugeinwirkung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Technische Anlage, die durch die punktuelle Einwirkung eines Zuges einen Schaltvorgang auslösen kann. Bei BÜSA werden Ein- und Ausschaltpunkte sowie Kontakte für die Wirksamkeitsschaltung in Abhängigkeit vom Hersteller auf verschiedene Art ausgebildet: Die Hersteller Scheidt\u0026amp;Bachmann sowie PintschBamag verwenden als Zugeinwirkung Fahrzeugsensoren in Form von 8-förmig verlegten Schleifen im Gleis. Einschaltpunkte und Kontakte für die Wirksamkeitsschaltung werden im Regelfall aus zwei Schleifen, Ausschaltpunkte aus einer Schleife gebildet. Nur im Ausnahmefall werden beim Hersteller PintschBamag Einschaltpunkte mit drei Schleifen errichtet. Der Hersteller Siemens AG verwendet dagegen Achszählern vergleichbare sogenannte Doppelsensoren. Für das Modell werden, unabhängig von der herstellerspezifischen Ausbildung, Ein-und Ausschaltpunkte sowie Kontakte der Wirksamkeitsschaltung grundsätzlich als EINE Zugeinwirkung betrachtet. DB-Regelwerk Typspezifische Planungshinweise und Technische Mitteilungen; Planungsdaten: Sicherungstechnischer Lageplan, BÜ-Lageplan, Gleisfreimeldeplan.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -685,7 +703,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZugeinwirkung_Allg">
+	  <xs:complexType ecore:name="Zugeinwirkung_Allg_AttributeGroup" name="CZugeinwirkung_Allg">
 		    <xs:sequence>
 			      <xs:element name="Zugeinwirkung_Art" type="nsOrtung:TCZugeinwirkung_Art" minOccurs="1"
                      maxOccurs="1">
@@ -706,7 +724,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="TCBettungswiderstand">
+	  <xs:complexType ecore:name="Bettungswiderstand_TypeClass" name="TCBettungswiderstand">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -716,7 +734,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Kennbuchstabe">
+	  <xs:complexType ecore:name="Bezeichnung_Kennbuchstabe_TypeClass"
+                   name="TCBezeichnung_Kennbuchstabe">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -727,7 +746,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Anschluss_Bezeichnung">
+	  <xs:complexType ecore:name="FMA_Anschluss_Bezeichnung_TypeClass"
+                   name="TCFMA_Anschluss_Bezeichnung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -738,7 +758,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Anschluss_Speiserichtung">
+	  <xs:complexType ecore:name="FMA_Anschluss_Speiserichtung_TypeClass"
+                   name="TCFMA_Anschluss_Speiserichtung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -749,7 +770,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Art">
+	  <xs:complexType ecore:name="FMA_Art_TypeClass" name="TCFMA_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -759,7 +780,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Element_Art">
+	  <xs:complexType ecore:name="FMA_Element_Art_TypeClass" name="TCFMA_Element_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -769,7 +790,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Element_Seilanzahl">
+	  <xs:complexType ecore:name="FMA_Element_Seilanzahl_TypeClass" name="TCFMA_Element_Seilanzahl">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -780,7 +801,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Element_Seiltyp">
+	  <xs:complexType ecore:name="FMA_Element_Seiltyp_TypeClass" name="TCFMA_Element_Seiltyp">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -790,7 +811,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Hilffreimeldung">
+	  <xs:complexType ecore:name="FMA_Hilffreimeldung_TypeClass" name="TCFMA_Hilffreimeldung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -799,7 +820,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Isolierung">
+	  <xs:complexType ecore:name="FMA_Isolierung_TypeClass" name="TCFMA_Isolierung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -809,7 +830,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Kaskade_Bezeichnung">
+	  <xs:complexType ecore:name="FMA_Kaskade_Bezeichnung_TypeClass" name="TCFMA_Kaskade_Bezeichnung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -820,7 +841,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Kaskade_Einzelauswertung">
+	  <xs:complexType ecore:name="FMA_Kaskade_Einzelauswertung_TypeClass"
+                   name="TCFMA_Kaskade_Einzelauswertung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -829,7 +851,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Komponente_Art">
+	  <xs:complexType ecore:name="FMA_Komponente_Art_TypeClass" name="TCFMA_Komponente_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -839,7 +861,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Komponente_Schienenprofil">
+	  <xs:complexType ecore:name="FMA_Komponente_Schienenprofil_TypeClass"
+                   name="TCFMA_Komponente_Schienenprofil">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -849,7 +872,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Komponente_Stromversorgung">
+	  <xs:complexType ecore:name="FMA_Komponente_Stromversorgung_TypeClass"
+                   name="TCFMA_Komponente_Stromversorgung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -858,7 +882,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Komponente_Typ">
+	  <xs:complexType ecore:name="FMA_Komponente_Typ_TypeClass" name="TCFMA_Komponente_Typ">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -868,7 +892,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Laenge">
+	  <xs:complexType ecore:name="FMA_Laenge_TypeClass" name="TCFMA_Laenge">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -878,7 +902,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Laenge_Beeinflusst">
+	  <xs:complexType ecore:name="FMA_Laenge_Beeinflusst_TypeClass" name="TCFMA_Laenge_Beeinflusst">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -888,7 +912,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Laenge_E1">
+	  <xs:complexType ecore:name="FMA_Laenge_E1_TypeClass" name="TCFMA_Laenge_E1">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -898,7 +922,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Laenge_E2">
+	  <xs:complexType ecore:name="FMA_Laenge_E2_TypeClass" name="TCFMA_Laenge_E2">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -908,7 +932,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Laenge_E3">
+	  <xs:complexType ecore:name="FMA_Laenge_E3_TypeClass" name="TCFMA_Laenge_E3">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -918,7 +942,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Laenge_S">
+	  <xs:complexType ecore:name="FMA_Laenge_S_TypeClass" name="TCFMA_Laenge_S">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -928,7 +952,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFMA_Typ">
+	  <xs:complexType ecore:name="FMA_Typ_TypeClass" name="TCFMA_Typ">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -938,7 +962,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSchaltmittel_Funktion">
+	  <xs:complexType ecore:name="Schaltmittel_Funktion_TypeClass" name="TCSchaltmittel_Funktion">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -949,7 +973,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCUebertragung_FMinfo_Richtung">
+	  <xs:complexType ecore:name="Uebertragung_FMinfo_Richtung_TypeClass"
+                   name="TCUebertragung_FMinfo_Richtung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -960,7 +985,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCUebertragung_FMinfo_Typ">
+	  <xs:complexType ecore:name="Uebertragung_FMinfo_Typ_TypeClass" name="TCUebertragung_FMinfo_Typ">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -971,7 +996,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZugeinwirkung_Art">
+	  <xs:complexType ecore:name="Zugeinwirkung_Art_TypeClass" name="TCZugeinwirkung_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -981,7 +1006,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZugeinwirkung_Typ">
+	  <xs:complexType ecore:name="Zugeinwirkung_Typ_TypeClass" name="TCZugeinwirkung_Typ">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>

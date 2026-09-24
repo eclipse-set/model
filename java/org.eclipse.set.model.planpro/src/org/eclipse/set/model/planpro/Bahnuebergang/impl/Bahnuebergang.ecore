@@ -1605,8 +1605,8 @@
     <eLiterals name="ENUMBUE_Funktionsueberwachung_FSUe_S" value="2" literal="FSUe_S"/>
     <eLiterals name="ENUMBUE_Funktionsueberwachung_Fü" value="3" literal="Fü"/>
     <eLiterals name="ENUMBUE_Funktionsueberwachung_Hp" value="4" literal="Hp"/>
-    <eLiterals name="ENUMBUE_Funktionsueberwachung_Us" value="5" literal="Üs"/>
-    <eLiterals name="ENUMBUE_Funktionsueberwachung_UsOE" value="6" literal="ÜsOE"/>
+    <eLiterals name="ENUMBUE_Funktionsueberwachung_Ues" value="5" literal="Üs"/>
+    <eLiterals name="ENUMBUE_Funktionsueberwachung_UesOE" value="6" literal="ÜsOE"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="ENUMBUEFunktionsueberwachungObject"
       instanceClassName="org.eclipse.emf.common.util.Enumerator">

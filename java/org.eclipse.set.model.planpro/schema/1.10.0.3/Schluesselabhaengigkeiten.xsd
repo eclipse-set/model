@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsSchluesselabhaengigkeiten="http://www.plan-pro.org/modell/Schluesselabhaengigkeiten/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
            xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsSchluesselabhaengigkeiten"
+           ecore:package="org.eclipse.set.model.planpro.Schluesselabhaengigkeiten"
            targetNamespace="http://www.plan-pro.org/modell/Schluesselabhaengigkeiten/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -34,111 +37,112 @@ XML Schema for PlanPro interface.</xs:documentation>
               schemaLocation="BasisTypen.xsd"/>
 	  <xs:simpleType name="ENUMBedienung_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="aussen"/>
-			      <xs:enumeration value="aussen_Awanst"/>
-			      <xs:enumeration value="innen"/>
+			      <xs:enumeration ecore:name="ENUMBedienung_Art_aussen" value="aussen"/>
+			      <xs:enumeration ecore:name="ENUMBedienung_Art_aussen_Awanst" value="aussen_Awanst"/>
+			      <xs:enumeration ecore:name="ENUMBedienung_Art_innen" value="innen"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMBUE_Lage">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="geoeffnet"/>
-			      <xs:enumeration value="geschlossen"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Lage_geoeffnet" value="geoeffnet"/>
+			      <xs:enumeration ecore:name="ENUMBUE_Lage_geschlossen" value="geschlossen"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMGsp_Lage">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="abgelegt"/>
-			      <xs:enumeration value="aufgelegt"/>
+			      <xs:enumeration ecore:name="ENUMGsp_Lage_abgelegt" value="abgelegt"/>
+			      <xs:enumeration ecore:name="ENUMGsp_Lage_aufgelegt" value="aufgelegt"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMSchloss_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="HV_73"/>
-			      <xs:enumeration value="Prueferschieber_abschliessbar"/>
-			      <xs:enumeration value="Riegelhandschloss"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Weichenschloss"/>
-			      <xs:enumeration value="Zungensperre"/>
+			      <xs:enumeration ecore:name="ENUMSchloss_Art_HV_73" value="HV_73"/>
+			      <xs:enumeration ecore:name="ENUMSchloss_Art_Prueferschieber_abschliessbar"
+                         value="Prueferschieber_abschliessbar"/>
+			      <xs:enumeration ecore:name="ENUMSchloss_Art_Riegelhandschloss" value="Riegelhandschloss"/>
+			      <xs:enumeration ecore:name="ENUMSchloss_Art_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMSchloss_Art_Weichenschloss" value="Weichenschloss"/>
+			      <xs:enumeration ecore:name="ENUMSchloss_Art_Zungensperre" value="Zungensperre"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMSchluessel_Bartform">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="a"/>
-			      <xs:enumeration value="b"/>
-			      <xs:enumeration value="c"/>
-			      <xs:enumeration value="d"/>
-			      <xs:enumeration value="e"/>
-			      <xs:enumeration value="f"/>
-			      <xs:enumeration value="g"/>
-			      <xs:enumeration value="h"/>
-			      <xs:enumeration value="i"/>
-			      <xs:enumeration value="k"/>
-			      <xs:enumeration value="l"/>
-			      <xs:enumeration value="m"/>
-			      <xs:enumeration value="n"/>
-			      <xs:enumeration value="o"/>
-			      <xs:enumeration value="p"/>
-			      <xs:enumeration value="q"/>
-			      <xs:enumeration value="r"/>
-			      <xs:enumeration value="s"/>
-			      <xs:enumeration value="t"/>
-			      <xs:enumeration value="u"/>
-			      <xs:enumeration value="v"/>
-			      <xs:enumeration value="w"/>
-			      <xs:enumeration value="x"/>
-			      <xs:enumeration value="z"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_a" value="a"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_b" value="b"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_c" value="c"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_d" value="d"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_e" value="e"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_f" value="f"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_g" value="g"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_h" value="h"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_i" value="i"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_k" value="k"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_l" value="l"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_m" value="m"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_n" value="n"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_o" value="o"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_p" value="p"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_q" value="q"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_r" value="r"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_s" value="s"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_t" value="t"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_u" value="u"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_v" value="v"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_w" value="w"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_x" value="x"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Bartform_z" value="z"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMSchluessel_Gruppe">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="0"/>
-			      <xs:enumeration value="1"/>
-			      <xs:enumeration value="2"/>
-			      <xs:enumeration value="3"/>
-			      <xs:enumeration value="4"/>
-			      <xs:enumeration value="5"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Gruppe_0" value="0"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Gruppe_1" value="1"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Gruppe_2" value="2"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Gruppe_3" value="3"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Gruppe_4" value="4"/>
+			      <xs:enumeration ecore:name="ENUMSchluessel_Gruppe_5" value="5"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMSonderanlage_Lage">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="befahrbar"/>
-			      <xs:enumeration value="nicht befahrbar"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMSonderanlage_Lage_befahrbar" value="befahrbar"/>
+			      <xs:enumeration ecore:name="ENUMSonderanlage_Lage_nicht_befahrbar" value="nicht befahrbar"/>
+			      <xs:enumeration ecore:name="ENUMSonderanlage_Lage_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMVerschluss_Ort">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Herzstück"/>
-			      <xs:enumeration value="Mitte"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Spitze"/>
+			      <xs:enumeration ecore:name="ENUMVerschluss_Ort_Herzstück" value="Herzstück"/>
+			      <xs:enumeration ecore:name="ENUMVerschluss_Ort_Mitte" value="Mitte"/>
+			      <xs:enumeration ecore:name="ENUMVerschluss_Ort_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMVerschluss_Ort_Spitze" value="Spitze"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBeschreibung_Sonderanlage">
+	  <xs:simpleType ecore:name="Beschreibung_Sonderanlage_Type" name="TBeschreibung_Sonderanlage">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,50}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_Schloss">
+	  <xs:simpleType ecore:name="Bezeichnung_Schloss_Type" name="TBezeichnung_Schloss">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,20}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_Schluessel">
+	  <xs:simpleType ecore:name="Bezeichnung_Schluessel_Type" name="TBezeichnung_Schluessel">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,20}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_Sk">
+	  <xs:simpleType ecore:name="Bezeichnung_Sk_Type" name="TBezeichnung_Sk">
 		    <xs:restriction base="nsBasisTypen:TZeichenkette"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TW_Anbaulage">
+	  <xs:simpleType ecore:name="W_Anbaulage_Type" name="TW_Anbaulage">
 		    <xs:restriction base="nsBasisTypen:TLinksRechts"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TW_Lage">
+	  <xs:simpleType ecore:name="W_Lage_Type" name="TW_Lage">
 		    <xs:restriction base="nsBasisTypen:TLinksRechts"/>
 	  </xs:simpleType>
-	  <xs:complexType name="CSchloss">
+	  <xs:complexType ecore:name="Schloss" name="CSchloss">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Mechanisches Bauelement, das durch das Ein- oder Ausschließen eines Schlüssels einen Riegel aus- oder einfahren lässt bzw. einen elektrischen Kontakt schließt oder öffnet. Je nach verschlossenem Element wird die entsprechende Attributgruppe ausgewählt: Bahnübergang, Gleissperre, Schlosskombination, Sonderanlage (z. B. bewegliche Brücke), Schlüsselsperre, Weiche. DB-Regelwerk Auf dem Lageplan werden nach 819.9002 3 dargestellt: Schlösser durch ein Symbol (z. B. Schlüsselsperre) oder zusätzliche Angaben zu anderen Symbolen (z. B. Weiche); Abhängigkeiten durch eine Zeichnung mit wiederholter Darstellung der Schlossstellungen als gefülltes oder leeres Schlüsselloch. </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -204,7 +208,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CSchloss_Bezeichnung">
+	  <xs:complexType ecore:name="Schloss_Bezeichnung_AttributeGroup" name="CSchloss_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_Schloss"
                      type="nsSchluesselabhaengigkeiten:TCBezeichnung_Schloss"
@@ -221,7 +225,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSchloss_BUE">
+	  <xs:complexType ecore:name="Schloss_BUE_AttributeGroup" name="CSchloss_BUE">
 		    <xs:sequence>
 			      <xs:element name="BUE_Lage" type="nsSchluesselabhaengigkeiten:TCBUE_Lage" minOccurs="1"
                      maxOccurs="1">
@@ -237,7 +241,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSchloss_Gsp">
+	  <xs:complexType ecore:name="Schloss_Gsp_AttributeGroup" name="CSchloss_Gsp">
 		    <xs:sequence>
 			      <xs:element name="Gsp_Lage" type="nsSchluesselabhaengigkeiten:TCGsp_Lage" minOccurs="1"
                      maxOccurs="1">
@@ -253,7 +257,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSchloss_Sk">
+	  <xs:complexType ecore:name="Schloss_Sk_AttributeGroup" name="CSchloss_Sk">
 		    <xs:sequence>
 			      <xs:element name="Hauptschloss" type="nsSchluesselabhaengigkeiten:TCHauptschloss"
                      minOccurs="1"
@@ -271,7 +275,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSchloss_Sonderanlage">
+	  <xs:complexType ecore:name="Schloss_Sonderanlage_AttributeGroup" name="CSchloss_Sonderanlage">
 		    <xs:sequence>
 			      <xs:element name="Sonderanlage_Lage" type="nsSchluesselabhaengigkeiten:TCSonderanlage_Lage"
                      minOccurs="1"
@@ -308,7 +312,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:choice>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSchloss_Ssp">
+	  <xs:complexType ecore:name="Schloss_Ssp_AttributeGroup" name="CSchloss_Ssp">
 		    <xs:sequence>
 			      <xs:element name="ID_Schluesselsperre" type="nsVerweise:TCID_Schluesselsperre"
                      minOccurs="1"
@@ -319,7 +323,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSchloss_W">
+	  <xs:complexType ecore:name="Schloss_W_AttributeGroup" name="CSchloss_W">
 		    <xs:sequence>
 			      <xs:element name="ID_W_Kr_Element" type="nsVerweise:TCID_W_Kr_Gsp_Element" minOccurs="1"
                      maxOccurs="1">
@@ -361,7 +365,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSchlosskombination">
+	  <xs:complexType ecore:name="Schlosskombination" name="CSchlosskombination">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Mechanische Einrichtung zur Freigabe mehrerer (abhängiger) Schlüssel durch einen (Haupt-) Schlüssel. Der Hauptschlüssel wird so lange festgehalten, wie mindestens ein Riegel der abhängigen Schlösser ausgefahren ist. In der Regel besteht die Grundstellung darin, dass der Hauptschlüssel entfernt und die abhängigen Schlüssel eingeschlossen sind. DB-Regelwerk Darstellung durch Zeichnung im Lageplan. Eine aktuelle Ril dazu existiert nicht, es werden alte Zeichnungsstandards verwendet.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -392,7 +396,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CSchlosskombination_Bezeichnung">
+	  <xs:complexType ecore:name="Schlosskombination_Bezeichnung_AttributeGroup"
+                   name="CSchlosskombination_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_Sk" type="nsSchluesselabhaengigkeiten:TCBezeichnung_Sk"
                      minOccurs="1"
@@ -403,7 +408,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSchluessel">
+	  <xs:complexType ecore:name="Schluessel" name="CSchluessel">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Sicherungstechnisches Element zur Herstellung von Schlüsselabhängigkeiten über Schlösser an Elementen. Der Schlüssel im sicherungstechnischen Sinn ist ein repräsentativer und innerhalb einer Örtlichkeit einmaliger Gegenstand. Durch den Besitz des Schlüssels kann sicher und eindeutig auf einen bestimmten Anlagenzustand geschlossen werden. Somit können durch Verknüpfung mit weiteren Fahrwegelementen oder einer informationsverarbeitenden Einheit sichere Abhängigkeiten geschaffen werden. In der Regel gibt es örtlich immer zwei gleich schließende Schlösser, selten mehr. Wird eine Schlüsselsperre nur als Schalter benutzt (z. B. um Fahrstraßen zu sperren), gibt es zu einem Schlüssel nur ein Schloss. Um die örtliche Einmaligkeit herzustellen, darf eine Schlüsselform nur einmal innerhalb einer Betriebsstelle oder besser noch eines Streckenabschnitts verwendet werden. Dazu sind 24 verschiedene Schlüsselbartformen vorhanden, die mit sechs Schlüsselgruppen kombiniert werden können. Nicht jede Bartform wird mit jeder Gruppe kombiniert. So stehen insgesamt 92 verschiedene Schlüsselformen zur Verfügung. DB-Regelwerk Die Planung der Schlüsselformen ist bisher nicht Bestandteil des PT1. Für die Formen existieren Regelzeichnungen.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -430,7 +435,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CSchluessel_Allg">
+	  <xs:complexType ecore:name="Schluessel_Allg_AttributeGroup" name="CSchluessel_Allg">
 		    <xs:sequence>
 			      <xs:element name="Schluessel_Bartform"
                      type="nsSchluesselabhaengigkeiten:TCSchluessel_Bartform"
@@ -449,7 +454,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSchluessel_Bezeichnung">
+	  <xs:complexType ecore:name="Schluessel_Bezeichnung_AttributeGroup"
+                   name="CSchluessel_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_Schluessel"
                      type="nsSchluesselabhaengigkeiten:TCBezeichnung_Schluessel"
@@ -466,7 +472,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CSchluesselsperre">
+	  <xs:complexType ecore:name="Schluesselsperre" name="CSchluesselsperre">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Elektromechanisches Bauelement, das die Anwesenheit eines Schlüssels prüft, ihn festhält und eine Abhängigkeit zur Stellwerkslogik besitzt. Schlüsselsperren dienen der Festhaltung bzw. Freigabe von Schlüsseln, mit denen in der Regel weitere Elemente bedienbar gemacht werden. In Einzelfällen dienen Schlüsselsperren nur als Schlüsselschalter. Die Darstellung im Lageplan erfolgt am Ort der Bedienung (z. B. Stellwerk, sonstiges Gebäude), der durch die Unterbringung beschrieben wird. Eine Darstellung am oder auf dem Gleis erfolgt nicht! DB-Regelwerk Darstellung durch Zeichnung im Lageplan nach 819.9002 2.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -513,7 +519,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBedienung_Art">
+	  <xs:complexType ecore:name="Bedienung_Art_TypeClass" name="TCBedienung_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -524,7 +530,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBeschreibung_Sonderanlage">
+	  <xs:complexType ecore:name="Beschreibung_Sonderanlage_TypeClass"
+                   name="TCBeschreibung_Sonderanlage">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -536,7 +543,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Schloss">
+	  <xs:complexType ecore:name="Bezeichnung_Schloss_TypeClass" name="TCBezeichnung_Schloss">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -548,7 +555,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Schluessel">
+	  <xs:complexType ecore:name="Bezeichnung_Schluessel_TypeClass" name="TCBezeichnung_Schluessel">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -560,7 +567,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Sk">
+	  <xs:complexType ecore:name="Bezeichnung_Sk_TypeClass" name="TCBezeichnung_Sk">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -571,7 +578,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBUE_Lage">
+	  <xs:complexType ecore:name="BUE_Lage_TypeClass" name="TCBUE_Lage">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -582,7 +589,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCGsp_Lage">
+	  <xs:complexType ecore:name="Gsp_Lage_TypeClass" name="TCGsp_Lage">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -593,7 +600,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCHauptschloss">
+	  <xs:complexType ecore:name="Hauptschloss_TypeClass" name="TCHauptschloss">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -602,7 +609,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSchloss_Art">
+	  <xs:complexType ecore:name="Schloss_Art_TypeClass" name="TCSchloss_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -613,7 +620,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSchluessel_Bartform">
+	  <xs:complexType ecore:name="Schluessel_Bartform_TypeClass" name="TCSchluessel_Bartform">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -625,7 +632,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSchluessel_Gruppe">
+	  <xs:complexType ecore:name="Schluessel_Gruppe_TypeClass" name="TCSchluessel_Gruppe">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -637,7 +644,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSchluessel_In_Grdst_Eingeschl">
+	  <xs:complexType ecore:name="Schluessel_In_Grdst_Eingeschl_TypeClass"
+                   name="TCSchluessel_In_Grdst_Eingeschl">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -646,7 +654,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSonderanlage_Lage">
+	  <xs:complexType ecore:name="Sonderanlage_Lage_TypeClass" name="TCSonderanlage_Lage">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -658,7 +666,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTechnisch_Berechtigter">
+	  <xs:complexType ecore:name="Technisch_Berechtigter_TypeClass" name="TCTechnisch_Berechtigter">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -667,7 +675,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCVerschluss_Ort">
+	  <xs:complexType ecore:name="Verschluss_Ort_TypeClass" name="TCVerschluss_Ort">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -678,7 +686,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCW_Anbaulage">
+	  <xs:complexType ecore:name="W_Anbaulage_TypeClass" name="TCW_Anbaulage">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -689,7 +697,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCW_Lage">
+	  <xs:complexType ecore:name="W_Lage_TypeClass" name="TCW_Lage">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>

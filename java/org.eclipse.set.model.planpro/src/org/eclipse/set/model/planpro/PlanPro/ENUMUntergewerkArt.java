@@ -1,10 +1,10 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
  */
 package org.eclipse.set.model.planpro.PlanPro;
@@ -66,14 +66,14 @@ public enum ENUMUntergewerkArt implements Enumerator {
 	ENUM_UNTERGEWERK_ART_BEDIENUNG_FDL_ESTW_ZE(3, "ENUMUntergewerk_Art_Bedienung_Fdl_ESTW_ZE", "Bedienung Fdl ESTW-ZE"),
 
 	/**
-	 * The '<em><b>ENUM Untergewerk Art BU</b></em>' literal object.
+	 * The '<em><b>ENUM Untergewerk Art BUe</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUM_UNTERGEWERK_ART_BU_VALUE
+	 * @see #ENUM_UNTERGEWERK_ART_BUE_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	ENUM_UNTERGEWERK_ART_BU(4, "ENUMUntergewerk_Art_BU", "B\u00dc"),
+	ENUM_UNTERGEWERK_ART_BUE(4, "ENUMUntergewerk_Art_BUe", "B\u00dc"),
 
 	/**
 	 * The '<em><b>ENUM Untergewerk Art ESTW</b></em>' literal object.
@@ -200,15 +200,15 @@ public enum ENUMUntergewerkArt implements Enumerator {
 	public static final int ENUM_UNTERGEWERK_ART_BEDIENUNG_FDL_ESTW_ZE_VALUE = 3;
 
 	/**
-	 * The '<em><b>ENUM Untergewerk Art BU</b></em>' literal value.
+	 * The '<em><b>ENUM Untergewerk Art BUe</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #ENUM_UNTERGEWERK_ART_BU
-	 * @model name="ENUMUntergewerk_Art_BU" literal="B\334"
+	 * @see #ENUM_UNTERGEWERK_ART_BUE
+	 * @model name="ENUMUntergewerk_Art_BUe" literal="B\334"
 	 * @generated
 	 * @ordered
 	 */
-	public static final int ENUM_UNTERGEWERK_ART_BU_VALUE = 4;
+	public static final int ENUM_UNTERGEWERK_ART_BUE_VALUE = 4;
 
 	/**
 	 * The '<em><b>ENUM Untergewerk Art ESTW</b></em>' literal value.
@@ -310,7 +310,7 @@ public enum ENUMUntergewerkArt implements Enumerator {
 			ENUM_UNTERGEWERK_ART_BEDIENUNG_ETCS,
 			ENUM_UNTERGEWERK_ART_BEDIENUNG_FDL_BZ,
 			ENUM_UNTERGEWERK_ART_BEDIENUNG_FDL_ESTW_ZE,
-			ENUM_UNTERGEWERK_ART_BU,
+			ENUM_UNTERGEWERK_ART_BUE,
 			ENUM_UNTERGEWERK_ART_ESTW,
 			ENUM_UNTERGEWERK_ART_ETCS,
 			ENUM_UNTERGEWERK_ART_GEO,
@@ -379,7 +379,7 @@ public enum ENUMUntergewerkArt implements Enumerator {
 			case ENUM_UNTERGEWERK_ART_BEDIENUNG_ETCS_VALUE: return ENUM_UNTERGEWERK_ART_BEDIENUNG_ETCS;
 			case ENUM_UNTERGEWERK_ART_BEDIENUNG_FDL_BZ_VALUE: return ENUM_UNTERGEWERK_ART_BEDIENUNG_FDL_BZ;
 			case ENUM_UNTERGEWERK_ART_BEDIENUNG_FDL_ESTW_ZE_VALUE: return ENUM_UNTERGEWERK_ART_BEDIENUNG_FDL_ESTW_ZE;
-			case ENUM_UNTERGEWERK_ART_BU_VALUE: return ENUM_UNTERGEWERK_ART_BU;
+			case ENUM_UNTERGEWERK_ART_BUE_VALUE: return ENUM_UNTERGEWERK_ART_BUE;
 			case ENUM_UNTERGEWERK_ART_ESTW_VALUE: return ENUM_UNTERGEWERK_ART_ESTW;
 			case ENUM_UNTERGEWERK_ART_ETCS_VALUE: return ENUM_UNTERGEWERK_ART_ETCS;
 			case ENUM_UNTERGEWERK_ART_GEO_VALUE: return ENUM_UNTERGEWERK_ART_GEO;

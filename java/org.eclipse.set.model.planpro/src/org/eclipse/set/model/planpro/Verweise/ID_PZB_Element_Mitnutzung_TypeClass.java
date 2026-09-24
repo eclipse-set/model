@@ -1,15 +1,16 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
  */
 package org.eclipse.set.model.planpro.Verweise;
 
 import org.eclipse.set.model.planpro.BasisTypen.Zeiger_TypeClass;
+
 import org.eclipse.set.model.planpro.PZB.PZB_Element;
 
 /**
@@ -30,7 +31,6 @@ import org.eclipse.set.model.planpro.PZB.PZB_Element;
  * @generated
  */
 public interface ID_PZB_Element_Mitnutzung_TypeClass extends Zeiger_TypeClass {
-
 	/**
 	 * Returns the value of the '<em><b>Value</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -75,4 +75,5 @@ public interface ID_PZB_Element_Mitnutzung_TypeClass extends Zeiger_TypeClass {
 	 * @generated
 	 */
 	void setInvalidReference(boolean value);
+
 } // ID_PZB_Element_Mitnutzung_TypeClass

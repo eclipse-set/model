@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsBlock="http://www.plan-pro.org/modell/Block/1.10.0.3"
            xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsBlock"
+           ecore:package="org.eclipse.set.model.planpro.Block"
            targetNamespace="http://www.plan-pro.org/modell/Block/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -34,64 +37,73 @@ XML Schema for PlanPro interface.</xs:documentation>
               schemaLocation="Basisobjekte.xsd"/>
 	  <xs:simpleType name="ENUMBetriebsfuehrung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="eingl"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Stichstreckenblock"/>
-			      <xs:enumeration value="ZLB"/>
-			      <xs:enumeration value="zweigl"/>
-			      <xs:enumeration value="zweigl_GWB"/>
+			      <xs:enumeration ecore:name="ENUMBetriebsfuehrung_eingl" value="eingl"/>
+			      <xs:enumeration ecore:name="ENUMBetriebsfuehrung_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMBetriebsfuehrung_Stichstreckenblock" value="Stichstreckenblock"/>
+			      <xs:enumeration ecore:name="ENUMBetriebsfuehrung_ZLB" value="ZLB"/>
+			      <xs:enumeration ecore:name="ENUMBetriebsfuehrung_zweigl" value="zweigl"/>
+			      <xs:enumeration ecore:name="ENUMBetriebsfuehrung_zweigl_GWB" value="zweigl_GWB"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMBlock_Bauform">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="AB64"/>
-			      <xs:enumeration value="AB70"/>
-			      <xs:enumeration value="Blockanpassung_RB"/>
-			      <xs:enumeration value="DB_Block"/>
-			      <xs:enumeration value="elektronischer_Block_EBL2000"/>
-			      <xs:enumeration value="ESTW_Zentralblock"/>
-			      <xs:enumeration value="ESTW_Zentralblock_mit_Sb_Abschluss_MCL84"/>
-			      <xs:enumeration value="ESTW_Zentralblock_mit_Sb_Abschluss_SBL60"/>
-			      <xs:enumeration value="ESTW_Zentralblock_mit_Sb_Abschluss_SBS59"/>
-			      <xs:enumeration value="ESTW_Zentralblock_mit_Sb_Abschluss_SBS60"/>
-			      <xs:enumeration value="Felderblock"/>
-			      <xs:enumeration value="firmenneutrale_Blockschnittstelle"/>
-			      <xs:enumeration value="ILS-Adapter"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Selbstblock_SBL60"/>
-			      <xs:enumeration value="Selbstblock_SBS59"/>
-			      <xs:enumeration value="Selbstblock_SBS60"/>
-			      <xs:enumeration value="Relaisblock_RBII60"/>
-			      <xs:enumeration value="Relaisblock_RBIISp64b"/>
-			      <xs:enumeration value="Relaisblock_RBIIISp68"/>
-			      <xs:enumeration value="Zentralblock_ZSB2000"/>
-			      <xs:enumeration value="Zentralblock_ZBS600"/>
-			      <xs:enumeration value="Zentralblock_ZBS65"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_AB64" value="AB64"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_AB70" value="AB70"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_Blockanpassung_RB" value="Blockanpassung_RB"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_DB_Block" value="DB_Block"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_elektronischer_Block_EBL2000"
+                         value="elektronischer_Block_EBL2000"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_ESTW_Zentralblock" value="ESTW_Zentralblock"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_ESTW_Zentralblock_mit_Sb_Abschluss_MCL84"
+                         value="ESTW_Zentralblock_mit_Sb_Abschluss_MCL84"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_ESTW_Zentralblock_mit_Sb_Abschluss_SBL60"
+                         value="ESTW_Zentralblock_mit_Sb_Abschluss_SBL60"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_ESTW_Zentralblock_mit_Sb_Abschluss_SBS59"
+                         value="ESTW_Zentralblock_mit_Sb_Abschluss_SBS59"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_ESTW_Zentralblock_mit_Sb_Abschluss_SBS60"
+                         value="ESTW_Zentralblock_mit_Sb_Abschluss_SBS60"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_Felderblock" value="Felderblock"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_firmenneutrale_Blockschnittstelle"
+                         value="firmenneutrale_Blockschnittstelle"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_ILS_Adapter" value="ILS-Adapter"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_Selbstblock_SBL60" value="Selbstblock_SBL60"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_Selbstblock_SBS59" value="Selbstblock_SBS59"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_Selbstblock_SBS60" value="Selbstblock_SBS60"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_Relaisblock_RBII60" value="Relaisblock_RBII60"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_Relaisblock_RBIISp64b"
+                         value="Relaisblock_RBIISp64b"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_Relaisblock_RBIIISp68"
+                         value="Relaisblock_RBIIISp68"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_Zentralblock_ZSB2000"
+                         value="Zentralblock_ZSB2000"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_Zentralblock_ZBS600" value="Zentralblock_ZBS600"/>
+			      <xs:enumeration ecore:name="ENUMBlock_Bauform_Zentralblock_ZBS65" value="Zentralblock_ZBS65"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMSchaltung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="3_Drahtschaltung"/>
-			      <xs:enumeration value="6_Drahtschaltung"/>
-			      <xs:enumeration value="9_Drahtschaltung"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMSchaltung_3_Drahtschaltung" value="3_Drahtschaltung"/>
+			      <xs:enumeration ecore:name="ENUMSchaltung_6_Drahtschaltung" value="6_Drahtschaltung"/>
+			      <xs:enumeration ecore:name="ENUMSchaltung_9_Drahtschaltung" value="9_Drahtschaltung"/>
+			      <xs:enumeration ecore:name="ENUMSchaltung_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMStrecke_Art">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Hauptbahn"/>
-			      <xs:enumeration value="Nebenbahn"/>
+			      <xs:enumeration ecore:name="ENUMStrecke_Art_Hauptbahn" value="Hauptbahn"/>
+			      <xs:enumeration ecore:name="ENUMStrecke_Art_Nebenbahn" value="Nebenbahn"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TStreckengeschwindigkeit">
+	  <xs:simpleType ecore:name="Streckengeschwindigkeit_Type" name="TStreckengeschwindigkeit">
 		    <xs:restriction base="nsBasisTypen:TGeschwindigkeit"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TZusatzinformation">
+	  <xs:simpleType ecore:name="Zusatzinformation_Type" name="TZusatzinformation">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{1,50}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:complexType name="CBlock_Anlage">
+	  <xs:complexType ecore:name="Block_Anlage" name="CBlock_Anlage">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Technische Einrichtungen für die blocktechnische Sicherung von Zugfahrten auf Streckengleisen. Die zugehörige Bezeichnung des Streckengleises wird über das Objekt Gleis Bezeichnung ermittelt. Die Klammern der Gleisbezeichnung für Streckengleise sind Bestandteil der Gleisbezeichnung. Für die Darstellung der Streckendaten für eine Blockstrecke wird über das Objekt Block Element das Objekt Block Strecke verwendet. Ist Streckenblock geplant, wird einem Streckengleis eine Block_Anlage zugeordnet. Bei einer zweigleisigen Strecke, bei der beide Streckengleise mit Streckenblock ausgerüstet sind, wird den beiden Streckengleisen jeweils eine eigene Block_Anlage zugeordnet. Eine Block_Anlage verfügt über zwei Block_Elemente A und B (Blockendstellen), die entsprechend der Regelfahrrichtung zugewiesen werden. Bei eingleisigen Strecken ergibt sich der Richtungssinn A - B aus der Streckenkilometrierung. Eine Ausnahme bildet der Stichstreckenblock, dem nur ein Block Element zugeordnet wird. Als Zusammenfassung aller Objekte wird auch die Bezeichnung Block verwendet. </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -129,7 +141,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBlock_Anlage_Allg">
+	  <xs:complexType ecore:name="Block_Anlage_Allg_AttributeGroup" name="CBlock_Anlage_Allg">
 		    <xs:sequence>
 			      <xs:element name="Schaltung" type="nsBlock:TCSchaltung" minOccurs="0" maxOccurs="1">
 				        <xs:annotation>
@@ -144,7 +156,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBlock_Element">
+	  <xs:complexType ecore:name="Block_Element" name="CBlock_Element">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Element am Ende einer Blockstrecke/Blockanlage. Ein Streckengleis, welches mit einer Block Anlage ausgerüstet ist, besitzt zwei korrespondierende Blockelemente in den benachbarten Betriebsstellen. Eine Ausnahme bildet der Stichstreckenblock, der nur ein Block_Element besitzt. Das Block_Element verweist auch auf die zugehörige Blockstrecke, die die relevanten blocktechnischen und betrieblichen Daten der Strecke enthält. Bei zweigleisigen Strecken verweisen zwei Blockelemente auf die Blockstrecke. Das Block_Element verweist auf ein Signal in Form des Streckenziels (A-Feld) und auf ein Schaltmittel zur Räumungsprüfung (E-Feld). Wenn eine gesonderte Zugschlussmeldung verwendet wird, wird mit ID_Zugschlussmeldung auf eine entsprechende Bedieneinrichtung verwiesen. Aus der Blockbauform der jeweiligen Endstelle kann die Art der technischen Realisierung erkannt werden. </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -191,7 +203,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBlock_Element_Allg">
+	  <xs:complexType ecore:name="Block_Element_Allg_AttributeGroup" name="CBlock_Element_Allg">
 		    <xs:sequence>
 			      <xs:element name="Block_Bauform" type="nsBlock:TCBlock_Bauform" minOccurs="1" maxOccurs="1">
 				        <xs:annotation>
@@ -228,7 +240,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBlock_Element_Erlaubnis">
+	  <xs:complexType ecore:name="Block_Element_Erlaubnis_AttributeGroup"
+                   name="CBlock_Element_Erlaubnis">
 		    <xs:sequence>
 			      <xs:element name="Auto_Erlaubnisholen" type="nsBlock:TCAuto_Erlaubnisholen" minOccurs="0"
                      maxOccurs="1">
@@ -293,7 +306,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CBlock_Strecke">
+	  <xs:complexType ecore:name="Block_Strecke" name="CBlock_Strecke">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Speicherung der betrieblich relevanter Streckendaten einer Blockstrecke. Das Objekt enthält die zwischen zwei Zugmeldestellen typischen betrieblichen Informationen (Streckendaten) zur Information. Es wird dem Blockelement der zugehörigen Blockstelle zugeordnet.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -337,7 +350,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CBlock_Strecke_Allg">
+	  <xs:complexType ecore:name="Block_Strecke_Allg_AttributeGroup" name="CBlock_Strecke_Allg">
 		    <xs:sequence>
 			      <xs:element name="Betriebsfuehrung" type="nsBlock:TCBetriebsfuehrung" minOccurs="1"
                      maxOccurs="1">
@@ -398,7 +411,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="TCAuto_Erlaubnisholen">
+	  <xs:complexType ecore:name="Auto_Erlaubnisholen_TypeClass" name="TCAuto_Erlaubnisholen">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -407,7 +420,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAuto_Erlaubnisruecklauf">
+	  <xs:complexType ecore:name="Auto_Erlaubnisruecklauf_TypeClass" name="TCAuto_Erlaubnisruecklauf">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -416,7 +429,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBetriebsfuehrung">
+	  <xs:complexType ecore:name="Betriebsfuehrung_TypeClass" name="TCBetriebsfuehrung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -426,7 +439,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBlock_Bauform">
+	  <xs:complexType ecore:name="Block_Bauform_TypeClass" name="TCBlock_Bauform">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -436,7 +449,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBremsweg">
+	  <xs:complexType ecore:name="Bremsweg_TypeClass" name="TCBremsweg">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -446,7 +459,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCErlaubnis_Staendig_Vorhanden">
+	  <xs:complexType ecore:name="Erlaubnis_Staendig_Vorhanden_TypeClass"
+                   name="TCErlaubnis_Staendig_Vorhanden">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -455,7 +469,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCErlaubnisabgabespeicherung">
+	  <xs:complexType ecore:name="Erlaubnisabgabespeicherung_TypeClass"
+                   name="TCErlaubnisabgabespeicherung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -464,7 +479,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCErlaubnisholen">
+	  <xs:complexType ecore:name="Erlaubnisholen_TypeClass" name="TCErlaubnisholen">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -473,7 +488,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCRueckblockwecker">
+	  <xs:complexType ecore:name="Rueckblockwecker_TypeClass" name="TCRueckblockwecker">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -482,7 +497,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSchaltung">
+	  <xs:complexType ecore:name="Schaltung_TypeClass" name="TCSchaltung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -492,7 +507,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSchutzuebertrager">
+	  <xs:complexType ecore:name="Schutzuebertrager_TypeClass" name="TCSchutzuebertrager">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -501,7 +516,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCStrecke_Art">
+	  <xs:complexType ecore:name="Strecke_Art_TypeClass" name="TCStrecke_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -511,7 +526,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCStreckengeschwindigkeit">
+	  <xs:complexType ecore:name="Streckengeschwindigkeit_TypeClass" name="TCStreckengeschwindigkeit">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -521,7 +536,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTraktion_Art_Elektrisch">
+	  <xs:complexType ecore:name="Traktion_Art_Elektrisch_TypeClass" name="TCTraktion_Art_Elektrisch">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -531,7 +546,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCVorblockwecker">
+	  <xs:complexType ecore:name="Vorblockwecker_TypeClass" name="TCVorblockwecker">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -540,7 +555,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZugbeeinflussung_Art">
+	  <xs:complexType ecore:name="Zugbeeinflussung_Art_TypeClass" name="TCZugbeeinflussung_Art">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -550,7 +565,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZusatzinformation">
+	  <xs:complexType ecore:name="Zusatzinformation_TypeClass" name="TCZusatzinformation">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>

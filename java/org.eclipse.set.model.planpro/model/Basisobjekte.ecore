@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ecore:EPackage xmlns:xmi="http://www.omg.org/XMI"
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+                xmlns:xmi="http://www.omg.org/XMI"
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-                xmi:version="2.0"
                 name="Basisobjekte"
                 nsURI="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
                 nsPrefix="nsBasisobjekte">
@@ -53,7 +53,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -91,7 +91,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Beinhaltet die Information über den fachlichen Inhalt des Anhangs. Bei Auswahl von \&#34;sonstige\&#34; ist der Anhang im dazugehörigen Bearbeitungsvermerk zu erläutern. Ggf. ist ein weiterer Bearbeitungsvermerk zur Kommentierung anzufügen. Das LST-Datenmodell enthält sowohl fachliche Anhänge (zu LST-Fachdaten) sowie Anhänge des Objektmanagements. Zu den Anhängen des Objektmanagements für eine Einzelplanung gehören: Abnahmeniederschrift Anhänge zu einem LST Zustand Information BAST Bestätigung der Gleichstellung Bestätigung der Qualitätsprüfung Bestätigung der Übernahme Erläuterungsbericht Bestätigung der Freigabe des Bvb Bestätigung der Genehmigung des AG/Bh/Bhv besondere Materialisierung (v. a. projektbezogene Wiederverwendung von LST-Reststoffen) Planverzeichnis Planprüfberichtbericht sonstige VzG "/>
+                 value="Beinhaltet die Information über den fachlichen Inhalt des Anhangs. Bei Auswahl von \&quot;sonstige\&quot; ist der Anhang im dazugehörigen Bearbeitungsvermerk zu erläutern. Ggf. ist ein weiterer Bearbeitungsvermerk zur Kommentierung anzufügen. Das LST-Datenmodell enthält sowohl fachliche Anhänge (zu LST-Fachdaten) sowie Anhänge des Objektmanagements. Zu den Anhängen des Objektmanagements für eine Einzelplanung gehören: Abnahmeniederschrift Anhänge zu einem LST Zustand Information BAST Bestätigung der Gleichstellung Bestätigung der Qualitätsprüfung Bestätigung der Übernahme Erläuterungsbericht Bestätigung der Freigabe des Bvb Bestätigung der Genehmigung des AG/Bh/Bhv besondere Materialisierung (v. a. projektbezogene Wiederverwendung von LST-Reststoffen) Planverzeichnis Planprüfberichtbericht sonstige VzG "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -167,7 +167,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -265,7 +265,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Besonderer Zustand eines Objekts im Planungsbereich. Ist dieses Attribut nicht vorhanden, so ist das Objekt am geplanten/vorgesehenen Standort und angesteuert. \&#34;Nicht gültig\&#34; sind gemäß Betra als nicht gültig erklärte Signale im Baugleis [gem. Ril 819.1701 (11)]. \&#34;Ungültig\&#34; sind betrieblich außer Betrieb befindliche Signale, die mit einem Ungültigkeitskreuz [gem. Ril 819.1701 (10)] versehen sind. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Bisher keine eindeutige Abbildung, besonderer Objektzustand meist Fußnoteneintrag in Planungsunterlagen."/>
+                 value="Besonderer Zustand eines Objekts im Planungsbereich. Ist dieses Attribut nicht vorhanden, so ist das Objekt am geplanten/vorgesehenen Standort und angesteuert. \&quot;Nicht gültig\&quot; sind gemäß Betra als nicht gültig erklärte Signale im Baugleis [gem. Ril 819.1701 (11)]. \&quot;Ungültig\&quot; sind betrieblich außer Betrieb befindliche Signale, die mit einem Ungültigkeitskreuz [gem. Ril 819.1701 (10)] versehen sind. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. DB-Regelwerk Bisher keine eindeutige Abbildung, besonderer Objektzustand meist Fußnoteneintrag in Planungsunterlagen."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -297,7 +297,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Für das Objekt abweichend geltendes Regelwerk. Verweis auf einen Anhang, aus dem der besondere Regelwerksstand eines LST-Objektes hervorgeht. Dieser gilt abweichend von dem für die Planung_Einzel festgelegten Datum Regelwerksstand. Ergänzende Beschreibung zum Umgang im PlanPro-Planungsprozess Im Schriftfeld gemäß Ril 886.0102 dient Feld 30 \&#34;Zusätzliche Vermerke\&#34; üblicherweise zur Angabe von Regelwerksabweichungen. DB-Regelwerk Bisher eine eindeutige Abbildung als Schriftfeldeintrag gemäß Ril 886.0102. Meist Angabe im Erläuterungsbericht. "/>
+                 value="Für das Objekt abweichend geltendes Regelwerk. Verweis auf einen Anhang, aus dem der besondere Regelwerksstand eines LST-Objektes hervorgeht. Dieser gilt abweichend von dem für die Planung_Einzel festgelegten Datum Regelwerksstand. Ergänzende Beschreibung zum Umgang im PlanPro-Planungsprozess Im Schriftfeld gemäß Ril 886.0102 dient Feld 30 \&quot;Zusätzliche Vermerke\&quot; üblicherweise zur Angabe von Regelwerksabweichungen. DB-Regelwerk Bisher eine eindeutige Abbildung als Schriftfeldeintrag gemäß Ril 886.0102. Meist Angabe im Erläuterungsbericht. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -312,11 +312,11 @@
                 eSuperTypes="#//Ur_Objekt">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation"
-               value="Anhang in Form von Datei oder Text zu einem Objekt oder Attribut. Jeder zugelassene Projektbeteiligte kann zu einem Objekt oder Attribut einen Bearbeitungsvermerk anfügen, sofern er die entsprechend notwendige Berechtigung besitzt. Dies gilt für fachliche wie organisatorische Objekte und Attribute. Für ENUM-Attribute ist bei Auswahl des Werts \&#34;sonstige\&#34; zwingend ein Bearbeitungsvermerk anzufügen. Eine Dokumentenbeigabe ist dabei optional. Zu einem Objekt oder Attribut können mehrere Bearbeitungsvermerke erstellt werden. Der Bearbeitungsvermerk enthält vorläufig eine GUID zur Identifikation des Bearbeiters sowie eine GUID für die Signatur. Im Attribut „Bearbeitungsvermerk Rolle“ kann die fachliche Rolle des Bearbeiters abgelegt werden. Kommentare des Bearbeiters werden als Freitext im Attribut „Kommentar“ hinterlegt. Der Bearbeitungsvermerk kann einen Anhang aufnehmen. Um mehrere Anhänge zu einem Objekt zuzuordnen, müssen mehrere Bearbeitungsvermerke erstellt werden."/>
+               value="Anhang in Form von Datei oder Text zu einem Objekt oder Attribut. Jeder zugelassene Projektbeteiligte kann zu einem Objekt oder Attribut einen Bearbeitungsvermerk anfügen, sofern er die entsprechend notwendige Berechtigung besitzt. Dies gilt für fachliche wie organisatorische Objekte und Attribute. Für ENUM-Attribute ist bei Auswahl des Werts \&quot;sonstige\&quot; zwingend ein Bearbeitungsvermerk anzufügen. Eine Dokumentenbeigabe ist dabei optional. Zu einem Objekt oder Attribut können mehrere Bearbeitungsvermerke erstellt werden. Der Bearbeitungsvermerk enthält vorläufig eine GUID zur Identifikation des Bearbeiters sowie eine GUID für die Signatur. Im Attribut „Bearbeitungsvermerk Rolle“ kann die fachliche Rolle des Bearbeiters abgelegt werden. Kommentare des Bearbeiters werden als Freitext im Attribut „Kommentar“ hinterlegt. Der Bearbeitungsvermerk kann einen Anhang aufnehmen. Um mehrere Anhänge zu einem Objekt zuzuordnen, müssen mehrere Bearbeitungsvermerke erstellt werden."/>
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -371,7 +371,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Fachliche Rolle des Bearbeiters, der den Bearbeitungsvermerk verfasst hat. In der ersten Umsetzungsstufe PlanPro ist dabei nur die Rolle \&#34;LST_Fachplaner\&#34; (Ingenieurbüro) vorgesehen. Bei Auswahl von \&#34;sonstige\&#34; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
+                 value="Fachliche Rolle des Bearbeiters, der den Bearbeitungsvermerk verfasst hat. In der ersten Umsetzungsstufe PlanPro ist dabei nur die Rolle \&quot;LST_Fachplaner\&quot; (Ingenieurbüro) vorgesehen. Bei Auswahl von \&quot;sonstige\&quot; ist ein Bearbeitungsvermerk mit entsprechenden Erläuterungen anzufügen. "/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -580,7 +580,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -623,7 +623,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [0.000..99999.999]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [0.000..99999.999]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -644,7 +644,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt; [0.000..99999.999]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung> [0.000..99999.999]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -1080,22 +1080,22 @@
     <eLiterals name="ENUMBV_Darstellung_In_Plan_Balisenprüfprotokoll"
                value="1"
                literal="Balisenprüfprotokoll"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_Bedieneinrichtungstabelle_BU"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_Bedieneinrichtungstabelle_BUe"
                value="2"
                literal="Bedieneinrichtungstabelle BÜ"/>
     <eLiterals name="ENUMBV_Darstellung_In_Plan_Bedieneinrichtungstabelle_Stw"
                value="3"
                literal="Bedieneinrichtungstabelle Stw"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_BU_Abhängigkeitstabelle"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_BUe_Abhängigkeitstabelle"
                value="4"
                literal="BÜ-Abhängigkeitstabelle"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_BU_Kabellage__und_Ubersichtsplan"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_BUe_Kabellage__und_Uebersichtsplan"
                value="5"
                literal="BÜ-Kabellage- und Übersichtsplan"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_BU_Kabelübersichtsplan"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_BUe_Kabelübersichtsplan"
                value="6"
                literal="BÜ-Kabelübersichtsplan"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_BU_Lageplan_ntg"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_BUe_Lageplan_ntg"
                value="7"
                literal="BÜ-Lageplan ntg"/>
     <eLiterals name="ENUMBV_Darstellung_In_Plan_Deadlock_Tabelle"
@@ -1161,7 +1161,7 @@
     <eLiterals name="ENUMBV_Darstellung_In_Plan_Nahbedienungstabelle"
                value="28"
                literal="Nahbedienungstabelle"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_Rangierstraßentabelle"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_Rangierstrassentabelle"
                value="29"
                literal="Rangierstraßentabelle"/>
     <eLiterals name="ENUMBV_Darstellung_In_Plan_Schlosstabelle"
@@ -1173,10 +1173,10 @@
     <eLiterals name="ENUMBV_Darstellung_In_Plan_Sicherungstechnischer_Lageplan"
                value="32"
                literal="Sicherungstechnischer Lageplan"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_Sicherungstechnischer_Ubersichtsplan"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_Sicherungstechnischer_Uebersichtsplan"
                value="33"
                literal="Sicherungstechnischer Übersichtsplan"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_Sicherungstechnischer_Ubersichtsplan_BU"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_Sicherungstechnischer_Uebersichtsplan_BUe"
                value="34"
                literal="Sicherungstechnischer Übersichtsplan BÜ"/>
     <eLiterals name="ENUMBV_Darstellung_In_Plan_Signal__und_Schutzstreckentabelle"
@@ -1197,7 +1197,7 @@
     <eLiterals name="ENUMBV_Darstellung_In_Plan_Streckenblocktabelle"
                value="40"
                literal="Streckenblocktabelle"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_Tabelle_der_aneinandergereihten_Fahrstraßen"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_Tabelle_der_aneinandergereihten_Fahrstrassen"
                value="41"
                literal="Tabelle der aneinandergereihten Fahrstraßen"/>
     <eLiterals name="ENUMBV_Darstellung_In_Plan_Tabelle_der_ATO_Segment_Profiles"
@@ -1215,7 +1215,7 @@
     <eLiterals name="ENUMBV_Darstellung_In_Plan_Tabelle_der_Technik__und_Bedienstandorte"
                value="46"
                literal="Tabelle der Technik- und Bedienstandorte"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_Ubertragungswegtabelle"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_Uebertragungswegtabelle"
                value="47"
                literal="Übertragungswegtabelle"/>
     <eLiterals name="ENUMBV_Darstellung_In_Plan_Weichenlaufkettentabelle"
@@ -1233,19 +1233,19 @@
     <eLiterals name="ENUMBV_Darstellung_In_Plan_ZBS_Datenpunkttabelle_3"
                value="52"
                literal="ZBS-Datenpunkttabelle 3"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_ZL_Anstoßtabelle"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_ZL_Anstosstabelle"
                value="53"
                literal="ZL-Anstoßtabelle"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_ZLV_Bus_Ubersichtsplan"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_ZLV_Bus_Uebersichtsplan"
                value="54"
                literal="ZLV-Bus-Übersichtsplan"/>
     <eLiterals name="ENUMBV_Darstellung_In_Plan_ZN_Tabelle"
                value="55"
                literal="ZN-Tabelle"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_ZN_Ubersichtsplan"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_ZN_Uebersichtsplan"
                value="56"
                literal="ZN-Übersichtsplan"/>
-    <eLiterals name="ENUMBV_Darstellung_In_Plan_Zugstraßentabelle"
+    <eLiterals name="ENUMBV_Darstellung_In_Plan_Zugstrassentabelle"
                value="57"
                literal="Zugstraßentabelle"/>
     <eLiterals name="ENUMBV_Darstellung_In_Plan_Zwieschutzweichentabelle"
@@ -2008,7 +2008,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -2335,7 +2335,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="EMA-Nummer der DB (zur Nachbestellbarkeit des Ersatzeils über die DB-internen Beschaffungswege).&#xA;Für LO ohne EMA-Nummer ist \&#34;ohne EMA-Nummer\&#34; anzugeben."/>
+                 value="EMA-Nummer der DB (zur Nachbestellbarkeit des Ersatzeils über die DB-internen Beschaffungswege).&#xA;Für LO ohne EMA-Nummer ist \&quot;ohne EMA-Nummer\&quot; anzugeben."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2369,7 +2369,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Seriennummer des Bauteils. Falls keine existiert, ist \&#34;ohne Seriennummer\&#34; einzutragen."/>
+                 value="Seriennummer des Bauteils. Falls keine existiert, ist \&quot;ohne Seriennummer\&quot; einzutragen."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2452,7 +2452,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[1..20]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[1..20]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2509,7 +2509,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke&gt;ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:Untergewerke>ATO|Bedienung ETCS|Bedienung Fdl BZ|Bedienung Fdl ESTW-ZE|BÜ|ESTW|ETCS|Geo|sonstige|ZL|ZLV-Bus|ZN&lt;/ppi:Untergewerke>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -2545,7 +2545,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"
@@ -2621,7 +2621,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="Kennzeichnung der maßgebenden Kilometrierung (\&#34;true\&#34;) bei Referenz zu mehreren Strecken."/>
+                 value="Kennzeichnung der maßgebenden Kilometrierung (\&quot;true\&quot;) bei Referenz zu mehreren Strecken."/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2668,7 +2668,7 @@
       </eAnnotations>
       <eAnnotations>
         <details key="appinfo"
-                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage&gt;PT1&lt;/ppi:PlanningStage&gt;&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung&gt;[0.000..99999.999]&lt;/ppi:Patternbeschreibung&gt;&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;                 &#xD;&#xA;"/>
+                 value="&#xD;&#xA;                    &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:PlanningStage>PT1&lt;/ppi:PlanningStage>&#xD;&#xA;                         &#xD;&#xA;    &lt;ppi:Patternbeschreibung>[0.000..99999.999]&lt;/ppi:Patternbeschreibung>&#xD;&#xA;                      &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;                 &#xD;&#xA;"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2718,7 +2718,7 @@
                          resolveProxies="false">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation"
-                 value="(Fahrt-)Richtung, in die ein verortetes Objekt wirkt. Die Angabe \&#34;in\&#34;, \&#34;gegen\&#34; bzw. \&#34;beide\&#34; bezieht sich auf die Topologierichtung der TOP Kante. Weitere Erläuterungen zu den verwendeten Richtungsbegriffen siehe Modellierung Richtung. Zur vererbungsspezifischen Befüllung siehe Modellierung Basisobjekte. DB-Regelwerk Darstellung im sicherungstechnischen Lageplan"/>
+                 value="(Fahrt-)Richtung, in die ein verortetes Objekt wirkt. Die Angabe \&quot;in\&quot;, \&quot;gegen\&quot; bzw. \&quot;beide\&quot; bezieht sich auf die Topologierichtung der TOP Kante. Weitere Erläuterungen zu den verwendeten Richtungsbegriffen siehe Modellierung Richtung. Zur vererbungsspezifischen Befüllung siehe Modellierung Basisobjekte. DB-Regelwerk Darstellung im sicherungstechnischen Lageplan"/>
       </eAnnotations>
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind"
@@ -2929,7 +2929,7 @@
     </eAnnotations>
     <eAnnotations>
       <details key="appinfo"
-               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation&gt;&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType&gt;LST_OBJECT&lt;/ppi:ObjectType&gt;&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation&gt;&#xD;&#xA;           &#xD;&#xA;"/>
+               value="&#xD;&#xA;              &#xD;&#xA;  &lt;ppi:WorkflowInformation>&#xD;&#xA;                   &#xD;&#xA;    &lt;ppi:ObjectType>LST_OBJECT&lt;/ppi:ObjectType>&#xD;&#xA;                &#xD;&#xA;  &lt;/ppi:WorkflowInformation>&#xD;&#xA;           &#xD;&#xA;"/>
     </eAnnotations>
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name"

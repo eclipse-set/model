@@ -1,10 +1,10 @@
 /**
- * Copyright (c) 2024 DB InfraGO AG and others
+ * Copyright (c) 2026 DB InfraGO AG and others
  * 
  * This program and the accompanying materials are made available under the
  * terms of the Eclipse Public License 2.0 which is available at
  * https://www.eclipse.org/legal/epl-2.0.
- *  
+ * 
  * SPDX-License-Identifier: EPL-2.0
  */
 package org.eclipse.set.model.planpro.Geodaten.impl;
@@ -1141,14 +1141,16 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(PlanProPackage.eNS_URI);
 		PlanProPackageImpl thePlanProPackage = (PlanProPackageImpl)(registeredPackage instanceof PlanProPackageImpl ? registeredPackage : PlanProPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BasisobjektePackage.eNS_URI);
-		BasisobjektePackageImpl theBasisobjektePackage = (BasisobjektePackageImpl)(registeredPackage instanceof BasisobjektePackageImpl ? registeredPackage : BasisobjektePackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI);
+		Signalbegriffe_Ril_301PackageImpl theSignalbegriffe_Ril_301Package = (Signalbegriffe_Ril_301PackageImpl)(registeredPackage instanceof Signalbegriffe_Ril_301PackageImpl ? registeredPackage : Signalbegriffe_Ril_301Package.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(LayoutinformationenPackage.eNS_URI);
+		LayoutinformationenPackageImpl theLayoutinformationenPackage = (LayoutinformationenPackageImpl)(registeredPackage instanceof LayoutinformationenPackageImpl ? registeredPackage : LayoutinformationenPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BasisTypenPackage.eNS_URI);
 		BasisTypenPackageImpl theBasisTypenPackage = (BasisTypenPackageImpl)(registeredPackage instanceof BasisTypenPackageImpl ? registeredPackage : BasisTypenPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BasisobjektePackage.eNS_URI);
+		BasisobjektePackageImpl theBasisobjektePackage = (BasisobjektePackageImpl)(registeredPackage instanceof BasisobjektePackageImpl ? registeredPackage : BasisobjektePackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ATOPackage.eNS_URI);
 		ATOPackageImpl theATOPackage = (ATOPackageImpl)(registeredPackage instanceof ATOPackageImpl ? registeredPackage : ATOPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(VerweisePackage.eNS_URI);
-		VerweisePackageImpl theVerweisePackage = (VerweisePackageImpl)(registeredPackage instanceof VerweisePackageImpl ? registeredPackage : VerweisePackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Ansteuerung_ElementPackage.eNS_URI);
 		Ansteuerung_ElementPackageImpl theAnsteuerung_ElementPackage = (Ansteuerung_ElementPackageImpl)(registeredPackage instanceof Ansteuerung_ElementPackageImpl ? registeredPackage : Ansteuerung_ElementPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BahnsteigPackage.eNS_URI);
@@ -1183,29 +1185,27 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		SchluesselabhaengigkeitenPackageImpl theSchluesselabhaengigkeitenPackage = (SchluesselabhaengigkeitenPackageImpl)(registeredPackage instanceof SchluesselabhaengigkeitenPackageImpl ? registeredPackage : SchluesselabhaengigkeitenPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(SignalePackage.eNS_URI);
 		SignalePackageImpl theSignalePackage = (SignalePackageImpl)(registeredPackage instanceof SignalePackageImpl ? registeredPackage : SignalePackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_StrukturPackage.eNS_URI);
-		Signalbegriffe_StrukturPackageImpl theSignalbegriffe_StrukturPackage = (Signalbegriffe_StrukturPackageImpl)(registeredPackage instanceof Signalbegriffe_StrukturPackageImpl ? registeredPackage : Signalbegriffe_StrukturPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ZuglenkungPackage.eNS_URI);
 		ZuglenkungPackageImpl theZuglenkungPackage = (ZuglenkungPackageImpl)(registeredPackage instanceof ZuglenkungPackageImpl ? registeredPackage : ZuglenkungPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ZugnummernmeldeanlagePackage.eNS_URI);
 		ZugnummernmeldeanlagePackageImpl theZugnummernmeldeanlagePackage = (ZugnummernmeldeanlagePackageImpl)(registeredPackage instanceof ZugnummernmeldeanlagePackageImpl ? registeredPackage : ZugnummernmeldeanlagePackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_Ril_301Package.eNS_URI);
-		Signalbegriffe_Ril_301PackageImpl theSignalbegriffe_Ril_301Package = (Signalbegriffe_Ril_301PackageImpl)(registeredPackage instanceof Signalbegriffe_Ril_301PackageImpl ? registeredPackage : Signalbegriffe_Ril_301Package.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(LayoutinformationenPackage.eNS_URI);
-		LayoutinformationenPackageImpl theLayoutinformationenPackage = (LayoutinformationenPackageImpl)(registeredPackage instanceof LayoutinformationenPackageImpl ? registeredPackage : LayoutinformationenPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(VerweisePackage.eNS_URI);
+		VerweisePackageImpl theVerweisePackage = (VerweisePackageImpl)(registeredPackage instanceof VerweisePackageImpl ? registeredPackage : VerweisePackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(Signalbegriffe_StrukturPackage.eNS_URI);
+		Signalbegriffe_StrukturPackageImpl theSignalbegriffe_StrukturPackage = (Signalbegriffe_StrukturPackageImpl)(registeredPackage instanceof Signalbegriffe_StrukturPackageImpl ? registeredPackage : Signalbegriffe_StrukturPackage.eINSTANCE);
 
 		// Load packages
 		thePlanProPackage.loadPackage();
+		theSignalbegriffe_Ril_301Package.loadPackage();
 		theBalisentechnik_ETCSPackage.loadPackage();
 		theBahnuebergangPackage.loadPackage();
-		theSignalbegriffe_Ril_301Package.loadPackage();
 
 		// Create package meta-data objects
 		theGeodatenPackage.createPackageContents();
-		theBasisobjektePackage.createPackageContents();
+		theLayoutinformationenPackage.createPackageContents();
 		theBasisTypenPackage.createPackageContents();
+		theBasisobjektePackage.createPackageContents();
 		theATOPackage.createPackageContents();
-		theVerweisePackage.createPackageContents();
 		theAnsteuerung_ElementPackage.createPackageContents();
 		theBahnsteigPackage.createPackageContents();
 		theBedienungPackage.createPackageContents();
@@ -1221,17 +1221,17 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		theRegelzeichnungPackage.createPackageContents();
 		theSchluesselabhaengigkeitenPackage.createPackageContents();
 		theSignalePackage.createPackageContents();
-		theSignalbegriffe_StrukturPackage.createPackageContents();
 		theZuglenkungPackage.createPackageContents();
 		theZugnummernmeldeanlagePackage.createPackageContents();
-		theLayoutinformationenPackage.createPackageContents();
+		theVerweisePackage.createPackageContents();
+		theSignalbegriffe_StrukturPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theGeodatenPackage.initializePackageContents();
-		theBasisobjektePackage.initializePackageContents();
+		theLayoutinformationenPackage.initializePackageContents();
 		theBasisTypenPackage.initializePackageContents();
+		theBasisobjektePackage.initializePackageContents();
 		theATOPackage.initializePackageContents();
-		theVerweisePackage.initializePackageContents();
 		theAnsteuerung_ElementPackage.initializePackageContents();
 		theBahnsteigPackage.initializePackageContents();
 		theBedienungPackage.initializePackageContents();
@@ -1247,16 +1247,16 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		theRegelzeichnungPackage.initializePackageContents();
 		theSchluesselabhaengigkeitenPackage.initializePackageContents();
 		theSignalePackage.initializePackageContents();
-		theSignalbegriffe_StrukturPackage.initializePackageContents();
 		theZuglenkungPackage.initializePackageContents();
 		theZugnummernmeldeanlagePackage.initializePackageContents();
-		theLayoutinformationenPackage.initializePackageContents();
+		theVerweisePackage.initializePackageContents();
+		theSignalbegriffe_StrukturPackage.initializePackageContents();
 
 		// Fix loaded packages
 		thePlanProPackage.fixPackageContents();
+		theSignalbegriffe_Ril_301Package.fixPackageContents();
 		theBalisentechnik_ETCSPackage.fixPackageContents();
 		theBahnuebergangPackage.fixPackageContents();
-		theSignalbegriffe_Ril_301Package.fixPackageContents();
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put
@@ -4543,9 +4543,9 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_HP_BFT);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_HP_BK);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_HP_DKST);
-		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_HP_UST);
-		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_HP_UST_ANST);
-		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_HP_UST_AWANST);
+		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_HP_UEST);
+		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_HP_UEST_ANST);
+		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_HP_UEST_AWANST);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_LGR);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_NE_ABZW);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_NE_ANST);
@@ -4562,7 +4562,7 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_NE_HP_BK);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_NE_LGR);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_NE_RB_GR);
-		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_NE_UST);
+		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_NE_UEST);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_PD_GR);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_RB_GR);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_SBK);
@@ -4570,9 +4570,9 @@ public class GeodatenPackageImpl extends EPackageImpl implements GeodatenPackage
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_STRW);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_TA_W);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_TSO);
-		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_UST);
-		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_UST_ANST);
-		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_UST_AWANST);
+		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_UEST);
+		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_UEST_ANST);
+		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_UEST_AWANST);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_VP_ABZW);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_VP_ANST);
 		addEEnumLiteral(enumOertlichkeitArtEEnum, ENUMOertlichkeitArt.ENUM_OERTLICHKEIT_ART_VP_AWANST);

@@ -2482,7 +2482,7 @@
     <eLiterals name="ENUMDP_Typ_ZBS_ZRLa" value="17" literal="ZRLa"/>
     <eLiterals name="ENUMDP_Typ_ZBS_ZRV" value="18" literal="ZRV"/>
     <eLiterals name="ENUMDP_Typ_ZBS_ZV" value="19" literal="ZV"/>
-    <eLiterals name="ENUMDP_Typ_ZBS_ZU" value="20" literal="ZÜ"/>
+    <eLiterals name="ENUMDP_Typ_ZBS_ZUe" value="20" literal="ZÜ"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="ENUMDPTypZBSObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
@@ -2617,7 +2617,7 @@
     <eLiterals name="ENUMFT_ZBS_Typ_ZRLa" value="17" literal="ZRLa"/>
     <eLiterals name="ENUMFT_ZBS_Typ_ZRV" value="18" literal="ZRV"/>
     <eLiterals name="ENUMFT_ZBS_Typ_ZV" value="19" literal="ZV"/>
-    <eLiterals name="ENUMFT_ZBS_Typ_ZU" value="20" literal="ZÜ"/>
+    <eLiterals name="ENUMFT_ZBS_Typ_ZUe" value="20" literal="ZÜ"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EDataType" name="ENUMFTZBSTypObject" instanceClassName="org.eclipse.emf.common.util.Enumerator">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">

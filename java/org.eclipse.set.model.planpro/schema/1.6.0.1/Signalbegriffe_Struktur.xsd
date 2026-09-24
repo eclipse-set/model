@@ -1,6 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsSignalbegriffe_Struktur="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsSignalbegriffe_Struktur"
+           ecore:package="org.eclipse.set.model.planpro.Signalbegriffe_Struktur"
            targetNamespace="http://www.plan-pro.org/modell/Signalbegriffe_Struktur/1.6.0.1">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.0.
@@ -23,7 +26,8 @@ http://www.dbnetze.com/planpro
 Contents of the file:
 XML Schema for PlanPro interface.</xs:documentation>
 	  </xs:annotation>
-	  <xs:complexType name="TCSignalbegriff_ID" abstract="true">
+	  <xs:complexType ecore:name="Signalbegriff_ID_TypeClass" name="TCSignalbegriff_ID"
+                   abstract="true">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Signalbegriff gemäß Ril 301 (Signalbuch).
 

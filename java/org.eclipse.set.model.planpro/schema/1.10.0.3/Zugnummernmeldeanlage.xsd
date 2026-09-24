@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:nsZugnummernmeldeanlage="http://www.plan-pro.org/modell/Zugnummernmeldeanlage/1.10.0.3"
            xmlns:nsBasisTypen="http://www.plan-pro.org/modell/BasisTypen/1.10.0.3"
            xmlns:nsBasisobjekte="http://www.plan-pro.org/modell/Basisobjekte/1.10.0.3"
            xmlns:nsVerweise="http://www.plan-pro.org/modell/Verweise/1.10.0.3"
+           xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+           ecore:nsPrefix="nsZugnummernmeldeanlage"
+           ecore:package="org.eclipse.set.model.planpro.Zugnummernmeldeanlage"
            targetNamespace="http://www.plan-pro.org/modell/Zugnummernmeldeanlage/1.10.0.3">
 	  <xs:annotation>
 		    <xs:documentation>Dieses Werk ist lizenziert unter der Open Source Lizenz RailPL V1.1.
@@ -34,147 +37,161 @@ XML Schema for PlanPro interface.</xs:documentation>
               schemaLocation="BasisTypen.xsd"/>
 	  <xs:simpleType name="ENUMAkustik_Anb_Ann">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="5_s"/>
-			      <xs:enumeration value="bis_Ankunft_Zug"/>
+			      <xs:enumeration ecore:name="ENUMAkustik_Anb_Ann_5_s" value="5_s"/>
+			      <xs:enumeration ecore:name="ENUMAkustik_Anb_Ann_bis_Ankunft_Zug" value="bis_Ankunft_Zug"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMAkustik_Sonst">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="5_s"/>
-			      <xs:enumeration value="keine"/>
+			      <xs:enumeration ecore:name="ENUMAkustik_Sonst_5_s" value="5_s"/>
+			      <xs:enumeration ecore:name="ENUMAkustik_Sonst_keine" value="keine"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMBf_Kennung">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="20"/>
-			      <xs:enumeration value="21"/>
-			      <xs:enumeration value="22"/>
-			      <xs:enumeration value="23"/>
-			      <xs:enumeration value="24"/>
-			      <xs:enumeration value="50"/>
-			      <xs:enumeration value="51"/>
+			      <xs:enumeration ecore:name="ENUMBf_Kennung_20" value="20"/>
+			      <xs:enumeration ecore:name="ENUMBf_Kennung_21" value="21"/>
+			      <xs:enumeration ecore:name="ENUMBf_Kennung_22" value="22"/>
+			      <xs:enumeration ecore:name="ENUMBf_Kennung_23" value="23"/>
+			      <xs:enumeration ecore:name="ENUMBf_Kennung_24" value="24"/>
+			      <xs:enumeration ecore:name="ENUMBf_Kennung_50" value="50"/>
+			      <xs:enumeration ecore:name="ENUMBf_Kennung_51" value="51"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMFunktionalitaet_Anzeigefeld">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Anbiete_Annahmefeld"/>
-			      <xs:enumeration value="Meldeort"/>
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="Spiegelfeld"/>
-			      <xs:enumeration value="Stapelfeld"/>
-			      <xs:enumeration value="Voranzeigefeld"/>
-			      <xs:enumeration value="Wandelfeld"/>
+			      <xs:enumeration ecore:name="ENUMFunktionalitaet_Anzeigefeld_Anbiete_Annahmefeld"
+                         value="Anbiete_Annahmefeld"/>
+			      <xs:enumeration ecore:name="ENUMFunktionalitaet_Anzeigefeld_Meldeort" value="Meldeort"/>
+			      <xs:enumeration ecore:name="ENUMFunktionalitaet_Anzeigefeld_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMFunktionalitaet_Anzeigefeld_Spiegelfeld" value="Spiegelfeld"/>
+			      <xs:enumeration ecore:name="ENUMFunktionalitaet_Anzeigefeld_Stapelfeld" value="Stapelfeld"/>
+			      <xs:enumeration ecore:name="ENUMFunktionalitaet_Anzeigefeld_Voranzeigefeld"
+                         value="Voranzeigefeld"/>
+			      <xs:enumeration ecore:name="ENUMFunktionalitaet_Anzeigefeld_Wandelfeld" value="Wandelfeld"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMZBS_Schnittstelle">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="LOGEM_LGM_28_8_D1"/>
-			      <xs:enumeration value="NOKIA_ECM_FAST_14400"/>
-			      <xs:enumeration value="NOKIA_ECM_FAST_19200"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMZBS_Schnittstelle_LOGEM_LGM_28_8_D1" value="LOGEM_LGM_28_8_D1"/>
+			      <xs:enumeration ecore:name="ENUMZBS_Schnittstelle_NOKIA_ECM_FAST_14400"
+                         value="NOKIA_ECM_FAST_14400"/>
+			      <xs:enumeration ecore:name="ENUMZBS_Schnittstelle_NOKIA_ECM_FAST_19200"
+                         value="NOKIA_ECM_FAST_19200"/>
+			      <xs:enumeration ecore:name="ENUMZBS_Schnittstelle_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMZN_Anlagentyp">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="sonstige"/>
-			      <xs:enumeration value="ZN_B950"/>
-			      <xs:enumeration value="ZN_SuB"/>
-			      <xs:enumeration value="ZNE_L2000"/>
-			      <xs:enumeration value="ZNL_2000"/>
-			      <xs:enumeration value="ZNL_800"/>
-			      <xs:enumeration value="ZNP_801"/>
-			      <xs:enumeration value="ZNS_801"/>
-			      <xs:enumeration value="ZNS_901"/>
-			      <xs:enumeration value="ZNS_901R"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anlagentyp_sonstige" value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anlagentyp_ZN_B950" value="ZN_B950"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anlagentyp_ZN_SuB" value="ZN_SuB"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anlagentyp_ZNE_L2000" value="ZNE_L2000"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anlagentyp_ZNL_2000" value="ZNL_2000"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anlagentyp_ZNL_800" value="ZNL_800"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anlagentyp_ZNP_801" value="ZNP_801"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anlagentyp_ZNS_801" value="ZNS_801"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anlagentyp_ZNS_901" value="ZNS_901"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anlagentyp_ZNS_901R" value="ZNS_901R"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMZN_Anzeigefeld_Loeschkriterium">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="automatisch_nach_30_s"/>
-			      <xs:enumeration value="Fahrstrasse_aufgeloest"/>
-			      <xs:enumeration value="Fortschaltung_beim_Nachbarn"/>
-			      <xs:enumeration value="haendisch"/>
-			      <xs:enumeration value="Rueckblock_eingegangen"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anzeigefeld_Loeschkriterium_automatisch_nach_30_s"
+                         value="automatisch_nach_30_s"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anzeigefeld_Loeschkriterium_Fahrstrasse_aufgeloest"
+                         value="Fahrstrasse_aufgeloest"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anzeigefeld_Loeschkriterium_Fortschaltung_beim_Nachbarn"
+                         value="Fortschaltung_beim_Nachbarn"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anzeigefeld_Loeschkriterium_haendisch" value="haendisch"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anzeigefeld_Loeschkriterium_Rueckblock_eingegangen"
+                         value="Rueckblock_eingegangen"/>
+			      <xs:enumeration ecore:name="ENUMZN_Anzeigefeld_Loeschkriterium_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMZN_Modem">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="LOGEM_1200_MD"/>
-			      <xs:enumeration value="NOKIA_1200_SE"/>
-			      <xs:enumeration value="SCADA_NG"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMZN_Modem_LOGEM_1200_MD" value="LOGEM_1200_MD"/>
+			      <xs:enumeration ecore:name="ENUMZN_Modem_NOKIA_1200_SE" value="NOKIA_1200_SE"/>
+			      <xs:enumeration ecore:name="ENUMZN_Modem_SCADA_NG" value="SCADA_NG"/>
+			      <xs:enumeration ecore:name="ENUMZN_Modem_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
 	  <xs:simpleType name="ENUMZN_Schaltkriterium">
 		    <xs:restriction base="xs:string">
-			      <xs:enumeration value="Gleis_belegen"/>
-			      <xs:enumeration value="Gleis_belegen_und_davor_freifahren"/>
-			      <xs:enumeration value="Gleis_freifahren"/>
-			      <xs:enumeration value="kein"/>
-			      <xs:enumeration value="manuell"/>
-			      <xs:enumeration value="Signalhaltfall_Hauptsignal"/>
-			      <xs:enumeration value="Signalhaltfall_Rangiersignal"/>
-			      <xs:enumeration value="sonstige"/>
+			      <xs:enumeration ecore:name="ENUMZN_Schaltkriterium_Gleis_belegen" value="Gleis_belegen"/>
+			      <xs:enumeration ecore:name="ENUMZN_Schaltkriterium_Gleis_belegen_und_davor_freifahren"
+                         value="Gleis_belegen_und_davor_freifahren"/>
+			      <xs:enumeration ecore:name="ENUMZN_Schaltkriterium_Gleis_freifahren" value="Gleis_freifahren"/>
+			      <xs:enumeration ecore:name="ENUMZN_Schaltkriterium_kein" value="kein"/>
+			      <xs:enumeration ecore:name="ENUMZN_Schaltkriterium_manuell" value="manuell"/>
+			      <xs:enumeration ecore:name="ENUMZN_Schaltkriterium_Signalhaltfall_Hauptsignal"
+                         value="Signalhaltfall_Hauptsignal"/>
+			      <xs:enumeration ecore:name="ENUMZN_Schaltkriterium_Signalhaltfall_Rangiersignal"
+                         value="Signalhaltfall_Rangiersignal"/>
+			      <xs:enumeration ecore:name="ENUMZN_Schaltkriterium_sonstige" value="sonstige"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TAnschlussnummer">
+	  <xs:simpleType ecore:name="Anschlussnummer_Type" name="TAnschlussnummer">
 		    <xs:restriction base="xs:integer"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBesonderes_Schaltkriterium">
+	  <xs:simpleType ecore:name="Besonderes_Schaltkriterium_Type" name="TBesonderes_Schaltkriterium">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_Besondere_Anlage">
+	  <xs:simpleType ecore:name="Bezeichnung_Besondere_Anlage_Type"
+                  name="TBezeichnung_Besondere_Anlage">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBezeichnung_Stellwerk">
+	  <xs:simpleType ecore:name="Bezeichnung_Stellwerk_Type" name="TBezeichnung_Stellwerk">
 		    <xs:restriction base="nsBasisTypen:TText"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TBf_Nr">
+	  <xs:simpleType ecore:name="Bf_Nr_Type" name="TBf_Nr">
 		    <xs:restriction base="xs:integer">
 			      <xs:pattern value="0[1-9]|[1-9][0-9]"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TIP_Adresse">
+	  <xs:simpleType ecore:name="IP_Adresse_Type" name="TIP_Adresse">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value="([0-9]{1,3}\.){3}[0-9]{1,3}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TPrioritaet">
+	  <xs:simpleType ecore:name="Prioritaet_Type" name="TPrioritaet">
 		    <xs:restriction base="xs:integer"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TUnterstation_Max">
+	  <xs:simpleType ecore:name="Unterstation_Max_Type" name="TUnterstation_Max">
 		    <xs:restriction base="xs:integer">
 			      <xs:pattern value="[1-9]|[1-3][0-9]|40"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TUnterstation_Nr">
+	  <xs:simpleType ecore:name="Unterstation_Nr_Type" name="TUnterstation_Nr">
 		    <xs:restriction base="nsBasisTypen:TZeichenkette">
 			      <xs:pattern value="0[1-9]|[1-3][0-9]|40"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TVerzoegerung_Manuell_Loeschung">
+	  <xs:simpleType ecore:name="Verzoegerung_Manuell_Loeschung_Type"
+                  name="TVerzoegerung_Manuell_Loeschung">
 		    <xs:restriction base="nsBasisTypen:TSekunde"/>
 	  </xs:simpleType>
-	  <xs:simpleType name="TZBS_Adresse">
+	  <xs:simpleType ecore:name="ZBS_Adresse_Type" name="TZBS_Adresse">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value="[A-F][0-9]|[C-F][A-F]|[AB][C-F]|AB|BA"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TZLV_Bus_Nr">
+	  <xs:simpleType ecore:name="ZLV_Bus_Nr_Type" name="TZLV_Bus_Nr">
 		    <xs:restriction base="xs:integer">
 			      <xs:pattern value="[1-9][0-9]{0,3}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TZN_A_Bedienbezeichner_Frei">
+	  <xs:simpleType ecore:name="ZN_A_Bedienbezeichner_Frei_Type" name="TZN_A_Bedienbezeichner_Frei">
 		    <xs:restriction base="nsBasisTypen:TText">
 			      <xs:pattern value=".{4,7}"/>
 		    </xs:restriction>
 	  </xs:simpleType>
-	  <xs:simpleType name="TZN_A_Bezeichner">
+	  <xs:simpleType ecore:name="ZN_A_Bezeichner_Type" name="TZN_A_Bezeichner">
 		    <xs:restriction base="xs:integer"/>
 	  </xs:simpleType>
-	  <xs:complexType name="CTelegramm_84_Alle_Fstr">
+	  <xs:complexType ecore:name="Telegramm_84_Alle_Fstr_AttributeGroup"
+                   name="CTelegramm_84_Alle_Fstr">
 		    <xs:sequence>
 			      <xs:element name="ID_ZLV_Bus" type="nsVerweise:TCID_ZLV_Bus" minOccurs="0" maxOccurs="1">
 				        <xs:annotation>
@@ -191,7 +208,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CTelegramm_84_Einzelne_Fstr">
+	  <xs:complexType ecore:name="Telegramm_84_Einzelne_Fstr_AttributeGroup"
+                   name="CTelegramm_84_Einzelne_Fstr">
 		    <xs:sequence>
 			      <xs:element name="ID_Fstr_Zug_Rangier" type="nsVerweise:TCID_Fstr_Zug_Rangier"
                      minOccurs="1"
@@ -207,7 +225,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CTelegramm_85_Alle_Fstr">
+	  <xs:complexType ecore:name="Telegramm_85_Alle_Fstr_AttributeGroup"
+                   name="CTelegramm_85_Alle_Fstr">
 		    <xs:sequence>
 			      <xs:element name="ID_ZLV_Bus" type="nsVerweise:TCID_ZLV_Bus" minOccurs="0" maxOccurs="1">
 				        <xs:annotation>
@@ -224,7 +243,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CTelegramm_85_Einzelne_Fstr">
+	  <xs:complexType ecore:name="Telegramm_85_Einzelne_Fstr_AttributeGroup"
+                   name="CTelegramm_85_Einzelne_Fstr">
 		    <xs:sequence>
 			      <xs:element name="ID_Fstr_Zug_Rangier" type="nsVerweise:TCID_Fstr_Zug_Rangier"
                      minOccurs="1"
@@ -240,7 +260,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZLV_Bus">
+	  <xs:complexType ecore:name="ZLV_Bus" name="CZLV_Bus">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuglaufverfolgungsbus. Verbindung zwischen den ZN-Unterstationen zum Transport der Zugnummernmeldetelegramme. ZLV-Busse können BZ-übergreifend geplant werden. In diesem Fall gelten für die Vergabe der ZLV Bus Nr besondere Bedingungen. DB-Regelwerk 819.0731 8 (2) Die Darstellung der Angaben erfolgt im ZLV-Bus-Übersichtsplan nach 819.0731 A01 </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -262,7 +282,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZLV_Bus_Allg">
+	  <xs:complexType ecore:name="ZLV_Bus_Allg_AttributeGroup" name="CZLV_Bus_Allg">
 		    <xs:sequence>
 			      <xs:element name="Unterstation_Max" type="nsZugnummernmeldeanlage:TCUnterstation_Max"
                      minOccurs="1"
@@ -284,7 +304,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZLV_Bus_Besondere_Anlage">
+	  <xs:complexType ecore:name="ZLV_Bus_Besondere_Anlage" name="CZLV_Bus_Besondere_Anlage">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Besondere Anlage, die an einen ZLV-Bus angeschlossen ist.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -318,7 +338,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZLV_Bus_Besondere_Anlage_Bezeichnung">
+	  <xs:complexType ecore:name="ZLV_Bus_Besondere_Anlage_Bezeichnung_AttributeGroup"
+                   name="CZLV_Bus_Besondere_Anlage_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="Bezeichnung_Besondere_Anlage"
                      type="nsZugnummernmeldeanlage:TCBezeichnung_Besondere_Anlage"
@@ -330,7 +351,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZLV_Bus_Bezeichnung">
+	  <xs:complexType ecore:name="ZLV_Bus_Bezeichnung_AttributeGroup" name="CZLV_Bus_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="ZLV_Bus_Nr" type="nsZugnummernmeldeanlage:TCZLV_Bus_Nr" minOccurs="1"
                      maxOccurs="1">
@@ -345,7 +366,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZLV_Bus_US_Zuordnung">
+	  <xs:complexType ecore:name="ZLV_Bus_US_Zuordnung" name="CZLV_Bus_US_Zuordnung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zuordnung von ZLV-Bussen zur ZN Unterstation und Angabe durchzureichender Telegramme. Logisches Objekt, falls eine ZN Unterstation an mehrere ZLV-Busse angebunden wird. DB-Regelwerk 819.0731 5 (4) ff Die Darstellung der Angaben erfolgt im ZLV-Bus-Übersichtsplan nach 819.0731 A01 </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -385,7 +406,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZLV_Bus_US_Zuordnung_Telegramm">
+	  <xs:complexType ecore:name="ZLV_Bus_US_Zuordnung_Telegramm_AttributeGroup"
+                   name="CZLV_Bus_US_Zuordnung_Telegramm">
 		    <xs:sequence>
 			      <xs:element name="Telegramm_02" type="nsZugnummernmeldeanlage:TCTelegramm_02" minOccurs="0"
                      maxOccurs="1">
@@ -425,7 +447,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZLV_Bus_Zuordnung_Allg">
+	  <xs:complexType ecore:name="ZLV_Bus_Zuordnung_Allg_AttributeGroup"
+                   name="CZLV_Bus_Zuordnung_Allg">
 		    <xs:sequence>
 			      <xs:element name="Anschlussnummer" type="nsZugnummernmeldeanlage:TCAnschlussnummer"
                      minOccurs="0"
@@ -448,7 +471,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZN">
+	  <xs:complexType ecore:name="ZN" name="CZN">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Zugnummernmeldeanlage. Wird die ZN-Anlage zusammen mit dem ESTW geplant, gibt es keinen Verweis auf die Anhänge, da die ZN bereits in der ESTW-Konfiguration berücksichtigt ist. Wird die ZN nachgerüstet, sind die Verweise auf ESTW_Zentraleinheit und Anhänge vorhanden. Kann eine ESTW-Bauform keine ZN berücksichtigen, dann gibt es keinen Verweis auf ESTW_Zentraleinheit. DB-Regelwerk 819.0731 </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -514,7 +537,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Akustik">
+	  <xs:complexType ecore:name="ZN_Akustik" name="CZN_Akustik">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Akustisches Signal bei Befüllung eines ZN-Anzeigefeldes mit einer Zugnummer Bei der Planung der ZN-Akustik sind herstellerspezifische Besonderheiten zu beachten. Akustiken im Anbiete-/Annahmefeld sind Standard und nicht gesondert zu planen. Das Objekt bzw. die Attributgruppe wird bei Anbiete/Annahme- sowie Voranzeigefeldern IMMER angelegt, um die Dauer der Akustik festzulegen. Für die weiteren ZN-Anzeigefelder wird das Objekt nur dann angelegt, wenn das betreffene ZN Anzeigefeld mit einer Akustik ausgestatteet wird. DB-Regelwerk Das Planungsdatum ist im Regelwerk der DB AG nicht vorhanden. Es findet sich im Lastenheft sowie in den firmenspezifischen Projektierungsunterlagen, die dem LST-Fachplaner nicht zur Verfügung stehen.</xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -548,7 +571,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Akustik_Anzeigefeld">
+	  <xs:complexType ecore:name="ZN_Akustik_Anzeigefeld_AttributeGroup"
+                   name="CZN_Akustik_Anzeigefeld">
 		    <xs:sequence>
 			      <xs:choice minOccurs="1" maxOccurs="1">
 				        <xs:element name="Akustikdauer_Anb_Ann"
@@ -576,7 +600,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:choice>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Allg">
+	  <xs:complexType ecore:name="ZN_Allg_AttributeGroup" name="CZN_Allg">
 		    <xs:sequence>
 			      <xs:element name="Einwahlstelle" type="nsZugnummernmeldeanlage:TCEinwahlstelle"
                      minOccurs="1"
@@ -607,7 +631,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Anzeigefeld">
+	  <xs:complexType ecore:name="ZN_Anzeigefeld" name="CZN_Anzeigefeld">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt, welches die Funktionalitäten der ZN auf der Bedienoberfläche abbildet. Für jedes Gleis, in denen die ZN-Anlage Zugnummern verwalten und/oder anzeigen soll, ist mindestens ein ZN-Anzeigefeld zu definieren. Hinsichtlich der Besonderheiten bei der Bezeichnug wird auf die Ausführungen auf der Seite Bezeichnung ZN-Anzeigefeld verwiesen. DB-Regelwerk 819.0731 6 (1) bis (15) sowie (19) ff </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -654,7 +678,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Anzeigefeld_Allg">
+	  <xs:complexType ecore:name="ZN_Anzeigefeld_Allg_AttributeGroup" name="CZN_Anzeigefeld_Allg">
 		    <xs:sequence>
 			      <xs:element name="Bedienbarkeit_Anzeigefeld"
                      type="nsZugnummernmeldeanlage:TCBedienbarkeit_Anzeigefeld"
@@ -763,7 +787,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Anzeigefeld_Bezeichnung">
+	  <xs:complexType ecore:name="ZN_Anzeigefeld_Bezeichnung_AttributeGroup"
+                   name="CZN_Anzeigefeld_Bezeichnung">
 		    <xs:sequence>
 			      <xs:element name="ZN_A_Bedienbezeichner_Frei"
                      type="nsZugnummernmeldeanlage:TCZN_A_Bedienbezeichner_Frei"
@@ -787,7 +812,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Fortschalt_Krit_Druck">
+	  <xs:complexType ecore:name="ZN_Fortschalt_Krit_Druck_AttributeGroup"
+                   name="CZN_Fortschalt_Krit_Druck">
 		    <xs:sequence>
 			      <xs:element name="Ausfahrdruck" type="nsZugnummernmeldeanlage:TCAusfahrdruck" minOccurs="0"
                      maxOccurs="1">
@@ -832,7 +858,8 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Fortschalt_Krit_Schalt">
+	  <xs:complexType ecore:name="ZN_Fortschalt_Krit_Schalt_AttributeGroup"
+                   name="CZN_Fortschalt_Krit_Schalt">
 		    <xs:sequence>
 			      <xs:element name="Besonderes_Schaltkriterium"
                      type="nsZugnummernmeldeanlage:TCBesonderes_Schaltkriterium"
@@ -871,7 +898,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Fortschalt_Kriterium">
+	  <xs:complexType ecore:name="ZN_Fortschalt_Kriterium" name="CZN_Fortschalt_Kriterium">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Objekt, welches die funktionellen ZN-Fortschaltkriterien beschreibt. Die Attributgruppe ZN_Fortschalt_Krit_Druck wird nur angelegt, wenn aus dem Fortschaltkriterium ein Druck erzeugt wird. DB-Regelwerk 819.0731 6 (16) und (17) </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -915,7 +942,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Telegramm_84_Zuordnung">
+	  <xs:complexType ecore:name="ZN_Telegramm_84_Zuordnung" name="CZN_Telegramm_84_Zuordnung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Logisches Objekt, welches die Verbindung zwischen ZN und ggf. der einzelnen Fahrstraße herstellt, für die das Telegramm 84 gesendet werden soll. Herstellerbezogen kann die Sendung des Telegramms 84 für jede einzelne Fahrstraße oder nur für alle Fahrstraßen programmiert werden. DB-Regelwerk 819.0731A02 1 (5) </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -960,7 +987,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Telegramm_85_Zuordnung">
+	  <xs:complexType ecore:name="ZN_Telegramm_85_Zuordnung" name="CZN_Telegramm_85_Zuordnung">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Logisches Objekt, welches die Verbindung zwischen ZN und ggf. der einzelnen Fahrstraße herstellt, für die das Telegramm 85 gesendet werden soll. Herstellerbezogen kann die Sendung des Telegramms 85 für jede einzelne Fahrstraße oder nur für alle Fahrstraßen programmiert werden. DB-Regelwerk 819.0731A02 1 (5) </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -992,7 +1019,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Unterstation">
+	  <xs:complexType ecore:name="ZN_Unterstation" name="CZN_Unterstation">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Verbindung zwischen ZN und ZLV Bus und/oder ZN ZBS. Über Modems wird die ZN an einen oder mehrere ZLV-Busse und ggf. an eine ZBS (Verbindung zu einer Bedien Zentrale) angebunden. Die Attributgruppe ZN_Unterstation_Bf_Nr kann mehrfach eingebunden werden. Damit werden alle Betriebsstellen, die ZN-seitig über diese Unterstation verwaltet bzw \"angesprochen\" werden, beschrieben. Der ZN-seitigen Bahnhofsnummer wird eine Örtlichkeit (Ril-100-Bezeichner der zugewiesenen Betriebsstelle) und ggf. eine Priorität zugeordnet. Letztere wird nur für diejenige Bahnhosnummer angegeben, die für die Kommunikation der ZN_Unterstation mit dem ZLV-Bus maßgebend ist. In allen anderen Fällen wird das Attribut nicht befüllt. Die Darstellung erfolgt auf dem ZLV-Bus-Übersichtsplan als tabellarischer Block mit den Zeilen \u0026lt;Bf-Nr\u0026gt; \u0026lt;Oertlichkeit_Abkuerzung\u0026gt; in dem Symbol für die ZN_Unterstation. Die Bahnhofsnummer mit Priorität wird direkt neben dem ZLV-Bus-Anschluss angeordnet. DB-Regelwerk 819.0731 5 Die Darstellung der Angaben erfolgt im ZLV-Bus-Übersichtsplan nach 819.0731 A01 </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1018,7 +1045,7 @@ XML Schema for PlanPro interface.</xs:documentation>
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Unterstation_Allg">
+	  <xs:complexType ecore:name="ZN_Unterstation_Allg_AttributeGroup" name="CZN_Unterstation_Allg">
 		    <xs:sequence>
 			      <xs:element name="Bf_Kennung" type="nsZugnummernmeldeanlage:TCBf_Kennung" minOccurs="1"
                      maxOccurs="1">
@@ -1083,7 +1110,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
                      maxOccurs="unbounded"/>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_Unterstation_Bf_Nr">
+	  <xs:complexType ecore:name="ZN_Unterstation_Bf_Nr_AttributeGroup" name="CZN_Unterstation_Bf_Nr">
 		    <xs:sequence>
 			      <xs:element name="Bf_Nr" type="nsZugnummernmeldeanlage:TCBf_Nr" minOccurs="1" maxOccurs="1">
 				        <xs:annotation>
@@ -1109,7 +1136,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:element>
 		    </xs:sequence>
 	  </xs:complexType>
-	  <xs:complexType name="CZN_ZBS">
+	  <xs:complexType ecore:name="ZN_ZBS" name="CZN_ZBS">
 		    <xs:annotation>
          <xs:documentation xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">Abbildung der Parameter für die Anbindung einer ZN an die BZ. Der Verweis auf ID ESTW Zentraleinheit beschreibt den Ort der räumlichen Unterbringung der Koppelunterstation. Bei der Bearbeitung im Planungstool kann es notwendig sein, bereits bei Bearbeitung im Dialogfeld ZN-ZBS den Verweis auf die ESTW_Zentraleinheit zu befüllen. DB-Regelwerk 819.0731 6 (16) Die Darstellung der Angaben erfolgt im ZLV-Bus-Übersichtsplan nach 819.0731 A01 </xs:documentation>
          <xs:appinfo xmlns:ppi="http://www.plan-pro.org/modell/PlanProInformation">
@@ -1153,7 +1180,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAkustikdauer_Anb_Ann">
+	  <xs:complexType ecore:name="Akustikdauer_Anb_Ann_TypeClass" name="TCAkustikdauer_Anb_Ann">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1164,7 +1191,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAkustikdauer_Sonst">
+	  <xs:complexType ecore:name="Akustikdauer_Sonst_TypeClass" name="TCAkustikdauer_Sonst">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1175,7 +1202,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAkustikdauer_Voranz">
+	  <xs:complexType ecore:name="Akustikdauer_Voranz_TypeClass" name="TCAkustikdauer_Voranz">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1186,7 +1213,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAnschlussnummer">
+	  <xs:complexType ecore:name="Anschlussnummer_TypeClass" name="TCAnschlussnummer">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1197,7 +1224,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAusfahrdruck">
+	  <xs:complexType ecore:name="Ausfahrdruck_TypeClass" name="TCAusfahrdruck">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1207,7 +1234,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCAusfahrdruck_Gegengleis">
+	  <xs:complexType ecore:name="Ausfahrdruck_Gegengleis_TypeClass" name="TCAusfahrdruck_Gegengleis">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1217,7 +1244,8 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBedienbarkeit_Anzeigefeld">
+	  <xs:complexType ecore:name="Bedienbarkeit_Anzeigefeld_TypeClass"
+                   name="TCBedienbarkeit_Anzeigefeld">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1226,7 +1254,8 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBesonderes_Schaltkriterium">
+	  <xs:complexType ecore:name="Besonderes_Schaltkriterium_TypeClass"
+                   name="TCBesonderes_Schaltkriterium">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1238,7 +1267,8 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Besondere_Anlage">
+	  <xs:complexType ecore:name="Bezeichnung_Besondere_Anlage_TypeClass"
+                   name="TCBezeichnung_Besondere_Anlage">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1250,7 +1280,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBezeichnung_Stellwerk">
+	  <xs:complexType ecore:name="Bezeichnung_Stellwerk_TypeClass" name="TCBezeichnung_Stellwerk">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1261,7 +1291,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBf_Kennung">
+	  <xs:complexType ecore:name="Bf_Kennung_TypeClass" name="TCBf_Kennung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1272,7 +1302,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBf_Nr">
+	  <xs:complexType ecore:name="Bf_Nr_TypeClass" name="TCBf_Nr">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1282,7 +1312,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBf_Nr_ANB">
+	  <xs:complexType ecore:name="Bf_Nr_ANB_TypeClass" name="TCBf_Nr_ANB">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1291,7 +1321,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCBf_Nr_ZN_A">
+	  <xs:complexType ecore:name="Bf_Nr_ZN_A_TypeClass" name="TCBf_Nr_ZN_A">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1300,7 +1330,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCDurchfahrdruck">
+	  <xs:complexType ecore:name="Durchfahrdruck_TypeClass" name="TCDurchfahrdruck">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1310,7 +1340,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCEinfahrdruck">
+	  <xs:complexType ecore:name="Einfahrdruck_TypeClass" name="TCEinfahrdruck">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1320,7 +1350,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCEinfahrdruck_Gegengleis">
+	  <xs:complexType ecore:name="Einfahrdruck_Gegengleis_TypeClass" name="TCEinfahrdruck_Gegengleis">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1330,7 +1360,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCEinwahlstelle">
+	  <xs:complexType ecore:name="Einwahlstelle_TypeClass" name="TCEinwahlstelle">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1339,7 +1369,8 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCFunktionalitaet_Anzeigefeld">
+	  <xs:complexType ecore:name="Funktionalitaet_Anzeigefeld_TypeClass"
+                   name="TCFunktionalitaet_Anzeigefeld">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1351,7 +1382,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCHOA">
+	  <xs:complexType ecore:name="HOA_TypeClass" name="TCHOA">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1360,7 +1391,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCIP_Adresse">
+	  <xs:complexType ecore:name="IP_Adresse_TypeClass" name="TCIP_Adresse">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1371,7 +1402,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCKoppelunterstation">
+	  <xs:complexType ecore:name="Koppelunterstation_TypeClass" name="TCKoppelunterstation">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1380,7 +1411,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCKUs_Zeittelegramm">
+	  <xs:complexType ecore:name="KUs_Zeittelegramm_TypeClass" name="TCKUs_Zeittelegramm">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1389,7 +1420,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCMeldedruck">
+	  <xs:complexType ecore:name="Meldedruck_TypeClass" name="TCMeldedruck">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1399,7 +1430,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCPrioritaet">
+	  <xs:complexType ecore:name="Prioritaet_TypeClass" name="TCPrioritaet">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1410,7 +1441,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCReaktivierungsfunktion">
+	  <xs:complexType ecore:name="Reaktivierungsfunktion_TypeClass" name="TCReaktivierungsfunktion">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1419,7 +1450,8 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCSichtbarkeit_Anzeigefeld">
+	  <xs:complexType ecore:name="Sichtbarkeit_Anzeigefeld_TypeClass"
+                   name="TCSichtbarkeit_Anzeigefeld">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1428,7 +1460,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTelegramm_02">
+	  <xs:complexType ecore:name="Telegramm_02_TypeClass" name="TCTelegramm_02">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1437,7 +1469,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTelegramm_03">
+	  <xs:complexType ecore:name="Telegramm_03_TypeClass" name="TCTelegramm_03">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1446,7 +1478,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTelegramm_04">
+	  <xs:complexType ecore:name="Telegramm_04_TypeClass" name="TCTelegramm_04">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1455,7 +1487,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTelegramm_10">
+	  <xs:complexType ecore:name="Telegramm_10_TypeClass" name="TCTelegramm_10">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1464,7 +1496,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTelegramm_21">
+	  <xs:complexType ecore:name="Telegramm_21_TypeClass" name="TCTelegramm_21">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1473,7 +1505,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTelegramm_30">
+	  <xs:complexType ecore:name="Telegramm_30_TypeClass" name="TCTelegramm_30">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1482,7 +1514,8 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTelegramm_84_Fuer_Alle_Fstr">
+	  <xs:complexType ecore:name="Telegramm_84_Fuer_Alle_Fstr_TypeClass"
+                   name="TCTelegramm_84_Fuer_Alle_Fstr">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1491,7 +1524,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTelegramm_84_Verzicht">
+	  <xs:complexType ecore:name="Telegramm_84_Verzicht_TypeClass" name="TCTelegramm_84_Verzicht">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1500,7 +1533,8 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTelegramm_85_Fuer_Alle_Fstr">
+	  <xs:complexType ecore:name="Telegramm_85_Fuer_Alle_Fstr_TypeClass"
+                   name="TCTelegramm_85_Fuer_Alle_Fstr">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1509,7 +1543,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCTelegrammwiederholung">
+	  <xs:complexType ecore:name="Telegrammwiederholung_TypeClass" name="TCTelegrammwiederholung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1518,7 +1552,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCUnterstation_Max">
+	  <xs:complexType ecore:name="Unterstation_Max_TypeClass" name="TCUnterstation_Max">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1529,7 +1563,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCUnterstation_Nr">
+	  <xs:complexType ecore:name="Unterstation_Nr_TypeClass" name="TCUnterstation_Nr">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1540,7 +1574,8 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCVerzoegerung_Manuell_Loeschung">
+	  <xs:complexType ecore:name="Verzoegerung_Manuell_Loeschung_TypeClass"
+                   name="TCVerzoegerung_Manuell_Loeschung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1552,7 +1587,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCVormeldestart">
+	  <xs:complexType ecore:name="Vormeldestart_TypeClass" name="TCVormeldestart">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1562,7 +1597,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZBS_Adresse">
+	  <xs:complexType ecore:name="ZBS_Adresse_TypeClass" name="TCZBS_Adresse">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1573,7 +1608,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZBS_Anbindung">
+	  <xs:complexType ecore:name="ZBS_Anbindung_TypeClass" name="TCZBS_Anbindung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1582,7 +1617,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZBS_Schnittstelle">
+	  <xs:complexType ecore:name="ZBS_Schnittstelle_TypeClass" name="TCZBS_Schnittstelle">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1593,7 +1628,8 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZeitsynchronisation_Funkuhr">
+	  <xs:complexType ecore:name="Zeitsynchronisation_Funkuhr_TypeClass"
+                   name="TCZeitsynchronisation_Funkuhr">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1602,7 +1638,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZLV_Bus_Nr">
+	  <xs:complexType ecore:name="ZLV_Bus_Nr_TypeClass" name="TCZLV_Bus_Nr">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1613,7 +1649,8 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZN_A_Bedienbezeichner_Frei">
+	  <xs:complexType ecore:name="ZN_A_Bedienbezeichner_Frei_TypeClass"
+                   name="TCZN_A_Bedienbezeichner_Frei">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1625,7 +1662,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZN_A_Bezeichner">
+	  <xs:complexType ecore:name="ZN_A_Bezeichner_TypeClass" name="TCZN_A_Bezeichner">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1636,7 +1673,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZN_Anlagentyp">
+	  <xs:complexType ecore:name="ZN_Anlagentyp_TypeClass" name="TCZN_Anlagentyp">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1647,7 +1684,8 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZN_Anzeigefeld_Loeschkriterium">
+	  <xs:complexType ecore:name="ZN_Anzeigefeld_Loeschkriterium_TypeClass"
+                   name="TCZN_Anzeigefeld_Loeschkriterium">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1659,7 +1697,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZN_Feld_Ohne_Anzeige">
+	  <xs:complexType ecore:name="ZN_Feld_Ohne_Anzeige_TypeClass" name="TCZN_Feld_Ohne_Anzeige">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1668,7 +1706,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZN_Modem">
+	  <xs:complexType ecore:name="ZN_Modem_TypeClass" name="TCZN_Modem">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1679,7 +1717,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZN_Schaltkriterium">
+	  <xs:complexType ecore:name="ZN_Schaltkriterium_TypeClass" name="TCZN_Schaltkriterium">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
@@ -1690,7 +1728,7 @@ KUs an einem ZLV-Bus angeschlossen, so darf jeweils nur eine KUs ein Zeittelegra
 			      </xs:extension>
 		    </xs:complexContent>
 	  </xs:complexType>
-	  <xs:complexType name="TCZugvorbereitungsmeldung">
+	  <xs:complexType ecore:name="Zugvorbereitungsmeldung_TypeClass" name="TCZugvorbereitungsmeldung">
 		    <xs:complexContent>
 			      <xs:extension base="nsBasisTypen:CBasisAttribut">
 				        <xs:sequence>
